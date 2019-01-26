@@ -1,0 +1,9 @@
+# Ignore Audio Fonts and Graphics folders
+Audio/
+Fonts/
+Graphics/
+.import/
+.directory
+*.apk
+*.exe
+*.x86_64

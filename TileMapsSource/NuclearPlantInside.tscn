@@ -1,0 +1,216 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Graphics/Tilesets/PU-NuclearPlantInside.png" type="Texture" id=1]
+
+[node name="Node" type="Node"]
+
+[node name="Floor" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="Reactor" type="Sprite" parent="." index="1"]
+
+position = Vector2( 0, 32 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 352, 160, 160 )
+
+[node name="FloorRailing" type="Sprite" parent="." index="2"]
+
+position = Vector2( 0, 192 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 160, 64, 32 )
+
+[node name="TableTopLeft" type="Sprite" parent="." index="3"]
+
+position = Vector2( 64, 192 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 768, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="TableTop" type="Sprite" parent="." index="4"]
+
+position = Vector2( 96, 192 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 768, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="TableTopRight" type="Sprite" parent="." index="5"]
+
+position = Vector2( 128, 192 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 192, 768, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="TableCenter" type="Sprite" parent="." index="6"]
+
+position = Vector2( 96, 224 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 800, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="TableLeft" type="Sprite" parent="." index="7"]
+
+position = Vector2( 64, 224 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 800, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="TableRight" type="Sprite" parent="." index="8"]
+
+position = Vector2( 128, 224 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 192, 800, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="TableBottomLeft" type="Sprite" parent="." index="9"]
+
+position = Vector2( 64, 256 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 832, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="TableBottom" type="Sprite" parent="." index="10"]
+
+position = Vector2( 96, 256 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 832, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="TableBottomRight" type="Sprite" parent="." index="11"]
+
+position = Vector2( 128, 256 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 192, 832, 32, 32 )
+_sections_unfolded = [ "Patch Margin", "Region" ]
+
+[node name="Desk" type="Sprite" parent="." index="12"]
+
+position = Vector2( 0, 224 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 1728, 64, 64 )
+
+[node name="Seat" type="Sprite" parent="." index="13"]
+
+position = Vector2( 0, 288 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 864, 32, 32 )
+
+[node name="Book" type="Sprite" parent="." index="14"]
+
+position = Vector2( 32, 288 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 864, 32, 32 )
+
+[node name="Exit" type="Sprite" parent="." index="15"]
+
+position = Vector2( 64, 288 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 1184, 96, 32 )
+
+[node name="Drum" type="Sprite" parent="." index="16"]
+
+position = Vector2( 0, 320 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 192, 1376, 32, 64 )
+
+[node name="StairsDownRight" type="Sprite" parent="." index="17"]
+
+position = Vector2( 160, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 1056, 64, 96 )
+
+[node name="ServerRack" type="Sprite" parent="." index="18"]
+
+position = Vector2( 160, 96 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 992, 32, 64 )
+
+[node name="Screen" type="Sprite" parent="." index="19"]
+
+position = Vector2( 224, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 416, 96, 64 )
+
+[node name="ControlLeft" type="Sprite" parent="." index="20"]
+
+position = Vector2( 160, 160 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 1312, 32, 64 )
+
+[node name="ControlCenter" type="Sprite" parent="." index="21"]
+
+position = Vector2( 192, 160 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 1312, 96, 64 )
+
+[node name="ControlRight" type="Sprite" parent="." index="22"]
+
+position = Vector2( 288, 160 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 160, 1312, 32, 64 )
+
+[node name="Window" type="Sprite" parent="." index="23"]
+
+position = Vector2( 224, 64 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 64, 32, 96 )
+
+[node name="Wall" type="Sprite" parent="." index="24"]
+
+position = Vector2( 256, 64 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 64, 32, 96 )
+
+
