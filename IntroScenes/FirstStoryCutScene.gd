@@ -20,14 +20,12 @@ const TOP = Vector2(10,10)
 const MIDDLE = Vector2(10, 150)
 const BOTTOM = Vector2(10,280)
 
-onready var dialogBox = preload("res://Dialogue Box.tscn")
+onready var dialogBox = preload("res://Utilities/Dialogue Box.tscn")
 onready var dialog = null
 
 func _ready():
 	$AnimationPlayer.play("Story")
 	TrainerName = Global.TrainerName
-	
-	#print($Room.to_global($Room/Scientist2.position))
 	pass
 
 #func _process(delta):

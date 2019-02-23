@@ -3,7 +3,7 @@ extends Node
 var lastAnimationPos = 0.0
 var lastAnimation = null
 
-onready var dialogBox = preload("res://Utilities/Dialogue Box.gd")
+onready var dialogBox = preload("res://Utilities/Dialogue Box.tscn")
 onready var dialog = null
 
 

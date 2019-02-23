@@ -17,7 +17,7 @@ func Start():
 	if Global.isMobile == true:
 		Keyboard = preload("res://Utilities/MobileKeyboard.tscn")
 	else:
-		Keyboard = preload("res://Utilities/DesktopKeyboard.gd")
+		Keyboard = preload("res://Utilities/DesktopKeyboard.tscn")
 	keyboard = Keyboard.instance()
 	$ConfirmationBox.visible = false
 	$Dialoge.visible = false
