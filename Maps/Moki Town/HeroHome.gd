@@ -3,9 +3,9 @@ extends Node
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
-onready var dialogBox = preload("res://Dialogue Box.tscn")
+onready var dialogBox = preload("res://Utilities/Dialogue Box.tscn")
 onready var dialog = null
-onready var Player = preload("res://Player.tscn")
+onready var Player = preload("res://Utilities/Player.tscn")
 onready var player = null
 var isInteracting = false
 var canInteract = true

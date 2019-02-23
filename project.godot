@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Pokémon Uranium"
-run/main_scene="res://IntroScenes/Intro.tscn"
+run/main_scene="res://Maps/Moki Town/HeroHome.tscn"
 config/icon="res://PermittedAssets/icon.png"
 
 [autoload]
