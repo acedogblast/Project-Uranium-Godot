@@ -10,12 +10,12 @@ func _ready():
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
-		changeScene("res://Menu.tscn")
+		changeScene("res://IntroScenes/Menu.tscn")
 	pass
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	changeScene("res://Menu.tscn")
+	changeScene("rres://IntroScenes/Menu.tscn")
 	
 	pass
 func changeScene(scene):

@@ -11,6 +11,8 @@ var isInteracting = false
 var canInteract = true
 
 func _ready():
+	print(str(self.name))
+	
 	$BlackBG.visible = true
 	player = Player.instance()
 	add_child(player)
@@ -41,8 +43,7 @@ func Floor2TVDialoge():
 func consoleDialoge():
 	var text = [
 	"It's a Nintendo Wii U.",
-	"But I hear they're coming out with a new",
-	"system soon."
+	"But the new Nintendo Switch is better."
 	]
 	newdialog(text,false)
 	pass
@@ -59,6 +60,11 @@ func newdialog(var text, var forceArrow):
 	dialog.loadText(text, forceArrow)
 	$DialogeBoxLayer.add_child(dialog)
 	pass
+func newRichDialog(var text, var forceArrow):
+	dialog = dialogBox.instance()
+	dialog.loadText(text, forceArrow)
+	$DialogeBoxLayer.add_child(dialog)
+	pass
 func dialogEnd():
 	isInteracting = false
 	$InteractTimer.start()
@@ -67,8 +73,6 @@ func dialogEnd():
 func _on_InteractTimer_timeout():
 	canInteract = true
 	pass # replace with function body
-
-
 func _on_DownStairs_body_entered(body):
 	print("Going downstairs")
 	pass # replace with function body

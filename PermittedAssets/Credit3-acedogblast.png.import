@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Credit3-acedogblast.png-42f71063721b88737083871ca06c709b.stex"
+path="res://.import/Credit3-acedogblast.png-1c9440da005b8f0cacb9efbe2fba0fe9.stex"
 
 [deps]
 
-source_file="res://Credit3-acedogblast.png"
-dest_files=[ "res://.import/Credit3-acedogblast.png-42f71063721b88737083871ca06c709b.stex" ]
+source_file="res://PermittedAssets/Credit3-acedogblast.png"
+dest_files=[ "res://.import/Credit3-acedogblast.png-1c9440da005b8f0cacb9efbe2fba0fe9.stex" ]
 
 [params]
 

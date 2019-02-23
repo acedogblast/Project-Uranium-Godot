@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=2]
 
-[ext_resource path="res://Intro.gd" type="Script" id=1]
+[ext_resource path="res://IntroScenes/Intro.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGM/PU-Title.ogg" type="AudioStream" id=2]
 [ext_resource path="res://Fonts/pkmndp.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Graphics/Titles/Intro/Fundo4.png" type="Texture" id=4]
@@ -10,10 +10,9 @@
 [ext_resource path="res://Graphics/Titles/Intro/Fundo2.png" type="Texture" id=8]
 [ext_resource path="res://Graphics/Titles/Intro/Fundo1.png" type="Texture" id=9]
 [ext_resource path="res://Graphics/Titles/Intro/Hero.png" type="Texture" id=10]
-[ext_resource path="res://AnimationPlayer.gd" type="Script" id=11]
-[ext_resource path="res://Graphics/Titles/Intro/credit1.png" type="Texture" id=12]
-[ext_resource path="res://Graphics/Titles/Intro/credit2.png" type="Texture" id=13]
-[ext_resource path="res://Credit3-acedogblast.png" type="Texture" id=14]
+[ext_resource path="res://Graphics/Titles/Intro/credit1.png" type="Texture" id=11]
+[ext_resource path="res://Graphics/Titles/Intro/credit2.png" type="Texture" id=12]
+[ext_resource path="res://PermittedAssets/Credit3-acedogblast.png" type="Texture" id=13]
 
 [sub_resource type="Gradient" id=1]
 
@@ -338,7 +337,25 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5 ]
 }
 
-[node name="RootNode" type="Node" index="0"]
+[sub_resource type="GDScript" id=6]
+
+script/source = "extends AnimationPlayer
+
+# class member variables go here, for example:
+# var a = 2
+# var b = \"textvar\"
+
+func _ready():
+	self.play(\"Running\")
+	pass
+
+#func _process(delta):
+#	# Called every frame. Delta is time since last frame.
+#	# Update game logic here.
+#	pass
+"
+
+[node name="RootNode" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -400,7 +417,7 @@ _sections_unfolded = [ "custom_colors" ]
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
 
 root_node = NodePath("..")
-autoplay = ""
+autoplay = "IntroAnimation"
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
@@ -593,7 +610,7 @@ playback_default_blend_time = 0.0
 playback_speed = 1.5
 anims/Running = SubResource( 5 )
 blend_times = [  ]
-script = ExtResource( 11 )
+script = SubResource( 6 )
 _sections_unfolded = [ "Playback Options" ]
 
 [node name="Credit1" type="TextureRect" parent="." index="13"]
@@ -612,7 +629,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 12 )
+texture = ExtResource( 11 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect", "Visibility" ]
 
@@ -633,7 +650,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 13 )
+texture = ExtResource( 12 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect", "Visibility" ]
 
@@ -653,7 +670,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 14 )
+texture = ExtResource( 13 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect", "Visibility" ]
 

@@ -11,21 +11,24 @@ func _ready():
 	$ViewportContainer/GameViewport.set_size_override(true, Vector2(512,384))
 	
 	resize()
-	game = load("res://Intro.tscn")
+	game = load("res://IntroScenes/Intro.tscn")
+	#game = load("res://Maps/Moki Town/HeroHome.tscn") 
+	
+	
 	gameInstance = game.instance()
 	$ViewportContainer/GameViewport.add_child(gameInstance)
 	pass
 func resize():
 	deviceResolution = OS.get_real_window_size()
-	print(deviceResolution)
+	#print(deviceResolution)
 	
 	var horizontalSize = int(round(deviceResolution.y * 1.333))
 	$ViewportContainer.rect_position = Vector2( (deviceResolution.x - horizontalSize) / 2, 0)
 	$ViewportContainer.rect_size = Vector2(horizontalSize, deviceResolution.y)
 	
-	print(horizontalSize)
-	print($ViewportContainer.rect_size)
-	print($ViewportContainer.rect_position)
+	#print(horizontalSize)
+	#print($ViewportContainer.rect_size)
+	#print($ViewportContainer.rect_position)
 	
 	var controlScale = deviceResolution.y / 3000
 	$D_Pad.position = Vector2(0, int(round(deviceResolution.y / 2)))

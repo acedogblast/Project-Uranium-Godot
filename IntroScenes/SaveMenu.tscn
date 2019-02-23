@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://SaveMenu.gd" type="Script" id=1]
+[ext_resource path="res://IntroScenes/SaveMenu.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGS/Choose.ogg" type="AudioStream" id=2]
 [ext_resource path="res://Graphics/Pictures/loadbg.png" type="Texture" id=3]
 [ext_resource path="res://Graphics/Pictures/loadPanels.png" type="Texture" id=4]
 [ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=5]
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=1]
 
 flags = 0
 atlas = ExtResource( 4 )
@@ -22,7 +22,7 @@ use_filter = false
 font_data = ExtResource( 5 )
 _sections_unfolded = [ "Settings" ]
 
-[sub_resource type="AtlasTexture" id=1]
+[sub_resource type="AtlasTexture" id=3]
 
 flags = 0
 atlas = ExtResource( 4 )
@@ -30,7 +30,7 @@ region = Rect2( 16, 444, 384, 46 )
 margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 
 size = 26
 use_mipmaps = false
@@ -38,7 +38,7 @@ use_filter = false
 font_data = ExtResource( 5 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Node" type="Node"]
+[node name="Node" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -87,7 +87,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = SubResource( 4 )
+texture = SubResource( 1 )
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Panels/NewGame" index="0"]
@@ -128,7 +128,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = SubResource( 1 )
+texture = SubResource( 3 )
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="Panels/Exit" index="0"]
@@ -147,7 +147,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Exit"
 percent_visible = 1.0
 lines_skipped = 0

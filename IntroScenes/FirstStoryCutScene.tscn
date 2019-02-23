@@ -1,6 +1,6 @@
 [gd_scene load_steps=37 format=2]
 
-[ext_resource path="res://FirstStoryCutScene.gd" type="Script" id=1]
+[ext_resource path="res://IntroScenes/FirstStoryCutScene.gd" type="Script" id=1]
 [ext_resource path="res://TileMapsSource/NuclearPlantInside.tres" type="TileSet" id=2]
 [ext_resource path="res://Graphics/Tilesets/PU-NuclearPlantInside.png" type="Texture" id=3]
 [ext_resource path="res://Graphics/Characters/HGSS_025.png" type="Texture" id=4]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Graphics/Characters/PU-Cam.png" type="Texture" id=6]
 [ext_resource path="res://Graphics/Characters/KELLYN.png" type="Texture" id=7]
 [ext_resource path="res://Graphics/Characters/PU-Lucille.png" type="Texture" id=8]
+
 
 [sub_resource type="Animation" id=1]
 

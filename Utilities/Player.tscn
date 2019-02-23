@@ -1,8 +1,9 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Utilities/Player.gd" type="Script" id=1]
 [ext_resource path="res://Audio/SE/bump.WAV" type="AudioStream" id=2]
 [ext_resource path="res://Graphics/Characters/PU-Pluto.png" type="Texture" id=3]
+
 
 [sub_resource type="Animation" id=1]
 
@@ -85,7 +86,7 @@ tracks/0/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 5

@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=2]
 
-[ext_resource path="res://Menu.gd" type="Script" id=1]
+[ext_resource path="res://IntroScenes/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGM/PU-TitleScreen.ogg" type="AudioStream" id=2]
 [ext_resource path="res://Graphics/Titles/Pic_1.png" type="Texture" id=3]
 [ext_resource path="res://Graphics/Titles/custom_pokelogo.png" type="Texture" id=4]
@@ -366,7 +366,7 @@ tracks/27/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=2]
 
 resource_name = "NextScreenFadeOut"
 length = 1.5
@@ -402,9 +402,8 @@ tracks/1/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
-resource_name = "MenuStart"
 length = 8.0
 loop = false
 step = 0.1
@@ -675,9 +674,8 @@ tracks/21/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource_name = "MoveTiles"
 length = 10.5
 loop = true
 step = 0.1
@@ -694,9 +692,8 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( -488, 0 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource_name = "Glowing"
 length = 6.0
 loop = true
 step = 0.1
@@ -761,9 +758,8 @@ tracks/4/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=6]
 
-resource_name = "MenuStart"
 length = 8.0
 loop = false
 step = 0.1
@@ -1034,9 +1030,8 @@ tracks/21/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=7]
 
-resource_name = "MoveTiles"
 length = 11.0
 loop = true
 step = 0.1
@@ -1074,7 +1069,7 @@ playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/MenuStart = SubResource( 1 )
-anims/NextScreenFadeOut = SubResource( 7 )
+anims/NextScreenFadeOut = SubResource( 2 )
 blend_times = [  ]
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="." index="2"]
@@ -1084,8 +1079,8 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/MenuStart = SubResource( 2 )
-anims/MoveTiles = SubResource( 3 )
+anims/MenuStart = SubResource( 3 )
+anims/MoveTiles = SubResource( 4 )
 blend_times = [  ]
 
 [node name="AnimationPlayer3" type="AnimationPlayer" parent="." index="3"]
@@ -1095,9 +1090,9 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/Glowing = SubResource( 4 )
-anims/MenuStart = SubResource( 5 )
-anims/MoveTiles = SubResource( 6 )
+anims/Glowing = SubResource( 5 )
+anims/MenuStart = SubResource( 6 )
+anims/MoveTiles = SubResource( 7 )
 blend_times = [  ]
 
 [node name="BlackBG" type="ColorRect" parent="." index="4"]

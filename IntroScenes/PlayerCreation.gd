@@ -3,7 +3,7 @@ extends Node
 var lastAnimationPos = 0.0
 var lastAnimation = null
 
-onready var dialogBox = preload("res://Dialogue Box.tscn")
+onready var dialogBox = preload("res://Utilities/Dialogue Box.gd")
 onready var dialog = null
 
 
@@ -175,7 +175,7 @@ func Final():
 	pass
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	changeScene("res://FirstStoryCutScene.tscn")
+	changeScene("res://IntroScenes/FirstStoryCutScene.tscn")
 	pass
 func changeScene(scene):
 	if Global.isMobile:

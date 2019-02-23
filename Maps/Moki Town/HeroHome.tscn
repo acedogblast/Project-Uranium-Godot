@@ -5,11 +5,6 @@
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=3]
 [ext_resource path="res://Maps/Moki Town/DialogeBoxLayer.gd" type="Script" id=4]
 
-[sub_resource type="RectangleShape2D" id=3]
-
-custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
-
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
@@ -18,9 +13,14 @@ extents = Vector2( 16, 16 )
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
-[node name="Node" type="Node" index="0"]
+[node name="Map" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -137,7 +137,7 @@ _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1/Upstairs" index="0"]
 
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Floor2" type="Node2D" parent="." index="3"]
@@ -243,7 +243,7 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 327689, 37, 0 )
+tile_data = PoolIntArray( 327689, 37, 0, 524334, 37, 0 )
 _sections_unfolded = [ "Cell" ]
 
 [node name="Console" type="StaticBody2D" parent="Floor2" index="5"]
@@ -260,7 +260,7 @@ _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Console" index="0"]
 
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="TV" type="StaticBody2D" parent="Floor2" index="6"]
 
@@ -276,7 +276,7 @@ _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/TV" index="0"]
 
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="Self" type="StaticBody2D" parent="Floor2" index="7"]
 
@@ -292,7 +292,7 @@ _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Self" index="0"]
 
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="DownStairs" type="Area2D" parent="Floor2" index="8"]
 
@@ -310,7 +310,7 @@ _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/DownStairs" index="0"]
 
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="DialogeBoxLayer" type="CanvasLayer" parent="." index="4"]

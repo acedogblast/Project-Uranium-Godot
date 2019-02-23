@@ -1,10 +1,11 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture" id=1]
-[ext_resource path="res://Dialogue Box.gd" type="Script" id=2]
+[ext_resource path="res://Utilities/Dialogue Box.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Graphics/Pictures/pause.png" type="Texture" id=4]
 [ext_resource path="res://Audio/BGS/Choose.ogg" type="AudioStream" id=5]
+
 
 [sub_resource type="Animation" id=1]
 
@@ -81,7 +82,7 @@ size = 26
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 3 )
-_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+_sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="Animation" id=3]
 
@@ -155,7 +156,7 @@ size = 26
 use_mipmaps = false
 use_filter = false
 font_data = ExtResource( 3 )
-_sections_unfolded = [ "Font" ]
+_sections_unfolded = [ "Resource" ]
 
 [sub_resource type="Animation" id=6]
 
@@ -208,7 +209,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 0 ]
 }
 
-[node name="Dialogue Box" type="NinePatchRect" index="0"]
+[node name="Dialogue Box" type="NinePatchRect"]
 
 anchor_left = 0.0
 anchor_top = 1.0
@@ -242,7 +243,7 @@ playback_speed = 1.0
 "anims/Slide Text" = SubResource( 1 )
 blend_times = [  ]
 
-[node name="Text1" type="Label" parent="." index="1"]
+[node name="Text1" type="RichTextLabel" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -253,19 +254,26 @@ margin_top = 15.0
 margin_right = 462.0
 margin_bottom = 50.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
+rect_clip_content = true
+mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
-text = "Sample text"
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Sample text."
+visible_characters = -1
 percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Rect", "Visibility" ]
+meta_underlined = false
+tab_size = 4
+text = "Sample text."
+scroll_active = false
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "Visibility", "custom_fonts" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Text1" index="0"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Text1" index="1"]
 
 root_node = NodePath("..")
 autoplay = ""
@@ -276,7 +284,7 @@ anims/MultiText = SubResource( 3 )
 anims/SingleText = SubResource( 4 )
 blend_times = [  ]
 
-[node name="Text2" type="Label" parent="." index="2"]
+[node name="Text2" type="RichTextLabel" parent="." index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -287,19 +295,26 @@ margin_top = 50.0
 margin_right = 462.0
 margin_bottom = 85.0
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
+rect_clip_content = true
+mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
-size_flags_vertical = 4
-custom_fonts/font = SubResource( 5 )
-text = "Sample text"
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "Sample text"
+visible_characters = -1
 percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "Hint", "Rect", "custom_fonts" ]
+meta_underlined = false
+tab_size = 4
+text = "Sample text"
+scroll_active = false
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "Hint" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Text2" index="0"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Text2" index="1"]
 
 root_node = NodePath("..")
 autoplay = ""

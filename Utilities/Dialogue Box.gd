@@ -14,22 +14,29 @@ func loadText(textArray, forceArrowShow):
 	textLines = textArray.size()
 	forceArrow = forceArrowShow
 	pass
+func loadRichText(textArray, forceArrowShow):
+	text = textArray
+	textLines = textArray.size()
+	forceArrow = forceArrowShow
+	pass
 
 func _ready():
+	$Text1.bbcode_enabled = true
+	$Text2.bbcode_enabled = true
 	$AudioStreamPlayer.play()
-	$Text1.text = ""
-	$Text2.text = ""
+	$Text1.bbcode_text = ""
+	$Text2.bbcode_text = ""
 	$Text1.percent_visible = 0
 	$Text2.percent_visible = 0
 	$PauseArrow.hide()
 	#loadSingleExample()
 	#loadMultiExample()
 	if textLines <= 1:
-		$Text1.text = text[0]
+		$Text1.bbcode_text = text[0]
 		$Text1/AnimationPlayer.play("SingleText")
 	else:
-		$Text1.text = text[0]
-		$Text2.text = text[1]
+		$Text1.bbcode_text = text[0]
+		$Text2.bbcode_text = text[1]
 		$Text1/AnimationPlayer.play("MultiText")
 	pass
 func _process(delta):
@@ -39,7 +46,6 @@ func _process(delta):
 			if isFinished:
 				get_parent().dialogEnd()
 		else:
-			
 			if isFinished:
 				get_parent().dialogEnd()
 				#self.queue_free()
@@ -57,14 +63,14 @@ func slideText():
 		#self.queue_free()
 	pass
 func swapText():
-	var tempText = $Text2.text
-	$Text1.text = ""
-	$Text2.text = ""
+	var tempText = $Text2.bbcode_text
+	$Text1.bbcode_text = ""
+	$Text2.bbcode_text = ""
 	$Text1.rect_position = Vector2(17,15)
 	$Text2.rect_position = Vector2(17,50)
-	$Text1.text = tempText
+	$Text1.bbcode_text = tempText
 	$Text2.percent_visible = 0
-	$Text2.text = text[currentLine + 1]
+	$Text2.bbcode_text = text[currentLine + 1]
 	$Text2/AnimationPlayer.play("Text")
 	pass
 func loadSingleExample():

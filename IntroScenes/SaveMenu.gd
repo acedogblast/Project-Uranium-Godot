@@ -23,7 +23,7 @@ func _process(delta):
 	pass
 	
 func NewGame():
-	changeScene("res://PlayerCreation.tscn")
+	changeScene("res://IntroScenes/PlayerCreation.tscn")
 	pass
 	
 func updateBoxes():

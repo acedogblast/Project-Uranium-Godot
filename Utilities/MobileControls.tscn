@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://MobileControls.gd" type="Script" id=1]
-[ext_resource path="res://GameViewport.gd" type="Script" id=2]
+[ext_resource path="res://Utilities/MobileControls.gd" type="Script" id=1]
+[ext_resource path="res://Utilities/GameViewport.gd" type="Script" id=2]
 [ext_resource path="res://PermittedAssets/Dpad.svg" type="Texture" id=3]
 [ext_resource path="res://PermittedAssets/CircleZ.png" type="Texture" id=4]
 [ext_resource path="res://PermittedAssets/CircleX.png" type="Texture" id=5]
@@ -33,7 +33,7 @@ extents = Vector2( 250, 250 )
 custom_solver_bias = 0.0
 extents = Vector2( 250, 250 )
 
-[node name="Node" type="Node"]
+[node name="MobileControls" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -74,7 +74,7 @@ stretch_shrink = 1
 [node name="GameViewport" type="Viewport" parent="ViewportContainer" index="0"]
 
 arvr = false
-size = Vector2( 0, 0 )
+size = Vector2( 40, 40 )
 own_world = false
 world = null
 transparent_bg = false

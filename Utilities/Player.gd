@@ -128,19 +128,20 @@ func Update(): #Gets called every frame
 func interact():
 	if $InteractRayDown.is_colliding() and direction == DOWN:
 		var collider = $InteractRayDown.get_collider()
-		collider.get_tree().get_root().get_node("Node").interaction(collider)
+		getMapInteration(collider)
 	elif $InteractRayLeft.is_colliding() and direction == LEFT:
 		var collider = $InteractRayLeft.get_collider()
-		collider.get_tree().get_root().get_node("Node").interaction(collider)
+		getMapInteration(collider)
 	elif $InteractRayRight.is_colliding() and direction == RIGHT:
 		var collider = $InteractRayRight.get_collider()
-		collider.get_tree().get_root().get_node("Node").interaction(collider)
+		getMapInteration(collider)
 	elif $InteractRayUp.is_colliding() and direction == UP:
 		var collider = $InteractRayUp.get_collider()
-		collider.get_tree().get_root().get_node("Node").interaction(collider)
+		getMapInteration(collider)
 	pass
-	
-	
+func getMapInteration(collider):
+	get_parent().interaction(collider)
+	pass
 func Move():
 	#print($AnimationPlayer.current_animation)
 	isMoving = true

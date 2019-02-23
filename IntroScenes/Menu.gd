@@ -27,7 +27,7 @@ func Cry():
 	$Fader3/AudioStreamPlayer.play()
 	pass	
 func SaveMenu():
-	changeScene("res://SaveMenu.tscn")
+	changeScene("res://IntroScenes/SaveMenu.tscn")
 	pass
 func changeScene(scene):
 	if Global.isMobile:

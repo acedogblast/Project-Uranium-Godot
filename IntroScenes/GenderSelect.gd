@@ -9,10 +9,18 @@ var confirmed = false
 var confirmationSelect = 0 # 0 is Yes, 1 in No
 var selectStage = 0 # 0 is Gender, 1 is Confirmation
 
+var Keyboard = null
+var keyboard = null
+
+
 func Start():
+	if Global.isMobile == true:
+		Keyboard = preload("res://Utilities/MobileKeyboard.tscn")
+	else:
+		Keyboard = preload("res://Utilities/DesktopKeyboard.gd")
+	keyboard = Keyboard.instance()
 	$ConfirmationBox.visible = false
 	$Dialoge.visible = false
-	$NameBG.visible = false
 	$GenderColor/AnimationPlayerSlide.play("ColorSlide")
 	pass
 func DoneFade():
@@ -73,13 +81,14 @@ func _process(delta):
 			pass
 		pass
 	elif Input.is_action_just_pressed("ui_accept") and selectStage == 2:
+		# Instance new Keyboards
+		add_child(keyboard)
 		if selection == 0:
-			$NameBG/Hero.texture = $Boy.texture
+			keyboard.setPicture($Boy.texture)
 		elif selection == 1:
-			$NameBG/Hero.texture = $Neutral.texture
+			keyboard.setPicture($Neutral.texture)
 		elif selection == 2:
-			$NameBG/Hero.texture = $Girl.texture
-		$NameBG.visible = true
+			keyboard.setPicture($Girl.texture)
 		selectStage = 3
 		pass
 		
@@ -129,14 +138,24 @@ func Resume():
 	#print("Resumed")
 	pass
 
-func _on_LineEdit_text_entered(new_text):
-	Global.TrainerName = new_text
+func NameResult(name):
+	Global.TrainerName = name
 	Global.TrainerGender = selection
-	#Global.TrainerImage = $NameBG/Hero.texture
 	$GenderColor/AnimationPlayerSlide.stop(true)
-	$NameBG.visible = false
+	keyboard.queue_free()
 	self.visible = false
 	#print(Global.TrainerName)
 	#print(Global.TrainerGender)
 	get_parent().Resume()
 	pass
+#func _on_LineEdit_text_entered(new_text):
+#	Global.TrainerName = new_text
+#	Global.TrainerGender = selection
+#	#Global.TrainerImage = $NameBG/Hero.texture
+#	$GenderColor/AnimationPlayerSlide.stop(true)
+#	$NameBG.visible = false
+#	self.visible = false
+#	#print(Global.TrainerName)
+#	#print(Global.TrainerGender)
+#	get_parent().Resume()
+#	pass

@@ -22,7 +22,7 @@ texture_size = 2
 
 [resource]
 
-background_mode = 2
+background_mode = 1
 background_sky = SubResource( 1 )
 background_sky_custom_fov = 0.0
 background_color = Color( 0, 0, 0, 1 )
@@ -98,4 +98,5 @@ adjustment_enabled = false
 adjustment_brightness = 1.0
 adjustment_contrast = 1.0
 adjustment_saturation = 1.0
+_sections_unfolded = [ "Background" ]
 
