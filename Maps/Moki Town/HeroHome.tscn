@@ -6,331 +6,129 @@
 [ext_resource path="res://Maps/Moki Town/DialogeBoxLayer.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=2]
-
-custom_solver_bias = 0.0
 extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=3]
-
-custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
-[node name="Map" type="Node" index="0"]
-
+[node name="Map" type="Node"]
 script = ExtResource( 1 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="0"]
-
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
-volume_db = 0.0
-pitch_scale = 1.0
 autoplay = true
-mix_target = 0
-bus = "Master"
 
-[node name="BlackBG" type="ColorRect" parent="." index="1"]
-
+[node name="BlackBG" type="ColorRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -2500.0
 margin_top = -2500.0
 margin_right = 2500.0
 margin_bottom = 2500.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 color = Color( 0, 0, 0, 1 )
-_sections_unfolded = [ "Rect" ]
 
-[node name="Floor1" type="Node2D" parent="." index="2"]
-
+[node name="Floor1" type="Node2D" parent="."]
 position = Vector2( 1040, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="TileMap1" type="TileMap" parent="Floor1" index="0"]
-
-mode = 0
+[node name="TileMap1" type="TileMap" parent="Floor1"]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( -6, 35, 0, -5, 35, 0, -4, 35, 0, -3, 35, 0, -2, 35, 0, -65536, 35, 0, -65535, 35, 0, -65534, 35, 0, -65533, 35, 0, -65532, 35, 0, -65531, 35, 0, -65530, 35, 0, -65528, 35, 0, -65527, 35, 0, -65526, 35, 0, -65525, 35, 0, -65524, 35, 0, -65523, 35, 0, -65522, 35, 0, -65521, 35, 0, 65530, 35, 0, 65531, 19, 0, 65532, 20, 0, 65533, 21, 0, 65534, 35, 0, 0, 35, 0, 1, 19, 0, 2, 20, 0, 3, 20, 0, 4, 20, 0, 5, 21, 0, 6, 35, 0, 8, 35, 0, 9, 19, 0, 10, 20, 0, 11, 20, 0, 12, 20, 0, 13, 20, 0, 14, 21, 0, 15, 35, 0, 131066, 35, 0, 131070, 35, 0, 65536, 35, 0, 65542, 35, 0, 65544, 35, 0, 65551, 35, 0, 196602, 35, 0, 196603, 1, 0, 196604, 1, 0, 196605, 1, 0, 196606, 35, 0, 131072, 35, 0, 131073, 1, 0, 131074, 1, 0, 131075, 1, 0, 131076, 1, 0, 131077, 1, 0, 131078, 35, 0, 131080, 35, 0, 131081, 39, 0, 131082, 39, 0, 131083, 39, 0, 131084, 39, 0, 131085, 39, 0, 131086, 39, 0, 131087, 35, 0, 262138, 35, 0, 262139, 1, 0, 262140, 0, 0, 262141, 0, 0, 262142, 19, 0, 262143, 20, 0, 196608, 21, 0, 196609, 1, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 35, 0, 196616, 35, 0, 196617, 39, 0, 196618, 38, 0, 196619, 38, 0, 196620, 38, 0, 196621, 38, 0, 196622, 38, 0, 196623, 35, 0, 327674, 35, 0, 327675, 1, 0, 327676, 0, 0, 327677, 0, 0, 262145, 1, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 35, 0, 262152, 35, 0, 262153, 39, 0, 262154, 38, 0, 262155, 38, 0, 262156, 38, 0, 262157, 38, 0, 262158, 38, 0, 262159, 35, 0, 393210, 35, 0, 393211, 1, 0, 393212, 0, 0, 393213, 0, 0, 393214, 0, 0, 393215, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 35, 0, 327687, 35, 0, 327688, 35, 0, 327689, 39, 0, 327690, 38, 0, 327691, 38, 0, 327692, 38, 0, 327693, 38, 0, 327694, 38, 0, 327695, 35, 0, 458746, 35, 0, 458747, 1, 0, 458748, 0, 0, 458749, 0, 0, 458750, 0, 0, 458751, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 19, 0, 393223, 20, 0, 393224, 21, 0, 393225, 39, 0, 393226, 38, 0, 393227, 38, 0, 393228, 38, 0, 393229, 38, 0, 393230, 38, 0, 393231, 35, 0, 524282, 35, 0, 524283, 1, 0, 524284, 0, 0, 524285, 0, 0, 524286, 0, 0, 524287, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458761, 39, 0, 458762, 38, 0, 458763, 38, 0, 458764, 38, 0, 458765, 38, 0, 458766, 38, 0, 458767, 35, 0, 589818, 35, 0, 589819, 1, 0, 589820, 0, 0, 589821, 0, 0, 589822, 0, 0, 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 38, 0, 524298, 38, 0, 524299, 38, 0, 524300, 38, 0, 524301, 38, 0, 524302, 38, 0, 524303, 35, 0, 655354, 35, 0, 655355, 1, 0, 655356, 0, 0, 655357, 0, 0, 655358, 0, 0, 655359, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 38, 0, 589834, 38, 0, 589835, 38, 0, 589836, 38, 0, 589837, 38, 0, 589838, 38, 0, 589839, 35, 0, 720890, 35, 0, 720891, 35, 0, 720892, 35, 0, 720893, 35, 0, 720894, 35, 0, 720895, 35, 0, 655360, 35, 0, 655361, 35, 0, 655362, 35, 0, 655363, 35, 0, 655364, 35, 0, 655365, 35, 0, 655366, 35, 0, 655367, 35, 0, 655368, 35, 0, 655369, 35, 0, 655370, 35, 0, 655371, 35, 0, 655372, 35, 0, 655373, 35, 0, 655374, 35, 0, 655375, 35, 0 )
-_sections_unfolded = [ "Cell" ]
 
-[node name="TileMap2" type="TileMap" parent="Floor1" index="1"]
-
-mode = 0
+[node name="TileMap2" type="TileMap" parent="Floor1"]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 4, 28, 0, 131067, 33, 0, 131069, 32, 0, 65537, 25, 0, 65538, 26, 0, 65545, 40, 0, 65549, 41, 0, 65550, 42, 0, 262142, 23, 0, 196608, 31, 0, 458747, 3, 0, 458748, 4, 0, 458749, 4, 0, 458750, 4, 0, 458751, 5, 0, 524283, 6, 0, 524284, 7, 0, 524285, 7, 0, 524286, 7, 0, 524287, 8, 0, 589819, 6, 0, 589820, 7, 0, 589821, 7, 0, 589822, 7, 0, 589823, 8, 0, 655355, 9, 0, 655356, 10, 0, 655357, 10, 0, 655358, 10, 0, 655359, 11, 0, 589838, 36, 0 )
-_sections_unfolded = [ "Cell" ]
 
-[node name="TileMap3" type="TileMap" parent="Floor1" index="2"]
-
-mode = 0
+[node name="TileMap3" type="TileMap" parent="Floor1"]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 393223, 29, 0, 524283, 17, 0, 524284, 24, 0, 524286, 17, 0, 589819, 17, 0, 589822, 17, 0 )
-_sections_unfolded = [ "Cell" ]
 
-[node name="Upstairs" type="Area2D" parent="Floor1" index="3"]
-
+[node name="Upstairs" type="Area2D" parent="Floor1"]
 position = Vector2( 152, 80 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
 collision_layer = 4
 collision_mask = 4
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1/Upstairs" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1/Upstairs"]
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="Floor2" type="Node2D" parent="." index="3"]
-
+[node name="Floor2" type="Node2D" parent="."]
 position = Vector2( 16, 0 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="TileMap1" type="TileMap" parent="Floor2" index="0"]
-
-mode = 0
+[node name="TileMap1" type="TileMap" parent="Floor2"]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( -1, 35, 0, -65536, 35, 0, -65535, 35, 0, -65534, 35, 0, -65533, 35, 0, -65532, 35, 0, -65531, 35, 0, -65530, 35, 0, -65529, 35, 0, -65528, 35, 0, -65527, 35, 0, -65526, 35, 0, 65535, 35, 0, 0, 19, 0, 1, 20, 0, 2, 20, 0, 3, 20, 0, 4, 20, 0, 5, 20, 0, 6, 20, 0, 7, 20, 0, 8, 20, 0, 9, 21, 0, 10, 35, 0, 131071, 35, 0, 65546, 35, 0, 196607, 35, 0, 131072, 1, 0, 131073, 1, 0, 131074, 1, 0, 131075, 1, 0, 131076, 1, 0, 131077, 1, 0, 131078, 1, 0, 131079, 1, 0, 131080, 1, 0, 131081, 1, 0, 131082, 35, 0, 262143, 35, 0, 196608, 1, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 35, 0, 327679, 35, 0, 262144, 1, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 35, 0, 393215, 35, 0, 327680, 1, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 35, 0, 458751, 35, 0, 393216, 1, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 35, 0, 524287, 35, 0, 458752, 35, 0, 458753, 35, 0, 458754, 35, 0, 458755, 35, 0, 458756, 35, 0, 458757, 35, 0, 458758, 35, 0, 458759, 35, 0, 458760, 35, 0, 458761, 35, 0, 458762, 35, 0 )
 
-[node name="TileMap2" type="TileMap" parent="Floor2" index="1"]
-
-mode = 0
+[node name="TileMap2" type="TileMap" parent="Floor2"]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 131075, 3, 0, 131076, 4, 0, 131077, 4, 0, 131078, 4, 0, 131079, 5, 0, 196611, 6, 0, 196612, 7, 0, 196613, 7, 0, 196614, 7, 0, 196615, 8, 0, 262147, 6, 0, 262148, 7, 0, 262149, 7, 0, 262150, 7, 0, 262151, 8, 0, 327683, 9, 0, 327684, 10, 0, 327685, 10, 0, 327686, 10, 0, 327687, 11, 0 )
 
-[node name="TileMap3" type="TileMap" parent="Floor2" index="2"]
-
-mode = 0
+[node name="TileMap3" type="TileMap" parent="Floor2"]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 262148, 17, 0, 262149, 17, 0, 327680, 17, 0 )
 
-[node name="TileMap4" type="TileMap" parent="Floor2" index="3"]
-
-mode = 0
+[node name="TileMap4" type="TileMap" parent="Floor2"]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 2, 22, 0, 65536, 27, 0, 65540, 13, 0, 65542, 15, 0, 65544, 16, 0, 196608, 2, 0, 196612, 14, 0, 393225, 36, 0 )
 
-[node name="TileMap5" type="TileMap" parent="Floor2" index="4"]
-
-mode = 0
+[node name="TileMap5" type="TileMap" parent="Floor2"]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 327689, 37, 0, 524334, 37, 0 )
-_sections_unfolded = [ "Cell" ]
 
-[node name="Console" type="StaticBody2D" parent="Floor2" index="5"]
-
+[node name="Console" type="StaticBody2D" parent="Floor2"]
 position = Vector2( 144, 112 )
-input_pickable = false
 collision_layer = 2
 collision_mask = 2
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Console" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Console"]
 shape = SubResource( 2 )
 
-[node name="TV" type="StaticBody2D" parent="Floor2" index="6"]
-
+[node name="TV" type="StaticBody2D" parent="Floor2"]
 position = Vector2( 160, 64 )
-input_pickable = false
 collision_layer = 2
 collision_mask = 2
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/TV" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/TV"]
 shape = SubResource( 3 )
 
-[node name="Self" type="StaticBody2D" parent="Floor2" index="7"]
-
+[node name="Self" type="StaticBody2D" parent="Floor2"]
 position = Vector2( 288, 64 )
-input_pickable = false
 collision_layer = 2
 collision_mask = 2
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Self" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Self"]
 shape = SubResource( 3 )
 
-[node name="DownStairs" type="Area2D" parent="Floor2" index="8"]
-
+[node name="DownStairs" type="Area2D" parent="Floor2"]
 position = Vector2( 40, 80 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
 collision_layer = 4
 collision_mask = 4
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Collision", "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/DownStairs" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/DownStairs"]
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="DialogeBoxLayer" type="CanvasLayer" parent="." index="4"]
-
+[node name="DialogeBoxLayer" type="CanvasLayer" parent="."]
 layer = 2
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 script = ExtResource( 4 )
 
-[node name="InteractTimer" type="Timer" parent="." index="5"]
-
-process_mode = 1
+[node name="InteractTimer" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
-autostart = false
-
 [connection signal="body_entered" from="Floor2/DownStairs" to="." method="_on_DownStairs_body_entered"]
-
 [connection signal="timeout" from="InteractTimer" to="." method="_on_InteractTimer_timeout"]
-
-
