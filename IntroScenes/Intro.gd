@@ -15,7 +15,7 @@ func _process(delta):
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	changeScene("rres://IntroScenes/Menu.tscn")
+	changeScene("res://IntroScenes/Menu.tscn")
 	
 	pass
 func changeScene(scene):
