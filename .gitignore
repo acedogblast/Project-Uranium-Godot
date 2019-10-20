@@ -3,6 +3,7 @@ Audio/
 Fonts/
 Graphics/
 .import/
+bin/
 .directory
 *.apk
 *.exe

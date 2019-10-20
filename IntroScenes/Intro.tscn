@@ -15,32 +15,22 @@
 [ext_resource path="res://PermittedAssets/Credit3-acedogblast.png" type="Texture" id=13]
 
 [sub_resource type="Gradient" id=1]
-
 offsets = PoolRealArray( 0 )
 colors = PoolColorArray( 0, 0, 0, 1 )
 
 [sub_resource type="GradientTexture" id=2]
-
-flags = 4
 gradient = SubResource( 1 )
 width = 2
 
 [sub_resource type="DynamicFont" id=3]
-
 size = 26
-use_mipmaps = false
-use_filter = false
 extra_spacing_top = 6
 extra_spacing_bottom = 6
 font_data = ExtResource( 3 )
-_sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="Animation" id=4]
-
 resource_name = "IntroAnimation"
 length = 71.0
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("Label:custom_colors/font_color")
 tracks/0/interp = 1
@@ -319,11 +309,9 @@ tracks/22/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 resource_name = "Running"
 length = 1.2
 loop = true
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
@@ -338,7 +326,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="GDScript" id=6]
-
 script/source = "extends AnimationPlayer
 
 # class member variables go here, for example:
@@ -355,49 +342,21 @@ func _ready():
 #	pass
 "
 
-[node name="RootNode" type="Node" index="0"]
-
+[node name="RootNode" type="Node"]
 script = ExtResource( 1 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="0"]
-
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
-[node name="BlackBG" type="TextureRect" parent="." index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="BlackBG" type="TextureRect" parent="."]
 margin_right = 512.0
 margin_bottom = 384.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = SubResource( 2 )
 expand = true
-stretch_mode = 0
 
-[node name="Label" type="Label" parent="." index="2"]
-
-anchor_left = 0.0
-anchor_top = 0.0
+[node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 4
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "The following is a non profit,
@@ -409,43 +368,22 @@ Gamefreak and Nintendo
 Please support the offical games!"
 align = 1
 valign = 1
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-_sections_unfolded = [ "custom_colors" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
-
-root_node = NodePath("..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "IntroAnimation"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/IntroAnimation = SubResource( 4 )
-blend_times = [  ]
 
-[node name="SkyBG" type="TextureRect" parent="." index="4"]
-
+[node name="SkyBG" type="TextureRect" parent="."]
 visible = false
 anchor_left = 1.0
-anchor_top = 0.0
 anchor_right = 1.0
-anchor_bottom = 0.0
 margin_left = -4090.46
 margin_right = 5.53516
 margin_bottom = 928.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 4 )
 stretch_mode = 2
-_sections_unfolded = [ "Rect" ]
 
-[node name="Sun2" type="TextureRect" parent="." index="5"]
-
+[node name="Sun2" type="TextureRect" parent="."]
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -455,18 +393,9 @@ margin_left = -173.0
 margin_top = -173.0
 margin_right = 173.0
 margin_bottom = 173.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 5 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="Sun1" type="TextureRect" parent="." index="6"]
-
+[node name="Sun1" type="TextureRect" parent="."]
 visible = false
 anchor_left = 0.5
 anchor_top = 0.5
@@ -476,223 +405,79 @@ margin_left = -173.0
 margin_top = -173.0
 margin_right = 173.0
 margin_bottom = 173.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 6 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="SunGlare" type="ColorRect" parent="." index="7"]
-
+[node name="SunGlare" type="ColorRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 512.0
 margin_bottom = 384.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-color = Color( 1, 1, 1, 1 )
-_sections_unfolded = [ "Visibility" ]
 
-[node name="Mountain" type="TextureRect" parent="." index="8"]
-
+[node name="Mountain" type="TextureRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -880.0
 margin_top = 500.0
 margin_right = 194.0
 margin_bottom = 884.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 7 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="Camera2D" type="Camera2D" parent="." index="9"]
-
+[node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 256, 192 )
-anchor_mode = 1
-rotating = false
 current = true
-zoom = Vector2( 1, 1 )
-limit_left = -10000000
-limit_top = -10000000
-limit_right = 10000000
-limit_bottom = 10000000
-limit_smoothed = false
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = false
-smoothing_speed = 5.0
-offset_v = 0.0
-offset_h = 0.0
-drag_margin_left = 0.2
-drag_margin_top = 0.2
-drag_margin_right = 0.2
-drag_margin_bottom = 0.2
-editor_draw_screen = true
-editor_draw_limits = false
-editor_draw_drag_margin = false
-_sections_unfolded = [ "Transform" ]
 
-[node name="Trees1" type="TextureRect" parent="." index="10"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="Trees1" type="TextureRect" parent="."]
 margin_left = -3572.62
 margin_right = 523.378
 margin_bottom = 928.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 2
-_sections_unfolded = [ "Rect" ]
 
-[node name="Grass" type="TextureRect" parent="." index="11"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="Grass" type="TextureRect" parent="."]
 margin_left = -3561.24
 margin_right = 534.756
 margin_bottom = 928.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 9 )
 expand = true
 stretch_mode = 2
-_sections_unfolded = [ "Rect" ]
 
-[node name="Hero" type="Sprite" parent="." index="12"]
-
+[node name="Hero" type="Sprite" parent="."]
 editor/display_folded = true
 position = Vector2( 400, 770 )
 texture = ExtResource( 10 )
 hframes = 6
 frame = 5
-_sections_unfolded = [ "Animation", "Transform", "Z Index" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Hero" index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Hero"]
 playback_speed = 1.5
 anims/Running = SubResource( 5 )
-blend_times = [  ]
 script = SubResource( 6 )
-_sections_unfolded = [ "Playback Options" ]
 
-[node name="Credit1" type="TextureRect" parent="." index="13"]
-
+[node name="Credit1" type="TextureRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -512.0
 margin_top = 500.0
 margin_bottom = 884.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 11 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="Credit2" type="TextureRect" parent="." index="14"]
-
+[node name="Credit2" type="TextureRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -308.0
 margin_top = 500.0
 margin_right = 204.0
 margin_bottom = 884.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 12 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="Credit3" type="TextureRect" parent="." index="15"]
-
+[node name="Credit3" type="TextureRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -512.0
 margin_top = 500.0
 margin_bottom = 884.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 13 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="BlackOut" type="ColorRect" parent="." index="16"]
-
+[node name="BlackOut" type="ColorRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_top = 500.0
 margin_right = 512.0
 margin_bottom = 884.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 color = Color( 0, 0, 0, 0 )
-_sections_unfolded = [ "Visibility" ]
-
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
-
-

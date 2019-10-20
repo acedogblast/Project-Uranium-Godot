@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Maps/Moki Town/HeroHome.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGM/PU-Hero House.ogg" type="AudioStream" id=2]
@@ -13,6 +13,9 @@ extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 16, 16.1965 )
 
 [node name="Map" type="Node"]
 script = ExtResource( 1 )
@@ -117,11 +120,12 @@ shape = SubResource( 3 )
 
 [node name="DownStairs" type="Area2D" parent="Floor2"]
 position = Vector2( 40, 80 )
-collision_layer = 4
-collision_mask = 4
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/DownStairs"]
-shape = SubResource( 1 )
+shape = SubResource( 4 )
 
 [node name="DialogeBoxLayer" type="CanvasLayer" parent="."]
 layer = 2
@@ -130,5 +134,6 @@ script = ExtResource( 4 )
 [node name="InteractTimer" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
+[connection signal="body_entered" from="Floor1/Upstairs" to="." method="_on_Upstairs_body_entered"]
 [connection signal="body_entered" from="Floor2/DownStairs" to="." method="_on_DownStairs_body_entered"]
 [connection signal="timeout" from="InteractTimer" to="." method="_on_InteractTimer_timeout"]

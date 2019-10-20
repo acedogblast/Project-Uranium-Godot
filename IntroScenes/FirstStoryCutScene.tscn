@@ -9,12 +9,9 @@
 [ext_resource path="res://Graphics/Characters/KELLYN.png" type="Texture" id=7]
 [ext_resource path="res://Graphics/Characters/PU-Lucille.png" type="Texture" id=8]
 
-
 [sub_resource type="Animation" id=1]
-
 resource_name = "Story"
 length = 20.0
-loop = false
 step = 0.05
 tracks/0/type = "method"
 tracks/0/path = NodePath(".")
@@ -515,15 +512,10 @@ tracks/26/keys = {
 }
 
 [sub_resource type="AtlasTexture" id=2]
-
-flags = 0
 atlas = ExtResource( 3 )
 region = Rect2( 160, 416, 96, 64 )
-margin = Rect2( 0, 0, 0, 0 )
-filter_clip = false
 
 [sub_resource type="Animation" id=3]
-
 length = 0.4
 loop = true
 step = 0.05
@@ -541,7 +533,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -559,7 +550,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -577,7 +567,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=6]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -595,7 +584,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=7]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -613,15 +601,10 @@ tracks/0/keys = {
 }
 
 [sub_resource type="AtlasTexture" id=8]
-
-flags = 0
 atlas = ExtResource( 5 )
 region = Rect2( 76, 78, 28, 28 )
-margin = Rect2( 0, 0, 0, 0 )
-filter_clip = false
 
 [sub_resource type="Animation" id=9]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -639,7 +622,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=10]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -657,7 +639,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=11]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -675,7 +656,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=12]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -693,7 +673,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=13]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -711,7 +690,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=14]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -729,7 +707,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=15]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -747,7 +724,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=16]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -765,7 +741,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=17]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -783,7 +758,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=18]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -801,7 +775,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=19]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -819,7 +792,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=20]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -837,7 +809,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=21]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -855,7 +826,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=22]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -873,7 +843,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=23]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -891,7 +860,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=24]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -909,7 +877,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=25]
-
 length = 0.5
 loop = true
 step = 0.0
@@ -927,10 +894,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=26]
-
 resource_name = "Explosion"
-length = 1.0
-loop = false
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:visible")
@@ -970,7 +934,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=27]
-
 resource_name = "Flashing"
 length = 2.0
 loop = true
@@ -1013,9 +976,7 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=28]
-
 length = 1.21
-loop = false
 step = 0.0
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:offset")
@@ -1043,333 +1004,136 @@ tracks/1/keys = {
 }
 
 [node name="Node" type="Node"]
-
 script = ExtResource( 1 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Story = SubResource( 1 )
-blend_times = [  ]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="1"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
-stream = null
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." index="2"]
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
 
-stream = null
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="." index="3"]
-
-stream = null
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-[node name="BlackBG" type="ColorRect" parent="." index="4"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="BlackBG" type="ColorRect" parent="."]
 margin_left = -40.0
 margin_right = 552.0
 margin_bottom = 384.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 color = Color( 0, 0, 0, 1 )
-_sections_unfolded = [ "Rect" ]
 
-[node name="Room" type="Node2D" parent="." index="5"]
-
+[node name="Room" type="Node2D" parent="."]
 visible = false
 position = Vector2( 80, 0 )
-_sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="TileMap1" type="TileMap" parent="Room" index="0"]
-
-mode = 0
+[node name="TileMap1" type="TileMap" parent="Room"]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 0, 24, 0, 1, 23, 0, 2, 24, 0, 3, 23, 0, 4, 24, 0, 5, 23, 0, 6, 24, 0, 7, 23, 0, 8, 24, 0, 9, 23, 0, 10, 24, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0 )
-_sections_unfolded = [ "Cell" ]
 
-[node name="TileMap2" type="TileMap" parent="Room" index="1"]
-
-mode = 0
+[node name="TileMap2" type="TileMap" parent="Room"]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 196611, 2, 0, 196617, 17, 0, 262147, 2, 0, 327683, 2, 0, 393219, 2, 0, 393225, 2, 0, 458755, 2, 0, 458761, 2, 0, 524291, 2, 0, 524297, 2, 0, 589827, 2, 0, 589833, 2, 0, 655363, 2, 0, 655369, 2, 0, 720899, 2, 0, 720905, 2, 0 )
-_sections_unfolded = [ "Cell" ]
 
-[node name="TileMap3" type="TileMap" parent="Room" index="2"]
-
-mode = 0
+[node name="TileMap3" type="TileMap" parent="Room"]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 131072, 20, 0, 131073, 21, 0, 131076, 21, 0, 131079, 21, 0, 131082, 22, 0, 327689, 12, 0, 524288, 13, 0, 524289, 13, 0, 524290, 13, 0, 589824, 3, 0, 589825, 4, 0, 589826, 5, 0, 589833, 12, 0, 655360, 9, 0, 655361, 10, 0, 655362, 11, 0, 720896, 13, 0, 720897, 13, 0, 720898, 13, 0, 720900, 15, 0 )
-_sections_unfolded = [ "Cell" ]
 
-[node name="TileMap4" type="TileMap" parent="Room" index="3"]
-
-mode = 0
+[node name="TileMap4" type="TileMap" parent="Room"]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( 65539, 1, 0, 196608, 18, 0, 196609, 16, 0, 589824, 14, 0 )
-_sections_unfolded = [ "Cell" ]
 
-[node name="Screen" type="TextureRect" parent="Room" index="4"]
-
+[node name="Screen" type="TextureRect" parent="Room"]
 editor/display_folded = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 128.0
 margin_top = 128.0
 margin_right = 224.0
 margin_bottom = 192.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = SubResource( 2 )
-stretch_mode = 0
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Screen" index="0"]
-
-root_node = NodePath("..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Screen"]
 autoplay = "Flicker"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/Flicker = SubResource( 3 )
-blend_times = [  ]
 
-[node name="ColorRect" type="ColorRect" parent="Room/Screen" index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="ColorRect" type="ColorRect" parent="Room/Screen"]
 margin_left = 18.0
 margin_top = 6.0
 margin_right = 78.0
 margin_bottom = 36.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 color = Color( 0, 0, 0, 0 )
 
-[node name="Scientist1" type="Sprite" parent="Room" index="5"]
-
+[node name="Scientist1" type="Sprite" parent="Room"]
 editor/display_folded = true
 position = Vector2( 80, 256 )
 texture = ExtResource( 4 )
 vframes = 4
 hframes = 4
-_sections_unfolded = [ "Transform", "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Scientist1" index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Scientist1"]
 anims/WalkAhead = SubResource( 4 )
 anims/WalkForward = SubResource( 5 )
 anims/WalkLeft = SubResource( 6 )
 anims/WalkRight = SubResource( 7 )
-blend_times = [  ]
 
-[node name="AlertEM" type="TextureRect" parent="Room/Scientist1" index="1"]
-
+[node name="AlertEM" type="TextureRect" parent="Room/Scientist1"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -15.0
 margin_top = -60.0
 margin_right = 13.0
 margin_bottom = -32.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = SubResource( 8 )
-stretch_mode = 0
 
-[node name="Scientist2" type="Sprite" parent="Room" index="6"]
-
+[node name="Scientist2" type="Sprite" parent="Room"]
 editor/display_folded = true
 position = Vector2( 176, 192 )
 texture = ExtResource( 4 )
 vframes = 4
 hframes = 4
 frame = 12
-_sections_unfolded = [ "Animation", "Transform", "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Scientist2" index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Scientist2"]
 anims/WalkAhead = SubResource( 9 )
 anims/WalkForward = SubResource( 10 )
 anims/WalkLeft = SubResource( 11 )
 anims/WalkRight = SubResource( 12 )
-blend_times = [  ]
 
-[node name="AlertEM" type="TextureRect" parent="Room/Scientist2" index="1"]
-
+[node name="AlertEM" type="TextureRect" parent="Room/Scientist2"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -15.0
 margin_top = -60.0
 margin_right = 13.0
 margin_bottom = -32.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = SubResource( 8 )
-stretch_mode = 0
 
-[node name="Scientist3" type="Sprite" parent="Room" index="7"]
-
+[node name="Scientist3" type="Sprite" parent="Room"]
 editor/display_folded = true
 position = Vector2( 304, 352 )
 texture = ExtResource( 4 )
 vframes = 4
 hframes = 4
 frame = 12
-_sections_unfolded = [ "Animation", "Transform", "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Scientist3" index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Scientist3"]
 anims/WalkAhead = SubResource( 13 )
 anims/WalkForward = SubResource( 14 )
 anims/WalkLeft = SubResource( 15 )
 anims/WalkRight = SubResource( 16 )
-blend_times = [  ]
 
-[node name="AlertEM" type="TextureRect" parent="Room/Scientist3" index="1"]
-
+[node name="AlertEM" type="TextureRect" parent="Room/Scientist3"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -15.0
 margin_top = -60.0
 margin_right = 13.0
 margin_bottom = -32.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = SubResource( 8 )
-stretch_mode = 0
-_sections_unfolded = [ "Visibility" ]
 
-[node name="Cam" type="Sprite" parent="Room" index="8"]
-
+[node name="Cam" type="Sprite" parent="Room"]
 editor/display_folded = true
 visible = false
 position = Vector2( 304, 224 )
@@ -1377,43 +1141,22 @@ texture = ExtResource( 6 )
 vframes = 4
 hframes = 4
 frame = 12
-_sections_unfolded = [ "Animation", "Transform", "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Cam" index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Cam"]
 anims/WalkAhead = SubResource( 17 )
 anims/WalkForward = SubResource( 18 )
 anims/WalkLeft = SubResource( 19 )
 anims/WalkRight = SubResource( 20 )
-blend_times = [  ]
 
-[node name="AlertEM2" type="TextureRect" parent="Room/Cam" index="1"]
-
+[node name="AlertEM2" type="TextureRect" parent="Room/Cam"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -15.0
 margin_top = -60.0
 margin_right = 13.0
 margin_bottom = -32.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = SubResource( 8 )
-stretch_mode = 0
 
-[node name="Kellyn" type="Sprite" parent="." index="6"]
-
+[node name="Kellyn" type="Sprite" parent="."]
 editor/display_folded = true
 visible = false
 modulate = Color( 1, 1, 1, 0.2 )
@@ -1422,20 +1165,12 @@ texture = ExtResource( 7 )
 vframes = 4
 hframes = 4
 region_rect = Rect2( 0, 0, 256, 256 )
-_sections_unfolded = [ "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Kellyn" index="0"]
-
-root_node = NodePath("..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Kellyn"]
 autoplay = "WalkAhead"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/WalkAhead = SubResource( 21 )
-blend_times = [  ]
 
-[node name="Lucille" type="Sprite" parent="." index="7"]
-
+[node name="Lucille" type="Sprite" parent="."]
 editor/display_folded = true
 visible = false
 modulate = Color( 1, 1, 1, 0 )
@@ -1443,163 +1178,56 @@ position = Vector2( 256, 192 )
 texture = ExtResource( 8 )
 vframes = 4
 hframes = 4
-_sections_unfolded = [ "Animation", "Transform", "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Lucille" index="0"]
-
-root_node = NodePath("..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Lucille"]
 autoplay = "WalkAhead"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/WalkAhead = SubResource( 22 )
 anims/WalkForward = SubResource( 23 )
 anims/WalkLeft = SubResource( 24 )
 anims/WalkRight = SubResource( 25 )
-blend_times = [  ]
 
-[node name="AlertEM" type="TextureRect" parent="Lucille" index="1"]
-
+[node name="AlertEM" type="TextureRect" parent="Lucille"]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = -15.0
 margin_top = -60.0
 margin_right = 13.0
 margin_bottom = -32.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = SubResource( 8 )
-stretch_mode = 0
-_sections_unfolded = [ "Visibility" ]
 
-[node name="Fade" type="ColorRect" parent="." index="8"]
-
+[node name="Fade" type="ColorRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 512.0
 margin_bottom = 384.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 color = Color( 0, 0, 0, 1 )
-_sections_unfolded = [ "Visibility" ]
 
-[node name="DarkShade" type="ColorRect" parent="." index="9"]
-
+[node name="DarkShade" type="ColorRect" parent="."]
 visible = false
 modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_left = 80.0
 margin_right = 432.0
 margin_bottom = 384.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 color = Color( 0.0977798, 0.113281, 0.0088501, 0.453059 )
-_sections_unfolded = [ "Rect", "Visibility" ]
 
-[node name="Arrow" type="TextureRect" parent="." index="10"]
-
+[node name="Arrow" type="TextureRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 40.0
 margin_bottom = 40.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 expand = true
-stretch_mode = 0
-_sections_unfolded = [ "Visibility" ]
 
-[node name="RedAlert" type="ColorRect" parent="." index="11"]
-
+[node name="RedAlert" type="ColorRect" parent="."]
 visible = false
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
 margin_right = 512.0
 margin_bottom = 384.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 color = Color( 0, 0, 0, 1 )
-_sections_unfolded = [ "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="RedAlert" index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RedAlert"]
 anims/Explosion = SubResource( 26 )
 anims/Flashing = SubResource( 27 )
-blend_times = [  ]
 
-[node name="Camera2D" type="Camera2D" parent="." index="12"]
-
+[node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 256, 192 )
-anchor_mode = 1
-rotating = false
 current = true
-zoom = Vector2( 1, 1 )
-limit_left = -10000000
-limit_top = -10000000
-limit_right = 10000000
-limit_bottom = 10000000
-limit_smoothed = false
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = false
 smoothing_speed = 1.0
-offset_v = 0.0
-offset_h = 0.0
-drag_margin_left = 0.2
-drag_margin_top = 0.2
-drag_margin_right = 0.2
-drag_margin_bottom = 0.2
-editor_draw_screen = true
-editor_draw_limits = false
-editor_draw_drag_margin = false
-_sections_unfolded = [ "Transform" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera2D" index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera2D"]
 anims/Shake = SubResource( 28 )
-blend_times = [  ]
-
-
