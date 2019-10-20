@@ -1,0 +1,353 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Utilities/MobileControls.gd" type="Script" id=1]
+[ext_resource path="res://Utilities/GameViewport.gd" type="Script" id=2]
+[ext_resource path="res://PermittedAssets/Dpad.svg" type="Texture" id=3]
+[ext_resource path="res://PermittedAssets/CircleZ.png" type="Texture" id=4]
+[ext_resource path="res://PermittedAssets/CircleX.png" type="Texture" id=5]
+[ext_resource path="res://PermittedAssets/CircleC.png" type="Texture" id=6]
+[ext_resource path="res://PermittedAssets/CircleS.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 250, 250 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 250, 250 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 250, 250 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 250, 250 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 250, 250 )
+
+[node name="MobileControls" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 4000.0
+margin_bottom = 4000.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="ViewportContainer" type="ViewportContainer" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+stretch = true
+stretch_shrink = 1
+
+[node name="GameViewport" type="Viewport" parent="ViewportContainer" index="0"]
+
+arvr = false
+size = Vector2( 40, 40 )
+own_world = false
+world = null
+transparent_bg = false
+msaa = 0
+hdr = true
+disable_3d = false
+usage = 2
+debug_draw = 0
+render_target_v_flip = false
+render_target_clear_mode = 0
+render_target_update_mode = 3
+audio_listener_enable_2d = false
+audio_listener_enable_3d = false
+physics_object_picking = false
+gui_disable_input = false
+gui_snap_controls_to_pixels = true
+shadow_atlas_size = 0
+shadow_atlas_quad_0 = 2
+shadow_atlas_quad_1 = 2
+shadow_atlas_quad_2 = 3
+shadow_atlas_quad_3 = 4
+script = ExtResource( 2 )
+
+[node name="D_Pad" type="Node2D" parent="." index="2"]
+
+editor/display_folded = true
+modulate = Color( 1, 1, 1, 0.588235 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="TextureRect" type="TextureRect" parent="D_Pad" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1500.0
+margin_bottom = 1500.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="Up" type="TouchScreenButton" parent="D_Pad" index="1"]
+
+position = Vector2( 750, 250 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 1 )
+shape_centered = true
+shape_visible = false
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Down" type="TouchScreenButton" parent="D_Pad" index="2"]
+
+position = Vector2( 750, 1250 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 1 )
+shape_centered = true
+shape_visible = false
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="Left" type="TouchScreenButton" parent="D_Pad" index="3"]
+
+position = Vector2( 250, 750 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 1 )
+shape_centered = true
+shape_visible = false
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="Right" type="TouchScreenButton" parent="D_Pad" index="4"]
+
+position = Vector2( 1250, 750 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 1 )
+shape_centered = true
+shape_visible = false
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="Buttons" type="Node2D" parent="." index="3"]
+
+modulate = Color( 1, 1, 1, 0.588235 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Z" type="TextureRect" parent="Buttons" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 500.0
+margin_right = 1000.0
+margin_bottom = 500.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Textures" ]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Buttons/Z" index="0"]
+
+position = Vector2( 250, 250 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 2 )
+shape_centered = false
+shape_visible = false
+passby_press = false
+action = ""
+visibility_mode = 0
+_sections_unfolded = [ "Transform" ]
+
+[node name="X" type="TextureRect" parent="Buttons" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 500.0
+margin_top = 1000.0
+margin_right = 1000.0
+margin_bottom = 1500.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Textures" ]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Buttons/X" index="0"]
+
+position = Vector2( 250, 250 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 3 )
+shape_centered = false
+shape_visible = false
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="C" type="TextureRect" parent="Buttons" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 500.0
+margin_right = 500.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Hint", "Textures" ]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Buttons/C" index="0"]
+
+position = Vector2( 250, 250 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 4 )
+shape_centered = false
+shape_visible = false
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="S" type="TextureRect" parent="Buttons" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1000.0
+margin_top = 500.0
+margin_right = 1500.0
+margin_bottom = 1000.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Buttons/S" index="0"]
+
+position = Vector2( 250, 250 )
+normal = null
+pressed = null
+bitmask = null
+shape = SubResource( 5 )
+shape_centered = false
+shape_visible = false
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[connection signal="pressed" from="D_Pad/Up" to="." method="_on_Up_pressed"]
+
+[connection signal="released" from="D_Pad/Up" to="." method="_on_Up_released"]
+
+[connection signal="pressed" from="D_Pad/Down" to="." method="_on_Down_pressed"]
+
+[connection signal="released" from="D_Pad/Down" to="." method="_on_Down_released"]
+
+[connection signal="pressed" from="D_Pad/Left" to="." method="_on_Left_pressed"]
+
+[connection signal="released" from="D_Pad/Left" to="." method="_on_Left_released"]
+
+[connection signal="pressed" from="D_Pad/Right" to="." method="_on_Right_pressed"]
+
+[connection signal="released" from="D_Pad/Right" to="." method="_on_Right_released"]
+
+[connection signal="pressed" from="Buttons/Z/TouchScreenButton" to="." method="_on_Z_button_down"]
+
+[connection signal="released" from="Buttons/Z/TouchScreenButton" to="." method="_on_Z_button_up"]
+
+[connection signal="pressed" from="Buttons/X/TouchScreenButton" to="." method="_on_X_button_down"]
+
+[connection signal="released" from="Buttons/X/TouchScreenButton" to="." method="_on_X_button_up"]
+
+[connection signal="pressed" from="Buttons/C/TouchScreenButton" to="." method="_on_C_button_down"]
+
+[connection signal="released" from="Buttons/C/TouchScreenButton" to="." method="_on_C_button_up"]
+
+[connection signal="pressed" from="Buttons/S/TouchScreenButton" to="." method="_on_S_button_down"]
+
+[connection signal="released" from="Buttons/S/TouchScreenButton" to="." method="_on_S_button_up"]
+
+
