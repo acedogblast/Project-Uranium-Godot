@@ -46,18 +46,19 @@ func _ready():
 	pass
 
 func _process(delta):
-	if Input.is_action_pressed("ui_down") and canMove and !Input.is_action_pressed("z"):
-		direction = DOWN
-		action = WALK
-	elif Input.is_action_pressed("ui_up") and canMove and !Input.is_action_pressed("z"):
-		direction = UP
-		action = WALK
-	elif Input.is_action_pressed("ui_left") and canMove and !Input.is_action_pressed("z"):
-		direction = LEFT
-		action = WALK
-	elif Input.is_action_pressed("ui_right") and canMove and !Input.is_action_pressed("z"):
-		direction = RIGHT
-		action = WALK
+	if !isMoving:
+		if Input.is_action_pressed("ui_down") and canMove and !Input.is_action_pressed("z"):
+			direction = DOWN
+			action = WALK
+		elif Input.is_action_pressed("ui_up") and canMove and !Input.is_action_pressed("z"):
+			direction = UP
+			action = WALK
+		elif Input.is_action_pressed("ui_left") and canMove and !Input.is_action_pressed("z"):
+			direction = LEFT
+			action = WALK
+		elif Input.is_action_pressed("ui_right") and canMove and !Input.is_action_pressed("z"):
+			direction = RIGHT
+			action = WALK
 	else:
 		action = STILL
 	
