@@ -180,5 +180,5 @@ func freePlayer():
 func _on_Timer_timeout():
 	if checkIfBlocked() and action == WALK:
 		$AudioStreamPlayer.play()
-	pass # replace with function body
+		action = STILL
 
