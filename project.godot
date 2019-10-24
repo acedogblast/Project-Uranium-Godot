@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Pokémon Uranium"
-run/main_scene="res://Utilities/Start.tscn"
+run/main_scene="res://IntroScenes/Intro.tscn"
 config/icon="res://PermittedAssets/icon.png"
 
 [autoload]
@@ -27,7 +27,8 @@ Global="*res://Global.gd"
 
 window/size/width=512
 window/size/height=384
-window/size/resizable=false
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 window/stretch/shrink="1"
 window/handheld/emulate_touchscreen=true
 
@@ -126,6 +127,10 @@ toggle_fps={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777253,"unicode":0,"echo":false,"script":null)
  ]
 }
+
+[locale]
+
+translations=PoolStringArray( "res://Dialogue/Generated/en/Cutscenes.po", "res://Dialogue/Generated/en/Objects.po", "res://Dialogue/Generated/en/UI.po" )
 
 [rendering]
 

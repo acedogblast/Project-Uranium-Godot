@@ -12,7 +12,6 @@ var selectStage = 0 # 0 is Gender, 1 is Confirmation
 var Keyboard = null
 var keyboard = null
 
-
 func Start():
 	if Global.isMobile == true:
 		Keyboard = preload("res://Utilities/MobileKeyboard.tscn")
@@ -31,12 +30,12 @@ func ShowDialog():
 	inGenderSelect = true
 	#print("ShowDialog")
 	canSelect = true
-	newdialog("Who are you?")
+	new_dialog(tr("CUTSCENE_PLAYERCREATION_CHOOSE_CHARACTER"))
 	pass
 func Confirmation():
 	#print("Confirmation")
 	canSelect = false
-	newdialog("Are you sure?")
+	new_dialog(tr("CUTSCENE_PLAYERCREATION_CONFIRM_CHARACTER"))
 	pass
 	
 func _process(delta):
@@ -71,7 +70,7 @@ func _process(delta):
 	elif Input.is_action_just_pressed("ui_accept") and selectStage == 1:
 		if confirmationSelect == 0:
 			selectStage = 2
-			newdialog("I'd like to know your name.\nPlease tell me.")
+			new_dialog(tr("CUTSCENE_PLAYERCREATION_CHOOSE_NAME"))
 			pass
 		if confirmationSelect == 1:
 			ShowDialog()
@@ -118,7 +117,7 @@ func ShowSelected():
 		pass
 	$AudioStreamPlayer.play()
 	pass
-func newdialog(text):
+func new_dialog(text):
 	Pause()
 	$Dialoge/Text.text = text
 	$Dialoge.visible = true

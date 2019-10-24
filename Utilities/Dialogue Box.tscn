@@ -8,20 +8,13 @@
 [ext_resource path="res://Utilities/Dialogue Box Arrow.tres" type="Animation" id=6]
 [ext_resource path="res://Audio/BGS/Choose.ogg" type="AudioStream" id=7]
 
-[sub_resource type="DynamicFont" id=2]
-
+[sub_resource type="DynamicFont" id=1]
 size = 26
-use_mipmaps = false
-use_filter = false
 font_data = ExtResource( 4 )
-_sections_unfolded = [ "Font", "Settings" ]
 
-[sub_resource type="Animation" id=3]
-
+[sub_resource type="Animation" id=2]
 resource_name = "MultiText"
 length = 0.5
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:percent_visible")
 tracks/0/interp = 1
@@ -49,12 +42,9 @@ tracks/1/keys = {
 } ]
 }
 
-[sub_resource type="Animation" id=4]
-
+[sub_resource type="Animation" id=3]
 resource_name = "SingleText"
 length = 0.5
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:percent_visible")
 tracks/0/interp = 1
@@ -78,24 +68,17 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "Finished"
+"method": "finished"
 } ]
 }
 
-[sub_resource type="DynamicFont" id=5]
-
+[sub_resource type="DynamicFont" id=4]
 size = 26
-use_mipmaps = false
-use_filter = false
 font_data = ExtResource( 4 )
-_sections_unfolded = [ "Resource" ]
 
-[sub_resource type="Animation" id=6]
-
+[sub_resource type="Animation" id=5]
 resource_name = "Text"
 length = 0.5
-loop = false
-step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:percent_visible")
 tracks/0/interp = 1
@@ -119,13 +102,11 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "SecondLinePrinted"
+"method": "Second_line_printed"
 } ]
 }
 
 [node name="Dialogue Box" type="NinePatchRect"]
-
-anchor_left = 0.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -133,12 +114,6 @@ margin_left = 10.0
 margin_top = -104.0
 margin_right = -10.0
 margin_bottom = -10.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 texture = ExtResource( 1 )
 region_rect = Rect2( 8, 2, 66, 74 )
 patch_margin_left = 14
@@ -146,125 +121,50 @@ patch_margin_top = 14
 patch_margin_right = 16
 patch_margin_bottom = 16
 script = ExtResource( 2 )
-_sections_unfolded = [ "Patch Margin", "Rect" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
-
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Slide Text" = ExtResource( 3 )
-blend_times = [  ]
 
-[node name="Text1" type="RichTextLabel" parent="." index="1"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="Text1" type="RichTextLabel" parent="."]
 margin_left = 17.0
 margin_top = 15.0
 margin_right = 462.0
 margin_bottom = 50.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
 bbcode_text = "Sample text."
-visible_characters = -1
-percent_visible = 1.0
 meta_underlined = false
-tab_size = 4
 text = "Sample text."
 scroll_active = false
-scroll_following = false
-selection_enabled = false
-override_selected_font_color = false
-_sections_unfolded = [ "BBCode", "Rect", "Visibility" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Text1" index="1"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Text1"]
+anims/MultiText = SubResource( 2 )
+anims/SingleText = SubResource( 3 )
 
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
-anims/MultiText = SubResource( 3 )
-anims/SingleText = SubResource( 4 )
-blend_times = [  ]
-
-[node name="Text2" type="RichTextLabel" parent="." index="2"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="Text2" type="RichTextLabel" parent="."]
 margin_left = 17.0
 margin_top = 50.0
 margin_right = 462.0
 margin_bottom = 85.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_fonts/normal_font = SubResource( 5 )
+custom_fonts/normal_font = SubResource( 4 )
 bbcode_enabled = true
 bbcode_text = "Sample text"
-visible_characters = -1
-percent_visible = 1.0
 meta_underlined = false
-tab_size = 4
 text = "Sample text"
 scroll_active = false
-scroll_following = false
-selection_enabled = false
-override_selected_font_color = false
-_sections_unfolded = [ "BBCode", "Hint", "Rect" ]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Text2" index="1"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Text2"]
+anims/Text = SubResource( 5 )
 
-root_node = NodePath("..")
-autoplay = ""
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
-anims/Text = SubResource( 6 )
-blend_times = [  ]
-
-[node name="PauseArrow" type="Sprite" parent="." index="3"]
-
+[node name="PauseArrow" type="Sprite" parent="."]
 position = Vector2( 470, 66 )
 texture = ExtResource( 5 )
 hframes = 4
-frame = 1
-_sections_unfolded = [ "Animation", "Transform" ]
+frame = 3
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="PauseArrow" index="0"]
-
-root_node = NodePath("..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PauseArrow"]
 autoplay = "Arrow"
-playback_process_mode = 1
-playback_default_blend_time = 0.0
-playback_speed = 1.0
 anims/Arrow = ExtResource( 6 )
-blend_times = [  ]
-_sections_unfolded = [ "Playback Options" ]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="4"]
-
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
-
-
