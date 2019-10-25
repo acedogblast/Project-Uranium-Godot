@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Resource",
+"class": "State",
+"language": "GDScript",
+"path": "res://Utilities/Save/State.gd"
+} ]
 _global_script_class_icons={
-
+"State": ""
 }
 
 [application]
