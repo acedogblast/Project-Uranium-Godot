@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Pokémon Uranium"
-run/main_scene="res://IntroScenes/Intro.tscn"
+run/main_scene="res://Utilities/Start.tscn"
 config/icon="res://PermittedAssets/icon.png"
 
 [autoload]
