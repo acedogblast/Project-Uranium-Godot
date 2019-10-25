@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Maps/Moki Town/HeroHome.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGM/PU-Hero House.ogg" type="AudioStream" id=2]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=3]
 [ext_resource path="res://Maps/Moki Town/DialogeBoxLayer.gd" type="Script" id=4]
+[ext_resource path="res://Utilities/Transition.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -12,7 +13,7 @@ extents = Vector2( 16, 16 )
 extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 32, 32 )
+extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 16, 16.1965 )
@@ -47,7 +48,7 @@ scale = Vector2( 2, 2 )
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 65532, 31, 0, 3, 31, 0, 4, 28, 0, 11, 31, 0, 12, 31, 0, 131067, 33, 0, 131069, 32, 0, 65537, 25, 0, 65538, 26, 0, 65545, 40, 0, 65549, 41, 0, 65550, 42, 0, 262142, 23, 0, 196608, 31, 0, 458747, 3, 0, 458748, 4, 0, 458749, 4, 0, 458750, 4, 0, 458751, 5, 0, 524283, 6, 0, 524284, 7, 0, 524285, 7, 0, 524286, 7, 0, 524287, 8, 0, 589819, 6, 0, 589820, 7, 0, 589821, 7, 0, 589822, 7, 0, 589823, 8, 0, 655355, 9, 0, 655356, 10, 0, 655357, 10, 0, 655358, 10, 0, 655359, 34, 0, 589838, 36, 0 )
+tile_data = PoolIntArray( 65532, 31, 0, 3, 31, 0, 4, 28, 0, 5, 43, 1, 11, 31, 0, 12, 31, 0, 131067, 33, 0, 131069, 32, 0, 65537, 25, 0, 65538, 26, 0, 65540, 43, 65536, 65541, 43, 65537, 65545, 40, 0, 65549, 41, 0, 65550, 42, 0, 131076, 43, 131072, 131077, 43, 131073, 262142, 23, 0, 196608, 31, 0, 196612, 43, 196608, 196613, 43, 196609, 458747, 3, 0, 458748, 4, 0, 458749, 4, 0, 458750, 4, 0, 458751, 5, 0, 524283, 6, 0, 524284, 7, 0, 524285, 7, 0, 524286, 7, 0, 524287, 8, 0, 589819, 6, 0, 589820, 7, 0, 589821, 7, 0, 589822, 7, 0, 589823, 8, 0, 655355, 9, 0, 655356, 10, 0, 655357, 10, 0, 655358, 10, 0, 655359, 34, 0, 589838, 36, 0 )
 
 [node name="TileMap3" type="TileMap" parent="Floor1"]
 scale = Vector2( 2, 2 )
@@ -57,6 +58,7 @@ format = 1
 tile_data = PoolIntArray( 393223, 29, 0, 524283, 17, 0, 524284, 24, 0, 524286, 17, 0, 589819, 17, 0, 589822, 17, 0 )
 
 [node name="Upstairs" type="Area2D" parent="Floor1"]
+editor/display_folded = true
 position = Vector2( 152, 80 )
 collision_layer = 4
 collision_mask = 4
@@ -103,27 +105,63 @@ format = 1
 tile_data = PoolIntArray( 327689, 37, 0, 524334, 37, 0 )
 
 [node name="Console" type="StaticBody2D" parent="Floor2"]
+editor/display_folded = true
 position = Vector2( 144, 112 )
 collision_layer = 2
 collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Console"]
 shape = SubResource( 2 )
 
 [node name="TV" type="StaticBody2D" parent="Floor2"]
-position = Vector2( 160, 64 )
+editor/display_folded = true
+position = Vector2( 176, 80 )
 collision_layer = 2
 collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/TV"]
 shape = SubResource( 3 )
 
-[node name="Self" type="StaticBody2D" parent="Floor2"]
-position = Vector2( 288, 64 )
+[node name="TV2" type="StaticBody2D" parent="Floor2"]
+editor/display_folded = true
+position = Vector2( 144, 80 )
 collision_layer = 2
 collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Self"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/TV2"]
+shape = SubResource( 3 )
+
+[node name="Shelf" type="StaticBody2D" parent="Floor2"]
+editor/display_folded = true
+position = Vector2( 304, 80 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Shelf"]
+shape = SubResource( 3 )
+
+[node name="Shelf2" type="StaticBody2D" parent="Floor2"]
+editor/display_folded = true
+position = Vector2( 272, 80 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Shelf2"]
 shape = SubResource( 3 )
 
 [node name="DownStairs" type="Area2D" parent="Floor2"]
@@ -142,6 +180,10 @@ script = ExtResource( 4 )
 [node name="InteractTimer" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
-[connection signal="body_entered" from="Floor1/Upstairs" to="." method="_on_Upstairs_body_entered"]
-[connection signal="body_entered" from="Floor2/DownStairs" to="." method="_on_DownStairs_body_entered"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Node2D" parent="CanvasLayer" instance=ExtResource( 5 )]
+[connection signal="area_shape_entered" from="Floor1/Upstairs" to="." method="_on_Upstairs_area_shape_entered"]
+[connection signal="area_shape_entered" from="Floor2/DownStairs" to="." method="_on_DownStairs_area_shape_entered"]
 [connection signal="timeout" from="InteractTimer" to="." method="_on_InteractTimer_timeout"]
