@@ -58,7 +58,7 @@ texture={
 "svg/scale": 1.0
 }
 ogg_vorbis={
-"loop": false,
+"loop": true,
 "loop_offset": 0
 }
 
