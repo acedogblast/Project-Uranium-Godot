@@ -270,7 +270,7 @@ extents = Vector2( 15.7019, 15.4979 )
 extents = Vector2( 14.9386, 15.0945 )
 
 [node name="Player" type="Node2D"]
-position = Vector2( 0, -16 )
+position = Vector2( 0, -32 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true

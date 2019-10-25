@@ -34,6 +34,7 @@ tracks/0/keys = {
 
 [node name="Node2D" type="Node2D"]
 pause_mode = 2
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 512.0

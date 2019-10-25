@@ -53,9 +53,9 @@ func _ready():
 
 func _process(delta):
 	if !isMoving:
-		if canMove and !Input.is_action_pressed("interact"):
+		if canMove and !Input.is_action_pressed("z"):
 			get_input()
-		elif canMove and Input.is_action_just_pressed("interact"):
+		elif canMove and Input.is_action_just_pressed("z"):
 			interact()
 
 func disable_input():
@@ -67,13 +67,13 @@ func enable_input():
 	inputDisabled = false
 
 func get_input():
-	if Input.is_action_pressed("move_down"):
+	if Input.is_action_pressed("ui_down"):
 		direction = DIRECTION.DOWN
-	elif Input.is_action_pressed("move_up"):
+	elif Input.is_action_pressed("ui_up"):
 		direction = DIRECTION.UP
-	elif Input.is_action_pressed("move_left"):
+	elif Input.is_action_pressed("ui_left"):
 		direction = DIRECTION.LEFT
-	elif Input.is_action_pressed("move_right"):
+	elif Input.is_action_pressed("ui_right"):
 		direction = DIRECTION.RIGHT
 	else:
 		state = STATE.IDLE

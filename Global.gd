@@ -2,7 +2,7 @@ extends Node
 var TrainerName = "TrainerName"
 var TrainerGender = 1 # 0 is boy, 1 is neutral, 2 is girl
 var TrainerX = 192
-var TrainerY = 160
+var TrainerY = 144
 var printFPS = false
 
 var isMobile = false

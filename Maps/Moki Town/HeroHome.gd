@@ -35,7 +35,7 @@ func interaction(collider):
 		Floor2TVDialoge()
 	if collider == $Floor2/TV2.position:
 		player.disable_input()
-		Floor2TV2Dialoge()
+		Floor2TVDialoge()
 	if collider == $Floor2/Shelf.position:
 		player.disable_input()
 		Floor2SelfDialoge()
@@ -51,38 +51,20 @@ func check_node(pos):
 	pass
 
 func Floor2TVDialoge():
-	newdialog([
-	"There's an ad for a new video game on TV.",
-	"It's a Pokémon battle simulation game",
-	"called \"Red and Blue Version\"",
-	"...Okay, time to go!"
-	], false)
-func Floor2TV2Dialoge():
-	newdialog([
-	"That's the wrong side."
-	], false)
+	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_TV"), false)
 func consoleDialoge():
-	var text = [
-	"It's a Nintendo Wii U.",
-	"But the new Nintendo Switch is better."
-	]
-	newdialog(text,false)
+	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_CONSOLE"),false)
+	pass
 func Floor2SelfDialoge():
-	newdialog([
-	"It's crammed full of books about Pokémon",
-	"\"Me and my Owten\",",
-	"\"Jerbolta's Big Adventure\",",
-	"\"Quest for the Legends\".",
-	"I've read all of these many times."
-	], false)
-func newdialog(var text, var forceArrow):
+	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_BOOKSHELF"), false)
+func new_dialog(var text, var forceArrow):
 	dialog = dialogBox.instance()
-	dialog.loadText(text, forceArrow)
+	dialog.load_text(text, forceArrow)
 	$DialogeBoxLayer.add_child(dialog)
 	pass
 func newRichDialog(var text, var forceArrow):
 	dialog = dialogBox.instance()
-	dialog.loadText(text, forceArrow)
+	dialog.load_text(text, forceArrow)
 	$DialogeBoxLayer.add_child(dialog)
 	pass
 func dialogEnd():
@@ -97,7 +79,7 @@ func _on_InteractTimer_timeout():
 func _on_DownStairs_area_shape_entered(area_id, area, area_shape, self_shape):
 	room_transition("Down")
 
-func _on_UpStairs_area_shape_entered(area_id, area, area_shape, self_shape):
+func _on_Upstairs_area_shape_entered(area_id, area, area_shape, self_shape):
 	room_transition("Up")
 
 func room_transition(dir):
@@ -112,7 +94,7 @@ func room_transition(dir):
 		Global.TrainerX = 64
 		Global.TrainerY = 80
 	elif dir == "Down":
-		$Floor1/UpStairs/CollisionShape2D.disabled = true
+		$Floor1/Upstairs/CollisionShape2D.disabled = true
 		Global.TrainerX = 1184
 		Global.TrainerY = 80
 	
@@ -135,7 +117,7 @@ func room_transition(dir):
 	if dir == "Up":
 		$Floor2/DownStairs/CollisionShape2D.disabled = false
 	elif dir == "Down":
-		$Floor1/UpStairs/CollisionShape2D.disabled = false
+		$Floor1/Upstairs/CollisionShape2D.disabled = false
 	
 	player.enable_input()
 	$CanvasLayer/Node2D.visible = false
