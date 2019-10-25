@@ -76,8 +76,8 @@ func switchCase():
 			node.text = node.text.to_upper()
 		for node in $Keyboard/LetterRow3.get_children():
 			node.text = node.text.to_upper()
-		$Keyboard/LetterRow3/"9".text = "OK"
-		$Keyboard/LetterRow2/"9".text = "lower"
+		$Keyboard/LetterRow3/"9".text = tr("UI_KEYBOARD_MOBILE_OK")
+		$Keyboard/LetterRow2/"9".text = tr("UI_KEYBOARD_MOBILE_LOWER")
 	if isUpper == false:
 		for node in $Keyboard/LetterRow1.get_children():
 			node.text = node.text.to_lower()
@@ -85,8 +85,8 @@ func switchCase():
 			node.text = node.text.to_lower()
 		for node in $Keyboard/LetterRow3.get_children():
 			node.text = node.text.to_lower()
-		$Keyboard/LetterRow3/"9".text = "OK"
-		$Keyboard/LetterRow2/"9".text = "UPPER"
+		$Keyboard/LetterRow3/"9".text = tr("UI_KEYBOARD_MOBILE_OK")
+		$Keyboard/LetterRow2/"9".text = tr("UI_KEYBOARD_MOBILE_UPPER")
 	pass
 func moveSelector():
 	if prevSelect == null:

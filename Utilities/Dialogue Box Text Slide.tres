@@ -65,7 +65,7 @@ tracks/4/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "swapText"
+"method": "swap_text"
 } ]
 }
 

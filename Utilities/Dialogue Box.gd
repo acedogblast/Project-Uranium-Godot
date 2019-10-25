@@ -4,20 +4,20 @@ const MIDDLE = Vector2(10, 150)
 const BOTTOM = Vector2(10,280)
 
 var text = []
-var textLines = 0
-var currentLine = 0
-var isFinished = false
-var forceArrow = false
+var text_lines = 0
+var current_line = 0
+var is_finished = false
+var force_arrow = false
 
-func loadText(textArray, forceArrowShow):
-	text = textArray
-	textLines = textArray.size()
-	forceArrow = forceArrowShow
+func load_text(text_array, force_arrow_show):
+	text = parse_string(text_array)
+	text_lines = text.size()
+	force_arrow = force_arrow_show
 	pass
-func loadRichText(textArray, forceArrowShow):
-	text = textArray
-	textLines = textArray.size()
-	forceArrow = forceArrowShow
+func load_rich_Text(text_array, force_arrow_show):
+	text = parse_string(text_array)
+	text_lines = text.size()
+	force_arrow = force_arrow_show
 	pass
 
 func _ready():
@@ -30,8 +30,8 @@ func _ready():
 	$Text2.percent_visible = 0
 	$PauseArrow.hide()
 	#loadSingleExample()
-	#loadMultiExample()
-	if textLines <= 1:
+	#load_multi_example()
+	if text_lines <= 1:
 		$Text1.bbcode_text = text[0]
 		$Text1/AnimationPlayer.play("SingleText")
 	else:
@@ -41,28 +41,28 @@ func _ready():
 	pass
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept") and $Text2/AnimationPlayer.is_playing() == false and $Text1/AnimationPlayer.is_playing() == false:
-		if textLines == 1 and isFinished == true:
+		if text_lines == 1 and is_finished == true:
 			self.queue_free()
-			if isFinished:
+			if is_finished:
 				get_parent().dialogEnd()
 		else:
-			if isFinished:
+			if is_finished:
 				get_parent().dialogEnd()
 				#self.queue_free()
 			else:
-				slideText()
+				slide_text()
 	pass
-func slideText():
+func slide_text():
 	$PauseArrow.hide()
-	if currentLine != (textLines - 2):
-		currentLine = currentLine + 1
+	if current_line != (text_lines - 2):
+		current_line = current_line + 1
 		$AnimationPlayer.play("Slide Text")
 		$AudioStreamPlayer.play()
 	else:
 		get_parent().dialogEnd()
 		#self.queue_free()
 	pass
-func swapText():
+func swap_text():
 	var tempText = $Text2.bbcode_text
 	$Text1.bbcode_text = ""
 	$Text2.bbcode_text = ""
@@ -70,42 +70,49 @@ func swapText():
 	$Text2.rect_position = Vector2(17,50)
 	$Text1.bbcode_text = tempText
 	$Text2.percent_visible = 0
-	$Text2.bbcode_text = text[currentLine + 1]
+	$Text2.bbcode_text = text[current_line + 1]
 	$Text2/AnimationPlayer.play("Text")
 	pass
-func loadSingleExample():
+func load_single_example():
 	text = ["This is an example text."]
-	textLines = text.size()
-	forceArrow = true
+	text_lines = text.size()
+	force_arrow = true
 	pass
-func loadMultiExample():
+func load_multi_example():
 	text = ["This is an example text.",
 	"This is also an example text.",
 	"This is the third line",
 	"This is the fourth line",
 	"This should be the last line of text."]
-	textLines = text.size()
-	forceArrow = true
+	text_lines = text.size()
+	force_arrow = true
 	pass
-func loadTwoExample():
+func load_two_example():
 	text = ["This is an example text.",
 	"This is also an example text.",]
-	textLines = text.size()
-	forceArrow = true
+	text_lines = text.size()
+	force_arrow = true
 	pass
-func SecondLinePrinted():
-	if textLines != 2 and currentLine != (textLines - 2):
+func second_line_printed():
+	if text_lines != 2 and current_line != (text_lines - 2):
 		$PauseArrow.show()
 	else:
-		Finished()
+		finished()
 	pass
 func FirstLinePrinted():
 	$Text2/AnimationPlayer.play("Text")
-	if textLines == 1:
-		Finished()
+	if text_lines == 1:
+		finished()
 	pass
-func Finished():
-	if forceArrow == true:
+func finished():
+	if force_arrow == true:
 		$PauseArrow.show()
-	isFinished = true
+	is_finished = true
 	pass
+
+func parse_string(text):
+	var expanded_text = expand(text)
+	return expanded_text.split("\n")
+
+func expand(text):
+	return text.format({"TrainerName": Global.TrainerName})

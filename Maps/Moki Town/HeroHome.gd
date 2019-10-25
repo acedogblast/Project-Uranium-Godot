@@ -37,35 +37,20 @@ func interaction(node):
 	if node == $Floor2/Self:
 		Floor2SelfDialoge()
 func Floor2TVDialoge():
-	newdialog([
-	"There's an ad for a new video game on TV.",
-	"It's a Pokémon battle simulation game",
-	"called \"Red and Blue Version\"",
-	"...Okay, time to go!"
-	], false)
+	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_TV"), false)
 func consoleDialoge():
-	var text = [
-	"It's a Nintendo Wii U.",
-	"But the new Nintendo Switch is better."
-	]
-	newdialog(text,false)
+	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_CONSOLE"),false)
 	pass
 func Floor2SelfDialoge():
-	newdialog([
-	"It's crammed full of books about Pokémon",
-	"\"Me and my Owten\",",
-	"\"Jerbolta's Big Adventure\",",
-	"\"Quest for the Legends\".",
-	"I've read all of these many times."
-	], false)
-func newdialog(var text, var forceArrow):
+	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_BOOKSHELF"), false)
+func new_dialog(var text, var forceArrow):
 	dialog = dialogBox.instance()
-	dialog.loadText(text, forceArrow)
+	dialog.load_text(text, forceArrow)
 	$DialogeBoxLayer.add_child(dialog)
 	pass
 func newRichDialog(var text, var forceArrow):
 	dialog = dialogBox.instance()
-	dialog.loadText(text, forceArrow)
+	dialog.load_text(text, forceArrow)
 	$DialogeBoxLayer.add_child(dialog)
 	pass
 func dialogEnd():
