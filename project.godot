@@ -9,13 +9,25 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Object",
+"class": "Pokemon",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Pokemon.gd"
+}, {
 "base": "Resource",
 "class": "State",
 "language": "GDScript",
 "path": "res://Utilities/Save/State.gd"
+}, {
+"base": "Object",
+"class": "move",
+"language": "GDScript",
+"path": "res://Utilities/Battle/move.gd"
 } ]
 _global_script_class_icons={
-"State": ""
+"Pokemon": "",
+"State": "",
+"move": ""
 }
 
 [application]

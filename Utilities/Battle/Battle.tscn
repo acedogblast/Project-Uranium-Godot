@@ -1,0 +1,136 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/Battlebacks/battlebgIndoorA.png" type="Texture" id=2]
+[ext_resource path="res://Utilities/Battle/TransitionEffects.gd" type="Script" id=3]
+[ext_resource path="res://Utilities/Battle/GreyFlashing.tres" type="Animation" id=4]
+[ext_resource path="res://Graphics/Transitions/vsBar86.png" type="Texture" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "SlideBars"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("SpriteLeft:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -128, 192 ), Vector2( 128, 192 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SpriteRight:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 192 ), Vector2( 384, 192 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "play_Sound"
+} ]
+}
+
+[sub_resource type="Animation" id=2]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
+}
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="BattleGrounds" type="Node2D" parent="CanvasLayer"]
+
+[node name="BattleBack" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="TransitionEffects" type="Node2D" parent="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="GreyFlash" type="ColorRect" parent="CanvasLayer/TransitionEffects"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 512.0
+margin_bottom = 384.0
+color = Color( 0.392157, 0.392157, 0.392157, 0.392157 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects"]
+anims/GreyFlashing = ExtResource( 4 )
+
+[node name="Vs" type="Node2D" parent="CanvasLayer/TransitionEffects"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
+autoplay = "SlideBars"
+anims/SlideBars = SubResource( 1 )
+
+[node name="SpriteLeft" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
+editor/display_folded = true
+position = Vector2( 128, 192 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 256, 128 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs/SpriteLeft"]
+anims/Scroll = SubResource( 2 )
+
+[node name="SpriteRight" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
+editor/display_folded = true
+position = Vector2( 384, 192 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 256, 128 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs/SpriteRight"]
+autoplay = "Scroll"
+anims/Scroll = SubResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer"]
