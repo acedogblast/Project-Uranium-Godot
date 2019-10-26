@@ -79,8 +79,6 @@ func _on_InteractTimer_timeout():
 func _on_DownStairs_area_shape_entered(area_id, area, area_shape, self_shape):
 	room_transition("Down")
 
-func _on_Upstairs_area_shape_entered(area_id, area, area_shape, self_shape):
-	room_transition("Up")
 
 func room_transition(dir):
 	player.disable_input()
@@ -94,7 +92,7 @@ func room_transition(dir):
 		Global.TrainerX = 64
 		Global.TrainerY = 80
 	elif dir == "Down":
-		$Floor1/Upstairs/CollisionShape2D.disabled = true
+		$Floor1/UpStairs/CollisionShape2D.disabled = true
 		Global.TrainerX = 1184
 		Global.TrainerY = 80
 	
@@ -117,7 +115,12 @@ func room_transition(dir):
 	if dir == "Up":
 		$Floor2/DownStairs/CollisionShape2D.disabled = false
 	elif dir == "Down":
-		$Floor1/Upstairs/CollisionShape2D.disabled = false
+		$Floor1/UpStairs/CollisionShape2D.disabled = false
 	
 	player.enable_input()
 	$CanvasLayer/Node2D.visible = false
+
+
+
+func _on_UpStairs_area_shape_entered(area_id, area, area_shape, self_shape):
+	room_transition("Up")

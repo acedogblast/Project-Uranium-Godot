@@ -6,7 +6,7 @@
 [ext_resource path="res://Maps/Moki Town/DialogeBoxLayer.gd" type="Script" id=4]
 [ext_resource path="res://Utilities/Transition.tscn" type="PackedScene" id=5]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -57,14 +57,14 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 393223, 29, 0, 524283, 17, 0, 524284, 24, 0, 524286, 17, 0, 589819, 17, 0, 589822, 17, 0 )
 
-[node name="Upstairs" type="Area2D" parent="Floor1"]
-editor/display_folded = true
-position = Vector2( 152, 80 )
-collision_layer = 4
-collision_mask = 4
+[node name="UpStairs" type="Area2D" parent="Floor1"]
+position = Vector2( 149.925, 80 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1/Upstairs"]
-shape = SubResource( 1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1/UpStairs"]
+shape = SubResource( 5 )
 
 [node name="Floor2" type="Node2D" parent="."]
 position = Vector2( 16, 0 )
@@ -184,6 +184,6 @@ one_shot = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Node2D" parent="CanvasLayer" instance=ExtResource( 5 )]
-[connection signal="area_shape_entered" from="Floor1/Upstairs" to="." method="_on_Upstairs_area_shape_entered"]
+[connection signal="area_shape_entered" from="Floor1/UpStairs" to="." method="_on_UpStairs_area_shape_entered"]
 [connection signal="area_shape_entered" from="Floor2/DownStairs" to="." method="_on_DownStairs_area_shape_entered"]
 [connection signal="timeout" from="InteractTimer" to="." method="_on_InteractTimer_timeout"]
