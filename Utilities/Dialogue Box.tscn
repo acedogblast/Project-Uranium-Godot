@@ -102,7 +102,7 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "Second_line_printed"
+"method": "second_line_printed"
 } ]
 }
 
