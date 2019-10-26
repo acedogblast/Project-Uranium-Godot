@@ -496,6 +496,7 @@ margin_bottom = 384.0
 texture = ExtResource( 3 )
 
 [node name="GenderColor" type="TextureRect" parent="."]
+editor/display_folded = true
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0

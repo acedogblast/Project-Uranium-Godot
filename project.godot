@@ -61,6 +61,16 @@ ogg_vorbis={
 "loop": true,
 "loop_offset": 0
 }
+wav={
+"compress/mode": 0,
+"edit/loop": false,
+"edit/normalize": true,
+"edit/trim": true,
+"force/8_bit": false,
+"force/max_rate": false,
+"force/max_rate_hz": 44100,
+"force/mono": false
+}
 
 [input]
 

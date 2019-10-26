@@ -39,6 +39,7 @@ func _ready():
 		$Text2.bbcode_text = text[1]
 		$Text1/AnimationPlayer.play("MultiText")
 	pass
+# warning-ignore:unused_argument
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept") and $Text2/AnimationPlayer.is_playing() == false and $Text1/AnimationPlayer.is_playing() == false:
 		if text_lines == 1 and is_finished == true:
