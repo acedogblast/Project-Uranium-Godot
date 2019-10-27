@@ -9,7 +9,7 @@ var facing = DIRECTION.DOWN
 var inputDisabled = false
 var foot = 0
 
-var bump = 0
+var bump = false
 
 var check_x = 0
 var check_y = 0
@@ -222,15 +222,25 @@ func animate():
 				$AnimationPlayer.play("Right_sprint2")
 
 func _on_Area2D_body_entered(body):
-	$Collision/Area2D.disconnect("body_entered", $Collision/Area2D, "_on_Area2D_body_entered")
-	stop_tween()
-	$PreviousCollision.position += move_direction
-	position -= move_direction
-	$Position2D.position = $Collision.position
-	$AudioStreamPlayer2D.play(0.0)
-	yield(get_tree().create_timer(0.3), "timeout")
-	$PreviousCollision.position = $Collision.position
-	$Collision/Area2D.connect("body_entered", $Collision/Area2D, "_on_Area2D_body_entered")
+	bump = !bump
+	collision()
+	
+	pass
+
+func collision():
+	if bump:
+		disable_input()
+		stop_tween()
+		$PreviousCollision.position += move_direction
+		position -= move_direction
+		$Position2D.position = $Collision.position
+		$AudioStreamPlayer2D.play(0.0)
+		yield(get_tree().create_timer(0.3), "timeout")
+		$PreviousCollision.position = $Collision.position
+		enable_input()
+		bump = false
+	else:
+		return
 
 func stop_tween():
 	$Tween.stop_all()

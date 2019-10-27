@@ -50,6 +50,7 @@ tile_data = PoolIntArray( 65535, 6, 65537, 0, 6, 65537, 1, 6, 65537, 2, 6, 65537
 
 [node name="Trees" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
+z_index = 9
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
