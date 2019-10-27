@@ -15,3 +15,13 @@ func _ready():
 func test():
 	$CanvasLayer/AudioStreamPlayer.stream = load("res://Audio/BGM/PU-TheoBattle.ogg")
 	$CanvasLayer/AudioStreamPlayer.play()
+
+
+
+func transitionFinished():
+	
+	
+	
+	
+	
+	pass

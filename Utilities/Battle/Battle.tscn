@@ -1,14 +1,19 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Battlebacks/battlebgIndoorA.png" type="Texture" id=2]
 [ext_resource path="res://Utilities/Battle/TransitionEffects.gd" type="Script" id=3]
 [ext_resource path="res://Utilities/Battle/GreyFlashing.tres" type="Animation" id=4]
 [ext_resource path="res://Graphics/Transitions/vsBar86.png" type="Texture" id=5]
+[ext_resource path="res://Graphics/Transitions/vsTrainer0.png" type="Texture" id=6]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Graphics/Transitions/vsTrainer86.png" type="Texture" id=8]
+[ext_resource path="res://Graphics/Transitions/vs.png" type="Texture" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "SlideBars"
-length = 0.5
+length = 6.0
+step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("SpriteLeft:position")
 tracks/0/interp = 1
@@ -40,11 +45,169 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.4 ),
+"times": PoolRealArray( 0.5 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
 "method": "play_Sound"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PlayerBanner:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 1, 1.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -198, 128 ), Vector2( 0, 128 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("OpponentBanner:rect_position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1, 1.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 512, 128 ), Vector2( 314, 128 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("WhiteFlash:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("WhiteFlash:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("VsIcon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("PlayerBanner/Label:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("OpponentBanner/Label:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("OpponentBanner:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("VsIcon:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 1.5, 1.55, 1.6, 1.65, 1.7, 1.75, 1.8, 1.85, 1.9, 1.95, 2, 2.05, 2.1, 2.15, 2.2, 2.25, 2.3, 2.35, 2.4, 2.45, 2.5, 2.55, 2.6, 2.65, 2.7, 2.75, 2.8, 2.85, 2.9, 2.95, 3, 3.05, 3.1, 3.15, 3.2, 3.25, 3.3, 3.35, 3.4, 3.45, 3.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("VsIcon:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 3.5, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 8, 8 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("BlackFade:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("BlackFade:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 4, 4.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/15/type = "method"
+tracks/15/path = NodePath("../../..")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 4.45 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "transitionFinished"
 } ]
 }
 
@@ -77,6 +240,10 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
 }
+
+[sub_resource type="DynamicFont" id=4]
+size = 26
+font_data = ExtResource( 7 )
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
@@ -111,8 +278,7 @@ autoplay = "SlideBars"
 anims/SlideBars = SubResource( 1 )
 
 [node name="SpriteLeft" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
-editor/display_folded = true
-position = Vector2( 128, 192 )
+position = Vector2( -128, 192 )
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
@@ -122,7 +288,7 @@ anims/Scroll = SubResource( 2 )
 
 [node name="SpriteRight" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
 editor/display_folded = true
-position = Vector2( 384, 192 )
+position = Vector2( 640, 192 )
 texture = ExtResource( 5 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
@@ -132,5 +298,53 @@ autoplay = "Scroll"
 anims/Scroll = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
+
+[node name="PlayerBanner" type="TextureRect" parent="CanvasLayer/TransitionEffects/Vs"]
+margin_left = -198.0
+margin_top = 128.0
+margin_bottom = 256.0
+texture = ExtResource( 6 )
+
+[node name="Label" type="RichTextLabel" parent="CanvasLayer/TransitionEffects/Vs/PlayerBanner"]
+visible = false
+margin_top = 128.0
+margin_right = 200.0
+margin_bottom = 163.0
+custom_fonts/normal_font = SubResource( 4 )
+
+[node name="OpponentBanner" type="TextureRect" parent="CanvasLayer/TransitionEffects/Vs"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 512.0
+margin_top = 128.0
+margin_right = 710.0
+margin_bottom = 256.0
+texture = ExtResource( 8 )
+
+[node name="Label" type="RichTextLabel" parent="CanvasLayer/TransitionEffects/Vs/OpponentBanner"]
+visible = false
+margin_top = 128.0
+margin_right = 200.0
+margin_bottom = 163.0
+custom_fonts/normal_font = SubResource( 4 )
+
+[node name="VsIcon" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
+visible = false
+position = Vector2( 256, 270 )
+scale = Vector2( 1.7, 1.7 )
+texture = ExtResource( 9 )
+
+[node name="WhiteFlash" type="ColorRect" parent="CanvasLayer/TransitionEffects/Vs"]
+visible = false
+margin_right = 512.0
+margin_bottom = 384.0
+
+[node name="BlackFade" type="ColorRect" parent="CanvasLayer/TransitionEffects/Vs"]
+visible = false
+modulate = Color( 1, 1, 1, 0.25 )
+margin_right = 512.0
+margin_bottom = 384.0
+color = Color( 0, 0, 0, 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer"]
