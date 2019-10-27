@@ -319,7 +319,6 @@ smoothing_speed = 4.0
 
 [node name="Collision" type="Position2D" parent="."]
 pause_mode = 2
-editor/display_folded = true
 
 [node name="Area2D" type="Area2D" parent="Collision"]
 
@@ -337,6 +336,7 @@ disabled = true
 
 [node name="Interact" type="Position2D" parent="."]
 editor/display_folded = true
+visible = false
 
 [node name="Area2D" type="Area2D" parent="Interact"]
 

@@ -147,7 +147,7 @@ func d26():
 	dialog.rect_position = MIDDLE	
 	pass	
 func final():
-	changeScene("res://Maps/Moki Town/HeroHome.tscn")
+	changeScene("res://Maps/Game.tscn")
 	pass
 func EarthShake():
 	$Camera2D/AnimationPlayer.play("Shake")
