@@ -9,6 +9,8 @@ var facing = DIRECTION.DOWN
 var inputDisabled = false
 var foot = 0
 
+var bump = false
+
 var check_x = 0
 var check_y = 0
 var check_pos = Vector2()
@@ -160,7 +162,6 @@ func move():
 	
 	inputDisabled = false
 	set_process(true)
-	pass
 
 func load_texture():
 	if Global.TrainerGender == 0:
@@ -221,13 +222,25 @@ func animate():
 				$AnimationPlayer.play("Right_sprint2")
 
 func _on_Area2D_body_entered(body):
-	stop_tween()
-	$PreviousCollision.position += move_direction
-	position -= move_direction
-	$Position2D.position = $Collision.position
-	$AudioStreamPlayer2D.play(0.0)
-	yield(get_tree().create_timer(0.3), "timeout")
-	$PreviousCollision.position = $Collision.position
+	bump = !bump
+	collision()
+	
+	pass
+
+func collision():
+	if bump:
+		disable_input()
+		stop_tween()
+		$PreviousCollision.position += move_direction
+		position -= move_direction
+		$Position2D.position = $Collision.position
+		$AudioStreamPlayer2D.play(0.0)
+		yield(get_tree().create_timer(0.3), "timeout")
+		$PreviousCollision.position = $Collision.position
+		enable_input()
+		bump = false
+	else:
+		return
 
 func stop_tween():
 	$Tween.stop_all()
