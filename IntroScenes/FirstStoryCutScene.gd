@@ -4,9 +4,10 @@ onready var SpecialPokeMusic = preload("res://Audio/BGM/PU-Specialpoke.ogg")
 onready var AlarmMusic = preload("res://Audio/BGS/Emergency Civil Defense Alarm [Air Raid Siren].ogg")
 onready var EnteringDoor = preload("res://Audio/SE/Entering Door.wav")
 onready var ExitingDoor = preload("res://Audio/SE/Exit Door.WAV")
-onready var EarthQuakeSound = preload("res://Audio/SE/131-Earth03.ogg")
+onready var EarthQuakeSound = preload("res://Audio/SE/131-Earth03.ogg") 
+
 onready var EmotionSound = preload("res://Audio/SE/SE_EM.wav")
-onready var ExplosionSound = preload("res://Audio/SE/049-Explosion02.ogg")
+onready var ExplosionSound = preload("res://Audio/SE/049-Explosion02.ogg") # Do not loop
 onready var ArrowBottomLeft = preload("res://Graphics/Pictures/Arrow1.png")
 onready var ArrowBottomRight = preload("res://Graphics/Pictures/Arrow2.png")
 onready var ArrowTopLeft = preload("res://Graphics/Pictures/Arrow3.png")
@@ -295,6 +296,8 @@ func explosion():
 	$AudioStreamPlayer.stop()
 	$AudioStreamPlayer2.stop()
 	$AudioStreamPlayer3.stop()
+	
+	ExplosionSound.loop = false
 	$AudioStreamPlayer3.stream = ExplosionSound
 	$AudioStreamPlayer3.play()
 	pass
