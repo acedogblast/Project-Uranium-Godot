@@ -2,7 +2,7 @@
 
 [ext_resource path="res://IntroScenes/FirstStoryCutScene.gd" type="Script" id=1]
 [ext_resource path="res://TileMapsSource/NuclearPlantInside.tres" type="TileSet" id=2]
-[ext_resource path="res://Graphics/Tilesets/PU-NuclearPlantInside.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/Tilesets/PU-NuclearPlantInside-Resized.png" type="Texture" id=3]
 [ext_resource path="res://Graphics/Characters/HGSS_025.png" type="Texture" id=4]
 [ext_resource path="res://Graphics/Animations/029-Emotion01.png" type="Texture" id=5]
 [ext_resource path="res://Graphics/Characters/PU-Cam.png" type="Texture" id=6]
@@ -513,7 +513,7 @@ tracks/26/keys = {
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 3 )
-region = Rect2( 160, 416, 96, 64 )
+region = Rect2( 80, 208, 48, 32 )
 
 [sub_resource type="Animation" id=3]
 length = 0.4
@@ -1022,30 +1022,33 @@ margin_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Room" type="Node2D" parent="."]
-visible = false
 position = Vector2( 80, 0 )
 
 [node name="TileMap1" type="TileMap" parent="Room"]
+scale = Vector2( 2, 2 )
 tile_set = ExtResource( 2 )
-cell_size = Vector2( 32, 32 )
+cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 0, 24, 0, 1, 23, 0, 2, 24, 0, 3, 23, 0, 4, 24, 0, 5, 23, 0, 6, 24, 0, 7, 23, 0, 8, 24, 0, 9, 23, 0, 10, 24, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0 )
 
 [node name="TileMap2" type="TileMap" parent="Room"]
+scale = Vector2( 2, 2 )
 tile_set = ExtResource( 2 )
-cell_size = Vector2( 32, 32 )
+cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 196611, 2, 0, 196617, 17, 0, 262147, 2, 0, 327683, 2, 0, 393219, 2, 0, 393225, 2, 0, 458755, 2, 0, 458761, 2, 0, 524291, 2, 0, 524297, 2, 0, 589827, 2, 0, 589833, 2, 0, 655363, 2, 0, 655369, 2, 0, 720899, 2, 0, 720905, 2, 0 )
 
 [node name="TileMap3" type="TileMap" parent="Room"]
+scale = Vector2( 2, 2 )
 tile_set = ExtResource( 2 )
-cell_size = Vector2( 32, 32 )
+cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 131072, 20, 0, 131073, 21, 0, 131076, 21, 0, 131079, 21, 0, 131082, 22, 0, 327689, 12, 0, 524288, 13, 0, 524289, 13, 0, 524290, 13, 0, 589824, 3, 0, 589825, 4, 0, 589826, 5, 0, 589833, 12, 0, 655360, 9, 0, 655361, 10, 0, 655362, 11, 0, 720896, 13, 0, 720897, 13, 0, 720898, 13, 0, 720900, 15, 0 )
 
 [node name="TileMap4" type="TileMap" parent="Room"]
+scale = Vector2( 2, 2 )
 tile_set = ExtResource( 2 )
-cell_size = Vector2( 32, 32 )
+cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 65539, 1, 0, 196608, 18, 0, 196609, 16, 0, 589824, 14, 0 )
 
@@ -1056,6 +1059,7 @@ margin_top = 128.0
 margin_right = 224.0
 margin_bottom = 192.0
 texture = SubResource( 2 )
+stretch_mode = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Room/Screen"]
 autoplay = "Flicker"
@@ -1070,7 +1074,7 @@ color = Color( 0, 0, 0, 0 )
 
 [node name="Scientist1" type="Sprite" parent="Room"]
 editor/display_folded = true
-position = Vector2( 80, 256 )
+position = Vector2( 86.4, 256 )
 texture = ExtResource( 4 )
 vframes = 4
 hframes = 4
@@ -1113,7 +1117,7 @@ texture = SubResource( 8 )
 
 [node name="Scientist3" type="Sprite" parent="Room"]
 editor/display_folded = true
-position = Vector2( 304, 352 )
+position = Vector2( 297.6, 352 )
 texture = ExtResource( 4 )
 vframes = 4
 hframes = 4
@@ -1135,7 +1139,6 @@ texture = SubResource( 8 )
 
 [node name="Cam" type="Sprite" parent="Room"]
 editor/display_folded = true
-visible = false
 position = Vector2( 304, 224 )
 texture = ExtResource( 6 )
 vframes = 4
@@ -1158,8 +1161,7 @@ texture = SubResource( 8 )
 
 [node name="Kellyn" type="Sprite" parent="."]
 editor/display_folded = true
-visible = false
-modulate = Color( 1, 1, 1, 0.2 )
+modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 256, 192 )
 texture = ExtResource( 7 )
 vframes = 4
@@ -1172,12 +1174,11 @@ anims/WalkAhead = SubResource( 21 )
 
 [node name="Lucille" type="Sprite" parent="."]
 editor/display_folded = true
-visible = false
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 256, 192 )
+position = Vector2( 256, 249.6 )
 texture = ExtResource( 8 )
 vframes = 4
 hframes = 4
+frame = 12
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Lucille"]
 autoplay = "WalkAhead"
@@ -1195,14 +1196,12 @@ margin_bottom = -32.0
 texture = SubResource( 8 )
 
 [node name="Fade" type="ColorRect" parent="."]
-visible = false
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="DarkShade" type="ColorRect" parent="."]
-visible = false
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 80.0
 margin_right = 432.0
 margin_bottom = 384.0

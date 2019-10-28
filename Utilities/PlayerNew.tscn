@@ -1,0 +1,346 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Utilities/PlayerNew.gd" type="Script" id=1]
+[ext_resource path="res://Audio/SE/bump.WAV" type="AudioStream" id=2]
+[ext_resource path="res://Graphics/Characters/HERO.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Down"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Down2"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 3 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Down_sprint"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Down_sprint2"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 3 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 4, 5 ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 4, 7 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Left_sprint"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 4, 5 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Left_sprint2"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 6, 7 ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 8, 9 ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 8, 11 ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Right_sprint"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 8, 9 ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "Right_sprint2"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 10, 11 ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 12, 13 ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 12, 15 ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "Up_sprint"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 12, 13 ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "Up_sprint2"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 14, 15 ]
+}
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 15.7019, 15.4979 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 14.9386, 15.0945 )
+
+[node name="Player" type="Node2D"]
+position = Vector2( 0, -32 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+pause_mode = 2
+anims/Down = SubResource( 1 )
+anims/Down2 = SubResource( 2 )
+anims/Down_sprint = SubResource( 3 )
+anims/Down_sprint2 = SubResource( 4 )
+anims/Left = SubResource( 5 )
+anims/Left2 = SubResource( 6 )
+anims/Left_sprint = SubResource( 7 )
+anims/Left_sprint2 = SubResource( 8 )
+anims/Right = SubResource( 9 )
+anims/Right2 = SubResource( 10 )
+anims/Right_sprint = SubResource( 11 )
+anims/Right_sprint2 = SubResource( 12 )
+anims/Up = SubResource( 13 )
+anims/Up2 = SubResource( 14 )
+anims/Up_sprint = SubResource( 15 )
+anims/Up_sprint2 = SubResource( 16 )
+
+[node name="Tween" type="Tween" parent="."]
+pause_mode = 2
+
+[node name="Position2D" type="Position2D" parent="."]
+pause_mode = 2
+
+[node name="Sprite" type="Sprite" parent="Position2D"]
+position = Vector2( 1, -15 )
+texture = ExtResource( 3 )
+vframes = 4
+hframes = 4
+frame = 15
+
+[node name="Camera2D" type="Camera2D" parent="Position2D"]
+current = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_speed = 4.0
+
+[node name="Collision" type="Position2D" parent="."]
+pause_mode = 2
+
+[node name="Area2D" type="Area2D" parent="Collision"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Area2D"]
+shape = SubResource( 17 )
+
+[node name="PreviousCollision" type="Position2D" parent="."]
+editor/display_folded = true
+
+[node name="Area2D" type="Area2D" parent="PreviousCollision"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PreviousCollision/Area2D"]
+shape = SubResource( 17 )
+disabled = true
+
+[node name="Interact" type="Position2D" parent="."]
+editor/display_folded = true
+visible = false
+
+[node name="Area2D" type="Area2D" parent="Interact"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interact/Area2D"]
+shape = SubResource( 18 )
+disabled = true
+[connection signal="body_entered" from="Collision/Area2D" to="." method="_on_Area2D_body_entered"]

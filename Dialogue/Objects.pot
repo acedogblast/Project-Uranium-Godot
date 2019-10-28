@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "INTERACT_MOKITOWN_HOUSE_TV"
+msgstr "There's an ad for a new video game on TV.\n"
+"It's a Pokémon battle simulation game\n"
+"called \"Red and Blue Version\"\n"
+"...Okay, time to go!"
+
+msgid "INTERACT_MOKITOWN_HOUSE_CONSOLE"
+msgstr "It's a Nintendo Wii U.\n"
+"But the new Nintendo Switch is better."
+
+msgid "INTERACT_MOKITOWN_HOUSE_BOOKSHELF"
+msgstr "It's crammed full of books about Pokémon\n"
+"\"Me and my Owten\",\n"
+"\"Jerbolta's Big Adventure\",\n"
+"\"Quest for the Legends\".\n"
+"I've read all of these many times."

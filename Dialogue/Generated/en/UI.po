@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "UI_INTRO_DISCLAIMER"
+msgstr ""
+"The following is a non profit,\n"
+"fan-based game\n"
+"\n"
+"Pokémon is owned by \n"
+"Gamefreak and Nintendo\n"
+"\n"
+"Please support the offical games!"
+
+msgid "UI_SAVEMENU_NEWGAME"
+msgstr "New Game"
+
+msgid "UI_SAVEMENU_EXIT"
+msgstr "Exit"
+
+msgid "UI_OPTIONS"
+msgstr ""
+"Yes\n"
+"No"
+
+msgid "UI_KEYBOARD_NAME"
+msgstr "Your Name?"
+
+msgid "UI_KEYBOARD_DESKTOP_HELP"
+msgstr ""
+"Enter text using the keyboard.\n"
+"Press Enter to confirm."
+
+msgid "UI_KEYBOARD_MOBILE_UPPER"
+msgstr "UPPER"
+
+msgid "UI_KEYBOARD_MOBILE_LOWER"
+msgstr "lower"
+
+msgid "UI_KEYBOARD_MOBILE_OK"
+msgstr "OK"
+
+msgid "UI_KEYBOARD_MOBILE_HELP"
+msgstr "Press X to delete and C to cancel."
