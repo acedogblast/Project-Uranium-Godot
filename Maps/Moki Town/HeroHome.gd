@@ -8,14 +8,9 @@ var isInteracting = false
 var canInteract = true
 
 func _ready():
-	print(str(self.name))
 	$Floor2/DownStairs/CollisionShape2D.disabled = true
 	
 	$BlackBG.visible = true
-#	player = Player.instance()
-#	add_child(player)
-#	player.position = Vector2(Global.TrainerX, Global.TrainerY)
-#	player.z_index = 8
 	$Floor2/TileMap5.z_index = 9
 	yield(get_tree().create_timer(1), "timeout")
 	$Floor2/DownStairs/CollisionShape2D.disabled = false
@@ -76,9 +71,6 @@ func _on_InteractTimer_timeout():
 	canInteract = true
 	pass # replace with function body
 
-func _on_DownStairs_area_shape_entered(area_id, area, area_shape, self_shape):
-	get_parent().room_transition("Down")
-
 
 #func room_transition(dir):
 #	player.disable_input()
@@ -119,12 +111,3 @@ func _on_DownStairs_area_shape_entered(area_id, area, area_shape, self_shape):
 #
 #	player.enable_input()
 #	get_tree().transition_visibility()
-
-
-
-func _on_UpStairs_area_shape_entered(area_id, area, area_shape, self_shape):
-	get_parent().room_transition("Up")
-
-
-func _on_Outside_area_shape_entered(area_id, area, area_shape, self_shape):
-	get_parent().door_transition(next_scene)

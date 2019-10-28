@@ -1,24 +1,17 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Maps/Moki Town/HeroHome.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGM/PU-Hero House.ogg" type="AudioStream" id=2]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=3]
-[ext_resource path="res://Maps/Moki Town/DialogeBoxLayer.gd" type="Script" id=4]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 15, 15 )
+[ext_resource path="res://Utilities/Stairs.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Maps/Moki Town/DialogeBoxLayer.gd" type="Script" id=6]
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 16, 16.1965 )
 
 [node name="Map" type="Node"]
 script = ExtResource( 1 )
@@ -59,15 +52,9 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 262155, 46, 0, 262156, 46, 1, 262157, 46, 2, 327691, 46, 65536, 327692, 46, 65537, 327693, 46, 65538, 393223, 29, 0, 393227, 46, 131072, 393228, 46, 131073, 393229, 46, 131074, 524283, 17, 0, 524284, 24, 0, 524286, 17, 0, 589819, 17, 0, 589822, 17, 0 )
 
-[node name="UpStairs" type="Area2D" parent="Floor1"]
-editor/display_folded = true
-position = Vector2( 149.925, 80 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1/UpStairs"]
-shape = SubResource( 1 )
+[node name="UpStairs" parent="Floor1" instance=ExtResource( 4 )]
+position = Vector2( 149, 80 )
+destination = Vector2( 64, 80 )
 
 [node name="BedBlanket" type="TileMap" parent="Floor1"]
 scale = Vector2( 2, 2 )
@@ -77,14 +64,10 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 327691, 46, 196608, 327692, 46, 196609, 327693, 46, 196610 )
 
-[node name="Outside" type="Area2D" parent="Floor1"]
+[node name="Outside" parent="Floor1" instance=ExtResource( 5 )]
 position = Vector2( 80, 336 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1/Outside"]
-shape = SubResource( 2 )
+scene = "res://Maps/Moki Town/Moki Town.tscn"
+destination = Vector2( 880, 1008 )
 
 [node name="Floor2" type="Node2D" parent="."]
 position = Vector2( 16, 0 )
@@ -184,23 +167,15 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Shelf2"]
 shape = SubResource( 4 )
 
-[node name="DownStairs" type="Area2D" parent="Floor2"]
+[node name="DownStairs" parent="Floor2" instance=ExtResource( 4 )]
 position = Vector2( 40, 80 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/DownStairs"]
-shape = SubResource( 5 )
+destination = Vector2( 1184, 80 )
 
 [node name="DialogeBoxLayer" type="CanvasLayer" parent="."]
 layer = 2
-script = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="InteractTimer" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
-[connection signal="area_shape_entered" from="Floor1/UpStairs" to="." method="_on_UpStairs_area_shape_entered"]
-[connection signal="area_shape_entered" from="Floor1/Outside" to="." method="_on_Outside_area_shape_entered"]
-[connection signal="area_shape_entered" from="Floor2/DownStairs" to="." method="_on_DownStairs_area_shape_entered"]
 [connection signal="timeout" from="InteractTimer" to="." method="_on_InteractTimer_timeout"]
