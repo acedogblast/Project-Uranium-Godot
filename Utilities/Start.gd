@@ -1,6 +1,6 @@
 extends Node2D
 
-func _ready():
+func _ready() -> void:
 	if OS.get_name() == "Android" || OS.get_name() == "iOS":
 		OS.window_resizable = false
 		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_DISABLED, SceneTree.STRETCH_ASPECT_IGNORE, Vector2(512, 384))
