@@ -9,13 +9,25 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Object",
+"class": "Pokemon",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Pokemon.gd"
+}, {
 "base": "Resource",
 "class": "State",
 "language": "GDScript",
 "path": "res://Utilities/Save/State.gd"
+}, {
+"base": "Object",
+"class": "move",
+"language": "GDScript",
+"path": "res://Utilities/Battle/move.gd"
 } ]
 _global_script_class_icons={
-"State": ""
+"Pokemon": "",
+"State": "",
+"move": ""
 }
 
 [application]
@@ -58,8 +70,18 @@ texture={
 "svg/scale": 1.0
 }
 ogg_vorbis={
-"loop": false,
+"loop": true,
 "loop_offset": 0
+}
+wav={
+"compress/mode": 0,
+"edit/loop": false,
+"edit/normalize": true,
+"edit/trim": true,
+"force/8_bit": false,
+"force/max_rate": false,
+"force/max_rate_hz": 44100,
+"force/mono": false
 }
 
 [input]
@@ -148,6 +170,7 @@ quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 quality/2d/use_pixel_snap=true
+vram_compression/import_etc=true
 quality/shadows/filter_mode=0
 environment/default_environment="res://default_env.tres"
 quality/filters/anisotropic_filter_level=1

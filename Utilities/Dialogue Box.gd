@@ -6,6 +6,7 @@ const BOTTOM = Vector2(10,280)
 var text = []
 var text_lines = 0
 var current_line = 0
+var sliding_text = false
 var is_finished = false
 var force_arrow = false
 
@@ -39,6 +40,7 @@ func _ready():
 		$Text2.bbcode_text = text[1]
 		$Text1/AnimationPlayer.play("MultiText")
 	pass
+# warning-ignore:unused_argument
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept") and $Text2/AnimationPlayer.is_playing() == false and $Text1/AnimationPlayer.is_playing() == false:
 		if text_lines == 1 and is_finished == true:
@@ -54,13 +56,16 @@ func _process(delta):
 	pass
 func slide_text():
 	$PauseArrow.hide()
-	if current_line != (text_lines - 2):
-		current_line = current_line + 1
-		$AnimationPlayer.play("Slide Text")
-		$AudioStreamPlayer.play()
-	else:
-		get_parent().dialogEnd()
-		#self.queue_free()
+	if not sliding_text:
+		if current_line != (text_lines - 2):
+			sliding_text = true
+			current_line = current_line + 1
+			$AnimationPlayer.play("Slide Text")
+			yield($AnimationPlayer, "animation_finished")
+			$AudioStreamPlayer.play()
+		else:
+			get_parent().dialogEnd()
+			#self.queue_free()
 	pass
 func swap_text():
 	var tempText = $Text2.bbcode_text
@@ -72,6 +77,8 @@ func swap_text():
 	$Text2.percent_visible = 0
 	$Text2.bbcode_text = text[current_line + 1]
 	$Text2/AnimationPlayer.play("Text")
+	yield($Text2/AnimationPlayer, "animation_finished")
+	sliding_text = false
 	pass
 func load_single_example():
 	text = ["This is an example text."]
