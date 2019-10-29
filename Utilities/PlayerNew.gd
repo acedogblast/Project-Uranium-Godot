@@ -224,6 +224,8 @@ func animate():
 func _on_Area2D_body_entered(body):
 	bump = !bump
 	collision()
+	
+	pass
 
 func collision():
 	if bump:
@@ -238,7 +240,7 @@ func collision():
 		enable_input()
 		bump = false
 	else:
-		bump = true
+		return
 
 func stop_tween():
 	$Tween.stop_all()
