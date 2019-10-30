@@ -1,26 +1,25 @@
 extends Object
-class_name move
 
 # The name of the move
-var name
+var name = "Scratch"
 
 # The type of the move
-var type
+var type = Type.NORMAL
 
 # The style of the move (Physical, Special, Self?)
-var style
+var style = MoveStyle.PHYSICAL
 
 # The base power of the move
-var base_power
+var base_power = 40
 
 # The accuracy of the move
-var accuracy
+var accuracy = 100
 
 # The priority of the move
-var priority
+var priority = 0
 
-# The critical hit ratio of the move
-var critical_hit_ratio
+# The critical hit level of the move 1=6.25% 2=12.5% 3=25% 4=33.3% 5=50% 
+var critical_hit_level = 1
 
 # The secondary effect chance of the move
 var secondary_effect_chance
@@ -29,7 +28,7 @@ var secondary_effect_chance
 var flags
 
 # The total pp of the move
-var total_pp
+var total_pp = 35
 
-# The target ability of the move (Single, Double, All, Self)
+# The target ability of the move (Single, Double, All_Foes, Self)
 var target_ability

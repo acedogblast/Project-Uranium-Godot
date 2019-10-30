@@ -58,7 +58,9 @@ var move_2
 var move_3
 var move_4
 
-
+# The pokemon's gender
+var gender
+enum {MALE, FEMALE}
 
 
 
