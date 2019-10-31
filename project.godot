@@ -10,9 +10,34 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Object",
+"class": "BattleInstanceData",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/BattleInstanceData.gd"
+}, {
+"base": "Object",
+"class": "Move",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/Move.gd"
+}, {
+"base": "Object",
+"class": "MoveStyle",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/MoveStyle.gd"
+}, {
+"base": "Object",
+"class": "MoveTarget",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/MoveTarget.gd"
+}, {
+"base": "Object",
+"class": "Opponent",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/Opponent.gd"
+}, {
+"base": "Object",
 "class": "Pokemon",
 "language": "GDScript",
-"path": "res://Utilities/Battle/Pokemon.gd"
+"path": "res://Utilities/Battle/Classes/Pokemon.gd"
 }, {
 "base": "Resource",
 "class": "State",
@@ -20,14 +45,19 @@ _global_script_classes=[ {
 "path": "res://Utilities/Save/State.gd"
 }, {
 "base": "Object",
-"class": "move",
+"class": "Type",
 "language": "GDScript",
-"path": "res://Utilities/Battle/move.gd"
+"path": "res://Utilities/Battle/Classes/Type.gd"
 } ]
 _global_script_class_icons={
+"BattleInstanceData": "",
+"Move": "",
+"MoveStyle": "",
+"MoveTarget": "",
+"Opponent": "",
 "Pokemon": "",
 "State": "",
-"move": ""
+"Type": ""
 }
 
 [application]
@@ -39,6 +69,7 @@ config/icon="res://PermittedAssets/icon.png"
 [autoload]
 
 Global="*res://Global.gd"
+Move="*res://Utilities/Battle/Classes/Move.gd"
 
 [display]
 

@@ -2,16 +2,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Vs/SpriteLeft.texture.flags = Texture.FLAG_REPEAT;
-	$Vs/SpriteRight.texture.flags = Texture.FLAG_REPEAT;
 	$Vs/SpriteLeft/AnimationPlayer.play("Scroll")
 	$Vs/SpriteRight/AnimationPlayer.play_backwards("Scroll")
 	
-	$Vs/PlayerBanner/Label.push_align(RichTextLabel.ALIGN_CENTER)
-	$Vs/OpponentBanner/Label.push_align(RichTextLabel.ALIGN_CENTER) 
-	
-	$Vs/PlayerBanner/Label.append_bbcode(Global.TrainerName)
-	$Vs/OpponentBanner/Label.append_bbcode("Theo")
 	
 	$Vs/PlayerBanner/Label.scroll_active = false
 	$Vs/OpponentBanner/Label.scroll_active = false

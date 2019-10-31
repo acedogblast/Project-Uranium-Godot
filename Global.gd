@@ -5,6 +5,8 @@ var TrainerX = 192
 var TrainerY = 144
 var printFPS = false
 
+var pokemon_group = [] # Cannot be more that 6
+
 var isMobile = false
 func _process(delta):
 	if Input.is_action_just_pressed("toggle_fullscreen"):
