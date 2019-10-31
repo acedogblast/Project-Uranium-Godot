@@ -34,11 +34,9 @@ func room_transition(new_position):
 	Global.TrainerX = new_position.x
 	Global.TrainerY = new_position.y
 	player.position = new_position
-	player.movePrevious()
+	player.move(true)
 	yield(transition.fade_from_color(), "completed")
 	
-	player.move()
-	player.movePrevious()
 	player.enable_input()
 
 func door_transition(path_scene, new_position):
@@ -50,12 +48,9 @@ func door_transition(path_scene, new_position):
 	Global.TrainerX = new_position.x
 	Global.TrainerY = new_position.y
 	player.position = new_position
-	#player.direction = 0
-	player.movePrevious()
-	yield(transition.fade_from_color(), "completed")
 	
-	player.move()
-	player.movePrevious()
+	player.move(true)
+	yield(transition.fade_from_color(), "completed")
 	player.enable_input()
 
 func interaction(collider):

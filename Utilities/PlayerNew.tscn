@@ -264,7 +264,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=17]
-extents = Vector2( 15.7019, 15.4979 )
+extents = Vector2( 15, 15 )
 
 [sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 14.9386, 15.0945 )
@@ -303,6 +303,7 @@ pause_mode = 2
 
 [node name="Position2D" type="Position2D" parent="."]
 pause_mode = 2
+editor/display_folded = true
 
 [node name="Sprite" type="Sprite" parent="Position2D"]
 position = Vector2( 1, -15 )
@@ -319,20 +320,47 @@ smoothing_speed = 4.0
 
 [node name="Collision" type="Position2D" parent="."]
 pause_mode = 2
+editor/display_folded = true
 
 [node name="Area2D" type="Area2D" parent="Collision"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Area2D"]
 shape = SubResource( 17 )
 
-[node name="PreviousCollision" type="Position2D" parent="."]
+[node name="NextCollision" type="Position2D" parent="."]
 editor/display_folded = true
 
-[node name="Area2D" type="Area2D" parent="PreviousCollision"]
+[node name="Up" type="Area2D" parent="NextCollision"]
+editor/display_folded = true
+position = Vector2( 0, -32 )
+collision_layer = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PreviousCollision/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Up"]
 shape = SubResource( 17 )
-disabled = true
+
+[node name="Down" type="Area2D" parent="NextCollision"]
+editor/display_folded = true
+position = Vector2( 0, 32 )
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Down"]
+shape = SubResource( 17 )
+
+[node name="Left" type="Area2D" parent="NextCollision"]
+editor/display_folded = true
+position = Vector2( -32, 0 )
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Left"]
+shape = SubResource( 17 )
+
+[node name="Right" type="Area2D" parent="NextCollision"]
+editor/display_folded = true
+position = Vector2( 32, 0 )
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Right"]
+shape = SubResource( 17 )
 
 [node name="Interact" type="Position2D" parent="."]
 editor/display_folded = true
