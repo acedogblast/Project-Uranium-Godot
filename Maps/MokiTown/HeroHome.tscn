@@ -1,16 +1,16 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Maps/Moki Town/HeroHome.gd" type="Script" id=1]
+[ext_resource path="res://Maps/MokiTown/HeroHome.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGM/PU-Hero House.ogg" type="AudioStream" id=2]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=3]
 [ext_resource path="res://Utilities/Stairs.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Maps/Moki Town/DialogeBoxLayer.gd" type="Script" id=6]
+[ext_resource path="res://Maps/MokiTown/DialogeBoxLayer.gd" type="Script" id=6]
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 16, 16 )
 
 [node name="Map" type="Node"]
@@ -55,6 +55,7 @@ tile_data = PoolIntArray( 262155, 46, 0, 262156, 46, 1, 262157, 46, 2, 327691, 4
 [node name="UpStairs" parent="Floor1" instance=ExtResource( 4 )]
 position = Vector2( 149, 80 )
 destination = Vector2( 64, 80 )
+dir = "Up"
 
 [node name="BedBlanket" type="TileMap" parent="Floor1"]
 scale = Vector2( 2, 2 )
@@ -66,7 +67,7 @@ tile_data = PoolIntArray( 327691, 46, 196608, 327692, 46, 196609, 327693, 46, 19
 
 [node name="Outside" parent="Floor1" instance=ExtResource( 5 )]
 position = Vector2( 80, 336 )
-scene = "res://Maps/Moki Town/Moki Town.tscn"
+scene = "res://Maps/MokiTown/MokiTown.tscn"
 destination = Vector2( 880, 1008 )
 
 [node name="Floor2" type="Node2D" parent="."]
@@ -117,7 +118,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Console"]
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 
 [node name="TV" type="StaticBody2D" parent="Floor2"]
 editor/display_folded = true
@@ -129,7 +130,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/TV"]
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="TV2" type="StaticBody2D" parent="Floor2"]
 editor/display_folded = true
@@ -141,7 +142,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/TV2"]
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Shelf" type="StaticBody2D" parent="Floor2"]
 editor/display_folded = true
@@ -153,7 +154,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Shelf"]
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Shelf2" type="StaticBody2D" parent="Floor2"]
 editor/display_folded = true
@@ -165,11 +166,12 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Shelf2"]
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="DownStairs" parent="Floor2" instance=ExtResource( 4 )]
 position = Vector2( 40, 80 )
 destination = Vector2( 1184, 80 )
+dir = "Down"
 
 [node name="DialogeBoxLayer" type="CanvasLayer" parent="."]
 layer = 2
