@@ -9,6 +9,8 @@ extents = Vector2( 16, 16 )
 "transition",
 ]]
 editor/display_folded = true
+collision_layer = 2
+collision_mask = 2
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true

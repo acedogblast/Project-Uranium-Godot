@@ -1,11 +1,13 @@
 extends Node
 
-onready var next_scene = preload("res://Maps/Moki Town/Moki Town.tscn")
+#onready var next_scene = preload("res://Maps/Moki Town/MokiTown.tscn")
 
 onready var dialogBox = preload("res://Utilities/Dialogue Box.tscn")
 onready var dialog = null
 var isInteracting = false
 var canInteract = true
+
+var type = "Indoor"
 
 func _ready():
 	$Floor2/DownStairs/CollisionShape2D.disabled = true
