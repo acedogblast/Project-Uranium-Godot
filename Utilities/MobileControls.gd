@@ -5,7 +5,6 @@ var deviceResolution = OS.get_real_window_size()
 func _ready():
 	Global.isMobile = true
 	$ColorRect.rect_size = deviceResolution
-	$ColorRect.visible = true
 	
 	$ViewportContainer/GameViewport.set_size_override_stretch(true)
 	$ViewportContainer/GameViewport.set_size_override(true, Vector2(512,384))
