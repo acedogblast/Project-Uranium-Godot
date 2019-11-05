@@ -37,7 +37,7 @@ func room_transition(new_position):
 	player.move(true)
 	yield(transition.fade_from_color(), "completed")
 	
-	player.call_deferred("enable_input")
+	player.enable_input()
 
 func door_transition(path_scene, new_position):
 	player.disable_input()
@@ -51,7 +51,7 @@ func door_transition(path_scene, new_position):
 	
 	player.move(true)
 	yield(transition.fade_from_color(), "completed")
-	player.call_deferred("enable_input")
+	player.enable_input()
 
 func interaction(collider):
 	if isInteracting == true or !canInteract:
