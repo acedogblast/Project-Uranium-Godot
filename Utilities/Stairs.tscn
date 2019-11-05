@@ -8,7 +8,7 @@ extents = Vector2( 16, 16 )
 [node name="Stairs" type="Area2D" groups=[
 "transition",
 ]]
-collision_layer = 2
+editor/display_folded = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
