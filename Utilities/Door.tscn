@@ -8,6 +8,8 @@ extents = Vector2( 15, 15 )
 [node name="Door" type="Area2D" groups=[
 "transition",
 ]]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true

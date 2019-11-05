@@ -61,10 +61,12 @@ func _process(delta):
 			interact()
 
 func disable_input():
+	$Collision/Area2D/CollisionShape2D.disabled = true
 	get_tree().paused = true
 	inputDisabled = true
 
 func enable_input():
+	$Collision/Area2D/CollisionShape2D.disabled = false
 	get_tree().paused = false
 	inputDisabled = false
 
@@ -90,7 +92,7 @@ func get_input():
 	else:
 		movement_speed = MOVEMENT_SPEED.NORMAL
 		$Position2D/Sprite.texture = walkTexture
-	move()
+	move(false)
 
 func interact():
 	check_x = self.position.x
@@ -116,19 +118,19 @@ func interact():
 	get_parent().interaction(check_pos)
 
 
-func move():
+func move(force_move : bool):
 	set_process(false)
 	inputDisabled = true
 	move_direction = Vector2.ZERO
 	
-	if direction == DIRECTION.DOWN:
-		move_direction.y = 32
-	if direction == DIRECTION.UP:
-		move_direction.y = -32
-	if direction == DIRECTION.LEFT:
-		move_direction.x = -32
-	if direction == DIRECTION.RIGHT:
-		move_direction.x = 32
+	if direction == DIRECTION.DOWN and ($NextCollision/Down.get_overlapping_bodies().size() == 0 or force_move):
+			move_direction.y = 32
+	if direction == DIRECTION.UP and ($NextCollision/Up.get_overlapping_bodies().size() == 0 or force_move):
+			move_direction.y = -32
+	if direction == DIRECTION.LEFT and ($NextCollision/Left.get_overlapping_bodies().size() == 0 or force_move):
+			move_direction.x = -32
+	if direction == DIRECTION.RIGHT and ($NextCollision/Right.get_overlapping_bodies().size() == 0 or force_move):
+			move_direction.x = 32
 	if direction == DIRECTION.DOWN_LEFT:
 		move_direction.x = -32
 		move_direction.y = 32
@@ -136,30 +138,28 @@ func move():
 		move_direction.x = 32
 		move_direction.y = -32
 	
-	
 	# Start Animation
 	animate()
 	
 	# Set Tween settings and position instantly
 	$Tween.interpolate_property($Position2D, "position", - move_direction, Vector2(), $AnimationPlayer.current_animation_length, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	position += move_direction
-	$PreviousCollision.position -= move_direction
-	$PreviousCollision/Area2D/CollisionShape2D.disabled = false
 	$Position2D.position -= move_direction
+	
+	if move_direction == Vector2.ZERO:
+		$AudioStreamPlayer2D.play(0.0)
 	
 	# Start Tween
 	$Tween.start()
-	
+
 	# Wait Till animation finished
 	yield($AnimationPlayer, "animation_finished")
-	$PreviousCollision/Area2D/CollisionShape2D.disabled = true
-	$PreviousCollision.position = $Position2D.position
 	
 	if foot == 0:
 		foot = 1
 	else:
 		foot = 0
-	
+		
 	inputDisabled = false
 	set_process(true)
 
@@ -221,34 +221,5 @@ func animate():
 			elif direction == DIRECTION.RIGHT:
 				$AnimationPlayer.play("Right_sprint2")
 
-func _on_Area2D_body_entered(body):
-	bump = !bump
-	collision()
-	
-	pass
-
-func collision():
-	if bump:
-		disable_input()
-		stop_tween()
-		$PreviousCollision.position += move_direction
-		position -= move_direction
-		$Position2D.position = $Collision.position
-		$AudioStreamPlayer2D.play(0.0)
-		yield(get_tree().create_timer(0.3), "timeout")
-		$PreviousCollision.position = $Collision.position
-		enable_input()
-		bump = false
-	else:
-		return
-
 func stop_tween():
 	$Tween.stop_all()
-
-func movePrevious():
-	disable_input()
-	$PreviousCollision/Area2D/CollisionShape2D.disabled = true
-	$PreviousCollision.position = $Collision.position
-	$PreviousCollision/Area2D/CollisionShape2D.disabled = false
-	pass
-

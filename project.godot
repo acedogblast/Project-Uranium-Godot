@@ -75,10 +75,14 @@ Move="*res://Utilities/Battle/Classes/Move.gd"
 
 window/size/width=512
 window/size/height=384
-window/stretch/mode="2d"
+window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 window/stretch/shrink="1"
 window/handheld/emulate_touchscreen=true
+
+[editor_plugins]
+
+enabled=PoolStringArray( "vnen.tiled_importer" )
 
 [importer_defaults]
 
@@ -205,3 +209,7 @@ vram_compression/import_etc=true
 quality/shadows/filter_mode=0
 environment/default_environment="res://default_env.tres"
 quality/filters/anisotropic_filter_level=1
+
+[tiled_importer]
+
+enable_json_format=true
