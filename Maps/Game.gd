@@ -18,6 +18,9 @@ var canInteract = true
 onready var transition = $CanvasLayer/Transition
 
 func _ready():
+	add_to_group("save")
+	SaveSystem.load_game(1)
+	
 	player = Player.instance()
 	add_child(player)
 	change_scene(start_scene)
@@ -26,6 +29,8 @@ func _ready():
 	player.z_index = 8
 
 func _process(delta):
+	if Input.is_key_pressed(KEY_F1):
+		SaveSystem.save_game(1)
 	if get_child(2).type == "Outside" && loaded == false:
 		load_seemless()
 	else:
@@ -49,12 +54,13 @@ func change_scene(scene):
 #	Global.TrainerX = new_position.x
 #	Global.TrainerY = new_position.y
 #	player.position = new_position
-#	player.movePrevious()
+#	#player.movePrevious()
+#	yield(get_tree().create_timer(0.3), "timeout")
+#	player.move(true)
 #	yield(transition.fade_from_color(), "completed")
 #
-#	player.move()
-#	player.movePrevious()
-#	player.enable_input()
+#	#player.movePrevious()
+#	player.call_deferred("enable_input")
 
 func room_transition(dest, dir):
 	player.disable_input()
@@ -114,7 +120,7 @@ func door_transition(path_scene, new_position):
 	player.move(true)
 	yield(transition.fade_from_color(), "completed")
 	#player.movePrevious()
-	player.enable_input()
+	player.call_deferred("enable_input")
 
 func load_seemless():
 	loaded = true
@@ -154,3 +160,23 @@ func check_node(pos):
 
 func transition_visibility():
 	$CanvasLayer/Transition.visible = !$CanvasLayer/Transition.visible
+
+func _exit_tree():
+	save_state()
+
+func save_state():
+	var state = {
+		"current_scene": current_scene.filename,
+		"player_position": player.position
+	}
+	SaveSystem.set_state(filename, state)
+
+func load_state():
+	if SaveSystem.has_state(filename):
+		var state = SaveSystem.get_state(filename)
+		start_scene = load(state["current_scene"])
+		var temp_position = state["player_position"]
+		Global.TrainerX = temp_position.x
+		Global.TrainerY = temp_position.y
+	# else:
+	# it uses the default values
