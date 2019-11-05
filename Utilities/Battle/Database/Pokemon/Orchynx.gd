@@ -1,30 +1,28 @@
 extends Object
 
-class_name Pokemon
-
 # The name of the pokemon
-var name
+var name = "Orchynx"
 
 # Pokedex ID#
-var ID
+var ID = 1
 
 # The pokemon's type. If only one type use type1
-var type1
-var type2
+var type1 = Type.GRASS
+var type2 = Type.STEEL
 
-# The pokemon's stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
-var hp
-var attack
-var defense
-var sp_attack
-var sp_defense
-var speed
+# The pokemon's base stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
+var hp = 50
+var attack = 55
+var defense = 55
+var sp_attack = 70
+var sp_defense = 70
+var speed = 50
 
 # The pokemon's level
-var level
+var level = 1
 
 # The pokemon's total experience
-var experience
+var experience = 0
 
 # The pokemon's nature
 var nature
