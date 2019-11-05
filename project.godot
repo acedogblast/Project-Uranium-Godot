@@ -70,6 +70,7 @@ config/icon="res://PermittedAssets/icon.png"
 
 Global="*res://Global.gd"
 Move="*res://Utilities/Battle/Classes/Move.gd"
+SaveSystem="*res://Utilities/Save/SaveSystem.tscn"
 
 [display]
 
