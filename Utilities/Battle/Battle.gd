@@ -1,14 +1,16 @@
 extends Node
 
 var battle_instance : BattleInstanceData
+var queue : BattleQueue
+var registry
 
 func _ready():
 	$CanvasLayer/BattleGrounds.visible = false
 	$CanvasLayer/TransitionEffects.visible = false
 	$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = false
 	$CanvasLayer/BattleInterfaceLayer/Message.visible = false
-	$CanvasLayer/BattleInterfaceLayer/BattleComand.visible = false
-	
+	$CanvasLayer/BattleInterfaceLayer/BattleComandSelect.visible = false
+	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	
 	test()
 	pass
@@ -26,6 +28,59 @@ func Start_Battle(bid : BattleInstanceData):
 	# Start TransistionEffects
 	run_transition()
 	
+	# Initialize BattleQueue
+	queue = BattleQueue.new()
+	
+	# Set human opponent texture
+	if battle_instance.battle_type != battle_instance.BattleType.SINGLE_WILD:
+		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.texture = battle_instance.opponent.battle_texture
+	
+	# Add Foe introduction to queue
+	match battle_instance.battle_type:
+		battle_instance.BattleType.SINGLE_TRAINER:
+			var action = BattleQueueAction.new()
+			action.type = action.BATTLE_GROUNDS_POS_CHANGE
+			action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.INTRO_FADE
+			queue.push(action)
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = "TRAINER " + battle_instance.opponent.name + "\nwould like to battle!"
+			queue.push(action)
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = "TRAINER " + battle_instance.opponent.name + " sent\nout " + battle_instance.opponent.pokemon_group[0].name + "!"
+			queue.push(action)
+		battle_instance.BattleType.RIVAL:
+			var action = BattleQueueAction.new()
+			action.type = action.BATTLE_GROUNDS_POS_CHANGE
+			action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.INTRO_FADE
+			queue.push(action)
+			
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = "RIVAL Theo\nwould like to battle!"
+			queue.push(action)
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = "RIVAL Theo sent\nout " + battle_instance.opponent.pokemon_group[0].name + "!"
+			queue.push(action)
+			
+	
+	
+	
+	
+	# Add Player toss to queue
+	
+	# Start the battle loop until player wins or losses.
+	
+	
+		
+		# Check if battle is over.
+		
+		
+	# After battle comands
+	
+	
 	
 	
 	pass
@@ -34,10 +89,18 @@ func test():
 	var BID = load("res://Utilities/Battle/Classes/BattleInstanceData.gd")
 	var OPP = load("res://Utilities/Battle/Classes/Opponent.gd")
 	var bid = BID.new()
-	bid.battle_type = BID.BattleType.SINGLE_GYML
+	bid.battle_type = BID.BattleType.RIVAL
 	bid.battle_back = BID.BattleBack.INDOOR_1
 	bid.opponent = OPP.new()
-	bid.opponent.name = "Maria"
+	bid.opponent.name = "Theo"
+	
+	var poke = registry.get_basic_pokemon(1);
+	bid.opponent.pokemon_group.append(poke)
+	
+	
+	bid.opponent.battle_texture = load("res://Graphics/Characters/trainer086.png")
+	
+	
 	Start_Battle(bid)
 
 func set_Vs_textures():
@@ -72,7 +135,6 @@ func set_gender_textures():
 			$CanvasLayer/TransitionEffects/Vs/PlayerBanner.texture = load("res://Graphics/Transitions/vsTrainer1.png")
 			$CanvasLayer/BattleGrounds/PlayerToss.texture = load("res://Graphics/Characters/trback001.png")
 	$CanvasLayer/TransitionEffects/Vs/PlayerBanner/Label.bbcode_text = "[center]" + Global.TrainerName
-
 func set_battle_music():
 	match battle_instance.battle_type:
 		battle_instance.BattleType.RIVAL:
@@ -118,6 +180,8 @@ func run_transition():
 		yield($CanvasLayer/TransitionEffects/Vs/AnimationPlayer, "animation_finished")
 	$CanvasLayer/TransitionEffects.visible = false
 	$CanvasLayer/BattleGrounds.visible = true
-
+func battle_loop():
+	
+	pass
 
 
