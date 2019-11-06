@@ -365,6 +365,7 @@ color = Color( 0.392157, 0.392157, 0.392157, 0.392157 )
 anims/GreyFlashing = ExtResource( 7 )
 
 [node name="Vs" type="Node2D" parent="CanvasLayer/TransitionEffects"]
+editor/display_folded = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
 anims/SlideBars = SubResource( 1 )

@@ -72,7 +72,7 @@ tracks/1/keys = {
 } ]
 }
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=4]
 size = 26
 font_data = ExtResource( 4 )
 
@@ -147,7 +147,7 @@ margin_left = 17.0
 margin_top = 50.0
 margin_right = 462.0
 margin_bottom = 85.0
-custom_fonts/normal_font = SubResource( 6 )
+custom_fonts/normal_font = SubResource( 4 )
 bbcode_enabled = true
 bbcode_text = "Sample text"
 meta_underlined = false

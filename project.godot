@@ -195,6 +195,10 @@ run={
  ]
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [locale]
 
 translations=PoolStringArray( "res://Dialogue/Generated/en/Cutscenes.po", "res://Dialogue/Generated/en/Objects.po", "res://Dialogue/Generated/en/UI.po" )
