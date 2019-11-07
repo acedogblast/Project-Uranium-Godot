@@ -4,6 +4,8 @@ var battle_instance : BattleInstanceData
 var queue : BattleQueue
 var registry
 
+signal wait
+
 func _ready():
 	$CanvasLayer/BattleGrounds.visible = false
 	$CanvasLayer/TransitionEffects.visible = false
@@ -27,7 +29,7 @@ func Start_Battle(bid : BattleInstanceData):
 	set_gender_textures()
 	# Start TransistionEffects
 	run_transition()
-	
+	yield(self, "wait")
 	# Initialize BattleQueue
 	queue = BattleQueue.new()
 	
@@ -72,8 +74,12 @@ func Start_Battle(bid : BattleInstanceData):
 	# Add Player toss to queue
 	
 	# Start the battle loop until player wins or losses.
-	
-	
+	if queue.is_empty(): # If queue is empty, get player battle comand.
+		
+		pass
+	else:
+		battle_loop()
+		
 		
 		# Check if battle is over.
 		
@@ -180,8 +186,24 @@ func run_transition():
 		yield($CanvasLayer/TransitionEffects/Vs/AnimationPlayer, "animation_finished")
 	$CanvasLayer/TransitionEffects.visible = false
 	$CanvasLayer/BattleGrounds.visible = true
+	emit_signal("wait")
+
+
 func battle_loop():
-	
-	pass
-
-
+	var action = queue.pop()
+	match action.type:
+		action.BATTLE_GROUNDS_POS_CHANGE:
+			$CanvasLayer/BattleGrounds.setPosistion(action.battle_grounds_pos_change)
+			yield($CanvasLayer/BattleGrounds, "wait")
+		action.BATTLE_TEXT:
+			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = action.battle_text
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+			var t = Timer.new()
+			t.set_wait_time(1)
+			t.set_one_shot(true)
+			self.add_child(t)
+			t.start()
+			yield(t, "timeout")
+			t.queue_free()
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+	print("end of loop")

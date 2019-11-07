@@ -7,7 +7,7 @@ var name
 # The type of the move
 var type
 
-# The style of the move (Physical, Special, Self?)
+# The style of the move (Physical, Special, Status)
 var style
 
 # The base power of the move
