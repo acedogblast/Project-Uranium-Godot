@@ -517,6 +517,7 @@ texture = ExtResource( 6 )
 anims/FadeOut = SubResource( 1 )
 
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
+visible = false
 position = Vector2( 140, -60 )
 texture = ExtResource( 7 )
 vframes = 17
@@ -539,11 +540,14 @@ anims/Toss = SubResource( 3 )
 anims/FadeToIntroPos = SubResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/BattleGrounds"]
+visible = false
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="TransitionEffects" type="Node2D" parent="CanvasLayer"]
+editor/display_folded = true
+visible = false
 script = ExtResource( 9 )
 
 [node name="GreyFlash" type="ColorRect" parent="CanvasLayer/TransitionEffects"]
@@ -641,6 +645,8 @@ color = Color( 0, 0, 0, 1 )
 layer = 4
 
 [node name="Message" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+editor/display_folded = true
+visible = false
 
 [node name="MessageBanner" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/Message"]
 margin_top = 288.0

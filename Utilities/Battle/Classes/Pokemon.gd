@@ -1,8 +1,8 @@
 extends Object
 
-class_name Pokemon
+class_name Pokemon # This is used for pokemon that is "active/saved". Not for recording base stats.
 
-# The name of the pokemon
+# The name of the pokemon. Can be used for nicknames.
 var name
 
 # Pokedex ID#
@@ -42,12 +42,12 @@ var iv_sp_defense
 var iv_speed
 
 # The pokemon's Effort Values
-var ev_hp
-var ev_attack
-var ev_defense
-var ev_sp_attack
-var ev_sp_defense
-var ev_speed
+var ev_hp = 0
+var ev_attack = 0
+var ev_defense = 0
+var ev_sp_attack = 0
+var ev_sp_defense = 0
+var ev_speed = 0
 
 # The pokemon's held Item
 var item
@@ -62,12 +62,6 @@ var move_4
 var gender
 enum {MALE, FEMALE}
 
-var leveling_rate
-enum {SLOW, MEDIUM_SLOW, MEDIUM_FAST, FAST, ERRATIC}
-
-func set_stats_by_level(): 
-	
-	pass
 func generate_IV():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
@@ -114,3 +108,51 @@ func exp_fluctuating(level : int) -> int:
 	elif 36 < level && level <= 100:
 		xp = int( pow(level, 3) * ( ((level / 2) + 32) / 50 ) )
 	return xp
+func generate_nature():
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
+	nature = rng.randi_range(0,24)
+func generate_gender(male_ratio : float):
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
+	if rng.randf_range(0.0, 100.0) <= male_ratio:
+		gender = MALE
+	else:
+		gender = FEMALE
+
+func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level 1 version of the pokemon by its ID and sets. Its IV values will be generated here.
+	var data = registry.new().get_pokemon_class(id)
+	ID = id
+	name = data.name
+	type1 = data.type1
+	type2 = data.type2
+	level = lv
+	generate_IV()
+	generate_nature() # For now random but should be determined by something else
+	generate_gender(data.male_ratio)
+	
+	# Set experience points
+	match data.leveling_rate:
+		data.SLOW:
+			experience = exp_slow(lv)
+		data.MEDIUM_SLOW:
+			experience = exp_medium_slow(lv)
+		data.MEDIUM_FAST:
+			experience = exp_medium_fast(lv)
+		data.FAST:
+			experience = exp_fast(lv)
+		data.ERRATIC:
+			experience = exp_erratic(lv)
+		data.FLUCTUATING:
+			experience = exp_fluctuating(lv)
+	
+	# Set stats
+	attack = int( int ((2 * data.attack + iv_attack + ev_attack) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.ATTACK))
+	defense = int( int ((2 * data.defense + iv_defense + ev_defense) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.DEFENSE))
+	sp_attack = int( int ((2 * data.sp_attack + iv_sp_attack + ev_sp_attack) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SP_ATTACK))
+	sp_defense = int( int ((2 * data.sp_defense + iv_sp_defense + ev_sp_defense) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SP_DEFENSE))
+	speed = int( int ((2 * data.speed + iv_speed + ev_speed) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SPEED))
+	hp = int ( (2 * data.hp + iv_hp + ev_hp) * lv / 100 + lv + 10 )
+	
+	# Set move set
+	
