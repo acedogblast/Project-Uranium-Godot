@@ -4,6 +4,9 @@ var battle_instance : BattleInstanceData
 var queue : BattleQueue
 var registry
 
+signal wait
+signal EndOfBattleLoop
+
 func _ready():
 	$CanvasLayer/BattleGrounds.visible = false
 	$CanvasLayer/TransitionEffects.visible = false
@@ -27,7 +30,7 @@ func Start_Battle(bid : BattleInstanceData):
 	set_gender_textures()
 	# Start TransistionEffects
 	run_transition()
-	
+	yield(self, "wait")
 	# Initialize BattleQueue
 	queue = BattleQueue.new()
 	
@@ -64,22 +67,35 @@ func Start_Battle(bid : BattleInstanceData):
 			action.type = action.BATTLE_TEXT
 			action.battle_text = "RIVAL Theo sent\nout " + battle_instance.opponent.pokemon_group[0].name + "!"
 			queue.push(action)
-			
+	# If human opponent add ball toss.
+	
 	
 	
 	
 	
 	# Add Player toss to queue
+	var action = BattleQueueAction.new()
+	action.type = action.BATTLE_GROUNDS_POS_CHANGE
+	action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.PLAYER_TOSS
+	queue.push(action)
 	
 	# Start the battle loop until player wins or losses.
+	var isBattleOver = false
 	
-	
+	while isBattleOver == false:
+		if queue.is_empty(): # If queue is empty, get player battle comand.
+			pass
+		else:
+			battle_loop()
+			yield(self, "EndOfBattleLoop")
+		
 		
 		# Check if battle is over.
-		
-		
-	# After battle comands
+		if queue.is_empty(): # Temp should be replaced by proper battle check!
+			isBattleOver = true
 	
+	# After battle comands
+	print("Battle is over.")
 	
 	
 	
@@ -94,9 +110,9 @@ func test():
 	bid.opponent = OPP.new()
 	bid.opponent.name = "Theo"
 	
-	var poke = registry.get_basic_pokemon(1);
+	var poke = Pokemon.new()
+	poke.set_basic_pokemon_by_level(1,5)
 	bid.opponent.pokemon_group.append(poke)
-	
 	
 	bid.opponent.battle_texture = load("res://Graphics/Characters/trainer086.png")
 	
@@ -180,8 +196,25 @@ func run_transition():
 		yield($CanvasLayer/TransitionEffects/Vs/AnimationPlayer, "animation_finished")
 	$CanvasLayer/TransitionEffects.visible = false
 	$CanvasLayer/BattleGrounds.visible = true
+	emit_signal("wait")
+
+
 func battle_loop():
-	
-	pass
-
-
+	var action = queue.pop()
+	match action.type:
+		action.BATTLE_GROUNDS_POS_CHANGE:
+			$CanvasLayer/BattleGrounds.setPosistion(action.battle_grounds_pos_change)
+			yield($CanvasLayer/BattleGrounds, "wait")
+		action.BATTLE_TEXT:
+			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = action.battle_text
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+			var t = Timer.new()
+			t.set_wait_time(2) # Later add animation for text typing.
+			t.set_one_shot(true)
+			self.add_child(t)
+			t.start()
+			yield(t, "timeout")
+			t.queue_free()
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+	#print("end of loop")
+	emit_signal("EndOfBattleLoop")

@@ -18,44 +18,41 @@ var sp_attack = 70
 var sp_defense = 70
 var speed = 50
 
-# The pokemon's level
-var level = 1
-
-# The pokemon's total experience
-var experience = 0
-
-# The pokemon's nature
-var nature
-
 # The pokemon's public and hidden abilities
 var ability
 var hidden_ability
 
-# The pokemon's Individual Values
-var iv_hp
-var iv_attack
-var iv_defense
-var iv_sp_attack
-var iv_sp_defense
-var iv_speed
+# The pokemon's Effort Value Yeild
+var ev_yield_type = ev_spAtk
+enum {ev_hp, ev_atk, ev_def, ev_spAtk, ev_spDef, ev_Sp}
 
-# The pokemon's Effort Values
-var ev_hp
-var ev_attack
-var ev_defense
-var ev_sp_attack
-var ev_sp_defense
-var ev_speed
+# The pokemon's leveling rate
+var leveling_rate = MEDIUM_FAST
+enum {SLOW, MEDIUM_SLOW, MEDIUM_FAST, FAST, ERRATIC, FLUCTUATING}
 
-# The pokemon's held Item
-var item
+# The pokemon's gender ratio male percentage.
+var male_ratio = 87.5
 
-# The pokemon's Move set
-var move_1
-var move_2
-var move_3
-var move_4
+# The pokemon's evolution level
+var evolution_level = 28
 
-# The pokemon's gender
-var gender
-enum {MALE, FEMALE}
+# The pokemon's evolution ID
+var evolution_ID = 2
+
+# Moveset by leveling
+var moveset = [
+	MoveSet.new(1, "Scratch"),
+	MoveSet.new(1, "Growl"),
+	MoveSet.new(5, "Leech Seed"),
+	MoveSet.new(9, "Vine Whip"),
+	MoveSet.new(13, "Metal Claw"),
+	MoveSet.new(18, "Hone Claws"),
+	MoveSet.new(20, "Mega Drain"),
+	MoveSet.new(25, "Iron Defense"),
+	MoveSet.new(29, "Leaf Blade"),
+	MoveSet.new(33, "Iron Tail"),
+	MoveSet.new(37, "Synthesis"),
+	MoveSet.new(41, "Energy Ball"),
+	MoveSet.new(45, "Meteor Mash")
+]
+
