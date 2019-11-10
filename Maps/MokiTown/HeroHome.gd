@@ -7,6 +7,8 @@ onready var dialog = null
 var isInteracting = false
 var canInteract = true
 
+var place_name = Global.TrainerName + "'s House"
+
 var type = "Indoor"
 
 func _ready():
@@ -67,7 +69,7 @@ func newRichDialog(var text, var forceArrow):
 func dialogEnd():
 	isInteracting = false
 	$InteractTimer.start()
-	get_parent().player.enable_input()
+	get_parent().player.change_input()
 	pass
 func _on_InteractTimer_timeout():
 	canInteract = true

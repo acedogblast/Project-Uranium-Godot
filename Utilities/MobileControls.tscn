@@ -27,6 +27,7 @@ extents = Vector2( 250, 250 )
 script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 margin_right = 4000.0
 margin_bottom = 4000.0
 color = Color( 0, 0, 0, 1 )
@@ -73,6 +74,7 @@ shape = SubResource( 1 )
 shape_visible = false
 
 [node name="Buttons" type="Node2D" parent="."]
+editor/display_folded = true
 modulate = Color( 1, 1, 1, 0.588235 )
 
 [node name="Z" type="TextureRect" parent="Buttons"]

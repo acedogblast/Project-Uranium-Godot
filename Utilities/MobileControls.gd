@@ -17,6 +17,7 @@ func _ready():
 	gameInstance = game.instance()
 	$ViewportContainer/GameViewport.add_child(gameInstance)
 	pass
+
 func resize():
 	deviceResolution = OS.get_real_window_size()
 	#print(deviceResolution)

@@ -15,6 +15,8 @@ var check_x = 0
 var check_y = 0
 var check_pos = Vector2()
 
+var holding_z = false
+
 var move_direction = Vector2()
 
 var action
@@ -55,20 +57,15 @@ func _ready():
 
 func _process(delta):
 	if !isMoving:
-		if canMove and !Input.is_action_pressed("z"):
+		if canMove and !Input.is_action_pressed("interact"):
 			get_input()
-		elif canMove and Input.is_action_just_pressed("z"):
+		elif canMove and Input.is_action_just_pressed("interact"):
 			interact()
 
-func disable_input():
-	$Collision/Area2D/CollisionShape2D.disabled = true
-	get_tree().paused = true
-	inputDisabled = true
-
-func enable_input():
-	$Collision/Area2D/CollisionShape2D.disabled = false
-	get_tree().paused = false
-	inputDisabled = false
+func change_input():
+	$Collision/Area2D/CollisionShape2D.disabled = !$Collision/Area2D/CollisionShape2D.disabled
+	get_tree().paused = !get_tree().paused
+	inputDisabled = !inputDisabled
 
 func get_input():
 	if Input.is_action_pressed("ui_down"):
@@ -83,10 +80,16 @@ func get_input():
 		state = STATE.IDLE
 		set_idle_frame()
 		return
+	if Input.is_action_pressed("z") and !holding_z:
+		holding_z = true
+		Global.sprint = !Global.sprint
+	elif !Input.is_action_pressed("z") and holding_z:
+		holding_z = false
+		Global.sprint = !Global.sprint
 	
 	state = STATE.MOVE
 	
-	if state == STATE.MOVE and movement_type == MOVEMENT_TYPE.FOOT and Input.is_action_pressed("run"):
+	if state == STATE.MOVE and movement_type == MOVEMENT_TYPE.FOOT and Global.sprint == true:
 		movement_speed = MOVEMENT_SPEED.FAST
 		$Position2D/Sprite.texture = runTexture
 	else:

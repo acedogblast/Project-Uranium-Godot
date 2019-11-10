@@ -1022,6 +1022,7 @@ margin_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Room" type="Node2D" parent="."]
+visible = false
 position = Vector2( 80, 0 )
 
 [node name="TileMap1" type="TileMap" parent="Room"]
@@ -1139,6 +1140,7 @@ texture = SubResource( 8 )
 
 [node name="Cam" type="Sprite" parent="Room"]
 editor/display_folded = true
+visible = false
 position = Vector2( 304, 224 )
 texture = ExtResource( 6 )
 vframes = 4
@@ -1161,7 +1163,8 @@ texture = SubResource( 8 )
 
 [node name="Kellyn" type="Sprite" parent="."]
 editor/display_folded = true
-modulate = Color( 1, 1, 1, 0 )
+visible = false
+modulate = Color( 1, 1, 1, 0.05 )
 position = Vector2( 256, 192 )
 texture = ExtResource( 7 )
 vframes = 4
@@ -1174,11 +1177,12 @@ anims/WalkAhead = SubResource( 21 )
 
 [node name="Lucille" type="Sprite" parent="."]
 editor/display_folded = true
-position = Vector2( 256, 249.6 )
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 256, 192 )
 texture = ExtResource( 8 )
 vframes = 4
 hframes = 4
-frame = 12
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Lucille"]
 autoplay = "WalkAhead"
@@ -1196,12 +1200,14 @@ margin_bottom = -32.0
 texture = SubResource( 8 )
 
 [node name="Fade" type="ColorRect" parent="."]
+visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="DarkShade" type="ColorRect" parent="."]
+visible = false
 margin_left = 80.0
 margin_right = 432.0
 margin_bottom = 384.0
