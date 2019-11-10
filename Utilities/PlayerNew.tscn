@@ -270,6 +270,7 @@ extents = Vector2( 15, 15 )
 extents = Vector2( 14.9386, 15.0945 )
 
 [node name="Player" type="Node2D"]
+pause_mode = 1
 position = Vector2( 0, -32 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -303,14 +304,12 @@ pause_mode = 2
 
 [node name="Position2D" type="Position2D" parent="."]
 pause_mode = 2
-editor/display_folded = true
 
 [node name="Sprite" type="Sprite" parent="Position2D"]
-position = Vector2( 1, -15 )
+position = Vector2( 1, -16 )
 texture = ExtResource( 3 )
 vframes = 4
 hframes = 4
-frame = 15
 
 [node name="Camera2D" type="Camera2D" parent="Position2D"]
 current = true

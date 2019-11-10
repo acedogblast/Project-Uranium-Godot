@@ -4,4 +4,4 @@ extends Node2D
 var offset = Vector2(2272,26*32)
 
 var type = "Outdoor"
-var map_name = "Route 03"
+var place_name = "Route 03"

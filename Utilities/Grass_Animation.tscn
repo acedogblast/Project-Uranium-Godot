@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://PermittedAssets/bush.png" type="Texture" id=1]
+
+[node name="Grass_Animation" type="Node2D"]
+z_index = 9
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 22 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 86, 32, 10 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -10 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 53.8117, 32, 10.1883 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( -32, 22 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 86, 32, 10 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, 54 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 117.814, 32, 10.1859 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 32, 22 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 86, 32, 10 )

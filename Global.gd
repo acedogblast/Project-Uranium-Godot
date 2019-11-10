@@ -3,8 +3,12 @@ var TrainerName = "TrainerName"
 var TrainerGender = 0 # 0 is boy, 1 is neutral, 2 is girl
 var TrainerX = 192
 var TrainerY = 144
+var badges = 0
+var time = 0
+
 var printFPS = false
 var size
+var sprint = false
 
 var pokemon_group = [] # Cannot be more that 6
 

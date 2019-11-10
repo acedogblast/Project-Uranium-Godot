@@ -1,0 +1,280 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Utilities/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/Pictures/MENU/menubg.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Pictures/MENU/menubot.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/Pictures/MENU/menutop.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_party.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_bag.png" type="Texture" id=7]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_pokepod.png" type="Texture" id=8]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_card.png" type="Texture" id=9]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_save.png" type="Texture" id=10]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_option.png" type="Texture" id=11]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_exit.png" type="Texture" id=12]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_pokedex.png" type="Texture" id=13]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_run.png" type="Texture" id=14]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=15]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+extra_spacing_top = 5
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 27
+extra_spacing_top = 8
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 23
+extra_spacing_top = 5
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 25
+extra_spacing_top = 5
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 25
+extra_spacing_top = 5
+font_data = ExtResource( 5 )
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="BG" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Bottom" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Top" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Place_Text" type="RichTextLabel" parent="."]
+margin_left = 128.0
+margin_top = 256.0
+margin_right = 384.0
+margin_bottom = 288.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "Sample Text"
+text = "Sample Text"
+
+[node name="Option_Text" type="RichTextLabel" parent="."]
+margin_left = 217.0
+margin_right = 357.0
+margin_bottom = 32.0
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "POKÉMON"
+text = "POKÉMON"
+
+[node name="Options" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="PARTY" type="Position2D" parent="Options"]
+position = Vector2( 256, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Pokémon" type="Sprite" parent="Options/PARTY"]
+position = Vector2( -2, -1 )
+texture = ExtResource( 6 )
+vframes = 2
+frame = 1
+
+[node name="Tween" type="Tween" parent="Options/PARTY"]
+
+[node name="BAG" type="Position2D" parent="Options"]
+editor/display_folded = true
+position = Vector2( 334, 61 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Bag" type="Sprite" parent="Options/BAG"]
+texture = ExtResource( 7 )
+vframes = 2
+
+[node name="Tween" type="Tween" parent="Options/BAG"]
+
+[node name="POKEPOD" type="Position2D" parent="Options"]
+editor/display_folded = true
+position = Vector2( 406, 61 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Poképod" type="Sprite" parent="Options/POKEPOD"]
+texture = ExtResource( 8 )
+vframes = 2
+
+[node name="Tween" type="Tween" parent="Options/POKEPOD"]
+
+[node name="CARD" type="Position2D" parent="Options"]
+editor/display_folded = true
+position = Vector2( 479, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Card" type="Sprite" parent="Options/CARD"]
+position = Vector2( 0, -4 )
+texture = ExtResource( 9 )
+vframes = 2
+
+[node name="Tween" type="Tween" parent="Options/CARD"]
+
+[node name="SAVE" type="Position2D" parent="Options"]
+editor/display_folded = true
+position = Vector2( 556, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Save" type="Sprite" parent="Options/SAVE"]
+position = Vector2( -3, -3 )
+texture = ExtResource( 10 )
+vframes = 2
+
+[node name="Tween" type="Tween" parent="Options/SAVE"]
+
+[node name="OPTION" type="Position2D" parent="Options"]
+editor/display_folded = true
+position = Vector2( 32, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Options" type="Sprite" parent="Options/OPTION"]
+position = Vector2( 0, -5 )
+texture = ExtResource( 11 )
+vframes = 2
+
+[node name="Tween" type="Tween" parent="Options/OPTION"]
+
+[node name="EXIT" type="Position2D" parent="Options"]
+editor/display_folded = true
+position = Vector2( 112, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Exit" type="Sprite" parent="Options/EXIT"]
+position = Vector2( 0, -4 )
+texture = ExtResource( 12 )
+vframes = 2
+
+[node name="Tween" type="Tween" parent="Options/EXIT"]
+
+[node name="POKEDEX" type="Position2D" parent="Options"]
+editor/display_folded = true
+position = Vector2( 184, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Pokedex" type="Sprite" parent="Options/POKEDEX"]
+position = Vector2( 0, -1 )
+texture = ExtResource( 13 )
+vframes = 2
+
+[node name="Tween" type="Tween" parent="Options/POKEDEX"]
+
+[node name="Run" type="Position2D" parent="."]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="Run"]
+position = Vector2( 367, 108 )
+texture = ExtResource( 14 )
+centered = false
+vframes = 2
+
+[node name="Save_Menu" type="Node2D" parent="."]
+
+[node name="Info" type="NinePatchRect" parent="Save_Menu"]
+margin_right = 256.0
+margin_bottom = 160.0
+texture = ExtResource( 15 )
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="Player_Name" type="Node2D" parent="Save_Menu/Info"]
+
+[node name="Player" type="RichTextLabel" parent="Save_Menu/Info/Player_Name"]
+margin_left = 12.0
+margin_top = 40.0
+margin_right = 76.0
+margin_bottom = 72.0
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "Player"
+text = "Player"
+
+[node name="Name" type="RichTextLabel" parent="Save_Menu/Info/Player_Name"]
+margin_left = 96.0
+margin_top = 40.0
+margin_right = 237.0
+margin_bottom = 72.0
+custom_fonts/normal_font = SubResource( 3 )
+bbcode_enabled = true
+bbcode_text = "Player"
+text = "Player"
+scroll_active = false
+
+[node name="Time" type="Node2D" parent="Save_Menu/Info"]
+
+[node name="Time" type="RichTextLabel" parent="Save_Menu/Info/Time"]
+margin_left = 11.0
+margin_top = 72.0
+margin_right = 75.0
+margin_bottom = 104.0
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "Time"
+text = "Time"
+
+[node name="Count" type="RichTextLabel" parent="Save_Menu/Info/Time"]
+margin_left = 128.0
+margin_top = 72.0
+margin_right = 237.0
+margin_bottom = 104.0
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "Time"
+text = "Time"
+scroll_active = false
+
+[node name="Badges" type="Node2D" parent="Save_Menu/Info"]
+
+[node name="Text" type="RichTextLabel" parent="Save_Menu/Info/Badges"]
+margin_left = 11.0
+margin_top = 104.0
+margin_right = 107.0
+margin_bottom = 137.0
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "Badges"
+text = "Badges"
+
+[node name="Count" type="RichTextLabel" parent="Save_Menu/Info/Badges"]
+margin_left = 224.0
+margin_top = 104.0
+margin_right = 237.0
+margin_bottom = 137.0
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "0"
+text = "0"
+scroll_active = false

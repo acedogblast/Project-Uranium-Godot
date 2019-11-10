@@ -18,6 +18,8 @@ var canInteract = true
 onready var transition = $CanvasLayer/Transition
 
 func _ready():
+	$CanvasLayer/Menu.visible = false
+	
 	add_to_group("save")
 	SaveSystem.load_game(1)
 	
@@ -29,12 +31,23 @@ func _ready():
 	player.z_index = 8
 
 func _process(delta):
+	change_menu_text()
+	
 	if Input.is_key_pressed(KEY_F1):
 		SaveSystem.save_game(1)
+	if Input.is_action_just_pressed("x"):
+		player.change_input()
+		$CanvasLayer/Menu.visible = !$CanvasLayer/Menu.visible
+		$CanvasLayer/Menu.open = !$CanvasLayer/Menu.open
+		yield(get_tree().create_timer(0.4), "timeout")
 	if get_child(2).type == "Outside" && loaded == false:
 		load_seemless()
 	else:
 		pass
+
+func change_menu_text():
+	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
+		$CanvasLayer/Menu/Place_Text.bbcode_text = "[center]" + current_scene.place_name + "[/center]"
 
 func play_anim(fade):
 	$CanvasLayer/Transition/AnimationPlayer.play(fade)
@@ -63,7 +76,7 @@ func change_scene(scene):
 #	player.call_deferred("enable_input")
 
 func room_transition(dest, dir):
-	player.disable_input()
+	player.change_input()
 	
 	transition_visibility()
 	play_anim("fade_in")
@@ -99,14 +112,15 @@ func room_transition(dest, dir):
 	elif dir == "Down":
 		$Map/Floor1/UpStairs/CollisionShape2D.disabled = false
 	
-	player.enable_input()
+	player.change_input()
 	transition_visibility()
 
 func door_transition(path_scene, new_position):
-	player.disable_input()
+	player.change_input()
 	yield(transition.fade_to_color(), "completed")
 	
 	change_scene(load(path_scene))
+	
 	
 	
 	Global.TrainerX = new_position.x
@@ -120,7 +134,7 @@ func door_transition(path_scene, new_position):
 	player.move(true)
 	yield(transition.fade_from_color(), "completed")
 	#player.movePrevious()
-	player.call_deferred("enable_input")
+	player.change_input()
 
 func load_seemless():
 	loaded = true
@@ -136,19 +150,19 @@ func interaction(collider):
 	canInteract = false
 	
 	if collider == $Map/Floor2/Console.position:
-		player.disable_input()
+		player.change_input()
 		get_child(2).consoleDialoge()
 	if collider == $Map/Floor2/TV.position:
-		player.disable_input()
+		player.change_input()
 		get_child(2).Floor2TVDialoge()
 	if collider == $Map/Floor2/TV2.position:
-		player.disable_input()
+		player.change_input()
 		get_child(2).Floor2TVDialoge()
 	if collider == $Map/Floor2/Shelf.position:
-		player.disable_input()
+		player.change_input()
 		get_child(2).Floor2SelfDialoge()
 	if collider == $Map/Floor2/Shelf2.position:
-		player.disable_input()
+		player.change_input()
 		get_child(2).Floor2SelfDialoge()
 
 func check_node(pos):
