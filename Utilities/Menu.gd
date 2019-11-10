@@ -7,6 +7,7 @@ var open = false
 var offscreen_left = 556
 var offscreen_right = -44
 var init_pos
+var saving = false
 
 var move_offset
 
@@ -35,17 +36,17 @@ func _process(delta):
 		pass
 
 func get_input():
-	if Input.is_action_pressed("ui_left") and input == false:
+	if Input.is_action_pressed("ui_left") and input == false and !saving:
 		input = true
 		move_sprites("Left")
 		yield(get_tree().create_timer(0.6), "timeout")
 		input = false
-	elif Input.is_action_pressed("ui_right") and input == false:
+	elif Input.is_action_pressed("ui_right") and input == false and !saving:
 		input = true
 		move_sprites("Right")
 		yield(get_tree().create_timer(0.6), "timeout")
 		input = false
-	elif Input.is_action_pressed("z") and input == false:
+	elif Input.is_action_pressed("z") and input == false and !saving:
 		input = true
 		Global.sprint = !Global.sprint
 		if $Run/Sprite.frame == 0:
@@ -54,6 +55,40 @@ func get_input():
 			$Run/Sprite.frame = 0
 		yield(get_tree().create_timer(0.3), "timeout")
 		input = false
+	elif Input.is_action_pressed("interact"):
+		saving = true
+		select()
+		
+		pass
+
+func select():
+	if current == ORDER.SAVE:
+		$Save_Menu.visible = true
+		$Yes_no.visible = true
+		
+		if Input.is_action_pressed("ui_down"):
+			print($Yes_no/Box/Cursor.position)
+			if $Yes_no/Box/Cursor.position.y == 32:
+				$Yes_no/Box/Cursor.position.y = 64
+				yield(get_tree().create_timer(0.3), "timeout")
+			else:
+				pass
+		elif Input.is_action_pressed("ui_up"):
+			if $Yes_no/Box/Cursor.position.y == 64:
+				$Yes_no/Box/Cursor.position.y -= 32
+				yield(get_tree().create_timer(0.3), "timeout")
+			else:
+				pass
+		elif Input.is_action_pressed("interact"):
+			if $Yes_no/Box/Cursor.position.y == 32:
+				print("Saved")
+				#SaveSystem.SAVE_STATE(1)
+			else:
+				$Yes_no.visible = false
+				$Save_Menu.visible = false
+				saving = false
+	else:
+		pass
 
 func move_sprites(dir):
 	if dir == "Left":

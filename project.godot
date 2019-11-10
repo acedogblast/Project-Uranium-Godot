@@ -29,6 +29,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/Move.gd"
 }, {
+"base": "Node",
+"class": "MoveDataBase",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Database/MoveDataBase.gd"
+}, {
 "base": "Object",
 "class": "MoveSet",
 "language": "GDScript",
@@ -68,12 +73,18 @@ _global_script_classes=[ {
 "class": "Type",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/Type.gd"
+}, {
+"base": "Object",
+"class": "registry",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Database/Pokemon/registry.gd"
 } ]
 _global_script_class_icons={
 "BattleInstanceData": "",
 "BattleQueue": "",
 "BattleQueueAction": "",
 "Move": "",
+"MoveDataBase": "",
 "MoveSet": "",
 "MoveStyle": "",
 "MoveTarget": "",
@@ -81,7 +92,8 @@ _global_script_class_icons={
 "Opponent": "",
 "Pokemon": "",
 "State": "",
-"Type": ""
+"Type": "",
+"registry": ""
 }
 
 [application]
@@ -101,6 +113,7 @@ SaveSystem="*res://Utilities/Save/SaveSystem.tscn"
 window/size/width=512
 window/size/height=384
 window/size/always_on_top=true
+window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 window/stretch/shrink="1"
 window/handheld/emulate_touchscreen=true

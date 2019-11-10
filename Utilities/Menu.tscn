@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Utilities/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Pictures/MENU/menubg.png" type="Texture" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Graphics/Pictures/MENU/icon_pokedex.png" type="Texture" id=13]
 [ext_resource path="res://Graphics/Pictures/MENU/icon_run.png" type="Texture" id=14]
 [ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=15]
+[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture" id=16]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -42,7 +43,11 @@ extra_spacing_top = 5
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 20
+size = 26
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 26
 font_data = ExtResource( 5 )
 
 [node name="Menu" type="Node2D"]
@@ -203,6 +208,7 @@ vframes = 2
 
 [node name="Save_Menu" type="Node2D" parent="."]
 editor/display_folded = true
+visible = false
 
 [node name="Info" type="NinePatchRect" parent="Save_Menu"]
 margin_right = 256.0
@@ -286,6 +292,7 @@ text = "0"
 scroll_active = false
 
 [node name="Yes_no" type="Node2D" parent="."]
+visible = false
 
 [node name="Box" type="NinePatchRect" parent="Yes_no"]
 margin_left = 416.0
@@ -299,10 +306,10 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="Yes" type="RichTextLabel" parent="Yes_no/Box"]
-margin_left = 32.0
+margin_left = 40.0
 margin_top = 23.0
-margin_right = 76.0
-margin_bottom = 42.0
+margin_right = 84.0
+margin_bottom = 44.0
 custom_fonts/normal_font = SubResource( 6 )
 bbcode_enabled = true
 bbcode_text = "Yes"
@@ -310,10 +317,16 @@ text = "Yes"
 scroll_active = false
 
 [node name="No" type="RichTextLabel" parent="Yes_no/Box"]
-margin_left = 32.0
+margin_left = 40.0
 margin_top = 55.0
-margin_right = 76.0
-margin_bottom = 74.0
+margin_right = 84.0
+margin_bottom = 76.0
+custom_fonts/normal_font = SubResource( 7 )
+bbcode_enabled = true
+bbcode_text = "No"
+text = "No"
 scroll_active = false
 
 [node name="Cursor" type="Sprite" parent="Yes_no/Box"]
+position = Vector2( 23, 32 )
+texture = ExtResource( 16 )
