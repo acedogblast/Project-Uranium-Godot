@@ -2,7 +2,7 @@ extends Node
 
 const SAVE_STATE = preload('res://Utilities/Save/State.gd')
 
-var SAVE_FOLDER = "user://debug/save"
+var SAVE_FOLDER = "res://Utilities/Save"
 var SAVE_NAME_TEMPLATE = "save_%03d.tres"
 
 var save_state : SAVE_STATE

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://IntroScenes/Intro.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGM/PU-Title.ogg" type="AudioStream" id=2]
@@ -13,6 +13,29 @@
 [ext_resource path="res://Graphics/Titles/Intro/credit1.png" type="Texture" id=11]
 [ext_resource path="res://Graphics/Titles/Intro/credit2.png" type="Texture" id=12]
 [ext_resource path="res://PermittedAssets/Credit3-acedogblast.png" type="Texture" id=13]
+[ext_resource path="res://Graphics/Titles/Intro/bg1.png" type="Texture" id=14]
+[ext_resource path="res://Graphics/Titles/Intro/bg2.png" type="Texture" id=15]
+[ext_resource path="res://Graphics/Titles/Intro/bg3.png" type="Texture" id=16]
+[ext_resource path="res://Graphics/Titles/Intro/poke1.png" type="Texture" id=17]
+[ext_resource path="res://Graphics/Titles/Intro/poke2.png" type="Texture" id=18]
+[ext_resource path="res://Graphics/Titles/Intro/poke3.png" type="Texture" id=19]
+[ext_resource path="res://Graphics/Pictures/Blackness.png" type="Texture" id=20]
+[ext_resource path="res://Graphics/Battlebacks/battlebgForest.PNG" type="Texture" id=21]
+[ext_resource path="res://Graphics/Battlebacks/enemybaseField2.png" type="Texture" id=22]
+[ext_resource path="res://Graphics/Battlebacks/battlebgCity.png" type="Texture" id=23]
+[ext_resource path="res://Graphics/Battlebacks/enemybaseCity.png" type="Texture" id=24]
+[ext_resource path="res://Graphics/Battlers/003.png" type="Texture" id=25]
+[ext_resource path="res://Graphics/Battlers/001.png" type="Texture" id=26]
+[ext_resource path="res://Graphics/Battlebacks/battlebgBeach.png" type="Texture" id=27]
+[ext_resource path="res://Graphics/Battlers/005.png" type="Texture" id=28]
+[ext_resource path="res://Graphics/Titles/Intro/curie.png" type="Texture" id=29]
+[ext_resource path="res://Graphics/Titles/Intro/back1.png" type="Texture" id=30]
+[ext_resource path="res://Graphics/Titles/Intro/back2.png" type="Texture" id=31]
+[ext_resource path="res://Graphics/Titles/Intro/beam.png" type="Texture" id=32]
+[ext_resource path="res://Graphics/Titles/Intro/trees.png" type="Texture" id=33]
+[ext_resource path="res://Graphics/Titles/Intro/glow.png" type="Texture" id=34]
+[ext_resource path="res://Graphics/Titles/Intro/urayne.png" type="Texture" id=35]
+[ext_resource path="res://PermittedAssets/White.png" type="Texture" id=36]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0 )
@@ -30,7 +53,7 @@ font_data = ExtResource( 3 )
 
 [sub_resource type="Animation" id=4]
 resource_name = "IntroAnimation"
-length = 71.0
+length = 72.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Label:custom_colors/font_color")
 tracks/0/interp = 1
@@ -278,10 +301,10 @@ tracks/20/loop_wrap = true
 tracks/20/imported = false
 tracks/20/enabled = true
 tracks/20/keys = {
-"times": PoolRealArray( 70, 71 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 70, 71 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.5, 0.5 ) ]
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 0.5, 0.5 ) ]
 }
 tracks/21/type = "value"
 tracks/21/path = NodePath("BlackOut:visible")
@@ -307,9 +330,312 @@ tracks/22/keys = {
 "update": 0,
 "values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
 }
+tracks/23/type = "value"
+tracks/23/path = NodePath("Pokemon/Battle:visible")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 71, 71.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
 
 [sub_resource type="Animation" id=5]
-resource_name = "Running"
+resource_name = "New Anim"
+length = 72.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:custom_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SkyBG:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sun2:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sun1:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("SunGlare:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("SunGlare:color")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 2, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Camera2D:offset")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Camera2D:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 5, 11 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 256, 192 ), Vector2( 256, 192 ), Vector2( 256, 692 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("SkyBG:rect_position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 8, 45, 82 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -3584, 0 ), Vector2( -3072, 0 ), Vector2( -2560, 0 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Trees1:rect_position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 8, 26, 44, 62, 70, 80 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -3584, 0 ), Vector2( -3072, 0 ), Vector2( -2560, 0 ), Vector2( -2048, 0 ), Vector2( -1820, 0 ), Vector2( -1536, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Grass:rect_position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 8, 17, 26, 35, 44, 53, 62, 71 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -3584, 0 ), Vector2( -3072, 0 ), Vector2( -2560, 0 ), Vector2( -2048, 0 ), Vector2( -1536, 0 ), Vector2( -1024, 0 ), Vector2( -512, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Hero:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 8, 31, 67 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 400, 770 ), Vector2( 400, 770 ), Vector2( 150, 770 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Credit1:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 11, 19 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Credit1:rect_position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 11, 13, 15, 17, 19 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -512, 500 ), Vector2( -512, 500 ), Vector2( 0, 500 ), Vector2( 0, 500 ), Vector2( 512, 500 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Credit2:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 17, 19, 29 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Credit2:rect_position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 21, 24, 27, 29 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -308, 500 ), Vector2( -512, 500 ), Vector2( 0, 500 ), Vector2( 0, 500 ), Vector2( 512, 500 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Credit3:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 26, 37 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Credit3:rect_position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 31, 33, 35, 37 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -512, 500 ), Vector2( -512, 500 ), Vector2( 0, 500 ), Vector2( 0, 500 ), Vector2( 512, 500 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Mountain:visible")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 40 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Mountain:rect_position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 40, 70 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -880, 500 ), Vector2( -220, 500 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Camera2D:zoom")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 70, 71 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 0.5, 0.5 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("BlackOut:visible")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 70 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("BlackOut:color")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 70, 71 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Pokemon/Battle:visible")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 71, 71.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=6]
 length = 1.2
 loop = true
 tracks/0/type = "value"
@@ -325,7 +651,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5 ]
 }
 
-[sub_resource type="GDScript" id=6]
+[sub_resource type="GDScript" id=7]
 script/source = "extends AnimationPlayer
 
 # class member variables go here, for example:
@@ -342,6 +668,749 @@ func _ready():
 #	pass
 "
 
+[sub_resource type="Animation" id=8]
+resource_name = "Pokemon"
+length = 14.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Black_Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6, 2.4, 3, 3.4, 4, 5.9, 6.5, 6.9, 7.5, 9.4, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -192 ), Vector2( 0, -272 ), Vector2( 0, -272 ), Vector2( 0, -192 ), Vector2( 0, -192 ), Vector2( 0, -272 ), Vector2( 0, -272 ), Vector2( 0, -192 ), Vector2( 0, -192 ), Vector2( 0, -272 ), Vector2( 0, -272 ), Vector2( 0, -192 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Black_Black:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.6, 2.4, 3, 3.4, 4, 5.9, 6.5, 6.9, 7.5, 9.4, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 192 ), Vector2( 0, 272 ), Vector2( 0, 272 ), Vector2( 0, 192 ), Vector2( 0, 192 ), Vector2( 0, 272 ), Vector2( 0, 272 ), Vector2( 0, 192 ), Vector2( 0, 192 ), Vector2( 0, 272 ), Vector2( 0, 272 ), Vector2( 0, 192 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Metalynx:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.7, 2.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -100, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Metalynx:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("BG_1:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 3.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("BG_2:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 3.2, 6.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Archilles:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 3.2, 6.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Archilles:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 3.2, 4.2, 5.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 100, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Eletruxo:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 6.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("BG_3:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 6.7, 10.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Eletruxo:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 6.7, 7.7, 9.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( -100, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("BG_1:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.6, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 188 ), Vector2( 110, 108 ), Vector2( 510, 108 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("BG_1_2:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.6, 7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -510, 188 ), Vector2( -402, 108 ), Vector2( 0, 108 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("BG_1_2:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 3.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("BG_2:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 3.2, 3.8, 10.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 188 ), Vector2( 110, 108 ), Vector2( 510, 108 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("BG_2_2:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 3.2, 3.8, 10.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -510, 188 ), Vector2( -402, 108 ), Vector2( 0, 108 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("BG_2_2:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 3.2, 6.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("BG_3_2:visible")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 6.7, 10.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("BG_3_2:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 6.7, 7.5, 13.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -510, 188 ), Vector2( -402, 108 ), Vector2( 0, 108 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("BG_3:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 6.7, 7.5, 13.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 188 ), Vector2( 110, 108 ), Vector2( 512, 108 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Raptorch"
+length = 3.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Raptorch:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Raptorch_Shadow:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68 ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 3.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Orchynx:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Orchynx_Shadow:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Orchynx_Shadow:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Orchynx:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Eletux"
+length = 3.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Eletux_Shadow:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Eletux:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.24622, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 0, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66 ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 8.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Black_Left:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.25 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Black_Right:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.25 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Black_Left:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.25, 3.6, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -90, 192 ), Vector2( -90, 192 ), Vector2( 90, 192 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Black_Right:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.25, 3.6, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 601, 192 ), Vector2( 601, 192 ), Vector2( 421, 192 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Black_Fade:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Black_Fade:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("BG:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Grass:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Raptorch:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 4.65, 5.4, 7, 7.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -362 ), Vector2( 0, -362 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, -362 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Eletux:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 4.65, 5.4, 7, 7.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -362 ), Vector2( 0, -362 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, -362 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("BG_mockup:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 4.05 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Grass_mockup:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 4.05 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Black:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 4.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("BG_mockup:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 7, 7.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 180, 23 ), Vector2( 180, 23 ), Vector2( 180, 385 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Grass_mockup:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 7, 7.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 181, 199 ), Vector2( 181, 199 ), Vector2( 181, 561 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Orchynx:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 1.05, 7, 7.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 362 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Curie"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Fade:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "Uranye"
+length = 17.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("BG:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3, 5.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, -540 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Trees:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( -0.2, 0, 3, 5.5, 9.5, 9.6, 9.7, 9.8, 9.9, 10, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9, 11, 11.1, 11.2, 11.3, 11.4, 11.5, 11.6, 11.7, 11.8, 11.9, 11.9, 12, 12.1, 12.2, 12.3, 12.3, 12.4, 12.5, 12.5, 12.6, 12.7, 12.7, 12.8, 12.9, 12.9, 13, 13.1, 13.2, 13.3, 13.3, 13.4, 13.5, 13.5, 13.6, 13.7, 13.7, 13.8, 13.9, 13.9, 14, 14.1, 14.2, 14.3, 14.3, 14.4, 14.5, 14.5, 14.6, 14.7, 14.8, 14.9, 15, 15.1, 15.2, 15.3, 15.3, 15.4, 15.5, 15.5, 15.6, 15.7, 15.8, 15.9, 16, 16.1, 16.2, 16.3, 16.4, 16.5, 16.6, 16.7, 16.8, 16.9, 17 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ), Vector2( 0, -540 ), Vector2( 0, -530 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Uranye_Sprite/Glow:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Uranye_Sprite/Uranye:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 4.5, 5.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Uranye_Sprite/Glow:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 5.5, 6.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 2, 2 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Uranye_Sprite/Glow:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 5.5, 6.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 208, 141 ), Vector2( 208, 141 ), Vector2( 160, 100 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("White:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 5.5, 6.2, 7, 8, 8.5, 9, 16, 16.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Uranye_Sprite:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 6.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Beam:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 8.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Beam:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 9.5, 9.6, 9.7, 9.8, 9.9, 10, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9, 11, 11.1, 11.2, 11.3, 11.4, 11.5, 11.6, 11.7, 11.8, 11.9, 12, 12.1, 12.2, 12.3, 12.4, 12.5, 12.6, 12.7, 12.8, 12.9, 13, 13.1, 13.2, 13.3, 13.4, 13.5, 13.6, 13.7, 13.8, 13.9, 14, 14.1, 14.2, 14.3, 14.4, 14.5, 14.6, 14.7, 14.8, 14.9, 15, 15.1, 15.2, 15.3, 15.4, 15.5, 15.6, 15.7, 15.8, 15.9, 16, 16.1, 16.2, 16.3, 16.4, 16.5, 16.6, 16.7, 16.8, 16.9, 17 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ), Vector2( 0, -540 ), Vector2( 0, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("BG_Glow:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 8.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("BG_Glow:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 8.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -540 ), Vector2( 0, -540 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Black:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 16.5, 17 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "Uranye_Sprite"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Uranye:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
 [node name="RootNode" type="Node"]
 script = ExtResource( 1 )
 
@@ -357,6 +1426,7 @@ expand = true
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = -2.0
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "UI_INTRO_DISCLAIMER"
@@ -366,13 +1436,14 @@ valign = 1
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "IntroAnimation"
 anims/IntroAnimation = SubResource( 4 )
+"anims/New Anim" = SubResource( 5 )
 
 [node name="SkyBG" type="TextureRect" parent="."]
 visible = false
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -4090.46
-margin_right = 5.53516
+margin_left = -3215.91
+margin_right = 880.082
 margin_bottom = 928.0
 texture = ExtResource( 4 )
 stretch_mode = 2
@@ -405,13 +1476,13 @@ texture = ExtResource( 6 )
 visible = false
 margin_right = 512.0
 margin_bottom = 384.0
-color = Color( 1, 1, 1, 0 )
+color = Color( 1, 1, 1, 0.5 )
 
 [node name="Mountain" type="TextureRect" parent="."]
 visible = false
-margin_left = -880.0
+margin_left = -220.0
 margin_top = 500.0
-margin_right = 194.0
+margin_right = 854.0
 margin_bottom = 884.0
 texture = ExtResource( 7 )
 
@@ -420,16 +1491,15 @@ position = Vector2( 256, 192 )
 current = true
 
 [node name="Trees1" type="TextureRect" parent="."]
-margin_left = -3572.62
-margin_right = 523.378
+margin_left = -1774.56
+margin_right = 2321.44
 margin_bottom = 928.0
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 2
 
 [node name="Grass" type="TextureRect" parent="."]
-margin_left = -3561.24
-margin_right = 534.756
+margin_right = 4096.0
 margin_bottom = 928.0
 texture = ExtResource( 9 )
 expand = true
@@ -437,20 +1507,21 @@ stretch_mode = 2
 
 [node name="Hero" type="Sprite" parent="."]
 editor/display_folded = true
-position = Vector2( 400, 770 )
+position = Vector2( 150, 770 )
 texture = ExtResource( 10 )
 hframes = 6
 frame = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Hero"]
 playback_speed = 1.5
-anims/Running = SubResource( 5 )
-script = SubResource( 6 )
+anims/Running = SubResource( 6 )
+script = SubResource( 7 )
 
 [node name="Credit1" type="TextureRect" parent="."]
 visible = false
-margin_left = -512.0
+margin_left = 512.0
 margin_top = 500.0
+margin_right = 1024.0
 margin_bottom = 884.0
 texture = ExtResource( 11 )
 
@@ -474,5 +1545,304 @@ visible = false
 margin_top = 500.0
 margin_right = 512.0
 margin_bottom = 884.0
-color = Color( 0, 0, 0, 0 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Pokemon" type="CanvasLayer" parent="."]
+
+[node name="Pokemon_Showcase" type="Node2D" parent="Pokemon"]
+editor/display_folded = true
+visible = false
+
+[node name="BG_1" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+visible = false
+position = Vector2( 510, 108 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="BG_1_2" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+visible = false
+position = Vector2( 0, 108 )
+texture = ExtResource( 14 )
+centered = false
+
+[node name="BG_2" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+visible = false
+position = Vector2( 510, 108 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="BG_2_2" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+visible = false
+position = Vector2( 0, 108 )
+texture = ExtResource( 15 )
+centered = false
+
+[node name="BG_3" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+visible = false
+position = Vector2( 329.844, 108 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="BG_3_2" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+visible = false
+position = Vector2( -182.156, 108 )
+texture = ExtResource( 16 )
+centered = false
+
+[node name="Metalynx" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+visible = false
+position = Vector2( -100, 0 )
+texture = ExtResource( 17 )
+centered = false
+
+[node name="Archilles" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+visible = false
+position = Vector2( 100, 0 )
+texture = ExtResource( 18 )
+centered = false
+
+[node name="Eletruxo" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+position = Vector2( -100, 0 )
+texture = ExtResource( 19 )
+centered = false
+
+[node name="Black_Top" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+position = Vector2( 0, -192 )
+texture = ExtResource( 20 )
+centered = false
+
+[node name="Black_Black" type="Sprite" parent="Pokemon/Pokemon_Showcase"]
+position = Vector2( 0, 192 )
+texture = ExtResource( 20 )
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pokemon/Pokemon_Showcase"]
+anims/Pokemon = SubResource( 8 )
+
+[node name="Battle" type="Node2D" parent="Pokemon"]
+editor/display_folded = true
+visible = false
+
+[node name="BG" type="Sprite" parent="Pokemon/Battle"]
+position = Vector2( -180, -170 )
+scale = Vector2( 1.85938, 1.85938 )
+texture = ExtResource( 21 )
+centered = false
+
+[node name="Grass" type="Sprite" parent="Pokemon/Battle"]
+position = Vector2( 30, 160 )
+scale = Vector2( 1.54688, 1.54688 )
+texture = ExtResource( 22 )
+centered = false
+
+[node name="Black" type="Sprite" parent="Pokemon/Battle"]
+visible = false
+texture = ExtResource( 20 )
+centered = false
+
+[node name="Black_Left" type="Sprite" parent="Pokemon/Battle"]
+position = Vector2( -90, 192 )
+scale = Vector2( 0.355, 1 )
+texture = ExtResource( 20 )
+
+[node name="Black_Right" type="Sprite" parent="Pokemon/Battle"]
+position = Vector2( 601, 192 )
+scale = Vector2( 0.355469, 1 )
+texture = ExtResource( 20 )
+
+[node name="Black_Top" type="Sprite" parent="Pokemon/Battle"]
+position = Vector2( 254.719, 13.5 )
+scale = Vector2( 0.994996, 0.0703125 )
+texture = ExtResource( 20 )
+
+[node name="Black_Bottom" type="Sprite" parent="Pokemon/Battle"]
+position = Vector2( 254.719, 372.844 )
+scale = Vector2( 0.994995, 0.0581031 )
+texture = ExtResource( 20 )
+
+[node name="Raptorch" type="Node2D" parent="Pokemon/Battle"]
+editor/display_folded = true
+position = Vector2( 0, -362 )
+
+[node name="BG" type="Sprite" parent="Pokemon/Battle/Raptorch"]
+position = Vector2( -7.62939e-06, 27 )
+scale = Vector2( 1.85547, 1.85938 )
+texture = ExtResource( 23 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 220, 100, 80, 180 )
+
+[node name="Base" type="Sprite" parent="Pokemon/Battle/Raptorch"]
+position = Vector2( -93, 190 )
+scale = Vector2( 1.23814, 1.23438 )
+texture = ExtResource( 24 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 195, 100 )
+
+[node name="Raptorch_Shadow" type="Sprite" parent="Pokemon/Battle/Raptorch"]
+modulate = Color( 0, 0, 0, 0.596078 )
+position = Vector2( 88.336, 239.75 )
+scale = Vector2( 4.0166, 1.09375 )
+texture = ExtResource( 25 )
+flip_h = true
+hframes = 70
+region_rect = Rect2( 0, 0, 2000, 100 )
+
+[node name="Raptorch" type="Sprite" parent="Pokemon/Battle/Raptorch"]
+position = Vector2( 61.5, 175.5 )
+scale = Vector2( 3.0625, 3.0625 )
+texture = ExtResource( 25 )
+flip_h = true
+hframes = 70
+
+[node name="Raptorch_anim" type="AnimationPlayer" parent="Pokemon/Battle/Raptorch"]
+anims/Raptorch = SubResource( 9 )
+
+[node name="BG_mockup" type="Sprite" parent="Pokemon/Battle"]
+visible = false
+position = Vector2( 180, 23 )
+scale = Vector2( 1.85938, 1.85938 )
+texture = ExtResource( 21 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 193.197, 100.441, 82.308, 182.302 )
+
+[node name="Grass_mockup" type="Sprite" parent="Pokemon/Battle"]
+visible = false
+position = Vector2( 181, 199 )
+scale = Vector2( 1.54688, 1.54688 )
+texture = ExtResource( 22 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 97.5091, 25.0427, 97.6329, 84.2962 )
+
+[node name="Orchynx" type="Node2D" parent="Pokemon/Battle"]
+
+[node name="Orchynx_Shadow" type="Sprite" parent="Pokemon/Battle/Orchynx"]
+modulate = Color( 0, 0, 0, 0.596078 )
+position = Vector2( 289.336, 223.75 )
+scale = Vector2( 4.0166, 1.09375 )
+texture = ExtResource( 26 )
+flip_h = true
+hframes = 64
+frame = 38
+
+[node name="Orchynx" type="Sprite" parent="Pokemon/Battle/Orchynx"]
+position = Vector2( 247.5, 162.5 )
+scale = Vector2( 3.0625, 3.0625 )
+texture = ExtResource( 26 )
+flip_h = true
+hframes = 64
+frame = 38
+
+[node name="Orchynx_anim" type="AnimationPlayer" parent="Pokemon/Battle/Orchynx"]
+anims/Orchynx = SubResource( 10 )
+
+[node name="Eletux" type="Node2D" parent="Pokemon/Battle"]
+editor/display_folded = true
+position = Vector2( 0, -362 )
+
+[node name="BG" type="Sprite" parent="Pokemon/Battle/Eletux"]
+position = Vector2( 361, 27 )
+scale = Vector2( 1.85547, 1.85938 )
+texture = ExtResource( 27 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 140, 100, 80, 180 )
+
+[node name="Eletux_Shadow" type="Sprite" parent="Pokemon/Battle/Eletux"]
+modulate = Color( 0, 0, 0, 0.596078 )
+position = Vector2( 459.336, 243.75 )
+scale = Vector2( 4.0166, 1.09375 )
+texture = ExtResource( 28 )
+flip_h = true
+hframes = 68
+region_rect = Rect2( 0, 0, 2000, 100 )
+
+[node name="Eletux" type="Sprite" parent="Pokemon/Battle/Eletux"]
+position = Vector2( 427.5, 182.5 )
+scale = Vector2( 3.0625, 3.0625 )
+texture = ExtResource( 28 )
+flip_h = true
+hframes = 68
+
+[node name="Eletux_anim" type="AnimationPlayer" parent="Pokemon/Battle/Eletux"]
+anims/Eletux = SubResource( 11 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pokemon/Battle"]
+anims/Showcase = SubResource( 12 )
+
+[node name="Black_Fade" type="Sprite" parent="Pokemon/Battle"]
+visible = false
+texture = ExtResource( 20 )
+centered = false
+
+[node name="Curie" type="Node2D" parent="Pokemon"]
+editor/display_folded = true
+visible = false
+
+[node name="Sprite" type="Sprite" parent="Pokemon/Curie"]
+texture = ExtResource( 29 )
+centered = false
+
+[node name="Fade" type="Sprite" parent="Pokemon/Curie"]
+texture = ExtResource( 20 )
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pokemon/Curie"]
+anims/Curie = SubResource( 13 )
+
+[node name="Uranye" type="Node2D" parent="Pokemon"]
+editor/display_folded = true
+visible = false
+
+[node name="BG" type="Sprite" parent="Pokemon/Uranye"]
+position = Vector2( 0, -540 )
+texture = ExtResource( 30 )
+centered = false
+
+[node name="BG_Glow" type="Sprite" parent="Pokemon/Uranye"]
+position = Vector2( 0, -540 )
+texture = ExtResource( 31 )
+centered = false
+
+[node name="Beam" type="Sprite" parent="Pokemon/Uranye"]
+texture = ExtResource( 32 )
+centered = false
+
+[node name="Trees" type="Sprite" parent="Pokemon/Uranye"]
+position = Vector2( 0, -530 )
+texture = ExtResource( 33 )
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pokemon/Uranye"]
+anims/Uranye = SubResource( 14 )
+
+[node name="Uranye_Sprite" type="Node2D" parent="Pokemon/Uranye"]
+editor/display_folded = true
+visible = false
+
+[node name="Glow" type="Sprite" parent="Pokemon/Uranye/Uranye_Sprite"]
+position = Vector2( 160, 100 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 34 )
+centered = false
+
+[node name="Uranye" type="Sprite" parent="Pokemon/Uranye/Uranye_Sprite"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 256, 190 )
+texture = ExtResource( 35 )
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pokemon/Uranye/Uranye_Sprite"]
+anims/Uranye_Sprite = SubResource( 15 )
+
+[node name="White" type="Sprite" parent="Pokemon/Uranye"]
+texture = ExtResource( 36 )
+centered = false
+
+[node name="Black" type="Sprite" parent="Pokemon/Uranye"]
+texture = ExtResource( 20 )
+centered = false
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
