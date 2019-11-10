@@ -3,6 +3,7 @@ extends Node2D
 var current
 var input = false
 var open = false
+var menu = false
 
 var offscreen_left = 556
 var offscreen_right = -44
@@ -29,64 +30,68 @@ func _ready():
 	
 	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right]" + Global.TrainerName + "[/right]"
 
-func _process(delta):
-	if open == true:
-		get_input()
-	else:
-		pass
-
-func get_input():
-	if Input.is_action_pressed("ui_left") and input == false and !saving:
-		input = true
-		move_sprites("Left")
-		yield(get_tree().create_timer(0.6), "timeout")
-		input = false
-	elif Input.is_action_pressed("ui_right") and input == false and !saving:
-		input = true
-		move_sprites("Right")
-		yield(get_tree().create_timer(0.6), "timeout")
-		input = false
-	elif Input.is_action_pressed("z") and input == false and !saving:
-		input = true
-		Global.sprint = !Global.sprint
-		if $Run/Sprite.frame == 0:
-			$Run/Sprite.frame = 1
-		else:
-			$Run/Sprite.frame = 0
-		yield(get_tree().create_timer(0.3), "timeout")
-		input = false
-	elif Input.is_action_pressed("interact"):
-		saving = true
+func _input(event):
+	if open and !menu:
+		if event.is_action_pressed("ui_left") and input == false and !saving:
+			input = true
+			move_sprites("Left")
+			yield(get_tree().create_timer(0.6), "timeout")
+			input = false
+		elif event.is_action_pressed("ui_right") and input == false and !saving:
+			input = true
+			move_sprites("Right")
+			yield(get_tree().create_timer(0.6), "timeout")
+			input = false
+		elif event.is_action_pressed("z") and input == false and !saving:
+			input = true
+			Global.sprint = !Global.sprint
+			if $Run/Sprite.frame == 0:
+				$Run/Sprite.frame = 1
+			else:
+				$Run/Sprite.frame = 0
+			yield(get_tree().create_timer(0.3), "timeout")
+			input = false
+		elif event.is_action_pressed("interact"):
+			menu = true
+		
+	elif menu:
 		select()
 		
 		pass
 
 func select():
 	if current == ORDER.SAVE:
+		if !saving:
+			yield(get_tree().create_timer(0.3), "timeout")
+		saving = true
 		$Save_Menu.visible = true
 		$Yes_no.visible = true
 		
-		if Input.is_action_pressed("ui_down"):
-			print($Yes_no/Box/Cursor.position)
+		if Input.is_action_pressed("ui_down") and saving:
 			if $Yes_no/Box/Cursor.position.y == 32:
 				$Yes_no/Box/Cursor.position.y = 64
 				yield(get_tree().create_timer(0.3), "timeout")
 			else:
 				pass
-		elif Input.is_action_pressed("ui_up"):
+		elif Input.is_action_pressed("ui_up") and saving:
 			if $Yes_no/Box/Cursor.position.y == 64:
 				$Yes_no/Box/Cursor.position.y -= 32
 				yield(get_tree().create_timer(0.3), "timeout")
 			else:
 				pass
-		elif Input.is_action_pressed("interact"):
+		
+		if Input.is_action_pressed("interact"):
 			if $Yes_no/Box/Cursor.position.y == 32:
 				print("Saved")
-				#SaveSystem.SAVE_STATE(1)
+				yield(get_tree().create_timer(0.2), "timeout")
+				SaveSystem.save_game(1)
 			else:
 				$Yes_no.visible = false
 				$Save_Menu.visible = false
 				saving = false
+				menu = false
+				yield(get_tree().create_timer(0.3), "timeout")
+				$Yes_no/Box/Cursor.position.y = 32
 	else:
 		pass
 
