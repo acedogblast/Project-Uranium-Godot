@@ -29,6 +29,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/Move.gd"
 }, {
+"base": "Node",
+"class": "MoveDataBase",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Database/MoveDataBase.gd"
+}, {
+"base": "Object",
+"class": "MoveSet",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/MoveSet.gd"
+}, {
 "base": "Object",
 "class": "MoveStyle",
 "language": "GDScript",
@@ -74,6 +84,8 @@ _global_script_class_icons={
 "BattleQueue": "",
 "BattleQueueAction": "",
 "Move": "",
+"MoveDataBase": "",
+"MoveSet": "",
 "MoveStyle": "",
 "MoveTarget": "",
 "Nature": "",

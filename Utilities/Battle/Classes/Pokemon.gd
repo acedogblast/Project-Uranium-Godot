@@ -53,10 +53,10 @@ var ev_speed = 0
 var item
 
 # The pokemon's Move set
-var move_1
-var move_2
-var move_3
-var move_4
+var move_1 : Move
+var move_2 : Move
+var move_3 : Move
+var move_4 : Move
 
 # The pokemon's gender
 var gender
@@ -120,6 +120,14 @@ func generate_gender(male_ratio : float):
 	else:
 		gender = FEMALE
 
+func update_stats(data):
+	attack = int( int ((2 * data.attack + iv_attack + ev_attack) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.ATTACK))
+	defense = int( int ((2 * data.defense + iv_defense + ev_defense) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.DEFENSE))
+	sp_attack = int( int ((2 * data.sp_attack + iv_sp_attack + ev_sp_attack) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SP_ATTACK))
+	sp_defense = int( int ((2 * data.sp_defense + iv_sp_defense + ev_sp_defense) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SP_DEFENSE))
+	speed = int( int ((2 * data.speed + iv_speed + ev_speed) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SPEED))
+	hp = int ( (2 * data.hp + iv_hp + ev_hp) * level / 100 + level + 10 )
+
 func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level 1 version of the pokemon by its ID and sets. Its IV values will be generated here.
 	var data = registry.new().get_pokemon_class(id)
 	ID = id
@@ -147,12 +155,22 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level 1 version of
 			experience = exp_fluctuating(lv)
 	
 	# Set stats
-	attack = int( int ((2 * data.attack + iv_attack + ev_attack) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.ATTACK))
-	defense = int( int ((2 * data.defense + iv_defense + ev_defense) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.DEFENSE))
-	sp_attack = int( int ((2 * data.sp_attack + iv_sp_attack + ev_sp_attack) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SP_ATTACK))
-	sp_defense = int( int ((2 * data.sp_defense + iv_sp_defense + ev_sp_defense) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SP_DEFENSE))
-	speed = int( int ((2 * data.speed + iv_speed + ev_speed) * lv / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SPEED))
-	hp = int ( (2 * data.hp + iv_hp + ev_hp) * lv / 100 + lv + 10 )
-	
+	update_stats(data)
 	# Set move set
-	
+	var moveset = []
+	for move in data.moveset:
+		if move.level <= level:
+			moveset.push_back(move.move)
+	var count = moveset.size()
+	if count > 4:
+		count = 4
+	for i in range(count):
+		match i:
+			0: 
+				move_1 = MoveDataBase.get_move_by_name(moveset.pop_back())
+			1: 
+				move_2 = MoveDataBase.get_move_by_name(moveset.pop_back())
+			2: 
+				move_3 = MoveDataBase.get_move_by_name(moveset.pop_back())
+			3: 
+				move_4 = MoveDataBase.get_move_by_name(moveset.pop_back())

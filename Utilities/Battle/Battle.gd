@@ -110,9 +110,9 @@ func test():
 	bid.opponent = OPP.new()
 	bid.opponent.name = "Theo"
 	
-	var poke = registry.get_basic_pokemon(1);
+	var poke = Pokemon.new()
+	poke.set_basic_pokemon_by_level(1,5)
 	bid.opponent.pokemon_group.append(poke)
-	
 	
 	bid.opponent.battle_texture = load("res://Graphics/Characters/trainer086.png")
 	
