@@ -12,19 +12,21 @@ var ID
 var type1
 var type2
 
+var current_hp : int
+
 # The pokemon's stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
-var hp
-var attack
-var defense
-var sp_attack
-var sp_defense
-var speed
+var hp : int
+var attack : int
+var defense : int
+var sp_attack : int
+var sp_defense : int
+var speed : int
 
 # The pokemon's level
-var level
+var level : int
 
 # The pokemon's total experience
-var experience
+var experience : int
 
 # The pokemon's nature
 var nature
@@ -34,12 +36,12 @@ var ability
 var hidden_ability
 
 # The pokemon's Individual Values
-var iv_hp
-var iv_attack
-var iv_defense
-var iv_sp_attack
-var iv_sp_defense
-var iv_speed
+var iv_hp : int
+var iv_attack : int
+var iv_defense : int
+var iv_sp_attack : int
+var iv_sp_defense : int
+var iv_speed : int
 
 # The pokemon's Effort Values
 var ev_hp = 0
@@ -156,6 +158,7 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level 1 version of
 	
 	# Set stats
 	update_stats(data)
+	current_hp = hp
 	# Set move set
 	var moveset = []
 	for move in data.moveset:

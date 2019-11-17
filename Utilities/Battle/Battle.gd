@@ -14,7 +14,6 @@ func _ready():
 	$CanvasLayer/BattleInterfaceLayer/Message.visible = false
 	$CanvasLayer/BattleInterfaceLayer/BattleComandSelect.visible = false
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
-	
 	test()
 	pass
 
@@ -68,8 +67,16 @@ func Start_Battle(bid : BattleInstanceData):
 			action.battle_text = "RIVAL Theo sent\nout " + battle_instance.opponent.pokemon_group[0].name + "!"
 			queue.push(action)
 	# If human opponent add ball toss.
-	
-	
+	if battle_instance.battle_type == battle_instance.BattleType.RIVAL or battle_instance.battle_type == battle_instance.BattleType.SINGLE_TRAINER:
+		var action = BattleQueueAction.new()
+		action.type = action.FOE_BALLTOSS
+		
+		
+		
+		queue.push(action)
+		pass
+	# Load data to Foe Bar
+	$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battle_instance.opponent.pokemon_group[0])
 	
 	
 	
@@ -77,7 +84,7 @@ func Start_Battle(bid : BattleInstanceData):
 	var action = BattleQueueAction.new()
 	action.type = action.BATTLE_GROUNDS_POS_CHANGE
 	action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.PLAYER_TOSS
-	queue.push(action)
+	#queue.push(action)
 	
 	# Start the battle loop until player wins or losses.
 	var isBattleOver = false
@@ -143,13 +150,13 @@ func set_gender_textures():
 	match Global.TrainerGender:
 		0:
 			$CanvasLayer/TransitionEffects/Vs/PlayerBanner.texture = load("res://Graphics/Transitions/vsTrainer0.png")
-			$CanvasLayer/BattleGrounds/PlayerToss.texture = load("res://Graphics/Characters/trback000.png")
+			$CanvasLayer/BattleInterfaceLayer/PlayerToss.texture = load("res://Graphics/Characters/trback000.png")
 		1:
 			$CanvasLayer/TransitionEffects/Vs/PlayerBanner.texture = load("res://Graphics/Transitions/vsTrainer9.png")
-			$CanvasLayer/BattleGrounds/PlayerToss.texture = load("res://Graphics/Characters/trback009.png")
+			$CanvasLayer/BattleInterfaceLayer/PlayerToss.texture = load("res://Graphics/Characters/trback009.png")
 		2:
 			$CanvasLayer/TransitionEffects/Vs/PlayerBanner.texture = load("res://Graphics/Transitions/vsTrainer1.png")
-			$CanvasLayer/BattleGrounds/PlayerToss.texture = load("res://Graphics/Characters/trback001.png")
+			$CanvasLayer/BattleInterfaceLayer/PlayerToss.texture = load("res://Graphics/Characters/trback001.png")
 	$CanvasLayer/TransitionEffects/Vs/PlayerBanner/Label.bbcode_text = "[center]" + Global.TrainerName
 func set_battle_music():
 	match battle_instance.battle_type:
@@ -216,5 +223,14 @@ func battle_loop():
 			yield(t, "timeout")
 			t.queue_free()
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
-	#print("end of loop")
+		action.FOE_BALLTOSS:
+			# if human opponent is visable play fadeing animation
+			if $CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible == true:
+				$CanvasLayer/BattleGrounds/FoeBase/FoeHuman/AnimationPlayer.play("FadeOut")
+			
+			$CanvasLayer/BattleGrounds/FoeBase/Ball.visible = true
+			$CanvasLayer/BattleGrounds.foe_unveil()
+			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = false
+			yield($CanvasLayer/BattleGrounds, "unveil_finished")
+			pass
 	emit_signal("EndOfBattleLoop")

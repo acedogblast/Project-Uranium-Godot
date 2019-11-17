@@ -1,4 +1,5 @@
 extends Sprite
+signal free
 var index = 0
 var frames = [
 	"res://Graphics/Pictures/a09.png",
@@ -33,10 +34,12 @@ var frames = [
 	]
 func nextFrame():
 	if index == 28:
-		$Timer.stop()
+		print("Ball Flash over")
+		emit_signal("free")
+		self.queue_free()
 	self.texture = load(frames[index])
 	index += 1
 func _ready():
-	$Timer.wait_time = 1 / 20
-	$Timer.start()
-	pass
+	print("Ball Flash start")
+	self.texture = load("res://Graphics/Pictures/a09.png")
+	$AnimationPlayer.play("Flash")
