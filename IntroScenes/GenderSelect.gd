@@ -145,16 +145,5 @@ func NameResult(name):
 	self.visible = false
 	#print(Global.TrainerName)
 	#print(Global.TrainerGender)
-	get_parent().Resume()
+	get_parent().resume()
 	pass
-#func _on_LineEdit_text_entered(new_text):
-#	Global.TrainerName = new_text
-#	Global.TrainerGender = selection
-#	#Global.TrainerImage = $NameBG/Hero.texture
-#	$GenderColor/AnimationPlayerSlide.stop(true)
-#	$NameBG.visible = false
-#	self.visible = false
-#	#print(Global.TrainerName)
-#	#print(Global.TrainerGender)
-#	get_parent().Resume()
-#	pass

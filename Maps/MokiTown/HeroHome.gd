@@ -2,8 +2,6 @@ extends Node
 
 #onready var next_scene = preload("res://Maps/Moki Town/MokiTown.tscn")
 
-onready var dialogBox = preload("res://Utilities/Dialogue Box.tscn")
-onready var dialog = null
 var isInteracting = false
 var canInteract = true
 
@@ -12,6 +10,8 @@ var place_name = Global.TrainerName + "'s House"
 var type = "Indoor"
 
 func _ready():
+	DialogueSystem.connect("dialogue_end", self, "dialog_end")
+	
 	$Floor2/DownStairs/CollisionShape2D.disabled = true
 	
 	$BlackBG.visible = true
@@ -28,19 +28,19 @@ func interaction(collider):
 	print($Floor2/TV.position)
 	if collider == $Floor2/Console.position:
 		get_tree().player.disable_input()
-		consoleDialoge()
+		console_dialoge()
 	if collider == $Floor2/TV.position:
 		get_tree().player.disable_input()
-		Floor2TVDialoge()
+		floor_2_tv_dialogue()
 	if collider == $Floor2/TV2.position:
 		get_tree().player.disable_input()
-		Floor2TVDialoge()
+		floor_2_tv_dialogue()
 	if collider == $Floor2/Shelf.position:
 		get_tree().player.disable_input()
-		Floor2SelfDialoge()
+		floor_2_bookshelf_dialogue()
 	if collider == $Floor2/Shelf2.position:
 		get_tree().player.disable_input()
-		Floor2SelfDialoge()
+		floor_2_bookshelf_dialogue()
 
 func check_node(pos):
 	for node in get_tree().get_nodes_in_group("interact"):
@@ -49,24 +49,19 @@ func check_node(pos):
 		pass
 	pass
 
-func Floor2TVDialoge():
-	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_TV"), false)
-func consoleDialoge():
-	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_CONSOLE"),false)
+func floor_2_tv_dialogue():
+	DialogueSystem.start_dialog(tr("INTERACT_MOKITOWN_HOUSE_TV"), false)
+	#new_dialog(tr("INTERACT_MOKITOWN_HOUSE_TV"), false)
+func console_dialoge():
+	DialogueSystem.start_dialog(tr("INTERACT_MOKITOWN_HOUSE_CONSOLE"), false)
+	#new_dialog(tr("INTERACT_MOKITOWN_HOUSE_CONSOLE"),false)
 	pass
-func Floor2SelfDialoge():
-	new_dialog(tr("INTERACT_MOKITOWN_HOUSE_BOOKSHELF"), false)
-func new_dialog(var text, var forceArrow):
-	dialog = dialogBox.instance()
-	dialog.load_text(text, forceArrow)
-	$DialogeBoxLayer.add_child(dialog)
+func floor_2_bookshelf_dialogue():
+	DialogueSystem.start_dialog(tr("INTERACT_MOKITOWN_HOUSE_BOOKSHELF"), false)
+	#new_dialog(tr("INTERACT_MOKITOWN_HOUSE_BOOKSHELF"), false)
 	pass
-func newRichDialog(var text, var forceArrow):
-	dialog = dialogBox.instance()
-	dialog.load_text(text, forceArrow)
-	$DialogeBoxLayer.add_child(dialog)
-	pass
-func dialogEnd():
+
+func dialog_end():
 	isInteracting = false
 	$InteractTimer.start()
 	get_parent().player.change_input()

@@ -53,7 +53,7 @@ tracks/3/keys = {
 "values": [ true, false, true ]
 }
 tracks/4/type = "method"
-tracks/4/path = NodePath(".")
+tracks/4/path = NodePath("..")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false

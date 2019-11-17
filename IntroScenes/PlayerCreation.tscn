@@ -35,44 +35,44 @@ tracks/0/keys = {
 "times": PoolRealArray( 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "values": [ {
-"args": [  ],
-"method": "FirstD"
+"args": [ false ],
+"method": "dialogue"
 }, {
 "args": [  ],
-"method": "FadeBombo"
+"method": "fade_bombo"
 }, {
 "args": [  ],
-"method": "Dp1"
+"method": "dialogue"
 }, {
 "args": [  ],
-"method": "Dp2"
+"method": "dialogue"
 }, {
 "args": [  ],
-"method": "Dp3"
+"method": "dialogue"
+}, {
+"args": [ false ],
+"method": "dialogue"
+}, {
+"args": [ false ],
+"method": "dialogue"
 }, {
 "args": [  ],
-"method": "Dp4"
+"method": "play_bombo_slide"
+}, {
+"args": [ false ],
+"method": "dialogue"
 }, {
 "args": [  ],
-"method": "Dp5"
+"method": "slide_back"
+}, {
+"args": [ false ],
+"method": "dialogue"
 }, {
 "args": [  ],
-"method": "PlayBomboSlide"
+"method": "show_gender_select"
 }, {
 "args": [  ],
-"method": "Dp6"
-}, {
-"args": [  ],
-"method": "SlideBack"
-}, {
-"args": [  ],
-"method": "Dp7"
-}, {
-"args": [  ],
-"method": "ShowGenderSelect"
-}, {
-"args": [  ],
-"method": "Final"
+"method": "final"
 } ]
 }
 tracks/1/type = "value"
@@ -198,7 +198,7 @@ tracks/3/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "SlideFinished"
+"method": "slide_finished"
 } ]
 }
 
@@ -264,10 +264,10 @@ tracks/4/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "values": [ {
 "args": [  ],
-"method": "Play035Cry"
+"method": "play_035_cry"
 }, {
 "args": [  ],
-"method": "SlideFinished"
+"method": "slide_finished"
 } ]
 }
 
@@ -307,7 +307,7 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "Resume"
+"method": "resume"
 } ]
 }
 
@@ -513,7 +513,6 @@ stream = ExtResource( 5 )
 autoplay = true
 
 [node name="Bombo" type="TextureRect" parent="."]
-editor/display_folded = true
 visible = false
 margin_right = 530.0
 margin_bottom = 384.0
@@ -549,6 +548,8 @@ texture = ExtResource( 8 )
 stream = ExtResource( 9 )
 
 [node name="GenderSelect" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
 script = ExtResource( 10 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="GenderSelect"]
