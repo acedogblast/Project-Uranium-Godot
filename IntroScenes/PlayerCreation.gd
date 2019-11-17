@@ -3,79 +3,55 @@ extends Node
 var lastAnimationPos = 0.0
 var lastAnimation = null
 
-onready var dialogBox = preload("res://Utilities/Dialogue Box.tscn")
-onready var dialog = null
+#onready var dialogBox = preload("res://Utilities/Dialogue Box.tscn")
+#onready var dialog = null
 
+func _ready():
+	DialogueSystem.connect("dialogue_start", self, "pause")
+	DialogueSystem.connect("dialogue_end", self, "resume")
+	DialogueSystem.set_dialogue_sequence("CUTSCENE_PLAYERCREATION")
 
-func FirstD():
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_D1"),false)
+func _exit_tree():
+	DialogueSystem.disconnect("dialogue_start", self, "pause")
+	DialogueSystem.disconnect("dialogue_end", self, "resume")
+
+func dialogue(show_arrow = true):
+	DialogueSystem.next_dialogue(show_arrow)
 	pass
-func FadeBombo():
-	#print("FadeBombo")
-	Pause()
+func fade_bombo():
+	#print("fade_bombo")
+	pause()
 	$Bombo/AnimationPlayer.play("FadeBombo")
 	pass
-func Dp1():
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_D2"), true)
-	pass
-func Dp2():
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_D3"), true)
-	pass
-func Dp3():
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_D4"), true)
-	pass
-func Dp4():
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_D5"), false)
-	pass
-func Dp5():
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_D6"), false)
-	pass
-func PlayBomboSlide():
-	Pause()
+func play_bombo_slide():
+	pause()
 	$Bombo/AnimationPlayer.play("BomboSlideOut")
 	pass
-func Dp6():
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_D7"), false)
-	pass	
-func SlideBack():
-	Pause()
+func slide_back():
+	pause()
 	$Bombo/AnimationPlayer.play("BomboSlideBack")
 	pass
-func Dp7():
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_D8"), false)
-	pass	
-func ShowGenderSelect():
-	Pause()
+func show_gender_select():
+	pause()
 	$GenderSelect.Start()
 	$GenderSelect/AnimationPlayer.play("FadeIn")
 	pass
-func Pause():
+func pause():
 	lastAnimationPos = $AnimationPlayer.current_animation_position
 	lastAnimation = $AnimationPlayer.current_animation
 	$AnimationPlayer.stop(false)
-	#print("Paused")
+	#print("paused")
 	pass
-func Resume():
+func resume():
 	$AnimationPlayer.play(lastAnimation)
 	$AnimationPlayer.seek(lastAnimationPos)
-	#print("Resumed")
+	#print("resumed")
 	pass
-func new_dialog(var text, var forceArrow):
-	Pause()
-	dialog = dialogBox.instance()
-	dialog.load_text(text, forceArrow)
-	add_child(dialog)
-	pass
-func dialogEnd():
-	#print("dialog ended")
-	dialog.queue_free()
-	Resume()
-	pass
-func Play035Cry():
+func play_035_cry():
 	$Bombo/P035/AudioStreamPlayer.play()
 	pass
-func SlideFinished():
-	Resume()
+func slide_finished():
+	resume()
 	pass
 var blue = preload("res://Graphics/Pictures/Gender/genderboy.png")
 var green = preload("res://Graphics/Pictures/Gender/genderneutral.png")
@@ -84,7 +60,7 @@ var GenderBack = preload("res://Graphics/Pictures/Gender/genderbg2.png")
 var Boy = preload("res://Graphics/Characters/trainer000.PNG")
 var Neutral = preload("res://Graphics/Characters/trainer009.png")
 var Girl = preload("res://Graphics/Characters/trainer001.png")
-func Final():
+func final():
 	$BackGround.texture = GenderBack
 	$Bombo.visible = false
 	if Global.TrainerGender == 0:
@@ -99,13 +75,13 @@ func Final():
 	$GenderColor.rect_size = Vector2(512,384)
 	$GenderColor.stretch_mode = TextureRect.STRETCH_TILE
 	$GenderColor.visible = true
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_FINISH"), false)
+	DialogueSystem.start_dialog(tr("CUTSCENE_PLAYERCREATION_FINISH"), false)
 	pass
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	changeScene("res://IntroScenes/FirstStoryCutScene.tscn")
+	change_scene("res://IntroScenes/FirstStoryCutScene.tscn")
 	pass
-func changeScene(scene):
+func change_scene(scene):
 	if Global.isMobile:
 		get_parent().newScene(scene)
 	else:
