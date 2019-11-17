@@ -64,6 +64,9 @@ var move_4 : Move
 var gender
 enum {MALE, FEMALE}
 
+# Is the pokemon a shiny
+var is_shiny = false
+
 func generate_IV():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
@@ -177,3 +180,20 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level 1 version of
 				move_3 = MoveDataBase.get_move_by_name(moveset.pop_back())
 			3: 
 				move_4 = MoveDataBase.get_move_by_name(moveset.pop_back())
+func get_cry():
+	return "res://Audio/SE/" + str("%03d" % ID) + "Cry.wav"
+func get_battle_foe_sprite() -> Sprite:
+	var sprite = Sprite.new()
+	var tex : Texture
+	if is_shiny:
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.png") as Texture
+	else:
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".png") as Texture
+	sprite.texture = tex
+	if sprite.texture.get_width() != 80:
+		var frames = sprite.texture.get_width() / 80
+		sprite.hframes = frames
+		
+		# To do: Add animation to battler
+
+	return sprite

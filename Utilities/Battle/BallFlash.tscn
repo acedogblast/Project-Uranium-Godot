@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Graphics/Pictures/a33.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/Pictures/a09.png" type="Texture" id=1]
 [ext_resource path="res://Utilities/Battle/BallFlash.gd" type="Script" id=2]
 
 [sub_resource type="Animation" id=1]

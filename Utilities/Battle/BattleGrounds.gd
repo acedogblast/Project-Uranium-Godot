@@ -1,5 +1,6 @@
 extends Node2D
 signal wait
+signal ball_flash
 signal unveil_finished
 enum BattlePositions {INTRO_FADE, PLAYER_TOSS, CENTER, CENTER_IDLE, FOE_FOCUS, OPONENT_TALK}
 
@@ -17,8 +18,6 @@ func foe_unveil():
 	# Play sound for toss
 	$FoeBase/Ball/AudioStreamPlayer.play()
 	
-	
-	
 	# Slide foe bar
 	FoeBar.get_parent().visible = true
 	FoeBar.visible = true
@@ -27,7 +26,7 @@ func foe_unveil():
 	# Play toss animation
 	$FoeBase/Ball.visible = true
 	$FoeBase/Ball/AnimationPlayer.play("Ball")
-	yield($FoeBase/Ball/AnimationPlayer, "animation_finished")
-
+	yield(self, "ball_flash")
+	
 	emit_signal("unveil_finished")
 	pass

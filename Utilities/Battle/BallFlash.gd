@@ -34,12 +34,10 @@ var frames = [
 	]
 func nextFrame():
 	if index == 28:
-		print("Ball Flash over")
 		emit_signal("free")
 		self.queue_free()
 	self.texture = load(frames[index])
 	index += 1
 func _ready():
-	print("Ball Flash start")
 	self.texture = load("res://Graphics/Pictures/a09.png")
 	$AnimationPlayer.play("Flash")

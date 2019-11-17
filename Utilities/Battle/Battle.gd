@@ -4,6 +4,13 @@ var battle_instance : BattleInstanceData
 var queue : BattleQueue
 var registry
 
+var battler1 : Pokemon # Player's pokemon
+var battler2 : Pokemon # Foe's pokemon
+var battler3 : Pokemon # Player's second pokemon in double battles
+var battler4 : Pokemon # Foe's second pokemonin double battles
+
+
+
 signal wait
 signal EndOfBattleLoop
 
@@ -13,6 +20,8 @@ func _ready():
 	$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = false
 	$CanvasLayer/BattleInterfaceLayer/Message.visible = false
 	$CanvasLayer/BattleInterfaceLayer/BattleComandSelect.visible = false
+	$CanvasLayer/BattleGrounds/ColorRect.color = Color("000000")
+	$CanvasLayer/BattleGrounds/ColorRect.visible = true
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	test()
 	pass
@@ -33,9 +42,14 @@ func Start_Battle(bid : BattleInstanceData):
 	# Initialize BattleQueue
 	queue = BattleQueue.new()
 	
+	# Set first wave pokemon
+	battler1 = Global.pokemon_group[0]
+	battler2 = battle_instance.opponent.pokemon_group[0]
+
 	# Set human opponent texture
 	if battle_instance.battle_type != battle_instance.BattleType.SINGLE_WILD:
 		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.texture = battle_instance.opponent.battle_texture
+		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman/HumanShadow.texture = battle_instance.opponent.battle_texture
 	
 	# Add Foe introduction to queue
 	match battle_instance.battle_type:
@@ -64,7 +78,7 @@ func Start_Battle(bid : BattleInstanceData):
 			queue.push(action)
 			action = BattleQueueAction.new()
 			action.type = action.BATTLE_TEXT
-			action.battle_text = "RIVAL Theo sent\nout " + battle_instance.opponent.pokemon_group[0].name + "!"
+			action.battle_text = "RIVAL Theo sent\nout " + battler2.name + "!"
 			queue.push(action)
 	# If human opponent add ball toss.
 	if battle_instance.battle_type == battle_instance.BattleType.RIVAL or battle_instance.battle_type == battle_instance.BattleType.SINGLE_TRAINER:
@@ -76,9 +90,14 @@ func Start_Battle(bid : BattleInstanceData):
 		queue.push(action)
 		pass
 	# Load data to Foe Bar
-	$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battle_instance.opponent.pokemon_group[0])
+	$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battler2)
 	
 	
+	# Load data to Foe Battler
+	$CanvasLayer/BattleGrounds/FoeBase.setup_by_pokemon(battler2)
+	#$CanvasLayer/BattleGrounds/FoeBase/Battler.add_child(battle_instance.opponent.pokemon_group[0].get_battle_foe_sprite())
+
+
 	
 	# Add Player toss to queue
 	var action = BattleQueueAction.new()
@@ -123,6 +142,10 @@ func test():
 	
 	bid.opponent.battle_texture = load("res://Graphics/Characters/trainer086.png")
 	
+
+	poke = Pokemon.new()
+	poke.set_basic_pokemon_by_level(1,5)
+	Global.pokemon_group.append(poke)
 	
 	Start_Battle(bid)
 
