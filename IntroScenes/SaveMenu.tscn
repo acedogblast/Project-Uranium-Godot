@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://IntroScenes/SaveMenu.gd" type="Script" id=1]
-[ext_resource path="res://Audio/BGS/Choose.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Audio/SE/Choose.WAV" type="AudioStream" id=2]
 [ext_resource path="res://Graphics/Pictures/loadbg.png" type="Texture" id=3]
 [ext_resource path="res://Graphics/Pictures/loadPanels.png" type="Texture" id=4]
 [ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=5]
