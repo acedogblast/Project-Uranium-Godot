@@ -11,7 +11,12 @@ var foe_hp_percent = 1.0
 var player_hp_percent = 1.0
 
 
-
+func set_player_bar_by_pokemon(poke):
+	player_hp_percent = float(poke.current_hp) / float(poke.hp)
+	$PlayerBar/NameLable.text = poke.name
+	$PlayerBar/LevelLable.text = str(poke.level)
+	$PlayerBar/HP.region_rect = get_player_rect2d_by_percentage(player_hp_percent)
+	pass
 func set_foe_bar_by_pokemon(poke):
 	foe_hp_percent = float(poke.current_hp) / float(poke.hp)
 	$FoeBar/NameLable.text = poke.name
@@ -23,4 +28,5 @@ func set_foe_bar_by_pokemon(poke):
 func get_foe_rect2d_by_percentage(percent):
 	return Rect2(0,0, 174 * percent + 24, 90)
 func get_player_rect2d_by_percentage(percent):
-	return Rect2(0,0, 174 * percent + 28, 10)
+	print(player_hp_percent)
+	return Rect2(0,0, 174 * percent + 28, 90)

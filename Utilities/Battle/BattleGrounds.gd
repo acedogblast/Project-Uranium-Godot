@@ -9,6 +9,9 @@ func setPosistion(pos):
 	match pos:
 		BattlePositions.INTRO_FADE:
 			aniplayer.play("FadeToIntroPos")
+		BattlePositions.PLAYER_TOSS:
+			aniplayer.play("player_toss")
+			get_parent().get_parent().get_node("CanvasLayer/BattleInterfaceLayer/PlayerToss/AnimationPlayer").play("FadeIn")
 	yield(aniplayer, "animation_finished")
 	emit_signal("wait")
 
@@ -26,7 +29,21 @@ func foe_unveil():
 	# Play toss animation
 	$FoeBase/Ball.visible = true
 	$FoeBase/Ball/AnimationPlayer.play("Ball")
-	yield(self, "ball_flash")
+	yield($FoeBase/Battler/AnimationPlayer, "animation_finished")
 	
+	emit_signal("unveil_finished")
+func player_unveil():
+	var PlayerBar = get_parent().get_parent().get_node("CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar")
+	# Play sound for toss
+	$PlayerBase/Ball/AudioStreamPlayer.play()
+	
+	# Slide Player bar
+	PlayerBar.get_parent().visible = true
+	PlayerBar.visible = true
+	PlayerBar.get_node("AnimationPlayer").play("Slide")
+
+	# Play toss animation
+	get_parent().get_parent().get_node("CanvasLayer/BattleInterfaceLayer/PlayerToss/AnimationPlayer").play("Toss")
+	get_parent().get_parent().get_node("CanvasLayer/BattleGrounds/PlayerBase/Ball/AnimationPlayer").play("PlayerBallToss")
 	emit_signal("unveil_finished")
 	pass

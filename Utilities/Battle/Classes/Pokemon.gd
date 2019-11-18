@@ -197,3 +197,12 @@ func get_battle_foe_sprite() -> Sprite:
 		# To do: Add animation to battler
 
 	return sprite
+func get_battle_player_sprite() -> Sprite:
+	var sprite = Sprite.new()
+	var tex : Texture
+	if is_shiny:
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "bs.png") as Texture
+	else:
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "b.png") as Texture
+	sprite.texture = tex
+	return sprite

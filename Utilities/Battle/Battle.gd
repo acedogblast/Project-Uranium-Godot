@@ -19,6 +19,7 @@ func _ready():
 	$CanvasLayer/TransitionEffects.visible = false
 	$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = false
 	$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+	$CanvasLayer/BattleInterfaceLayer/PlayerToss.visible = false
 	$CanvasLayer/BattleInterfaceLayer/BattleComandSelect.visible = false
 	$CanvasLayer/BattleGrounds/ColorRect.color = Color("000000")
 	$CanvasLayer/BattleGrounds/ColorRect.visible = true
@@ -95,16 +96,30 @@ func Start_Battle(bid : BattleInstanceData):
 	
 	# Load data to Foe Battler
 	$CanvasLayer/BattleGrounds/FoeBase.setup_by_pokemon(battler2)
-	#$CanvasLayer/BattleGrounds/FoeBase/Battler.add_child(battle_instance.opponent.pokemon_group[0].get_battle_foe_sprite())
-
 
 	
 	# Add Player toss to queue
 	var action = BattleQueueAction.new()
 	action.type = action.BATTLE_GROUNDS_POS_CHANGE
 	action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.PLAYER_TOSS
-	#queue.push(action)
+	queue.push(action)
 	
+	# Load data to Player Bar
+	$CanvasLayer/BattleInterfaceLayer/BattleBars.set_player_bar_by_pokemon(battler1)
+	$CanvasLayer/BattleGrounds/PlayerBase.setup_by_pokemon(battler1)
+
+	# Go text
+	action = BattleQueueAction.new()
+	action.type = action.BATTLE_TEXT
+	action.battle_text = "Go " + battler1.name + "!"
+	queue.push(action)
+
+	# Player toss animations
+	action = BattleQueueAction.new()
+	action.type = action.PLAYER_BALLTOSS
+	queue.push(action)
+
+
 	# Start the battle loop until player wins or losses.
 	var isBattleOver = false
 	
@@ -255,5 +270,11 @@ func battle_loop():
 			$CanvasLayer/BattleGrounds.foe_unveil()
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = false
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")
+		action.PLAYER_BALLTOSS:
+			$CanvasLayer/BattleGrounds/PlayerBase/Ball.visible = true
+			$CanvasLayer/BattleGrounds.player_unveil()
+			yield($CanvasLayer/BattleGrounds, "unveil_finished")
+
+
 			pass
 	emit_signal("EndOfBattleLoop")

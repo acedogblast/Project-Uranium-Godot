@@ -2,7 +2,9 @@ extends TextureRect
 
 var cry
 onready var sprite = $Battler/Sprite
-
+func _ready():
+    $Battler/Sprite.queue_free()
+    pass
 func setup_by_pokemon(poke):
 	cry = poke.get_cry()
 	sprite = poke.get_battle_foe_sprite()
