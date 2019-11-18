@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -27,13 +27,14 @@
 [ext_resource path="res://Utilities/Battle/BattleBars.gd" type="Script" id=25]
 [ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerBoxS.png" type="Texture" id=26]
 [ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerHPbar.png" type="Texture" id=27]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleEXPbar.png" type="Texture" id=28]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeBoxS.png" type="Texture" id=29]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeHPbar.png" type="Texture" id=30]
-[ext_resource path="res://Utilities/Battle/BattleComandSelect.gd" type="Script" id=31]
-[ext_resource path="res://Graphics/Pictures/BATTLE/newCommandBox.png" type="Texture" id=32]
-[ext_resource path="res://Graphics/Pictures/BATTLE/commandMenuButtons.png" type="Texture" id=33]
-[ext_resource path="res://Graphics/Pictures/BATTLE/selHand.png" type="Texture" id=34]
+[ext_resource path="res://Utilities/Battle/OutlinedTextFont.tres" type="DynamicFont" id=28]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleEXPbar.png" type="Texture" id=29]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeBoxS.png" type="Texture" id=30]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeHPbar.png" type="Texture" id=31]
+[ext_resource path="res://Utilities/Battle/BattleComandSelect.gd" type="Script" id=32]
+[ext_resource path="res://Graphics/Pictures/BATTLE/newCommandBox.png" type="Texture" id=33]
+[ext_resource path="res://Graphics/Pictures/BATTLE/commandMenuButtons.png" type="Texture" id=34]
+[ext_resource path="res://Graphics/Pictures/BATTLE/selHand.png" type="Texture" id=35]
 
 [sub_resource type="Animation" id=1]
 resource_name = "FadeOut"
@@ -637,6 +638,7 @@ tracks/2/keys = {
 
 [sub_resource type="DynamicFont" id=11]
 size = 26
+outline_color = Color( 0, 0, 0, 1 )
 extra_spacing_bottom = 15
 font_data = ExtResource( 20 )
 
@@ -1023,7 +1025,6 @@ text = "Ace gained 9000 Exp. Points! Because this is cool!"
 scroll_active = false
 
 [node name="BattleBars" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-editor/display_folded = true
 script = ExtResource( 25 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
@@ -1053,13 +1054,24 @@ custom_fonts/normal_font = SubResource( 11 )
 text = "20/ 20"
 scroll_active = false
 
+[node name="HPLableShadow" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/HPLable"]
+modulate = Color( 0, 0, 0, 0.588235 )
+show_behind_parent = true
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 137.0
+margin_bottom = 27.0
+custom_fonts/normal_font = SubResource( 11 )
+text = "20/ 20"
+scroll_active = false
+
 [node name="LevelLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
-margin_left = 190.0
+margin_left = 185.0
 margin_top = 6.0
 margin_right = 240.0
 margin_bottom = 31.0
-custom_fonts/normal_font = SubResource( 11 )
-text = "5"
+custom_fonts/normal_font = ExtResource( 28 )
+text = " 5"
 scroll_active = false
 
 [node name="NameLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
@@ -1067,27 +1079,26 @@ margin_left = 35.0
 margin_top = 6.0
 margin_right = 135.0
 margin_bottom = 31.0
-custom_fonts/normal_font = SubResource( 11 )
-text = "Godot"
+custom_fonts/normal_font = ExtResource( 28 )
+text = " Godot"
 scroll_active = false
 
 [node name="EXP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 position = Vector2( 36, 60 )
-texture = ExtResource( 28 )
+texture = ExtResource( 29 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 152, 10 )
 
 [node name="FoeBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
-editor/display_folded = true
 margin_left = -10.0
 margin_top = -2.0
 margin_right = 234.0
 margin_bottom = 88.0
-texture = ExtResource( 29 )
+texture = ExtResource( 30 )
 
 [node name="HP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
-texture = ExtResource( 30 )
+texture = ExtResource( 31 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 198, 90 )
@@ -1102,27 +1113,27 @@ margin_left = 35.0
 margin_top = 6.0
 margin_right = 135.0
 margin_bottom = 31.0
-custom_fonts/normal_font = SubResource( 11 )
-text = "Godot"
+custom_fonts/normal_font = ExtResource( 28 )
+text = " Godot"
 scroll_active = false
 
 [node name="LevelLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
-margin_left = 175.0
+margin_left = 170.0
 margin_top = 6.0
 margin_right = 225.0
 margin_bottom = 31.0
-custom_fonts/normal_font = SubResource( 11 )
-text = "5"
+custom_fonts/normal_font = ExtResource( 28 )
+text = " 5"
 scroll_active = false
 
 [node name="BattleComandSelect" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
 position = Vector2( 0, 384 )
-script = ExtResource( 31 )
+script = ExtResource( 32 )
 
 [node name="Box" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 margin_right = 512.0
 margin_bottom = 98.0
-texture = ExtResource( 32 )
+texture = ExtResource( 33 )
 
 [node name="Prompt" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 margin_left = 25.0
@@ -1135,13 +1146,27 @@ bbcode_text = "[center]What will Godot do?"
 text = "What will Godot do?"
 scroll_active = false
 
+[node name="PromptShadow" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Prompt"]
+modulate = Color( 0, 0, 0, 0.588235 )
+show_behind_parent = true
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 462.0
+margin_bottom = 85.0
+custom_fonts/normal_font = SubResource( 11 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]What will Godot do?"
+text = "What will Godot do?"
+scroll_active = false
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 anims/Slide = SubResource( 14 )
 
 [node name="Attack" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 75, 70 )
 z_index = 1
-texture = ExtResource( 33 )
+texture = ExtResource( 34 )
 vframes = 2
 hframes = 4
 
@@ -1151,7 +1176,7 @@ anims/Slide = SubResource( 17 )
 [node name="Bag" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 195, 70 )
 z_index = 1
-texture = ExtResource( 33 )
+texture = ExtResource( 34 )
 vframes = 2
 hframes = 4
 frame = 1
@@ -1162,7 +1187,7 @@ anims/Slide = SubResource( 18 )
 [node name="Poke" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 315, 70 )
 z_index = 1
-texture = ExtResource( 33 )
+texture = ExtResource( 34 )
 vframes = 2
 hframes = 4
 frame = 2
@@ -1173,7 +1198,7 @@ anims/Slide = SubResource( 19 )
 [node name="Run" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 435, 70 )
 z_index = 1
-texture = ExtResource( 33 )
+texture = ExtResource( 34 )
 vframes = 2
 hframes = 4
 frame = 3
@@ -1228,7 +1253,7 @@ scroll_active = false
 [node name="SelHand" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 76, 20 )
 z_index = 1
-texture = ExtResource( 34 )
+texture = ExtResource( 35 )
 offset = Vector2( 0, -40 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand"]

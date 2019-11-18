@@ -11,6 +11,7 @@ const RUN_POS = Vector2(435, 50)
 func start(name):
 	$SelHand/AnimationPlayer.play("Squeez")
 	$Prompt.bbcode_text = "[center]What will " + name + " do?"
+	$Prompt/PromptShadow.bbcode_text = "[center]What will " + name + " do?"
 	enabled = true
 	
 	$AttackLable.visible = true
