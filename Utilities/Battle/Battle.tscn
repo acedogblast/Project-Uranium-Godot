@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -685,6 +685,70 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 384 ), Vector2( 0, 286 ) ]
 }
 
+[sub_resource type="Animation" id=17]
+resource_name = "Slide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Attack:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 75, 70 ), Vector2( 75, 50 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "Slide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Bag:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 195, 70 ), Vector2( 195, 50 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "Slide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Poke:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 315, 70 ), Vector2( 315, 50 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "Slide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Run:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 435, 70 ), Vector2( 435, 50 ) ]
+}
+
 [sub_resource type="Animation" id=15]
 length = 1.5
 loop = true
@@ -959,6 +1023,7 @@ text = "Ace gained 9000 Exp. Points! Because this is cool!"
 scroll_active = false
 
 [node name="BattleBars" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+editor/display_folded = true
 script = ExtResource( 25 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
@@ -1051,8 +1116,7 @@ text = "5"
 scroll_active = false
 
 [node name="BattleComandSelect" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-visible = false
-position = Vector2( 0, 286 )
+position = Vector2( 0, 384 )
 script = ExtResource( 31 )
 
 [node name="Box" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
@@ -1075,35 +1139,47 @@ scroll_active = false
 anims/Slide = SubResource( 14 )
 
 [node name="Attack" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-position = Vector2( 75, 65 )
+position = Vector2( 75, 70 )
 z_index = 1
 texture = ExtResource( 33 )
 vframes = 2
 hframes = 4
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Attack"]
+anims/Slide = SubResource( 17 )
+
 [node name="Bag" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-position = Vector2( 195, 65 )
+position = Vector2( 195, 70 )
 z_index = 1
 texture = ExtResource( 33 )
 vframes = 2
 hframes = 4
 frame = 1
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Bag"]
+anims/Slide = SubResource( 18 )
+
 [node name="Poke" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-position = Vector2( 315, 65 )
+position = Vector2( 315, 70 )
 z_index = 1
 texture = ExtResource( 33 )
 vframes = 2
 hframes = 4
 frame = 2
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Poke"]
+anims/Slide = SubResource( 19 )
+
 [node name="Run" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-position = Vector2( 435, 65 )
+position = Vector2( 435, 70 )
 z_index = 1
 texture = ExtResource( 33 )
 vframes = 2
 hframes = 4
 frame = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Run"]
+anims/Slide = SubResource( 20 )
 
 [node name="AttackLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 margin_left = 25.0
@@ -1150,8 +1226,10 @@ text = "Run"
 scroll_active = false
 
 [node name="SelHand" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
+position = Vector2( 76, 20 )
+z_index = 1
 texture = ExtResource( 34 )
-offset = Vector2( 0, -32 )
+offset = Vector2( 0, -40 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand"]
 anims/Squeez = SubResource( 15 )

@@ -129,15 +129,28 @@ func Start_Battle(bid : BattleInstanceData):
 	
 	while isBattleOver == false:
 		if queue.is_empty(): # If queue is empty, get player battle comand.
-			pass
+			# Pop up battle comand menu.
+			print("Getting comand from player")
+			get_battle_comand()
+			yield(self, "wait")
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		else:
 			battle_loop()
 			yield(self, "EndOfBattleLoop")
 		
 		
 		# Check if battle is over.
-		if queue.is_empty(): # Temp should be replaced by proper battle check!
-			isBattleOver = true
+		#if queue.is_empty(): # Temp should be replaced by proper battle check!
+		#	isBattleOver = true
 	
 	# After battle comands
 	print("Battle is over.")
@@ -278,3 +291,16 @@ func battle_loop():
 			$CanvasLayer/BattleGrounds.player_unveil()
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")
 	emit_signal("EndOfBattleLoop")
+func get_battle_comand():
+	var menu = $CanvasLayer/BattleInterfaceLayer/BattleComandSelect
+	menu.get_node("AnimationPlayer").play("Slide")
+	menu.visible = true
+	menu.start(battler1.name)
+	
+	yield(menu.get_node("AnimationPlayer"), "animation_finished")
+	
+	
+	
+	
+	#emit_signal("wait")
+	pass
