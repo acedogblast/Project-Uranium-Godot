@@ -28,5 +28,4 @@ func set_foe_bar_by_pokemon(poke):
 func get_foe_rect2d_by_percentage(percent):
 	return Rect2(0,0, 174 * percent + 24, 90)
 func get_player_rect2d_by_percentage(percent):
-	print(player_hp_percent)
 	return Rect2(0,0, 174 * percent + 28, 90)

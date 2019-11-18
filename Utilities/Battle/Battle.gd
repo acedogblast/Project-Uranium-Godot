@@ -119,7 +119,11 @@ func Start_Battle(bid : BattleInstanceData):
 	action.type = action.PLAYER_BALLTOSS
 	queue.push(action)
 
-
+	# Change view to CENTER 
+	action = BattleQueueAction.new()
+	action.type = action.BATTLE_GROUNDS_POS_CHANGE
+	action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.CENTER
+	queue.push(action)
 	# Start the battle loop until player wins or losses.
 	var isBattleOver = false
 	
@@ -271,10 +275,6 @@ func battle_loop():
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = false
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")
 		action.PLAYER_BALLTOSS:
-			$CanvasLayer/BattleGrounds/PlayerBase/Ball.visible = true
 			$CanvasLayer/BattleGrounds.player_unveil()
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")
-
-
-			pass
 	emit_signal("EndOfBattleLoop")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -243,23 +243,23 @@ tracks/7/keys = {
 "values": [ Vector2( 0.5, 0.5 ), Vector2( 0.5, 0.5 ) ]
 }
 
-[sub_resource type="Animation" id=14]
-resource_name = "player_toss"
+[sub_resource type="Animation" id=16]
+resource_name = "PlayerTossToCenter"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath("FoeBase:rect_position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( -256, 3.173 ) ]
+"values": [ Vector2( 400, 105 ), Vector2( 385, 100 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("PlayerBase:rect_position")
+tracks/1/path = NodePath("FoeBase:rect_scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -268,22 +268,22 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 105, 175 ), Vector2( 215, 120 ) ]
+"values": [ Vector2( 0.35, 0.35 ), Vector2( 0.5, 0.5 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath(".:scale")
+tracks/2/path = NodePath("PlayerBase:rect_position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1.5, 1.5 ) ]
+"values": [ Vector2( 215, 120 ), Vector2( 130, 145 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("FoeBase:rect_position")
+tracks/3/path = NodePath("PlayerBase:rect_scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -292,34 +292,62 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
+"values": [ Vector2( 0.35, 0.35 ), Vector2( 0.5, 0.5 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "player_toss"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("PlayerBase:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 105, 175 ), Vector2( 215, 120 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("FoeBase:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
 "values": [ Vector2( 382, 115 ), Vector2( 400, 105 ) ]
 }
-tracks/4/type = "value"
-tracks/4/path = NodePath("FoeBase:rect_scale")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
+tracks/2/type = "value"
+tracks/2/path = NodePath("FoeBase:rect_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.6, 0.6 ), Vector2( 0.35, 0.35 ) ]
 }
-tracks/5/type = "value"
-tracks/5/path = NodePath("PlayerBase:rect_scale")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
+tracks/3/type = "value"
+tracks/3/path = NodePath("PlayerBase:rect_scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.5, 0.5 ), Vector2( 0.35, 0.35 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 length = 4.45
 step = 0.05
 tracks/0/type = "value"
@@ -505,21 +533,6 @@ tracks/14/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=5]
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:region_rect")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
-}
-
 [sub_resource type="Animation" id=6]
 loop = true
 tracks/0/type = "value"
@@ -535,11 +548,26 @@ tracks/0/keys = {
 "values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
 }
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="Animation" id=7]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
+}
+
+[sub_resource type="DynamicFont" id=8]
 size = 26
 font_data = ExtResource( 20 )
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=9]
 resource_name = "FadeIn"
 length = 0.5
 tracks/0/type = "value"
@@ -567,7 +595,7 @@ tracks/1/keys = {
 "values": [ true, true ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=10]
 length = 0.8
 step = 0.05
 tracks/0/type = "value"
@@ -607,12 +635,12 @@ tracks/2/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=11]
 size = 26
 extra_spacing_bottom = 15
 font_data = ExtResource( 20 )
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=12]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_position")
@@ -627,7 +655,7 @@ tracks/0/keys = {
 "values": [ Vector2( 539, 200 ), Vector2( 295, 200 ) ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=13]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_position")
@@ -642,7 +670,7 @@ tracks/0/keys = {
 "values": [ Vector2( -254, -2 ), Vector2( -10, -2 ) ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=14]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
@@ -657,7 +685,7 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 384 ), Vector2( 0, 286 ) ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=15]
 length = 1.5
 loop = true
 step = 0.05
@@ -691,10 +719,10 @@ margin_bottom = 40.0
 texture = ExtResource( 3 )
 
 [node name="PlayerBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
-margin_left = 105.0
-margin_top = 175.0
-margin_right = 673.0
-margin_bottom = 431.0
+margin_left = 130.0
+margin_top = 145.0
+margin_right = 698.0
+margin_bottom = 401.0
 rect_scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 script = ExtResource( 5 )
@@ -719,12 +747,11 @@ anims/UnveilDropPlayer = ExtResource( 7 )
 
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/PlayerBase"]
 visible = false
-position = Vector2( 272, -100 )
+position = Vector2( 7, -40 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 8 )
 vframes = 17
 hframes = 28
-frame = 280
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/PlayerBase/Ball"]
 anims/PlayerBallToss = ExtResource( 9 )
@@ -733,11 +760,11 @@ anims/PlayerBallToss = ExtResource( 9 )
 stream = ExtResource( 10 )
 
 [node name="FoeBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
-margin_left = 382.0
-margin_top = 115.0
-margin_right = 654.0
-margin_bottom = 243.0
-rect_scale = Vector2( 0.6, 0.6 )
+margin_left = 385.0
+margin_top = 100.0
+margin_right = 657.0
+margin_bottom = 228.0
+rect_scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 11 )
 script = ExtResource( 12 )
 
@@ -792,7 +819,8 @@ anims/UnveilDrop = ExtResource( 15 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds"]
 anims/FadeToIntroPos = SubResource( 3 )
-anims/player_toss = SubResource( 14 )
+anims/PlayerTossToCenter = SubResource( 16 )
+anims/player_toss = SubResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/BattleGrounds"]
 visible = false
@@ -819,7 +847,7 @@ anims/GreyFlashing = ExtResource( 17 )
 editor/display_folded = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
-anims/SlideBars = SubResource( 4 )
+anims/SlideBars = SubResource( 5 )
 
 [node name="SpriteLeft" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
 editor/display_folded = true
@@ -829,7 +857,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs/SpriteLeft"]
-anims/Scroll = SubResource( 5 )
+anims/Scroll = SubResource( 6 )
 
 [node name="SpriteRight" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
 editor/display_folded = true
@@ -839,7 +867,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs/SpriteRight"]
-anims/Scroll = SubResource( 6 )
+anims/Scroll = SubResource( 7 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
 
@@ -856,7 +884,7 @@ visible = false
 margin_top = 128.0
 margin_right = 200.0
 margin_bottom = 163.0
-custom_fonts/normal_font = SubResource( 7 )
+custom_fonts/normal_font = SubResource( 8 )
 bbcode_enabled = true
 bbcode_text = "[center]"
 
@@ -873,7 +901,7 @@ visible = false
 margin_top = 128.0
 margin_right = 200.0
 margin_bottom = 163.0
-custom_fonts/normal_font = SubResource( 7 )
+custom_fonts/normal_font = SubResource( 8 )
 bbcode_enabled = true
 bbcode_text = "[center]"
 
@@ -900,14 +928,16 @@ color = Color( 0, 0, 0, 1 )
 layer = 4
 
 [node name="PlayerToss" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer"]
+editor/display_folded = true
+visible = false
 texture = ExtResource( 23 )
 centered = false
 offset = Vector2( 0, 150 )
 hframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/PlayerToss"]
-anims/FadeIn = SubResource( 15 )
-anims/Toss = SubResource( 13 )
+anims/FadeIn = SubResource( 9 )
+anims/Toss = SubResource( 10 )
 
 [node name="Message" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
 editor/display_folded = true
@@ -924,7 +954,7 @@ margin_left = 25.0
 margin_top = 312.0
 margin_right = 485.0
 margin_bottom = 379.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 text = "Ace gained 9000 Exp. Points! Because this is cool!"
 scroll_active = false
 
@@ -947,14 +977,14 @@ region_rect = Rect2( 0, 0, 202, 90 )
 [node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
-anims/Slide = SubResource( 9 )
+anims/Slide = SubResource( 12 )
 
 [node name="HPLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 margin_left = 60.0
 margin_top = 35.0
 margin_right = 195.0
 margin_bottom = 60.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 text = "20/ 20"
 scroll_active = false
 
@@ -963,7 +993,7 @@ margin_left = 190.0
 margin_top = 6.0
 margin_right = 240.0
 margin_bottom = 31.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 text = "5"
 scroll_active = false
 
@@ -972,7 +1002,7 @@ margin_left = 35.0
 margin_top = 6.0
 margin_right = 135.0
 margin_bottom = 31.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 text = "Godot"
 scroll_active = false
 
@@ -1000,14 +1030,14 @@ region_rect = Rect2( 0, 0, 198, 90 )
 [node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
-anims/Slide = SubResource( 10 )
+anims/Slide = SubResource( 13 )
 
 [node name="NameLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 margin_left = 35.0
 margin_top = 6.0
 margin_right = 135.0
 margin_bottom = 31.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 text = "Godot"
 scroll_active = false
 
@@ -1016,12 +1046,11 @@ margin_left = 175.0
 margin_top = 6.0
 margin_right = 225.0
 margin_bottom = 31.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 text = "5"
 scroll_active = false
 
 [node name="BattleComandSelect" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-editor/display_folded = true
 visible = false
 position = Vector2( 0, 286 )
 script = ExtResource( 31 )
@@ -1036,14 +1065,14 @@ margin_left = 25.0
 margin_top = 10.0
 margin_right = 485.0
 margin_bottom = 93.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 bbcode_enabled = true
 bbcode_text = "[center]What will Godot do?"
 text = "What will Godot do?"
 scroll_active = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-anims/Slide = SubResource( 11 )
+anims/Slide = SubResource( 14 )
 
 [node name="Attack" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 75, 65 )
@@ -1081,7 +1110,7 @@ margin_left = 25.0
 margin_top = 70.0
 margin_right = 125.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 bbcode_enabled = true
 bbcode_text = "[center]Attack"
 text = "Attack"
@@ -1092,7 +1121,7 @@ margin_left = 145.0
 margin_top = 70.0
 margin_right = 245.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 bbcode_enabled = true
 bbcode_text = "[center]Bag"
 text = "Bag"
@@ -1103,7 +1132,7 @@ margin_left = 265.0
 margin_top = 70.0
 margin_right = 365.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 bbcode_enabled = true
 bbcode_text = "[center]Pokémon"
 text = "Pokémon"
@@ -1114,7 +1143,7 @@ margin_left = 385.0
 margin_top = 70.0
 margin_right = 485.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
 bbcode_enabled = true
 bbcode_text = "[center]Run"
 text = "Run"
@@ -1125,4 +1154,4 @@ texture = ExtResource( 34 )
 offset = Vector2( 0, -32 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand"]
-anims/Squeez = SubResource( 12 )
+anims/Squeez = SubResource( 15 )
