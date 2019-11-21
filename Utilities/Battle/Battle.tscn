@@ -805,7 +805,7 @@ tracks/0/keys = {
 [sub_resource type="StreamTexture" id=23]
 load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
 
-[sub_resource type="Animation" id=27]
+[sub_resource type="Animation" id=24]
 resource_name = "Slide"
 length = 0.5
 tracks/0/type = "value"
@@ -821,10 +821,10 @@ tracks/0/keys = {
 "values": [ Vector2( 120, 54 ), Vector2( 120, 45 ) ]
 }
 
-[sub_resource type="StreamTexture" id=24]
+[sub_resource type="StreamTexture" id=25]
 load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=26]
 resource_name = "Slide"
 length = 0.5
 tracks/0/type = "value"
@@ -840,10 +840,10 @@ tracks/0/keys = {
 "values": [ Vector2( 340, 54 ), Vector2( 340, 45 ) ]
 }
 
-[sub_resource type="StreamTexture" id=25]
+[sub_resource type="StreamTexture" id=27]
 load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
 
-[sub_resource type="Animation" id=29]
+[sub_resource type="Animation" id=28]
 resource_name = "Slide"
 length = 0.5
 tracks/0/type = "value"
@@ -859,7 +859,7 @@ tracks/0/keys = {
 "values": [ Vector2( 560, 54 ), Vector2( 560, 45 ) ]
 }
 
-[sub_resource type="StreamTexture" id=26]
+[sub_resource type="StreamTexture" id=29]
 load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
 
 [sub_resource type="Animation" id=30]
@@ -1426,11 +1426,11 @@ bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move1"]
-anims/Slide = SubResource( 27 )
+anims/Slide = SubResource( 24 )
 
 [node name="Move2" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 340, 54 )
-texture = SubResource( 24 )
+texture = SubResource( 25 )
 vframes = 20
 
 [node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move2"]
@@ -1455,11 +1455,11 @@ bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move2"]
-anims/Slide = SubResource( 28 )
+anims/Slide = SubResource( 26 )
 
 [node name="Move3" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 560, 54 )
-texture = SubResource( 25 )
+texture = SubResource( 27 )
 vframes = 20
 
 [node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move3"]
@@ -1484,11 +1484,11 @@ bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move3"]
-anims/Slide = SubResource( 29 )
+anims/Slide = SubResource( 28 )
 
 [node name="Move4" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 780, 54 )
-texture = SubResource( 26 )
+texture = SubResource( 29 )
 vframes = 20
 
 [node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move4"]

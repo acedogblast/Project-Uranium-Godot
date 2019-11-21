@@ -173,13 +173,13 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level 1 version of
 	for i in range(count):
 		match i:
 			0: 
-				move_1 = MoveDataBase.get_move_by_name(moveset.pop_back())
+				move_1 = MoveDataBase.get_move_by_name(moveset.pop_front())
 			1: 
-				move_2 = MoveDataBase.get_move_by_name(moveset.pop_back())
+				move_2 = MoveDataBase.get_move_by_name(moveset.pop_front())
 			2: 
-				move_3 = MoveDataBase.get_move_by_name(moveset.pop_back())
+				move_3 = MoveDataBase.get_move_by_name(moveset.pop_front())
 			3: 
-				move_4 = MoveDataBase.get_move_by_name(moveset.pop_back())
+				move_4 = MoveDataBase.get_move_by_name(moveset.pop_front())
 func get_cry():
 	return "res://Audio/SE/" + str("%03d" % ID) + "Cry.wav"
 func get_battle_foe_sprite() -> Sprite:
