@@ -23,6 +23,7 @@ func _ready():
 	$CanvasLayer/BattleInterfaceLayer/BattleComandSelect.visible = false
 	$CanvasLayer/BattleGrounds/ColorRect.color = Color("000000")
 	$CanvasLayer/BattleGrounds/ColorRect.visible = true
+	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.visible = false
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	test()
 	pass
@@ -296,6 +297,7 @@ func get_battle_comand():
 	menu.get_node("AnimationPlayer").play("Slide")
 	menu.visible = true
 	menu.start(battler1.name)
+	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.reset()
 	
 	yield(menu.get_node("AnimationPlayer"), "animation_finished")
 	

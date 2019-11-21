@@ -4,10 +4,14 @@ var enabled = false
 enum {ATTACK, BAG, POKE, RUN}
 var selected = ATTACK
 
+onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
+onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
+
 const ATTACK_POS = Vector2(76, 50)
 const BAG_POS = Vector2(195, 50)
 const POKE_POS = Vector2(315, 50)
 const RUN_POS = Vector2(435, 50)
+
 func start(name):
 	$SelHand/AnimationPlayer.play("Squeez")
 	$Prompt.bbcode_text = "[center]What will " + name + " do?"
@@ -27,6 +31,15 @@ func _input(event):
 	if event.is_action_pressed("ui_right") and enabled and selected != RUN:
 		selected += 1
 		change_Sel_Hand_Pos()
+	if (event.is_action_pressed("ui_accept") || event.is_action_pressed("x")) and enabled:
+		if selected == ATTACK:
+			$SelHand/AudioStreamPlayer.stream = select_se_2
+			$SelHand/AudioStreamPlayer.play()
+			self.get_parent().get_node("BattleAttackSelect").start(self.get_parent().get_parent().get_parent().battler1)
+			self.visible = false
+			self.get_parent().get_node("BattleAttackSelect").visible = true
+			enabled = false
+		pass
 	
 func change_Sel_Hand_Pos():
 	match selected:
@@ -36,11 +49,9 @@ func change_Sel_Hand_Pos():
 			$BagLable.visible = false
 			$PokeLable.visible = false
 			$RunLable.visible = false
-			
 			$Bag.position = Vector2(195,70)
 			$Poke.position = Vector2(315,70)
 			$Run.position = Vector2(435,70)
-			
 			$Attack/AnimationPlayer.play("Slide")
 			$Bag/AnimationPlayer.stop(true)
 			$Poke/AnimationPlayer.stop(true)
@@ -84,4 +95,5 @@ func change_Sel_Hand_Pos():
 			$Bag/AnimationPlayer.stop(true)
 			$Poke/AnimationPlayer.stop(true)
 			$Run/AnimationPlayer.play("Slide")
-	pass
+	$SelHand/AudioStreamPlayer.stream = select_se_1
+	$SelHand/AudioStreamPlayer.play()

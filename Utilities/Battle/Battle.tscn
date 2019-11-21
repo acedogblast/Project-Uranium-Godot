@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -35,6 +35,9 @@
 [ext_resource path="res://Graphics/Pictures/BATTLE/newCommandBox.png" type="Texture" id=33]
 [ext_resource path="res://Graphics/Pictures/BATTLE/commandMenuButtons.png" type="Texture" id=34]
 [ext_resource path="res://Graphics/Pictures/BATTLE/selHand.png" type="Texture" id=35]
+[ext_resource path="res://Audio/SE/SE_Select1.wav" type="AudioStream" id=36]
+[ext_resource path="res://Utilities/Battle/BattleAttackSelect.gd" type="Script" id=37]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=38]
 
 [sub_resource type="Animation" id=1]
 resource_name = "FadeOut"
@@ -244,7 +247,7 @@ tracks/7/keys = {
 "values": [ Vector2( 0.5, 0.5 ), Vector2( 0.5, 0.5 ) ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=4]
 resource_name = "PlayerTossToCenter"
 length = 0.5
 tracks/0/type = "value"
@@ -296,8 +299,7 @@ tracks/3/keys = {
 "values": [ Vector2( 0.35, 0.35 ), Vector2( 0.5, 0.5 ) ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "player_toss"
+[sub_resource type="Animation" id=5]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("PlayerBase:rect_position")
@@ -348,7 +350,7 @@ tracks/3/keys = {
 "values": [ Vector2( 0.5, 0.5 ), Vector2( 0.35, 0.35 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=6]
 length = 4.45
 step = 0.05
 tracks/0/type = "value"
@@ -534,21 +536,6 @@ tracks/14/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=6]
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:region_rect")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
-}
-
 [sub_resource type="Animation" id=7]
 loop = true
 tracks/0/type = "value"
@@ -564,12 +551,26 @@ tracks/0/keys = {
 "values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
 }
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="Animation" id=8]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
+}
+
+[sub_resource type="DynamicFont" id=9]
 size = 26
 font_data = ExtResource( 20 )
 
-[sub_resource type="Animation" id=9]
-resource_name = "FadeIn"
+[sub_resource type="Animation" id=10]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:modulate")
@@ -596,7 +597,7 @@ tracks/1/keys = {
 "values": [ true, true ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=11]
 length = 0.8
 step = 0.05
 tracks/0/type = "value"
@@ -636,13 +637,13 @@ tracks/2/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="DynamicFont" id=11]
+[sub_resource type="DynamicFont" id=12]
 size = 26
 outline_color = Color( 0, 0, 0, 1 )
 extra_spacing_bottom = 15
 font_data = ExtResource( 20 )
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=13]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_position")
@@ -657,7 +658,7 @@ tracks/0/keys = {
 "values": [ Vector2( 539, 200 ), Vector2( 295, 200 ) ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=14]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_position")
@@ -672,7 +673,7 @@ tracks/0/keys = {
 "values": [ Vector2( -254, -2 ), Vector2( -10, -2 ) ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=15]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
@@ -687,9 +688,10 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 384 ), Vector2( 0, 286 ) ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=16]
 resource_name = "Slide"
-length = 0.5
+length = 0.25
+step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("../Attack:position")
 tracks/0/interp = 1
@@ -697,13 +699,13 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
+"times": PoolRealArray( 0, 0.25 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 75, 70 ), Vector2( 75, 50 ) ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=17]
 resource_name = "Slide"
 length = 0.5
 tracks/0/type = "value"
@@ -719,7 +721,7 @@ tracks/0/keys = {
 "values": [ Vector2( 195, 70 ), Vector2( 195, 50 ) ]
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=18]
 resource_name = "Slide"
 length = 0.5
 tracks/0/type = "value"
@@ -735,7 +737,7 @@ tracks/0/keys = {
 "values": [ Vector2( 315, 70 ), Vector2( 315, 50 ) ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=19]
 resource_name = "Slide"
 length = 0.5
 tracks/0/type = "value"
@@ -751,7 +753,7 @@ tracks/0/keys = {
 "values": [ Vector2( 435, 70 ), Vector2( 435, 50 ) ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=20]
 length = 1.5
 loop = true
 step = 0.05
@@ -766,6 +768,114 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 1, 0.5 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 384 ), Vector2( 0, 286 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+length = 1.5
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 0.5 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="StreamTexture" id=23]
+load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
+
+[sub_resource type="Animation" id=27]
+resource_name = "Slide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 120, 54 ), Vector2( 120, 45 ) ]
+}
+
+[sub_resource type="StreamTexture" id=24]
+load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
+
+[sub_resource type="Animation" id=28]
+resource_name = "Slide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 340, 54 ), Vector2( 340, 45 ) ]
+}
+
+[sub_resource type="StreamTexture" id=25]
+load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
+
+[sub_resource type="Animation" id=29]
+resource_name = "Slide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 560, 54 ), Vector2( 560, 45 ) ]
+}
+
+[sub_resource type="StreamTexture" id=26]
+load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
+
+[sub_resource type="Animation" id=30]
+resource_name = "Slide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 780, 54 ), Vector2( 780, 45 ) ]
 }
 
 [node name="Node" type="Node"]
@@ -885,8 +995,8 @@ anims/UnveilDrop = ExtResource( 15 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds"]
 anims/FadeToIntroPos = SubResource( 3 )
-anims/PlayerTossToCenter = SubResource( 16 )
-anims/player_toss = SubResource( 4 )
+anims/PlayerTossToCenter = SubResource( 4 )
+anims/player_toss = SubResource( 5 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/BattleGrounds"]
 visible = false
@@ -913,7 +1023,7 @@ anims/GreyFlashing = ExtResource( 17 )
 editor/display_folded = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
-anims/SlideBars = SubResource( 5 )
+anims/SlideBars = SubResource( 6 )
 
 [node name="SpriteLeft" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
 editor/display_folded = true
@@ -923,7 +1033,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs/SpriteLeft"]
-anims/Scroll = SubResource( 6 )
+anims/Scroll = SubResource( 7 )
 
 [node name="SpriteRight" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
 editor/display_folded = true
@@ -933,7 +1043,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs/SpriteRight"]
-anims/Scroll = SubResource( 7 )
+anims/Scroll = SubResource( 8 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
 
@@ -950,7 +1060,7 @@ visible = false
 margin_top = 128.0
 margin_right = 200.0
 margin_bottom = 163.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 9 )
 bbcode_enabled = true
 bbcode_text = "[center]"
 
@@ -967,7 +1077,7 @@ visible = false
 margin_top = 128.0
 margin_right = 200.0
 margin_bottom = 163.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 9 )
 bbcode_enabled = true
 bbcode_text = "[center]"
 
@@ -1002,8 +1112,8 @@ offset = Vector2( 0, 150 )
 hframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/PlayerToss"]
-anims/FadeIn = SubResource( 9 )
-anims/Toss = SubResource( 10 )
+anims/FadeIn = SubResource( 10 )
+anims/Toss = SubResource( 11 )
 
 [node name="Message" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
 editor/display_folded = true
@@ -1020,11 +1130,13 @@ margin_left = 25.0
 margin_top = 312.0
 margin_right = 485.0
 margin_bottom = 379.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 text = "Ace gained 9000 Exp. Points! Because this is cool!"
 scroll_active = false
 
 [node name="BattleBars" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+editor/display_folded = true
+visible = false
 script = ExtResource( 25 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
@@ -1043,14 +1155,14 @@ region_rect = Rect2( 0, 0, 202, 90 )
 [node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
-anims/Slide = SubResource( 12 )
+anims/Slide = SubResource( 13 )
 
 [node name="HPLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 margin_left = 60.0
 margin_top = 35.0
 margin_right = 195.0
 margin_bottom = 60.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 text = "20/ 20"
 scroll_active = false
 
@@ -1061,7 +1173,7 @@ margin_left = 2.0
 margin_top = 2.0
 margin_right = 137.0
 margin_bottom = 27.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 text = "20/ 20"
 scroll_active = false
 
@@ -1106,7 +1218,7 @@ region_rect = Rect2( 0, 0, 198, 90 )
 [node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
-anims/Slide = SubResource( 13 )
+anims/Slide = SubResource( 14 )
 
 [node name="NameLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 margin_left = 35.0
@@ -1127,6 +1239,7 @@ text = " 5"
 scroll_active = false
 
 [node name="BattleComandSelect" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+visible = false
 position = Vector2( 0, 384 )
 script = ExtResource( 32 )
 
@@ -1140,7 +1253,7 @@ margin_left = 25.0
 margin_top = 10.0
 margin_right = 485.0
 margin_bottom = 93.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 bbcode_enabled = true
 bbcode_text = "[center]What will Godot do?"
 text = "What will Godot do?"
@@ -1153,7 +1266,7 @@ margin_left = 2.0
 margin_top = 2.0
 margin_right = 462.0
 margin_bottom = 85.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "[center]What will Godot do?"
@@ -1161,7 +1274,7 @@ text = "What will Godot do?"
 scroll_active = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-anims/Slide = SubResource( 14 )
+anims/Slide = SubResource( 15 )
 
 [node name="Attack" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 75, 70 )
@@ -1171,7 +1284,7 @@ vframes = 2
 hframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Attack"]
-anims/Slide = SubResource( 17 )
+anims/Slide = SubResource( 16 )
 
 [node name="Bag" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 195, 70 )
@@ -1182,7 +1295,7 @@ hframes = 4
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Bag"]
-anims/Slide = SubResource( 18 )
+anims/Slide = SubResource( 17 )
 
 [node name="Poke" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 315, 70 )
@@ -1193,7 +1306,7 @@ hframes = 4
 frame = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Poke"]
-anims/Slide = SubResource( 19 )
+anims/Slide = SubResource( 18 )
 
 [node name="Run" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 435, 70 )
@@ -1204,14 +1317,14 @@ hframes = 4
 frame = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Run"]
-anims/Slide = SubResource( 20 )
+anims/Slide = SubResource( 19 )
 
 [node name="AttackLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 margin_left = 25.0
 margin_top = 70.0
 margin_right = 125.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 bbcode_enabled = true
 bbcode_text = "[center]Attack"
 text = "Attack"
@@ -1222,7 +1335,7 @@ margin_left = 145.0
 margin_top = 70.0
 margin_right = 245.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 bbcode_enabled = true
 bbcode_text = "[center]Bag"
 text = "Bag"
@@ -1233,7 +1346,7 @@ margin_left = 265.0
 margin_top = 70.0
 margin_right = 365.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 bbcode_enabled = true
 bbcode_text = "[center]Pokémon"
 text = "Pokémon"
@@ -1244,7 +1357,7 @@ margin_left = 385.0
 margin_top = 70.0
 margin_right = 485.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 11 )
+custom_fonts/normal_font = SubResource( 12 )
 bbcode_enabled = true
 bbcode_text = "[center]Run"
 text = "Run"
@@ -1257,4 +1370,149 @@ texture = ExtResource( 35 )
 offset = Vector2( 0, -40 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand"]
-anims/Squeez = SubResource( 15 )
+anims/Squeez = SubResource( 20 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand"]
+stream = ExtResource( 36 )
+
+[node name="BattleAttackSelect" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+position = Vector2( 0, 286 )
+script = ExtResource( 37 )
+
+[node name="Box" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect"]
+margin_right = 512.0
+margin_bottom = 98.0
+texture = ExtResource( 33 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect"]
+anims/Slide = SubResource( 21 )
+
+[node name="MoveSlide" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect"]
+position = Vector2( 20, 0 )
+
+[node name="SelHand" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+position = Vector2( 775, 0 )
+z_index = 1
+texture = ExtResource( 35 )
+offset = Vector2( 0, -40 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/SelHand"]
+anims/Squeez = SubResource( 22 )
+
+[node name="Move1" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+position = Vector2( 120, 54 )
+texture = SubResource( 23 )
+vframes = 20
+
+[node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move1"]
+margin_left = -85.0
+margin_top = -32.0
+margin_right = 73.0
+margin_bottom = -2.0
+custom_fonts/normal_font = ExtResource( 38 )
+custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Scratch"
+text = "Scratch"
+
+[node name="PP" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move1"]
+margin_left = -67.0
+margin_top = -5.0
+margin_right = 42.0
+margin_bottom = 25.0
+custom_fonts/normal_font = ExtResource( 38 )
+custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+bbcode_text = "PP: 35/35"
+text = "PP: 35/35"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move1"]
+anims/Slide = SubResource( 27 )
+
+[node name="Move2" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+position = Vector2( 340, 54 )
+texture = SubResource( 24 )
+vframes = 20
+
+[node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move2"]
+margin_left = -85.0
+margin_top = -32.0
+margin_right = 73.0
+margin_bottom = -2.0
+custom_fonts/normal_font = ExtResource( 38 )
+custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Scratch"
+text = "Scratch"
+
+[node name="PP" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move2"]
+margin_left = -67.0
+margin_top = -5.0
+margin_right = 42.0
+margin_bottom = 25.0
+custom_fonts/normal_font = ExtResource( 38 )
+custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+bbcode_text = "PP: 35/35"
+text = "PP: 35/35"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move2"]
+anims/Slide = SubResource( 28 )
+
+[node name="Move3" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+position = Vector2( 560, 54 )
+texture = SubResource( 25 )
+vframes = 20
+
+[node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move3"]
+margin_left = -85.0
+margin_top = -32.0
+margin_right = 73.0
+margin_bottom = -2.0
+custom_fonts/normal_font = ExtResource( 38 )
+custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Scratch"
+text = "Scratch"
+
+[node name="PP" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move3"]
+margin_left = -67.0
+margin_top = -5.0
+margin_right = 42.0
+margin_bottom = 25.0
+custom_fonts/normal_font = ExtResource( 38 )
+custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+bbcode_text = "PP: 35/35"
+text = "PP: 35/35"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move3"]
+anims/Slide = SubResource( 29 )
+
+[node name="Move4" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+position = Vector2( 780, 54 )
+texture = SubResource( 26 )
+vframes = 20
+
+[node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move4"]
+margin_left = -85.0
+margin_top = -32.0
+margin_right = 73.0
+margin_bottom = -2.0
+custom_fonts/normal_font = ExtResource( 38 )
+custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Scratch"
+text = "Scratch"
+
+[node name="PP" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move4"]
+margin_left = -67.0
+margin_top = -5.0
+margin_right = 42.0
+margin_bottom = 25.0
+custom_fonts/normal_font = ExtResource( 38 )
+custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+bbcode_text = "PP: 35/35"
+text = "PP: 35/35"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move4"]
+anims/Slide = SubResource( 30 )
+
+[node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
