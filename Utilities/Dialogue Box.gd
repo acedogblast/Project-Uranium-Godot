@@ -114,7 +114,7 @@ func _process(delta):
 				$Arrow.hide()
 				active = false
 				emit_signal("dialogue_end")
-			else:
+			elif text_lines > 1:
 				slide_text()
 	pass
 func slide_text():
@@ -130,15 +130,16 @@ func slide_text():
 			is_finished = true
 	pass
 func swap_text():
-	var tempText = $Box/Text2.bbcode_text
-	$Box/Text1.rect_position = Vector2(17,15)
-	$Box/Text2.rect_position = Vector2(17,50)
-	$Box/Text1.bbcode_text = tempText
-	$Box/Text2.bbcode_text = text[current_line + 1]
-	$Box/Text2.percent_visible = 0
-	$Box/Text2/AnimationPlayer.play("Text")
-	yield($Box/Text2/AnimationPlayer, "animation_finished")
-	sliding_text = false
+	if text_lines > 1:
+		var tempText = $Box/Text2.bbcode_text
+		$Box/Text1.rect_position = Vector2(17,15)
+		$Box/Text2.rect_position = Vector2(17,50)
+		$Box/Text1.bbcode_text = tempText
+		$Box/Text2.bbcode_text = text[current_line + 1]
+		$Box/Text2.percent_visible = 0
+		$Box/Text2/AnimationPlayer.play("Text")
+		yield($Box/Text2/AnimationPlayer, "animation_finished")
+		sliding_text = false
 	pass
 func load_single_example():
 	text = ["This is an example text."]
