@@ -5,9 +5,9 @@ onready var ArrowBottomRight = preload("res://Graphics/Pictures/Arrow2.png")
 onready var ArrowTopLeft = preload("res://Graphics/Pictures/Arrow3.png")
 onready var ArrowTopRight = preload("res://Graphics/Pictures/Arrow4.png")
 
-const TOP = Vector2(10,10)
+const TOP = Vector2(10, 10)
 const MIDDLE = Vector2(10, 150)
-const BOTTOM = Vector2(10,280)
+const BOTTOM = Vector2(10, 280)
 
 signal dialogue_start
 signal dialogue_end
@@ -22,6 +22,9 @@ var active = false
 
 var dialogue_string = ""
 var counter = 0
+
+func _ready():
+	$Box.hide()
 
 func load_text(text_array, force_arrow_show):
 	text = parse_string(text_array)
@@ -179,8 +182,30 @@ func finished():
 	pass
 
 func parse_string(text):
-	var expanded_text = expand(text)
-	return expanded_text.split("\n")
+	var expanded_text = expand(text).split("\n")
+
+	# We need this wile loop, because the size of the array
+	# might change when text wrapping occurs
+	var size_changed = true
+	while size_changed:
+		size_changed = false
+		for index in expanded_text.size():
+			var text_line = expanded_text[index]
+			# If text wraps, we move the last word to the next line, until it no longer overflows
+			while $Box/Text1.get_font("normal_font").get_string_size(text_line).x > $Box/Text1.rect_size.x:
+				var last_word = text_line.rsplit(" ", false, 1)[-1]
+				# If the word itself is bigger than the text box, we exit the loop to prevent infinite tries of wrapping
+				if($Box/Text1.get_font("normal_font").get_string_size(last_word).x > $Box/Text1.rect_size.x):
+					break
+				text_line = text_line.substr(0, text_line.length() - last_word.length() - 1)
+				# If this was the last line, we need another one. We also notify size has changed
+				if (index + 1) >= expanded_text.size():
+					size_changed = true
+					expanded_text.append("")
+				expanded_text[index + 1] = expanded_text[index + 1].insert(0, last_word + " ")
+
+			expanded_text[index] = text_line
+	return expanded_text
 
 func expand(text):
 	return text.format({"TrainerName": Global.TrainerName})
