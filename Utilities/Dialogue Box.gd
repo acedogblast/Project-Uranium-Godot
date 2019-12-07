@@ -5,6 +5,11 @@ onready var ArrowBottomRight = preload("res://Graphics/Pictures/Arrow2.png")
 onready var ArrowTopLeft = preload("res://Graphics/Pictures/Arrow3.png")
 onready var ArrowTopRight = preload("res://Graphics/Pictures/Arrow4.png")
 
+enum mode {
+	SingleText,
+	MultiText
+}
+
 const TOP = Vector2(10, 10)
 const MIDDLE = Vector2(10, 150)
 const BOTTOM = Vector2(10, 280)
@@ -13,6 +18,9 @@ signal dialogue_start
 signal dialogue_end
 
 var text = []
+var events = []
+var current_event
+var pos = 0
 var text_lines = 0
 var current_line = 0
 var sliding_text = false
@@ -20,11 +28,19 @@ var is_finished = false
 var force_arrow = false
 var active = false
 
+# Text formatting to copy to line below
+var format_to_copy = ""
+
+# Current text-mode: single or multi
+var currentMode
+
 var dialogue_string = ""
 var counter = 0
 
 func _ready():
 	$Box.hide()
+
+	#start_dialog(tr("TEST_SLOW_OUTPUT"))
 
 func load_text(text_array, force_arrow_show):
 	text = parse_string(text_array)
@@ -76,11 +92,15 @@ func reset():
 	$Box.show()
 	is_finished = false
 	current_line = 0
+	format_to_copy = ""
+	pos = 0
+	events = []
+	current_event = null
 	active = true
 	pass
 
-func set_dialogue_sequence(text):
-	dialogue_string = text + "_D"
+func set_dialogue_sequence(sequence):
+	dialogue_string = sequence + "_D"
 	counter = 1
 
 func next_dialogue(show_arrow = true, pos = BOTTOM, point_to = null):
@@ -91,21 +111,26 @@ func start_dialog(text, show_arrow = true, pos = BOTTOM, point_to = null):
 	emit_signal("dialogue_start")
 	reset()
 	load_text(text, show_arrow)
+	pop_event()
+
 	$Box.rect_position = pos
 	if(point_to):
 		show_arrow(point_to)
 
 	if text_lines == 1:
 		$Box/Text1.bbcode_text = self.text[0]
-		$Box/Text1/AnimationPlayer.play("SingleText")
+		currentMode = mode.SingleText
 	else:
 		$Box/Text1.bbcode_text = self.text[0]
-		$Box/Text2.bbcode_text = self.text[1]
-		$Box/Text1/AnimationPlayer.play("MultiText")
+		format_to_copy = TextParser.get_last_format(self.text[0])
+		$Box/Text2.bbcode_text = format_to_copy + self.text[1]
+		currentMode = mode.MultiText
+
+	$Box/TypeDelay.start()
 	pass
 # warning-ignore:unused_argument
 func _process(delta):
-	if active and Input.is_action_just_pressed("ui_accept") and $Box/Text2/AnimationPlayer.is_playing() == false and $Box/Text1/AnimationPlayer.is_playing() == false:
+	if active and Input.is_action_just_pressed("ui_accept") and $Box/TypeDelay.is_stopped():
 		if text_lines == 1 and is_finished == true:
 				$Box.hide()
 				$Arrow.hide()
@@ -138,10 +163,11 @@ func swap_text():
 		$Box/Text1.rect_position = Vector2(17,15)
 		$Box/Text2.rect_position = Vector2(17,50)
 		$Box/Text1.bbcode_text = tempText
-		$Box/Text2.bbcode_text = text[current_line + 1]
-		$Box/Text2.percent_visible = 0
-		$Box/Text2/AnimationPlayer.play("Text")
-		yield($Box/Text2/AnimationPlayer, "animation_finished")
+		format_to_copy = TextParser.get_last_format(tempText)
+		$Box/Text2.bbcode_text = format_to_copy + text[current_line + 1]
+		$Box/Text1.visible_characters = $Box/Text2.visible_characters
+		$Box/Text2.visible_characters = 0
+		$Box/TypeDelay.start()
 		sliding_text = false
 	pass
 func load_single_example():
@@ -170,11 +196,6 @@ func second_line_printed():
 	else:
 		finished()
 	pass
-func FirstLinePrinted():
-	$Box/Text2/AnimationPlayer.play("Text")
-	if text_lines == 1:
-		finished()
-	pass
 func finished():
 	if force_arrow == true:
 		$Box/PauseArrow.show()
@@ -182,21 +203,26 @@ func finished():
 	pass
 
 func parse_string(text):
-	var expanded_text = expand(text).split("\n")
+	var returns = TextParser.extract_events(TextParser.expand(text), $Box/TypeDelay)
+	var expanded_text = returns[0].split("\n")
+	events = returns[1]
 
-	# We need this wile loop, because the size of the array
+	# We need this while loop, because the size of the array
 	# might change when text wrapping occurs
 	var size_changed = true
 	while size_changed:
 		size_changed = false
 		for index in expanded_text.size():
+			var stripped_text_line = TextParser.strip_metadata(expanded_text[index])
 			var text_line = expanded_text[index]
 			# If text wraps, we move the last word to the next line, until it no longer overflows
-			while $Box/Text1.get_font("normal_font").get_string_size(text_line).x > $Box/Text1.rect_size.x:
+			while $Box/Text1.get_font("normal_font").get_string_size(stripped_text_line).x > $Box/Text1.rect_size.x:
+				var stripped_last_word = stripped_text_line.rsplit(" ", false, 1)[-1]
 				var last_word = text_line.rsplit(" ", false, 1)[-1]
 				# If the word itself is bigger than the text box, we exit the loop to prevent infinite tries of wrapping
 				if($Box/Text1.get_font("normal_font").get_string_size(last_word).x > $Box/Text1.rect_size.x):
 					break
+				stripped_text_line = stripped_text_line.substr(0, stripped_text_line.length() - stripped_last_word.length() - 1)
 				text_line = text_line.substr(0, text_line.length() - last_word.length() - 1)
 				# If this was the last line, we need another one. We also notify size has changed
 				if (index + 1) >= expanded_text.size():
@@ -204,8 +230,38 @@ func parse_string(text):
 					expanded_text.append("")
 				expanded_text[index + 1] = expanded_text[index + 1].insert(0, last_word + " ")
 
-			expanded_text[index] = text_line
+				expanded_text[index] = text_line
+
+	for index in expanded_text.size():
+		expanded_text[index] = TextParser.parse_text(expanded_text[index])
 	return expanded_text
 
-func expand(text):
-	return text.format({"TrainerName": Global.TrainerName})
+func _on_TypeDelay_timeout():
+	if($Box/Text1.visible_characters != $Box/Text1.text.length()):
+		$Box/Text1.visible_characters += 1
+		pos += 1
+		if(pos == 35):
+			pass
+		while(current_event != null and current_event.pos == pos):
+			yield(current_event.on_event(), "completed")
+			pop_event()
+	else:
+		if(currentMode == mode.SingleText):
+			$Box/TypeDelay.stop()
+			finished()
+		elif(currentMode == mode.MultiText):
+			if($Box/Text2.visible_characters != $Box/Text2.text.length()):
+				$Box/Text2.visible_characters += 1
+				pos += 1
+				while(current_event != null and current_event.pos == pos):
+					yield(current_event.on_event(), "completed")
+					pop_event()
+			else:
+				$Box/TypeDelay.stop()
+				second_line_printed()
+
+func pop_event():
+	current_event = null
+	if not events.empty():
+		current_event = events[0]
+		events.remove(0)
