@@ -26,16 +26,18 @@ func resize():
 	$ViewportContainer.rect_position = Vector2( (deviceResolution.x - horizontalSize) / 2, 0)
 	$ViewportContainer.rect_size = Vector2(horizontalSize, deviceResolution.y)
 	
+	DialogueSystem.rescale_mobile(deviceResolution)
+	
 	#print(horizontalSize)
 	#print($ViewportContainer.rect_size)
 	#print($ViewportContainer.rect_position)
 	
 	var controlScale = deviceResolution.y / 3000
-	$D_Pad.position = Vector2(0, int(round(deviceResolution.y / 2)))
-	$D_Pad.scale = Vector2(controlScale, controlScale)
+	$CanvasLayer/D_Pad.position = Vector2(0, int(round(deviceResolution.y / 2)))
+	$CanvasLayer/D_Pad.scale = Vector2(controlScale, controlScale)
 	
-	$Buttons.position = Vector2(deviceResolution.x - int(round(1500 * controlScale))   , int(round(deviceResolution.y / 2)))
-	$Buttons.scale = Vector2(controlScale, controlScale)
+	$CanvasLayer/Buttons.position = Vector2(deviceResolution.x - int(round(1500 * controlScale))   , int(round(deviceResolution.y / 2)))
+	$CanvasLayer/Buttons.scale = Vector2(controlScale, controlScale)
 	pass
 func changeScene(scene):
 	gameInstance.queue_free()
