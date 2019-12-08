@@ -42,6 +42,14 @@ func _ready():
 
 	#start_dialog(tr("TEST_SLOW_OUTPUT"))
 
+func rescale_mobile(deviceSize):
+	offset.x = (deviceSize.x - (deviceSize.y * 1.333)) / 2
+	var boxRatio = ProjectSettings.get_setting("display/window/size/width") / $Box.rect_size.x
+	var scale = deviceSize.y * 1.333 / boxRatio / $Box.rect_size.x
+	
+	self.scale.x = scale
+	self.scale.y = scale
+
 func load_text(text_array, force_arrow_show):
 	text = parse_string(text_array)
 	text_lines = text.size()
@@ -96,7 +104,6 @@ func reset():
 	pos = 0
 	events = []
 	current_event = null
-	active = true
 	pass
 
 func set_dialogue_sequence(sequence):
@@ -127,23 +134,18 @@ func start_dialog(text, show_arrow = true, pos = BOTTOM, point_to = null):
 		currentMode = mode.MultiText
 
 	$Box/TypeDelay.start()
+	active = true
 	pass
 # warning-ignore:unused_argument
 func _process(delta):
 	if active and Input.is_action_just_pressed("ui_accept") and $Box/TypeDelay.is_stopped():
-		if text_lines == 1 and is_finished == true:
-				$Box.hide()
-				$Arrow.hide()
-				active = false
-				emit_signal("dialogue_end")
-		else:
-			if is_finished:
-				$Box.hide()
-				$Arrow.hide()
-				active = false
-				emit_signal("dialogue_end")
-			elif text_lines > 1:
-				slide_text()
+		if is_finished == true:
+			$Box.hide()
+			$Arrow.hide()
+			active = false
+			emit_signal("dialogue_end")
+		elif currentMode == mode.MultiText:
+			slide_text()
 	pass
 func slide_text():
 	$Box/PauseArrow.hide()
@@ -240,8 +242,6 @@ func _on_TypeDelay_timeout():
 	if($Box/Text1.visible_characters != $Box/Text1.text.length()):
 		$Box/Text1.visible_characters += 1
 		pos += 1
-		if(pos == 35):
-			pass
 		while(current_event != null and current_event.pos == pos):
 			yield(current_event.on_event(), "completed")
 			pop_event()

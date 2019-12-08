@@ -8,10 +8,6 @@ onready var EarthQuakeSound = preload("res://Audio/SE/131-Earth03.ogg")
 
 onready var EmotionSound = preload("res://Audio/SE/SE_EM.wav")
 onready var ExplosionSound = preload("res://Audio/SE/049-Explosion02.ogg") # Do not loop
-onready var ArrowBottomLeft = preload("res://Graphics/Pictures/Arrow1.png")
-onready var ArrowBottomRight = preload("res://Graphics/Pictures/Arrow2.png")
-onready var ArrowTopLeft = preload("res://Graphics/Pictures/Arrow3.png")
-onready var ArrowTopRight = preload("res://Graphics/Pictures/Arrow4.png")
 onready var EmotionIcon = preload("res://Graphics/Animations/029-Emotion01.png")
 
 var lastAnimationPos = 0.0
@@ -45,7 +41,6 @@ func dialogue_set_top():
 	pass
 
 func dialogue(show_arrow = true, point_arrow = null):
-	print(show_arrow)
 	DialogueSystem.next_dialogue(show_arrow, dialogue_pos, point_arrow)
 	pass
 
