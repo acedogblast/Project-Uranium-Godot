@@ -28,7 +28,7 @@ msgid "CUTSCENE_PLAYERCREATION_D8"
 msgstr "But there's so much we still don't know about Pokémon. That's my job! I study Pokémon for a living. Specifically, I'm an expert on Pokémon elements. Every Pokémon has an elemental type, and each type has its own strengths and weaknesses. But... why do they exist? Are there new types we haven't discovered yet? Ah, but I'll tell you more at your first day on the job. Report to my lab tomorrow to get your first Pokémon. Now, if you'd just fill out this form here..."
 
 msgid "CUTSCENE_PLAYERCREATION_FINISH"
-msgstr "{TrainerName} are you ready? Your journey --- your story --- is about to unfold The future is a blank slate. You, together with your Pokémon, are going to fill it. There will be challenges and thrills, and you're bound to make exciting discoveries. Let's go!"
+msgstr "\PN are you ready? Your journey --- your story --- is about to unfold The future is a blank slate. You, together with your Pokémon, are going to fill it. There will be challenges and thrills, and you're bound to make exciting discoveries. Let's go!"
 
 msgid "CUTSCENE_PLAYERCREATION_CHOOSE_CHARACTER"
 msgstr "Who are you?"
@@ -40,7 +40,7 @@ msgid "CUTSCENE_PLAYERCREATION_CHOOSE_NAME"
 msgstr "I'd like to know your name. Please tell me."
 
 msgid "CUTSCENE_INTRO_D1"
-msgstr "10 years ago... {TrainerName}'s family lived in Bealbeach City, the largest city in Tandor."
+msgstr "10 years ago... \PN's family lived in Bealbeach City, the largest city in Tandor."
 
 msgid "CUTSCENE_INTRO_D2"
 msgstr "Their father, Kellyn, was a brave and talented Pokémon Ranger."
@@ -49,7 +49,7 @@ msgid "CUTSCENE_INTRO_D3"
 msgstr "Their mother, Lucille, was a brilliant scientist and an expert on Nuclear Energy."
 
 msgid "CUTSCENE_INTRO_D4"
-msgstr "Although they both worked demanding jobs, they always found time to spend at home with young {TrainerName}."
+msgstr "Although they both worked demanding jobs, they always found time to spend at home with young \PN."
 
 msgid "CUTSCENE_INTRO_D5"
 msgstr "The Tandor region was at peace, and Lucille's company was working on a form of clean energy that would change the world"
@@ -109,10 +109,10 @@ msgid "CUTSCENE_INTRO_D23"
 msgstr "The radiation leaking from the broken reactor made the surrounding area uninhabitable for many years, foiling any attempt to try and search for her."
 
 msgid "CUTSCENE_INTRO_D24"
-msgstr "The lost of his wife had a profound effect on Kellyn. His personality changed. He became cold, and dedicated to his job. In time, he got promoted to Chief of the Tandor Pokémon Rangers. However, he became too busy to care for his child. So young {TrainerName} was sent to live with their elderly Auntie in Moki Town."
+msgstr "The lost of his wife had a profound effect on Kellyn. His personality changed. He became cold, and dedicated to his job. In time, he got promoted to Chief of the Tandor Pokémon Rangers. However, he became too busy to care for his child. So young \PN was sent to live with their elderly Auntie in Moki Town."
 
 msgid "CUTSCENE_INTRO_D25"
 msgstr "10 years passed..."
 
 msgid "CUTSCENE_INTRO_D26"
-msgstr "Auntie's health waned. Supporting a child was too much work for her. Fortunately, Ernest Bamb'o, the local Pokémon Professor, was looking for a research assistant. Two kids from Moki Town applied: {TrainerName}, and their childhood friend, Theo. It was common for youths of a certain age to receive a Pokémon and travel the region as a Pokémon Trainer. And so, {TrainerName}'s journey began..."
+msgstr "Auntie's health waned. Supporting a child was too much work for her. Fortunately, Ernest Bamb'o, the local Pokémon Professor, was looking for a research assistant. Two kids from Moki Town applied: \PN, and their childhood friend, Theo. It was common for youths of a certain age to receive a Pokémon and travel the region as a Pokémon Trainer. And so, \PN's journey began..."
