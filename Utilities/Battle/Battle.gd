@@ -3,6 +3,7 @@ extends Node
 var battle_instance : BattleInstanceData
 var queue : BattleQueue
 var registry
+var battle_logic : BattleLogic
 
 var battler1 : Pokemon # Player's pokemon
 var battler2 : Pokemon # Foe's pokemon
@@ -10,9 +11,11 @@ var battler3 : Pokemon # Player's second pokemon in double battles
 var battler4 : Pokemon # Foe's second pokemonin double battles
 
 
+var battle_command : BattleCommand
 
 signal wait
 signal EndOfBattleLoop
+signal command_received
 
 func _ready():
 	$CanvasLayer/BattleGrounds.visible = false
@@ -34,6 +37,7 @@ func _ready():
 #	pass
 func Start_Battle(bid : BattleInstanceData):
 	battle_instance = bid
+	
 	# Set battle resources
 	set_battle_music()
 	set_battle_back()
@@ -47,7 +51,7 @@ func Start_Battle(bid : BattleInstanceData):
 	# Set first wave pokemon
 	battler1 = Global.pokemon_group[0]
 	battler2 = battle_instance.opponent.pokemon_group[0]
-
+	battle_logic = load("res://Utilities/Battle/BattleLogic.gd").new(battler1, battler2)
 	# Set human opponent texture
 	if battle_instance.battle_type != battle_instance.BattleType.SINGLE_WILD:
 		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.texture = battle_instance.opponent.battle_texture
@@ -132,34 +136,28 @@ func Start_Battle(bid : BattleInstanceData):
 		if queue.is_empty(): # If queue is empty, get player battle comand.
 			# Pop up battle comand menu.
 			print("Getting comand from player")
-			get_battle_comand()
-			yield(self, "wait")
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+			get_battle_command()
+
+			# Get Foe command by AI while player chooses.
+			var battle_snapshot = get_battle_snapshot()
+			var foe_command = battle_instance.opponent.ai.get_command(battle_snapshot)
+
+			yield(self, "wait") # wait for player comand.
+
+			queue = battle_logic.generate_action_queue(battle_command, foe_command)
+
+			if queue.is_empty():
+				print("This should not be possible")
+
 		else:
 			battle_loop()
 			yield(self, "EndOfBattleLoop")
-		
-		
 		# Check if battle is over.
 		#if queue.is_empty(): # Temp should be replaced by proper battle check!
 		#	isBattleOver = true
 	
 	# After battle comands
 	print("Battle is over.")
-	
-	
-	
-	pass
-
 func test():
 	var BID = load("res://Utilities/Battle/Classes/BattleInstanceData.gd")
 	var OPP = load("res://Utilities/Battle/Classes/Opponent.gd")
@@ -168,7 +166,9 @@ func test():
 	bid.battle_back = BID.BattleBack.INDOOR_1
 	bid.opponent = OPP.new()
 	bid.opponent.name = "Theo"
-	
+	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.TESTING_1
+
 	var poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(1,5)
 	bid.opponent.pokemon_group.append(poke)
@@ -283,7 +283,6 @@ func battle_loop():
 			# if human opponent is visable play fadeing animation
 			if $CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible == true:
 				$CanvasLayer/BattleGrounds/FoeBase/FoeHuman/AnimationPlayer.play("FadeOut")
-			
 			$CanvasLayer/BattleGrounds/FoeBase/Ball.visible = true
 			$CanvasLayer/BattleGrounds.foe_unveil()
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = false
@@ -291,18 +290,74 @@ func battle_loop():
 		action.PLAYER_BALLTOSS:
 			$CanvasLayer/BattleGrounds.player_unveil()
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")
+		action.DAMAGE:
+			# Play damage sound
+			var audioplayer = $CanvasLayer/BattleInterfaceLayer/BattleBars/AudioStreamPlayer
+			var sound
+			var effect
+			if action.damage_effectiveness > 2.0: # Super damage
+				sound = load("res://Audio/SE/superdamage.wav")
+				effect = "SuperDamage"
+			elif action.damage_effectiveness < 1.0: # Low damage
+				sound = load("res://Audio/SE/notverydamage.wav")
+				effect = "LowDamage"
+			else: # Normal damage
+				sound = load("res://Audio/SE/normaldamage.wav")
+				effect = "NormalDamage"
+			audioplayer.stream = sound
+			audioplayer.play()
+			# Play damage animation
+			match action.damage_target_index:
+				1: # Player
+					$CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer.play(effect)
+					yield($CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer, "animation_finished")
+				2: # Foe
+					$CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer.play(effect)
+					yield($CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer, "animation_finished")
+			# Play hp bar slide
+
+			
+
+			var bars = $CanvasLayer/BattleInterfaceLayer/BattleBars
+			match action.damage_target_index:
+				1: # Player
+					#print("bar slide for player")
+					bars.slide_player_bar(float(battler1.current_hp) / battler1.hp, battler1.current_hp)
+					yield(bars, "finished")
+				2: # Foe
+					#print("bar slide for foe")
+					bars.slide_foe_bar(float(battler2.current_hp) / battler2.hp)
+					yield(bars, "finished")
+		_:
+			print("Battle Error: Battle Action did not match any correct value.")
+
 	emit_signal("EndOfBattleLoop")
-func get_battle_comand():
+func get_battle_command():
 	var menu = $CanvasLayer/BattleInterfaceLayer/BattleComandSelect
 	menu.get_node("AnimationPlayer").play("Slide")
 	menu.visible = true
 	menu.start(battler1.name)
 	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.reset()
+	yield($CanvasLayer/BattleInterfaceLayer/BattleAttackSelect, "command_received")
 	
-	yield(menu.get_node("AnimationPlayer"), "animation_finished")
-	
-	
-	
-	
-	#emit_signal("wait")
-	pass
+	print("Command recived")
+
+	emit_signal("wait")
+func get_battle_snapshot():
+	var snap = load("res://Utilities/Battle/Classes/BattleSnapshot.gd").new()
+	snap.foe_poke_id = int(battler1.ID)
+	snap.foe_hp_percentage = float(battler1.current_hp) / float(battler1.hp)
+	snap.foe_poke_level = int(battler1.level)
+	var index := 0
+	for p in battle_instance.opponent.pokemon_group:
+		if p == battler2:
+			break
+		else:
+			index = index + 1
+	snap.poke_index = int(index)
+	snap.poke_remaining_hp = int(battler2.current_hp)
+	snap.poke_max_hp = int(battler2.hp)
+	snap.poke_level = int(battler2.level)
+	for p in battle_instance.opponent.pokemon_group:
+		snap.poke_list.push_back(int(p.ID))
+	return snap

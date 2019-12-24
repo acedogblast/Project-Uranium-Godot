@@ -1,5 +1,7 @@
 extends Node2D
 
+signal command_received
+
 var enabled = false
 var selected = 1
 var moves = 1
@@ -13,11 +15,17 @@ const MOVE_SLIDE_2 = Vector2(-200, 0)
 const MOVE_SLIDE_3 = Vector2(-420, 0)
 const MOVE_SLIDE_4 = Vector2(-640, 0)
 
+var battler
+
+onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
+onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
+
 func reset(): # To be called when the player battler is switched
     selected = 1
     moves = 1
     $MoveSlide/SelHand.position = MOVE1_POS
 func start(poke):
+    battler = poke
     moves = 1
     $MoveSlide/Move1.visible = false
     $MoveSlide/Move2.visible = false
@@ -54,7 +62,38 @@ func _input(event):
             selected += 1
             change_Sel_Hand_Pos()
         if event.is_action_pressed("ui_accept") or event.is_action_pressed("x"):
-            pass
+            $MoveSlide/SelHand/AudioStreamPlayer.stream = select_se_2
+            $MoveSlide/SelHand/AudioStreamPlayer.play()
+            
+            var command = load("res://Utilities/Battle/Classes/BattleCommand.gd").new()
+            command.command_type = command.ATTACK
+            command.attack_target = command.B2 # Target Foe
+            var move
+            match selected:
+                1:
+                    command.attack_move = battler.move_1.name
+                    move = battler.move_1
+                2:
+                    command.attack_move = battler.move_2.name
+                    move = battler.move_2
+                3:
+                    command.attack_move = battler.move_3.name
+                    move = battler.move_3
+                4:
+                    command.attack_move = battler.move_4.name
+                    move = battler.move_4
+            if move.remaining_pp != 0:
+                $AnimationPlayer.play_backwards("Slide")
+
+                print("Valid attack selected")
+                self.visible = false
+                enabled = false
+                self.get_parent().get_parent().get_parent().battle_command = command
+                emit_signal("command_received")
+            else:
+                # Don't do anything.
+                pass
+
         if event.is_action_pressed("z"): # Go back to comand select
             enabled = false
             self.visible = false
@@ -62,6 +101,8 @@ func _input(event):
             self.get_parent().get_node("BattleComandSelect").visible = true
     pass
 func change_Sel_Hand_Pos():
+    $MoveSlide/SelHand/AudioStreamPlayer.stream = select_se_1
+    $MoveSlide/SelHand/AudioStreamPlayer.play()
     var tween = $MoveSlide/Tween
     match selected:
         1:

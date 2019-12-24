@@ -35,9 +35,11 @@ func _input(event):
 		if selected == ATTACK:
 			$SelHand/AudioStreamPlayer.stream = select_se_2
 			$SelHand/AudioStreamPlayer.play()
-			self.get_parent().get_node("BattleAttackSelect").start(self.get_parent().get_parent().get_parent().battler1)
+			var battle_attack_select = self.get_parent().get_node("BattleAttackSelect")
+			battle_attack_select.start(self.get_parent().get_parent().get_parent().battler1)
 			self.visible = false
-			self.get_parent().get_node("BattleAttackSelect").visible = true
+			battle_attack_select.position = Vector2(0, 286)
+			battle_attack_select.visible = true
 			enabled = false
 		pass
 	

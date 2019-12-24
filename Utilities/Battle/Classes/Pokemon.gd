@@ -35,6 +35,9 @@ var nature
 var ability
 var hidden_ability
 
+# The pokemon's major ailment
+var major_ailment
+
 # The pokemon's Individual Values
 var iv_hp : int
 var iv_attack : int
@@ -143,7 +146,8 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level 1 version of
 	generate_IV()
 	generate_nature() # For now random but should be determined by something else
 	generate_gender(data.male_ratio)
-	
+	major_ailment = null
+
 	# Set experience points
 	match data.leveling_rate:
 		data.SLOW:

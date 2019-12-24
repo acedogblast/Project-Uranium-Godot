@@ -14,3 +14,8 @@ var battle_grounds_pos_change
 
 var battle_text : String
 
+var damage_target_index
+
+var damage_amount : int
+
+var damage_effectiveness : float

@@ -10,9 +10,24 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Object",
+"class": "AI",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/AI.gd"
+}, {
+"base": "Object",
+"class": "BattleCommand",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/BattleCommand.gd"
+}, {
+"base": "Object",
 "class": "BattleInstanceData",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/BattleInstanceData.gd"
+}, {
+"base": "Object",
+"class": "BattleLogic",
+"language": "GDScript",
+"path": "res://Utilities/Battle/BattleLogic.gd"
 }, {
 "base": "Object",
 "class": "BattleQueue",
@@ -23,6 +38,16 @@ _global_script_classes=[ {
 "class": "BattleQueueAction",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/BattleQueueAction.gd"
+}, {
+"base": "Object",
+"class": "BattleSnapshot",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/BattleSnapshot.gd"
+}, {
+"base": "Object",
+"class": "BattleStatStage",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/BattleStatStage.gd"
 }, {
 "base": "Node",
 "class": "DialogueEvent",
@@ -75,6 +100,11 @@ _global_script_classes=[ {
 "path": "res://Utilities/Save/State.gd"
 }, {
 "base": "Object",
+"class": "StatusAilment",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/StatusAilment.gd"
+}, {
+"base": "Object",
 "class": "Type",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/Type.gd"
@@ -90,9 +120,14 @@ _global_script_classes=[ {
 "path": "res://Utilities/Battle/Database/Pokemon/registry.gd"
 } ]
 _global_script_class_icons={
+"AI": "",
+"BattleCommand": "",
 "BattleInstanceData": "",
+"BattleLogic": "",
 "BattleQueue": "",
 "BattleQueueAction": "",
+"BattleSnapshot": "",
+"BattleStatStage": "",
 "DialogueEvent": "",
 "Move": "",
 "MoveDataBase": "",
@@ -103,6 +138,7 @@ _global_script_class_icons={
 "Opponent": "",
 "Pokemon": "",
 "State": "",
+"StatusAilment": "",
 "Type": "",
 "WaitEvent": "",
 "registry": ""

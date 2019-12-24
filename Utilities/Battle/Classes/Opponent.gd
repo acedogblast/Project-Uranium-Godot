@@ -13,3 +13,5 @@ var opponent_type
 var after_battle_quote
 
 var battle_texture : Texture
+
+var ai : AI
