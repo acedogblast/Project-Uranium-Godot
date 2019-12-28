@@ -5,6 +5,7 @@ onready var ArrowBottomRight = preload("res://Graphics/Pictures/Arrow2.png")
 onready var ArrowTopLeft = preload("res://Graphics/Pictures/Arrow3.png")
 onready var ArrowTopRight = preload("res://Graphics/Pictures/Arrow4.png")
 
+# Used to indicate current text mode
 enum mode {
 	SingleText,
 	MultiText
@@ -13,6 +14,8 @@ enum mode {
 const TOP = Vector2(10, 10)
 const MIDDLE = Vector2(10, 150)
 const BOTTOM = Vector2(10, 280)
+
+onready var typeTimer = $Box/TypeDelay
 
 signal dialogue_start
 signal dialogue_end
@@ -40,8 +43,9 @@ var counter = 0
 func _ready():
 	$Box.hide()
 
-	#start_dialog(tr("TEST_SLOW_OUTPUT"))
+	#start_dialog(tr("CUTSCENE_PLAYERCREATION_D6"))
 
+# Internal function: rescales the dialogue box for mobile displays
 func rescale_mobile(deviceSize):
 	offset.x = (deviceSize.x - (deviceSize.y * 1.333)) / 2
 	var boxRatio = ProjectSettings.get_setting("display/window/size/width") / $Box.rect_size.x
@@ -50,18 +54,17 @@ func rescale_mobile(deviceSize):
 	self.scale.x = scale
 	self.scale.y = scale
 
+# Internal function: loads text
 func load_text(text_array, force_arrow_show):
 	text = parse_string(text_array)
 	text_lines = text.size()
 	force_arrow = force_arrow_show
-	pass
 
+# Internal function: shows arrow pointing to source_vector
 func show_arrow(source_vector):
-	print(source_vector)
 	var arrow_height = 0
 	var arrow_width = 0
 	if $Box.rect_position == BOTTOM:
-		print("bottom")
 		arrow_height = 280 - source_vector.y
 		arrow_width = int(arrow_height * 1.333)
 		if source_vector.x >= 256:
@@ -74,7 +77,6 @@ func show_arrow(source_vector):
 			pass
 		pass
 	elif $Box.rect_position == TOP:
-		print("top")
 		if source_vector.x >= 256:
 			$Arrow.texture = ArrowTopRight
 			$Arrow.rect_position = Vector2(10, 80)
@@ -88,8 +90,8 @@ func show_arrow(source_vector):
 		pass
 	$Arrow.rect_size = Vector2(arrow_width,arrow_height)
 	$Arrow.visible = true
-	pass
 
+# Resets the dialogue system, clearing everything
 func reset():
 	for node in [$Box/Text1, $Box/Text2]:
 		node.bbcode_enabled = true
@@ -104,16 +106,18 @@ func reset():
 	pos = 0
 	events = []
 	current_event = null
-	pass
 
+# Sets a dialogue sequence, useful for cutscenes
 func set_dialogue_sequence(sequence):
 	dialogue_string = sequence + "_D"
 	counter = 1
 
+# Show the next dialogue string. set_sequence must have been set
 func next_dialogue(show_arrow = true, pos = BOTTOM, point_to = null):
 	start_dialog(tr(dialogue_string + str(counter)), show_arrow, pos, point_to)
 	counter += 1
 
+# Starts a dialogue text
 func start_dialog(text, show_arrow = true, pos = BOTTOM, point_to = null):
 	emit_signal("dialogue_start")
 	reset()
@@ -136,17 +140,21 @@ func start_dialog(text, show_arrow = true, pos = BOTTOM, point_to = null):
 	$Box/TypeDelay.start()
 	active = true
 	pass
+
 # warning-ignore:unused_argument
 func _process(delta):
 	if active and Input.is_action_just_pressed("ui_accept") and $Box/TypeDelay.is_stopped():
 		if is_finished == true:
-			$Box.hide()
-			$Arrow.hide()
-			active = false
-			emit_signal("dialogue_end")
+			finish_dialogue()
 		elif currentMode == mode.MultiText:
 			slide_text()
-	pass
+
+func finish_dialogue():
+		$Box.hide()
+		$Arrow.hide()
+		active = false
+		emit_signal("dialogue_end")
+
 func slide_text():
 	$Box/PauseArrow.hide()
 	if not sliding_text:
@@ -158,7 +166,7 @@ func slide_text():
 			$Box/AudioStreamPlayer.play()
 		else:
 			is_finished = true
-	pass
+
 func swap_text():
 	if text_lines > 1:
 		var tempText = $Box/Text2.bbcode_text
@@ -171,38 +179,17 @@ func swap_text():
 		$Box/Text2.visible_characters = 0
 		$Box/TypeDelay.start()
 		sliding_text = false
-	pass
-func load_single_example():
-	text = ["This is an example text."]
-	text_lines = text.size()
-	force_arrow = true
-	pass
-func load_multi_example():
-	text = ["This is an example text.",
-	"This is also an example text.",
-	"This is the third line",
-	"This is the fourth line",
-	"This should be the last line of text."]
-	text_lines = text.size()
-	force_arrow = true
-	pass
-func load_two_example():
-	text = ["This is an example text.",
-	"This is also an example text.",]
-	text_lines = text.size()
-	force_arrow = true
-	pass
+
 func second_line_printed():
 	if text_lines != 2 and current_line != (text_lines - 2):
 		$Box/PauseArrow.show()
 	else:
 		finished()
-	pass
+
 func finished():
 	if force_arrow == true:
 		$Box/PauseArrow.show()
 	is_finished = true
-	pass
 
 func parse_string(text):
 	var returns = TextParser.extract_events(TextParser.expand(text), $Box/TypeDelay)
@@ -236,26 +223,34 @@ func parse_string(text):
 
 	for index in expanded_text.size():
 		expanded_text[index] = TextParser.parse_text(expanded_text[index])
+		if index > 0:
+			if(expanded_text[index] and expanded_text[index][0] == " "):
+				expanded_text[index - 1] += " "
+				expanded_text[index] = expanded_text[index].right(1)
 	return expanded_text
 
 func _on_TypeDelay_timeout():
-	if($Box/Text1.visible_characters != $Box/Text1.text.length()):
+	while(current_event != null and current_event.pos == pos):
+		active = false
+		yield(current_event.on_event(), "completed")
+		pop_event()
+	active = true
+	if($Box/Text1.visible_characters < $Box/Text1.text.length()):
 		$Box/Text1.visible_characters += 1
 		pos += 1
-		while(current_event != null and current_event.pos == pos):
-			yield(current_event.on_event(), "completed")
-			pop_event()
 	else:
 		if(currentMode == mode.SingleText):
 			$Box/TypeDelay.stop()
 			finished()
 		elif(currentMode == mode.MultiText):
-			if($Box/Text2.visible_characters != $Box/Text2.text.length()):
+			while(current_event != null and current_event.pos == pos):
+				active = false
+				yield(current_event.on_event(), "completed")
+				pop_event()
+			active = true
+			if($Box/Text2.visible_characters < $Box/Text2.text.length()):
 				$Box/Text2.visible_characters += 1
 				pos += 1
-				while(current_event != null and current_event.pos == pos):
-					yield(current_event.on_event(), "completed")
-					pop_event()
 			else:
 				$Box/TypeDelay.stop()
 				second_line_printed()
