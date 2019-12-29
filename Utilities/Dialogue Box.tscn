@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Utilities/Dialogue Box.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture" id=2]
@@ -8,11 +8,25 @@
 [ext_resource path="res://Utilities/Dialogue Box Arrow.tres" type="Animation" id=6]
 [ext_resource path="res://Audio/SE/Choose.WAV" type="AudioStream" id=7]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Fonts/pkmndpb.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
 size = 26
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFontData" id=4]
+font_path = "res://Fonts/pkmndpb.ttf"
+
+[sub_resource type="DynamicFont" id=5]
+size = 26
+font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFont" id=6]
 size = 26
 font_data = ExtResource( 4 )
 
@@ -49,7 +63,8 @@ margin_left = 17.0
 margin_top = 15.0
 margin_right = 462.0
 margin_bottom = 50.0
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/bold_font = SubResource( 2 )
+custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
 bbcode_text = "Sample text."
 meta_underlined = false
@@ -61,7 +76,8 @@ margin_left = 17.0
 margin_top = 50.0
 margin_right = 462.0
 margin_bottom = 85.0
-custom_fonts/normal_font = SubResource( 2 )
+custom_fonts/bold_font = SubResource( 5 )
+custom_fonts/normal_font = SubResource( 6 )
 bbcode_enabled = true
 bbcode_text = "Sample text"
 meta_underlined = false
