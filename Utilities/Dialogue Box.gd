@@ -195,15 +195,18 @@ func parse_string(text):
 	var returns = TextParser.extract_events(TextParser.expand(text), $Box/TypeDelay)
 	var expanded_text = returns[0].split("\n")
 	events = returns[1]
+	var final_text = []
 
 	# We need this while loop, because the size of the array
 	# might change when text wrapping occurs
-	var size_changed = true
-	while size_changed:
-		size_changed = false
-		for index in expanded_text.size():
-			var stripped_text_line = TextParser.strip_metadata(expanded_text[index])
-			var text_line = expanded_text[index]
+	for line in expanded_text:
+		var text_array = [line]
+		var index = 0
+		var size_changed = true
+		while size_changed:
+			size_changed = false
+			var text_line = text_array[index]
+			var stripped_text_line = TextParser.strip_metadata(text_line)
 			# If text wraps, we move the last word to the next line, until it no longer overflows
 			while $Box/Text1.get_font("normal_font").get_string_size(stripped_text_line).x > $Box/Text1.rect_size.x:
 				var stripped_last_word = stripped_text_line.rsplit(" ", false, 1)[-1]
@@ -214,20 +217,18 @@ func parse_string(text):
 				stripped_text_line = stripped_text_line.substr(0, stripped_text_line.length() - stripped_last_word.length() - 1)
 				text_line = text_line.substr(0, text_line.length() - last_word.length() - 1)
 				# If this was the last line, we need another one. We also notify size has changed
-				if (index + 1) >= expanded_text.size():
+				if (index + 1) >= text_array.size():
 					size_changed = true
-					expanded_text.append("")
-				expanded_text[index + 1] = expanded_text[index + 1].insert(0, last_word + " ")
+					text_array.append("")
+				text_array[index + 1] = text_array[index + 1].insert(0, last_word + " ")
 
-				expanded_text[index] = text_line
+				text_array[index] = text_line
+			index += 1
 
-	for index in expanded_text.size():
-		expanded_text[index] = TextParser.parse_text(expanded_text[index])
-		if index > 0:
-			if(expanded_text[index] and expanded_text[index][0] == " "):
-				expanded_text[index - 1] += " "
-				expanded_text[index] = expanded_text[index].right(1)
-	return expanded_text
+		for line in text_array:
+			final_text.append(TextParser.parse_text(line))
+
+	return final_text
 
 func _on_TypeDelay_timeout():
 	while(current_event != null and current_event.pos == pos):
