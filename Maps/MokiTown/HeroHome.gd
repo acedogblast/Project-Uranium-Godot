@@ -50,16 +50,11 @@ func check_node(pos):
 	pass
 
 func floor_2_tv_dialogue():
-	DialogueSystem.start_dialog(tr("INTERACT_MOKITOWN_HOUSE_TV"), false)
-	#new_dialog(tr("INTERACT_MOKITOWN_HOUSE_TV"), false)
+	DialogueSystem.start_dialog("INTERACT_MOKITOWN_HOUSE_TV")
 func console_dialoge():
-	DialogueSystem.start_dialog(tr("INTERACT_MOKITOWN_HOUSE_CONSOLE"), false)
-	#new_dialog(tr("INTERACT_MOKITOWN_HOUSE_CONSOLE"),false)
-	pass
+	DialogueSystem.start_dialog("INTERACT_MOKITOWN_HOUSE_CONSOLE")
 func floor_2_bookshelf_dialogue():
-	DialogueSystem.start_dialog(tr("INTERACT_MOKITOWN_HOUSE_BOOKSHELF"), false)
-	#new_dialog(tr("INTERACT_MOKITOWN_HOUSE_BOOKSHELF"), false)
-	pass
+	DialogueSystem.start_dialog("INTERACT_MOKITOWN_HOUSE_BOOKSHELF")
 
 func dialog_end():
 	isInteracting = false

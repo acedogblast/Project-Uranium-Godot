@@ -9,14 +9,15 @@ var lastAnimation = null
 func _ready():
 	DialogueSystem.connect("dialogue_start", self, "pause")
 	DialogueSystem.connect("dialogue_end", self, "resume")
-	DialogueSystem.set_dialogue_sequence("CUTSCENE_PLAYERCREATION")
+	DialogueSystem.set_dialogue_sequence("CUTSCENE_PLAYERCREATION_D")
 
 func _exit_tree():
 	DialogueSystem.disconnect("dialogue_start", self, "pause")
 	DialogueSystem.disconnect("dialogue_end", self, "resume")
 
 func dialogue(show_arrow = true):
-	DialogueSystem.next_dialogue(show_arrow)
+	DialogueSystem.set_show_arrow(show_arrow)
+	DialogueSystem.next_dialogue()
 	pass
 func fade_bombo():
 	#print("fade_bombo")
@@ -75,7 +76,8 @@ func final():
 	$GenderColor.rect_size = Vector2(512,384)
 	$GenderColor.stretch_mode = TextureRect.STRETCH_TILE
 	$GenderColor.visible = true
-	DialogueSystem.start_dialog(tr("CUTSCENE_PLAYERCREATION_FINISH"), false)
+	DialogueSystem.set_show_arrow(false)
+	DialogueSystem.start_dialog("CUTSCENE_PLAYERCREATION_FINISH")
 	pass
 
 func _on_AnimationPlayer_animation_finished(anim_name):

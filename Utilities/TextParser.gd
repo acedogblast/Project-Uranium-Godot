@@ -110,7 +110,6 @@ func extract_events(text, timer):
 		index += 1
 
 	# Sort the events array by pos
-	#event_array.sort_custom(EventSorter, "sort")
 	return [extracted_text, event_array]
 
 func extract_arg(text, index):
