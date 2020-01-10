@@ -30,12 +30,12 @@ func ShowDialog():
 	inGenderSelect = true
 	#print("ShowDialog")
 	canSelect = true
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_CHOOSE_CHARACTER"))
+	new_dialog("CUTSCENE_PLAYERCREATION_CHOOSE_CHARACTER")
 	pass
 func Confirmation():
 	#print("Confirmation")
 	canSelect = false
-	new_dialog(tr("CUTSCENE_PLAYERCREATION_CONFIRM_CHARACTER"))
+	new_dialog("CUTSCENE_PLAYERCREATION_CONFIRM_CHARACTER")
 	pass
 	
 func _process(delta):
@@ -70,7 +70,7 @@ func _process(delta):
 	elif Input.is_action_just_pressed("ui_accept") and selectStage == 1:
 		if confirmationSelect == 0:
 			selectStage = 2
-			new_dialog(tr("CUTSCENE_PLAYERCREATION_CHOOSE_NAME"))
+			new_dialog("CUTSCENE_PLAYERCREATION_CHOOSE_NAME")
 			pass
 		if confirmationSelect == 1:
 			ShowDialog()

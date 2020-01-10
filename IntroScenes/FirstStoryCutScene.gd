@@ -21,7 +21,7 @@ func _ready():
 
 	DialogueSystem.connect("dialogue_start", self, "pause")
 	DialogueSystem.connect("dialogue_end", self, "resume")
-	DialogueSystem.set_dialogue_sequence("CUTSCENE_INTRO")
+	DialogueSystem.set_dialogue_sequence("CUTSCENE_INTRO_D")
 	pass
 
 func _exit_tree():
@@ -29,19 +29,21 @@ func _exit_tree():
 	DialogueSystem.disconnect("dialogue_end", self, "resume")
 
 func dialogue_set_bottom():
-	dialogue_pos = DialogueSystem.BOTTOM
+	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 	pass
 
 func dialogue_set_middle():
-	dialogue_pos = DialogueSystem.MIDDLE
+	DialogueSystem.set_box_position(DialogueSystem.MIDDLE)
 	pass
 
 func dialogue_set_top():
-	dialogue_pos = DialogueSystem.TOP
+	DialogueSystem.set_box_position(DialogueSystem.TOP)
 	pass
 
 func dialogue(show_arrow = true, point_arrow = null):
-	DialogueSystem.next_dialogue(show_arrow, dialogue_pos, point_arrow)
+	DialogueSystem.set_show_arrow(show_arrow)
+	DialogueSystem.set_point_to(point_arrow)
+	DialogueSystem.next_dialogue()
 	pass
 
 func dialogue_with_arrow(position, show_arrow = true):

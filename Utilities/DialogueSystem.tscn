@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://Utilities/Dialogue Box.gd" type="Script" id=1]
+[ext_resource path="res://Utilities/DialogueSystem.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture" id=2]
 [ext_resource path="res://Utilities/Dialogue Box Text Slide.tres" type="Animation" id=3]
 [ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=4]

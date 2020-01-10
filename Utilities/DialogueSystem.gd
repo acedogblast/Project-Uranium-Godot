@@ -19,6 +19,8 @@ onready var typeTimer = $Box/TypeDelay
 
 signal dialogue_start
 signal dialogue_end
+signal dialogue_sequence_start
+signal dialogue_sequence_end
 
 var text = []
 var events = []
@@ -28,8 +30,10 @@ var text_lines = 0
 var current_line = 0
 var sliding_text = false
 var is_finished = false
-var force_arrow = false
 var active = false
+
+var force_arrow = false
+var point_to = null
 
 # Text formatting to copy to line below
 var format_to_copy = ""
@@ -55,10 +59,9 @@ func rescale_mobile(deviceSize):
 	self.scale.y = scale
 
 # Internal function: loads text
-func load_text(text_array, force_arrow_show):
+func load_text(text_array):
 	text = parse_string(text_array)
 	text_lines = text.size()
-	force_arrow = force_arrow_show
 
 # Internal function: shows arrow pointing to source_vector
 func show_arrow(source_vector):
@@ -109,22 +112,38 @@ func reset():
 
 # Sets a dialogue sequence, useful for cutscenes
 func set_dialogue_sequence(sequence):
-	dialogue_string = sequence + "_D"
+	dialogue_string = sequence
 	counter = 1
 
+# Starts a dialogue sequence
+func start_dialogue_sequence():
+	emit_signal("dialogue_sequence_start")
+	while tr(dialogue_string) != dialogue_string:
+		next_dialogue()
+	
+	emit_signal("dialogue_sequence_end")
+
 # Show the next dialogue string. set_sequence must have been set
-func next_dialogue(show_arrow = true, pos = BOTTOM, point_to = null):
-	start_dialog(tr(dialogue_string + str(counter)), show_arrow, pos, point_to)
+func next_dialogue():
+	start_dialog(dialogue_string + str(counter))
 	counter += 1
 
+func set_show_arrow(show_arrow = true):
+	force_arrow = show_arrow
+
+func set_box_position(pos = BOTTOM):
+	$Box.rect_position = pos
+
+func set_point_to(point_to = null):
+	self.point_to = point_to
+
 # Starts a dialogue text
-func start_dialog(text, show_arrow = true, pos = BOTTOM, point_to = null):
+func start_dialog(text):
 	emit_signal("dialogue_start")
 	reset()
-	load_text(text, show_arrow)
+	load_text(tr(text))
 	pop_event()
 
-	$Box.rect_position = pos
 	if(point_to):
 		show_arrow(point_to)
 
