@@ -118,15 +118,19 @@ func set_dialogue_sequence(sequence):
 # Starts a dialogue sequence
 func start_dialogue_sequence():
 	emit_signal("dialogue_sequence_start")
-	while tr(dialogue_string) != dialogue_string:
-		next_dialogue()
+	while next_dialogue():
+		yield(self, "dialogue_end")
 	
 	emit_signal("dialogue_sequence_end")
 
 # Show the next dialogue string. set_sequence must have been set
 func next_dialogue():
+	var string = dialogue_string + str(counter)
+	if tr(string) == string:
+		return false
 	start_dialog(dialogue_string + str(counter))
 	counter += 1
+	return true
 
 func set_show_arrow(show_arrow = true):
 	force_arrow = show_arrow
