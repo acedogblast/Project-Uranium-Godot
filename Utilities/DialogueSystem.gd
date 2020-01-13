@@ -58,6 +58,8 @@ func rescale_mobile(deviceSize):
 	self.scale.x = scale
 	self.scale.y = scale
 
+	set_box_position(BOTTOM)
+
 # Internal function: loads text
 func load_text(text_array):
 	text = parse_string(text_array)
