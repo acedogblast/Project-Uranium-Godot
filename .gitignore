@@ -4,6 +4,7 @@ Fonts/
 Graphics/
 .import/
 bin/
+Maps/TiledMaps/
 .directory
 *.apk
 *.exe

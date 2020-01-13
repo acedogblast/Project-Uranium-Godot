@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Maps/MokiTown/HeroHome.gd" type="Script" id=1]
 [ext_resource path="res://Audio/BGM/PU-Hero House.ogg" type="AudioStream" id=2]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=3]
 [ext_resource path="res://Utilities/Stairs.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -28,6 +30,7 @@ margin_bottom = 2500.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Floor1" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 1040, 0 )
 
 [node name="TileMap1" type="TileMap" parent="Floor1"]
@@ -171,6 +174,16 @@ shape = SubResource( 2 )
 position = Vector2( 40, 80 )
 destination = Vector2( 1184, 80 )
 dir = "Down"
+
+[node name="Event" parent="Floor2" instance=ExtResource( 6 )]
+position = Vector2( 272, 208 )
+npc_path = NodePath("../NPC")
+commands = [ "Right", 2, "Wait", 1.2, "Left", 2 ]
+
+[node name="NPC" parent="Floor2" instance=ExtResource( 7 )]
+position = Vector2( -32, 160 )
+random_movement = false
+facing = "Right"
 
 [node name="InteractTimer" type="Timer" parent="."]
 wait_time = 0.1
