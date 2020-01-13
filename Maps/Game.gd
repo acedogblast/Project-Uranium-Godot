@@ -144,26 +144,28 @@ func load_seemless():
 	add_child(next_scene1)
 
 func interaction(collider):
-	if isInteracting == true or !canInteract:
-		return null
-	isInteracting = true
-	canInteract = false
+	current_scene.interaction(collider)
 	
-	if collider == $Map/Floor2/Console.position:
-		player.change_input()
-		get_child(2).consoleDialoge()
-	if collider == $Map/Floor2/TV.position:
-		player.change_input()
-		get_child(2).Floor2TVDialoge()
-	if collider == $Map/Floor2/TV2.position:
-		player.change_input()
-		get_child(2).Floor2TVDialoge()
-	if collider == $Map/Floor2/Shelf.position:
-		player.change_input()
-		get_child(2).Floor2SelfDialoge()
-	if collider == $Map/Floor2/Shelf2.position:
-		player.change_input()
-		get_child(2).Floor2SelfDialoge()
+	#if isInteracting == true or !canInteract:
+	#	return null
+	#isInteracting = true
+	#canInteract = false
+
+	#if collider == $Map/Floor2/Console.position:
+	#	player.change_input()
+	#	get_child(2).consoleDialoge()
+	#if collider == $Map/Floor2/TV.position:
+	#	player.change_input()
+	#	get_child(2).Floor2TVDialoge()
+	#if collider == $Map/Floor2/TV2.position:
+	#	player.change_input()
+	#	get_child(2).Floor2TVDialoge()
+	#if collider == $Map/Floor2/Shelf.position:
+	#	player.change_input()
+	#	get_child(2).Floor2SelfDialoge()
+	#if collider == $Map/Floor2/Shelf2.position:
+	#	player.change_input()
+	#	get_child(2).Floor2SelfDialoge()
 
 func check_node(pos):
 	for node in get_tree().get_nodes_in_group("interact"):

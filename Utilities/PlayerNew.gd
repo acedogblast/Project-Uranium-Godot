@@ -57,14 +57,14 @@ func _ready():
 
 func _process(delta):
 	if !isMoving:
-		if canMove and !Input.is_action_pressed("interact"):
+		if canMove and !Input.is_action_pressed("ui_accept"):
 			get_input()
-		elif canMove and Input.is_action_just_pressed("interact"):
+		elif canMove and Input.is_action_just_pressed("ui_accept"):
 			interact()
 
 func change_input():
 	$Collision/Area2D/CollisionShape2D.disabled = !$Collision/Area2D/CollisionShape2D.disabled
-	get_tree().paused = !get_tree().paused
+	#get_tree().paused = !get_tree().paused
 	inputDisabled = !inputDisabled
 
 func get_input():

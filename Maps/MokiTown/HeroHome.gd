@@ -27,19 +27,19 @@ func interaction(collider):
 	
 	print($Floor2/TV.position)
 	if collider == $Floor2/Console.position:
-		get_tree().player.disable_input()
+		get_parent().player.change_input()
 		console_dialoge()
 	if collider == $Floor2/TV.position:
-		get_tree().player.disable_input()
+		get_parent().player.change_input()
 		floor_2_tv_dialogue()
 	if collider == $Floor2/TV2.position:
-		get_tree().player.disable_input()
+		get_parent().player.change_input()
 		floor_2_tv_dialogue()
 	if collider == $Floor2/Shelf.position:
-		get_tree().player.disable_input()
+		get_parent().player.change_input()
 		floor_2_bookshelf_dialogue()
 	if collider == $Floor2/Shelf2.position:
-		get_tree().player.disable_input()
+		get_parent().player.change_input()
 		floor_2_bookshelf_dialogue()
 
 func check_node(pos):
@@ -67,7 +67,7 @@ func _on_InteractTimer_timeout():
 
 
 #func room_transition(dir):
-#	player.disable_input()
+#	player.change_input()
 #
 #	get_tree().transition_visibility()
 #	get_tree().play_anim("fade_in")
