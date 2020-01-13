@@ -13,6 +13,8 @@ var battler4 : Pokemon # Foe's second pokemonin double battles
 
 var battle_command : BattleCommand
 
+var battle_is_over = false
+
 signal wait
 signal EndOfBattleLoop
 signal command_received
@@ -51,7 +53,7 @@ func Start_Battle(bid : BattleInstanceData):
 	# Set first wave pokemon
 	battler1 = Global.pokemon_group[0]
 	battler2 = battle_instance.opponent.pokemon_group[0]
-	battle_logic = load("res://Utilities/Battle/BattleLogic.gd").new(battler1, battler2)
+	battle_logic = load("res://Utilities/Battle/BattleLogic.gd").new(battler1, battler2 , battle_instance)
 	# Set human opponent texture
 	if battle_instance.battle_type != battle_instance.BattleType.SINGLE_WILD:
 		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.texture = battle_instance.opponent.battle_texture
@@ -130,9 +132,8 @@ func Start_Battle(bid : BattleInstanceData):
 	action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.CENTER
 	queue.push(action)
 	# Start the battle loop until player wins or losses.
-	var isBattleOver = false
 	
-	while isBattleOver == false:
+	while battle_is_over == false:
 		if queue.is_empty(): # If queue is empty, get player battle comand.
 			# Pop up battle comand menu.
 			print("Getting comand from player")
@@ -152,12 +153,8 @@ func Start_Battle(bid : BattleInstanceData):
 		else:
 			battle_loop()
 			yield(self, "EndOfBattleLoop")
-		# Check if battle is over.
-		#if queue.is_empty(): # Temp should be replaced by proper battle check!
-		#	isBattleOver = true
 	
 	# After battle comands
-	print("Battle is over.")
 func test():
 	var BID = load("res://Utilities/Battle/Classes/BattleInstanceData.gd")
 	var OPP = load("res://Utilities/Battle/Classes/Opponent.gd")
@@ -177,7 +174,7 @@ func test():
 	
 
 	poke = Pokemon.new()
-	poke.set_basic_pokemon_by_level(1,5)
+	poke.set_basic_pokemon_by_level(3,5)
 	Global.pokemon_group.append(poke)
 	
 	Start_Battle(bid)
@@ -315,9 +312,6 @@ func battle_loop():
 					$CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer.play(effect)
 					yield($CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer, "animation_finished")
 			# Play hp bar slide
-
-			
-
 			var bars = $CanvasLayer/BattleInterfaceLayer/BattleBars
 			match action.damage_target_index:
 				1: # Player
@@ -328,8 +322,44 @@ func battle_loop():
 					#print("bar slide for foe")
 					bars.slide_foe_bar(float(battler2.current_hp) / battler2.hp)
 					yield(bars, "finished")
+		action.FAINT:
+			match action.damage_target_index:
+				1:
+					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.stream = load(battler1.get_cry())
+					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.play()
+					yield($CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer, "finished")
+					$CanvasLayer/BattleGrounds/BattleGrounds/PlayerBase/Battler/AnimationPlayer.play("FaintPlayer")
+
+					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/faint.wav")
+					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.play()
+					yield($CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer, "animation_finished")
+					$CanvasLayer/BattleGrounds/PlayerBase/Battler.visible = false
+				2:
+					$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.stream = load(battler2.get_cry())
+					$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.play()
+					yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer, "finished")
+					$CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer.play("FaintFoe")
+
+					$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/faint.wav")
+					$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.play()
+
+					yield($CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer, "animation_finished")
+					$CanvasLayer/BattleGrounds/FoeBase/Battler.visible = false
+
+		action.EXP_GAIN:
+			var percent : float = action.exp_gain_percent
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.slide_player_exp_bar(percent)
+			yield($CanvasLayer/BattleInterfaceLayer/BattleBars, "finished")
+		action.BATTLE_END:
+			battle_is_over = true
+			print("Battle is over.")
+			if action.winner == action.PLAYER_WIN:
+				print("Player wins.")
+			if action.winner == action.FOE_WIN:
+				print("Foe wins.")
+
 		_:
-			print("Battle Error: Battle Action did not match any correct value.")
+			print("Battle Error: Battle Action type did not match any correct value.")
 
 	emit_signal("EndOfBattleLoop")
 func get_battle_command():

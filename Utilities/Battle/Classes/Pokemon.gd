@@ -210,3 +210,61 @@ func get_battle_player_sprite() -> Sprite:
 		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "b.png") as Texture
 	sprite.texture = tex
 	return sprite
+func get_exp_bar_percent() -> float:
+	var result : float = 0.0
+	var poke_class = registry.new().get_pokemon_class(ID)
+	var base : int
+	var top : int
+	match poke_class.leveling_rate:
+		poke_class.SLOW:
+			base = exp_slow(level)
+			top = exp_slow(level + 1)
+		poke_class.MEDIUM_SLOW:
+			base = exp_medium_slow(level)
+			top = exp_medium_slow(level + 1)
+		poke_class.MEDIUM_FAST:
+			base = exp_medium_fast(level)
+			top = exp_medium_fast(level + 1)
+		poke_class.FAST:
+			base = exp_fast(level)
+			top = exp_fast(level + 1)
+		poke_class.ERRATIC:
+			base = exp_erratic(level)
+			top = exp_erratic(level + 1)
+		poke_class.FLUCTUATING:
+			base = exp_fluctuating(level)
+			top = exp_fluctuating(level + 1)
+	var range_total = top - base
+	var in_range = experience - base
+	result = float(in_range) / float(range_total)
+	return result
+func add_ev(defeated_poke : Pokemon):
+	var poke_class = registry.new().get_pokemon_class(defeated_poke.ID)
+	if ev_hp < 255:
+		ev_hp += poke_class.ev_yield_hp
+	if ev_attack < 255:
+		ev_attack += poke_class.ev_yield_attack
+	if ev_defense < 255:
+		ev_defense += poke_class.ev_yield_defense
+	if ev_sp_attack < 255:
+		ev_sp_attack += poke_class.ev_yield_sp_attack
+	if ev_sp_defense < 255:
+		ev_sp_defense += poke_class.ev_yield_sp_defense
+	if ev_speed < 255:
+		ev_sp_attack += poke_class.ev_yield_speed
+	# Limit to 255:
+
+	if ev_hp > 255:
+		ev_hp = 255
+	if ev_defense > 255:
+		ev_defense = 255
+	if ev_attack > 255:
+		ev_attack = 255
+	if ev_sp_attack > 255:
+		ev_sp_attack = 255
+	if ev_sp_defense > 255:
+		ev_sp_defense = 255
+	if ev_speed > 255:
+		ev_speed = 255
+func get_exp_yield() -> int:
+	return int (registry.new().get_pokemon_class(ID).exp_yield )

@@ -23,8 +23,15 @@ var ability
 var hidden_ability
 
 # The pokemon's Effort Value Yeild
-var ev_yield_type = ev_spAtk
-enum {ev_hp, ev_atk, ev_def, ev_spAtk, ev_spDef, ev_Sp}
+var ev_yield_hp = 0
+var ev_yield_attack = 0
+var ev_yield_defense = 0
+var ev_yield_sp_attack = 1
+var ev_yield_sp_defense = 0
+var ev_yield_speed = 0
+
+# The pokemon's base experience yield when defeated
+var exp_yield : int = 70
 
 # The pokemon's leveling rate
 var leveling_rate = MEDIUM_FAST
@@ -55,4 +62,3 @@ var moveset = [
 	MoveSet.new(41, "Energy Ball"),
 	MoveSet.new(45, "Meteor Mash")
 ]
-
