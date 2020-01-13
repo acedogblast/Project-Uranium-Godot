@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "NPC_TRAINER_D1"
+msgstr "This is a test for NPCs.\n"
+
+msgid "NPC_TRAINER_D2"
+msgstr ""
+"And you know what?\\wt[16].\\wt[16].\\wt[16].\\wt[10]\n"
+
+msgid "NPC_TRAINER_D3"
+msgstr "It is also an event test!\n"

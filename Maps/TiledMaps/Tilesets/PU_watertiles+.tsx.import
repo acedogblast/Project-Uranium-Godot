@@ -1,0 +1,20 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/PU_watertiles+.tsx-dc8471eccc7b7b49fad1fa666ac50d61.res"
+
+[deps]
+
+source_file="res://Maps/TiledMaps/Tilesets/PU_watertiles+.tsx"
+dest_files=[ "res://.import/PU_watertiles+.tsx-dc8471eccc7b7b49fad1fa666ac50d61.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+apply_offset=false
+post_import_script=""

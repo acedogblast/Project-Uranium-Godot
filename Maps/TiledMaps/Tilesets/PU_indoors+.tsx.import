@@ -1,0 +1,20 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/PU_indoors+.tsx-14e4e4888af6930bc0cee2e6832c3291.res"
+
+[deps]
+
+source_file="res://Maps/TiledMaps/Tilesets/PU_indoors+.tsx"
+dest_files=[ "res://.import/PU_indoors+.tsx-14e4e4888af6930bc0cee2e6832c3291.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+apply_offset=false
+post_import_script=""

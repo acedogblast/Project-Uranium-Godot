@@ -290,7 +290,7 @@ run={
 
 [locale]
 
-translations=PoolStringArray( "res://Dialogue/Generated/en/Cutscenes.po", "res://Dialogue/Generated/en/Objects.po", "res://Dialogue/Generated/en/UI.po" )
+translations=PoolStringArray( "res://Dialogue/Generated/en/Cutscenes.po", "res://Dialogue/Generated/en/Objects.po", "res://Dialogue/Generated/en/UI.po", "res://Dialogue/Generated/en/NPC.po" )
 
 [rendering]
 
