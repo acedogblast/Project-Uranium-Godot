@@ -14,11 +14,14 @@ var battler2_stat_stage : BattleStatStage
 var battler3_stat_stage : BattleStatStage
 var battler4_stat_stage : BattleStatStage
 
-func _init(b1, b2):
+var battle_instance : BattleInstanceData
+
+func _init(b1, b2 , bid):
     battler1 = b1
     battler2 = b2
     battler1_stat_stage = load("res://Utilities/Battle/Classes/BattleStatStage.gd").new()
     battler2_stat_stage = load("res://Utilities/Battle/Classes/BattleStatStage.gd").new()
+    battle_instance = bid
     pass
 func generate_action_queue(player_command : BattleCommand, foe_command : BattleCommand):
     var queue = BattleQueue.new()
@@ -182,7 +185,66 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
                     action.battle_text = "It's not very effective..."
                     queue.push(action)
                     
-                
+                # Check if target faints.
+                if get_battler_by_index(target_index).current_hp == 0:
+                    # Faint actions
+                    action = BattleQueueAction.new()
+                    action.type = action.FAINT
+                    action.damage_target_index = target_index
+                    queue.push(action)
+
+                    action = BattleQueueAction.new()
+                    action.type = action.BATTLE_TEXT
+                    var get_exp = false
+                    if target_index == 2 || target_index == 4:
+                        action.battle_text = "The foe " + get_battler_by_index(target_index).name + " fainted!"
+                        get_exp = true
+                    if target_index == 1 || target_index == 3:
+                        action.battle_text = get_battler_by_index(target_index).name + " fainted!"
+                    queue.push(action)
+                    
+                    # If foe faint add exp to player pokemon. For now just only apply to current player pokemon
+                    # Also add effort values
+                    if get_exp:
+                        action = BattleQueueAction.new()
+                        action.type = action.BATTLE_TEXT
+                        var exp_gained : int = calculate_exp(get_battler_by_index(target_index))
+                        action.battle_text = battler.name + " gained\n" + str(exp_gained) + " EXP. Points!"
+                        queue.push(action)
+                        
+                        # Add exp to pokemon
+                        battler.experience += exp_gained
+
+                        
+                        # TODO: Add multiple exp_gain actions if leveling more that 1 time.
+                        action = BattleQueueAction.new()
+                        action.type = action.EXP_GAIN
+                        action.exp_gain_percent = battler.get_exp_bar_percent()
+                        queue.push(action)
+
+                        # Adding effort values
+                        battler.add_ev(get_battler_by_index(target_index))
+
+
+                    # TODO: Add leveling up
+
+
+                    
+
+
+                    # Check if foe or player ran out of pokemon, if yes end battle
+                    var player_defeated = check_player_out_of_poke()
+                    var foe_defeated = check_foe_out_of_poke()
+                    if player_defeated || foe_defeated:
+                        action = BattleQueueAction.new()
+                        action.type = action.BATTLE_END
+
+                        if player_defeated == false && foe_defeated == true:
+                            action.winner = action.PLAYER_WIN
+                        if player_defeated == true && foe_defeated == false:
+                            action.winner = action.FOE_WIN
+                        queue.push(action)
+
 
             else:
                 # Add missed mesage.
@@ -223,7 +285,7 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
         # Higher priority attack moves
         # Match attack comand to move.
         var move_b1 = get_poke_move_by_name(battler1, player_command.attack_move)
-        var move_b2 = get_poke_move_by_name(battler2, player_command.attack_move)
+        var move_b2 = get_poke_move_by_name(battler2, foe_command.attack_move)
         if move_b1.priority > move_b2.priority:
             turn_order.push_back(B1)
             turn_order.push_back(B2)
@@ -307,3 +369,35 @@ func get_poke_move_by_name(poke, move_name):
     if poke.move_4 != null:
         if poke.move_4.name == move_name:
             return poke.move_4
+func calculate_exp(defeated_poke : Pokemon) -> int:
+    var experience : int
+    
+    var a = 1.0 # Trainer bonus. 1.0 if wild. 1.5 if Trainer.
+    var t = 1.0 # Owner bonus. 1.0 if winning pokemon is original owner. 1.5 if traded. TODO: add support
+    var b = 0 # Base exp yield of defeated pokemon.
+    var e = 1.0 # Lucky Egg bounus. 1.5 if holding Lucky Egg.
+    var f = 1.0 # Affection bounus. Not used in Uranium
+    var L = 0 # Level of fainted/caught pokemon.
+    var p = 1 # Exp Point Power. Not used in Uranium
+    var s = 1 # EXP All modifier. TODO: Add support
+    var v = 1 # Evolve modifier. Not used in Uranium
+
+    b = defeated_poke.get_exp_yield()
+
+    if battle_instance.battle_type != battle_instance.BattleType.SINGLE_WILD && battle_instance.battle_type != battle_instance.BattleType.DOUBLE_WILD:
+        a = 1.5
+    L = defeated_poke.level
+    experience = int((a * t * b * e * L * p * f * v) / (7 * s))
+    return experience
+func check_player_out_of_poke() -> bool:
+    var result = true
+    for poke in Global.pokemon_group:
+        if poke.current_hp != 0:
+            result = false
+    return result
+func check_foe_out_of_poke() -> bool:
+    var result = true
+    for poke in battle_instance.opponent.pokemon_group:
+        if poke.current_hp != 0:
+            result = false
+    return result

@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -6,41 +6,43 @@
 [ext_resource path="res://Graphics/Battlebacks/playerbaseIndoorA.png" type="Texture" id=4]
 [ext_resource path="res://Utilities/Battle/PlayerBase.gd" type="Script" id=5]
 [ext_resource path="res://Graphics/Battlers/003b.png" type="Texture" id=6]
-[ext_resource path="res://Utilities/Battle/Animations/LowDamage.tres" type="Animation" id=7]
-[ext_resource path="res://Utilities/Battle/Animations/NormalDamage.tres" type="Animation" id=8]
-[ext_resource path="res://Utilities/Battle/Animations/SuperDamage.tres" type="Animation" id=9]
-[ext_resource path="res://Utilities/Battle/Animations/UnveilDropPlayer.tres" type="Animation" id=10]
-[ext_resource path="res://Graphics/Pictures/BATTLE/pokeballs.png" type="Texture" id=11]
-[ext_resource path="res://Utilities/Battle/Animations/PlayerBallToss.tres" type="Animation" id=12]
-[ext_resource path="res://Audio/SE/throw.wav" type="AudioStream" id=13]
-[ext_resource path="res://Graphics/Battlebacks/enemybaseIndoorA.png" type="Texture" id=14]
-[ext_resource path="res://Utilities/Battle/FoeBase.gd" type="Script" id=15]
-[ext_resource path="res://Graphics/Characters/trainer086.png" type="Texture" id=16]
-[ext_resource path="res://Graphics/Battlers/001.png" type="Texture" id=17]
-[ext_resource path="res://Utilities/Battle/Animations/UnveilDrop.tres" type="Animation" id=18]
-[ext_resource path="res://Utilities/Battle/TransitionEffects.gd" type="Script" id=19]
-[ext_resource path="res://Utilities/Battle/GreyFlashing.tres" type="Animation" id=20]
-[ext_resource path="res://Graphics/Transitions/vsBar86.png" type="Texture" id=21]
-[ext_resource path="res://Graphics/Transitions/vsTrainer0.png" type="Texture" id=22]
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=23]
-[ext_resource path="res://Graphics/Transitions/vsTrainer86.png" type="Texture" id=24]
-[ext_resource path="res://Graphics/Transitions/vs.png" type="Texture" id=25]
-[ext_resource path="res://Graphics/Characters/trback000.png" type="Texture" id=26]
-[ext_resource path="res://Graphics/Pictures/BATTLE/newBattleMessageBox.png" type="Texture" id=27]
-[ext_resource path="res://Utilities/Battle/BattleBars.gd" type="Script" id=28]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerBoxS.png" type="Texture" id=29]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerHPbar.png" type="Texture" id=30]
-[ext_resource path="res://Utilities/Battle/OutlinedTextFont.tres" type="DynamicFont" id=31]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleEXPbar.png" type="Texture" id=32]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeBoxS.png" type="Texture" id=33]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeHPbar.png" type="Texture" id=34]
-[ext_resource path="res://Utilities/Battle/BattleComandSelect.gd" type="Script" id=35]
-[ext_resource path="res://Graphics/Pictures/BATTLE/newCommandBox.png" type="Texture" id=36]
-[ext_resource path="res://Graphics/Pictures/BATTLE/commandMenuButtons.png" type="Texture" id=37]
-[ext_resource path="res://Graphics/Pictures/BATTLE/selHand.png" type="Texture" id=38]
-[ext_resource path="res://Audio/SE/SE_Select1.wav" type="AudioStream" id=39]
-[ext_resource path="res://Utilities/Battle/BattleAttackSelect.gd" type="Script" id=40]
-[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=41]
+[ext_resource path="res://Utilities/Battle/Animations/FaintPlayer.tres" type="Animation" id=7]
+[ext_resource path="res://Utilities/Battle/Animations/LowDamage.tres" type="Animation" id=8]
+[ext_resource path="res://Utilities/Battle/Animations/NormalDamage.tres" type="Animation" id=9]
+[ext_resource path="res://Utilities/Battle/Animations/SuperDamage.tres" type="Animation" id=10]
+[ext_resource path="res://Utilities/Battle/Animations/UnveilDropPlayer.tres" type="Animation" id=11]
+[ext_resource path="res://Graphics/Pictures/BATTLE/pokeballs.png" type="Texture" id=12]
+[ext_resource path="res://Utilities/Battle/Animations/PlayerBallToss.tres" type="Animation" id=13]
+[ext_resource path="res://Audio/SE/throw.wav" type="AudioStream" id=14]
+[ext_resource path="res://Graphics/Battlebacks/enemybaseIndoorA.png" type="Texture" id=15]
+[ext_resource path="res://Utilities/Battle/FoeBase.gd" type="Script" id=16]
+[ext_resource path="res://Graphics/Characters/trainer086.png" type="Texture" id=17]
+[ext_resource path="res://Graphics/Battlers/001.png" type="Texture" id=18]
+[ext_resource path="res://Utilities/Battle/Animations/FaintFoe.tres" type="Animation" id=19]
+[ext_resource path="res://Utilities/Battle/Animations/UnveilDrop.tres" type="Animation" id=20]
+[ext_resource path="res://Utilities/Battle/TransitionEffects.gd" type="Script" id=21]
+[ext_resource path="res://Utilities/Battle/GreyFlashing.tres" type="Animation" id=22]
+[ext_resource path="res://Graphics/Transitions/vsBar86.png" type="Texture" id=23]
+[ext_resource path="res://Graphics/Transitions/vsTrainer0.png" type="Texture" id=24]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=25]
+[ext_resource path="res://Graphics/Transitions/vsTrainer86.png" type="Texture" id=26]
+[ext_resource path="res://Graphics/Transitions/vs.png" type="Texture" id=27]
+[ext_resource path="res://Graphics/Characters/trback000.png" type="Texture" id=28]
+[ext_resource path="res://Graphics/Pictures/BATTLE/newBattleMessageBox.png" type="Texture" id=29]
+[ext_resource path="res://Utilities/Battle/BattleBars.gd" type="Script" id=30]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerBoxS.png" type="Texture" id=31]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerHPbar.png" type="Texture" id=32]
+[ext_resource path="res://Utilities/Battle/OutlinedTextFont.tres" type="DynamicFont" id=33]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleEXPbar.png" type="Texture" id=34]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeBoxS.png" type="Texture" id=35]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeHPbar.png" type="Texture" id=36]
+[ext_resource path="res://Utilities/Battle/BattleComandSelect.gd" type="Script" id=37]
+[ext_resource path="res://Graphics/Pictures/BATTLE/newCommandBox.png" type="Texture" id=38]
+[ext_resource path="res://Graphics/Pictures/BATTLE/commandMenuButtons.png" type="Texture" id=39]
+[ext_resource path="res://Graphics/Pictures/BATTLE/selHand.png" type="Texture" id=40]
+[ext_resource path="res://Audio/SE/SE_Select1.wav" type="AudioStream" id=41]
+[ext_resource path="res://Utilities/Battle/BattleAttackSelect.gd" type="Script" id=42]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=43]
 
 [sub_resource type="Animation" id=1]
 resource_name = "FadeOut"
@@ -571,7 +573,7 @@ tracks/0/keys = {
 
 [sub_resource type="DynamicFont" id=9]
 size = 26
-font_data = ExtResource( 23 )
+font_data = ExtResource( 25 )
 
 [sub_resource type="Animation" id=10]
 length = 0.5
@@ -644,7 +646,7 @@ tracks/2/keys = {
 size = 26
 outline_color = Color( 0, 0, 0, 1 )
 extra_spacing_bottom = 15
-font_data = ExtResource( 23 )
+font_data = ExtResource( 25 )
 
 [sub_resource type="Animation" id=13]
 length = 0.5
@@ -898,6 +900,7 @@ margin_bottom = 40.0
 texture = ExtResource( 3 )
 
 [node name="PlayerBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
+editor/display_folded = true
 margin_left = 105.0
 margin_top = 175.0
 margin_right = 673.0
@@ -922,25 +925,26 @@ scale = Vector2( 1, 0.25 )
 hframes = 64
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/PlayerBase/Battler"]
-anims/LowDamage = ExtResource( 7 )
-anims/NormalDamage = ExtResource( 8 )
-anims/SuperDamage = ExtResource( 9 )
-anims/UnveilDropPlayer = ExtResource( 10 )
+anims/FaintPlayer = ExtResource( 7 )
+anims/LowDamage = ExtResource( 8 )
+anims/NormalDamage = ExtResource( 9 )
+anims/SuperDamage = ExtResource( 10 )
+anims/UnveilDropPlayer = ExtResource( 11 )
 
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/PlayerBase"]
 editor/display_folded = true
 visible = false
 position = Vector2( 7, -40 )
 scale = Vector2( 2, 2 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 vframes = 17
 hframes = 28
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/PlayerBase/Ball"]
-anims/PlayerBallToss = ExtResource( 12 )
+anims/PlayerBallToss = ExtResource( 13 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleGrounds/PlayerBase/Ball"]
-stream = ExtResource( 13 )
+stream = ExtResource( 14 )
 
 [node name="FoeBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
 margin_left = 382.0
@@ -948,12 +952,12 @@ margin_top = 115.0
 margin_right = 654.0
 margin_bottom = 243.0
 rect_scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 14 )
-script = ExtResource( 15 )
+texture = ExtResource( 15 )
+script = ExtResource( 16 )
 
 [node name="FoeHuman" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
 position = Vector2( 140, 0 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/FoeBase/FoeHuman"]
 anims/FadeOut = SubResource( 1 )
@@ -963,13 +967,12 @@ modulate = Color( 0, 0, 0, 0.588235 )
 show_behind_parent = true
 position = Vector2( 0, 50 )
 scale = Vector2( 1, 0.25 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
-editor/display_folded = true
 visible = false
 position = Vector2( 140, -60 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 vframes = 17
 hframes = 28
 frame = 280
@@ -978,7 +981,7 @@ frame = 280
 anims/Ball = SubResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleGrounds/FoeBase/Ball"]
-stream = ExtResource( 13 )
+stream = ExtResource( 14 )
 
 [node name="Battler" type="Node2D" parent="CanvasLayer/BattleGrounds/FoeBase"]
 visible = false
@@ -986,7 +989,7 @@ position = Vector2( 140, -80 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 hframes = 64
 
 [node name="Shadow" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
@@ -997,10 +1000,11 @@ scale = Vector2( 1, 0.25 )
 hframes = 64
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
-anims/LowDamage = ExtResource( 7 )
-anims/NormalDamage = ExtResource( 8 )
-anims/SuperDamage = ExtResource( 9 )
-anims/UnveilDrop = ExtResource( 18 )
+anims/FaintFoe = ExtResource( 19 )
+anims/LowDamage = ExtResource( 8 )
+anims/NormalDamage = ExtResource( 9 )
+anims/SuperDamage = ExtResource( 10 )
+anims/UnveilDrop = ExtResource( 20 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds"]
 anims/FadeToIntroPos = SubResource( 3 )
@@ -1016,7 +1020,7 @@ color = Color( 0, 0, 0, 0 )
 [node name="TransitionEffects" type="Node2D" parent="CanvasLayer"]
 editor/display_folded = true
 visible = false
-script = ExtResource( 19 )
+script = ExtResource( 21 )
 
 [node name="GreyFlash" type="ColorRect" parent="CanvasLayer/TransitionEffects"]
 anchor_right = 1.0
@@ -1026,7 +1030,7 @@ margin_bottom = 384.0
 color = Color( 0.392157, 0.392157, 0.392157, 0.392157 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects"]
-anims/GreyFlashing = ExtResource( 20 )
+anims/GreyFlashing = ExtResource( 22 )
 
 [node name="Vs" type="Node2D" parent="CanvasLayer/TransitionEffects"]
 editor/display_folded = true
@@ -1037,7 +1041,7 @@ anims/SlideBars = SubResource( 6 )
 [node name="SpriteLeft" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
 editor/display_folded = true
 position = Vector2( -128, 192 )
-texture = ExtResource( 21 )
+texture = ExtResource( 23 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
 
@@ -1047,7 +1051,7 @@ anims/Scroll = SubResource( 7 )
 [node name="SpriteRight" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
 editor/display_folded = true
 position = Vector2( 640, 192 )
-texture = ExtResource( 21 )
+texture = ExtResource( 23 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
 
@@ -1062,7 +1066,7 @@ anims/Scroll = SubResource( 8 )
 margin_left = -198.0
 margin_top = 128.0
 margin_bottom = 256.0
-texture = ExtResource( 22 )
+texture = ExtResource( 24 )
 
 [node name="Label" type="RichTextLabel" parent="CanvasLayer/TransitionEffects/Vs/PlayerBanner"]
 visible = false
@@ -1079,7 +1083,7 @@ margin_left = 512.0
 margin_top = 128.0
 margin_right = 710.0
 margin_bottom = 256.0
-texture = ExtResource( 24 )
+texture = ExtResource( 26 )
 
 [node name="Label" type="RichTextLabel" parent="CanvasLayer/TransitionEffects/Vs/OpponentBanner"]
 visible = false
@@ -1093,7 +1097,7 @@ bbcode_text = "[center]"
 [node name="VsIcon" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
 visible = false
 position = Vector2( 256, 270 )
-texture = ExtResource( 25 )
+texture = ExtResource( 27 )
 
 [node name="WhiteFlash" type="ColorRect" parent="CanvasLayer/TransitionEffects/Vs"]
 visible = false
@@ -1115,7 +1119,7 @@ layer = 4
 [node name="PlayerToss" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer"]
 editor/display_folded = true
 visible = false
-texture = ExtResource( 26 )
+texture = ExtResource( 28 )
 centered = false
 offset = Vector2( 0, 150 )
 hframes = 4
@@ -1132,7 +1136,7 @@ visible = false
 margin_top = 288.0
 margin_right = 512.0
 margin_bottom = 384.0
-texture = ExtResource( 27 )
+texture = ExtResource( 29 )
 
 [node name="Label" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/Message"]
 margin_left = 25.0
@@ -1144,17 +1148,18 @@ text = "Ace gained 9000 Exp. Points! Because this is cool!"
 scroll_active = false
 
 [node name="BattleBars" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-script = ExtResource( 28 )
+visible = false
+script = ExtResource( 30 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
 margin_left = 539.0
 margin_top = 200.0
 margin_right = 783.0
 margin_bottom = 290.0
-texture = ExtResource( 29 )
+texture = ExtResource( 31 )
 
 [node name="HP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
-texture = ExtResource( 30 )
+texture = ExtResource( 32 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 202, 90 )
@@ -1189,7 +1194,7 @@ margin_left = 185.0
 margin_top = 6.0
 margin_right = 240.0
 margin_bottom = 31.0
-custom_fonts/normal_font = ExtResource( 31 )
+custom_fonts/normal_font = ExtResource( 33 )
 text = " 5"
 scroll_active = false
 
@@ -1198,26 +1203,27 @@ margin_left = 35.0
 margin_top = 6.0
 margin_right = 135.0
 margin_bottom = 31.0
-custom_fonts/normal_font = ExtResource( 31 )
+custom_fonts/normal_font = ExtResource( 33 )
 text = " Godot"
 scroll_active = false
 
 [node name="EXP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 position = Vector2( 36, 60 )
-texture = ExtResource( 32 )
+texture = ExtResource( 34 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 152, 10 )
 
 [node name="FoeBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
+editor/display_folded = true
 margin_left = -254.0
 margin_top = -2.0
 margin_right = -10.0
 margin_bottom = 88.0
-texture = ExtResource( 33 )
+texture = ExtResource( 35 )
 
 [node name="HP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
-texture = ExtResource( 34 )
+texture = ExtResource( 36 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 198, 90 )
@@ -1232,7 +1238,7 @@ margin_left = 35.0
 margin_top = 6.0
 margin_right = 135.0
 margin_bottom = 31.0
-custom_fonts/normal_font = ExtResource( 31 )
+custom_fonts/normal_font = ExtResource( 33 )
 text = " Godot"
 scroll_active = false
 
@@ -1241,7 +1247,7 @@ margin_left = 170.0
 margin_top = 6.0
 margin_right = 225.0
 margin_bottom = 31.0
-custom_fonts/normal_font = ExtResource( 31 )
+custom_fonts/normal_font = ExtResource( 33 )
 text = " 5"
 scroll_active = false
 
@@ -1251,12 +1257,12 @@ scroll_active = false
 editor/display_folded = true
 visible = false
 position = Vector2( 0, 384 )
-script = ExtResource( 35 )
+script = ExtResource( 37 )
 
 [node name="Box" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 margin_right = 512.0
 margin_bottom = 98.0
-texture = ExtResource( 36 )
+texture = ExtResource( 38 )
 
 [node name="Prompt" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 margin_left = 25.0
@@ -1289,7 +1295,7 @@ anims/Slide = SubResource( 15 )
 [node name="Attack" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 75, 70 )
 z_index = 1
-texture = ExtResource( 37 )
+texture = ExtResource( 39 )
 vframes = 2
 hframes = 4
 
@@ -1299,7 +1305,7 @@ anims/Slide = SubResource( 16 )
 [node name="Bag" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 195, 70 )
 z_index = 1
-texture = ExtResource( 37 )
+texture = ExtResource( 39 )
 vframes = 2
 hframes = 4
 frame = 1
@@ -1310,7 +1316,7 @@ anims/Slide = SubResource( 17 )
 [node name="Poke" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 315, 70 )
 z_index = 1
-texture = ExtResource( 37 )
+texture = ExtResource( 39 )
 vframes = 2
 hframes = 4
 frame = 2
@@ -1321,7 +1327,7 @@ anims/Slide = SubResource( 18 )
 [node name="Run" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 435, 70 )
 z_index = 1
-texture = ExtResource( 37 )
+texture = ExtResource( 39 )
 vframes = 2
 hframes = 4
 frame = 3
@@ -1376,24 +1382,25 @@ scroll_active = false
 [node name="SelHand" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 76, 20 )
 z_index = 1
-texture = ExtResource( 38 )
+texture = ExtResource( 40 )
 offset = Vector2( 0, -40 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand"]
 anims/Squeez = SubResource( 20 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand"]
-stream = ExtResource( 39 )
+stream = ExtResource( 41 )
 
 [node name="BattleAttackSelect" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
 editor/display_folded = true
+visible = false
 position = Vector2( 0, 286 )
-script = ExtResource( 40 )
+script = ExtResource( 42 )
 
 [node name="Box" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect"]
 margin_right = 512.0
 margin_bottom = 98.0
-texture = ExtResource( 36 )
+texture = ExtResource( 38 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect"]
 anims/Slide = SubResource( 21 )
@@ -1404,7 +1411,7 @@ position = Vector2( 20, 0 )
 [node name="SelHand" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 775, 0 )
 z_index = 1
-texture = ExtResource( 38 )
+texture = ExtResource( 40 )
 offset = Vector2( 0, -40 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/SelHand"]
@@ -1422,7 +1429,7 @@ margin_left = -85.0
 margin_top = -32.0
 margin_right = 73.0
 margin_bottom = -2.0
-custom_fonts/normal_font = ExtResource( 41 )
+custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 bbcode_enabled = true
 bbcode_text = "[center]Scratch"
@@ -1433,7 +1440,7 @@ margin_left = -67.0
 margin_top = -5.0
 margin_right = 42.0
 margin_bottom = 25.0
-custom_fonts/normal_font = ExtResource( 41 )
+custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
@@ -1451,7 +1458,7 @@ margin_left = -85.0
 margin_top = -32.0
 margin_right = 73.0
 margin_bottom = -2.0
-custom_fonts/normal_font = ExtResource( 41 )
+custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 bbcode_enabled = true
 bbcode_text = "[center]Scratch"
@@ -1462,7 +1469,7 @@ margin_left = -67.0
 margin_top = -5.0
 margin_right = 42.0
 margin_bottom = 25.0
-custom_fonts/normal_font = ExtResource( 41 )
+custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
@@ -1480,7 +1487,7 @@ margin_left = -85.0
 margin_top = -32.0
 margin_right = 73.0
 margin_bottom = -2.0
-custom_fonts/normal_font = ExtResource( 41 )
+custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 bbcode_enabled = true
 bbcode_text = "[center]Scratch"
@@ -1491,7 +1498,7 @@ margin_left = -67.0
 margin_top = -5.0
 margin_right = 42.0
 margin_bottom = 25.0
-custom_fonts/normal_font = ExtResource( 41 )
+custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
@@ -1509,7 +1516,7 @@ margin_left = -85.0
 margin_top = -32.0
 margin_right = 73.0
 margin_bottom = -2.0
-custom_fonts/normal_font = ExtResource( 41 )
+custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 bbcode_enabled = true
 bbcode_text = "[center]Scratch"
@@ -1520,7 +1527,7 @@ margin_left = -67.0
 margin_top = -5.0
 margin_right = 42.0
 margin_bottom = 25.0
-custom_fonts/normal_font = ExtResource( 41 )
+custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 bbcode_text = "PP: 35/35"
 text = "PP: 35/35"

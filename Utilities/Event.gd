@@ -43,7 +43,6 @@ func _on_Area2D_area_entered(area):
 
 func start_npc_trainer_dialogue():
 	#DialogueSystem.start_dialog("This is a piece of dialogue!")
-	get_parent().get_child(0).get_child(1).pause_mode = PAUSE_MODE_STOP
 	DialogueSystem.set_dialogue_sequence("NPC_TRAINER_D")
 	DialogueSystem.start_dialogue_sequence()
 	yield(DialogueSystem, "dialogue_sequence_end")

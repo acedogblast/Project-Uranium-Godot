@@ -18,44 +18,46 @@ var sp_attack = 65
 var sp_defense = 50
 var speed = 70
 
-# The pokemon's level
-var level = 1
-
-# The pokemon's total experience
-var experience = 0
-
-# The pokemon's nature
-var nature
-
 # The pokemon's public and hidden abilities
 var ability
 var hidden_ability
 
-# The pokemon's Individual Values
-var iv_hp
-var iv_attack
-var iv_defense
-var iv_sp_attack
-var iv_sp_defense
-var iv_speed
+# The pokemon's Effort Value Yeild
+var ev_yield_hp = 0
+var ev_yield_attack = 0
+var ev_yield_defense = 0
+var ev_yield_sp_attack = 0
+var ev_yield_sp_defense = 0
+var ev_yield_speed = 1
 
-# The pokemon's Effort Values
-var ev_hp
-var ev_attack
-var ev_defense
-var ev_sp_attack
-var ev_sp_defense
-var ev_speed
+# The pokemon's base experience yield when defeated
+var exp_yield : int = 65
 
-# The pokemon's held Item
-var item
+# The pokemon's leveling rate
+var leveling_rate = MEDIUM_FAST
+enum {SLOW, MEDIUM_SLOW, MEDIUM_FAST, FAST, ERRATIC, FLUCTUATING}
 
-# The pokemon's Move set
-var move_1
-var move_2
-var move_3
-var move_4
+# The pokemon's gender ratio male percentage.
+var male_ratio = 87.5
 
-# The pokemon's gender
-var gender
-enum {MALE, FEMALE}
+# The pokemon's evolution level
+var evolution_level = 29
+
+# The pokemon's evolution ID
+var evolution_ID = 4
+
+# Moveset by leveling
+var moveset = [
+	MoveSet.new(1, "Scratch"),
+	MoveSet.new(1, "Growl"),
+	MoveSet.new(5, "Ember"),
+	MoveSet.new(13, "Mud-Slap"),
+	MoveSet.new(19, "Flame Wheel"),
+	MoveSet.new(25, "Magnitude"),
+	MoveSet.new(30, "Slash"),
+	MoveSet.new(34, "Flamethrower"),
+	MoveSet.new(38, "Extreme Speed"),
+	MoveSet.new(42, "Flame Impact"),
+	MoveSet.new(46, "Earthquake"),
+	MoveSet.new(50, "Flare Blitz")
+]

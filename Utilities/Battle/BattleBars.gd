@@ -11,19 +11,21 @@ var foe_hp_percent = 1.0
 var player_hp_percent = 1.0
 var player_total_hp
 var player_final_hp
-
-var timer
-var timer_step = 0
+var foe_hp_width = 202
+var player_hp_width = 202
+var player_exp_percent = 0.0
 
 
 func set_player_bar_by_pokemon(poke):
 	player_total_hp = poke.hp
 	player_hp_percent = float(poke.current_hp) / float(player_total_hp)
+	player_exp_percent = poke.get_exp_bar_percent()
 	$PlayerBar/HPLable.text = str(poke.current_hp) + "/ " + str(player_total_hp)
 	$PlayerBar/HPLable/HPLableShadow.text = str(poke.current_hp) + "/ " + str(player_total_hp)
 	$PlayerBar/NameLable.text = " " + poke.name
 	$PlayerBar/LevelLable.text = " " + str(poke.level)
 	$PlayerBar/HP.region_rect = get_player_rect2d_by_percentage(player_hp_percent)
+	$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(player_exp_percent)
 	pass
 func set_foe_bar_by_pokemon(poke):
 	foe_hp_percent = float(poke.current_hp) / float(poke.hp)
@@ -32,26 +34,20 @@ func set_foe_bar_by_pokemon(poke):
 	$FoeBar/HP.region_rect = get_foe_rect2d_by_percentage(foe_hp_percent)
 	pass
 func get_foe_rect2d_by_percentage(percent: float):
-	return Rect2(0,0, 174 * percent + 24, 90)
+	return Rect2(0,0, int(174 * percent + 24), 90)
 func get_player_rect2d_by_percentage(percent: float):
-	return Rect2(0,0, 174 * percent + 28, 90)
+	return Rect2(0,0, int(174 * percent + 28), 90)
+
+func get_player_exp_rect2d_by_percentage(percent: float):
+	return Rect2(0,0, int(152 * percent) , 10)
 
 func slide_player_bar(percent: float , final_hp : int): #TODO: Figure out how to tween the region rect of a sprite.
 	player_final_hp = final_hp
-	var tween = $PlayerBar/Tween
-	tween.interpolate_method($PlayerBar/HP, "_tween_player_hp", $PlayerBar/HP.region_rect, get_player_rect2d_by_percentage(percent) , 0.5, tween.TRANS_LINEAR, tween.EASE_IN_OUT, 0.0)
-	tween.start()
-
 	print("Sliding Player HP to :" + str(percent) + "% or:" + str(final_hp))
-
-	# Create a timer that sets off every 1/30 of a second to change hp lable
-	#timer = Timer.new()
-	#timer.wait_time = float(1/30)
-	#timer.one_shot = false
-	#timer.connect("timeout", self, "_update_player_hp_lable")
-	#self.add_child(timer)
-	#timer.start
-	yield(tween,"tween_all_completed")
+	while $PlayerBar/HP.get_rect() != get_player_rect2d_by_percentage(percent):
+		$PlayerBar/HP.region_rect = Rect2(0, 0, player_hp_width, 90)
+		player_hp_width = player_hp_width - 1
+		yield(get_tree().create_timer(0.01), "timeout")
 	$PlayerBar/HP.region_rect = get_player_rect2d_by_percentage(percent)
 	$PlayerBar/HPLable.text = str(player_final_hp) + "/ " + str(player_total_hp)
 	$PlayerBar/HPLable/HPLableShadow.text = $PlayerBar/HPLable.text
@@ -59,15 +55,32 @@ func slide_player_bar(percent: float , final_hp : int): #TODO: Figure out how to
 	player_hp_percent = percent
 	emit_signal("finished")
 func slide_foe_bar(percent: float):
-	var tween = $FoeBar/Tween
-	tween.interpolate_method($FoeBar/HP, "_tween_foe_hp", $FoeBar/HP.region_rect, get_foe_rect2d_by_percentage(percent) , 0.5, tween.TRANS_LINEAR, tween.EASE_IN_OUT, 0.0)
-	tween.start()
-	yield(tween,"tween_all_completed")
+	while $FoeBar/HP.get_rect() != get_foe_rect2d_by_percentage(percent):
+		$FoeBar/HP.region_rect = Rect2(0, 0, foe_hp_width, 90)
+		foe_hp_width = foe_hp_width - 1
+		yield(get_tree().create_timer(0.01), "timeout")
 	$FoeBar/HP.region_rect = get_foe_rect2d_by_percentage(percent)
 	foe_hp_percent = percent
 	emit_signal("finished")
+func slide_player_exp_bar(percent: float): # Maximum length is 2 seconds.
+	# 60 times max
+	var loops = int( (percent - player_exp_percent) * 60.0)
+	var current_percent = player_exp_percent
 
+	var step = 0.01666667
 
+	# Play sound
+	$AudioStreamPlayer.stream = load("res://Audio/SE/BW_exp.wav")
+	$AudioStreamPlayer.play()
+
+	for i in range(loops):
+		$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(current_percent)
+		current_percent = current_percent + step
+		yield(get_tree().create_timer(0.033333), "timeout")
+	$AudioStreamPlayer.stop()
+	player_exp_percent = percent
+	$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(player_exp_percent)
+	emit_signal("finished")
 func _tween_player_hp(pos):
 	var rect = $PlayerBar/HP.region_rect
 	rect.pos = pos
@@ -75,7 +88,7 @@ func _tween_player_hp(pos):
 func _tween_foe_hp(pos):
 	var rect = $FoeBar/HP.region_rect
 	rect.pos = pos
-	$FoeBar/HP.region_rect = rect
+	$FoeBar/HP.set_region_rect(rect)
 #func _update_player_hp_lable():  # Should update 15 times  WILL COMPLETE LATER
 #	if timer_step == 15:
 #		timer.stop()
