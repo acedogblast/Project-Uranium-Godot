@@ -149,12 +149,14 @@ func Start_Battle(bid : BattleInstanceData):
 
 			if queue.is_empty():
 				print("This should not be possible")
-
 		else:
 			battle_loop()
 			yield(self, "EndOfBattleLoop")
 	
 	# After battle comands
+	
+
+
 func test():
 	var BID = load("res://Utilities/Battle/Classes/BattleInstanceData.gd")
 	var OPP = load("res://Utilities/Battle/Classes/Opponent.gd")

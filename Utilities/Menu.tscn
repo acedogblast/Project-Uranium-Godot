@@ -292,6 +292,7 @@ text = "0"
 scroll_active = false
 
 [node name="Yes_no" type="Node2D" parent="."]
+editor/display_folded = true
 visible = false
 
 [node name="Box" type="NinePatchRect" parent="Yes_no"]

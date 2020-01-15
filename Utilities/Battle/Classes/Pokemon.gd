@@ -268,3 +268,10 @@ func add_ev(defeated_poke : Pokemon):
 		ev_speed = 255
 func get_exp_yield() -> int:
 	return int (registry.new().get_pokemon_class(ID).exp_yield )
+func get_icon_texture() -> Texture:
+	var texture : Texture
+	if is_shiny:
+		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + "s.png") as Texture
+	else:
+		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + ".png") as Texture
+	return texture

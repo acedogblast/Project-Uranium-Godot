@@ -30,6 +30,9 @@ func _ready():
 	
 	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right]" + Global.TrainerName + "[/right]"
 
+	# Testing init. To be removed.
+	#open = true
+
 func _input(event):
 	if open and !menu:
 		if event.is_action_pressed("ui_left") and input == false and !saving:
