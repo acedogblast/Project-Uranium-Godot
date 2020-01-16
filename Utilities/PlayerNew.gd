@@ -53,7 +53,14 @@ enum DIRECTION{
 }
 
 func _ready():
+	DialogueSystem.connect("dialogue_start", self, "set_process", [false])
+	DialogueSystem.connect("dialogue_end", self, "set_process", [true])
+
 	load_texture()
+
+func _exit_tree():
+	DialogueSystem.disconnect("dialogue_start", self, "set_process")
+	DialogueSystem.disconnect("dialogue_end", self, "set_process")
 
 func _process(delta):
 	if !isMoving:

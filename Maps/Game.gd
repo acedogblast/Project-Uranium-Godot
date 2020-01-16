@@ -30,6 +30,9 @@ func _ready():
 	player.position = Vector2(Global.TrainerX, Global.TrainerY)
 	player.z_index = 8
 
+	DialogueSystem.connect("dialogue_start", self, "set_process", [false])
+	DialogueSystem.connect("dialogue_end", self, "set_process", [true])
+
 func _process(delta):
 	change_menu_text()
 	
@@ -178,6 +181,8 @@ func transition_visibility():
 	$CanvasLayer/Transition.visible = !$CanvasLayer/Transition.visible
 
 func _exit_tree():
+	DialogueSystem.disconnect("dialogue_start", self, "set_process")
+	DialogueSystem.disconnect("dialogue_end", self, "set_process")
 	save_state()
 
 func save_state():
