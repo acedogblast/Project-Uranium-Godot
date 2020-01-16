@@ -7,7 +7,7 @@ enum {MANAGE, SELECT}
 var mode
 
 func _ready():
-    # Testing setup. Should be removed when not testing
+    # Testing setup. Should be disabled when not testing
     test_setup()
 
     # Fill slots with current pokemon

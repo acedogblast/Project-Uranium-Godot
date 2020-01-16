@@ -9,3 +9,5 @@ Maps/TiledMaps/
 *.apk
 *.exe
 *.x86_64
+export_presets.cfg
+*.keystore
