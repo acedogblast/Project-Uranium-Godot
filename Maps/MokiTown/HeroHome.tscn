@@ -1,12 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Maps/MokiTown/HeroHome.gd" type="Script" id=1]
-[ext_resource path="res://Audio/BGM/PU-Hero House.ogg" type="AudioStream" id=2]
-[ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=3]
-[ext_resource path="res://Utilities/Stairs.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=7]
+[ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=2]
+[ext_resource path="res://Utilities/Stairs.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -16,10 +15,6 @@ extents = Vector2( 16, 16 )
 
 [node name="Map" type="Node"]
 script = ExtResource( 1 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
-autoplay = true
 
 [node name="BlackBG" type="ColorRect" parent="."]
 visible = false
@@ -35,26 +30,26 @@ position = Vector2( 1040, 0 )
 
 [node name="TileMap1" type="TileMap" parent="Floor1"]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -6, 35, 0, -5, 35, 0, -4, 35, 0, -3, 35, 0, -2, 35, 0, -65536, 35, 0, -65535, 35, 0, -65534, 35, 0, -65533, 35, 0, -65532, 35, 0, -65531, 35, 0, -65530, 35, 0, -65528, 35, 0, -65527, 35, 0, -65526, 35, 0, -65525, 35, 0, -65524, 35, 0, -65523, 35, 0, -65522, 35, 0, -65521, 35, 0, 65530, 35, 0, 65531, 19, 0, 65532, 20, 0, 65533, 21, 0, 65534, 35, 0, 0, 35, 0, 1, 19, 0, 2, 20, 0, 3, 20, 0, 4, 20, 0, 5, 21, 0, 6, 35, 0, 8, 35, 0, 9, 19, 0, 10, 20, 0, 11, 20, 0, 12, 20, 0, 13, 20, 0, 14, 21, 0, 15, 35, 0, 131066, 35, 0, 131070, 35, 0, 65536, 35, 0, 65542, 35, 0, 65544, 35, 0, 65551, 35, 0, 196602, 35, 0, 196603, 1, 0, 196604, 1, 0, 196605, 1, 0, 196606, 35, 0, 131072, 35, 0, 131073, 1, 0, 131074, 1, 0, 131075, 1, 0, 131076, 1, 0, 131077, 1, 0, 131078, 35, 0, 131080, 35, 0, 131081, 39, 0, 131082, 39, 0, 131083, 39, 0, 131084, 39, 0, 131085, 39, 0, 131086, 39, 0, 131087, 35, 0, 262138, 35, 0, 262139, 1, 0, 262140, 0, 0, 262141, 0, 0, 262142, 19, 0, 262143, 20, 0, 196608, 21, 0, 196609, 1, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 35, 0, 196616, 35, 0, 196617, 39, 0, 196618, 38, 0, 196619, 38, 0, 196620, 38, 0, 196621, 38, 0, 196622, 38, 0, 196623, 35, 0, 327674, 35, 0, 327675, 1, 0, 327676, 0, 0, 327677, 0, 0, 262145, 1, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 35, 0, 262152, 35, 0, 262153, 39, 0, 262154, 38, 0, 262155, 38, 0, 262156, 38, 0, 262157, 38, 0, 262158, 38, 0, 262159, 35, 0, 393210, 35, 0, 393211, 1, 0, 393212, 0, 0, 393213, 0, 0, 393214, 0, 0, 393215, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 35, 0, 327687, 35, 0, 327688, 35, 0, 327689, 39, 0, 327690, 38, 0, 327691, 38, 0, 327692, 38, 0, 327693, 38, 0, 327694, 38, 0, 327695, 35, 0, 458746, 35, 0, 458747, 1, 0, 458748, 0, 0, 458749, 0, 0, 458750, 0, 0, 458751, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 19, 0, 393223, 20, 0, 393224, 21, 0, 393225, 39, 0, 393226, 38, 0, 393227, 38, 0, 393228, 38, 0, 393229, 38, 0, 393230, 38, 0, 393231, 35, 0, 524282, 35, 0, 524283, 1, 0, 524284, 0, 0, 524285, 0, 0, 524286, 0, 0, 524287, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458761, 39, 0, 458762, 38, 0, 458763, 38, 0, 458764, 38, 0, 458765, 38, 0, 458766, 38, 0, 458767, 35, 0, 589818, 35, 0, 589819, 1, 0, 589820, 0, 0, 589821, 0, 0, 589822, 0, 0, 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 38, 0, 524298, 38, 0, 524299, 38, 0, 524300, 38, 0, 524301, 38, 0, 524302, 38, 0, 524303, 35, 0, 655354, 35, 0, 655355, 1, 0, 655356, 0, 0, 655357, 0, 0, 655358, 0, 0, 655359, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 38, 0, 589834, 38, 0, 589835, 38, 0, 589836, 38, 0, 589837, 38, 0, 589838, 38, 0, 589839, 35, 0, 720890, 35, 0, 720891, 35, 0, 720892, 35, 0, 720893, 35, 0, 720894, 35, 0, 720895, 35, 0, 655360, 35, 0, 655361, 35, 0, 655363, 35, 0, 655364, 35, 0, 655365, 35, 0, 655366, 35, 0, 655367, 35, 0, 655368, 35, 0, 655369, 35, 0, 655370, 35, 0, 655371, 35, 0, 655372, 35, 0, 655373, 35, 0, 655374, 35, 0, 655375, 35, 0 )
 
 [node name="TileMap2" type="TileMap" parent="Floor1"]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 65532, 31, 0, 3, 31, 0, 4, 28, 0, 5, 43, 1, 11, 31, 0, 12, 31, 0, 131067, 33, 0, 131069, 32, 0, 65537, 25, 0, 65538, 26, 0, 65540, 43, 65536, 65541, 43, 65537, 65545, 40, 0, 65549, 41, 0, 65550, 42, 0, 131076, 43, 131072, 131077, 43, 131073, 262142, 23, 0, 196608, 31, 0, 196612, 43, 196608, 196613, 43, 196609, 196618, 44, 0, 196619, 44, 1, 196620, 44, 1, 196621, 44, 1, 196622, 45, 0, 262154, 44, 65536, 262155, 44, 65537, 262156, 44, 65537, 262157, 44, 65537, 262158, 45, 65536, 327690, 44, 65536, 327691, 44, 65537, 327692, 44, 65537, 327693, 44, 65537, 327694, 45, 65536, 458747, 3, 0, 458748, 4, 0, 458749, 4, 0, 458750, 4, 0, 458751, 5, 0, 393226, 44, 65536, 393227, 44, 65537, 393228, 44, 65537, 393229, 44, 65537, 393230, 45, 65536, 524283, 6, 0, 524284, 7, 0, 524285, 7, 0, 524286, 7, 0, 524287, 8, 0, 458762, 44, 131072, 458763, 44, 131073, 458764, 44, 131073, 458765, 44, 131073, 458766, 45, 131072, 589819, 6, 0, 589820, 7, 0, 589821, 7, 0, 589822, 7, 0, 589823, 8, 0, 655355, 9, 0, 655356, 10, 0, 655357, 10, 0, 655358, 10, 0, 655359, 34, 0, 589825, 48, 0, 589826, 48, 1, 589827, 48, 2, 589838, 36, 0 )
 
 [node name="TileMap3" type="TileMap" parent="Floor1"]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 262155, 46, 0, 262156, 46, 1, 262157, 46, 2, 327691, 46, 65536, 327692, 46, 65537, 327693, 46, 65538, 393223, 29, 0, 393227, 46, 131072, 393228, 46, 131073, 393229, 46, 131074, 524283, 17, 0, 524284, 24, 0, 524286, 17, 0, 589819, 17, 0, 589822, 17, 0 )
 
-[node name="UpStairs" parent="Floor1" instance=ExtResource( 4 )]
+[node name="UpStairs" parent="Floor1" instance=ExtResource( 3 )]
 position = Vector2( 149, 80 )
 destination = Vector2( 64, 80 )
 dir = "Up"
@@ -62,12 +57,12 @@ dir = "Up"
 [node name="BedBlanket" type="TileMap" parent="Floor1"]
 scale = Vector2( 2, 2 )
 z_index = 9
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 327691, 46, 196608, 327692, 46, 196609, 327693, 46, 196610 )
 
-[node name="Outside" parent="Floor1" instance=ExtResource( 5 )]
+[node name="Outside" parent="Floor1" instance=ExtResource( 4 )]
 position = Vector2( 80, 336 )
 scene = "res://Maps/MokiTown/MokiTown.tscn"
 destination = Vector2( 880, 1008 )
@@ -77,35 +72,35 @@ position = Vector2( 16, 0 )
 
 [node name="TileMap1" type="TileMap" parent="Floor2"]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -1, 35, 0, -65536, 35, 0, -65535, 35, 0, -65534, 35, 0, -65533, 35, 0, -65532, 35, 0, -65531, 35, 0, -65530, 35, 0, -65529, 35, 0, -65528, 35, 0, -65527, 35, 0, -65526, 35, 0, 65535, 35, 0, 0, 19, 0, 1, 20, 0, 2, 20, 0, 3, 20, 0, 4, 20, 0, 5, 20, 0, 6, 20, 0, 7, 20, 0, 8, 20, 0, 9, 21, 0, 10, 35, 0, 131071, 35, 0, 65546, 35, 0, 196607, 35, 0, 131072, 1, 0, 131073, 1, 0, 131074, 1, 0, 131075, 1, 0, 131076, 1, 0, 131077, 1, 0, 131078, 1, 0, 131079, 1, 0, 131080, 1, 0, 131081, 1, 0, 131082, 35, 0, 262143, 35, 0, 196608, 1, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 35, 0, 327679, 35, 0, 262144, 1, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 35, 0, 393215, 35, 0, 327680, 1, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 35, 0, 458751, 35, 0, 393216, 1, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 35, 0, 524287, 35, 0, 458752, 35, 0, 458753, 35, 0, 458754, 35, 0, 458755, 35, 0, 458756, 35, 0, 458757, 35, 0, 458758, 35, 0, 458759, 35, 0, 458760, 35, 0, 458761, 35, 0, 458762, 35, 0 )
 
 [node name="TileMap2" type="TileMap" parent="Floor2"]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 131075, 3, 0, 131076, 4, 0, 131077, 4, 0, 131078, 4, 0, 131079, 5, 0, 196611, 6, 0, 196612, 7, 0, 196613, 7, 0, 196614, 7, 0, 196615, 8, 0, 262147, 6, 0, 262148, 7, 0, 262149, 7, 0, 262150, 7, 0, 262151, 8, 0, 327683, 9, 0, 327684, 10, 0, 327685, 10, 0, 327686, 10, 0, 327687, 34, 0 )
 
 [node name="TileMap3" type="TileMap" parent="Floor2"]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 262148, 17, 0, 262149, 17, 0, 327680, 17, 0 )
 
 [node name="TileMap4" type="TileMap" parent="Floor2"]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 2, 22, 0, 65536, 27, 0, 65540, 13, 0, 65542, 15, 0, 65544, 16, 0, 196608, 2, 0, 196612, 14, 0, 393225, 36, 0 )
 
 [node name="TileMap5" type="TileMap" parent="Floor2"]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 327689, 37, 0, 524334, 37, 0 )
@@ -170,17 +165,17 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Shelf2"]
 shape = SubResource( 2 )
 
-[node name="DownStairs" parent="Floor2" instance=ExtResource( 4 )]
+[node name="DownStairs" parent="Floor2" instance=ExtResource( 3 )]
 position = Vector2( 40, 80 )
 destination = Vector2( 1184, 80 )
 dir = "Down"
 
-[node name="Event" parent="Floor2" instance=ExtResource( 6 )]
+[node name="Event" parent="Floor2" instance=ExtResource( 5 )]
 position = Vector2( 272, 208 )
 npc_path = NodePath("../NPC")
 commands = [ "Right", 2, "Wait", 1.2, "Left", 2 ]
 
-[node name="NPC" parent="Floor2" instance=ExtResource( 7 )]
+[node name="NPC" parent="Floor2" instance=ExtResource( 6 )]
 position = Vector2( -32, 160 )
 random_movement = false
 facing = "Right"

@@ -7,6 +7,8 @@ var canInteract = true
 
 var place_name = Global.TrainerName + "'s House"
 
+var background_music = "res://Audio/BGM/PU-Hero House.ogg";
+
 var type = "Indoor"
 
 func _ready():

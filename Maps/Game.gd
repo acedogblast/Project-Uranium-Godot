@@ -43,10 +43,9 @@ func _process(delta):
 		$CanvasLayer/Menu.visible = !$CanvasLayer/Menu.visible
 		$CanvasLayer/Menu.open = !$CanvasLayer/Menu.open
 		yield(get_tree().create_timer(0.4), "timeout")
-	if get_child(2).type == "Outside" && loaded == false:
+	#if get_child(2).type == "Outside" && loaded == false:
+	if current_scene.type == "Outside" && loaded == false:
 		load_seemless()
-	else:
-		pass
 
 func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
@@ -62,6 +61,11 @@ func change_scene(scene):
 	add_child(current_scene)
 	for node in get_tree().get_nodes_in_group("transition"):
 		node.initialize(self)
+	# Load and start background music if available.
+	if current_scene.background_music != null:
+		var music = load(current_scene.background_music)
+		$Background_music.stream = music
+		$Background_music.play()
 	
 #func room_transition(new_position):
 #	player.disable_input()
@@ -122,7 +126,9 @@ func door_transition(path_scene, new_position):
 	player.change_input()
 	yield(transition.fade_to_color(), "completed")
 	
-	change_scene(load(path_scene))
+	var scene = load(path_scene)
+
+	change_scene(scene)
 	
 	
 	
@@ -142,7 +148,8 @@ func door_transition(path_scene, new_position):
 func load_seemless():
 	loaded = true
 	
-	next_scene1 = get_child(2).next_scene1.instance()
+	#next_scene1 = get_child(2).next_scene1.instance()
+	next_scene1 = current_scene.next_scene1.instance()
 	next_scene1.position = Vector2(2272,26*32)
 	add_child(next_scene1)
 
