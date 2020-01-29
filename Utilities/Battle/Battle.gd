@@ -178,6 +178,7 @@ func test():
 	poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(3,5)
 	Global.pokemon_group.append(poke)
+	Global.TrainerGender = 2
 	
 	Start_Battle(bid)
 

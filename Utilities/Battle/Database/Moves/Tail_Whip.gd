@@ -31,4 +31,6 @@ var flags = []
 var total_pp = 30
 
 # The target ability of the move (Single, Double, All_Foes, Self)
-var target_ability = MoveTarget.SELF
+var target_ability = MoveTarget.All_Foes
+
+var main_status_effect = BattleStatStage.new(0, -1, 0, 0, 0, 0, 0)

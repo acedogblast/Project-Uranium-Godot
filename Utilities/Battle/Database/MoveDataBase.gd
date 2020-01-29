@@ -17,6 +17,6 @@ static func get_move_by_name(name):
 	move.flags = data.flags
 	move.total_pp = data.total_pp
 	move.target_ability = data.target_ability
-	
+	move.main_status_effect = data.main_status_effect
 	move.remaining_pp = move.total_pp
 	return move

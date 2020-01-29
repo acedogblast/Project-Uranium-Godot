@@ -159,7 +159,6 @@ config/icon="res://PermittedAssets/icon.png"
 [autoload]
 
 Global="*res://Global.gd"
-Move="*res://Utilities/Battle/Classes/Move.gd"
 SaveSystem="*res://Utilities/Save/SaveSystem.tscn"
 DialogueSystem="*res://Utilities/DialogueSystem.tscn"
 TextParser="*res://Utilities/TextParser.gd"

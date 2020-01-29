@@ -36,3 +36,7 @@ var remaining_pp
 
 # The target ability of the move (Single, Double, All, Self)
 var target_ability
+
+# The main status effect of the move.
+enum {}
+var main_status_effect
