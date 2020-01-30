@@ -17,7 +17,7 @@ var battle_is_over = false
 
 signal wait
 signal EndOfBattleLoop
-signal command_received
+#signal command_received
 
 func _ready():
 	$CanvasLayer/BattleGrounds.visible = false
@@ -150,11 +150,11 @@ func Start_Battle(bid : BattleInstanceData):
 			if queue.is_empty():
 				print("This should not be possible")
 		else:
-			battle_loop()
+			call_deferred("battle_loop")
 			yield(self, "EndOfBattleLoop")
 	
 	# After battle comands
-	
+	print("Battle is over.")
 
 
 func test():
@@ -320,11 +320,10 @@ func battle_loop():
 				1: # Player
 					#print("bar slide for player")
 					bars.slide_player_bar(float(battler1.current_hp) / battler1.hp, battler1.current_hp)
-					yield(bars, "finished")
 				2: # Foe
 					#print("bar slide for foe")
 					bars.slide_foe_bar(float(battler2.current_hp) / battler2.hp)
-					yield(bars, "finished")
+			yield(bars, "finished")
 		action.FAINT:
 			match action.damage_target_index:
 				1:
@@ -355,7 +354,6 @@ func battle_loop():
 			yield($CanvasLayer/BattleInterfaceLayer/BattleBars, "finished")
 		action.BATTLE_END:
 			battle_is_over = true
-			print("Battle is over.")
 			if action.winner == action.PLAYER_WIN:
 				print("Player wins.")
 			if action.winner == action.FOE_WIN:

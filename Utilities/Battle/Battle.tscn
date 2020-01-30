@@ -900,7 +900,6 @@ margin_bottom = 40.0
 texture = ExtResource( 3 )
 
 [node name="PlayerBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
-editor/display_folded = true
 margin_left = 105.0
 margin_top = 175.0
 margin_right = 673.0
@@ -932,7 +931,6 @@ anims/SuperDamage = ExtResource( 10 )
 anims/UnveilDropPlayer = ExtResource( 11 )
 
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/PlayerBase"]
-editor/display_folded = true
 visible = false
 position = Vector2( 7, -40 )
 scale = Vector2( 2, 2 )
@@ -1018,7 +1016,6 @@ margin_bottom = 384.0
 color = Color( 0, 0, 0, 0 )
 
 [node name="TransitionEffects" type="Node2D" parent="CanvasLayer"]
-editor/display_folded = true
 visible = false
 script = ExtResource( 21 )
 
@@ -1033,13 +1030,11 @@ color = Color( 0.392157, 0.392157, 0.392157, 0.392157 )
 anims/GreyFlashing = ExtResource( 22 )
 
 [node name="Vs" type="Node2D" parent="CanvasLayer/TransitionEffects"]
-editor/display_folded = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
 anims/SlideBars = SubResource( 6 )
 
 [node name="SpriteLeft" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
-editor/display_folded = true
 position = Vector2( -128, 192 )
 texture = ExtResource( 23 )
 region_enabled = true
@@ -1049,7 +1044,6 @@ region_rect = Rect2( 0, 0, 256, 128 )
 anims/Scroll = SubResource( 7 )
 
 [node name="SpriteRight" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
-editor/display_folded = true
 position = Vector2( 640, 192 )
 texture = ExtResource( 23 )
 region_enabled = true
@@ -1117,7 +1111,6 @@ color = Color( 0, 0, 0, 1 )
 layer = 4
 
 [node name="PlayerToss" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer"]
-editor/display_folded = true
 visible = false
 texture = ExtResource( 28 )
 centered = false
@@ -1129,7 +1122,6 @@ anims/FadeIn = SubResource( 10 )
 anims/Toss = SubResource( 11 )
 
 [node name="Message" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-editor/display_folded = true
 visible = false
 
 [node name="MessageBanner" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/Message"]
@@ -1215,7 +1207,6 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 152, 10 )
 
 [node name="FoeBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
-editor/display_folded = true
 margin_left = -254.0
 margin_top = -2.0
 margin_right = -10.0
@@ -1254,7 +1245,6 @@ scroll_active = false
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
 
 [node name="BattleComandSelect" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-editor/display_folded = true
 visible = false
 position = Vector2( 0, 384 )
 script = ExtResource( 37 )
@@ -1392,7 +1382,6 @@ anims/Squeez = SubResource( 20 )
 stream = ExtResource( 41 )
 
 [node name="BattleAttackSelect" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-editor/display_folded = true
 visible = false
 position = Vector2( 0, 286 )
 script = ExtResource( 42 )

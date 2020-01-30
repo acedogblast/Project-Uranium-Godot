@@ -340,7 +340,7 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
                 else:
                     turn_order.push_back(B2)
                     turn_order.push_back(B1)
-        print("Turn order size: " + str(turn_order.size()))
+        #print("Turn order size: " + str(turn_order.size()))
 func does_attack_hit(move : Move, target_index : int, attaker_index : int):
     if target_index == attaker_index: # Moves that efect self
         return true

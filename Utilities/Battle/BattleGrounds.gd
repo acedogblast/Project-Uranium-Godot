@@ -1,6 +1,5 @@
 extends Node2D
 signal wait
-signal ball_flash
 signal unveil_finished
 enum BattlePositions {INTRO_FADE, PLAYER_TOSS, CENTER, CENTER_IDLE, FOE_FOCUS, OPONENT_TALK}
 

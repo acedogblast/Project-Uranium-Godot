@@ -76,7 +76,7 @@ func slide_player_exp_bar(percent: float): # Maximum length is 2 seconds.
 	for i in range(loops):
 		$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(current_percent)
 		current_percent = current_percent + step
-		yield(get_tree().create_timer(0.033333), "timeout")
+		yield(get_tree().create_timer(0.033), "timeout")
 	$AudioStreamPlayer.stop()
 	player_exp_percent = percent
 	$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(player_exp_percent)
