@@ -89,14 +89,13 @@ func _tween_foe_hp(pos):
 	var rect = $FoeBar/HP.region_rect
 	rect.pos = pos
 	$FoeBar/HP.set_region_rect(rect)
-#func _update_player_hp_lable():  # Should update 15 times  WILL COMPLETE LATER
-#	if timer_step == 15:
-#		timer.stop()
-#		timer.queue_free()
-#	else:
-#		var hp : int = int()
-#		
-#		$PlayerBar/HPLable.text = str(hp) + "/ " + str(player_total_hp)
-#		$PlayerBar/HPLable/HPLableShadow.text = $PlayerBar/HPLable.text
-#		
-#		timer_step = timer_step + 1
+func get_color_by_percent(percent : float) -> Color:
+	var color = Color(0.0,0.0,0.0)
+	var inter : float = 0.0
+	if percent > 0.5: # Green to yellow shade
+		inter = (percent - 0.5) / 0.5
+		color = Color(1.0 - inter, 1.0, 1.0)
+	else: # Yellow to red shade
+		inter = percent / 0.5
+		color = Color(1.0, inter, 0.0)
+	return color

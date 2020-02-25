@@ -11,14 +11,15 @@ var accuracy = 0
 var evasion = 0
 var evasion_multiplier = 1.0 # Should be 1.0 most of the time. Be 0.0 when poke is invunrable by fly, dig, etc.
 
-#func _init(at : int, def : int, sp_at : int, sp_def: int, speed_ : int, acc : int, eva : int):
-#    attack = at
-#    defense = def
-#    sp_attack = sp_at
-#    sp_defense = sp_def
-#    speed = speed_
-#    accuracy = acc
-#    evasion = eva
+enum {
+    ATTACK,
+    DEFENSE,
+    SP_ATTACK,
+    SP_DEFENSE,
+    SPEED,
+    ACCURACY,
+    EVASION
+}
 
 static func get_multiplier(stat: int) -> float:
     match stat:
@@ -52,7 +53,7 @@ static func get_multiplier(stat: int) -> float:
             print("Battle Error: Stage Stat is over limits!")
             return 1.0
     pass
-func apply_stat_effect(effect : BattleStatStage) -> bool:
+func apply_stat_effect(effect : StatStageEffect):
     attack += effect.attack
     defense += effect.defense
     sp_attack += effect.sp_attack
@@ -104,4 +105,22 @@ func apply_stat_effect(effect : BattleStatStage) -> bool:
     if evasion < -6:
         evasion = -6
         over_limit = true
-    return over_limit
+
+    var stats_changed = []
+    
+    if effect.attack != 0:
+        stats_changed.push_back(ATTACK)
+    if effect.defense != 0:
+        stats_changed.push_back(DEFENSE)
+    if effect.sp_attack != 0:
+        stats_changed.push_back(SP_ATTACK)
+    if effect.sp_defense != 0:
+        stats_changed.push_back(SP_DEFENSE)
+    if effect.speed != 0:
+        stats_changed.push_back(SPEED)
+    if effect.accuracy != 0:
+        stats_changed.push_back(ACCURACY)
+    if effect.evasion != 0:
+        stats_changed.push_back(EVASION)
+
+    return stats_changed

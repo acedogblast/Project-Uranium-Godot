@@ -907,6 +907,9 @@ margin_bottom = 431.0
 rect_scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Battler" type="Node2D" parent="CanvasLayer/BattleGrounds/PlayerBase"]
 visible = false

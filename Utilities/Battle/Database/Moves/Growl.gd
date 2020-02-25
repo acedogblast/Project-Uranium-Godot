@@ -33,4 +33,4 @@ var total_pp = 40
 # The target ability of the move (Single, Double, All_Foes, Self)
 var target_ability = MoveTarget.ALL_FOE
 
-var main_status_effect
+var main_status_effect = StatStageEffect.new(-1, 0, 0, 0, 0, 0, 0)

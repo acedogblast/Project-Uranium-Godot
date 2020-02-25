@@ -9,8 +9,12 @@ enum {
 	PLAYER_BALLTOSS,
 	BATTLE_END,
 	FAINT,
-	EXP_GAIN
+	EXP_GAIN,
+	STAT_CHANGE_ANIMATION
 	}
+
+enum {PLAYER_WIN, FOE_WIN}
+
 var type
 
 var battle_grounds_pos_change
@@ -27,4 +31,4 @@ var exp_gain_percent : float
 
 var winner
 
-enum {PLAYER_WIN, FOE_WIN}
+var stat_change_increase : bool

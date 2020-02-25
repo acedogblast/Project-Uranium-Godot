@@ -67,7 +67,7 @@ func _input(event):
             
             var command = load("res://Utilities/Battle/Classes/BattleCommand.gd").new()
             command.command_type = command.ATTACK
-            command.attack_target = command.B2 # Target Foe
+            command.attack_target = command.B2 # Target Foe default
             var move
             match selected:
                 1:
@@ -82,6 +82,11 @@ func _input(event):
                 4:
                     command.attack_move = battler.move_4.name
                     move = battler.move_4
+            
+            # Set target of move
+            if move.target_ability == MoveTarget.SELF:
+                command.attack_target = command.B1
+
             if move.remaining_pp != 0:
                 $AnimationPlayer.play_backwards("Slide")
 
@@ -92,6 +97,7 @@ func _input(event):
                 emit_signal("command_received")
             else:
                 # Don't do anything.
+                # TODO: add error sound.
                 pass
 
         if event.is_action_pressed("z"): # Go back to comand select
