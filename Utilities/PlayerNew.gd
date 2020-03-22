@@ -37,7 +37,7 @@ enum MOVEMENT_TYPE {
 	SURF,
 	SCUBA
 }
-       
+	   
 enum MOVEMENT_SPEED {
 	NORMAL,
 	FAST
