@@ -313,8 +313,6 @@ hframes = 4
 
 [node name="Camera2D" type="Camera2D" parent="Position2D"]
 current = true
-drag_margin_h_enabled = false
-drag_margin_v_enabled = false
 smoothing_speed = 4.0
 
 [node name="Collision" type="Position2D" parent="."]
@@ -341,22 +339,18 @@ position = Vector2( 0, 32 )
 shape = SubResource( 17 )
 
 [node name="Left" type="Area2D" parent="NextCollision"]
-editor/display_folded = true
 position = Vector2( -32, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Left"]
 shape = SubResource( 17 )
 
 [node name="Right" type="Area2D" parent="NextCollision"]
-editor/display_folded = true
 position = Vector2( 32, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Right"]
 shape = SubResource( 17 )
 
 [node name="Interact" type="Position2D" parent="."]
-editor/display_folded = true
-visible = false
 
 [node name="Area2D" type="Area2D" parent="Interact"]
 

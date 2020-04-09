@@ -293,6 +293,11 @@ run={
  ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Movement Blocked"
+2d_physics/layer_2="Player Detect Zone"
+
 [locale]
 
 translations=PoolStringArray( "res://Dialogue/Generated/en/Cutscenes.po", "res://Dialogue/Generated/en/Objects.po", "res://Dialogue/Generated/en/UI.po", "res://Dialogue/Generated/en/NPC.po" )

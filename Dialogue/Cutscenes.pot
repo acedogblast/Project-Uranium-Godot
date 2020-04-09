@@ -140,3 +140,5 @@ msgstr "10 years passed\\wt[8].\\wt[8].\\wt[8].\\wtnp[16]"
 
 msgid "CUTSCENE_INTRO_D26"
 msgstr "Auntie's health waned.\nSupporting a child was too much work for her. Fortunately, Ernest Bamb'o, the local Pokémon Professor, was looking for a research assistant. Two kids from Moki Town applied:\\. \\PN,\\.\nand their childhood friend,\\. Theo. It was common for youths of a certain age\nto receive a Pokémon and travel the region as a Pokémon Trainer. And so, \\PN's journey began..."
+
+

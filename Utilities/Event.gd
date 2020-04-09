@@ -14,10 +14,6 @@ func _exit_tree():
 	DialogueSystem.disconnect("dialogue_start", self, "pause_scene")
 	DialogueSystem.disconnect("dialogue_end", self, "resume_scene")
 
-func _process(delta):
-	pass
-
-
 func _on_Area2D_area_entered(area):
 	
 	if $Area2D.get_overlapping_areas()[0].get_parent().name == "Collision":

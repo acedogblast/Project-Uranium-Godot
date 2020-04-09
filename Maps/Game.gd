@@ -14,6 +14,7 @@ var next_scene4 = null
 var loaded = false
 var isInteracting = false
 var canInteract = true
+var isTransitioning = false
 
 onready var transition = $CanvasLayer/Transition
 
@@ -123,27 +124,32 @@ func room_transition(dest, dir):
 	transition_visibility()
 
 func door_transition(path_scene, new_position):
-	player.change_input()
-	yield(transition.fade_to_color(), "completed")
+	if !isTransitioning:
+		isTransitioning = true
+		player.change_input()
+		player.canMove = false
+		yield(transition.fade_to_color(), "completed")
+		
+		var scene = load(path_scene)
 	
-	var scene = load(path_scene)
-
-	change_scene(scene)
-	
-	
-	
-	Global.TrainerX = new_position.x
-	Global.TrainerY = new_position.y
-	player.position = new_position
-	#player.direction = 0
-	#player.movePrevious()
-	yield(get_tree().create_timer(0.3), "timeout")
-	
-	
-	player.move(true)
-	yield(transition.fade_from_color(), "completed")
-	#player.movePrevious()
-	player.change_input()
+		change_scene(scene)
+		
+		
+		
+		Global.TrainerX = new_position.x
+		Global.TrainerY = new_position.y
+		player.position = new_position
+		#player.direction = 0
+		#player.movePrevious()
+		yield(get_tree().create_timer(0.3), "timeout")
+		
+		
+		player.move(true)
+		yield(transition.fade_from_color(), "completed")
+		#player.movePrevious()
+		isTransitioning = false
+		player.canMove = true
+		player.change_input()
 
 func load_seemless():
 	loaded = true

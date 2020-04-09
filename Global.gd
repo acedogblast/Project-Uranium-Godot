@@ -12,6 +12,8 @@ var sprint = false
 
 var pokemon_group = [] # Cannot be more that 6
 
+var past_events = [] # All events that had occured
+
 var isMobile = false
 func _process(delta):
 	if Input.is_action_just_pressed("toggle_fullscreen"):

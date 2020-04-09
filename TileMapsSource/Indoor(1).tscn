@@ -74,7 +74,6 @@ region_enabled = true
 region_rect = Rect2( 48, 96, 16, 16 )
 
 [node name="BlackBlock" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 256, 192 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )

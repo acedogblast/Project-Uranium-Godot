@@ -21,7 +21,7 @@ func _ready():
 	yield(get_tree().create_timer(1), "timeout")
 	$Floor2/DownStairs/CollisionShape2D.disabled = false
 
-func interaction(collider):
+func interaction(collider): # collider is a Vector2 of the position of object to interact
 	if isInteracting == true or !canInteract:
 		return null
 	isInteracting = true

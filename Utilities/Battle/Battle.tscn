@@ -898,6 +898,9 @@ script = ExtResource( 2 )
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PlayerBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
 margin_left = 105.0
@@ -913,7 +916,7 @@ __meta__ = {
 
 [node name="Battler" type="Node2D" parent="CanvasLayer/BattleGrounds/PlayerBase"]
 visible = false
-position = Vector2( 270, -100 )
+position = Vector2( 270, -20 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/BattleGrounds/PlayerBase/Battler"]

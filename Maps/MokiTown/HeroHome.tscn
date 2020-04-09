@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Maps/MokiTown/HeroHome.gd" type="Script" id=1]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=2]
 [ext_resource path="res://Utilities/Stairs.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -25,7 +24,6 @@ margin_bottom = 2500.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Floor1" type="Node2D" parent="."]
-editor/display_folded = true
 position = Vector2( 1040, 0 )
 
 [node name="TileMap1" type="TileMap" parent="Floor1"]
@@ -106,7 +104,6 @@ format = 1
 tile_data = PoolIntArray( 327689, 37, 0, 524334, 37, 0 )
 
 [node name="Console" type="StaticBody2D" parent="Floor2"]
-editor/display_folded = true
 position = Vector2( 144, 112 )
 collision_layer = 2
 collision_mask = 2
@@ -118,7 +115,6 @@ __meta__ = {
 shape = SubResource( 1 )
 
 [node name="TV" type="StaticBody2D" parent="Floor2"]
-editor/display_folded = true
 position = Vector2( 176, 80 )
 collision_layer = 2
 collision_mask = 2
@@ -130,7 +126,6 @@ __meta__ = {
 shape = SubResource( 2 )
 
 [node name="TV2" type="StaticBody2D" parent="Floor2"]
-editor/display_folded = true
 position = Vector2( 144, 80 )
 collision_layer = 2
 collision_mask = 2
@@ -142,7 +137,6 @@ __meta__ = {
 shape = SubResource( 2 )
 
 [node name="Shelf" type="StaticBody2D" parent="Floor2"]
-editor/display_folded = true
 position = Vector2( 304, 80 )
 collision_layer = 2
 collision_mask = 2
@@ -154,7 +148,6 @@ __meta__ = {
 shape = SubResource( 2 )
 
 [node name="Shelf2" type="StaticBody2D" parent="Floor2"]
-editor/display_folded = true
 position = Vector2( 272, 80 )
 collision_layer = 2
 collision_mask = 2
@@ -171,14 +164,7 @@ destination = Vector2( 1184, 80 )
 dir = "Down"
 
 [node name="Event" parent="Floor2" instance=ExtResource( 5 )]
-position = Vector2( 272, 208 )
-npc_path = NodePath("../NPC")
-commands = [ "Right", 2, "Wait", 1.2, "Left", 2 ]
-
-[node name="NPC" parent="Floor2" instance=ExtResource( 6 )]
-position = Vector2( -32, 160 )
-random_movement = false
-facing = "Right"
+position = Vector2( 176, 144 )
 
 [node name="InteractTimer" type="Timer" parent="."]
 wait_time = 0.1
