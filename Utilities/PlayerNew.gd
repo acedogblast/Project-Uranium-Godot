@@ -53,14 +53,7 @@ enum DIRECTION{
 }
 
 func _ready():
-	DialogueSystem.connect("dialogue_start", self, "set_process", [false])
-	DialogueSystem.connect("dialogue_end", self, "set_process", [true])
-
 	load_texture()
-
-func _exit_tree():
-	DialogueSystem.disconnect("dialogue_start", self, "set_process")
-	DialogueSystem.disconnect("dialogue_end", self, "set_process")
 
 func _process(delta):
 	if !isMoving:
@@ -126,7 +119,6 @@ func interact():
 	#print(check_pos)
 	
 	get_parent().interaction(check_pos)
-
 
 func move(force_move : bool):
 	set_process(false)
@@ -233,3 +225,8 @@ func animate():
 
 func stop_tween():
 	$Tween.stop_all()
+
+func set_facing_direction(facing_dir):
+	$Position2D/Sprite.texture = walkTexture
+	if facing_dir != null:
+		$Position2D/Sprite.frame = facing_dir * 4

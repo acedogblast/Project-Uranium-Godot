@@ -19,6 +19,7 @@ var isTransitioning = false
 onready var transition = $CanvasLayer/Transition
 
 func _ready():
+	Global.game = self
 	$CanvasLayer/Menu.visible = false
 	
 	add_to_group("save")
@@ -30,13 +31,13 @@ func _ready():
 	
 	player.position = Vector2(Global.TrainerX, Global.TrainerY)
 	player.z_index = 8
+	player.set_facing_direction(player.DIRECTION.UP)
 
 	#DialogueSystem.connect("dialogue_start", self, "set_process", [false])
 	DialogueSystem.connect("dialogue_end", self, "dialog_end")
 
 func _process(delta):
-	change_menu_text()
-	
+	#change_menu_text()
 	if Input.is_key_pressed(KEY_F1):
 		SaveSystem.save_game(1)
 	if Input.is_action_just_pressed("x"):
@@ -152,7 +153,6 @@ func interaction(collider): # Starts the dialogue now instead of the scene scrip
 			#canInteract = false # Maybe redundant?
 			player.change_input()
 			DialogueSystem.start_dialog(interaction_title)
-		
 	
 func dialog_end():
 	isInteracting = false
@@ -189,3 +189,12 @@ func load_state():
 		Global.TrainerY = temp_position.y
 	# else:
 	# it uses the default values
+
+func get_game():
+	return self
+
+func play_dialogue(title): # Plays a dialogue without freezing player
+	DialogueSystem.start_dialog(title)
+func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and without freezing player
+	DialogueSystem.start_dialog(title)
+	DialogueSystem.set_point_to(vector2)

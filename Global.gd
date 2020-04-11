@@ -9,6 +9,7 @@ var time = 0
 var printFPS = false
 var size
 var sprint = false
+var game : Node
 
 var pokemon_group = [] # Cannot be more that 6
 

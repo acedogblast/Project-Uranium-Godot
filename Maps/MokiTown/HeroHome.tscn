@@ -4,12 +4,14 @@
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=2]
 [ext_resource path="res://Utilities/Stairs.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16, 16 )
 
 [node name="Map" type="Node"]
@@ -163,11 +165,11 @@ position = Vector2( 40, 80 )
 destination = Vector2( 1184, 80 )
 dir = "Down"
 
-[node name="Event" parent="Floor2" instance=ExtResource( 5 )]
+[node name="Event1" type="Area2D" parent="Floor2"]
 position = Vector2( 176, 144 )
-event_name = "EVENT_AUNT_CALL"
+collision_layer = 2
+collision_mask = 2
 
-[node name="InteractTimer" type="Timer" parent="."]
-wait_time = 0.1
-one_shot = true
-[connection signal="timeout" from="InteractTimer" to="." method="_on_InteractTimer_timeout"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Event1"]
+shape = SubResource( 3 )
+[connection signal="area_entered" from="Floor2/Event1" to="." method="event1"]
