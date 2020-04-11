@@ -1,7 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Utilities/NPC.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Characters/HGSS_027.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 16, 16 )
 
 [sub_resource type="Animation" id=1]
 resource_name = "Down"
@@ -140,11 +143,17 @@ texture = ExtResource( 2 )
 [node name="Position2D" type="Position2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="Position2D"]
-position = Vector2( 49, 32 )
+position = Vector2( 0, 32 )
 texture = ExtResource( 2 )
 vframes = 4
 hframes = 4
 frame = 12
+
+[node name="Area2D" type="StaticBody2D" parent="Position2D/Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Position2D/Sprite/Area2D"]
+position = Vector2( 0, 16 )
+shape = SubResource( 9 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Down = SubResource( 1 )

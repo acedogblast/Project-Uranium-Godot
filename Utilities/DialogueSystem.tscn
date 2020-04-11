@@ -39,9 +39,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -245.0
+margin_left = -246.0
 margin_top = -104.0
-margin_right = 245.0
+margin_right = 244.0
 margin_bottom = -10.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -52,7 +52,8 @@ patch_margin_top = 14
 patch_margin_right = 16
 patch_margin_bottom = 16
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_use_anchors_": false
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Box"]
@@ -85,7 +86,6 @@ text = "Sample text"
 scroll_active = false
 
 [node name="PauseArrow" type="Sprite" parent="Box"]
-editor/display_folded = true
 position = Vector2( 470, 66 )
 texture = ExtResource( 5 )
 hframes = 4

@@ -42,6 +42,7 @@ func event1(body): # Aunt Calling player downstairs
 		Global.game.get_node("CanvasLayer/Fade/AnimationPlayer").play("Fade")
 		yield(Global.game.get_node("CanvasLayer/Fade/AnimationPlayer"), "animation_finished")
 		Global.game.get_node("CanvasLayer/Fade").visible = false
-		Global.game.play_dialogue_with_point(event_name, Vector2(50,80))
-		
+		Global.game.play_dialogue_with_point(event_name, Vector2(120, 140))
+		yield(Global.game, "event_dialogue_end")
+		Global.game.player.canMove = true
 		Global.past_events.append(event_name)

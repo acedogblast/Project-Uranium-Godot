@@ -16,6 +16,8 @@ var isInteracting = false
 var canInteract = true # Mabye redundant?
 var isTransitioning = false
 
+signal event_dialogue_end
+
 onready var transition = $CanvasLayer/Transition
 
 func _ready():
@@ -158,6 +160,7 @@ func dialog_end():
 	isInteracting = false
 	#$InteractTimer.start() # Is needed?
 	player.change_input()
+	emit_signal("event_dialogue_end")
 func check_node(pos):
 	for node in get_tree().get_nodes_in_group("interact"):
 		if node.position == pos:
@@ -196,5 +199,6 @@ func get_game():
 func play_dialogue(title): # Plays a dialogue without freezing player
 	DialogueSystem.start_dialog(title)
 func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and without freezing player
+	DialogueSystem.set_point_to(vector2)
 	DialogueSystem.start_dialog(title)
 	DialogueSystem.set_point_to(vector2)
