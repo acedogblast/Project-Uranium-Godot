@@ -13,7 +13,7 @@ var next_scene4 = null
 
 var loaded = false
 var isInteracting = false
-var canInteract = true
+var canInteract = true # Mabye redundant?
 var isTransitioning = false
 
 onready var transition = $CanvasLayer/Transition
@@ -31,8 +31,8 @@ func _ready():
 	player.position = Vector2(Global.TrainerX, Global.TrainerY)
 	player.z_index = 8
 
-	DialogueSystem.connect("dialogue_start", self, "set_process", [false])
-	DialogueSystem.connect("dialogue_end", self, "set_process", [true])
+	#DialogueSystem.connect("dialogue_start", self, "set_process", [false])
+	DialogueSystem.connect("dialogue_end", self, "dialog_end")
 
 func _process(delta):
 	change_menu_text()
@@ -67,21 +67,6 @@ func change_scene(scene):
 		var music = load(current_scene.background_music)
 		$Background_music.stream = music
 		$Background_music.play()
-	
-#func room_transition(new_position):
-#	player.disable_input()
-#	yield(transition.fade_to_color(), "completed")
-#
-#	Global.TrainerX = new_position.x
-#	Global.TrainerY = new_position.y
-#	player.position = new_position
-#	#player.movePrevious()
-#	yield(get_tree().create_timer(0.3), "timeout")
-#	player.move(true)
-#	yield(transition.fade_from_color(), "completed")
-#
-#	#player.movePrevious()
-#	player.call_deferred("enable_input")
 
 func room_transition(dest, dir):
 	player.change_input()
@@ -159,30 +144,20 @@ func load_seemless():
 	next_scene1.position = Vector2(2272,26*32)
 	add_child(next_scene1)
 
-func interaction(collider):
-	current_scene.interaction(collider)
+func interaction(collider): # Starts the dialogue now instead of the scene script
+	if isInteracting == false:# && canInteract == true:
+		var interaction_title = current_scene.interaction(collider)
+		if interaction_title != null:
+			isInteracting = true
+			#canInteract = false # Maybe redundant?
+			player.change_input()
+			DialogueSystem.start_dialog(interaction_title)
+		
 	
-	#if isInteracting == true or !canInteract:
-	#	return null
-	#isInteracting = true
-	#canInteract = false
-
-	#if collider == $Map/Floor2/Console.position:
-	#	player.change_input()
-	#	get_child(2).consoleDialoge()
-	#if collider == $Map/Floor2/TV.position:
-	#	player.change_input()
-	#	get_child(2).Floor2TVDialoge()
-	#if collider == $Map/Floor2/TV2.position:
-	#	player.change_input()
-	#	get_child(2).Floor2TVDialoge()
-	#if collider == $Map/Floor2/Shelf.position:
-	#	player.change_input()
-	#	get_child(2).Floor2SelfDialoge()
-	#if collider == $Map/Floor2/Shelf2.position:
-	#	player.change_input()
-	#	get_child(2).Floor2SelfDialoge()
-
+func dialog_end():
+	isInteracting = false
+	#$InteractTimer.start() # Is needed?
+	player.change_input()
 func check_node(pos):
 	for node in get_tree().get_nodes_in_group("interact"):
 		if node.position == pos:

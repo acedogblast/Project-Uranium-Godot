@@ -69,7 +69,7 @@ func _process(delta):
 		elif canMove and Input.is_action_just_pressed("ui_accept"):
 			interact()
 
-func change_input():
+func change_input(): # Disables/Enables the player to interaction
 	$Collision/Area2D/CollisionShape2D.disabled = !$Collision/Area2D/CollisionShape2D.disabled
 	#get_tree().paused = !get_tree().paused
 	inputDisabled = !inputDisabled
@@ -122,8 +122,8 @@ func interact():
 	check_pos.x = check_x
 	check_pos.y = check_y
 	
-	print(self.position)
-	print(check_pos)
+	#print(self.position)
+	#print(check_pos)
 	
 	get_parent().interaction(check_pos)
 

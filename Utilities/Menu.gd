@@ -54,7 +54,7 @@ func _input(event):
 				$Run/Sprite.frame = 0
 			yield(get_tree().create_timer(0.3), "timeout")
 			input = false
-		elif event.is_action_pressed("interact"):
+		elif event.is_action_pressed("ui_accept"):
 			menu = true
 		
 	elif menu:
