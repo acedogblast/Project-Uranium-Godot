@@ -141,9 +141,9 @@ texture = ExtResource( 2 )
 [node name="Tween" type="Tween" parent="."]
 
 [node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 0, -16 )
 
 [node name="Sprite" type="Sprite" parent="Position2D"]
-position = Vector2( 0, 32 )
 texture = ExtResource( 2 )
 vframes = 4
 hframes = 4

@@ -80,7 +80,7 @@ func get_input():
 		state = STATE.IDLE
 		set_idle_frame()
 		return
-	if Input.is_action_pressed("z") and !holding_z:
+	if Input.is_action_pressed("z") and !holding_z and Global.can_run:
 		holding_z = true
 		Global.sprint = !Global.sprint
 	elif !Input.is_action_pressed("z") and holding_z:
@@ -115,10 +115,10 @@ func interact():
 	check_pos.x = check_x
 	check_pos.y = check_y
 	
-	#print(self.position)
+	#print("Player: " + str(self.position))
 	#print(check_pos)
 	
-	get_parent().interaction(check_pos)
+	get_parent().interaction(check_pos, direction)
 
 func move(force_move : bool):
 	set_process(false)

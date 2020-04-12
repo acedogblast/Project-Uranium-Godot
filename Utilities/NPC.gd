@@ -107,3 +107,16 @@ func set_idle_frame(_dir):
 			$Position2D/Sprite.frame = 8
 		_:
 			$Position2D/Sprite.frame = 0
+
+func face_player(player_direction):
+	var dir
+	match player_direction:
+		Global.game.player.DIRECTION.DOWN:
+			dir = "Up"
+		Global.game.player.DIRECTION.UP:
+			dir = "Down"
+		Global.game.player.DIRECTION.LEFT:
+			dir = "Right"
+		Global.game.player.DIRECTION.RIGHT:
+			dir = "Left"
+	set_idle_frame(dir)

@@ -147,19 +147,23 @@ func load_seemless():
 	next_scene1.position = Vector2(2272,26*32)
 	add_child(next_scene1)
 
-func interaction(collider): # Starts the dialogue now instead of the scene script
-	if isInteracting == false:# && canInteract == true:
-		var interaction_title = current_scene.interaction(collider)
+func interaction(collider, direction): # Starts the dialogue instead of the scene script
+	if isInteracting == false:
+		var interaction_title = current_scene.interaction(collider, direction)
 		if interaction_title != null:
 			isInteracting = true
 			#canInteract = false # Maybe redundant?
 			player.change_input()
-			DialogueSystem.start_dialog(interaction_title)
+			player.canMove = false
+			play_dialogue(interaction_title)
+		else:
+			print(collider)
 	
 func dialog_end():
+	yield(get_tree().create_timer(0.1), "timeout")
 	isInteracting = false
-	#$InteractTimer.start() # Is needed?
 	player.change_input()
+	player.canMove = true
 	emit_signal("event_dialogue_end")
 func check_node(pos):
 	for node in get_tree().get_nodes_in_group("interact"):
@@ -197,8 +201,9 @@ func get_game():
 	return self
 
 func play_dialogue(title): # Plays a dialogue without freezing player
+	DialogueSystem.set_point_to(Vector2(0,0))
 	DialogueSystem.start_dialog(title)
+	
 func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and without freezing player
 	DialogueSystem.set_point_to(vector2)
 	DialogueSystem.start_dialog(title)
-	DialogueSystem.set_point_to(vector2)

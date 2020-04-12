@@ -26,6 +26,8 @@ script = ExtResource( 1 )
 
 [node name="Background_music" type="AudioStreamPlayer" parent="."]
 
+[node name="Effect_music" type="AudioStreamPlayer" parent="."]
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Transition" parent="CanvasLayer" instance=ExtResource( 2 )]

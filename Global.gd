@@ -11,6 +11,8 @@ var size
 var sprint = false
 var game : Node
 
+var can_run = false
+
 var pokemon_group = [] # Cannot be more that 6
 
 var past_events = [] # All events that had occured

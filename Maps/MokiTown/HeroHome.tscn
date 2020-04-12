@@ -69,11 +69,6 @@ position = Vector2( 80, 336 )
 scene = "res://Maps/MokiTown/MokiTown.tscn"
 destination = Vector2( 880, 1008 )
 
-[node name="NPC" parent="Floor1" instance=ExtResource( 5 )]
-position = Vector2( -112, 64 )
-random_movement = false
-texture = ExtResource( 6 )
-
 [node name="Floor2" type="Node2D" parent="."]
 position = Vector2( 16, 0 )
 
@@ -179,4 +174,9 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Event1"]
 shape = SubResource( 3 )
+
+[node name="Aunt" parent="." instance=ExtResource( 5 )]
+position = Vector2( 928, 112 )
+random_movement = false
+texture = ExtResource( 6 )
 [connection signal="area_entered" from="Floor2/Event1" to="." method="event1"]
