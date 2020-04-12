@@ -4,10 +4,11 @@ var TrainerGender = 0 # 0 is boy, 1 is neutral, 2 is girl
 var TrainerX = 192
 var TrainerY = 144
 var badges = 0
-var time = 0
+var time
+var pokedex_count = 0
 
 var printFPS = false
-var size
+#var size
 var sprint = false
 var game : Node
 
@@ -18,7 +19,11 @@ var pokemon_group = [] # Cannot be more that 6
 var past_events = [] # All events that had occured
 
 var isMobile = false
+
+var load_game_from_id # Used on loading a save
+
 func _ready():
+	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	pass
 
@@ -29,4 +34,22 @@ func _process(delta):
 		printFPS = true
 	if printFPS == true:
 		print(Engine.get_frames_per_second())
+	pass
+func save_state():
+	load_game_from_id = null
+	var state = {
+		"TrainerName": TrainerName,
+		"TrainerGender": TrainerGender,
+		"TrainerX": TrainerX,
+		"TrainerY": TrainerY,
+		"badges": badges,
+		"time": time,
+		"pokedex_count": pokedex_count,
+		"can_run": can_run,
+		"pokemon_group": pokemon_group,
+		"past_events": past_events,
+	}
+	SaveSystem.set_state(filename, state)
+func load_state():
+	
 	pass

@@ -16,6 +16,7 @@ var isInteracting = false
 var canInteract = true # Mabye redundant?
 var isTransitioning = false
 
+
 signal event_dialogue_end
 
 onready var transition = $CanvasLayer/Transition
@@ -25,7 +26,8 @@ func _ready():
 	$CanvasLayer/Menu.visible = false
 	
 	add_to_group("save")
-	#SaveSystem.load_game(1)
+	if Global.load_game_from_id != null:
+		SaveSystem.load_game(Global.load_game_from_id)
 	
 	player = Player.instance()
 	add_child(player)
@@ -37,6 +39,7 @@ func _ready():
 
 	#DialogueSystem.connect("dialogue_start", self, "set_process", [false])
 	DialogueSystem.connect("dialogue_end", self, "dialog_end")
+	Global.load_game_from_id = null
 
 func _process(delta):
 	#change_menu_text()
@@ -178,7 +181,7 @@ func transition_visibility():
 func _exit_tree():
 	DialogueSystem.disconnect("dialogue_start", self, "set_process")
 	DialogueSystem.disconnect("dialogue_end", self, "set_process")
-	save_state()
+	#save_state()
 
 func save_state():
 	var state = {
