@@ -18,6 +18,10 @@ var pokemon_group = [] # Cannot be more that 6
 var past_events = [] # All events that had occured
 
 var isMobile = false
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	pass
+
 func _process(delta):
 	if Input.is_action_just_pressed("toggle_fullscreen"):
 		OS.window_fullscreen = !OS.window_fullscreen

@@ -25,7 +25,7 @@ func _ready():
 	$CanvasLayer/Menu.visible = false
 	
 	add_to_group("save")
-	SaveSystem.load_game(1)
+	#SaveSystem.load_game(1)
 	
 	player = Player.instance()
 	add_child(player)
@@ -196,9 +196,6 @@ func load_state():
 		Global.TrainerY = temp_position.y
 	# else:
 	# it uses the default values
-
-func get_game():
-	return self
 
 func play_dialogue(title): # Plays a dialogue without freezing player
 	DialogueSystem.set_point_to(Vector2(0,0))
