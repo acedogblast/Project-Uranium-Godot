@@ -27,11 +27,14 @@ func _ready():
 
 	player = Player.instance()
 	add_child(player)
-	change_scene(start_scene)
+	
 	
 	add_to_group("save")
 	if Global.load_game_from_id != null:
 		SaveSystem.load_game(Global.load_game_from_id)
+		#change_scene(current_scene)
+	else: # For new Game
+		change_scene(start_scene)
 	
 	player.position = Vector2(Global.TrainerX, Global.TrainerY)
 	player.z_index = 8
@@ -41,7 +44,7 @@ func _ready():
 	DialogueSystem.connect("dialogue_end", self, "dialog_end")
 	Global.load_game_from_id = null
 
-func _process(delta):
+func _process(_delta):
 	#change_menu_text()
 	if Input.is_key_pressed(KEY_F1):
 		SaveSystem.save_game(1)
@@ -51,8 +54,8 @@ func _process(delta):
 		$CanvasLayer/Menu.open = !$CanvasLayer/Menu.open
 		yield(get_tree().create_timer(0.4), "timeout")
 	#if get_child(2).type == "Outside" && loaded == false:
-	if current_scene.type == "Outside" && loaded == false:
-		load_seemless()
+	if current_scene != null && current_scene.type == "Outside" && loaded == false:
+		call_deferred("load_seemless")
 
 func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
@@ -61,10 +64,14 @@ func change_menu_text():
 func play_anim(fade):
 	$CanvasLayer/Transition/AnimationPlayer.play(fade)
 
-func change_scene(scene):
-	#if current_scene:
+func change_scene(scene): # scene must be loaded!
 	remove_child(current_scene)
-	current_scene = scene.instance()
+	if current_scene is String:
+		var new_scene = load(scene)
+		current_scene = new_scene.instance()
+	else:
+		current_scene = scene.instance()
+
 	add_child(current_scene)
 	for node in get_tree().get_nodes_in_group("transition"):
 		node.initialize(self)
@@ -146,7 +153,8 @@ func load_seemless():
 	loaded = true
 	
 	#next_scene1 = get_child(2).next_scene1.instance()
-	next_scene1 = current_scene.next_scene1.instance()
+	next_scene1 = load(current_scene.next_scene1)
+	next_scene1 = next_scene1.instance()
 	next_scene1.position = Vector2(2272,26*32)
 	add_child(next_scene1)
 
@@ -191,10 +199,10 @@ func save_state():
 	}
 	SaveSystem.set_state(filename, state)
 
-func load_state():
+func load_state(): # Automatically called when loading a save file
 	if SaveSystem.has_state(filename):
 		var state = SaveSystem.get_state(filename)
-		start_scene = load(state["current_scene"])
+		current_scene = change_scene(load(state["current_scene"]))
 		var temp_position = state["player_position"]
 		player.direction = state["player_direction"]
 		Global.TrainerX = temp_position.x

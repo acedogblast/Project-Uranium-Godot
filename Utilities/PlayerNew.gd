@@ -117,8 +117,8 @@ func interact():
 	check_pos.x = check_x
 	check_pos.y = check_y
 	
-	#print("Player: " + str(self.position))
-	#print(check_pos)
+	print("Player: " + str(self.position))
+	print("Looking: " + str(check_pos))
 	
 	get_parent().interaction(check_pos, direction)
 
