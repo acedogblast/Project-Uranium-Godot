@@ -27,9 +27,8 @@ func _ready():
 
 	player = Player.instance()
 	add_child(player)
-	
-	
 	add_to_group("save")
+
 	if Global.load_game_from_id != null:
 		SaveSystem.load_game(Global.load_game_from_id)
 		#change_scene(current_scene)
@@ -202,7 +201,7 @@ func save_state():
 func load_state(): # Automatically called when loading a save file
 	if SaveSystem.has_state(filename):
 		var state = SaveSystem.get_state(filename)
-		current_scene = change_scene(load(state["current_scene"]))
+		change_scene(load(state["current_scene"]))
 		var temp_position = state["player_position"]
 		player.direction = state["player_direction"]
 		Global.TrainerX = temp_position.x
