@@ -17,12 +17,7 @@ func _ready():
 	#yield(get_tree().create_timer(1), "timeout")
 
 	$Aunt.set_idle_frame("Up")
-
-	if !Global.past_events.has(event_1_name):
-		# Blackscreen
-		Global.game.get_node("CanvasLayer/Fade").visible = true
-	else:
-		Global.game.get_node("CanvasLayer/Fade").visible = false
+	Global.game.get_node("CanvasLayer/Fade").visible = false
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
@@ -46,6 +41,7 @@ func event1(body): # Aunt Calling player downstairs
 	var event_name = "EVENT_HEROHOME_1"
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)
+		Global.game.get_node("CanvasLayer/Fade").visible = true
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 		Global.game.player.change_input()
 		Global.game.player.canMove = false

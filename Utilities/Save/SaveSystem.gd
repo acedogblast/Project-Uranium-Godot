@@ -10,6 +10,9 @@ var save_state : SAVE_STATE
 # save_id are to start at 1 to n
 # This is to know how many save files there are.
 
+func _ready():
+	save_state = State.new()
+
 func has_state(var key):
 	return save_state.has_key(key)
 

@@ -24,14 +24,14 @@ onready var transition = $CanvasLayer/Transition
 func _ready():
 	Global.game = self
 	$CanvasLayer/Menu.visible = false
+
+	player = Player.instance()
+	add_child(player)
+	change_scene(start_scene)
 	
 	add_to_group("save")
 	if Global.load_game_from_id != null:
 		SaveSystem.load_game(Global.load_game_from_id)
-	
-	player = Player.instance()
-	add_child(player)
-	change_scene(start_scene)
 	
 	player.position = Vector2(Global.TrainerX, Global.TrainerY)
 	player.z_index = 8
@@ -186,7 +186,8 @@ func _exit_tree():
 func save_state():
 	var state = {
 		"current_scene": current_scene.filename,
-		"player_position": player.position
+		"player_position": player.position,
+		"player_direction": player.direction
 	}
 	SaveSystem.set_state(filename, state)
 
@@ -195,6 +196,7 @@ func load_state():
 		var state = SaveSystem.get_state(filename)
 		start_scene = load(state["current_scene"])
 		var temp_position = state["player_position"]
+		player.direction = state["player_direction"]
 		Global.TrainerX = temp_position.x
 		Global.TrainerY = temp_position.y
 	# else:

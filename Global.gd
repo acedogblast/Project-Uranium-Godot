@@ -51,5 +51,15 @@ func save_state():
 	}
 	SaveSystem.set_state(filename, state)
 func load_state():
-	
-	pass
+	if SaveSystem.has_state(filename):
+		var state = SaveSystem.get_state(filename)
+		TrainerName = state["TrainerName"]
+		TrainerGender = state["TrainerGender"]
+		TrainerX = state["TrainerX"]
+		TrainerY = state["TrainerY"]
+		badges = state["badges"]
+		time = state["time"]
+		pokedex_count = state["pokedex_count"]
+		can_run = state["can_run"]
+		pokemon_group = state["pokemon_group"]
+		past_events = state["past_events"]

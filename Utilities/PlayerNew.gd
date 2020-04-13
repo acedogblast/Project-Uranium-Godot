@@ -63,10 +63,12 @@ func _process(delta):
 			interact()
 
 func change_input(): # Disables/Enables the player to interaction
+	call_deferred("change_internal_input")	
+
+func change_internal_input():
 	$Collision/Area2D/CollisionShape2D.disabled = !$Collision/Area2D/CollisionShape2D.disabled
 	#get_tree().paused = !get_tree().paused
 	inputDisabled = !inputDisabled
-
 func get_input():
 	if Input.is_action_pressed("ui_down"):
 		direction = DIRECTION.DOWN
