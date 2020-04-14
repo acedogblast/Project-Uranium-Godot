@@ -1,14 +1,18 @@
 extends Node2D
 
-export var random_movement = true
+export var random_movement = false
 export var trainer = false
 export var texture: StreamTexture = null
 
 export var facing = ""
 
+
 var move_direction = Vector2()
 var foot = 0
 var moving = false
+
+signal done_movement
+signal step
 
 func _ready():
 	$Position2D/Sprite.texture = texture
@@ -33,7 +37,7 @@ func _process(delta):
 				6:
 					yield(get_tree().create_timer(0.4), "timeout")
 
-func move(_dir):
+func move(_dir): # Walk one step
 	set_process(false)
 	moving = true
 	move_direction = Vector2.ZERO
@@ -49,7 +53,7 @@ func move(_dir):
 			move_direction.x = 32
 	
 	animate(_dir)
-	$Tween.interpolate_property($Position2D, "position", - move_direction, Vector2(), $AnimationPlayer.current_animation_length, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	$Tween.interpolate_property($Position2D, "position", - move_direction, Vector2(), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	position += move_direction
 	$Position2D.position -= move_direction
 	
@@ -72,8 +76,10 @@ func move(_dir):
 		foot = 0
 	moving = false
 	set_process(true)
+	emit_signal("step")
 
 func animate(_dir):
+	#$AnimationPlayer.playback_speed = 2.0
 	if foot == 0:
 		match _dir:
 			"Down":
@@ -120,3 +126,9 @@ func face_player(player_direction):
 		Global.game.player.DIRECTION.RIGHT:
 			dir = "Left"
 	set_idle_frame(dir)
+
+func move_multi(dir, steps):
+	for i in range(steps):
+		move(dir)
+		yield(self, "step")
+	emit_signal("done_movement")

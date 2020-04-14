@@ -42,6 +42,7 @@ func _ready():
 	#DialogueSystem.connect("dialogue_start", self, "set_process", [false])
 	DialogueSystem.connect("dialogue_end", self, "dialog_end")
 	Global.load_game_from_id = null
+	player.canMove = true
 
 func _process(_delta):
 	#change_menu_text()
@@ -64,7 +65,8 @@ func play_anim(fade):
 	$CanvasLayer/Transition/AnimationPlayer.play(fade)
 
 func change_scene(scene): # scene must be loaded!
-	remove_child(current_scene)
+	if current_scene != null:
+		remove_child(current_scene)
 	if current_scene is String:
 		var new_scene = load(scene)
 		current_scene = new_scene.instance()
@@ -124,7 +126,7 @@ func door_transition(path_scene, new_position):
 	if !isTransitioning:
 		isTransitioning = true
 		player.change_input()
-		player.canMove = false
+		#player.canMove = false
 		yield(transition.fade_to_color(), "completed")
 		
 		var scene = load(path_scene)
@@ -145,7 +147,7 @@ func door_transition(path_scene, new_position):
 		yield(transition.fade_from_color(), "completed")
 		#player.movePrevious()
 		isTransitioning = false
-		player.canMove = true
+		#player.canMove = true
 		player.change_input()
 
 func load_seemless():
@@ -164,16 +166,18 @@ func interaction(collider, direction): # Starts the dialogue instead of the scen
 			isInteracting = true
 			#canInteract = false # Maybe redundant?
 			player.change_input()
-			player.canMove = false
+			#player.canMove = false
 			play_dialogue(interaction_title)
+			yield(self, "event_dialogue_end")
+			player.change_input()
 		else:
 			print(collider)
 	
 func dialog_end():
 	yield(get_tree().create_timer(0.1), "timeout")
 	isInteracting = false
-	player.change_input()
-	player.canMove = true
+	#player.change_input()
+	#player.canMove = true
 	emit_signal("event_dialogue_end")
 func check_node(pos):
 	for node in get_tree().get_nodes_in_group("interact"):
@@ -186,9 +190,10 @@ func transition_visibility():
 	$CanvasLayer/Transition.visible = !$CanvasLayer/Transition.visible
 
 func _exit_tree():
-	DialogueSystem.disconnect("dialogue_start", self, "set_process")
-	DialogueSystem.disconnect("dialogue_end", self, "set_process")
+	#DialogueSystem.disconnect("dialogue_start", self, "set_process")
+	#DialogueSystem.disconnect("dialogue_end", self, "set_process")
 	#save_state()
+	pass
 
 func save_state():
 	var state = {

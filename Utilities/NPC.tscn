@@ -3,12 +3,11 @@
 [ext_resource path="res://Utilities/NPC.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Characters/HGSS_027.png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
 
-[sub_resource type="Animation" id=1]
-resource_name = "Down"
-length = 0.6
+[sub_resource type="Animation" id=2]
+length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -16,15 +15,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "Down2"
-length = 0.6
+[sub_resource type="Animation" id=3]
+length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -32,15 +30,15 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 2, 3 ]
 }
 
-[sub_resource type="Animation" id=3]
-resource_name = "Left"
-length = 0.6
+[sub_resource type="Animation" id=4]
+length = 0.25
+step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -48,15 +46,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 4, 5 ]
 }
 
-[sub_resource type="Animation" id=4]
-resource_name = "Left2"
-length = 0.6
+[sub_resource type="Animation" id=5]
+length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -64,15 +61,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 6, 7 ]
 }
 
-[sub_resource type="Animation" id=5]
-resource_name = "Right"
-length = 0.6
+[sub_resource type="Animation" id=6]
+length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -80,15 +76,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 8, 9 ]
 }
 
-[sub_resource type="Animation" id=6]
-resource_name = "Right2"
-length = 0.6
+[sub_resource type="Animation" id=7]
+length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -96,15 +91,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 10, 11 ]
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "Up"
-length = 0.6
+[sub_resource type="Animation" id=8]
+length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -112,15 +106,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 12, 13 ]
 }
 
-[sub_resource type="Animation" id=8]
-resource_name = "Up2"
-length = 0.6
+[sub_resource type="Animation" id=9]
+length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -128,7 +121,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 14, 15 ]
@@ -147,20 +140,19 @@ position = Vector2( 0, -16 )
 texture = ExtResource( 2 )
 vframes = 4
 hframes = 4
-frame = 12
 
 [node name="Area2D" type="StaticBody2D" parent="Position2D/Sprite"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Position2D/Sprite/Area2D"]
 position = Vector2( 0, 16 )
-shape = SubResource( 9 )
+shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Down = SubResource( 1 )
-anims/Down2 = SubResource( 2 )
-anims/Left = SubResource( 3 )
-anims/Left2 = SubResource( 4 )
-anims/Right = SubResource( 5 )
-anims/Right2 = SubResource( 6 )
-anims/Up = SubResource( 7 )
-anims/Up2 = SubResource( 8 )
+anims/Down = SubResource( 2 )
+anims/Down2 = SubResource( 3 )
+anims/Left = SubResource( 4 )
+anims/Left2 = SubResource( 5 )
+anims/Right = SubResource( 6 )
+anims/Right2 = SubResource( 7 )
+anims/Up = SubResource( 8 )
+anims/Up2 = SubResource( 9 )

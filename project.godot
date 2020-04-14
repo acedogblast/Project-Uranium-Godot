@@ -169,6 +169,10 @@ SaveSystem="*res://Utilities/Save/SaveSystem.tscn"
 DialogueSystem="*res://Utilities/DialogueSystem.tscn"
 TextParser="*res://Utilities/TextParser.gd"
 
+[debug]
+
+gdscript/warnings/unused_variable=false
+
 [display]
 
 window/size/width=512

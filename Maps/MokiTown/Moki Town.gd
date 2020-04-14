@@ -9,13 +9,78 @@ var place_name = "Moki Town"
 
 var hero_home_x = 880
 var hero_home_y = 1008
+var npc_layer
 
 func _ready():
-    #next_scene1 = load("res://Maps/Route03/Route03.tscn")
-    
-    pass
+	npc_layer = $TileMap3/NPC_Layer
+	pass
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
-	
 	return null
+	
+func event1(body):
+	var event_name = "EVENT_MOKI_TOWN_THEO_1"
+	if !Global.past_events.has(event_name):
+		print("New Event: " + event_name)
+		DialogueSystem.set_box_position(DialogueSystem.TOP) # Not the same as original
+		Global.game.player.change_input()
+		# Message
+		Global.game.play_dialogue("EVENT_MOKI_TOWN_THEO_1")
+		yield(Global.game, "event_dialogue_end")
+		# Change music and move to center at same time
+		var time = Global.game.get_node("Background_music").get_playback_position()
+		Global.game.get_node("Background_music").stop()
+		var sound = load("res://Audio/BGM/PU-Rival Theme.ogg")
+		Global.game.get_node("Effect_music").stream = sound
+		Global.game.get_node("Effect_music").play()
+		# Move player to center if not already
+		var center = Vector2(816,496) # Top: 464 and 432 Bottom: 528 and 560
+		var dir
+		var steps
+		match Global.game.player.position.y:
+			464.0: # These need to be floats! TOOK ME HOURS TO FIGURE THAT OUT!
+				dir = Global.game.player.DIRECTION.DOWN
+				steps = 1
+				Global.game.player.call_deferred("move_player_event", dir, steps)
+				yield(Global.game.player, "done_movement")
+			432.0:
+				dir = Global.game.player.DIRECTION.DOWN
+				steps = 2
+				Global.game.player.call_deferred("move_player_event", dir, steps)
+				yield(Global.game.player, "done_movement")
+			528.0:
+				dir = Global.game.player.DIRECTION.UP
+				steps = 1
+				Global.game.player.call_deferred("move_player_event", dir, steps)
+				yield(Global.game.player, "done_movement")
+			560.0:
+				dir = Global.game.player.DIRECTION.UP
+				steps = 2
+				Global.game.player.call_deferred("move_player_event", dir, steps)
+				yield(Global.game.player, "done_movement")
+		
+		# Spawn NPC
+		var npc = load("res://Utilities/NPC.tscn").instance()
+		npc.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
+		npc_layer.add_child(npc)
+		
+		Global.game.player.direction = Global.game.player.DIRECTION.RIGHT
+		Global.game.player.call_deferred("set_idle_frame")
+		npc.position = Vector2(1104,496-16)
+		npc.call_deferred("move_multi", "Left", 8)
+		yield(npc, "done_movement")
+		#print("NPC done")
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_THEO_2", npc.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		npc.call_deferred("move_multi", "Up", 1)
+		yield(npc, "done_movement")
+		npc.call_deferred("move_multi", "Left", 10)
+		yield(npc, "done_movement")
+		npc.queue_free()
+		Global.game.get_node("Effect_music").stop()
+		Global.game.get_node("Background_music").play(time)
+
+		Global.game.player.change_input()
+		Global.past_events.append(event_name)

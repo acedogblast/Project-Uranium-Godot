@@ -25,6 +25,9 @@ var movement_type = MOVEMENT_TYPE.FOOT
 var movement_speed
 var state
 
+#signal step
+signal done_movement
+
 enum STATE {
 	IDLE,
 	MOVE,
@@ -62,13 +65,15 @@ func _process(delta):
 		elif canMove and Input.is_action_just_pressed("ui_accept"):
 			interact()
 
-func change_input(): # Disables/Enables the player to interaction
+func change_input(): # Disables/Enables the player to interaction and now movement
 	call_deferred("change_internal_input")	
 
 func change_internal_input():
 	$Collision/Area2D/CollisionShape2D.disabled = !$Collision/Area2D/CollisionShape2D.disabled
 	#get_tree().paused = !get_tree().paused
 	inputDisabled = !inputDisabled
+	canMove = !canMove
+	set_idle_frame()
 func get_input():
 	if Input.is_action_pressed("ui_down"):
 		direction = DIRECTION.DOWN
@@ -79,8 +84,6 @@ func get_input():
 	elif Input.is_action_pressed("ui_right"):
 		direction = DIRECTION.RIGHT
 	else:
-		state = STATE.IDLE
-		set_idle_frame()
 		return
 	if Input.is_action_pressed("z") and !holding_z and Global.can_run:
 		holding_z = true
@@ -97,7 +100,9 @@ func get_input():
 	else:
 		movement_speed = MOVEMENT_SPEED.NORMAL
 		$Position2D/Sprite.texture = walkTexture
-	move(false)
+
+	if !inputDisabled:
+		move(false)
 
 func interact():
 	check_x = self.position.x
@@ -124,7 +129,6 @@ func interact():
 
 func move(force_move : bool):
 	set_process(false)
-	inputDisabled = true
 	move_direction = Vector2.ZERO
 	
 	if direction == DIRECTION.DOWN and ($NextCollision/Down.get_overlapping_bodies().size() == 0 or force_move):
@@ -163,8 +167,9 @@ func move(force_move : bool):
 		foot = 1
 	else:
 		foot = 0
-		
-	inputDisabled = false
+	
+	state = STATE.IDLE
+	set_idle_frame()
 	set_process(true)
 
 func load_texture():
@@ -232,3 +237,24 @@ func set_facing_direction(facing_dir):
 	$Position2D/Sprite.texture = walkTexture
 	if facing_dir != null:
 		$Position2D/Sprite.frame = facing_dir * 4
+	#emit_signal("done_movement")
+
+func move_player_event(dir, steps): # Force moves player to direction and steps
+	direction = dir
+	for i in range(steps):
+		# Set player new cord
+		var cord = Vector2(self.position.x, self.position.y)
+		match direction:
+			DIRECTION.DOWN:
+				cord += Vector2(0,32)
+			DIRECTION.LEFT:
+				cord += Vector2(-32,0)
+			DIRECTION.RIGHT:
+				cord += Vector2(32,0)
+			DIRECTION.UP:
+				cord += Vector2(0,-32)
+		Global.TrainerX = cord.x
+		Global.TrainerY = cord.y
+		# Move
+		move(true)
+	emit_signal("done_movement")
