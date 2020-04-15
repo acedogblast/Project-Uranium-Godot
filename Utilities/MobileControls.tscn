@@ -46,7 +46,6 @@ script = ExtResource( 2 )
 layer = 2
 
 [node name="D_Pad" type="Node2D" parent="CanvasLayer"]
-editor/display_folded = true
 modulate = Color( 1, 1, 1, 0.588235 )
 z_index = 2
 
@@ -55,29 +54,31 @@ margin_right = 1500.0
 margin_bottom = 1500.0
 texture = ExtResource( 3 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Up" type="TouchScreenButton" parent="CanvasLayer/D_Pad"]
 position = Vector2( 750, 250 )
 shape = SubResource( 1 )
-shape_visible = false
+shape_centered = false
 
 [node name="Down" type="TouchScreenButton" parent="CanvasLayer/D_Pad"]
 position = Vector2( 750, 1250 )
 shape = SubResource( 1 )
-shape_visible = false
+shape_centered = false
 
 [node name="Left" type="TouchScreenButton" parent="CanvasLayer/D_Pad"]
 position = Vector2( 250, 750 )
 shape = SubResource( 1 )
-shape_visible = false
+shape_centered = false
 
 [node name="Right" type="TouchScreenButton" parent="CanvasLayer/D_Pad"]
 position = Vector2( 1250, 750 )
 shape = SubResource( 1 )
-shape_visible = false
+shape_centered = false
 
 [node name="Buttons" type="Node2D" parent="CanvasLayer"]
-editor/display_folded = true
 modulate = Color( 1, 1, 1, 0.588235 )
 z_index = 2
 
@@ -92,7 +93,6 @@ expand = true
 position = Vector2( 250, 250 )
 shape = SubResource( 2 )
 shape_centered = false
-shape_visible = false
 
 [node name="X" type="TextureRect" parent="CanvasLayer/Buttons"]
 margin_left = 500.0
@@ -106,7 +106,6 @@ expand = true
 position = Vector2( 250, 250 )
 shape = SubResource( 3 )
 shape_centered = false
-shape_visible = false
 
 [node name="C" type="TextureRect" parent="CanvasLayer/Buttons"]
 margin_top = 500.0
@@ -119,7 +118,6 @@ expand = true
 position = Vector2( 250, 250 )
 shape = SubResource( 4 )
 shape_centered = false
-shape_visible = false
 
 [node name="S" type="TextureRect" parent="CanvasLayer/Buttons"]
 margin_left = 1000.0
@@ -133,7 +131,6 @@ expand = true
 position = Vector2( 250, 250 )
 shape = SubResource( 5 )
 shape_centered = false
-shape_visible = false
 [connection signal="pressed" from="CanvasLayer/D_Pad/Up" to="." method="_on_Up_pressed"]
 [connection signal="released" from="CanvasLayer/D_Pad/Up" to="." method="_on_Up_released"]
 [connection signal="pressed" from="CanvasLayer/D_Pad/Down" to="." method="_on_Down_pressed"]
