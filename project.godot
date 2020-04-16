@@ -177,6 +177,7 @@ gdscript/warnings/unused_variable=false
 
 window/size/width=512
 window/size/height=384
+window/handheld/orientation="sensor_landscape"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 window/stretch/shrink="1"
