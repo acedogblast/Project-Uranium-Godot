@@ -1,10 +1,12 @@
+tool
 extends Node2D
 
 export var random_movement = false
 export var trainer = false
 export var texture: StreamTexture = null
 
-export var facing = ""
+enum directions {down, up, left, right}
+export(directions) var facing setget set_idle_frame
 
 
 var move_direction = Vector2()
@@ -16,7 +18,6 @@ signal step
 
 func _ready():
 	$Position2D/Sprite.texture = texture
-	set_idle_frame(facing)
 
 
 func _process(delta):
@@ -101,15 +102,16 @@ func animate(_dir):
 			"Right":
 				$AnimationPlayer.play("Right2")
 
-func set_idle_frame(_dir):
-	match _dir:
-		"Down":
+func set_idle_frame(idle):
+	facing = idle
+	match facing:
+		0:
 			$Position2D/Sprite.frame = 0
-		"Up":
+		1:
 			$Position2D/Sprite.frame = 12
-		"Left":
+		2:
 			$Position2D/Sprite.frame = 4
-		"Right":
+		3:
 			$Position2D/Sprite.frame = 8
 		_:
 			$Position2D/Sprite.frame = 0
