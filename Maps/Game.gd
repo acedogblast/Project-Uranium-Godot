@@ -16,6 +16,7 @@ var isInteracting = false
 var canInteract = true # Mabye redundant?
 var isTransitioning = false
 
+
 signal event_dialogue_end
 
 onready var transition = $CanvasLayer/Transition
@@ -23,13 +24,16 @@ onready var transition = $CanvasLayer/Transition
 func _ready():
 	Global.game = self
 	$CanvasLayer/Menu.visible = false
-	
-	add_to_group("save")
-	SaveSystem.load_game(1)
-	
+
 	player = Player.instance()
 	add_child(player)
-	change_scene(start_scene)
+	add_to_group("save")
+
+	if Global.load_game_from_id != null:
+		SaveSystem.load_game(Global.load_game_from_id)
+		#change_scene(current_scene)
+	else: # For new Game
+		change_scene(start_scene)
 	
 	player.position = Vector2(Global.TrainerX, Global.TrainerY)
 	player.z_index = 8
@@ -37,8 +41,10 @@ func _ready():
 
 	#DialogueSystem.connect("dialogue_start", self, "set_process", [false])
 	DialogueSystem.connect("dialogue_end", self, "dialog_end")
+	Global.load_game_from_id = null
+	player.canMove = true
 
-func _process(delta):
+func _process(_delta):
 	#change_menu_text()
 	if Input.is_key_pressed(KEY_F1):
 		SaveSystem.save_game(1)
@@ -48,8 +54,8 @@ func _process(delta):
 		$CanvasLayer/Menu.open = !$CanvasLayer/Menu.open
 		yield(get_tree().create_timer(0.4), "timeout")
 	#if get_child(2).type == "Outside" && loaded == false:
-	if current_scene.type == "Outside" && loaded == false:
-		load_seemless()
+	if current_scene != null && current_scene.type == "Outside" && loaded == false:
+		call_deferred("load_seemless")
 
 func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
@@ -58,10 +64,15 @@ func change_menu_text():
 func play_anim(fade):
 	$CanvasLayer/Transition/AnimationPlayer.play(fade)
 
-func change_scene(scene):
-	#if current_scene:
-	remove_child(current_scene)
-	current_scene = scene.instance()
+func change_scene(scene): # scene must be loaded!
+	if current_scene != null:
+		remove_child(current_scene)
+	if current_scene is String:
+		var new_scene = load(scene)
+		current_scene = new_scene.instance()
+	else:
+		current_scene = scene.instance()
+
 	add_child(current_scene)
 	for node in get_tree().get_nodes_in_group("transition"):
 		node.initialize(self)
@@ -115,7 +126,7 @@ func door_transition(path_scene, new_position):
 	if !isTransitioning:
 		isTransitioning = true
 		player.change_input()
-		player.canMove = false
+		#player.canMove = false
 		yield(transition.fade_to_color(), "completed")
 		
 		var scene = load(path_scene)
@@ -136,14 +147,15 @@ func door_transition(path_scene, new_position):
 		yield(transition.fade_from_color(), "completed")
 		#player.movePrevious()
 		isTransitioning = false
-		player.canMove = true
+		#player.canMove = true
 		player.change_input()
 
 func load_seemless():
 	loaded = true
 	
 	#next_scene1 = get_child(2).next_scene1.instance()
-	next_scene1 = current_scene.next_scene1.instance()
+	next_scene1 = load(current_scene.next_scene1)
+	next_scene1 = next_scene1.instance()
 	next_scene1.position = Vector2(2272,26*32)
 	add_child(next_scene1)
 
@@ -154,16 +166,18 @@ func interaction(collider, direction): # Starts the dialogue instead of the scen
 			isInteracting = true
 			#canInteract = false # Maybe redundant?
 			player.change_input()
-			player.canMove = false
+			#player.canMove = false
 			play_dialogue(interaction_title)
+			yield(self, "event_dialogue_end")
+			player.change_input()
 		else:
 			print(collider)
 	
 func dialog_end():
 	yield(get_tree().create_timer(0.1), "timeout")
 	isInteracting = false
-	player.change_input()
-	player.canMove = true
+	#player.change_input()
+	#player.canMove = true
 	emit_signal("event_dialogue_end")
 func check_node(pos):
 	for node in get_tree().get_nodes_in_group("interact"):
@@ -176,29 +190,29 @@ func transition_visibility():
 	$CanvasLayer/Transition.visible = !$CanvasLayer/Transition.visible
 
 func _exit_tree():
-	DialogueSystem.disconnect("dialogue_start", self, "set_process")
-	DialogueSystem.disconnect("dialogue_end", self, "set_process")
-	save_state()
+	#DialogueSystem.disconnect("dialogue_start", self, "set_process")
+	#DialogueSystem.disconnect("dialogue_end", self, "set_process")
+	#save_state()
+	pass
 
 func save_state():
 	var state = {
 		"current_scene": current_scene.filename,
-		"player_position": player.position
+		"player_position": player.position,
+		"player_direction": player.direction
 	}
 	SaveSystem.set_state(filename, state)
 
-func load_state():
+func load_state(): # Automatically called when loading a save file
 	if SaveSystem.has_state(filename):
 		var state = SaveSystem.get_state(filename)
-		start_scene = load(state["current_scene"])
+		change_scene(load(state["current_scene"]))
 		var temp_position = state["player_position"]
+		player.direction = state["player_direction"]
 		Global.TrainerX = temp_position.x
 		Global.TrainerY = temp_position.y
 	# else:
 	# it uses the default values
-
-func get_game():
-	return self
 
 func play_dialogue(title): # Plays a dialogue without freezing player
 	DialogueSystem.set_point_to(Vector2(0,0))

@@ -2,10 +2,16 @@ extends Node
 
 const SAVE_STATE = preload('res://Utilities/Save/State.gd')
 
-var SAVE_FOLDER = "res://Utilities/Save"
+var SAVE_FOLDER = "res://Utilities/Save" # For Release Need to change to "user://"
 var SAVE_NAME_TEMPLATE = "save_%03d.tres"
 
 var save_state : SAVE_STATE
+
+# save_id are to start at 1 to n
+# This is to know how many save files there are.
+
+func _ready():
+	save_state = State.new()
 
 func has_state(var key):
 	return save_state.has_key(key)
@@ -45,3 +51,12 @@ func save_file(id):
 	var error = ResourceSaver.save(save_path, save_state)
 	if error != OK:
 		print('There was an issue writing the save %s to %s' % [id, save_path])
+
+func get_number_of_saves():
+	var directory : Directory = Directory.new()
+	if not directory.dir_exists(SAVE_FOLDER):
+		return 0
+	var num = 0
+	while directory.file_exists(SAVE_FOLDER.plus_file(SAVE_NAME_TEMPLATE % (num + 1))):
+		num += 1
+	return num
