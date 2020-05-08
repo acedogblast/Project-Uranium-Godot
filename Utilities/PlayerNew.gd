@@ -26,6 +26,8 @@ var movement_speed
 var state
 
 #signal step
+signal step
+
 signal done_movement
 
 enum STATE {
@@ -179,8 +181,14 @@ func move(force_move : bool):
 	$Tween.start()
 
 	# Wait Till animation finished
-	yield($AnimationPlayer, "animation_finished")
-	
+	#yield($AnimationPlayer, "animation_finished")
+	yield($Tween, "tween_all_completed") # Edits due to trying to fix instant event walk!
+	#if movement_speed == MOVEMENT_SPEED.FAST:
+	#	yield(get_tree().create_timer(0.2), "timeout")
+	#else:
+	#	yield(get_tree().create_timer(0.3), "timeout")
+
+
 	if foot == 0:
 		foot = 1
 	else:
@@ -189,6 +197,8 @@ func move(force_move : bool):
 	state = STATE.IDLE
 	set_idle_frame()
 	set_process(true)
+	# Tried to use new 'step' step signal
+	emit_signal("step")
 
 #Loads the texture of the sprites you picked for your character
 func load_texture():
@@ -280,8 +290,8 @@ func move_player_event(dir, steps): # Force moves player to direction and steps
 				cord += Vector2(32,0)
 			DIRECTION.UP:
 				cord += Vector2(0,-32)
-		Global.TrainerX = cord.x
-		Global.TrainerY = cord.y
 		# Move
 		move(true)
+		yield(self, "step") # This stops the instant event walk in the lab scene and works normally in event before but now make the player studder!
+		#print("step")
 	emit_signal("done_movement")

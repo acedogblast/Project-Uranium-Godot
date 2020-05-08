@@ -8,7 +8,7 @@ func initialize(_game):
 	game = _game
 
 func _on_Door_area_shape_entered(area_id, area, area_shape, self_shape):
-	call_deferred("transision")
+		call_deferred("transision")
 func transision():
 	$CollisionShape2D.disabled = true
 	print(scene)
