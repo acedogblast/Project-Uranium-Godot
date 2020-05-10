@@ -1,15 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Maps/MokiTown/Moki Town.gd" type="Script" id=1]
 [ext_resource path="res://TileMapsSource/MokiTown_Outside.tres" type="TileSet" id=2]
 [ext_resource path="res://TileMapsSource/Sand_path.tres" type="TileSet" id=3]
 [ext_resource path="res://TileMapsSource/PU-Pond.tres" type="TileSet" id=4]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Graphics/Characters/Rivaltheo.PNG" type="Texture" id=7]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 36 )
+[ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=6]
 
 [node name="Moki Town" type="Node2D"]
 script = ExtResource( 1 )
@@ -79,24 +75,17 @@ scale = Vector2( 0.5, 0.5 )
 scene = "res://Maps/MokiTown/HeroHome.tscn"
 destination = Vector2( 1120, 304 )
 
-[node name="Event1" type="Area2D" parent="TileMap3"]
-position = Vector2( 408, 244 )
-collision_layer = 2
-collision_mask = 2
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap3/Event1"]
-shape = SubResource( 1 )
-
 [node name="NPC_Layer" type="Node2D" parent="TileMap3"]
 scale = Vector2( 0.5, 0.5 )
 
-[node name="NPC" parent="TileMap3/NPC_Layer" instance=ExtResource( 6 )]
-visible = false
-position = Vector2( 1104, 496 )
-texture = ExtResource( 7 )
+[node name="Event1" parent="TileMap3" instance=ExtResource( 6 )]
+position = Vector2( 408, 244 )
+size = Vector2( 8, 36 )
+
+[node name="Door2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 528, 364 )
+scene = "res://Maps/MokiTown/BamboLab.tscn"
+destination = Vector2( 240, 560 )
 
 [node name="Trees" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )

@@ -19,7 +19,7 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
 	return null
 	
-func event1(body):
+func event1(_body):
 	var event_name = "EVENT_MOKI_TOWN_THEO_1"
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)
@@ -35,7 +35,7 @@ func event1(body):
 		Global.game.get_node("Effect_music").stream = sound
 		Global.game.get_node("Effect_music").play()
 		# Move player to center if not already
-		var center = Vector2(816,496) # Top: 464 and 432 Bottom: 528 and 560
+		#var center = Vector2(816,496) # Top: 464 and 432 Bottom: 528 and 560
 		var dir
 		var steps
 		match Global.game.player.position.y:
