@@ -2,9 +2,9 @@ tool
 extends Node2D
 
 var current
-var input = false
 var open = false
-var menu = false
+
+var menu_stage = 0 # 0 = closed, 1 = first memu, 2 = second, ...
 
 var offscreen_left = 556
 var offscreen_right = -44
@@ -12,6 +12,7 @@ var init_pos
 var saving = false
 
 var move_offset
+var menu_toggle = false
 
 enum ORDER {
 	PARTY,
@@ -25,7 +26,6 @@ enum ORDER {
 }
 
 func _ready():
-	
 	if(Engine.editor_hint):
 		# Special things when this is on editor mode
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
@@ -39,76 +39,76 @@ func _ready():
 	#open = true
 	#menu = false
 	
-	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right]" + Global.TrainerName + "[/right]"
+	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
 
 	# Testing init. To be removed.
 	#open = true
 
 func _input(event):
-	if open and !menu:
-		if event.is_action_pressed("ui_left") and input == false and !saving:
-			input = true
+	if event.is_action_pressed("x"):
+		match menu_stage:
+			0:
+				Global.game.player.change_input()
+				self.visible = true
+				menu_stage = 1
+				print("Toggling")
+				$AnimationPlayer.play("Open Menu")
+			1:
+				Global.game.player.change_input()
+				menu_stage = 0
+				print("Untoggling")
+				$AnimationPlayer.current_animation = "Open Menu"
+				$AnimationPlayer.seek(0, true)
+				$AnimationPlayer.stop(true)
+				self.visible = false
+				pass
+
+	if menu_stage == 1:
+		
+		if event.is_action_pressed("ui_left") and !saving:
 			move_sprites("Left")
-			#yield(get_tree().create_timer(0.6), "timeout")
-			input = false
-		elif event.is_action_pressed("ui_right") and input == false and !saving:
-			input = true
+		if event.is_action_pressed("ui_right") and !saving:
 			move_sprites("Right")
-			#yield(get_tree().create_timer(0.6), "timeout")
-			input = false
-		elif event.is_action_pressed("z") and input == false and !saving:
-			input = true
+		if event.is_action_pressed("z") and !saving:
 			Global.sprint = !Global.sprint
 			if $Run/Sprite.frame == 0:
 				$Run/Sprite.frame = 1
 			else:
 				$Run/Sprite.frame = 0
-			yield(get_tree().create_timer(0.3), "timeout")
-			input = false
-		elif event.is_action_pressed("ui_accept"):
-			menu = true
-		
-	elif menu:
-		select()
-		
-		pass
+		if event.is_action_pressed("ui_accept"):
+			select()
+			return null # This breaks out of the current method. Needed after select()
+	
+	if menu_stage == 2:
+		match current:
+			ORDER.SAVE:
+				if event.is_action_pressed("ui_down"):
+					if $Yes_no/Box/Cursor.position.y == 32:
+						$Yes_no/Box/Cursor.position.y = 64
+				elif event.is_action_pressed("ui_up"):
+					if $Yes_no/Box/Cursor.position.y == 64:
+						$Yes_no/Box/Cursor.position.y -= 32
+				if event.is_action_pressed("ui_accept"):
+					if $Yes_no/Box/Cursor.position.y == 32:
+						print("Saved")
+						SaveSystem.save_game(1)
+						# Play save sound effect
+						$Sounds/Save.play()
+
+					else:
+						$Yes_no/Box/Cursor.position.y = 32
+					$Save_Menu.visible = false
+					$Yes_no.visible = false
+					menu_stage = 1
 
 func select():
-	if current == ORDER.SAVE:
-		if !saving:
-			yield(get_tree().create_timer(0.3), "timeout")
-		saving = true
+	if current == ORDER.SAVE && menu_stage == 1:
+		menu_stage = 2
+		setup_save_boxes()
 		$Save_Menu.visible = true
 		$Yes_no.visible = true
+		DialogueSystem.start_dialog("UI_MENU_SAVE_PROMPT")
 		
-		if Input.is_action_pressed("ui_down") and saving:
-			if $Yes_no/Box/Cursor.position.y == 32:
-				$Yes_no/Box/Cursor.position.y = 64
-				yield(get_tree().create_timer(0.3), "timeout")
-			else:
-				pass
-		elif Input.is_action_pressed("ui_up") and saving:
-			if $Yes_no/Box/Cursor.position.y == 64:
-				$Yes_no/Box/Cursor.position.y -= 32
-				yield(get_tree().create_timer(0.3), "timeout")
-			else:
-				pass
-		
-		if Input.is_action_pressed("interact"):
-			if $Yes_no/Box/Cursor.position.y == 32:
-				print("Saved")
-				yield(get_tree().create_timer(0.2), "timeout")
-				SaveSystem.save_game(1)
-			else:
-				$Yes_no.visible = false
-				$Save_Menu.visible = false
-				saving = false
-				menu = false
-				yield(get_tree().create_timer(0.3), "timeout")
-				$Yes_no/Box/Cursor.position.y = 32
-	else:
-		menu = false
-		pass
 
 func move_sprites(dir):
 	if dir == "Left":
@@ -215,7 +215,6 @@ func slide(dir):
 	
 
 func grey_frame():
-	
 	$"Options/PARTY/Pokémon".frame = 0
 	$"Options/POKEPOD/Poképod".frame = 0
 	$Options/BAG/Bag.frame = 0
@@ -224,3 +223,9 @@ func grey_frame():
 	$Options/POKEDEX/Pokedex.frame = 0
 	$Options/SAVE/Save.frame = 0
 	$Options/EXIT/Exit.frame = 0
+
+func setup_save_boxes():
+	$Save_Menu/Info/Node2D/Location.bbcode_text = "[center][color=#209808]" + Global.location + "[/color][/center]"
+	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
+	$Save_Menu/Info/Time/Count.bbcode_text = "[right][color=#0070f8]" + str(Global.time) + "[/color][/right]"
+	$Save_Menu/Info/Badges/Count.bbcode_text = "[right][color=#0070f8]" + str(Global.badges) + "[/color][/right]"

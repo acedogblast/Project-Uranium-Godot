@@ -1,11 +1,12 @@
 extends Node
-var TrainerName = "TrainerName"
+var TrainerName : String = "TrainerName"
 var TrainerGender = 0 # 0 is boy, 1 is neutral, 2 is girl
 var TrainerX = 192
 var TrainerY = 144
 var badges = 0
-var time
+var time = "00:00"
 var pokedex_count = 0
+var location : String = "location"
 
 var printFPS = false
 #var size

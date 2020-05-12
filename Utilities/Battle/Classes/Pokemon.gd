@@ -136,7 +136,7 @@ func update_stats(data):
 	speed = int( int ((2 * data.speed + iv_speed + ev_speed) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SPEED))
 	hp = int ( (2 * data.hp + iv_hp + ev_hp) * level / 100 + level + 10 )
 
-func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level 1 version of the pokemon by its ID and sets. Its IV values will be generated here.
+func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of the pokemon by its ID and sets. Its IV values will be generated here.
 	var data = registry.new().get_pokemon_class(id)
 	ID = id
 	name = data.name

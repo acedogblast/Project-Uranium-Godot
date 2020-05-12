@@ -212,27 +212,54 @@ msgstr "Okay, I finished my analysis!"
 msgid "EVENT_MOKI_LAB_FIRST_POK_32"
 msgstr "\\PN..."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_33"
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Raptorch"
 msgstr ""
 "You seem to be a trainer who won't\n"
 "hesitate to go for what you want."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_34"
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Raptorch"
 msgstr ""
 "You prefer to overwhelm your opponents\n"
 "with sheer force and firepower."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_35"
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Raptorch"
 msgstr ""
 "The saying \"the best defense is a good offense\" is probably your mantra."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_36"
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Raptorch"
 msgstr ""
 "You have a burning spirit\n"
 "within you that never ceases!"
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_37"
+msgid "EVENT_MOKI_LAB_FIRST_POK_37_Raptorch"
 msgstr "For an Offensive trainer like you..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Orchynx"
+msgstr "You seem to be a trainer who plays it safe."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Orchynx"
+msgstr "Patience and endurance are your biggest assets."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Orchynx"
+msgstr "You know that the best things in life come to those who wait."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Orchynx"
+msgstr "For a Defensive trainer like you..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Electux"
+msgstr "You seem to be a trainer what is capable of many different strategies."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Electux"
+msgstr "You prefer to adapt to overcome challenges in your path."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Electux"
+msgstr "You philosoly is probably to just \"go with the flow\"."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Electux"
+msgstr "Your calm, rational approach will come to aid you in the future."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_37_Electux"
+msgstr "For a Balanced trainer like you..."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_15"
 msgstr "Raptorch is the best pick!"
@@ -249,6 +276,18 @@ msgstr "Go ahead and take it, \\PN."
 msgid "EVENT_MOKI_LAB_FIRST_POK_39"
 msgstr "HEY! I'M TIRED OF WAITING!"
 
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_RAPTORCH"
+msgstr "\\PN obtained Raptorch!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ORCHYNX"
+msgstr "\\PN obtained Orchynx!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ELETUX"
+msgstr "\\PN obtained Eletux!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_PLAYER_RUN_AWAY"
+msgstr "Hey, where are you going?"
+
 msgid "EVENT_MOKI_LAB_FIRST_POK_40"
 msgstr ""
 "\\PN got their starter already!\n"
@@ -263,7 +302,7 @@ msgstr "Hmm\\wt[8].\\wt[8].\\wt[8]."
 msgid "EVENT_MOKI_LAB_FIRST_POK_43"
 msgstr "Theo.."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_44"
+msgid "EVENT_MOKI_LAB_FIRST_POK_44_Raptorch"
 msgstr ""
 "Well, you certainly know\n"
 "what you want out of life."
@@ -289,17 +328,23 @@ msgstr ""
 msgid "EVENT_MOKI_LAB_FIRST_POK_49"
 msgstr "Regardless... For a Trainer like you..."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_50"
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Orchynx"
+msgstr "Theo obtained Orchynx!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Electux"
+msgstr "Theo obtained Electux!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_51"
 msgstr ""
 "Yes!!\n"
 "My first Pokémon!"
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_51"
+msgid "EVENT_MOKI_LAB_FIRST_POK_52"
 msgstr ""
 "\\PN... you have a Pokémon.\n"
 "And now I have a Pokémon, too.\n"
 "You know what this means, right?\n"
 "We hafta battle!"
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_52"
+msgid "EVENT_MOKI_LAB_FIRST_POK_53"
 msgstr "Oh, please, not in the Lab..."

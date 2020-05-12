@@ -31,6 +31,7 @@ size = 26
 font_data = ExtResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer"]
+layer = 10
 script = ExtResource( 1 )
 
 [node name="Box" type="NinePatchRect" parent="."]

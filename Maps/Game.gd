@@ -46,6 +46,7 @@ func _ready():
 	DialogueSystem.connect("dialogue_end", self, "dialog_end")
 	Global.load_game_from_id = null
 	player.canMove = true
+	Global.location = current_scene.place_name
 
 var menu_toggle = false
 
@@ -55,20 +56,20 @@ func _process(_delta):
 	if Input.is_key_pressed(KEY_F1):
 		SaveSystem.save_game(1)
 	#Opens the menu if x is pressed, calls the change_input method from PlayerNew.gd, and makes the menu visible
-	if Input.is_action_just_pressed("x"):
-		player.change_input()
-		#$CanvasLayer/Menu.visible = !$CanvasLayer/Menu.visible
-		menu_toggle = !menu_toggle
-		if(menu_toggle):
-			print("Toggling")
-			$CanvasLayer/Menu/AnimationPlayer.play("Open Menu")
-		else:
-			print("Untoggling")
-			$CanvasLayer/Menu/AnimationPlayer.current_animation = "Open Menu"
-			$CanvasLayer/Menu/AnimationPlayer.seek(0, true)
-			$CanvasLayer/Menu/AnimationPlayer.stop(true)
-		$CanvasLayer/Menu.open = !$CanvasLayer/Menu.open
-		yield(get_tree().create_timer(0.4), "timeout")
+	# if Input.is_action_just_pressed("x"):
+	# 	player.change_input()
+	# 	#$CanvasLayer/Menu.visible = !$CanvasLayer/Menu.visible
+	# 	menu_toggle = !menu_toggle
+	# 	if(menu_toggle):
+	# 		print("Toggling")
+	# 		$CanvasLayer/Menu/AnimationPlayer.play("Open Menu")
+	# 	else:
+	# 		print("Untoggling")
+	# 		$CanvasLayer/Menu/AnimationPlayer.current_animation = "Open Menu"
+	# 		$CanvasLayer/Menu/AnimationPlayer.seek(0, true)
+	# 		$CanvasLayer/Menu/AnimationPlayer.stop(true)
+	# 	$CanvasLayer/Menu.open = !$CanvasLayer/Menu.open
+	# 	yield(get_tree().create_timer(0.4), "timeout")
 	#if get_child(2).type == "Outside" && loaded == false:
 	#If the current scene is not null, is outside, and is not loaded, then calls the method load_seemless on idle time
 	if current_scene != null && current_scene.type == "Outside" && loaded == false:
@@ -151,6 +152,7 @@ func room_transition(dest, dir):
 	#Calls the change_input method from PlayerNew.gd, and calls the transition_visibility method
 	player.change_input()
 	transition_visibility()
+	Global.location = current_scene.place_name
 
 #If the player is not transitioning, then set isTransitioning to true, and call the change_input method, and wait until the transition fade_to_color animation has finished
 func door_transition(path_scene, new_position):
@@ -182,6 +184,7 @@ func door_transition(path_scene, new_position):
 		isTransitioning = false
 		#player.canMove = true
 		player.change_input()
+		Global.location = current_scene.place_name
 
 #Loads the next scene and adds it to the scene tree
 func load_seemless():

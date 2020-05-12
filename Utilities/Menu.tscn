@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Utilities/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Pictures/MENU/menubg.png" type="Texture" id=2]
@@ -19,6 +19,8 @@
 [ext_resource path="res://Utilities/UI/Bounce.tres" type="Animation" id=17]
 [ext_resource path="res://Audio/SE/SE_Select1.wav" type="AudioStream" id=18]
 [ext_resource path="res://Audio/SE/SE_Zoom2.wav" type="AudioStream" id=19]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=20]
+[ext_resource path="res://Audio/SE/save.wav" type="AudioStream" id=21]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -28,29 +30,6 @@ font_data = ExtResource( 5 )
 [sub_resource type="DynamicFont" id=2]
 size = 27
 extra_spacing_top = 8
-font_data = ExtResource( 5 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 23
-extra_spacing_top = 5
-font_data = ExtResource( 5 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 25
-extra_spacing_top = 5
-font_data = ExtResource( 5 )
-
-[sub_resource type="DynamicFont" id=5]
-size = 25
-extra_spacing_top = 5
-font_data = ExtResource( 5 )
-
-[sub_resource type="DynamicFont" id=6]
-size = 26
-font_data = ExtResource( 5 )
-
-[sub_resource type="DynamicFont" id=7]
-size = 26
 font_data = ExtResource( 5 )
 
 [sub_resource type="Animation" id=8]
@@ -326,8 +305,8 @@ vframes = 2
 visible = false
 
 [node name="Info" type="NinePatchRect" parent="Save_Menu"]
-margin_right = 256.0
-margin_bottom = 160.0
+margin_right = 228.0
+margin_bottom = 152.0
 texture = ExtResource( 15 )
 patch_margin_left = 6
 patch_margin_top = 6
@@ -335,6 +314,9 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Player_Name" type="Node2D" parent="Save_Menu/Info"]
 
@@ -343,21 +325,27 @@ margin_left = 12.0
 margin_top = 40.0
 margin_right = 76.0
 margin_bottom = 72.0
-custom_fonts/normal_font = SubResource( 3 )
+custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
 bbcode_text = "Player"
 text = "Player"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Name" type="RichTextLabel" parent="Save_Menu/Info/Player_Name"]
-margin_left = 96.0
+margin_left = 77.0
 margin_top = 40.0
-margin_right = 237.0
+margin_right = 217.0
 margin_bottom = 72.0
-custom_fonts/normal_font = SubResource( 3 )
+custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
 bbcode_text = "Player"
 text = "Player"
 scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Time" type="Node2D" parent="Save_Menu/Info"]
 
@@ -366,21 +354,24 @@ margin_left = 11.0
 margin_top = 72.0
 margin_right = 75.0
 margin_bottom = 104.0
-custom_fonts/normal_font = SubResource( 4 )
+custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
 bbcode_text = "Time"
 text = "Time"
 
 [node name="Count" type="RichTextLabel" parent="Save_Menu/Info/Time"]
-margin_left = 128.0
+margin_left = 98.0
 margin_top = 72.0
-margin_right = 237.0
+margin_right = 207.0
 margin_bottom = 104.0
-custom_fonts/normal_font = SubResource( 4 )
+custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
 bbcode_text = "Time"
 text = "Time"
 scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Badges" type="Node2D" parent="Save_Menu/Info"]
 
@@ -389,21 +380,36 @@ margin_left = 11.0
 margin_top = 104.0
 margin_right = 107.0
 margin_bottom = 137.0
-custom_fonts/normal_font = SubResource( 5 )
+custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
 bbcode_text = "Badges"
 text = "Badges"
 
 [node name="Count" type="RichTextLabel" parent="Save_Menu/Info/Badges"]
-margin_left = 224.0
+margin_left = 98.0
 margin_top = 104.0
-margin_right = 237.0
+margin_right = 208.0
 margin_bottom = 137.0
-custom_fonts/normal_font = SubResource( 5 )
+custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
 bbcode_text = "0"
 text = "0"
 scroll_active = false
+
+[node name="Node2D" type="Node2D" parent="Save_Menu/Info"]
+
+[node name="Location" type="RichTextLabel" parent="Save_Menu/Info/Node2D"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 222.0
+margin_bottom = 38.0
+custom_fonts/normal_font = ExtResource( 20 )
+bbcode_enabled = true
+bbcode_text = "[center]location[/center]"
+text = "location"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Yes_no" type="Node2D" parent="."]
 visible = false
@@ -424,18 +430,21 @@ margin_left = 40.0
 margin_top = 23.0
 margin_right = 84.0
 margin_bottom = 44.0
-custom_fonts/normal_font = SubResource( 6 )
+custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
 bbcode_text = "Yes"
 text = "Yes"
 scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="No" type="RichTextLabel" parent="Yes_no/Box"]
 margin_left = 40.0
 margin_top = 55.0
 margin_right = 84.0
 margin_bottom = 76.0
-custom_fonts/normal_font = SubResource( 7 )
+custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
 bbcode_text = "No"
 text = "No"
@@ -457,3 +466,6 @@ volume_db = -6.0
 [node name="OpenMenu" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource( 19 )
 volume_db = -6.0
+
+[node name="Save" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 21 )

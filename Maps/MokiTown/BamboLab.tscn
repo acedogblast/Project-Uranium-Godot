@@ -30963,15 +30963,21 @@ position = Vector2( 240, 64 )
 texture = ExtResource( 6 )
 vframes = 4
 hframes = 4
+frame = 1
 
 [node name="NPC_Layer" type="Node2D" parent="."]
 
 [node name="Assistant" parent="NPC_Layer" instance=ExtResource( 4 )]
 position = Vector2( 368, 400 )
+random_movement = false
+trainer = false
 texture = ExtResource( 5 )
+facing = "Up"
 
 [node name="Bambo" parent="NPC_Layer" instance=ExtResource( 4 )]
 position = Vector2( 240, 144 )
+random_movement = false
+trainer = false
 texture = ExtResource( 7 )
 facing = "Down"
 
@@ -30979,6 +30985,10 @@ facing = "Down"
 
 [node name="event1" parent="Event_Layer" instance=ExtResource( 8 )]
 position = Vector2( 240, 496 )
+monitoring = false
+monitorable = false
+event_name = ""
+size = Vector2( 16, 16 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 240, 560 )

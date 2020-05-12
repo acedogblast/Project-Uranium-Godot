@@ -61,3 +61,6 @@ msgstr "Check for Updates"
 
 msgid "UI_SAVEMENU_OPTIONS"
 msgstr "Options"
+
+msgid "UI_MENU_SAVE_PROMPT"
+msgstr "Would you like to save the game?"
