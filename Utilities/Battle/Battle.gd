@@ -330,7 +330,7 @@ func battle_loop():
 					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.stream = load(battler1.get_cry())
 					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.play()
 					yield($CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer, "finished")
-					$CanvasLayer/BattleGrounds/BattleGrounds/PlayerBase/Battler/AnimationPlayer.play("FaintPlayer")
+					$CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer.play("FaintPlayer")
 
 					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/faint.wav")
 					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.play()
