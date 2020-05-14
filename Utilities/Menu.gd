@@ -2,7 +2,6 @@ tool
 extends Node2D
 
 var current
-var open = false
 
 var menu_stage = 0 # 0 = closed, 1 = first memu, 2 = second, ...
 
@@ -10,6 +9,7 @@ var offscreen_left = 556
 var offscreen_right = -44
 var init_pos
 var saving = false
+var locked = false
 
 var move_offset
 var menu_toggle = false
@@ -30,22 +30,14 @@ func _ready():
 		# Special things when this is on editor mode
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
 	
-	#$AnimationPlayer.play("Open Menu")
 	
 	current = ORDER.PARTY
 	init_pos = $Option_Text.rect_position
 	
-	# DEBUG
-	#open = true
-	#menu = false
-	
 	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
 
-	# Testing init. To be removed.
-	#open = true
-
 func _input(event):
-	if event.is_action_pressed("x"):
+	if event.is_action_pressed("x") && !locked:
 		match menu_stage:
 			0:
 				Global.game.player.change_input()

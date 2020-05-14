@@ -64,16 +64,16 @@ msgid "EVENT_MOKI_LAB_FIRST_POK_15"
 msgstr "Excellent!\nSo, without further ado..."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_16"
-msgstr "When you encounter a new\n kind of Pokémon in the wild,\nwhat is your first reaction?"
+msgstr "When you encounter a new kind of Pokémon in the wild,\nwhat is your first reaction?"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
-msgstr "\\c[2]Attack it right away!"
+msgstr "Attack it right away!"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_4"
-msgstr "\\c[3]Wait and see what it does."
+msgstr "Wait and see what it does."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_5"
-msgstr "\\c[1]Throw a Poké Ball at it!"
+msgstr "Throw a Poké Ball at it!"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_17"
 msgstr "Very good, both of you."
@@ -88,13 +88,13 @@ msgid "EVENT_MOKI_LAB_FIRST_POK_20"
 msgstr "Which of these TMs would you\nprefer to teach to your Pokémon?"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_6"
-msgstr "\\c[2]Hyper Beam"
+msgstr "Hyper Beam"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_7"
-msgstr "\\c[3]Protect"
+msgstr "Protect"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_8"
-msgstr "\\c[1]Hidden Power"
+msgstr "Hidden Power"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_21"
 msgstr "Hey, professor...\nWhat's a TM, anyway?"
@@ -106,13 +106,13 @@ msgid "EVENT_MOKI_LAB_FIRST_POK_23"
 msgstr "Which of the following Pokémon\nwould win in an all-out battle?"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_9"
-msgstr "\\c[2]Gyarados"
+msgstr "Gyarados"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_10"
-msgstr "\\c[3]Gliscor"
+msgstr "Gliscor"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_11"
-msgstr "\\c[1]Ampharos"
+msgstr "Ampharos"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_24"
 msgstr "Is it possible to fail this test?"
@@ -124,13 +124,13 @@ msgid "EVENT_MOKI_LAB_FIRST_POK_26"
 msgstr "What is your motivation for\nbecoming a Pokémon Trainer?"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_12"
-msgstr "\\c[2]Becoming the very best"
+msgstr "Becoming the very best"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_13"
-msgstr "\\c[3]Exploring the region"
+msgstr "Exploring the region"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_14"
-msgstr "\\c[1]Making new friends"
+msgstr "Making new friends"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_27"
 msgstr "No question about it!\nI'm gonna be a Pokémon Master!\nAn' nobody's gonna stand in my way!"

@@ -30969,15 +30969,10 @@ frame = 1
 
 [node name="Assistant" parent="NPC_Layer" instance=ExtResource( 4 )]
 position = Vector2( 368, 400 )
-random_movement = false
-trainer = false
 texture = ExtResource( 5 )
-facing = "Up"
 
 [node name="Bambo" parent="NPC_Layer" instance=ExtResource( 4 )]
 position = Vector2( 240, 144 )
-random_movement = false
-trainer = false
 texture = ExtResource( 7 )
 facing = "Down"
 

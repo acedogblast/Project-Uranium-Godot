@@ -1,8 +1,8 @@
 extends Node2D
 
 #Loads the player scene
-onready var Player = preload("res://Utilities/PlayerNew.tscn")
 onready var player = null
+var menu
 
 var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene = null
@@ -24,9 +24,10 @@ onready var transition = $CanvasLayer/Transition
 
 func _ready():
 	Global.game = self
+	menu = $CanvasLayer/Menu
 
 	#Makes player an instance of Player, makes it a child, and adds it to the group save
-	player = Player.instance()
+	player = load("res://Utilities/PlayerNew.tscn").instance()
 	add_child(player)
 	add_to_group("save")
 
@@ -55,23 +56,6 @@ func _process(_delta):
 	#Quick save
 	if Input.is_key_pressed(KEY_F1):
 		SaveSystem.save_game(1)
-	#Opens the menu if x is pressed, calls the change_input method from PlayerNew.gd, and makes the menu visible
-	# if Input.is_action_just_pressed("x"):
-	# 	player.change_input()
-	# 	#$CanvasLayer/Menu.visible = !$CanvasLayer/Menu.visible
-	# 	menu_toggle = !menu_toggle
-	# 	if(menu_toggle):
-	# 		print("Toggling")
-	# 		$CanvasLayer/Menu/AnimationPlayer.play("Open Menu")
-	# 	else:
-	# 		print("Untoggling")
-	# 		$CanvasLayer/Menu/AnimationPlayer.current_animation = "Open Menu"
-	# 		$CanvasLayer/Menu/AnimationPlayer.seek(0, true)
-	# 		$CanvasLayer/Menu/AnimationPlayer.stop(true)
-	# 	$CanvasLayer/Menu.open = !$CanvasLayer/Menu.open
-	# 	yield(get_tree().create_timer(0.4), "timeout")
-	#if get_child(2).type == "Outside" && loaded == false:
-	#If the current scene is not null, is outside, and is not loaded, then calls the method load_seemless on idle time
 	if current_scene != null && current_scene.type == "Outside" && loaded == false:
 		call_deferred("load_seemless")
 

@@ -1,7 +1,5 @@
-#!/usr/bin/env bash
-
-for file in Cutscenes Events NPC Objects UI
-do
-	echo "Updating $file..."
-	msgmerge --update --backup=none -N Generated/en/$file.po $file.pot
-done
+msginit --no-translator --input=Cutscenes.pot --locale=en --output=Generated/en/Cutscenes.po
+msginit --no-translator --input=Events.pot --locale=en --output=Generated/en/Events.po
+msginit --no-translator --input=NPC.pot --locale=en --output=Generated/en/NPC.po
+msginit --no-translator --input=Objects.pot --locale=en --output=Generated/en/Objects.po
+msginit --no-translator --input=UI.pot --locale=en --output=Generated/en/UI.po

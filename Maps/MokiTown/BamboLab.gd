@@ -4,6 +4,10 @@ var background_music = "res://Audio/BGM/PU-Radio_ Oak.ogg";
 var type = "Indoors"
 var place_name = "Bambo's Lab"
 var npc_layer
+var theo
+var ui = null
+
+signal finished
 
 func _ready():
 	$BlackBG.visible = true
@@ -19,7 +23,7 @@ func event1(_body): # First event to get pokemon
 		print("New Event: " + event_name)
 		Global.game.player.change_input()
 		# Spawn Theo
-		var theo = load("res://Utilities/NPC.tscn").instance()
+		theo = load("res://Utilities/NPC.tscn").instance()
 		theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
 		npc_layer.add_child(theo)
 		theo.position = Vector2(208, 208)
@@ -49,6 +53,10 @@ func event1(_body): # First event to get pokemon
 		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_6", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
+		# Theo Alert
+		theo.alert()
+		yield(theo, "alert_done")
+
 		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_7", theo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
@@ -70,9 +78,156 @@ func event1(_body): # First event to get pokemon
 		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_13", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
+		DialogueSystem.hold = true
 		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_14", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
-		yield(Global.game, "event_dialogue_end")
+		
+		yield(DialogueSystem, "finished_printing")
+		DialogueSystem.hold = false
+
+		# Add FirstPokeLayer UI
+		ui = load("res://Maps/MokiTown/FirstPokeLayer.tscn").instance()
+		self.add_child(ui)
+
+		# Show Yes/No box
+		ui.prompt_yes_no()
+		yield(ui, "selected")
+		var responce = ui.get_yes_no_responce()
+		#print(responce)
+		
+		if responce == true:
+			Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_15", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+			event1_test()
+			yield(self, "finished")
+		else:
+			# To be implemented
+			pass
+
 
 		Global.game.player.change_input()
 		Global.past_events.append(event_name)
+	pass
+func event1_test():
+	DialogueSystem.hold = true
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_16", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(DialogueSystem, "finished_printing")
+	DialogueSystem.hold = false
+	ui.prompt_test(ui.TEST.Q1)
+	yield(ui, "selected")
+	var responce1 : int = ui.get_test_responce() # 0: ATTACK, 1: DEFENSE, 2: BALLANCED
+
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_17", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_18", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_19", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	DialogueSystem.hold = true
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_20", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(DialogueSystem, "finished_printing")
+	DialogueSystem.hold = false
+	ui.prompt_test(ui.TEST.Q2)
+	yield(ui, "selected")
+	var responce2 : int  = ui.get_test_responce() # 0: ATTACK, 1: DEFENSE, 2: BALLANCED
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_21", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_22", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	DialogueSystem.hold = true
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_23", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(DialogueSystem, "finished_printing")
+	DialogueSystem.hold = false
+	ui.prompt_test(ui.TEST.Q3)
+	yield(ui, "selected")
+	var responce3 : int  = ui.get_test_responce() # 0: ATTACK, 1: DEFENSE, 2: BALLANCED
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_24", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_25", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	DialogueSystem.hold = true
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_26", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(DialogueSystem, "finished_printing")
+	DialogueSystem.hold = false
+	ui.prompt_test(ui.TEST.Q4)
+	yield(ui, "selected")
+	var responce4 : int  = ui.get_test_responce() # 0: ATTACK, 1: DEFENSE, 2: BALLANCED
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_27", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_28", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_29", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_30", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_31", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	# Score test
+	var attack = 0
+	var defense = 0
+	var ballanced = 0
+	match responce1:
+		0:
+			attack += 1
+		1:
+			defense += 1
+		2:
+			ballanced += 1
+	match responce2:
+		0:
+			attack += 1
+		1:
+			defense += 1
+		2:
+			ballanced += 1
+	match responce3:
+		0:
+			attack += 1
+		1:
+			defense += 1
+		2:
+			ballanced += 1
+	match responce4:
+		0:
+			attack += 1
+		1:
+			defense += 1
+		2:
+			ballanced += 1
+	
+	var result = -1 # 0 = Raptorch, 1 = Orchynx, 2 = Electux
+
+	if attack > defense && attack > ballanced:
+		result = 0
+	if defense > attack && defense > ballanced:
+		result = 1
+	if ballanced > attack && ballanced > defense:
+		result = 2
+
+	if result == -1: # Check for ties
+		if defense >= attack || defense >= ballanced:
+			result = 1
+		else:
+			result = 0
+	
+	print(result)
+	# Change to poke pick view
+
+
+	emit_signal("finished")
 	pass

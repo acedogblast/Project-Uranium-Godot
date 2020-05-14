@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Utilities/NPC.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/Characters/HGSS_027.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Animations/029-Emotion01.png" type="Texture" id=2]
+[ext_resource path="res://Audio/SE/SE_EM.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -127,6 +128,49 @@ tracks/0/keys = {
 "values": [ 14, 15 ]
 }
 
+[sub_resource type="Animation" id=10]
+resource_name = "Alert"
+length = 0.5
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -50 ), Vector2( 0, -80 ), Vector2( 0, -50 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.501961 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "audio"
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 3 )
+} ],
+"times": PoolRealArray( 0 )
+}
+
 [node name="NPC" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -136,9 +180,9 @@ script = ExtResource( 1 )
 position = Vector2( 0, -16 )
 
 [node name="Sprite" type="Sprite" parent="Position2D"]
-texture = ExtResource( 2 )
 vframes = 4
 hframes = 4
+frame = 12
 
 [node name="Area2D" type="StaticBody2D" parent="Position2D/Sprite"]
 
@@ -155,3 +199,16 @@ anims/Right = SubResource( 6 )
 anims/Right2 = SubResource( 7 )
 anims/Up = SubResource( 8 )
 anims/Up2 = SubResource( 9 )
+
+[node name="Alert" type="Sprite" parent="."]
+visible = false
+position = Vector2( 0, -50 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 74, 76, 32, 32 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Alert"]
+anims/Alert = SubResource( 10 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Alert"]
+stream = ExtResource( 3 )

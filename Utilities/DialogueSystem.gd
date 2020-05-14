@@ -21,6 +21,7 @@ signal dialogue_start
 signal dialogue_end
 signal dialogue_sequence_start
 signal dialogue_sequence_end
+signal finished_printing
 
 var text = []
 var events = []
@@ -34,6 +35,7 @@ var active = false
 
 var force_arrow = false
 var point_to = null
+var hold = false # If true, prevents the dialogue from closing
 
 # Text formatting to copy to line below
 var format_to_copy = ""
@@ -169,7 +171,7 @@ func start_dialog(text):
 # warning-ignore:unused_argument
 func _process(delta):
 	if active and Input.is_action_just_pressed("ui_accept") and $Box/TypeDelay.is_stopped():
-		if is_finished == true:
+		if is_finished == true and !hold:
 			finish_dialogue()
 		elif currentMode == mode.MultiText:
 			slide_text()
@@ -215,6 +217,7 @@ func finished():
 	if force_arrow == true:
 		$Box/PauseArrow.show()
 	is_finished = true
+	emit_signal("finished_printing")
 
 func parse_string(text):
 	var returns = TextParser.extract_events(TextParser.expand(text), $Box/TypeDelay)

@@ -1,4 +1,3 @@
-tool
 extends Node2D
 
 export var random_movement = false
@@ -14,18 +13,16 @@ var moving = false
 
 signal done_movement
 signal step
+signal alert_done
 
 func _ready():
+	$Alert.visible = false
 	$Position2D/Sprite.texture = texture
 	set_idle_frame(facing)
 	if texture == null:
 		print("ERROR: No texture applied to NPC")
 
 func _process(_delta):
-	if Engine.editor_hint:
-		$Position2D/Sprite.texture = texture
-		set_idle_frame(facing)
-
 	if !moving:
 		if random_movement:
 			var rand = randi()%7 + 1
@@ -138,3 +135,11 @@ func move_multi(dir, steps):
 		move(dir)
 		yield(self, "step")
 	emit_signal("done_movement")
+
+func alert():
+	$Alert.visible = true
+	$Alert/AnimationPlayer.play("Alert")
+	yield($Alert/AnimationPlayer, "animation_finished")
+	$Alert.visible = false
+	$Alert/AnimationPlayer.seek(0.0, true)
+	emit_signal("alert_done")

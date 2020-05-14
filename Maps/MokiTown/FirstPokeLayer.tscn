@@ -1,0 +1,125 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture" id=2]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Maps/MokiTown/FirstPokeLayer.gd" type="Script" id=4]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=5]
+
+[node name="FirstPokeLayer" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="Test" type="Node2D" parent="."]
+visible = false
+
+[node name="Box" type="NinePatchRect" parent="Test"]
+margin_left = 10.0
+margin_top = 146.0
+margin_right = 500.0
+margin_bottom = 274.0
+texture = ExtResource( 1 )
+region_rect = Rect2( 8, 2, 66, 74 )
+patch_margin_left = 14
+patch_margin_top = 14
+patch_margin_right = 16
+patch_margin_bottom = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arrow" type="TextureRect" parent="Test/Box"]
+margin_left = 12.0
+margin_top = 14.0
+margin_right = 24.0
+margin_bottom = 42.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Option1" type="Label" parent="Test/Box"]
+margin_left = 28.0
+margin_top = 16.0
+margin_right = 478.0
+margin_bottom = 41.0
+custom_fonts/font = ExtResource( 3 )
+text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Option2" type="Label" parent="Test/Box"]
+margin_left = 28.0
+margin_top = 48.0
+margin_right = 478.0
+margin_bottom = 73.0
+custom_fonts/font = ExtResource( 3 )
+text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Option3" type="Label" parent="Test/Box"]
+margin_left = 28.0
+margin_top = 82.0
+margin_right = 478.0
+margin_bottom = 107.0
+custom_fonts/font = ExtResource( 3 )
+text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="YesNo" type="Node2D" parent="."]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="YesNo"]
+margin_left = 300.0
+margin_top = 160.0
+margin_right = 500.0
+margin_bottom = 266.0
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 48, 48 )
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label1" type="Label" parent="YesNo/NinePatchRect"]
+margin_left = 30.0
+margin_top = 20.0
+margin_right = 426.0
+margin_bottom = 46.0
+custom_fonts/font = ExtResource( 3 )
+text = "Yes!"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="YesNo/NinePatchRect"]
+margin_left = 30.0
+margin_top = 60.0
+margin_right = 426.0
+margin_bottom = 86.0
+custom_fonts/font = ExtResource( 3 )
+text = "Wait a minute..."
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Arrow" type="TextureRect" parent="YesNo/NinePatchRect"]
+margin_left = 14.0
+margin_top = 18.0
+margin_right = 26.0
+margin_bottom = 46.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
