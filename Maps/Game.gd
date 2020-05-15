@@ -50,8 +50,6 @@ func _ready():
 	player.canMove = true
 	Global.location = current_scene.place_name
 
-var menu_toggle = false
-
 func _process(_delta):
 	#change_menu_text()
 	#Quick save

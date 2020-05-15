@@ -53,7 +53,6 @@ func _input(event):
 				$AnimationPlayer.seek(0, true)
 				$AnimationPlayer.stop(true)
 				self.visible = false
-				pass
 
 	if menu_stage == 1:
 		

@@ -32,7 +32,7 @@ size = 27
 extra_spacing_top = 8
 font_data = ExtResource( 5 )
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=3]
 resource_name = "Open Menu"
 length = 0.6
 step = 0.05
@@ -455,7 +455,7 @@ position = Vector2( 23, 32 )
 texture = ExtResource( 16 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-"anims/Open Menu" = SubResource( 8 )
+"anims/Open Menu" = SubResource( 3 )
 
 [node name="Sounds" type="Node" parent="."]
 
