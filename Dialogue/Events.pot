@@ -136,7 +136,7 @@ msgid "EVENT_MOKI_LAB_FIRST_POK_27"
 msgstr "No question about it!\nI'm gonna be a Pokémon Master!\nAn' nobody's gonna stand in my way!"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_28"
-msgstr "Haha... I dig your spirit,kid!\nWell, that's it for the <b>Pokémon Trainer Aptitude Test</b>"
+msgstr "Haha... I dig your spirit, kid!\nWell, that's it for the <b>Pokémon Trainer Aptitude Test</b>"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_29"
 msgstr "Now it's time to analyze your results\\wt[8].\\wt[8].\\wt[8]."

@@ -1041,7 +1041,7 @@ anims/GreyFlashing = ExtResource( 22 )
 anims/SlideBars = SubResource( 6 )
 
 [node name="SpriteLeft" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
-position = Vector2( -128, 192 )
+position = Vector2( 0, 192 )
 texture = ExtResource( 23 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )
@@ -1050,7 +1050,7 @@ region_rect = Rect2( 0, 0, 256, 128 )
 anims/Scroll = SubResource( 7 )
 
 [node name="SpriteRight" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
-position = Vector2( 640, 192 )
+position = Vector2( 512, 192 )
 texture = ExtResource( 23 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 256, 128 )

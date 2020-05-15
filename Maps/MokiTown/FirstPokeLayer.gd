@@ -23,6 +23,11 @@ func _ready():
 	$Test.visible = false
 	$YesNo.visible = false
 
+	$PokeGet/Grid.texture.flags = Texture.FLAG_REPEAT
+	$PokeGet/Grid2.texture.flags = Texture.FLAG_REPEAT
+	$PokeGet/Light.texture.flags = Texture.FLAG_REPEAT
+
+
 func _input(event):
 	match stage:
 		0:
@@ -89,6 +94,7 @@ func prompt_test(question):
 	var label3 = $Test/Box/Option3
 	$YesNo.visible = false
 	arrow_pos = TOP
+	call_deferred("update_arrow")
 	match question:
 		TEST.Q1:
 			label1.text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
@@ -110,7 +116,6 @@ func prompt_test(question):
 	stage = 1
 
 func get_test_responce() -> int:
-	#yield(self, "selected")
 	print("Arrow Position:" + str(arrow_pos))
 	if arrow_pos == TOP:
 		return 0
@@ -120,3 +125,72 @@ func get_test_responce() -> int:
 		return 2
 	return 0
 
+func Poke_get():
+	$Test.visible = false
+	$YesNo.visible = false
+	$PokeGet.visible = false
+
+	$PokeGet/Orchynx.position = Vector2(100,170)
+	$PokeGet/Electux.position = Vector2(392,170)
+	$PokeGet/Raptorch.position = Vector2(246,170)
+
+	$PokeGet/Orchynx.modulate = Color(0,0,0,1)
+	$PokeGet/Electux.modulate = Color(0,0,0,1)
+	$PokeGet/Raptorch.modulate = Color(0,0,0,1)
+
+
+	#Fade
+	$ColorRect.visible = true
+	$ColorRect/AnimationPlayer.play("Fade")
+	yield($ColorRect/AnimationPlayer, "animation_finished")
+	emit_signal("selected")
+
+
+func Poke_get_slide(poke : int):
+	var orchynx = $PokeGet/Orchynx/AnimationPlayer
+	var electux = $PokeGet/Electux/AnimationPlayer
+	var raptorch = $PokeGet/Raptorch/AnimationPlayer
+
+	match poke:
+		0:
+			orchynx.play("FadeOut")
+			electux.play("FadeOut")
+			raptorch.play("FadeIn")
+			yield(raptorch, "animation_finished")
+		1:
+			orchynx.play("FadeIn")
+			electux.play("FadeOut")
+			raptorch.play("FadeOut")
+
+			$PokeGet/Tween.interpolate_property($PokeGet/Orchynx, "position", $PokeGet/Orchynx.position, Vector2(246,170), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			$PokeGet/Tween.start()
+			yield($PokeGet/Tween, "tween_completed")
+		2:
+			orchynx.play("FadeOut")
+			electux.play("FadeIn")
+			raptorch.play("FadeOut")
+
+			$PokeGet/Tween.interpolate_property($PokeGet/Electux, "position", $PokeGet/Electux.position, Vector2(246,170), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			$PokeGet/Tween.start()
+			yield($PokeGet/Tween, "tween_completed")
+	# Play music
+	var time = Global.game.get_node("Background_music").get_playback_position()
+	Global.game.get_node("Background_music").stop()
+	var sound = load("res://Audio/ME/BW_captured.ogg")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Effect_music").stop()
+	Global.game.get_node("Background_music").play(time)
+	emit_signal("selected")
+
+func fadeout():
+	$Test.visible = false
+	$YesNo.visible = false
+	$PokeGet.visible = false
+
+	$ColorRect/AnimationPlayer.play("Fadeout")
+	yield($ColorRect/AnimationPlayer, "animation_finished")
+	emit_signal("selected")

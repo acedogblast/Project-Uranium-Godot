@@ -5,11 +5,14 @@ var type = "Indoors"
 var place_name = "Bambo's Lab"
 var npc_layer
 var theo
+var bambo
 var ui = null
+var starter
 
 signal finished
 
 func _ready():
+	bambo = $NPC_Layer/Bambo
 	$BlackBG.visible = true
 	npc_layer = $NPC_Layer
 	event1(null) # Play event on enter.
@@ -99,14 +102,26 @@ func event1(_body): # First event to get pokemon
 			yield(Global.game, "event_dialogue_end")
 			event1_test()
 			yield(self, "finished")
+			event1_pick_up()
 		else:
-			# To be implemented
-			pass
+			Global.past_events.append("EVENT_BAMBOLAB_1_INTRO")
+			Global.game.player.change_input()
 
+func event1_pick_up():
+	# Play open
+	$PokeMachine/AnimationPlayer.play("Open")
+	yield($PokeMachine/AnimationPlayer, "animation_finished")
 
-		Global.game.player.change_input()
-		Global.past_events.append(event_name)
-	pass
+	bambo.call_deferred("move_multi", "Right", 1)
+	yield(bambo, "done_movement")
+	bambo.call_deferred("set_idle_frame", "Left")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_38", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.player.change_input()
+	emit_signal("finished")
+
 func event1_test():
 	DialogueSystem.hold = true
 	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_16", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
@@ -227,7 +242,70 @@ func event1_test():
 	
 	print(result)
 	# Change to poke pick view
+	ui.Poke_get()
+	yield(ui, "selected")
+	
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_32")
+	yield(Global.game, "event_dialogue_end")
 
+	match result:
+		0: # Raptorch
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Raptorch")
+			yield(Global.game, "event_dialogue_end")
 
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_34_Raptorch")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_35_Raptorch")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_36_Raptorch")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_37_Raptorch")
+			yield(Global.game, "event_dialogue_end")
+
+			DialogueSystem.hold = true
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OPTION_15")
+		1:
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Orchynx")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_34_Orchynx")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_35_Orchynx")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_36_Orchynx")
+			yield(Global.game, "event_dialogue_end")
+
+			DialogueSystem.hold = true
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OPTION_15_1")
+		2:
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Electux")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_34_Electux")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_35_Electux")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_36_Electux")
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_37_Electux")
+			yield(Global.game, "event_dialogue_end")
+
+			DialogueSystem.hold = true
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OPTION_15_2")
+	# Fade and slide
+	ui.Poke_get_slide(result)
+	yield(ui, "selected")
+	DialogueSystem.hold = false
+	starter = result
+
+	ui.fadeout()
+	yield(ui, "selected")
 	emit_signal("finished")
-	pass

@@ -196,7 +196,7 @@ msgstr ""
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_28"
 msgstr ""
-"Haha... I dig your spirit,kid!\n"
+"Haha... I dig your spirit, kid!\n"
 "Well, that's it for the <b>Pokémon Trainer Aptitude Test</b>"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_29"

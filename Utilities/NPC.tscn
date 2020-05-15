@@ -130,7 +130,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=10]
 resource_name = "Alert"
-length = 0.5
+length = 0.25
 step = 0.01
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
@@ -139,7 +139,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25, 0.5 ),
+"times": PoolRealArray( 0, 0.1, 0.25 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, -50 ), Vector2( 0, -80 ), Vector2( 0, -50 ) ]
@@ -151,7 +151,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.25 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0.501961 ), Color( 1, 1, 1, 1 ) ]
@@ -202,6 +202,7 @@ anims/Up2 = SubResource( 9 )
 
 [node name="Alert" type="Sprite" parent="."]
 visible = false
+modulate = Color( 1, 1, 1, 0.501961 )
 position = Vector2( 0, -50 )
 texture = ExtResource( 2 )
 region_enabled = true
