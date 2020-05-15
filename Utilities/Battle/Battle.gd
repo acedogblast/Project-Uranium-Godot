@@ -17,6 +17,7 @@ var battle_is_over = false
 
 signal wait
 signal EndOfBattleLoop
+signal battle_complete
 #signal command_received
 
 func _ready():
@@ -30,7 +31,10 @@ func _ready():
 	$CanvasLayer/BattleGrounds/ColorRect.visible = true
 	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.visible = false
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
-	test()
+	
+	# Check if we are testing
+	if Global.past_events.size() == 0:
+		test()
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -155,6 +159,7 @@ func Start_Battle(bid : BattleInstanceData):
 	
 	# After battle comands
 	print("Battle is over.")
+	emit_signal("battle_complete")
 
 
 func test():

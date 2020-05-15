@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_indoors+.png" type="Texture" id=1]
 [ext_resource path="res://Maps/MokiTown/BamboLab.gd" type="Script" id=2]
@@ -30956,6 +30956,9 @@ tracks/1/keys = {
 "times": PoolRealArray( 0.1 )
 }
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 48, 16 )
+
 [node name="Professor Lab" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -31024,6 +31027,12 @@ monitoring = false
 monitorable = false
 event_name = ""
 size = Vector2( 16, 16 )
+
+[node name="PokeMachine" type="Area2D" parent="Event_Layer"]
+position = Vector2( 240, 112 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Event_Layer/PokeMachine"]
+shape = SubResource( 3 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 240, 560 )

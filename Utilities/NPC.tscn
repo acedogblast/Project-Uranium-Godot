@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Utilities/NPC.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Animations/029-Emotion01.png" type="Texture" id=2]
 [ext_resource path="res://Audio/SE/SE_EM.wav" type="AudioStream" id=3]
+[ext_resource path="res://Audio/SE/jump.wav" type="AudioStream" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -37,7 +38,38 @@ tracks/0/keys = {
 "values": [ 2, 3 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=12]
+resource_name = "Jump"
+length = 0.3
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Position2D/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -10 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("Alert/AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 4 )
+} ],
+"times": PoolRealArray( 0 )
+}
+
+[sub_resource type="Animation" id=13]
 length = 0.25
 step = 0.05
 tracks/0/type = "value"
@@ -53,7 +85,7 @@ tracks/0/keys = {
 "values": [ 4, 5 ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=14]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -68,7 +100,7 @@ tracks/0/keys = {
 "values": [ 6, 7 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=15]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -83,7 +115,7 @@ tracks/0/keys = {
 "values": [ 8, 9 ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=16]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -98,7 +130,7 @@ tracks/0/keys = {
 "values": [ 10, 11 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=17]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -113,7 +145,7 @@ tracks/0/keys = {
 "values": [ 12, 13 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=18]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -128,8 +160,7 @@ tracks/0/keys = {
 "values": [ 14, 15 ]
 }
 
-[sub_resource type="Animation" id=10]
-resource_name = "Alert"
+[sub_resource type="Animation" id=11]
 length = 0.25
 step = 0.01
 tracks/0/type = "value"
@@ -182,7 +213,6 @@ position = Vector2( 0, -16 )
 [node name="Sprite" type="Sprite" parent="Position2D"]
 vframes = 4
 hframes = 4
-frame = 12
 
 [node name="Area2D" type="StaticBody2D" parent="Position2D/Sprite"]
 
@@ -193,12 +223,13 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Down = SubResource( 2 )
 anims/Down2 = SubResource( 3 )
-anims/Left = SubResource( 4 )
-anims/Left2 = SubResource( 5 )
-anims/Right = SubResource( 6 )
-anims/Right2 = SubResource( 7 )
-anims/Up = SubResource( 8 )
-anims/Up2 = SubResource( 9 )
+anims/Jump = SubResource( 12 )
+anims/Left = SubResource( 13 )
+anims/Left2 = SubResource( 14 )
+anims/Right = SubResource( 15 )
+anims/Right2 = SubResource( 16 )
+anims/Up = SubResource( 17 )
+anims/Up2 = SubResource( 18 )
 
 [node name="Alert" type="Sprite" parent="."]
 visible = false
@@ -209,7 +240,7 @@ region_enabled = true
 region_rect = Rect2( 74, 76, 32, 32 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Alert"]
-anims/Alert = SubResource( 10 )
+anims/Alert = SubResource( 11 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Alert"]
-stream = ExtResource( 3 )
+stream = ExtResource( 4 )

@@ -136,7 +136,7 @@ msgid "EVENT_MOKI_LAB_FIRST_POK_27"
 msgstr "No question about it!\nI'm gonna be a Pokémon Master!\nAn' nobody's gonna stand in my way!"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_28"
-msgstr "Haha... I dig your spirit, kid!\nWell, that's it for the <b>Pokémon Trainer Aptitude Test</b>"
+msgstr "Haha... I dig your spirit, kid!\nWell, that's it for the <b>Pokémon Trainer Aptitude Test!</b>"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_29"
 msgstr "Now it's time to analyze your results\\wt[8].\\wt[8].\\wt[8]."
@@ -231,7 +231,7 @@ msgstr "Hmm\\wt[8].\\wt[8].\\wt[8]."
 msgid "EVENT_MOKI_LAB_FIRST_POK_43"
 msgstr "Theo.."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_44_Raptorch"
+msgid "EVENT_MOKI_LAB_FIRST_POK_44"
 msgstr "Well, you certainly know\nwhat you want out of life."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_45"
@@ -250,10 +250,10 @@ msgid "EVENT_MOKI_LAB_FIRST_POK_49"
 msgstr "Regardless... For a Trainer like you..."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_50_Orchynx"
-msgstr "Theo obtained Orchynx!"
+msgstr "Orchynx is the best pick!"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_50_Electux"
-msgstr "Theo obtained Electux!"
+msgstr "Electux! is the best pick!"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_51"
 msgstr "Yes!!\nMy first Pokémon!"

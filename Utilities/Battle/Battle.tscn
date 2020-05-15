@@ -165,7 +165,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( -512, 0 ), Vector2( -256, 3.173 ) ]
+"values": [ Vector2( -512, 0 ), Vector2( -256, 0 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:scale")
@@ -890,7 +890,7 @@ script = ExtResource( 1 )
 layer = 2
 
 [node name="BattleGrounds" type="Node2D" parent="CanvasLayer"]
-position = Vector2( -256, 3.173 )
+position = Vector2( -256, 0 )
 scale = Vector2( 1.5, 1.5 )
 script = ExtResource( 2 )
 
@@ -916,7 +916,7 @@ __meta__ = {
 
 [node name="Battler" type="Node2D" parent="CanvasLayer/BattleGrounds/PlayerBase"]
 visible = false
-position = Vector2( 270, -20 )
+position = Vector2( 270, -100 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/BattleGrounds/PlayerBase/Battler"]
@@ -1030,7 +1030,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = 512.0
 margin_bottom = 384.0
-color = Color( 0.392157, 0.392157, 0.392157, 0.392157 )
+color = Color( 0.392157, 0.392157, 0.392157, 0 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects"]
 anims/GreyFlashing = ExtResource( 22 )

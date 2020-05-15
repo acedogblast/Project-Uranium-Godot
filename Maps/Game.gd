@@ -3,6 +3,7 @@ extends Node2D
 #Loads the player scene
 onready var player = null
 var menu
+var battle
 
 var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene = null

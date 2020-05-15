@@ -78,6 +78,7 @@ func move(_dir): # Walk one step
 	else:
 		foot = 0
 	moving = false
+	$Position2D.position = Vector2(0, -16)
 	set_process(true)
 	emit_signal("step")
 
@@ -143,3 +144,7 @@ func alert():
 	$Alert.visible = false
 	$Alert/AnimationPlayer.seek(0.0, true)
 	emit_signal("alert_done")
+func jump():
+	$AnimationPlayer.play("Jump")
+	yield($AnimationPlayer, "animation_finished")
+	emit_signal("done_movement")

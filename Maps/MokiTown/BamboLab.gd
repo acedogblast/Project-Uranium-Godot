@@ -19,6 +19,12 @@ func _ready():
 	pass
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
+	if npc_collider == $Event_Layer/PokeMachine.position:
+		event1_poke_machine()
+		pass
+	
+	
+	
 	return null
 func event1(_body): # First event to get pokemon
 	var event_name = "EVENT_BAMBOLAB_1"
@@ -120,6 +126,7 @@ func event1_pick_up():
 	yield(Global.game, "event_dialogue_end")
 
 	Global.game.player.change_input()
+	Global.past_events.append("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")
 	emit_signal("finished")
 
 func event1_test():
@@ -309,3 +316,166 @@ func event1_test():
 	ui.fadeout()
 	yield(ui, "selected")
 	emit_signal("finished")
+func event1_poke_machine():
+	if Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE"):
+		Global.game.player.change_input()
+		$PokeMachine.frame = 10
+		var time = Global.game.get_node("Background_music").get_playback_position()
+		Global.game.get_node("Background_music").stop()
+		var sound = load("res://Audio/ME/BW_captured.ogg")
+		sound.loop = false
+		Global.game.get_node("Effect_music").stream = sound
+		Global.game.get_node("Effect_music").play()
+
+		DialogueSystem.hold = true
+		var poke = Pokemon.new()
+		match starter:
+			0: # Raptorch
+				poke.set_basic_pokemon_by_level(3,5)
+				Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OBTAIN_RAPTORCH")
+			1: # Orchynx
+				poke.set_basic_pokemon_by_level(1,5)
+				Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ORCHYNX")
+			2: # Electux
+				poke.set_basic_pokemon_by_level(5,5)
+				Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ELETUX")
+		Global.pokemon_group.append(poke)
+
+		yield(Global.game.get_node("Effect_music"), "finished")
+		Global.game.get_node("Effect_music").stop()
+		Global.game.get_node("Background_music").play(time)
+
+		DialogueSystem.hold = false
+		yield(Global.game, "event_dialogue_end")
+		event_1_rival_poke()
+		
+func event_1_rival_poke():
+	bambo.call_deferred("set_idle_frame", "Down")
+	Global.game.player.call_deferred("set_facing_direction", 0)
+
+	var time = Global.game.get_node("Background_music").get_playback_position()
+	Global.game.get_node("Background_music").stop()
+	var sound = load("res://Audio/BGM/PU-Rival Theme.ogg")
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+
+	theo.call_deferred("move_multi", "Right", 1)
+	yield(theo, "done_movement")
+	theo.call_deferred("set_idle_frame", "Up")
+
+	DialogueSystem.set_box_position(DialogueSystem.TOP)
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_39", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	
+	theo.jump()
+	yield(theo, "done_movement")
+	theo.jump()
+	yield(theo, "done_movement")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_40", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_41", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_42", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	ui.Poke_get()
+	yield(ui, "selected")
+
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_42")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_43")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_44")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_45")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_46")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_47")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_48")
+	yield(Global.game, "event_dialogue_end")
+
+	DialogueSystem.hold = true
+	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_49")
+	yield(DialogueSystem, "finished_printing")
+	match starter:
+		0,2:
+			ui.Poke_get_slide(1)
+			Global.theo_starter = 1
+		1:
+			ui.Poke_get_slide(2)
+			Global.theo_starter = 2
+	DialogueSystem.hold = false
+	yield(ui, "selected")
+	ui.fadeout()
+	yield(ui, "selected")
+
+	DialogueSystem.set_box_position(DialogueSystem.TOP)
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_51", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	# Move theo and player at same time
+	Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.LEFT, 1) # This somehow just runs instantly and I can't debug this!
+	theo.call_deferred("move_multi", "Up", 2)
+	yield(Global.game.player, "done_movement")
+	Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 2)
+	yield(Global.game.player, "done_movement")
+	Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.UP)
+	$PokeMachine.frame = 6
+
+	theo.alert()
+	yield(theo, "alert_done")
+
+	theo.call_deferred("move_multi", "Down", 2)
+	yield(theo, "done_movement")
+
+	theo.call_deferred("set_idle_frame", "Left")
+	Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.RIGHT)
+	
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_52", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_53", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	time = Global.game.get_node("Background_music").get_playback_position()
+	Global.game.get_node("Background_music").stop()
+
+
+
+	# FIRST BATTLE!! FIANALY!
+	lab_battle()
+func lab_battle():
+	Global.game.battle = load("res://Utilities/Battle/Battle.tscn").instance()
+	Global.game.add_child(Global.game.battle)
+
+	var bid = BattleInstanceData.new()
+	bid.battle_type = bid.BattleType.RIVAL
+	bid.battle_back = bid.BattleBack.INDOOR_1
+	bid.opponent = Opponent.new()
+	bid.opponent.name = "Theo"
+	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.TESTING_1
+
+	var poke = Pokemon.new()
+	match Global.theo_starter:
+		1:
+			poke.set_basic_pokemon_by_level(1,5)
+		2:
+			poke.set_basic_pokemon_by_level(5,5)
+	bid.opponent.pokemon_group.append(poke)
+	bid.opponent.battle_texture = load("res://Graphics/Characters/trainer086.png")
+	
+	Global.game.battle.Start_Battle(bid) # YEET!!!
+	yield(Global.game.battle, "battle_complete")

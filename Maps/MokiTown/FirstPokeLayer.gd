@@ -76,6 +76,7 @@ func prompt_yes_no():
 	stage = 0
 	$Test.visible = false
 	$YesNo.visible = true
+	$ColorRect.visible = false
 	yield(self, "selected")
 	$YesNo.visible = false
 	stage = -1
