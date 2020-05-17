@@ -190,8 +190,8 @@ func Poke_get_slide(poke : int):
 func fadeout():
 	$Test.visible = false
 	$YesNo.visible = false
-	$PokeGet.visible = false
 
-	$ColorRect/AnimationPlayer.play("Fadeout")
+	$ColorRect/AnimationPlayer.play_backwards("Fade")
 	yield($ColorRect/AnimationPlayer, "animation_finished")
+	
 	emit_signal("selected")

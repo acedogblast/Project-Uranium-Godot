@@ -381,7 +381,7 @@ anims/FadeOut = SubResource( 6 )
 [node name="Tween" type="Tween" parent="PokeGet"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-modulate = Color( 0, 0, 0, 1 )
+modulate = Color( 0, 0, 0, 0 )
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 1 )

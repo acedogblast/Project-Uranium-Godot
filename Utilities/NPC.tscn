@@ -38,7 +38,7 @@ tracks/0/keys = {
 "values": [ 2, 3 ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=4]
 resource_name = "Jump"
 length = 0.3
 step = 0.05
@@ -69,7 +69,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 )
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=5]
 length = 0.25
 step = 0.05
 tracks/0/type = "value"
@@ -85,7 +85,7 @@ tracks/0/keys = {
 "values": [ 4, 5 ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=6]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -100,7 +100,7 @@ tracks/0/keys = {
 "values": [ 6, 7 ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=7]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -115,7 +115,7 @@ tracks/0/keys = {
 "values": [ 8, 9 ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=8]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -130,7 +130,7 @@ tracks/0/keys = {
 "values": [ 10, 11 ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=9]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -145,7 +145,7 @@ tracks/0/keys = {
 "values": [ 12, 13 ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=10]
 length = 0.25
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -223,13 +223,13 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Down = SubResource( 2 )
 anims/Down2 = SubResource( 3 )
-anims/Jump = SubResource( 12 )
-anims/Left = SubResource( 13 )
-anims/Left2 = SubResource( 14 )
-anims/Right = SubResource( 15 )
-anims/Right2 = SubResource( 16 )
-anims/Up = SubResource( 17 )
-anims/Up2 = SubResource( 18 )
+anims/Jump = SubResource( 4 )
+anims/Left = SubResource( 5 )
+anims/Left2 = SubResource( 6 )
+anims/Right = SubResource( 7 )
+anims/Right2 = SubResource( 8 )
+anims/Up = SubResource( 9 )
+anims/Up2 = SubResource( 10 )
 
 [node name="Alert" type="Sprite" parent="."]
 visible = false

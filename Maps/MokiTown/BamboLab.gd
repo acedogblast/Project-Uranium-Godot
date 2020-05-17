@@ -406,9 +406,18 @@ func event_1_rival_poke():
 	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_48")
 	yield(Global.game, "event_dialogue_end")
 
-	DialogueSystem.hold = true
+	
 	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_49")
+	yield(Global.game, "event_dialogue_end")
+
+	DialogueSystem.hold = true
+	match starter:
+		0,2:
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_50_Orchynx")
+		1:
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_50_Electux")
 	yield(DialogueSystem, "finished_printing")
+
 	match starter:
 		0,2:
 			ui.Poke_get_slide(1)
