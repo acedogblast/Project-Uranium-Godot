@@ -46,80 +46,128 @@ func changeScene(scene):
 	$ViewportContainer/GameViewport.add_child(gameInstance)
 	pass
 func _on_Up_pressed():
-	Input.action_press("ui_up")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_up"
+	a.pressed = true
+	Input.parse_input_event(a)
+	#Input.action_press("ui_up")
 
 
 func _on_Down_pressed():
-	Input.action_press("ui_down")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_down"
+	a.pressed = true
+	Input.parse_input_event(a)
+	#Input.action_press("ui_down")
 
 
 func _on_Left_pressed():
-	Input.action_press("ui_left")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_left"
+	a.pressed = true
+	Input.parse_input_event(a)
+	#Input.action_press("ui_left")
 
 
 func _on_Right_pressed():
-	Input.action_press("ui_right")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_right"
+	a.pressed = true
+	Input.parse_input_event(a)
+	#Input.action_press("ui_right")
 
 
 func _on_Up_released():
-	Input.action_release("ui_up")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_up"
+	a.pressed = false
+	Input.parse_input_event(a)
+	#Input.action_release("ui_up")
 
 
 func _on_Down_released():
-	Input.action_release("ui_down")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_down"
+	a.pressed = false
+	Input.parse_input_event(a)
+	#Input.action_release("ui_down")
 
 
 func _on_Left_released():
-	Input.action_release("ui_left")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_left"
+	a.pressed = false
+	Input.parse_input_event(a)
+	#Input.action_release("ui_left")
 
 
 func _on_Right_released():
-	Input.action_release("ui_right")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_right"
+	a.pressed = false
+	Input.parse_input_event(a)
+	#Input.action_release("ui_right")
 
 
 func _on_Z_button_down():
-	Input.action_press("z")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "z"
+	a.pressed = true
+	Input.parse_input_event(a)
+	#Input.action_press("z")
 
 
 func _on_X_button_down():
-	Input.action_press("x")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "x"
+	a.pressed = true
+	Input.parse_input_event(a)
+	#Input.action_press("x")
 
 
 func _on_C_button_down():
-	Input.action_press("c")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "c"
+	a.pressed = true
+	Input.parse_input_event(a)
+	#Input.action_press("c")
 
 
 func _on_S_button_down():
-	Input.action_press("ui_accept")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_accept"
+	a.pressed = true
+	Input.parse_input_event(a)
+	#Input.action_press("ui_accept")
 
 
 func _on_Z_button_up():
-	Input.action_release("z")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "z"
+	a.pressed = false
+	Input.parse_input_event(a)
+	#Input.action_release("z")
 
 
 func _on_X_button_up():
-	Input.action_release("x")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "x"
+	a.pressed = false
+	Input.parse_input_event(a)
+	#Input.action_release("x")
 
 
 func _on_C_button_up():
-	Input.action_release("c")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "c"
+	a.pressed = false
+	Input.parse_input_event(a)
+	#Input.action_release("c")
 
 
 func _on_S_button_up():
-	Input.action_release("ui_accept")
-	pass # replace with function body
+	var a = InputEventAction.new()
+	a.action = "ui_accept"
+	a.pressed = false
+	Input.parse_input_event(a)
+	#Input.action_release("ui_accept")
