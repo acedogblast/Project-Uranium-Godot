@@ -49,6 +49,8 @@ func _ready():
 	Global.load_game_from_id = null
 	player.canMove = true
 	Global.location = current_scene.place_name
+	$CanvasLayer/Menu.visible = true
+	$CanvasLayer/ZoneMessage.visible = true
 
 func _process(_delta):
 	#change_menu_text()
@@ -85,6 +87,10 @@ func change_scene(scene): # scene must be loaded!
 		var music = load(current_scene.background_music)
 		$Background_music.stream = music
 		$Background_music.play()
+	# If scene is outdoors, play zone animation
+	if current_scene.type == "Outside":
+		$CanvasLayer/ZoneMessage/Bar/Label.text = current_scene.place_name
+		$CanvasLayer/ZoneMessage/AnimationPlayer.play("Slide")
 
 #Gets the destination and direction from Stairs.gd, and goes to the next line
 func room_transition(dest, dir):
