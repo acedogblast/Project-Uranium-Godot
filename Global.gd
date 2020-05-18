@@ -16,7 +16,7 @@ var game : Node
 
 var can_run = false
 
-var pokemon_group = [] # Cannot be more that 6
+var pokemon_group = [] # Cannot be more that 6 Pokemon objects
 
 var past_events = [] # All events that had occured
 
@@ -66,3 +66,6 @@ func load_state():
 		can_run = state["can_run"]
 		pokemon_group = state["pokemon_group"]
 		past_events = state["past_events"]
+func heal_party(): # Heals all of the player's pokemon party.
+	for poke in pokemon_group:
+		poke.heal()

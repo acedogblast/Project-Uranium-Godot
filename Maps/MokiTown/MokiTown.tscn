@@ -80,6 +80,7 @@ scale = Vector2( 0.5, 0.5 )
 
 [node name="Event1" parent="TileMap3" instance=ExtResource( 6 )]
 position = Vector2( 408, 244 )
+event_name = ""
 size = Vector2( 8, 36 )
 
 [node name="Door2" parent="." instance=ExtResource( 5 )]

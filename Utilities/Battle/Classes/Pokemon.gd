@@ -275,3 +275,14 @@ func get_icon_texture() -> Texture:
 	else:
 		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + ".png") as Texture
 	return texture
+func heal(): # Restores HP and move PPs to max and removes all ailments.
+	current_hp = hp
+	major_ailment = null
+	if move_1 != null:
+		move_1.remaining_pp = move_1.total_pp
+	if move_2 != null:
+		move_2.remaining_pp = move_2.total_pp
+	if move_3 != null:
+		move_3.remaining_pp = move_3.total_pp
+	if move_4 != null:
+		move_4.remaining_pp = move_4.total_pp
