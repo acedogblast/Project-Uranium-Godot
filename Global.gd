@@ -7,6 +7,7 @@ var badges = 0
 var time = "00:00"
 var pokedex_count = 0
 var location : String = "location"
+var money : int = 0
 
 var printFPS = false
 #var size
@@ -28,9 +29,8 @@ var theo_starter # 1 = Orchynx, 2 = Electux
 func _ready():
 	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	pass
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("toggle_fullscreen"):
 		OS.window_fullscreen = !OS.window_fullscreen
 	if Input.is_action_just_pressed("toggle_fps"):

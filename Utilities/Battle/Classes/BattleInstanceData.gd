@@ -10,7 +10,7 @@ var opponent : Opponent
 # Type of battle
 var battle_type
 enum BattleType {
-	SINGLE_WILD, DOUBLE_WILD, SINGLE_TRAINER, DOUBLE_TRAINER, SINGLE_GYML, DOUBLE_GYML, RIVAL
+	SINGLE_WILD, DOUBLE_WILD, SINGLE_TRAINER, DOUBLE_TRAINER, SINGLE_GYML, DOUBLE_GYML, RIVAL, URAYNE, LEGENDARY
 }
 
 # Battleback type
@@ -21,5 +21,5 @@ enum BattleBack {
 	SHELTER, SNOW, VOLCANO, WATER, FOREST
 }
 
-# Victory award
-var victory_award
+# Victory award in money
+var victory_award : int = 0

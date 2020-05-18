@@ -488,3 +488,5 @@ func lab_battle():
 	
 	Global.game.battle.Start_Battle(bid) # YEET!!!
 	yield(Global.game.battle, "battle_complete")
+
+	

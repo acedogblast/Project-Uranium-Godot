@@ -4,6 +4,7 @@ var battle_instance : BattleInstanceData
 var queue : BattleQueue
 var registry
 var battle_logic : BattleLogic
+var translation : Translation
 
 var battler1 : Pokemon # Player's pokemon
 var battler2 : Pokemon # Foe's pokemon
@@ -30,7 +31,9 @@ func _ready():
 	$CanvasLayer/BattleGrounds/ColorRect.color = Color("000000")
 	$CanvasLayer/BattleGrounds/ColorRect.visible = true
 	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.visible = false
+	$CanvasLayer/ColorRect.visible = false
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
+	translation = Translation.new()
 	
 	# Check if we are testing
 	if Global.past_events.size() == 0:
@@ -66,6 +69,7 @@ func Start_Battle(bid : BattleInstanceData):
 	# Add Foe introduction to queue
 	match battle_instance.battle_type:
 		battle_instance.BattleType.SINGLE_TRAINER:
+			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = true
 			var action = BattleQueueAction.new()
 			action.type = action.BATTLE_GROUNDS_POS_CHANGE
 			action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.INTRO_FADE
@@ -79,6 +83,7 @@ func Start_Battle(bid : BattleInstanceData):
 			action.battle_text = "TRAINER " + battle_instance.opponent.name + " sent\nout " + battle_instance.opponent.pokemon_group[0].name + "!"
 			queue.push(action)
 		battle_instance.BattleType.RIVAL:
+			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = true
 			var action = BattleQueueAction.new()
 			action.type = action.BATTLE_GROUNDS_POS_CHANGE
 			action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.INTRO_FADE
@@ -170,8 +175,10 @@ func test():
 	bid.battle_back = BID.BattleBack.INDOOR_1
 	bid.opponent = OPP.new()
 	bid.opponent.name = "Theo"
+	bid.opponent.opponent_type = Opponent.OPPONENT_RIVAL
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
 	bid.opponent.ai.AI_Behavior = bid.opponent.ai.TESTING_1
+	bid.opponent.after_battle_quote = "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
 
 	var poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(1,5)
@@ -352,13 +359,63 @@ func battle_loop():
 
 					yield($CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer, "animation_finished")
 					$CanvasLayer/BattleGrounds/FoeBase/Battler.visible = false
-
 		action.EXP_GAIN:
 			var percent : float = action.exp_gain_percent
 			$CanvasLayer/BattleInterfaceLayer/BattleBars.slide_player_exp_bar(percent)
 			yield($CanvasLayer/BattleInterfaceLayer/BattleBars, "finished")
 		action.BATTLE_END:
 			battle_is_over = true
+			# Play victory music
+			var victory_music
+			match battle_instance.battle_type:
+				BattleInstanceData.BattleType.SINGLE_TRAINER, BattleInstanceData.BattleType.RIVAL:
+					victory_music = load("res://Audio/ME/PU-Victory Trainer Battle.ogg")
+				BattleInstanceData.BattleType.SINGLE_WILD, BattleInstanceData.BattleType.DOUBLE_WILD:
+					victory_music = load("res://Audio/BGM/PU-WildVictory.ogg") # There is another version in ME. Not sure which one to use.
+				BattleInstanceData.BattleType.SINGLE_GYML, BattleInstanceData.BattleType.DOUBLE_GYML:
+					victory_music = load("res://Audio/ME/PU-GymVictory.ogg")
+				# TODO: Fill other battle types
+			$CanvasLayer/AudioStreamPlayer.stop()
+			$CanvasLayer/AudioStreamPlayer.stream = victory_music
+			$CanvasLayer/AudioStreamPlayer.play()
+
+			# Closing Trainer quote
+			var message = Global.TrainerName + " defeated\n"
+			match battle_instance.opponent.opponent_type:
+				Opponent.OPPONENT_RIVAL:
+					message += "RIVAL "
+				Opponent.OPPONENT_TRAINER:
+					message += "TRAINER "
+				Opponent.OPPONENT_WILD:
+					message += "WILD "
+			message += battle_instance.opponent.name
+			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+			yield(get_tree().create_timer(2.0), "timeout")
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+
+			# If applicable, show opponent win quote:
+			if battle_instance.opponent.opponent_type == Opponent.OPPONENT_RIVAL:
+				$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = false
+				$CanvasLayer/BattleGrounds/AnimationPlayer.play("Opponent_Quote")
+				yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+
+				message = tr(battle_instance.opponent.after_battle_quote)
+				$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+				$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+				yield(get_tree().create_timer(2.0), "timeout")
+
+				# Show money earned
+				Global.money += battle_instance.victory_award
+				$CanvasLayer/BattleInterfaceLayer/Message/Label.text = Global.TrainerName + " got $" + str(battle_instance.victory_award) + "\nfor winning!"
+				yield(get_tree().create_timer(2.0), "timeout")
+
+			# Fade out of battle
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+			$CanvasLayer/BattleGrounds/AnimationPlayer.play("FadeOut")
+			yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+			$CanvasLayer/AudioStreamPlayer.stop()
+
 			if action.winner == action.PLAYER_WIN:
 				print("Player wins.")
 			if action.winner == action.FOE_WIN:

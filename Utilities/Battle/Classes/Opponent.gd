@@ -8,9 +8,10 @@ var pokemon_group = [] # Cannot be more that 6
 
 var name
 
+enum {OPPONENT_RIVAL, OPPONENT_TRAINER, OPPONENT_WILD}
 var opponent_type
 
-var after_battle_quote
+var after_battle_quote : String
 
 var battle_texture : Texture
 

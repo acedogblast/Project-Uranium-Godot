@@ -263,3 +263,6 @@ msgstr "\\PN... you have a Pokémon.\nAnd now I have a Pokémon, too.\nYou know 
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_53"
 msgstr "Oh, please, not in the Lab..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
+msgstr "What? B-but I was s'posed to win!"
