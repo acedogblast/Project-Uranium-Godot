@@ -266,3 +266,45 @@ msgstr "Oh, please, not in the Lab..."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
 msgstr "What? B-but I was s'posed to win!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_53"
+msgstr "B-but... How...\nI'm s'posed to be the b-best trainer ever..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_54"
+msgstr "That's i-impossible...\ngood trainers never l-lose..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_55"
+msgstr "I... I... *sniff*\nWaaaaaaaahhh!!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_56"
+msgstr "Please don't cry, Theo..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_57"
+msgstr "Here, I'll heal your Pokémon for you."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_58"
+msgstr "I w-wanted to be a-an unbeatable Trainer...\nHow come I couldn't win?\nI really really wanted ot win..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_59"
+msgstr "Well... between your starter and \\PN's, theirs has the type advantage."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_60"
+msgstr "Water beats Fire, Fire beats Grass, and Grass beats Water."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_61"
+msgstr "That's the elemental type triangle. Well, one of them, at any rate.\nLearning to master type matchups is an important part of being a Trainer."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_62"
+msgstr "N-no way! I wanna do-over!\nHow come \\PN gets the better starter?! Uuuuaaaaahhhhh! It isn't faaaaair!!\nI-I'm going home!!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_63"
+msgstr "Sign...\nHe took that harder than I hoped."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_64"
+msgstr "But, you shouldn't be so quick to judge him. He is just a kid after all.\nI expect he'll soon discover that training Pokémon isn't as easy as he imagined..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_65"
+msgstr "I'm going out to the entrance to Route 01 by the edge of town. Bring Theo, and I'll teach you both how to catch Pokémon."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_66"
+msgstr "See you later, \\PN."
