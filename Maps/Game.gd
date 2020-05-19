@@ -39,6 +39,9 @@ func _ready():
 	#If the above is false change the scene to start_scene
 	else:
 		change_scene(start_scene)
+		player.position = Vector2(192,144)
+		player.direction = player.DIRECTION.UP
+
 	#Sets the player's position to TrainerX and TrainerY, it's z index to 8, facing direction to up
 	#player.position = Vector2(Global.TrainerX, Global.TrainerY)
 	player.z_index = 8
@@ -92,6 +95,7 @@ func change_scene(scene): # scene must be loaded!
 
 #Gets the destination and direction from Stairs.gd, and goes to the next line
 func room_transition(dest, dir):
+
 	#Calls the change_input method from PlayerNew.gd
 	player.change_input()
 	
@@ -103,13 +107,9 @@ func room_transition(dest, dir):
 	#If the dir variable in Stairs.gd is up, then diable the down stairs collision shape and set the trainerx and trainery to dest.x and dest.y repsectively
 	if dir == "Up":
 		$Map/Floor2/DownStairs/CollisionShape2D.disabled = true
-		Global.TrainerX = dest.x
-		Global.TrainerY = dest.y
 	#If the above is false and the dir variable in Stairs.gd is down, then disable the up stairs collistion shape and set the trainerx and trainery to dest.x and dest.y respectively
 	elif dir == "Down":
 		$Map/Floor1/UpStairs/CollisionShape2D.disabled = true
-		Global.TrainerX = dest.x
-		Global.TrainerY = dest.y
 	
 	#if dir is set to up, then set the player dircetion to 2, and if dir is down, then set the player direction to 1
 	if dir == "Up":
@@ -118,7 +118,7 @@ func room_transition(dest, dir):
 		player.direction = 1
 	
 	#Set's the player's position to trainerx and trainery, waits .3 seconds, and then plays the fade_out animation
-	player.position = Vector2(Global.TrainerX, Global.TrainerY)
+	player.position = dest
 	#player.movePrevious()
 	yield(get_tree().create_timer(0.3), "timeout")
 	play_anim("fade_out")
