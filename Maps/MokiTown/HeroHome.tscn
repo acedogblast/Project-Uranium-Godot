@@ -64,11 +64,6 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 327691, 46, 196608, 327692, 46, 196609, 327693, 46, 196610 )
 
-[node name="Outside" parent="Floor1" instance=ExtResource( 4 )]
-position = Vector2( 80, 336 )
-scene = "res://Maps/MokiTown/MokiTown.tscn"
-destination = Vector2( 880, 1008 )
-
 [node name="Floor2" type="Node2D" parent="."]
 position = Vector2( 16, 0 )
 
@@ -193,4 +188,10 @@ shape = SubResource( 3 )
 [node name="Aunt" parent="." instance=ExtResource( 5 )]
 position = Vector2( 928, 112 )
 texture = ExtResource( 6 )
+
+[node name="Outside" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1120, 336 )
+scene_destination = "res://Maps/MokiTown/MokiTown.tscn"
+location = Vector2( 880, 1004 )
+exterior = false
 [connection signal="area_entered" from="Floor2/Event1" to="." method="event1"]

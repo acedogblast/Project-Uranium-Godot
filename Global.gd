@@ -1,8 +1,6 @@
 extends Node
 var TrainerName : String = "TrainerName"
 var TrainerGender = 0 # 0 is boy, 1 is neutral, 2 is girl
-var TrainerX = 192
-var TrainerY = 144
 var badges = 0
 var time = "00:00"
 var pokedex_count = 0
@@ -43,8 +41,6 @@ func save_state():
 	var state = {
 		"TrainerName": TrainerName,
 		"TrainerGender": TrainerGender,
-		"TrainerX": TrainerX,
-		"TrainerY": TrainerY,
 		"badges": badges,
 		"time": time,
 		"pokedex_count": pokedex_count,
@@ -58,8 +54,6 @@ func load_state():
 		var state = SaveSystem.get_state(filename)
 		TrainerName = state["TrainerName"]
 		TrainerGender = state["TrainerGender"]
-		TrainerX = state["TrainerX"]
-		TrainerY = state["TrainerY"]
 		badges = state["badges"]
 		time = state["time"]
 		pokedex_count = state["pokedex_count"]

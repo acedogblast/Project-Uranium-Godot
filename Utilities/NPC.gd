@@ -56,9 +56,10 @@ func move(_dir): # Walk one step
 			move_direction.x = 32
 	
 	animate(_dir)
-	$Tween.interpolate_property($Position2D, "position", - move_direction, Vector2(), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	position += move_direction
-	$Position2D.position -= move_direction
+	$Tween.interpolate_property(self, "position", self.position, self.position + move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	#$Tween.interpolate_property($Position2D, "position", - move_direction, Vector2(), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	#position += move_direction
+	#$Position2D.position -= move_direction
 	
 	$Tween.start()
 	
@@ -78,7 +79,7 @@ func move(_dir): # Walk one step
 	else:
 		foot = 0
 	moving = false
-	$Position2D.position = Vector2(0, -16)
+	#$Position2D.position = Vector2(0, -16)
 	set_process(true)
 	emit_signal("step")
 

@@ -1,20 +1,24 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Utilities/Door.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/Characters/PU-doorsdew.PNG" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 15, 15 )
+extents = Vector2( 16, 16 )
 
-[node name="Door" type="Area2D" groups=[
-"transition",
+[node name="Door" type="Node2D" groups=[
+"Doors",
 ]]
-collision_layer = 2
-collision_mask = 2
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
+exterior = true
+door_type = "Type 1 - Wood"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Exterior" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 4, 36, 32, 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource( 1 )
-[connection signal="area_shape_entered" from="." to="." method="_on_Door_area_shape_entered"]

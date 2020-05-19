@@ -69,24 +69,24 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Door" parent="TileMap3" instance=ExtResource( 5 )]
-position = Vector2( 440.062, 502.152 )
-scale = Vector2( 0.5, 0.5 )
-scene = "res://Maps/MokiTown/HeroHome.tscn"
-destination = Vector2( 1120, 304 )
+[node name="NPC_Layer" type="Node2D" parent="."]
 
-[node name="NPC_Layer" type="Node2D" parent="TileMap3"]
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Event1" parent="TileMap3" instance=ExtResource( 6 )]
-position = Vector2( 408, 244 )
+[node name="Event1" parent="NPC_Layer" instance=ExtResource( 6 )]
+position = Vector2( 816, 488 )
+scale = Vector2( 2, 2 )
 event_name = ""
 size = Vector2( 8, 36 )
 
+[node name="Door" parent="NPC_Layer" instance=ExtResource( 5 )]
+position = Vector2( 880, 1004 )
+scene_destination = "res://Maps/MokiTown/HeroHome.tscn"
+location = Vector2( 1120, 304 )
+
 [node name="Door2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 528, 364 )
-scene = "res://Maps/MokiTown/BamboLab.tscn"
-destination = Vector2( 240, 560 )
+scene_destination = "res://Maps/MokiTown/BamboLab.tscn"
+location = Vector2( 240, 528 )
+door_type = "Type 2 - Glass"
 
 [node name="Trees" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
@@ -98,4 +98,4 @@ tile_data = PoolIntArray( 1, 2818086, 0, 2, 131074, 0, 65536, 2883621, 0, 65538,
 __meta__ = {
 "_edit_lock_": true
 }
-[connection signal="area_entered" from="TileMap3/Event1" to="." method="event1"]
+[connection signal="area_entered" from="NPC_Layer/Event1" to="." method="event1"]

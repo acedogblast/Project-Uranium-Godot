@@ -20,6 +20,7 @@ var isTransitioning = false
 
 
 signal event_dialogue_end
+signal tranistion_complete
 
 onready var transition = $CanvasLayer/Transition
 
@@ -35,15 +36,12 @@ func _ready():
 	#If load_game_from_id has a value, then load game from the id
 	if Global.load_game_from_id != null:
 		SaveSystem.load_game(Global.load_game_from_id)
-		#change_scene(current_scene)
 	#If the above is false change the scene to start_scene
 	else:
 		change_scene(start_scene)
 	#Sets the player's position to TrainerX and TrainerY, it's z index to 8, facing direction to up
-	player.position = Vector2(Global.TrainerX, Global.TrainerY)
+	#player.position = Vector2(Global.TrainerX, Global.TrainerY)
 	player.z_index = 8
-	player.set_facing_direction(player.DIRECTION.UP)
-	#DialogueSystem.connect("dialogue_start", self, "set_process", [false])
 	#Connects the signal dialogue_end to the method self on dialog_end, sets the load_game_id to null, and lets the player move
 	DialogueSystem.connect("dialogue_end", self, "dialog_end")
 	Global.load_game_from_id = null
@@ -80,8 +78,7 @@ func change_scene(scene): # scene must be loaded!
 
 	#Adds the current scene to be a child
 	add_child(current_scene)
-	for node in get_tree().get_nodes_in_group("transition"):
-		node.initialize(self)
+
 	# Load and start background music if available.
 	if current_scene.background_music != null:
 		var music = load(current_scene.background_music)
@@ -91,6 +88,7 @@ func change_scene(scene): # scene must be loaded!
 	if current_scene.type == "Outside":
 		$CanvasLayer/ZoneMessage/Bar/Label.text = current_scene.place_name
 		$CanvasLayer/ZoneMessage/AnimationPlayer.play("Slide")
+	Global.location = current_scene.place_name
 
 #Gets the destination and direction from Stairs.gd, and goes to the next line
 func room_transition(dest, dir):
@@ -145,35 +143,22 @@ func room_transition(dest, dir):
 
 #If the player is not transitioning, then set isTransitioning to true, and call the change_input method, and wait until the transition fade_to_color animation has finished
 func door_transition(path_scene, new_position):
-	if !isTransitioning:
-		isTransitioning = true
-		player.change_input()
-		#player.canMove = false
-		yield(transition.fade_to_color(), "completed")
-		
-		#Sets the scene variable to load the path_scene
-		var scene = load(path_scene)
-	
-		#Calls the change_scene method
-		change_scene(scene)
-		
-		
-		#Sets the trainerx and trainery to new_position.x and new_position.y, and player.position to new_position. Allowing you to appear at the door you went in. Then it waits .3 seconds
-		Global.TrainerX = new_position.x
-		Global.TrainerY = new_position.y
-		player.position = new_position
-		#player.direction = 0
-		#player.movePrevious()
-		yield(get_tree().create_timer(0.3), "timeout")
-		
-		#Calls the move method and passes true to it. Waits until the transition is done fading from color, then sets the isTransitioning flag to false and calls the change_input method
-		player.move(true)
-		yield(transition.fade_from_color(), "completed")
-		#player.movePrevious()
-		isTransitioning = false
-		#player.canMove = true
-		player.change_input()
-		Global.location = current_scene.place_name
+	Global.game.player.visible = true
+	yield(transition.fade_to_color(), "completed")
+	change_scene(load(path_scene))
+	yield(get_tree().create_timer(0.3), "timeout")
+	player.position = new_position
+	transition.fade_from_color()
+	# Check if exit is also a door
+	for door in get_tree().get_nodes_in_group("Doors"):
+		if door.position == new_position:
+			door.set_open()
+			Global.game.player.move(true)
+			door.animation_close()
+			break
+	player.change_input()
+	emit_signal("tranistion_complete")
+
 
 #Loads the next scene and adds it to the scene tree
 func load_seemless():
@@ -221,12 +206,6 @@ func check_node(pos):
 func transition_visibility():
 	$CanvasLayer/Transition.visible = !$CanvasLayer/Transition.visible
 
-func _exit_tree():
-	#DialogueSystem.disconnect("dialogue_start", self, "set_process")
-	#DialogueSystem.disconnect("dialogue_end", self, "set_process")
-	#save_state()
-	pass
-
 #saves the state by saving the current_scene, player.position, and player.direction
 func save_state():
 	var state = {
@@ -240,12 +219,8 @@ func load_state(): # Automatically called when loading a save file
 	if SaveSystem.has_state(filename):
 		var state = SaveSystem.get_state(filename)
 		change_scene(load(state["current_scene"]))
-		var temp_position = state["player_position"]
 		player.direction = state["player_direction"]
-		Global.TrainerX = temp_position.x
-		Global.TrainerY = temp_position.y
-	# else:
-	# it uses the default values
+		player.position = state["player_position"]
 
 func play_dialogue(title): # Plays a dialogue without freezing player
 	DialogueSystem.set_point_to(Vector2(0,0))
@@ -254,3 +229,4 @@ func play_dialogue(title): # Plays a dialogue without freezing player
 func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and without freezing player
 	DialogueSystem.set_point_to(vector2)
 	DialogueSystem.start_dialog(title)
+

@@ -12,8 +12,7 @@ var hero_home_y = 1008
 var npc_layer
 
 func _ready():
-	npc_layer = $TileMap3/NPC_Layer
-	pass
+	npc_layer = $NPC_Layer
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.

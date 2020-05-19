@@ -15,6 +15,7 @@ func _ready():
 	bambo = $NPC_Layer/Bambo
 	$BlackBG.visible = true
 	npc_layer = $NPC_Layer
+	yield(Global.game, "tranistion_complete")
 	event1(null) # Play event on enter.
 	pass
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact

@@ -27,7 +27,7 @@ var state
 
 #signal step
 signal step
-
+signal door_check
 signal done_movement
 
 enum STATE {
@@ -60,7 +60,6 @@ enum DIRECTION{
 #Calls the load_texture method
 func _ready():
 	load_texture()
-
  
 func _process(delta):
 	#If the hero is not moving
@@ -115,6 +114,28 @@ func get_input():
 	else:
 		movement_speed = MOVEMENT_SPEED.NORMAL
 		$Position2D/Sprite.texture = walkTexture
+
+
+	# Check if door is ahead
+	var ahead
+	match direction:
+		DIRECTION.UP:
+			ahead = position + Vector2(0, -32)
+		DIRECTION.DOWN:
+			ahead = position + Vector2(0, 32)
+		DIRECTION.LEFT:
+			ahead = position + Vector2(-32, 0)
+		DIRECTION.RIGHT:
+			ahead = position + Vector2(32, 0)
+	var is_door_ahead = false
+	for door in get_tree().get_nodes_in_group("Doors"):
+		if door.position.x == ahead.x && (door.position.y >= ahead.y - 4 && door.position.y <= ahead.y + 4):
+			is_door_ahead = true
+			print("door is ahead")
+			door.transition()
+			return
+	
+
 	#If input is disabled then you cannot move
 	if !inputDisabled:
 		move(false)
@@ -143,8 +164,8 @@ func interact():
 	check_pos.y = check_y
 	
 	#Print the position and facing direction of the player
-	print("Player: " + str(self.position))
-	print("Looking: " + str(check_pos))
+	#print("Player: " + str(self.position))
+	#print("Looking: " + str(check_pos))
 	
 	#Get the parent node and check the position and direction
 	get_parent().interaction(check_pos, direction)
@@ -171,35 +192,31 @@ func move(force_move : bool):
 	# Start Animation
 	animate()
 	
-	# Set Tween settings and position instantly
-	$Tween.interpolate_property($Position2D, "position", - move_direction, Vector2(), $AnimationPlayer.current_animation_length, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	position += move_direction
-	$Position2D.position -= move_direction
+	# Set Tween settings
+	if movement_speed == MOVEMENT_SPEED.FAST:
+		$Tween.interpolate_property(self, "position", self.position, self.position + move_direction, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	else:
+		$Tween.interpolate_property(self, "position", self.position, self.position + move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	
+
+	
+	# Play bump effect is player can't move
 	if move_direction == Vector2.ZERO:
 		$AudioStreamPlayer2D.play(0.0)
 	
 	# Start Tween
 	$Tween.start()
 
-	# Wait Till animation finished
-	#yield($AnimationPlayer, "animation_finished")
-	yield($Tween, "tween_all_completed") # Edits due to trying to fix instant event walk!
-	#if movement_speed == MOVEMENT_SPEED.FAST:
-	#	yield(get_tree().create_timer(0.2), "timeout")
-	#else:
-	#	yield(get_tree().create_timer(0.3), "timeout")
-
+	# Wait until player finish move
+	yield($Tween, "tween_all_completed")
 
 	if foot == 0:
 		foot = 1
 	else:
 		foot = 0
-	
-	state = STATE.IDLE
+
 	set_idle_frame()
 	set_process(true)
-	# Tried to use new 'step' step signal
 	emit_signal("step")
 
 #Loads the texture of the sprites you picked for your character
@@ -217,10 +234,23 @@ func load_texture():
 	$Position2D/Sprite.frame = 0
 	
 #Sets the sprite texture to the walkTexture and if the direction is not null then the sprite.frame is set to direction times 4
-func set_idle_frame():
+func set_idle_frame(_dir = null):
+	state = STATE.IDLE
 	$Position2D/Sprite.texture = walkTexture
-	if direction != null:
+	if _dir == null:
 		$Position2D/Sprite.frame = direction * 4
+	else:
+		match _dir:
+			"Down":
+				$Position2D/Sprite.frame = 0
+			"Up":
+				$Position2D/Sprite.frame = 12
+			"Left":
+				$Position2D/Sprite.frame = 4
+			"Right":
+				$Position2D/Sprite.frame = 8
+			_:
+				$Position2D/Sprite.frame = 0
 
 func animate():
 	#If the sprite texture is the walk texture
@@ -276,24 +306,12 @@ func set_facing_direction(facing_dir):
 	$Position2D/Sprite.texture = walkTexture
 	if facing_dir != null:
 		$Position2D/Sprite.frame = facing_dir * 4
-	#emit_signal("done_movement")
 
 func move_player_event(dir, steps): # Force moves player to direction and steps
 	direction = dir
+	steps = steps
+	movement_speed = MOVEMENT_SPEED.NORMAL
 	for i in range(steps):
-		# Set player new cord
-		var cord = Vector2(self.position.x, self.position.y)
-		match direction:
-			DIRECTION.DOWN:
-				cord += Vector2(0,32)
-			DIRECTION.LEFT:
-				cord += Vector2(-32,0)
-			DIRECTION.RIGHT:
-				cord += Vector2(32,0)
-			DIRECTION.UP:
-				cord += Vector2(0,-32)
-		# Move
 		move(true)
-		yield(self, "step") # This stops the instant event walk in the lab scene and works normally in event before but now make the player studder!
-		#print("step")
+		yield(self, "step")
 	emit_signal("done_movement")

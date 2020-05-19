@@ -6,8 +6,8 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "Down"
-length = 0.3
-step = 0.05
+length = 0.25
+step = 0.01
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -15,7 +15,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
@@ -23,7 +23,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=2]
 resource_name = "Down2"
-length = 0.3
+length = 0.25
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -32,7 +32,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 0, 3 ]
@@ -40,7 +40,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "Down_sprint"
-length = 0.2
+length = 0.125
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -49,7 +49,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
+"times": PoolRealArray( 0, 0.06 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
@@ -57,7 +57,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=4]
 resource_name = "Down_sprint2"
-length = 0.2
+length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -65,14 +65,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
+"times": PoolRealArray( 0, 0.06 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 2, 3 ]
 }
 
 [sub_resource type="Animation" id=5]
-length = 0.3
+length = 0.25
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -81,14 +81,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 4, 5 ]
 }
 
 [sub_resource type="Animation" id=6]
-length = 0.3
+length = 0.25
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -97,7 +97,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 4, 7 ]
@@ -105,7 +105,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=7]
 resource_name = "Left_sprint"
-length = 0.2
+length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -113,7 +113,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
+"times": PoolRealArray( 0, 0.06 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 4, 5 ]
@@ -121,7 +121,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=8]
 resource_name = "Left_sprint2"
-length = 0.2
+length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -129,14 +129,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
+"times": PoolRealArray( 0, 0.06 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 6, 7 ]
 }
 
 [sub_resource type="Animation" id=9]
-length = 0.3
+length = 0.25
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -145,14 +145,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 8, 9 ]
 }
 
 [sub_resource type="Animation" id=10]
-length = 0.3
+length = 0.25
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -161,7 +161,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 8, 11 ]
@@ -169,7 +169,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=11]
 resource_name = "Right_sprint"
-length = 0.2
+length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -177,7 +177,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
+"times": PoolRealArray( 0, 0.06 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 8, 9 ]
@@ -185,7 +185,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=12]
 resource_name = "Right_sprint2"
-length = 0.2
+length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -193,14 +193,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
+"times": PoolRealArray( 0, 0.06 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 10, 11 ]
 }
 
 [sub_resource type="Animation" id=13]
-length = 0.3
+length = 0.25
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -209,14 +209,14 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 12, 13 ]
 }
 
 [sub_resource type="Animation" id=14]
-length = 0.3
+length = 0.25
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -225,7 +225,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15 ),
+"times": PoolRealArray( 0, 0.13 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 12, 15 ]
@@ -233,7 +233,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=15]
 resource_name = "Up_sprint"
-length = 0.2
+length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -241,7 +241,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
+"times": PoolRealArray( 0, 0.06 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 12, 13 ]
@@ -249,7 +249,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=16]
 resource_name = "Up_sprint2"
-length = 0.2
+length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
 tracks/0/interp = 1
@@ -257,7 +257,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
+"times": PoolRealArray( 0, 0.06 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 14, 15 ]
@@ -320,6 +320,7 @@ pause_mode = 2
 
 [node name="Area2D" type="Area2D" parent="Collision"]
 collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Area2D"]
 shape = SubResource( 17 )

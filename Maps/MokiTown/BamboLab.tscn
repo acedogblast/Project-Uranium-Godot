@@ -31036,8 +31036,9 @@ shape = SubResource( 3 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 240, 560 )
-scene = "res://Maps/MokiTown/MokiTown.tscn"
-destination = Vector2( 528, 384 )
+scene_destination = "res://Maps/MokiTown/MokiTown.tscn"
+location = Vector2( 528, 364 )
+exterior = false
 
 [node name="Tile Layer 3" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
