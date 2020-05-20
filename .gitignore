@@ -3,6 +3,7 @@ Audio/
 Fonts/
 Graphics/
 .import/
+.vscode/
 bin/
 Maps/TiledMaps/
 .directory
