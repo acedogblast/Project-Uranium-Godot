@@ -21,7 +21,7 @@ var battle_grounds_pos_change
 
 var battle_text : String
 
-var damage_target_index # Used in both damage, faint, and exp_gain
+var damage_target_index # Used in both damage, faint, and exp_gain, stat_animation
 
 var damage_amount : int
 

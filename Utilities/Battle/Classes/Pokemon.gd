@@ -199,7 +199,13 @@ func get_battle_foe_sprite() -> Sprite:
 		sprite.hframes = frames
 		
 		# To do: Add animation to battler
-
+	sprite.name = "Sprite"
+	sprite.material = ShaderMaterial.new()
+	#var effect = load("res://Graphics/Pictures/StatUp.png")
+	#effect.set_flags(Texture.FLAG_REPEAT)
+	sprite.material.shader = load("res://Utilities/Battle/StatChange.shader")
+	#sprite.material.set_shader_param("effect", effect)
+	sprite.material.set_shader_param("effect_weight", 0.0)
 	return sprite
 func get_battle_player_sprite() -> Sprite:
 	var sprite = Sprite.new()
@@ -209,6 +215,13 @@ func get_battle_player_sprite() -> Sprite:
 	else:
 		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "b.png") as Texture
 	sprite.texture = tex
+	sprite.name = "Sprite"
+	sprite.material = ShaderMaterial.new()
+	#var effect = load("res://Graphics/Pictures/StatUp.png")
+	#effect.set_flags(Texture.FLAG_REPEAT)
+	sprite.material.shader = load("res://Utilities/Battle/StatChange.shader")
+	#sprite.material.set_shader_param("effect", effect)
+	sprite.material.set_shader_param("effect_weight", 0.0)
 	return sprite
 func get_exp_bar_percent() -> float:
 	var result : float = 0.0

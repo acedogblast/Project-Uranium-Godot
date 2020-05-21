@@ -106,21 +106,56 @@ func apply_stat_effect(effect : StatStageEffect):
         evasion = -6
         over_limit = true
 
-    var stats_changed = []
+    var stats_changed = [] # Array of StatChange objects
     
     if effect.attack != 0:
-        stats_changed.push_back(ATTACK)
+        var change = StatChange.new()
+        change.stat_type = ATTACK
+        change.stat_change = effect.attack
+        if over_limit:
+            change.stat_over_limit = true
+        stats_changed.push_back(change)
     if effect.defense != 0:
-        stats_changed.push_back(DEFENSE)
+        var change = StatChange.new()
+        change.stat_type = DEFENSE
+        change.stat_change = effect.defense
+        if over_limit:
+            change.stat_over_limit = true
+        stats_changed.push_back(change)
     if effect.sp_attack != 0:
-        stats_changed.push_back(SP_ATTACK)
+        var change = StatChange.new()
+        change.stat_type = SP_ATTACK
+        change.stat_change = effect.sp_attack
+        if over_limit:
+            change.stat_over_limit = true
+        stats_changed.push_back(change)
     if effect.sp_defense != 0:
-        stats_changed.push_back(SP_DEFENSE)
+        var change = StatChange.new()
+        change.stat_type = SP_DEFENSE
+        change.stat_change = effect.sp_defense
+        if over_limit:
+            change.stat_over_limit = true
+        stats_changed.push_back(change)
     if effect.speed != 0:
-        stats_changed.push_back(SPEED)
+        var change = StatChange.new()
+        change.stat_type = SPEED
+        change.stat_change = effect.speed
+        if over_limit:
+            change.stat_over_limit = true
+        stats_changed.push_back(change)
     if effect.accuracy != 0:
-        stats_changed.push_back(ACCURACY)
+        var change = StatChange.new()
+        change.stat_type = ACCURACY
+        change.stat_change = effect.accuracy
+        if over_limit:
+            change.stat_over_limit = true
+        stats_changed.push_back(change)
     if effect.evasion != 0:
-        stats_changed.push_back(EVASION)
+        var change = StatChange.new()
+        change.stat_type = EVASION
+        change.stat_change = effect.evasion
+        if over_limit:
+            change.stat_over_limit = true
+        stats_changed.push_back(change)
 
     return stats_changed

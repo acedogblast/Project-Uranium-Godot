@@ -20,6 +20,9 @@ var battler
 onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
 onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
 
+func _ready():
+    $MoveSlide/SelHand/AnimationPlayer.play("Squeez")
+
 func reset(): # To be called when the player battler is switched
     selected = 1
     moves = 1
@@ -47,7 +50,16 @@ func start(poke):
         $MoveSlide/Move4.visible = true
         moves += 1
     enabled = true
-    $MoveSlide/SelHand/AnimationPlayer.play("Squeez")
+    match selected:
+        1:
+            $MoveSlide/SelHand.position = MOVE1_POS
+        2:
+            $MoveSlide/SelHand.position = MOVE2_POS
+        3:
+            $MoveSlide/SelHand.position = MOVE3_POS
+        4:
+            $MoveSlide/SelHand.position = MOVE4_POS
+    
 func set_move_sprite(sprite, move):
     sprite.frame = int(move.type)
     sprite.get_node("Name").bbcode_text = "[center]" + move.name

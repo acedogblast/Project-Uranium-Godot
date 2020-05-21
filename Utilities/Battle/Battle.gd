@@ -4,13 +4,15 @@ var battle_instance : BattleInstanceData
 var queue : BattleQueue
 var registry
 var battle_logic : BattleLogic
-var translation : Translation
 
 var battler1 : Pokemon # Player's pokemon
 var battler2 : Pokemon # Foe's pokemon
 var battler3 : Pokemon # Player's second pokemon in double battles
 var battler4 : Pokemon # Foe's second pokemonin double battles
 
+export var effect_weight = 0.0 # Used for stat change animation
+var effect_enable = false
+var effect_shader
 
 var battle_command : BattleCommand
 
@@ -33,17 +35,16 @@ func _ready():
 	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.visible = false
 	$CanvasLayer/ColorRect.visible = false
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
-	translation = Translation.new()
 	
 	# Check if we are testing
 	if Global.past_events.size() == 0:
 		test()
 	pass
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-	
-#	pass
+func _process(delta):
+	if effect_enable:
+		effect_shader.set_shader_param("effect_weight" , effect_weight)
+	pass
 func Start_Battle(bid : BattleInstanceData):
 	battle_instance = bid
 	
@@ -190,7 +191,7 @@ func test():
 	poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(3,5)
 	Global.pokemon_group.append(poke)
-	Global.TrainerGender = 2
+	Global.TrainerGender = 0
 	
 	Start_Battle(bid)
 
@@ -420,6 +421,37 @@ func battle_loop():
 				print("Player wins.")
 			if action.winner == action.FOE_WIN:
 				print("Foe wins.")
+		action.STAT_CHANGE_ANIMATION:
+			var effect
+			var animation
+			var sound
+			
+			match action.damage_target_index:
+				1:
+					animation = $CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer
+					sound = $CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer
+					effect_shader = $CanvasLayer/BattleGrounds/PlayerBase/Battler/Sprite.material
+				2:
+					animation = $CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer
+					sound = $CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer
+					effect_shader = $CanvasLayer/BattleGrounds/FoeBase/Battler/Sprite.material
+				_:
+					print("Battle Error: Unimplemeted stat animation index")
+			if action.stat_change_increase:
+				effect = load("res://Graphics/Pictures/StatUp.png")
+				sound.stream = load("res://Audio/SE/increase.wav")
+				effect_shader.set_shader_param("effect_speed", 1.0)
+			else:
+				effect = load("res://Graphics/Pictures/StatDown.png")
+				sound.stream = load("res://Audio/SE/decrease.wav")
+				effect_shader.set_shader_param("effect_speed", -1.0)
+			effect.set_flags(Texture.FLAG_REPEAT)
+			effect_shader.set_shader_param("effect", effect)
+			sound.play()
+			effect_enable = true
+			animation.play("StatChange")
+			yield(animation, "animation_finished")
+			effect_enable = false
 
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")

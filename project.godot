@@ -100,6 +100,11 @@ _global_script_classes=[ {
 "path": "res://Utilities/Dialogue/Events/SkipTextEvent.gd"
 }, {
 "base": "Object",
+"class": "StatChange",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/StatChange.gd"
+}, {
+"base": "Object",
 "class": "StatStageEffect",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/StatStageEffect.gd"
@@ -148,6 +153,7 @@ _global_script_class_icons={
 "Opponent": "",
 "Pokemon": "",
 "SkipTextEvent": "",
+"StatChange": "",
 "StatStageEffect": "",
 "State": "",
 "StatusAilment": "",

@@ -19,8 +19,8 @@ var battle_instance : BattleInstanceData
 func _init(b1, b2 , bid):
 	battler1 = b1
 	battler2 = b2
-	battler1_stat_stage = load("res://Utilities/Battle/Classes/BattleStatStage.gd").new()
-	battler2_stat_stage = load("res://Utilities/Battle/Classes/BattleStatStage.gd").new()
+	battler1_stat_stage = BattleStatStage.new()
+	battler2_stat_stage = BattleStatStage.new()
 	battle_instance = bid
 	pass
 func generate_action_queue(player_command : BattleCommand, foe_command : BattleCommand):
@@ -28,8 +28,8 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 	get_turn_order(player_command, foe_command)
 	# Arrange Battle actions once turn orders are calculated
 	
-	var battler
-	var battler_index
+	var battler # The pokemon preforming the move
+	var battler_index # The index of the pokemon preforming the move
 	var command
 	while !turn_order.empty():
 		var action = BattleQueueAction.new()
@@ -65,6 +65,8 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 			action.battle_text = battler.name + " used\n" + command.attack_move + "!"
 			queue.push(action)
 			# Decrement move PP, PP should be at least 1 at this point.
+			if move.remaining_pp == 0:
+				print("Battle Error: " + str(move.name) + " PP is zero.")
 			move.remaining_pp = move.remaining_pp - 1
 			# Calculate if move hits or not
 			
@@ -250,21 +252,64 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						pass
 					MoveStyle.STATUS:
 						var stat_effect = move.main_status_effect
-						var stats_changed = get_stage_stat_by_index(target_index).apply_stat_effect(stat_effect)
+						var stats_changed = get_stage_stat_by_index(target_index).apply_stat_effect(stat_effect) # This changes stats of target
 							
 						# For all stats changed
-						for i in stats_changed:
+						for stat in stats_changed:
+							var over_limit = false
+							if stat.stat_over_limit:
+								over_limit = true
+							else:
+								action = BattleQueueAction.new()
+								action.type = action.STAT_CHANGE_ANIMATION
+								action.damage_target_index = target_index
+								if stat.stat_change > 0: # Increase
+									action.stat_change_increase = true
+								queue.push(action)
+
 							action = BattleQueueAction.new()
-							action.type = action.STAT_CHANGE_ANIMATION
-							
+							action.type = action.BATTLE_TEXT
+							var stat_effected_name
+							match stat.stat_type:
+								BattleStatStage.ATTACK:
+									stat_effected_name = "Attack"
+								BattleStatStage.DEFENSE:
+									stat_effected_name = "Defense"
+								BattleStatStage.SP_ATTACK:
+									stat_effected_name = "Sp. Attack"
+								BattleStatStage.SP_DEFENSE:
+									stat_effected_name = "Sp. Defense"
+								BattleStatStage.SPEED:
+									stat_effected_name = "Speed"
+								BattleStatStage.ACCURACY:
+									stat_effected_name = "Accuracy"
+								BattleStatStage.EVASION:
+									stat_effected_name = "Evasion"
+
+							action.battle_text = get_battler_by_index(target_index).name + "'s " + str(stat_effected_name)
+							if !over_limit:
+								match stat.stat_change:
+									1:
+										action.battle_text += " rose!"
+									2:
+										action.battle_text += " sharply rose!"
+									3, 4, 5, 6:
+										action.battle_text += " rose drastically!"
+									-1:
+										action.battle_text += " fell!"
+									-2:
+										action.battle_text += " harshly fell!"
+									-3, -4, -5, -6:
+										action.battle_text += " severely fell!"
+							else:
+								match stat.stat_change:
+									1,2,3,4,5,6:
+										action.battle_text += " won't go any higher!"
+									-1,-2,-3,-4,-5,-6:
+										action.battle_text += " won't go any lower!"
 							queue.push(action)
 
-
-
-
 				
-
-
 			else:
 				# Add missed mesage.
 				action = BattleQueueAction.new()
