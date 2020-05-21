@@ -23,7 +23,7 @@ func event1(_body):
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)
 		DialogueSystem.set_box_position(DialogueSystem.TOP) # Not the same as original
-		Global.game.player.change_input()
+		Global.game.lock_player()
 		# Message
 		Global.game.play_dialogue("EVENT_MOKI_TOWN_THEO_1")
 		yield(Global.game, "event_dialogue_end")
@@ -66,7 +66,7 @@ func event1(_body):
 		
 		Global.game.player.direction = Global.game.player.DIRECTION.RIGHT
 		Global.game.player.call_deferred("set_idle_frame")
-		npc.position = Vector2(1104,496-16)
+		npc.position = Vector2(1104,496)
 		npc.call_deferred("move_multi", "Left", 8)
 		yield(npc, "done_movement")
 		#print("NPC done")
@@ -80,6 +80,5 @@ func event1(_body):
 		npc.queue_free()
 		Global.game.get_node("Effect_music").stop()
 		Global.game.get_node("Background_music").play(time)
-
-		Global.game.player.change_input()
+		Global.game.release_player()
 		Global.past_events.append(event_name)

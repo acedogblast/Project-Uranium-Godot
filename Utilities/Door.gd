@@ -64,9 +64,14 @@ func animation_close():
 	emit_signal("animation_finished")
 
 func transition():
-	Global.game.player.change_input()
-	
+	Global.game.lock_player()
+	var sound = load("res://Audio/SE/Exit Door.WAV")
+	$AudioStreamPlayer.stream = sound
+
 	if exterior:
+		sound = load("res://Audio/SE/Entering Door.wav")
+		$AudioStreamPlayer.stream = sound
+		$AudioStreamPlayer.play()
 		animation_open()
 		yield(self, "animation_finished")
 
@@ -77,7 +82,8 @@ func transition():
 
 		animation_close()
 		yield(self, "animation_finished")
-
+	else:
+		$AudioStreamPlayer.play()
 	Global.game.door_transition(scene_destination, location)
 func set_open():
 	match door_type:

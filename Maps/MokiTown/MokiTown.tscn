@@ -78,7 +78,7 @@ event_name = ""
 size = Vector2( 8, 36 )
 
 [node name="Door" parent="NPC_Layer" instance=ExtResource( 5 )]
-position = Vector2( 880, 1004 )
+position = Vector2( 880, 1008 )
 scene_destination = "res://Maps/MokiTown/HeroHome.tscn"
 location = Vector2( 1120, 304 )
 

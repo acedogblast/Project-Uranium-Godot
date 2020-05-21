@@ -32,6 +32,7 @@ func event1(_body): # First event to get pokemon
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)
 		Global.game.player.change_input()
+		Global.game.menu.locked = true
 		# Spawn Theo
 		theo = load("res://Utilities/NPC.tscn").instance()
 		theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
@@ -113,6 +114,7 @@ func event1(_body): # First event to get pokemon
 		else:
 			Global.past_events.append("EVENT_BAMBOLAB_1_INTRO")
 			Global.game.player.change_input()
+			Global.game.menu.locked = false
 
 func event1_pick_up():
 	# Play open
@@ -127,6 +129,7 @@ func event1_pick_up():
 	yield(Global.game, "event_dialogue_end")
 
 	Global.game.player.change_input()
+	Global.game.menu.locked = false
 	Global.past_events.append("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")
 	emit_signal("finished")
 
@@ -320,6 +323,7 @@ func event1_test():
 func event1_poke_machine():
 	if Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE"):
 		Global.game.player.change_input()
+		Global.game.menu.locked = true
 		$PokeMachine.frame = 10
 		var time = Global.game.get_node("Background_music").get_playback_position()
 		Global.game.get_node("Background_music").stop()
@@ -587,3 +591,4 @@ func lab_battle():
 
 	Global.past_events.append("EVENT_BAMBOLAB_1_COMPLETE")
 	Global.game.player.change_input()
+	Global.game.menu.locked = false

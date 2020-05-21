@@ -80,8 +80,6 @@ func change_internal_input():
 	#get_tree().paused = !get_tree().paused
 	inputDisabled = !inputDisabled
 	canMove = !canMove
-	# Lockes menu
-	#Global.game.menu.locked = !Global.game.menu.locked
 	set_idle_frame()
 #Sets the direction based on the input and sets the state to STATE.MOVE
 func get_input():

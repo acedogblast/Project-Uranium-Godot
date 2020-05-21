@@ -53,6 +53,7 @@ func _ready():
 	$CanvasLayer/Menu.visible = true
 	$CanvasLayer/ZoneMessage.visible = true
 
+
 func _process(_delta):
 	#change_menu_text()
 	#Quick save
@@ -143,12 +144,15 @@ func room_transition(dest, dir):
 
 #If the player is not transitioning, then set isTransitioning to true, and call the change_input method, and wait until the transition fade_to_color animation has finished
 func door_transition(path_scene, new_position):
-	Global.game.player.visible = true
 	yield(transition.fade_to_color(), "completed")
 	change_scene(load(path_scene))
 	yield(get_tree().create_timer(0.3), "timeout")
 	player.position = new_position
+	player.visible = true
 	transition.fade_from_color()
+
+	print(new_position)
+
 	# Check if exit is also a door
 	for door in get_tree().get_nodes_in_group("Doors"):
 		if door.position == new_position:
@@ -156,7 +160,7 @@ func door_transition(path_scene, new_position):
 			Global.game.player.move(true)
 			door.animation_close()
 			break
-	player.change_input()
+	release_player()
 	emit_signal("tranistion_complete")
 
 
@@ -230,3 +234,10 @@ func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and
 	DialogueSystem.set_point_to(vector2)
 	DialogueSystem.start_dialog(title)
 
+func lock_player(): # Locks player to prevent user input. Useful for events.
+	player.change_input()
+	Global.game.menu.locked = true
+func release_player(): # Releases player to prevent user input. Useful for events.
+	player.change_input()
+	Global.game.menu.locked = false
+	pass
