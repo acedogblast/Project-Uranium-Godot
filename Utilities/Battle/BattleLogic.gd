@@ -84,40 +84,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				
 				match move.style:
 					MoveStyle.PHYSICAL, MoveStyle.SPECIAL:
-						# If move can crit calculate if crit or not.
-						var crit = 0
-						var did_crit = false
-						match crit:
-							0: # 1/16
-								var rng = RandomNumberGenerator.new()
-								rng.randomize()
-								var value = rng.randi_range(1,16)
-								if value == 1:
-									did_crit = true
-							1: # 1/8
-								var rng = RandomNumberGenerator.new()
-								rng.randomize()
-								var value = rng.randi_range(1,8)
-								if value == 1:
-									did_crit = true
-							2: # 1/4
-								var rng = RandomNumberGenerator.new()
-								rng.randomize()
-								var value = rng.randi_range(1,4)
-								if value == 1:
-									did_crit = true
-							3: # 1/3
-								var rng = RandomNumberGenerator.new()
-								rng.randomize()
-								var value = rng.randi_range(1,3)
-								if value == 1:
-									did_crit = true
-							_: # 1/2
-								var rng = RandomNumberGenerator.new()
-								rng.randomize()
-								var value = rng.randi_range(1,2)
-								if value == 1:
-									did_crit = true
+						var did_crit = does_crit(move.critical_hit_level)
 						
 						# Calculate damage done.
 						var raw_damage: int = 0
@@ -468,3 +435,33 @@ func check_foe_out_of_poke() -> bool:
 		if poke.current_hp != 0:
 			result = false
 	return result
+func does_crit(crit : int) -> bool: # If move can crit calculate if crit or not.
+	var did_crit = false
+	var rng = RandomNumberGenerator.new()
+	match crit:
+		1: # 1/16
+			rng.randomize()
+			var value = rng.randi_range(1,16)
+			if value == 1:
+				did_crit = true
+		2: # 1/8
+			rng.randomize()
+			var value = rng.randi_range(1,8)
+			if value == 1:
+				did_crit = true
+		3: # 1/4
+			rng.randomize()
+			var value = rng.randi_range(1,4)
+			if value == 1:
+				did_crit = true
+		4: # 1/3
+			rng.randomize()
+			var value = rng.randi_range(1,3)
+			if value == 1:
+				did_crit = true
+		5: # 1/2
+			rng.randomize()
+			var value = rng.randi_range(1,2)
+			if value == 1:
+				did_crit = true
+	return did_crit
