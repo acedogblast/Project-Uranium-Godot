@@ -81,200 +81,198 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				command.B4:
 					target_index = 4
 			if does_attack_hit(move, target_index, battler_index):
-				
-				match move.style:
-					MoveStyle.PHYSICAL, MoveStyle.SPECIAL:
-						var did_crit = does_crit(move.critical_hit_level)
+				if move.base_power != null:
+					var did_crit = does_crit(move.critical_hit_level)
 						
-						# Calculate damage done.
-						var raw_damage: int = 0
-						var base_damage: int = 0
-						var total_damage_modifier: float = 1.0
-						var target_modifier: float = 1.0
-						var weather_modifier: float = 1.0
-						var critical_modifier: float = 1.0
-						var STAB_modifier: float = 1.0
-						var random_modifier: float = 1.0
-						var type_modifer: float = 1.0
-						var other_modifer: float = 1.0
+					# Calculate damage done.
+					var raw_damage: int = 0
+					var base_damage: int = 0
+					var total_damage_modifier: float = 1.0
+					var target_modifier: float = 1.0
+					var weather_modifier: float = 1.0
+					var critical_modifier: float = 1.0
+					var STAB_modifier: float = 1.0
+					var random_modifier: float = 1.0
+					var type_modifer: float = 1.0
+					var other_modifer: float = 1.0
 
-						var effective_attacker_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(battler_index).attack) * battler.attack
+					var effective_attacker_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(battler_index).attack) * battler.attack
 
+					var effective_defender_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(target_index).defense) * get_battler_by_index(target_index).defense
+					
+					base_damage = int(
+						( ( (2 * battler.level) / 5 ) + 2 ) * move.base_power * (effective_attacker_stat / effective_defender_stat)
+					)
+					#warning-ignore:integer_division
+					base_damage = (base_damage / 50) + 2
+					
+					if did_crit:
+						critical_modifier = 2.0
+					if move.type == battler.type1 || move.type == battler.type2:
+						STAB_modifier = 1.5
+					var rng = RandomNumberGenerator.new()
+					rng.randomize()
+					random_modifier = rng.randf_range(0.85,1.0)
+					
+					type_modifer = Type.type_advantage_multiplier(move.type, get_battler_by_index(target_index))
+					total_damage_modifier = target_modifier * weather_modifier * critical_modifier * STAB_modifier * random_modifier * type_modifer * other_modifer
+					#warning-ignore:narrowing_conversion
+					raw_damage = base_damage * total_damage_modifier
 
+					print("Raw Damage: " + str(raw_damage) + " , To battler: " + str(target_index))
 
-						var effective_defender_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(target_index).defense) * get_battler_by_index(target_index).defense
-						
-						base_damage = int(
-							( ( (2 * battler.level) / 5 ) + 2 ) * move.base_power * (effective_attacker_stat / effective_defender_stat)
-						)
-						base_damage = (base_damage / 50) + 2
-						
-						if did_crit:
-							critical_modifier = 2.0
-						if move.type == battler.type1 || move.type == battler.type2:
-							STAB_modifier = 1.5
-						var rng = RandomNumberGenerator.new()
-						rng.randomize()
-						random_modifier = rng.randf_range(0.85,1.0)
-						
-						type_modifer = Type.type_advantage_multiplier(move.type, get_battler_by_index(target_index))
-						total_damage_modifier = target_modifier * weather_modifier * critical_modifier * STAB_modifier * random_modifier * type_modifer * other_modifer
-						raw_damage = base_damage * total_damage_modifier
+					# Perform the damage to battler
+					var current_hp = get_battler_by_index(target_index).current_hp
+					if (raw_damage >= current_hp): # Target runs out of hp and faints
+						raw_damage = current_hp
+						get_battler_by_index(target_index).current_hp = 0
+					else:
+						get_battler_by_index(target_index).current_hp = current_hp - raw_damage
+					
+					# Add in the battle actions
+					action = BattleQueueAction.new()
+					action.type = action.DAMAGE
+					action.damage_target_index = target_index
+					action.damage_amount = raw_damage
+					action.damage_effectiveness = type_modifer
+					queue.push(action)
 
-						print("Raw Damage: " + str(raw_damage) + " , To battler: " + str(target_index))
-
-						# Perform the damage to battler
-						var current_hp = get_battler_by_index(target_index).current_hp
-						if (raw_damage >= current_hp): # Target runs out of hp and faints
-							raw_damage = current_hp
-							get_battler_by_index(target_index).current_hp = 0
-						else:
-							get_battler_by_index(target_index).current_hp = current_hp - raw_damage
-						
-						# Add in the battle actions
+					if critical_modifier == 2.0:
 						action = BattleQueueAction.new()
-						action.type = action.DAMAGE
+						action.type = action.BATTLE_TEXT
+						action.battle_text = "Critical Hit!"
+						queue.push(action)
+					# Add in the effective damage message
+					if type_modifer > 1.0:
+						action = BattleQueueAction.new()
+						action.type = action.BATTLE_TEXT
+						action.battle_text = "It's super effective!"
+						queue.push(action)
+					if type_modifer < 1.0:
+						action = BattleQueueAction.new()
+						action.type = action.BATTLE_TEXT
+						action.battle_text = "It's not very effective..."
+						queue.push(action)
+						
+					# Check if target faints.
+					if get_battler_by_index(target_index).current_hp == 0:
+						# Faint actions
+						action = BattleQueueAction.new()
+						action.type = action.FAINT
 						action.damage_target_index = target_index
-						action.damage_amount = raw_damage
-						action.damage_effectiveness = type_modifer
 						queue.push(action)
 
-						if critical_modifier == 2.0:
+						action = BattleQueueAction.new()
+						action.type = action.BATTLE_TEXT
+						var get_exp = false
+						if target_index == 2 || target_index == 4:
+							action.battle_text = "The foe " + get_battler_by_index(target_index).name + " fainted!"
+							get_exp = true
+						if target_index == 1 || target_index == 3:
+							action.battle_text = get_battler_by_index(target_index).name + " fainted!"
+						queue.push(action)
+						
+						# If foe faint add exp to player pokemon. For now just only apply to current player pokemon
+						# Also add effort values
+						if get_exp:
 							action = BattleQueueAction.new()
 							action.type = action.BATTLE_TEXT
-							action.battle_text = "Critical Hit!"
-							queue.push(action)
-						# Add in the effective damage message
-						if type_modifer > 1.0:
-							action = BattleQueueAction.new()
-							action.type = action.BATTLE_TEXT
-							action.battle_text = "It's super effective!"
-							queue.push(action)
-						if type_modifer < 1.0:
-							action = BattleQueueAction.new()
-							action.type = action.BATTLE_TEXT
-							action.battle_text = "It's not very effective..."
+							var exp_gained : int = calculate_exp(get_battler_by_index(target_index))
+							action.battle_text = battler.name + " gained\n" + str(exp_gained) + " EXP. Points!"
 							queue.push(action)
 							
-						# Check if target faints.
-						if get_battler_by_index(target_index).current_hp == 0:
-							# Faint actions
+							# Add exp to pokemon
+							battler.experience += exp_gained
+
+							
+							# TODO: Add multiple exp_gain actions if leveling more that 1 time.
 							action = BattleQueueAction.new()
-							action.type = action.FAINT
+							action.type = action.EXP_GAIN
+							action.exp_gain_percent = battler.get_exp_bar_percent()
+							queue.push(action)
+
+							# Adding effort values
+							battler.add_ev(get_battler_by_index(target_index))
+
+
+						# TODO: Add leveling up
+
+
+						
+
+
+						# Check if foe or player ran out of pokemon, if yes end battle
+						var player_defeated = check_player_out_of_poke()
+						var foe_defeated = check_foe_out_of_poke()
+						if player_defeated || foe_defeated:
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_END
+
+							if player_defeated == false && foe_defeated == true:
+								action.winner = action.PLAYER_WIN
+							if player_defeated == true && foe_defeated == false:
+								action.winner = action.FOE_WIN
+							queue.push(action)
+							return queue
+					
+				else:
+					var stat_effect = move.main_status_effect
+					var stats_changed = get_stage_stat_by_index(target_index).apply_stat_effect(stat_effect) # This changes stats of target
+						
+					# For all stats changed
+					for stat in stats_changed:
+						var over_limit = false
+						if stat.stat_over_limit:
+							over_limit = true
+						else:
+							action = BattleQueueAction.new()
+							action.type = action.STAT_CHANGE_ANIMATION
 							action.damage_target_index = target_index
+							if stat.stat_change > 0: # Increase
+								action.stat_change_increase = true
 							queue.push(action)
 
-							action = BattleQueueAction.new()
-							action.type = action.BATTLE_TEXT
-							var get_exp = false
-							if target_index == 2 || target_index == 4:
-								action.battle_text = "The foe " + get_battler_by_index(target_index).name + " fainted!"
-								get_exp = true
-							if target_index == 1 || target_index == 3:
-								action.battle_text = get_battler_by_index(target_index).name + " fainted!"
-							queue.push(action)
-							
-							# If foe faint add exp to player pokemon. For now just only apply to current player pokemon
-							# Also add effort values
-							if get_exp:
-								action = BattleQueueAction.new()
-								action.type = action.BATTLE_TEXT
-								var exp_gained : int = calculate_exp(get_battler_by_index(target_index))
-								action.battle_text = battler.name + " gained\n" + str(exp_gained) + " EXP. Points!"
-								queue.push(action)
-								
-								# Add exp to pokemon
-								battler.experience += exp_gained
+						action = BattleQueueAction.new()
+						action.type = action.BATTLE_TEXT
+						var stat_effected_name
+						match stat.stat_type:
+							BattleStatStage.ATTACK:
+								stat_effected_name = "Attack"
+							BattleStatStage.DEFENSE:
+								stat_effected_name = "Defense"
+							BattleStatStage.SP_ATTACK:
+								stat_effected_name = "Sp. Attack"
+							BattleStatStage.SP_DEFENSE:
+								stat_effected_name = "Sp. Defense"
+							BattleStatStage.SPEED:
+								stat_effected_name = "Speed"
+							BattleStatStage.ACCURACY:
+								stat_effected_name = "Accuracy"
+							BattleStatStage.EVASION:
+								stat_effected_name = "Evasion"
 
-								
-								# TODO: Add multiple exp_gain actions if leveling more that 1 time.
-								action = BattleQueueAction.new()
-								action.type = action.EXP_GAIN
-								action.exp_gain_percent = battler.get_exp_bar_percent()
-								queue.push(action)
-
-								# Adding effort values
-								battler.add_ev(get_battler_by_index(target_index))
-
-
-							# TODO: Add leveling up
-
-
-							
-
-
-							# Check if foe or player ran out of pokemon, if yes end battle
-							var player_defeated = check_player_out_of_poke()
-							var foe_defeated = check_foe_out_of_poke()
-							if player_defeated || foe_defeated:
-								action = BattleQueueAction.new()
-								action.type = action.BATTLE_END
-
-								if player_defeated == false && foe_defeated == true:
-									action.winner = action.PLAYER_WIN
-								if player_defeated == true && foe_defeated == false:
-									action.winner = action.FOE_WIN
-								queue.push(action)
-								return queue
-						pass
-					MoveStyle.STATUS:
-						var stat_effect = move.main_status_effect
-						var stats_changed = get_stage_stat_by_index(target_index).apply_stat_effect(stat_effect) # This changes stats of target
-							
-						# For all stats changed
-						for stat in stats_changed:
-							var over_limit = false
-							if stat.stat_over_limit:
-								over_limit = true
-							else:
-								action = BattleQueueAction.new()
-								action.type = action.STAT_CHANGE_ANIMATION
-								action.damage_target_index = target_index
-								if stat.stat_change > 0: # Increase
-									action.stat_change_increase = true
-								queue.push(action)
-
-							action = BattleQueueAction.new()
-							action.type = action.BATTLE_TEXT
-							var stat_effected_name
-							match stat.stat_type:
-								BattleStatStage.ATTACK:
-									stat_effected_name = "Attack"
-								BattleStatStage.DEFENSE:
-									stat_effected_name = "Defense"
-								BattleStatStage.SP_ATTACK:
-									stat_effected_name = "Sp. Attack"
-								BattleStatStage.SP_DEFENSE:
-									stat_effected_name = "Sp. Defense"
-								BattleStatStage.SPEED:
-									stat_effected_name = "Speed"
-								BattleStatStage.ACCURACY:
-									stat_effected_name = "Accuracy"
-								BattleStatStage.EVASION:
-									stat_effected_name = "Evasion"
-
-							action.battle_text = get_battler_by_index(target_index).name + "'s " + str(stat_effected_name)
-							if !over_limit:
-								match stat.stat_change:
-									1:
-										action.battle_text += " rose!"
-									2:
-										action.battle_text += " sharply rose!"
-									3, 4, 5, 6:
-										action.battle_text += " rose drastically!"
-									-1:
-										action.battle_text += " fell!"
-									-2:
-										action.battle_text += " harshly fell!"
-									-3, -4, -5, -6:
-										action.battle_text += " severely fell!"
-							else:
-								match stat.stat_change:
-									1,2,3,4,5,6:
-										action.battle_text += " won't go any higher!"
-									-1,-2,-3,-4,-5,-6:
-										action.battle_text += " won't go any lower!"
-							queue.push(action)
+						action.battle_text = get_battler_by_index(target_index).name + "'s " + str(stat_effected_name)
+						if !over_limit:
+							match stat.stat_change:
+								1:
+									action.battle_text += " rose!"
+								2:
+									action.battle_text += " sharply rose!"
+								3, 4, 5, 6:
+									action.battle_text += " rose drastically!"
+								-1:
+									action.battle_text += " fell!"
+								-2:
+									action.battle_text += " harshly fell!"
+								-3, -4, -5, -6:
+									action.battle_text += " severely fell!"
+						else:
+							match stat.stat_change:
+								1,2,3,4,5,6:
+									action.battle_text += " won't go any higher!"
+								-1,-2,-3,-4,-5,-6:
+									action.battle_text += " won't go any lower!"
+						queue.push(action)
 
 				
 			else:
@@ -465,3 +463,10 @@ func does_crit(crit : int) -> bool: # If move can crit calculate if crit or not.
 			if value == 1:
 				did_crit = true
 	return did_crit
+func one_in_n_chance(n) -> bool:
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
+	var value = rng.randi_range(1,n)
+	if value == 1:
+		return true
+	return false
