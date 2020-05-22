@@ -41,10 +41,11 @@ func _ready():
 		test()
 	pass
 
-func _process(delta):
+func _process(_delta):
 	if effect_enable:
 		effect_shader.set_shader_param("effect_weight" , effect_weight)
-	pass
+
+
 func Start_Battle(bid : BattleInstanceData):
 	battle_instance = bid
 	
@@ -462,7 +463,7 @@ func get_battle_command():
 	menu.get_node("AnimationPlayer").play("Slide")
 	menu.visible = true
 	menu.start(battler1.name)
-	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.reset()
+	#$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.reset()
 	yield($CanvasLayer/BattleInterfaceLayer/BattleAttackSelect, "command_received")
 	
 	print("Command recived")

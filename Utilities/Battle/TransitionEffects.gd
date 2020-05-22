@@ -9,12 +9,6 @@ func _ready():
 	$Vs/PlayerBanner/Label.scroll_active = false
 	$Vs/OpponentBanner/Label.scroll_active = false
 	
-	
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 func play_Sound():
 	var sound = load("res://Audio/SE/Flash2.ogg")
 	var sound2 = load("res://Audio/SE/Sword2.ogg")

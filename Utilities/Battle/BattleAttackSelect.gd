@@ -59,7 +59,6 @@ func start(poke):
             $MoveSlide/SelHand.position = MOVE3_POS
         4:
             $MoveSlide/SelHand.position = MOVE4_POS
-    
 func set_move_sprite(sprite, move):
     sprite.frame = int(move.type)
     sprite.get_node("Name").bbcode_text = "[center]" + move.name
@@ -103,6 +102,7 @@ func _input(event):
                 $AnimationPlayer.play_backwards("Slide")
 
                 print("Valid attack selected")
+
                 self.visible = false
                 enabled = false
                 self.get_parent().get_parent().get_parent().battle_command = command
