@@ -12,7 +12,7 @@ Two is that it only supports the Windows PC platform. With Godot the game can ru
 Lastly I could fix existing bugs in the game.
 
 # Current progress
-The actual game is not yet playable at all as of now.
+Only a limited portion of the game is playable currently.
 For additinal info check the wiki milestones page.
 
 # Setup instructions
