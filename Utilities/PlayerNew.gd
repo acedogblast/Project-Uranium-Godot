@@ -59,6 +59,7 @@ enum DIRECTION{
 
 #Calls the load_texture method
 func _ready():
+	self.add_to_group("auto_z_layering")
 	load_texture()
  
 func _process(delta):

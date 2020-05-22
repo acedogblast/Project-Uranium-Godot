@@ -15,6 +15,11 @@ _global_script_classes=[ {
 "path": "res://Utilities/Battle/Classes/AI.gd"
 }, {
 "base": "Object",
+"class": "AutoZSorter",
+"language": "GDScript",
+"path": "res://Utilities/AutoZSorter.gd"
+}, {
+"base": "Object",
 "class": "BattleCommand",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/BattleCommand.gd"
@@ -136,6 +141,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "AI": "",
+"AutoZSorter": "",
 "BattleCommand": "",
 "BattleInstanceData": "",
 "BattleLogic": "",
