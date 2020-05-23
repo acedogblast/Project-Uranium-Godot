@@ -315,6 +315,8 @@ hframes = 4
 current = true
 smoothing_speed = 4.0
 
+[node name="GrassAnimation" type="Sprite" parent="Position2D"]
+
 [node name="Collision" type="Position2D" parent="."]
 pause_mode = 2
 
