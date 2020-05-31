@@ -16,6 +16,7 @@ signal step
 signal alert_done
 
 func _ready():
+	self.add_to_group("auto_z_layering")
 	$Alert.visible = false
 	$Position2D/Sprite.texture = texture
 	set_idle_frame(facing)
