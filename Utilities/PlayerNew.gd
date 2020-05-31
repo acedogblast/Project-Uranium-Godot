@@ -59,9 +59,10 @@ enum DIRECTION{
 
 #Calls the load_texture method
 func _ready():
+	self.add_to_group("auto_z_layering")
 	load_texture()
  
-func _process(delta):
+func _process(_delta):
 	#If the hero is not moving
 	if !isMoving:
 		#If the hero can move and is not pressing accept, then get input
