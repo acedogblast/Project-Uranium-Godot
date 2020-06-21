@@ -16,6 +16,7 @@ const MIDDLE = Vector2(10, 150)
 const BOTTOM = Vector2(10, 280)
 
 onready var typeTimer = $Box/TypeDelay
+onready var type_delay: float = typeTimer.wait_time
 
 signal dialogue_start
 signal dialogue_end
@@ -56,7 +57,7 @@ func rescale_mobile(deviceSize):
 	offset.x = (deviceSize.x - (deviceSize.y * 1.333)) / 2
 	var boxRatio = ProjectSettings.get_setting("display/window/size/width") / $Box.rect_size.x
 	var scale = deviceSize.y * 1.333 / boxRatio / $Box.rect_size.x
-	
+
 	self.scale.x = scale
 	self.scale.y = scale
 
@@ -124,7 +125,7 @@ func start_dialogue_sequence():
 	emit_signal("dialogue_sequence_start")
 	while next_dialogue():
 		yield(self, "dialogue_end")
-	
+
 	emit_signal("dialogue_sequence_end")
 
 # Show the next dialogue string. set_sequence must have been set
@@ -164,17 +165,20 @@ func start_dialog(text):
 		$Box/Text2.bbcode_text = format_to_copy + self.text[1]
 		currentMode = mode.MultiText
 
-	$Box/TypeDelay.start()
+	$Box/TypeDelay.start(type_delay)
 	active = true
 	pass
 
 # warning-ignore:unused_argument
 func _process(delta):
-	if active and Input.is_action_just_pressed("ui_accept") and $Box/TypeDelay.is_stopped():
-		if is_finished == true and !hold:
-			finish_dialogue()
-		elif currentMode == mode.MultiText:
-			slide_text()
+	if active and Input.is_action_just_pressed("ui_accept"):
+		if $Box/TypeDelay.is_stopped():
+			if is_finished == true and !hold:
+				finish_dialogue()
+			elif currentMode == mode.MultiText:
+				slide_text()
+		else:
+			$Box/TypeDelay.wait_time = 0.000000000000001
 
 func finish_dialogue():
 		$Box.hide()
@@ -204,7 +208,7 @@ func swap_text():
 		$Box/Text2.bbcode_text = format_to_copy + text[current_line + 1]
 		$Box/Text1.visible_characters = $Box/Text2.visible_characters
 		$Box/Text2.visible_characters = 0
-		$Box/TypeDelay.start()
+		$Box/TypeDelay.start(type_delay)
 		sliding_text = false
 
 func second_line_printed():
