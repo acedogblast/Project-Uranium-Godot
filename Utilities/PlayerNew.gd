@@ -27,7 +27,6 @@ var state
 
 #signal step
 signal step
-signal door_check
 signal done_movement
 
 enum STATE {
