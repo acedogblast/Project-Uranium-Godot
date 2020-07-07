@@ -49,9 +49,8 @@ func _ready():
 		player.position = Vector2(192,144)
 		player.direction = player.DIRECTION.UP
 
-	#Sets the player's position to TrainerX and TrainerY, it's z index to 8, facing direction to up
-	#player.position = Vector2(Global.TrainerX, Global.TrainerY)
-	player.z_index = 1
+	player.z_index = 10 # DO NOT CHANGE! see AutoZSorter for details
+
 	#Connects the signal dialogue_end to the method self on dialog_end, sets the load_game_id to null, and lets the player move
 	DialogueSystem.connect("dialogue_end", self, "dialog_end")
 	Global.load_game_from_id = null
@@ -63,14 +62,13 @@ func _ready():
 
 func _process(_delta):
 
-	#var nodes = get_tree().get_nodes_in_group("auto_z_layering")
-	#nodes.sort_custom(AutoZSorter, "sort_ascending")
-	#var index = 10
-	#for node in nodes:
-	#	node.z_index = index
-	#	index += 1
+	var nodes = get_tree().get_nodes_in_group("auto_z_layering")
+	nodes.sort_custom(AutoZSorter, "sort_ascending")
+	var index = 10
+	for node in nodes:
+		node.z_index = index
+		index += 1
 
-	#change_menu_text()
 	#Quick save
 	if Input.is_key_pressed(KEY_F1):
 		SaveSystem.save_game(1)

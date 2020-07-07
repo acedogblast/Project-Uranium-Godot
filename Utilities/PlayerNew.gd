@@ -59,7 +59,7 @@ enum DIRECTION{
 
 #Calls the load_texture method
 func _ready():
-	#self.add_to_group("auto_z_layering") Maybe removed due to grass effect?
+	self.add_to_group("auto_z_layering")# Maybe removed due to grass effect?
 	load_texture()
  
 func _process(_delta):
