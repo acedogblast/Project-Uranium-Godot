@@ -1,8 +1,9 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Utilities/PlayerNew.gd" type="Script" id=1]
 [ext_resource path="res://Audio/SE/bump.WAV" type="AudioStream" id=2]
 [ext_resource path="res://Graphics/Characters/HERO.png" type="Texture" id=3]
+[ext_resource path="res://Utilities/bush_old.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Down"
@@ -302,6 +303,9 @@ anims/Up_sprint2 = SubResource( 16 )
 [node name="Tween" type="Tween" parent="."]
 pause_mode = 2
 
+[node name="GrassTween" type="Tween" parent="."]
+pause_mode = 2
+
 [node name="Position2D" type="Position2D" parent="."]
 pause_mode = 2
 
@@ -360,4 +364,21 @@ shape = SubResource( 17 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interact/Area2D"]
 shape = SubResource( 18 )
 disabled = true
+
+[node name="Grass" type="Position2D" parent="."]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="Grass"]
+visible = false
+position = Vector2( 0, 8 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 32, 80, 32, 16 )
+
+[node name="Sprite2" type="Sprite" parent="Grass"]
+visible = false
+position = Vector2( 32, 8 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 32, 80, 32, 16 )
 [connection signal="body_entered" from="Collision/Area2D" to="." method="_on_Area2D_body_entered"]

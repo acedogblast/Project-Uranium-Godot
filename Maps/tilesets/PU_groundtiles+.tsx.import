@@ -1,0 +1,20 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/PU_groundtiles+.tsx-fa4fc5f648de1ce3018291fe0d763c4d.res"
+
+[deps]
+
+source_file="res://Maps/tilesets/PU_groundtiles+.tsx"
+dest_files=[ "res://.import/PU_groundtiles+.tsx-fa4fc5f648de1ce3018291fe0d763c4d.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+apply_offset=false
+post_import_script=""

@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/Subway.tmx-2ad4f0aea3ba35f043ceec13e856f27f.scn"
+
+[deps]
+
+source_file="res://Maps/Towns/Town Houses/Subway.tmx"
+dest_files=[ "res://.import/Subway.tmx-2ad4f0aea3ba35f043ceec13e856f27f.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=7
+collision_layer=1
+embed_internal_images=false
+save_tiled_properties=false
+add_background=true
+post_import_script=""

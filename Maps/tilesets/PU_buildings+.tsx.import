@@ -1,0 +1,20 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/PU_buildings+.tsx-10da776da09e18d2ff9f241b77be22e3.res"
+
+[deps]
+
+source_file="res://Maps/tilesets/PU_buildings+.tsx"
+dest_files=[ "res://.import/PU_buildings+.tsx-10da776da09e18d2ff9f241b77be22e3.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+apply_offset=false
+post_import_script=""

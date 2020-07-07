@@ -68,7 +68,6 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 
 [node name="Numbers" type="Node2D" parent="Keyboard"]
-editor/display_folded = true
 
 [node name="0" type="Label" parent="Keyboard/Numbers"]
 margin_left = 20.0
@@ -151,7 +150,6 @@ custom_fonts/font = SubResource( 1 )
 text = "9"
 
 [node name="LetterRow1" type="Node2D" parent="Keyboard"]
-editor/display_folded = true
 position = Vector2( 0, 35 )
 
 [node name="0" type="Label" parent="Keyboard/LetterRow1"]
@@ -318,7 +316,6 @@ custom_fonts/font = SubResource( 1 )
 text = "UI_KEYBOARD_MOBILE_UPPER"
 
 [node name="LetterRow3" type="Node2D" parent="Keyboard"]
-editor/display_folded = true
 position = Vector2( 0, 105 )
 
 [node name="0" type="Label" parent="Keyboard/LetterRow3"]

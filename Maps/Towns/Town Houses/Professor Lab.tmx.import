@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/Professor Lab.tmx-d1a2c320672d75de46c275c43206f702.scn"
+
+[deps]
+
+source_file="res://Maps/Towns/Town Houses/Professor Lab.tmx"
+dest_files=[ "res://.import/Professor Lab.tmx-d1a2c320672d75de46c275c43206f702.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=7
+collision_layer=1
+embed_internal_images=false
+save_tiled_properties=false
+add_background=true
+post_import_script=""

@@ -3,7 +3,7 @@
 [ext_resource path="res://Utilities/Event.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 16, 16 )
+extents = Vector2( 8, 40 )
 
 [node name="Area2D" type="Area2D"]
 collision_layer = 2

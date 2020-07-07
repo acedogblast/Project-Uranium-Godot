@@ -253,8 +253,8 @@ func parse_string(text):
 				text_array[index] = text_line
 			index += 1
 
-		for line in text_array:
-			final_text.append(TextParser.parse_text(line))
+		for l in text_array:
+			final_text.append(TextParser.parse_text(l))
 
 	return final_text
 

@@ -191,7 +191,7 @@ texture = ExtResource( 6 )
 
 [node name="Outside" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1120, 336 )
-scene_destination = "res://Maps/MokiTown/MokiTown.tscn"
+scene_destination = "res://Maps/Towns/Moki Town.tscn"
 location = Vector2( 880, 1008 )
 exterior = false
 [connection signal="area_entered" from="Floor2/Event1" to="." method="event1"]
