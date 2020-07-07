@@ -62,6 +62,14 @@ func _ready():
 
 
 func _process(_delta):
+
+	#var nodes = get_tree().get_nodes_in_group("auto_z_layering")
+	#nodes.sort_custom(AutoZSorter, "sort_ascending")
+	#var index = 10
+	#for node in nodes:
+	#	node.z_index = index
+	#	index += 1
+
 	#change_menu_text()
 	#Quick save
 	if Input.is_key_pressed(KEY_F1):
