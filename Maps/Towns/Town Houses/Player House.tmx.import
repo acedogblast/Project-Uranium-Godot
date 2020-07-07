@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/Player House.tmx-5095911ab1ce99924fd79a816b9d53be.scn"
+
+[deps]
+
+source_file="res://Maps/Towns/Town Houses/Player House.tmx"
+dest_files=[ "res://.import/Player House.tmx-5095911ab1ce99924fd79a816b9d53be.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=7
+collision_layer=1
+embed_internal_images=false
+save_tiled_properties=false
+add_background=true
+post_import_script=""

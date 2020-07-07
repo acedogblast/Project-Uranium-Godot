@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/Rival House.tmx-4222789d39dc69b6e120f0ac9707475d.scn"
+
+[deps]
+
+source_file="res://Maps/Towns/Town Houses/Rival House.tmx"
+dest_files=[ "res://.import/Rival House.tmx-4222789d39dc69b6e120f0ac9707475d.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=7
+collision_layer=1
+embed_internal_images=false
+save_tiled_properties=false
+add_background=true
+post_import_script=""

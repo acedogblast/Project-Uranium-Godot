@@ -5,7 +5,7 @@
 [ext_resource path="res://Utilities/Menu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=4]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "Slide"
 length = 4.0
 tracks/0/type = "value"
@@ -33,8 +33,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=1]
-resource_name = "Fade"
+[sub_resource type="Animation" id=2]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:modulate")
@@ -100,7 +99,7 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/ZoneMessage"]
-anims/Slide = SubResource( 2 )
+anims/Slide = SubResource( 1 )
 
 [node name="Fade" type="ColorRect" parent="CanvasLayer"]
 visible = false
@@ -113,4 +112,4 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Fade"]
-anims/Fade = SubResource( 1 )
+anims/Fade = SubResource( 2 )

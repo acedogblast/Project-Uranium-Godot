@@ -7,6 +7,10 @@ var pokedex_count = 0
 var location : String = "location"
 var money : int = 0
 
+var onGrass = false
+var grassPos = ""
+var exitGrassPos = ""
+
 var printFPS = false
 #var size
 var sprint = false
