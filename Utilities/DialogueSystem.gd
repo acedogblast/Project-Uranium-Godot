@@ -253,8 +253,13 @@ func parse_string(text):
 				text_array[index] = text_line
 			index += 1
 
+<<<<<<< HEAD
 		for l in text_array:
 			final_text.append(TextParser.parse_text(l))
+=======
+		for line2 in text_array:
+			final_text.append(TextParser.parse_text(line2))
+>>>>>>> 1fe6ec2d99cfb330fb49c396ce4d24ea333cead6
 
 	return final_text
 

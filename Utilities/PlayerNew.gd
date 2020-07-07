@@ -198,11 +198,7 @@ func move(force_move : bool):
 		move_direction.y = -32
 	
 	
-	
-	if Global.grassPos.size() < 2:
-		Global.onGrass = false
-	else:
-		set_grass(dir)
+	set_grass(dir)
 #	remove_grass() # check if player walks out of grass
 	
 	# Start Animation
