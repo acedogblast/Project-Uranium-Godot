@@ -87,6 +87,8 @@ func change_internal_input():
 	set_idle_frame()
 #Sets the direction based on the input and sets the state to STATE.MOVE
 func get_input():
+	
+	
 	if Input.is_action_pressed("ui_down"):
 		direction = DIRECTION.DOWN
 	elif Input.is_action_pressed("ui_up"):
@@ -140,18 +142,49 @@ func get_input():
 
 	#If input is disabled then you cannot move
 	if !inputDisabled:
-		check_grass()
+		
 		move(false)
 
 
-func check_grass():
+func check_grass(dir):
 	for grass in get_tree().get_nodes_in_group("grass"):
+		
+#		match dir:
+#			"Right":
+#				if grass.get_cellv(grass.world_to_map($NextCollision/Right.global_position - offset)) == 0:
+#					if !Global.grassPos.has(dir):
+#						Global.grassPos.append(dir)
+#						return
+#			"Left":
+#				if grass.get_cellv(grass.world_to_map($NextCollision/Left.global_position - offset)) == 0:
+#					if !Global.grassPos.has(dir):
+#						Global.grassPos.append(dir)
+#						return
+#			"Up":
+#				if grass.get_cellv(grass.world_to_map($NextCollision/Up.global_position - offset)) == 0:
+#					if !Global.grassPos.has(dir):
+#						Global.grassPos.append(dir)
+#						return
+#			"Down":
+#				if grass.get_cellv(grass.world_to_map($NextCollision/Down.global_position - offset)) == 0:
+#					if !Global.grassPos.has(dir):
+#						Global.grassPos.append(dir)
+#						return
+#
+#		if Global.grassPos.has(dir):
+#			Global.grassPos.remove(Global.grassPos.find(dir))
+			
+		
 		for collision in $NextCollision.get_children():
+			#print(grass.world_to_map(collision.global_position))
+
+
+
 			for g in grass.get_used_cells_by_id(0):
 				if collision.name == "Right":
 					pass
 				#print(str(collision.name, collision.global_position, "\n", grass.map_to_world(grass.get_used_cells_by_id(0)[0]) + Vector2(2208 + 64, 864) - Vector2(16, 16)))
-			
+
 				var tile_center_pos = grass.map_to_world(g) + grass.cell_size / 2
 				#print(g + Vector2(2208, 864))
 				if grass.map_to_world(g) + offset == collision.global_position:
@@ -204,7 +237,8 @@ func move(force_move : bool):
 	set_process(false)
 	move_direction = Vector2.ZERO
 	
-	var dir
+	
+	var dir = ""
 	
 	if direction == DIRECTION.DOWN and ($NextCollision/Down.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.y = 32
@@ -229,8 +263,8 @@ func move(force_move : bool):
 		move_direction.x = 32
 		move_direction.y = -32
 	
-	#check_grass()
-	set_grass(dir)
+	
+	check_grass(dir)
 #	remove_grass() # check if player walks out of grass
 	
 	# Start Animation
@@ -247,6 +281,9 @@ func move(force_move : bool):
 	# Play bump effect is player can't move
 	if move_direction == Vector2.ZERO:
 		$AudioStreamPlayer2D.play(0.0)
+	
+	
+	#set_grass(dir)
 	
 	# Start Tween
 	
