@@ -19,6 +19,7 @@ var canInteract = true # Mabye redundant?
 var isTransitioning = false
 
 var overlay
+var grass_map = null
 
 signal event_dialogue_end
 signal tranistion_complete
@@ -30,7 +31,6 @@ func _ready():
 	overlay.add_stat("onGrass", Global, "onGrass", false)
 	overlay.add_stat("Grass Position", Global, "grassPos", false)
 	overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
-	
 	add_child(overlay)
 	
 	Global.game = self
@@ -78,6 +78,8 @@ func _process(_delta):
 	
 	if current_scene.find_node("GrassCheck") != null:
 		print("Route")
+
+
 
 func enter_grass(area):
 	if Global.grassPos.find(area.name) == -1:

@@ -25,6 +25,9 @@ var movement_type = MOVEMENT_TYPE.FOOT
 var movement_speed
 var state
 
+var found_grass = false
+var offset = Vector2(2208 + 64, 864) - Vector2(16, 16)
+
 #signal step
 signal step
 signal door_check
@@ -137,7 +140,35 @@ func get_input():
 
 	#If input is disabled then you cannot move
 	if !inputDisabled:
+		check_grass()
 		move(false)
+
+
+func check_grass():
+	for grass in get_tree().get_nodes_in_group("grass"):
+		for collision in $NextCollision.get_children():
+			for g in grass.get_used_cells_by_id(0):
+				if collision.name == "Right":
+					pass
+				#print(str(collision.name, collision.global_position, "\n", grass.map_to_world(grass.get_used_cells_by_id(0)[0]) + Vector2(2208 + 64, 864) - Vector2(16, 16)))
+			
+				var tile_center_pos = grass.map_to_world(g) + grass.cell_size / 2
+				#print(g + Vector2(2208, 864))
+				if grass.map_to_world(g) + offset == collision.global_position:
+					if !Global.grassPos.has(collision.name):
+						Global.grassPos.append(collision.name)
+					found_grass = true
+					break
+					#Global.grassPos.remove(Global.grassPos.find(collision.name))
+				else:
+					if Global.grassPos.has(collision.name):
+						#print(collision.name)
+						Global.grassPos.remove(Global.grassPos.find(collision.name))
+#			if found_grass:
+#				return
+		found_grass = false
+	pass
+
 
 func interact():
 	#Set check_x and check_y to the player node's position.x and position.y
@@ -198,7 +229,7 @@ func move(force_move : bool):
 		move_direction.x = 32
 		move_direction.y = -32
 	
-	
+	#check_grass()
 	set_grass(dir)
 #	remove_grass() # check if player walks out of grass
 	
@@ -244,28 +275,27 @@ func move(force_move : bool):
 
 
 func set_grass(dir):
-	
-	if Global.onGrass:
-		for g in Global.grassPos:
-			if Global.grassPos.has(dir) == false:
-				if dir == "Right":
-					Global.onGrass = false
-					$Grass/Sprite2.hide()
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-					return
-				elif dir == "Left":
-					Global.onGrass = false
-					$Grass/Sprite.hide()
-					$Grass/Sprite2.show()
-					$Grass.position = Vector2(-32, 0)
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-					return
-				elif dir == "Up":
-					Global.onGrass = false
-				elif dir == "Down":
-					Global.onGrass = false
-				return
-	elif !Global.onGrass:
+#	if Global.onGrass:
+#		for g in Global.grassPos:
+#			if Global.grassPos.has(dir) == false:
+#				if dir == "Right":
+#					Global.onGrass = false
+#					$Grass/Sprite2.hide()
+#					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+#					return
+#				elif dir == "Left":
+#					Global.onGrass = false
+#					$Grass/Sprite.hide()
+#					$Grass/Sprite2.show()
+#					$Grass.position = Vector2(-32, 0)
+#					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+#					return
+#				elif dir == "Up":
+#					Global.onGrass = false
+#				elif dir == "Down":
+#					Global.onGrass = false
+#				return
+	if !Global.onGrass:
 		for g in Global.grassPos:
 			if g == dir:
 				Global.onGrass = true
@@ -296,47 +326,31 @@ func set_grass(dir):
 		if dir == "Right":
 			$Grass/Sprite.show()
 			$Grass/Sprite2.show()
-			$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			if Global.sprint:
+				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			else:
+				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 		elif dir == "Left":
 			$Grass/Sprite.show()
 			$Grass/Sprite2.show()
 			$Grass.position = Vector2(-32, 0)
-			$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			if Global.sprint:
+				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			else:
+				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			
 		elif dir == "Down":
-			$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			if Global.sprint:
+				$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			else:
+				$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			
 		elif dir == "Up":
-			$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-
-
-
-func remove_grass():
-	if Global.onGrass:
-		for g in Global.grassPos:
-			match g:
-				"Right":
-					if direction == DIRECTION.RIGHT:
-						Global.onGrass = false
-						$Grass/Sprite2.hide()
-						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-						return
-					else:
-						Global.onGrass = true
-#				"Left":
-#					if direction == DIRECTION.LEFT:
-#						Global.exitGrassPos = ""
-#						Global.grassPos = ""
-#						Global.onGrass = false
-#						$Grass/Sprite.hide()
-#						$Grass/Sprite2.show()
-#						return
-#	#					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-#	#					return
-#					else:
-#						Global.grassPos = ""
-#						Global.onGrass = true
-#					return
-	
-	
+			if Global.sprint:
+				$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			else:
+				$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			
 
 #Loads the texture of the sprites you picked for your character
 func load_texture():

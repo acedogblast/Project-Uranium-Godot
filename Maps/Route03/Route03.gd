@@ -7,8 +7,9 @@ var type = "Outdoor"
 var place_name = "Route 03"
 
 func _ready():
-	$Layer2/Wild_Grass/GrassCheck.connect("area_entered", get_tree().get_root().get_child(4), "enter_grass")
-	$Layer2/Wild_Grass/GrassCheck.connect("area_exited", get_tree().get_root().get_child(4), "exit_grass")
+	pass
+#	$Layer2/Wild_Grass/GrassCheck.connect("area_entered", get_tree().get_root().get_child(4), "enter_grass")
+#	$Layer2/Wild_Grass/GrassCheck.connect("area_exited", get_tree().get_root().get_child(4), "exit_grass")
 
 func get_areas():
 	return $Layer2/Wild_Grass/GrassCheck.get_overlapping_areas()
