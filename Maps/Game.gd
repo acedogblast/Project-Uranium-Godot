@@ -18,7 +18,6 @@ var isInteracting = false
 var canInteract = true # Mabye redundant?
 var isTransitioning = false
 
-
 signal event_dialogue_end
 signal tranistion_complete
 
@@ -39,6 +38,8 @@ func _ready():
 	player = load("res://Utilities/PlayerNew.tscn").instance()
 	add_child(player)
 	add_to_group("save")
+
+	overlay.add_stat("Player Pos", player, "position", false)
 
 	#If load_game_from_id has a value, then load game from the id
 	if Global.load_game_from_id != null:
@@ -75,14 +76,6 @@ func _process(_delta):
 	if current_scene != null && current_scene.type == "Outside" && loaded == false:
 		call_deferred("load_seemless")
 	
-	if current_scene.find_node("GrassCheck") != null:
-		print("Route")
-
-func enter_grass(area):
-	Global.grassPos = area.name
-
-func exit_grass(area):
-	Global.exitGrassPos = area.name
 
 func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
@@ -101,7 +94,8 @@ func change_scene(scene): # scene must be loaded!
 		current_scene = new_scene.instance()
 	else:
 		current_scene = scene.instance()
-
+	
+	Global.grass_positions = []
 	#Adds the current scene to be a child
 	add_child(current_scene)
 

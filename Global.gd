@@ -8,6 +8,7 @@ var location : String = "location"
 var money : int = 0
 
 var onGrass = false
+var grass_positions = []
 var grassPos = ""
 var exitGrassPos = ""
 

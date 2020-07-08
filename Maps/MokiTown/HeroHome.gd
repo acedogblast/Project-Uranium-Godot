@@ -10,6 +10,7 @@ var background_music = "res://Audio/BGM/PU-Hero House.ogg";
 var type = "Indoor"
 
 var event_1_name = "EVENT_HEROHOME_1"
+var grass_pos = []
 
 func _ready():
 	$BlackBG.visible = true
