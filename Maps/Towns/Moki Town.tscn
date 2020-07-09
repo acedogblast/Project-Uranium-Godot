@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -6,9 +6,7 @@
 [ext_resource path="res://Maps/tilesets/PU_autotiles.tres" type="TileSet" id=4]
 [ext_resource path="res://Maps/tilesets/PU_anim_tiles.tres" type="TileSet" id=5]
 [ext_resource path="res://Maps/Towns/Moki Town.gd" type="Script" id=6]
-[ext_resource path="res://Utilities/Door.gd" type="Script" id=7]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Utilities/Event.gd" type="Script" id=9]
 [ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=10]
 
 [node name="Node2D" type="Node2D"]
@@ -100,32 +98,20 @@ tile_data = PoolIntArray( 589862, 0, 9, 983089, 0, 7, 1114158, 0, 6, 1179674, 0,
 position = Vector2( 16, 0 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Event1" type="Area2D" parent="NPC_Layer" instance=ExtResource( 10 )]
+[node name="Event1" parent="NPC_Layer" instance=ExtResource( 10 )]
 position = Vector2( 816, 488 )
 scale = Vector2( 2, 2 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 9 )
 event_name = ""
 size = Vector2( 8, 36 )
 
-[node name="Door" type="Node2D" parent="NPC_Layer" groups=[
-"Doors",
-] instance=ExtResource( 8 )]
+[node name="Door" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 880, 1008 )
-script = ExtResource( 7 )
 scene_destination = "res://Maps/MokiTown/HeroHome.tscn"
 location = Vector2( 1120, 304 )
-exterior = true
-door_type = "Type 1 - Wood"
 
-[node name="Door2" type="Node2D" parent="NPC_Layer" groups=[
-"Doors",
-] instance=ExtResource( 8 )]
+[node name="Door2" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 528, 364 )
-script = ExtResource( 7 )
 scene_destination = "res://Maps/MokiTown/BamboLab.tscn"
 location = Vector2( 240, 528 )
-exterior = true
 door_type = "Type 2 - Glass"
 [connection signal="area_entered" from="NPC_Layer/Event1" to="." method="event1"]

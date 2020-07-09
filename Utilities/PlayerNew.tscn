@@ -323,6 +323,7 @@ smoothing_speed = 4.0
 
 [node name="Collision" type="Position2D" parent="."]
 pause_mode = 2
+visible = false
 
 [node name="Area2D" type="Area2D" parent="Collision"]
 collision_layer = 2
@@ -332,6 +333,7 @@ collision_mask = 2
 shape = SubResource( 17 )
 
 [node name="NextCollision" type="Position2D" parent="."]
+visible = false
 
 [node name="Up" type="Area2D" parent="NextCollision"]
 position = Vector2( 0, -32 )
@@ -358,6 +360,7 @@ position = Vector2( 32, 0 )
 shape = SubResource( 17 )
 
 [node name="Interact" type="Position2D" parent="."]
+visible = false
 
 [node name="Area2D" type="Area2D" parent="Interact"]
 

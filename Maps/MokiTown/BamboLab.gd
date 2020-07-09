@@ -8,6 +8,7 @@ var theo
 var bambo
 var ui = null
 var starter
+var grass_pos = []
 
 signal finished
 

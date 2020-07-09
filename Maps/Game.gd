@@ -18,19 +18,17 @@ var isInteracting = false
 var canInteract = true # Mabye redundant?
 var isTransitioning = false
 
-var overlay
-var grass_map = null
-
 signal event_dialogue_end
 signal tranistion_complete
 
 onready var transition = $CanvasLayer/Transition
 
 func _ready():
-	overlay = preload("res://Utilities/debug_overlay.tscn").instance()
+	var overlay = preload("res://Utilities/debug_overlay.tscn").instance()
 	overlay.add_stat("onGrass", Global, "onGrass", false)
 	overlay.add_stat("Grass Position", Global, "grassPos", false)
 	overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
+	
 	add_child(overlay)
 	
 	Global.game = self
@@ -40,6 +38,10 @@ func _ready():
 	player = load("res://Utilities/PlayerNew.tscn").instance()
 	add_child(player)
 	add_to_group("save")
+	
+	overlay.add_stat("Direction", player, "dir", false)
+	overlay.add_stat("Player Pos", player, "position", false)
+
 
 	#If load_game_from_id has a value, then load game from the id
 	if Global.load_game_from_id != null:
@@ -76,21 +78,6 @@ func _process(_delta):
 	if current_scene != null && current_scene.type == "Outside" && loaded == false:
 		call_deferred("load_seemless")
 	
-	if current_scene.find_node("GrassCheck") != null:
-		print("Route")
-
-
-
-func enter_grass(area):
-	if Global.grassPos.find(area.name) == -1:
-		Global.grassPos.append(area.name)
-			
-
-func exit_grass(area):
-	Global.grassPos.remove(Global.grassPos.find(area.name))
-#	Global.exitGrassPos = area.name
-#	for a in get_node("Route03").get_child(1).get_child(0).get_child(0).get_overlapping_areas():
-#		print(a.name)
 
 func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
@@ -109,7 +96,8 @@ func change_scene(scene): # scene must be loaded!
 		current_scene = new_scene.instance()
 	else:
 		current_scene = scene.instance()
-
+	
+	Global.grass_positions = []
 	#Adds the current scene to be a child
 	add_child(current_scene)
 
@@ -199,13 +187,12 @@ func load_seemless():
 	loaded = true
 	
 	#next_scene1 = get_child(2).next_scene1.instance()
-	next_scene1 = load(current_scene.next_scene1)
-	next_scene1 = next_scene1.instance()
+	var s = load("res://Maps/Route03/Route03.tscn")
+	
+	next_scene1 = s.instance()
+	#next_scene1 = next_scene1.instance()
 	next_scene1.position = Vector2(2272,26*32)
-	
 	add_child(next_scene1)
-	overlay.add_stat("Overlapping Bodies", get_node("Route03").get_child(1).get_child(0).get_child(0), "get_overlapping_areas", true)
-	
 
 #Checks to see if the player is interacting, if not and the interaction title isn't null then is interacting is set to true, the change_input method is called, the play_dialogue method is called, we wait until the dialogue event has ended, and the change_input method is called again
 func interaction(collider, direction): # Starts the dialogue instead of the scene script

@@ -10,6 +10,7 @@ var place_name = "Moki Town"
 var hero_home_x = 880
 var hero_home_y = 1008
 var npc_layer
+var grass_pos = []
 
 func _ready():
 	npc_layer = $NPC_Layer
