@@ -6,7 +6,6 @@
 [ext_resource path="res://Utilities/bush_old.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
-resource_name = "Down"
 length = 0.25
 step = 0.01
 tracks/0/type = "value"
@@ -23,7 +22,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=2]
-resource_name = "Down2"
 length = 0.25
 step = 0.05
 tracks/0/type = "value"
@@ -40,7 +38,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-resource_name = "Down_sprint"
 length = 0.125
 step = 0.05
 tracks/0/type = "value"
@@ -57,7 +54,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-resource_name = "Down_sprint2"
 length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -105,7 +101,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=7]
-resource_name = "Left_sprint"
 length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -121,7 +116,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=8]
-resource_name = "Left_sprint2"
 length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -169,7 +163,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=11]
-resource_name = "Right_sprint"
 length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -185,7 +178,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=12]
-resource_name = "Right_sprint2"
 length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -233,7 +225,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=15]
-resource_name = "Up_sprint"
 length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -249,7 +240,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=16]
-resource_name = "Up_sprint2"
 length = 0.125
 tracks/0/type = "value"
 tracks/0/path = NodePath("Position2D/Sprite:frame")
@@ -264,10 +254,10 @@ tracks/0/keys = {
 "values": [ 14, 15 ]
 }
 
-[sub_resource type="RectangleShape2D" id=17]
+[sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 15, 15 )
 
-[sub_resource type="RectangleShape2D" id=18]
+[sub_resource type="RectangleShape2D" id=19]
 extents = Vector2( 14.9386, 15.0945 )
 
 [node name="Player" type="Node2D"]
@@ -330,7 +320,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Area2D"]
-shape = SubResource( 17 )
+shape = SubResource( 18 )
 
 [node name="NextCollision" type="Position2D" parent="."]
 visible = false
@@ -339,25 +329,25 @@ visible = false
 position = Vector2( 0, -32 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Up"]
-shape = SubResource( 17 )
+shape = SubResource( 18 )
 
 [node name="Down" type="Area2D" parent="NextCollision"]
 position = Vector2( 0, 32 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Down"]
-shape = SubResource( 17 )
+shape = SubResource( 18 )
 
 [node name="Left" type="Area2D" parent="NextCollision"]
 position = Vector2( -32, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Left"]
-shape = SubResource( 17 )
+shape = SubResource( 18 )
 
 [node name="Right" type="Area2D" parent="NextCollision"]
 position = Vector2( 32, 0 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Right"]
-shape = SubResource( 17 )
+shape = SubResource( 18 )
 
 [node name="Interact" type="Position2D" parent="."]
 visible = false
@@ -365,10 +355,11 @@ visible = false
 [node name="Area2D" type="Area2D" parent="Interact"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interact/Area2D"]
-shape = SubResource( 18 )
+shape = SubResource( 19 )
 disabled = true
 
 [node name="Grass" type="Position2D" parent="."]
+visible = false
 
 [node name="Sprite" type="Sprite" parent="Grass"]
 visible = false

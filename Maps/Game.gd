@@ -26,7 +26,7 @@ onready var transition = $CanvasLayer/Transition
 func _ready():
 	var overlay = preload("res://Utilities/debug_overlay.tscn").instance()
 	overlay.add_stat("onGrass", Global, "onGrass", false)
-	overlay.add_stat("Grass Position", Global, "grassPos", false)
+	overlay.add_stat("Grass Position", Global, "grass_positions", false)
 	overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
 	
 	add_child(overlay)
@@ -38,8 +38,10 @@ func _ready():
 	player = load("res://Utilities/PlayerNew.tscn").instance()
 	add_child(player)
 	add_to_group("save")
-
+	
+	overlay.add_stat("Direction", player, "dir", false)
 	overlay.add_stat("Player Pos", player, "position", false)
+
 
 	#If load_game_from_id has a value, then load game from the id
 	if Global.load_game_from_id != null:
@@ -185,8 +187,10 @@ func load_seemless():
 	loaded = true
 	
 	#next_scene1 = get_child(2).next_scene1.instance()
-	next_scene1 = load(current_scene.next_scene1)
-	next_scene1 = next_scene1.instance()
+	var s = load("res://Maps/Route03/Route03.tscn")
+	
+	next_scene1 = s.instance()
+	#next_scene1 = next_scene1.instance()
 	next_scene1.position = Vector2(2272,26*32)
 	add_child(next_scene1)
 

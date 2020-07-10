@@ -253,9 +253,8 @@ func parse_string(text):
 				text_array[index] = text_line
 			index += 1
 
-		for line2 in text_array:
-			final_text.append(TextParser.parse_text(line2))
-
+		for l in text_array:
+			final_text.append(TextParser.parse_text(l))
 	return final_text
 
 func _on_TypeDelay_timeout():

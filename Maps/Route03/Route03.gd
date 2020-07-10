@@ -8,6 +8,8 @@ var place_name = "Route 03"
 var grass_pos = []
 
 func _ready():
+#	$Layer2/Wild_Grass/GrassCheck.connect("area_entered", get_tree().get_root().get_child(4), "enter_grass")
+#	$Layer2/Wild_Grass/GrassCheck.connect("area_exited", get_tree().get_root().get_child(4), "exit_grass")
 	var grass_cells = $Layer2/Wild_Grass.get_used_cells_by_id(0) # Get Array of Vector2s of cells in cell cord
 	var final_pos = [] # Array of Vector2s of grass global locations
 
@@ -19,5 +21,6 @@ func _ready():
 		final_pos.append(pos)
 	#print(final_pos)
 	Global.grass_positions = final_pos
-	
 
+func get_areas():
+	return $Layer2/Wild_Grass/GrassCheck.get_overlapping_areas()
