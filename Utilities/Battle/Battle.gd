@@ -63,10 +63,17 @@ func Start_Battle(bid : BattleInstanceData):
 	battler1 = Global.pokemon_group[0]
 	battler2 = battle_instance.opponent.pokemon_group[0]
 	battle_logic = load("res://Utilities/Battle/BattleLogic.gd").new(battler1, battler2 , battle_instance)
+	
 	# Set human opponent texture
 	if battle_instance.battle_type != battle_instance.BattleType.SINGLE_WILD:
 		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.texture = battle_instance.opponent.battle_texture
 		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman/HumanShadow.texture = battle_instance.opponent.battle_texture
+	
+	# Load data to Foe Bar
+	$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battler2)
+	
+	# Load data to Foe Battler
+	$CanvasLayer/BattleGrounds/FoeBase.setup_by_pokemon(battler2)
 	
 	# Add Foe introduction to queue
 	match battle_instance.battle_type:
@@ -99,22 +106,37 @@ func Start_Battle(bid : BattleInstanceData):
 			action.type = action.BATTLE_TEXT
 			action.battle_text = "RIVAL Theo sent\nout " + battler2.name + "!"
 			queue.push(action)
+		battle_instance.BattleType.SINGLE_WILD:
+			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.hide()
+			# Set battler2 sprite
+			var poke = $CanvasLayer/BattleGrounds/FoeBase/Battler
+			poke.position = Vector2(140,0)
+			poke.scale = Vector2(2,2)
+			poke.show()
+
+			var action = BattleQueueAction.new()
+			action.type = action.BATTLE_GROUNDS_POS_CHANGE
+			action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.INTRO_FADE
+			queue.push(action)
+
+			action = BattleQueueAction.new()
+			action.type = action.WILD_INTRO
+			queue.push(action)
+
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = "WILD " + battler2.name + " appeared!"
+			queue.push(action)
+
+
+
+
 	# If human opponent add ball toss.
 	if battle_instance.battle_type == battle_instance.BattleType.RIVAL or battle_instance.battle_type == battle_instance.BattleType.SINGLE_TRAINER:
 		var action = BattleQueueAction.new()
 		action.type = action.FOE_BALLTOSS
-		
-		
-		
 		queue.push(action)
-		pass
-	# Load data to Foe Bar
-	$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battler2)
 	
-	
-	# Load data to Foe Battler
-	$CanvasLayer/BattleGrounds/FoeBase.setup_by_pokemon(battler2)
-
 	
 	# Add Player toss to queue
 	var action = BattleQueueAction.new()
@@ -173,14 +195,14 @@ func test():
 	var BID = load("res://Utilities/Battle/Classes/BattleInstanceData.gd")
 	var OPP = load("res://Utilities/Battle/Classes/Opponent.gd")
 	var bid = BID.new()
-	bid.battle_type = BID.BattleType.RIVAL
-	bid.battle_back = BID.BattleBack.INDOOR_1
+	bid.battle_type = BID.BattleType.SINGLE_WILD
+	bid.battle_back = BID.BattleBack.FOREST
 	bid.opponent = OPP.new()
-	bid.opponent.name = "Theo"
-	bid.opponent.opponent_type = Opponent.OPPONENT_RIVAL
+	#bid.opponent.name = "Theo"
+	bid.opponent.opponent_type = Opponent.OPPONENT_WILD
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
 	bid.opponent.ai.AI_Behavior = bid.opponent.ai.TESTING_1
-	bid.opponent.after_battle_quote = "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
+	#bid.opponent.after_battle_quote = "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
 
 	var poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(1,5)
@@ -267,7 +289,6 @@ func run_transition():
 	$CanvasLayer/TransitionEffects/GreyFlash.visible = false
 	if battle_instance.battle_type == battle_instance.BattleType.RIVAL or battle_instance.battle_type == battle_instance.BattleType.SINGLE_GYML:
 		set_Vs_textures()
-		
 		$CanvasLayer/TransitionEffects/Vs.visible = true
 		$CanvasLayer/TransitionEffects/Vs/AnimationPlayer.play("SlideBars")
 		yield($CanvasLayer/TransitionEffects/Vs/AnimationPlayer, "animation_finished")
@@ -453,7 +474,17 @@ func battle_loop():
 			animation.play("StatChange")
 			yield(animation, "animation_finished")
 			effect_enable = false
+		action.WILD_INTRO:
+			#Play cry:
+			$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.stream = load(battler2.get_cry())
+			$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.play()
 
+			# Slide battle bar
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = true
+			$CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar.visible = true
+			$CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar.get_node("AnimationPlayer").play("Slide")
+
+			yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer, "finished")
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 
