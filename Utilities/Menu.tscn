@@ -837,6 +837,7 @@ __meta__ = {
 }
 
 [node name="OptionsMenu" type="Node2D" parent="."]
+visible = false
 
 [node name="optionbg" type="Sprite" parent="OptionsMenu"]
 texture = ExtResource( 39 )

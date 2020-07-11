@@ -53,7 +53,8 @@ func _input(event):
 				$AnimationPlayer.seek(0, true)
 				$AnimationPlayer.stop(true)
 				self.visible = false
-
+			2:
+				menu_stage = 1
 	if menu_stage == 1:
 		
 		if event.is_action_pressed("ui_left") and !saving:
@@ -92,16 +93,39 @@ func _input(event):
 					menu_stage = 1
 			ORDER.BAG:
 				$Transition.fade_to_color()
-				$BG.hide()
-				$Bottom.hide()
-				$Top.hide()
-				$Place_Text.hide()
-				$Option_Text.hide()
-				$Options.hide()
-				$Run.hide()
+				hide_all()
 				$Bag.show()
 				$Transition.fade_from_color()
 				pass
+			ORDER.CARD:
+				$Transition.fade_to_color()
+				hide_all()
+				$Card.show()
+				$Transition.fade_from_color()
+				
+
+
+func show_base():
+	hide_all()
+	$BG.show()
+	$Bottom.show()
+	$Top.show()
+	$Place_Text.show()
+	$Option_Text.show()
+	$Options.show()
+	$Run.show()
+	
+	
+	pass
+
+func hide_all():
+	for c in get_children():
+		if c is AnimationPlayer or c is Node or c.name == "Transition":
+			continue
+		else:
+			c.hide()
+	pass
+
 
 func select():
 	if current == ORDER.SAVE && menu_stage == 1:
@@ -112,7 +136,8 @@ func select():
 		DialogueSystem.start_dialog("UI_MENU_SAVE_PROMPT")
 	elif current == ORDER.BAG && menu_stage == 1:
 		menu_stage = 2
-		
+	elif current == ORDER.CARD && menu_stage == 1:
+		menu_stage = 2
 
 func move_sprites(dir):
 	if dir == "Left":
