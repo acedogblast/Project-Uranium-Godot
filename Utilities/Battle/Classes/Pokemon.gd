@@ -150,17 +150,17 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 
 	# Set experience points
 	match data.leveling_rate:
-		data.rate.SLOW:
+		data.SLOW:
 			experience = exp_slow(lv)
-		data.rate.MEDIUM_SLOW:
+		data.MEDIUM_SLOW:
 			experience = exp_medium_slow(lv)
-		data.rate.MEDIUM_FAST:
+		data.MEDIUM_FAST:
 			experience = exp_medium_fast(lv)
-		data.rate.FAST:
+		data.FAST:
 			experience = exp_fast(lv)
-		data.rate.ERRATIC:
+		data.ERRATIC:
 			experience = exp_erratic(lv)
-		data.rate.FLUCTUATING:
+		data.FLUCTUATING:
 			experience = exp_fluctuating(lv)
 	
 	# Set stats
@@ -229,22 +229,22 @@ func get_exp_bar_percent() -> float:
 	var base : int
 	var top : int
 	match poke_class.leveling_rate:
-		poke_class.rate.SLOW:
+		poke_class.SLOW:
 			base = exp_slow(level)
 			top = exp_slow(level + 1)
-		poke_class.rate.MEDIUM_SLOW:
+		poke_class.MEDIUM_SLOW:
 			base = exp_medium_slow(level)
 			top = exp_medium_slow(level + 1)
-		poke_class.rate.MEDIUM_FAST:
+		poke_class.MEDIUM_FAST:
 			base = exp_medium_fast(level)
 			top = exp_medium_fast(level + 1)
-		poke_class.rate.FAST:
+		poke_class.FAST:
 			base = exp_fast(level)
 			top = exp_fast(level + 1)
-		poke_class.rate.ERRATIC:
+		poke_class.ERRATIC:
 			base = exp_erratic(level)
 			top = exp_erratic(level + 1)
-		poke_class.rate.FLUCTUATING:
+		poke_class.FLUCTUATING:
 			base = exp_fluctuating(level)
 			top = exp_fluctuating(level + 1)
 	var range_total = top - base
