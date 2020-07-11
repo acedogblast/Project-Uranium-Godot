@@ -3,7 +3,7 @@
 [ext_resource path="res://Utilities/PlayerNew.gd" type="Script" id=1]
 [ext_resource path="res://Audio/SE/bump.WAV" type="AudioStream" id=2]
 [ext_resource path="res://Graphics/Characters/HERO.png" type="Texture" id=3]
-[ext_resource path="res://Utilities/bush_old.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/Autotiles/Tall Grass2.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
 length = 0.25
