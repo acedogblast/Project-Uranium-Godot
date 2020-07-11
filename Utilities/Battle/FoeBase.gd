@@ -11,8 +11,6 @@ func setup_by_pokemon(poke):
 	$Battler.add_child(sprite)
 	$Battler/Shadow.texture = sprite.texture
 
-	pass
-
 func ball_flash():
 	$Battler.visible = true
 	sprite.visible = true

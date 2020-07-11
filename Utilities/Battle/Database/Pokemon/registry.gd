@@ -10,4 +10,4 @@ var pokemon = {
 	
 }
 func get_pokemon_class(id):
-	return load("res://Utilities/Battle/Database/Pokemon/" + pokemon[id] + ".tres")
+	return load("res://Utilities/Battle/Database/Pokemon/" + pokemon[id] + ".gd").new()

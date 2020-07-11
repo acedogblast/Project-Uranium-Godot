@@ -2,10 +2,10 @@
 
 [ext_resource path="res://Fonts/NotoSansCJKsc-Medium.otf" type="DynamicFontData" id=1]
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.12549, 0.145098, 0.192157, 1 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 30
 font_data = ExtResource( 1 )
 
@@ -336,7 +336,6 @@ margin_left = 301.0
 margin_top = 340.0
 margin_right = 375.0
 margin_bottom = 364.0
-max_value = 100.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -395,7 +394,7 @@ margin_left = 45.5999
 margin_top = 329.65
 margin_right = 155.6
 margin_bottom = 349.65
-custom_styles/normal = SubResource( 2 )
+custom_styles/normal = SubResource( 1 )
 text = "SLOW"
 items = [ "SLOW", null, false, 0, null, "MEDIUM_SLOW", null, false, 1, null, "MEDIUM_FAST", null, false, 2, null, "FAST", null, false, 3, null, "ERRATIC", null, false, 4, null, "FLUCTUATING", null, false, 5, null ]
 selected = 0
@@ -405,6 +404,6 @@ margin_left = 11.9507
 margin_top = 7.89461
 margin_right = 302.951
 margin_bottom = 47.8946
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
 text = "CREATE POKEMON"
 scroll_active = false

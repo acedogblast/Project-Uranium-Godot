@@ -63,10 +63,17 @@ func Start_Battle(bid : BattleInstanceData):
 	battler1 = Global.pokemon_group[0]
 	battler2 = battle_instance.opponent.pokemon_group[0]
 	battle_logic = load("res://Utilities/Battle/BattleLogic.gd").new(battler1, battler2 , battle_instance)
+	
 	# Set human opponent texture
 	if battle_instance.battle_type != battle_instance.BattleType.SINGLE_WILD:
 		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.texture = battle_instance.opponent.battle_texture
 		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman/HumanShadow.texture = battle_instance.opponent.battle_texture
+	
+	# Load data to Foe Bar
+	$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battler2)
+	
+	# Load data to Foe Battler
+	$CanvasLayer/BattleGrounds/FoeBase.setup_by_pokemon(battler2)
 	
 	# Add Foe introduction to queue
 	match battle_instance.battle_type:
@@ -99,22 +106,38 @@ func Start_Battle(bid : BattleInstanceData):
 			action.type = action.BATTLE_TEXT
 			action.battle_text = "RIVAL Theo sent\nout " + battler2.name + "!"
 			queue.push(action)
+		battle_instance.BattleType.SINGLE_WILD:
+			battle_instance.opponent.name = battler2.name
+			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.hide()
+			# Set battler2 sprite
+			var poke = $CanvasLayer/BattleGrounds/FoeBase/Battler
+			poke.position = Vector2(140,0)
+			poke.scale = Vector2(2,2)
+			poke.show()
+
+			var action = BattleQueueAction.new()
+			action.type = action.BATTLE_GROUNDS_POS_CHANGE
+			action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.INTRO_FADE
+			queue.push(action)
+
+			action = BattleQueueAction.new()
+			action.type = action.WILD_INTRO
+			queue.push(action)
+
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = "WILD " + battle_instance.opponent.name + " appeared!"
+			queue.push(action)
+
+
+
+
 	# If human opponent add ball toss.
 	if battle_instance.battle_type == battle_instance.BattleType.RIVAL or battle_instance.battle_type == battle_instance.BattleType.SINGLE_TRAINER:
 		var action = BattleQueueAction.new()
 		action.type = action.FOE_BALLTOSS
-		
-		
-		
 		queue.push(action)
-		pass
-	# Load data to Foe Bar
-	$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battler2)
 	
-	
-	# Load data to Foe Battler
-	$CanvasLayer/BattleGrounds/FoeBase.setup_by_pokemon(battler2)
-
 	
 	# Add Player toss to queue
 	var action = BattleQueueAction.new()
@@ -173,14 +196,14 @@ func test():
 	var BID = load("res://Utilities/Battle/Classes/BattleInstanceData.gd")
 	var OPP = load("res://Utilities/Battle/Classes/Opponent.gd")
 	var bid = BID.new()
-	bid.battle_type = BID.BattleType.RIVAL
-	bid.battle_back = BID.BattleBack.INDOOR_1
+	bid.battle_type = BID.BattleType.SINGLE_WILD
+	bid.battle_back = BID.BattleBack.FOREST
 	bid.opponent = OPP.new()
-	bid.opponent.name = "Theo"
-	bid.opponent.opponent_type = Opponent.OPPONENT_RIVAL
+	#bid.opponent.name = "Theo"
+	bid.opponent.opponent_type = Opponent.OPPONENT_WILD
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
-	bid.opponent.ai.AI_Behavior = bid.opponent.ai.TESTING_1
-	bid.opponent.after_battle_quote = "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.WILD
+	#bid.opponent.after_battle_quote = "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
 
 	var poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(1,5)
@@ -243,22 +266,37 @@ func set_battle_music():
 			$CanvasLayer/AudioStreamPlayer.stream = load("res://Audio/BGM/PU-TrainerPokeBattle.ogg")
 	$CanvasLayer/AudioStreamPlayer.play()
 func set_battle_back():
+	var battle_back = $CanvasLayer/BattleGrounds/BattleBack
+	var player_base = $CanvasLayer/BattleGrounds/PlayerBase
+	var foe_base = $CanvasLayer/BattleGrounds/FoeBase
 	match battle_instance.battle_back:
 		battle_instance.BattleBack.INDOOR_1:
-			$CanvasLayer/BattleGrounds/BattleBack.texture = load("res://Graphics/Battlebacks/battlebgIndoorA.png")
+			battle_back.texture = load("res://Graphics/Battlebacks/battlebgIndoorA.png")
+			player_base.texture = load("res://Graphics/Battlebacks/playerbaseIndoorA.png")
+			foe_base.texture = load("res://Graphics/Battlebacks/enemybaseIndoorA.png")
 		battle_instance.BattleBack.FOREST:
-			$CanvasLayer/BattleGrounds/BattleBack.texture = load("res://Graphics/Battlebacks/battlebgForest.PNG")
+			battle_back.texture = load("res://Graphics/Battlebacks/battlebgForest.PNG")
+			player_base.texture = load("res://Graphics/Battlebacks/playerbaseForest.png")
+			foe_base.texture = load("res://Graphics/Battlebacks/enemybaseForest.png")
 		battle_instance.BattleBack.FEILD_1:
-			$CanvasLayer/BattleGrounds/BattleBack.texture = load("res://Graphics/Battlebacks/battlebgField.PNG")
+			battle_back.texture = load("res://Graphics/Battlebacks/battlebgField.PNG")
+			player_base.texture = load("res://Graphics/Battlebacks/playerbaseField.png")
+			foe_base.texture = load("res://Graphics/Battlebacks/enemybaseField.png")
 		battle_instance.BattleBack.MOUNTAIN:
-			$CanvasLayer/BattleGrounds/BattleBack.texture = load("res://Graphics/Battlebacks/battlebgMountain.png")
+			battle_back.texture = load("res://Graphics/Battlebacks/battlebgMountain.png")
+			player_base.texture = load("res://Graphics/Battlebacks/playerbaseMountain.png")
+			foe_base.texture = load("res://Graphics/Battlebacks/enemybaseMountain.png")
 		battle_instance.BattleBack.CAVE:
-			$CanvasLayer/BattleGrounds/BattleBack.texture = load("res://Graphics/Battlebacks/battlebgCave.png")
+			battle_back.texture = load("res://Graphics/Battlebacks/battlebgCave.png")
+			player_base.texture = load("res://Graphics/Battlebacks/playerbaseCave.png")
+			foe_base.texture = load("res://Graphics/Battlebacks/enemybaseCave.png")
 		battle_instance.BattleBack.CITY:
-			$CanvasLayer/BattleGrounds/BattleBack.texture = load("res://Graphics/Battlebacks/battlebgCity.png")
+			battle_back.texture = load("res://Graphics/Battlebacks/battlebgCity.png")
+			player_base.texture = load("res://Graphics/Battlebacks/playerbaseCity.png")
+			foe_base.texture = load("res://Graphics/Battlebacks/enemybaseCity.png")
 		_:
 			print("Battle Error: battle_back is not implemented or specified. Defaulting to battlebgIndoorA.png")
-			$CanvasLayer/BattleGrounds/BattleBack.texture = load("res://Graphics/Battlebacks/battlebgIndoorA.png")
+			battle_back.texture = load("res://Graphics/Battlebacks/battlebgIndoorA.png")
 func run_transition():
 	$CanvasLayer/TransitionEffects.visible = true
 	$CanvasLayer/TransitionEffects/Vs.visible = false
@@ -267,7 +305,6 @@ func run_transition():
 	$CanvasLayer/TransitionEffects/GreyFlash.visible = false
 	if battle_instance.battle_type == battle_instance.BattleType.RIVAL or battle_instance.battle_type == battle_instance.BattleType.SINGLE_GYML:
 		set_Vs_textures()
-		
 		$CanvasLayer/TransitionEffects/Vs.visible = true
 		$CanvasLayer/TransitionEffects/Vs/AnimationPlayer.play("SlideBars")
 		yield($CanvasLayer/TransitionEffects/Vs/AnimationPlayer, "animation_finished")
@@ -367,6 +404,7 @@ func battle_loop():
 			yield($CanvasLayer/BattleInterfaceLayer/BattleBars, "finished")
 		action.BATTLE_END:
 			battle_is_over = true
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = false
 			# Play victory music
 			var victory_music
 			match battle_instance.battle_type:
@@ -381,7 +419,7 @@ func battle_loop():
 			$CanvasLayer/AudioStreamPlayer.stream = victory_music
 			$CanvasLayer/AudioStreamPlayer.play()
 
-			# Closing Trainer quote
+			# Closing Battle quote
 			var message = Global.TrainerName + " defeated\n"
 			match battle_instance.opponent.opponent_type:
 				Opponent.OPPONENT_RIVAL:
@@ -398,7 +436,6 @@ func battle_loop():
 
 			# If applicable, show opponent win quote:
 			if battle_instance.opponent.opponent_type == Opponent.OPPONENT_RIVAL:
-				$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = false
 				$CanvasLayer/BattleGrounds/AnimationPlayer.play("Opponent_Quote")
 				yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
 
@@ -453,7 +490,17 @@ func battle_loop():
 			animation.play("StatChange")
 			yield(animation, "animation_finished")
 			effect_enable = false
+		action.WILD_INTRO:
+			#Play cry:
+			$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.stream = load(battler2.get_cry())
+			$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.play()
 
+			# Slide battle bar
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = true
+			$CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar.visible = true
+			$CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar.get_node("AnimationPlayer").play("Slide")
+
+			yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer, "finished")
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 
@@ -486,4 +533,13 @@ func get_battle_snapshot():
 	snap.poke_level = int(battler2.level)
 	for p in battle_instance.opponent.pokemon_group:
 		snap.poke_list.push_back(int(p.ID))
+	
+	if battler2.move_1 != null:
+		snap.poke_move_list.append(battler2.move_1.name)
+	if battler2.move_2 != null:
+		snap.poke_move_list.append(battler2.move_2.name)
+	if battler2.move_3 != null:
+		snap.poke_move_list.append(battler2.move_3.name)
+	if battler2.move_4 != null:
+		snap.poke_move_list.append(battler2.move_4.name)
 	return snap

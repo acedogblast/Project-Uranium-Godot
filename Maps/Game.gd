@@ -25,9 +25,9 @@ onready var transition = $CanvasLayer/Transition
 
 func _ready():
 	var overlay = preload("res://Utilities/debug_overlay.tscn").instance()
-	overlay.add_stat("onGrass", Global, "onGrass", false)
-	overlay.add_stat("Grass Position", Global, "grass_positions", false)
-	overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
+	#overlay.add_stat("onGrass", Global, "onGrass", false)
+	#overlay.add_stat("Grass Position", Global, "grass_positions", false)
+	#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
 	
 	add_child(overlay)
 	
@@ -64,7 +64,7 @@ func _ready():
 
 
 func _process(_delta):
-
+	# Sort and assign Z index
 	var nodes = get_tree().get_nodes_in_group("auto_z_layering")
 	nodes.sort_custom(AutoZSorter, "sort_ascending")
 	var index = 10
