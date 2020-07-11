@@ -186,10 +186,7 @@ func door_transition(path_scene, new_position):
 func load_seemless():
 	loaded = true
 	
-	#next_scene1 = get_child(2).next_scene1.instance()
-	var s = load("res://Maps/Route03/Route03.tscn")
-	
-	next_scene1 = s.instance()
+	next_scene1 = load(current_scene.next_scene1).instance()
 	#next_scene1 = next_scene1.instance()
 	next_scene1.position = Vector2(2272,26*32)
 	add_child(next_scene1)

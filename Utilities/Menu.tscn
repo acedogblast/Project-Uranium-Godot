@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://Utilities/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Pictures/MENU/menubg.png" type="Texture" id=2]
@@ -21,6 +21,27 @@
 [ext_resource path="res://Audio/SE/SE_Zoom2.wav" type="AudioStream" id=19]
 [ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=20]
 [ext_resource path="res://Audio/SE/save.wav" type="AudioStream" id=21]
+[ext_resource path="res://Graphics/Pictures/Bag/bag4.png" type="Texture" id=22]
+[ext_resource path="res://Graphics/Pictures/Bag/bag1.png" type="Texture" id=23]
+[ext_resource path="res://Graphics/Pictures/Bag/bag8.png" type="Texture" id=24]
+[ext_resource path="res://Graphics/Pictures/Bag/bag3.png" type="Texture" id=25]
+[ext_resource path="res://Graphics/Pictures/Bag/bagbglight.png" type="Texture" id=26]
+[ext_resource path="res://Graphics/Pictures/Bag/bag2.png" type="Texture" id=27]
+[ext_resource path="res://Graphics/Pictures/Bag/bg_grid.png" type="Texture" id=28]
+[ext_resource path="res://Graphics/Pictures/Bag/bagbgup.PNG" type="Texture" id=29]
+[ext_resource path="res://Graphics/Pictures/Bag/bagoverlay.png" type="Texture" id=30]
+[ext_resource path="res://Graphics/Pictures/Bag/bagSlider.png" type="Texture" id=31]
+[ext_resource path="res://Graphics/Pictures/Bag/bagitems.png" type="Texture" id=32]
+[ext_resource path="res://Graphics/Icons/item170.png" type="Texture" id=33]
+[ext_resource path="res://Utilities/Transition.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Graphics/Pictures/Bag/bagReg.PNG" type="Texture" id=35]
+[ext_resource path="res://Graphics/Pictures/trcard.PNG" type="Texture" id=36]
+[ext_resource path="res://Graphics/Pictures/trcardbg.png" type="Texture" id=37]
+[ext_resource path="res://Graphics/Pictures/trcaseicon.png" type="Texture" id=38]
+[ext_resource path="res://Graphics/Pictures/Options/optionbg.png" type="Texture" id=39]
+[ext_resource path="res://Graphics/Pictures/Options/fakebox.png" type="Texture" id=40]
+[ext_resource path="res://Graphics/Pictures/Options/bars.png" type="Texture" id=41]
+[ext_resource path="res://Graphics/Pictures/Options/optionbg2.png" type="Texture" id=42]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -30,6 +51,47 @@ font_data = ExtResource( 5 )
 [sub_resource type="DynamicFont" id=2]
 size = 27
 extra_spacing_top = 8
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+extra_spacing_top = 6
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 26
+extra_spacing_top = 2
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 32
+extra_spacing_top = 2
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 26
+extra_spacing_top = 4
+extra_spacing_bottom = 8
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 26
+extra_spacing_top = 2
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 26
+extra_spacing_top = 2
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 32
+extra_spacing_top = 2
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 32
+extra_spacing_top = 2
 font_data = ExtResource( 5 )
 
 [sub_resource type="Animation" id=3]
@@ -454,6 +516,641 @@ scroll_active = false
 position = Vector2( 23, 32 )
 texture = ExtResource( 16 )
 
+[node name="Bag" type="Node2D" parent="."]
+visible = false
+
+[node name="bg" type="Sprite" parent="Bag"]
+texture = ExtResource( 29 )
+centered = false
+
+[node name="bg_grid" type="Sprite" parent="Bag"]
+position = Vector2( 256, 192 )
+texture = ExtResource( 28 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 528, 396 )
+
+[node name="light" type="Sprite" parent="Bag"]
+texture = ExtResource( 26 )
+centered = false
+
+[node name="overlay" type="Sprite" parent="Bag"]
+texture = ExtResource( 30 )
+centered = false
+
+[node name="bagSlider" type="Sprite" parent="Bag"]
+visible = false
+position = Vector2( 496, 52 )
+texture = ExtResource( 31 )
+
+[node name="CurrentContainer" type="RichTextLabel" parent="Bag"]
+margin_left = 3.0
+margin_right = 208.0
+margin_bottom = 40.0
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[center]Medicine[/center]"
+text = "Medicine"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="containers" type="Node2D" parent="Bag"]
+
+[node name="bag8" type="Sprite" parent="Bag/containers"]
+position = Vector2( 176, 112 )
+texture = ExtResource( 24 )
+vframes = 3
+
+[node name="bag1" type="Sprite" parent="Bag/containers"]
+position = Vector2( 166, 176 )
+texture = ExtResource( 23 )
+vframes = 3
+
+[node name="bag4" type="Sprite" parent="Bag/containers"]
+position = Vector2( 106, 208 )
+texture = ExtResource( 22 )
+vframes = 3
+
+[node name="bag3" type="Sprite" parent="Bag/containers"]
+position = Vector2( 60, 112 )
+texture = ExtResource( 25 )
+vframes = 3
+
+[node name="bag2" type="Sprite" parent="Bag/containers"]
+position = Vector2( 38, 199 )
+texture = ExtResource( 27 )
+vframes = 3
+frame = 2
+
+[node name="items" type="Node2D" parent="Bag"]
+
+[node name="medicine" type="Node2D" parent="Bag/items"]
+
+[node name="item" type="Node2D" parent="Bag/items/medicine"]
+
+[node name="panel" type="Sprite" parent="Bag/items/medicine/item"]
+position = Vector2( 378, 48 )
+texture = ExtResource( 32 )
+vframes = 2
+
+[node name="item_name" type="RichTextLabel" parent="Bag/items/medicine/item"]
+margin_left = 284.0
+margin_top = 32.0
+margin_right = 464.0
+margin_bottom = 64.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "Potion"
+text = "Potion"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Details" type="Node2D" parent="Bag"]
+
+[node name="name" type="RichTextLabel" parent="Bag/Details"]
+margin_left = 16.0
+margin_top = 256.0
+margin_right = 192.0
+margin_bottom = 288.0
+custom_fonts/normal_font = SubResource( 6 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Potion[/center]"
+text = "Potion"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="Bag/Details"]
+margin_left = 121.0
+margin_top = 293.0
+margin_right = 464.0
+margin_bottom = 384.0
+custom_fonts/normal_font = SubResource( 7 )
+bbcode_enabled = true
+bbcode_text = "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points."
+text = "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points."
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icon" type="Sprite" parent="Bag/Details"]
+position = Vector2( 37.4297, 339.517 )
+texture = ExtResource( 33 )
+
+[node name="quantity" type="RichTextLabel" parent="Bag/Details"]
+margin_left = 62.0
+margin_top = 326.0
+margin_right = 102.0
+margin_bottom = 366.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "x 1"
+text = "x 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bagReg" type="Sprite" parent="Bag"]
+position = Vector2( 489, 361 )
+texture = ExtResource( 35 )
+vframes = 3
+frame = 1
+
+[node name="Card" type="Node2D" parent="."]
+visible = false
+
+[node name="trcardbg" type="Sprite" parent="Card"]
+texture = ExtResource( 37 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 512, 384 )
+
+[node name="trcard" type="Sprite" parent="Card"]
+texture = ExtResource( 36 )
+centered = false
+
+[node name="hidden_leaders" type="Node2D" parent="Card"]
+
+[node name="1" type="Sprite" parent="Card/hidden_leaders"]
+position = Vector2( 107, 278.288 )
+texture = ExtResource( 38 )
+
+[node name="2" type="Sprite" parent="Card/hidden_leaders"]
+position = Vector2( 203, 278.288 )
+texture = ExtResource( 38 )
+
+[node name="3" type="Sprite" parent="Card/hidden_leaders"]
+position = Vector2( 299, 278.288 )
+texture = ExtResource( 38 )
+
+[node name="4" type="Sprite" parent="Card/hidden_leaders"]
+position = Vector2( 395, 278.288 )
+texture = ExtResource( 38 )
+
+[node name="5" type="Sprite" parent="Card/hidden_leaders"]
+position = Vector2( 107, 342.288 )
+texture = ExtResource( 38 )
+
+[node name="6" type="Sprite" parent="Card/hidden_leaders"]
+position = Vector2( 203, 342.288 )
+texture = ExtResource( 38 )
+
+[node name="7" type="Sprite" parent="Card/hidden_leaders"]
+position = Vector2( 299, 342.288 )
+texture = ExtResource( 38 )
+
+[node name="8" type="Sprite" parent="Card/hidden_leaders"]
+position = Vector2( 395, 342.288 )
+texture = ExtResource( 38 )
+
+[node name="Text" type="Node2D" parent="Card"]
+
+[node name="IDNo" type="RichTextLabel" parent="Card/Text"]
+margin_left = 32.0
+margin_top = 48.0
+margin_right = 224.0
+margin_bottom = 78.0
+custom_fonts/normal_font = SubResource( 8 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "IDNo.00000"
+text = "IDNo.00000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="Card/Text"]
+margin_left = 272.0
+margin_top = 48.0
+margin_right = 464.0
+margin_bottom = 78.0
+custom_fonts/normal_font = SubResource( 8 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "NAME:"
+text = "NAME:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Money" type="Node2D" parent="Card/Text"]
+
+[node name="number" type="RichTextLabel" parent="Card/Text/Money"]
+margin_left = 144.0
+margin_top = 96.0
+margin_right = 304.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]$3000[/right]"
+text = "$3000"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="Card/Text/Money"]
+margin_left = 32.0
+margin_top = 96.0
+margin_right = 112.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "MONEY:"
+text = "MONEY:"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokedex" type="Node2D" parent="Card/Text"]
+position = Vector2( 0, 48 )
+
+[node name="number" type="RichTextLabel" parent="Card/Text/Pokedex"]
+margin_left = 144.0
+margin_top = 96.0
+margin_right = 304.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]0[/right]"
+text = "0"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="Card/Text/Pokedex"]
+margin_left = 32.0
+margin_top = 96.0
+margin_right = 128.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "POKéDEX:"
+text = "POKéDEX:"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Time" type="Node2D" parent="Card/Text"]
+position = Vector2( 0, 112 )
+
+[node name="number" type="RichTextLabel" parent="Card/Text/Time"]
+margin_left = 144.0
+margin_top = 96.0
+margin_right = 304.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]00:00[/right]"
+text = "00:00"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="Card/Text/Time"]
+margin_left = 32.0
+margin_top = 96.0
+margin_right = 128.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "TIME:"
+text = "TIME:"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionsMenu" type="Node2D" parent="."]
+
+[node name="optionbg" type="Sprite" parent="OptionsMenu"]
+texture = ExtResource( 39 )
+centered = false
+
+[node name="optionbg2" type="Sprite" parent="OptionsMenu"]
+texture = ExtResource( 42 )
+centered = false
+
+[node name="fakebox" type="Sprite" parent="OptionsMenu"]
+position = Vector2( 1, 288 )
+texture = ExtResource( 40 )
+centered = false
+
+[node name="shadow" type="RichTextLabel" parent="OptionsMenu"]
+margin_left = 50.0
+margin_top = 19.0
+margin_right = 162.0
+margin_bottom = 44.0
+custom_fonts/normal_font = SubResource( 9 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "OPTIONS"
+text = "OPTIONS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="RichTextLabel" parent="OptionsMenu"]
+margin_left = 48.0
+margin_top = 17.0
+margin_right = 160.0
+margin_bottom = 42.0
+custom_fonts/normal_font = SubResource( 9 )
+bbcode_enabled = true
+bbcode_text = "OPTIONS"
+text = "OPTIONS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicVolume" type="Node2D" parent="OptionsMenu"]
+
+[node name="bars" type="Sprite" parent="OptionsMenu/MusicVolume"]
+position = Vector2( 4, 50 )
+texture = ExtResource( 41 )
+centered = false
+vframes = 2
+frame = 1
+
+[node name="shadow" type="RichTextLabel" parent="OptionsMenu/MusicVolume"]
+margin_left = 18.0
+margin_top = 58.0
+margin_right = 210.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.419608, 0.611765, 0.713726, 1 )
+bbcode_enabled = true
+bbcode_text = "Music Volume"
+text = "Music Volume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="RichTextLabel" parent="OptionsMenu/MusicVolume"]
+margin_left = 16.0
+margin_top = 56.0
+margin_right = 208.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "Music Volume"
+text = "Music Volume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shadow_int" type="RichTextLabel" parent="OptionsMenu/MusicVolume"]
+margin_left = 413.0
+margin_top = 62.0
+margin_right = 468.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 10 )
+custom_colors/default_color = Color( 0.419608, 0.611765, 0.713726, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]100"
+text = "100"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="int" type="RichTextLabel" parent="OptionsMenu/MusicVolume"]
+margin_left = 407.0
+margin_top = 60.0
+margin_right = 466.0
+margin_bottom = 87.0
+custom_fonts/normal_font = SubResource( 11 )
+bbcode_enabled = true
+bbcode_text = "[right]100"
+text = "100"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SEVolume" type="Node2D" parent="OptionsMenu"]
+position = Vector2( 0, 48 )
+
+[node name="bars" type="Sprite" parent="OptionsMenu/SEVolume"]
+position = Vector2( 4, 50 )
+texture = ExtResource( 41 )
+centered = false
+vframes = 2
+
+[node name="shadow" type="RichTextLabel" parent="OptionsMenu/SEVolume"]
+margin_left = 18.0
+margin_top = 58.0
+margin_right = 210.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
+bbcode_enabled = true
+bbcode_text = "SE Volume"
+text = "SE Volume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="RichTextLabel" parent="OptionsMenu/SEVolume"]
+margin_left = 16.0
+margin_top = 56.0
+margin_right = 208.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
+bbcode_enabled = true
+bbcode_text = "SE Volume"
+text = "SE Volume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shadow_int" type="RichTextLabel" parent="OptionsMenu/SEVolume"]
+margin_left = 413.0
+margin_top = 62.0
+margin_right = 468.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 10 )
+custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]100"
+text = "100"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="int" type="RichTextLabel" parent="OptionsMenu/SEVolume"]
+margin_left = 407.0
+margin_top = 60.0
+margin_right = 466.0
+margin_bottom = 87.0
+custom_fonts/normal_font = SubResource( 11 )
+custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]100"
+text = "100"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FPS" type="Node2D" parent="OptionsMenu"]
+position = Vector2( 0, 96 )
+
+[node name="bars" type="Sprite" parent="OptionsMenu/FPS"]
+position = Vector2( 4, 50 )
+texture = ExtResource( 41 )
+centered = false
+vframes = 2
+
+[node name="shadow" type="RichTextLabel" parent="OptionsMenu/FPS"]
+margin_left = 18.0
+margin_top = 58.0
+margin_right = 210.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
+bbcode_enabled = true
+bbcode_text = "FPS"
+text = "FPS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="RichTextLabel" parent="OptionsMenu/FPS"]
+margin_left = 16.0
+margin_top = 56.0
+margin_right = 208.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
+bbcode_enabled = true
+bbcode_text = "FPS"
+text = "FPS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shadow_int" type="RichTextLabel" parent="OptionsMenu/FPS"]
+margin_left = 413.0
+margin_top = 62.0
+margin_right = 468.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 10 )
+custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]60"
+text = "60"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="int" type="RichTextLabel" parent="OptionsMenu/FPS"]
+margin_left = 407.0
+margin_top = 60.0
+margin_right = 466.0
+margin_bottom = 87.0
+custom_fonts/normal_font = SubResource( 11 )
+custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]60"
+text = "60"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextSpeed" type="Node2D" parent="OptionsMenu"]
+position = Vector2( 0, 144 )
+
+[node name="bars" type="Sprite" parent="OptionsMenu/TextSpeed"]
+position = Vector2( 4, 50 )
+texture = ExtResource( 41 )
+centered = false
+vframes = 2
+
+[node name="shadow" type="RichTextLabel" parent="OptionsMenu/TextSpeed"]
+margin_left = 18.0
+margin_top = 58.0
+margin_right = 210.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
+bbcode_enabled = true
+bbcode_text = "Text Speed"
+text = "Text Speed"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="RichTextLabel" parent="OptionsMenu/TextSpeed"]
+margin_left = 16.0
+margin_top = 56.0
+margin_right = 208.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
+bbcode_enabled = true
+bbcode_text = "Text Speed"
+text = "Text Speed"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FontStyle" type="Node2D" parent="OptionsMenu"]
+position = Vector2( 0, 192 )
+
+[node name="bars" type="Sprite" parent="OptionsMenu/FontStyle"]
+position = Vector2( 4, 50 )
+texture = ExtResource( 41 )
+centered = false
+vframes = 2
+
+[node name="shadow" type="RichTextLabel" parent="OptionsMenu/FontStyle"]
+margin_left = 18.0
+margin_top = 58.0
+margin_right = 210.0
+margin_bottom = 90.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
+bbcode_enabled = true
+bbcode_text = "Font Style"
+text = "Font Style"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="name" type="RichTextLabel" parent="OptionsMenu/FontStyle"]
+margin_left = 16.0
+margin_top = 56.0
+margin_right = 208.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
+bbcode_enabled = true
+bbcode_text = "Font Style"
+text = "Font Style"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Open Menu" = SubResource( 3 )
 
@@ -469,3 +1166,5 @@ volume_db = -6.0
 
 [node name="Save" type="AudioStreamPlayer" parent="Sounds"]
 stream = ExtResource( 21 )
+
+[node name="Transition" parent="." instance=ExtResource( 34 )]

@@ -85,12 +85,23 @@ func _input(event):
 						SaveSystem.save_game(1)
 						# Play save sound effect
 						$Sounds/Save.play()
-
 					else:
 						$Yes_no/Box/Cursor.position.y = 32
 					$Save_Menu.visible = false
 					$Yes_no.visible = false
 					menu_stage = 1
+			ORDER.BAG:
+				$Transition.fade_to_color()
+				$BG.hide()
+				$Bottom.hide()
+				$Top.hide()
+				$Place_Text.hide()
+				$Option_Text.hide()
+				$Options.hide()
+				$Run.hide()
+				$Bag.show()
+				$Transition.fade_from_color()
+				pass
 
 func select():
 	if current == ORDER.SAVE && menu_stage == 1:
@@ -99,6 +110,8 @@ func select():
 		$Save_Menu.visible = true
 		$Yes_no.visible = true
 		DialogueSystem.start_dialog("UI_MENU_SAVE_PROMPT")
+	elif current == ORDER.BAG && menu_stage == 1:
+		menu_stage = 2
 		
 
 func move_sprites(dir):
