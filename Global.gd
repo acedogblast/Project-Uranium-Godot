@@ -18,6 +18,16 @@ var printFPS = false
 var sprint = false
 var game : Node
 
+var items = [
+	[], # ITEMS
+	["Potion", 3], # MEDICINE
+	["Pokéball", 10], # BALLS
+	[], # TMs
+	[], # BERRIES
+	[], # BATTLE_ITEMS
+	[], # KEY_ITEMS
+]
+
 var can_run = false
 
 var pokemon_group = [] # Cannot be more that 6 Pokemon objects
