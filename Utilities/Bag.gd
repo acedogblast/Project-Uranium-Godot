@@ -325,8 +325,12 @@ func remove_item(id, quantity):
 		"Items":
 			pass
 		"Medicine":
-			Global.items[1][1] -= quantity
+			if Global.items[1][1] - quantity >= 0:
+				Global.items[1][1] -= quantity
 			pass
+		"Balls":
+			if Global.items[2][1] - quantity >= 0:
+				Global.items[2][1] -= quantity
 	pass
 
 
