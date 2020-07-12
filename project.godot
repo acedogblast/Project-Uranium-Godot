@@ -59,6 +59,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Utilities/Dialogue/Event.gd"
 }, {
+"base": "Node2D",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://Utilities/Bag.gd"
+}, {
+"base": "Reference",
+"class": "Items_database",
+"language": "GDScript",
+"path": "res://Utilities/Items/database.gd"
+}, {
 "base": "Object",
 "class": "Move",
 "language": "GDScript",
@@ -150,6 +160,8 @@ _global_script_class_icons={
 "BattleSnapshot": "",
 "BattleStatStage": "",
 "DialogueEvent": "",
+"Inventory": "",
+"Items_database": "",
 "Move": "",
 "MoveDataBase": "",
 "MoveSet": "",
