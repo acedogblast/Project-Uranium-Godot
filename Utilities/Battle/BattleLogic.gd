@@ -173,7 +173,6 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						queue.push(action)
 						
 						# If foe faint add exp to player pokemon. For now just only apply to current player pokemon
-						# Also add effort values
 						if get_exp:
 							action = BattleQueueAction.new()
 							action.type = action.BATTLE_TEXT

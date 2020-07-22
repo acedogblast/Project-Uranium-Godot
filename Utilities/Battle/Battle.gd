@@ -311,8 +311,6 @@ func run_transition():
 	$CanvasLayer/TransitionEffects.visible = false
 	$CanvasLayer/BattleGrounds.visible = true
 	emit_signal("wait")
-
-
 func battle_loop():
 	var action = queue.pop()
 	match action.type:
