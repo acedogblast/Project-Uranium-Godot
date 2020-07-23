@@ -479,7 +479,7 @@ func lab_battle():
 	bid.opponent.name = "Theo"
 	bid.opponent.opponent_type = Opponent.OPPONENT_RIVAL
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
-	bid.opponent.ai.AI_Behavior = bid.opponent.ai.TESTING_1
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.WILD
 	bid.opponent.after_battle_quote = "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
 	bid.victory_award = 350
 
