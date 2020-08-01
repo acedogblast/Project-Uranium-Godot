@@ -41,7 +41,7 @@ enum {SLOW, MEDIUM_SLOW, MEDIUM_FAST, FAST, ERRATIC, FLUCTUATING}
 var male_ratio = 87.5
 
 # The pokemon's evolution level
-var evolution_level = 28
+var evolution_level
 
 # The pokemon's evolution ID
 var evolution_ID
