@@ -18,6 +18,8 @@ var battle_command : BattleCommand
 
 var battle_is_over = false
 
+var battle_debug = false
+
 signal wait
 signal EndOfBattleLoop
 signal battle_complete
@@ -39,6 +41,7 @@ func _ready():
 	# Check if we are testing
 	if Global.past_events.size() == 0:
 		test()
+		battle_debug = true
 	pass
 
 func _process(_delta):
@@ -64,6 +67,9 @@ func Start_Battle(bid : BattleInstanceData):
 	battler2 = battle_instance.opponent.pokemon_group[0]
 	battle_logic = load("res://Utilities/Battle/BattleLogic.gd").new(battler1, battler2 , battle_instance)
 	
+	if battle_debug:
+		battle_logic.battle_debug = true
+
 	# Set human opponent texture
 	if battle_instance.battle_type != battle_instance.BattleType.SINGLE_WILD:
 		$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.texture = battle_instance.opponent.battle_texture
@@ -202,7 +208,7 @@ func test():
 	#bid.opponent.name = "Theo"
 	bid.opponent.opponent_type = Opponent.OPPONENT_WILD
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
-	bid.opponent.ai.AI_Behavior = bid.opponent.ai.WILD
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.TESTING_1
 	#bid.opponent.after_battle_quote = "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
 
 	var poke = Pokemon.new()
@@ -367,11 +373,13 @@ func battle_loop():
 			var bars = $CanvasLayer/BattleInterfaceLayer/BattleBars
 			match action.damage_target_index:
 				1: # Player
-					#print("bar slide for player")
-					bars.slide_player_bar(float(battler1.current_hp) / battler1.hp, battler1.current_hp)
+					var percent = float(battler1.current_hp) / battler1.hp
+					print("bar slide for player")
+					bars.call_deferred("slide_player_bar", percent, battler1.current_hp)
 				2: # Foe
-					#print("bar slide for foe")
-					bars.slide_foe_bar(float(battler2.current_hp) / battler2.hp)
+					var percent = float(battler2.current_hp) / battler2.hp
+					print("bar slide for foe")
+					bars.call_deferred("slide_foe_bar", percent)
 			yield(bars, "finished")
 		action.FAINT:
 			match action.damage_target_index:
@@ -499,6 +507,21 @@ func battle_loop():
 			$CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar.get_node("AnimationPlayer").play("Slide")
 
 			yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer, "finished")
+		action.HEAL:
+			#if action.heal_sound:
+				#var audioplayer = $CanvasLayer/BattleInterfaceLayer/BattleBars/AudioStreamPlayer
+				#var sound = load("I can not find the file!")
+			var bars = $CanvasLayer/BattleInterfaceLayer/BattleBars
+			match action.damage_target_index:
+				1: # Player
+					var percent = float(battler1.current_hp) / battler1.hp
+					print(percent)
+					bars.call_deferred("slide_player_bar", percent, battler1.current_hp)
+				2: # Foe
+					var percent = float(battler2.current_hp) / battler2.hp
+					print(percent)
+					bars.call_deferred("slide_foe_bar", percent)
+			yield(bars, "finished")
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 

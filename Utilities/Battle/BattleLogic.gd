@@ -2,6 +2,7 @@ extends Object
 class_name BattleLogic
 
 var turn_order = []
+var queue
 enum {B1, B2, B3, B4} # Used for turn order and indicating which poke in battle
 
 var battler1 : Pokemon # Player's pokemon
@@ -14,7 +15,14 @@ var battler2_stat_stage : BattleStatStage
 var battler3_stat_stage : BattleStatStage
 var battler4_stat_stage : BattleStatStage
 
+var battler1_effects = []
+var battler2_effects = []
+var battler3_effects = []
+var battler4_effects = []
+
 var battle_instance : BattleInstanceData
+
+var battle_debug = false
 
 func _init(b1, b2 , bid):
 	battler1 = b1
@@ -24,7 +32,7 @@ func _init(b1, b2 , bid):
 	battle_instance = bid
 	pass
 func generate_action_queue(player_command : BattleCommand, foe_command : BattleCommand):
-	var queue = BattleQueue.new()
+	queue = BattleQueue.new()
 	get_turn_order(player_command, foe_command)
 	# Arrange Battle actions once turn orders are calculated
 	
@@ -62,7 +70,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					move = battler.move_3
 				battler.move_4.name:
 					move = battler.move_4
-			action.battle_text = battler.name + " used\n" + command.attack_move + "!"
+			action.battle_text = get_battler_title_by_index(battler_index) + " used\n" + command.attack_move + "!"
 			queue.push(action)
 			# Decrement move PP, PP should be at least 1 at this point.
 			if move.remaining_pp == 0:
@@ -119,175 +127,197 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					#warning-ignore:narrowing_conversion
 					raw_damage = base_damage * total_damage_modifier
 
-					print("Raw Damage: " + str(raw_damage) + " , To battler: " + str(target_index))
+					if battle_debug:
+						print("Raw Damage: " + str(raw_damage) + " , To battler: " + str(target_index))
 
-					# Perform the damage to battler
-					var current_hp = get_battler_by_index(target_index).current_hp
-					if (raw_damage >= current_hp): # Target runs out of hp and faints
-						raw_damage = current_hp
-						get_battler_by_index(target_index).current_hp = 0
-					else:
-						get_battler_by_index(target_index).current_hp = current_hp - raw_damage
-					
-					# Add in the battle actions
-					action = BattleQueueAction.new()
-					action.type = action.DAMAGE
-					action.damage_target_index = target_index
-					action.damage_amount = raw_damage
-					action.damage_effectiveness = type_modifer
-					queue.push(action)
-
-					if critical_modifier == 2.0:
-						action = BattleQueueAction.new()
-						action.type = action.BATTLE_TEXT
-						action.battle_text = "Critical Hit!"
-						queue.push(action)
-					# Add in the effective damage message
-					if type_modifer > 1.0:
-						action = BattleQueueAction.new()
-						action.type = action.BATTLE_TEXT
-						action.battle_text = "It's super effective!"
-						queue.push(action)
-					if type_modifer < 1.0:
-						action = BattleQueueAction.new()
-						action.type = action.BATTLE_TEXT
-						action.battle_text = "It's not very effective..."
-						queue.push(action)
+					if raw_damage != 0:
+						# Perform the damage to battler
+						var current_hp = get_battler_by_index(target_index).current_hp
+						if (raw_damage >= current_hp): # Target runs out of hp and faints
+							raw_damage = current_hp
+							get_battler_by_index(target_index).current_hp = 0
+						else:
+							get_battler_by_index(target_index).current_hp = current_hp - raw_damage
 						
-					# Check if target faints.
-					if get_battler_by_index(target_index).current_hp == 0:
-						# Faint actions
+						# Add in the battle actions
 						action = BattleQueueAction.new()
-						action.type = action.FAINT
+						action.type = action.DAMAGE
 						action.damage_target_index = target_index
+						action.damage_amount = raw_damage
+						action.damage_effectiveness = type_modifer
 						queue.push(action)
 
-						action = BattleQueueAction.new()
-						action.type = action.BATTLE_TEXT
-						var get_exp = false
-						if target_index == 2 || target_index == 4:
-							action.battle_text = "The foe " + get_battler_by_index(target_index).name + " fainted!"
-							get_exp = true
-						if target_index == 1 || target_index == 3:
-							action.battle_text = get_battler_by_index(target_index).name + " fainted!"
-						queue.push(action)
-						
-						# If foe faint add exp to player pokemon. For now just only apply to current player pokemon
-						if get_exp:
+						if critical_modifier == 2.0:
 							action = BattleQueueAction.new()
 							action.type = action.BATTLE_TEXT
-							var exp_gained : int = calculate_exp(get_battler_by_index(target_index))
-							action.battle_text = battler.name + " gained\n" + str(exp_gained) + " EXP. Points!"
+							action.battle_text = "Critical Hit!"
+							queue.push(action)
+						# Add in the effective damage message
+						if type_modifer > 1.0:
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_TEXT
+							action.battle_text = "It's super effective!"
+							queue.push(action)
+						if type_modifer < 1.0:
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_TEXT
+							action.battle_text = "It's not very effective..."
 							queue.push(action)
 							
-							# Add exp to pokemon
-							battler.experience += exp_gained
-
-							
-							# TODO: Add multiple exp_gain actions if leveling more that 1 time.
-							action = BattleQueueAction.new()
-							action.type = action.EXP_GAIN
-							action.exp_gain_percent = battler.get_exp_bar_percent()
-							queue.push(action)
-
-							# Adding effort values
-							battler.add_ev(get_battler_by_index(target_index))
-
-
-						# TODO: Add leveling up
-
-
-						
-
-
-						# Check if foe or player ran out of pokemon, if yes end battle
-						var player_defeated = check_player_out_of_poke()
-						var foe_defeated = check_foe_out_of_poke()
-						if player_defeated || foe_defeated:
-							action = BattleQueueAction.new()
-							action.type = action.BATTLE_END
-
-							if player_defeated == false && foe_defeated == true:
-								action.winner = action.PLAYER_WIN
-							if player_defeated == true && foe_defeated == false:
-								action.winner = action.FOE_WIN
-							queue.push(action)
+						if post_damage_checks(target_index):
 							return queue
-					
-				else:
-					var stat_effect = move.main_status_effect
-					var stats_changed = get_stage_stat_by_index(target_index).apply_stat_effect(stat_effect) # This changes stats of target
-						
-					# For all stats changed
-					for stat in stats_changed:
-						var over_limit = false
-						if stat.stat_over_limit:
-							over_limit = true
-						else:
-							action = BattleQueueAction.new()
-							action.type = action.STAT_CHANGE_ANIMATION
-							action.damage_target_index = target_index
-							if stat.stat_change > 0: # Increase
-								action.stat_change_increase = true
-							queue.push(action)
-
+					else:
 						action = BattleQueueAction.new()
 						action.type = action.BATTLE_TEXT
-						var stat_effected_name
-						match stat.stat_type:
-							BattleStatStage.ATTACK:
-								stat_effected_name = "Attack"
-							BattleStatStage.DEFENSE:
-								stat_effected_name = "Defense"
-							BattleStatStage.SP_ATTACK:
-								stat_effected_name = "Sp. Attack"
-							BattleStatStage.SP_DEFENSE:
-								stat_effected_name = "Sp. Defense"
-							BattleStatStage.SPEED:
-								stat_effected_name = "Speed"
-							BattleStatStage.ACCURACY:
-								stat_effected_name = "Accuracy"
-							BattleStatStage.EVASION:
-								stat_effected_name = "Evasion"
-
-						action.battle_text = get_battler_by_index(target_index).name + "'s " + str(stat_effected_name)
-						if !over_limit:
-							match stat.stat_change:
-								1:
-									action.battle_text += " rose!"
-								2:
-									action.battle_text += " sharply rose!"
-								3, 4, 5, 6:
-									action.battle_text += " rose drastically!"
-								-1:
-									action.battle_text += " fell!"
-								-2:
-									action.battle_text += " harshly fell!"
-								-3, -4, -5, -6:
-									action.battle_text += " severely fell!"
-						else:
-							match stat.stat_change:
-								1,2,3,4,5,6:
-									action.battle_text += " won't go any higher!"
-								-1,-2,-3,-4,-5,-6:
-									action.battle_text += " won't go any lower!"
+						action.battle_text = "It does not effect " + get_battler_title_by_index(target_index) + "."
 						queue.push(action)
 
+				else: # Move is not a direct attack move
+
+					if move.main_status_effect != null: # Move effect stats
+						var stat_effect = move.main_status_effect
+						var stats_changed = get_stage_stat_by_index(target_index).apply_stat_effect(stat_effect) # This changes stats of target
+							
+						# For all stats changed
+						for stat in stats_changed:
+							var over_limit = false
+							if stat.stat_over_limit:
+								over_limit = true
+							else:
+								action = BattleQueueAction.new()
+								action.type = action.STAT_CHANGE_ANIMATION
+								action.damage_target_index = target_index
+								if stat.stat_change > 0: # Increase
+									action.stat_change_increase = true
+								queue.push(action)
+
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_TEXT
+							var stat_effected_name
+							match stat.stat_type:
+								BattleStatStage.ATTACK:
+									stat_effected_name = "Attack"
+								BattleStatStage.DEFENSE:
+									stat_effected_name = "Defense"
+								BattleStatStage.SP_ATTACK:
+									stat_effected_name = "Sp. Attack"
+								BattleStatStage.SP_DEFENSE:
+									stat_effected_name = "Sp. Defense"
+								BattleStatStage.SPEED:
+									stat_effected_name = "Speed"
+								BattleStatStage.ACCURACY:
+									stat_effected_name = "Accuracy"
+								BattleStatStage.EVASION:
+									stat_effected_name = "Evasion"
+
+							action.battle_text = get_battler_by_index(target_index).name + "'s " + str(stat_effected_name)
+							if !over_limit:
+								match stat.stat_change:
+									1:
+										action.battle_text += " rose!"
+									2:
+										action.battle_text += " sharply rose!"
+									3, 4, 5, 6:
+										action.battle_text += " rose drastically!"
+									-1:
+										action.battle_text += " fell!"
+									-2:
+										action.battle_text += " harshly fell!"
+									-3, -4, -5, -6:
+										action.battle_text += " severely fell!"
+							else:
+								match stat.stat_change:
+									1,2,3,4,5,6:
+										action.battle_text += " won't go any higher!"
+									-1,-2,-3,-4,-5,-6:
+										action.battle_text += " won't go any lower!"
+							queue.push(action)
+					else: # Move is something else (Leech Seed, etc.)
+						match move.name:
+							"Leech Seed":
+								# Check if target is already seeded
+								var already_seeded = false
+								var target = get_battler_by_index(target_index)
+								for effects in get_effects_by_index(target_index):
+									if effects.effect == BattleEffect.effects.SEEDED:
+										already_seeded = true
+
+								# Check if target is grass type
+								if target.type1 == Type.GRASS || target.type2 == Type.GRASS:
+									# No effect
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = "It does not effect " + get_battler_title_by_index(target_index) + "."
+									queue.push(action)
+								elif already_seeded: # Check if target is already seeded
+									# Fail
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = "But " + get_battler_title_by_index(target_index) + " is already seeded."
+									queue.push(action)
+								# set seeded flag to target battler
+								else:
+									var effect = BattleEffect.new()
+									effect.effect = BattleEffect.effects.SEEDED
+									effect.seeded_heal_target_index = battler_index
+									get_effects_by_index(target_index).append(effect)
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = battler.name + " was seeded!"
+									queue.push(action)
 				
-			else:
-				# Add missed mesage.
+			else: # Add missed mesage.
 				action = BattleQueueAction.new()
 				action.type = action.BATTLE_TEXT
 				action.battle_text = battler.name + "'s\nattack missed!"
 				queue.push(action)
 
+
+
+	# After round actions
+	for battler_effects_index in range(1,5):
+		var battler_by_index = get_battler_by_index(battler_effects_index)
+		for effect in get_effects_by_index(battler_effects_index):
+			match effect.effect:
+				BattleEffect.effects.SEEDED:
+					var damage = battler_by_index.hp / 16
+					if damage < 1:
+						damage = 1
+
+					var current_hp = battler_by_index.current_hp
+					if current_hp - damage < 0:
+						battler_by_index.current_hp = 0
+					else:
+						battler_by_index.current_hp = current_hp - damage
+
+					# Heal
+					current_hp = get_battler_by_index(effect.seeded_heal_target_index).current_hp
+					if current_hp + damage > get_battler_by_index(effect.seeded_heal_target_index).hp:
+						get_battler_by_index(effect.seeded_heal_target_index).current_hp = get_battler_by_index(effect.seeded_heal_target_index).hp
+					else:
+						get_battler_by_index(effect.seeded_heal_target_index).current_hp += damage
+
+
+					var action = BattleQueueAction.new()
+					action.type = action.DAMAGE
+					action.damage_target_index = battler_effects_index
+					action.damage_amount = damage
+					action.damage_effectiveness = 1.0
+					queue.push(action)
+
+					action = BattleQueueAction.new()
+					action.type = action.HEAL
+					action.damage_target_index = effect.seeded_heal_target_index
+					queue.push(action)
+
+
 	# Print out the action queue for debug
-	print("Action queue size: " + str(queue.queue.size()))
-	
-	var action_index = 0
-	for action in queue.queue:
-		print("Action #" + str(action_index) + ". Type: " + str (action.type))# + ". Battler:" + str(action.)
-		action_index = action_index + 1
+	if battle_debug:
+		print("Action queue size: " + str(queue.queue.size()))
+		var action_index = 0
+		for action in queue.queue:
+			print("Action #" + str(action_index) + ". Type: " + str (action.type))# + ". Battler:" + str(action.)
+			action_index = action_index + 1
 	return queue
 func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand): # For singal battles
 	# Find out which comand goes in which order.
@@ -387,6 +417,16 @@ func get_stage_stat_by_index(index: int):
 			return battler3_stat_stage
 		4:
 			return battler4_stat_stage
+func get_effects_by_index(index: int):
+	match index:
+		1:
+			return battler1_effects
+		2:
+			return battler2_effects
+		3:
+			return battler3_effects
+		4:
+			return battler4_effects
 func get_poke_move_by_name(poke, move_name):
 	if poke.move_1 != null:
 		if poke.move_1.name == move_name:
@@ -469,3 +509,67 @@ func one_in_n_chance(n) -> bool:
 	if value == 1:
 		return true
 	return false
+func post_damage_checks(battler_index: int) -> bool: # Checks for when any damage is done to battlers. Returns true is the battle is over.
+	# Check if target faints.
+	if get_battler_by_index(battler_index).current_hp == 0:
+		# Faint actions
+		var action = BattleQueueAction.new()
+		action.type = action.FAINT
+		action.damage_target_index = battler_index
+		queue.push(action)
+
+		action = BattleQueueAction.new()
+		action.type = action.BATTLE_TEXT
+		var get_exp = false
+		if battler_index == 2 || battler_index == 4:
+			action.battle_text = "The foe " + get_battler_by_index(battler_index).name + " fainted!"
+			get_exp = true
+		if battler_index == 1 || battler_index == 3:
+			action.battle_text = get_battler_by_index(battler_index).name + " fainted!"
+		queue.push(action)
+		
+		# If foe faint add exp to player pokemon. For now just only apply to current player pokemon
+		if get_exp:
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			var exp_gained : int = calculate_exp(get_battler_by_index(battler_index))
+			action.battle_text = battler1.name + " gained\n" + str(exp_gained) + " EXP. Points!"
+			queue.push(action)
+			
+			# Add exp to pokemon
+			battler1.experience += exp_gained
+
+			
+			# TODO: Add multiple exp_gain actions if leveling more that 1 time.
+			action = BattleQueueAction.new()
+			action.type = action.EXP_GAIN
+			action.exp_gain_percent = battler1.get_exp_bar_percent()
+			queue.push(action)
+
+			# Adding effort values
+			battler1.add_ev(get_battler_by_index(battler_index))
+
+		# TODO: Add leveling up
+		
+		# Check if player or foe runs out of pokemon
+		var player_defeated = check_player_out_of_poke()
+		var foe_defeated = check_foe_out_of_poke()
+		if player_defeated || foe_defeated:
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_END
+
+			if player_defeated == false && foe_defeated == true:
+				action.winner = action.PLAYER_WIN
+			if player_defeated == true && foe_defeated == false:
+				action.winner = action.FOE_WIN
+			queue.push(action)
+			return true
+	return false
+func get_battler_title_by_index(battler_index: int) -> String:
+	if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
+		if battler_index == 2 || battler_index == 4:
+				return "WILD " + get_battler_by_index(battler_index).name
+	else:
+		if battler_index == 2 || battler_index == 4:
+			return "FOE " + get_battler_by_index(battler_index).name
+	return get_battler_by_index(battler_index).name

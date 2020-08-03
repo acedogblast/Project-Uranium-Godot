@@ -42,22 +42,37 @@ func get_player_exp_rect2d_by_percentage(percent: float):
 	return Rect2(0,0, int(152 * percent) , 10)
 
 func slide_player_bar(percent: float , final_hp : int): #TODO: Figure out how to tween the region rect of a sprite.
-	player_final_hp = final_hp
+	var increasing = false
+
+	if percent > player_hp_percent:
+		increasing = true
+
 	print("Sliding Player HP to :" + str(percent) + "% or:" + str(final_hp))
 	while $PlayerBar/HP.get_rect() != get_player_rect2d_by_percentage(percent):
 		$PlayerBar/HP.region_rect = Rect2(0, 0, player_hp_width, 90)
-		player_hp_width = player_hp_width - 1
+		if increasing:
+			player_hp_width = player_hp_width + 1
+		else:
+			player_hp_width = player_hp_width - 1
 		yield(get_tree().create_timer(0.01), "timeout")
 	$PlayerBar/HP.region_rect = get_player_rect2d_by_percentage(percent)
-	$PlayerBar/HPLable.text = str(player_final_hp) + "/ " + str(player_total_hp)
+	$PlayerBar/HPLable.text = str(final_hp) + "/ " + str(player_total_hp)
 	$PlayerBar/HPLable/HPLableShadow.text = $PlayerBar/HPLable.text
-
+	player_final_hp = final_hp
 	player_hp_percent = percent
 	emit_signal("finished")
 func slide_foe_bar(percent: float):
+	var increasing = false
+
+	if percent > foe_hp_percent:
+		increasing = true
+
 	while $FoeBar/HP.get_rect() != get_foe_rect2d_by_percentage(percent):
 		$FoeBar/HP.region_rect = Rect2(0, 0, foe_hp_width, 90)
-		foe_hp_width = foe_hp_width - 1
+		if increasing:
+			foe_hp_width = foe_hp_width + 1
+		else:
+			foe_hp_width = foe_hp_width - 1
 		yield(get_tree().create_timer(0.01), "timeout")
 	$FoeBar/HP.region_rect = get_foe_rect2d_by_percentage(percent)
 	foe_hp_percent = percent

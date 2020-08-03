@@ -11,7 +11,8 @@ enum {
 	FAINT,
 	EXP_GAIN,
 	STAT_CHANGE_ANIMATION,
-	WILD_INTRO
+	WILD_INTRO,
+	HEAL
 	}
 
 enum {PLAYER_WIN, FOE_WIN}
@@ -22,7 +23,7 @@ var battle_grounds_pos_change
 
 var battle_text : String
 
-var damage_target_index # Used in both damage, faint, and exp_gain, stat_animation
+var damage_target_index # Used in both damage, faint, and exp_gain, stat_animation, heal
 
 var damage_amount : int
 
@@ -33,3 +34,7 @@ var exp_gain_percent : float
 var winner
 
 var stat_change_increase : bool
+
+var heal_amount : int
+
+var heal_sound : bool

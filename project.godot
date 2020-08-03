@@ -25,6 +25,11 @@ _global_script_classes=[ {
 "path": "res://Utilities/Battle/Classes/BattleCommand.gd"
 }, {
 "base": "Object",
+"class": "BattleEffect",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/BattleEffect.gd"
+}, {
+"base": "Object",
 "class": "BattleInstanceData",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/BattleInstanceData.gd"
@@ -153,6 +158,7 @@ _global_script_class_icons={
 "AI": "",
 "AutoZSorter": "",
 "BattleCommand": "",
+"BattleEffect": "",
 "BattleInstanceData": "",
 "BattleLogic": "",
 "BattleQueue": "",

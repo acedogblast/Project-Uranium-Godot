@@ -9,7 +9,7 @@ func get_command(snapshot : BattleSnapshot) -> BattleCommand:
 		TESTING_1:
 			command.command_type = command.ATTACK
 			print("made a broken command by AI.")
-			command.attack_move = "Scratch"
+			command.attack_move = "Leech Seed"
 			command.attack_target = command.B1
 		WILD:
 			# Pick a random attack move
