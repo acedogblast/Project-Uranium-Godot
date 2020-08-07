@@ -132,12 +132,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 
 					if raw_damage != 0:
 						# Perform the damage to battler
-						var current_hp = get_battler_by_index(target_index).current_hp
-						if (raw_damage >= current_hp): # Target runs out of hp and faints
-							raw_damage = current_hp
-							get_battler_by_index(target_index).current_hp = 0
-						else:
-							get_battler_by_index(target_index).current_hp = current_hp - raw_damage
+						remove_hp(target_index, raw_damage)
 						
 						# Add in the battle actions
 						action = BattleQueueAction.new()
@@ -210,7 +205,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 								BattleStatStage.EVASION:
 									stat_effected_name = "Evasion"
 
-							action.battle_text = get_battler_by_index(target_index).name + "'s " + str(stat_effected_name)
+							action.battle_text = get_battler_title_by_index(target_index) + "'s " + str(stat_effected_name)
 							if !over_limit:
 								match stat.stat_change:
 									1:
@@ -263,13 +258,13 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 									get_effects_by_index(target_index).append(effect)
 									action = BattleQueueAction.new()
 									action.type = action.BATTLE_TEXT
-									action.battle_text = battler.name + " was seeded!"
+									action.battle_text = get_battler_title_by_index(battler_index) + " was seeded!"
 									queue.push(action)
 				
 			else: # Add missed mesage.
 				action = BattleQueueAction.new()
 				action.type = action.BATTLE_TEXT
-				action.battle_text = battler.name + "'s\nattack missed!"
+				action.battle_text = get_battler_title_by_index(battler_index) + "'s\nattack missed!"
 				queue.push(action)
 
 
@@ -277,21 +272,19 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 	# After round actions
 	for battler_effects_index in range(1,5):
 		var battler_by_index = get_battler_by_index(battler_effects_index)
+		# Effects
 		for effect in get_effects_by_index(battler_effects_index):
 			match effect.effect:
 				BattleEffect.effects.SEEDED:
 					var damage = battler_by_index.hp / 16
 					if damage < 1:
 						damage = 1
-
-					var current_hp = battler_by_index.current_hp
-					if current_hp - damage < 0:
-						battler_by_index.current_hp = 0
-					else:
-						battler_by_index.current_hp = current_hp - damage
-
+					remove_hp(battler_effects_index, damage)
+					if post_damage_checks(battler_effects_index):
+						return queue
+					
 					# Heal
-					current_hp = get_battler_by_index(effect.seeded_heal_target_index).current_hp
+					var current_hp = get_battler_by_index(effect.seeded_heal_target_index).current_hp
 					if current_hp + damage > get_battler_by_index(effect.seeded_heal_target_index).hp:
 						get_battler_by_index(effect.seeded_heal_target_index).current_hp = get_battler_by_index(effect.seeded_heal_target_index).hp
 					else:
@@ -309,6 +302,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					action.type = action.HEAL
 					action.damage_target_index = effect.seeded_heal_target_index
 					queue.push(action)
+		# Major Ailments
 
 
 	# Print out the action queue for debug
@@ -378,7 +372,7 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 					turn_order.push_back(B1)
 		#print("Turn order size: " + str(turn_order.size()))
 func does_attack_hit(move : Move, target_index : int, attaker_index : int):
-	if target_index == attaker_index: # Moves that efect self
+	if target_index == attaker_index: # Moves that effects self
 		return true
 
 	var target_stage = get_stage_stat_by_index(target_index)
@@ -573,3 +567,10 @@ func get_battler_title_by_index(battler_index: int) -> String:
 		if battler_index == 2 || battler_index == 4:
 			return "FOE " + get_battler_by_index(battler_index).name
 	return get_battler_by_index(battler_index).name
+func remove_hp(index: int, damage: int): # Still need to call post_damage_checks mannually after this!
+	var target = get_battler_by_index(index)
+	var current_hp = target.current_hp
+	if current_hp - damage < 0:
+		target.current_hp = 0
+	else:
+		target.current_hp = current_hp - damage
