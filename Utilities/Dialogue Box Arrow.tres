@@ -1,7 +1,6 @@
 [gd_resource type="Animation" format=2]
 
 [resource]
-
 length = 0.3
 loop = true
 step = 0.05
@@ -17,4 +16,3 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 0, 1, 2, 3, 0 ]
 }
-

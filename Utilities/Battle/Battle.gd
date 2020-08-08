@@ -23,7 +23,7 @@ var battle_debug = false
 signal wait
 signal EndOfBattleLoop
 signal battle_complete
-#signal command_received
+signal continue_pressed
 
 func _ready():
 	$CanvasLayer/BattleGrounds.visible = false
@@ -36,6 +36,7 @@ func _ready():
 	$CanvasLayer/BattleGrounds/ColorRect.visible = true
 	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.visible = false
 	$CanvasLayer/ColorRect.visible = false
+	$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	
 	# Check if we are testing
@@ -47,6 +48,9 @@ func _ready():
 func _process(_delta):
 	if effect_enable:
 		effect_shader.set_shader_param("effect_weight" , effect_weight)
+func _input(event):
+	if event.is_action_pressed("ui_accept"):
+		emit_signal("continue_pressed")
 
 
 func Start_Battle(bid : BattleInstanceData):
@@ -208,7 +212,7 @@ func test():
 	#bid.opponent.name = "Theo"
 	bid.opponent.opponent_type = Opponent.OPPONENT_WILD
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
-	bid.opponent.ai.AI_Behavior = bid.opponent.ai.TESTING_1
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.WILD
 	#bid.opponent.after_battle_quote = "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
 
 	var poke = Pokemon.new()
@@ -220,6 +224,7 @@ func test():
 
 	poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(3,5)
+	poke.experience += 75
 	Global.pokemon_group.append(poke)
 	Global.TrainerGender = 0
 	
@@ -235,6 +240,8 @@ func set_Vs_textures():
 			$CanvasLayer/TransitionEffects/Vs/OpponentBanner.texture = load("res://Graphics/Transitions/vsTrainer71.png")
 			$CanvasLayer/TransitionEffects/Vs/SpriteLeft.texture = load("res://Graphics/Transitions/vsBar71.png")
 			$CanvasLayer/TransitionEffects/Vs/SpriteRight.texture = load("res://Graphics/Transitions/vsBar71.png")
+		_:
+			print("Battle Error: Invalid opponent texture on function set_Vs_textures")
 	$CanvasLayer/TransitionEffects/Vs/SpriteLeft.texture.flags = Texture.FLAG_REPEAT
 	$CanvasLayer/TransitionEffects/Vs/SpriteRight.texture.flags = Texture.FLAG_REPEAT
 	$CanvasLayer/TransitionEffects/Vs/SpriteLeft.region_enabled = true
@@ -326,13 +333,12 @@ func battle_loop():
 		action.BATTLE_TEXT:
 			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = action.battle_text
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
-			var t = Timer.new()
-			t.set_wait_time(2) # Later add animation for text typing.
-			t.set_one_shot(true)
-			self.add_child(t)
-			t.start()
-			yield(t, "timeout")
-			t.queue_free()
+			if action.press_to_continue:
+				$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+				yield(self, "continue_pressed")
+			else:
+				$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = false
+				yield(get_tree().create_timer(2.0), "timeout")
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
 		action.FOE_BALLTOSS:
 			# if human opponent is visable play fadeing animation
@@ -437,7 +443,8 @@ func battle_loop():
 			message += battle_instance.opponent.name
 			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
-			yield(get_tree().create_timer(2.0), "timeout")
+			$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+			yield(self, "continue_pressed")
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
 
 			# If applicable, show opponent win quote:
@@ -448,13 +455,13 @@ func battle_loop():
 				message = tr(battle_instance.opponent.after_battle_quote)
 				$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
 				$CanvasLayer/BattleInterfaceLayer/Message.visible = true
-				yield(get_tree().create_timer(2.0), "timeout")
+				yield(self, "continue_pressed")
 
 				# Show money earned
 				Global.money += battle_instance.victory_award
 				$CanvasLayer/BattleInterfaceLayer/Message/Label.text = Global.TrainerName + " got $" + str(battle_instance.victory_award) + "\nfor winning!"
-				yield(get_tree().create_timer(2.0), "timeout")
-
+				yield(self, "continue_pressed")
+			
 			# Fade out of battle
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
 			$CanvasLayer/BattleGrounds/AnimationPlayer.play("FadeOut")
@@ -522,6 +529,36 @@ func battle_loop():
 					print(percent)
 					bars.call_deferred("slide_foe_bar", percent)
 			yield(bars, "finished")
+		action.LEVEL_UP_SE:
+			var audioplayer = $CanvasLayer/BattleInterfaceLayer/BattleBars/AudioStreamPlayer
+			var sound = load("res://Audio/ME/BW_lvup.ogg")
+			sound.loop = false
+			$CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/LevelLable.text = " " + str(action.level)
+			audioplayer.stream = sound
+			audioplayer.play()
+			# Reset exp bar
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.call_deferred("reset_player_exp_bar")
+			
+		action.LEVEL_UP:
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/MaxHP/Value.text = "+" + str(action.level_stat_changes.hp_change)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Attack/Value.text = "+" + str(action.level_stat_changes.attack_change)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Defense/Value.text = "+" + str(action.level_stat_changes.defense_change)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/SpAtck/Value.text = "+" + str(action.level_stat_changes.spAtk_change)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/SpDef/Value.text = "+" + str(action.level_stat_changes.spDef_change)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Speed/Value.text = "+" + str(action.level_stat_changes.speed_change)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = true
+		
+			yield(self, "continue_pressed")
+
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/MaxHP/Value.text = str(battler1.hp)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Attack/Value.text = str(battler1.attack)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Defense/Value.text = str(battler1.defense)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/SpAtck/Value.text = str(battler1.sp_attack)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/SpDef/Value.text = str(battler1.sp_defense)
+			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Speed/Value.text = str(battler1.speed)
+		
+			yield(self, "continue_pressed")
+			$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 

@@ -533,17 +533,52 @@ func post_damage_checks(battler_index: int) -> bool: # Checks for when any damag
 			# Add exp to pokemon
 			battler1.experience += exp_gained
 
-			
+			# TODO: Add leveling up
 			# TODO: Add multiple exp_gain actions if leveling more that 1 time.
-			action = BattleQueueAction.new()
-			action.type = action.EXP_GAIN
-			action.exp_gain_percent = battler1.get_exp_bar_percent()
-			queue.push(action)
+			var levelUptimes = battler1.get_level_up_times()
+			if levelUptimes == 0: # Did not level up. Just add exp
+				#print("Did not level up.")
+				action = BattleQueueAction.new()
+				action.type = action.EXP_GAIN
+				action.exp_gain_percent = battler1.get_exp_bar_percent()
+				queue.push(action)
+			else:
+				for i in range(levelUptimes): # For each time you level up
+					#print("Level up.")
+					action = BattleQueueAction.new()
+					action.type = action.EXP_GAIN
+					action.exp_gain_percent = 1.0
+					queue.push(action)
+					
+					action = BattleQueueAction.new()
+					action.type = action.LEVEL_UP_SE
+					action.level = battler1.level + i + 1
+					var new_level = action.level
+					queue.push(action)
+
+					action = BattleQueueAction.new()
+					action.type = action.BATTLE_TEXT
+					action.battle_text = get_battler_title_by_index(1) + " grew to Lv. " + str(new_level) + "!"
+					action.press_to_continue = true
+					queue.push(action)
+
+					action = BattleQueueAction.new()
+					action.type = action.LEVEL_UP
+					# Apply Level Up changes to pokemon here:
+					battler1.level += 1
+					var changes = battler1.update_stats()
+					action.level_stat_changes = changes
+					
+					queue.push(action)
+
+
+
+
 
 			# Adding effort values
 			battler1.add_ev(get_battler_by_index(battler_index))
-
-		# TODO: Add leveling up
+			
+			
 		
 		# Check if player or foe runs out of pokemon
 		var player_defeated = check_player_out_of_poke()

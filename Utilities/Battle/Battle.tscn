@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -45,6 +45,9 @@
 [ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=43]
 [ext_resource path="res://Utilities/Battle/StatChange.tres" type="Animation" id=44]
 [ext_resource path="res://Utilities/Battle/StatChange.shader" type="Shader" id=45]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=46]
+[ext_resource path="res://Graphics/Pictures/pause.png" type="Texture" id=47]
+[ext_resource path="res://Utilities/Dialogue Box Arrow.tres" type="Animation" id=48]
 
 [sub_resource type="ShaderMaterial" id=1]
 
@@ -1310,6 +1313,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Arrow" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/Message"]
+position = Vector2( 492, 360 )
+texture = ExtResource( 47 )
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/Message/Arrow"]
+autoplay = "Dialogue Box Arrow"
+"anims/Dialogue Box Arrow" = ExtResource( 48 )
+
 [node name="BattleBars" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
 visible = false
 script = ExtResource( 30 )
@@ -1320,6 +1332,9 @@ margin_top = 200.0
 margin_right = 783.0
 margin_bottom = 290.0
 texture = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="HP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 texture = ExtResource( 32 )
@@ -1360,6 +1375,9 @@ margin_bottom = 31.0
 custom_fonts/normal_font = ExtResource( 33 )
 text = " 5"
 scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="NameLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 margin_left = 35.0
@@ -1383,6 +1401,9 @@ margin_top = -2.0
 margin_right = -10.0
 margin_bottom = 88.0
 texture = ExtResource( 35 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="HP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 texture = ExtResource( 36 )
@@ -1700,6 +1721,168 @@ text = "PP: 35/35"
 anims/Slide = SubResource( 34 )
 
 [node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+
+[node name="LevelUp" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+
+[node name="Box" type="NinePatchRect" parent="CanvasLayer/BattleInterfaceLayer/LevelUp"]
+margin_left = 320.0
+margin_right = 512.0
+margin_bottom = 232.0
+texture = ExtResource( 46 )
+region_rect = Rect2( 0, 0, 48, 48 )
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Improve" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box"]
+
+[node name="MaxHP" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
+margin_left = 17.4703
+margin_top = 12.8865
+margin_right = 89.4703
+margin_bottom = 36.8865
+custom_fonts/font = ExtResource( 43 )
+text = "Max. HP"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/MaxHP"]
+margin_left = 78.0
+margin_right = 158.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 43 )
+text = "+1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
+margin_left = 17.4703
+margin_top = 46.8865
+margin_right = 89.4703
+margin_bottom = 70.8865
+custom_fonts/font = ExtResource( 43 )
+text = "Attack"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Attack"]
+margin_left = 78.0
+margin_right = 158.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 43 )
+text = "+1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Defense" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
+margin_left = 17.4703
+margin_top = 78.8865
+margin_right = 101.47
+margin_bottom = 113.887
+custom_fonts/font = ExtResource( 43 )
+text = "Defense"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Defense"]
+margin_left = 78.0
+margin_right = 158.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 43 )
+text = "+1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpAtck" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
+margin_left = 17.4703
+margin_top = 110.887
+margin_right = 101.47
+margin_bottom = 145.887
+custom_fonts/font = ExtResource( 43 )
+text = "Sp. Atk"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/SpAtck"]
+margin_left = 78.0
+margin_right = 158.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 43 )
+text = "+1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpDef" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
+margin_left = 17.4703
+margin_top = 142.887
+margin_right = 101.47
+margin_bottom = 177.887
+custom_fonts/font = ExtResource( 43 )
+text = "Sp. Def"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/SpDef"]
+margin_left = 78.0
+margin_right = 158.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 43 )
+text = "+1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Speed" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
+margin_left = 17.4703
+margin_top = 174.887
+margin_right = 101.47
+margin_bottom = 209.887
+custom_fonts/font = ExtResource( 43 )
+text = "Speed"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Speed"]
+margin_left = 78.0
+margin_right = 158.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 43 )
+text = "+1"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 visible = false

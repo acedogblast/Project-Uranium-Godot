@@ -75,6 +75,11 @@ _global_script_classes=[ {
 "path": "res://Utilities/Items/database.gd"
 }, {
 "base": "Object",
+"class": "LevelUpChanges",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/LevelUpChanges.gd"
+}, {
+"base": "Object",
 "class": "Move",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/Move.gd"
@@ -168,6 +173,7 @@ _global_script_class_icons={
 "DialogueEvent": "",
 "Inventory": "",
 "Items_database": "",
+"LevelUpChanges": "",
 "Move": "",
 "MoveDataBase": "",
 "MoveSet": "",

@@ -114,3 +114,6 @@ func get_color_by_percent(percent : float) -> Color:
 		inter = percent / 0.5
 		color = Color(1.0, inter, 0.0)
 	return color
+func reset_player_exp_bar(): # Sets exp bar to zero
+	$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(0.0)
+	player_exp_percent = 0.0

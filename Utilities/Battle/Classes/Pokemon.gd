@@ -128,13 +128,31 @@ func generate_gender(male_ratio : float):
 	else:
 		gender = FEMALE
 
-func update_stats(data):
+func update_stats() -> LevelUpChanges: # Needs to be called every time a stat changes!
+	var changes = LevelUpChanges.new()
+	changes.hp_change = hp
+	changes.attack_change = attack
+	changes.defense_change = defense
+	changes.spAtk_change = sp_attack
+	changes.spDef_change = sp_defense
+	changes.speed_change = speed
+
+	var data = registry.new().get_pokemon_class(ID)
 	attack = int( int ((2 * data.attack + iv_attack + ev_attack) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.ATTACK))
 	defense = int( int ((2 * data.defense + iv_defense + ev_defense) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.DEFENSE))
 	sp_attack = int( int ((2 * data.sp_attack + iv_sp_attack + ev_sp_attack) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SP_ATTACK))
 	sp_defense = int( int ((2 * data.sp_defense + iv_sp_defense + ev_sp_defense) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SP_DEFENSE))
 	speed = int( int ((2 * data.speed + iv_speed + ev_speed) * level / 100 + 5 ) * Nature.get_stat_multiplier(nature, Nature.stat_types.SPEED))
 	hp = int ( (2 * data.hp + iv_hp + ev_hp) * level / 100 + level + 10 )
+	
+	changes.hp_change = hp - changes.hp_change
+	changes.attack_change = attack - changes.attack_change
+	changes.defense_change = defense - changes.defense_change
+	changes.spAtk_change = sp_attack - changes.spAtk_change
+	changes.spDef_change = sp_defense - changes.spDef_change
+	changes.speed_change = speed - changes.speed_change
+	
+	return changes
 
 func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of the pokemon by its ID and sets. Its IV values will be generated here.
 	var data = registry.new().get_pokemon_class(id)
@@ -164,7 +182,7 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 			experience = exp_fluctuating(lv)
 	
 	# Set stats
-	update_stats(data)
+	update_stats()
 	current_hp = hp
 	# Set move set
 	var moveset = []
@@ -279,6 +297,7 @@ func add_ev(defeated_poke : Pokemon):
 		ev_sp_defense = 255
 	if ev_speed > 255:
 		ev_speed = 255
+	update_stats()
 func get_exp_yield() -> int:
 	return int (registry.new().get_pokemon_class(ID).exp_yield )
 func get_icon_texture() -> Texture:
@@ -299,3 +318,34 @@ func heal(): # Restores HP and move PPs to max and removes all ailments.
 		move_3.remaining_pp = move_3.total_pp
 	if move_4 != null:
 		move_4.remaining_pp = move_4.total_pp
+func get_level_up_times() -> int: # Returns how many levels the pokemon should level up too based on current experience. Does not apply the levels!
+	var levelUpTimes = 0
+	var lv = level
+	var data = registry.new().get_pokemon_class(ID)
+
+	var leveled = false
+	while !leveled:
+		lv += 1
+		if experience >= get_exp_by_level(lv):
+			levelUpTimes += 1
+		else:
+			leveled = true
+	return levelUpTimes
+func get_exp_by_level(lv) -> int:
+	var data = registry.new().get_pokemon_class(ID)
+	var value = 0
+	match data.leveling_rate:
+			data.SLOW:
+				value = exp_slow(lv)
+			data.MEDIUM_SLOW:
+				value = exp_medium_slow(lv)
+			data.MEDIUM_FAST:
+				value = exp_medium_fast(lv)
+			data.FAST:
+				value = exp_fast(lv)
+			data.ERRATIC:
+				value = exp_erratic(lv)
+			data.FLUCTUATING:
+				value = exp_fluctuating(lv)
+	print("Exp for level," + str(lv) + "is : " + str(value))
+	return value

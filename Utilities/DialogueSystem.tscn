@@ -90,7 +90,6 @@ scroll_active = false
 position = Vector2( 470, 66 )
 texture = ExtResource( 5 )
 hframes = 4
-frame = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Box/PauseArrow"]
 autoplay = "Arrow"
