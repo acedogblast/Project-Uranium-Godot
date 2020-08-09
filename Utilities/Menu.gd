@@ -55,6 +55,14 @@ func _input(event):
 				self.visible = false
 			2:
 				menu_stage = 1
+				$Transition.show()
+				$Transition.fade_to_color()
+				hide_all()
+				$Bag.hide()
+				show_base()
+				$Transition.fade_from_color()
+				pass
+				
 	if menu_stage == 1:
 		
 		if event.is_action_pressed("ui_left") and !saving:
@@ -92,10 +100,7 @@ func _input(event):
 					$Yes_no.visible = false
 					menu_stage = 1
 			ORDER.BAG:
-				$Transition.fade_to_color()
-				hide_all()
-				$Bag.show()
-				$Transition.fade_from_color()
+				bag_logic()
 				pass
 			ORDER.CARD:
 				$Transition.fade_to_color()
@@ -103,6 +108,14 @@ func _input(event):
 				$Card.show()
 				$Transition.fade_from_color()
 				
+
+
+func bag_logic():
+	$Transition.fade_to_color()
+	hide_all()
+	$Bag.show()
+	$Transition.fade_from_color()
+	$Transition.visible = false
 
 
 func show_base():

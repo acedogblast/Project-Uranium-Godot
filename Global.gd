@@ -21,7 +21,7 @@ var game : Node
 var items = [
 	[], # ITEMS
 	["Potion", 3], # MEDICINE
-	["Pokéball", 10], # BALLS
+	["Pokéball", 10, "Great Ball", 25], # BALLS
 	[], # TMs
 	[], # BERRIES
 	[], # BATTLE_ITEMS

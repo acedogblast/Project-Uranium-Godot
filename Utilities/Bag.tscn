@@ -131,6 +131,7 @@ visible = false
 position = Vector2( 378, 48 )
 texture = ExtResource( 14 )
 vframes = 2
+frame = 1
 
 [node name="item_name" type="RichTextLabel" parent="items/base_item_panel"]
 margin_left = 284.0

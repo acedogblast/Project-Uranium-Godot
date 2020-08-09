@@ -6,7 +6,7 @@ var ITEMS
 enum OPTIONS{
 	ITEMS,
 	MEDICINE,
-	BALLS
+	BALLS,
 	TMs,
 	BERRIES,
 	BATTLE_ITEMS,
@@ -14,6 +14,15 @@ enum OPTIONS{
 }
 
 var current = OPTIONS.MEDICINE
+var selected_item = [
+	0, # items
+	0, # medicine
+	0, # balls
+	0, # tms
+	0, # berries
+	0, # battle item
+	0 # key items
+]
 
 func _ready():
 	ITEMS = Items_database.new()
@@ -37,7 +46,48 @@ func _process(delta):
 		change_selected()
 		update_detail()
 		animate()
+	elif Input.is_action_just_pressed("ui_down"):
+		if selected_item[current] + 1 <= $items.get_child(current + 1).get_child_count() - 1:
+			selected_item[current] += 1
+			change_item_selected("down")
+			update_detail()
+			print(selected_item[current])
+			pass
+		pass
+	elif Input.is_action_just_pressed("ui_up"):
+		if selected_item[current] - 1 >= 0:
+			selected_item[current] -= 1
+			change_item_selected("up")
+			update_detail()
+			print(selected_item[current])
+			pass
+		pass
+
+
+func get_item_index():
 	
+	if Global.items[current][selected_item[current] + 1] - 1 == 0:
+		# remove item from the array
+		Global.items[current].remove(selected_item[current] + 1)
+		Global.items[current].remove(selected_item[current])
+		pass
+	else:
+		Global.items[current][selected_item[current] + 1] -= 1
+		pass
+	
+	emit_signal("item selected")
+	return ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) - 1]
+	pass
+
+
+func change_item_selected(dir):
+	for c in $items.get_child(current + 1).get_children():
+		c.get_child(0).frame = 0
+	$items.get_child(current + 1).get_child(selected_item[current]).get_child(0).frame = 1
+
+	
+	pass
+
 
 func change_selected():
 	match current:
@@ -193,87 +243,143 @@ func update_data():
 	for c in $items/items.get_children():
 		$items/items.remove_child(c)
 	if !Global.items[0].empty():
+		var temp_current = 0
 		for i in Global.items[0]:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
 			base.get_child(1).bbcode_text = i
-			base.visible == true
+			base.position.y += temp_current * 48
+			if temp_current == 0:
+				base.get_child(0).frame = 1
+			else:
+				base.get_child(0).frame = 0
+			base.show()
 			$items/items.add_child(base)
+			temp_current += 1
 	
 	# setup medicine
 	for c in $items/medicine.get_children():
 		$items/medicine.remove_child(c)
 	if !Global.items[1].empty():
+		var temp_current = 0
 		for i in Global.items[1]:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
 			base.get_child(1).bbcode_text = i
+			base.position.y += temp_current * 48
+			if temp_current == 0:
+				base.get_child(0).frame = 1
+			else:
+				base.get_child(0).frame = 0
 			base.show()
 			$items/medicine.add_child(base)
+			temp_current += 1
 	
 	# setup balls
 	for c in $items/balls.get_children():
 		$items/balls.remove_child(c)
 	if !Global.items[2].empty():
+		var temp_current = 0
 		for i in Global.items[2]:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
 			base.get_child(1).bbcode_text = i
+			base.position.y += temp_current * 48
+			if temp_current == 0:
+				base.get_child(0).frame = 1
+			else:
+				base.get_child(0).frame = 0
 			base.show()
 			$items/balls.add_child(base)
+			temp_current += 1
 	
 	# setup tms
 	for c in $items/tms.get_children():
 		$items/tms.remove_child(c)
 	if !Global.items[3].empty():
+		var temp_current = 0
 		for i in Global.items[3]:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
 			base.get_child(1).bbcode_text = i
+			base.position.y += temp_current * 48
+			if temp_current == 0:
+				base.get_child(0).frame = 1
+			else:
+				base.get_child(0).frame = 0
 			base.show()
 			$items/tms.add_child(base)
+			temp_current += 1
 	
 	# setup berries
 	for c in $items/berries.get_children():
 		$items/berries.remove_child(c)
 	if !Global.items[4].empty():
+		var temp_current = 0
 		for i in Global.items[4]:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
 			base.get_child(1).bbcode_text = i
+			base.position.y += temp_current * 48
+			if temp_current == 0:
+				base.get_child(0).frame = 1
+			else:
+				base.get_child(0).frame = 0
 			base.show()
 			$items/berries.add_child(base)
+			temp_current += 1
 	
 	# setup battle_items
 	for c in $items/battle_items.get_children():
 		$items/battle_items.remove_child(c)
 	if !Global.items[5].empty():
+		var temp_current = 0
 		for i in Global.items[5]:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
 			base.get_child(1).bbcode_text = i
+			base.position.y += temp_current * 48
+			if temp_current == 0:
+				base.get_child(0).frame = 1
+			else:
+				base.get_child(0).frame = 0
 			base.show()
 			$items/battle_items.add_child(base)
+			temp_current += 1
 	
 	# setup key_items
 	for c in $items/key_items.get_children():
 		$items/key_items.remove_child(c)
 	if !Global.items[6].empty():
+		var temp_current = 0
 		for i in Global.items[6]:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
 			base.get_child(1).bbcode_text = i
+			base.position.y += temp_current * 48
+			if temp_current == 0:
+				base.get_child(0).frame = 1
+			else:
+				base.get_child(0).frame = 0
 			base.show()
 			$items/key_items.add_child(base)
+			temp_current += 1
 
 func update_detail():
+	var item_icon 
+	if !Global.items[current].empty():
+		item_icon = str(ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) - 1])
+		print(Global.items[current][selected_item[current] * 2])
+
+	
+	
 	match current:
 		OPTIONS.ITEMS:
 			$Details/icon.texture = null
@@ -282,16 +388,16 @@ func update_detail():
 			$Details/text.text = ""
 			pass
 		OPTIONS.MEDICINE:
-			$Details/icon.texture = load("res://graphics/Icons/Item170.png")
+			$Details/icon.texture = load("res://Graphics/Icons/item" + item_icon + ".png")
 			$Details/name.text = Global.items[1][0]
-			$Details/quantity.text = str("x ", Global.items[1][1])
-			$Details/text.text = ITEMS.item_list[ITEMS.item_list.find(Global.items[1][0]) + 1]
+			$Details/quantity.text = str("x ", Global.items[current][selected_item[current] * 2 + 1])
+			$Details/text.text = ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) + 1]
 			
 		OPTIONS.BALLS:
-			$Details/icon.texture = load("res://graphics/Icons/Item211.png")
+			$Details/icon.texture = load("res://Graphics/Icons/item" + item_icon + ".png")
 			$Details/name.text = Global.items[2][0]
-			$Details/quantity.text = str("x ", Global.items[2][1])
-			$Details/text.text = ITEMS.item_list[ITEMS.item_list.find(Global.items[2][0]) + 1]
+			$Details/quantity.text = str("x ", Global.items[current][selected_item[current] * 2 + 1])
+			$Details/text.text = ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) + 1]
 			pass
 		OPTIONS.TMs:
 			$Details/icon.texture = null
