@@ -26,13 +26,26 @@ func set_player_bar_by_pokemon(poke):
 	$PlayerBar/LevelLable.text = " " + str(poke.level)
 	$PlayerBar/HP.region_rect = get_player_rect2d_by_percentage(player_hp_percent)
 	$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(player_exp_percent)
-	pass
+
+	match poke.major_ailment:
+		null:
+			$PlayerBar/MajorAilment.hide()
+		_:
+			$PlayerBar/MajorAilment.frame = poke.major_ailment
+			$PlayerBar/MajorAilment.show()
+
 func set_foe_bar_by_pokemon(poke):
 	foe_hp_percent = float(poke.current_hp) / float(poke.hp)
 	$FoeBar/NameLable.text = " " + poke.name
 	$FoeBar/LevelLable.text = " " + str(poke.level)
 	$FoeBar/HP.region_rect = get_foe_rect2d_by_percentage(foe_hp_percent)
-	pass
+
+	match poke.major_ailment:
+		null:
+			$FoeBar/MajorAilment.hide()
+		_:
+			$FoeBar/MajorAilment.frame = poke.major_ailment
+			$FoeBar/MajorAilment.show()
 func get_foe_rect2d_by_percentage(percent: float):
 	return Rect2(0,0, int(174 * percent + 24), 90)
 func get_player_rect2d_by_percentage(percent: float):

@@ -564,7 +564,7 @@ func battle_loop():
 		
 			yield(self, "continue_pressed")
 			$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
-		action.UPDATE_MAJOR_AILMENT:
+		action.UPDATE_MAJOR_AILMENT: # To be remade as update bars
 			var battler1_ailment = $CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/MajorAilment
 			var battler2_ailment = $CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar/MajorAilment
 			match action.damage_target_index:
