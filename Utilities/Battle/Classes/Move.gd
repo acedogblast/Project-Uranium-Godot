@@ -25,6 +25,9 @@ var critical_hit_level
 # The secondary effect chance of the move
 var secondary_effect_chance
 
+# The secondary effect of the move
+var secondary_effect
+
 # The flags of the move
 var flags
 
@@ -39,3 +42,4 @@ var target_ability
 
 # The main status effect of the move.
 var main_status_effect
+

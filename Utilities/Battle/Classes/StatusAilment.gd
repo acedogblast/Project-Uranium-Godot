@@ -1,5 +1,0 @@
-extends Object
-class_name StatusAilment
-
-enum Major {SLEEP, POISON, BURN, PARALYSIS, FREEZE, FAINT, PKRS, DEAD, RAD}
-enum Minor {CONFUSION, FLINCHING, SEEDING, INFATUATION, CURSE, NIGHTMARE}

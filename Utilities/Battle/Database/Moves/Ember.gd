@@ -22,7 +22,10 @@ var priority = 0
 var critical_hit_level = 1
 
 # The secondary effect chance of the move
-var secondary_effect_chance
+var secondary_effect_chance = 0.1
+
+# The secondary effect of the move
+var secondary_effect = MajorAilment.BURN
 
 # The flags of the move
 var flags = []

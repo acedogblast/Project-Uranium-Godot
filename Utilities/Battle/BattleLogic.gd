@@ -40,8 +40,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 	var battler_index # The index of the pokemon preforming the move
 	var command
 	while !turn_order.empty():
-		var action = BattleQueueAction.new()
-		action.type = action.BATTLE_TEXT
+		var action
 		var turn = turn_order.pop_front()
 		match turn:
 			B1:
@@ -60,6 +59,60 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				battler_index = 4
 
 		if command.command_type == command.ATTACK:
+
+			# Preturn Major Ailments
+			var skip_turn = false
+			for battler_ailment_index in range(1,5):
+				var battler_ailment = get_battler_by_index(battler_ailment_index)
+				
+				if battler_ailment != null && battler_ailment.major_ailment != null:
+					match battler_ailment.major_ailment:
+						MajorAilment.FROZEN:
+							if percent_chance(0.2):
+								# Thaw out
+								action = BattleQueueAction.new()
+								action.type = action.BATTLE_TEXT
+								action.battle_text = get_battler_title_by_index(battler_index) + " is\nthawed out!"
+								queue.push(action)
+
+								battler_ailment.major_ailment = null
+								action = BattleQueueAction.new()
+								action.type = action.UPDATE_MAJOR_AILMENT
+								action.damage_target_index = battler_ailment_index
+								queue.push(action)
+							else:
+								action = BattleQueueAction.new()
+								action.type = action.BATTLE_TEXT
+								action.battle_text = get_battler_title_by_index(battler_index) + " is\nfrozen solid!"
+								queue.push(action)
+								skip_turn = true
+						MajorAilment.SLEEP:
+							if get_effect_from_effects(BattleEffect.SLEEP_COUNTER, battler_ailment_index).sleep_count == 0:
+								action = BattleQueueAction.new()
+								action.type = action.BATTLE_TEXT
+								action.battle_text = get_battler_title_by_index(battler_index) + " woke up!"
+								queue.push(action)
+								battler_ailment.major_ailment = null
+								action = BattleQueueAction.new()
+								action.type = action.UPDATE_MAJOR_AILMENT
+								action.damage_target_index = battler_ailment_index
+								queue.push(action)
+							else:
+								action = BattleQueueAction.new()
+								action.type = action.BATTLE_TEXT
+								action.battle_text = get_battler_title_by_index(battler_index) + " is\nfast asleep."
+								queue.push(action)
+								skip_turn = true
+						MajorAilment.PARALYSIS:
+							if percent_chance(0.25):
+								action = BattleQueueAction.new()
+								action.type = action.BATTLE_TEXT
+								action.battle_text = get_battler_title_by_index(battler_index) + " is\nparalyzed!"
+								queue.push(action)
+								skip_turn = true	
+			if skip_turn:
+				continue
+
 			var move
 			match command.attack_move:
 				battler.move_1.name:
@@ -70,6 +123,8 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					move = battler.move_3
 				battler.move_4.name:
 					move = battler.move_4
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
 			action.battle_text = get_battler_title_by_index(battler_index) + " used\n" + command.attack_move + "!"
 			queue.push(action)
 			# Decrement move PP, PP should be at least 1 at this point.
@@ -102,6 +157,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					var STAB_modifier: float = 1.0
 					var random_modifier: float = 1.0
 					var type_modifer: float = 1.0
+					var burn_modifer: float = 1.0
 					var other_modifer: float = 1.0
 
 					var effective_attacker_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(battler_index).attack) * battler.attack
@@ -121,6 +177,10 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					var rng = RandomNumberGenerator.new()
 					rng.randomize()
 					random_modifier = rng.randf_range(0.85,1.0)
+
+					if get_battler_by_index(battler_index).major_ailment == MajorAilment.BURN && move.style == MoveStyle.PHYSICAL:
+						burn_modifer = 0.5
+
 					
 					type_modifer = Type.type_advantage_multiplier(move.type, get_battler_by_index(target_index))
 					total_damage_modifier = target_modifier * weather_modifier * critical_modifier * STAB_modifier * random_modifier * type_modifer * other_modifer
@@ -138,7 +198,6 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						action = BattleQueueAction.new()
 						action.type = action.DAMAGE
 						action.damage_target_index = target_index
-						action.damage_amount = raw_damage
 						action.damage_effectiveness = type_modifer
 						queue.push(action)
 
@@ -161,6 +220,12 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 							
 						if post_damage_checks(target_index):
 							return queue
+
+						#Secondary effect
+						if move.secondary_effect != null:
+							if percent_chance(move.secondary_effect_chance) && get_battler_by_index(target_index).hp != 0:
+								set_major_ailment(target_index, move.secondary_effect)
+
 					else:
 						action = BattleQueueAction.new()
 						action.type = action.BATTLE_TEXT
@@ -258,7 +323,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 									get_effects_by_index(target_index).append(effect)
 									action = BattleQueueAction.new()
 									action.type = action.BATTLE_TEXT
-									action.battle_text = get_battler_title_by_index(battler_index) + " was seeded!"
+									action.battle_text = get_battler_title_by_index(target_index) + " was seeded!"
 									queue.push(action)
 				
 			else: # Add missed mesage.
@@ -280,8 +345,6 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					if damage < 1:
 						damage = 1
 					remove_hp(battler_effects_index, damage)
-					if post_damage_checks(battler_effects_index):
-						return queue
 					
 					# Heal
 					var current_hp = get_battler_by_index(effect.seeded_heal_target_index).current_hp
@@ -294,7 +357,6 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					var action = BattleQueueAction.new()
 					action.type = action.DAMAGE
 					action.damage_target_index = battler_effects_index
-					action.damage_amount = damage
 					action.damage_effectiveness = 1.0
 					queue.push(action)
 
@@ -302,8 +364,58 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					action.type = action.HEAL
 					action.damage_target_index = effect.seeded_heal_target_index
 					queue.push(action)
-		# Major Ailments
 
+					if post_damage_checks(battler_effects_index):
+						return queue
+				BattleEffect.effects.SLEEP_COUNTER:
+					effect.sleep_count -= 1
+
+	
+	# Post-Turn Major Ailments
+	for battler_ailment_index in range(1,5):
+		var battler_ailment = get_battler_by_index(battler_ailment_index)
+		if battler_ailment != null && battler_ailment.major_ailment != null:
+			match battler_ailment.major_ailment:
+				MajorAilment.BURN:
+					var damage = battler_ailment.hp / 8
+
+					if damage < 1:
+						damage = 1
+
+					remove_hp(battler_ailment_index, damage)
+					var action = BattleQueueAction.new()
+					action.type = action.DAMAGE
+					action.damage_target_index = battler_ailment_index
+					action.damage_effectiveness = 1.0
+					queue.push(action)
+
+					action = BattleQueueAction.new()
+					action.type = action.BATTLE_TEXT
+					action.battle_text = get_battler_title_by_index(battler_index) + " is hurt\nby its burn!"
+					queue.push(action)
+
+					if post_damage_checks(battler_index):
+						return queue
+				MajorAilment.POISON: # Note Badly poison mechanic is not implemented
+					var damage = battler_ailment.hp / 8
+
+					if damage < 1:
+						damage = 1
+					remove_hp(battler_ailment_index, damage)
+				
+					var action = BattleQueueAction.new()
+					action.type = action.DAMAGE
+					action.damage_target_index = battler_ailment_index
+					action.damage_effectiveness = 1.0
+					queue.push(action)
+
+					action = BattleQueueAction.new()
+					action.type = action.BATTLE_TEXT
+					action.battle_text = get_battler_title_by_index(battler_index) + " is hurt\nby poison!"
+					queue.push(action)
+
+					if post_damage_checks(battler_index):
+						return queue
 
 	# Print out the action queue for debug
 	if battle_debug:
@@ -350,9 +462,9 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 			var b2_speed = battler2.speed
 			b1_speed = b1_speed * BattleStatStage.get_multiplier(battler1_stat_stage.speed)
 			b2_speed = b2_speed * BattleStatStage.get_multiplier(battler2_stat_stage.speed)
-			if battler1.major_ailment == StatusAilment.Major.PARALYSIS:
+			if battler1.major_ailment == MajorAilment.PARALYSIS:
 				b1_speed = b1_speed / 2.0
-			if battler2.major_ailment == StatusAilment.Major.PARALYSIS:
+			if battler2.major_ailment == MajorAilment.PARALYSIS:
 				b2_speed = b2_speed / 2.0
 			# Check who has higher speed
 			if b1_speed > b2_speed:
@@ -496,11 +608,15 @@ func does_crit(crit : int) -> bool: # If move can crit calculate if crit or not.
 			if value == 1:
 				did_crit = true
 	return did_crit
-func one_in_n_chance(n) -> bool:
+func one_in_n_chance(n : int) -> bool:
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	var value = rng.randi_range(1,n)
 	if value == 1:
+		return true
+	return false
+func percent_chance(n : float) -> bool:
+	if one_in_n_chance(1/n):
 		return true
 	return false
 func post_damage_checks(battler_index: int) -> bool: # Checks for when any damage is done to battlers. Returns true is the battle is over.
@@ -521,6 +637,9 @@ func post_damage_checks(battler_index: int) -> bool: # Checks for when any damag
 		if battler_index == 1 || battler_index == 3:
 			action.battle_text = get_battler_by_index(battler_index).name + " fainted!"
 		queue.push(action)
+
+		get_battler_by_index(battler_index).major_ailment = null
+
 		
 		# If foe faint add exp to player pokemon. For now just only apply to current player pokemon
 		if get_exp:
@@ -609,3 +728,40 @@ func remove_hp(index: int, damage: int): # Still need to call post_damage_checks
 		target.current_hp = 0
 	else:
 		target.current_hp = current_hp - damage
+func get_effect_from_effects(effect_enum: int, battler_index : int): # Returns the specified BattleEffect, else null
+	for effect in get_effects_by_index(battler_index):
+		if effect.effect == effect_enum:
+			return effect
+	return null
+func set_major_ailment(index: int, ailment_code: int, turns: int = -1): # Sets the MajorAilment and coresponding actions
+	var action = BattleQueueAction.new()
+	action.type = action.BATTLE_TEXT
+
+	match ailment_code:
+		MajorAilment.BURN:
+			action.battle_text = get_battler_title_by_index(index) + " is\nburnt!"
+		MajorAilment.FROZEN:
+			action.battle_text = get_battler_title_by_index(index) + " is\nfrozen solid!"
+		MajorAilment.POISON:
+			action.battle_text = get_battler_title_by_index(index) + " is\npoisoned!"
+		MajorAilment.SLEEP:
+			action.battle_text = get_battler_title_by_index(index) + " is\nfast asleep."
+		MajorAilment.PARALYSIS:
+			action.battle_text = get_battler_title_by_index(index) + " is\nparalyzed!"
+	queue.push(action)
+
+	get_battler_by_index(index).major_ailment = ailment_code
+	if get_battler_by_index(index).major_ailment == MajorAilment.SLEEP:
+		var effect = BattleEffect.new()
+		effect.effect = BattleEffect.SLEEP_COUNTER
+		if turns == -1:
+			var rng = RandomNumberGenerator.new()
+			rng.randomize()
+			effect.sleep_count = rng.randi_range(1,3)
+		else:
+			effect.sleep_count = turns
+		get_effects_by_index(index).add(effect)
+	action = BattleQueueAction.new()
+	action.type = action.UPDATE_MAJOR_AILMENT
+	action.damage_target_index = index
+	queue.push(action)

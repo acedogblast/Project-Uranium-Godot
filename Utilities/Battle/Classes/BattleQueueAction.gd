@@ -14,7 +14,8 @@ enum {
 	WILD_INTRO,
 	HEAL,
 	LEVEL_UP,
-	LEVEL_UP_SE
+	LEVEL_UP_SE,
+	UPDATE_MAJOR_AILMENT
 	}
 
 enum {PLAYER_WIN, FOE_WIN}
@@ -27,9 +28,9 @@ var battle_text : String
 
 var press_to_continue : bool = false
 
-var damage_target_index # Used in both damage, faint, and exp_gain, stat_animation, heal
+var damage_target_index # Used in damage, faint, and exp_gain, stat_animation, heal, UPDATE_MAJOR_AILMENT
 
-var damage_amount : int
+#var damage_amount : int
 
 var damage_effectiveness : float
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -48,6 +48,7 @@
 [ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=46]
 [ext_resource path="res://Graphics/Pictures/pause.png" type="Texture" id=47]
 [ext_resource path="res://Utilities/Dialogue Box Arrow.tres" type="Animation" id=48]
+[ext_resource path="res://Graphics/Pictures/battlestatuses.PNG" type="Texture" id=49]
 
 [sub_resource type="ShaderMaterial" id=1]
 
@@ -1323,7 +1324,6 @@ autoplay = "Dialogue Box Arrow"
 "anims/Dialogue Box Arrow" = ExtResource( 48 )
 
 [node name="BattleBars" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-visible = false
 script = ExtResource( 30 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
@@ -1395,6 +1395,12 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 152, 10 )
 
+[node name="MajorAilment" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
+visible = false
+position = Vector2( 165, 45 )
+texture = ExtResource( 49 )
+vframes = 5
+
 [node name="FoeBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
 margin_left = -254.0
 margin_top = -2.0
@@ -1433,6 +1439,12 @@ margin_bottom = 31.0
 custom_fonts/normal_font = ExtResource( 33 )
 text = " 5"
 scroll_active = false
+
+[node name="MajorAilment" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
+visible = false
+position = Vector2( 156, 49 )
+texture = ExtResource( 49 )
+vframes = 5
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
 
@@ -1723,6 +1735,7 @@ anims/Slide = SubResource( 34 )
 [node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 
 [node name="LevelUp" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+visible = false
 
 [node name="Box" type="NinePatchRect" parent="CanvasLayer/BattleInterfaceLayer/LevelUp"]
 margin_left = 320.0

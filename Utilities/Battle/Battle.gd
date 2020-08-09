@@ -538,7 +538,6 @@ func battle_loop():
 			audioplayer.play()
 			# Reset exp bar
 			$CanvasLayer/BattleInterfaceLayer/BattleBars.call_deferred("reset_player_exp_bar")
-			
 		action.LEVEL_UP:
 			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/MaxHP/Value.text = "+" + str(action.level_stat_changes.hp_change)
 			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Attack/Value.text = "+" + str(action.level_stat_changes.attack_change)
@@ -559,6 +558,26 @@ func battle_loop():
 		
 			yield(self, "continue_pressed")
 			$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
+		action.UPDATE_MAJOR_AILMENT:
+			var battler1_ailment = $CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/MajorAilment
+			var battler2_ailment = $CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar/MajorAilment
+			match action.damage_target_index:
+				1:
+					match battler1.major_ailment:
+						null:
+							battler1_ailment.hide()
+						_:
+							battler1_ailment.frame = battler1.major_ailment
+							battler1_ailment.show()
+				2:
+					match battler2.major_ailment:
+						null:
+							battler2_ailment.hide()
+						_:
+							battler2_ailment.frame = battler2.major_ailment
+							battler2_ailment.show()
+		
+			pass
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 

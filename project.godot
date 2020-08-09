@@ -80,6 +80,11 @@ _global_script_classes=[ {
 "path": "res://Utilities/Battle/Classes/LevelUpChanges.gd"
 }, {
 "base": "Object",
+"class": "MajorAilment",
+"language": "GDScript",
+"path": "res://Utilities/Battle/Classes/MajorAilment.gd"
+}, {
+"base": "Object",
 "class": "Move",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/Move.gd"
@@ -140,11 +145,6 @@ _global_script_classes=[ {
 "path": "res://Utilities/Save/State.gd"
 }, {
 "base": "Object",
-"class": "StatusAilment",
-"language": "GDScript",
-"path": "res://Utilities/Battle/Classes/StatusAilment.gd"
-}, {
-"base": "Object",
 "class": "Type",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/Type.gd"
@@ -174,6 +174,7 @@ _global_script_class_icons={
 "Inventory": "",
 "Items_database": "",
 "LevelUpChanges": "",
+"MajorAilment": "",
 "Move": "",
 "MoveDataBase": "",
 "MoveSet": "",
@@ -186,7 +187,6 @@ _global_script_class_icons={
 "StatChange": "",
 "StatStageEffect": "",
 "State": "",
-"StatusAilment": "",
 "Type": "",
 "WaitEvent": "",
 "registry": ""
