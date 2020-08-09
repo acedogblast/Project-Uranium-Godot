@@ -35,9 +35,9 @@ extra_spacing_top = 2
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 26
-extra_spacing_top = 4
-extra_spacing_bottom = 8
+size = 22
+extra_spacing_top = 5
+extra_spacing_bottom = 3
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=5]
@@ -179,10 +179,12 @@ __meta__ = {
 
 [node name="text" type="RichTextLabel" parent="Details"]
 margin_left = 121.0
-margin_top = 293.0
-margin_right = 468.0
-margin_bottom = 381.0
+margin_top = 289.0
+margin_right = 494.0
+margin_bottom = 379.0
 rect_clip_content = false
+size_flags_horizontal = 4
+size_flags_vertical = 4
 custom_fonts/normal_font = SubResource( 4 )
 bbcode_enabled = true
 bbcode_text = "A good, high-performance Poké Ball that provides a higher success rate for catching Pokémon than a standard Poké Ball."

@@ -397,6 +397,7 @@ func update_detail():
 			$Details/name.text = Global.items[2][0]
 			$Details/quantity.text = str("x ", Global.items[current][selected_item[current] * 2 + 1])
 			$Details/text.text = ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) + 1]
+			
 			pass
 		OPTIONS.TMs:
 			$Details/icon.texture = null
