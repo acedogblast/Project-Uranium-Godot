@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://Maps/Route03/Route03.tmx" type="PackedScene" id=1]
-
-[node name="Route03" index="0" instance=ExtResource( 1 )]

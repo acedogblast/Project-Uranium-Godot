@@ -180,12 +180,13 @@ __meta__ = {
 [node name="text" type="RichTextLabel" parent="Details"]
 margin_left = 121.0
 margin_top = 293.0
-margin_right = 464.0
-margin_bottom = 384.0
+margin_right = 468.0
+margin_bottom = 381.0
+rect_clip_content = false
 custom_fonts/normal_font = SubResource( 4 )
 bbcode_enabled = true
-bbcode_text = "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points."
-text = "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points."
+bbcode_text = "A good, high-performance Poké Ball that provides a higher success rate for catching Pokémon than a standard Poké Ball."
+text = "A good, high-performance Poké Ball that provides a higher success rate for catching Pokémon than a standard Poké Ball."
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false

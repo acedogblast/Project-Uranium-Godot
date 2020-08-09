@@ -75,7 +75,6 @@ func get_item_index():
 		Global.items[current][selected_item[current] + 1] -= 1
 		pass
 	
-	emit_signal("item selected")
 	return ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) - 1]
 	pass
 
