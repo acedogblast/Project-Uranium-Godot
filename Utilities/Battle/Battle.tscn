@@ -1324,6 +1324,7 @@ autoplay = "Dialogue Box Arrow"
 "anims/Dialogue Box Arrow" = ExtResource( 48 )
 
 [node name="BattleBars" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+visible = false
 script = ExtResource( 30 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]

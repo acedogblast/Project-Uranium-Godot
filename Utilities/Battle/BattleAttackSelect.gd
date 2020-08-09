@@ -101,7 +101,7 @@ func _input(event):
             if move.remaining_pp != 0:
                 $AnimationPlayer.play_backwards("Slide")
 
-                print("Valid attack selected")
+                #print("Valid attack selected")
 
                 self.visible = false
                 enabled = false

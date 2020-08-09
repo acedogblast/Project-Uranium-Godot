@@ -24,6 +24,9 @@ var battle_instance : BattleInstanceData
 
 var battle_debug = false
 
+var escape_attempts = 0
+var can_escape = false
+
 func _init(b1, b2 , bid):
 	battler1 = b1
 	battler2 = b2
@@ -33,14 +36,31 @@ func _init(b1, b2 , bid):
 	pass
 func generate_action_queue(player_command : BattleCommand, foe_command : BattleCommand):
 	queue = BattleQueue.new()
+	var action
 	get_turn_order(player_command, foe_command)
-	# Arrange Battle actions once turn orders are calculated
+	
+	if can_escape == true && player_command.command_type == player_command.RUN:
+		action = BattleQueueAction.new()
+		action.type = action.ESCAPE_SE
+		queue.push(action)
+		
+		action = BattleQueueAction.new()
+		action.type = action.BATTLE_TEXT
+		action.battle_text = "Got away safely!"
+		action.press_to_continue = true
+		queue.push(action)
+
+		action = BattleQueueAction.new()
+		action.type = action.BATTLE_END
+		action.winner = action.PLAYER_WIN
+		action.run_away = true
+		queue.push(action)
+		return queue
 	
 	var battler # The pokemon preforming the move
 	var battler_index # The index of the pokemon preforming the move
 	var command
 	while !turn_order.empty():
-		var action
 		var turn = turn_order.pop_front()
 		match turn:
 			B1:
@@ -354,7 +374,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						get_battler_by_index(effect.seeded_heal_target_index).current_hp += damage
 
 
-					var action = BattleQueueAction.new()
+					action = BattleQueueAction.new()
 					action.type = action.DAMAGE
 					action.damage_target_index = battler_effects_index
 					action.damage_effectiveness = 1.0
@@ -383,7 +403,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						damage = 1
 
 					remove_hp(battler_ailment_index, damage)
-					var action = BattleQueueAction.new()
+					action = BattleQueueAction.new()
 					action.type = action.DAMAGE
 					action.damage_target_index = battler_ailment_index
 					action.damage_effectiveness = 1.0
@@ -403,7 +423,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						damage = 1
 					remove_hp(battler_ailment_index, damage)
 				
-					var action = BattleQueueAction.new()
+					action = BattleQueueAction.new()
 					action.type = action.DAMAGE
 					action.damage_target_index = battler_ailment_index
 					action.damage_effectiveness = 1.0
@@ -421,11 +441,11 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 	if battle_debug:
 		print("Action queue size: " + str(queue.queue.size()))
 		var action_index = 0
-		for action in queue.queue:
-			print("Action #" + str(action_index) + ". Type: " + str (action.type))# + ". Battler:" + str(action.)
+		for actions in queue.queue:
+			print("Action #" + str(action_index) + ". Type: " + str (actions.type))# + ". Battler:" + str(action.)
 			action_index = action_index + 1
 	return queue
-func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand): # For singal battles
+func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand): # For single battles
 	# Find out which comand goes in which order.
 			# General turn order:
 			# 1. Item use/Runing
@@ -435,8 +455,28 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 			# 5. Higher speed
 			# 6. Random
 			
-	# For now only attack moves are avaliable
 	# Calculate turn_order
+	if player_command.command_type == player_command.RUN:
+		can_escape = false
+
+		if battler1.speed > battler2.speed:
+			can_escape = true
+		else:
+			escape_attempts += 1
+			var f = ( (battler1.speed * 128) / battler2.speed ) + 30 * escape_attempts
+			f = posmod(int(f), 256)
+			var rng = RandomNumberGenerator.new()
+			rng.randomize()
+			if rng.randi_range(0,255) < f:
+				can_escape = true
+		if !can_escape:
+			var action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = "Can't escape!"
+			queue.push(action)
+			turn_order.push_back(B2)
+			return
+			
 
 
 	if player_command.command_type == player_command.ATTACK && foe_command.command_type == foe_command.ATTACK:

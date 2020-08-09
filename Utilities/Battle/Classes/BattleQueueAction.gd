@@ -15,7 +15,8 @@ enum {
 	HEAL,
 	LEVEL_UP,
 	LEVEL_UP_SE,
-	UPDATE_MAJOR_AILMENT
+	UPDATE_MAJOR_AILMENT,
+	ESCAPE_SE
 	}
 
 enum {PLAYER_WIN, FOE_WIN}
@@ -47,3 +48,5 @@ var heal_sound : bool
 var level : int
 
 var level_stat_changes : LevelUpChanges
+
+var run_away : bool = false

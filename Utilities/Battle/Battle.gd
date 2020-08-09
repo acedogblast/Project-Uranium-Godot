@@ -417,50 +417,53 @@ func battle_loop():
 		action.BATTLE_END:
 			battle_is_over = true
 			$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = false
-			# Play victory music
-			var victory_music
-			match battle_instance.battle_type:
-				BattleInstanceData.BattleType.SINGLE_TRAINER, BattleInstanceData.BattleType.RIVAL:
-					victory_music = load("res://Audio/ME/PU-Victory Trainer Battle.ogg")
-				BattleInstanceData.BattleType.SINGLE_WILD, BattleInstanceData.BattleType.DOUBLE_WILD:
-					victory_music = load("res://Audio/BGM/PU-WildVictory.ogg") # There is another version in ME. Not sure which one to use.
-				BattleInstanceData.BattleType.SINGLE_GYML, BattleInstanceData.BattleType.DOUBLE_GYML:
-					victory_music = load("res://Audio/ME/PU-GymVictory.ogg")
-				# TODO: Fill other battle types
-			$CanvasLayer/AudioStreamPlayer.stop()
-			$CanvasLayer/AudioStreamPlayer.stream = victory_music
-			$CanvasLayer/AudioStreamPlayer.play()
 
-			# Closing Battle quote
-			var message = Global.TrainerName + " defeated\n"
-			match battle_instance.opponent.opponent_type:
-				Opponent.OPPONENT_RIVAL:
-					message += "RIVAL "
-				Opponent.OPPONENT_TRAINER:
-					message += "TRAINER "
-				Opponent.OPPONENT_WILD:
-					message += "WILD "
-			message += battle_instance.opponent.name
-			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
-			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
-			$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
-			yield(self, "continue_pressed")
-			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+			
+			if !action.run_away:
+				# Play victory music
+				var victory_music
+				match battle_instance.battle_type:
+					BattleInstanceData.BattleType.SINGLE_TRAINER, BattleInstanceData.BattleType.RIVAL:
+						victory_music = load("res://Audio/ME/PU-Victory Trainer Battle.ogg")
+					BattleInstanceData.BattleType.SINGLE_WILD, BattleInstanceData.BattleType.DOUBLE_WILD:
+						victory_music = load("res://Audio/BGM/PU-WildVictory.ogg") # There is another version in ME. Not sure which one to use.
+					BattleInstanceData.BattleType.SINGLE_GYML, BattleInstanceData.BattleType.DOUBLE_GYML:
+						victory_music = load("res://Audio/ME/PU-GymVictory.ogg")
+					# TODO: Fill other battle types
+				$CanvasLayer/AudioStreamPlayer.stop()
+				$CanvasLayer/AudioStreamPlayer.stream = victory_music
+				$CanvasLayer/AudioStreamPlayer.play()
 
-			# If applicable, show opponent win quote:
-			if battle_instance.opponent.opponent_type == Opponent.OPPONENT_RIVAL:
-				$CanvasLayer/BattleGrounds/AnimationPlayer.play("Opponent_Quote")
-				yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
-
-				message = tr(battle_instance.opponent.after_battle_quote)
+				# Closing Battle quote
+				var message = Global.TrainerName + " defeated\n"
+				match battle_instance.opponent.opponent_type:
+					Opponent.OPPONENT_RIVAL:
+						message += "RIVAL "
+					Opponent.OPPONENT_TRAINER:
+						message += "TRAINER "
+					Opponent.OPPONENT_WILD:
+						message += "WILD "
+				message += battle_instance.opponent.name
 				$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
 				$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+				$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
 				yield(self, "continue_pressed")
+				$CanvasLayer/BattleInterfaceLayer/Message.visible = false
 
-				# Show money earned
-				Global.money += battle_instance.victory_award
-				$CanvasLayer/BattleInterfaceLayer/Message/Label.text = Global.TrainerName + " got $" + str(battle_instance.victory_award) + "\nfor winning!"
-				yield(self, "continue_pressed")
+				# If applicable, show opponent win quote:
+				if battle_instance.opponent.opponent_type == Opponent.OPPONENT_RIVAL:
+					$CanvasLayer/BattleGrounds/AnimationPlayer.play("Opponent_Quote")
+					yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+
+					message = tr(battle_instance.opponent.after_battle_quote)
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+					yield(self, "continue_pressed")
+
+					# Show money earned
+					Global.money += battle_instance.victory_award
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = Global.TrainerName + " got $" + str(battle_instance.victory_award) + "\nfor winning!"
+					yield(self, "continue_pressed")
 			
 			# Fade out of battle
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
@@ -539,6 +542,9 @@ func battle_loop():
 			# Reset exp bar
 			$CanvasLayer/BattleInterfaceLayer/BattleBars.call_deferred("reset_player_exp_bar")
 		action.LEVEL_UP:
+			# Update player bar
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.set_player_bar_by_pokemon(battler1)
+
 			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/MaxHP/Value.text = "+" + str(action.level_stat_changes.hp_change)
 			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Attack/Value.text = "+" + str(action.level_stat_changes.attack_change)
 			$CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Defense/Value.text = "+" + str(action.level_stat_changes.defense_change)
@@ -576,8 +582,12 @@ func battle_loop():
 						_:
 							battler2_ailment.frame = battler2.major_ailment
 							battler2_ailment.show()
-		
-			pass
+		action.ESCAPE_SE:
+			var audioplayer = $CanvasLayer/BattleInterfaceLayer/BattleBars/AudioStreamPlayer
+			var sound = load("res://Audio/BGS/Flee.ogg")
+			sound.loop = false
+			audioplayer.stream = sound
+			audioplayer.play()
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 
@@ -587,10 +597,7 @@ func get_battle_command():
 	menu.get_node("AnimationPlayer").play("Slide")
 	menu.visible = true
 	menu.start(battler1.name)
-	#$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.reset()
-	yield($CanvasLayer/BattleInterfaceLayer/BattleAttackSelect, "command_received")
-	
-	print("Command recived")
+	yield($CanvasLayer/BattleInterfaceLayer/BattleComandSelect, "command_received")
 
 	emit_signal("wait")
 func get_battle_snapshot():

@@ -12,6 +12,10 @@ const BAG_POS = Vector2(195, 50)
 const POKE_POS = Vector2(315, 50)
 const RUN_POS = Vector2(435, 50)
 
+signal command_received
+
+func _ready():
+	get_parent().get_node("BattleAttackSelect").connect("command_received", self, "submit_command")
 func start(name):
 	$SelHand/AnimationPlayer.play("Squeez")
 	$Prompt.bbcode_text = "[center]What will " + name + " do?"
@@ -32,16 +36,24 @@ func _input(event):
 		selected += 1
 		change_Sel_Hand_Pos()
 	if (event.is_action_pressed("ui_accept") || event.is_action_pressed("x")) and enabled:
-		if selected == ATTACK:
-			$SelHand/AudioStreamPlayer.stream = select_se_2
-			$SelHand/AudioStreamPlayer.play()
-			var battle_attack_select = self.get_parent().get_node("BattleAttackSelect")
-			battle_attack_select.start(self.get_parent().get_parent().get_parent().battler1)
-			self.visible = false
-			battle_attack_select.position = Vector2(0, 286)
-			battle_attack_select.visible = true
-			enabled = false
-		pass
+		var command = BattleCommand.new()
+		match selected:
+			ATTACK:
+				$SelHand/AudioStreamPlayer.stream = select_se_2
+				$SelHand/AudioStreamPlayer.play()
+				var battle_attack_select = self.get_parent().get_node("BattleAttackSelect")
+				battle_attack_select.start(self.get_parent().get_parent().get_parent().battler1)
+				self.visible = false
+				battle_attack_select.position = Vector2(0, 286)
+				battle_attack_select.visible = true
+				enabled = false
+			RUN:
+				if self.get_parent().get_parent().get_parent().battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
+					command.command_type = command.RUN
+					self.get_parent().get_parent().get_parent().battle_command = command
+					submit_command()
+					enabled = false
+					self.visible = false
 	
 func change_Sel_Hand_Pos():
 	match selected:
@@ -99,3 +111,5 @@ func change_Sel_Hand_Pos():
 			$Run/AnimationPlayer.play("Slide")
 	$SelHand/AudioStreamPlayer.stream = select_se_1
 	$SelHand/AudioStreamPlayer.play()
+func submit_command():
+	emit_signal("command_received")
