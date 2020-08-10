@@ -62,6 +62,16 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		action.battle_text = "Can't escape!"
 		queue.push(action)
 	
+	if player_command.command_type == player_command.BAG:
+		if player_command.item <= 208 && player_command.item >= 232 && battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD: # Item is a type of pokeball
+			# Capture wild pokemon
+			
+
+
+
+			pass
+		
+		
 	
 	var battler # The pokemon preforming the move
 	var battler_index # The index of the pokemon preforming the move

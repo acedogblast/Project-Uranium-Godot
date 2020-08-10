@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Node2D
 # Slots
 enum {S1, S2, S3, S4, S5, S6, CANCEL}
 # S1 S2  
@@ -36,7 +36,7 @@ func _input(event):
 					next_selection = S5
 				S4:
 					next_selection = S6
-				S6:
+				S6, S5:
 					next_selection = CANCEL
 		if event.is_action_pressed("ui_up") && (selection != S1 || selection != S2):
 			match selection:

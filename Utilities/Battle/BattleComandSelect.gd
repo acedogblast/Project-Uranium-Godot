@@ -50,18 +50,21 @@ func _input(event):
 			RUN:
 				if self.get_parent().get_parent().get_parent().battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
 					command.command_type = command.RUN
-					self.get_parent().get_parent().get_parent().battle_command = command
-					submit_command()
+					submit_command(command)
 					enabled = false
 					self.visible = false
-			BAG:
+			BAG: # For now just use normal pokeball
 				enabled = false
-				# Switch to bag menu
-				
+				if self.get_parent().get_parent().get_parent().battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
+					command.command_type = command.USE_BAG_ITEM
+					command.item = 211 # 211 is standard pokeball
+					submit_command(command)
+					enabled = false
+					self.visible = false
+					
 
 
 
-				pass
 	
 func change_Sel_Hand_Pos():
 	match selected:
@@ -119,5 +122,6 @@ func change_Sel_Hand_Pos():
 			$Run/AnimationPlayer.play("Slide")
 	$SelHand/AudioStreamPlayer.stream = select_se_1
 	$SelHand/AudioStreamPlayer.play()
-func submit_command():
+func submit_command(command):
+	self.get_parent().get_parent().get_parent().battle_command = command
 	emit_signal("command_received")

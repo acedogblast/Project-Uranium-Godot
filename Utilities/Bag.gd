@@ -68,9 +68,11 @@ func _process(delta):
 				print(selected_item[current])
 				pass
 			pass
-		elif Input.is_action_pressed("x"):
+		elif Input.is_action_just_pressed("x"):
 			enabled = false
 			emit_signal("close_bag")
+		elif Input.is_action_just_pressed("ui_accept"):
+			print(get_item_index())
 
 
 

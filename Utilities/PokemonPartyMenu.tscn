@@ -244,7 +244,7 @@ tracks/1/keys = {
 "values": [ Vector2( 60, 32 ), Vector2( 60, 38 ) ]
 }
 
-[node name="PokemonPartyMenu" type="CanvasLayer"]
+[node name="PokemonPartyMenu" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="Background" type="TextureRect" parent="."]

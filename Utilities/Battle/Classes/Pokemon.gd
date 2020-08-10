@@ -70,6 +70,9 @@ enum {MALE, FEMALE}
 # Is the pokemon a shiny
 var is_shiny = false
 
+# The pokemon's catch rate
+var catch_rate
+
 func generate_IV():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()

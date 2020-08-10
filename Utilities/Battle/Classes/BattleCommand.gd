@@ -8,3 +8,5 @@ var attack_move : String
 var switch_to_poke : Pokemon
 
 var attack_target : int
+
+var item : int # The item id of the item to be used
