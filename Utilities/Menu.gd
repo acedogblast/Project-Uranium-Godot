@@ -29,10 +29,12 @@ func _ready():
 	if(Engine.editor_hint):
 		# Special things when this is on editor mode
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
-	
+	$Bag.connect("close_bag", self, "close_bag")
+	$Bag.enabled = false
 	
 	current = ORDER.PARTY
 	init_pos = $Option_Text.rect_position
+
 	
 	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
 
@@ -53,15 +55,6 @@ func _input(event):
 				$AnimationPlayer.seek(0, true)
 				$AnimationPlayer.stop(true)
 				self.visible = false
-			2:
-				menu_stage = 1
-				$Transition.show()
-				$Transition.fade_to_color()
-				hide_all()
-				$Bag.hide()
-				show_base()
-				$Transition.fade_from_color()
-				pass
 				
 	if menu_stage == 1:
 		
@@ -99,9 +92,9 @@ func _input(event):
 					$Save_Menu.visible = false
 					$Yes_no.visible = false
 					menu_stage = 1
-			ORDER.BAG:
-				bag_logic()
-				pass
+			#ORDER.BAG:
+			#	bag_logic()
+			#	pass
 			ORDER.CARD:
 				$Transition.fade_to_color()
 				hide_all()
@@ -149,6 +142,8 @@ func select():
 		DialogueSystem.start_dialog("UI_MENU_SAVE_PROMPT")
 	elif current == ORDER.BAG && menu_stage == 1:
 		menu_stage = 2
+		$Bag.enabled = true
+		bag_logic()
 	elif current == ORDER.CARD && menu_stage == 1:
 		menu_stage = 2
 
@@ -271,3 +266,13 @@ func setup_save_boxes():
 	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
 	$Save_Menu/Info/Time/Count.bbcode_text = "[right][color=#0070f8]" + str(Global.time) + "[/color][/right]"
 	$Save_Menu/Info/Badges/Count.bbcode_text = "[right][color=#0070f8]" + str(Global.badges) + "[/color][/right]"
+
+func close_bag():
+	print("Closing bag")
+	$Transition.show()
+	$Transition.fade_to_color()
+	hide_all()
+	$Bag.hide()
+	show_base()
+	menu_stage = 1
+	$Transition.fade_from_color()

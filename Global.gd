@@ -18,7 +18,7 @@ var printFPS = false
 var sprint = false
 var game : Node
 
-var items = [
+var items = [ # The inventory of the player
 	[], # ITEMS
 	["Potion", 3], # MEDICINE
 	["Pokéball", 10, "Great Ball", 25], # BALLS

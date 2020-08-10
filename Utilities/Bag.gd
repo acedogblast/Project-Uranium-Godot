@@ -24,44 +24,54 @@ var selected_item = [
 	0 # key items
 ]
 
+var enabled = true
+signal close_bag
+
 func _ready():
 	ITEMS = Items_database.new()
 	update_data()
 	update_detail()
 
 func _process(delta):
-	if Input.is_action_just_pressed("ui_right"):
-		if current < OPTIONS.KEY_ITEMS:
-			current += 1
-		else:
-			current = OPTIONS.ITEMS
-		change_selected()
-		update_detail()
-		animate()
-	elif Input.is_action_just_pressed("ui_left"):
-		if current > OPTIONS.ITEMS:
-			current -= 1
-		else:
-			current = OPTIONS.KEY_ITEMS
-		change_selected()
-		update_detail()
-		animate()
-	elif Input.is_action_just_pressed("ui_down"):
-		if selected_item[current] + 1 <= $items.get_child(current + 1).get_child_count() - 1:
-			selected_item[current] += 1
-			change_item_selected("down")
+	if enabled:
+		if Input.is_action_just_pressed("ui_right"):
+			if current < OPTIONS.KEY_ITEMS:
+				current += 1
+			else:
+				current = OPTIONS.ITEMS
+			change_selected()
 			update_detail()
-			print(selected_item[current])
-			pass
-		pass
-	elif Input.is_action_just_pressed("ui_up"):
-		if selected_item[current] - 1 >= 0:
-			selected_item[current] -= 1
-			change_item_selected("up")
+			animate()
+		elif Input.is_action_just_pressed("ui_left"):
+			if current > OPTIONS.ITEMS:
+				current -= 1
+			else:
+				current = OPTIONS.KEY_ITEMS
+			change_selected()
 			update_detail()
-			print(selected_item[current])
+			animate()
+		elif Input.is_action_just_pressed("ui_down"):
+			#print("Down1")
+			if selected_item[current] + 1 <= $items.get_child(current + 1).get_child_count() - 1:
+				#print("Down2")
+				selected_item[current] += 1
+				change_item_selected("down")
+				update_detail()
+				print(selected_item[current])
+				pass
 			pass
-		pass
+		elif Input.is_action_just_pressed("ui_up"):
+			if selected_item[current] - 1 >= 0:
+				selected_item[current] -= 1
+				change_item_selected("up")
+				update_detail()
+				print(selected_item[current])
+				pass
+			pass
+		elif Input.is_action_pressed("x"):
+			enabled = false
+			emit_signal("close_bag")
+
 
 
 func get_item_index():

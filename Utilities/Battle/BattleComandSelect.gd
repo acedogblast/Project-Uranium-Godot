@@ -54,6 +54,14 @@ func _input(event):
 					submit_command()
 					enabled = false
 					self.visible = false
+			BAG:
+				enabled = false
+				# Switch to bag menu
+				
+
+
+
+				pass
 	
 func change_Sel_Hand_Pos():
 	match selected:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=2]
+[gd_scene load_steps=85 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -49,6 +49,7 @@
 [ext_resource path="res://Graphics/Pictures/pause.png" type="Texture" id=47]
 [ext_resource path="res://Utilities/Dialogue Box Arrow.tres" type="Animation" id=48]
 [ext_resource path="res://Graphics/Pictures/battlestatuses.PNG" type="Texture" id=49]
+[ext_resource path="res://Utilities/Bag.tscn" type="PackedScene" id=50]
 
 [sub_resource type="ShaderMaterial" id=1]
 
@@ -1176,7 +1177,6 @@ anims/PlayerTossToCenter = SubResource( 8 )
 anims/player_toss = SubResource( 9 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/BattleGrounds"]
-visible = false
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 0 )
@@ -1897,6 +1897,9 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Bag" parent="CanvasLayer/BattleInterfaceLayer" instance=ExtResource( 50 )]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 visible = false

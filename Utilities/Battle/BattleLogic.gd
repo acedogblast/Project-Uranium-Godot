@@ -3,7 +3,7 @@ class_name BattleLogic
 
 var turn_order = []
 var queue
-enum {B1, B2, B3, B4} # Used for turn order and indicating which poke in battle
+enum {B1 = 1, B2 = 2, B3 = 3, B4 = 4} # Used for turn order and indicating which poke in battle
 
 var battler1 : Pokemon # Player's pokemon
 var battler2 : Pokemon # Foe's pokemon
@@ -56,6 +56,12 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		action.run_away = true
 		queue.push(action)
 		return queue
+	if can_escape == false && player_command.command_type == player_command.RUN:
+		action = BattleQueueAction.new()
+		action.type = action.BATTLE_TEXT
+		action.battle_text = "Can't escape!"
+		queue.push(action)
+	
 	
 	var battler # The pokemon preforming the move
 	var battler_index # The index of the pokemon preforming the move
@@ -777,31 +783,35 @@ func set_major_ailment(index: int, ailment_code: int, turns: int = -1): # Sets t
 	var action = BattleQueueAction.new()
 	action.type = action.BATTLE_TEXT
 
-	match ailment_code:
-		MajorAilment.BURN:
-			action.battle_text = get_battler_title_by_index(index) + " is\nburnt!"
-		MajorAilment.FROZEN:
-			action.battle_text = get_battler_title_by_index(index) + " is\nfrozen solid!"
-		MajorAilment.POISON:
-			action.battle_text = get_battler_title_by_index(index) + " is\npoisoned!"
-		MajorAilment.SLEEP:
-			action.battle_text = get_battler_title_by_index(index) + " is\nfast asleep."
-		MajorAilment.PARALYSIS:
-			action.battle_text = get_battler_title_by_index(index) + " is\nparalyzed!"
-	queue.push(action)
+	if get_battler_by_index(index).major_ailment != null:
+		match ailment_code:
+			MajorAilment.BURN:
+				action.battle_text = get_battler_title_by_index(index) + " is\nburnt!"
+			MajorAilment.FROZEN:
+				action.battle_text = get_battler_title_by_index(index) + " is\nfrozen solid!"
+			MajorAilment.POISON:
+				action.battle_text = get_battler_title_by_index(index) + " is\npoisoned!"
+			MajorAilment.SLEEP:
+				action.battle_text = get_battler_title_by_index(index) + " is\nfast asleep."
+			MajorAilment.PARALYSIS:
+				action.battle_text = get_battler_title_by_index(index) + " is\nparalyzed!"
+		queue.push(action)
 
-	get_battler_by_index(index).major_ailment = ailment_code
-	if get_battler_by_index(index).major_ailment == MajorAilment.SLEEP:
-		var effect = BattleEffect.new()
-		effect.effect = BattleEffect.SLEEP_COUNTER
-		if turns == -1:
-			var rng = RandomNumberGenerator.new()
-			rng.randomize()
-			effect.sleep_count = rng.randi_range(1,3)
-		else:
-			effect.sleep_count = turns
-		get_effects_by_index(index).add(effect)
-	action = BattleQueueAction.new()
-	action.type = action.UPDATE_MAJOR_AILMENT
-	action.damage_target_index = index
-	queue.push(action)
+		get_battler_by_index(index).major_ailment = ailment_code
+		if get_battler_by_index(index).major_ailment == MajorAilment.SLEEP:
+			var effect = BattleEffect.new()
+			effect.effect = BattleEffect.SLEEP_COUNTER
+			if turns == -1:
+				var rng = RandomNumberGenerator.new()
+				rng.randomize()
+				effect.sleep_count = rng.randi_range(1,3)
+			else:
+				effect.sleep_count = turns
+			get_effects_by_index(index).add(effect)
+		action = BattleQueueAction.new()
+		action.type = action.UPDATE_MAJOR_AILMENT
+		action.damage_target_index = index
+		queue.push(action)
+	else:
+		action.battle_text = "But it failed."
+		queue.push(action)
