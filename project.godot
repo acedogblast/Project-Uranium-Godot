@@ -64,10 +64,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Utilities/Dialogue/Event.gd"
 }, {
-"base": "Node2D",
+"base": "Reference",
 "class": "Inventory",
 "language": "GDScript",
-"path": "res://Utilities/Bag.gd"
+"path": "res://Utilities/Items/Inventory.gd"
 }, {
 "base": "Reference",
 "class": "Item",
