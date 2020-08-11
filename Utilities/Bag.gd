@@ -23,6 +23,8 @@ var selected_item = [
 	0 # key items
 ]
 
+onready var inventory = Global.inventory
+
 var enabled = true
 signal close_bag
 
@@ -71,22 +73,8 @@ func _process(delta):
 			enabled = false
 			emit_signal("close_bag")
 		elif Input.is_action_just_pressed("ui_accept"):
-			print(get_item_index())
-
-
-func get_item_index():
-	
-	if Global.items[current][selected_item[current] + 1] - 1 == 0:
-		# remove item from the array
-		Global.items[current].remove(selected_item[current] + 1)
-		Global.items[current].remove(selected_item[current])
-		pass
-	else:
-		Global.items[current][selected_item[current] + 1] -= 1
-		pass
-	
-	return ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) - 1]
-	pass
+			#print(get_item_index())
+			pass
 
 
 func change_item_selected(dir):
@@ -248,12 +236,15 @@ func reset_frames():
 	pass
 
 func update_data():
+	
+	yield(Global, "setup_items")
 	# setup items
 	for c in $items/items.get_children():
 		$items/items.remove_child(c)
-	if !Global.items[0].empty():
+	if inventory.items.empty():
+		print(inventory.items)
 		var temp_current = 0
-		for i in Global.items[0]:
+		for i in Global.inventory.items:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
@@ -270,9 +261,9 @@ func update_data():
 	# setup medicine
 	for c in $items/medicine.get_children():
 		$items/medicine.remove_child(c)
-	if !Global.items[1].empty():
+	if inventory.medicine.empty():
 		var temp_current = 0
-		for i in Global.items[1]:
+		for i in inventory.medicine:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
@@ -289,9 +280,9 @@ func update_data():
 	# setup balls
 	for c in $items/balls.get_children():
 		$items/balls.remove_child(c)
-	if !Global.items[2].empty():
+	if inventory.balls.empty():
 		var temp_current = 0
-		for i in Global.items[2]:
+		for i in inventory.balls:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
@@ -308,9 +299,9 @@ func update_data():
 	# setup tms
 	for c in $items/tms.get_children():
 		$items/tms.remove_child(c)
-	if !Global.items[3].empty():
+	if inventory.TMs.empty():
 		var temp_current = 0
-		for i in Global.items[3]:
+		for i in inventory.TMs:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
@@ -327,9 +318,9 @@ func update_data():
 	# setup berries
 	for c in $items/berries.get_children():
 		$items/berries.remove_child(c)
-	if !Global.items[4].empty():
+	if inventory.berries.empty():
 		var temp_current = 0
-		for i in Global.items[4]:
+		for i in inventory.berries:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
@@ -346,9 +337,9 @@ func update_data():
 	# setup battle_items
 	for c in $items/battle_items.get_children():
 		$items/battle_items.remove_child(c)
-	if !Global.items[5].empty():
+	if inventory.battle_items.empty():
 		var temp_current = 0
-		for i in Global.items[5]:
+		for i in inventory.battle_items:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
@@ -365,9 +356,9 @@ func update_data():
 	# setup key_items
 	for c in $items/key_items.get_children():
 		$items/key_items.remove_child(c)
-	if !Global.items[6].empty():
+	if inventory.key_items.empty():
 		var temp_current = 0
-		for i in Global.items[6]:
+		for i in inventory.key_items:
 			if i is int:
 				continue
 			var base = $items/base_item_panel.duplicate()
@@ -382,12 +373,29 @@ func update_data():
 			temp_current += 1
 
 func update_detail():
-	var item_icon 
-	if !Global.items[current].empty():
-		item_icon = str(ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) - 1])
-		print(Global.items[current][selected_item[current] * 2])
-
-	
+	var item_icon
+	match current:
+		0:
+			if !inventory.items.empty():
+				item_icon = inventory.items[selected_item[current]].get_item_id()
+		1:
+			if !inventory.medicine.empty():
+				item_icon = inventory.medicine[selected_item[current]].get_item_id()
+		2:
+			if !inventory.balls.empty():
+				item_icon = inventory.balls[selected_item[current]].get_item_id()
+		3:
+			if !inventory.TMs.empty():
+				item_icon = inventory.TMs[selected_item[current]].get_item_id()
+		4:
+			if !inventory.berries.empty():
+				item_icon = inventory.berries[selected_item[current]].get_item_id()
+		5:
+			if !inventory.battle_items.empty():
+				item_icon = inventory.battle_items[selected_item[current]].get_item_id()
+		6:
+			if !inventory.key_items.empty():
+				item_icon = inventory.key_items[selected_item[current]].get_item_id()
 	
 	match current:
 		OPTIONS.ITEMS:
@@ -397,16 +405,16 @@ func update_detail():
 			$Details/text.text = ""
 			pass
 		OPTIONS.MEDICINE:
-			$Details/icon.texture = load("res://Graphics/Icons/item" + item_icon + ".png")
-			$Details/name.text = Global.items[1][0]
-			$Details/quantity.text = str("x ", Global.items[current][selected_item[current] * 2 + 1])
-			$Details/text.text = ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) + 1]
+			$Details/icon.texture = load("res://Graphics/Icons/item" + str(item_icon) + ".png")
+			$Details/name.text = inventory.medicine[selected_item[current]].get_name()
+			$Details/quantity.text = str("x ", inventory.medicine[selected_item[current]].get_item_quantity())
+			$Details/text.text = inventory.medicine[selected_item[current]].get_description()
 			
 		OPTIONS.BALLS:
-			$Details/icon.texture = load("res://Graphics/Icons/item" + item_icon + ".png")
-			$Details/name.text = Global.items[2][0]
-			$Details/quantity.text = str("x ", Global.items[current][selected_item[current] * 2 + 1])
-			$Details/text.text = ITEMS.item_list[ITEMS.item_list.find(Global.items[current][selected_item[current] * 2]) + 1]
+			$Details/icon.texture = load("res://Graphics/Icons/item" + str(item_icon) + ".png")
+			$Details/name.text = inventory.balls[selected_item[current]].get_name()
+			$Details/quantity.text = str("x ", inventory.balls[selected_item[current]].get_item_quantity())
+			$Details/text.text = inventory.balls[selected_item[current]].get_description()
 			
 			pass
 		OPTIONS.TMs:

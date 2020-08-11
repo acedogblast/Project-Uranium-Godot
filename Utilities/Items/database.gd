@@ -34,3 +34,7 @@ func get_item_by_name(_name: String):
 	var item = get_item_by_id(id)
 	item.id = id
 	return item
+
+func get_description_by_name(_name : String):
+	var item = get_item_by_name(_name)
+	return item.description
