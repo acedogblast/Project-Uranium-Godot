@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=2]
+[gd_scene load_steps=91 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -54,6 +54,7 @@
 [ext_resource path="res://Graphics/Pictures/BATTLE/battleBagChoices.png" type="Texture" id=52]
 [ext_resource path="res://Graphics/Pictures/BATTLE/battleBackButtons.png" type="Texture" id=53]
 [ext_resource path="res://Graphics/Pictures/BATTLE/battleBagLast.png" type="Texture" id=54]
+[ext_resource path="res://Utilities/Battle/BattleBag.gd" type="Script" id=55]
 
 [sub_resource type="ShaderMaterial" id=1]
 
@@ -1959,9 +1960,11 @@ __meta__ = {
 [node name="PokemonPartyMenu" parent="CanvasLayer/BattleInterfaceLayer" instance=ExtResource( 51 )]
 visible = false
 
-[node name="Bag" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+[node name="BattleBag" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+script = ExtResource( 55 )
 
-[node name="BG" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/Bag"]
+[node name="BG" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 50 )
@@ -1969,44 +1972,47 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/Bag"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 anims/SlideBag = SubResource( 35 )
 
-[node name="Left" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/Bag"]
+[node name="Left" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
+position = Vector2( -250, 0 )
 
-[node name="Medicine" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/Bag/Left"]
+[node name="Medicine" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Left"]
 position = Vector2( 132, 78 )
 texture = ExtResource( 52 )
 hframes = 6
 
-[node name="Berries" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/Bag/Left"]
+[node name="Berries" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Left"]
 position = Vector2( 132, 205 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 2
 
-[node name="Right" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/Bag"]
+[node name="Right" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
+position = Vector2( 250, 0 )
 
-[node name="PokeBalls" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/Bag/Right"]
+[node name="PokeBalls" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Right"]
 position = Vector2( 385, 125 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 1
 
-[node name="BattleItems" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/Bag/Right"]
+[node name="BattleItems" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Right"]
 position = Vector2( 385, 250 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 3
 
-[node name="Bottom" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/Bag"]
+[node name="Bottom" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
+position = Vector2( 0, 100 )
 
-[node name="Back" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/Bag/Bottom"]
+[node name="Back" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom"]
 position = Vector2( 430, 340 )
 texture = ExtResource( 53 )
 hframes = 3
 
-[node name="Last" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/Bag/Bottom"]
+[node name="Last" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom"]
 position = Vector2( 196, 342 )
 texture = ExtResource( 54 )
 hframes = 3

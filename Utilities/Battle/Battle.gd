@@ -37,7 +37,7 @@ func _ready():
 	$CanvasLayer/BattleInterfaceLayer/BattleAttackSelect.visible = false
 	$CanvasLayer/ColorRect.visible = false
 	$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
-	$CanvasLayer/BattleInterfaceLayer/Bag.visible = false
+	$CanvasLayer/BattleInterfaceLayer/BattleBag.visible = false
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	
 	# Check if we are testing

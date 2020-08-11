@@ -4,8 +4,13 @@ var enabled = false
 enum {ATTACK, BAG, POKE, RUN}
 var selected = ATTACK
 
+var battle_node
+var battle_attack_select_node
+var battle_bag_node
+
 onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
 onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
+onready var select_se_3 = load("res://Audio/SE/SE_Select3.wav")
 
 const ATTACK_POS = Vector2(76, 50)
 const BAG_POS = Vector2(195, 50)
@@ -15,6 +20,9 @@ const RUN_POS = Vector2(435, 50)
 signal command_received
 
 func _ready():
+	battle_node = self.get_parent().get_parent().get_parent()
+	battle_attack_select_node = self.get_parent().get_node("BattleAttackSelect")
+	battle_bag_node = self.get_parent().get_node("BattleBag")
 	get_parent().get_node("BattleAttackSelect").connect("command_received", self, "submit_command")
 func start(name):
 	$SelHand/AnimationPlayer.play("Squeez")
@@ -41,21 +49,27 @@ func _input(event):
 			ATTACK:
 				$SelHand/AudioStreamPlayer.stream = select_se_2
 				$SelHand/AudioStreamPlayer.play()
-				var battle_attack_select = self.get_parent().get_node("BattleAttackSelect")
-				battle_attack_select.start(self.get_parent().get_parent().get_parent().battler1)
+				battle_attack_select_node.start(battle_node.battler1)
 				self.visible = false
-				battle_attack_select.position = Vector2(0, 286)
-				battle_attack_select.visible = true
+				battle_attack_select_node.position = Vector2(0, 286)
+				battle_attack_select_node.visible = true
 				enabled = false
 			RUN:
-				if self.get_parent().get_parent().get_parent().battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
+				if battle_node.battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
 					command.command_type = command.RUN
 					submit_command(command)
 					enabled = false
 					self.visible = false
-			BAG: # For now just use normal pokeball
+			BAG:
 				enabled = false
-				if self.get_parent().get_parent().get_parent().battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
+				self.visible = false
+				battle_bag_node.call_deferred("start")
+				#yield(battle_bag_node, "")
+
+
+
+
+				if battle_node.battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
 					command.command_type = command.USE_BAG_ITEM
 					command.item = 211 # 211 is standard pokeball
 					submit_command(command)

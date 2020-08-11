@@ -1,5 +1,5 @@
 extends Node2D
-class_name Inventory
+#class_name Inventory
 
 var ITEMS
 

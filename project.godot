@@ -70,6 +70,16 @@ _global_script_classes=[ {
 "path": "res://Utilities/Bag.gd"
 }, {
 "base": "Reference",
+"class": "Item",
+"language": "GDScript",
+"path": "res://Utilities/Items/Item.gd"
+}, {
+"base": "Reference",
+"class": "ItemStack",
+"language": "GDScript",
+"path": "res://Utilities/Items/ItemStack.gd"
+}, {
+"base": "Reference",
 "class": "Items_database",
 "language": "GDScript",
 "path": "res://Utilities/Items/database.gd"
@@ -172,6 +182,8 @@ _global_script_class_icons={
 "BattleStatStage": "",
 "DialogueEvent": "",
 "Inventory": "",
+"Item": "",
+"ItemStack": "",
 "Items_database": "",
 "LevelUpChanges": "",
 "MajorAilment": "",

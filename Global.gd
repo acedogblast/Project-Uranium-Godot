@@ -18,15 +18,21 @@ var printFPS = false
 var sprint = false
 var game : Node
 
-var items = [ # The inventory of the player
-	[], # ITEMS
-	["Potion", 3], # MEDICINE
-	["Pokéball", 10, "Great Ball", 25], # BALLS
-	[], # TMs
-	[], # BERRIES
-	[], # BATTLE_ITEMS
-	[], # KEY_ITEMS
-]
+#var items = [ # The inventory of the player
+#	[], # ITEM
+#	[ # MEDICINE
+#		ItemStack.new(Items_database.get_id_by_name("Potion"), 3)
+#	],
+#	[ # BALLS
+#		ItemStack.new(Items_database.get_id_by_name("Pokéball"), 10),
+#		ItemStack.new(Items_database.get_id_by_name("Great Ball"), 25)
+#	],
+#	[], # TMs
+#	[], # BERRIES
+#	[], # BATTLE_ITEMS
+#	[], # KEY_ITEMS
+#]
+var inventory : Inventory
 
 var can_run = false
 
@@ -43,6 +49,13 @@ var theo_starter # 1 = Orchynx, 2 = Electux
 func _ready():
 	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+
+	# Fill inventory for testing
+
+	inventory.add_item_by_name_multiple("Potion", 3)
+	inventory.add_item_by_name_multiple("Pokéball", 10)
+	inventory.add_item_by_name_multiple("Great Ball", 25)
+	
 
 func _process(_delta):
 	if Input.is_action_just_pressed("toggle_fullscreen"):
@@ -63,7 +76,8 @@ func save_state():
 		"can_run": can_run,
 		"pokemon_group": pokemon_group,
 		"past_events": past_events,
-		"items": items
+		"inventory": inventory
+		#"items": items
 	}
 	SaveSystem.set_state(filename, state)
 func load_state():
@@ -78,8 +92,10 @@ func load_state():
 		pokemon_group = state["pokemon_group"]
 		past_events = state["past_events"]
 
-		if state.has("items"):
-			items = state["items"]
+		#if state.has("items"):
+		#	items = state["items"]
+		if state.has("inventory"):
+			inventory = state["inventory"]
 func heal_party(): # Heals all of the player's pokemon party.
 	for poke in pokemon_group:
 		poke.heal()
