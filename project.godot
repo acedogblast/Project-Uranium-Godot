@@ -70,6 +70,11 @@ _global_script_classes=[ {
 "path": "res://Utilities/Items/Item.gd"
 }, {
 "base": "Object",
+"class": "ItemStack",
+"language": "GDScript",
+"path": "res://Utilities/Items/ItemStack.gd"
+}, {
+"base": "Object",
 "class": "LevelUpChanges",
 "language": "GDScript",
 "path": "res://Utilities/Battle/Classes/LevelUpChanges.gd"
@@ -167,6 +172,7 @@ _global_script_class_icons={
 "BattleStatStage": "",
 "DialogueEvent": "",
 "Item": "",
+"ItemStack": "",
 "LevelUpChanges": "",
 "MajorAilment": "",
 "Move": "",

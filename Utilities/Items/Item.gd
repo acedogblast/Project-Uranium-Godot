@@ -3,7 +3,7 @@ class_name Item
 
 var name : String           # Name of Item
 var id : int                # ID of Item
-var pocket                  # Which pocket the Item belongs to.
+var pocket : int            # Which pocket the Item belongs to.
 var description : String    # Description of Item
 
 func _init(_name : String, _description : String, _pocket ):

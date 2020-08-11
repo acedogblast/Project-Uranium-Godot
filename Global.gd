@@ -18,20 +18,6 @@ var printFPS = false
 var sprint = false
 var game : Node
 
-#var items = [ # The inventory of the player
-#	[], # ITEM
-#	[ # MEDICINE
-#		ItemStack.new(Items_database.get_id_by_name("Potion"), 3)
-#	],
-#	[ # BALLS
-#		ItemStack.new(Items_database.get_id_by_name("Pokéball"), 10),
-#		ItemStack.new(Items_database.get_id_by_name("Great Ball"), 25)
-#	],
-#	[], # TMs
-#	[], # BERRIES
-#	[], # BATTLE_ITEMS
-#	[], # KEY_ITEMS
-#]
 var inventory
 
 var can_run = false
@@ -51,11 +37,10 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 	# Fill inventory for testing
-	#inventory = load("res://Utilities/Items/Inventory.gd").new()
-
-	#inventory.add_item_by_name_multiple("Potion", 3)
-	#inventory.add_item_by_name_multiple("Pokéball", 10)
-	#inventory.add_item_by_name_multiple("Great Ball", 25)
+	inventory = load("res://Utilities/Items/Inventory.gd").new()
+	inventory.add_item_by_name_multiple("Potion", 1)
+	inventory.add_item_by_name_multiple("Pokéball", 10)
+	inventory.add_item_by_name_multiple("Great Ball", 25)
 	
 
 func _process(_delta):

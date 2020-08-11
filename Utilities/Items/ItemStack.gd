@@ -1,14 +1,15 @@
 extends Object
-#class_name ItemStack
+class_name ItemStack
 
 var item : Item
 var quantity : int
-var pocket
+var pocket : int
 
 func _init(item_id : int, amount : int):
-    item = Items_database.get_item_by_id(item_id)
+    item = load("res://Utilities/Items/database.gd").new().get_item_by_id(item_id)
     item.id = item_id
     quantity = amount
+    pocket = item.pocket
 
 
 func get_name() -> String: # Returns the name of the Item
