@@ -1,4 +1,5 @@
-class_name ItemStack
+extends Object
+#class_name ItemStack
 
 var item : Item
 var quantity : int

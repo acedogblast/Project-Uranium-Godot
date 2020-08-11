@@ -1,3 +1,4 @@
+extends Object
 class_name Item
 
 var name : String           # Name of Item

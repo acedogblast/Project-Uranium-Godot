@@ -32,7 +32,7 @@ var game : Node
 #	[], # BATTLE_ITEMS
 #	[], # KEY_ITEMS
 #]
-var inventory : Inventory
+var inventory
 
 var can_run = false
 
@@ -51,10 +51,11 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 	# Fill inventory for testing
+	#inventory = load("res://Utilities/Items/Inventory.gd").new()
 
-	inventory.add_item_by_name_multiple("Potion", 3)
-	inventory.add_item_by_name_multiple("Pokéball", 10)
-	inventory.add_item_by_name_multiple("Great Ball", 25)
+	#inventory.add_item_by_name_multiple("Potion", 3)
+	#inventory.add_item_by_name_multiple("Pokéball", 10)
+	#inventory.add_item_by_name_multiple("Great Ball", 25)
 	
 
 func _process(_delta):

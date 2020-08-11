@@ -29,8 +29,8 @@ func _ready():
 	if(Engine.editor_hint):
 		# Special things when this is on editor mode
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
-	$Bag.connect("close_bag", self, "close_bag")
-	$Bag.enabled = false
+	#$Bag.connect("close_bag", self, "close_bag")
+	#$Bag.enabled = false
 	
 	current = ORDER.PARTY
 	init_pos = $Option_Text.rect_position

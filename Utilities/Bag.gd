@@ -1,5 +1,4 @@
 extends Node2D
-#class_name Inventory
 
 var ITEMS
 
@@ -28,7 +27,7 @@ var enabled = true
 signal close_bag
 
 func _ready():
-	ITEMS = Items_database.new()
+	ITEMS = load("res://Utilities/Items/database.gd").new()
 	update_data()
 	update_detail()
 
@@ -73,7 +72,6 @@ func _process(delta):
 			emit_signal("close_bag")
 		elif Input.is_action_just_pressed("ui_accept"):
 			print(get_item_index())
-
 
 
 func get_item_index():
