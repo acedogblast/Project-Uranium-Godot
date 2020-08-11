@@ -29,7 +29,7 @@ var enabled = true
 signal close_bag
 
 func _ready():
-	ITEMS = load("res://Utilities/Items/database.gd").new()
+	yield(Global, "setup_items")
 	update_data()
 	update_detail()
 
@@ -237,12 +237,11 @@ func reset_frames():
 
 func update_data():
 	
-	yield(Global, "setup_items")
+	print("recieved")
 	# setup items
 	for c in $items/items.get_children():
 		$items/items.remove_child(c)
-	if inventory.items.empty():
-		print(inventory.items)
+	if !inventory.items.empty():
 		var temp_current = 0
 		for i in Global.inventory.items:
 			if i is int:
@@ -261,7 +260,7 @@ func update_data():
 	# setup medicine
 	for c in $items/medicine.get_children():
 		$items/medicine.remove_child(c)
-	if inventory.medicine.empty():
+	if !inventory.medicine.empty():
 		var temp_current = 0
 		for i in inventory.medicine:
 			if i is int:
@@ -280,7 +279,7 @@ func update_data():
 	# setup balls
 	for c in $items/balls.get_children():
 		$items/balls.remove_child(c)
-	if inventory.balls.empty():
+	if !inventory.balls.empty():
 		var temp_current = 0
 		for i in inventory.balls:
 			if i is int:
@@ -299,7 +298,7 @@ func update_data():
 	# setup tms
 	for c in $items/tms.get_children():
 		$items/tms.remove_child(c)
-	if inventory.TMs.empty():
+	if !inventory.TMs.empty():
 		var temp_current = 0
 		for i in inventory.TMs:
 			if i is int:
@@ -318,7 +317,7 @@ func update_data():
 	# setup berries
 	for c in $items/berries.get_children():
 		$items/berries.remove_child(c)
-	if inventory.berries.empty():
+	if !inventory.berries.empty():
 		var temp_current = 0
 		for i in inventory.berries:
 			if i is int:
@@ -337,7 +336,7 @@ func update_data():
 	# setup battle_items
 	for c in $items/battle_items.get_children():
 		$items/battle_items.remove_child(c)
-	if inventory.battle_items.empty():
+	if !inventory.battle_items.empty():
 		var temp_current = 0
 		for i in inventory.battle_items:
 			if i is int:
@@ -356,7 +355,7 @@ func update_data():
 	# setup key_items
 	for c in $items/key_items.get_children():
 		$items/key_items.remove_child(c)
-	if inventory.key_items.empty():
+	if !inventory.key_items.empty():
 		var temp_current = 0
 		for i in inventory.key_items:
 			if i is int:

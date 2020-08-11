@@ -45,6 +45,7 @@ func _ready():
 	inventory.add_item_by_name_multiple("Great Ball", 25)
 	
 	emit_signal("setup_items")
+	print("emitted")
 	
 
 func _process(_delta):

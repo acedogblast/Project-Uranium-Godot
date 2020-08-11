@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Utilities/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Pictures/MENU/menubg.png" type="Texture" id=2]
@@ -21,7 +21,6 @@
 [ext_resource path="res://Audio/SE/SE_Zoom2.wav" type="AudioStream" id=19]
 [ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=20]
 [ext_resource path="res://Audio/SE/save.wav" type="AudioStream" id=21]
-[ext_resource path="res://Utilities/Bag.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Utilities/Transition.tscn" type="PackedScene" id=34]
 [ext_resource path="res://Graphics/Pictures/trcard.PNG" type="Texture" id=36]
 [ext_resource path="res://Graphics/Pictures/trcardbg.png" type="Texture" id=37]
@@ -977,9 +976,6 @@ text = "Font Style"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Bag" parent="." instance=ExtResource( 22 )]
-visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Open Menu" = SubResource( 8 )
