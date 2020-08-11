@@ -92,9 +92,9 @@ func _input(event):
 					$Save_Menu.visible = false
 					$Yes_no.visible = false
 					menu_stage = 1
-			#ORDER.BAG:
-			#	bag_logic()
-			#	pass
+			ORDER.BAG:
+				bag_logic()
+				pass
 			ORDER.CARD:
 				$Transition.fade_to_color()
 				hide_all()

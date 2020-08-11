@@ -32,6 +32,8 @@ var load_game_from_id # Used on loading a save
 
 var theo_starter # 1 = Orchynx, 2 = Electux
 
+signal setup_items
+
 func _ready():
 	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
@@ -41,6 +43,8 @@ func _ready():
 	inventory.add_item_by_name_multiple("Potion", 1)
 	inventory.add_item_by_name_multiple("Pokéball", 10)
 	inventory.add_item_by_name_multiple("Great Ball", 25)
+	
+	emit_signal("setup_items")
 	
 
 func _process(_delta):
