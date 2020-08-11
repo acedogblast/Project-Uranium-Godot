@@ -29,7 +29,6 @@ var enabled = true
 signal close_bag
 
 func _ready():
-	yield(Global, "setup_items")
 	update_data()
 	update_detail()
 
@@ -237,17 +236,14 @@ func reset_frames():
 
 func update_data():
 	
-	print("recieved")
 	# setup items
 	for c in $items/items.get_children():
 		$items/items.remove_child(c)
-	if !inventory.items.empty():
+	if !Global.inventory.items.empty():
 		var temp_current = 0
 		for i in Global.inventory.items:
-			if i is int:
-				continue
 			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i
+			base.get_child(1).bbcode_text = i.get_name()
 			base.position.y += temp_current * 48
 			if temp_current == 0:
 				base.get_child(0).frame = 1
@@ -260,13 +256,11 @@ func update_data():
 	# setup medicine
 	for c in $items/medicine.get_children():
 		$items/medicine.remove_child(c)
-	if !inventory.medicine.empty():
+	if !Global.inventory.medicine.empty():
 		var temp_current = 0
-		for i in inventory.medicine:
-			if i is int:
-				continue
+		for i in Global.inventory.medicine:
 			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i
+			base.get_child(1).bbcode_text = i.get_name()
 			base.position.y += temp_current * 48
 			if temp_current == 0:
 				base.get_child(0).frame = 1
@@ -279,13 +273,11 @@ func update_data():
 	# setup balls
 	for c in $items/balls.get_children():
 		$items/balls.remove_child(c)
-	if !inventory.balls.empty():
+	if !Global.inventory.balls.empty():
 		var temp_current = 0
-		for i in inventory.balls:
-			if i is int:
-				continue
+		for i in Global.inventory.balls:
 			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i
+			base.get_child(1).bbcode_text = i.get_name()
 			base.position.y += temp_current * 48
 			if temp_current == 0:
 				base.get_child(0).frame = 1
@@ -298,13 +290,11 @@ func update_data():
 	# setup tms
 	for c in $items/tms.get_children():
 		$items/tms.remove_child(c)
-	if !inventory.TMs.empty():
+	if Global.inventory.TMs.empty():
 		var temp_current = 0
-		for i in inventory.TMs:
-			if i is int:
-				continue
+		for i in Global.inventory.TMs:
 			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i
+			base.get_child(1).bbcode_text = i.get_name()
 			base.position.y += temp_current * 48
 			if temp_current == 0:
 				base.get_child(0).frame = 1
@@ -317,13 +307,11 @@ func update_data():
 	# setup berries
 	for c in $items/berries.get_children():
 		$items/berries.remove_child(c)
-	if !inventory.berries.empty():
+	if Global.inventory.berries.empty():
 		var temp_current = 0
-		for i in inventory.berries:
-			if i is int:
-				continue
+		for i in Global.inventory.berries:
 			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i
+			base.get_child(1).bbcode_text = i.get_name()
 			base.position.y += temp_current * 48
 			if temp_current == 0:
 				base.get_child(0).frame = 1
@@ -336,13 +324,11 @@ func update_data():
 	# setup battle_items
 	for c in $items/battle_items.get_children():
 		$items/battle_items.remove_child(c)
-	if !inventory.battle_items.empty():
+	if Global.inventory.battle_items.empty():
 		var temp_current = 0
-		for i in inventory.battle_items:
-			if i is int:
-				continue
+		for i in Global.inventory.battle_items:
 			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i
+			base.get_child(1).bbcode_text = i.get_name()
 			base.position.y += temp_current * 48
 			if temp_current == 0:
 				base.get_child(0).frame = 1
@@ -355,13 +341,11 @@ func update_data():
 	# setup key_items
 	for c in $items/key_items.get_children():
 		$items/key_items.remove_child(c)
-	if !inventory.key_items.empty():
+	if Global.inventory.key_items.empty():
 		var temp_current = 0
-		for i in inventory.key_items:
-			if i is int:
-				continue
+		for i in Global.inventory.key_items:
 			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i
+			base.get_child(1).bbcode_text = i.get_name()
 			base.position.y += temp_current * 48
 			if temp_current == 0:
 				base.get_child(0).frame = 1
@@ -375,26 +359,26 @@ func update_detail():
 	var item_icon
 	match current:
 		0:
-			if !inventory.items.empty():
-				item_icon = inventory.items[selected_item[current]].get_item_id()
+			if !Global.inventory.items.empty():
+				item_icon = Global.inventory.items[selected_item[current]].get_item_id()
 		1:
-			if !inventory.medicine.empty():
-				item_icon = inventory.medicine[selected_item[current]].get_item_id()
+			if !Global.inventory.medicine.empty():
+				item_icon = Global.inventory.medicine[selected_item[current]].get_item_id()
 		2:
-			if !inventory.balls.empty():
-				item_icon = inventory.balls[selected_item[current]].get_item_id()
+			if !Global.inventory.balls.empty():
+				item_icon = Global.inventory.balls[selected_item[current]].get_item_id()
 		3:
-			if !inventory.TMs.empty():
-				item_icon = inventory.TMs[selected_item[current]].get_item_id()
+			if !Global.inventory.TMs.empty():
+				item_icon = Global.inventory.TMs[selected_item[current]].get_item_id()
 		4:
-			if !inventory.berries.empty():
-				item_icon = inventory.berries[selected_item[current]].get_item_id()
+			if !Global.inventory.berries.empty():
+				item_icon = Global.inventory.berries[selected_item[current]].get_item_id()
 		5:
-			if !inventory.battle_items.empty():
-				item_icon = inventory.battle_items[selected_item[current]].get_item_id()
+			if !Global.inventory.battle_items.empty():
+				item_icon = Global.inventory.battle_items[selected_item[current]].get_item_id()
 		6:
-			if !inventory.key_items.empty():
-				item_icon = inventory.key_items[selected_item[current]].get_item_id()
+			if !Global.inventory.key_items.empty():
+				item_icon = Global.inventory.key_items[selected_item[current]].get_item_id()
 	
 	match current:
 		OPTIONS.ITEMS:
@@ -405,15 +389,15 @@ func update_detail():
 			pass
 		OPTIONS.MEDICINE:
 			$Details/icon.texture = load("res://Graphics/Icons/item" + str(item_icon) + ".png")
-			$Details/name.text = inventory.medicine[selected_item[current]].get_name()
-			$Details/quantity.text = str("x ", inventory.medicine[selected_item[current]].get_item_quantity())
-			$Details/text.text = inventory.medicine[selected_item[current]].get_description()
+			$Details/name.text = Global.inventory.medicine[selected_item[current]].get_name()
+			$Details/quantity.text = str("x ", Global.inventory.medicine[selected_item[current]].get_item_quantity())
+			$Details/text.text = Global.inventory.medicine[selected_item[current]].get_description()
 			
 		OPTIONS.BALLS:
 			$Details/icon.texture = load("res://Graphics/Icons/item" + str(item_icon) + ".png")
-			$Details/name.text = inventory.balls[selected_item[current]].get_name()
-			$Details/quantity.text = str("x ", inventory.balls[selected_item[current]].get_item_quantity())
-			$Details/text.text = inventory.balls[selected_item[current]].get_description()
+			$Details/name.text = Global.inventory.balls[selected_item[current]].get_name()
+			$Details/quantity.text = str("x ", Global.inventory.balls[selected_item[current]].get_item_quantity())
+			$Details/text.text = Global.inventory.balls[selected_item[current]].get_description()
 			
 			pass
 		OPTIONS.TMs:

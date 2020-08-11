@@ -29,8 +29,6 @@ func _ready():
 	if(Engine.editor_hint):
 		# Special things when this is on editor mode
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
-	add_child(load("res://Utilities/Bag.tscn").instance())
-	get_child(get_child_count() - 1).visible = false
 	
 	#$Bag.connect("close_bag", self, "close_bag")
 	#$Bag.enabled = false
