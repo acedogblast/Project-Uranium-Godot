@@ -71,6 +71,7 @@ func Start_Battle(bid : BattleInstanceData):
 	battler1 = Global.pokemon_group[0]
 	battler2 = battle_instance.opponent.pokemon_group[0]
 	battle_logic = load("res://Utilities/Battle/BattleLogic.gd").new(battler1, battler2 , battle_instance)
+
 	
 	if battle_debug:
 		battle_logic.battle_debug = true
@@ -226,6 +227,8 @@ func test():
 	poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(3,5)
 	poke.experience += 75
+
+	print(poke.current_hp)
 	Global.pokemon_group.append(poke)
 	Global.TrainerGender = 0
 	
