@@ -227,8 +227,6 @@ func test():
 	poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(3,5)
 	poke.experience += 75
-
-	print(poke.current_hp)
 	Global.pokemon_group.append(poke)
 	Global.TrainerGender = 0
 	

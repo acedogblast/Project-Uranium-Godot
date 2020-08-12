@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="42" height="57" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
- <tileset firstgid="1" source="../Tilesets/PU_groundtiles+.tsx"/>
- <tileset firstgid="1537" source="../Tilesets/PU_buildings+.tsx"/>
- <tileset firstgid="4929" source="../Tilesets/PU_anim_tiles.tsx"/>
- <tileset firstgid="4993" source="../Tilesets/PU_autotiles.tsx"/>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="42" height="57" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
+ <tileset firstgid="1" source="../tilesets/PU_groundtiles+.tsx"/>
+ <tileset firstgid="1537" source="../tilesets/PU_buildings+.tsx"/>
+ <tileset firstgid="4929" source="../tilesets/PU_anim_tiles.tsx"/>
+ <tileset firstgid="4993" source="../tilesets/PU_autotiles.tsx"/>
  <layer id="1" name="Tile Layer 1" width="42" height="57">
   <data encoding="csv">
 255,255,255,255,255,255,255,255,255,255,255,255,255,255,156,154,4,4,4,4,4,4,153,155,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,

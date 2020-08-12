@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
- <tileset firstgid="1" source="../Tilesets/PU_groundtiles+.tsx"/>
- <tileset firstgid="1537" source="../Tilesets/PU_buildings+.tsx"/>
- <tileset firstgid="4929" source="../Tilesets/PU_watertiles+.tsx"/>
- <tileset firstgid="7665" source="../Tilesets/PU_anim_tiles.tsx"/>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="1">
+ <tileset firstgid="1" source="../tilesets/PU_groundtiles+.tsx"/>
+ <tileset firstgid="1537" source="../tilesets/PU_buildings+.tsx"/>
+ <tileset firstgid="4929" source="../tilesets/PU_watertiles+.tsx"/>
+ <tileset firstgid="7665" source="../tilesets/PU_anim_tiles.tsx"/>
  <layer id="5" name="Tile Layer 1" width="50" height="50">
   <data encoding="csv">
 58,58,58,58,58,58,58,58,349,58,58,58,58,58,58,58,58,58,350,58,58,58,58,58,58,156,154,35,35,2,2,4,225,226,227,4,4,41,2,153,155,58,58,58,58,58,58,58,58,58,

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="79" height="53" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
- <tileset firstgid="1" source="../Tilesets/PU_groundtiles+.tsx"/>
- <tileset firstgid="1537" source="../Tilesets/PU_buildings+.tsx"/>
- <tileset firstgid="4929" source="../Tilesets/PU_autotiles.tsx"/>
- <tileset firstgid="6465" source="../Tilesets/PU_anim_tiles.tsx"/>
- <tileset firstgid="6529" source="../Tilesets/PU_watertiles+.tsx"/>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="79" height="53" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
+ <tileset firstgid="1" source="../tilesets/PU_groundtiles+.tsx"/>
+ <tileset firstgid="1537" source="../tilesets/PU_buildings+.tsx"/>
+ <tileset firstgid="4929" source="../tilesets/PU_autotiles.tsx"/>
+ <tileset firstgid="6465" source="../tilesets/PU_anim_tiles.tsx"/>
+ <tileset firstgid="6529" source="../tilesets/PU_watertiles+.tsx"/>
  <layer id="1" name="Tile Layer 1" width="79" height="53">
   <data encoding="csv">
 38,39,38,39,4,4,4,4,4,4,41,4,4,4,4,4,4,4,4,4,4,4,41,4,4,4,4,38,39,247,4,4,185,90,90,90,90,53,187,90,90,90,188,58,58,58,58,58,58,187,90,90,90,90,90,90,90,90,188,154,4,41,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
