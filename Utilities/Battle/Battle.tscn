@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=2]
+[gd_scene load_steps=97 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -56,6 +56,7 @@
 [ext_resource path="res://Graphics/Pictures/BATTLE/battleBagLast.png" type="Texture" id=54]
 [ext_resource path="res://Utilities/Battle/BattleBag.gd" type="Script" id=55]
 [ext_resource path="res://Graphics/Pictures/BATTLE/battleLastItem.png" type="Texture" id=56]
+[ext_resource path="res://Graphics/Icons/item172.png" type="Texture" id=57]
 
 [sub_resource type="ShaderMaterial" id=1]
 
@@ -808,7 +809,7 @@ tracks/2/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=16]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_position")
@@ -823,7 +824,7 @@ tracks/0/keys = {
 "values": [ Vector2( 539, 200 ), Vector2( 295, 200 ) ]
 }
 
-[sub_resource type="DynamicFont" id=16]
+[sub_resource type="DynamicFont" id=17]
 size = 26
 outline_color = Color( 0, 0, 0, 1 )
 extra_spacing_bottom = 15
@@ -1093,12 +1094,106 @@ tracks/3/keys = {
 "update": 0,
 "values": [ Vector2( 0, 100 ), Vector2( 0, 0 ) ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Bottom/Last:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 196, 342 ), Vector2( 196, 342 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "SlideToMenu"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Left:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -512, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Right:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -512, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Bottom/Last:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 196, 342 ), Vector2( 196, 432 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("BagMenu/Pocket:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, false ]
+}
 
 [sub_resource type="StreamTexture" id=36]
 load_path = "res://.import/battleBackButtons.png-a87d40f84dc198782e2fec5434afd200.stex"
 
 [sub_resource type="StreamTexture" id=37]
 load_path = "res://.import/battleBagLast.png-2f3c8d7c9da015988adb9ea980dffb03.stex"
+
+[sub_resource type="Animation" id=38]
+resource_name = "Slide"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pocket:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -360, 320 ), Vector2( 0, 320 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pocket:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
@@ -1382,14 +1477,14 @@ region_rect = Rect2( 0, 0, 202, 90 )
 [node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
-anims/Slide = SubResource( 17 )
+anims/Slide = SubResource( 16 )
 
 [node name="HPLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 margin_left = 60.0
 margin_top = 35.0
 margin_right = 195.0
 margin_bottom = 60.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 text = "20/ 20"
 scroll_active = false
 
@@ -1400,7 +1495,7 @@ margin_left = 2.0
 margin_top = 2.0
 margin_right = 137.0
 margin_bottom = 27.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 text = "20/ 20"
 scroll_active = false
 
@@ -1500,7 +1595,7 @@ margin_left = 25.0
 margin_top = 10.0
 margin_right = 485.0
 margin_bottom = 93.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 bbcode_enabled = true
 bbcode_text = "[center]What will Godot do?"
 text = "What will Godot do?"
@@ -1513,7 +1608,7 @@ margin_left = 2.0
 margin_top = 2.0
 margin_right = 462.0
 margin_bottom = 85.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "[center]What will Godot do?"
@@ -1571,7 +1666,7 @@ margin_left = 25.0
 margin_top = 70.0
 margin_right = 125.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 bbcode_enabled = true
 bbcode_text = "[center]Fight"
 text = "Fight"
@@ -1582,7 +1677,7 @@ margin_left = 145.0
 margin_top = 70.0
 margin_right = 245.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 bbcode_enabled = true
 bbcode_text = "[center]Bag"
 text = "Bag"
@@ -1593,7 +1688,7 @@ margin_left = 265.0
 margin_top = 70.0
 margin_right = 365.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 bbcode_enabled = true
 bbcode_text = "[center]Pokémon"
 text = "Pokémon"
@@ -1604,7 +1699,7 @@ margin_left = 385.0
 margin_top = 70.0
 margin_right = 485.0
 margin_bottom = 97.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 bbcode_enabled = true
 bbcode_text = "[center]Run"
 text = "Run"
@@ -1943,7 +2038,6 @@ script = ExtResource( 55 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 
 [node name="BG" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 50 )
@@ -1960,9 +2054,9 @@ frame = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 anims/SlideBag = SubResource( 35 )
+anims/SlideToMenu = SubResource( 39 )
 
 [node name="Left" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-position = Vector2( -250, 0 )
 
 [node name="Medicine" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Left"]
 position = Vector2( 132, 78 )
@@ -1976,7 +2070,6 @@ hframes = 6
 frame = 2
 
 [node name="Right" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-position = Vector2( 250, 0 )
 
 [node name="PokeBalls" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Right"]
 position = Vector2( 385, 125 )
@@ -1991,7 +2084,6 @@ hframes = 6
 frame = 3
 
 [node name="Bottom" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-position = Vector2( 0, 100 )
 
 [node name="Back" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom"]
 position = Vector2( 430, 340 )
@@ -2019,22 +2111,110 @@ frame = 2
 
 [node name="BagMenu" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 
-[node name="Poket" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
-margin_top = 340.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
+anims/Slide = SubResource( 38 )
+
+[node name="Pocket" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
+visible = false
+margin_top = 320.0
 margin_right = 320.0
-margin_bottom = 384.0
+margin_bottom = 364.0
 texture = ExtResource( 56 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Poket"]
+[node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pocket"]
 margin_right = 272.0
 margin_bottom = 28.0
 custom_fonts/font = ExtResource( 43 )
 text = "Medicine"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pages" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pocket"]
+margin_left = 318.0
+margin_top = 7.0
+margin_right = 396.0
+margin_bottom = 36.0
+custom_fonts/font = ExtResource( 33 )
+text = "1/ 2"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
+
+[node name="Pages" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
+position = Vector2( 512, 0 )
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+position = Vector2( 135, 72 )
+texture = ExtResource( 52 )
+hframes = 6
+frame = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite"]
+margin_left = -80.0
+margin_top = -33.0
+margin_right = 80.0
+margin_bottom = 2.0
+custom_fonts/font = ExtResource( 43 )
+text = "Hyper Potion"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite"]
+margin_left = -80.0
+margin_top = 5.0
+margin_right = 80.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 43 )
+text = "x64"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite"]
+position = Vector2( 72, 10 )
+texture = ExtResource( 57 )
+
+[node name="Sprite2" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+position = Vector2( 135, 165 )
+texture = ExtResource( 52 )
+hframes = 6
+frame = 5
+
+[node name="Sprite3" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+position = Vector2( 135, 258 )
+texture = ExtResource( 52 )
+hframes = 6
+frame = 5
+
+[node name="Sprite4" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+position = Vector2( 362, 72 )
+texture = ExtResource( 52 )
+hframes = 6
+frame = 5
+
+[node name="Sprite5" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+position = Vector2( 362, 165 )
+texture = ExtResource( 52 )
+hframes = 6
+frame = 5
+
+[node name="Sprite6" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+position = Vector2( 362, 258 )
+texture = ExtResource( 52 )
+hframes = 6
+frame = 5
 
 [node name="Message" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
 visible = false
@@ -2050,7 +2230,7 @@ margin_left = 25.0
 margin_top = 312.0
 margin_right = 485.0
 margin_bottom = 379.0
-custom_fonts/normal_font = SubResource( 16 )
+custom_fonts/normal_font = SubResource( 17 )
 text = "Ace gained 9000 Exp. Points! Because this is cool!"
 scroll_active = false
 __meta__ = {
