@@ -194,7 +194,7 @@ func Start_Battle(bid : BattleInstanceData):
 			queue = battle_logic.generate_action_queue(battle_command, foe_command)
 
 			if queue.is_empty():
-				print("This should not be possible")
+				print("Battle Error: Action Queue is empty")
 		else:
 			call_deferred("battle_loop")
 			yield(self, "EndOfBattleLoop")

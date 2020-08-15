@@ -2,7 +2,7 @@ extends Node2D
 
 var enabled = false
 var stage = 1
-
+signal command_received
 
 enum {MEDICINE = 1, 
 	POKEBALLS = 2, 
@@ -15,9 +15,10 @@ enum {MEDICINE = 1,
 	S3,
 	S4,
 	S5,
-	S6}
+	S6,
+	USE}
 var selection = MEDICINE
-
+var item_stacks
 var page_count : int = 1
 var current_page : int = 1
 var last_item
@@ -28,6 +29,7 @@ func _ready():
 
 func start():
 	enabled = true
+	stage = 1
 	self.visible = true
 	# Slide
 	$AnimationPlayer.play("SlideBag")
@@ -50,6 +52,13 @@ func _input(event):
 					$BagMenu/Tween.start()
 					$AnimationPlayer.play_backwards("SlideToMenu")
 					stage = 1
+					selection = MEDICINE
+					update_selection()
+				3:
+					$BagMenu/Pages.visible = true
+					$BagMenu/Item.visible = false
+					stage = 2
+					update_selection()
 			return
 		if event.is_action_pressed("ui_down"):
 			match stage:
@@ -68,6 +77,8 @@ func _input(event):
 							selection = BACK
 				2:
 					select_down()
+				3:
+					selection = BACK
 			update_selection()
 		if event.is_action_pressed("ui_up"):
 			match stage:
@@ -83,6 +94,8 @@ func _input(event):
 							selection = BERRIES
 				2:
 					select_up()
+				3:
+					selection = USE
 			update_selection()
 		if event.is_action_pressed("ui_left"):
 			match stage:
@@ -135,11 +148,11 @@ func _input(event):
 							yield($AnimationPlayer, "animation_finished")
 							$BagMenu.visible = true
 							generate_pages(selection)
+							$BagMenu/Pages.visible = true
 							$BagMenu/AnimationPlayer.play("Slide")
 							$BagMenu/Tween.interpolate_property($BagMenu/Pages, "position", Vector2(512,0), Vector2(0,0), 0.25, Tween.TRANS_SINE, Tween.EASE_OUT)
 							$BagMenu/Tween.start()
 							selection = S1
-
 						LAST_ITEM:
 							pass
 						BACK:
@@ -153,8 +166,38 @@ func _input(event):
 							self.get_parent().get_node("BattleComandSelect").enabled = true
 							self.get_parent().get_node("BattleComandSelect").visible = true
 				2:
-					stage = 3
-					pass
+					match selection:
+						BACK:
+							$BagMenu/Tween.interpolate_property($BagMenu/Pages, "position", $BagMenu/Pages.position, Vector2(512,0), 0.25, Tween.TRANS_SINE, Tween.EASE_OUT)
+							$BagMenu/Tween.start()
+							$AnimationPlayer.play_backwards("SlideToMenu")
+							stage = 1
+							selection = MEDICINE
+							update_selection()
+						_:
+							stage = 3
+							update_selection()
+							$BagMenu/Pages.visible = false
+							$Selection.visible = false
+							fill_icon_node(get_item_stack())
+							$BagMenu/Item.visible = true
+							selection = USE
+				3:
+					if selection == USE:
+						var command = BattleCommand.new()
+						command.command_type = command.USE_BAG_ITEM
+						command.item = get_item_stack().get_item_id()
+						Global.inventory.remove_item(Global.inventory.get_item_by_id(command.item))
+						$AudioStreamPlayer.stream = load("res://Audio/SE/SE_Select1.wav")
+						$AudioStreamPlayer.play()
+						emit_signal("command_received", command)
+						$BagMenu/Item.visible = false
+						stage = 4
+					else:
+						$BagMenu/Pages.visible = true
+						$BagMenu/Item.visible = false
+						stage = 2
+						update_selection()
 
 func update_selection():
 	match stage:
@@ -196,15 +239,22 @@ func update_selection():
 				BACK:
 					$Selection.visible = false
 					$Bottom/Back/Select.visible = true
+		3:
+			match selection:
+				USE:
+					$BagMenu/Item/Select.position = Vector2(256, 160)
+					$BagMenu/Item/Select.frame = 2
+				BACK:
+					$BagMenu/Item/Select.position = Vector2(256, 316)
+					$BagMenu/Item/Select.frame = 3
 
-			
 			pass
 	$AudioStreamPlayer.stream = load("res://Audio/SE/SE_Select1.wav")
 	$AudioStreamPlayer.play()
 
 func generate_pages(pocket):
 	clear_pages()
-	var item_stacks = get_item_stacks(pocket)
+	item_stacks = get_item_stacks(pocket)
 	num_of_items = item_stacks.size()
 	var pages = $BagMenu/Pages
 	page_count = (num_of_items / 6) + 1
@@ -363,6 +413,7 @@ func left_page(select):
 		S5:
 			selection = S6
 	current_page -= 1
+	$BagMenu/Pocket/Pages.text = str(current_page) + "/ " + str(page_count)
 	$BagMenu/Tween.interpolate_property($BagMenu/Pages, "position", $BagMenu/Pages.position, $BagMenu/Pages.position + Vector2(512,0), 0.25, Tween.TRANS_SINE, Tween.EASE_OUT)
 	$BagMenu/Tween.start()
 	yield($BagMenu/Tween, "tween_completed")
@@ -382,6 +433,24 @@ func right_page(select):
 				selection = S6
 			else:
 				selection = S1
+	$BagMenu/Pocket/Pages.text = str(current_page) + "/ " + str(page_count)
 	$BagMenu/Tween.interpolate_property($BagMenu/Pages, "position", $BagMenu/Pages.position, $BagMenu/Pages.position + Vector2(-512,0), 0.25, Tween.TRANS_SINE, Tween.EASE_OUT)
 	$BagMenu/Tween.start()
 	yield($BagMenu/Tween, "tween_completed")
+func fill_icon_node(item: ItemStack):
+	$BagMenu/Item/Use/Icon.texture = item.get_item_icon()
+	$BagMenu/Item/Use/Label.text = item.get_description()
+func get_item_stack():
+	var index = 6 * (current_page - 1)
+	match selection:
+		S2:
+			index += 1
+		S3:
+			index += 2
+		S4:
+			index += 3
+		S5:
+			index += 4
+		S6:
+			index += 5
+	return item_stacks[index]

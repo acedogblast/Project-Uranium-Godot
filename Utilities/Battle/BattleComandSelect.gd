@@ -24,6 +24,7 @@ func _ready():
 	battle_attack_select_node = self.get_parent().get_node("BattleAttackSelect")
 	battle_bag_node = self.get_parent().get_node("BattleBag")
 	battle_attack_select_node.connect("command_received", self, "submit_command")
+	battle_bag_node.connect("command_received", self, "submit_command")
 func start(name):
 	$SelHand/AnimationPlayer.play("Squeez")
 	$Prompt.bbcode_text = "[center]What will " + name + " do?"
@@ -60,16 +61,8 @@ func _input(event):
 					submit_command(command)
 					self.visible = false
 			BAG:
-				
 				self.visible = false
 				battle_bag_node.call_deferred("start")
-
-				# if battle_node.battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
-				# 	command.command_type = command.USE_BAG_ITEM
-				# 	command.item = 211 # 211 is standard pokeball
-				# 	submit_command(command)
-				# 	enabled = false
-				# 	self.visible = false
 					
 
 	
