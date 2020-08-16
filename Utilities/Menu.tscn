@@ -978,7 +978,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Bag2" parent="." instance=ExtResource( 22 )]
+[node name="Bag" parent="." instance=ExtResource( 22 )]
 visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

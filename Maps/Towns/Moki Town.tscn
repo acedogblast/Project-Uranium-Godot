@@ -98,13 +98,17 @@ scale = Vector2( 0.5, 0.5 )
 [node name="Event1" parent="NPC_Layer" instance=ExtResource( 10 )]
 position = Vector2( 816, 488 )
 scale = Vector2( 2, 2 )
-event_name = ""
 size = Vector2( 8, 36 )
 
 [node name="Door" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 880, 1008 )
 scene_destination = "res://Maps/MokiTown/HeroHome.tscn"
 location = Vector2( 1120, 304 )
+
+[node name="pokecenter test" parent="NPC_Layer" instance=ExtResource( 8 )]
+position = Vector2( 1360, 1008 )
+scene_destination = "res://Maps/Towns/Town Houses/Pokecenter.tscn"
+location = Vector2( 240, 432 )
 
 [node name="Door2" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 528, 364 )

@@ -9,3 +9,5 @@ func _ready():
 func _process(_delta):
 	if Engine.editor_hint:
 		$CollisionShape2D.shape.extents = size
+
+

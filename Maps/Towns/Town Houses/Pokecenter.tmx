@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <map version="1.2" tiledversion="1.3.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="19" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
  <editorsettings>
   <export target="Pokecenter.tscn" format="Godot"/>
  </editorsettings>
+=======
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="19" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
+>>>>>>> 30a6e844297d6b3443a9e53edd594f9d4b9c4b52
  <tileset firstgid="1" source="../../tilesets/PU_indoors+.tsx"/>
  <layer id="4" name="Tile Layer 1" width="19" height="20">
   <data encoding="csv">

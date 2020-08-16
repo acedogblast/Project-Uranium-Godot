@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="30" height="34" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
- <tileset firstgid="1" source="../Tilesets/PU_caves.tsx"/>
- <tileset firstgid="885" source="../Tilesets/PU_groundtiles+.tsx"/>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="30" height="34" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" source="../tilesets/PU_caves.tsx"/>
+ <tileset firstgid="885" source="../tilesets/PU_groundtiles+.tsx"/>
  <layer id="1" name="Tile Layer 1" width="30" height="34">
   <data encoding="csv">
 288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,

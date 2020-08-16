@@ -23,7 +23,7 @@ func _ready():
 	battle_node = self.get_parent().get_parent().get_parent()
 	battle_attack_select_node = self.get_parent().get_node("BattleAttackSelect")
 	battle_bag_node = self.get_parent().get_node("BattleBag")
-	get_parent().get_node("BattleAttackSelect").connect("command_received", self, "submit_command")
+	battle_attack_select_node.connect("command_received", self, "submit_command")
 func start(name):
 	$SelHand/AnimationPlayer.play("Squeez")
 	$Prompt.bbcode_text = "[center]What will " + name + " do?"
@@ -43,41 +43,34 @@ func _input(event):
 	if event.is_action_pressed("ui_right") and enabled and selected != RUN:
 		selected += 1
 		change_Sel_Hand_Pos()
-	if (event.is_action_pressed("ui_accept") || event.is_action_pressed("x")) and enabled:
+	if event.is_action_pressed("ui_accept") and enabled:
+		enabled = false
 		var command = BattleCommand.new()
 		match selected:
 			ATTACK:
 				$SelHand/AudioStreamPlayer.stream = select_se_2
 				$SelHand/AudioStreamPlayer.play()
-				battle_attack_select_node.start(battle_node.battler1)
 				self.visible = false
 				battle_attack_select_node.position = Vector2(0, 286)
 				battle_attack_select_node.visible = true
-				enabled = false
+				battle_attack_select_node.call_deferred("start", battle_node.battler1)
 			RUN:
 				if battle_node.battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
 					command.command_type = command.RUN
 					submit_command(command)
-					enabled = false
 					self.visible = false
 			BAG:
-				enabled = false
+				
 				self.visible = false
 				battle_bag_node.call_deferred("start")
-				#yield(battle_bag_node, "")
 
-
-
-
-				if battle_node.battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
-					command.command_type = command.USE_BAG_ITEM
-					command.item = 211 # 211 is standard pokeball
-					submit_command(command)
-					enabled = false
-					self.visible = false
+				# if battle_node.battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
+				# 	command.command_type = command.USE_BAG_ITEM
+				# 	command.item = 211 # 211 is standard pokeball
+				# 	submit_command(command)
+				# 	enabled = false
+				# 	self.visible = false
 					
-
-
 
 	
 func change_Sel_Hand_Pos():

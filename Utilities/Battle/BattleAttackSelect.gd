@@ -72,7 +72,7 @@ func _input(event):
         if event.is_action_pressed("ui_right") and selected < moves:
             selected += 1
             change_Sel_Hand_Pos()
-        if event.is_action_pressed("ui_accept") or event.is_action_pressed("x"):
+        if event.is_action_pressed("ui_accept"):
             $MoveSlide/SelHand/AudioStreamPlayer.stream = select_se_2
             $MoveSlide/SelHand/AudioStreamPlayer.play()
             
@@ -105,14 +105,13 @@ func _input(event):
 
                 self.visible = false
                 enabled = false
-                self.get_parent().get_parent().get_parent().battle_command = command
-                emit_signal("command_received")
+                emit_signal("command_received", command)
             else:
                 # Don't do anything.
                 # TODO: add error sound.
                 pass
 
-        if event.is_action_pressed("z"): # Go back to comand select
+        if event.is_action_pressed("x"): # Go back to comand select
             enabled = false
             self.visible = false
             self.get_parent().get_node("BattleComandSelect").enabled = true

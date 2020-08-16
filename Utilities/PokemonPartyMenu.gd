@@ -16,12 +16,11 @@ var size
 
 
 func _ready():
-	# Testing setup. Should be disabled when not testing
-	test_setup()
+	# Testing setup. Should be disabled when not testing!
+	#test_setup()
 
 	# Fill slots with current pokemon
 	update_slots()
-	mode = 1
 
 func _input(event):
 	if mode == 1:
@@ -133,7 +132,7 @@ func update_slots():
 		index += 1
 
 func test_setup():
-	print("Test setup.")
+	print("Test setup! Adding/Modifining pokemon!")
 	var poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(3,5)
 	poke.current_hp = 0
@@ -150,7 +149,7 @@ func test_setup():
 	poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(1,5)
 	Global.pokemon_group.append(poke)
-	pass
+	mode = 1
 func change_label_text(label : Label, text : String):
 	label.text = text
 	label.get_node("Shadow").text = text
