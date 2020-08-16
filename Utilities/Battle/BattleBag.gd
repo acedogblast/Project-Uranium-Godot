@@ -187,11 +187,13 @@ func _input(event):
 						var command = BattleCommand.new()
 						command.command_type = command.USE_BAG_ITEM
 						command.item = get_item_stack().get_item_id()
+						command.attack_target = 2 # For single battles!
 						Global.inventory.remove_item(Global.inventory.get_item_by_id(command.item))
 						$AudioStreamPlayer.stream = load("res://Audio/SE/SE_Select1.wav")
 						$AudioStreamPlayer.play()
 						emit_signal("command_received", command)
 						$BagMenu/Item.visible = false
+						self.visible = false
 						stage = 4
 					else:
 						$BagMenu/Pages.visible = true

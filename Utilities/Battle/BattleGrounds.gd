@@ -1,7 +1,7 @@
 extends Node2D
 signal wait
 signal unveil_finished
-enum BattlePositions {INTRO_FADE, PLAYER_TOSS, CENTER, CENTER_IDLE, FOE_FOCUS, OPONENT_TALK}
+enum BattlePositions {INTRO_FADE, PLAYER_TOSS, CENTER, CENTER_IDLE, FOE_FOCUS, OPONENT_TALK, CAPTURE_ZOOM, CAPTURE_ZOOM_BACK}
 
 var is_first_toss = true
 
@@ -15,6 +15,10 @@ func setPosistion(pos):
 			get_parent().get_parent().get_node("CanvasLayer/BattleInterfaceLayer/PlayerToss/AnimationPlayer").play("FadeIn")
 		BattlePositions.CENTER:
 			aniplayer.play("PlayerTossToCenter")
+		BattlePositions.CAPTURE_ZOOM:
+			aniplayer.play("CaptureZoom")
+		BattlePositions.CAPTURE_ZOOM_BACK:
+			aniplayer.play_backwards("CaptureZoom")
 	yield(aniplayer, "animation_finished")
 	emit_signal("wait")
 
@@ -55,6 +59,7 @@ func player_unveil():
 		t.queue_free()
 		is_first_toss = false
 	# Play sound for toss
+	$PlayerBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/throw.wav")
 	$PlayerBase/Ball/AudioStreamPlayer.play()
 	get_parent().get_parent().get_node("CanvasLayer/BattleGrounds/PlayerBase/Ball/AnimationPlayer").play("PlayerBallToss")
 	yield(get_parent().get_parent().get_node("CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer"), "animation_finished")

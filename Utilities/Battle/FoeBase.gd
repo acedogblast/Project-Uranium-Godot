@@ -4,7 +4,8 @@ var cry
 onready var sprite = $Battler/Sprite
 func _ready():
 	$Battler/Sprite.queue_free()
-	pass
+	
+
 func setup_by_pokemon(poke):
 	cry = poke.get_cry()
 	sprite = poke.get_battle_foe_sprite()
@@ -30,3 +31,32 @@ func ball_flash():
 
 	# Play animation
 	$Battler/AnimationPlayer.play("UnveilDrop")
+
+func rotate_ball():
+	var frame_cord = $Ball.frame_coords
+	if frame_cord.y < 8:
+		frame_cord.y += 1
+	else:
+		frame_cord.y = 0
+	$Ball.frame_coords = frame_cord
+func open_ball():
+	$Ball.frame_coords.y = 10
+func close_ball():
+	$Ball.frame_coords.y = 0
+func ball_shake():
+	var frame_cord = $Ball.frame_coords
+	if frame_cord.y < 16 && frame_cord.y > 10:
+		frame_cord.y += 1
+	else:
+		frame_cord.y = 11
+	$Ball.frame_coords = frame_cord
+func set_ball(ball_id):
+	match ball_id:
+		211: # Poke Ball
+			$Ball.frame_coords.x = 0
+		210: # Great Ball
+			$Ball.frame_coords.x = 1
+		209: # Ultra Ball:
+			$Ball.frame_coords.x = 3
+		208: # Master Ball:
+			$Ball.frame_coords.x = 4

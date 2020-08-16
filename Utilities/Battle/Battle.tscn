@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=2]
+[gd_scene load_steps=108 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -59,6 +59,10 @@
 [ext_resource path="res://Graphics/Icons/item172.png" type="Texture" id=57]
 [ext_resource path="res://Graphics/Pictures/BATTLE/battleItemConfirm.png" type="Texture" id=58]
 [ext_resource path="res://Graphics/Icons/item208.png" type="Texture" id=59]
+[ext_resource path="res://Audio/SE/recall.wav" type="AudioStream" id=60]
+[ext_resource path="res://Audio/SE/jumptoball.wav" type="AudioStream" id=61]
+[ext_resource path="res://Audio/SE/balldrop.wav" type="AudioStream" id=62]
+[ext_resource path="res://Audio/SE/ballshake.wav" type="AudioStream" id=63]
 
 [sub_resource type="ShaderMaterial" id=1]
 
@@ -167,11 +171,401 @@ tracks/3/keys = {
 } ]
 }
 
+[sub_resource type="Animation" id=44]
+resource_name = "BallBreak"
+tracks/0/type = "method"
+tracks/0/path = NodePath("..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "ball_open"
+} ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 60 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Battler:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Battler:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 140, 68 ), Vector2( 140, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../Battler:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.1, 0.1 ), Vector2( 2, 2 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath(".:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath(".:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=43]
+resource_name = "BallShake"
+length = 2.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 137.5, 65 ) ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 63 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "close_ball"
+}, {
+"args": [  ],
+"method": "ball_shake"
+}, {
+"args": [  ],
+"method": "ball_shake"
+}, {
+"args": [  ],
+"method": "ball_shake"
+}, {
+"args": [  ],
+"method": "ball_shake"
+}, {
+"args": [  ],
+"method": "ball_shake"
+}, {
+"args": [  ],
+"method": "ball_shake"
+} ]
+}
+
+[sub_resource type="Animation" id=42]
+resource_name = "Capture_Throw"
+length = 3.0
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 1.65, 2.05 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -108, 44 ), Vector2( -20.8333, -10 ), Vector2( 137.5, -65 ), Vector2( 137.5, -65 ), Vector2( 137.5, 65 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2, 2 ), Vector2( 1, 1 ) ]
+}
+tracks/2/type = "audio"
+tracks/2/path = NodePath("../../PlayerBase/Ball/AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 14 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 60 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 61 )
+}, {
+"end_offset": 0.2,
+"start_offset": 0.0,
+"stream": ExtResource( 62 )
+}, {
+"end_offset": 0.2,
+"start_offset": 0.0,
+"stream": ExtResource( 62 )
+} ],
+"times": PoolRealArray( 0, 1, 1.65, 2, 2.25 )
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath("..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "rotate_ball"
+}, {
+"args": [  ],
+"method": "open_ball"
+}, {
+"args": [  ],
+"method": "close_ball"
+} ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../Battler:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1, 1.45 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 140, 0 ), Vector2( 140, -80 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("../Battler:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 1, 1.45 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2, 2 ), Vector2( 0.1, 0.1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("../Battler:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath(".:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("../Battler:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 1.45 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
 [sub_resource type="ShaderMaterial" id=4]
 shader = ExtResource( 45 )
 shader_param/effect_weight = 0.9
 shader_param/repeat = Vector2( 2.735, 3 )
 shader_param/effect_speed = 1.0
+
+[sub_resource type="Animation" id=41]
+resource_name = "CaptureZoom"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -256, 0 ), Vector2( -512, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 2, 2 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("FoeBase:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 382, 115 ), Vector2( 300, 115 ) ]
+}
 
 [sub_resource type="Animation" id=5]
 length = 2.0
@@ -1210,7 +1604,6 @@ script = ExtResource( 1 )
 layer = 2
 
 [node name="BattleGrounds" type="Node2D" parent="CanvasLayer"]
-visible = false
 position = Vector2( -256, 0 )
 scale = Vector2( 1.5, 1.5 )
 script = ExtResource( 2 )
@@ -1271,7 +1664,7 @@ hframes = 28
 anims/PlayerBallToss = ExtResource( 13 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleGrounds/PlayerBase/Ball"]
-stream = ExtResource( 14 )
+stream = ExtResource( 62 )
 
 [node name="FoeBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
 margin_left = 382.0
@@ -1286,6 +1679,7 @@ __meta__ = {
 }
 
 [node name="FoeHuman" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
+visible = false
 position = Vector2( 140, 0 )
 texture = ExtResource( 17 )
 
@@ -1301,22 +1695,25 @@ texture = ExtResource( 17 )
 
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
 visible = false
-position = Vector2( 140, -60 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 137.5, 65 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 12 )
 vframes = 17
 hframes = 28
-frame = 280
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/FoeBase/Ball"]
 anims/Ball = SubResource( 3 )
+anims/BallBreak = SubResource( 44 )
+anims/BallShake = SubResource( 43 )
+anims/Capture_Throw = SubResource( 42 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleGrounds/FoeBase/Ball"]
-stream = ExtResource( 14 )
+stream = ExtResource( 60 )
 
 [node name="Battler" type="Node2D" parent="CanvasLayer/BattleGrounds/FoeBase"]
-visible = false
-position = Vector2( 140, -80 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 140, 0 )
+scale = Vector2( 2, 2 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
 material = SubResource( 4 )
@@ -1339,6 +1736,7 @@ anims/SuperDamage = ExtResource( 10 )
 anims/UnveilDrop = ExtResource( 20 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds"]
+anims/CaptureZoom = SubResource( 41 )
 anims/FadeOut = SubResource( 5 )
 anims/FadeToIntroPos = SubResource( 6 )
 anims/Opponent_Quote = SubResource( 7 )
@@ -1346,6 +1744,7 @@ anims/PlayerTossToCenter = SubResource( 8 )
 anims/player_toss = SubResource( 9 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/BattleGrounds"]
+visible = false
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 0 )
@@ -1463,10 +1862,10 @@ anims/FadeIn = SubResource( 14 )
 anims/Toss = SubResource( 15 )
 
 [node name="BattleBars" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
-visible = false
 script = ExtResource( 30 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
+visible = false
 margin_left = 539.0
 margin_top = 200.0
 margin_right = 783.0

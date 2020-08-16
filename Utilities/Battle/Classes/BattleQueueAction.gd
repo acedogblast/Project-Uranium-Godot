@@ -16,7 +16,12 @@ enum {
 	LEVEL_UP,
 	LEVEL_UP_SE,
 	UPDATE_MAJOR_AILMENT,
-	ESCAPE_SE
+	ESCAPE_SE,
+	BALL_CAPTURE_TOSS,
+	BALL_SHAKE,
+	BALL_BROKE,
+	BALL_CAPTURE_SONG,
+	SET_BALL
 	}
 
 enum {PLAYER_WIN, FOE_WIN}
@@ -50,3 +55,5 @@ var level : int
 var level_stat_changes : LevelUpChanges
 
 var run_away : bool = false
+
+var ball_type

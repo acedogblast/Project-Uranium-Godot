@@ -330,8 +330,14 @@ func battle_loop():
 	var action = queue.pop()
 	match action.type:
 		action.BATTLE_GROUNDS_POS_CHANGE:
+			if action.battle_grounds_pos_change == $CanvasLayer/BattleGrounds.BattlePositions.CAPTURE_ZOOM:
+				$CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar.visible = false
+				$CanvasLayer/BattleGrounds/PlayerBase.visible = false
 			$CanvasLayer/BattleGrounds.setPosistion(action.battle_grounds_pos_change)
 			yield($CanvasLayer/BattleGrounds, "wait")
+			if action.battle_grounds_pos_change == $CanvasLayer/BattleGrounds.BattlePositions.CAPTURE_ZOOM_BACK:
+				$CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar.visible = true
+				$CanvasLayer/BattleGrounds/PlayerBase.visible = true
 		action.BATTLE_TEXT:
 			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = action.battle_text
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
@@ -590,6 +596,22 @@ func battle_loop():
 			sound.loop = false
 			audioplayer.stream = sound
 			audioplayer.play()
+		action.BALL_CAPTURE_TOSS:
+			$CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer.play("Capture_Throw")
+			yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer, "animation_finished")
+		action.BALL_SHAKE:
+			$CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer.play("BallShake")
+			yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer, "animation_finished")
+		action.BALL_BROKE:
+			$CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer.play("BallBreak")
+			yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer, "animation_finished")
+		action.BALL_CAPTURE_SONG:
+			$CanvasLayer/AudioStreamPlayer.stop()
+			$CanvasLayer/AudioStreamPlayer.stream = "res://Audio/ME/PU-PokemonObtained.ogg"
+			$CanvasLayer/AudioStreamPlayer.play()
+		action.SET_BALL:
+			$CanvasLayer/BattleGrounds/FoeBase.set_ball(action.ball_type)
+		
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 

@@ -164,6 +164,7 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 	type1 = data.type1
 	type2 = data.type2
 	level = lv
+	catch_rate = data.catch_rate
 	generate_IV()
 	generate_nature() # For now random but should be determined by something else
 	generate_gender(data.male_ratio)

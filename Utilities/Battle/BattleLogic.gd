@@ -22,6 +22,8 @@ var battler4_effects = []
 
 var battle_instance : BattleInstanceData
 
+var item_database
+
 var battle_debug = false
 
 var escape_attempts = 0
@@ -33,6 +35,7 @@ func _init(b1, b2 , bid):
 	battler1_stat_stage = BattleStatStage.new()
 	battler2_stat_stage = BattleStatStage.new()
 	battle_instance = bid
+	item_database = load("res://Utilities/Items/database.gd").new()
 	pass
 func generate_action_queue(player_command : BattleCommand, foe_command : BattleCommand):
 	queue = BattleQueue.new()
@@ -63,14 +66,88 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		queue.push(action)
 	
 	if player_command.command_type == player_command.USE_BAG_ITEM:
-		if player_command.item <= 208 && player_command.item >= 232 && battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD: # Item is a type of pokeball
+		print("Using item: " + str(player_command.item))
+		if player_command.item >= 208 && player_command.item <= 232 && battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD: # Item is a type of pokeball
+			action = BattleQueueAction.new()
+			action.type = action.SET_BALL
+			action.ball_type = player_command.item
+			queue.push(action)
 			# Capture wild pokemon
+			var a : int# Modified catch rate
+			var b : int# Shake probability
+			var target = get_battler_by_index(player_command.attack_target)
+			var bonus_ball = get_ball_catch_rate(player_command.item)
+			var bonus_status = 1
+			var broke_out = false
+			var shakes = 0
 			
 
+			match target.major_ailment:
+				MajorAilment.SLEEP, MajorAilment.FROZEN:
+					bonus_status = 2.5
+				MajorAilment.PARALYSIS, MajorAilment.POISON, MajorAilment.BURN:
+					bonus_status = 1.5
 
+			a = (3 * target.hp - 2 * target.current_hp) * target.catch_rate * bonus_ball
 
-			pass
-		
+			a = a / (3 * target.hp) * bonus_status
+			if a > 255:
+				a = 255
+
+			b = 65536 / sqrt(255.0 / a) # Gen 5
+
+			# Add actions
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = Global.TrainerName + " threw a " + item_database.get_item_by_id(player_command.item).name + "."
+			queue.push(action)
+			
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_GROUNDS_POS_CHANGE
+			action.battle_grounds_pos_change = 6 #CAPTURE_ZOOM
+			queue.push(action)
+
+			action = BattleQueueAction.new()
+			action.type = action.BALL_CAPTURE_TOSS
+			queue.push(action)
+
+			var rng = RandomNumberGenerator.new()
+			rng.randomize()
+			for i in range(4):
+				var shake = rng.randi_range(0, 65535)
+				shakes += 1
+				if b > shake:
+					continue
+				else:
+					broke_out = true
+					break
+			
+			for i in range(shakes):
+				action = BattleQueueAction.new()
+				action.type = action.BALL_SHAKE
+				queue.push(action)
+			
+			if broke_out:
+				action = BattleQueueAction.new()
+				action.type = action.BALL_BROKE
+				queue.push(action)
+
+				action = BattleQueueAction.new()
+				action.type = action.BATTLE_TEXT
+				action.battle_text = get_battler_title_by_index(player_command.attack_target) + " broke free!"
+				queue.push(action)
+
+				action = BattleQueueAction.new()
+				action.type = action.BATTLE_GROUNDS_POS_CHANGE
+				action.battle_grounds_pos_change = 7 #CAPTURE_ZOOM_BACK
+				queue.push(action)
+			else:
+				# Capture sucsesful
+				action = BattleQueueAction.new()
+				action.type = action.BALL_CAPTURE_SONG
+				queue.push(action)
+				return queue
+
 		
 	
 	var battler # The pokemon preforming the move
@@ -570,6 +647,8 @@ func get_battler_by_index(index: int):
 			return battler3
 		4:
 			return battler4
+		_:
+			print("Battle Error: invalid index was given returned null")
 func get_stage_stat_by_index(index: int):
 	match index:
 		1:
@@ -826,3 +905,17 @@ func set_major_ailment(index: int, ailment_code: int, turns: int = -1): # Sets t
 	else:
 		action.battle_text = "But it failed."
 		queue.push(action)
+func get_ball_catch_rate(ball_id: int) -> float:
+	var rate : float = 1.0
+	match ball_id:
+		211: # Poke Ball
+			rate = 1.0
+		210: # Great Ball
+			rate = 1.5
+		209: # Ultra Ball:
+			rate = 2.0
+		208: # Master Ball:
+			rate = 255.0
+		_:
+			print("Battle Error: ball_id did not match any listed. Using default value.")
+	return rate
