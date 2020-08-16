@@ -46,6 +46,9 @@ var evolution_level = 29
 # The pokemon's evolution ID
 var evolution_ID = 4
 
+# The pokemon's catch rate
+var catch_rate = 45
+
 # Moveset by leveling
 var moveset = [
 	MoveSet.new(1, "Scratch"),

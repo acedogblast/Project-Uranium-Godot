@@ -8,6 +8,7 @@ var ID = 20
 
 # The pokemon's type. If only one type use type1
 var type1 = Type.POISON
+var type2
 
 # The pokemon's base stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
 var hp = 60
@@ -44,6 +45,9 @@ var evolution_level = 20
 
 # The pokemon's evolution ID
 var evolution_ID = 20
+
+# The pokemon's catch rate
+var catch_rate = 190
 
 # Moveset by leveling
 var moveset = [

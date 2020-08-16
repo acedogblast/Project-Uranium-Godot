@@ -1,7 +1,7 @@
 extends Object
 
 # The name of the pokemon
-var name = "Palay"
+var name = "Panjay"
 
 # Pokedex ID#
 var ID = 52
@@ -45,6 +45,12 @@ var evolution_level
 
 # The pokemon's evolution ID
 var evolution_ID
+
+# The pokemon's catch rate
+var catch_rate = 155
+
+# The pokemon's catch rate
+var catch_rate = 55
 
 # Moveset by leveling
 var moveset = [

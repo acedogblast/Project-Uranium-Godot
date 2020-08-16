@@ -8,6 +8,7 @@ var ID = 27
 
 # The pokemon's type. If only one type use type1
 var type1 = Type.WATER
+var type2
 
 # The pokemon's base stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
 var hp = 20
@@ -44,6 +45,9 @@ var evolution_level = 20
 
 # The pokemon's evolution ID
 var evolution_ID = 28
+
+# The pokemon's catch rate
+var catch_rate = 255
 
 # Moveset by leveling
 var moveset = [
