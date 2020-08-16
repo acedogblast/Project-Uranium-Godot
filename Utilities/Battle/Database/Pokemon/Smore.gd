@@ -8,6 +8,7 @@ var ID = 40
 
 # The pokemon's type. If only one type use type1
 var type1 = Type.BUG
+var type2
 
 # The pokemon's base stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
 var hp = 40
@@ -43,7 +44,10 @@ var male_ratio = 87.5
 var evolution_level = 16
 
 # The pokemon's evolution ID
-var evolution_ID = 41,190
+var evolution_ID = 41 # TODO Seikamater evo logic
+
+# The pokemon's catch rate
+var catch_rate = 255
 
 # Moveset by leveling
 var moveset = [

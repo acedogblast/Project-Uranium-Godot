@@ -492,8 +492,9 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 			queue.push(action)
 			turn_order.push_back(B2)
 			return
-			
-
+	if player_command.command_type == player_command.USE_BAG_ITEM:
+		turn_order.push_back(B2)
+		return
 
 	if player_command.command_type == player_command.ATTACK && foe_command.command_type == foe_command.ATTACK:
 		

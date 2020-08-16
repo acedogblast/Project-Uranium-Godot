@@ -46,6 +46,9 @@ var evolution_level = 24
 # The pokemon's evolution ID
 var evolution_ID = 14
 
+# The pokemon's catch rate
+var catch_rate = 120
+
 # Moveset by leveling
 var moveset = [
 	MoveSet.new(1, "Charm"),

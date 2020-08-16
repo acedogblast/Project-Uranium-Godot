@@ -1,22 +1,22 @@
 extends Object
 
 # The name of the pokemon
-var name = "Orchynx"
+var name = "Barewl"
 
 # Pokedex ID#
-var ID = 1
+var ID = 15
 
 # The pokemon's type. If only one type use type1
-var type1 = Type.GRASS
-var type2 = Type.STEEL
+var type1 = Type.STEEL
+var type1 = Type.ROCK
 
 # The pokemon's base stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
 var hp = 50
-var attack = 55
-var defense = 55
-var sp_attack = 70
-var sp_defense = 70
-var speed = 50
+var attack = 50
+var defense = 90
+var sp_attack = 40
+var sp_defense = 55
+var speed = 35
 
 # The pokemon's public and hidden abilities
 var ability
@@ -25,43 +25,43 @@ var hidden_ability
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
 var ev_yield_attack = 0
-var ev_yield_defense = 0
-var ev_yield_sp_attack = 1
+var ev_yield_defense = 1
+var ev_yield_sp_attack = 0
 var ev_yield_sp_defense = 0
 var ev_yield_speed = 0
 
 # The pokemon's base experience yield when defeated
-var exp_yield : int = 70
+var exp_yield : int = 64
 
 # The pokemon's leveling rate
-var leveling_rate = MEDIUM_FAST
+var leveling_rate = SLOW
 enum {SLOW, MEDIUM_SLOW, MEDIUM_FAST, FAST, ERRATIC, FLUCTUATING}
 
 # The pokemon's gender ratio male percentage.
-var male_ratio = 87.5
+var male_ratio = 50
 
 # The pokemon's evolution level
-var evolution_level = 28
+var evolution_level = 15
 
 # The pokemon's evolution ID
-var evolution_ID = 2
+var evolution_ID = 16
 
 # The pokemon's catch rate
-var catch_rate = 42
+var catch_rate = 180
 
 # Moveset by leveling
 var moveset = [
-	MoveSet.new(1, "Scratch"),
-	MoveSet.new(1, "Growl"),
-	MoveSet.new(5, "Leech Seed"),
-	MoveSet.new(9, "Vine Whip"),
+	MoveSet.new(1, "Tackle"),
+	MoveSet.new(4, "Harden"),
+	MoveSet.new(7, "Mudslap"),
+	MoveSet.new(10, "Headbutt"),
 	MoveSet.new(13, "Metal Claw"),
-	MoveSet.new(18, "Hone Claws"),
-	MoveSet.new(20, "Mega Drain"),
-	MoveSet.new(25, "Iron Defense"),
-	MoveSet.new(29, "Leaf Blade"),
-	MoveSet.new(33, "Iron Tail"),
-	MoveSet.new(37, "Synthesis"),
-	MoveSet.new(41, "Energy Ball"),
-	MoveSet.new(45, "Meteor Mash")
+	MoveSet.new(17, "Rock Polish"),
+	MoveSet.new(21, "Rollout"),
+	MoveSet.new(25, "Protect"),
+	MoveSet.new(29, "Metal Whip"),
+	MoveSet.new(33, "Metal Sound"),
+	MoveSet.new(37, "Body Slam"),
+	MoveSet.new(40, "Rapid Spin"),
+	MoveSet.new(44, "Earthquake")
 ]

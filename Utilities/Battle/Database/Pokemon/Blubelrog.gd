@@ -1,7 +1,7 @@
 extends Object
 
 # The name of the pokemon
-var name = "Folerog"
+var name = "Blubelrog"
 
 # Pokedex ID#
 var ID = 26
@@ -45,6 +45,9 @@ var evolution_level
 
 # The pokemon's evolution ID
 var evolution_ID
+
+# The pokemon's catch rate
+var catch_rate = 110
 
 # Moveset by leveling
 var moveset = [
