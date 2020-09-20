@@ -10,6 +10,9 @@ var ui = null
 var starter
 var grass_pos = []
 
+var next_scene1 = "res://Maps/Towns/Moki Town.tscn"
+
+
 signal finished
 
 func _ready():

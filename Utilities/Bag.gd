@@ -29,7 +29,6 @@ var enabled = true
 signal close_bag
 
 func _ready():
-	ITEMS = load("res://Utilities/Items/database.gd").new()
 	update_data()
 	update_detail()
 
@@ -237,7 +236,6 @@ func reset_frames():
 
 func update_data():
 	
-	#yield(Global, "setup_items")
 	# setup items
 	for c in $items/items.get_children():
 		$items/items.remove_child(c)

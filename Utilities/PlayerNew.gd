@@ -78,6 +78,7 @@ func _process(delta):
 		#If the hero can move and presses accept, then call the interact method
 		elif canMove and Input.is_action_just_pressed("ui_accept"):
 			interact()
+			pass
 
 func change_input(): # Disables/Enables the player to interaction and now movement
 	call_deferred("change_internal_input")	
