@@ -22,10 +22,11 @@ func _process(delta):
 	pass
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
-	print("healing pokemon...")
-	Global.heal_party()
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
-	return null
+	if npc_collider == Vector2(240, 432 - 32):
+		print("healing pokemon...")
+		Global.heal_party()
+		return "Pokecenter_healing TEST"
 
 
 func _on_Area2D_area_entered(area: Area2D) -> void:

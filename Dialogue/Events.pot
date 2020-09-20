@@ -308,3 +308,6 @@ msgstr "I'm going out to the entrance to Route 01 by the edge of town. Bring The
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_67"
 msgstr "See you later, \\PN."
+
+msgid "EVENT_MOKI_POKECENTER_HEAL_QUESTION"
+msgstr "Welcome to the Pokemon center.\nWould you like me to heal your Pokemon?"
