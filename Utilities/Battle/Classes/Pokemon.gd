@@ -65,7 +65,7 @@ var move_4 : Move
 
 # The pokemon's gender
 var gender
-enum {MALE, FEMALE}
+enum {MALE, FEMALE, GENDERLESS}
 
 # Is the pokemon a shiny
 var is_shiny = false
