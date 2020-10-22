@@ -55,7 +55,7 @@ var pokemon = {
 	52: "Pajay",
 	53: "Jerbolta",
 	54: "Comite",
-	55: "Cometeor"
+	55: "Cometeor",
 	56: "Astronite",
 	57: "Mareep",
 	58: "Flaaffy",
@@ -77,7 +77,7 @@ var pokemon = {
 	74: "Drilgann",
 	75: "Gligar",
 	76: "Gliscor",
-	77: "Sableye"
+	77: "Sableye",
 	78: "Cocaran",
 	79: "Cararalm",
 	80: "Cocancer",
