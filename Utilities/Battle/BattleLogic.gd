@@ -23,6 +23,7 @@ var battler4_effects = []
 var battle_instance : BattleInstanceData
 
 var item_database
+var pokemon_registry
 
 var battle_debug = false
 
@@ -36,6 +37,7 @@ func _init(b1, b2 , bid):
 	battler2_stat_stage = BattleStatStage.new()
 	battle_instance = bid
 	item_database = load("res://Utilities/Items/database.gd").new()
+	pokemon_registry = registry.new()
 	pass
 func generate_action_queue(player_command : BattleCommand, foe_command : BattleCommand):
 	queue = BattleQueue.new()
@@ -81,6 +83,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 			var broke_out = false
 			var shakes = 0
 			
+			var catch_rate = pokemon_registry.get_pokemon_class(target.ID).catch_rate
 
 			match target.major_ailment:
 				MajorAilment.SLEEP, MajorAilment.FROZEN:
@@ -88,12 +91,13 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				MajorAilment.PARALYSIS, MajorAilment.POISON, MajorAilment.BURN:
 					bonus_status = 1.5
 
-			a = (3 * target.hp - 2 * target.current_hp) * target.catch_rate * bonus_ball
+			a = (3 * target.hp - 2 * target.current_hp) * catch_rate * bonus_ball
 
 			a = a / (3 * target.hp) * bonus_status
 			if a > 255:
 				a = 255
 
+			#warning-ignore:NARROWING_CONVERSION
 			b = 65536 / sqrt(255.0 / a) # Gen 5
 
 			# Add actions
@@ -144,7 +148,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 			else:
 				# Capture sucsesful
 				action = BattleQueueAction.new()
-				action.type = action.BALL_CAPTURE_SONG
+				action.type = action.BATTLE_END
 				queue.push(action)
 				return queue
 
@@ -466,7 +470,6 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					else:
 						get_battler_by_index(effect.seeded_heal_target_index).current_hp += damage
 
-
 					action = BattleQueueAction.new()
 					action.type = action.DAMAGE
 					action.damage_target_index = battler_effects_index
@@ -535,7 +538,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		print("Action queue size: " + str(queue.queue.size()))
 		var action_index = 0
 		for actions in queue.queue:
-			print("Action #" + str(action_index) + ". Type: " + str (actions.type))# + ". Battler:" + str(action.)
+			print("Action #" + str(action_index) + ". Type: " + actions.get_type_name())# + ". Battler:" + str(action.)
 			action_index = action_index + 1
 	return queue
 func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand): # For single battles
@@ -755,7 +758,7 @@ func percent_chance(n : float) -> bool:
 	if one_in_n_chance(1/n):
 		return true
 	return false
-func post_damage_checks(battler_index: int) -> bool: # Checks for when any damage is done to battlers. Returns true is the battle is over.
+func post_damage_checks(battler_index: int) -> bool: # Checks for when any damage is done to battlers. Returns true if the battle is over.
 	# Check if target faints.
 	if get_battler_by_index(battler_index).current_hp == 0:
 		# Faint actions

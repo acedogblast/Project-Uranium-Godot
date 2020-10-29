@@ -208,3 +208,41 @@ var pokemon = {
 }
 func get_pokemon_class(id):
 	return load("res://Utilities/Battle/Database/Pokemon/" + pokemon[id] + ".gd").new()
+
+func duplicate_pokemon(original):
+	var copy = load("res://Utilities/Battle/Classes/Pokemon.gd").new()
+	copy.name = original.name
+	copy.ID = original.ID
+	copy.type1 = original.type1
+	copy.type2 = original.type2
+	copy.hp = original.hp
+	copy.attack = original.attack
+	copy.defense = original.defense
+	copy.sp_attack = original.sp_attack
+	copy.sp_defense = original.sp_defense
+	copy.speed = original.speed
+	copy.level = original.level
+	copy.experience = original.experience
+	copy.nature = original.nature
+	copy.ability = original.ability
+	copy.hidden_ability = original.hidden_ability
+	copy.major_ailment = original.major_ailment
+	copy.iv_hp = original.iv_hp
+	copy.iv_attack = original.iv_attack
+	copy.iv_defense = original.iv_defense
+	copy.iv_sp_attack = original.iv_sp_attack
+	copy.iv_sp_defense = original.iv_sp_defense
+	copy.iv_speed = original.iv_speed
+	copy.ev_hp = original.ev_hp
+	copy.ev_attack = original.ev_attack
+	copy.ev_defense = original.ev_defense
+	copy.ev_sp_attack = original.ev_sp_attack
+	copy.ev_sp_defense = original.ev_sp_defense
+	copy.ev_speed = original.ev_speed
+	copy.move_1 = original.move_1
+	copy.move_2 = original.move_2
+	copy.move_3 = original.move_3
+	copy.move_4 = original.move_4
+	copy.gender = original.gender
+	copy.is_shiny = original.is_shiny
+	return copy

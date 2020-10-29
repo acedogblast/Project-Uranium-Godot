@@ -191,6 +191,7 @@ func _input(event):
 						Global.inventory.remove_item(Global.inventory.get_item_by_id(command.item))
 						$AudioStreamPlayer.stream = load("res://Audio/SE/SE_Select1.wav")
 						$AudioStreamPlayer.play()
+						enabled = false
 						emit_signal("command_received", command)
 						$BagMenu/Item.visible = false
 						self.visible = false

@@ -299,8 +299,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "close_ball"
@@ -322,6 +322,9 @@ tracks/2/keys = {
 }, {
 "args": [  ],
 "method": "ball_shake"
+}, {
+"args": [  ],
+"method": "close_ball"
 } ]
 }
 
@@ -519,6 +522,18 @@ tracks/8/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath(".:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="ShaderMaterial" id=7]
@@ -1692,10 +1707,7 @@ scale = Vector2( 1, 0.25 )
 texture = ExtResource( 17 )
 
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
-visible = false
-modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 137.5, 65 )
-scale = Vector2( 2, 2 )
 texture = ExtResource( 12 )
 vframes = 17
 hframes = 28
@@ -1710,8 +1722,9 @@ anims/Capture_Throw = SubResource( 6 )
 stream = ExtResource( 60 )
 
 [node name="Battler" type="Node2D" parent="CanvasLayer/BattleGrounds/FoeBase"]
-position = Vector2( 140, 0 )
-scale = Vector2( 2, 2 )
+visible = false
+position = Vector2( 140, -80 )
+scale = Vector2( 0.1, 0.1 )
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
 material = SubResource( 7 )

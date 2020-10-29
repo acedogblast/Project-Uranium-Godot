@@ -70,9 +70,6 @@ enum {MALE, FEMALE, GENDERLESS}
 # Is the pokemon a shiny
 var is_shiny = false
 
-# The pokemon's catch rate
-var catch_rate
-
 func generate_IV():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
@@ -124,6 +121,8 @@ func generate_nature():
 	rng.randomize()
 	nature = rng.randi_range(0,24)
 func generate_gender(male_ratio : float):
+	if gender == GENDERLESS:
+		return
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	if rng.randf_range(0.0, 100.0) <= male_ratio:
@@ -164,7 +163,6 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 	type1 = data.type1
 	type2 = data.type2
 	level = lv
-	catch_rate = data.catch_rate
 	generate_IV()
 	generate_nature() # For now random but should be determined by something else
 	generate_gender(data.male_ratio)

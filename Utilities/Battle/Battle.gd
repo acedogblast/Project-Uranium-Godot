@@ -38,6 +38,7 @@ func _ready():
 	$CanvasLayer/ColorRect.visible = false
 	$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
 	$CanvasLayer/BattleInterfaceLayer/BattleBag.visible = false
+	$CanvasLayer/BattleGrounds/FoeBase/Ball.visible = false
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	
 	# Check if we are testing
@@ -443,7 +444,11 @@ func battle_loop():
 				$CanvasLayer/AudioStreamPlayer.play()
 
 				# Closing Battle quote
-				var message = Global.TrainerName + " defeated\n"
+				var message
+				if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
+					message = Global.TrainerName + " captured \n"
+				else:
+					message = Global.TrainerName + " defeated \n"
 				match battle_instance.opponent.opponent_type:
 					Opponent.OPPONENT_RIVAL:
 						message += "RIVAL "
@@ -457,6 +462,23 @@ func battle_loop():
 				$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
 				yield(self, "continue_pressed")
 				$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+				
+				# If wild battle, player should have captured it.
+				if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
+					# Add Wild Pokemon to party
+					if Global.pokemon_group.size() == 6:
+						print("party already full")
+						# party already full
+						# TODO: Send to pc
+					else:
+						# Make a copy of the pokemon
+						var copy = registry.duplicate(battle_instance.opponent.pokemon_group[0])
+						Global.pokemon_group.append(copy)
+					
+					pass
+
+
+
 
 				# If applicable, show opponent win quote:
 				if battle_instance.opponent.opponent_type == Opponent.OPPONENT_RIVAL:
@@ -605,13 +627,10 @@ func battle_loop():
 		action.BALL_BROKE:
 			$CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer.play("BallBreak")
 			yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer, "animation_finished")
-		action.BALL_CAPTURE_SONG:
-			$CanvasLayer/AudioStreamPlayer.stop()
-			$CanvasLayer/AudioStreamPlayer.stream = "res://Audio/ME/PU-PokemonObtained.ogg"
-			$CanvasLayer/AudioStreamPlayer.play()
+		
 		action.SET_BALL:
 			$CanvasLayer/BattleGrounds/FoeBase.set_ball(action.ball_type)
-		
+			
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 

@@ -20,7 +20,6 @@ enum {
 	BALL_CAPTURE_TOSS,
 	BALL_SHAKE,
 	BALL_BROKE,
-	BALL_CAPTURE_SONG,
 	SET_BALL
 	}
 
@@ -57,3 +56,44 @@ var level_stat_changes : LevelUpChanges
 var run_away : bool = false
 
 var ball_type
+
+func get_type_name():
+	match self.type:
+		BATTLE_GROUNDS_POS_CHANGE:
+			return "BATTLE_GROUNDS_POS_CHANGE"
+		BATTLE_TEXT:
+			return "BATTLE_TEXT"
+		MOVE_ANIMATION:
+			return "MOVE_ANIMATION"
+		DAMAGE:
+			return "DAMAGE"
+		BATTLE_END:
+			return "BATTLE_END"
+		FAINT:
+			return "FAINT"
+		EXP_GAIN:
+			return "EXP_GAIN"
+		STAT_CHANGE_ANIMATION:
+			return "STAT_CHANGE_ANIMATION"
+		WILD_INTRO:
+			return "WILD_INTRO"
+		HEAL:
+			return "HEAL"
+		LEVEL_UP:
+			return "LEVEL_UP"
+		LEVEL_UP_SE:
+			return "LEVEL_UP_SE"
+		UPDATE_MAJOR_AILMENT:
+			return "UPDATE_MAJOR_AILMENT"
+		ESCAPE_SE:
+			return "ESCAPE_SE"
+		BALL_CAPTURE_TOSS:
+			return "BALL_CAPTURE_TOSS"
+		BALL_SHAKE:
+			return "BALL_SHAKE"
+		BALL_BROKE:
+			return "BALL_BROKE"
+		SET_BALL:
+			return "SET_BALL"
+		_:
+			return str(self.type)
