@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Graphics/Pictures/Pokedex/dexbg1_1.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/Pictures/Pokedex/dexbg1_2.png" type="Texture" id=2]
+[ext_resource path="res://Utilities/Pokedex.gd" type="Script" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/dexbg_grid.png-65e4d38b86ca5ddb0caf5abcb3d0c10a.stex"
+
+[sub_resource type="Animation" id=2]
+resource_name = "Slide"
+length = 16.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 16 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Rect2( 0, 0, 512, 384 ), Rect2( -512, 0, 512, 384 ) ]
+}
+
+[node name="Pokedex" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="BG" type="TextureRect" parent="."]
+margin_right = 512.0
+margin_bottom = 384.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="BG"]
+texture = SubResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 512, 384 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BG/Sprite"]
+autoplay = "Slide"
+anims/Slide = SubResource( 2 )
+
+[node name="BG2" type="TextureRect" parent="."]
+margin_right = 512.0
+margin_bottom = 384.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}

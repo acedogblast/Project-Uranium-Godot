@@ -141,7 +141,9 @@ func Start_Battle(bid : BattleInstanceData):
 			action.type = action.BATTLE_TEXT
 			action.battle_text = "WILD " + battle_instance.opponent.name + " appeared!"
 			queue.push(action)
-
+	# Add foe id to dex seen list
+	if !Global.pokedex_seen.has(battle_instance.opponent.pokemon_group[0].ID):
+		Global.pokedex_seen.append(battle_instance.opponent.pokemon_group[0].ID)
 
 
 
@@ -466,16 +468,10 @@ func battle_loop():
 				# If wild battle, player should have captured it.
 				if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
 					# Add Wild Pokemon to party
-					if Global.pokemon_group.size() == 6:
-						print("party already full")
-						# party already full
-						# TODO: Send to pc
-					else:
-						# Make a copy of the pokemon
-						var copy = registry.duplicate(battle_instance.opponent.pokemon_group[0])
-						Global.pokemon_group.append(copy)
+					# Make a copy of the pokemon
+					var copy = registry.duplicate(battle_instance.opponent.pokemon_group[0])
+					Global.add_poke_to_party(copy)
 					
-					pass
 
 
 
