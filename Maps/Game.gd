@@ -123,12 +123,12 @@ func room_transition(dest, dir):
 	play_anim("fade_in")
 	yield(get_tree().create_timer(0.28), "timeout")
 	
-	#If the dir variable in Stairs.gd is up, then diable the down stairs collision shape and set the trainerx and trainery to dest.x and dest.y repsectively
-	if dir == "Up":
-		$Map/Floor2/DownStairs/CollisionShape2D.disabled = true
-	#If the above is false and the dir variable in Stairs.gd is down, then disable the up stairs collistion shape and set the trainerx and trainery to dest.x and dest.y respectively
-	elif dir == "Down":
-		$Map/Floor1/UpStairs/CollisionShape2D.disabled = true
+	var target_stair_node
+	for node in get_tree().get_nodes_in_group("Stairs"):
+		if node.position == dest:
+			target_stair_node = node
+			break
+	target_stair_node.get_node("CollisionShape2D").disabled = true
 	
 	#if dir is set to up, then set the player dircetion to 2, and if dir is down, then set the player direction to 1
 	if dir == "Up":
@@ -148,12 +148,8 @@ func room_transition(dest, dir):
 	player.inputDisabled = true
 	yield(get_tree().create_timer(0.3), "timeout")
 	
-	#If the dir variable is up, then disable the downstairs collision shape
-	if dir == "Up":
-		$Map/Floor2/DownStairs/CollisionShape2D.disabled = false
-	#If the above is false and the variable is down, then disable the upstairs collision shape 
-	elif dir == "Down":
-		$Map/Floor1/UpStairs/CollisionShape2D.disabled = false
+
+	target_stair_node.get_node("CollisionShape2D").disabled = false
 	
 	#Calls the change_input method from PlayerNew.gd, and calls the transition_visibility method
 	player.change_input()

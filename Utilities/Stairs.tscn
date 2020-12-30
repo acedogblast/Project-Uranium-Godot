@@ -6,9 +6,9 @@
 extents = Vector2( 16, 16 )
 
 [node name="Stairs" type="Area2D" groups=[
+"Stairs",
 "transition",
 ]]
-editor/display_folded = true
 collision_layer = 2
 collision_mask = 2
 script = ExtResource( 1 )

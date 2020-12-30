@@ -34,7 +34,7 @@ var load_game_from_id # Used on loading a save
 
 var theo_starter # 1 = Orchynx, 2 = Electux
 
-signal setup_items
+#signal setup_items
 
 func _ready():
 	add_to_group("save")
