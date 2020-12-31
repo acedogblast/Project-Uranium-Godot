@@ -8,8 +8,8 @@ var background_music = "res://Audio/BGM/PU-Moki Town.ogg";
 var type = "Outside"
 var place_name = "Moki Town"
 
-#var hero_home_x = 880
-#var hero_home_y = 1008
+var hero_home_x = 880
+var hero_home_y = 1008
 var npc_layer
 var grass_pos = []
 
@@ -18,6 +18,12 @@ func _ready():
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
+	if npc_collider == $NPC_Layer/NPC_test.position: # NPC interaction
+		#Face player
+		$NPC_Layer/NPC_test.face_player(direction)
+		#Trigger event2
+		print ("going to event2")
+		event2()
 	return null
 	
 func event1(_body):
@@ -84,3 +90,23 @@ func event1(_body):
 		Global.game.get_node("Background_music").play(time)
 		Global.game.release_player()
 		Global.past_events.append(event_name)
+
+func event2():
+	var event_name = "EVENT_MOKI_TOWN_NPC_TEST"
+	if !Global.past_events.has(event_name):
+		print("New Event: " + event_name)
+		Global.past_events.append(event_name)
+		Global.game.player.change_input()
+		#Global.game.player.canMove = false
+		DialogueSystem.set_box_position(DialogueSystem.TOP)
+
+		for i in range(4):
+			Global.game.play_dialogue_with_point("NPC_AUNT1_D" + str(i+1) , $NPC_Layer/NPC_test.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+			#Global.game.player.canMove = false
+
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+		Global.game.play_dialogue_with_point("NPC_AUNT1_D5" , $NPC_Layer/NPC_test.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		#Global.game.player.canMove = false
+		$NPC_Layer/NPC_test.battle_start()
