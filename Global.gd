@@ -6,8 +6,6 @@ var time = "00:00"
 var pokedex_count = 0
 var location : String = "location"
 var money : int = 0
-var pokedex_seen = [] # list of id numbers
-var pokedex_owned = [] # list of id numbers
 
 var onGrass = false
 #var grassPos = []
@@ -34,11 +32,16 @@ var load_game_from_id # Used on loading a save
 
 var theo_starter # 1 = Orchynx, 2 = Electux
 
-#signal setup_items
+signal setup_items
 
 func _ready():
 	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+
+	# Start with poke for testing
+	var testing_poke = Pokemon.new()
+	testing_poke.set_basic_pokemon_by_level(3,5)
+	pokemon_group.append(testing_poke)
 
 	# Fill inventory for testing
 	inventory = load("res://Utilities/Items/Inventory.gd").new()
@@ -67,9 +70,8 @@ func save_state():
 		"can_run": can_run,
 		"pokemon_group": pokemon_group,
 		"past_events": past_events,
-		"inventory": inventory,
-		"pokedex_seen": pokedex_seen,
-		"pokedex_owned" : pokedex_owned
+		"inventory": inventory
+		#"items": items
 	}
 	SaveSystem.set_state(filename, state)
 func load_state():
@@ -83,23 +85,11 @@ func load_state():
 		can_run = state["can_run"]
 		pokemon_group = state["pokemon_group"]
 		past_events = state["past_events"]
-		pokedex_seen = state["pokedex_seen"]
-		pokedex_owned = state["pokedex_owned"]
 
+		#if state.has("items"):
+		#	items = state["items"]
 		if state.has("inventory"):
 			inventory = state["inventory"]
 func heal_party(): # Heals all of the player's pokemon party.
 	for poke in pokemon_group:
 		poke.heal()
-func add_poke_to_party(poke : Pokemon):
-	# Add to owned dex list
-	if !pokedex_owned.has(poke.ID):
-		pokedex_owned.append(poke.ID)
-		
-	if pokemon_group.size() == 6:
-		print("party already full")
-		# party already full
-		# TODO: Send to pc
-	else:
-		pokemon_group.append(poke)
-	pass
