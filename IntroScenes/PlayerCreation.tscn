@@ -496,7 +496,6 @@ margin_bottom = 384.0
 texture = ExtResource( 3 )
 
 [node name="GenderColor" type="TextureRect" parent="."]
-editor/display_folded = true
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
@@ -519,12 +518,12 @@ margin_bottom = 384.0
 texture = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Bombo"]
+playback_speed = 2.0
 anims/BomboSlideBack = SubResource( 2 )
 anims/BomboSlideOut = SubResource( 3 )
 anims/FadeBombo = SubResource( 4 )
 
 [node name="Blink" type="TextureRect" parent="Bombo"]
-editor/display_folded = true
 visible = false
 margin_right = 40.0
 margin_bottom = 40.0
@@ -536,7 +535,6 @@ anims/Blinking = SubResource( 5 )
 
 [node name="P035" type="TextureRect" parent="Bombo"]
 visible = false
-modulate = Color( 1, 1, 1, 0 )
 margin_left = 260.0
 margin_top = 140.0
 margin_right = 340.0
@@ -548,7 +546,6 @@ texture = ExtResource( 8 )
 stream = ExtResource( 9 )
 
 [node name="GenderSelect" type="Node2D" parent="."]
-editor/display_folded = true
 visible = false
 script = ExtResource( 10 )
 
@@ -570,7 +567,6 @@ stretch_mode = 2
 anims/ColorSlide = SubResource( 7 )
 
 [node name="Boy" type="TextureRect" parent="GenderSelect"]
-editor/display_folded = true
 margin_left = 40.0
 margin_top = 100.0
 margin_right = 200.0
@@ -584,7 +580,6 @@ texture = ExtResource( 13 )
 anims/Shrink = SubResource( 8 )
 
 [node name="Neutral" type="TextureRect" parent="GenderSelect"]
-editor/display_folded = true
 margin_left = 180.0
 margin_top = 100.0
 margin_right = 340.0
@@ -596,7 +591,6 @@ texture = ExtResource( 14 )
 anims/Shrink = SubResource( 9 )
 
 [node name="Girl" type="TextureRect" parent="GenderSelect"]
-editor/display_folded = true
 margin_left = 320.0
 margin_top = 100.0
 margin_right = 480.0
