@@ -34,7 +34,6 @@ var load_game_from_id # Used on loading a save
 
 var theo_starter # 1 = Orchynx, 2 = Electux
 
-#signal setup_items
 
 func _ready():
 	add_to_group("save")
@@ -105,3 +104,10 @@ func add_poke_to_party(poke : Pokemon):
 	else:
 		pokemon_group.append(poke)
 	pass
+func add_money(amount : int):
+	money += amount
+func remove_money(amount : int):
+	if amount > money:
+		money = 0
+	else:
+		money -= amount
