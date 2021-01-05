@@ -83,11 +83,13 @@ func load_state():
 		can_run = state["can_run"]
 		pokemon_group = state["pokemon_group"]
 		past_events = state["past_events"]
-		pokedex_seen = state["pokedex_seen"]
-		pokedex_owned = state["pokedex_owned"]
 
 		if state.has("inventory"):
 			inventory = state["inventory"]
+		if state.has("pokedex_seen"):
+			pokedex_seen = state["pokedex_seen"]
+			pokedex_owned = state["pokedex_owned"]
+		
 func heal_party(): # Heals all of the player's pokemon party.
 	for poke in pokemon_group:
 		poke.heal()
