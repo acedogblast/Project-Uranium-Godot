@@ -505,6 +505,7 @@ func battle_loop():
 					Global.remove_money(get_money_loss())
 					yield(self, "continue_pressed")
 					message = Global.TrainerName + "blacked out!"
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
 					yield(self, "continue_pressed")
 					
 

@@ -58,3 +58,5 @@ dir = "Up"
 position = Vector2( 656, 112 )
 destination = Vector2( 336, 112 )
 dir = "Down"
+
+[node name="NPC_Layer" type="Node2D" parent="."]

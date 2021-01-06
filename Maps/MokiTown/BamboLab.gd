@@ -1,6 +1,6 @@
 extends Node2D
 
-var background_music = "res://Audio/BGM/PU-Radio_ Oak.ogg";
+var background_music = "res://Audio/BGM/PU-Lab.ogg";
 var type = "Indoors"
 var place_name = "Bambo's Lab"
 var npc_layer
@@ -9,8 +9,6 @@ var bambo
 var ui = null
 var starter
 var grass_pos = []
-
-var next_scene1 = "res://Maps/Towns/Moki Town.tscn"
 
 
 signal finished
@@ -37,6 +35,10 @@ func event1(_body): # First event to get pokemon
 		print("New Event: " + event_name)
 		Global.game.player.change_input()
 		Global.game.menu.locked = true
+
+		Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
+		Global.game.get_node("Background_music").play()
+
 		# Spawn Theo
 		theo = load("res://Utilities/NPC.tscn").instance()
 		theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
@@ -46,7 +48,7 @@ func event1(_body): # First event to get pokemon
 
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 
-		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.UP, 10) # This somehow just runs instantly and I can't debug this!
+		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.UP, 10)
 		yield(Global.game.player, "done_movement")
 
 
