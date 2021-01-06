@@ -31039,7 +31039,7 @@ shape = SubResource( 3 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 240, 560 )
-scene_destination = "res://Maps/MokiTown/MokiTown.tscn"
+scene_destination = "res://Maps/Towns/Moki Town.tscn"
 location = Vector2( 528, 364 )
 exterior = false
 

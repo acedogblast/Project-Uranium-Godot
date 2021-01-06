@@ -4,6 +4,7 @@ extends Node2D
 onready var player = null
 var menu
 var battle
+var overlay
 
 var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene = null
@@ -24,7 +25,7 @@ signal tranistion_complete
 onready var transition = $CanvasLayer/Transition
 
 func _ready():
-	var overlay = preload("res://Utilities/debug_overlay.tscn").instance()
+	overlay = preload("res://Utilities/debug_overlay.tscn").instance()
 	#overlay.add_stat("onGrass", Global, "onGrass", false)
 	#overlay.add_stat("Grass Position", Global, "grass_positions", false)
 	#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
@@ -77,6 +78,8 @@ func _process(_delta):
 		SaveSystem.save_game(1)
 	if current_scene != null && current_scene.type == "Outside" && loaded == false:
 		call_deferred("load_seemless")
+	if Input.is_key_pressed(KEY_F2):
+		overlay.toggle()
 	
 
 func change_menu_text():

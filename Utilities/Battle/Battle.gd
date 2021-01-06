@@ -455,7 +455,9 @@ func battle_loop():
 
 					# Closing Battle quote
 					var message
-					if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
+					#if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
+					
+					if action.captured:
 						message = Global.TrainerName + " captured \n"
 					else:
 						message = Global.TrainerName + " defeated \n"
@@ -482,11 +484,10 @@ func battle_loop():
 						$CanvasLayer/BattleInterfaceLayer/Message/Label.text = Global.TrainerName + " got $" + str(battle_instance.victory_award) + "\nfor winning!"
 						yield(self, "continue_pressed")
 				
-					# If wild battle, player should have captured it.
-					if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
+					if action.captured:
 						# Add Wild Pokemon to party
 						# Make a copy of the pokemon
-						var copy = registry.duplicate(battle_instance.opponent.pokemon_group[0])
+						var copy = registry.duplicate_pokemon(battle_instance.opponent.pokemon_group[0])
 						Global.add_poke_to_party(copy)
 				else: # Player loses
 					var message = Global.TrainerName + " has no more Pokémon that can fight!"
@@ -495,10 +496,10 @@ func battle_loop():
 					$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
 					yield(self, "continue_pressed")
 
-					message = Global.TrainerName + "lost against\n" + get_opponent_title()
+					message = Global.TrainerName + " lost against\n" + get_opponent_title()
 					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
 					yield(self, "continue_pressed")
-					message = Global.TrainerName + " gave $" + str(get_money_loss()) + "to the winner..."
+					message = Global.TrainerName + " gave $" + str(get_money_loss()) + " to the winner..."
 					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
 					# Remove money
 					Global.remove_money(get_money_loss())

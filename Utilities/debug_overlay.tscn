@@ -2,7 +2,6 @@
 
 [ext_resource path="res://Utilities/debug_overlay.gd" type="Script" id=1]
 
-
 [node name="debug_overlay" type="CanvasLayer"]
 script = ExtResource( 1 )
 

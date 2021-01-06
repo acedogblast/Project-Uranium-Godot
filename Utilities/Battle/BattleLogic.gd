@@ -149,6 +149,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				# Capture sucsesful
 				action = BattleQueueAction.new()
 				action.type = action.BATTLE_END
+				action.captured = true
 				queue.push(action)
 				return queue
 
@@ -559,6 +560,7 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 			can_escape = true
 		else:
 			escape_attempts += 1
+			#warning-ignore:INTEGER_DIVISION
 			var f = ( (battler1.speed * 128) / battler2.speed ) + 30 * escape_attempts
 			f = posmod(int(f), 256)
 			var rng = RandomNumberGenerator.new()
@@ -755,6 +757,7 @@ func one_in_n_chance(n : int) -> bool:
 		return true
 	return false
 func percent_chance(n : float) -> bool:
+	#warning-ignore:NARROWING_CONVERSION
 	if one_in_n_chance(1/n):
 		return true
 	return false
