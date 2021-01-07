@@ -391,7 +391,7 @@ msgid "EVENT_MOKI_TOWN_THEO_HOME_20"
 msgstr "It's a high-tech device that's indispensable for Pokémon Trainers. It plays music and includes a map of the region. Most importantly, it contains a phone that will allow you to stay in touch with each other, and other Trainers."
 
 msgid "EVENT_MOKI_TOWN_THEO_HOME_21"
-msgstr "Cool!\nHeheh, I got the red one...\nit's cooler than yours!\I'm gonna go meet the Professor by the edge of town.\nI'll be the first to catch a Pokémon!\nBye dad! Keep up, \\PN!"
+msgstr "Cool!\nHeheh, I got the red one...\nit's cooler than yours!\nI'm gonna go meet the Professor by the edge of town.\nI'll be the first to catch a Pokémon!\nBye dad! Keep up, \\PN!"
 
 msgid "EVENT_MOKI_TOWN_THEO_HOME_22"
 msgstr "...Well. Talk about a dramatic turnaround. He always bounces back quickly."

@@ -112,7 +112,7 @@ scene_destination = "res://Maps/Towns/Town Houses/Pokecenter.tscn"
 location = Vector2( 240, 432 )
 
 [node name="Door2" parent="NPC_Layer" instance=ExtResource( 8 )]
-position = Vector2( 528, 364 )
+position = Vector2( 528, 368 )
 scene_destination = "res://Maps/MokiTown/BamboLab.tscn"
 location = Vector2( 240, 528 )
 door_type = "Type 2 - Glass"
