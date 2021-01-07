@@ -4,6 +4,7 @@ extends Node2D
 onready var player = null
 var menu
 var battle
+var overlay
 
 var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene = null
@@ -24,7 +25,7 @@ signal tranistion_complete
 onready var transition = $CanvasLayer/Transition
 
 func _ready():
-	var overlay = preload("res://Utilities/debug_overlay.tscn").instance()
+	overlay = preload("res://Utilities/debug_overlay.tscn").instance()
 	#overlay.add_stat("onGrass", Global, "onGrass", false)
 	#overlay.add_stat("Grass Position", Global, "grass_positions", false)
 	#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
@@ -77,6 +78,8 @@ func _process(_delta):
 		SaveSystem.save_game(1)
 	if current_scene != null && current_scene.type == "Outside" && loaded == false:
 		call_deferred("load_seemless")
+	if Input.is_key_pressed(KEY_F2):
+		overlay.toggle()
 	
 
 func change_menu_text():
@@ -123,12 +126,12 @@ func room_transition(dest, dir):
 	play_anim("fade_in")
 	yield(get_tree().create_timer(0.28), "timeout")
 	
-	#If the dir variable in Stairs.gd is up, then diable the down stairs collision shape and set the trainerx and trainery to dest.x and dest.y repsectively
-	if dir == "Up":
-		$Map/Floor2/DownStairs/CollisionShape2D.disabled = true
-	#If the above is false and the dir variable in Stairs.gd is down, then disable the up stairs collistion shape and set the trainerx and trainery to dest.x and dest.y respectively
-	elif dir == "Down":
-		$Map/Floor1/UpStairs/CollisionShape2D.disabled = true
+	var target_stair_node
+	for node in get_tree().get_nodes_in_group("Stairs"):
+		if node.position == dest:
+			target_stair_node = node
+			break
+	target_stair_node.get_node("CollisionShape2D").disabled = true
 	
 	#if dir is set to up, then set the player dircetion to 2, and if dir is down, then set the player direction to 1
 	if dir == "Up":
@@ -148,12 +151,8 @@ func room_transition(dest, dir):
 	player.inputDisabled = true
 	yield(get_tree().create_timer(0.3), "timeout")
 	
-	#If the dir variable is up, then disable the downstairs collision shape
-	if dir == "Up":
-		$Map/Floor2/DownStairs/CollisionShape2D.disabled = false
-	#If the above is false and the variable is down, then disable the upstairs collision shape 
-	elif dir == "Down":
-		$Map/Floor1/UpStairs/CollisionShape2D.disabled = false
+
+	target_stair_node.get_node("CollisionShape2D").disabled = false
 	
 	#Calls the change_input method from PlayerNew.gd, and calls the transition_visibility method
 	player.change_input()
@@ -188,7 +187,7 @@ func load_seemless():
 	
 	next_scene1 = load(current_scene.next_scene1).instance()
 	#next_scene1 = next_scene1.instance()
-	next_scene1.position = current_scene.next_scene1_offset
+	next_scene1.position = Vector2(2272,26*32)
 	add_child(next_scene1)
 
 #Checks to see if the player is interacting, if not and the interaction title isn't null then is interacting is set to true, the change_input method is called, the play_dialogue method is called, we wait until the dialogue event has ended, and the change_input method is called again

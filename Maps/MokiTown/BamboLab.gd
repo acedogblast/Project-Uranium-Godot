@@ -1,6 +1,6 @@
 extends Node2D
 
-var background_music = "res://Audio/BGM/PU-Radio_ Oak.ogg";
+var background_music = "res://Audio/BGM/PU-Lab.ogg";
 var type = "Indoors"
 var place_name = "Bambo's Lab"
 var npc_layer
@@ -9,8 +9,6 @@ var bambo
 var ui = null
 var starter
 var grass_pos = []
-
-var next_scene1 = "res://Maps/Towns/Moki Town.tscn"
 
 
 signal finished
@@ -37,6 +35,10 @@ func event1(_body): # First event to get pokemon
 		print("New Event: " + event_name)
 		Global.game.player.change_input()
 		Global.game.menu.locked = true
+
+		Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
+		Global.game.get_node("Background_music").play()
+
 		# Spawn Theo
 		theo = load("res://Utilities/NPC.tscn").instance()
 		theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
@@ -46,7 +48,7 @@ func event1(_body): # First event to get pokemon
 
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 
-		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.UP, 10) # This somehow just runs instantly and I can't debug this!
+		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.UP, 10)
 		yield(Global.game.player, "done_movement")
 
 
@@ -500,99 +502,174 @@ func lab_battle():
 
 	Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Rival Theme.ogg")
 	Global.game.get_node("Background_music").play()
-	
-	
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_54", theo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+	if Global.game.battle.player_won:
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_54", theo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_55", theo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_55", theo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_56", theo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_56", theo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_57", bambo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_57", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	bambo.call_deferred("move_multi", "Left", 1)
-	yield(bambo, "done_movement")
+		bambo.call_deferred("move_multi", "Left", 1)
+		yield(bambo, "done_movement")
 
-	bambo.call_deferred("move_multi", "Down", 1)
-	yield(bambo, "done_movement")
+		bambo.call_deferred("move_multi", "Down", 1)
+		yield(bambo, "done_movement")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_58", bambo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_58", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	# Fade screen and heal pokemon
-	var fade = Global.game.get_node("CanvasLayer/Fade/AnimationPlayer")
-	fade.play_backwards("Fade")
-	yield(fade, "animation_finished")
+		# Fade screen and heal pokemon
+		var fade = Global.game.get_node("CanvasLayer/Fade/AnimationPlayer")
+		fade.play_backwards("Fade")
+		yield(fade, "animation_finished")
 
-	# Heal and effect sound
-	Global.heal_party()
-	var sound = load("res://Audio/ME/Pokemon Healing.ogg")
-	sound.loop = false
-	Global.game.get_node("Effect_music").stream = sound
-	Global.game.get_node("Effect_music").play()
-	yield(Global.game.get_node("Effect_music"), "finished")
+		# Heal and effect sound
+		Global.heal_party()
+		var sound = load("res://Audio/ME/Pokemon Healing.ogg")
+		sound.loop = false
+		Global.game.get_node("Effect_music").stream = sound
+		Global.game.get_node("Effect_music").play()
+		yield(Global.game.get_node("Effect_music"), "finished")
+		DialogueSystem.set_box_position(DialogueSystem.TOP)
+		Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_HEAL")
+		yield(Global.game, "event_dialogue_end")
+		fade.play("Fade")
+		yield(fade, "animation_finished")
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 
+		theo.call_deferred("set_idle_frame", "Up")
+		Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.UP)
 
-	fade.play("Fade")
-	yield(fade, "animation_finished")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_59", theo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	theo.call_deferred("set_idle_frame", "Up")
-	Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.UP)
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_60", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_59", theo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_61", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_60", bambo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_62", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_61", bambo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_63", theo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_62", bambo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.DOWN)
+		theo.call_deferred("move_multi", "Down", 8)
+		yield(theo, "done_movement")
+		theo.queue_free()
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_63", theo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		# Play lab music
+		Global.game.get_node("Effect_music").stop()
+		Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
+		Global.game.get_node("Background_music").play()
 
-	Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.DOWN)
-	theo.call_deferred("move_multi", "Down", 8)
-	yield(theo, "done_movement")
-	theo.queue_free()
+		bambo.call_deferred("move_multi", "Down", 1)
+		yield(bambo, "done_movement")
 
-	# Play lab music
-	Global.game.get_node("Effect_music").stop()
-	Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
-	Global.game.get_node("Background_music").play()
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_64", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	bambo.call_deferred("move_multi", "Down", 1)
-	yield(bambo, "done_movement")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_65", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_64", bambo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		bambo.call_deferred("move_multi", "Down", 4)
+		yield(bambo, "done_movement")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_65", bambo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+		bambo.call_deferred("set_idle_frame", "Up")
 
-	bambo.call_deferred("move_multi", "Down", 4)
-	yield(bambo, "done_movement")
+		Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_66")
+		yield(Global.game, "event_dialogue_end")
 
-	bambo.call_deferred("set_idle_frame", "Up")
+		Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_67")
+		yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_66")
-	yield(Global.game, "event_dialogue_end")
+		bambo.call_deferred("move_multi", "Down", 4)
+		yield(bambo, "done_movement")
 
-	Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_67")
-	yield(Global.game, "event_dialogue_end")
+		bambo.queue_free()
+		Global.past_events.append("EVENT_BAMBOLAB_1_WIN")
+	else:
+		
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_54_LOSS", theo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
 
-	bambo.call_deferred("move_multi", "Down", 4)
-	yield(bambo, "done_movement")
+		theo.call_deferred("move_multi", "Down", 8)
+		Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.DOWN)
+		yield(theo, "done_movement")
+		theo.queue_free()
 
-	bambo.queue_free()
+		Global.game.get_node("Effect_music").stop()
+		Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Lab.ogg")
+		Global.game.get_node("Background_music").play()
 
+		bambo.call_deferred("move_multi", "Down", 2)
+		yield(bambo, "done_movement")
+		
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_55_LOSS", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+
+		Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.RIGHT)
+		bambo.call_deferred("move_multi", "Left", 1)
+		yield(bambo, "done_movement")
+
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_56_LOSS", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_57_LOSS", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_58_LOSS", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_59_LOSS", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+
+		# Fade screen and heal pokemon
+		var fade = Global.game.get_node("CanvasLayer/Fade/AnimationPlayer")
+		fade.play_backwards("Fade")
+		yield(fade, "animation_finished")
+
+		# Heal and effect sound
+		Global.heal_party()
+		var sound = load("res://Audio/ME/Pokemon Healing.ogg")
+		sound.loop = false
+		Global.game.get_node("Effect_music").stream = sound
+		Global.game.get_node("Effect_music").play()
+		yield(Global.game.get_node("Effect_music"), "finished")
+		DialogueSystem.set_box_position(DialogueSystem.TOP)
+		Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_HEAL")
+		yield(Global.game, "event_dialogue_end")
+		fade.play("Fade")
+		yield(fade, "animation_finished")
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+
+		Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.DOWN)
+		bambo.call_deferred("move_multi", "Down", 3)
+		yield(bambo, "done_movement")
+
+		bambo.call_deferred("set_idle_frame", "Up")
+
+		Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_66")
+		yield(Global.game, "event_dialogue_end")
+
+		Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_67")
+		yield(Global.game, "event_dialogue_end")
+
+		bambo.call_deferred("move_multi", "Down", 4)
+		yield(bambo, "done_movement")
+
+		bambo.queue_free()
+		Global.past_events.append("EVENT_BAMBOLAB_1_LOSS")
+		pass
 	Global.past_events.append("EVENT_BAMBOLAB_1_COMPLETE")
 	Global.game.player.change_input()
 	Global.game.menu.locked = false

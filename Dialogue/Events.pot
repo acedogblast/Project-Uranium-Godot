@@ -303,11 +303,137 @@ msgstr "Sign...\nHe took that harder than I hoped."
 msgid "EVENT_MOKI_LAB_FIRST_POK_65"
 msgstr "But, you shouldn't be so quick to judge him. He is just a kid after all.\nI expect he'll soon discover that training Pokémon isn't as easy as he imagined..."
 
+msgid "EVENT_MOKI_LAB_FIRST_POK_54_LOSS"
+msgstr "Yes!! My first win!\nMy Pokémon an' me are gonna\nbe the best, coolest team in Tandor! \\PN,you're nothing compared to me.\nNothing!!\nHahaha!\nI gotta go show dad!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_55_LOSS"
+msgstr "\\PN...\nI'm surprised you managed to lose that fight."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_56_LOSS"
+msgstr "You must have noticed that your stater has a type advantage over Theo's.\nWater beats Fire, Fire beats Grass, and Grass beats Water. That's the elemental type triangle.\nWell, one of them, at any rate."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_57_LOSS"
+msgstr "Normally, in a matchup like that, it's a foregone conclusion...\nOr maybe you let him win on purpose?\nIf you did, that's kind of you."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_58_LOSS"
+msgstr "He talks a big game, but I get the feeling he wouldn't take it so well if he lost his first ever battle."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_59_LOSS"
+msgstr "You seem to be holding up alright, though.\n Here, let me heal your Pokémon quickly."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_HEAL"
+msgstr "Your Pokémon were healed..."
+
 msgid "EVENT_MOKI_LAB_FIRST_POK_66"
 msgstr "I'm going out to the entrance to Route 01 by the edge of town. Bring Theo, and I'll teach you both how to catch Pokémon."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_67"
 msgstr "See you later, \\PN."
 
+msgid "EVENT_MOKI_TOWN_THEO_HOME_1"
+msgstr "What did you say to my son?!\nHe ran upstairs, crying, and locked the door behind him. He won't tell me what's wrong or come downstairs."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_2"
+msgstr "I swear, if you did anything to hurt him..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_3"
+msgstr "\\wt[5].\\wt[5].\\wt[5].\nOh.\nSo that's how it is."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_4"
+msgstr "So he got the weaker starter,\nand you beat him in a battle...\nHm. I see... that explains it."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_5"
+msgstr "A harsh lesson, to be sure...\nbut losing is as much as part of being a Trainer as winning.\nHe had his heart set on this day being perfect,\nso losing right off the bat is somewhat of a shock."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_6"
+msgstr "Still, crying won't solve anything.\nThat's something he has to learn."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_7"
+msgstr "THEO!\\wt[5] COME DOWNSTAIRS RIGHT NOW,\nYOUNG MAN!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_8"
+msgstr "*sniffle*"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_9"
+msgstr "Theo...\nYou can't cry every time you lose a battle. That's just part of being a Trainer."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_10"
+msgstr "B-but it isn't fair...\n\\PN got the better starter 'n me...\nNow I'm never gonna win!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_11"
+msgstr "Then you'll have to catch more Pokémon to balance out your team's weaknesses. Besides, a well-raised Pokémon can still win, even at a disadvantage. There's no sense in giving up before you even begin."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_12"
+msgstr "*sniff*\nY-yes, dad..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_13"
+msgstr "Now, Theo...\nI won't always be around to pick you up when you're feeling down.\nSo, try and be strong for yourself, okay?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_14"
+msgstr "\\PN...\nPlease be patient with my son.\nHe looks up to you, you know."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_15"
+msgstr "Oh, I nearly forgot. \\PN,\nTheo, I have something for both of you."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_16"
+msgstr "L-like a present...?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_17"
+msgstr "Yes, exactly.\n\\PN, your father Kellyn send me these and told me to give them to you both when you began your journeys.\nI'm sure it will come in useful."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_18"
+msgstr "[\\PN and Theo received a PokéPod!]"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_19"
+msgstr "A PokéPod? What's that?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_20"
+msgstr "It's a high-tech device that's indispensable for Pokémon Trainers. It plays music and includes a map of the region. Most importantly, it contains a phone that will allow you to stay in touch with each other, and other Trainers."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_21"
+msgstr "Cool!\nHeheh, I got the red one...\nit's cooler than yours!\nI'm gonna go meet the Professor by the edge of town.\nI'll be the first to catch a Pokémon!\nBye dad! Keep up, \\PN!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_22"
+msgstr "...Well. Talk about a dramatic turnaround. He always bounces back quickly."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_23"
+msgstr "\\PN, you don't want to keep the Professor waiting, so you should get moving too.\nI won't see you or Theo again for some time...\nYou see, I'm starting a new job soon. I'm supervising the construction of the new Power Plant Epsilon.\nPerhaps I'll see you there, in time.\nAfter all... it's the last place Lucille was ever seen."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_24"
+msgstr "Best of luck on your journey, \\PN."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_25"
+msgstr "Hahaha! Wooooo!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_26"
+msgstr "Theo's certainly in a good mood.\nHe showed me his starter Pokémon and told me how pround he was that he finally beat you.\nI trust you didn't take it too hard..?\nMy song is very energetic.\nAnd, well, he has his heart set on winning."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_27"
+msgstr "Although... I have to ask...\nDid you let him win on purpose?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_28"
+msgstr "\\wt[5].\\wt[5].\\wt[5]."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_29"
+msgstr "I suppose I should thank you.\nYou've certainly caused him to begin his journey on a high note. Although, he'll have a rough time of it when he encounters his first loss. Not everyone will go easy on him like you did..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_30"
+msgstr "Losing is as much a part of being a Trainer as winning. He will have to learn that, sooner or latter..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_31"
+msgstr "Oh, \\PN is here.\nAre you looking for a rematch?'Cause I ain't giving you one! I won, fair and square! Haha!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_32"
+msgstr "Theo, don't be rude.\nYou and \\PN will see a lot of each other on your journeys to come, so you'll need to get along."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_33"
+msgstr "...No? Really?\nBut I thought your starter had a type advantage."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_34"
+msgstr "Perhaps Theo is a naturally talented Trainer, then... or perhaps he got lucky."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_35"
+msgstr "Time will tell how he fares."
+
 msgid "EVENT_MOKI_POKECENTER_HEAL_QUESTION"
-msgstr "Welcome to the Pokemon center.\nWould you like me to heal your Pokemon?"
+msgstr "Welcome to the Pokémon center.\nWould you like me to heal your Pokémon?"

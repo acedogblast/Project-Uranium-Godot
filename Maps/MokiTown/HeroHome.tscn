@@ -51,11 +51,6 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 262155, 46, 0, 262156, 46, 1, 262157, 46, 2, 327691, 46, 65536, 327692, 46, 65537, 327693, 46, 65538, 393223, 29, 0, 393227, 46, 131072, 393228, 46, 131073, 393229, 46, 131074, 524283, 17, 0, 524284, 24, 0, 524286, 17, 0, 589819, 17, 0, 589822, 17, 0 )
 
-[node name="UpStairs" parent="Floor1" instance=ExtResource( 3 )]
-position = Vector2( 149, 80 )
-destination = Vector2( 64, 80 )
-dir = "Up"
-
 [node name="BedBlanket" type="TileMap" parent="Floor1"]
 scale = Vector2( 2, 2 )
 z_index = 9
@@ -172,11 +167,6 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2/Shelf2"]
 shape = SubResource( 2 )
 
-[node name="DownStairs" parent="Floor2" instance=ExtResource( 3 )]
-position = Vector2( 40, 80 )
-destination = Vector2( 1184, 80 )
-dir = "Down"
-
 [node name="Event1" type="Area2D" parent="Floor2"]
 position = Vector2( 176, 144 )
 collision_layer = 2
@@ -194,4 +184,14 @@ position = Vector2( 1120, 336 )
 scene_destination = "res://Maps/Towns/Moki Town.tscn"
 location = Vector2( 880, 1008 )
 exterior = false
+
+[node name="UpStairs" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1184, 80 )
+destination = Vector2( 64, 80 )
+dir = "Up"
+
+[node name="DownStairs" parent="." instance=ExtResource( 3 )]
+position = Vector2( 64, 80 )
+destination = Vector2( 1184, 80 )
+dir = "Down"
 [connection signal="area_entered" from="Floor2/Event1" to="." method="event1"]

@@ -17,6 +17,7 @@ var effect_shader
 var battle_command : BattleCommand
 
 var battle_is_over = false
+var player_won = false
 
 var battle_debug = false
 
@@ -427,69 +428,91 @@ func battle_loop():
 			yield($CanvasLayer/BattleInterfaceLayer/BattleBars, "finished")
 		action.BATTLE_END:
 			battle_is_over = true
+			if action.winner == action.PLAYER_WIN:
+				player_won = true
+				print("Player wins.")
+			if action.winner == action.FOE_WIN:
+				print("Foe wins.")
+
 			$CanvasLayer/BattleInterfaceLayer/BattleBars.visible = false
 
 			
 			if !action.run_away:
-				# Play victory music
-				var victory_music
-				match battle_instance.battle_type:
-					BattleInstanceData.BattleType.SINGLE_TRAINER, BattleInstanceData.BattleType.RIVAL:
-						victory_music = load("res://Audio/ME/PU-Victory Trainer Battle.ogg")
-					BattleInstanceData.BattleType.SINGLE_WILD, BattleInstanceData.BattleType.DOUBLE_WILD:
-						victory_music = load("res://Audio/BGM/PU-WildVictory.ogg") # There is another version in ME. Not sure which one to use.
-					BattleInstanceData.BattleType.SINGLE_GYML, BattleInstanceData.BattleType.DOUBLE_GYML:
-						victory_music = load("res://Audio/ME/PU-GymVictory.ogg")
-					# TODO: Fill other battle types
-				$CanvasLayer/AudioStreamPlayer.stop()
-				$CanvasLayer/AudioStreamPlayer.stream = victory_music
-				$CanvasLayer/AudioStreamPlayer.play()
+				if player_won:
+					# Play victory music
+					var victory_music
+					match battle_instance.battle_type:
+						BattleInstanceData.BattleType.SINGLE_TRAINER, BattleInstanceData.BattleType.RIVAL:
+							victory_music = load("res://Audio/ME/PU-Victory Trainer Battle.ogg")
+						BattleInstanceData.BattleType.SINGLE_WILD, BattleInstanceData.BattleType.DOUBLE_WILD:
+							victory_music = load("res://Audio/BGM/PU-WildVictory.ogg") # There is another version in ME. Not sure which one to use.
+						BattleInstanceData.BattleType.SINGLE_GYML, BattleInstanceData.BattleType.DOUBLE_GYML:
+							victory_music = load("res://Audio/ME/PU-GymVictory.ogg")
+						# TODO: Fill other battle types
+					$CanvasLayer/AudioStreamPlayer.stop()
+					$CanvasLayer/AudioStreamPlayer.stream = victory_music
+					$CanvasLayer/AudioStreamPlayer.play()
 
-				# Closing Battle quote
-				var message
-				if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
-					message = Global.TrainerName + " captured \n"
-				else:
-					message = Global.TrainerName + " defeated \n"
-				match battle_instance.opponent.opponent_type:
-					Opponent.OPPONENT_RIVAL:
-						message += "RIVAL "
-					Opponent.OPPONENT_TRAINER:
-						message += "TRAINER "
-					Opponent.OPPONENT_WILD:
-						message += "WILD "
-				message += battle_instance.opponent.name
-				$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
-				$CanvasLayer/BattleInterfaceLayer/Message.visible = true
-				$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
-				yield(self, "continue_pressed")
-				$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+					# Closing Battle quote
+					var message
+					#if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
+					
+					if action.captured:
+						message = Global.TrainerName + " captured \n"
+					else:
+						message = Global.TrainerName + " defeated \n"
+					message += get_opponent_title()
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+					$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+					yield(self, "continue_pressed")
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+
+
+					# If applicable, show opponent win quote:
+					if battle_instance.opponent.opponent_type == Opponent.OPPONENT_RIVAL:
+						$CanvasLayer/BattleGrounds/AnimationPlayer.play("Opponent_Quote")
+						yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+
+						message = tr(battle_instance.opponent.after_battle_quote)
+						$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+						$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+						yield(self, "continue_pressed")
+
+						# Show money earned
+						Global.money += battle_instance.victory_award
+						$CanvasLayer/BattleInterfaceLayer/Message/Label.text = Global.TrainerName + " got $" + str(battle_instance.victory_award) + "\nfor winning!"
+						yield(self, "continue_pressed")
 				
-				# If wild battle, player should have captured it.
-				if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD || battle_instance.battle_type == BattleInstanceData.BattleType.DOUBLE_WILD:
-					# Add Wild Pokemon to party
-					# Make a copy of the pokemon
-					var copy = registry.duplicate(battle_instance.opponent.pokemon_group[0])
-					Global.add_poke_to_party(copy)
+					if action.captured:
+						# Add Wild Pokemon to party
+						# Make a copy of the pokemon
+						var copy = registry.duplicate_pokemon(battle_instance.opponent.pokemon_group[0])
+						Global.add_poke_to_party(copy)
+				else: # Player loses
+					var message = Global.TrainerName + " has no more Pokémon that can fight!"
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+					$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+					yield(self, "continue_pressed")
+
+					message = Global.TrainerName + " lost against\n" + get_opponent_title()
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+					yield(self, "continue_pressed")
+					message = Global.TrainerName + " gave $" + str(get_money_loss()) + " to the winner..."
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+					# Remove money
+					Global.remove_money(get_money_loss())
+					yield(self, "continue_pressed")
+					message = Global.TrainerName + "blacked out!"
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
+					yield(self, "continue_pressed")
 					
 
 
 
 
-				# If applicable, show opponent win quote:
-				if battle_instance.opponent.opponent_type == Opponent.OPPONENT_RIVAL:
-					$CanvasLayer/BattleGrounds/AnimationPlayer.play("Opponent_Quote")
-					yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
-
-					message = tr(battle_instance.opponent.after_battle_quote)
-					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
-					$CanvasLayer/BattleInterfaceLayer/Message.visible = true
-					yield(self, "continue_pressed")
-
-					# Show money earned
-					Global.money += battle_instance.victory_award
-					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = Global.TrainerName + " got $" + str(battle_instance.victory_award) + "\nfor winning!"
-					yield(self, "continue_pressed")
+				
 			
 			# Fade out of battle
 			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
@@ -497,10 +520,7 @@ func battle_loop():
 			yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
 			$CanvasLayer/AudioStreamPlayer.stop()
 
-			if action.winner == action.PLAYER_WIN:
-				print("Player wins.")
-			if action.winner == action.FOE_WIN:
-				print("Foe wins.")
+			
 		action.STAT_CHANGE_ANIMATION:
 			var effect
 			var animation
@@ -666,3 +686,42 @@ func get_battle_snapshot():
 	if battler2.move_4 != null:
 		snap.poke_move_list.append(battler2.move_4.name)
 	return snap
+func get_opponent_title() :
+	var title = ""
+	match battle_instance.opponent.opponent_type:
+		Opponent.OPPONENT_RIVAL:
+			title += "RIVAL "
+		Opponent.OPPONENT_TRAINER:
+			title += "TRAINER "
+		Opponent.OPPONENT_WILD:
+			title += "WILD "
+	title += battle_instance.opponent.name
+	return title
+func get_money_loss() -> int:
+	var amount : int = 0
+	var level = 0
+	var base_payout = 0
+	for poke in Global.pokemon_group:
+		if poke.level > level:
+			level = poke.level
+	match Global.badges:
+		0:
+			base_payout = 8
+		1:
+			base_payout = 16
+		2:
+			base_payout = 24
+		3:
+			base_payout = 36
+		4:
+			base_payout = 48
+		5:
+			base_payout = 60 # could be 64 depending on gen
+		6:
+			base_payout = 80
+		7:
+			base_payout = 100
+		8:
+			base_payout = 120
+	amount = level * base_payout
+	return amount

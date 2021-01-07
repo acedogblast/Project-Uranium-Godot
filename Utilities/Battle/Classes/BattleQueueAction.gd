@@ -57,6 +57,8 @@ var run_away : bool = false
 
 var ball_type
 
+var captured : bool = false
+
 func get_type_name():
 	match self.type:
 		BATTLE_GROUNDS_POS_CHANGE:

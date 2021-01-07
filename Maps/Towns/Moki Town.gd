@@ -2,15 +2,14 @@ extends Node2D
 
 #var next_scene1 = "res://Maps/Route03/Route03.tscn"
 var next_scene1 = "res://Maps/Routes/Route 3.tscn"
-var next_scene1_offset = Vector2(2272,26*32)
 
 var background_music = "res://Audio/BGM/PU-Moki Town.ogg";
 
 var type = "Outside"
 var place_name = "Moki Town"
 
-var hero_home_x = 880
-var hero_home_y = 1008
+#var hero_home_x = 880
+#var hero_home_y = 1008
 var npc_layer
 var grass_pos = []
 
