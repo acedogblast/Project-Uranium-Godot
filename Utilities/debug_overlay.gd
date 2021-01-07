@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 var stats = []
-var enabled : bool = true
+
 func add_stat(stat_name, object, stat_ref, is_method):
 	stats.append([stat_name, object, stat_ref, is_method])
 	pass
@@ -28,11 +28,3 @@ func _process(delta):
 		label_text += "\n"
 	
 	$Label.text = label_text
-
-func toggle():
-	if enabled:
-		$Label.hide()
-		enabled = false
-	else:
-		$Label.show()
-		enabled = true

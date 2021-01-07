@@ -202,7 +202,7 @@ _global_script_class_icons={
 
 config/name="Pokémon Uranium"
 run/main_scene="res://Utilities/Start.tscn"
-config/icon="res://PermittedAssets/icon.png"
+config/icon="res://icon.png"
 
 [autoload]
 
@@ -219,6 +219,7 @@ gdscript/warnings/unused_variable=false
 
 window/size/width=512
 window/size/height=384
+window/vsync/use_vsync=false
 window/handheld/orientation="sensor_landscape"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"

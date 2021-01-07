@@ -242,7 +242,6 @@ func move(force_move : bool):
 	move_direction = Vector2.ZERO
 	
 	dir = ""
-	
 	if direction == DIRECTION.DOWN and ($NextCollision/Down.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.y = 32
 			

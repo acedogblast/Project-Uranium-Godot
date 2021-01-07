@@ -34,6 +34,7 @@ var load_game_from_id # Used on loading a save
 
 var theo_starter # 1 = Orchynx, 2 = Electux
 
+signal setup_items
 
 func _ready():
 	add_to_group("save")
@@ -82,13 +83,11 @@ func load_state():
 		can_run = state["can_run"]
 		pokemon_group = state["pokemon_group"]
 		past_events = state["past_events"]
+		pokedex_seen = state["pokedex_seen"]
+		pokedex_owned = state["pokedex_owned"]
 
 		if state.has("inventory"):
 			inventory = state["inventory"]
-		if state.has("pokedex_seen"):
-			pokedex_seen = state["pokedex_seen"]
-			pokedex_owned = state["pokedex_owned"]
-		
 func heal_party(): # Heals all of the player's pokemon party.
 	for poke in pokemon_group:
 		poke.heal()
@@ -104,10 +103,3 @@ func add_poke_to_party(poke : Pokemon):
 	else:
 		pokemon_group.append(poke)
 	pass
-func add_money(amount : int):
-	money += amount
-func remove_money(amount : int):
-	if amount > money:
-		money = 0
-	else:
-		money -= amount
