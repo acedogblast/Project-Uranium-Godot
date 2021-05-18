@@ -202,3 +202,16 @@ func remove_item(item: Item):
 					key_items.remove(index)
 		else:
 			item_stack.quantity -= 1
+
+func is_empty() -> bool:
+	if (
+		items.size() == 0 &&
+		medicine.size() == 0 &&
+		balls.size() == 0 &&
+		TMs.size() == 0 &&
+		berries.size() == 0 && 
+		battle_items.size() == 0 &&
+		key_items.size() == 0
+		):
+		return true
+	return false

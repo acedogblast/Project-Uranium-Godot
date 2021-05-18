@@ -46,9 +46,15 @@ func _ready():
 
 	#If load_game_from_id has a value, then load game from the id
 	if Global.load_game_from_id != null:
+		# Loads game data
 		SaveSystem.load_game(Global.load_game_from_id)
 	#If the above is false change the scene to start_scene
 	else:
+		# New Game
+
+		# init inventory
+		Global.inventory = load("res://Utilities/Items/Inventory.gd").new()
+
 		change_scene(start_scene)
 		player.position = Vector2(192,144)
 		player.direction = player.DIRECTION.UP

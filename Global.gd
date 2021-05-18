@@ -34,17 +34,21 @@ var load_game_from_id # Used on loading a save
 
 var theo_starter # 1 = Orchynx, 2 = Electux
 
-signal setup_items
+#signal setup_items
+signal loaded
 
 func _ready():
 	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 	# Fill inventory for testing
-	inventory = load("res://Utilities/Items/Inventory.gd").new()
-	inventory.add_item_by_name_multiple("Potion", 1)
-	inventory.add_item_by_name_multiple("Pokéball", 10)
-	inventory.add_item_by_name_multiple("Great Ball", 25)
+	#inventory = load("res://Utilities/Items/Inventory.gd").new()
+	#inventory.add_item_by_name_multiple("Potion", 1)
+	#inventory.add_item_by_name_multiple("Pokéball", 10)
+	#inventory.add_item_by_name_multiple("Great Ball", 25)
+
+	#Testing
+	#print(str(inventory.get_instance_id()) + "Global.gd ready")
 	
 	
 
@@ -88,6 +92,9 @@ func load_state():
 
 		if state.has("inventory"):
 			inventory = state["inventory"]
+			print(str(inventory.get_instance_id()) + "Global.gd load")
+		
+		emit_signal("loaded")
 func heal_party(): # Heals all of the player's pokemon party.
 	for poke in pokemon_group:
 		poke.heal()

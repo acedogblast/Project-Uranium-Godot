@@ -23,14 +23,19 @@ var selected_item = [
 	0 # key items
 ]
 
-onready var inventory = Global.inventory
+#onready var inventory = Global.inventory
 
 var enabled = true
 signal close_bag
 
 func _ready():
+	#Testing
+	pass
+
+func setup():
 	update_data()
 	update_detail()
+	#print(str(Global.inventory.get_instance_id()) + "Bag.gd")
 
 func _process(delta):
 	if enabled:
@@ -80,8 +85,6 @@ func change_item_selected(dir):
 	for c in $items.get_child(current + 1).get_children():
 		c.get_child(0).frame = 0
 	$items.get_child(current + 1).get_child(selected_item[current]).get_child(0).frame = 1
-
-	
 	pass
 
 
@@ -380,6 +383,10 @@ func update_detail():
 			if !Global.inventory.key_items.empty():
 				item_icon = Global.inventory.key_items[selected_item[current]].get_item_id()
 	
+	if Global.inventory == null || Global.inventory.is_empty():
+		$Details/icon.hide()
+		return
+	$Details/icon.show()
 	match current:
 		OPTIONS.ITEMS:
 			$Details/icon.texture = null
@@ -424,7 +431,6 @@ func update_detail():
 			$Details/quantity.text = ""
 			$Details/text.text = ""
 			pass
-	
 	pass
 
 func remove_item(id, quantity):

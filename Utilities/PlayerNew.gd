@@ -146,7 +146,6 @@ func get_input():
 	
 	#If input is disabled then you cannot move
 	if !inputDisabled:
-		
 		move(false)
 
 

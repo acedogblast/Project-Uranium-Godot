@@ -302,8 +302,8 @@ pause_mode = 2
 [node name="Sprite" type="Sprite" parent="Position2D"]
 position = Vector2( 1, -16 )
 texture = ExtResource( 3 )
-vframes = 4
 hframes = 4
+vframes = 4
 
 [node name="Camera2D" type="Camera2D" parent="Position2D"]
 current = true
@@ -374,4 +374,5 @@ position = Vector2( 32, 8 )
 texture = ExtResource( 4 )
 region_enabled = true
 region_rect = Rect2( 32, 80, 32, 16 )
+
 [connection signal="body_entered" from="Collision/Area2D" to="." method="_on_Area2D_body_entered"]

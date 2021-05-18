@@ -202,7 +202,7 @@ _global_script_class_icons={
 
 config/name="Pokémon Uranium"
 run/main_scene="res://Utilities/Start.tscn"
-config/icon="res://icon.png"
+config/icon="res://PermittedAssets/icon.png"
 
 [autoload]
 
@@ -219,7 +219,6 @@ gdscript/warnings/unused_variable=false
 
 window/size/width=512
 window/size/height=384
-window/vsync/use_vsync=false
 window/handheld/orientation="sensor_landscape"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
@@ -368,11 +367,12 @@ translations=PoolStringArray( "res://Dialogue/Generated/en/Cutscenes.po", "res:/
 quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
-quality/2d/use_pixel_snap=true
+2d/snapping/use_gpu_pixel_snap=true
 vram_compression/import_etc=true
 quality/shadows/filter_mode=0
-environment/default_environment="res://default_env.tres"
 quality/filters/anisotropic_filter_level=1
+environment/default_environment="res://default_env.tres"
+quality/2d/use_pixel_snap=true
 
 [tiled_importer]
 

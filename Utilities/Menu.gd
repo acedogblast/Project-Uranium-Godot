@@ -30,8 +30,7 @@ func _ready():
 		# Special things when this is on editor mode
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
 	
-	#$Bag.connect("close_bag", self, "close_bag")
-	#$Bag.enabled = false
+	$Bag.connect("close_bag", self, "close_bag")
 	
 	current = ORDER.PARTY
 	init_pos = $Option_Text.rect_position
@@ -107,6 +106,7 @@ func _input(event):
 func bag_logic():
 	$Transition.fade_to_color()
 	hide_all()
+	$Bag.setup()
 	$Bag.show()
 	$Transition.fade_from_color()
 	$Transition.visible = false
@@ -270,6 +270,7 @@ func setup_save_boxes():
 
 func close_bag():
 	print("Closing bag")
+	$Bag.enabled = false
 	$Transition.show()
 	$Transition.fade_to_color()
 	hide_all()
