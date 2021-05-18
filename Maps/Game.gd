@@ -26,7 +26,7 @@ onready var transition = $CanvasLayer/Transition
 
 func _ready():
 	overlay = preload("res://Utilities/debug_overlay.tscn").instance()
-	#overlay.add_stat("onGrass", Global, "onGrass", false)
+	overlay.add_stat("onGrass", Global, "onGrass", false)
 	#overlay.add_stat("Grass Position", Global, "grass_positions", false)
 	#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
 	
