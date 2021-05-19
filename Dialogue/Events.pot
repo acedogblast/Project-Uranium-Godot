@@ -437,3 +437,109 @@ msgstr "Time will tell how he fares."
 
 msgid "EVENT_MOKI_POKECENTER_HEAL_QUESTION"
 msgstr "Welcome to the Pokémon center.\nWould you like me to heal your Pokémon?"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_1"
+msgstr "Hey there, \\PN!\nNow that you and Theo are here,\nit's time to begin your first lesson as a Pokémon Trainer and a field research aid."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_2"
+msgstr "Now, watch closely."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_3"
+msgstr "Wild Pokémon, as you probably already know, inhabit tall grass."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_4"
+msgstr "But that's not the only place - you can also find them in caves, in water, and even in cities if you know where to look."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_5"
+msgstr "Still, tall grass is going to be your best bet for finding new Pokémon."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_6"
+msgstr "Simply take a few steps in and ..."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_7"
+msgstr "Look! It's a wild Chyinmunk!\nThey're very common around here.\nIt hasn't noticed me yet, so now's my chance..."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Eletux"
+msgstr "Go! Electux!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Raptorch"
+msgstr "Go! Raptorch!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Orchynx"
+msgstr "Go! Orchynx!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_9"
+msgstr "This little guy was the other starter Pokémon you could have received."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_10"
+msgstr "I think he's taken a shine to me, and\nI rather like him too... so I'm gonna keep him."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_11"
+msgstr "Now! The next step is to weaken the enemy Pokémon to make it easier to catch."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Eletux"
+msgstr "Electux! Use Tackle!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Raptorch"
+msgstr "Raptorch! Use Scratch!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Orchynx"
+msgstr "Orchynx! Use Scratch!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_13"
+msgstr "Chiiiin!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_14"
+msgstr "Now that it's weakened, now's my chance to catch it. Poké Ball, go!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_15"
+msgstr "...And that's how it's done.\nNow, Chyinmunk are fairly easy...\nbut you're sure to encounter Pokémon that are a lot harder to capture.\nFor those, you might need to inflict them with status effects, or use a special Poké Ball.\nAh, but I'm sure you'll get the hang of it before too long."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_16"
+msgstr "\\PN, Theo, these are for you."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_17"
+msgstr "[\\PN and Theo received a PokéDex!]"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_18"
+msgstr "That PokéDex is an encyclopedia that will automatically update itself whenever you encounter or catch a new Pokémon."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_19"
+msgstr "It's very important for my research, so make sure to fill it out as much as possible!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_20"
+msgstr "Also, I want you to have these."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_21"
+msgstr "Obtained Poké Balls!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_22"
+msgstr "\\PN put the Poké Balls in the Poké Balls Pocket."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_23"
+msgstr "Poké Balls are necessary for catching Pokémon, of course.\nWhat's that thing the kids always say?\n\"Gotta Catch `Em All!\""
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_24"
+msgstr "If you run out, you can pick up some more at any Poké Mart.\nMoki Town doesn't have one of those... but there's one in Kevlar Town on the other side of Route 01.\nSo, with that said...\nyour lesson is now over."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_25"
+msgstr "Oh, but you two have PokéPods, don't you?\nHere, let me input my number."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_26"
+msgstr "Registered Professor Bamb`o in the PokéPod."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_27"
+msgstr "You can give me a call anytime, and I'll take a look at how your PokéDex is coming along. If you do a good job collecting many different kinds of Pokémon, I might even have special rewards for you."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_28"
+msgstr "With that said, I'm going back to my Lab. Best of luck on your journeys, both of you!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_29"
+msgstr "\\PN, I don't care that you got the stronger starter. I'm still gonna be the best Trainer ever! I'll catch tons of Pokémon and we'll win every battle!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_30"
+msgstr "You just wait and see!!"
+
+
+
+
