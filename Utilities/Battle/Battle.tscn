@@ -1670,8 +1670,8 @@ visible = false
 position = Vector2( 7, -40 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 12 )
-vframes = 17
 hframes = 28
+vframes = 17
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/PlayerBase/Ball"]
 anims/PlayerBallToss = ExtResource( 13 )
@@ -1709,8 +1709,8 @@ texture = ExtResource( 17 )
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
 position = Vector2( 137.5, 65 )
 texture = ExtResource( 12 )
-vframes = 17
 hframes = 28
+vframes = 17
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/FoeBase/Ball"]
 anims/Ball = SubResource( 3 )
@@ -2040,8 +2040,8 @@ anims/Slide = SubResource( 23 )
 position = Vector2( 75, 70 )
 z_index = 1
 texture = ExtResource( 39 )
-vframes = 2
 hframes = 4
+vframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Attack"]
 anims/Slide = SubResource( 24 )
@@ -2050,8 +2050,8 @@ anims/Slide = SubResource( 24 )
 position = Vector2( 195, 70 )
 z_index = 1
 texture = ExtResource( 39 )
-vframes = 2
 hframes = 4
+vframes = 2
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Bag"]
@@ -2061,8 +2061,8 @@ anims/Slide = SubResource( 25 )
 position = Vector2( 315, 70 )
 z_index = 1
 texture = ExtResource( 39 )
-vframes = 2
 hframes = 4
+vframes = 2
 frame = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Poke"]
@@ -2072,8 +2072,8 @@ anims/Slide = SubResource( 26 )
 position = Vector2( 435, 70 )
 z_index = 1
 texture = ExtResource( 39 )
-vframes = 2
 hframes = 4
+vframes = 2
 frame = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Run"]

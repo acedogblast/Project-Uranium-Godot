@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_indoors+.png" type="Texture" id=1]
 [ext_resource path="res://Maps/MokiTown/BamboLab.gd" type="Script" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Graphics/Characters/HGSS_025.png" type="Texture" id=5]
 [ext_resource path="res://Graphics/Characters/PU-PokeballMachine.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Characters/phone035.PNG" type="Texture" id=7]
 [ext_resource path="res://Audio/SE/SE_Zoom.wav" type="AudioStream" id=9]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=10]
 
@@ -31006,8 +31005,8 @@ tile_data = PoolIntArray( 65537, 483, 0, 65541, 483, 0, 65545, 483, 0, 65549, 48
 [node name="PokeMachine" type="Sprite" parent="."]
 position = Vector2( 240, 64 )
 texture = ExtResource( 6 )
-vframes = 4
 hframes = 4
+vframes = 4
 __meta__ = {
 "_edit_lock_": true
 }
@@ -31023,11 +31022,6 @@ anims/Open = SubResource( 2 )
 [node name="Assistant" parent="NPC_Layer" instance=ExtResource( 4 )]
 position = Vector2( 368, 400 )
 texture = ExtResource( 5 )
-
-[node name="Bambo" parent="NPC_Layer" instance=ExtResource( 4 )]
-position = Vector2( 240, 144 )
-texture = ExtResource( 7 )
-facing = "Down"
 
 [node name="Event_Layer" type="Node2D" parent="."]
 

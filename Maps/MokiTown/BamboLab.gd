@@ -14,7 +14,6 @@ var grass_pos = []
 signal finished
 
 func _ready():
-	bambo = $NPC_Layer/Bambo
 	$BlackBG.visible = true
 	npc_layer = $NPC_Layer
 	yield(Global.game, "tranistion_complete")
@@ -38,6 +37,13 @@ func event1(_body): # First event to get pokemon
 
 		Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
 		Global.game.get_node("Background_music").play()
+
+		# Spawn Babmo
+		bambo = load("res://Utilities/NPC.tscn").instance()
+		bambo.texture = load("res://Graphics/Characters/phone035.PNG")
+		npc_layer.add_child(bambo)
+		bambo.position = Vector2(240, 144)
+		bambo.set_idle_frame("Down")
 
 		# Spawn Theo
 		theo = load("res://Utilities/NPC.tscn").instance()
@@ -327,7 +333,8 @@ func event1_test():
 	yield(ui, "selected")
 	emit_signal("finished")
 func event1_poke_machine():
-	if Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE"):
+	if Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE") && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
+		Global.past_events.erase("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")
 		Global.game.player.change_input()
 		Global.game.menu.locked = true
 		$PokeMachine.frame = 10

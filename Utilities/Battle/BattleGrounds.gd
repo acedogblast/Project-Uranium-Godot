@@ -26,6 +26,7 @@ func setPosistion(pos):
 func foe_unveil():
 	var FoeBar = get_parent().get_parent().get_node("CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar")
 	# Play sound for toss
+	$FoeBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/throw.wav")
 	$FoeBase/Ball/AudioStreamPlayer.play()
 	
 	# Slide foe bar

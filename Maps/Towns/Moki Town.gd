@@ -15,6 +15,8 @@ var grass_pos = []
 
 func _ready():
 	npc_layer = $NPC_Layer
+	if Global.past_events.has("EVENT_MOKI_TOWN_THEO_HOME_1"): #TODO add check if event 2 is over
+		event2_prep()
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
@@ -84,3 +86,17 @@ func event1(_body):
 		Global.game.get_node("Background_music").play(time)
 		Global.game.release_player()
 		Global.past_events.append(event_name)
+func event2_prep():
+	# Spawn npcs
+	var theo = load("res://Utilities/NPC.tscn").instance()
+	theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
+	npc_layer.add_child(theo)
+	theo.position = Vector2(496, 1456)
+	theo.set_idle_frame("Left")
+	
+	var bambo = load("res://Utilities/NPC.tscn").instance()
+	bambo.texture = load("res://Graphics/Characters/phone035.PNG")
+	npc_layer.add_child(bambo)
+	bambo.position = Vector2(464, 1424)
+	bambo.set_idle_frame("Right")
+	pass

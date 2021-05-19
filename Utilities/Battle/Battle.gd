@@ -357,6 +357,7 @@ func battle_loop():
 			if $CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible == true:
 				$CanvasLayer/BattleGrounds/FoeBase/FoeHuman/AnimationPlayer.play("FadeOut")
 			$CanvasLayer/BattleGrounds/FoeBase/Ball.visible = true
+			
 			$CanvasLayer/BattleGrounds.foe_unveil()
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = false
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")

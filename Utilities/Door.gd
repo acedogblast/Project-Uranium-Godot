@@ -31,7 +31,6 @@ func _ready():
 				$Exterior.region_enabled = false
 			"Type 3 - Invisible":
 				$Exterior.texture = null
-	#animation_open()
 	
 func animation_open():
 	match door_type:
@@ -65,18 +64,23 @@ func animation_close():
 			$Exterior.frame = 11
 			yield(get_tree().create_timer(0.2), "timeout")
 			$Exterior.frame = 7
+			yield(get_tree().create_timer(0.2), "timeout")
+			$Exterior.frame = 3
 		"Type 3 - Invisible":
 			yield(get_tree().create_timer(0.1), "timeout")
 	emit_signal("animation_finished")
 
 func transition():
 	Global.game.lock_player()
-	var sound = load("res://Audio/SE/Exit Door.WAV")
-	$AudioStreamPlayer.stream = sound
-
+	var sound = null
 	if exterior:
-		sound = load("res://Audio/SE/Entering Door.wav")
-		$AudioStreamPlayer.stream = sound
+		match door_type:
+			"Type 1 - Wood":
+				sound = load("res://Audio/SE/Entering Door.wav")
+			"Type 2 - Glass":
+				sound = load("res://Audio/SE/Entering Door.wav") # Missing glass door sound?
+		if sound != null:
+			$AudioStreamPlayer.stream = sound
 		$AudioStreamPlayer.play()
 		animation_open()
 		yield(self, "animation_finished")
@@ -88,6 +92,8 @@ func transition():
 		animation_close()
 		yield(self, "animation_finished")
 	else:
+		sound = load("res://Audio/SE/Exit Door.WAV")
+		$AudioStreamPlayer.stream = sound
 		$AudioStreamPlayer.play()
 	Global.game.door_transition(scene_destination, location)
 func set_open():

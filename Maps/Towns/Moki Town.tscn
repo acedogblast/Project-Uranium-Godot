@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Maps/tilesets/PU_autotiles.tres" type="TileSet" id=4]
 [ext_resource path="res://Maps/tilesets/PU_anim_tiles.tres" type="TileSet" id=5]
 [ext_resource path="res://Maps/Towns/Moki Town.gd" type="Script" id=6]
+[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=10]
 
@@ -98,7 +99,6 @@ scale = Vector2( 0.5, 0.5 )
 [node name="Event1" parent="NPC_Layer" instance=ExtResource( 10 )]
 position = Vector2( 816, 488 )
 scale = Vector2( 2, 2 )
-event_name = ""
 size = Vector2( 8, 36 )
 
 [node name="Door" parent="NPC_Layer" instance=ExtResource( 8 )]
@@ -121,4 +121,9 @@ door_type = "Type 2 - Glass"
 position = Vector2( 1776, 1360 )
 scene_destination = "res://Maps/Towns/Town Houses/Rival House.tscn"
 location = Vector2( 272, 368 )
+
+[node name="NPC" parent="NPC_Layer" instance=ExtResource( 7 )]
+visible = false
+position = Vector2( 528, 1520 )
+
 [connection signal="area_entered" from="NPC_Layer/Event1" to="." method="event1"]
