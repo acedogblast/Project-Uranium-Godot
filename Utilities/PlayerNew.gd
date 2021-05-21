@@ -207,7 +207,7 @@ func interact():
 	#print("Looking: " + str(check_pos))
 	
 	#Get the parent node and check the position and direction
-	get_parent().interaction(check_pos, direction)
+	Global.game.interaction(check_pos, direction)
 
 func move(force_move : bool):
 	set_process(false)
@@ -387,6 +387,17 @@ func stop_tween():
 
 #Sets the texture to the walk texture, and if the pacing direction isn't null then set the frame to be the facing_dir * 4
 func set_facing_direction(facing_dir):
+	if typeof(facing_dir) == TYPE_STRING:
+		match facing_dir:
+			"Up":
+				facing_dir = DIRECTION.UP
+			"Down":
+				facing_dir = DIRECTION.DOWN
+			"Left":
+				facing_dir = DIRECTION.LEFT
+			"Right":
+				facing_dir = DIRECTION.RIGHT
+
 	$Position2D/Sprite.texture = walkTexture
 	if facing_dir != null:
 		$Position2D/Sprite.frame = facing_dir * 4

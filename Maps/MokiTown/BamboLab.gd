@@ -16,19 +16,97 @@ signal finished
 func _ready():
 	$BlackBG.visible = true
 	npc_layer = $NPC_Layer
+	if !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
+		event1_prep()
 	yield(Global.game, "tranistion_complete")
-	event1(null) # Play event on enter.
-	pass
+	event1_intro(null) # Play event on enter.
+
+	if Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
+		$PokeMachine.frame = 4
+
+
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
 	if npc_collider == $Event_Layer/PokeMachine.position:
 		event1_poke_machine()
-		pass
-	
-	
+	if npc_collider == $NPC_Layer/Assistant.position:
+		Global.game.lock_player()
+		#Turn to face player
+		$NPC_Layer/Assistant.face_player(direction)
+
+		DialogueSystem.set_box_position(DialogueSystem.TOP)
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_AIDE_1", $NPC_Layer/Assistant.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_AIDE_2", $NPC_Layer/Assistant.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_AIDE_3", $NPC_Layer/Assistant.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_AIDE_4", $NPC_Layer/Assistant.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_AIDE_5", $NPC_Layer/Assistant.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_AIDE_6", $NPC_Layer/Assistant.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+
+		$NPC_Layer/Assistant.set_idle_frame("Up")
+		Global.game.release_player()
+		return null
+	if npc_collider == bambo.position:
+		Global.game.lock_player()
+		#Turn to face player
+		bambo.face_player(direction)
+
+		if Global.past_events.has("EVENT_BAMBOLAB_1_INTRO") && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && !Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE"):
+			event1_choice()
+			return null
+
+		if !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE"):
+			Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_38", bambo.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+			Global.game.release_player()
+			return null
+	if npc_collider == theo.position:
+		Global.game.lock_player()
+		#Turn to face player
+		theo.face_player(direction)
+		if Global.past_events.has("EVENT_BAMBOLAB_1_INTRO") && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
+			Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_38_THEO", theo.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+			Global.game.release_player()
+			return null
 	
 	return null
-func event1(_body): # First event to get pokemon
+func event1_prep():
+	# Spawn Babmo
+	bambo = load("res://Utilities/NPC.tscn").instance()
+	bambo.texture = load("res://Graphics/Characters/phone035.PNG")
+	npc_layer.add_child(bambo)
+	bambo.position = Vector2(240, 144)
+	bambo.set_idle_frame("Down")
+
+	# Spawn Theo
+	theo = load("res://Utilities/NPC.tscn").instance()
+	theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
+	npc_layer.add_child(theo)
+	theo.position = Vector2(208, 208)
+	theo.set_idle_frame("Up")
+
+	if Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE"):
+		ui = load("res://Maps/MokiTown/FirstPokeLayer.tscn").instance()
+		self.add_child(ui)
+		$PokeMachine.frame = 2
+		bambo.position = Vector2(272, 144)
+		bambo.set_idle_frame("Left")
+
+		if Global.past_events.has("EVENT_MOKI_LAB_GOT_RAPTORCH"):
+			starter = 0
+		if Global.past_events.has("EVENT_MOKI_LAB_GOT_ORCHYNX"):
+			starter = 1
+		if Global.past_events.has("EVENT_MOKI_LAB_GOT_ELETUX"):
+			starter = 2
+
+
+func event1_intro(_body): # First event to get pokemon
 	var event_name = "EVENT_BAMBOLAB_1_COMPLETE"
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)
@@ -38,42 +116,27 @@ func event1(_body): # First event to get pokemon
 		Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
 		Global.game.get_node("Background_music").play()
 
-		# Spawn Babmo
-		bambo = load("res://Utilities/NPC.tscn").instance()
-		bambo.texture = load("res://Graphics/Characters/phone035.PNG")
-		npc_layer.add_child(bambo)
-		bambo.position = Vector2(240, 144)
-		bambo.set_idle_frame("Down")
-
-		# Spawn Theo
-		theo = load("res://Utilities/NPC.tscn").instance()
-		theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
-		npc_layer.add_child(theo)
-		theo.position = Vector2(208, 208)
-		theo.set_idle_frame("Up")
-
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 
 		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.UP, 10)
 		yield(Global.game.player, "done_movement")
 
-
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_1", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_1", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
 		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_2", theo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_3", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_3", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_4", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_4", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_5", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_5", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_6", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_6", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
 		# Theo Alert
@@ -83,50 +146,95 @@ func event1(_body): # First event to get pokemon
 		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_7", theo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_8", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_8", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
 		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_9", theo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_10", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_10", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_11", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_11", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_12", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_12", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_13", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_13", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
-
-		DialogueSystem.hold = true
-		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_14", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
 		
-		yield(DialogueSystem, "finished_printing")
-		DialogueSystem.hold = false
+		event1_choice()
+func event1_choice():
+	DialogueSystem.hold = true
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_14", bambo.get_global_transform_with_canvas().get_origin())
+	
+	yield(DialogueSystem, "finished_printing")
+	DialogueSystem.hold = false
 
-		# Add FirstPokeLayer UI
-		ui = load("res://Maps/MokiTown/FirstPokeLayer.tscn").instance()
-		self.add_child(ui)
+	# Add FirstPokeLayer UI
+	ui = load("res://Maps/MokiTown/FirstPokeLayer.tscn").instance()
+	self.add_child(ui)
 
-		# Show Yes/No box
-		ui.prompt_yes_no()
-		yield(ui, "selected")
-		var responce = ui.get_yes_no_responce()
-		#print(responce)
-		
-		if responce == true:
-			Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_15", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
-			event1_test()
-			yield(self, "finished")
-			event1_pick_up()
+	# Show Yes/No box
+	ui.prompt_yes_no()
+	yield(ui, "selected")
+	var responce = ui.get_yes_no_responce()
+	#print(responce)
+	
+	if responce == true:
+		#Move player back into position
+		if Global.game.player.position == Vector2(240, 208):
+			#Don't move. Player already in position
+			pass
 		else:
-			Global.past_events.append("EVENT_BAMBOLAB_1_INTRO")
-			Global.game.player.change_input()
-			Global.game.menu.locked = false
+			match Global.game.player.position:
+				Vector2(240, 176):
+					Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 1)
+					yield(Global.game.player, "done_movement")
+					
+				Vector2(208, 144):
+					Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 1)
+					yield(Global.game.player, "done_movement")
+					Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.RIGHT, 1)
+					yield(Global.game.player, "done_movement")
+					Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 1)
+					yield(Global.game.player, "done_movement")
+				Vector2(272, 144):
+					Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 1)
+					yield(Global.game.player, "done_movement")
+					Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.LEFT, 1)
+					yield(Global.game.player, "done_movement")
+					Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 1)
+					yield(Global.game.player, "done_movement")
+		Global.game.player.set_facing_direction("Up")
+		bambo.set_idle_frame("Down")
+		theo.set_idle_frame("Up")
+
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_15", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+
+		event1_test()
+		yield(self, "finished")
+		event1_pick_up()
+	else:
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_OPTION_2_1", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		theo.set_idle_frame("Right")
+
+		DialogueSystem.set_box_position(DialogueSystem.TOP)
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_OPTION_2_2", theo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+
+		theo.set_idle_frame("Up")
+
+		Global.game.get_node("Background_music").stream = load(background_music)
+		Global.game.get_node("Background_music").play()
+
+		Global.past_events.append("EVENT_BAMBOLAB_1_INTRO")
+		Global.game.player.change_input()
+		Global.game.menu.locked = false
 
 func event1_pick_up():
 	# Play open
@@ -137,7 +245,7 @@ func event1_pick_up():
 	yield(bambo, "done_movement")
 	bambo.call_deferred("set_idle_frame", "Left")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_38", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_38", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
 	Global.game.player.change_input()
@@ -147,7 +255,7 @@ func event1_pick_up():
 
 func event1_test():
 	DialogueSystem.hold = true
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_16", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_16", bambo.get_global_transform_with_canvas().get_origin())
 	yield(DialogueSystem, "finished_printing")
 	DialogueSystem.hold = false
 	ui.prompt_test(ui.TEST.Q1)
@@ -155,17 +263,17 @@ func event1_test():
 	var responce1 : int = ui.get_test_responce() # 0: ATTACK, 1: DEFENSE, 2: BALLANCED
 
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_17", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_17", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
 	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_18", theo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_19", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_19", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
 	DialogueSystem.hold = true
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_20", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_20", bambo.get_global_transform_with_canvas().get_origin())
 	yield(DialogueSystem, "finished_printing")
 	DialogueSystem.hold = false
 	ui.prompt_test(ui.TEST.Q2)
@@ -175,11 +283,11 @@ func event1_test():
 	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_21", theo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_22", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_22", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
 	DialogueSystem.hold = true
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_23", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_23", bambo.get_global_transform_with_canvas().get_origin())
 	yield(DialogueSystem, "finished_printing")
 	DialogueSystem.hold = false
 	ui.prompt_test(ui.TEST.Q3)
@@ -189,11 +297,11 @@ func event1_test():
 	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_24", theo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_25", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_25", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
 	DialogueSystem.hold = true
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_26", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_26", bambo.get_global_transform_with_canvas().get_origin())
 	yield(DialogueSystem, "finished_printing")
 	DialogueSystem.hold = false
 	ui.prompt_test(ui.TEST.Q4)
@@ -203,16 +311,16 @@ func event1_test():
 	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_27", theo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_28", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_28", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_29", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_29", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_30", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_30", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_31", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_31", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
 	# Score test
@@ -248,7 +356,7 @@ func event1_test():
 		2:
 			ballanced += 1
 	
-	var result = -1 # 0 = Raptorch, 1 = Orchynx, 2 = Electux
+	var result = -1 # 0 = Raptorch, 1 = Orchynx, 2 = Eletux
 
 	if attack > defense && attack > ballanced:
 		result = 0
@@ -273,6 +381,7 @@ func event1_test():
 
 	match result:
 		0: # Raptorch
+			Global.past_events.append("EVENT_MOKI_LAB_GOT_RAPTORCH")
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Raptorch")
 			yield(Global.game, "event_dialogue_end")
 
@@ -291,6 +400,7 @@ func event1_test():
 			DialogueSystem.hold = true
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OPTION_15")
 		1:
+			Global.past_events.append("EVENT_MOKI_LAB_GOT_ORCHYNX")
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Orchynx")
 			yield(Global.game, "event_dialogue_end")
 
@@ -306,19 +416,20 @@ func event1_test():
 			DialogueSystem.hold = true
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OPTION_15_1")
 		2:
-			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Electux")
+			Global.past_events.append("EVENT_MOKI_LAB_GOT_ELETUX")
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Eletux")
 			yield(Global.game, "event_dialogue_end")
 
-			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_34_Electux")
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_34_Eletux")
 			yield(Global.game, "event_dialogue_end")
 
-			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_35_Electux")
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_35_Eletux")
 			yield(Global.game, "event_dialogue_end")
 
-			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_36_Electux")
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_36_Eletux")
 			yield(Global.game, "event_dialogue_end")
 
-			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_37_Electux")
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_37_Eletux")
 			yield(Global.game, "event_dialogue_end")
 
 			DialogueSystem.hold = true
@@ -334,7 +445,7 @@ func event1_test():
 	emit_signal("finished")
 func event1_poke_machine():
 	if Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE") && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
-		Global.past_events.erase("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")
+		#Global.past_events.erase("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")
 		Global.game.player.change_input()
 		Global.game.menu.locked = true
 		$PokeMachine.frame = 10
@@ -354,7 +465,7 @@ func event1_poke_machine():
 			1: # Orchynx
 				poke.set_basic_pokemon_by_level(1,5)
 				Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ORCHYNX")
-			2: # Electux
+			2: # Eletux
 				poke.set_basic_pokemon_by_level(5,5)
 				Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ELETUX")
 		Global.pokemon_group.append(poke)
@@ -394,10 +505,10 @@ func event_1_rival_poke():
 	yield(Global.game, "event_dialogue_end")
 
 	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_41", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_41", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_42", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_42", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
 	ui.Poke_get()
@@ -433,7 +544,7 @@ func event_1_rival_poke():
 		0,2:
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_50_Orchynx")
 		1:
-			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_50_Electux")
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_50_Eletux")
 	yield(DialogueSystem, "finished_printing")
 
 	match starter:
@@ -473,7 +584,7 @@ func event_1_rival_poke():
 	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_52", theo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_53", $NPC_Layer/Bambo.get_global_transform_with_canvas().get_origin())
+	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_53", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
 	Global.game.get_node("Background_music").stop()
@@ -680,3 +791,14 @@ func lab_battle():
 	Global.past_events.append("EVENT_BAMBOLAB_1_COMPLETE")
 	Global.game.player.change_input()
 	Global.game.menu.locked = false
+
+
+func block(_area):
+	if (!Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && (Global.past_events.has("EVENT_BAMBOLAB_1_INTRO") || Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")) ):
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+		Global.game.lock_player()
+		Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_PLAYER_RUN_AWAY")
+		yield(Global.game, "event_dialogue_end")
+		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.UP, 1)
+		yield(Global.game.player, "done_movement")
+		Global.game.release_player()

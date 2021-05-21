@@ -60,6 +60,30 @@ msgstr "Yes!"
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2"
 msgstr "Wait a minute..."
 
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2_1"
+msgstr "That's all right. Take your time."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2_2"
+msgstr "Yeah, but not too long, all right?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_1"
+msgstr "The <b>Pokémon Trainer Aptitude Test</b>\nsorts Trainers into three basic types:\n\\c[3]<b>Defensive</b>\\c[0], \\c[2]<b>Offensive</b>\\c[0], and \\c[1]<b>Ballanced</b>\\c[0]."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_2"
+msgstr "The professor will then give you a starter Pokémon that best fits your battling style."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_3"
+msgstr "\\c[3]<b>Defensive</b>\\c[0] trainers receive the Grass Pokémon \\c[3]Orchynx\\c[0].\nIt's gentle, hardy, and easy to raise."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_4"
+msgstr "\\c[2]<b>Offensive</b>\\c[0] trainers receive the Fire Pokémon \\c[2]Raptorch\\c[0].\nIt's strong and speedy, but can be hard to control."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_5"
+msgstr "\\c[1]<b>Ballanced</b>\\c[0] trainers receive the Water Pokémon \\c[1]Eletux\\c[0].\nIt's calm, collected nature allows it to adapt to any situation."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_6"
+msgstr "Choose carefully - a starter is your main partner on your journey!"
+
 msgid "EVENT_MOKI_LAB_FIRST_POK_15"
 msgstr "Excellent!\nSo, without further ado..."
 
@@ -177,19 +201,19 @@ msgstr "You know that the best things in life come to those who wait."
 msgid "EVENT_MOKI_LAB_FIRST_POK_36_Orchynx"
 msgstr "For a Defensive trainer like you..."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_33_Electux"
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Eletux"
 msgstr "You seem to be a trainer what is capable of many different strategies."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_34_Electux"
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Eletux"
 msgstr "You prefer to adapt to overcome challenges in your path."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_35_Electux"
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Eletux"
 msgstr "You philosoly is probably to just \"go with the flow\"."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_36_Electux"
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Eletux"
 msgstr "Your calm, rational approach will come to aid you in the future."
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_37_Electux"
+msgid "EVENT_MOKI_LAB_FIRST_POK_37_Eletux"
 msgstr "For a Balanced trainer like you..."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_15"
@@ -203,6 +227,9 @@ msgstr "Eletux is the best pick!"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_38"
 msgstr "Go ahead and take it, \\PN."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_38_THEO"
+msgstr "C'mon, \\PN, let's go already!!\nThe suspense is killing me?"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_39"
 msgstr "HEY! I'M TIRED OF WAITING!"
@@ -252,8 +279,8 @@ msgstr "Regardless... For a Trainer like you..."
 msgid "EVENT_MOKI_LAB_FIRST_POK_50_Orchynx"
 msgstr "Orchynx is the best pick!"
 
-msgid "EVENT_MOKI_LAB_FIRST_POK_50_Electux"
-msgstr "Electux! is the best pick!"
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Eletux"
+msgstr "Eletux! is the best pick!"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_51"
 msgstr "Yes!!\nMy first Pokémon!"
@@ -460,7 +487,7 @@ msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_7"
 msgstr "Look! It's a wild Chyinmunk!\nThey're very common around here.\nIt hasn't noticed me yet, so now's my chance..."
 
 msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Eletux"
-msgstr "Go! Electux!"
+msgstr "Go! Eletux!"
 
 msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Raptorch"
 msgstr "Go! Raptorch!"
@@ -478,7 +505,7 @@ msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_11"
 msgstr "Now! The next step is to weaken the enemy Pokémon to make it easier to catch."
 
 msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Eletux"
-msgstr "Electux! Use Tackle!"
+msgstr "Eletux! Use Tackle!"
 
 msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Raptorch"
 msgstr "Raptorch! Use Scratch!"

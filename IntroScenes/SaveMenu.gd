@@ -156,4 +156,4 @@ func changeScene(scene):
 #Loads the map to continue your game
 func continueGame(id):
 	Global.load_game_from_id = id
-	changeScene("res://Maps/Game.tscn")
+	changeScene("res://Game.tscn")

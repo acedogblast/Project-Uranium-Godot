@@ -36,9 +36,31 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 		#Face player
 		$Aunt.face_player(direction)
 		#Trigger event2
-		event2()
+		if !Global.past_events.has("EVENT_HEROHOME_NPC_AUNT_1"):
+			event2()
+			return null
+		if Global.past_events.has("EVENT_HEROHOME_NPC_AUNT_1") && Global.pokemon_group.empty():
+			Global.game.lock_player()
+			Global.game.play_dialogue_with_point("NPC_AUNT1_D13" , $Aunt.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+			$Aunt.set_idle_frame("Down")
+			Global.game.release_player()
+			return null
+
+
 	return null
-func event1(body): # Aunt Calling player downstairs
+
+func block(_body):
+	if !Global.past_events.has("EVENT_HEROHOME_NPC_AUNT_1"):
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+		Global.game.lock_player()
+		Global.game.play_dialogue("HERO_HOME_BLOCK")
+		yield(Global.game, "event_dialogue_end")
+		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.UP, 1)
+		yield(Global.game.player, "done_movement")
+		Global.game.release_player()
+
+func event1(_body): # Aunt Calling player downstairs
 	var event_name = "EVENT_HEROHOME_1"
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)
@@ -60,18 +82,15 @@ func event2():
 		print("New Event: " + event_name)
 		Global.past_events.append(event_name)
 		Global.game.player.change_input()
-		#Global.game.player.canMove = false
 		DialogueSystem.set_box_position(DialogueSystem.TOP)
 
 		for i in range(4):
 			Global.game.play_dialogue_with_point("NPC_AUNT1_D" + str(i+1) , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
-			#Global.game.player.canMove = false
 
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 		Global.game.play_dialogue_with_point("NPC_AUNT1_D5" , $Aunt.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
-		#Global.game.player.canMove = false
 
 		Global.game.play_dialogue_with_point("NPC_AUNT1_D6" , Vector2(0,0))
 		# Play key item sound
@@ -83,21 +102,17 @@ func event2():
 		Global.game.get_node("Effect_music").play()
 		yield(Global.game.get_node("Effect_music"), "finished")
 		Global.game.get_node("Background_music").play(time)
-		#Global.game.player.canMove = false
 
 		# Enable running
 		Global.can_run = true
 		
 		Global.game.play_dialogue_with_point("NPC_AUNT1_D7" , Vector2(0,0))
 		yield(Global.game, "event_dialogue_end")
-		#Global.game.player.canMove = false
 
 		DialogueSystem.set_box_position(DialogueSystem.TOP)
 		for i in range(5):
 			Global.game.play_dialogue_with_point("NPC_AUNT1_D" + str(i+8) , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
-			#Global.game.player.canMove = false
-		#Global.game.player.canMove = true
 		Global.game.player.change_input()
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 		

@@ -8,8 +8,6 @@ var background_music = "res://Audio/BGM/PU-Moki Town.ogg";
 var type = "Outside"
 var place_name = "Moki Town"
 
-#var hero_home_x = 880
-#var hero_home_y = 1008
 var npc_layer
 var grass_pos = []
 
@@ -21,7 +19,19 @@ func _ready():
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
 	return null
-	
+
+
+func block_exit(_body):
+	# Check if player has pokes
+	if (Global.pokemon_group.empty() && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE")):
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+		Global.game.lock_player()
+		Global.game.play_dialogue("MOKI_TOWN_BLOCK")
+		yield(Global.game, "event_dialogue_end")
+		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.RIGHT, 1)
+		yield(Global.game.player, "done_movement")
+		Global.game.release_player()
+
 func event1(_body):
 	var event_name = "EVENT_MOKI_TOWN_THEO_1"
 	if !Global.past_events.has(event_name):
@@ -99,4 +109,9 @@ func event2_prep():
 	npc_layer.add_child(bambo)
 	bambo.position = Vector2(464, 1424)
 	bambo.set_idle_frame("Right")
+	pass
+func event2(_body):
+	
+	
+	
 	pass

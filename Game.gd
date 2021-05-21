@@ -21,6 +21,7 @@ var isTransitioning = false
 
 signal event_dialogue_end
 signal tranistion_complete
+signal loaded
 
 onready var transition = $CanvasLayer/Transition
 
@@ -38,16 +39,26 @@ func _ready():
 	#Makes player an instance of Player, makes it a child, and adds it to the group save
 	player = load("res://Utilities/PlayerNew.tscn").instance()
 	add_child(player)
-	add_to_group("save")
+	#add_to_group("save") Not needed anyone.
 	
 	overlay.add_stat("Direction", player, "dir", false)
 	overlay.add_stat("Player Pos", player, "position", false)
 
-
+	
+	loaded = false
+	self.call_deferred("setup")
+	
+func setup():
 	#If load_game_from_id has a value, then load game from the id
 	if Global.load_game_from_id != null:
 		# Loads game data
 		SaveSystem.load_game(Global.load_game_from_id)
+		print("loading Game.gd")
+		# Wait until all data is loaded
+		if loaded == false:
+			yield(self, "loaded")
+		print("Finished loading Game.gd")
+		loaded = true
 	#If the above is false change the scene to start_scene
 	else:
 		# New Game
@@ -60,15 +71,19 @@ func _ready():
 		player.direction = player.DIRECTION.UP
 
 	player.z_index = 10 # DO NOT CHANGE! see AutoZSorter for details
+	var result = DialogueSystem.connect("dialogue_end", self, "dialog_end", [], CONNECT_DEFERRED)
+	#print("DialogeSystem signal connect is:")
+	#print(result)
 
-	#Connects the signal dialogue_end to the method self on dialog_end, sets the load_game_id to null, and lets the player move
-	DialogueSystem.connect("dialogue_end", self, "dialog_end")
-	Global.load_game_from_id = null
 	player.canMove = true
-	Global.location = current_scene.place_name
+
+	if ("place_name" in current_scene):
+		Global.location = current_scene.place_name
+	else:
+		Global.location = "TBD"
+		print("WARNING: current_scene script does not have place_name set.")
 	$CanvasLayer/Menu.visible = true
 	$CanvasLayer/ZoneMessage.visible = true
-
 
 func _process(_delta):
 	# Sort and assign Z index
@@ -200,11 +215,9 @@ func load_seemless():
 func interaction(collider, direction): # Starts the dialogue instead of the scene script
 	if isInteracting == false:
 		var interaction_title = current_scene.interaction(collider, direction)
-		if interaction_title != null:
+		if interaction_title != null && typeof(interaction_title) == TYPE_STRING:
 			isInteracting = true
-			#canInteract = false # Maybe redundant?
 			player.change_input()
-			#player.canMove = false
 			play_dialogue(interaction_title)
 			yield(self, "event_dialogue_end")
 			player.change_input()
@@ -216,8 +229,6 @@ func interaction(collider, direction): # Starts the dialogue instead of the scen
 func dialog_end():
 	yield(get_tree().create_timer(0.1), "timeout")
 	isInteracting = false
-	#player.change_input()
-	#player.canMove = true
 	emit_signal("event_dialogue_end")
 	
 #A position check for the node
@@ -247,6 +258,8 @@ func load_state(): # Automatically called when loading a save file
 		change_scene(load(state["current_scene"]))
 		player.direction = state["player_direction"]
 		player.position = state["player_position"]
+		loaded = true
+		emit_signal("loaded")
 
 func play_dialogue(title): # Plays a dialogue without freezing player
 	DialogueSystem.set_point_to(Vector2(0,0))

@@ -63,7 +63,7 @@ func dialogue_scientist(show_arrow = true):
 	pass
 
 func final():
-	change_scene("res://Maps/Game.tscn")
+	change_scene("res://Game.tscn")
 	pass
 
 func earth_shake():

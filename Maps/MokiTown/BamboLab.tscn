@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_indoors+.png" type="Texture" id=1]
 [ext_resource path="res://Maps/MokiTown/BamboLab.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Graphics/Characters/HGSS_025.png" type="Texture" id=5]
 [ext_resource path="res://Graphics/Characters/PU-PokeballMachine.png" type="Texture" id=6]
+[ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Audio/SE/SE_Zoom.wav" type="AudioStream" id=9]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=10]
 
@@ -31031,6 +31032,12 @@ position = Vector2( 240, 112 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Event_Layer/PokeMachine"]
 shape = SubResource( 3 )
 
+[node name="Block" parent="Event_Layer" instance=ExtResource( 7 )]
+position = Vector2( 144, 464 )
+size = "custom"
+custom_size = Vector2( 160, 16 )
+custom_offset = Vector2( 144, 0 )
+
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 240, 560 )
 scene_destination = "res://Maps/Towns/Moki Town.tscn"
@@ -31049,3 +31056,5 @@ tile_data = PoolIntArray( 131074, 1061, 0, 131075, 1062, 0, 131077, 1494, 0, 131
 __meta__ = {
 "_edit_lock_": true
 }
+
+[connection signal="area_entered" from="Event_Layer/Block" to="." method="block"]

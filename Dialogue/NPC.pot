@@ -48,3 +48,25 @@ msgstr "And if you don't mind stopping by again after you get your first Pokémo
 
 msgid "NPC_AUNT1_D12"
 msgstr "Good luck, sweetie!"
+
+msgid "NPC_AUNT1_D13"
+msgstr "If you don't mind stopping by after you get your first Pokémon, I'd love to see it.\nGood luck, sugarpie!"
+
+msgid "NPC_AUNT1_D14_RAPTORCH"
+msgstr "Oh, honey, you came back to say goodbye!\nHow sweet. Is that your Pokémon? What's it called? RAPTORCH? It's so cute! Come back when you need a rest, or if you want humor your old aunt."
+
+msgid "NPC_AUNT1_D14_ORCHYNX"
+msgstr "Oh, honey, you came back to say goodbye!\nHow sweet. Is that your Pokémon? What's it called? ORCHYNX? It's so cute! Come back when you need a rest, or if you want humor your old aunt."
+
+msgid "NPC_AUNT1_D14_ELETUX"
+msgstr "Oh, honey, you came back to say goodbye!\nHow sweet. Is that your Pokémon? What's it called? ELETUX? It's so cute! Come back when you need a rest, or if you want humor your old aunt."
+
+
+
+
+
+
+
+
+
+

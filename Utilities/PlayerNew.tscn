@@ -316,6 +316,7 @@ pause_mode = 2
 visible = false
 
 [node name="Area2D" type="Area2D" parent="Collision"]
+visible = false
 collision_layer = 2
 collision_mask = 2
 
@@ -374,5 +375,3 @@ position = Vector2( 32, 8 )
 texture = ExtResource( 4 )
 region_enabled = true
 region_rect = Rect2( 32, 80, 32, 16 )
-
-[connection signal="body_entered" from="Collision/Area2D" to="." method="_on_Area2D_body_entered"]

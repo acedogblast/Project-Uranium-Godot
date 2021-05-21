@@ -360,7 +360,7 @@ create_pokemon={
 
 [locale]
 
-translations=PoolStringArray( "res://Dialogue/Generated/en/Cutscenes.po", "res://Dialogue/Generated/en/Objects.po", "res://Dialogue/Generated/en/UI.po", "res://Dialogue/Generated/en/NPC.po", "res://Dialogue/Generated/en/Events.po", "res://Dialogue/Generated/en/Battle.po" )
+translations=PoolStringArray( "res://Dialogue/Generated/en/Cutscenes.po", "res://Dialogue/Generated/en/Objects.po", "res://Dialogue/Generated/en/UI.po", "res://Dialogue/Generated/en/NPC.po", "res://Dialogue/Generated/en/Events.po", "res://Dialogue/Generated/en/Battle.po", "res://Dialogue/Generated/en/Maps.po" )
 
 [rendering]
 

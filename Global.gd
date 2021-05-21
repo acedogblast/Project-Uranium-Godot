@@ -4,7 +4,7 @@ var TrainerGender = 0 # 0 is boy, 1 is neutral, 2 is girl
 var badges = 0
 var time = "00:00"
 var pokedex_count = 0
-var location : String = "location"
+var location : String = ""
 var money : int = 0
 var pokedex_seen = [] # list of id numbers
 var pokedex_owned = [] # list of id numbers
@@ -92,7 +92,7 @@ func load_state():
 
 		if state.has("inventory"):
 			inventory = state["inventory"]
-			print(str(inventory.get_instance_id()) + "Global.gd load")
+			#print(str(inventory.get_instance_id()) + "Global.gd load")
 		
 		emit_signal("loaded")
 func heal_party(): # Heals all of the player's pokemon party.
@@ -103,7 +103,7 @@ func add_poke_to_party(poke : Pokemon):
 	if !pokedex_owned.has(poke.ID):
 		pokedex_owned.append(poke.ID)
 		
-	if pokemon_group.size() == 6:
+	if pokemon_group.size() >= 6:
 		print("party already full")
 		# party already full
 		# TODO: Send to pc

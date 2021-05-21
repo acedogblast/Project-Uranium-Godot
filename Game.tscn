@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Maps/Game.gd" type="Script" id=1]
+[ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Transition.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Utilities/Menu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=4]
@@ -60,7 +60,9 @@ tracks/1/keys = {
 "values": [ true, false ]
 }
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" groups=[
+"save",
+]]
 pause_mode = 2
 script = ExtResource( 1 )
 

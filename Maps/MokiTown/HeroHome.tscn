@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Maps/MokiTown/HeroHome.gd" type="Script" id=1]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Graphics/Characters/HGSS_019.png" type="Texture" id=6]
+[ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -194,4 +195,10 @@ dir = "Up"
 position = Vector2( 64, 80 )
 destination = Vector2( 1184, 80 )
 dir = "Down"
+
+[node name="Block" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1120, 304 )
+size = "1x1"
+
 [connection signal="area_entered" from="Floor2/Event1" to="." method="event1"]
+[connection signal="area_entered" from="Block" to="." method="block"]

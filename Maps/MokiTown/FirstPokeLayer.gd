@@ -80,7 +80,7 @@ func prompt_yes_no():
 	yield(self, "selected")
 	$YesNo.visible = false
 	stage = -1
-	arrow_pos = TOP
+	#arrow_pos = TOP
 	
 func get_yes_no_responce() -> bool:
 	if arrow_pos == TOP:

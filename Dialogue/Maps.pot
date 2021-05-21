@@ -1,0 +1,10 @@
+msgid ""
+msgstr ""
+
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "HERO_HOME_BLOCK"
+msgstr "I'd better say goodbye to Auntie first."
+
+msgid "MOKI_TOWN_BLOCK"
+msgstr "It's dangerous to go out without a Pokémon."
