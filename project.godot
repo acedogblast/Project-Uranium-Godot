@@ -202,6 +202,9 @@ _global_script_class_icons={
 
 config/name="Pokémon Uranium"
 run/main_scene="res://Utilities/Start.tscn"
+boot_splash/image="res://Graphics/Pictures/black.png"
+boot_splash/use_filter=false
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://PermittedAssets/icon.png"
 
 [autoload]
