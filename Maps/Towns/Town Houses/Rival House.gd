@@ -6,7 +6,6 @@ var background_music = "res://Audio/BGM/PU-Hero House.ogg";
 
 var type = "Indoor"
 
-var event_1_name = "EVENT_RIVAL_HOME_1"
 var npc_layer
 
 var theo
@@ -21,7 +20,7 @@ func _ready():
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
-	if npc_collider == cameron.position:
+	if cameron != null && npc_collider == cameron.position:
 		Global.game.player.change_input()
 		Global.game.menu.locked = true
 

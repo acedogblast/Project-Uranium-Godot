@@ -9,11 +9,17 @@ var type = "Outside"
 var place_name = "Moki Town"
 
 var npc_layer
+
+# NPCs
+var theo
+var bambo
+
+
 var grass_pos = []
 
 func _ready():
 	npc_layer = $NPC_Layer
-	if Global.past_events.has("EVENT_MOKI_TOWN_THEO_HOME_1"): #TODO add check if event 2 is over
+	if Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && !Global.past_events.has("EVENT_MOKI_TOWN_DEMO"): #TODO add check if event 2 is over
 		event2_prep()
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
@@ -22,6 +28,9 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 
 
 func block_exit(_body):
+	# Wait for player to stop moving
+	yield(Global.game.player, "step")
+
 	# Check if player has pokes
 	if (Global.pokemon_group.empty() && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE")):
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
@@ -31,6 +40,19 @@ func block_exit(_body):
 		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.RIGHT, 1)
 		yield(Global.game.player, "done_movement")
 		Global.game.release_player()
+		pass
+	if Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && !Global.past_events.has("EVENT_MOKI_TOWN_THEO_HOME_1"):
+		Global.game.lock_player()
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+		Global.game.play_dialogue_with_point("NPC_BAMBO_MOKI_TOWN_CATCH_DEMO_PREP_1", bambo.get_global_transform_with_canvas().get_origin())
+		yield(Global.game, "event_dialogue_end")
+		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.RIGHT, 1)
+		yield(Global.game.player, "done_movement")
+		Global.game.release_player()
+		pass
+	if Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && Global.past_events.has("EVENT_MOKI_TOWN_THEO_HOME_1") && !Global.past_events.has("EVENT_MOKI_TOWN_DEMO"):
+		event2()
+		pass
 
 func event1(_body):
 	var event_name = "EVENT_MOKI_TOWN_THEO_1"
@@ -98,20 +120,289 @@ func event1(_body):
 		Global.past_events.append(event_name)
 func event2_prep():
 	# Spawn npcs
-	var theo = load("res://Utilities/NPC.tscn").instance()
-	theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
-	npc_layer.add_child(theo)
-	theo.position = Vector2(496, 1456)
-	theo.set_idle_frame("Left")
-	
-	var bambo = load("res://Utilities/NPC.tscn").instance()
+	bambo = load("res://Utilities/NPC.tscn").instance()
 	bambo.texture = load("res://Graphics/Characters/phone035.PNG")
 	npc_layer.add_child(bambo)
 	bambo.position = Vector2(464, 1424)
 	bambo.set_idle_frame("Right")
+
+	if Global.past_events.has("EVENT_MOKI_TOWN_THEO_HOME_1"):
+		theo = load("res://Utilities/NPC.tscn").instance()
+		theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
+		npc_layer.add_child(theo)
+		theo.position = Vector2(496, 1456)
+		theo.set_idle_frame("Left")
 	pass
-func event2(_body):
+func event2():
+	Global.game.lock_player()
+
+	if Global.game.player.position == Vector2(496,1392):
+		#Move player down
+		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 1)
+		yield(Global.game.player, "done_movement")
+
+	Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
+	Global.game.get_node("Background_music").play()
+
+	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_1", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_2", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	# Turn bambo right
+	bambo.set_idle_frame("Left")
+	yield(get_tree().create_timer(0.50), "timeout")
 	
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_3", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_4", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_5", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_6", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	bambo.call_deferred("move_multi", "Left", 1)
+	yield(bambo, "done_movement")
+
+	yield(get_tree().create_timer(0.50), "timeout")
+
+	# Spawn Chyinmunk
+	var chyinmunk = load("res://Utilities/NPC.tscn").instance()
+	chyinmunk.texture = load("res://Graphics/Characters/PU-Chyinmunk.png")
+	npc_layer.add_child(chyinmunk)
+	chyinmunk.position = Vector2(368, 1424)
+	chyinmunk.set_idle_frame("Left")
+
+	# Play cry SE
+	var sound = load("res://Audio/SE/007Cry.wav")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Effect_music").stop()
 	
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_7", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	# Bambo's pokemon
+	var bambo_mon = load("res://Utilities/NPC.tscn").instance()
+
+	if Global.past_events.has("EVENT_MOKI_LAB_GOT_RAPTORCH"): #Eletux
+		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Eletux", bambo.get_global_transform_with_canvas().get_origin())
+		bambo_mon.texture = load("res://Graphics/Characters/PU-Eletux.png")
+	if Global.past_events.has("EVENT_MOKI_LAB_GOT_ORCHYNX"): #Raptorch
+		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Raptorch", bambo.get_global_transform_with_canvas().get_origin())
+		bambo_mon.texture = load("res://Graphics/Characters/PU-Raptorch.png")
+	if Global.past_events.has("EVENT_MOKI_LAB_GOT_ELETUX"): #Orchynx
+		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Orchynx", bambo.get_global_transform_with_canvas().get_origin())
+		bambo_mon.texture = load("res://Graphics/Characters/PU-Orchynx.png")
+	yield(Global.game, "event_dialogue_end")
 	
+	npc_layer.add_child(bambo_mon)
+	bambo_mon.position = Vector2(400, 1424)
+	bambo_mon.set_idle_frame("Left")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_9", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_10", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_11", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_11", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	if Global.past_events.has("EVENT_MOKI_LAB_GOT_RAPTORCH"): #Eletux
+		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Eletux", bambo.get_global_transform_with_canvas().get_origin())
+	if Global.past_events.has("EVENT_MOKI_LAB_GOT_ORCHYNX"): #Raptorch
+		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Raptorch", bambo.get_global_transform_with_canvas().get_origin())
+	if Global.past_events.has("EVENT_MOKI_LAB_GOT_ELETUX"): #Orchynx
+		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Orchynx", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	# Play hit SE
+	sound = load("res://Audio/SE/Blow1.ogg")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Effect_music").stop()
+
+	yield(get_tree().create_timer(0.10), "timeout")
+
+	chyinmunk.set_idle_frame("Right")
+
+	# Play cry SE
+	sound = load("res://Audio/SE/007Cry.wav")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Effect_music").stop()
+
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_13")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_14", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	# Pokeball go!
+	chyinmunk.texture = load("res://Graphics/Characters/itemball.png")
+	
+	sound = load("res://Audio/SE/throw.wav")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Effect_music").stop()
+
+	sound = load("res://Audio/SE/balldrop.wav")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Effect_music").stop()
+
+	# Remove Bambo's pokemon
+	bambo_mon.queue_free()
+
+	sound = load("res://Audio/SE/recall.wav")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Effect_music").stop()
+
+	bambo.call_deferred("move_multi", "Left", 1)
+	yield(bambo, "done_movement")
+
+	# Remove chyinmunk
+	chyinmunk.queue_free()
+
+	yield(get_tree().create_timer(0.10), "timeout")
+
+	bambo.call_deferred("move_multi", "Right", 1)
+	yield(bambo, "done_movement")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_15", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_16", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	bambo.call_deferred("move_multi", "Right", 1)
+	yield(bambo, "done_movement")
+
+	bambo.call_deferred("move_multi", "Left", 1) # TODO: Change to move backwards when NPCs can do that.
+	yield(bambo, "done_movement")
+
+	bambo.set_idle_frame("Right")
+
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_17")
+	yield(Global.game, "event_dialogue_end")
+
+	var time = Global.game.get_node("Background_music").get_playback_position()
+	Global.game.get_node("Background_music").stop()
+	sound = load("res://Audio/ME/Jinlge - KeyItem.ogg")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Background_music").play(time)
+	
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_18", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_19", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_20", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	bambo.call_deferred("move_multi", "Right", 1)
+	yield(bambo, "done_movement")
+
+	bambo.call_deferred("move_multi", "Left", 1) # TODO: Change to move backwards when NPCs can do that.
+	yield(bambo, "done_movement")
+
+	bambo.set_idle_frame("Right")
+
+	# Add pokeballs to inventory
+	Global.inventory.add_item_by_name_multiple("Pokéball", 5)
+
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_21")
+	yield(Global.game, "event_dialogue_end")
+
+	time = Global.game.get_node("Background_music").get_playback_position()
+	Global.game.get_node("Background_music").stop()
+	sound = load("res://Audio/ME/Jingle - Regular Item.ogg")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Background_music").play(time)
+
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_21")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_22")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_23", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_24", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_25", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	time = Global.game.get_node("Background_music").get_playback_position()
+	Global.game.get_node("Background_music").stop()
+	sound = load("res://Audio/ME/Jinlge - KeyItem.ogg")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Background_music").play(time)
+
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_26")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_27", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_28", bambo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	bambo.call_deferred("move_multi", "Up", 1)
+	yield(bambo, "done_movement")	
+	bambo.call_deferred("move_multi", "Right", 4)
+	yield(bambo, "done_movement")	
+	bambo.call_deferred("move_multi", "Down", 2)
+	yield(bambo, "done_movement")	
+	bambo.call_deferred("move_multi", "Right", 9)
+	yield(bambo, "done_movement")	
+
+	bambo.queue_free()
+
+	# Face player and theo together
+	theo.set_idle_frame("Up")
+	Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.DOWN)
+	
+	yield(get_tree().create_timer(0.2), "timeout")
+
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_29", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_30", theo.get_global_transform_with_canvas().get_origin())
+	yield(Global.game, "event_dialogue_end")
+
+	theo.call_deferred("move_multi", "Left", 1)
+	yield(theo, "done_movement")	
+	theo.call_deferred("move_multi", "Up", 1)
+	yield(theo, "done_movement")
+	theo.call_deferred("move_multi", "Left", 7)
+	yield(theo, "done_movement")
+
+	theo.queue_free()
+	Global.game.get_node("Background_music").stream = load(background_music)
+	Global.game.get_node("Background_music").play()
+	Global.past_events.append("EVENT_MOKI_TOWN_DEMO")
+	Global.game.release_player()
 	pass

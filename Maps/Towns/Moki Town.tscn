@@ -124,7 +124,7 @@ location = Vector2( 272, 368 )
 
 [node name="NPC" parent="NPC_Layer" instance=ExtResource( 7 )]
 visible = false
-position = Vector2( 528, 1520 )
+position = Vector2( 496, 1520 )
 
 [node name="Event1" parent="NPC_Layer" instance=ExtResource( 10 )]
 position = Vector2( 816, 496 )

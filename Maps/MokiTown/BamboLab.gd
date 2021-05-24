@@ -51,7 +51,7 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 		$NPC_Layer/Assistant.set_idle_frame("Up")
 		Global.game.release_player()
 		return null
-	if npc_collider == bambo.position:
+	if bambo != null && npc_collider == bambo.position:
 		Global.game.lock_player()
 		#Turn to face player
 		bambo.face_player(direction)
@@ -65,7 +65,7 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 			yield(Global.game, "event_dialogue_end")
 			Global.game.release_player()
 			return null
-	if npc_collider == theo.position:
+	if theo != null && npc_collider == theo.position:
 		Global.game.lock_player()
 		#Turn to face player
 		theo.face_player(direction)
