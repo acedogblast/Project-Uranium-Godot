@@ -140,6 +140,7 @@ func event2():
 		#Move player down
 		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 1)
 		yield(Global.game.player, "done_movement")
+		Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.LEFT)
 
 	Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
 	Global.game.get_node("Background_music").play()
@@ -177,7 +178,7 @@ func event2():
 
 	# Play cry SE
 	var sound = load("res://Audio/SE/007Cry.wav")
-	sound.loop = false
+	sound.loop_mode = AudioStreamSample.LOOP_DISABLED
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
 	yield(Global.game.get_node("Effect_music"), "finished")
@@ -210,8 +211,6 @@ func event2():
 	yield(Global.game, "event_dialogue_end")
 	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_11", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
-	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_11", bambo.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
 
 	if Global.past_events.has("EVENT_MOKI_LAB_GOT_RAPTORCH"): #Eletux
 		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Eletux", bambo.get_global_transform_with_canvas().get_origin())
@@ -235,7 +234,7 @@ func event2():
 
 	# Play cry SE
 	sound = load("res://Audio/SE/007Cry.wav")
-	sound.loop = false
+	sound.loop_mode = AudioStreamSample.LOOP_DISABLED
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
 	yield(Global.game.get_node("Effect_music"), "finished")
@@ -246,29 +245,29 @@ func event2():
 
 	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_14", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
+	
+	sound = load("res://Audio/SE/throw.wav")
+	sound.loop_mode = AudioStreamSample.LOOP_DISABLED
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+	yield(Global.game.get_node("Effect_music"), "finished")
+	Global.game.get_node("Effect_music").stop()
 
 	# Pokeball go!
 	chyinmunk.texture = load("res://Graphics/Characters/itemball.png")
-	
-	sound = load("res://Audio/SE/throw.wav")
-	sound.loop = false
-	Global.game.get_node("Effect_music").stream = sound
-	Global.game.get_node("Effect_music").play()
-	yield(Global.game.get_node("Effect_music"), "finished")
-	Global.game.get_node("Effect_music").stop()
 
 	sound = load("res://Audio/SE/balldrop.wav")
-	sound.loop = false
+	sound.loop_mode = AudioStreamSample.LOOP_DISABLED
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
 	yield(Global.game.get_node("Effect_music"), "finished")
 	Global.game.get_node("Effect_music").stop()
 
-	# Remove Bambo's pokemon
-	bambo_mon.queue_free()
+	# Remove chyinmunk
+	chyinmunk.queue_free()
 
 	sound = load("res://Audio/SE/recall.wav")
-	sound.loop = false
+	sound.loop_mode = AudioStreamSample.LOOP_DISABLED
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
 	yield(Global.game.get_node("Effect_music"), "finished")
@@ -277,8 +276,8 @@ func event2():
 	bambo.call_deferred("move_multi", "Left", 1)
 	yield(bambo, "done_movement")
 
-	# Remove chyinmunk
-	chyinmunk.queue_free()
+	# Remove Bambo's pokemon
+	bambo_mon.queue_free()
 
 	yield(get_tree().create_timer(0.10), "timeout")
 
@@ -299,15 +298,14 @@ func event2():
 
 	bambo.set_idle_frame("Right")
 
-	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_17")
-	yield(Global.game, "event_dialogue_end")
-
 	var time = Global.game.get_node("Background_music").get_playback_position()
 	Global.game.get_node("Background_music").stop()
 	sound = load("res://Audio/ME/Jinlge - KeyItem.ogg")
 	sound.loop = false
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
+
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_17")
 	yield(Global.game.get_node("Effect_music"), "finished")
 	Global.game.get_node("Background_music").play(time)
 	
@@ -329,20 +327,15 @@ func event2():
 	# Add pokeballs to inventory
 	Global.inventory.add_item_by_name_multiple("Pokéball", 5)
 
-	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_21")
-	yield(Global.game, "event_dialogue_end")
-
 	time = Global.game.get_node("Background_music").get_playback_position()
 	Global.game.get_node("Background_music").stop()
 	sound = load("res://Audio/ME/Jingle - Regular Item.ogg")
 	sound.loop = false
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_21")
 	yield(Global.game.get_node("Effect_music"), "finished")
 	Global.game.get_node("Background_music").play(time)
-
-	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_21")
-	yield(Global.game, "event_dialogue_end")
 
 	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_22")
 	yield(Global.game, "event_dialogue_end")
@@ -360,11 +353,10 @@ func event2():
 	sound.loop = false
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
+	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_26")
 	yield(Global.game.get_node("Effect_music"), "finished")
 	Global.game.get_node("Background_music").play(time)
 
-	Global.game.play_dialogue("EVENT_MOKI_TOWN_CAPTURE_DEMO_26")
-	yield(Global.game, "event_dialogue_end")
 
 	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_27", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")

@@ -92,7 +92,7 @@ func load_state():
 
 		if state.has("inventory"):
 			inventory = state["inventory"]
-			#print(str(inventory.get_instance_id()) + "Global.gd load")
+			print(str(inventory.get_instance_id()) + "Global.gd load")
 		
 		emit_signal("loaded")
 func heal_party(): # Heals all of the player's pokemon party.

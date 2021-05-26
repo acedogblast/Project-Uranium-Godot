@@ -101,7 +101,7 @@ position = Vector2( 496, 1424 )
 size = "custom"
 custom_size = Vector2( 16, 48 )
 
-[node name="Door" parent="NPC_Layer" instance=ExtResource( 8 )]
+[node name="HeroHomeDoor" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 880, 1008 )
 scene_destination = "res://Maps/MokiTown/HeroHome.tscn"
 location = Vector2( 1120, 304 )
@@ -130,6 +130,18 @@ position = Vector2( 496, 1520 )
 position = Vector2( 816, 496 )
 size = "custom"
 custom_size = Vector2( 16, 80 )
+
+[node name="Route1Connection" parent="NPC_Layer" instance=ExtResource( 8 )]
+position = Vector2( 240, 1392 )
+scene_destination = "res://Maps/Routes/Route1.tscn"
+location = Vector2( 2256, 368 )
+door_type = "Type 3 - Invisible"
+
+[node name="Route1Connection2" parent="NPC_Layer" instance=ExtResource( 8 )]
+position = Vector2( 240, 1424 )
+scene_destination = "res://Maps/Routes/Route1.tscn"
+location = Vector2( 2256, 400 )
+door_type = "Type 3 - Invisible"
 
 [connection signal="area_entered" from="NPC_Layer/Block" to="." method="block_exit"]
 [connection signal="area_entered" from="NPC_Layer/Event1" to="." method="event1"]
