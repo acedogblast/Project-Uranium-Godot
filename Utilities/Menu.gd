@@ -34,7 +34,7 @@ func _ready():
 	
 	current = ORDER.PARTY
 	init_pos = $Option_Text.rect_position
-
+	$Bag.enabled = false
 	
 	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
 

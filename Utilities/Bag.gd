@@ -25,7 +25,7 @@ var selected_item = [
 
 #onready var inventory = Global.inventory
 
-var enabled = true
+var enabled
 signal close_bag
 
 func _ready():
@@ -360,30 +360,38 @@ func update_data():
 
 func update_detail():
 	var item_icon
+	var section_empty = true
 	match current:
 		0:
 			if !Global.inventory.items.empty():
 				item_icon = Global.inventory.items[selected_item[current]].get_item_id()
+				section_empty = false
 		1:
 			if !Global.inventory.medicine.empty():
 				item_icon = Global.inventory.medicine[selected_item[current]].get_item_id()
+				section_empty = false
 		2:
 			if !Global.inventory.balls.empty():
 				item_icon = Global.inventory.balls[selected_item[current]].get_item_id()
+				section_empty = false
 		3:
 			if !Global.inventory.TMs.empty():
 				item_icon = Global.inventory.TMs[selected_item[current]].get_item_id()
+				section_empty = false
 		4:
 			if !Global.inventory.berries.empty():
 				item_icon = Global.inventory.berries[selected_item[current]].get_item_id()
+				section_empty = false
 		5:
 			if !Global.inventory.battle_items.empty():
 				item_icon = Global.inventory.battle_items[selected_item[current]].get_item_id()
+				section_empty = false
 		6:
 			if !Global.inventory.key_items.empty():
 				item_icon = Global.inventory.key_items[selected_item[current]].get_item_id()
+				section_empty = false
 	
-	if Global.inventory == null || Global.inventory.is_empty():
+	if Global.inventory == null || Global.inventory.is_empty() || section_empty:
 		$Details/icon.hide()
 		return
 	$Details/icon.show()

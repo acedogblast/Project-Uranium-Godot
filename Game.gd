@@ -72,8 +72,6 @@ func setup():
 
 	player.z_index = 10 # DO NOT CHANGE! see AutoZSorter for details
 	var result = DialogueSystem.connect("dialogue_end", self, "dialog_end", [], CONNECT_DEFERRED)
-	#print("DialogeSystem signal connect is:")
-	#print(result)
 
 	player.canMove = true
 
@@ -84,6 +82,11 @@ func setup():
 		print("WARNING: current_scene script does not have place_name set.")
 	$CanvasLayer/Menu.visible = true
 	$CanvasLayer/ZoneMessage.visible = true
+
+	# Testing
+	#print(Global.inventory.balls[0])
+
+
 
 func _process(_delta):
 	# Sort and assign Z index

@@ -9,8 +9,7 @@ enum {
 	KEY_ITEMS,
 }
 
-# item_list NEW
-var item_list = {
+var item_list = { # Can not pull data from Item or ItemStack from saves due to _init problems.
 	170: Item.new("Potion", "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points.", MEDICINE),
 	211: Item.new("Pokéball", "A device for catching wild Pokémon. A capsule system that is thrown like a ball at the target.", BALLS),
 	210: Item.new("Great Ball", "A good, high-performance Poké Ball that provides a higher success rate for catching Pokémon than a standard Poké Ball.", BALLS)

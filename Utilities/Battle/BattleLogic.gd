@@ -353,7 +353,8 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				else: # Move is not a direct attack move
 
 					if move.main_status_effect != null: # Move effect stats
-						var stat_effect = move.main_status_effect
+						var stat_effect = get_status_effect_by_move_name(move)
+						#var stat_effect = move.main_status_effect   Removed due to loading an init object
 						var stats_changed = get_stage_stat_by_index(target_index).apply_stat_effect(stat_effect) # This changes stats of target
 							
 						# For all stats changed
@@ -925,3 +926,5 @@ func get_ball_catch_rate(ball_id: int) -> float:
 		_:
 			print("Battle Error: ball_id did not match any listed. Using default value.")
 	return rate
+func get_status_effect_by_move_name(name: String):
+	return MoveDataBase.get_move_by_name(name).main_status_effect

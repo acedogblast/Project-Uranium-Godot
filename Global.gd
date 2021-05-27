@@ -40,15 +40,6 @@ signal loaded
 func _ready():
 	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-
-	# Fill inventory for testing
-	#inventory = load("res://Utilities/Items/Inventory.gd").new()
-	#inventory.add_item_by_name_multiple("Potion", 1)
-	#inventory.add_item_by_name_multiple("Pokéball", 10)
-	#inventory.add_item_by_name_multiple("Great Ball", 25)
-
-	#Testing
-	#print(str(inventory.get_instance_id()) + "Global.gd ready")
 	
 	
 
@@ -71,7 +62,7 @@ func save_state():
 		"can_run": can_run,
 		"pokemon_group": pokemon_group,
 		"past_events": past_events,
-		"inventory": inventory,
+		"inventory": inventory.get_save_state(),
 		"pokedex_seen": pokedex_seen,
 		"pokedex_owned" : pokedex_owned
 	}
@@ -90,9 +81,8 @@ func load_state():
 		pokedex_seen = state["pokedex_seen"]
 		pokedex_owned = state["pokedex_owned"]
 
-		if state.has("inventory"):
-			inventory = state["inventory"]
-			print(str(inventory.get_instance_id()) + "Global.gd load")
+		inventory = load("res://Utilities/Items/Inventory.gd").new()
+		inventory.set_save_state(state["inventory"])
 		
 		emit_signal("loaded")
 func heal_party(): # Heals all of the player's pokemon party.

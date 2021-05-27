@@ -39,6 +39,7 @@ func load_file(id):
 		print("Save file %s doesn't exist. Creating new save file." % save_file_path)
 		var new_save = SAVE_STATE.new()
 		return new_save
+	print("Loading existing file.")
 	var save_game = load(save_file_path)
 	return save_game
 

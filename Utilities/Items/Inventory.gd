@@ -97,6 +97,10 @@ func add_item_by_name_multiple(_name : String, amount : int):
 	for i in range(amount):
 		add_item(get_item_by_name(_name))
 
+func add_item_by_id_multiple(_id : int, amount : int):
+	for i in range(amount):
+		add_item(get_item_by_id(_id))	
+
 func get_item_id_by_name(_name : String):
 	var database = load("res://Utilities/Items/database.gd").new()
 	return database.get_id_by_name(_name)
@@ -215,3 +219,25 @@ func is_empty() -> bool:
 		):
 		return true
 	return false
+
+func get_save_state():
+	var inventory_save_state = []
+
+	for x in items:
+		inventory_save_state.append([x.item.id, x.quantity])
+	for x in medicine:
+		inventory_save_state.append([x.item.id, x.quantity])
+	for x in balls:
+		inventory_save_state.append([x.item.id, x.quantity])
+	for x in TMs:
+		inventory_save_state.append([x.item.id, x.quantity])
+	for x in berries:
+		inventory_save_state.append([x.item.id, x.quantity])
+	for x in battle_items:
+		inventory_save_state.append([x.item.id, x.quantity])
+	for x in key_items:
+		inventory_save_state.append([x.item.id, x.quantity])
+	return inventory_save_state
+func set_save_state(inventory_save_state):
+	for x in inventory_save_state:
+		add_item_by_id_multiple(x[0], x[1])
