@@ -10,7 +10,6 @@ var pokedex_seen = [] # list of id numbers
 var pokedex_owned = [] # list of id numbers
 
 var onGrass = false
-#var grassPos = []
 var grass_positions = []
 var grassPos = ""
 var exitGrassPos = ""

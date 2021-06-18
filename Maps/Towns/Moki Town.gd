@@ -1,7 +1,8 @@
 extends Node2D
 
-#var next_scene1 = "res://Maps/Route03/Route03.tscn"
-var next_scene1 = "res://Maps/Routes/Route 3.tscn"
+var adjacent_scenes = [
+	["res://Maps/Routes/Route 3.tscn", Vector2(2304,832)]
+]
 
 var background_music = "res://Audio/BGM/PU-Moki Town.ogg";
 
@@ -13,9 +14,6 @@ var npc_layer
 # NPCs
 var theo
 var bambo
-
-
-var grass_pos = []
 
 func _ready():
 	npc_layer = $NPC_Layer
@@ -398,3 +396,5 @@ func event2():
 	Global.past_events.append("EVENT_MOKI_TOWN_DEMO")
 	Global.game.release_player()
 	pass
+func get_grass_cells():
+	return get_node("Tile Layer 1/Grass").get_used_cells()

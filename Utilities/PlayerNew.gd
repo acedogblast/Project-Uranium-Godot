@@ -303,6 +303,18 @@ func move(force_move : bool):
 	set_process(true)
 	emit_signal("step")
 
+	# Check if player entered into a different scene. For outdoors only
+	if "type" in Global.game.current_scene && Global.game.current_scene.type == "Outside":
+		if Global.game.current_scene != Global.game.get_current_scene_where_player_is():
+			if Global.game.get_current_scene_where_player_is() == null:
+				print("Got Null. returing")
+				return
+			
+			print("Player entering different scene.")
+			print(Global.game.get_current_scene_where_player_is())
+			Global.game.change_scene(null)
+	
+
 #Loads the texture of the sprites you picked for your character
 func load_texture():
 	if Global.TrainerGender == 0:

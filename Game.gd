@@ -1,18 +1,13 @@
 extends Node2D
 
-#Loads the player scene
-onready var player = null
+var player
 var menu
 var battle
 var overlay
 
 var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
-var current_scene = null
-
-var next_scene1 = null
-var next_scene2 = null
-var next_scene3 = null
-var next_scene4 = null
+var current_scene
+var scenes = []
 
 var loaded = false
 var isInteracting = false
@@ -26,23 +21,21 @@ signal loaded
 onready var transition = $CanvasLayer/Transition
 
 func _ready():
-	overlay = preload("res://Utilities/debug_overlay.tscn").instance()
-	overlay.add_stat("onGrass", Global, "onGrass", false)
-	#overlay.add_stat("Grass Position", Global, "grass_positions", false)
-	#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
-	
-	add_child(overlay)
-	
 	Global.game = self
 	menu = $CanvasLayer/Menu
 
 	#Makes player an instance of Player, makes it a child, and adds it to the group save
 	player = load("res://Utilities/PlayerNew.tscn").instance()
 	add_child(player)
-	#add_to_group("save") Not needed anyone.
-	
-	overlay.add_stat("Direction", player, "dir", false)
-	overlay.add_stat("Player Pos", player, "position", false)
+
+	if OS.is_debug_build():
+		overlay = preload("res://Utilities/debug_overlay.tscn").instance()
+		overlay.add_stat("onGrass", Global, "onGrass", false)
+		#overlay.add_stat("Grass Position", Global, "grass_positions", false)
+		#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
+		overlay.add_stat("Direction", player, "dir", false)
+		overlay.add_stat("Player Pos", player, "position", false)
+		add_child(overlay)
 
 	
 	loaded = false
@@ -98,13 +91,12 @@ func _process(_delta):
 		index += 1
 
 	#Quick save
-	if Input.is_key_pressed(KEY_F1):
+	if Input.is_action_just_pressed("F1"):
 		SaveSystem.save_game(1)
-	if current_scene != null && current_scene.type == "Outside" && loaded == false:
-		call_deferred("load_seemless")
-	if Input.is_key_pressed(KEY_F2):
-		overlay.toggle()
 	
+	if Input.is_action_just_pressed("F2"):
+		overlay.toggle()
+
 
 func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
@@ -114,30 +106,67 @@ func change_menu_text():
 func play_anim(fade):
 	$CanvasLayer/Transition/AnimationPlayer.play(fade)
 
-#If the current scene is not null, then the current scene is removed as a child
-func change_scene(scene): # scene must be loaded!
-	if current_scene != null:
-		remove_child(current_scene)
-	if current_scene is String:
+func change_scene(scene):
+	if scene is String:
 		var new_scene = load(scene)
-		current_scene = new_scene.instance()
+		scenes.append(new_scene.instance())
+		current_scene = new_scene
+		add_child(current_scene)
+	elif scene is Resource:
+		var new_scene = scene.instance()
+		scenes.append(new_scene)
+		current_scene = new_scene
+		add_child(current_scene)
+	elif scene == null: # Should only be for transitioning from one scene to another seamlessly
+		# Find out that the new scene is
+		current_scene = get_current_scene_where_player_is()
 	else:
-		current_scene = scene.instance()
+		print("GAME WARNING: change_scene arg is not what it should be.")
+		pass
 	
-	Global.grass_positions = []
-	#Adds the current scene to be a child
-	add_child(current_scene)
 
 	# Load and start background music if available.
-	if current_scene.background_music != null:
+	if "background_music" in current_scene && current_scene.background_music != null:
 		var music = load(current_scene.background_music)
 		$Background_music.stream = music
 		$Background_music.play()
 	# If scene is outdoors, play zone animation
-	if current_scene.type == "Outside":
+	if "type" in current_scene && current_scene.type == "Outside":
 		$CanvasLayer/ZoneMessage/Bar/Label.text = current_scene.place_name
 		$CanvasLayer/ZoneMessage/AnimationPlayer.play("Slide")
 	Global.location = current_scene.place_name
+
+	# Get grass positions for the new scene
+	var grass_cells = current_scene.get_grass_cells() # Get Array of Vector2s of cells in cell cord
+	var final_pos = [] # Array of Vector2s of grass global locations
+
+	for cells in grass_cells:
+		var pos = cells
+		pos = pos * 32
+		pos = pos + current_scene.position
+		pos = pos + Vector2(16,16)
+		final_pos.append(pos)
+	Global.grass_positions = final_pos
+
+	# Load adjacent sceens
+	if "adjacent_scenes" in current_scene && current_scene.adjacent_scenes != null && current_scene.adjacent_scenes.size() != 0:
+		for scene_array in current_scene.adjacent_scenes:
+			# Check if scene is already in the scenes array
+			var is_already_loaded = true
+			var scene_filename = scene_array[0]
+			for scene in scenes:
+				if scene.filename == scene_filename:
+					break
+				else:
+					is_already_loaded = false
+			
+			if is_already_loaded == false:
+				# Add the scene
+				var new_scene = load(scene_filename).instance()
+				scenes.append(new_scene)
+				new_scene.position = current_scene.position + scene_array[1]
+				add_child(new_scene)
+
 
 #Gets the destination and direction from Stairs.gd, and goes to the next line
 func room_transition(dest, dir):
@@ -204,16 +233,6 @@ func door_transition(path_scene, new_position):
 	release_player()
 	emit_signal("tranistion_complete")
 
-
-#Loads the next scene and adds it to the scene tree
-func load_seemless():
-	loaded = true
-	
-	next_scene1 = load(current_scene.next_scene1).instance()
-	#next_scene1 = next_scene1.instance()
-	next_scene1.position = Vector2(2272,26*32)
-	add_child(next_scene1)
-
 #Checks to see if the player is interacting, if not and the interaction title isn't null then is interacting is set to true, the change_input method is called, the play_dialogue method is called, we wait until the dialogue event has ended, and the change_input method is called again
 func interaction(collider, direction): # Starts the dialogue instead of the scene script
 	if isInteracting == false:
@@ -279,3 +298,18 @@ func release_player(): # Releases player to prevent user input. Useful for event
 	player.change_input()
 	Global.game.menu.locked = false
 	pass
+
+func get_current_scene_where_player_is():
+	for scene in scenes:
+		# Get the bounds of the scene
+		var tilemap = scene.get_node("Tile Layer 1")
+		var map_cell_rect = tilemap.get_used_rect() # Returns rect of cell cordinates. Not Global positions.
+		var map_rect = Rect2(scene.position, Vector2(map_cell_rect.size.x * 32, map_cell_rect.size.y * 32))
+		
+		#print(map_rect)
+		#print(player.position)
+		if map_rect.has_point(player.position):
+			if scene == null:
+				print("Problem")
+			return scene
+	print("Missed scene scan")

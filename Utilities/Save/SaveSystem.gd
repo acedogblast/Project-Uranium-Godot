@@ -2,7 +2,7 @@ extends Node
 
 const SAVE_STATE = preload('res://Utilities/Save/State.gd')
 
-var SAVE_FOLDER = "res://Utilities/Save" # For Release Need to change to "user://"
+var SAVE_FOLDER # For Release Need to change to "user://"
 var SAVE_NAME_TEMPLATE = "save_%03d.tres"
 
 var save_state : SAVE_STATE
@@ -11,6 +11,11 @@ var save_state : SAVE_STATE
 # This is to know how many save files there are.
 
 func _ready():
+	if OS.is_debug_build():
+		SAVE_FOLDER = "res://Utilities/Save"
+	else:
+		SAVE_FOLDER = "user://"
+
 	save_state = State.new()
 
 func has_state(var key):
