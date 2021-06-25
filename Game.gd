@@ -79,8 +79,6 @@ func setup():
 	# Testing
 	#print(Global.inventory.balls[0])
 
-
-
 func _process(_delta):
 	# Sort and assign Z index
 	var nodes = get_tree().get_nodes_in_group("auto_z_layering")
@@ -97,7 +95,6 @@ func _process(_delta):
 	if Input.is_action_just_pressed("F2"):
 		overlay.toggle()
 
-
 func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
 		$CanvasLayer/Menu/Place_Text.bbcode_text = "[center]" + current_scene.place_name + "[/center]"
@@ -107,6 +104,12 @@ func play_anim(fade):
 	$CanvasLayer/Transition/AnimationPlayer.play(fade)
 
 func change_scene(scene):
+	if scene != null:
+		# Clear and delete scenes
+		for node in scenes:
+			node.queue_free()
+		scenes.clear()
+
 	if scene is String:
 		var new_scene = load(scene)
 		scenes.append(new_scene.instance())
@@ -119,6 +122,7 @@ func change_scene(scene):
 		add_child(current_scene)
 	elif scene == null: # Should only be for transitioning from one scene to another seamlessly
 		# Find out that the new scene is
+		print("seamless transision")
 		current_scene = get_current_scene_where_player_is()
 	else:
 		print("GAME WARNING: change_scene arg is not what it should be.")
@@ -137,23 +141,28 @@ func change_scene(scene):
 	Global.location = current_scene.place_name
 
 	# Get grass positions for the new scene
-	var grass_cells = current_scene.get_grass_cells() # Get Array of Vector2s of cells in cell cord
-	var final_pos = [] # Array of Vector2s of grass global locations
+	
+	if "type" in current_scene && current_scene.type == "Outside" && current_scene.has_method("get_grass_cells"):
+		var grass_cells = current_scene.get_grass_cells() # Get Array of Vector2s of cells in cell cord
+		var final_pos = [] # Array of Vector2s of grass global locations
 
-	for cells in grass_cells:
-		var pos = cells
-		pos = pos * 32
-		pos = pos + current_scene.position
-		pos = pos + Vector2(16,16)
-		final_pos.append(pos)
-	Global.grass_positions = final_pos
+		for cells in grass_cells:
+			var pos = cells
+			pos = pos * 32
+			pos = pos + current_scene.position
+			pos = pos + Vector2(16,16)
+			final_pos.append(pos)
+		Global.grass_positions = final_pos
+	else:
+		Global.grass_positions.clear()
 
 	# Load adjacent sceens
 	if "adjacent_scenes" in current_scene && current_scene.adjacent_scenes != null && current_scene.adjacent_scenes.size() != 0:
+		var index = 0
 		for scene_array in current_scene.adjacent_scenes:
 			# Check if scene is already in the scenes array
 			var is_already_loaded = true
-			var scene_filename = scene_array[0]
+			var scene_filename = scene_array[index]
 			for scene in scenes:
 				if scene.filename == scene_filename:
 					break
@@ -164,8 +173,9 @@ func change_scene(scene):
 				# Add the scene
 				var new_scene = load(scene_filename).instance()
 				scenes.append(new_scene)
-				new_scene.position = current_scene.position + scene_array[1]
+				new_scene.position = current_scene.position + scene_array[index + 1]
 				add_child(new_scene)
+			index += 2
 
 
 #Gets the destination and direction from Stairs.gd, and goes to the next line
@@ -220,8 +230,6 @@ func door_transition(path_scene, new_position):
 	player.position = new_position
 	player.visible = true
 	transition.fade_from_color()
-
-	print(new_position)
 
 	# Check if exit is also a door
 	for door in get_tree().get_nodes_in_group("Doors"):
@@ -299,10 +307,13 @@ func release_player(): # Releases player to prevent user input. Useful for event
 	Global.game.menu.locked = false
 	pass
 
-func get_current_scene_where_player_is():
+func get_current_scene_where_player_is(): # Should only be called when player is outside
 	for scene in scenes:
 		# Get the bounds of the scene
 		var tilemap = scene.get_node("Tile Layer 1")
+		if tilemap == null:
+			print("GAME ERROR: tilemap is null")
+			return
 		var map_cell_rect = tilemap.get_used_rect() # Returns rect of cell cordinates. Not Global positions.
 		var map_rect = Rect2(scene.position, Vector2(map_cell_rect.size.x * 32, map_cell_rect.size.y * 32))
 		

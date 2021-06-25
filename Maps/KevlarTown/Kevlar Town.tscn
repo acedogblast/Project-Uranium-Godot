@@ -4,7 +4,7 @@
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
 [ext_resource path="res://Maps/tilesets/PU_watertiles+.tres" type="TileSet" id=3]
 [ext_resource path="res://Maps/tilesets/PU_anim_tiles.tres" type="TileSet" id=4]
-[ext_resource path="res://Maps/Towns/Kevlar Town.gd" type="Script" id=5]
+[ext_resource path="res://Maps/KevlarTown/Kevlar Town.gd" type="Script" id=5]
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2( 2, 2 )

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Maps/tilesets/PU_indoors+.tres" type="TileSet" id=1]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Maps/Towns/Town Houses/Rival House.gd" type="Script" id=3]
+[ext_resource path="res://Maps/MokiTown/Rival House.gd" type="Script" id=3]
 [ext_resource path="res://Utilities/Stairs.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
@@ -45,7 +45,7 @@ tile_data = PoolIntArray( 131074, 0, 655365, 196631, 0, 720902, 196632, 0, 72090
 
 [node name="Door" parent="." instance=ExtResource( 2 )]
 position = Vector2( 272, 368 )
-scene_destination = "res://Maps/Towns/Moki Town.tscn"
+scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
 location = Vector2( 1776, 1360 )
 exterior = false
 

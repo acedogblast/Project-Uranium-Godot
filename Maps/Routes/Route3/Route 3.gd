@@ -9,7 +9,7 @@ var place_name = "Route 03"
 var grass_pos = []
 
 func _ready():
-	print(place_name)
+	pass
 
 func get_grass_cells():
 	return get_node("Tile Layer 1/Grass").get_used_cells()

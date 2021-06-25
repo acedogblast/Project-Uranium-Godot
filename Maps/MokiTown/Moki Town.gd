@@ -1,7 +1,7 @@
 extends Node2D
 
 var adjacent_scenes = [
-	["res://Maps/Routes/Route 3.tscn", Vector2(2304,832)]
+	["res://Maps/Routes/Route3/Route 3.tscn", Vector2(2304,832)]
 ]
 
 var background_music = "res://Audio/BGM/PU-Moki Town.ogg";

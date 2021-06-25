@@ -102,6 +102,8 @@ func event1(_body):
 
 			theo.show()
 			theo.set_idle_frame("Left")
+			yield(get_tree().create_timer(0.5), "timeout")
+
 			theo.call_deferred("move_multi", "Down", 1)
 			yield(theo, "done_movement")
 

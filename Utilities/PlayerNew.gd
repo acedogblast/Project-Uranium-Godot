@@ -153,9 +153,6 @@ func check_grass(dir):
 			
 		for collision in $NextCollision.get_children():
 			#print(grass.world_to_map(collision.global_position))
-
-
-
 			for g in grass.get_used_cells_by_id(0):
 				if collision.name == "Right":
 					pass
@@ -212,6 +209,10 @@ func interact():
 func move(force_move : bool):
 	set_process(false)
 	move_direction = Vector2.ZERO
+
+	var was_indoors = false
+	if "type" in Global.game.current_scene && !Global.game.current_scene.type == "Outside":
+		was_indoors = true
 	
 	dir = ""
 	if direction == DIRECTION.DOWN and ($NextCollision/Down.get_overlapping_bodies().size() == 0 or force_move):
@@ -247,7 +248,7 @@ func move(force_move : bool):
 
 	for pos in Global.grass_positions:
 		if Global.game.player.position + move_direction == pos: # Should be only one of all grass positions.
-			print("Grass found!")
+			#print("Grass found!")
 			grass_found = true
 
 			if !Global.onGrass:
@@ -304,14 +305,12 @@ func move(force_move : bool):
 	emit_signal("step")
 
 	# Check if player entered into a different scene. For outdoors only
-	if "type" in Global.game.current_scene && Global.game.current_scene.type == "Outside":
-		if Global.game.current_scene != Global.game.get_current_scene_where_player_is():
-			if Global.game.get_current_scene_where_player_is() == null:
-				print("Got Null. returing")
-				return
-			
-			print("Player entering different scene.")
-			print(Global.game.get_current_scene_where_player_is())
+	if "type" in Global.game.current_scene && Global.game.current_scene.type == "Outside" && !was_indoors:
+		var loc = Global.game.get_current_scene_where_player_is()
+		if Global.game.current_scene != loc:
+			if loc == null:
+				print("PLAYER ERROR: Got Null on current_scene.")
+			print("Player seamlessly entering different scene -> " + str(loc))
 			Global.game.change_scene(null)
 	
 

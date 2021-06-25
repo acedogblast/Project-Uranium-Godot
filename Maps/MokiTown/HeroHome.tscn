@@ -182,7 +182,7 @@ texture = ExtResource( 6 )
 
 [node name="Outside" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1120, 336 )
-scene_destination = "res://Maps/Towns/Moki Town.tscn"
+scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
 location = Vector2( 880, 1008 )
 exterior = false
 
@@ -198,7 +198,6 @@ dir = "Down"
 
 [node name="Block" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1120, 304 )
-size = "1x1"
 
 [connection signal="area_entered" from="Floor2/Event1" to="." method="event1"]
 [connection signal="area_entered" from="Block" to="." method="block"]

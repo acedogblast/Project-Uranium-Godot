@@ -31040,7 +31040,7 @@ custom_offset = Vector2( 144, 0 )
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 240, 560 )
-scene_destination = "res://Maps/Towns/Moki Town.tscn"
+scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
 location = Vector2( 528, 368 )
 exterior = false
 

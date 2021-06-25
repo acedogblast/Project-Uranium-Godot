@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
-[ext_resource path="res://Maps/Routes/Route 2.gd" type="Script" id=3]
+[ext_resource path="res://Maps/Routes/Route2/Route 2.gd" type="Script" id=3]
 [ext_resource path="res://Maps/tilesets/PU_autotiles.tres" type="TileSet" id=4]
-[ext_resource path="res://Maps/Towns/Nowtoch City.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
@@ -43,7 +42,3 @@ cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
 tile_data = PoolIntArray( 393238, 0, 327683, 393241, 0, 131079, 393243, 0, 131081, 393245, 0, 7, 2752535, 0, 7, 2818067, 0, 5, 2818068, 0, 6, 2949144, 0, 5, 2949145, 0, 6, 3014679, 0, 327683, 3080215, 0, 6, 3145751, 0, 7, 3342360, 0, 5, 3342361, 0, 6, 3538964, 0, 14, 3670041, 0, 7, 3670042, 0, 8, 3670043, 0, 9 )
-
-[node name="Node2D" parent="." instance=ExtResource( 5 )]
-position = Vector2( -240, -1184 )
-scale = Vector2( 1, 1 )

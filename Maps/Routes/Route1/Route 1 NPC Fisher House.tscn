@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://home/charles/GodotProjects/Project-Uranium-Godot/Maps/tilesets/PU_indoors+.tres" type="TileSet" id=1]
+[ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=1]
 
 [node name="Node2D" type="Node2D"]
 [node name="Tile Layer 1" type="TileMap" parent="."]

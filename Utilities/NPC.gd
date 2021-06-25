@@ -21,7 +21,7 @@ func _ready():
 	$Position2D/Sprite.texture = texture
 	set_idle_frame(facing)
 	if texture == null:
-		print("ERROR: No texture applied to NPC")
+		print("WARNING: No texture applied to NPC")
 
 func _process(_delta):
 	if !moving:

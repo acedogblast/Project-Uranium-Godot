@@ -5,7 +5,7 @@
 [ext_resource path="res://Maps/tilesets/PU_watertiles+.tres" type="TileSet" id=3]
 [ext_resource path="res://Maps/tilesets/PU_autotiles.tres" type="TileSet" id=4]
 [ext_resource path="res://Maps/tilesets/PU_anim_tiles.tres" type="TileSet" id=5]
-[ext_resource path="res://Maps/Towns/Moki Town.gd" type="Script" id=6]
+[ext_resource path="res://Maps/MokiTown/Moki Town.gd" type="Script" id=6]
 [ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=10]
@@ -108,7 +108,7 @@ location = Vector2( 1120, 304 )
 
 [node name="pokecenter test" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 1360, 1008 )
-scene_destination = "res://Maps/Towns/Town Houses/Pokecenter.tscn"
+scene_destination = "res://Maps/MokiTown/Rival House.tscn"
 location = Vector2( 240, 432 )
 
 [node name="Door2" parent="NPC_Layer" instance=ExtResource( 8 )]
@@ -119,7 +119,7 @@ door_type = "Type 2 - Glass"
 
 [node name="RivalDoor" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 1776, 1360 )
-scene_destination = "res://Maps/Towns/Town Houses/Rival House.tscn"
+scene_destination = "res://Maps/MokiTown/Rival House.tscn"
 location = Vector2( 272, 368 )
 
 [node name="NPC" parent="NPC_Layer" instance=ExtResource( 7 )]
@@ -132,13 +132,13 @@ custom_size = Vector2( 16, 80 )
 
 [node name="Route1Connection" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 240, 1392 )
-scene_destination = "res://Maps/Routes/Route1.tscn"
+scene_destination = "res://Maps/Routes/Route1/Route1.tscn"
 location = Vector2( 2256, 368 )
 door_type = "Type 3 - Invisible"
 
 [node name="Route1Connection2" parent="NPC_Layer" instance=ExtResource( 8 )]
 position = Vector2( 240, 1424 )
-scene_destination = "res://Maps/Routes/Route1.tscn"
+scene_destination = "res://Maps/Routes/Route1/Route1.tscn"
 location = Vector2( 2256, 400 )
 door_type = "Type 3 - Invisible"
 

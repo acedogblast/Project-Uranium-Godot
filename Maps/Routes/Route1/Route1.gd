@@ -19,3 +19,6 @@ func _ready():
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
 	pass
+
+func get_grass_cells():
+	return get_node("Tile Layer 1/PU_autotiles").get_used_cells()

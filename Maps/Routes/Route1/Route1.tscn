@@ -5,7 +5,7 @@
 [ext_resource path="res://Maps/tilesets/PU_autotiles.tres" type="TileSet" id=3]
 [ext_resource path="res://Maps/tilesets/PU_anim_tiles.tres" type="TileSet" id=4]
 [ext_resource path="res://Maps/tilesets/PU_watertiles+.tres" type="TileSet" id=5]
-[ext_resource path="res://Maps/Routes/Route1.gd" type="Script" id=6]
+[ext_resource path="res://Maps/Routes/Route1/Route1.gd" type="Script" id=6]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=7]
 
 [node name="Node2D" type="Node2D"]
@@ -90,24 +90,24 @@ tile_data = PoolIntArray( 196622, 0, 9, 196625, 0, 7, 196627, 0, 9, 262173, 0, 9
 
 [node name="MokiTownConnection" parent="NPC_Layer" instance=ExtResource( 7 )]
 position = Vector2( 2256, 368 )
-scene_destination = "res://Maps/Towns/Moki Town.tscn"
+scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
 location = Vector2( 240, 1392 )
 door_type = "Type 3 - Invisible"
 
 [node name="MokiTownConnection2" parent="NPC_Layer" instance=ExtResource( 7 )]
 position = Vector2( 2256, 400 )
-scene_destination = "res://Maps/Towns/Moki Town.tscn"
+scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
 location = Vector2( 240, 1424 )
 door_type = "Type 3 - Invisible"
 
 [node name="KevlarTownConnection" parent="NPC_Layer" instance=ExtResource( 7 )]
 position = Vector2( 496, 176 )
-scene_destination = "res://Maps/Towns/Kevlar Town.tscn"
+scene_destination = "res://Maps/KevlarTown/Kevlar Town.tscn"
 location = Vector2( 464, 1360 )
 door_type = "Type 3 - Invisible"
 
 [node name="KevlarTownConnection2" parent="NPC_Layer" instance=ExtResource( 7 )]
 position = Vector2( 528, 176 )
-scene_destination = "res://Maps/Towns/Kevlar Town.tscn"
+scene_destination = "res://Maps/KevlarTown/Kevlar Town.tscn"
 location = Vector2( 496, 1360 )
 door_type = "Type 3 - Invisible"
