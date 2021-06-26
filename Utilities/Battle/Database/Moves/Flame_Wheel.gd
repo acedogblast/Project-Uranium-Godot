@@ -1,7 +1,7 @@
 extends Object
 
 # The name of the move
-var name = "Flame_Wheel"
+var name = "Flame Wheel"
 
 # The type of the move
 var type = Type.FIRE

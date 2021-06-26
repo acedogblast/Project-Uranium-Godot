@@ -334,7 +334,6 @@ func wild_battle():
 		print("GAME ERROR: tried to make a wild encounter but current scene doesn't have a wile_table.")
 		return
 
-	#lock_player()
 	Global.game.get_node("Background_music").stop()
 
 	battle = load("res://Utilities/Battle/Battle.tscn").instance()
@@ -342,7 +341,7 @@ func wild_battle():
 
 	var bid = BattleInstanceData.new()
 	bid.battle_type = bid.BattleType.SINGLE_WILD
-	bid.battle_back = bid.BattleBack.FOREST
+	bid.battle_back = bid.BattleBack.FOREST # TODO get correct value by scene
 	bid.opponent = Opponent.new()
 	bid.opponent.opponent_type = Opponent.OPPONENT_WILD
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
@@ -352,8 +351,9 @@ func wild_battle():
 	bid.opponent.pokemon_group.append(poke)
 	Global.game.battle.Start_Battle(bid)
 	yield(Global.game.battle, "battle_complete")
+	battle.queue_free()
 	Global.game.get_node("Background_music").play()
-	release_player()
+	player.canMove = true
 
 func generate_wild_poke() -> Pokemon:
 	var poke = Pokemon.new()

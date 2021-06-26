@@ -215,6 +215,7 @@ func duplicate_pokemon(original):
 	copy.ID = original.ID
 	copy.type1 = original.type1
 	copy.type2 = original.type2
+	copy.current_hp = original.current_hp
 	copy.hp = original.hp
 	copy.attack = original.attack
 	copy.defense = original.defense

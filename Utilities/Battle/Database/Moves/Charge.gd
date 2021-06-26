@@ -31,6 +31,6 @@ var flags = []
 var total_pp = 20
 
 # The target ability of the move (Single, Double, All_Foes, Self)
-var target_ability = MoveTarget.ALL_FOE
+var target_ability = MoveTarget.SELF
 
 var main_status_effect = StatStageEffect.new(0, 0, 0, 1, 0, 0, 0) # attack, defense, sp_attack, sp_defense, speed, accuracy, evasion

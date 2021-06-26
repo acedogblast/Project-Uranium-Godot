@@ -11,8 +11,8 @@ enum {MANAGE, SELECT}
 var config = MANAGE
 var mode = 0 # 0 = disabled, 1 = menu, 2 = second menu, ...
 var size
-#var CANCEL_sel = load("res://Graphics/Pictures/partyCancelSel.png")
 
+signal close_party
 
 
 func _ready():
@@ -21,7 +21,8 @@ func _ready():
 
 	# Fill slots with current pokemon
 	update_slots()
-
+func setup():
+	update_slots()
 func _input(event):
 	if mode == 1:
 		var next_selection = null
@@ -73,10 +74,18 @@ func _input(event):
 			$AudioStreamPlayer.play()
 			selection = next_selection
 			next_selection = null
-
-
-
-	pass
+		
+		if event.is_action_pressed("ui_accept"):
+			#print("ui_accept")
+			match selection:
+				CANCEL:
+					#print("CANCEL")
+					mode = 0
+					emit_signal("close_party")
+			pass
+		if event.is_action_pressed("x"):
+			emit_signal("close_party")
+			pass
 func update_slots():
 	#print("Updating slots.")
 	#print("Size of pokemon group:" + str(Global.pokemon_group.size()))
