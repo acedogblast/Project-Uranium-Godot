@@ -1,7 +1,7 @@
 extends Object
 
 # The name of the move
-var name = "Thunder_Shock"
+var name = "Thunder Shock"
 
 # The type of the move
 var type = Type.ELECTRIC
@@ -25,7 +25,7 @@ var critical_hit_level = 1
 var secondary_effect_chance = 0.1
 
 # The secondary effect of the move
-var secondary_effect = MajorAilment.BURN
+var secondary_effect = MajorAilment.PARALYZE
 
 # The flags of the move
 var flags = []
