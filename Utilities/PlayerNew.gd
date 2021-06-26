@@ -35,6 +35,7 @@ var dir = ""
 signal step
 signal door_check
 signal done_movement
+signal wild_battle
 
 enum STATE {
 	IDLE,
@@ -304,6 +305,10 @@ func move(force_move : bool):
 	set_process(true)
 	emit_signal("step")
 
+	# Generate wild battle if on grass
+	if Global.onGrass && !Global.block_wild:
+		wild_poke_encounter()
+
 	# Check if player entered into a different scene. For outdoors only
 	if "type" in Global.game.current_scene && Global.game.current_scene.type == "Outside" && !was_indoors:
 		var loc = Global.game.get_current_scene_where_player_is()
@@ -312,7 +317,6 @@ func move(force_move : bool):
 				print("PLAYER ERROR: Got Null on current_scene.")
 			print("Player seamlessly entering different scene -> " + str(loc))
 			Global.game.change_scene(null)
-	
 
 #Loads the texture of the sprites you picked for your character
 func load_texture():
@@ -562,3 +566,51 @@ func remove_grass(exiting):
 					Global.grassPos = ""
 					Global.onGrass = true
 				return
+
+func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/pokemon-encounter-rate
+	var rng = Global.rng
+	var trigger_wild_battle = false
+
+	if entering_grass: # 40% chance to skip
+		var num = rng.randf()
+		if num <= 0.4:
+			# Skip
+			return
+	
+	# Core Encounter Rate
+	var rate : int = 20 # Base rate for external areas
+	
+	# Get custom rate if map specified
+	if "base_encounter_rate" in Global.game.current_scene:
+		rate = Global.game.current_scene.base_encounter_rate
+
+	rate = rate * 16
+
+	var modifier = 1.0
+	
+	# Apply modifers: TODO
+	# Being on a bike 	80%
+	# Having played the White Flute 	150%
+	# Having played the Black Flute 	50%
+	# Lead Pokémon has a Cleanse Tag 	66%
+	# Lead Pokémon has the Stench ability (in Battle Pyramid) 	75%
+	# Lead Pokémon has the Stench ability (everywhere else) 	50%
+	# Lead Pokémon has the Illuminate ability 	200%
+	# Lead Pokémon has the White Smoke ability 	50%
+	# Lead Pokémon has the Arena Trap ability 	200%
+	# Lead Pokémon has the Sand Veil ability in a sandstorm 	50%
+	
+	rate = int(rate * modifier)
+
+	# Cap at 2880
+	if rate > 2888:
+		rate = 2880
+
+	var value = Global.rng.randi() % 2880
+
+	if rate > value:
+		trigger_wild_battle = true
+	
+	if trigger_wild_battle:
+		Global.game.lock_player()
+		emit_signal("wild_battle")

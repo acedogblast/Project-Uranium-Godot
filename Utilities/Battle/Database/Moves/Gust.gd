@@ -1,26 +1,25 @@
 extends Object
-class_name Move
 
 # The name of the move
-var name
+var name = "Gust"
 
 # The type of the move
-var type
+var type = Type.FLYING
 
 # The style of the move (Physical, Special, Status)
-var style
+var style = MoveStyle.SPECIAL
 
 # The base power of the move
-var base_power
+var base_power = 40
 
 # The accuracy of the move
-var accuracy
+var accuracy = 100
 
 # The priority of the move
-var priority
+var priority = 0
 
 # The critical hit level of the move 1=6.25% 2=12.5% 3=25% 4=33.3% 5=50% 
-var critical_hit_level
+var critical_hit_level = 1
 
 # The secondary effect chance of the move
 var secondary_effect_chance
@@ -29,17 +28,12 @@ var secondary_effect_chance
 var secondary_effect
 
 # The flags of the move
-var flags
+var flags = []
 
 # The total pp of the move
-var total_pp
+var total_pp = 35
 
-# The remaining pp of the move
-var remaining_pp
+# The target ability of the move (Single, Double, All_Foes, Self)
+var target_ability = MoveTarget.SINGLE_FOE
 
-# The target ability of the move (Single, Double, All, Self)
-var target_ability
-
-# The main status effect of the move.
-var main_status_effect # = StatStageEffect.new(0, 0, 0, 0, 0, 0, 0) attack, defense, sp_attack, sp_defense, speed, accuracy, evasion
-
+var main_status_effect

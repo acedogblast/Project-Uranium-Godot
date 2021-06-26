@@ -8,6 +8,13 @@ var background_music = "res://Audio/BGM/PU-Route 01.ogg";
 var type = "Outside"
 var place_name = "Route 01"
 
+# Wild Poke table
+var wild_table = [
+#	 ID  chance  lowest_level highest_level
+	[7,   40,   2,           3],
+	[9,   30,   2,           3],
+	[12,  30,   2,           3]
+]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

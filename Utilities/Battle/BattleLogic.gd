@@ -20,6 +20,11 @@ var battler2_effects = []
 var battler3_effects = []
 var battler4_effects = []
 
+var battler1_past_moves = []
+var battler2_past_moves = []
+var battler3_past_moves = []
+var battler4_past_moves = []
+
 var battle_instance : BattleInstanceData
 
 var item_database
@@ -262,6 +267,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				command.B4:
 					target_index = 4
 			if does_attack_hit(move, target_index, battler_index):
+
 				if move.base_power != null:
 					var did_crit = does_crit(move.critical_hit_level)
 						
@@ -277,6 +283,13 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					var type_modifer: float = 1.0
 					var burn_modifer: float = 1.0
 					var other_modifer: float = 1.0
+
+					# Check for modifers
+					
+					# Charge bounus:
+					if get_past_moves_by_index(battler_index).back() == "Charge" && move.type == Type.ELECTRIC:
+						other_modifer = 2.0
+
 
 					var effective_attacker_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(battler_index).attack) * battler.attack
 
@@ -317,6 +330,9 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						action.type = action.DAMAGE
 						action.damage_target_index = target_index
 						action.damage_effectiveness = type_modifer
+
+						print("type_modifer: " + str(type_modifer))
+
 						queue.push(action)
 
 						if critical_modifier == 2.0:
@@ -353,8 +369,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				else: # Move is not a direct attack move
 
 					if move.main_status_effect != null: # Move effect stats
-						var stat_effect = get_status_effect_by_move_name(move)
-						#var stat_effect = move.main_status_effect   Removed due to loading an init object
+						var stat_effect = get_status_effect_by_move_name(move.name)
 						var stats_changed = get_stage_stat_by_index(target_index).apply_stat_effect(stat_effect) # This changes stats of target
 							
 						# For all stats changed
@@ -445,6 +460,10 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 									action.battle_text = get_battler_title_by_index(target_index) + " was seeded!"
 									queue.push(action)
 				
+
+				# Add move to past_moves
+				get_past_moves_by_index(battler_index).append(move.name)
+
 			else: # Add missed mesage.
 				action = BattleQueueAction.new()
 				action.type = action.BATTLE_TEXT
@@ -832,9 +851,11 @@ func post_damage_checks(battler_index: int) -> bool: # Checks for when any damag
 					action.level_stat_changes = changes
 					
 					queue.push(action)
-
-
-
+				# Residual exp
+				action = BattleQueueAction.new()
+				action.type = action.EXP_GAIN
+				action.exp_gain_percent = battler1.get_exp_bar_percent()
+				queue.push(action)
 
 
 			# Adding effort values
@@ -928,3 +949,13 @@ func get_ball_catch_rate(ball_id: int) -> float:
 	return rate
 func get_status_effect_by_move_name(name: String):
 	return MoveDataBase.get_move_by_name(name).main_status_effect
+func get_past_moves_by_index(index):
+	match index:
+		1:
+			return battler1_past_moves
+		2:
+			return battler1_past_moves
+		3:
+			return battler1_past_moves
+		4:
+			return battler1_past_moves

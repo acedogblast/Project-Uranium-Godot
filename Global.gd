@@ -33,10 +33,16 @@ var load_game_from_id # Used on loading a save
 
 var theo_starter # 1 = Orchynx, 2 = Electux
 
+var block_wild = false
+
+var rng
+
 #signal setup_items
 signal loaded
 
 func _ready():
+	rng = RandomNumberGenerator.new()
+	rng.randomize()
 	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	

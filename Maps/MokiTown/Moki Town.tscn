@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Maps/MokiTown/Moki Town.gd" type="Script" id=6]
 [ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=10]
 
 [node name="Node2D" type="Node2D"]
@@ -141,6 +142,18 @@ position = Vector2( 240, 1424 )
 scene_destination = "res://Maps/Routes/Route1/Route1.tscn"
 location = Vector2( 2256, 400 )
 door_type = "Type 3 - Invisible"
+
+[node name="Rock1" parent="NPC_Layer" instance=ExtResource( 9 )]
+position = Vector2( 2064, 1456 )
+type = "Smashable Rock"
+
+[node name="Rock2" parent="NPC_Layer" instance=ExtResource( 9 )]
+position = Vector2( 2096, 1424 )
+type = "Smashable Rock"
+
+[node name="Rock3" parent="NPC_Layer" instance=ExtResource( 9 )]
+position = Vector2( 2096, 1488 )
+type = "Smashable Rock"
 
 [connection signal="area_entered" from="NPC_Layer/Block" to="." method="block_exit"]
 [connection signal="area_entered" from="NPC_Layer/Event1" to="." method="event1"]

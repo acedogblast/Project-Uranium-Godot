@@ -22,3 +22,8 @@ msgstr ""
 "It's crammed full of books about Pokémon \"Me and my Owten\", \"Jerbolta's "
 "Big Adventure\", \"Quest for the Legends\". I've read all of these many "
 "times."
+
+msgid "SMASHABLE_ROCK"
+msgstr ""
+"It's a rugged rock, but a\n"
+"Pokémon may be able to smash it."

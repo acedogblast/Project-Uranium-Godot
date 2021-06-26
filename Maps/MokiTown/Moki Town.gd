@@ -11,17 +11,40 @@ var place_name = "Moki Town"
 
 var npc_layer
 
+var base_encounter_rate = 10 # Not sure if correct value
+
 # NPCs
 var theo
 var bambo
+
+# Wild Poke table
+var wild_table = [
+#	 ID  chance  lowest_level highest_level
+	[7,  100,    2,           6]
+]
 
 func _ready():
 	npc_layer = $NPC_Layer
 	if Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && !Global.past_events.has("EVENT_MOKI_TOWN_DEMO"): #TODO add check if event 2 is over
 		event2_prep()
+	
+	if Global.past_events.has("MOKI_TOWN_ROCK1_SMASHED"):
+		$NPC_Layer/Rock1.queue_free()
+	if Global.past_events.has("MOKI_TOWN_ROCK2_SMASHED"):
+		$NPC_Layer/Rock2.queue_free()
+	if Global.past_events.has("MOKI_TOWN_ROCK3_SMASHED"):
+		$NPC_Layer/Rock3.queue_free()
+
 
 func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
 	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
+	
+	if npc_collider == $NPC_Layer/Rock1.position || npc_collider == $NPC_Layer/Rock2.position || npc_collider == $NPC_Layer/Rock3.position:
+		Global.game.lock_player()
+		Global.game.play_dialogue("SMASHABLE_ROCK")
+		yield(Global.game, "event_dialogue_end")
+		Global.game.release_player()
+	
 	return null
 
 
@@ -398,3 +421,4 @@ func event2():
 	pass
 func get_grass_cells():
 	return get_node("Tile Layer 1/Grass").get_used_cells()
+

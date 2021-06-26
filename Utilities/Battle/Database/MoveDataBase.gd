@@ -4,6 +4,14 @@ class_name MoveDataBase
 static func get_move_by_name(name):
 	var file_name = "res://Utilities/Battle/Database/Moves/" + name.replace(" ", "_") + ".gd"
 	var data = load(file_name).new()
+
+	if data == null:
+		file_name = "res://Utilities/Battle/Database/Moves/" + name + ".gd"
+		data = load(file_name).new()
+
+	if data == null:
+		print()
+
 	var move = load("res://Utilities/Battle/Classes/Move.gd").new()
 	
 	move.name = data.name

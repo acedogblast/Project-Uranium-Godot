@@ -369,7 +369,7 @@ func battle_loop():
 			var audioplayer = $CanvasLayer/BattleInterfaceLayer/BattleBars/AudioStreamPlayer
 			var sound
 			var effect
-			if action.damage_effectiveness > 2.0: # Super damage
+			if action.damage_effectiveness > 1.0: # Super damage
 				sound = load("res://Audio/SE/superdamage.wav")
 				effect = "SuperDamage"
 			elif action.damage_effectiveness < 1.0: # Low damage

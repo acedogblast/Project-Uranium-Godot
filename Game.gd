@@ -11,7 +11,7 @@ var scenes = []
 
 var loaded = false
 var isInteracting = false
-var canInteract = true # Mabye redundant?
+#var canInteract = true # Mabye redundant?
 var isTransitioning = false
 
 signal event_dialogue_end
@@ -76,6 +76,7 @@ func setup():
 	$CanvasLayer/Menu.visible = true
 	$CanvasLayer/ZoneMessage.visible = true
 
+	player.connect("wild_battle", self, "wild_battle")
 	# Testing
 	#print(Global.inventory.balls[0])
 
@@ -136,6 +137,7 @@ func change_scene(scene):
 		$Background_music.play()
 	# If scene is outdoors, play zone animation
 	if "type" in current_scene && current_scene.type == "Outside":
+		$CanvasLayer/ZoneMessage/AnimationPlayer.stop()
 		$CanvasLayer/ZoneMessage/Bar/Label.text = current_scene.place_name
 		$CanvasLayer/ZoneMessage/AnimationPlayer.play("Slide")
 	Global.location = current_scene.place_name
@@ -302,10 +304,11 @@ func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and
 func lock_player(): # Locks player to prevent user input. Useful for events.
 	player.change_input()
 	Global.game.menu.locked = true
+	Global.block_wild = true
 func release_player(): # Releases player to prevent user input. Useful for events.
 	player.change_input()
 	Global.game.menu.locked = false
-	pass
+	Global.block_wild = false
 
 func get_current_scene_where_player_is(): # Should only be called when player is outside
 	for scene in scenes:
@@ -324,3 +327,54 @@ func get_current_scene_where_player_is(): # Should only be called when player is
 				print("Problem")
 			return scene
 	print("Missed scene scan")
+
+func wild_battle():
+	print("Triggered Wild Battle")
+	if !"wild_table" in current_scene:
+		print("GAME ERROR: tried to make a wild encounter but current scene doesn't have a wile_table.")
+		return
+
+	#lock_player()
+	Global.game.get_node("Background_music").stop()
+
+	battle = load("res://Utilities/Battle/Battle.tscn").instance()
+	add_child(battle)
+
+	var bid = BattleInstanceData.new()
+	bid.battle_type = bid.BattleType.SINGLE_WILD
+	bid.battle_back = bid.BattleBack.FOREST
+	bid.opponent = Opponent.new()
+	bid.opponent.opponent_type = Opponent.OPPONENT_WILD
+	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.WILD
+
+	var poke = generate_wild_poke()
+	bid.opponent.pokemon_group.append(poke)
+	Global.game.battle.Start_Battle(bid)
+	yield(Global.game.battle, "battle_complete")
+	Global.game.get_node("Background_music").play()
+	release_player()
+
+func generate_wild_poke() -> Pokemon:
+	var poke = Pokemon.new()
+	# Generate poke
+	var value = randi() % 100 + 1 # Random number [1,100]
+
+	# Get the wild poke table from current scene
+	var table = current_scene.wild_table
+	var n = 0
+	var poke_id
+	var index = 0
+	for i in range(table.size()):
+		var rate = table[i][1]
+		if value >= n && value <= rate + n:
+			poke_id = table[i][0]
+			index = i
+			break
+		else:
+			n += rate
+
+	# Get level
+	var level = Global.rng.randi_range(table[index][2], table[index][3])
+	poke.set_basic_pokemon_by_level(poke_id,level)
+	return poke

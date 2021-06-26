@@ -1876,7 +1876,6 @@ anims/Toss = SubResource( 19 )
 script = ExtResource( 30 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
-visible = false
 margin_left = 539.0
 margin_top = 200.0
 margin_right = 783.0
@@ -1932,7 +1931,7 @@ __meta__ = {
 [node name="NameLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 margin_left = 35.0
 margin_top = 6.0
-margin_right = 135.0
+margin_right = 173.0
 margin_bottom = 31.0
 custom_fonts/normal_font = ExtResource( 33 )
 text = " Godot"
@@ -1975,11 +1974,14 @@ anims/Slide = SubResource( 22 )
 [node name="NameLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 margin_left = 35.0
 margin_top = 6.0
-margin_right = 135.0
+margin_right = 156.0
 margin_bottom = 31.0
 custom_fonts/normal_font = ExtResource( 33 )
 text = " Godot"
 scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="LevelLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 margin_left = 170.0
