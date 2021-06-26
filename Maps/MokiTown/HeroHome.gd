@@ -46,6 +46,53 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 			$Aunt.set_idle_frame("Down")
 			Global.game.release_player()
 			return null
+		if !Global.past_events.has("EVENT_HEROHOME_NPC_AUNT_RETURNED"):
+			Global.game.lock_player()
+			if Global.past_events.has("EVENT_MOKI_LAB_GOT_RAPTORCH"):
+				Global.game.play_dialogue_with_point("NPC_AUNT1_D14_RAPTORCH" , $Aunt.get_global_transform_with_canvas().get_origin())
+			elif Global.past_events.has("EVENT_MOKI_LAB_GOT_ORCHYNX"):
+				Global.game.play_dialogue_with_point("NPC_AUNT1_D14_ORCHYNX" , $Aunt.get_global_transform_with_canvas().get_origin())
+			else:
+				Global.game.play_dialogue_with_point("NPC_AUNT1_D14_ELETUX" , $Aunt.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+			$Aunt.set_idle_frame("Down")
+			Global.game.release_player()
+			Global.past_events.append("EVENT_HEROHOME_NPC_AUNT_RETURNED")
+			return null
+		if Global.past_events.has("EVENT_HEROHOME_NPC_AUNT_RETURNED"): # Heal player
+			Global.game.lock_player()
+			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_1" , $Aunt.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+
+			Global.game.transition_visibility()
+			Global.game.play_anim("fade_in")
+			yield(get_tree().create_timer(0.28), "timeout")
+
+			Global.heal_party()
+
+			# Play heal sound effect
+			var sound = load("res://Audio/ME/Pokemon Healing.ogg")
+			sound.loop = false
+			Global.game.get_node("Effect_music").stream = sound
+			Global.game.get_node("Effect_music").play()
+			yield(Global.game.get_node("Effect_music"), "finished")
+			DialogueSystem.set_box_position(DialogueSystem.TOP)
+
+			Global.game.play_dialogue("NPC_AUNT_HEAL_2")
+			yield(Global.game, "event_dialogue_end")
+			Global.game.play_anim("fade_out")
+			yield(get_tree().create_timer(0.28), "timeout")
+			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+
+			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_3" , $Aunt.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+			# Pick random quote
+			var ran = randi() % 14 + 1
+			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_RANDOM_" + str(ran) , $Aunt.get_global_transform_with_canvas().get_origin())
+			yield(Global.game, "event_dialogue_end")
+			$Aunt.set_idle_frame("Down")
+			Global.game.release_player()
+			return null
 
 
 	return null

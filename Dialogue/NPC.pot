@@ -64,6 +64,78 @@ msgstr "Oh, honey, you came back to say goodbye!\nHow sweet. Is that your Pokém
 msgid "NPC_BAMBO_MOKI_TOWN_CATCH_DEMO_PREP_1"
 msgstr "Hey there, \\PN! I want to show you and Theo how to catch a Pokémon.\nCan you go get him?\nHe should be in his house."
 
+msgid "NPC_AUNT_HEAL_1"
+msgstr "Hello, honey! Take a break from all that tiring adventuring?"
+
+msgid "NPC_AUNT_HEAL_2"
+msgstr "Your Pokémon were healed..."
+
+msgid "NPC_AUNT_HEAL_3"
+msgstr "It's quiet without you around, you know..."
+
+msgid "NPC_AUNT_HEAL_RANDOM_1"
+msgstr "I've been playing your Wii tennis. It feels good to get moving."
+
+msgid "NPC_AUNT_HEAL_RANDOM_2"
+msgstr "I joined a swim aerobics class. It meets every Tuesday."
+
+msgid "NPC_AUNT_HEAL_RANDOM_3"
+msgstr "I asked our neighbors to help set up the internet."
+
+msgid "NPC_AUNT_HEAL_RANDOM_4"
+msgstr "Those kids next door seem very interested in your Wii. I let them play it."
+
+msgid "NPC_AUNT_HEAL_RANDOM_5"
+msgstr "I've been getting into indie game development. My latest project is called \"Pokémon Agate.\""
+
+msgid "NPC_AUNT_HEAL_RANDOM_6"
+msgstr "I haven't seen that nice boy Theo around lately. I wonder where he went?"
+
+msgid "NPC_AUNT_HEAL_RANDOM_7"
+msgstr "Don't you know, I tried to talk to Cam lately, and he just gave me the cold shoulder! How rude!"
+
+msgid "NPC_AUNT_HEAL_RANDOM_8"
+msgstr "Have you heard from my nephew-- your father-- lately? Must be tough, being a ranger."
+
+msgid "NPC_AUNT_HEAL_RANDOM_9"
+msgstr "I was thinking of getting a pet Pokémon to keep me company."
+
+msgid "NPC_AUNT_HEAL_RANDOM_10"
+msgstr "Did you ever talk to your neighbor Cam? He's an electrician, you know. Seems to be moving up in the world."
+
+msgid "NPC_AUNT_HEAL_RANDOM_11"
+msgstr "You know, back when I was a little girl, I was quite a looker. *sigh*"
+
+msgid "NPC_AUNT_HEAL_RANDOM_12"
+msgstr "I was watching the television, and they said your mother's name! Something about a new plant, I forget."
+
+msgid "NPC_AUNT_HEAL_RANDOM_13"
+msgstr "Beaten any of those gym leaders yet?"
+
+msgid "NPC_AUNT_HEAL_RANDOM_14"
+msgstr "Running off on another adventure, eh, \\PN? Why don't you stay and rest up a while?"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
