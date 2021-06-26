@@ -30,7 +30,7 @@ var battle_instance : BattleInstanceData
 var item_database
 var pokemon_registry
 
-var battle_debug = false
+var battle_debug = true
 
 var escape_attempts = 0
 var can_escape = false
@@ -155,6 +155,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				action = BattleQueueAction.new()
 				action.type = action.BATTLE_END
 				action.captured = true
+				action.winner = action.PLAYER_WIN
 				queue.push(action)
 				return queue
 
@@ -561,6 +562,8 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		for actions in queue.queue:
 			print("Action #" + str(action_index) + ". Type: " + actions.get_type_name())# + ". Battler:" + str(action.)
 			action_index = action_index + 1
+
+		print("Battler 2 hp: " + str(battler2.current_hp) + "/" + str(battler2.hp))
 	return queue
 func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand): # For single battles
 	# Find out which comand goes in which order.

@@ -30,6 +30,7 @@ func _ready():
 func start():
 	enabled = true
 	stage = 1
+	selection = BACK
 	self.visible = true
 	# Slide
 	$AnimationPlayer.play("SlideBag")

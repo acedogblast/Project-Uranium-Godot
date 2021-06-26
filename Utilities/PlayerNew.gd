@@ -92,8 +92,6 @@ func change_internal_input():
 	set_idle_frame()
 #Sets the direction based on the input and sets the state to STATE.MOVE
 func get_input():
-	
-	
 	if Input.is_action_pressed("ui_down"):
 		direction = DIRECTION.DOWN
 	elif Input.is_action_pressed("ui_up"):
@@ -301,13 +299,13 @@ func move(force_move : bool):
 	else:
 		foot = 0
 
-	set_idle_frame()
-	set_process(true)
-	emit_signal("step")
-
 	# Generate wild battle if on grass
 	if Global.onGrass && !Global.block_wild:
 		wild_poke_encounter()
+
+	set_idle_frame()
+	set_process(true)
+	emit_signal("step")
 
 	# Check if player entered into a different scene. For outdoors only
 	if "type" in Global.game.current_scene && Global.game.current_scene.type == "Outside" && !was_indoors:
@@ -340,13 +338,13 @@ func set_idle_frame(_dir = null):
 		$Position2D/Sprite.frame = direction * 4
 	else:
 		match _dir:
-			"Down":
+			"Down", DIRECTION.DOWN:
 				$Position2D/Sprite.frame = 0
-			"Up":
+			"Up", DIRECTION.UP:
 				$Position2D/Sprite.frame = 12
-			"Left":
+			"Left", DIRECTION.LEFT:
 				$Position2D/Sprite.frame = 4
-			"Right":
+			"Right", DIRECTION.RIGHT:
 				$Position2D/Sprite.frame = 8
 			_:
 				$Position2D/Sprite.frame = 0
@@ -612,5 +610,7 @@ func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/
 		trigger_wild_battle = true
 	
 	if trigger_wild_battle:
-		Global.game.lock_player()
+		canMove = false
+		set_idle_frame(direction)
+		#Global.game.call_deferred("lock_player")
 		emit_signal("wild_battle")

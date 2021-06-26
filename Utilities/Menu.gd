@@ -31,6 +31,7 @@ func _ready():
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
 	
 	$Bag.connect("close_bag", self, "close_bag")
+	$PokemonPartyMenu.connect("close_party", self, "close_party")
 	
 	current = ORDER.PARTY
 	init_pos = $Option_Text.rect_position
@@ -101,6 +102,16 @@ func _input(event):
 				$Card.show()
 				$Transition.fade_from_color()
 				
+func party_logic():
+	print("party logic")
+	$Transition.fade_to_color()
+	yield($Transition, "finished")
+	hide_all()
+	$PokemonPartyMenu.setup()
+	$PokemonPartyMenu.show()
+	$Transition.fade_from_color()
+	yield($Transition, "finished")
+	$Transition.visible = false
 
 
 func bag_logic():
@@ -121,9 +132,6 @@ func show_base():
 	$Option_Text.show()
 	$Options.show()
 	$Run.show()
-	
-	
-	pass
 
 func hide_all():
 	for c in get_children():
@@ -147,6 +155,10 @@ func select():
 		bag_logic()
 	elif current == ORDER.CARD && menu_stage == 1:
 		menu_stage = 2
+	elif current == ORDER.PARTY && menu_stage == 1:
+		menu_stage = 2
+		$PokemonPartyMenu.mode = 1
+		party_logic()
 
 func move_sprites(dir):
 	if dir == "Left":
@@ -278,3 +290,18 @@ func close_bag():
 	show_base()
 	menu_stage = 1
 	$Transition.fade_from_color()
+
+func close_party():
+	$PokemonPartyMenu.mode = 0
+	$Transition.show()
+	$Transition.fade_to_color()
+	yield($Transition, "finished")
+	hide_all()
+	$PokemonPartyMenu.hide()
+	show_base()
+
+	yield(get_tree().create_timer(0.3), "timeout")
+
+	menu_stage = 1
+	$Transition.fade_from_color()
+	

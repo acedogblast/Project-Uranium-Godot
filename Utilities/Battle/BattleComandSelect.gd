@@ -63,6 +63,9 @@ func _input(event):
 			BAG:
 				self.visible = false
 				battle_bag_node.call_deferred("start")
+			POKE:
+				enabled = true
+				#TODO
 					
 
 	
