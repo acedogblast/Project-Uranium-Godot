@@ -1,7 +1,7 @@
 extends Object
 
 # The name of the move
-var name = "Extreme_Speed"
+var name = "Extreme Speed"
 
 # The type of the move
 var type = Type.NORMAL
