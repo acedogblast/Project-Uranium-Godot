@@ -77,6 +77,7 @@ func setup():
 	$CanvasLayer/ZoneMessage.visible = true
 
 	player.connect("wild_battle", self, "wild_battle")
+	#player.connect("step", self, "step")
 	# Testing
 	#print(Global.inventory.balls[0])
 

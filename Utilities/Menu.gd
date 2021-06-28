@@ -157,7 +157,7 @@ func select():
 		menu_stage = 2
 	elif current == ORDER.PARTY && menu_stage == 1:
 		menu_stage = 2
-		$PokemonPartyMenu.mode = 1
+		$PokemonPartyMenu.stage = 1
 		party_logic()
 
 func move_sprites(dir):
@@ -292,7 +292,7 @@ func close_bag():
 	$Transition.fade_from_color()
 
 func close_party():
-	$PokemonPartyMenu.mode = 0
+	$PokemonPartyMenu.stage = 0
 	$Transition.show()
 	$Transition.fade_to_color()
 	yield($Transition, "finished")

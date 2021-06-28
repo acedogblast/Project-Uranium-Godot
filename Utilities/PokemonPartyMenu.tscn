@@ -246,6 +246,10 @@ tracks/1/keys = {
 
 [node name="PokemonPartyMenu" type="Node2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 384.078 ],
+"_edit_vertical_guides_": [ 360.163 ]
+}
 
 [node name="Background" type="TextureRect" parent="."]
 margin_right = 40.0
@@ -831,6 +835,9 @@ position = Vector2( 256, 208 )
 margin_right = 256.0
 margin_bottom = 98.0
 texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Content" type="Node2D" parent="Slot6"]
 
@@ -941,13 +948,16 @@ anims/IconSelectedJumping = SubResource( 10 )
 position = Vector2( 0, 320 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Prompt"]
-margin_right = 396.0
+margin_right = 360.0
 margin_bottom = 64.0
 texture = ExtResource( 11 )
 patch_margin_left = 16
 patch_margin_top = 16
 patch_margin_right = 16
 patch_margin_bottom = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Prompt" type="Label" parent="Prompt"]
 margin_left = 16.0
@@ -956,6 +966,9 @@ margin_right = 396.0
 margin_bottom = 50.0
 custom_fonts/font = ExtResource( 4 )
 text = "Choose Pokemon or cancel."
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Shadow" type="Label" parent="Prompt/Prompt"]
 show_behind_parent = true
@@ -966,6 +979,9 @@ margin_bottom = 34.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Choose Pokemon or cancel."
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Cancel" type="Node2D" parent="."]
 position = Vector2( 396, 326 )
@@ -999,3 +1015,7 @@ text = "CANCEL"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
 volume_db = -12.0
+
+[node name="Tween1" type="Tween" parent="."]
+
+[node name="Tween2" type="Tween" parent="."]
