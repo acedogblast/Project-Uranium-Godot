@@ -5,3 +5,16 @@ msgstr ""
 
 msgid "BATTLE_PLAYER_DEFEATED_FOE"
 msgstr "\\PN defeated\n"
+
+msgid "BATTLE_SWITCH_1"
+msgstr ", switch out! Come back!"
+
+
+
+
+
+
+
+
+
+

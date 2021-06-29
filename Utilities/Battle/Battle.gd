@@ -8,7 +8,7 @@ var battle_logic : BattleLogic
 var battler1 : Pokemon # Player's pokemon
 var battler2 : Pokemon # Foe's pokemon
 var battler3 : Pokemon # Player's second pokemon in double battles
-var battler4 : Pokemon # Foe's second pokemonin double battles
+var battler4 : Pokemon # Foe's second pokemon double battles
 
 export var effect_weight = 0.0 # Used for stat change animation
 var effect_enable = false
@@ -40,6 +40,12 @@ func _ready():
 	$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
 	$CanvasLayer/BattleInterfaceLayer/BattleBag.visible = false
 	$CanvasLayer/BattleGrounds/FoeBase/Ball.visible = false
+	$CanvasLayer/BattleGrounds/PlayerBase/Ball.visible = false
+	$CanvasLayer/BattleGrounds/PlayerBase/Battler.visible = false
+	$CanvasLayer/BattleGrounds/PlayerBase/Battler.scale = Vector2(0.2,0.2)
+	$CanvasLayer/BattleGrounds/PlayerBase/Battler.modulate = Color(1.0,1.0,1.0,1.0)
+	$CanvasLayer/BattleGrounds/PlayerBase/Battler.position = Vector2(270,-100)
+
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	
 	# Check if we are testing
@@ -520,8 +526,6 @@ func battle_loop():
 			$CanvasLayer/BattleGrounds/AnimationPlayer.play("FadeOut")
 			yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
 			$CanvasLayer/AudioStreamPlayer.stop()
-
-			
 		action.STAT_CHANGE_ANIMATION:
 			var effect
 			var animation
@@ -538,7 +542,7 @@ func battle_loop():
 					effect_shader = $CanvasLayer/BattleGrounds/FoeBase/Battler/Sprite.material
 				_:
 					print("Battle Error: Unimplemeted stat animation index")
-			if action.stat_change_increase:
+			if action.stat_change_increase: # Note: Shader material is applied in Pokemon.gd script. Here we just edit the shader params.
 				effect = load("res://Graphics/Pictures/StatUp.png")
 				sound.stream = load("res://Audio/SE/increase.wav")
 				effect_shader.set_shader_param("effect_speed", 1.0)
@@ -644,10 +648,60 @@ func battle_loop():
 		action.BALL_BROKE:
 			$CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer.play("BallBreak")
 			yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AnimationPlayer, "animation_finished")
-		
 		action.SET_BALL:
 			$CanvasLayer/BattleGrounds/FoeBase.set_ball(action.ball_type)
+		action.SWITCH_POKE:
+			var text = battler1.name + tr("BATTLE_SWITCH_1")
+			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = text
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+			yield(get_tree().create_timer(2.0), "timeout")
+
+			# Set new shader
+			var sprite = $CanvasLayer/BattleGrounds/PlayerBase/Battler/Sprite
+			sprite.material = ShaderMaterial.new()
+			sprite.material.shader = load("res://Utilities/Battle/WhiteFade.shader")
+			sprite.material.set_shader_param("effect_weight", 0.0)
+			effect_shader = sprite.material
+			effect_weight = 0.0
+
+			# Play return SE
+			$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/recall.wav")
+			$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.play()
+
+			# Play return animation
+			var animation = $CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer
+			effect_enable = true
+			animation.play("Return")
 			
+
+			# Fade away battle bar
+			$CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/AnimationPlayer.play("Fade")
+			
+			yield(animation, "animation_finished")
+			effect_enable = false
+			
+			# Update battler1
+			
+			battler1 = Global.pokemon_group[action.switch_poke]
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.set_player_bar_by_pokemon(battler1)
+			$CanvasLayer/BattleGrounds/PlayerBase.setup_by_pokemon(battler1)
+
+			text = "Go! " + battler1.name + "!"
+			$CanvasLayer/BattleInterfaceLayer/Message/Label.text = text
+			$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+			yield(get_tree().create_timer(0.2), "timeout")
+
+			# Move view
+			$CanvasLayer/BattleGrounds/AnimationPlayer.play("player_switch")
+			yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+
+			$CanvasLayer/BattleGrounds.player_unveil()
+			yield($CanvasLayer/BattleGrounds, "unveil_finished")
+
+			# Change view back to center
+			$CanvasLayer/BattleGrounds/AnimationPlayer.play_backwards("player_switch")
+			yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 
@@ -658,6 +712,12 @@ func get_battle_command():
 	menu.visible = true
 	menu.start(battler1.name)
 	yield($CanvasLayer/BattleInterfaceLayer/BattleComandSelect, "command_received")
+
+	if battle_command.command_type == battle_command.SWITCH_POKE:
+		$CanvasLayer/ColorRect/AnimationPlayer.play("FadeOut")
+		yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+
+
 
 	emit_signal("wait")
 func get_battle_snapshot():
@@ -726,3 +786,7 @@ func get_money_loss() -> int:
 			base_payout = 120
 	amount = level * base_payout
 	return amount
+func check_if_battler_is_already_out(poke):
+	if poke == battler1 || poke == battler3:
+		return true
+	return false

@@ -20,7 +20,8 @@ enum {
 	BALL_CAPTURE_TOSS,
 	BALL_SHAKE,
 	BALL_BROKE,
-	SET_BALL
+	SET_BALL,
+	SWITCH_POKE
 	}
 
 enum {PLAYER_WIN, FOE_WIN}
@@ -58,6 +59,8 @@ var run_away : bool = false
 var ball_type
 
 var captured : bool = false
+
+var switch_poke
 
 func get_type_name():
 	match self.type:
@@ -97,5 +100,7 @@ func get_type_name():
 			return "BALL_BROKE"
 		SET_BALL:
 			return "SET_BALL"
+		SWITCH_POKE:
+			return "SWITCH_POKE"
 		_:
 			return str(self.type)

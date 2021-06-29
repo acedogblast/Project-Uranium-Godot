@@ -6,7 +6,7 @@
 [ext_resource path="res://Utilities/UI/MultilinePrompt.gd" type="Script" id=4]
 
 [node name="MultiLinePrompt" type="CanvasLayer"]
-layer = 2
+layer = 5
 script = ExtResource( 4 )
 
 [node name="Node2D" type="Node2D" parent="."]

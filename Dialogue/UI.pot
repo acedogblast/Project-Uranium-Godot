@@ -71,7 +71,11 @@ msgstr "Cancel"
 msgid "UI_PARTY_SWITCH"
 msgstr "Switch"
 
+msgid "UI_PARTY_SWITCH_IN"
+msgstr "Switch In"
 
+msgid "UI_PARTY_ALREADY_IN_BATTLE"
+msgstr " is already in battle!"  # notice the space
 
 
 

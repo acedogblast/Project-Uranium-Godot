@@ -944,6 +944,35 @@ hframes = 2
 anims/IconIdle = SubResource( 9 )
 anims/IconSelectedJumping = SubResource( 10 )
 
+[node name="Cancel" type="Node2D" parent="."]
+position = Vector2( 396, 326 )
+
+[node name="TextureRect" type="TextureRect" parent="Cancel"]
+margin_right = 112.0
+margin_bottom = 48.0
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Cancel"]
+margin_left = 24.0
+margin_top = 10.0
+margin_right = 96.0
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 4 )
+text = "CANCEL"
+
+[node name="Shadow" type="Label" parent="Cancel/Label"]
+show_behind_parent = true
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 74.0
+margin_bottom = 18.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CANCEL"
+
 [node name="Prompt" type="Node2D" parent="."]
 position = Vector2( 0, 320 )
 
@@ -982,35 +1011,6 @@ text = "Choose Pokemon or cancel."
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Cancel" type="Node2D" parent="."]
-position = Vector2( 396, 326 )
-
-[node name="TextureRect" type="TextureRect" parent="Cancel"]
-margin_right = 112.0
-margin_bottom = 48.0
-texture = ExtResource( 12 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="Cancel"]
-margin_left = 24.0
-margin_top = 10.0
-margin_right = 96.0
-margin_bottom = 26.0
-custom_fonts/font = ExtResource( 4 )
-text = "CANCEL"
-
-[node name="Shadow" type="Label" parent="Cancel/Label"]
-show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 74.0
-margin_bottom = 18.0
-custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "CANCEL"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )

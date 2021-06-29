@@ -17,26 +17,26 @@ tracks/0/keys = {
 "values": [ Vector2( 270, -100 ), Vector2( 270, -180 ), Vector2( 270, -20 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath(".:modulate")
+tracks/1/path = NodePath(".:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray(  ),
-"transitions": PoolRealArray(  ),
+"times": PoolRealArray( 0, 0.25, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [  ]
+"values": [ Vector2( 0.2, 0.2 ), Vector2( 2, 2 ), Vector2( 2, 2 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath(".:scale")
+tracks/2/path = NodePath(".:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.25, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 0.2, 0.2 ), Vector2( 2, 2 ), Vector2( 2, 2 ) ]
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }

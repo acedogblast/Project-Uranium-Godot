@@ -159,7 +159,19 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				queue.push(action)
 				return queue
 
+	if player_command.command_type == player_command.SWITCH_POKE:
+		action = BattleQueueAction.new()
+		action.type = action.SWITCH_POKE
+		action.switch_poke = player_command.switch_to_poke # The next poke by index of Global.pokemon_group
+		queue.push(action)
 		
+		# Reset battler1
+		battler1 = Global.pokemon_group[player_command.switch_to_poke]
+		battler1_effects = []
+		battler1_stat_stage = BattleStatStage.new()
+		battler1_past_moves = []
+		
+		pass
 	
 	var battler # The pokemon preforming the move
 	var battler_index # The index of the pokemon preforming the move
@@ -597,7 +609,7 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 			queue.push(action)
 			turn_order.push_back(B2)
 			return
-	if player_command.command_type == player_command.USE_BAG_ITEM:
+	if player_command.command_type == player_command.USE_BAG_ITEM || player_command.command_type == player_command.SWITCH_POKE:
 		turn_order.push_back(B2)
 		return
 

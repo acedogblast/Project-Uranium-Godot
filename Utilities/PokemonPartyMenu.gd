@@ -25,6 +25,8 @@ var original_s4 = Vector2(256,112)
 var original_s5 = Vector2(0,192)
 var original_s6 = Vector2(256,208)
 
+var mode = 0 # 0 = out of battle, 1 = in battle, -2 = special
+
 signal close_party
 
 
@@ -34,11 +36,14 @@ func _ready():
 
 	# Fill slots with current pokemon
 	update_slots()
-func setup():
+func setup(battle_mode = false):
 	update_slots()
 	$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_1")
 	$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_1")
 	$Prompt/NinePatchRect.rect_size = Vector2(396, 64)
+	if battle_mode:
+		mode = 1
+
 func _input(event):
 	if stage == 1:
 		var next_selection = null
@@ -94,6 +99,13 @@ func _input(event):
 		if event.is_action_pressed("ui_accept"):
 			match stage:
 				1:
+					if mode == -2:
+						mode = 1
+						$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_1")
+						$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_1")
+						$Prompt/NinePatchRect.rect_size = Vector2(396, 64)
+						return
+
 					if switching:
 						if selection == swap_select:
 							switching = false
@@ -140,11 +152,16 @@ func _input(event):
 							$Prompt/NinePatchRect.rect_size = Vector2(360, 64)
 							multi_line = load("res://Utilities/UI/MultilinePrompt.tscn").instance()
 							add_child(multi_line)
-							var text_lines = tr("UI_PARTY_SUMMARY") + ","
-							if Global.pokemon_group.size() != 1:
-								text_lines += tr("UI_PARTY_SWITCH") + ","
-								switch_line = 1
-							text_lines += tr("UI_PARTY_ITEM") + ","
+							var text_lines
+							if mode == 1: # In battle
+								text_lines = tr("UI_PARTY_SWITCH_IN") + ","
+								text_lines += tr("UI_PARTY_SUMMARY") + ","
+							else:
+								text_lines = tr("UI_PARTY_SUMMARY") + ","
+								if Global.pokemon_group.size() != 1:
+									text_lines += tr("UI_PARTY_SWITCH") + ","
+									switch_line = 1
+								text_lines += tr("UI_PARTY_ITEM") + ","
 							text_lines += tr("UI_PARTY_CANCLE")
 
 							multi_line.setup_BLC(text_lines, null, Vector2(360,384))
@@ -165,7 +182,7 @@ func _input(event):
 								S6:
 									name = Global.pokemon_group[5].name
 							$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_2") + name
-							$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_2")
+							$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_2") + name
 							multi_line.connect("selected", self, "get_multiline_result")
 			pass
 	if event.is_action_pressed("x"):
@@ -176,6 +193,7 @@ func _input(event):
 				multi_line.queue_free()
 				stage = 1
 		pass
+	
 func update_slots():
 	#print("Updating slots.")
 	#print("Size of pokemon group:" + str(Global.pokemon_group.size()))
@@ -415,14 +433,37 @@ func get_multiline_result():
 		stage = 1
 		return
 
-	multi_line.queue_free()
-	if switch_line == result:
-		stage = 1
-		switch_poke_order()
-		return
+	if mode == 1: # In battle
+		match result:
+			0: # Switch out
+				# Check if selection is already in battle
+				multi_line.queue_free()
+				var battle_node = self.get_parent().get_parent().get_parent()
+				if battle_node.check_if_battler_is_already_out(Global.pokemon_group[selection]):
+					$Prompt/NinePatchRect.rect_size = Vector2(512, 64)
+					$Prompt/Prompt.text = Global.pokemon_group[selection].name + tr("UI_PARTY_ALREADY_IN_BATTLE")
+					$Prompt/Prompt/Shadow.text = Global.pokemon_group[selection].name + tr("UI_PARTY_ALREADY_IN_BATTLE")
+					mode = -2 # Special mode
+					stage = 1
+					return
+				emit_signal("close_party")
+				return
+			1: # Summary
+				pass
 
-	stage = 3
-	# Open next menus
+
+
+
+		pass
+	else:
+		multi_line.queue_free()
+		if switch_line == result:
+			stage = 1
+			switch_poke_order()
+			return
+
+		stage = 3
+		# Open next menus
 	
 	pass
 func switch_poke_order():
