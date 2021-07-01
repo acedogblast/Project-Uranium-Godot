@@ -21,7 +21,8 @@ enum {
 	BALL_SHAKE,
 	BALL_BROKE,
 	SET_BALL,
-	SWITCH_POKE
+	SWITCH_POKE,
+	NEXT_POKE
 	}
 
 enum {PLAYER_WIN, FOE_WIN}
@@ -34,7 +35,7 @@ var battle_text : String
 
 var press_to_continue : bool = false
 
-var damage_target_index # Used in damage, faint, and exp_gain, stat_animation, heal, UPDATE_MAJOR_AILMENT
+var damage_target_index # Used in damage, faint, and exp_gain, stat_animation, heal, UPDATE_MAJOR_AILMENT, NEW_POKE
 
 #var damage_amount : int
 
@@ -102,5 +103,7 @@ func get_type_name():
 			return "SET_BALL"
 		SWITCH_POKE:
 			return "SWITCH_POKE"
+		NEXT_POKE:
+			return "NEXT_POKE"
 		_:
 			return str(self.type)

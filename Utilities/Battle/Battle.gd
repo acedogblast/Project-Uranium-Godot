@@ -45,6 +45,10 @@ func _ready():
 	$CanvasLayer/BattleGrounds/PlayerBase/Battler.scale = Vector2(0.2,0.2)
 	$CanvasLayer/BattleGrounds/PlayerBase/Battler.modulate = Color(1.0,1.0,1.0,1.0)
 	$CanvasLayer/BattleGrounds/PlayerBase/Battler.position = Vector2(270,-100)
+	$CanvasLayer/BattleGrounds/FoeBase/Battler.hide()
+	$CanvasLayer/BattleGrounds/FoeBase/Battler.position = Vector2(140, -80)
+	$CanvasLayer/BattleGrounds/FoeBase/Battler.scale = Vector2(0.2, 0.2)
+
 
 	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	
@@ -75,8 +79,17 @@ func Start_Battle(bid : BattleInstanceData):
 	# Initialize BattleQueue
 	queue = BattleQueue.new()
 	
-	# Set first wave pokemon
-	battler1 = Global.pokemon_group[0]
+	# Set first pokemon
+	if Global.pokemon_group[0].current_hp != 0:
+		battler1 = Global.pokemon_group[0]
+	else:
+		var next_poke = 0
+		for poke in Global.pokemon_group:
+			if poke.current_hp != 0:
+				battler1 = Global.pokemon_group[next_poke]
+				break
+			else:
+				next_poke += 1
 	battler2 = battle_instance.opponent.pokemon_group[0]
 	battle_logic = load("res://Utilities/Battle/BattleLogic.gd").new(battler1, battler2 , battle_instance)
 
@@ -99,20 +112,22 @@ func Start_Battle(bid : BattleInstanceData):
 	match battle_instance.battle_type:
 		battle_instance.BattleType.SINGLE_TRAINER:
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = true
+			$CanvasLayer/BattleGrounds/FoeBase/Battler.hide()
 			var action = BattleQueueAction.new()
 			action.type = action.BATTLE_GROUNDS_POS_CHANGE
 			action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.INTRO_FADE
 			queue.push(action)
 			action = BattleQueueAction.new()
 			action.type = action.BATTLE_TEXT
-			action.battle_text = "TRAINER " + battle_instance.opponent.name + "\nwould like to battle!"
+			action.battle_text = battle_instance.opponent.name + "\nwould like to battle!"
 			queue.push(action)
 			action = BattleQueueAction.new()
 			action.type = action.BATTLE_TEXT
-			action.battle_text = "TRAINER " + battle_instance.opponent.name + " sent\nout " + battle_instance.opponent.pokemon_group[0].name + "!"
+			action.battle_text = battle_instance.opponent.name + " sent\nout " + battle_instance.opponent.pokemon_group[0].name + "!"
 			queue.push(action)
 		battle_instance.BattleType.RIVAL:
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = true
+			$CanvasLayer/BattleGrounds/FoeBase/Battler.hide()
 			var action = BattleQueueAction.new()
 			action.type = action.BATTLE_GROUNDS_POS_CHANGE
 			action.battle_grounds_pos_change = $CanvasLayer/BattleGrounds.BattlePositions.INTRO_FADE
@@ -134,6 +149,7 @@ func Start_Battle(bid : BattleInstanceData):
 			poke.position = Vector2(140,0)
 			poke.scale = Vector2(2,2)
 			poke.show()
+			poke.modulate = Color(1.0,1.0,1.0,1.0)
 
 			var action = BattleQueueAction.new()
 			action.type = action.BATTLE_GROUNDS_POS_CHANGE
@@ -190,9 +206,9 @@ func Start_Battle(bid : BattleInstanceData):
 	# Start the battle loop until player wins or losses.
 	
 	while battle_is_over == false:
-		if queue.is_empty(): # If queue is empty, get player battle comand.
+		if queue.is_empty(): # If queue is empty, get player battle command.
 			# Pop up battle comand menu.
-			print("Getting comand from player")
+			print("Getting command from player")
 			get_battle_command()
 
 			# Get Foe command by AI while player chooses.
@@ -210,6 +226,13 @@ func Start_Battle(bid : BattleInstanceData):
 			yield(self, "EndOfBattleLoop")
 	
 	# After battle comands
+	# Fade out of battle
+	$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+	$CanvasLayer/ColorRect/AnimationPlayer.play("FadeIn")
+	yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+	$CanvasLayer/AudioStreamPlayer.stop()
+	$CanvasLayer/BattleGrounds.hide()
+	$CanvasLayer/ColorRect/AnimationPlayer.play("FadeOut")
 	print("Battle is over.")
 	emit_signal("battle_complete")
 
@@ -287,7 +310,7 @@ func set_battle_music():
 		battle_instance.BattleType.SINGLE_GYML:
 			$CanvasLayer/AudioStreamPlayer.stream = load("res://Audio/BGM/PU-GymBattle.ogg")
 		_:
-			print("Battle Error: battle_type is not implemented or specified. Defaulting to PU-TrainerPokeBattle.ogg")
+			print("Battle Warning: battle_type is not implemented or specified. Defaulting to PU-TrainerPokeBattle.ogg")
 			$CanvasLayer/AudioStreamPlayer.stream = load("res://Audio/BGM/PU-TrainerPokeBattle.ogg")
 	$CanvasLayer/AudioStreamPlayer.play()
 func set_battle_back():
@@ -363,7 +386,7 @@ func battle_loop():
 			if $CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible == true:
 				$CanvasLayer/BattleGrounds/FoeBase/FoeHuman/AnimationPlayer.play("FadeOut")
 			$CanvasLayer/BattleGrounds/FoeBase/Ball.visible = true
-			
+			$CanvasLayer/BattleGrounds/FoeBase/Battler.show()
 			$CanvasLayer/BattleGrounds.foe_unveil()
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = false
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")
@@ -412,6 +435,7 @@ func battle_loop():
 					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.stream = load(battler1.get_cry())
 					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.play()
 					yield($CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer, "finished")
+					$CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/AnimationPlayer.play("Fade")
 					$CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer.play("FaintPlayer")
 
 					$CanvasLayer/BattleGrounds/PlayerBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/faint.wav")
@@ -423,6 +447,7 @@ func battle_loop():
 					$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.play()
 					yield($CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer, "finished")
 					$CanvasLayer/BattleGrounds/FoeBase/Battler/AnimationPlayer.play("FaintFoe")
+					$CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar/AnimationPlayer.play("Fade")
 
 					$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/faint.wav")
 					$CanvasLayer/BattleGrounds/FoeBase/Ball/AudioStreamPlayer.play()
@@ -521,11 +546,7 @@ func battle_loop():
 
 				
 			
-			# Fade out of battle
-			$CanvasLayer/BattleInterfaceLayer/Message.visible = false
-			$CanvasLayer/BattleGrounds/AnimationPlayer.play("FadeOut")
-			yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
-			$CanvasLayer/AudioStreamPlayer.stop()
+			
 		action.STAT_CHANGE_ANIMATION:
 			var effect
 			var animation
@@ -701,7 +722,79 @@ func battle_loop():
 			# Change view back to center
 			$CanvasLayer/BattleGrounds/AnimationPlayer.play_backwards("player_switch")
 			yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+		action.NEXT_POKE:
+			match action.damage_target_index:
+				1,3: # Player
+					$CanvasLayer/ColorRect/AnimationPlayer.play("FadeIn")
+					yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
 
+					$CanvasLayer/BattleInterfaceLayer/PokemonPartyMenu.setup(true, true)
+					$CanvasLayer/BattleInterfaceLayer/PokemonPartyMenu.stage = 1
+					$CanvasLayer/BattleInterfaceLayer/PokemonPartyMenu.show()
+					$CanvasLayer/ColorRect/AnimationPlayer.play("FadeOut")
+					yield($CanvasLayer/BattleInterfaceLayer/PokemonPartyMenu, "close_party")
+
+					$CanvasLayer/ColorRect/AnimationPlayer.play("FadeIn")
+					yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+					$CanvasLayer/BattleInterfaceLayer/PokemonPartyMenu.hide()
+					$CanvasLayer/ColorRect/AnimationPlayer.play("FadeOut")
+					yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+
+					var next_poke = $CanvasLayer/BattleInterfaceLayer/PokemonPartyMenu.selection
+
+					battler1 = Global.pokemon_group[next_poke]
+					$CanvasLayer/BattleInterfaceLayer/BattleBars.set_player_bar_by_pokemon(battler1)
+					$CanvasLayer/BattleGrounds/PlayerBase.setup_by_pokemon(battler1)
+
+					battle_logic.battler1 = battler1
+					battle_logic.battler1_effects = []
+					battle_logic.battler1_stat_stage = BattleStatStage.new()
+					battle_logic.battler1_past_moves = []
+
+					var text = "Go! " + battler1.name + "!"
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = text
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+					yield(get_tree().create_timer(0.2), "timeout")
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+
+					# Move view
+					$CanvasLayer/BattleGrounds/AnimationPlayer.play("player_switch")
+					yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+
+					$CanvasLayer/BattleGrounds.player_unveil()
+					yield($CanvasLayer/BattleGrounds, "unveil_finished")
+
+					# Change view back to center
+					$CanvasLayer/BattleGrounds/AnimationPlayer.play_backwards("player_switch")
+					yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+				2,4: # Foe
+					var next_poke = battle_instance.opponent.ai.get_next_poke(get_battle_snapshot())
+					if next_poke == null:
+						next_poke = 0
+						for poke in battle_instance.opponent.pokemon_group:
+							if poke.current_hp != 0:
+								next_poke = battle_instance.opponent.pokemon_group[next_poke]
+								break
+							else:
+								next_poke += 1
+
+					battler2 = next_poke
+					$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battler1)
+					$CanvasLayer/BattleGrounds/FoeBase.setup_by_pokemon(battler1)
+					battle_logic.battler2 = battler2
+					battle_logic.battler2_effects = []
+					battle_logic.battler2_stat_stage = BattleStatStage.new()
+					battle_logic.battler2_past_moves = []
+									
+					var text = battle_instance.opponent.name + " sent out \n" + next_poke.name + "!"
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = text
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+					yield(get_tree().create_timer(0.2), "timeout")
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+
+					$CanvasLayer/BattleGrounds.foe_unveil()
+					yield($CanvasLayer/BattleGrounds, "unveil_finished")
+			pass
 		_:
 			print("Battle Error: Battle Action type did not match any correct value.")
 

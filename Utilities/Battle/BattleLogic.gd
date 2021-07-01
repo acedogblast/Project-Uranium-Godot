@@ -170,8 +170,6 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		battler1_effects = []
 		battler1_stat_stage = BattleStatStage.new()
 		battler1_past_moves = []
-		
-		pass
 	
 	var battler # The pokemon preforming the move
 	var battler_index # The index of the pokemon preforming the move
@@ -327,6 +325,13 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 
 					
 					type_modifer = Type.type_advantage_multiplier(move.type, get_battler_by_index(target_index))
+
+					# Foresight check
+					if get_effect_from_effects(BattleEffect.effects.FORESIGHT, target_index) != null:
+						if get_battler_by_index(target_index).type == Type.GHOST && (move.type == Type.NORMAL || move.type == Type.FIGHT):
+							type_modifer = 1.0
+
+
 					total_damage_modifier = target_modifier * weather_modifier * critical_modifier * STAB_modifier * random_modifier * type_modifer * other_modifer
 					#warning-ignore:narrowing_conversion
 					raw_damage = base_damage * total_damage_modifier
@@ -472,7 +477,22 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 									action.type = action.BATTLE_TEXT
 									action.battle_text = get_battler_title_by_index(target_index) + " was seeded!"
 									queue.push(action)
-				
+							"Foresight":
+								# Check if foresight was already used
+								if get_effect_from_effects(BattleEffect.effects.FORESIGHT, target_index) == null:
+									var effect = BattleEffect.new()
+									effect.effect = BattleEffect.effects.FORESIGHT
+									get_effects_by_index(target_index).append(effect)
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = get_battler_by_index(target_index).name + " was identified!"
+									queue.push(action)
+								else:
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = "But it failed!"
+									queue.push(action)
+								pass
 
 				# Add move to past_moves
 				get_past_moves_by_index(battler_index).append(move.name)
@@ -615,7 +635,7 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 
 	if player_command.command_type == player_command.ATTACK && foe_command.command_type == foe_command.ATTACK:
 		
-		print("Proccessing logic for if both commands are attacks")
+		print("Proccessing turn order logic for if both commands are attacks")
 		
 		# Clear out turn array
 		turn_order.clear()
@@ -663,7 +683,14 @@ func does_attack_hit(move : Move, target_index : int, attaker_index : int):
 
 	var target_stage = get_stage_stat_by_index(target_index)
 	var attacker_stage = get_stage_stat_by_index(attaker_index)
-	var accuracy = move.accuracy * BattleStatStage.get_multiplier(attacker_stage.accuracy - target_stage.evasion)
+	
+	var accuracy
+
+	# Check if target has been foresighted
+	if does_index_has_effect(target_index, BattleEffect.effects.FORESIGHT) && target_stage.evasion > 0:
+		accuracy = move.accuracy * BattleStatStage.get_multiplier(attacker_stage.accuracy)
+	else:
+		accuracy = move.accuracy * BattleStatStage.get_multiplier(attacker_stage.accuracy - target_stage.evasion)
 	
 	if accuracy > 100:
 		accuracy = 100
@@ -796,7 +823,7 @@ func percent_chance(n : float) -> bool:
 	if one_in_n_chance(1/n):
 		return true
 	return false
-func post_damage_checks(battler_index: int) -> bool: # Checks for when any damage is done to battlers. Returns true if the battle is over.
+func post_damage_checks(battler_index: int) -> bool: # Checks for when any damage is done to battlers. Returns true if the battle is over or if player or foe needs to send out new poke.
 	# Check if target faints.
 	if get_battler_by_index(battler_index).current_hp == 0:
 		# Faint actions
@@ -816,7 +843,6 @@ func post_damage_checks(battler_index: int) -> bool: # Checks for when any damag
 		queue.push(action)
 
 		get_battler_by_index(battler_index).major_ailment = null
-
 		
 		# If foe faint add exp to player pokemon. For now just only apply to current player pokemon
 		if get_exp:
@@ -876,8 +902,6 @@ func post_damage_checks(battler_index: int) -> bool: # Checks for when any damag
 			# Adding effort values
 			battler1.add_ev(get_battler_by_index(battler_index))
 			
-			
-		
 		# Check if player or foe runs out of pokemon
 		var player_defeated = check_player_out_of_poke()
 		var foe_defeated = check_foe_out_of_poke()
@@ -891,6 +915,14 @@ func post_damage_checks(battler_index: int) -> bool: # Checks for when any damag
 				action.winner = action.FOE_WIN
 			queue.push(action)
 			return true
+
+		# Add new poke action
+		action = BattleQueueAction.new()
+		action.type = action.NEXT_POKE
+		action.damage_target_index = battler_index
+		queue.push(action)
+		return true
+
 	return false
 func get_battler_title_by_index(battler_index: int) -> String:
 	if battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD:
@@ -946,7 +978,7 @@ func set_major_ailment(index: int, ailment_code: int, turns: int = -1): # Sets t
 		action.damage_target_index = index
 		queue.push(action)
 	else:
-		action.battle_text = "But it failed."
+		action.battle_text = "But it failed!"
 		queue.push(action)
 func get_ball_catch_rate(ball_id: int) -> float:
 	var rate : float = 1.0
@@ -974,3 +1006,22 @@ func get_past_moves_by_index(index):
 			return battler1_past_moves
 		4:
 			return battler1_past_moves
+func does_index_has_effect(index, effect_enum) -> bool:
+	if get_effect_from_effects(effect_enum, index) != null:
+		return true
+	return false
+func check_if_battle_is_over() -> bool:
+	# Check if player or foe runs out of pokemon
+	var player_defeated = check_player_out_of_poke()
+	var foe_defeated = check_foe_out_of_poke()
+	if player_defeated || foe_defeated:
+		var action = BattleQueueAction.new()
+		action.type = action.BATTLE_END
+
+		if player_defeated == false && foe_defeated == true:
+			action.winner = action.PLAYER_WIN
+		if player_defeated == true && foe_defeated == false:
+			action.winner = action.FOE_WIN
+		queue.push(action)
+		return true
+	return false

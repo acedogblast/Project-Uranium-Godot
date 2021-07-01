@@ -26,7 +26,7 @@ var original_s5 = Vector2(0,192)
 var original_s6 = Vector2(256,208)
 
 var mode = 0 # 0 = out of battle, 1 = in battle, -2 = special
-
+var cancel_locked = false
 signal close_party
 
 
@@ -36,13 +36,15 @@ func _ready():
 
 	# Fill slots with current pokemon
 	update_slots()
-func setup(battle_mode = false):
+func setup(battle_mode = false, lock_cancel = false):
 	update_slots()
 	$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_1")
 	$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_1")
 	$Prompt/NinePatchRect.rect_size = Vector2(396, 64)
+	cancel_locked = lock_cancel
 	if battle_mode:
 		mode = 1
+	stage = 1
 
 func _input(event):
 	if stage == 1:
@@ -145,6 +147,9 @@ func _input(event):
 								switching = false
 								update_slots()
 							else:
+								if cancel_locked:
+									stage = 1
+									return
 								stage = 0
 								emit_signal("close_party")
 						S1,S2,S3,S4,S5,S6: 
@@ -188,6 +193,8 @@ func _input(event):
 	if event.is_action_pressed("x"):
 		match stage:
 			1:
+				if cancel_locked:
+					return
 				emit_signal("close_party")
 			2:
 				multi_line.queue_free()

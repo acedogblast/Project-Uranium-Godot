@@ -172,3 +172,11 @@ msgid "NPC_AUNT_HEAL_RANDOM_14"
 msgstr ""
 "Running off on another adventure, eh, \\PN? Why don't you stay and rest up a "
 "while?"
+
+msgid "NPC_ROUTE1_TRAINER_1"
+msgstr "You're a new Trainer, huh? I just started too!"
+
+msgid "NPC_ROUTE1_TRAINER_1_DEFEAT"
+msgstr ""
+"Anyone can be a Trainer, but some people definitely seem more suited for it "
+"than others, don't you think?"

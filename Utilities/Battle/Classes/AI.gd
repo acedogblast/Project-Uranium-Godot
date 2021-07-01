@@ -18,3 +18,5 @@ func get_command(snapshot : BattleSnapshot) -> BattleCommand:
 			var move_index = randi() % snapshot.poke_move_list.size()
 			command.attack_move = snapshot.poke_move_list[move_index]
 	return command
+func get_next_poke(snapshot : BattleSnapshot):
+	return null # Let battle.gd figure it out

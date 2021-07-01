@@ -15,6 +15,8 @@ func setup_by_pokemon(poke):
 func ball_flash():
 	$Battler.visible = true
 	sprite.visible = true
+	sprite.modulate = Color(1.0,1.0,1.0,1.0)
+	$Battler.modulate = Color(1.0,1.0,1.0,1.0)
 	var scene = load("res://Utilities/Battle/BallFlash.tscn")
 	var ballflash = scene.instance()
 	self.add_child(ballflash)

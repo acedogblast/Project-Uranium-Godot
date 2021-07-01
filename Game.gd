@@ -13,6 +13,8 @@ var loaded = false
 var isInteracting = false
 #var canInteract = true # Mabye redundant?
 var isTransitioning = false
+var last_heal_point
+var player_defeated = false # True when player lost a battle and transioning to last heal point scene
 
 signal event_dialogue_end
 signal tranistion_complete
@@ -142,6 +144,12 @@ func change_scene(scene):
 		$CanvasLayer/ZoneMessage/Bar/Label.text = current_scene.place_name
 		$CanvasLayer/ZoneMessage/AnimationPlayer.play("Slide")
 	Global.location = current_scene.place_name
+
+	# Move player to heal_point if defeated and heal party
+	if player_defeated:
+		player.position = current_scene.heal_point
+		Global.heal_party()
+		player_defeated = false
 
 	# Get grass positions for the new scene
 	
@@ -281,7 +289,8 @@ func save_state():
 	var state = {
 		"current_scene": current_scene.filename,
 		"player_position": player.position,
-		"player_direction": player.direction
+		"player_direction": player.direction,
+		"last_heal_point": last_heal_point
 	}
 	SaveSystem.set_state(filename, state)
 
@@ -291,6 +300,9 @@ func load_state(): # Automatically called when loading a save file
 		change_scene(load(state["current_scene"]))
 		player.direction = state["player_direction"]
 		player.position = state["player_position"]
+
+		if state.has("last_heal_point"):
+			last_heal_point = state["last_heal_point"]
 		loaded = true
 		emit_signal("loaded")
 
@@ -330,9 +342,10 @@ func get_current_scene_where_player_is(): # Should only be called when player is
 	print("Missed scene scan")
 
 func wild_battle():
+	Global.game.menu.locked = true
 	print("Triggered Wild Battle")
 	if !"wild_table" in current_scene:
-		print("GAME ERROR: tried to make a wild encounter but current scene doesn't have a wile_table.")
+		print("GAME ERROR: tried to make a wild encounter but current scene doesn't have a wild_table.")
 		return
 
 	Global.game.get_node("Background_music").stop()
@@ -352,14 +365,36 @@ func wild_battle():
 	bid.opponent.pokemon_group.append(poke)
 	Global.game.battle.Start_Battle(bid)
 	yield(Global.game.battle, "battle_complete")
-	battle.queue_free()
+	player_defeated = !battle.player_won
+	
+	if player_defeated:
+		player_defeated()
+		return
 	Global.game.get_node("Background_music").play()
+	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
+	battle.queue_free()
 	player.canMove = true
+	Global.game.menu.locked = false
+func trainer_battle(bid : BattleInstanceData):
+	lock_player()
+	Global.game.get_node("Background_music").stop()
+	battle = load("res://Utilities/Battle/Battle.tscn").instance()
+	add_child(battle)
+	Global.game.battle.Start_Battle(bid)
+	yield(Global.game.battle, "battle_complete")
 
+	player_defeated = !battle.player_won
+	if player_defeated:
+		player_defeated()
+		return
+	Global.game.get_node("Background_music").play()
+	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
+	battle.queue_free()
+	release_player()
 func generate_wild_poke() -> Pokemon:
 	var poke = Pokemon.new()
 	# Generate poke
-	var value = randi() % 100 + 1 # Random number [1,100]
+	var value = Global.rng.randi() % 100 + 1 # Random number [1,100]
 
 	# Get the wild poke table from current scene
 	var table = current_scene.wild_table
@@ -379,3 +414,10 @@ func generate_wild_poke() -> Pokemon:
 	var level = Global.rng.randi_range(table[index][2], table[index][3])
 	poke.set_basic_pokemon_by_level(poke_id,level)
 	return poke
+func player_defeated():
+
+	# Spawn at last pokecenter/healpoint
+	if last_heal_point == null:
+		# Spawn home:
+		last_heal_point = "res://Maps/MokiTown/HeroHome.tscn"
+	change_scene(last_heal_point)

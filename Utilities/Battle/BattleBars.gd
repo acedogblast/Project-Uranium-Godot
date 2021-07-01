@@ -20,6 +20,7 @@ func set_player_bar_by_pokemon(poke):
 	player_total_hp = poke.hp
 	player_hp_percent = float(poke.current_hp) / float(player_total_hp)
 	player_exp_percent = poke.get_exp_bar_percent()
+	player_hp_width = 174 * player_hp_percent + 28
 	$PlayerBar/HPLable.text = str(poke.current_hp) + "/ " + str(player_total_hp)
 	$PlayerBar/HPLable/HPLableShadow.text = str(poke.current_hp) + "/ " + str(player_total_hp)
 	$PlayerBar/NameLable.text = " " + poke.name
@@ -94,6 +95,10 @@ func slide_player_exp_bar(percent: float): # Maximum length is 2 seconds.
 	# 60 times max
 	var loops = int( (percent - player_exp_percent) * 60.0)
 	var current_percent = player_exp_percent
+	if loops < 1:
+		print("Caught exp bar lock")
+		emit_signal("finished")
+
 
 	var step = 0.01666667
 

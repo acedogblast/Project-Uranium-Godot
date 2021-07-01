@@ -1,11 +1,16 @@
 extends Node2D
 
-export var random_movement = false
-export var trainer = false
-export var texture: StreamTexture = null
-
+#export var random_movement = false
+export(bool) var trainer = false
+export var texture : StreamTexture = null
+export(int, 3) var trainer_search_range : int
+export var trainer_name : String
+export var trainer_reward : int
+export(String, "Still", "Turning", "Walking") var trainer_behavior : String
+export(bool) var seeking = false
 export(String, "Down", "Up", "Left", "Right") var facing = "Up"
-
+export var trainer_poke_group = [] # Array of arrays of poke ID, then level
+var defeated = false
 
 var move_direction = Vector2()
 var foot = 0
@@ -24,22 +29,23 @@ func _ready():
 		print("WARNING: No texture applied to NPC")
 
 func _process(_delta):
-	if !moving:
-		if random_movement:
-			var rand = randi()%7 + 1
-			match rand:
-				1:
-					move("Down")
-				2:
-					move("Up")
-				3:
-					move("Left")
-				4:
-					move("Right")
-				5:
-					yield(get_tree().create_timer(0.8), "timeout")
-				6:
-					yield(get_tree().create_timer(0.4), "timeout")
+	# if !moving:
+	# 	if random_movement:
+	# 		var rand = randi()%7 + 1
+	# 		match rand:
+	# 			1:
+	# 				move("Down")
+	# 			2:
+	# 				move("Up")
+	# 			3:
+	# 				move("Left")
+	# 			4:
+	# 				move("Right")
+	# 			5:
+	# 				yield(get_tree().create_timer(0.8), "timeout")
+	# 			6:
+	# 				yield(get_tree().create_timer(0.4), "timeout")
+	pass
 
 func move(_dir): # Walk one step
 	set_process(false)
@@ -150,3 +156,10 @@ func jump():
 	$AnimationPlayer.play("Jump")
 	yield($AnimationPlayer, "animation_finished")
 	emit_signal("done_movement")
+func get_poke_group():
+	var group = []
+	for i in trainer_poke_group:
+		var poke = Pokemon.new()
+		poke.set_basic_pokemon_by_level(i[0],i[1])
+		group.append(poke)
+	return group

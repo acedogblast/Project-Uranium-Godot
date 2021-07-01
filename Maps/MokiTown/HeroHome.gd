@@ -12,6 +12,8 @@ var type = "Indoor"
 var event_1_name = "EVENT_HEROHOME_1"
 var grass_pos = []
 
+var heal_point = Vector2(192,144)
+
 func _ready():
 	$BlackBG.visible = true
 	$Floor2/TileMap5.z_index = 9
@@ -69,6 +71,7 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 			yield(get_tree().create_timer(0.28), "timeout")
 
 			Global.heal_party()
+			Global.game.last_heal_point = filename
 
 			# Play heal sound effect
 			var sound = load("res://Audio/ME/Pokemon Healing.ogg")

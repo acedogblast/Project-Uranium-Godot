@@ -211,8 +211,8 @@ script = ExtResource( 1 )
 position = Vector2( 0, -16 )
 
 [node name="Sprite" type="Sprite" parent="Position2D"]
-vframes = 4
 hframes = 4
+vframes = 4
 
 [node name="Area2D" type="StaticBody2D" parent="Position2D/Sprite"]
 
