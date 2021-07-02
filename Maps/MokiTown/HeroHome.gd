@@ -22,19 +22,18 @@ func _ready():
 	$Aunt.set_idle_frame("Up")
 	Global.game.get_node("CanvasLayer/Fade").visible = false
 
-func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
-	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
-	if collider == $Floor2/Console.position:
+func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
+	if check_pos == $Floor2.position + $Floor2/Console.position:
 		return "INTERACT_MOKITOWN_HOUSE_CONSOLE"
-	if collider == $Floor2/TV.position:
+	if check_pos == $Floor2.position + $Floor2/TV.position:
 		return "INTERACT_MOKITOWN_HOUSE_TV"
-	if collider == $Floor2/TV2.position:
+	if check_pos == $Floor2.position + $Floor2/TV2.position:
 		return "INTERACT_MOKITOWN_HOUSE_TV"
-	if collider == $Floor2/Shelf.position:
+	if check_pos == $Floor2.position + $Floor2/Shelf.position:
 		return "INTERACT_MOKITOWN_HOUSE_BOOKSHELF"
-	if collider == $Floor2/Shelf2.position:
+	if check_pos == $Floor2.position + $Floor2/Shelf2.position:
 		return "INTERACT_MOKITOWN_HOUSE_BOOKSHELF"
-	if npc_collider == $Aunt.position: # NPC interaction
+	if check_pos == $Aunt.position: # NPC interaction
 		#Face player
 		$Aunt.face_player(direction)
 		#Trigger event2

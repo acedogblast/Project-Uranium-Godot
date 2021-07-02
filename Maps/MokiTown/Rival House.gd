@@ -18,9 +18,8 @@ func _ready():
 	event1(null) # Play event on enter.
 	pass
 
-func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
-	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
-	if cameron != null && npc_collider == cameron.position:
+func interaction(check_pos, direction): # check_pos is a Vector2 of the position of object to interact
+	if cameron != null && check_pos == cameron.position:
 		Global.game.player.change_input()
 		Global.game.menu.locked = true
 

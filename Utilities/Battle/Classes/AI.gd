@@ -15,7 +15,7 @@ func get_command(snapshot : BattleSnapshot) -> BattleCommand:
 			# Pick a random attack move
 			command.command_type = command.ATTACK
 			command.attack_target = command.B1
-			var move_index = randi() % snapshot.poke_move_list.size()
+			var move_index = Global.rng.randi() % snapshot.poke_move_list.size()
 			command.attack_move = snapshot.poke_move_list[move_index]
 	return command
 func get_next_poke(snapshot : BattleSnapshot):

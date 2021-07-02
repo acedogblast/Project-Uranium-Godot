@@ -328,7 +328,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 
 					# Foresight check
 					if get_effect_from_effects(BattleEffect.effects.FORESIGHT, target_index) != null:
-						if get_battler_by_index(target_index).type == Type.GHOST && (move.type == Type.NORMAL || move.type == Type.FIGHT):
+						if (get_battler_by_index(target_index).type1 == Type.GHOST || get_battler_by_index(target_index).type2 == Type.GHOST) && (move.type == Type.NORMAL || move.type == Type.FIGHT):
 							type_modifer = 1.0
 
 

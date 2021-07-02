@@ -121,4 +121,5 @@ texture = ExtResource( 9 )
 trainer_search_range = 3
 trainer_name = "LASS Lynette"
 trainer_reward = 120
+seeking = true
 trainer_poke_group = [ [ 35, 5 ] ]

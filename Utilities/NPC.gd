@@ -145,6 +145,14 @@ func move_multi(dir, steps):
 		yield(self, "step")
 	emit_signal("done_movement")
 
+func move_to_player(): # Walk staight to the player. Must already be facing the player
+	var distance = int(self.position.distance_to(Global.game.player.position) / 32) - 1
+	if distance == 0:
+		yield(get_tree().create_timer(0.02), "timeout")
+		emit_signal("done_movement")
+		return
+	move_multi(facing, distance)
+
 func alert():
 	$Alert.visible = true
 	$Alert/AnimationPlayer.play("Alert")

@@ -5,7 +5,7 @@ var runTexture = null
 
 export var canMove = true
 var isMoving = false
-var facing = DIRECTION.DOWN
+var last_facing_dir
 var inputDisabled = false
 var foot = 0
 
@@ -26,7 +26,6 @@ var movement_speed
 var state
 
 var found_grass = false
-var offset = Vector2(2208 + 64, 864) - Vector2(16, 16) # Should be changed
 var entering_grass = false
 var exiting_grass = false
 var dir = ""
@@ -36,6 +35,7 @@ signal step
 signal door_check
 signal done_movement
 signal wild_battle
+signal trainer_battle(npc_trainer)
 
 enum STATE {
 	IDLE,
@@ -66,7 +66,7 @@ enum DIRECTION{
 
 #Calls the load_texture method
 func _ready():
-	self.add_to_group("auto_z_layering")# Maybe removed due to grass effect?
+	self.add_to_group("auto_z_layering")
 	load_texture()
  
 func _process(delta):
@@ -80,16 +80,24 @@ func _process(delta):
 			interact()
 			pass
 
-func change_input(): # Disables/Enables the player to interaction and now movement
-	call_deferred("change_internal_input")	
+func change_input(lock = false): # Disables/Enables the player to interaction and now movement
+	if lock:
+		$Collision/Area2D/CollisionShape2D.disabled = true
+		inputDisabled = true
+		canMove = false
+	else:
+		$Collision/Area2D/CollisionShape2D.disabled = false
+		inputDisabled = false
+		canMove = true
+	set_idle_frame(direction)
 
-func change_internal_input():
-	#Enables the CollisionShape2D, enables input if disabled, makes the hero unable to move if they are able to, and calls the set_idle_frame method
-	$Collision/Area2D/CollisionShape2D.disabled = !$Collision/Area2D/CollisionShape2D.disabled
-	#get_tree().paused = !get_tree().paused
-	inputDisabled = !inputDisabled
-	canMove = !canMove
-	set_idle_frame()
+# func change_internal_input():
+# 	#Enables the CollisionShape2D, enables input if disabled, makes the hero unable to move if they are able to, and calls the set_idle_frame method
+# 	$Collision/Area2D/CollisionShape2D.disabled = !$Collision/Area2D/CollisionShape2D.disabled
+# 	#get_tree().paused = !get_tree().paused
+# 	inputDisabled = !inputDisabled
+# 	canMove = !canMove
+# 	set_idle_frame(direction)
 #Sets the direction based on the input and sets the state to STATE.MOVE
 func get_input():
 	if Input.is_action_pressed("ui_down"):
@@ -159,7 +167,7 @@ func check_grass(dir):
 
 				var tile_center_pos = grass.map_to_world(g) + grass.cell_size / 2
 				#print(g + Vector2(2208, 864))
-				if grass.map_to_world(g) + offset == collision.global_position:
+				if grass.map_to_world(g) == collision.global_position:
 					if !Global.grassPos.has(collision.name):
 						Global.grassPos.append(collision.name)
 					found_grass = true
@@ -176,34 +184,19 @@ func check_grass(dir):
 
 
 func interact():
-	#Set check_x and check_y to the player node's position.x and position.y
-	check_x = self.position.x
-	check_y = self.position.y
-	
-	#If the direction is zero, then add 16 to check_x and 32 to check_y
-	if direction == 0:
-		check_x += 16
-		check_y += 32
-	#If the direction is 3, then subtract 16 from check_x and 32 from check_y
-	if direction == 3:
-		check_x -= 16
-		check_y -= 32
-	#If the direction is 1, then subtract 48 from check_x
-	if direction == 1:
-		check_x -= 48
-	#If the direction is 2 then add 16 to check_x
-	if direction == 2:
-		check_x += 16
-	#Set check_pos.x and check_pos.y to check_x and check_y respectively
-	check_pos.x = check_x
-	check_pos.y = check_y
-	
-	#Print the position and facing direction of the player
-	#print("Player: " + str(self.position))
-	#print("Looking: " + str(check_pos))
+	var check = self.position
+	match direction:
+		DIRECTION.DOWN:
+			check += Vector2(0, 32)
+		DIRECTION.UP:
+			check += Vector2(0, -32)
+		DIRECTION.LEFT:
+			check += Vector2(-32, 0)
+		DIRECTION.RIGHT:
+			check += Vector2(32, 0)
 	
 	#Get the parent node and check the position and direction
-	Global.game.interaction(check_pos, direction)
+	Global.game.interaction(check, direction)
 
 func move(force_move : bool):
 	set_process(false)
@@ -216,19 +209,19 @@ func move(force_move : bool):
 	dir = ""
 	if direction == DIRECTION.DOWN and ($NextCollision/Down.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.y = 32
-			
+			last_facing_dir = DIRECTION.DOWN
 			dir = "Down"
 	if direction == DIRECTION.UP and ($NextCollision/Up.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.y = -32
-			
+			last_facing_dir = DIRECTION.UP
 			dir = "Up"
 	if direction == DIRECTION.LEFT and ($NextCollision/Left.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.x = -32
-			
+			last_facing_dir = DIRECTION.LEFT
 			dir = "Left"
 	if direction == DIRECTION.RIGHT and ($NextCollision/Right.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.x = 32
-			
+			last_facing_dir = DIRECTION.RIGHT
 			dir = "Right"
 	if direction == DIRECTION.DOWN_LEFT:
 		move_direction.x = -32
@@ -236,7 +229,7 @@ func move(force_move : bool):
 	if direction == DIRECTION.UP_RIGHT:
 		move_direction.x = 32
 		move_direction.y = -32
-	
+
 	# Grass logic
 	var grass1 = $Grass/Sprite # Current grass under player
 	var grass2 = $Grass/Sprite2 # Grass player is moving to
@@ -303,8 +296,10 @@ func move(force_move : bool):
 	if Global.onGrass && !Global.block_wild:
 		wild_poke_encounter()
 
-	set_idle_frame()
 	set_process(true)
+	set_idle_frame()
+	trainer_encounter()
+	
 	emit_signal("step")
 
 	# Check if player entered into a different scene. For outdoors only
@@ -334,20 +329,19 @@ func load_texture():
 func set_idle_frame(_dir = null):
 	state = STATE.IDLE
 	$Position2D/Sprite.texture = walkTexture
-	if _dir == null:
-		$Position2D/Sprite.frame = direction * 4
-	else:
-		match _dir:
-			"Down", DIRECTION.DOWN:
-				$Position2D/Sprite.frame = 0
-			"Up", DIRECTION.UP:
-				$Position2D/Sprite.frame = 12
-			"Left", DIRECTION.LEFT:
-				$Position2D/Sprite.frame = 4
-			"Right", DIRECTION.RIGHT:
-				$Position2D/Sprite.frame = 8
-			_:
-				$Position2D/Sprite.frame = 0
+	if _dir == null: # Go with the last facing direction
+		_dir = last_facing_dir
+	match _dir:
+		"Down", DIRECTION.DOWN:
+			$Position2D/Sprite.frame = 0
+		"Up", DIRECTION.UP:
+			$Position2D/Sprite.frame = 12
+		"Left", DIRECTION.LEFT:
+			$Position2D/Sprite.frame = 4
+		"Right", DIRECTION.RIGHT:
+			$Position2D/Sprite.frame = 8
+		_:
+			$Position2D/Sprite.frame = 0
 
 func animate():
 	#If the sprite texture is the walk texture
@@ -612,5 +606,34 @@ func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/
 	if trigger_wild_battle:
 		canMove = false
 		set_idle_frame(direction)
-		#Global.game.call_deferred("lock_player")
 		emit_signal("wild_battle")
+func trainer_encounter():
+	if !Global.game.current_scene.has_method("get_trainers"):
+		return
+	# Check if any trainers see the player
+	for trainer in Global.game.current_scene.get_trainers():
+		if trainer.seeking:
+			var check_positions = []
+			var player_set_dir
+			for i in range(trainer.trainer_search_range):
+				var offset = trainer.position
+				match trainer.facing:
+					"Up":
+						offset += Vector2(0,-32) * (i + 1) 
+						direction = DIRECTION.DOWN
+					"Down":
+						offset += Vector2(0, 32) * (i + 1) 
+						direction = DIRECTION.UP
+					"Left":
+						offset += Vector2(-32, 0) * (i + 1) 
+						direction = DIRECTION.RIGHT
+					"Right":
+						offset += Vector2(32,  0) * (i + 1) 
+						direction = DIRECTION.LEFT
+				check_positions.append(offset)
+			if check_positions.has(self.position):
+				print("Player found")
+				canMove = false
+				emit_signal("trainer_battle", trainer)
+				return
+	pass

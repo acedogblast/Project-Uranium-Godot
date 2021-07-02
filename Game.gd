@@ -103,10 +103,6 @@ func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
 		$CanvasLayer/Menu/Place_Text.bbcode_text = "[center]" + current_scene.place_name + "[/center]"
 
-#Plays the fade animation
-func play_anim(fade):
-	$CanvasLayer/Transition/AnimationPlayer.play(fade)
-
 func change_scene(scene):
 	if scene != null:
 		# Clear and delete scenes
@@ -192,12 +188,9 @@ func change_scene(scene):
 #Gets the destination and direction from Stairs.gd, and goes to the next line
 func room_transition(dest, dir):
 
-	#Calls the change_input method from PlayerNew.gd
-	player.change_input()
+	lock_player()
 	
-	#Calls the transition_visibility method, plays the fade_in animation, and then waits .28 seconds
-	transition_visibility()
-	play_anim("fade_in")
+	$CanvasLayer/Transition/AnimationPlayer.play("fade_in")
 	yield(get_tree().create_timer(0.28), "timeout")
 	
 	var target_stair_node
@@ -217,7 +210,7 @@ func room_transition(dest, dir):
 	player.position = dest
 	#player.movePrevious()
 	yield(get_tree().create_timer(0.3), "timeout")
-	play_anim("fade_out")
+	$CanvasLayer/Transition/AnimationPlayer.play("fade_out")
 	
 	#Calls the move method from PlayerNew.gd, and passes the true variable, disables input, and waits .3 seconds
 	player.move(true)
@@ -229,8 +222,7 @@ func room_transition(dest, dir):
 	target_stair_node.get_node("CollisionShape2D").disabled = false
 	
 	#Calls the change_input method from PlayerNew.gd, and calls the transition_visibility method
-	player.change_input()
-	transition_visibility()
+	release_player()
 	Global.location = current_scene.place_name
 
 #If the player is not transitioning, then set isTransitioning to true, and call the change_input method, and wait until the transition fade_to_color animation has finished
@@ -253,18 +245,18 @@ func door_transition(path_scene, new_position):
 	emit_signal("tranistion_complete")
 
 #Checks to see if the player is interacting, if not and the interaction title isn't null then is interacting is set to true, the change_input method is called, the play_dialogue method is called, we wait until the dialogue event has ended, and the change_input method is called again
-func interaction(collider, direction): # Starts the dialogue instead of the scene script
+func interaction(check_pos : Vector2, direction): # Starts the dialogue instead of the scene script
 	if isInteracting == false:
-		var interaction_title = current_scene.interaction(collider, direction)
+		var interaction_title = current_scene.interaction(check_pos, direction)
 		if interaction_title != null && typeof(interaction_title) == TYPE_STRING:
 			isInteracting = true
-			player.change_input()
+			lock_player()
 			play_dialogue(interaction_title)
 			yield(self, "event_dialogue_end")
-			player.change_input()
+			release_player()
 		#If the above is false then print collider
 		else:
-			print(collider)
+			print("Game.gd interation: " + str(check_pos))
 	
 #Wait .1 second, set isInteracting to false, and emit the signal event_dialogue_end
 func dialog_end():
@@ -279,10 +271,6 @@ func check_node(pos):
 			return Node
 		pass
 	pass
-
-#Sets the transition vanvas layer to be opposite of what it is currently
-func transition_visibility():
-	$CanvasLayer/Transition.visible = !$CanvasLayer/Transition.visible
 
 #saves the state by saving the current_scene, player.position, and player.direction
 func save_state():
@@ -315,11 +303,13 @@ func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and
 	DialogueSystem.start_dialog(title)
 
 func lock_player(): # Locks player to prevent user input. Useful for events.
-	player.change_input()
+	player.call_deferred("change_input", true)
+	#player.change_input(true)
 	Global.game.menu.locked = true
 	Global.block_wild = true
 func release_player(): # Releases player to prevent user input. Useful for events.
-	player.change_input()
+	player.call_deferred("change_input", false)
+	#player.change_input(false)
 	Global.game.menu.locked = false
 	Global.block_wild = false
 
@@ -355,7 +345,12 @@ func wild_battle():
 
 	var bid = BattleInstanceData.new()
 	bid.battle_type = bid.BattleType.SINGLE_WILD
-	bid.battle_back = bid.BattleBack.FOREST # TODO get correct value by scene
+
+	if "wild_battle_back" in current_scene:
+		bid.battle_back = current_scene.wild_battle_back
+	else:
+		print("Game.gd Warning: Wild battle back was not set. Defaulting to Forest.")
+		bid.battle_back = bid.BattleBack.FOREST
 	bid.opponent = Opponent.new()
 	bid.opponent.opponent_type = Opponent.OPPONENT_WILD
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
@@ -373,8 +368,9 @@ func wild_battle():
 	Global.game.get_node("Background_music").play()
 	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
 	battle.queue_free()
-	player.canMove = true
-	Global.game.menu.locked = false
+	release_player()
+	#player.canMove = true
+	#Global.game.menu.locked = false
 func trainer_battle(bid : BattleInstanceData):
 	lock_player()
 	Global.game.get_node("Background_music").stop()
@@ -421,3 +417,4 @@ func player_defeated():
 		# Spawn home:
 		last_heal_point = "res://Maps/MokiTown/HeroHome.tscn"
 	change_scene(last_heal_point)
+	release_player()

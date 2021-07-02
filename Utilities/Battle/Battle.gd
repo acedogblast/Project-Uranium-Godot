@@ -502,7 +502,7 @@ func battle_loop():
 
 
 					# If applicable, show opponent win quote:
-					if battle_instance.opponent.opponent_type == Opponent.OPPONENT_RIVAL:
+					if "after_battle_quote" in battle_instance.opponent && battle_instance.opponent.after_battle_quote != "":
 						$CanvasLayer/BattleGrounds/AnimationPlayer.play("Opponent_Quote")
 						yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
 
@@ -846,7 +846,7 @@ func get_opponent_title() :
 		Opponent.OPPONENT_RIVAL:
 			title += "RIVAL "
 		Opponent.OPPONENT_TRAINER:
-			title += "TRAINER "
+			title += ""
 		Opponent.OPPONENT_WILD:
 			title += "WILD "
 	title += battle_instance.opponent.name

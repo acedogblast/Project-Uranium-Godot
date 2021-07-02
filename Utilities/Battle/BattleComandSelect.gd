@@ -62,6 +62,8 @@ func _input(event):
 					command.command_type = command.RUN
 					submit_command(command)
 					self.visible = false
+				else:
+					enabled = true
 			BAG:
 				self.visible = false
 				battle_bag_node.call_deferred("start")
