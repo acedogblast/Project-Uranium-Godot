@@ -8,13 +8,14 @@ export var trainer_name : String
 export var trainer_reward : int
 export(String, "Still", "Turning", "Walking") var trainer_behavior : String
 export(bool) var seeking = false
-export(String, "Down", "Up", "Left", "Right") var facing = "Up"
+export(String, "Down", "Up", "Left", "Right") var facing = "Down"
 export var trainer_poke_group = [] # Array of arrays of poke ID, then level
 var defeated = false
 
 var move_direction = Vector2()
 var foot = 0
 var moving = false
+var timer
 
 signal done_movement
 signal step
@@ -22,11 +23,23 @@ signal alert_done
 
 func _ready():
 	self.add_to_group("auto_z_layering")
+
+	if trainer:
+		self.add_to_group("trainers")
+
 	$Alert.visible = false
 	$Position2D/Sprite.texture = texture
 	set_idle_frame(facing)
 	if texture == null:
 		print("WARNING: No texture applied to NPC")
+	
+	if trainer_behavior == "Turning":
+		timer = Timer.new()
+		add_child(timer)
+		timer.connect("timeout", self, "turning")
+		timer.wait_time = 3.0
+		timer.one_shot = false
+		timer.start()
 
 func _process(_delta):
 	# if !moving:
@@ -114,6 +127,9 @@ func animate(_dir):
 				$AnimationPlayer.play("Right2")
 
 func set_idle_frame(_dir):
+	if _dir == null:
+		_dir = facing
+
 	match _dir:
 		"Down":
 			$Position2D/Sprite.frame = 0
@@ -171,3 +187,23 @@ func get_poke_group():
 		poke.set_basic_pokemon_by_level(i[0],i[1])
 		group.append(poke)
 	return group
+func turning():
+	# Check if we already have been defeated
+	if defeated:
+		timer.stop()
+		timer.queue_free()
+	else:
+		if seeking:
+			# Turn
+			match facing:
+				"Down":
+					facing = "Right"
+				"Up":
+					facing = "Left"
+				"Left":
+					facing = "Down"
+				"Right":
+					facing = "Up"
+			set_idle_frame(facing)
+			# check for player
+			Global.game.player.trainer_encounter()

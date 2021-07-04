@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -9,8 +9,30 @@
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Graphics/Characters/HGSS_007.png" type="Texture" id=9]
+[ext_resource path="res://Graphics/Characters/PU-Chyinmunk.png" type="Texture" id=10]
+[ext_resource path="res://Graphics/Characters/HGSS_001.png" type="Texture" id=11]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Animation" id=1]
+resource_name = "Idle_Poke"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16, 16 )
+
+[node name="Route01" type="Node2D"]
 script = ExtResource( 6 )
 
 [node name="Tile Layer 1" type="TileMap" parent="."]
@@ -121,5 +143,33 @@ texture = ExtResource( 9 )
 trainer_search_range = 3
 trainer_name = "LASS Lynette"
 trainer_reward = 120
+trainer_behavior = "Turning"
 seeking = true
 trainer_poke_group = [ [ 35, 5 ] ]
+
+[node name="Trainer2" parent="NPC_Layer" instance=ExtResource( 8 )]
+position = Vector2( 1168, 272 )
+trainer = true
+texture = ExtResource( 11 )
+trainer_search_range = 3
+trainer_name = "SCHOOL KID Tath"
+trainer_reward = 200
+trainer_behavior = "Still"
+seeking = true
+trainer_poke_group = [ [ 7, 5 ], [ 9, 4 ] ]
+
+[node name="Chyinmunk" type="Sprite" parent="NPC_Layer"]
+position = Vector2( 1200, 272 )
+texture = ExtResource( 10 )
+offset = Vector2( 0, -8 )
+hframes = 4
+vframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC_Layer/Chyinmunk"]
+autoplay = "Idle_Poke"
+anims/Idle_Poke = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NPC_Layer/Chyinmunk"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Layer/Chyinmunk/StaticBody2D"]
+shape = SubResource( 2 )

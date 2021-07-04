@@ -270,6 +270,9 @@ func get_exp_bar_percent() -> float:
 	var range_total = top - base
 	var in_range = experience - base
 	result = float(in_range) / float(range_total)
+
+	if result > 1.0 && result < 0.0:
+		print("Pokemon.gd ERROR: exp bar result percentage is out of range.")
 	return result
 func add_ev(defeated_poke : Pokemon):
 	var poke_class = registry.new().get_pokemon_class(defeated_poke.ID)

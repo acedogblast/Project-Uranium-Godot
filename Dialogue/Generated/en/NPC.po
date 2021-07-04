@@ -180,3 +180,13 @@ msgid "NPC_ROUTE1_TRAINER_1_DEFEAT"
 msgstr ""
 "Anyone can be a Trainer, but some people definitely seem more suited for it "
 "than others, don't you think?"
+
+msgid "NPC_ROUTE1_TRAINER_2"
+msgstr ""
+"Oh! Hey! \\PN! I just got a new Pokémon and I want to see how it fares!"
+
+msgid "NPC_ROUTE1_TRAINER_2_DEFEAT"
+msgstr "Ah, it's not as strong as I'd hoped..."
+
+msgid "NPC_ROUTE1_CHYINMUNK"
+msgstr "Chyin.. Chyin!"

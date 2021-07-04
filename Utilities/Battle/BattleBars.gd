@@ -7,13 +7,13 @@ const PLAYER_EXP_EMPTY_POS = Vector2(2, 10)
 const FOE_HP_FULL_POS = Vector2(198, 90)
 const FOE_HP_EMPTY_POS = Vector2(24, 90)
 
-var foe_hp_percent = 1.0
-var player_hp_percent = 1.0
-var player_total_hp
-var player_final_hp
-var foe_hp_width = 202
-var player_hp_width = 202
-var player_exp_percent = 0.0
+var foe_hp_percent : float = 1.0
+var player_hp_percent : float = 1.0
+var player_total_hp : int
+var player_final_hp : int
+var foe_hp_width : int = 202
+var player_hp_width : int = 202
+var player_exp_percent : float = 0.0
 
 
 func set_player_bar_by_pokemon(poke):
@@ -37,6 +37,7 @@ func set_player_bar_by_pokemon(poke):
 
 func set_foe_bar_by_pokemon(poke):
 	foe_hp_percent = float(poke.current_hp) / float(poke.hp)
+	foe_hp_width = 202 * foe_hp_percent
 	$FoeBar/NameLable.text = " " + poke.name
 	$FoeBar/LevelLable.text = " " + str(poke.level)
 	$FoeBar/HP.region_rect = get_foe_rect2d_by_percentage(foe_hp_percent)
@@ -48,8 +49,12 @@ func set_foe_bar_by_pokemon(poke):
 			$FoeBar/MajorAilment.frame = poke.major_ailment
 			$FoeBar/MajorAilment.show()
 func get_foe_rect2d_by_percentage(percent: float):
+	if percent <= 0.0:
+		return Rect2(0,0, int(24), 90)
 	return Rect2(0,0, int(174 * percent + 24), 90)
 func get_player_rect2d_by_percentage(percent: float):
+	if percent <= 0.0:
+		return Rect2(0,0, int(28), 90)
 	return Rect2(0,0, int(174 * percent + 28), 90)
 
 func get_player_exp_rect2d_by_percentage(percent: float):
@@ -97,7 +102,15 @@ func slide_player_exp_bar(percent: float): # Maximum length is 2 seconds.
 	var current_percent = player_exp_percent
 	if loops < 1:
 		print("Caught exp bar lock")
+		print("recived percent is: " + str(percent))
+		print("Current bar is:" + str(player_exp_percent))
+		print("Loops is: " + str(loops))
+
+		
+		player_exp_percent = percent
+		$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(player_exp_percent)
 		emit_signal("finished")
+		return
 
 
 	var step = 0.01666667

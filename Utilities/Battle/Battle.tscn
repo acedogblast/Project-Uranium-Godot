@@ -2020,10 +2020,11 @@ scale = Vector2( 1, 0.25 )
 texture = ExtResource( 17 )
 
 [node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
-position = Vector2( 137.5, 65 )
+position = Vector2( 140, -60 )
 texture = ExtResource( 12 )
 hframes = 28
 vframes = 17
+frame = 280
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/FoeBase/Ball"]
 anims/Ball = SubResource( 3 )
@@ -2035,7 +2036,6 @@ anims/Capture_Throw = SubResource( 6 )
 stream = ExtResource( 60 )
 
 [node name="Battler" type="Node2D" parent="CanvasLayer/BattleGrounds/FoeBase"]
-modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 140, -80 )
 scale = Vector2( 0.2, 0.2 )
 

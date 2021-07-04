@@ -28,11 +28,9 @@ var state
 var found_grass = false
 var entering_grass = false
 var exiting_grass = false
-var dir = ""
 
 #signal step
 signal step
-signal door_check
 signal done_movement
 signal wild_battle
 signal trainer_battle(npc_trainer)
@@ -91,14 +89,6 @@ func change_input(lock = false): # Disables/Enables the player to interaction an
 		canMove = true
 	set_idle_frame(direction)
 
-# func change_internal_input():
-# 	#Enables the CollisionShape2D, enables input if disabled, makes the hero unable to move if they are able to, and calls the set_idle_frame method
-# 	$Collision/Area2D/CollisionShape2D.disabled = !$Collision/Area2D/CollisionShape2D.disabled
-# 	#get_tree().paused = !get_tree().paused
-# 	inputDisabled = !inputDisabled
-# 	canMove = !canMove
-# 	set_idle_frame(direction)
-#Sets the direction based on the input and sets the state to STATE.MOVE
 func get_input():
 	if Input.is_action_pressed("ui_down"):
 		direction = DIRECTION.DOWN
@@ -194,7 +184,7 @@ func interact():
 			check += Vector2(-32, 0)
 		DIRECTION.RIGHT:
 			check += Vector2(32, 0)
-	
+	print("Player.gd" + str(check))
 	#Get the parent node and check the position and direction
 	Global.game.interaction(check, direction)
 
@@ -206,23 +196,18 @@ func move(force_move : bool):
 	if "type" in Global.game.current_scene && !Global.game.current_scene.type == "Outside":
 		was_indoors = true
 	
-	dir = ""
 	if direction == DIRECTION.DOWN and ($NextCollision/Down.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.y = 32
 			last_facing_dir = DIRECTION.DOWN
-			dir = "Down"
 	if direction == DIRECTION.UP and ($NextCollision/Up.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.y = -32
 			last_facing_dir = DIRECTION.UP
-			dir = "Up"
 	if direction == DIRECTION.LEFT and ($NextCollision/Left.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.x = -32
 			last_facing_dir = DIRECTION.LEFT
-			dir = "Left"
 	if direction == DIRECTION.RIGHT and ($NextCollision/Right.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.x = 32
 			last_facing_dir = DIRECTION.RIGHT
-			dir = "Right"
 	if direction == DIRECTION.DOWN_LEFT:
 		move_direction.x = -32
 		move_direction.y = 32
@@ -252,9 +237,8 @@ func move(force_move : bool):
 			exiting_grass = true
 		Global.onGrass = false
 	
-	set_grass(dir)
+	set_grass(direction)
 	
-
 	# Start Animation
 	animate()
 	
@@ -396,18 +380,17 @@ func stop_tween():
 func set_facing_direction(facing_dir):
 	if typeof(facing_dir) == TYPE_STRING:
 		match facing_dir:
-			"Up":
+			"Up", DIRECTION.UP:
 				facing_dir = DIRECTION.UP
-			"Down":
+			"Down", DIRECTION.DOWN:
 				facing_dir = DIRECTION.DOWN
-			"Left":
+			"Left", DIRECTION.LEFT:
 				facing_dir = DIRECTION.LEFT
-			"Right":
+			"Right", DIRECTION.RIGHT:
 				facing_dir = DIRECTION.RIGHT
-
+	direction = facing_dir
 	$Position2D/Sprite.texture = walkTexture
-	if facing_dir != null:
-		$Position2D/Sprite.frame = facing_dir * 4
+	$Position2D/Sprite.frame = direction * 4
 
 func move_player_event(_dir, steps): # Force moves player to direction and steps
 	direction = _dir
@@ -422,24 +405,24 @@ func set_grass(dir):
 	if entering_grass:
 		#print("entering_grass")
 		match dir:
-			"Right":
+			"Right", DIRECTION.RIGHT:
 				$Grass.show()
 				$Grass/Sprite2.show()
 				$Grass/Sprite.hide()
 				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-			"Left":
+			"Left", DIRECTION.LEFT:
 				$Grass.show()
 				$Grass/Sprite2.hide()
 				$Grass/Sprite.show()
 
 				$Grass.position = Vector2(-32, 0)
 				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-			"Up":
+			"Up", DIRECTION.UP:
 				if Global.sprint:
 					$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 				else:
 					$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-			"Down":
+			"Down", DIRECTION.DOWN:
 				$Grass.show()
 				$Grass/Sprite2.hide()
 				$Grass/Sprite.show()
@@ -451,7 +434,7 @@ func set_grass(dir):
 	elif exiting_grass:
 		#print("exiting_grass")
 		match dir:
-			"Right":
+			"Right", DIRECTION.RIGHT:
 				$Grass.show()
 				$Grass/Sprite.show()
 				$Grass/Sprite2.hide()
@@ -463,7 +446,7 @@ func set_grass(dir):
 				return
 				
 				pass
-			"Left":
+			"Left", DIRECTION.LEFT:
 				$Grass.show()
 				$Grass/Sprite2.show()
 				$Grass/Sprite.hide()
@@ -476,10 +459,10 @@ func set_grass(dir):
 				
 				return
 				pass
-			"Down":
+			"Down", DIRECTION.DOWN:
 				$Grass.hide()
 				return
-			"Up":
+			"Up", DIRECTION.UP:
 				$Grass.show()
 				$Grass/Sprite.show()
 				$Grass/Sprite2.hide()
@@ -495,7 +478,7 @@ func set_grass(dir):
 		if Global.onGrass:
 			$Grass.show()
 			match dir:
-				"Right":
+				"Right", DIRECTION.RIGHT:
 					$Grass/Sprite.show()
 					$Grass/Sprite2.show()
 					if Global.sprint:
@@ -503,7 +486,7 @@ func set_grass(dir):
 					else:
 						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					return
-				"Left":
+				"Left", DIRECTION.LEFT:
 					$Grass/Sprite.show()
 					$Grass/Sprite2.show()
 					$Grass.position = Vector2(-32, 0)
@@ -512,14 +495,14 @@ func set_grass(dir):
 					else:
 						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					return
-				"Up":
+				"Up", DIRECTION.UP:
 					$Grass/Sprite2.hide()
 					if Global.sprint:
 						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					else:
 						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					return
-				"Down":
+				"Down", DIRECTION.DOWN:
 					$Grass/Sprite2.hide()
 					if Global.sprint:
 						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
@@ -533,18 +516,17 @@ func set_grass(dir):
 func remove_grass(exiting):
 	if Global.onGrass:
 		match exiting:
-			"Right":
+			"Right", DIRECTION.RIGHT:
 				if direction == DIRECTION.RIGHT:
 					Global.onGrass = false
 					Global.exitGrassPos = ""
 					Global.grassPos = ""
 					$Grass/Sprite2.hide()
-					#$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					return
 				else:
 					Global.grassPos = ""
 					Global.onGrass = true
-			"Left":
+			"Left", DIRECTION.LEFT:
 				if direction == DIRECTION.LEFT:
 					Global.exitGrassPos = ""
 					Global.grassPos = ""
@@ -552,8 +534,6 @@ func remove_grass(exiting):
 					$Grass/Sprite.hide()
 					$Grass/Sprite2.show()
 					return
-					#$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-					#return
 				else:
 					Global.grassPos = ""
 					Global.onGrass = true
@@ -608,10 +588,8 @@ func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/
 		set_idle_frame(direction)
 		emit_signal("wild_battle")
 func trainer_encounter():
-	if !Global.game.current_scene.has_method("get_trainers"):
-		return
 	# Check if any trainers see the player
-	for trainer in Global.game.current_scene.get_trainers():
+	for trainer in Global.game.trainers:
 		if trainer.seeking:
 			var check_positions = []
 			var player_set_dir
@@ -620,16 +598,12 @@ func trainer_encounter():
 				match trainer.facing:
 					"Up":
 						offset += Vector2(0,-32) * (i + 1) 
-						direction = DIRECTION.DOWN
 					"Down":
 						offset += Vector2(0, 32) * (i + 1) 
-						direction = DIRECTION.UP
 					"Left":
 						offset += Vector2(-32, 0) * (i + 1) 
-						direction = DIRECTION.RIGHT
 					"Right":
 						offset += Vector2(32,  0) * (i + 1) 
-						direction = DIRECTION.LEFT
 				check_positions.append(offset)
 			if check_positions.has(self.position):
 				print("Player found")

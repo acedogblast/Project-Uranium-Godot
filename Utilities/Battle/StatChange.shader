@@ -2,7 +2,7 @@ shader_type canvas_item;
 
 uniform sampler2D effect;
 uniform float effect_weight = 0.9; // How 'heavy' the effect is. Weighted Average color.
-uniform vec2 repeat = vec2(2.735, 3.0); //62x68
+uniform vec2 repeat = vec2(5.47, 6.0);
 uniform float effect_speed = 1.0;
 
 void fragment() {

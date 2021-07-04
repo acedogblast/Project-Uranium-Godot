@@ -8,6 +8,7 @@ var overlay
 var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene
 var scenes = []
+var trainers = [] # array of trainers in the current scene
 
 var loaded = false
 var isInteracting = false
@@ -35,7 +36,7 @@ func _ready():
 		overlay.add_stat("onGrass", Global, "onGrass", false)
 		#overlay.add_stat("Grass Position", Global, "grass_positions", false)
 		#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
-		overlay.add_stat("Direction", player, "dir", false)
+		#overlay.add_stat("Direction", player, "dir", false)
 		overlay.add_stat("Player Pos", player, "position", false)
 		add_child(overlay)
 
@@ -163,6 +164,11 @@ func change_scene(scene):
 	else:
 		Global.grass_positions.clear()
 
+	# Get new trainers
+	trainers.clear()
+	trainers = current_scene.get_tree().get_nodes_in_group("trainers")
+	#print(trainers)
+
 	# Load adjacent sceens
 	if "adjacent_scenes" in current_scene && current_scene.adjacent_scenes != null && current_scene.adjacent_scenes.size() != 0:
 		var index = 0
@@ -246,17 +252,15 @@ func door_transition(path_scene, new_position):
 
 #Checks to see if the player is interacting, if not and the interaction title isn't null then is interacting is set to true, the change_input method is called, the play_dialogue method is called, we wait until the dialogue event has ended, and the change_input method is called again
 func interaction(check_pos : Vector2, direction): # Starts the dialogue instead of the scene script
-	if isInteracting == false:
-		var interaction_title = current_scene.interaction(check_pos, direction)
-		if interaction_title != null && typeof(interaction_title) == TYPE_STRING:
-			isInteracting = true
-			lock_player()
-			play_dialogue(interaction_title)
-			yield(self, "event_dialogue_end")
-			release_player()
-		#If the above is false then print collider
-		else:
-			print("Game.gd interation: " + str(check_pos))
+	var interaction_title = current_scene.interaction(check_pos, direction)
+	if interaction_title != null && typeof(interaction_title) == TYPE_STRING:
+		lock_player()
+		play_dialogue(interaction_title)
+		yield(self, "event_dialogue_end")
+		release_player()
+	#If the above is false then print collider
+	else:
+		print("Game.gd interation: " + str(check_pos))
 	
 #Wait .1 second, set isInteracting to false, and emit the signal event_dialogue_end
 func dialog_end():
