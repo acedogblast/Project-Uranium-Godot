@@ -43,13 +43,13 @@ func _input(event):
 	if event.is_action_pressed("x") && !locked:
 		match menu_stage:
 			0:
-				Global.game.player.change_input()
+				Global.game.player.call_deferred("change_input", true)
 				self.visible = true
 				menu_stage = 1
 				print("Toggling")
 				$AnimationPlayer.play("Open Menu")
 			1:
-				Global.game.player.change_input()
+				Global.game.player.call_deferred("change_input", false)
 				menu_stage = 0
 				print("Untoggling")
 				$AnimationPlayer.current_animation = "Open Menu"

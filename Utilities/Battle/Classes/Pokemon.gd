@@ -354,3 +354,15 @@ func get_exp_by_level(lv) -> int:
 				value = exp_fluctuating(lv)
 	print("Exp for level," + str(lv) + "is : " + str(value))
 	return value
+func get_moves():
+	var moves = []
+	if move_1 != null:
+		moves.append(move_1)
+	if move_2 != null:
+		moves.append(move_2)
+	if move_3 != null:
+		moves.append(move_3)
+	if move_4 != null:
+		moves.append(move_4)
+	return moves
+								

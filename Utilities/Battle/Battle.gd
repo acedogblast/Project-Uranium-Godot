@@ -641,6 +641,35 @@ func battle_loop():
 		
 			yield(self, "continue_pressed")
 			$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
+
+			# Learn new moves if applicable
+			var data = registry.new().get_pokemon_class(battler1.ID)
+			var moveset = [] # strings
+			for move in data.moveset:
+				if move.level == battler1.level:
+					moveset.push_back(move.move)
+
+			for new_moves in moveset:
+				var num_moves_taken = battler1.get_moves().size()
+				if num_moves_taken < 4:
+					# Add the move
+					match num_moves_taken:
+						1:
+							battler1.move_2 = MoveDataBase.get_move_by_name(new_moves)
+						2:
+							battler1.move_3 = MoveDataBase.get_move_by_name(new_moves)
+						3:
+							battler1.move_4 = MoveDataBase.get_move_by_name(new_moves)
+					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = battler1.name + " learned " + new_moves + "!"
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+					$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+					yield(self, "continue_pressed")
+					$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+					$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = false
+				else:	
+					#TODO when pokedex is made
+					pass
+					
 		action.UPDATE_MAJOR_AILMENT: # To be remade as update bars
 			var battler1_ailment = $CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/MajorAilment
 			var battler2_ailment = $CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar/MajorAilment
