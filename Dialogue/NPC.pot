@@ -130,9 +130,17 @@ msgstr "Ah, it's not as strong as I'd hoped..."
 msgid "NPC_ROUTE1_CHYINMUNK"
 msgstr "Chyin.. Chyin!"
 
+msgid "NPC_ROUTE1_TRAINER_3"
+msgstr "Hey! You! Yeah, you, over there! We're gonna battle now, 'kay?"
 
+msgid "NPC_ROUTE1_TRAINER_3_DEFEAT"
+msgstr "Wooow! That was wicked!"
 
+msgid "NPC_ROUTE1_TRAINER_4"
+msgstr "Don't run away from me!"
 
+msgid "NPC_ROUTE1_TRAINER_4_DEFEAT"
+msgstr "Oh, crackers! I lost!"
 
 
 

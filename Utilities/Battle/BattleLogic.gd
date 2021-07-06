@@ -193,57 +193,118 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				battler_index = 4
 
 		if command.command_type == command.ATTACK:
-
-			# Preturn Major Ailments
 			var skip_turn = false
-			for battler_ailment_index in range(1,5):
-				var battler_ailment = get_battler_by_index(battler_ailment_index)
-				
-				if battler_ailment != null && battler_ailment.major_ailment != null:
-					match battler_ailment.major_ailment:
-						MajorAilment.FROZEN:
-							if percent_chance(0.2):
-								# Thaw out
+			var target_index
+			match command.attack_target:
+				command.B1:
+					target_index = 1
+				command.B2:
+					target_index = 2
+				command.B3:
+					target_index = 3
+				command.B4:
+					target_index = 4
+			# Preturn Effects
+			var battler_effects = get_effects_by_index(battler_index)
+			for each_effect in battler_effects:
+				match each_effect.effect:
+					BattleEffect.effects.CONFUSED:
+						if each_effect.turn_count <= 0:
+							# remove confusion
+							battler_effects.remove(battler_effects.find(each_effect))
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_TEXT
+							action.battle_text = get_battler_title_by_index(target_index) + " is no longer confused!"
+							queue.push(action)
+							break
+						else:
+							if percent_chance(0.50):
+								# Player attacks normally
+									each_effect.turn_count -= 1
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = get_battler_title_by_index(target_index) + " is confused!"
+									queue.push(action)
+									break
+							else:
 								action = BattleQueueAction.new()
 								action.type = action.BATTLE_TEXT
-								action.battle_text = get_battler_title_by_index(battler_index) + " is\nthawed out!"
+								action.battle_text = "It hurt itself in its confusion!"
 								queue.push(action)
 
-								battler_ailment.major_ailment = null
+								# Damage self
+								var raw_damage: int = 0
+								var base_damage: int = 0
+								var effective_attacker_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(battler_index).attack) * battler.attack
+								var effective_defender_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(battler_index).defense) * get_battler_by_index(battler_index).defense
+								
+								base_damage = int(
+									( ( (2 * battler.level) / 5 ) + 2 ) * 40 * (effective_attacker_stat / effective_defender_stat)
+								)
+								#warning-ignore:integer_division
+								base_damage = (base_damage / 50) + 2
+								raw_damage = base_damage * Global.rng.randf_range(0.85,1.0)
+								remove_hp(battler_index, raw_damage)
+
 								action = BattleQueueAction.new()
-								action.type = action.UPDATE_MAJOR_AILMENT
-								action.damage_target_index = battler_ailment_index
-								queue.push(action)
-							else:
-								action = BattleQueueAction.new()
-								action.type = action.BATTLE_TEXT
-								action.battle_text = get_battler_title_by_index(battler_index) + " is\nfrozen solid!"
-								queue.push(action)
-								skip_turn = true
-						MajorAilment.SLEEP:
-							if get_effect_from_effects(BattleEffect.SLEEP_COUNTER, battler_ailment_index).sleep_count == 0:
-								action = BattleQueueAction.new()
-								action.type = action.BATTLE_TEXT
-								action.battle_text = get_battler_title_by_index(battler_index) + " woke up!"
-								queue.push(action)
-								battler_ailment.major_ailment = null
-								action = BattleQueueAction.new()
-								action.type = action.UPDATE_MAJOR_AILMENT
-								action.damage_target_index = battler_ailment_index
-								queue.push(action)
-							else:
-								action = BattleQueueAction.new()
-								action.type = action.BATTLE_TEXT
-								action.battle_text = get_battler_title_by_index(battler_index) + " is\nfast asleep."
-								queue.push(action)
-								skip_turn = true
-						MajorAilment.PARALYSIS:
+								action.type = action.DAMAGE
+								action.damage_target_index = battler_index
+								action.damage_effectiveness = 1.0
+								if post_damage_checks(battler_index):
+									return queue
+								pass
+			
+			if skip_turn:
+				continue
+			# Preturn Major Ailments
+			var battler_ailment = get_battler_by_index(battler_index)
+			
+			if battler_ailment != null && battler_ailment.major_ailment != null:
+				match battler_ailment.major_ailment:
+					MajorAilment.FROZEN:
+						if percent_chance(0.2):
+							# Thaw out
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_TEXT
+							action.battle_text = get_battler_title_by_index(battler_index) + " is\nthawed out!"
+							queue.push(action)
+
+							battler_ailment.major_ailment = null
+							action = BattleQueueAction.new()
+							action.type = action.UPDATE_MAJOR_AILMENT
+							action.damage_target_index = battler
+							queue.push(action)
+						else:
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_TEXT
+							action.battle_text = get_battler_title_by_index(battler_index) + " is\nfrozen solid!"
+							queue.push(action)
+							skip_turn = true
+					MajorAilment.SLEEP:
+						if get_effect_from_effects(BattleEffect.SLEEP_COUNTER, battler_index).turn_count == 0:
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_TEXT
+							action.battle_text = get_battler_title_by_index(battler_index) + " woke up!"
+							queue.push(action)
+							battler_ailment.major_ailment = null
+							action = BattleQueueAction.new()
+							action.type = action.UPDATE_MAJOR_AILMENT
+							action.damage_target_index = battler_index
+							queue.push(action)
+						else:
+							action = BattleQueueAction.new()
+							action.type = action.BATTLE_TEXT
+							action.battle_text = get_battler_title_by_index(battler_index) + " is\nfast asleep."
+							queue.push(action)
+							get_effect_from_effects(BattleEffect.SLEEP_COUNTER, battler_index).turn_count -= 1
+							skip_turn = true
+					MajorAilment.PARALYSIS:
 							if percent_chance(0.25):
 								action = BattleQueueAction.new()
 								action.type = action.BATTLE_TEXT
 								action.battle_text = get_battler_title_by_index(battler_index) + " is\nparalyzed!"
 								queue.push(action)
-								skip_turn = true	
+								skip_turn = true
 			if skip_turn:
 				continue
 
@@ -267,16 +328,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 			move.remaining_pp = move.remaining_pp - 1
 			# Calculate if move hits or not
 			
-			var target_index
-			match command.attack_target:
-				command.B1:
-					target_index = 1
-				command.B2:
-					target_index = 2
-				command.B3:
-					target_index = 3
-				command.B4:
-					target_index = 4
+			
 			if does_attack_hit(move, target_index, battler_index):
 
 				if move.base_power != null:
@@ -316,8 +368,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						critical_modifier = 2.0
 					if move.type == battler.type1 || move.type == battler.type2:
 						STAB_modifier = 1.5
-					var rng = RandomNumberGenerator.new()
-					rng.randomize()
+					var rng = Global.rng
 					random_modifier = rng.randf_range(0.85,1.0)
 
 					if get_battler_by_index(battler_index).major_ailment == MajorAilment.BURN && move.style == MoveStyle.PHYSICAL:
@@ -493,7 +544,24 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 									action.battle_text = "But it failed!"
 									queue.push(action)
 								pass
-
+							"Supersonic":
+								# Check if target is already confused
+								var already_confused = false
+								var target = get_battler_by_index(target_index)
+								for effects in get_effects_by_index(target_index):
+									if effects.effect == BattleEffect.effects.CONFUSED:
+										action = BattleQueueAction.new()
+										action.type = action.BATTLE_TEXT
+										action.battle_text = get_battler_title_by_index(target_index) + " is already confused!"
+										queue.push(action)
+									else:
+										# Apply confusion effect
+										var effect = BattleEffect.new()
+										effect.effect = BattleEffect.effects.CONFUSED
+										effect.turn_count = Global.rng.randi_range(2,5)
+										get_effects_by_index(target_index).append(effect)
+												
+								pass
 				# Add move to past_moves
 				get_past_moves_by_index(battler_index).append(move.name)
 
@@ -812,8 +880,7 @@ func does_crit(crit : int) -> bool: # If move can crit calculate if crit or not.
 				did_crit = true
 	return did_crit
 func one_in_n_chance(n : int) -> bool:
-	var rng = RandomNumberGenerator.new()
-	rng.randomize()
+	var rng = Global.rng
 	var value = rng.randi_range(1,n)
 	if value == 1:
 		return true

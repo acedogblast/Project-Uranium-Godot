@@ -18,12 +18,16 @@ var wild_table = [
 # Trainers
 var trainer1
 var trainer2
-
+var trainer3
+var trainer4
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	trainer1 = $NPC_Layer/Trainer1
 	trainer2 = $NPC_Layer/Trainer2
+	trainer3 = $NPC_Layer/Trainer3
+	trainer4 = $NPC_Layer/Trainer4
+	trainer4.turning_directions = ["Down", "Left"]
 
 	Global.game.player.connect("trainer_battle", self, "trainer_battle")
 
@@ -33,6 +37,12 @@ func _ready():
 	if Global.past_events.has("ROUTE1_TRAINER2_DEFEATED"):
 		trainer2.seeking = false
 		trainer2.defeated = true
+	if Global.past_events.has("ROUTE1_TRAINER3_DEFEATED"):
+		trainer3.seeking = false
+		trainer3.defeated = true
+	if Global.past_events.has("ROUTE1_TRAINER4_DEFEATED"):
+		trainer4.seeking = false
+		trainer4.defeated = true
 
 func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
 	if check_pos == $NPC_Layer/Trainer1.position:
@@ -77,6 +87,8 @@ func trainer_battle(npc_trainer):
 			match npc_trainer:
 				trainer1, trainer2:
 					Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-FemaleEncounter.ogg")
+				trainer3, trainer4:
+					Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-MaleEncounter.ogg")
 			Global.game.get_node("Background_music").play()
 
 			# Turn player to face trainer
@@ -96,8 +108,15 @@ func trainer_battle(npc_trainer):
 
 			# Pre-battle talk
 			match npc_trainer:
-				trainer1, trainer2:
+				trainer1:
 					Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_1" , npc_trainer.get_global_transform_with_canvas().get_origin())
+				trainer2:
+					Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_2" , npc_trainer.get_global_transform_with_canvas().get_origin())
+				trainer3:
+					Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_3" , npc_trainer.get_global_transform_with_canvas().get_origin())
+				trainer4:
+					Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_4" , npc_trainer.get_global_transform_with_canvas().get_origin())
+
 			yield(Global.game, "event_dialogue_end")
 
 			match npc_trainer:
@@ -105,11 +124,14 @@ func trainer_battle(npc_trainer):
 					trainer1_battle()
 				trainer2:
 					trainer2_battle()
+				trainer3:
+					trainer3_battle()
+				trainer4:
+					trainer4_battle()
 	
 func trainer1_battle():
 	var trainer = trainer1
 	trainer.seeking = false
-	print("Start Trainer1 battle")
 
 	var bid = BattleInstanceData.new()
 	bid.battle_type = bid.BattleType.SINGLE_TRAINER
@@ -129,13 +151,14 @@ func trainer1_battle():
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("ROUTE1_TRAINER1_DEFEATED")
+	else:
+		return
 	Global.game.get_node("Background_music").stream = load(background_music)
 	Global.game.get_node("Background_music").play()
 	Global.game.release_player()
 func trainer2_battle():
 	var trainer = trainer2
 	trainer.seeking = false
-	print("Start Trainer2 battle")
 
 	var bid = BattleInstanceData.new()
 	bid.battle_type = bid.BattleType.SINGLE_TRAINER
@@ -155,6 +178,62 @@ func trainer2_battle():
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("ROUTE1_TRAINER2_DEFEATED")
+	else:
+		return
+	Global.game.get_node("Background_music").stream = load(background_music)
+	Global.game.get_node("Background_music").play()
+	Global.game.release_player()
+func trainer3_battle():
+	var trainer = trainer3
+	trainer.seeking = false
+
+	var bid = BattleInstanceData.new()
+	bid.battle_type = bid.BattleType.SINGLE_TRAINER
+	bid.battle_back = bid.BattleBack.FOREST
+	bid.opponent = Opponent.new()
+	bid.opponent.name = trainer.trainer_name
+	bid.opponent.battle_texture = load("res://Graphics/Characters/trainer045.png")
+	bid.opponent.opponent_type = Opponent.OPPONENT_TRAINER
+	bid.opponent.after_battle_quote = tr("NPC_ROUTE1_TRAINER_3_DEFEAT")
+	bid.victory_award = trainer.trainer_reward
+	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.WILD
+	bid.opponent.pokemon_group = trainer.get_poke_group()
+	
+	Global.game.trainer_battle(bid)
+	yield(Global.game.battle, "battle_complete")
+	if Global.game.battle.player_won:
+		trainer.defeated = true
+		Global.past_events.append("ROUTE1_TRAINER3_DEFEATED")
+	else:
+		return
+	Global.game.get_node("Background_music").stream = load(background_music)
+	Global.game.get_node("Background_music").play()
+	Global.game.release_player()
+func trainer4_battle():
+	var trainer = trainer4
+	trainer.seeking = false
+
+	var bid = BattleInstanceData.new()
+	bid.battle_type = bid.BattleType.SINGLE_TRAINER
+	bid.battle_back = bid.BattleBack.FOREST
+	bid.opponent = Opponent.new()
+	bid.opponent.name = trainer.trainer_name
+	bid.opponent.battle_texture = load("res://Graphics/Characters/trainer003.png")
+	bid.opponent.opponent_type = Opponent.OPPONENT_TRAINER
+	bid.opponent.after_battle_quote = tr("NPC_ROUTE1_TRAINER_4_DEFEAT")
+	bid.victory_award = trainer.trainer_reward
+	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
+	bid.opponent.ai.AI_Behavior = bid.opponent.ai.WILD
+	bid.opponent.pokemon_group = trainer.get_poke_group()
+	
+	Global.game.trainer_battle(bid)
+	yield(Global.game.battle, "battle_complete")
+	if Global.game.battle.player_won:
+		trainer.defeated = true
+		Global.past_events.append("ROUTE1_TRAINER4_DEFEATED")
+	else:
+		return
 	Global.game.get_node("Background_music").stream = load(background_music)
 	Global.game.get_node("Background_music").play()
 	Global.game.release_player()

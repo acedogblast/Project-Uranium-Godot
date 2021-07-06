@@ -17,6 +17,9 @@ var foot = 0
 var moving = false
 var timer
 
+var turning_directions = [] # Array of facing strings for turning. Empty if using all 4 directions
+var turning_index : int = 0
+
 signal done_movement
 signal step
 signal alert_done
@@ -40,6 +43,12 @@ func _ready():
 		timer.wait_time = 3.0
 		timer.one_shot = false
 		timer.start()
+		if turning_directions.empty() || turning_directions == null:
+			for i in range(turning_directions.size()):
+				if turning_directions[i] == facing:
+					turning_index = i
+					break
+
 
 func _process(_delta):
 	# if !moving:
@@ -195,15 +204,22 @@ func turning():
 	else:
 		if seeking:
 			# Turn
-			match facing:
-				"Down":
-					facing = "Right"
-				"Up":
-					facing = "Left"
-				"Left":
-					facing = "Down"
-				"Right":
-					facing = "Up"
+			if turning_directions.empty() || turning_directions == null:
+				match facing:
+					"Down":
+						facing = "Right"
+					"Up":
+						facing = "Left"
+					"Left":
+						facing = "Down"
+					"Right":
+						facing = "Up"
+			else:
+				if turning_index == turning_directions.size() - 1:
+					turning_index = 0
+				else:
+					turning_index += 1	
+				facing = turning_directions[turning_index]
 			set_idle_frame(facing)
 			# check for player
 			Global.game.player.trainer_encounter()

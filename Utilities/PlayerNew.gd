@@ -589,8 +589,10 @@ func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/
 		emit_signal("wild_battle")
 func trainer_encounter():
 	# Check if any trainers see the player
+	if Global.game.trainers == null:
+		return
 	for trainer in Global.game.trainers:
-		if trainer.seeking:
+		if trainer != null && "seeking" in trainer && trainer.seeking:
 			var check_positions = []
 			var player_set_dir
 			for i in range(trainer.trainer_search_range):

@@ -643,7 +643,7 @@ func battle_loop():
 			$CanvasLayer/BattleInterfaceLayer/LevelUp.visible = false
 
 			# Learn new moves if applicable
-			var data = registry.new().get_pokemon_class(battler1.ID)
+			var data = registry.get_pokemon_class(battler1.ID)
 			var moveset = [] # strings
 			for move in data.moveset:
 				if move.level == battler1.level:

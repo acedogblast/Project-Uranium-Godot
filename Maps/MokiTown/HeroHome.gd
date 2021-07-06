@@ -65,9 +65,8 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_1" , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 
-			Global.game.transition_visibility()
-			Global.game.play_anim("fade_in")
-			yield(get_tree().create_timer(0.28), "timeout")
+			Global.game.get_node("CanvasLayer/Fade/AnimationPlayer").play_backwards("Fade")
+			yield(Global.game.get_node("CanvasLayer/Fade/AnimationPlayer"), "animation_finished")
 
 			Global.heal_party()
 			Global.game.last_heal_point = filename
@@ -82,14 +81,14 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 
 			Global.game.play_dialogue("NPC_AUNT_HEAL_2")
 			yield(Global.game, "event_dialogue_end")
-			Global.game.play_anim("fade_out")
-			yield(get_tree().create_timer(0.28), "timeout")
+			Global.game.get_node("CanvasLayer/Fade/AnimationPlayer").play("Fade")
+			yield(Global.game.get_node("CanvasLayer/Fade/AnimationPlayer"), "animation_finished")
 			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 
 			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_3" , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 			# Pick random quote
-			var ran = randi() % 14 + 1
+			var ran = Global.rng.randi() % 14 + 1
 			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_RANDOM_" + str(ran) , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 			$Aunt.set_idle_frame("Down")

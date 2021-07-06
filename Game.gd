@@ -26,6 +26,7 @@ onready var transition = $CanvasLayer/Transition
 func _ready():
 	Global.game = self
 	menu = $CanvasLayer/Menu
+	$CanvasLayer/Fade.modulate = Color(1.0,1.0,1.0,0.0)
 
 	#Makes player an instance of Player, makes it a child, and adds it to the group save
 	player = load("res://Utilities/PlayerNew.tscn").instance()
@@ -108,7 +109,7 @@ func change_scene(scene):
 	if scene != null:
 		# Clear and delete scenes
 		for node in scenes:
-			node.queue_free()
+			node.free()
 		scenes.clear()
 
 	if scene is String:
@@ -167,7 +168,6 @@ func change_scene(scene):
 	# Get new trainers
 	trainers.clear()
 	trainers = current_scene.get_tree().get_nodes_in_group("trainers")
-	#print(trainers)
 
 	# Load adjacent sceens
 	if "adjacent_scenes" in current_scene && current_scene.adjacent_scenes != null && current_scene.adjacent_scenes.size() != 0:
