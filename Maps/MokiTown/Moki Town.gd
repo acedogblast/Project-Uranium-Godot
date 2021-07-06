@@ -36,10 +36,8 @@ func _ready():
 		$NPC_Layer/Rock3.queue_free()
 
 
-func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
-	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
-	
-	if npc_collider == $NPC_Layer/Rock1.position || npc_collider == $NPC_Layer/Rock2.position || npc_collider == $NPC_Layer/Rock3.position:
+func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
+	if check_pos == $NPC_Layer/Rock1.position || check_pos == $NPC_Layer/Rock2.position || check_pos == $NPC_Layer/Rock3.position:
 		Global.game.lock_player()
 		Global.game.play_dialogue("SMASHABLE_ROCK")
 		yield(Global.game, "event_dialogue_end")

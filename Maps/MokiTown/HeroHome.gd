@@ -12,6 +12,8 @@ var type = "Indoor"
 var event_1_name = "EVENT_HEROHOME_1"
 var grass_pos = []
 
+var heal_point = Vector2(192,144)
+
 func _ready():
 	$BlackBG.visible = true
 	$Floor2/TileMap5.z_index = 9
@@ -20,19 +22,18 @@ func _ready():
 	$Aunt.set_idle_frame("Up")
 	Global.game.get_node("CanvasLayer/Fade").visible = false
 
-func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
-	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
-	if collider == $Floor2/Console.position:
+func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
+	if check_pos == $Floor2.position + $Floor2/Console.position:
 		return "INTERACT_MOKITOWN_HOUSE_CONSOLE"
-	if collider == $Floor2/TV.position:
+	if check_pos == $Floor2.position + $Floor2/TV.position:
 		return "INTERACT_MOKITOWN_HOUSE_TV"
-	if collider == $Floor2/TV2.position:
+	if check_pos == $Floor2.position + $Floor2/TV2.position:
 		return "INTERACT_MOKITOWN_HOUSE_TV"
-	if collider == $Floor2/Shelf.position:
+	if check_pos == $Floor2.position + $Floor2/Shelf.position:
 		return "INTERACT_MOKITOWN_HOUSE_BOOKSHELF"
-	if collider == $Floor2/Shelf2.position:
+	if check_pos == $Floor2.position + $Floor2/Shelf2.position:
 		return "INTERACT_MOKITOWN_HOUSE_BOOKSHELF"
-	if npc_collider == $Aunt.position: # NPC interaction
+	if check_pos == $Aunt.position: # NPC interaction
 		#Face player
 		$Aunt.face_player(direction)
 		#Trigger event2
@@ -64,11 +65,11 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_1" , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 
-			Global.game.transition_visibility()
-			Global.game.play_anim("fade_in")
-			yield(get_tree().create_timer(0.28), "timeout")
+			Global.game.get_node("CanvasLayer/Fade/AnimationPlayer").play_backwards("Fade")
+			yield(Global.game.get_node("CanvasLayer/Fade/AnimationPlayer"), "animation_finished")
 
 			Global.heal_party()
+			Global.game.last_heal_point = filename
 
 			# Play heal sound effect
 			var sound = load("res://Audio/ME/Pokemon Healing.ogg")
@@ -80,14 +81,14 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 
 			Global.game.play_dialogue("NPC_AUNT_HEAL_2")
 			yield(Global.game, "event_dialogue_end")
-			Global.game.play_anim("fade_out")
-			yield(get_tree().create_timer(0.28), "timeout")
+			Global.game.get_node("CanvasLayer/Fade/AnimationPlayer").play("Fade")
+			yield(Global.game.get_node("CanvasLayer/Fade/AnimationPlayer"), "animation_finished")
 			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 
 			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_3" , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 			# Pick random quote
-			var ran = randi() % 14 + 1
+			var ran = Global.rng.randi() % 14 + 1
 			Global.game.play_dialogue_with_point("NPC_AUNT_HEAL_RANDOM_" + str(ran) , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 			$Aunt.set_idle_frame("Down")

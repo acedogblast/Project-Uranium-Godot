@@ -1,19 +1,19 @@
 extends Object
 
 # The name of the move
-var name = "Air Slash"
+var name = "Poison Sting"
 
 # The type of the move
-var type = Type.FLYING
+var type = Type.POISON
 
 # The style of the move (Physical, Special, Status)
-var style = MoveStyle.SPECIAL
+var style = MoveStyle.PHYSICAL
 
 # The base power of the move
-var base_power = 75
+var base_power = 15
 
 # The accuracy of the move
-var accuracy = 95
+var accuracy = 100
 
 # The priority of the move
 var priority = 0
@@ -22,18 +22,19 @@ var priority = 0
 var critical_hit_level = 1
 
 # The secondary effect chance of the move
-var secondary_effect_chance # = 0.3
+var secondary_effect_chance = 0.3
 
 # The secondary effect of the move
-var secondary_effect # = MajorAilment.FLINCH
+var secondary_effect = MajorAilment.POISON
 
 # The flags of the move
 var flags = []
 
 # The total pp of the move
-var total_pp = 15
+var total_pp = 35
 
 # The target ability of the move (Single, Double, All_Foes, Self)
 var target_ability = MoveTarget.SINGLE_FOE
-# attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
-var main_status_effect 
+
+var main_status_effect
+ 

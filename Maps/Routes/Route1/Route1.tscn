@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -7,8 +7,38 @@
 [ext_resource path="res://Maps/tilesets/PU_watertiles+.tres" type="TileSet" id=5]
 [ext_resource path="res://Maps/Routes/Route1/Route1.gd" type="Script" id=6]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Graphics/Characters/HGSS_007.png" type="Texture" id=9]
+[ext_resource path="res://Graphics/Characters/PU-Chyinmunk.png" type="Texture" id=10]
+[ext_resource path="res://Graphics/Characters/HGSS_001.png" type="Texture" id=11]
+[ext_resource path="res://Graphics/Characters/HGSS_116.png" type="Texture" id=12]
+[ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Graphics/Characters/HGSS_003.png" type="Texture" id=14]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Animation" id=1]
+resource_name = "Idle_Poke"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16, 80 )
+
+[node name="Route01" type="Node2D"]
 script = ExtResource( 6 )
 
 [node name="Tile Layer 1" type="TileMap" parent="."]
@@ -111,3 +141,78 @@ position = Vector2( 528, 176 )
 scene_destination = "res://Maps/KevlarTown/Kevlar Town.tscn"
 location = Vector2( 496, 1360 )
 door_type = "Type 3 - Invisible"
+
+[node name="Trainer1" parent="NPC_Layer" instance=ExtResource( 8 )]
+position = Vector2( 1648, 816 )
+trainer = true
+texture = ExtResource( 9 )
+trainer_search_range = 3
+trainer_name = "LASS Lynette"
+trainer_reward = 120
+trainer_behavior = "Turning"
+seeking = true
+trainer_poke_group = [ [ 35, 5 ] ]
+
+[node name="Trainer2" parent="NPC_Layer" instance=ExtResource( 8 )]
+position = Vector2( 1168, 272 )
+trainer = true
+texture = ExtResource( 11 )
+trainer_search_range = 3
+trainer_name = "SCHOOL KID Tath"
+trainer_reward = 200
+trainer_behavior = "Still"
+seeking = true
+trainer_poke_group = [ [ 7, 5 ], [ 9, 4 ] ]
+
+[node name="Trainer3" parent="NPC_Layer" instance=ExtResource( 8 )]
+position = Vector2( 688, 752 )
+trainer = true
+texture = ExtResource( 12 )
+trainer_search_range = 3
+trainer_name = "BUG CATCHER Flood"
+trainer_reward = 80
+trainer_behavior = "Turning"
+seeking = true
+trainer_poke_group = [ [ 12, 4 ], [ 12, 5 ] ]
+
+[node name="Trainer4" parent="NPC_Layer" instance=ExtResource( 8 )]
+position = Vector2( 560, 304 )
+trainer = true
+texture = ExtResource( 14 )
+trainer_search_range = 3
+trainer_name = "YOUNGSTER Richey"
+trainer_reward = 144
+trainer_behavior = "Turning"
+seeking = true
+trainer_poke_group = [ [ 24, 6 ] ]
+
+[node name="Chyinmunk" type="Sprite" parent="NPC_Layer"]
+position = Vector2( 1200, 272 )
+texture = ExtResource( 10 )
+offset = Vector2( 0, -8 )
+hframes = 4
+vframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NPC_Layer/Chyinmunk"]
+autoplay = "Idle_Poke"
+anims/Idle_Poke = SubResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NPC_Layer/Chyinmunk"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Layer/Chyinmunk/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Rock1" parent="NPC_Layer" instance=ExtResource( 13 )]
+position = Vector2( 464, 528 )
+type = "Smashable Rock"
+
+[node name="Rock2" parent="NPC_Layer" instance=ExtResource( 13 )]
+position = Vector2( 496, 560 )
+type = "Smashable Rock"
+
+[node name="Block" type="StaticBody2D" parent="NPC_Layer"]
+position = Vector2( 1808, 1360 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Layer/Block"]
+position = Vector2( 0, 32 )
+shape = SubResource( 3 )

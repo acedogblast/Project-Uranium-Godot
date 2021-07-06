@@ -57,7 +57,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ true, false ]
+"values": [ true, true ]
 }
 
 [node name="Game" type="Node2D" groups=[
@@ -104,7 +104,6 @@ __meta__ = {
 anims/Slide = SubResource( 1 )
 
 [node name="Fade" type="ColorRect" parent="CanvasLayer"]
-visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 512.0
 margin_bottom = 384.0

@@ -9,12 +9,17 @@ func _ready():
 func setup_by_pokemon(poke):
 	cry = poke.get_cry()
 	sprite = poke.get_battle_foe_sprite()
+	sprite.name = "Sprite"
+	# Check if there is already a sprite
+	if self.get_node("Battler/Sprite") != null:
+		self.get_node("Battler/Sprite").free()
 	$Battler.add_child(sprite)
 	$Battler/Shadow.texture = sprite.texture
 
 func ball_flash():
-	$Battler.visible = true
 	sprite.visible = true
+	sprite.modulate = Color(1.0,1.0,1.0,1.0)
+	$Battler.modulate = Color(1.0,1.0,1.0,1.0)
 	var scene = load("res://Utilities/Battle/BallFlash.tscn")
 	var ballflash = scene.instance()
 	self.add_child(ballflash)

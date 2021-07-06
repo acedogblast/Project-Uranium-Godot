@@ -25,11 +25,10 @@ func _ready():
 		$PokeMachine.frame = 4
 
 
-func interaction(collider, direction): # collider is a Vector2 of the position of object to interact
-	var npc_collider = Vector2(collider.x + 16, collider.y) # Not sure exactly why npcs have an ofset of 16.
-	if npc_collider == $Event_Layer/PokeMachine.position:
+func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
+	if check_pos == $Event_Layer/PokeMachine.position:
 		event1_poke_machine()
-	if npc_collider == $NPC_Layer/Assistant.position:
+	if check_pos == $NPC_Layer/Assistant.position:
 		Global.game.lock_player()
 		#Turn to face player
 		$NPC_Layer/Assistant.face_player(direction)
@@ -51,7 +50,7 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 		$NPC_Layer/Assistant.set_idle_frame("Up")
 		Global.game.release_player()
 		return null
-	if bambo != null && npc_collider == bambo.position:
+	if bambo != null && check_pos == bambo.position:
 		Global.game.lock_player()
 		#Turn to face player
 		bambo.face_player(direction)
@@ -65,7 +64,7 @@ func interaction(collider, direction): # collider is a Vector2 of the position o
 			yield(Global.game, "event_dialogue_end")
 			Global.game.release_player()
 			return null
-	if theo != null && npc_collider == theo.position:
+	if theo != null && check_pos == theo.position:
 		Global.game.lock_player()
 		#Turn to face player
 		theo.face_player(direction)

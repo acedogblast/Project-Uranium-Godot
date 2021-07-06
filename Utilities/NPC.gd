@@ -1,15 +1,24 @@
 extends Node2D
 
-export var random_movement = false
-export var trainer = false
-export var texture: StreamTexture = null
-
-export(String, "Down", "Up", "Left", "Right") var facing = "Up"
-
+#export var random_movement = false
+export(bool) var trainer = false
+export var texture : StreamTexture = null
+export(int, 3) var trainer_search_range : int
+export var trainer_name : String
+export var trainer_reward : int
+export(String, "Still", "Turning", "Walking") var trainer_behavior : String
+export(bool) var seeking = false
+export(String, "Down", "Up", "Left", "Right") var facing = "Down"
+export var trainer_poke_group = [] # Array of arrays of poke ID, then level
+var defeated = false
 
 var move_direction = Vector2()
 var foot = 0
 var moving = false
+var timer
+
+var turning_directions = [] # Array of facing strings for turning. Empty if using all 4 directions
+var turning_index : int = 0
 
 signal done_movement
 signal step
@@ -17,29 +26,48 @@ signal alert_done
 
 func _ready():
 	self.add_to_group("auto_z_layering")
+
+	if trainer:
+		self.add_to_group("trainers")
+
 	$Alert.visible = false
 	$Position2D/Sprite.texture = texture
 	set_idle_frame(facing)
 	if texture == null:
 		print("WARNING: No texture applied to NPC")
+	
+	if trainer_behavior == "Turning":
+		timer = Timer.new()
+		add_child(timer)
+		timer.connect("timeout", self, "turning")
+		timer.wait_time = 3.0
+		timer.one_shot = false
+		timer.start()
+		if turning_directions.empty() || turning_directions == null:
+			for i in range(turning_directions.size()):
+				if turning_directions[i] == facing:
+					turning_index = i
+					break
+
 
 func _process(_delta):
-	if !moving:
-		if random_movement:
-			var rand = randi()%7 + 1
-			match rand:
-				1:
-					move("Down")
-				2:
-					move("Up")
-				3:
-					move("Left")
-				4:
-					move("Right")
-				5:
-					yield(get_tree().create_timer(0.8), "timeout")
-				6:
-					yield(get_tree().create_timer(0.4), "timeout")
+	# if !moving:
+	# 	if random_movement:
+	# 		var rand = randi()%7 + 1
+	# 		match rand:
+	# 			1:
+	# 				move("Down")
+	# 			2:
+	# 				move("Up")
+	# 			3:
+	# 				move("Left")
+	# 			4:
+	# 				move("Right")
+	# 			5:
+	# 				yield(get_tree().create_timer(0.8), "timeout")
+	# 			6:
+	# 				yield(get_tree().create_timer(0.4), "timeout")
+	pass
 
 func move(_dir): # Walk one step
 	set_process(false)
@@ -108,6 +136,9 @@ func animate(_dir):
 				$AnimationPlayer.play("Right2")
 
 func set_idle_frame(_dir):
+	if _dir == null:
+		_dir = facing
+
 	match _dir:
 		"Down":
 			$Position2D/Sprite.frame = 0
@@ -139,6 +170,14 @@ func move_multi(dir, steps):
 		yield(self, "step")
 	emit_signal("done_movement")
 
+func move_to_player(): # Walk staight to the player. Must already be facing the player
+	var distance = int(self.position.distance_to(Global.game.player.position) / 32) - 1
+	if distance == 0:
+		yield(get_tree().create_timer(0.02), "timeout")
+		emit_signal("done_movement")
+		return
+	move_multi(facing, distance)
+
 func alert():
 	$Alert.visible = true
 	$Alert/AnimationPlayer.play("Alert")
@@ -150,3 +189,37 @@ func jump():
 	$AnimationPlayer.play("Jump")
 	yield($AnimationPlayer, "animation_finished")
 	emit_signal("done_movement")
+func get_poke_group():
+	var group = []
+	for i in trainer_poke_group:
+		var poke = Pokemon.new()
+		poke.set_basic_pokemon_by_level(i[0],i[1])
+		group.append(poke)
+	return group
+func turning():
+	# Check if we already have been defeated
+	if defeated:
+		timer.stop()
+		timer.queue_free()
+	else:
+		if seeking:
+			# Turn
+			if turning_directions.empty() || turning_directions == null:
+				match facing:
+					"Down":
+						facing = "Right"
+					"Up":
+						facing = "Left"
+					"Left":
+						facing = "Down"
+					"Right":
+						facing = "Up"
+			else:
+				if turning_index == turning_directions.size() - 1:
+					turning_index = 0
+				else:
+					turning_index += 1	
+				facing = turning_directions[turning_index]
+			set_idle_frame(facing)
+			# check for player
+			Global.game.player.trainer_encounter()

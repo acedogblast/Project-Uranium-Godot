@@ -8,11 +8,14 @@ var overlay
 var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene
 var scenes = []
+var trainers = [] # array of trainers in the current scene
 
 var loaded = false
 var isInteracting = false
 #var canInteract = true # Mabye redundant?
 var isTransitioning = false
+var last_heal_point
+var player_defeated = false # True when player lost a battle and transioning to last heal point scene
 
 signal event_dialogue_end
 signal tranistion_complete
@@ -23,6 +26,7 @@ onready var transition = $CanvasLayer/Transition
 func _ready():
 	Global.game = self
 	menu = $CanvasLayer/Menu
+	$CanvasLayer/Fade.modulate = Color(1.0,1.0,1.0,0.0)
 
 	#Makes player an instance of Player, makes it a child, and adds it to the group save
 	player = load("res://Utilities/PlayerNew.tscn").instance()
@@ -33,7 +37,7 @@ func _ready():
 		overlay.add_stat("onGrass", Global, "onGrass", false)
 		#overlay.add_stat("Grass Position", Global, "grass_positions", false)
 		#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
-		overlay.add_stat("Direction", player, "dir", false)
+		#overlay.add_stat("Direction", player, "dir", false)
 		overlay.add_stat("Player Pos", player, "position", false)
 		add_child(overlay)
 
@@ -77,6 +81,7 @@ func setup():
 	$CanvasLayer/ZoneMessage.visible = true
 
 	player.connect("wild_battle", self, "wild_battle")
+	#player.connect("step", self, "step")
 	# Testing
 	#print(Global.inventory.balls[0])
 
@@ -100,15 +105,11 @@ func change_menu_text():
 	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
 		$CanvasLayer/Menu/Place_Text.bbcode_text = "[center]" + current_scene.place_name + "[/center]"
 
-#Plays the fade animation
-func play_anim(fade):
-	$CanvasLayer/Transition/AnimationPlayer.play(fade)
-
 func change_scene(scene):
 	if scene != null:
 		# Clear and delete scenes
 		for node in scenes:
-			node.queue_free()
+			node.free()
 		scenes.clear()
 
 	if scene is String:
@@ -142,6 +143,12 @@ func change_scene(scene):
 		$CanvasLayer/ZoneMessage/AnimationPlayer.play("Slide")
 	Global.location = current_scene.place_name
 
+	# Move player to heal_point if defeated and heal party
+	if player_defeated:
+		player.position = current_scene.heal_point
+		Global.heal_party()
+		player_defeated = false
+
 	# Get grass positions for the new scene
 	
 	if "type" in current_scene && current_scene.type == "Outside" && current_scene.has_method("get_grass_cells"):
@@ -157,6 +164,10 @@ func change_scene(scene):
 		Global.grass_positions = final_pos
 	else:
 		Global.grass_positions.clear()
+
+	# Get new trainers
+	trainers.clear()
+	trainers = current_scene.get_tree().get_nodes_in_group("trainers")
 
 	# Load adjacent sceens
 	if "adjacent_scenes" in current_scene && current_scene.adjacent_scenes != null && current_scene.adjacent_scenes.size() != 0:
@@ -183,12 +194,9 @@ func change_scene(scene):
 #Gets the destination and direction from Stairs.gd, and goes to the next line
 func room_transition(dest, dir):
 
-	#Calls the change_input method from PlayerNew.gd
-	player.change_input()
+	lock_player()
 	
-	#Calls the transition_visibility method, plays the fade_in animation, and then waits .28 seconds
-	transition_visibility()
-	play_anim("fade_in")
+	$CanvasLayer/Transition/AnimationPlayer.play("fade_in")
 	yield(get_tree().create_timer(0.28), "timeout")
 	
 	var target_stair_node
@@ -208,7 +216,7 @@ func room_transition(dest, dir):
 	player.position = dest
 	#player.movePrevious()
 	yield(get_tree().create_timer(0.3), "timeout")
-	play_anim("fade_out")
+	$CanvasLayer/Transition/AnimationPlayer.play("fade_out")
 	
 	#Calls the move method from PlayerNew.gd, and passes the true variable, disables input, and waits .3 seconds
 	player.move(true)
@@ -220,8 +228,7 @@ func room_transition(dest, dir):
 	target_stair_node.get_node("CollisionShape2D").disabled = false
 	
 	#Calls the change_input method from PlayerNew.gd, and calls the transition_visibility method
-	player.change_input()
-	transition_visibility()
+	release_player()
 	Global.location = current_scene.place_name
 
 #If the player is not transitioning, then set isTransitioning to true, and call the change_input method, and wait until the transition fade_to_color animation has finished
@@ -244,18 +251,16 @@ func door_transition(path_scene, new_position):
 	emit_signal("tranistion_complete")
 
 #Checks to see if the player is interacting, if not and the interaction title isn't null then is interacting is set to true, the change_input method is called, the play_dialogue method is called, we wait until the dialogue event has ended, and the change_input method is called again
-func interaction(collider, direction): # Starts the dialogue instead of the scene script
-	if isInteracting == false:
-		var interaction_title = current_scene.interaction(collider, direction)
-		if interaction_title != null && typeof(interaction_title) == TYPE_STRING:
-			isInteracting = true
-			player.change_input()
-			play_dialogue(interaction_title)
-			yield(self, "event_dialogue_end")
-			player.change_input()
-		#If the above is false then print collider
-		else:
-			print(collider)
+func interaction(check_pos : Vector2, direction): # Starts the dialogue instead of the scene script
+	var interaction_title = current_scene.interaction(check_pos, direction)
+	if interaction_title != null && typeof(interaction_title) == TYPE_STRING:
+		lock_player()
+		play_dialogue(interaction_title)
+		yield(self, "event_dialogue_end")
+		release_player()
+	#If the above is false then print collider
+	else:
+		print("Game.gd interation: " + str(check_pos))
 	
 #Wait .1 second, set isInteracting to false, and emit the signal event_dialogue_end
 func dialog_end():
@@ -271,16 +276,13 @@ func check_node(pos):
 		pass
 	pass
 
-#Sets the transition vanvas layer to be opposite of what it is currently
-func transition_visibility():
-	$CanvasLayer/Transition.visible = !$CanvasLayer/Transition.visible
-
 #saves the state by saving the current_scene, player.position, and player.direction
 func save_state():
 	var state = {
 		"current_scene": current_scene.filename,
 		"player_position": player.position,
-		"player_direction": player.direction
+		"player_direction": player.direction,
+		"last_heal_point": last_heal_point
 	}
 	SaveSystem.set_state(filename, state)
 
@@ -290,6 +292,9 @@ func load_state(): # Automatically called when loading a save file
 		change_scene(load(state["current_scene"]))
 		player.direction = state["player_direction"]
 		player.position = state["player_position"]
+
+		if state.has("last_heal_point"):
+			last_heal_point = state["last_heal_point"]
 		loaded = true
 		emit_signal("loaded")
 
@@ -302,11 +307,13 @@ func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and
 	DialogueSystem.start_dialog(title)
 
 func lock_player(): # Locks player to prevent user input. Useful for events.
-	player.change_input()
+	player.call_deferred("change_input", true)
+	#player.change_input(true)
 	Global.game.menu.locked = true
 	Global.block_wild = true
 func release_player(): # Releases player to prevent user input. Useful for events.
-	player.change_input()
+	player.call_deferred("change_input", false)
+	#player.change_input(false)
 	Global.game.menu.locked = false
 	Global.block_wild = false
 
@@ -329,9 +336,10 @@ func get_current_scene_where_player_is(): # Should only be called when player is
 	print("Missed scene scan")
 
 func wild_battle():
+	Global.game.menu.locked = true
 	print("Triggered Wild Battle")
 	if !"wild_table" in current_scene:
-		print("GAME ERROR: tried to make a wild encounter but current scene doesn't have a wile_table.")
+		print("GAME ERROR: tried to make a wild encounter but current scene doesn't have a wild_table.")
 		return
 
 	Global.game.get_node("Background_music").stop()
@@ -341,7 +349,12 @@ func wild_battle():
 
 	var bid = BattleInstanceData.new()
 	bid.battle_type = bid.BattleType.SINGLE_WILD
-	bid.battle_back = bid.BattleBack.FOREST # TODO get correct value by scene
+
+	if "wild_battle_back" in current_scene:
+		bid.battle_back = current_scene.wild_battle_back
+	else:
+		print("Game.gd Warning: Wild battle back was not set. Defaulting to Forest.")
+		bid.battle_back = bid.BattleBack.FOREST
 	bid.opponent = Opponent.new()
 	bid.opponent.opponent_type = Opponent.OPPONENT_WILD
 	bid.opponent.ai = load("res://Utilities/Battle/Classes/AI.gd").new()
@@ -351,14 +364,37 @@ func wild_battle():
 	bid.opponent.pokemon_group.append(poke)
 	Global.game.battle.Start_Battle(bid)
 	yield(Global.game.battle, "battle_complete")
-	battle.queue_free()
+	player_defeated = !battle.player_won
+	
+	if player_defeated:
+		player_defeated()
+		return
 	Global.game.get_node("Background_music").play()
-	player.canMove = true
+	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
+	battle.queue_free()
+	release_player()
+	#player.canMove = true
+	#Global.game.menu.locked = false
+func trainer_battle(bid : BattleInstanceData):
+	lock_player()
+	Global.game.get_node("Background_music").stop()
+	battle = load("res://Utilities/Battle/Battle.tscn").instance()
+	add_child(battle)
+	Global.game.battle.Start_Battle(bid)
+	yield(Global.game.battle, "battle_complete")
 
+	player_defeated = !battle.player_won
+	if player_defeated:
+		player_defeated()
+		return
+	Global.game.get_node("Background_music").play()
+	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
+	battle.queue_free()
+	release_player()
 func generate_wild_poke() -> Pokemon:
 	var poke = Pokemon.new()
 	# Generate poke
-	var value = randi() % 100 + 1 # Random number [1,100]
+	var value = Global.rng.randi() % 100 + 1 # Random number [1,100]
 
 	# Get the wild poke table from current scene
 	var table = current_scene.wild_table
@@ -378,3 +414,11 @@ func generate_wild_poke() -> Pokemon:
 	var level = Global.rng.randi_range(table[index][2], table[index][3])
 	poke.set_basic_pokemon_by_level(poke_id,level)
 	return poke
+func player_defeated():
+
+	# Spawn at last pokecenter/healpoint
+	if last_heal_point == null:
+		# Spawn home:
+		last_heal_point = "res://Maps/MokiTown/HeroHome.tscn"
+	change_scene(last_heal_point)
+	release_player()

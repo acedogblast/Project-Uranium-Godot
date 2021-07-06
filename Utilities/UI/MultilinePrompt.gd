@@ -14,7 +14,7 @@ func _ready():
 
 	pass
 
-func setup(text_lines : String, given_size : Vector2, screen_position : Vector2):
+func setup(text_lines : String, given_size, screen_position : Vector2):
 	$Node2D.position = screen_position
 	var split_lines = text_lines.split(",")
 	self.lines = split_lines.size()
@@ -31,7 +31,7 @@ func setup(text_lines : String, given_size : Vector2, screen_position : Vector2)
 		i += 1
 
 	# Adjust size of prompt
-	if given_size != Vector2(0,0) || given_size == null:
+	if given_size != Vector2(0,0) && given_size != null:
 		#Use given size
 		self.size = given_size
 		$Node2D/NinePatchRect.rect_size = given_size
@@ -45,13 +45,57 @@ func setup(text_lines : String, given_size : Vector2, screen_position : Vector2)
 
 		# Get the longest lines
 		var long = 0
-		for label in $Lines.get_children():
+		for label in $Node2D/Lines.get_children():
 			if label.rect_size.x > long:
 				long = label.rect_size.x
 			pass
 		new_size.x += long
 		self.size = new_size
 		$Node2D/NinePatchRect.rect_size = new_size
+	mode = 1
+	return $Node2D/NinePatchRect.rect_size
+
+func setup_BLC(text_lines : String, given_size, screen_position : Vector2): # Like setup exect screen_position is bottom left corner
+	var split_lines = text_lines.split(",")
+	self.lines = split_lines.size()
+
+	# Add Lable nodes
+	var i = 0
+	for line in split_lines:
+		var label = Label.new()
+		label.name = str(i)
+		label.text = line
+		label.rect_position = Vector2(0, i * 35)
+		label.set("custom_fonts/font", load("res://Utilities/Battle/MoveTextFont.tres"))
+		$Node2D/Lines.add_child(label)
+		i += 1
+
+	# Adjust size of prompt
+	if given_size != Vector2(0,0) && given_size != null:
+		#Use given size
+		self.size = given_size
+		$Node2D/NinePatchRect.rect_size = given_size
+	else:
+		# Calculate size
+		var new_size = Vector2()
+		new_size.y = 40 # Borders
+		new_size.y += lines * 35 # Each line is 35px tall
+
+		new_size.x = 30 # Borders
+
+		# Get the longest lines
+		var long = 0
+		for label in $Node2D/Lines.get_children():
+			if label.rect_size.x > long:
+				long = label.rect_size.x
+			pass
+		new_size.x += long
+		self.size = new_size
+		$Node2D/NinePatchRect.rect_size = new_size
+	$Node2D.position = screen_position - Vector2(0, $Node2D/NinePatchRect.rect_size.y)
+	mode = 1
+	return $Node2D/NinePatchRect.rect_size
+
 func _input(event):
 	if mode == 1:
 		if event.is_action_pressed("ui_down"):
@@ -74,3 +118,11 @@ func _input(event):
 			$Node2D.hide()
 func update_select():
 	$Node2D/Select.rect_position = Vector2(10,18 + 35 * selected_line)
+func get_size(): # Must be called after setup
+	return $Node2D/NinePatchRect.rect_size
+func show():
+	$Node2D.show()
+func hide():
+	$Node2D.hide()
+func set_width(var width):
+	$Node2D/NinePatchRect.rect_size.x = width

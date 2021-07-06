@@ -7,6 +7,7 @@ var selected = ATTACK
 var battle_node
 var battle_attack_select_node
 var battle_bag_node
+var battle_party
 
 onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
 onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
@@ -25,6 +26,7 @@ func _ready():
 	battle_bag_node = self.get_parent().get_node("BattleBag")
 	battle_attack_select_node.connect("command_received", self, "submit_command")
 	battle_bag_node.connect("command_received", self, "submit_command")
+	battle_party = battle_node.get_node("CanvasLayer/BattleInterfaceLayer/PokemonPartyMenu")
 func start(name):
 	$SelHand/AnimationPlayer.play("Squeez")
 	$Prompt.bbcode_text = "[center]What will " + name + " do?"
@@ -60,12 +62,41 @@ func _input(event):
 					command.command_type = command.RUN
 					submit_command(command)
 					self.visible = false
+				else:
+					enabled = true
 			BAG:
 				self.visible = false
 				battle_bag_node.call_deferred("start")
 			POKE:
-				enabled = true
-				#TODO
+				enabled = false
+				# Fade to party menu
+				var animation_player = battle_node.get_node("CanvasLayer/ColorRect/AnimationPlayer")
+				animation_player.play("FadeIn")
+				self.hide()
+				yield(animation_player, "animation_finished")
+				battle_party.show()
+				battle_party.setup(true)
+				battle_party.stage = 1
+				animation_player.play("FadeOut")
+				yield(battle_party, "close_party")
+				if battle_party.selection == battle_party.CANCEL:
+					animation_player.play("FadeIn")
+					yield(animation_player, "animation_finished")
+					battle_party.hide()
+					self.show()
+					animation_player.play("FadeOut")
+					enabled = true
+					return
+				else: # Change poke
+					animation_player.play("FadeIn")
+					yield(animation_player, "animation_finished")
+					self.visible = false
+					battle_party.hide()
+					animation_player.play("FadeOut")
+					command.command_type = command.SWITCH_POKE
+					command.switch_to_poke = battle_party.selection
+					submit_command(command)
+
 					
 
 	

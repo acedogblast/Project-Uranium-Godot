@@ -9,9 +9,24 @@ var selection = CANCEL
 # Configs
 enum {MANAGE, SELECT}
 var config = MANAGE
-var mode = 0 # 0 = disabled, 1 = menu, 2 = second menu, ...
+var stage = 0 # 0 = disabled, 1 = menu, 2 = second menu, ...
 var size
 
+var multi_line
+var switch_line = -1
+var switching = false
+var swap_select
+
+# Orignal positions of slots
+var original_s1 = Vector2(0,0)
+var original_s2 = Vector2(256,16)
+var original_s3 = Vector2(0,96)
+var original_s4 = Vector2(256,112)
+var original_s5 = Vector2(0,192)
+var original_s6 = Vector2(256,208)
+
+var mode = 0 # 0 = out of battle, 1 = in battle, -2 = special
+var cancel_locked = false
 signal close_party
 
 
@@ -21,10 +36,18 @@ func _ready():
 
 	# Fill slots with current pokemon
 	update_slots()
-func setup():
+func setup(battle_mode = false, lock_cancel = false):
 	update_slots()
+	$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_1")
+	$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_1")
+	$Prompt/NinePatchRect.rect_size = Vector2(396, 64)
+	cancel_locked = lock_cancel
+	if battle_mode:
+		mode = 1
+	stage = 1
+
 func _input(event):
-	if mode == 1:
+	if stage == 1:
 		var next_selection = null
 		if event.is_action_pressed("ui_down") && (selection != S5 || selection != CANCEL):
 			match selection:
@@ -76,16 +99,108 @@ func _input(event):
 			next_selection = null
 		
 		if event.is_action_pressed("ui_accept"):
-			#print("ui_accept")
-			match selection:
-				CANCEL:
-					#print("CANCEL")
-					mode = 0
-					emit_signal("close_party")
+			match stage:
+				1:
+					if mode == -2:
+						mode = 1
+						$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_1")
+						$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_1")
+						$Prompt/NinePatchRect.rect_size = Vector2(396, 64)
+						return
+
+					if switching:
+						if selection == swap_select:
+							switching = false
+							swap_select = null
+						else:
+							# Swap out animation
+							var slot1 = get_slot_by_selection(swap_select)
+							var slot2 = get_slot_by_selection(selection)
+							$Tween1.interpolate_property(slot1, "position", slot1.position, get_slot_offset_when_swap(swap_select) + slot1.position, 0.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+							$Tween2.interpolate_property(slot2, "position", slot2.position, get_slot_offset_when_swap(selection) + slot2.position, 0.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+							$Tween1.start()
+							$Tween2.start()
+							yield($Tween2, "tween_all_completed")
+
+							# logical swap
+							var temp = Global.pokemon_group[get_index_by_selection(swap_select)]
+							Global.pokemon_group[get_index_by_selection(swap_select)] = Global.pokemon_group[get_index_by_selection(selection)]
+							Global.pokemon_group[get_index_by_selection(selection)] = temp
+							update_slots()
+
+							# Swap in animation
+							$Tween1.interpolate_property(slot1, "position", slot1.position, get_slot_original_pos_by_selection(swap_select), 0.5 ,Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+							$Tween2.interpolate_property(slot2, "position", slot2.position, get_slot_original_pos_by_selection(selection), 0.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+							$Tween1.start()
+							$Tween2.start()
+							yield($Tween2, "tween_all_completed")
+
+							switching = false
+							swap_select = null
+							change_slot_texture(swap_select, null)
+							change_slot_texture(null, selection)
+						return
+					match selection:
+						CANCEL:
+							if switching:
+								stage = 1
+								switching = false
+								update_slots()
+							else:
+								if cancel_locked:
+									stage = 1
+									return
+								stage = 0
+								emit_signal("close_party")
+						S1,S2,S3,S4,S5,S6: 
+							stage = 2
+							$Prompt/NinePatchRect.rect_size = Vector2(360, 64)
+							multi_line = load("res://Utilities/UI/MultilinePrompt.tscn").instance()
+							add_child(multi_line)
+							var text_lines
+							if mode == 1: # In battle
+								text_lines = tr("UI_PARTY_SWITCH_IN") + ","
+								text_lines += tr("UI_PARTY_SUMMARY") + ","
+							else:
+								text_lines = tr("UI_PARTY_SUMMARY") + ","
+								if Global.pokemon_group.size() != 1:
+									text_lines += tr("UI_PARTY_SWITCH") + ","
+									switch_line = 1
+								text_lines += tr("UI_PARTY_ITEM") + ","
+							text_lines += tr("UI_PARTY_CANCLE")
+
+							multi_line.setup_BLC(text_lines, null, Vector2(360,384))
+							multi_line.set_width(152)
+							
+							var name
+							match selection:
+								S1:
+									name = Global.pokemon_group[0].name
+								S2:
+									name = Global.pokemon_group[1].name
+								S3:
+									name = Global.pokemon_group[2].name
+								S4:
+									name = Global.pokemon_group[3].name
+								S5:
+									name = Global.pokemon_group[4].name
+								S6:
+									name = Global.pokemon_group[5].name
+							$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_2") + name
+							$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_2") + name
+							multi_line.connect("selected", self, "get_multiline_result")
 			pass
-		if event.is_action_pressed("x"):
-			emit_signal("close_party")
-			pass
+	if event.is_action_pressed("x"):
+		match stage:
+			1:
+				if cancel_locked:
+					return
+				emit_signal("close_party")
+			2:
+				multi_line.queue_free()
+				stage = 1
+		pass
+	
 func update_slots():
 	#print("Updating slots.")
 	#print("Size of pokemon group:" + str(Global.pokemon_group.size()))
@@ -158,7 +273,7 @@ func test_setup():
 	poke = Pokemon.new()
 	poke.set_basic_pokemon_by_level(1,5)
 	Global.pokemon_group.append(poke)
-	mode = 1
+	stage = 1
 func change_label_text(label : Label, text : String):
 	label.text = text
 	label.get_node("Shadow").text = text
@@ -184,37 +299,55 @@ func change_slot_texture(current, next):
 	var panel_rect_sel_fnt = load("res://Graphics/Pictures/partyPanelRectSelFnt.png")
 	var panel_cancel = load("res://Graphics/Pictures/partyCancel.png")
 	var panel_cancel_sel = load("res://Graphics/Pictures/partyCancelSel.png")
+
+	var panel_round_swap = load("res://Graphics/Pictures/partyPanelRoundSwap.png")
+	var panel_round_sel_swap = load("res://Graphics/Pictures/partyPanelRoundSelSwap.png")
+	var panel_rect_swap = load("res://Graphics/Pictures/partyPanelRectSwap.png")
+	var panel_rect_sel_swap = load("res://Graphics/Pictures/partyPanelRectSelSwap.png")
+
 	match current:
 		S1:
 			if Global.pokemon_group[0].current_hp != 0:
 				$Slot1/TextureRect.texture = panel_round
 			else:
 				$Slot1/TextureRect.texture = panel_round_fnt
+			if swap_select == S1:
+				$Slot1/TextureRect.texture = panel_round_swap
 		S2:
 			if Global.pokemon_group[1].current_hp != 0:
 				$Slot2/TextureRect.texture = panel_rect
 			else:
 				$Slot2/TextureRect.texture = panel_rect_fnt
+			if swap_select == S2:
+				$Slot2/TextureRect.texture = panel_rect_swap
 		S3:
 			if Global.pokemon_group[2].current_hp != 0:
 				$Slot3/TextureRect.texture = panel_rect
 			else:
 				$Slot3/TextureRect.texture = panel_rect_fnt
+			if swap_select == S3:
+				$Slot3/TextureRect.texture = panel_rect_swap
 		S4:
 			if Global.pokemon_group[3].current_hp != 0:
 				$Slot4/TextureRect.texture = panel_rect
 			else:
 				$Slot4/TextureRect.texture = panel_rect_fnt
+			if swap_select == S4:
+				$Slot4/TextureRect.texture = panel_rect_swap
 		S5:
 			if Global.pokemon_group[4].current_hp != 0:
 				$Slot5/TextureRect.texture = panel_rect
 			else:
 				$Slot5/TextureRect.texture = panel_rect_fnt
+			if swap_select == S5:
+				$Slot5/TextureRect.texture = panel_rect_swap
 		S6:
 			if Global.pokemon_group[5].current_hp != 0:
 				$Slot6/TextureRect.texture = panel_rect
 			else:
 				$Slot6/TextureRect.texture = panel_rect_fnt
+			if swap_select == S6:
+				$Slot6/TextureRect.texture = panel_rect_swap
 		CANCEL:
 			$Cancel/TextureRect.texture = panel_cancel
 
@@ -225,31 +358,43 @@ func change_slot_texture(current, next):
 				$Slot1/TextureRect.texture = panel_round_sel
 			else:
 				$Slot1/TextureRect.texture = panel_round_sel_fnt
+			if switching:
+				$Slot1/TextureRect.texture = panel_round_sel_swap
 		S2:
 			if Global.pokemon_group[1].current_hp != 0:
 				$Slot2/TextureRect.texture = panel_rect_sel
 			else:
 				$Slot2/TextureRect.texture = panel_rect_sel_fnt
+			if switching:
+				$Slot2/TextureRect.texture = panel_rect_sel_swap
 		S3:
 			if Global.pokemon_group[2].current_hp != 0:
 				$Slot3/TextureRect.texture = panel_rect_sel
 			else:
 				$Slot3/TextureRect.texture = panel_rect_sel_fnt
+			if switching:
+				$Slot3/TextureRect.texture = panel_rect_sel_swap
 		S4:
 			if Global.pokemon_group[3].current_hp != 0:
 				$Slot4/TextureRect.texture = panel_rect_sel
 			else:
 				$Slot4/TextureRect.texture = panel_rect_sel_fnt
+			if switching:
+				$Slot4/TextureRect.texture = panel_rect_sel_swap
 		S5:
 			if Global.pokemon_group[4].current_hp != 0:
 				$Slot5/TextureRect.texture = panel_rect_sel
 			else:
 				$Slot5/TextureRect.texture = panel_rect_sel_fnt
+			if switching:
+				$Slot5/TextureRect.texture = panel_rect_sel_swap
 		S6:
 			if Global.pokemon_group[5].current_hp != 0:
 				$Slot6/TextureRect.texture = panel_rect_sel
 			else:
 				$Slot6/TextureRect.texture = panel_rect_sel_fnt
+			if switching:
+				$Slot6/TextureRect.texture = panel_rect_sel_swap
 		CANCEL:
 			$Cancel/TextureRect.texture = panel_cancel_sel
 func check_selection(next_slot):
@@ -289,3 +434,95 @@ func check_selection(next_slot):
 					return CANCEL
 				
 	return next_slot
+func get_multiline_result():
+	var result = multi_line.selected_line
+	if result == multi_line.lines - 1: # Cancel
+		stage = 1
+		return
+
+	if mode == 1: # In battle
+		match result:
+			0: # Switch out
+				# Check if selection is already in battle
+				multi_line.queue_free()
+				var battle_node = self.get_parent().get_parent().get_parent()
+				if battle_node.check_if_battler_is_already_out(Global.pokemon_group[selection]):
+					$Prompt/NinePatchRect.rect_size = Vector2(512, 64)
+					$Prompt/Prompt.text = Global.pokemon_group[selection].name + tr("UI_PARTY_ALREADY_IN_BATTLE")
+					$Prompt/Prompt/Shadow.text = Global.pokemon_group[selection].name + tr("UI_PARTY_ALREADY_IN_BATTLE")
+					mode = -2 # Special mode
+					stage = 1
+					return
+				emit_signal("close_party")
+				return
+			1: # Summary
+				pass
+
+
+
+
+		pass
+	else:
+		multi_line.queue_free()
+		if switch_line == result:
+			stage = 1
+			switch_poke_order()
+			return
+
+		stage = 3
+		# Open next menus
+	
+	pass
+func switch_poke_order():
+	switching = true
+	swap_select = selection
+	change_slot_texture(null, swap_select)
+	pass
+func get_index_by_selection(var sel):
+	match sel:
+		S1:
+			return 0
+		S2:
+			return 1
+		S3:
+			return 2
+		S4:
+			return 3
+		S5:
+			return 4
+		S6:
+			return 5
+func get_slot_by_selection(var sel):
+	match sel:
+		S1:
+			return $Slot1
+		S2:
+			return $Slot2
+		S3:
+			return $Slot3
+		S4:
+			return $Slot4
+		S5:
+			return $Slot5
+		S6:
+			return $Slot6
+func get_slot_offset_when_swap(var sel):
+	match sel:
+		S1,S3,S5:
+			return Vector2(-300, 0)
+		S2,S4,S6:
+			return Vector2(300, 0)
+func get_slot_original_pos_by_selection(var sel):
+	match sel:
+		S1:
+			return original_s1
+		S2:
+			return original_s2
+		S3:
+			return original_s3
+		S4:
+			return original_s4
+		S5:
+			return original_s5
+		S6:
+			return original_s6
