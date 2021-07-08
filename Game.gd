@@ -171,11 +171,10 @@ func change_scene(scene):
 
 	# Load adjacent sceens
 	if "adjacent_scenes" in current_scene && current_scene.adjacent_scenes != null && current_scene.adjacent_scenes.size() != 0:
-		var index = 0
 		for scene_array in current_scene.adjacent_scenes:
 			# Check if scene is already in the scenes array
 			var is_already_loaded = true
-			var scene_filename = scene_array[index]
+			var scene_filename = scene_array[0]
 			for scene in scenes:
 				if scene.filename == scene_filename:
 					break
@@ -186,9 +185,8 @@ func change_scene(scene):
 				# Add the scene
 				var new_scene = load(scene_filename).instance()
 				scenes.append(new_scene)
-				new_scene.position = current_scene.position + scene_array[index + 1]
+				new_scene.position = current_scene.position + scene_array[1]
 				add_child(new_scene)
-			index += 2
 
 
 #Gets the destination and direction from Stairs.gd, and goes to the next line

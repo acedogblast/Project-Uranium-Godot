@@ -139,7 +139,7 @@ door_type = "Type 3 - Invisible"
 [node name="KevlarTownConnection2" parent="NPC_Layer" instance=ExtResource( 7 )]
 position = Vector2( 528, 176 )
 scene_destination = "res://Maps/KevlarTown/Kevlar Town.tscn"
-location = Vector2( 496, 1360 )
+location = Vector2( 528, 1360 )
 door_type = "Type 3 - Invisible"
 
 [node name="Trainer1" parent="NPC_Layer" instance=ExtResource( 8 )]

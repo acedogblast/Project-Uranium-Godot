@@ -1,10 +1,10 @@
 extends Node2D
 
+var adjacent_scenes = [
+	["res://Maps/Routes/Route2/Route 2.tscn", Vector2(352, -1816)]
+]
 
-var next_scene1 = "res://Maps/Routes/Route 2.tscn"
-var next_scene1_offset = Vector2(176, -912)
-
-var background_music = "res://Audio/BGM/PU-Moki Town.ogg";
+var background_music = "res://Audio/BGM/PU-Kevlar Town.ogg";
 
 var type = "Outside"
 var place_name = "Kevlar Town"
@@ -14,7 +14,3 @@ var place_name = "Kevlar Town"
 func _ready():
 	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

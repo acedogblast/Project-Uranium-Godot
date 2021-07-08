@@ -202,3 +202,24 @@ msgstr "Don't run away from me!"
 
 msgid "NPC_ROUTE1_TRAINER_4_DEFEAT"
 msgstr "Oh, crackers! I lost!"
+
+msgid "NPC_POKECENTER_NURSE_1"
+msgstr "Hello, and welcome to the Pokémon Center."
+
+msgid "NPC_POKECENTER_NURSE_2"
+msgstr "We restore your tired Pokémon to full health."
+
+msgid "NPC_POKECENTER_NURSE_3"
+msgstr "Would you like to rest your Pokémon?"
+
+msgid "NPC_POKECENTER_NURSE_4"
+msgstr "OK, I'll take your Pokémon for a few seconds."
+
+msgid "NPC_POKECENTER_NURSE_5"
+msgstr "Thank you for waiting."
+
+msgid "NPC_POKECENTER_NURSE_6"
+msgstr "We've restored your Pokémon to full health."
+
+msgid "NPC_POKECENTER_NURSE_7"
+msgstr "We hope to see you again!"

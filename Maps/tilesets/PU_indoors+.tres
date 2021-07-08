@@ -1,7 +1,6 @@
-[gd_resource type="TileSet" load_steps=3 format=2]
+[gd_resource type="TileSet" load_steps=2 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_indoors+.png" type="Texture" id=1]
-
 
 [resource]
 0/name = "PU_indoors+ 0"
@@ -21,8 +20,7 @@
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = 0
 0/shape_one_way = false
-0/shape_one_way_margin = 1.0
+0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0

@@ -1,10 +1,11 @@
 extends Node2D
 
+var adjacent_scenes = [
+	["res://Maps/KevlarTown/Kevlar Town.tscn", Vector2(-352,1816)],
+	["res://Maps/NowtochCity/Nowtoch City.tscn", Vector2(-480, -2368)]
+]
 
-var next_scene1 = "res://Maps/Towns/Nowtoch City.tscn"
-var next_scene1_offset = Vector2(-240, -1184)
-
-var background_music = "res://Audio/BGM/PU-Moki Town.ogg";
+var background_music = "res://Audio/BGM/PU-Route 01.ogg"; # Same as route 1 apparently
 
 var type = "Outside"
 var place_name = "Route 02"

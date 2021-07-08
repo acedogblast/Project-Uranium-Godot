@@ -11,7 +11,7 @@
 [ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=10]
 
-[node name="Node2D" type="Node2D"]
+[node name="MokiTown" type="Node2D"]
 position = Vector2( -32, 0 )
 scale = Vector2( 2, 2 )
 script = ExtResource( 6 )

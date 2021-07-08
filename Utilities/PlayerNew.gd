@@ -198,23 +198,19 @@ func move(force_move : bool):
 	
 	if direction == DIRECTION.DOWN and ($NextCollision/Down.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.y = 32
-			last_facing_dir = DIRECTION.DOWN
 	if direction == DIRECTION.UP and ($NextCollision/Up.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.y = -32
-			last_facing_dir = DIRECTION.UP
 	if direction == DIRECTION.LEFT and ($NextCollision/Left.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.x = -32
-			last_facing_dir = DIRECTION.LEFT
 	if direction == DIRECTION.RIGHT and ($NextCollision/Right.get_overlapping_bodies().size() == 0 or force_move):
 			move_direction.x = 32
-			last_facing_dir = DIRECTION.RIGHT
 	if direction == DIRECTION.DOWN_LEFT:
 		move_direction.x = -32
 		move_direction.y = 32
 	if direction == DIRECTION.UP_RIGHT:
 		move_direction.x = 32
 		move_direction.y = -32
-
+	last_facing_dir = direction
 	# Grass logic
 	var grass1 = $Grass/Sprite # Current grass under player
 	var grass2 = $Grass/Sprite2 # Grass player is moving to

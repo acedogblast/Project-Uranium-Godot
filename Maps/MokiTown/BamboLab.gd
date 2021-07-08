@@ -109,8 +109,7 @@ func event1_intro(_body): # First event to get pokemon
 	var event_name = "EVENT_BAMBOLAB_1_COMPLETE"
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)
-		Global.game.player.change_input()
-		Global.game.menu.locked = true
+		Global.game.lock_player()
 
 		Global.game.get_node("Background_music").stream = load("res://Audio/BGM/PU-Radio_ Oak.ogg")
 		Global.game.get_node("Background_music").play()
@@ -247,8 +246,7 @@ func event1_pick_up():
 	Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_38", bambo.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 
-	Global.game.player.change_input()
-	Global.game.menu.locked = false
+	Global.game.release_player()
 	Global.past_events.append("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")
 	emit_signal("finished")
 
@@ -445,8 +443,7 @@ func event1_test():
 func event1_poke_machine():
 	if Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE") && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
 		#Global.past_events.erase("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")
-		Global.game.player.change_input()
-		Global.game.menu.locked = true
+		Global.game.lock_player()
 		$PokeMachine.frame = 10
 		var time = Global.game.get_node("Background_music").get_playback_position()
 		Global.game.get_node("Background_music").stop()
@@ -788,9 +785,7 @@ func lab_battle():
 		Global.past_events.append("EVENT_BAMBOLAB_1_LOSS")
 		pass
 	Global.past_events.append("EVENT_BAMBOLAB_1_COMPLETE")
-	Global.game.player.change_input()
-	Global.game.menu.locked = false
-
+	Global.game.release_player()
 
 func block(_area):
 	if (!Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && (Global.past_events.has("EVENT_BAMBOLAB_1_INTRO") || Global.past_events.has("EVENT_BAMBOLAB_1_PICK_UP_ENABLE")) ):
