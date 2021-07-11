@@ -1,16 +1,16 @@
 extends Object
 
 # The name of the move
-var name = "Earthquake"
+var name = "Lick" # LICC lol
 
 # The type of the move
-var type = Type.GROUND
+var type = Type.GHOST
 
 # The style of the move (Physical, Special, Status)
 var style = MoveStyle.PHYSICAL
 
 # The base power of the move
-var base_power = 100
+var base_power = 30
 
 # The accuracy of the move
 var accuracy = 100
@@ -22,18 +22,18 @@ var priority = 0
 var critical_hit_level = 1
 
 # The secondary effect chance of the move
-var secondary_effect_chance
+var secondary_effect_chance 0.3
 
 # The secondary effect of the move
-var secondary_effect 
+var secondary_effect = MajorAilment.PARALYZE
 
 # The flags of the move
 var flags = []
 
 # The total pp of the move
-var total_pp = 10
+var total_pp = 30
 
 # The target ability of the move (Single, Double, All_Foes, Self)
-var target_ability = MoveTarget.ALL_FOE
+var target_ability = MoveTarget.SINGLE_FOE
 # attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
 var main_status_effect 
