@@ -114,22 +114,20 @@ func event1(_body): # Aunt Calling player downstairs
 		print("New Event: " + event_name)
 		Global.game.get_node("CanvasLayer/Fade").visible = true
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
-		Global.game.player.change_input()
-		#Global.game.player.canMove = false
+		Global.game.lock_player()
 		Global.game.get_node("CanvasLayer/Fade/AnimationPlayer").play("Fade")
 		yield(Global.game.get_node("CanvasLayer/Fade/AnimationPlayer"), "animation_finished")
 		Global.game.get_node("CanvasLayer/Fade").visible = false
 		Global.game.play_dialogue_with_point(event_name, Vector2(120, 140))
 		yield(Global.game, "event_dialogue_end")
-		Global.game.player.change_input()
-		#Global.game.player.canMove = true
+		Global.game.release_player()
 		Global.past_events.append(event_name)
 func event2():
 	var event_name = "EVENT_HEROHOME_NPC_AUNT_1"
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)
 		Global.past_events.append(event_name)
-		Global.game.player.change_input()
+		Global.game.lock_player()
 		DialogueSystem.set_box_position(DialogueSystem.TOP)
 
 		for i in range(4):
@@ -161,6 +159,6 @@ func event2():
 		for i in range(5):
 			Global.game.play_dialogue_with_point("NPC_AUNT1_D" + str(i+8) , $Aunt.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
-		Global.game.player.change_input()
+		Global.game.release_player()
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 		

@@ -4,6 +4,7 @@ var x = 0
 var y = 0
 var prevSelect = null
 var isUpper = false
+var max_length = 30
 
 func _ready():
 	moveSelector()
@@ -49,7 +50,8 @@ func _process(delta):
 				get_parent().NameResult($Name.text)
 			pass
 		else:
-			$Name.text = $Name.text + getNodeByCord(x,y).text
+			if $Name.text.length() <= max_length:
+				$Name.text = $Name.text + getNodeByCord(x,y).text
 	
 	
 	if Input.is_action_just_pressed("x"):
@@ -93,8 +95,8 @@ func moveSelector():
 		pass
 	else:
 		prevSelect.modulate = Color(255,255,255)
-		$Beep.play()
-	#print(Vector2(x,y))
+		if $Beep.playing == false:
+			$Beep.play()
 	var letter = getNodeByCord(x, y)
 	letter.modulate = Color(255,0,0)
 	prevSelect = letter

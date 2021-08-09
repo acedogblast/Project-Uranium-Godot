@@ -660,4 +660,5 @@ visible = false
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 0 )
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
