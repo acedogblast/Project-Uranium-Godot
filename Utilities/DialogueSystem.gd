@@ -49,8 +49,6 @@ var counter = 0
 func _ready():
 	$Box.hide()
 
-	#start_dialog(tr("CUTSCENE_PLAYERCREATION_D6"))
-
 # Internal function: rescales the dialogue box for mobile displays
 func rescale_mobile(deviceSize):
 	offset.x = (deviceSize.x - (deviceSize.y * 1.333)) / 2
@@ -170,11 +168,24 @@ func start_dialog(text):
 
 # warning-ignore:unused_argument
 func _process(delta):
-	if active and Input.is_action_just_pressed("ui_accept") and $Box/TypeDelay.is_stopped():
-		if is_finished == true and !hold:
+	if active and Input.is_action_just_pressed("ui_accept"):
+		if is_finished == true and !hold and $Box/TypeDelay.is_stopped():
 			finish_dialogue()
 		elif currentMode == mode.MultiText:
-			slide_text()
+
+			if $Box/TypeDelay.is_stopped():
+				slide_text()
+				return
+			else:
+				# Skip printing text
+				$Box/TypeDelay.stop()
+				if(currentMode == mode.SingleText):
+					$Box/Text1.visible_characters = $Box/Text1.text.length()
+				else: # Multi-line
+					$Box/Text1.visible_characters = $Box/Text1.text.length()
+					$Box/Text2.visible_characters = $Box/Text2.text.length()
+					pass
+				pass
 
 func finish_dialogue():
 		$Box.hide()

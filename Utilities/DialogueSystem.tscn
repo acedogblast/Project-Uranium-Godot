@@ -106,4 +106,5 @@ wait_time = 0.02
 margin_right = 40.0
 margin_bottom = 40.0
 expand = true
+
 [connection signal="timeout" from="Box/TypeDelay" to="." method="_on_TypeDelay_timeout"]

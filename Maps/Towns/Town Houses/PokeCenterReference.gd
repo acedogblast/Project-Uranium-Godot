@@ -43,7 +43,7 @@ func heal():
 
 	if prompt.selection == 0: # Yes
 		Global.game.play_dialogue_with_point("NPC_POKECENTER_NURSE_4" , npc_nurse.get_global_transform_with_canvas().get_origin())
-		yield(DialogueSystem, "finished_printing")
+		yield(Global.game, "event_dialogue_end")
 		left.hide()
 		right.hide()
 		var party_size = Global.pokemon_group.size()
