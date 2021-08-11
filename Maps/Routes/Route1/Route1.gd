@@ -1,5 +1,4 @@
 extends Node2D
-var next_scene1 = null
 
 var background_music = "res://Audio/BGM/PU-Route 01.ogg";
 
@@ -21,7 +20,6 @@ var trainer2
 var trainer3
 var trainer4
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	trainer1 = $NPC_Layer/Trainer1
 	trainer2 = $NPC_Layer/Trainer2
@@ -79,55 +77,55 @@ func get_grass_cells():
 	return get_node("Tile Layer 1/PU_autotiles").get_used_cells()
 
 func trainer_battle(npc_trainer):
-			Global.game.lock_player()
-			npc_trainer.seeking = false
-			# Play encounter music
-			npc_trainer.alert()
-			yield(npc_trainer, "alert_done")
-			match npc_trainer:
-				trainer1, trainer2:
-					Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-FemaleEncounter.ogg")
-				trainer3, trainer4:
-					Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-MaleEncounter.ogg")
-			Global.game.get_node("Background_music").play()
+	Global.game.lock_player()
+	npc_trainer.seeking = false
+	# Play encounter music
+	npc_trainer.alert()
+	yield(npc_trainer, "alert_done")
+	match npc_trainer:
+		trainer1, trainer2:
+			Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-FemaleEncounter.ogg")
+		trainer3, trainer4:
+			Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-MaleEncounter.ogg")
+	Global.game.get_node("Background_music").play()
 
-			# Turn player to face trainer
-			match npc_trainer.facing:
-				"Up":
-					Global.game.player.set_facing_direction("Down")
-				"Down":
-					Global.game.player.set_facing_direction("Up")
-				"Left":
-					Global.game.player.set_facing_direction("Right")
-				"Right":
-					Global.game.player.set_facing_direction("Left")
+	# Turn player to face trainer
+	match npc_trainer.facing:
+		"Up":
+			Global.game.player.set_facing_direction("Down")
+		"Down":
+			Global.game.player.set_facing_direction("Up")
+		"Left":
+			Global.game.player.set_facing_direction("Right")
+		"Right":
+			Global.game.player.set_facing_direction("Left")
 
-			# Walk towards player
-			npc_trainer.move_to_player()
-			yield(npc_trainer, "done_movement")
+	# Walk towards player
+	npc_trainer.move_to_player()
+	yield(npc_trainer, "done_movement")
 
-			# Pre-battle talk
-			match npc_trainer:
-				trainer1:
-					Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_1" , npc_trainer.get_global_transform_with_canvas().get_origin())
-				trainer2:
-					Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_2" , npc_trainer.get_global_transform_with_canvas().get_origin())
-				trainer3:
-					Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_3" , npc_trainer.get_global_transform_with_canvas().get_origin())
-				trainer4:
-					Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_4" , npc_trainer.get_global_transform_with_canvas().get_origin())
+	# Pre-battle talk
+	match npc_trainer:
+		trainer1:
+			Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_1" , npc_trainer.get_global_transform_with_canvas().get_origin())
+		trainer2:
+			Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_2" , npc_trainer.get_global_transform_with_canvas().get_origin())
+		trainer3:
+			Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_3" , npc_trainer.get_global_transform_with_canvas().get_origin())
+		trainer4:
+			Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_4" , npc_trainer.get_global_transform_with_canvas().get_origin())
 
-			yield(Global.game, "event_dialogue_end")
+	yield(Global.game, "event_dialogue_end")
 
-			match npc_trainer:
-				trainer1:
-					trainer1_battle()
-				trainer2:
-					trainer2_battle()
-				trainer3:
-					trainer3_battle()
-				trainer4:
-					trainer4_battle()
+	match npc_trainer:
+		trainer1:
+			trainer1_battle()
+		trainer2:
+			trainer2_battle()
+		trainer3:
+			trainer3_battle()
+		trainer4:
+			trainer4_battle()
 	
 func trainer1_battle():
 	var trainer = trainer1

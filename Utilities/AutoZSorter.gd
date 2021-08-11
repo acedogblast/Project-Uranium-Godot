@@ -7,6 +7,6 @@ class_name AutoZSorter
 # Layers >=30 are for foregrounds and will always be above Player and NPCs (Trees, etc.)
 
 static func sort_ascending(a, b):
-    if a.position.y < b.position.y:
+    if a.get_global_transform_with_canvas().get_origin().y < b.get_global_transform_with_canvas().get_origin().y:
         return true
     return false

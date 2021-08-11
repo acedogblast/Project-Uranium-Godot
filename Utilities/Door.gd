@@ -1,9 +1,10 @@
 extends Node2D
 
-export(String, FILE, "*.tscn") var scene_destination # The scene to change to
+export(String, FILE, "*.tscn") var scene_destination = "" # The scene to change to. Keep blank for room change.
 export(Vector2) var location # The location of the exit
 export(bool) var exterior # Is the door an exterior or interior
 export(String, "Type 1 - Wood", "Type 2 - Glass", "Type 3 - Invisible") var door_type # The texture of the exterior door
+export(String, "No Change", "Down", "Up") var change_direction = "No Change"
 
 onready var type1_texture = load("res://Graphics/Characters/PU-doorsdew.PNG")
 onready var type2_texture = load("res://Graphics/Characters/FKdoors1.png")
@@ -95,7 +96,18 @@ func transition():
 		sound = load("res://Audio/SE/Exit Door.WAV")
 		$AudioStreamPlayer.stream = sound
 		$AudioStreamPlayer.play()
-	Global.game.door_transition(scene_destination, location)
+	
+	if scene_destination == "" || scene_destination == null:
+		Global.game.door_transition(null, location)
+	else:
+		if change_direction != "No Change":
+			match change_direction:
+				"Up":
+					Global.game.door_transition(scene_destination, location, Global.game.player.DIRECTION.UP)
+				"Down":
+					Global.game.door_transition(scene_destination, location, Global.game.player.DIRECTION.DOWN)
+		else:
+			Global.game.door_transition(scene_destination, location)
 func set_open():
 	match door_type:
 		"Type 1 - Wood":

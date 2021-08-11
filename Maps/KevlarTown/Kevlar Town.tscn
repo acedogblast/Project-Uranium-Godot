@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Maps/tilesets/PU_anim_tiles.tres" type="TileSet" id=4]
 [ext_resource path="res://Maps/KevlarTown/Kevlar Town.gd" type="Script" id=5]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=7]
 
 [node name="KevlarTown" type="Node2D"]
 script = ExtResource( 5 )
@@ -111,3 +112,11 @@ position = Vector2( 656, 400 )
 scene_destination = "res://Maps/KevlarTown/PokeCenter.tscn"
 location = Vector2( 240, 624 )
 door_type = "Type 2 - Glass"
+
+[node name="Boulder1" parent="NPC_Layer" instance=ExtResource( 7 )]
+position = Vector2( 336, 528 )
+type = "Movable boulder"
+
+[node name="Boulder2" parent="NPC_Layer" instance=ExtResource( 7 )]
+position = Vector2( 400, 528 )
+type = "Movable boulder"

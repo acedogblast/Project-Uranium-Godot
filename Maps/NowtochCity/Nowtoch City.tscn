@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
 [ext_resource path="res://Maps/tilesets/PU_anim_tiles.tres" type="TileSet" id=3]
 [ext_resource path="res://Maps/NowtochCity/Nowtoch City.gd" type="Script" id=4]
+[ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=5]
 
 [node name="NowtochCity" type="Node2D"]
 script = ExtResource( 4 )
@@ -75,3 +76,13 @@ cell_size = Vector2( 16, 16 )
 cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
 format = 1
 tile_data = PoolIntArray( 1310736, 0, 393220 )
+
+[node name="NPC_Layer" type="Node2D" parent="."]
+
+[node name="PassageCaveEntrance" parent="NPC_Layer" instance=ExtResource( 5 )]
+position = Vector2( 2192, 1392 )
+scene_destination = "res://Maps/Caves/Passage Cave.tscn"
+location = Vector2( 592, 336 )
+exterior = false
+door_type = "Type 3 - Invisible"
+change_direction = "Down"

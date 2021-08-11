@@ -81,6 +81,7 @@ func setup():
 	$CanvasLayer/ZoneMessage.visible = true
 
 	player.connect("wild_battle", self, "wild_battle")
+	$CanvasLayer/Dark.hide()
 	#player.connect("step", self, "step")
 	# Testing
 	#print(Global.inventory.balls[0])
@@ -88,6 +89,7 @@ func setup():
 func _process(_delta):
 	# Sort and assign Z index
 	var nodes = get_tree().get_nodes_in_group("auto_z_layering")
+
 	nodes.sort_custom(AutoZSorter, "sort_ascending")
 	var index = 10
 	for node in nodes:
@@ -142,6 +144,15 @@ func change_scene(scene):
 		$CanvasLayer/ZoneMessage/Bar/Label.text = current_scene.place_name
 		$CanvasLayer/ZoneMessage/AnimationPlayer.play("Slide")
 	Global.location = current_scene.place_name
+
+	# Apply dark mask over scene
+	if "dark" in current_scene && current_scene.dark == true:
+		if current_scene.place_name == "Passage Cave":
+			$CanvasLayer/Dark.show()
+			$CanvasLayer/Dark.scale = Vector2(2,2)
+		pass
+	else:
+		$CanvasLayer/Dark.hide()
 
 	# Move player to heal_point if defeated and heal party
 	if player_defeated:
@@ -230,9 +241,11 @@ func room_transition(dest, dir):
 	Global.location = current_scene.place_name
 
 #If the player is not transitioning, then set isTransitioning to true, and call the change_input method, and wait until the transition fade_to_color animation has finished
-func door_transition(path_scene, new_position):
+func door_transition(path_scene, new_position, direction = null):
 	yield(transition.fade_to_color(), "completed")
-	change_scene(load(path_scene))
+
+	if path_scene != null:
+		change_scene(load(path_scene))
 	yield(get_tree().create_timer(0.3), "timeout")
 	player.position = new_position
 	player.visible = true
@@ -242,6 +255,8 @@ func door_transition(path_scene, new_position):
 	for door in get_tree().get_nodes_in_group("Doors"):
 		if door.position == new_position:
 			door.set_open()
+			if direction != null:
+				Global.game.player.direction = direction
 			Global.game.player.move(true)
 			door.animation_close()
 			break
@@ -276,9 +291,12 @@ func check_node(pos):
 
 #saves the state by saving the current_scene, player.position, and player.direction
 func save_state():
+	# Save player posistion relative to the current scene.
+	var save_position = player.position - current_scene.position
+
 	var state = {
 		"current_scene": current_scene.filename,
-		"player_position": player.position,
+		"player_position": save_position, 
 		"player_direction": player.direction,
 		"last_heal_point": last_heal_point
 	}

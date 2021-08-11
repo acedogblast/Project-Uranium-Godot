@@ -1,9 +1,8 @@
 extends Node2D
 
-#export var random_movement = false
 export(bool) var trainer = false
 export var texture : StreamTexture = null
-export(int, 3) var trainer_search_range : int
+export(int, 8) var trainer_search_range : int = 3
 export var trainer_name : String
 export var trainer_reward : int
 export(String, "Still", "Turning", "Walking") var trainer_behavior : String
@@ -171,7 +170,8 @@ func move_multi(dir, steps):
 	emit_signal("done_movement")
 
 func move_to_player(): # Walk staight to the player. Must already be facing the player
-	var distance = int(self.position.distance_to(Global.game.player.position) / 32) - 1
+	var game_position = self.position + Global.game.current_scene.position
+	var distance = int(game_position.distance_to(Global.game.player.position) / 32) - 1
 	if distance == 0:
 		yield(get_tree().create_timer(0.02), "timeout")
 		emit_signal("done_movement")

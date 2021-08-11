@@ -2,7 +2,7 @@ extends Object
 class_name Type
 enum {
 	NORMAL,
-	FIGHT,
+	FIGHTING,
 	FLYING,
 	POISON,
 	GROUND,
@@ -39,7 +39,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 0.0
 				STEEL:
 					return 0.5
-		FIGHT:
+		FIGHTING:
 			match defending_type:
 				NORMAL:
 					return 2.0
@@ -57,7 +57,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 2.0
 		FLYING:
 			match defending_type:
-				FIGHT:
+				FIGHTING:
 					return 2.0
 				ROCK:
 					return 0.5
@@ -105,7 +105,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 2.0
 		ROCK:
 			match defending_type:
-				FIGHT:
+				FIGHTING:
 					return 0.5
 				FLYING:
 					return 2.0
@@ -121,7 +121,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 2.0
 		BUG:
 			match defending_type:
-				FIGHT:
+				FIGHTING:
 					return 0.5
 				FLYING:
 					return 0.5
@@ -237,7 +237,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 0.5
 		PSYCHC:
 			match defending_type:
-				FIGHT:
+				FIGHTING:
 					return 2.0
 				POISON:
 					return 2.0
@@ -273,7 +273,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 0.0
 		DARK:
 			match defending_type:
-				FIGHT:
+				FIGHTING:
 					return 0.5
 				GHOST:
 					return 2.0

@@ -134,11 +134,12 @@ func get_input():
 			ahead = position + Vector2(32, 0)
 	var is_door_ahead = false
 	for door in get_tree().get_nodes_in_group("Doors"):
-		if door.position.x == ahead.x && (door.position.y >= ahead.y - 4 && door.position.y <= ahead.y + 4):
+		var door_pos = door.position + Global.game.current_scene.position
+		if door_pos.x == ahead.x && (door_pos.y >= ahead.y - 4 && door_pos.y <= ahead.y + 4):
 			is_door_ahead = true
 			#print("door is ahead")
 			door.transition()
-			break
+			return
 	
 	#If input is disabled then you cannot move
 	if !inputDisabled:
@@ -283,7 +284,7 @@ func move(force_move : bool):
 	emit_signal("step")
 
 	# Check if player entered into a different scene. For outdoors only
-	if "type" in Global.game.current_scene && Global.game.current_scene.type == "Outside" && !was_indoors:
+	if !force_move && "type" in Global.game.current_scene && Global.game.current_scene.type == "Outside" && !was_indoors:
 		var loc = Global.game.get_current_scene_where_player_is()
 		if Global.game.current_scene != loc:
 			if loc == null:
@@ -592,7 +593,7 @@ func trainer_encounter():
 			var check_positions = []
 			var player_set_dir
 			for i in range(trainer.trainer_search_range):
-				var offset = trainer.position
+				var offset = trainer.position + Global.game.current_scene.position
 				match trainer.facing:
 					"Up":
 						offset += Vector2(0,-32) * (i + 1) 

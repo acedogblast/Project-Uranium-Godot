@@ -223,3 +223,40 @@ msgstr "We've restored your Pokémon to full health."
 
 msgid "NPC_POKECENTER_NURSE_7"
 msgstr "We hope to see you again!"
+
+msgid "NPC_ROUTE2_TRAINER_1"
+msgstr ""
+"I heard Owten nest in this area.\n"
+"I'm trying to catch one!"
+
+msgid "NPC_ROUTE2_TRAINER_1_DEFEAT"
+msgstr "You gotta tell me, what's your secret to Pokémon training? Pleeeease?"
+
+msgid "NPC_ROUTE2_TRAINER_2"
+msgstr "Hey, kid! Are you tough enough to make it through this cave?"
+
+msgid "NPC_ROUTE2_TRAINER_2_DEFEAT"
+msgstr "Looks like you're tough all right."
+
+msgid "NPC_ROUTE2_BAREWL"
+msgstr "Bare! Bar!"
+
+msgid "PASSAGE_CAVE_TRAINER_1"
+msgstr "This cave is dangerous! Only the manliest men can pass it!"
+
+msgid "PASSAGE_CAVE_TRAINER_2"
+msgstr ""
+"I have sworn never to leave this cave until I win 100 consecutive battles!"
+
+msgid "PASSAGE_CAVE_TRAINER_3"
+msgstr ""
+"Somehow, I find that it's fun to randomly beat up on innocent Trainers!"
+
+msgid "PASSAGE_CAVE_TRAINER_1_DEFEAT"
+msgstr "...Looks like you're manly, all right."
+
+msgid "PASSAGE_CAVE_TRAINER_2_DEFEAT"
+msgstr "In hindsight, perhaps that was a silly vow to swear..."
+
+msgid "PASSAGE_CAVE_TRAINER_3_DEFEAT"
+msgstr "...I suppose all bullies eventually get their comeuppance..."
