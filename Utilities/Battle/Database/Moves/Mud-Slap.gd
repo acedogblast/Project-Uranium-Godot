@@ -10,7 +10,7 @@ var type = Type.GROUND
 var style = MoveStyle.SPECIAL
 
 # The base power of the move
-var base_power 20
+var base_power = 20
 
 # The accuracy of the move
 var accuracy = 100
@@ -22,7 +22,7 @@ var priority = 0
 var critical_hit_level = 1
 
 # The secondary effect chance of the move
-var secondary_effect_chance = 1
+var secondary_effect_chance = 1.0
 
 # The flags of the move
 var flags = []
@@ -33,4 +33,4 @@ var total_pp = 10
 # The target ability of the move (Single, Double, All_Foes, Self)
 var target_ability = MoveTarget.SINGLE_FOE
 # attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
-var main_status_effect = StatStageEffect.new(0, 0, 0, 0, 0, 1, 0)
+var main_status_effect = StatStageEffect.new(0, 0, 0, 0, 0, -1, 0)

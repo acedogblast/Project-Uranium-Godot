@@ -49,6 +49,9 @@ var evolution_ID
 # The pokemon's catch rate
 var catch_rate = 60
 
+# Weight in kg
+var weight = 99.5
+
 # Moveset by leveling
 var moveset = [
 	MoveSet.new(1, "Poison Gas"),

@@ -49,6 +49,9 @@ var evolution_ID = 16
 # The pokemon's catch rate
 var catch_rate = 180
 
+# Weight in kg
+var weight = 120.0
+
 # Moveset by leveling
 var moveset = [
 	MoveSet.new(1, "Tackle"),

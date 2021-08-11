@@ -49,6 +49,9 @@ var evolution_ID = 58
 # The pokemon's catch rate
 var catch_rate = 235
 
+# Weight in kg
+var weight = 7.8
+
 # Moveset by leveling
 var moveset = [
 	MoveSet.new(1, "Growl"),

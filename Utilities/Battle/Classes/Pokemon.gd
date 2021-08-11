@@ -70,15 +70,16 @@ enum {MALE, FEMALE, GENDERLESS}
 # Is the pokemon a shiny
 var is_shiny = false
 
+# Weight in kg
+var weight
+
 func generate_IV():
-	var rng = RandomNumberGenerator.new()
-	rng.randomize()
-	iv_hp = rng.randi_range(0,31)
-	iv_attack = rng.randi_range(0,31)
-	iv_defense = rng.randi_range(0,31)
-	iv_sp_attack = rng.randi_range(0,31)
-	iv_sp_defense = rng.randi_range(0,31)
-	iv_speed = rng.randi_range(0,31)
+	iv_hp = Global.rng.randi_range(0,31)
+	iv_attack = Global.rng.randi_range(0,31)
+	iv_defense = Global.rng.randi_range(0,31)
+	iv_sp_attack = Global.rng.randi_range(0,31)
+	iv_sp_defense = Global.rng.randi_range(0,31)
+	iv_speed = Global.rng.randi_range(0,31)
 	pass
 func exp_erratic(level : int) -> int:
 	var xp : int = 0
@@ -117,15 +118,11 @@ func exp_fluctuating(level : int) -> int:
 		xp = int( pow(level, 3) * ( ((level / 2) + 32) / 50 ) )
 	return xp
 func generate_nature():
-	var rng = RandomNumberGenerator.new()
-	rng.randomize()
-	nature = rng.randi_range(0,24)
+	nature = Global.rng.randi_range(0,24)
 func generate_gender(male_ratio : float):
 	if gender == GENDERLESS:
 		return
-	var rng = RandomNumberGenerator.new()
-	rng.randomize()
-	if rng.randf_range(0.0, 100.0) <= male_ratio:
+	if Global.rng.randf_range(0.0, 100.0) <= male_ratio:
 		gender = MALE
 	else:
 		gender = FEMALE
@@ -163,6 +160,7 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 	type1 = data.type1
 	type2 = data.type2
 	level = lv
+	weight = data.weight
 	generate_IV()
 	generate_nature() # For now random but should be determined by something else
 	generate_gender(data.male_ratio)
@@ -213,6 +211,14 @@ func get_battle_foe_sprite() -> Sprite:
 		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.png") as Texture
 	else:
 		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".png") as Texture
+
+	if tex == null:
+		# Try loading with .PNG instead of .png
+		if is_shiny:
+			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.PNG") as Texture
+		else:
+			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".PNG") as Texture
+	
 	sprite.texture = tex
 	if sprite.texture.get_width() != 80:
 		var frames = sprite.texture.get_width() / 80

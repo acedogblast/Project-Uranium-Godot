@@ -35,6 +35,8 @@ var battle_debug = true
 var escape_attempts = 0
 var can_escape = false
 
+var double_battle = false
+
 func _init(b1, b2 , bid):
 	battler1 = b1
 	battler2 = b2
@@ -120,10 +122,8 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 			action.type = action.BALL_CAPTURE_TOSS
 			queue.push(action)
 
-			var rng = RandomNumberGenerator.new()
-			rng.randomize()
 			for i in range(4):
-				var shake = rng.randi_range(0, 65535)
+				var shake = Global.rng.randi_range(0, 65535)
 				shakes += 1
 				if b > shake:
 					continue
@@ -174,6 +174,14 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 	var battler # The pokemon preforming the move
 	var battler_index # The index of the pokemon preforming the move
 	var command
+
+	match battle_instance.battle_type:
+		battle_instance.BattleType.SINGLE_WILD, battle_instance.BattleType.SINGLE_TRAINER, battle_instance.BattleType.SINGLE_GYML, battle_instance.BattleType.RIVAL:
+			double_battle = true
+		_:
+			double_battle = false
+
+
 	while !turn_order.empty():
 		var turn = turn_order.pop_front()
 		match turn:
@@ -195,6 +203,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		if command.command_type == command.ATTACK:
 			var skip_turn = false
 			var target_index
+
 			match command.attack_target:
 				command.B1:
 					target_index = 1
@@ -318,6 +327,11 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					move = battler.move_3
 				battler.move_4.name:
 					move = battler.move_4
+			
+			# Charge target index to battler if move effects self
+			if move.target_ability == MoveTarget.SELF:
+				target_index = battler_index
+
 			action = BattleQueueAction.new()
 			action.type = action.BATTLE_TEXT
 			action.battle_text = get_battler_title_by_index(battler_index) + " used\n" + command.attack_move + "!"
@@ -331,8 +345,13 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 			
 			if does_attack_hit(move, target_index, battler_index):
 
-				if move.base_power != null:
-					var did_crit = does_crit(move.critical_hit_level)
+				if move.base_power != null || move.name == "Low Kick":
+					var crit_ratio_bonus = 0
+
+					if get_effects_by_index(battler_index).has(BattleEffect.effects.FOCUS_ENERGY):
+						crit_ratio_bonus += 2
+
+					var did_crit = does_crit(int(move.critical_hit_level + crit_ratio_bonus))
 						
 					# Calculate damage done.
 					var raw_damage: int = 0
@@ -358,9 +377,31 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 
 					var effective_defender_stat = BattleStatStage.get_multiplier(get_stage_stat_by_index(target_index).defense) * get_battler_by_index(target_index).defense
 					
-					base_damage = int(
-						( ( (2 * battler.level) / 5 ) + 2 ) * move.base_power * (effective_attacker_stat / effective_defender_stat)
-					)
+					
+					if move.name == "Low Kick":
+						var low_kick_power
+						var target_weight = float(get_battler_by_index(target_index).weight)
+
+						if target_weight < 10.0:
+							low_kick_power = 20
+						elif target_weight < 25.0:
+							low_kick_power = 40
+						elif target_weight < 50.0:
+							low_kick_power = 60
+						elif target_weight < 100.0:
+							low_kick_power = 80
+						elif target_weight < 200.0:
+							low_kick_power = 100
+						else:
+							low_kick_power = 120
+
+						base_damage = int(
+							( ( (2 * battler.level) / 5 ) + 2 ) * low_kick_power * (effective_attacker_stat / effective_defender_stat)
+						)
+					else:
+						base_damage = int(
+							( ( (2 * battler.level) / 5 ) + 2 ) * move.base_power * (effective_attacker_stat / effective_defender_stat)
+						)
 					#warning-ignore:integer_division
 					base_damage = (base_damage / 50) + 2
 					
@@ -560,7 +601,31 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 										effect.effect = BattleEffect.effects.CONFUSED
 										effect.turn_count = Global.rng.randi_range(2,5)
 										get_effects_by_index(target_index).append(effect)
-												
+							"Poison Gas":
+								# Apply Poison
+								get_battler_by_index(target_index).major_ailment = MajorAilment.POISON
+								action = BattleQueueAction.new()
+								action.type = action.BATTLE_TEXT
+								action.battle_text = get_battler_title_by_index(target_index) + " is poisoned!"
+								queue.push(action)
+
+								action = BattleQueueAction.new()
+								action.type = action.UPDATE_MAJOR_AILMENT
+								action.damage_target_index = target_index
+								queue.push(action)
+
+							"Focus Energy":
+								# Check if Focus Energy was already used
+								if get_effect_from_effects(BattleEffect.effects.FOCUS_ENERGY, battler) == null:
+									var effect = BattleEffect.new()
+									effect.effect = BattleEffect.effects.FOCUS_ENERGY
+									get_effects_by_index(battler_index).append(effect)
+									action = BattleQueueAction.new()
+								else:
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = "But it failed!"
+									queue.push(action)
 								pass
 				# Add move to past_moves
 				get_past_moves_by_index(battler_index).append(move.name)
@@ -686,9 +751,7 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 			#warning-ignore:INTEGER_DIVISION
 			var f = ( (battler1.speed * 128) / battler2.speed ) + 30 * escape_attempts
 			f = posmod(int(f), 256)
-			var rng = RandomNumberGenerator.new()
-			rng.randomize()
-			if rng.randi_range(0,255) < f:
+			if Global.rng.randi_range(0,255) < f:
 				can_escape = true
 		if !can_escape:
 			var action = BattleQueueAction.new()
@@ -736,9 +799,7 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 				turn_order.push_back(B2)
 				turn_order.push_back(B1)
 			else: # Random
-				var rng = RandomNumberGenerator.new()
-				rng.randomize()
-				if rng.randi_range(0,1) == 1:
+				if Global.rng.randi_range(0,1) == 1:
 					turn_order.push_back(B1)
 					turn_order.push_back(B2)
 				else:
@@ -762,9 +823,7 @@ func does_attack_hit(move : Move, target_index : int, attaker_index : int):
 	
 	if accuracy > 100:
 		accuracy = 100
-	var rng = RandomNumberGenerator.new()
-	rng.randomize()
-	var value = rng.randi_range(0, 99)
+	var value = Global.rng.randi_range(0, 99)
 
 	#print("Accuracy is: " + str(accuracy) + ", rng is: " + str(value))
 
@@ -851,33 +910,31 @@ func check_foe_out_of_poke() -> bool:
 	return result
 func does_crit(crit : int) -> bool: # If move can crit calculate if crit or not.
 	var did_crit = false
-	var rng = RandomNumberGenerator.new()
+	if crit > 6:
+		crit = 6
 	match crit:
 		1: # 1/16
-			rng.randomize()
-			var value = rng.randi_range(1,16)
+			var value = Global.rng.randi_range(1,16)
 			if value == 1:
 				did_crit = true
 		2: # 1/8
-			rng.randomize()
-			var value = rng.randi_range(1,8)
+			var value = Global.rng.randi_range(1,8)
 			if value == 1:
 				did_crit = true
 		3: # 1/4
-			rng.randomize()
-			var value = rng.randi_range(1,4)
+			var value = Global.rng.randi_range(1,4)
 			if value == 1:
 				did_crit = true
 		4: # 1/3
-			rng.randomize()
-			var value = rng.randi_range(1,3)
+			var value = Global.rng.randi_range(1,3)
 			if value == 1:
 				did_crit = true
 		5: # 1/2
-			rng.randomize()
-			var value = rng.randi_range(1,2)
+			var value = Global.rng.randi_range(1,2)
 			if value == 1:
 				did_crit = true
+		_:
+			print("BATTLE LOGIC ERROR: crit value is not in range of possible values")
 	return did_crit
 func one_in_n_chance(n : int) -> bool:
 	var rng = Global.rng
@@ -1034,9 +1091,7 @@ func set_major_ailment(index: int, ailment_code: int, turns: int = -1): # Sets t
 			var effect = BattleEffect.new()
 			effect.effect = BattleEffect.SLEEP_COUNTER
 			if turns == -1:
-				var rng = RandomNumberGenerator.new()
-				rng.randomize()
-				effect.sleep_count = rng.randi_range(1,3)
+				effect.sleep_count = Global.rng.randi_range(1,3)
 			else:
 				effect.sleep_count = turns
 			get_effects_by_index(index).add(effect)

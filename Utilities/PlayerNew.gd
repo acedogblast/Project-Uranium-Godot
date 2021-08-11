@@ -273,8 +273,12 @@ func move(force_move : bool):
 	else:
 		foot = 0
 
-	# Generate wild battle if on grass
-	if Global.onGrass && !Global.block_wild:
+	# Generate wild battle if on grass or if the scene calls for it.
+	var wild_gen_on_step = false
+	if "always_wild_gen_on_step" in Global.game.current_scene && Global.game.current_scene.always_wild_gen_on_step:
+		wild_gen_on_step = true
+
+	if (Global.onGrass || wild_gen_on_step) && !Global.block_wild:
 		wild_poke_encounter()
 
 	set_process(true)
@@ -537,11 +541,10 @@ func remove_grass(exiting):
 				return
 
 func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/pokemon-encounter-rate
-	var rng = Global.rng
 	var trigger_wild_battle = false
 
 	if entering_grass: # 40% chance to skip
-		var num = rng.randf()
+		var num = Global.rng.randf()
 		if num <= 0.4:
 			# Skip
 			return

@@ -49,6 +49,9 @@ var evolution_ID = 41 # TODO Seikamater evo logic
 # The pokemon's catch rate
 var catch_rate = 255
 
+# Weight in kg
+var weight = 1.2
+
 # Moveset by leveling
 var moveset = [
 	MoveSet.new(1, "Poison Sting"),

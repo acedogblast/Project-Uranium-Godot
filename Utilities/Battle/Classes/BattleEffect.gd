@@ -2,7 +2,7 @@ extends Object
 class_name BattleEffect
 
 var effect
-enum effects {SEEDED, CONFUSED, SLEEP_COUNTER, FORESIGHT}
+enum effects {SEEDED, CONFUSED, SLEEP_COUNTER, FORESIGHT, FOCUS_ENERGY}
 
 var seeded_heal_target_index : int
 

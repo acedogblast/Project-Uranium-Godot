@@ -6,6 +6,7 @@ var type = "Outside"
 var place_name = "Passage Cave"
 var dark = true
 var wild_battle_back = BattleInstanceData.BattleBack.CAVE
+var always_wild_gen_on_step = true
 
 # Wild Poke table
 var wild_table = [

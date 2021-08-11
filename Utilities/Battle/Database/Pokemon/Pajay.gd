@@ -52,6 +52,9 @@ var catch_rate = 155
 # The pokemon's catch rate
 var catch_rate = 55
 
+# Weight in kg
+var weight = 28.3
+
 # Moveset by leveling
 var moveset = [
 	MoveSet.new(1, "Will-O-Wisp"),

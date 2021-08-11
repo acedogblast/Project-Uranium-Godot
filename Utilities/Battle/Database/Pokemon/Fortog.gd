@@ -49,6 +49,9 @@ var evolution_ID = 25
 # The pokemon's catch rate
 var catch_rate = 190
 
+# Weight in kg
+var weight = 65.3
+
 # Moveset by leveling
 var moveset = [
 	MoveSet.new(1, "Poison Sting"),

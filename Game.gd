@@ -81,10 +81,6 @@ func setup():
 	$CanvasLayer/ZoneMessage.visible = true
 
 	player.connect("wild_battle", self, "wild_battle")
-	$CanvasLayer/Dark.hide()
-	#player.connect("step", self, "step")
-	# Testing
-	#print(Global.inventory.balls[0])
 
 func _process(_delta):
 	# Sort and assign Z index
@@ -147,10 +143,11 @@ func change_scene(scene):
 
 	# Apply dark mask over scene
 	if "dark" in current_scene && current_scene.dark == true:
+		print("Dark Place")
+		$CanvasLayer/Dark.show()
+		$CanvasLayer/Dark.scale = Vector2(1,1)
 		if current_scene.place_name == "Passage Cave":
-			$CanvasLayer/Dark.show()
 			$CanvasLayer/Dark.scale = Vector2(2,2)
-		pass
 	else:
 		$CanvasLayer/Dark.hide()
 
@@ -265,6 +262,10 @@ func door_transition(path_scene, new_position, direction = null):
 
 #Checks to see if the player is interacting, if not and the interaction title isn't null then is interacting is set to true, the change_input method is called, the play_dialogue method is called, we wait until the dialogue event has ended, and the change_input method is called again
 func interaction(check_pos : Vector2, direction): # Starts the dialogue instead of the scene script
+	if !current_scene.has_method("interaction"):
+		print("ERROR: current scene does not have interaction method.")
+		return
+	
 	var interaction_title = current_scene.interaction(check_pos, direction)
 	if interaction_title != null && typeof(interaction_title) == TYPE_STRING:
 		lock_player()
