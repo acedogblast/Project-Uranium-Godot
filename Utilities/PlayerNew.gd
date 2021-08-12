@@ -591,6 +591,10 @@ func trainer_encounter():
 	# Check if any trainers see the player
 	if Global.game.trainers == null:
 		return
+
+	if !canMove: # Already in a battle.
+		return
+
 	for trainer in Global.game.trainers:
 		if trainer != null && "seeking" in trainer && trainer.seeking:
 			var check_positions = []

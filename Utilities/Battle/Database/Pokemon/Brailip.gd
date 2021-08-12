@@ -8,7 +8,7 @@ var ID = 42
 
 # The pokemon's type. If only one type use type1
 var type1 = Type.WATER
-var type1 = Type.PSYCHIC
+var type2 = Type.PSYCHIC
 
 # The pokemon's base stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
 var hp = 90

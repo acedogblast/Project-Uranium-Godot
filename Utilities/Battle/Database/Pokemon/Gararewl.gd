@@ -8,7 +8,7 @@ var ID = 17
 
 # The pokemon's type. If only one type use type1
 var type1 = Type.STEEL
-var type1 = Type.ROCK
+var type2 = Type.ROCK
 
 # The pokemon's base stats (HP,Attack,Defense,Sp.Atack,Sp.Def,Speed)
 var hp = 75

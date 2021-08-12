@@ -104,7 +104,7 @@ func reset():
 		node.percent_visible = 0
 	$Box/AudioStreamPlayer.play()
 	$Box/PauseArrow.hide()
-	$Box.show()
+	$Box.hide()
 	is_finished = false
 	current_line = 0
 	format_to_copy = ""
@@ -119,6 +119,7 @@ func set_dialogue_sequence(sequence):
 
 # Starts a dialogue sequence
 func start_dialogue_sequence():
+	$Box.show()
 	emit_signal("dialogue_sequence_start")
 	while next_dialogue():
 		yield(self, "dialogue_end")
@@ -127,6 +128,7 @@ func start_dialogue_sequence():
 
 # Show the next dialogue string. set_sequence must have been set
 func next_dialogue():
+	$Box.show()
 	var string = dialogue_string + str(counter)
 	if tr(string) == string:
 		return false
@@ -161,7 +163,7 @@ func start_dialog(text):
 		format_to_copy = TextParser.get_last_format(self.text[0])
 		$Box/Text2.bbcode_text = format_to_copy + self.text[1]
 		currentMode = mode.MultiText
-
+	$Box.show()
 	$Box/TypeDelay.start()
 	active = true
 	pass

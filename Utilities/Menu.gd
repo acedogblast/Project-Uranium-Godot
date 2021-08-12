@@ -92,6 +92,7 @@ func _input(event):
 						$Yes_no/Box/Cursor.position.y = 32
 					$Save_Menu.visible = false
 					$Yes_no.visible = false
+					DialogueSystem.reset()
 					menu_stage = 1
 			ORDER.BAG:
 				bag_logic()
