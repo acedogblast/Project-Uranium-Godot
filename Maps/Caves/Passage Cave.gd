@@ -53,7 +53,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 			trainer_battle(trainer1)
 		else:
 			Global.game.lock_player()
-			Global.game.play_dialogue_with_point("PASSAGE_CAVE_TRAINER_1_DEFEATED" , trainer1.get_global_transform_with_canvas().get_origin())
+			Global.game.play_dialogue_with_point("PASSAGE_CAVE_TRAINER_1_DEFEAT" , trainer1.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 			Global.game.release_player()
 		pass
@@ -63,7 +63,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 			trainer_battle(trainer2)
 		else:
 			Global.game.lock_player()
-			Global.game.play_dialogue_with_point("PASSAGE_CAVE_TRAINER_2_DEFEATED" , trainer2.get_global_transform_with_canvas().get_origin())
+			Global.game.play_dialogue_with_point("PASSAGE_CAVE_TRAINER_2_DEFEAT" , trainer2.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 			Global.game.release_player()
 		pass
@@ -73,7 +73,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 			trainer_battle(trainer3)
 		else:
 			Global.game.lock_player()
-			Global.game.play_dialogue_with_point("PASSAGE_CAVE_TRAINER_3_DEFEATED" , trainer2.get_global_transform_with_canvas().get_origin())
+			Global.game.play_dialogue_with_point("PASSAGE_CAVE_TRAINER_3_DEFEAT" , trainer2.get_global_transform_with_canvas().get_origin())
 			yield(Global.game, "event_dialogue_end")
 			Global.game.release_player()
 		pass
@@ -202,7 +202,7 @@ func trainer3_battle():
 	yield(Global.game.battle, "battle_complete")
 	if Global.game.battle.player_won:
 		trainer.defeated = true
-		Global.past_events.append("PASSAGE_CAVE_TRAINER_3_DEFEATED")
+		Global.past_events.append("PASSAGE_CAVE_TRAINER_3_DEFEAT")
 	else:
 		return
 	Global.game.get_node("Background_music").stream = load(background_music)

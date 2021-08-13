@@ -2,7 +2,7 @@ extends Node
 var TrainerName : String = "TrainerName"
 var TrainerGender = 0 # 0 is boy, 1 is neutral, 2 is girl
 var badges = 0
-var time = "00:00"
+var time : int = 0 # number of minutes spend in-game
 var pokedex_count = 0
 var location : String = ""
 var money : int = 0
@@ -82,7 +82,12 @@ func load_state():
 		TrainerName = state["TrainerName"]
 		TrainerGender = state["TrainerGender"]
 		badges = state["badges"]
-		time = state["time"]
+
+		if typeof(state["time"]) == TYPE_STRING:
+			time = 0
+		if typeof(state["time"]) == TYPE_INT:
+			time = state["time"]
+			
 		pokedex_count = state["pokedex_count"]
 		can_run = state["can_run"]
 		pokemon_group = state["pokemon_group"]

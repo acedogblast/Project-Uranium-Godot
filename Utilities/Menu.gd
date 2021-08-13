@@ -33,6 +33,7 @@ func _ready():
 	$Bag.connect("close_bag", self, "close_bag")
 	$PokemonPartyMenu.connect("close_party", self, "close_party")
 	$Pokedex.connect("close", self, "close_dex")
+	$Card.connect("close", self, "close_card")
 	
 	current = ORDER.PARTY
 	init_pos = $Option_Text.rect_position
@@ -49,6 +50,7 @@ func _input(event):
 				menu_stage = 1
 				print("Toggling")
 				$AnimationPlayer.play("Open Menu")
+				$Place_Text.bbcode_text = "[center]" + Global.game.current_scene.place_name + "[/center]"
 			1:
 				Global.game.player.call_deferred("change_input", false)
 				menu_stage = 0
@@ -95,14 +97,6 @@ func _input(event):
 					$Yes_no.visible = false
 					DialogueSystem.reset()
 					menu_stage = 1
-			ORDER.BAG:
-				#bag_logic()
-				pass
-			ORDER.CARD:
-				$Transition.fade_to_color()
-				hide_all()
-				$Card.show()
-				$Transition.fade_from_color()
 				
 func party_logic():
 	print("party logic")
@@ -157,9 +151,6 @@ func select(): # Stage should be 1
 	elif current == ORDER.BAG:
 		$Bag.enabled = true
 		bag_setup()
-	elif current == ORDER.CARD:
-		menu_stage = 1
-		return
 	elif current == ORDER.PARTY:
 		$PokemonPartyMenu.stage = 1
 		party_logic()
@@ -172,6 +163,19 @@ func select(): # Stage should be 1
 		$Transition.fade_from_color()
 		yield($Transition, "finished")
 		$Transition.visible = false
+	elif current == ORDER.CARD:
+		$Transition.fade_to_color()
+		yield($Transition, "finished")
+		hide_all()
+		$Card.setup()
+		$Card.show()
+		$Transition.fade_from_color()
+		yield($Transition, "finished")
+		$Transition.visible = false
+		
+		pass
+	else:
+		menu_stage = 1
 	
 
 func move_sprites(dir):
@@ -326,6 +330,16 @@ func close_dex():
 	$Transition.fade_to_color()
 	yield($Transition, "finished")
 	$Pokedex.hide()
+	show_base()
+	menu_stage = 1
+	$Transition.fade_from_color()
+
+func close_card():
+	$Card.mode = 0
+	$Transition.show()
+	$Transition.fade_to_color()
+	yield($Transition, "finished")
+	$Card.hide()
 	show_base()
 	menu_stage = 1
 	$Transition.fade_from_color()

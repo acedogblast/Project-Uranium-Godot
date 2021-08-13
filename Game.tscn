@@ -121,3 +121,6 @@ __meta__ = {
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Fade"]
 anims/Fade = SubResource( 2 )
+
+[node name="Clock" type="Timer" parent="."]
+wait_time = 60.0

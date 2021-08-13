@@ -1,0 +1,197 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Graphics/Pictures/trcaseicon.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Pictures/trcardbg.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/Pictures/trcard.PNG" type="Texture" id=4]
+[ext_resource path="res://Utilities/Card.gd" type="Script" id=5]
+[ext_resource path="res://Graphics/Characters/trainer000.PNG" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 26
+extra_spacing_top = 2
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+extra_spacing_top = 2
+font_data = ExtResource( 1 )
+
+[node name="Card" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="trcardbg" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 512, 384 )
+
+[node name="trcard" type="Sprite" parent="."]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="hidden_leaders" type="Node2D" parent="."]
+
+[node name="1" type="Sprite" parent="hidden_leaders"]
+position = Vector2( 107, 278.288 )
+texture = ExtResource( 2 )
+
+[node name="2" type="Sprite" parent="hidden_leaders"]
+position = Vector2( 203, 278.288 )
+texture = ExtResource( 2 )
+
+[node name="3" type="Sprite" parent="hidden_leaders"]
+position = Vector2( 299, 278.288 )
+texture = ExtResource( 2 )
+
+[node name="4" type="Sprite" parent="hidden_leaders"]
+position = Vector2( 395, 278.288 )
+texture = ExtResource( 2 )
+
+[node name="5" type="Sprite" parent="hidden_leaders"]
+position = Vector2( 107, 342.288 )
+texture = ExtResource( 2 )
+
+[node name="6" type="Sprite" parent="hidden_leaders"]
+position = Vector2( 203, 342.288 )
+texture = ExtResource( 2 )
+
+[node name="7" type="Sprite" parent="hidden_leaders"]
+position = Vector2( 299, 342.288 )
+texture = ExtResource( 2 )
+
+[node name="8" type="Sprite" parent="hidden_leaders"]
+position = Vector2( 395, 342.288 )
+texture = ExtResource( 2 )
+
+[node name="Text" type="Node2D" parent="."]
+
+[node name="IDNo" type="RichTextLabel" parent="Text"]
+margin_left = 32.0
+margin_top = 48.0
+margin_right = 224.0
+margin_bottom = 78.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "IDNo.00000"
+text = "IDNo.00000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="Text"]
+margin_left = 272.0
+margin_top = 48.0
+margin_right = 493.0
+margin_bottom = 78.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "NAME:"
+text = "NAME:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Money" type="Node2D" parent="Text"]
+
+[node name="number" type="RichTextLabel" parent="Text/Money"]
+margin_left = 144.0
+margin_top = 96.0
+margin_right = 304.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]$3000[/right]"
+text = "$3000"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="Text/Money"]
+margin_left = 32.0
+margin_top = 96.0
+margin_right = 112.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "MONEY:"
+text = "MONEY:"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pokedex" type="Node2D" parent="Text"]
+position = Vector2( 0, 48 )
+
+[node name="number" type="RichTextLabel" parent="Text/Pokedex"]
+margin_left = 144.0
+margin_top = 96.0
+margin_right = 304.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]0[/right]"
+text = "0"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="Text/Pokedex"]
+margin_left = 32.0
+margin_top = 96.0
+margin_right = 128.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "POKéDEX:"
+text = "POKéDEX:"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Time" type="Node2D" parent="Text"]
+position = Vector2( 0, 112 )
+
+[node name="number" type="RichTextLabel" parent="Text/Time"]
+margin_left = 144.0
+margin_top = 96.0
+margin_right = 304.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "[right]00:00[/right]"
+text = "00:00"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="Text/Time"]
+margin_left = 32.0
+margin_top = 96.0
+margin_right = 128.0
+margin_bottom = 128.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
+bbcode_enabled = true
+bbcode_text = "TIME:"
+text = "TIME:"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pic" type="Sprite" parent="."]
+position = Vector2( 410, 165 )
+texture = ExtResource( 6 )

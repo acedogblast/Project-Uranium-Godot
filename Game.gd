@@ -12,7 +12,6 @@ var trainers = [] # array of trainers in the current scene
 
 var loaded = false
 var isInteracting = false
-#var canInteract = true # Mabye redundant?
 var isTransitioning = false
 var last_heal_point
 var player_defeated = false # True when player lost a battle and transioning to last heal point scene
@@ -66,10 +65,11 @@ func setup():
 		change_scene(start_scene)
 		player.position = Vector2(192,144)
 		player.direction = player.DIRECTION.UP
+		player.set_idle_frame(player.direction)
 
 	player.z_index = 10 # DO NOT CHANGE! see AutoZSorter for details
 	var result = DialogueSystem.connect("dialogue_end", self, "dialog_end", [], CONNECT_DEFERRED)
-
+	player.set_idle_frame(player.direction)
 	player.canMove = true
 
 	if ("place_name" in current_scene):
@@ -81,6 +81,8 @@ func setup():
 	$CanvasLayer/ZoneMessage.visible = true
 
 	player.connect("wild_battle", self, "wild_battle")
+	$Clock.connect("timeout", self, "clock_timeout")
+	$Clock.start()
 
 func _process(_delta):
 	# Sort and assign Z index
@@ -439,3 +441,7 @@ func player_defeated():
 		last_heal_point = "res://Maps/MokiTown/HeroHome.tscn"
 	change_scene(last_heal_point)
 	release_player()
+
+func clock_timeout():
+	Global.time += 1
+	print("Tick")
