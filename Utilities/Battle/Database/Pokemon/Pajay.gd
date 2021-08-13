@@ -47,9 +47,6 @@ var evolution_level
 var evolution_ID
 
 # The pokemon's catch rate
-var catch_rate = 155
-
-# The pokemon's catch rate
 var catch_rate = 55
 
 # Weight in kg

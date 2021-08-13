@@ -464,7 +464,7 @@ func event1_poke_machine():
 			2: # Eletux
 				poke.set_basic_pokemon_by_level(5,5)
 				Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ELETUX")
-		Global.pokemon_group.append(poke)
+		Global.add_poke_to_party(poke)
 
 		yield(Global.game.get_node("Effect_music"), "finished")
 		Global.game.get_node("Effect_music").stop()

@@ -31,7 +31,7 @@ var ev_yield_sp_defense = 0
 var ev_yield_speed = 0
 
 # The pokemon's base experience yield when defeated
-var exp_yield : int = 64
+var exp_yield : int = 144
 
 # The pokemon's leveling rate
 var leveling_rate = ERRATIC
@@ -41,13 +41,13 @@ enum {SLOW, MEDIUM_SLOW, MEDIUM_FAST, FAST, ERRATIC, FLUCTUATING}
 var male_ratio = null
 
 # The pokemon's evolution level
-var evolution_level = 50
+var evolution_level
 
 # The pokemon's evolution ID
-var evolution_ID = 56
+var evolution_ID
 
 # The pokemon's catch rate
-var catch_rate = 180
+var catch_rate = 90
 
 # Weight in kg
 var weight = 207.5

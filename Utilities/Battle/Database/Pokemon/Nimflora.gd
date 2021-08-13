@@ -63,7 +63,7 @@ var moveset = [
 	MoveSet.new(15, "Stun Spore"),
 	MoveSet.new(15, "Sleep Powder"),
 	MoveSet.new(22, "Struggle Bug"),
-	MoveSet.new(25, "Draining Kiss")
+	MoveSet.new(25, "Draining Kiss"),
 	MoveSet.new(29, "Helping Hand"),
 	MoveSet.new(32, "Confuse Ray"),
 	MoveSet.new(34, "Acrobatics"),

@@ -1,6 +1,6 @@
 extends Object
 class_name registry
-var pokemon = {
+const pokemon = {
 	1: "Orchynx",
 	2: "Metalynx",
 	3: "Raptorch",
@@ -206,7 +206,7 @@ var pokemon = {
 	203: "Gengar"
 	
 }
-func get_pokemon_class(id):
+static func get_pokemon_class(id):
 	return load("res://Utilities/Battle/Database/Pokemon/" + pokemon[id] + ".gd").new()
 
 func duplicate_pokemon(original):

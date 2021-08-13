@@ -7,7 +7,7 @@ var pokedex_count = 0
 var location : String = ""
 var money : int = 0
 var pokedex_seen = [] # list of id numbers
-var pokedex_owned = [] # list of id numbers
+var pokedex_caught = [] # list of id numbers
 
 var onGrass = false
 var grass_positions = []
@@ -37,6 +37,8 @@ var block_wild = false
 
 var rng
 
+var registry
+
 #signal setup_items
 signal loaded
 
@@ -45,6 +47,8 @@ func _ready():
 	rng.randomize()
 	add_to_group("save")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+
+	registry = load("res://Utilities/Battle/Database/Pokemon/registry.gd").new()
 	
 	
 
@@ -69,7 +73,7 @@ func save_state():
 		"past_events": past_events,
 		"inventory": inventory.get_save_state(),
 		"pokedex_seen": pokedex_seen,
-		"pokedex_owned" : pokedex_owned
+		"pokedex_caught" : pokedex_caught
 	}
 	SaveSystem.set_state(filename, state)
 func load_state():
@@ -84,7 +88,11 @@ func load_state():
 		pokemon_group = state["pokemon_group"]
 		past_events = state["past_events"]
 		pokedex_seen = state["pokedex_seen"]
-		pokedex_owned = state["pokedex_owned"]
+
+		if state.has("pokedex_caught"):
+			pokedex_caught = state["pokedex_caught"]
+		elif state.has("pokedex_owned"):
+			pokedex_caught = state["pokedex_owned"]
 
 		inventory = load("res://Utilities/Items/Inventory.gd").new()
 		inventory.set_save_state(state["inventory"])
@@ -95,8 +103,8 @@ func heal_party(): # Heals all of the player's pokemon party.
 		poke.heal()
 func add_poke_to_party(poke : Pokemon):
 	# Add to owned dex list
-	if !pokedex_owned.has(poke.ID):
-		pokedex_owned.append(poke.ID)
+	if !pokedex_caught.has(poke.ID):
+		pokedex_caught.append(poke.ID)
 		
 	if pokemon_group.size() >= 6:
 		print("party already full")

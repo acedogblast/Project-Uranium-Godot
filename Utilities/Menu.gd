@@ -32,6 +32,7 @@ func _ready():
 	
 	$Bag.connect("close_bag", self, "close_bag")
 	$PokemonPartyMenu.connect("close_party", self, "close_party")
+	$Pokedex.connect("close", self, "close_dex")
 	
 	current = ORDER.PARTY
 	init_pos = $Option_Text.rect_position
@@ -143,23 +144,32 @@ func hide_all():
 	pass
 
 
-func select():
-	if current == ORDER.SAVE && menu_stage == 1:
-		menu_stage = 2
+func select(): # Stage should be 1
+	menu_stage = 2
+	if current == ORDER.SAVE:
 		setup_save_boxes()
 		$Save_Menu.visible = true
 		$Yes_no.visible = true
 		DialogueSystem.start_dialog("UI_MENU_SAVE_PROMPT")
-	elif current == ORDER.BAG && menu_stage == 1:
-		menu_stage = 2
+	elif current == ORDER.BAG:
 		$Bag.enabled = true
 		bag_logic()
-	elif current == ORDER.CARD && menu_stage == 1:
-		menu_stage = 2
-	elif current == ORDER.PARTY && menu_stage == 1:
-		menu_stage = 2
+	elif current == ORDER.CARD:
+		menu_stage = 1
+		return
+	elif current == ORDER.PARTY:
 		$PokemonPartyMenu.stage = 1
 		party_logic()
+	elif current == ORDER.POKEDEX:
+		$Transition.fade_to_color()
+		yield($Transition, "finished")
+		hide_all()
+		$Pokedex.start()
+		$Pokedex.show()
+		$Transition.fade_from_color()
+		yield($Transition, "finished")
+		$Transition.visible = false
+	
 
 func move_sprites(dir):
 	if dir == "Left":
@@ -286,6 +296,7 @@ func close_bag():
 	$Bag.enabled = false
 	$Transition.show()
 	$Transition.fade_to_color()
+	yield($Transition, "finished")
 	hide_all()
 	$Bag.hide()
 	show_base()
@@ -306,3 +317,12 @@ func close_party():
 	menu_stage = 1
 	$Transition.fade_from_color()
 	
+func close_dex():
+	$Pokedex.mode = 0
+	$Transition.show()
+	$Transition.fade_to_color()
+	yield($Transition, "finished")
+	$Pokedex.hide()
+	show_base()
+	menu_stage = 1
+	$Transition.fade_from_color()

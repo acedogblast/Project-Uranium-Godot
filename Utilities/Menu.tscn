@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Utilities/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Pictures/MENU/menubg.png" type="Texture" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://Audio/SE/save.wav" type="AudioStream" id=21]
 [ext_resource path="res://Utilities/Bag.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Utilities/PokemonPartyMenu.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Utilities/Pokedex.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Utilities/Transition.tscn" type="PackedScene" id=34]
 [ext_resource path="res://Graphics/Pictures/trcard.PNG" type="Texture" id=36]
 [ext_resource path="res://Graphics/Pictures/trcardbg.png" type="Texture" id=37]
@@ -1002,3 +1003,6 @@ volume_db = -6.0
 stream = ExtResource( 21 )
 
 [node name="Transition" parent="." instance=ExtResource( 34 )]
+
+[node name="Pokedex" parent="." instance=ExtResource( 24 )]
+visible = false

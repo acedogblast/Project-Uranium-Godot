@@ -500,6 +500,12 @@ func battle_loop():
 					
 					if action.captured:
 						message = Global.TrainerName + " captured \n"
+
+						# Add to pokedex caught list
+						if !Global.pokedex_caught.has(battler2.ID):
+							Global.pokedex_caught.append(battler2.ID)
+
+
 					else:
 						message = Global.TrainerName + " defeated \n"
 					message += get_opponent_title()
@@ -836,6 +842,11 @@ func battle_loop():
 					$CanvasLayer/BattleInterfaceLayer/Message.visible = false
 
 					$CanvasLayer/BattleGrounds.foe_unveil()
+
+					# Add to pokedex if new
+					if !Global.pokedex_seen.has(next_poke.ID):
+						Global.pokedex_seen.append(next_poke.ID)
+
 					yield($CanvasLayer/BattleGrounds, "unveil_finished")
 			pass
 		_:

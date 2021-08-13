@@ -31,7 +31,7 @@ var ev_yield_sp_defense = 1
 var ev_yield_speed = 0
 
 # The pokemon's base experience yield when defeated
-var exp_yield : int = 64
+var exp_yield : int = 62
 
 # The pokemon's leveling rate
 var leveling_rate = ERRATIC

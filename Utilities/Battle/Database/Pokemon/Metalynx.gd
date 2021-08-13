@@ -69,6 +69,6 @@ var moveset = [
 	MoveSet.new(34, "Iron Tail"),
 	MoveSet.new(38, "Night Slash"),
 	MoveSet.new(41, "Swords Dance"),
-	MoveSet.new(46, "Energy Ball")
+	MoveSet.new(46, "Energy Ball"),
 	MoveSet.new(51, "Meteor Mash")
 ]

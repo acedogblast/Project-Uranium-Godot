@@ -15,7 +15,7 @@ enum {
 	WATER,
 	GRASS,
 	ELECTRIC,
-	PSYCHC,
+	PSYCHIC,
 	ICE,
 	DRAGON,
 	DARK,
@@ -135,7 +135,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 0.5
 				GRASS:
 					return 2.0
-				PSYCHC:
+				PSYCHIC:
 					return 2.0
 				DARK:
 					return 2.0
@@ -147,7 +147,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 0.0
 				GHOST:
 					return 2.0
-				PSYCHC:
+				PSYCHIC:
 					return 2.0
 				DARK:
 					return 0.5
@@ -235,7 +235,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 0.5
 				DRAGON:
 					return 0.5
-		PSYCHC:
+		PSYCHIC:
 			match defending_type:
 				FIGHTING:
 					return 2.0
@@ -243,7 +243,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 2.0
 				STEEL:
 					return 0.5
-				PSYCHC:
+				PSYCHIC:
 					return 0.5
 				DARK:
 					return 0.0
@@ -277,7 +277,7 @@ static func type_advantage_matrix(attack_type, defending_type) -> float:
 					return 0.5
 				GHOST:
 					return 2.0
-				PSYCHC:
+				PSYCHIC:
 					return 2.0
 				DARK:
 					return 0.5
