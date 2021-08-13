@@ -46,6 +46,7 @@ func _process(delta):
 				current = OPTIONS.ITEMS
 			change_selected()
 			update_detail()
+			update_data()
 			animate()
 		elif Input.is_action_just_pressed("ui_left"):
 			if current > OPTIONS.ITEMS:
@@ -54,6 +55,7 @@ func _process(delta):
 				current = OPTIONS.KEY_ITEMS
 			change_selected()
 			update_detail()
+			update_data()
 			animate()
 		elif Input.is_action_just_pressed("ui_down"):
 			#print("Down1")
@@ -238,163 +240,186 @@ func reset_frames():
 	pass
 
 func update_data():
-	
-	# setup items
-	for c in $items/items.get_children():
-		$items/items.remove_child(c)
-	if !Global.inventory.items.empty():
-		var temp_current = 0
-		for i in Global.inventory.items:
-			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i.get_name()
-			base.position.y += temp_current * 48
-			if temp_current == 0:
-				base.get_child(0).frame = 1
+	$empty_text.hide()
+	match current:
+		OPTIONS.ITEMS:
+			# setup items
+			for c in $items/items.get_children():
+				$items/items.remove_child(c)
+			if !Global.inventory.items.empty():
+				var temp_current = 0
+				for i in Global.inventory.items:
+					var base = $items/base_item_panel.duplicate()
+					base.get_child(1).bbcode_text = i.get_name()
+					base.position.y += temp_current * 48
+					if temp_current == 0:
+						base.get_child(0).frame = 1
+					else:
+						base.get_child(0).frame = 0
+					base.show()
+					$items/items.add_child(base)
+					temp_current += 1
 			else:
-				base.get_child(0).frame = 0
-			base.show()
-			$items/items.add_child(base)
-			temp_current += 1
-	
-	# setup medicine
-	for c in $items/medicine.get_children():
-		$items/medicine.remove_child(c)
-	if !Global.inventory.medicine.empty():
-		var temp_current = 0
-		for i in Global.inventory.medicine:
-			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i.get_name()
-			base.position.y += temp_current * 48
-			if temp_current == 0:
-				base.get_child(0).frame = 1
+				$empty_text.show()
+		OPTIONS.MEDICINE:
+			# setup medicine
+			for c in $items/medicine.get_children():
+				$items/medicine.remove_child(c)
+			if !Global.inventory.medicine.empty():
+				var temp_current = 0
+				for i in Global.inventory.medicine:
+					var base = $items/base_item_panel.duplicate()
+					base.get_child(1).bbcode_text = i.get_name()
+					base.position.y += temp_current * 48
+					if temp_current == 0:
+						base.get_child(0).frame = 1
+					else:
+						base.get_child(0).frame = 0
+					base.show()
+					$items/medicine.add_child(base)
+					temp_current += 1
 			else:
-				base.get_child(0).frame = 0
-			base.show()
-			$items/medicine.add_child(base)
-			temp_current += 1
-	
-	# setup balls
-	for c in $items/balls.get_children():
-		$items/balls.remove_child(c)
-	if !Global.inventory.balls.empty():
-		var temp_current = 0
-		for i in Global.inventory.balls:
-			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i.get_name()
-			base.position.y += temp_current * 48
-			if temp_current == 0:
-				base.get_child(0).frame = 1
+				$empty_text.show()
+		OPTIONS.BALLS:
+			# setup balls
+			for c in $items/balls.get_children():
+				$items/balls.remove_child(c)
+			if !Global.inventory.balls.empty():
+				var temp_current = 0
+				for i in Global.inventory.balls:
+					var base = $items/base_item_panel.duplicate()
+					base.get_child(1).bbcode_text = i.get_name()
+					base.position.y += temp_current * 48
+					if temp_current == 0:
+						base.get_child(0).frame = 1
+					else:
+						base.get_child(0).frame = 0
+					base.show()
+					$items/balls.add_child(base)
+					temp_current += 1
 			else:
-				base.get_child(0).frame = 0
-			base.show()
-			$items/balls.add_child(base)
-			temp_current += 1
-	
-	# setup tms
-	for c in $items/tms.get_children():
-		$items/tms.remove_child(c)
-	if Global.inventory.TMs.empty():
-		var temp_current = 0
-		for i in Global.inventory.TMs:
-			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i.get_name()
-			base.position.y += temp_current * 48
-			if temp_current == 0:
-				base.get_child(0).frame = 1
+				$empty_text.show()
+		OPTIONS.TMs:
+			# setup tms
+			for c in $items/tms.get_children():
+				$items/tms.remove_child(c)
+			if Global.inventory.TMs.empty():
+				var temp_current = 0
+				for i in Global.inventory.TMs:
+					var base = $items/base_item_panel.duplicate()
+					base.get_child(1).bbcode_text = i.get_name()
+					base.position.y += temp_current * 48
+					if temp_current == 0:
+						base.get_child(0).frame = 1
+					else:
+						base.get_child(0).frame = 0
+					base.show()
+					$items/tms.add_child(base)
+					temp_current += 1
 			else:
-				base.get_child(0).frame = 0
-			base.show()
-			$items/tms.add_child(base)
-			temp_current += 1
-	
-	# setup berries
-	for c in $items/berries.get_children():
-		$items/berries.remove_child(c)
-	if Global.inventory.berries.empty():
-		var temp_current = 0
-		for i in Global.inventory.berries:
-			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i.get_name()
-			base.position.y += temp_current * 48
-			if temp_current == 0:
-				base.get_child(0).frame = 1
+				$empty_text.show()
+		OPTIONS.BERRIES:
+			# setup berries
+			for c in $items/berries.get_children():
+				$items/berries.remove_child(c)
+			if Global.inventory.berries.empty():
+				var temp_current = 0
+				for i in Global.inventory.berries:
+					var base = $items/base_item_panel.duplicate()
+					base.get_child(1).bbcode_text = i.get_name()
+					base.position.y += temp_current * 48
+					if temp_current == 0:
+						base.get_child(0).frame = 1
+					else:
+						base.get_child(0).frame = 0
+					base.show()
+					$items/berries.add_child(base)
+					temp_current += 1
 			else:
-				base.get_child(0).frame = 0
-			base.show()
-			$items/berries.add_child(base)
-			temp_current += 1
-	
-	# setup battle_items
-	for c in $items/battle_items.get_children():
-		$items/battle_items.remove_child(c)
-	if Global.inventory.battle_items.empty():
-		var temp_current = 0
-		for i in Global.inventory.battle_items:
-			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i.get_name()
-			base.position.y += temp_current * 48
-			if temp_current == 0:
-				base.get_child(0).frame = 1
+				$empty_text.show()
+		OPTIONS.BATTLE_ITEMS:
+			# setup battle_items
+			for c in $items/battle_items.get_children():
+				$items/battle_items.remove_child(c)
+			if Global.inventory.battle_items.empty():
+				var temp_current = 0
+				for i in Global.inventory.battle_items:
+					var base = $items/base_item_panel.duplicate()
+					base.get_child(1).bbcode_text = i.get_name()
+					base.position.y += temp_current * 48
+					if temp_current == 0:
+						base.get_child(0).frame = 1
+					else:
+						base.get_child(0).frame = 0
+					base.show()
+					$items/battle_items.add_child(base)
+					temp_current += 1
 			else:
-				base.get_child(0).frame = 0
-			base.show()
-			$items/battle_items.add_child(base)
-			temp_current += 1
-	
-	# setup key_items
-	for c in $items/key_items.get_children():
-		$items/key_items.remove_child(c)
-	if Global.inventory.key_items.empty():
-		var temp_current = 0
-		for i in Global.inventory.key_items:
-			var base = $items/base_item_panel.duplicate()
-			base.get_child(1).bbcode_text = i.get_name()
-			base.position.y += temp_current * 48
-			if temp_current == 0:
-				base.get_child(0).frame = 1
+				$empty_text.show()
+		OPTIONS.KEY_ITEMS:
+			# setup key_items
+			for c in $items/key_items.get_children():
+				$items/key_items.remove_child(c)
+			if Global.inventory.key_items.empty():
+				var temp_current = 0
+				for i in Global.inventory.key_items:
+					var base = $items/base_item_panel.duplicate()
+					base.get_child(1).bbcode_text = i.get_name()
+					base.position.y += temp_current * 48
+					if temp_current == 0:
+						base.get_child(0).frame = 1
+					else:
+						base.get_child(0).frame = 0
+					base.show()
+					$items/key_items.add_child(base)
+					temp_current += 1
 			else:
-				base.get_child(0).frame = 0
-			base.show()
-			$items/key_items.add_child(base)
-			temp_current += 1
+				$empty_text.show()
+	
 
 func update_detail():
 	var item_icon
 	var section_empty = true
 	match current:
-		0:
+		OPTIONS.ITEMS:
 			if !Global.inventory.items.empty():
 				item_icon = Global.inventory.items[selected_item[current]].get_item_id()
 				section_empty = false
-		1:
+		OPTIONS.MEDICINE:
 			if !Global.inventory.medicine.empty():
 				item_icon = Global.inventory.medicine[selected_item[current]].get_item_id()
 				section_empty = false
-		2:
+		OPTIONS.BALLS:
 			if !Global.inventory.balls.empty():
 				item_icon = Global.inventory.balls[selected_item[current]].get_item_id()
 				section_empty = false
-		3:
+		OPTIONS.TMs:
 			if !Global.inventory.TMs.empty():
 				item_icon = Global.inventory.TMs[selected_item[current]].get_item_id()
 				section_empty = false
-		4:
+		OPTIONS.BERRIES:
 			if !Global.inventory.berries.empty():
 				item_icon = Global.inventory.berries[selected_item[current]].get_item_id()
 				section_empty = false
-		5:
+		OPTIONS.BATTLE_ITEMS:
 			if !Global.inventory.battle_items.empty():
 				item_icon = Global.inventory.battle_items[selected_item[current]].get_item_id()
 				section_empty = false
-		6:
+		OPTIONS.KEY_ITEMS:
 			if !Global.inventory.key_items.empty():
 				item_icon = Global.inventory.key_items[selected_item[current]].get_item_id()
 				section_empty = false
 	
 	if Global.inventory == null || Global.inventory.is_empty() || section_empty:
 		$Details/icon.hide()
+		$Details/text.hide()
+		$Details/name.hide()
+		$Details/quantity.hide()
 		return
 	$Details/icon.show()
+	$Details/text.show()
+	$Details/name.show()
+	$Details/quantity.show()
 	match current:
 		OPTIONS.ITEMS:
 			$Details/icon.texture = null

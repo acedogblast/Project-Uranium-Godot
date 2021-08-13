@@ -96,7 +96,7 @@ func _input(event):
 					DialogueSystem.reset()
 					menu_stage = 1
 			ORDER.BAG:
-				bag_logic()
+				#bag_logic()
 				pass
 			ORDER.CARD:
 				$Transition.fade_to_color()
@@ -116,12 +116,15 @@ func party_logic():
 	$Transition.visible = false
 
 
-func bag_logic():
+func bag_setup():
+	$Transition.visible = true
 	$Transition.fade_to_color()
+	yield($Transition, "finished")
 	hide_all()
 	$Bag.setup()
 	$Bag.show()
 	$Transition.fade_from_color()
+	yield($Transition, "finished")
 	$Transition.visible = false
 
 
@@ -153,7 +156,7 @@ func select(): # Stage should be 1
 		DialogueSystem.start_dialog("UI_MENU_SAVE_PROMPT")
 	elif current == ORDER.BAG:
 		$Bag.enabled = true
-		bag_logic()
+		bag_setup()
 	elif current == ORDER.CARD:
 		menu_stage = 1
 		return
