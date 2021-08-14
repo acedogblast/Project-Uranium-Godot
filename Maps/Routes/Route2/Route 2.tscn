@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Utilities/Route1Idle_Poke.tres" type="Animation" id=9]
 [ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Utilities/CliffEdge.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -132,3 +133,19 @@ position = Vector2( 656, 1072 )
 scene_destination = "res://Maps/Caves/Passage Cave.tscn"
 location = Vector2( 560, 2384 )
 door_type = "Type 3 - Invisible"
+
+[node name="CliffEdge" parent="NPC_Layer" instance=ExtResource( 12 )]
+position = Vector2( 624, 48 )
+size = 3
+
+[node name="CliffEdge2" parent="NPC_Layer" instance=ExtResource( 12 )]
+position = Vector2( 528, 176 )
+size = 3
+
+[node name="CliffEdge3" parent="NPC_Layer" instance=ExtResource( 12 )]
+position = Vector2( 880, 368 )
+size = 5
+
+[node name="CliffEdge4" parent="NPC_Layer" instance=ExtResource( 12 )]
+position = Vector2( 816, 560 )
+size = 5

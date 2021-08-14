@@ -28,7 +28,7 @@ func _ready():
 	$CanvasLayer/Fade.modulate = Color(1.0,1.0,1.0,0.0)
 
 	#Makes player an instance of Player, makes it a child, and adds it to the group save
-	player = load("res://Utilities/PlayerNew.tscn").instance()
+	player = load("res://Utilities/Player.tscn").instance()
 	add_child(player)
 
 	if OS.is_debug_build():

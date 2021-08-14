@@ -29,6 +29,9 @@ var found_grass = false
 var entering_grass = false
 var exiting_grass = false
 
+var blocked = false
+var do_jump = false
+
 #signal step
 signal step
 signal done_movement
@@ -125,22 +128,53 @@ func get_input():
 	var ahead
 	match direction:
 		DIRECTION.UP:
-			ahead = position + Vector2(0, -32)
+			ahead = get_position_relative_to_current_scene() + Vector2(0, -32)
 		DIRECTION.DOWN:
-			ahead = position + Vector2(0, 32)
+			ahead = get_position_relative_to_current_scene() + Vector2(0, 32)
 		DIRECTION.LEFT:
-			ahead = position + Vector2(-32, 0)
+			ahead = get_position_relative_to_current_scene() + Vector2(-32, 0)
 		DIRECTION.RIGHT:
-			ahead = position + Vector2(32, 0)
+			ahead = get_position_relative_to_current_scene() + Vector2(32, 0)
 	var is_door_ahead = false
 	for door in get_tree().get_nodes_in_group("Doors"):
-		var door_pos = door.position + Global.game.current_scene.position
+		#var door_pos = door.position + Global.game.current_scene.position
+		var door_pos = door.position
 		if door_pos.x == ahead.x && (door_pos.y >= ahead.y - 4 && door_pos.y <= ahead.y + 4):
 			is_door_ahead = true
 			#print("door is ahead")
 			door.transition()
 			return
 	
+	# Check if cliff is ahead
+	var the_cliff = null
+	for cliff in get_tree().get_nodes_in_group("Cliff"):
+		var cliff_positions = cliff.get_cliff_positions()
+		if cliff_positions.has(ahead):
+			the_cliff = cliff
+			break
+	do_jump = false
+	blocked = false
+	if the_cliff != null:
+		match direction:
+			DIRECTION.UP:
+				if the_cliff.jump_direction == "Up":
+					do_jump = true
+			DIRECTION.DOWN:
+				if the_cliff.jump_direction == "Down":
+					do_jump = true
+			DIRECTION.LEFT:
+				if the_cliff.jump_direction == "Left":
+					do_jump = true
+			DIRECTION.RIGHT:
+				if the_cliff.jump_direction == "Right":
+					do_jump = true
+		
+		if do_jump:
+			jump()
+			return
+		else:
+			blocked = true
+
 	#If input is disabled then you cannot move
 	if !inputDisabled:
 		move(false)
@@ -212,6 +246,10 @@ func move(force_move : bool):
 		move_direction.x = 32
 		move_direction.y = -32
 	last_facing_dir = direction
+
+	if blocked:
+		move_direction = Vector2.ZERO
+
 	# Grass logic
 	var grass1 = $Grass/Sprite # Current grass under player
 	var grass2 = $Grass/Sprite2 # Grass player is moving to
@@ -249,6 +287,7 @@ func move(force_move : bool):
 	
 	# Play bump effect is player can't move
 	if move_direction == Vector2.ZERO: #TODO: add delay 
+		$AudioStreamPlayer2D.stream = load("res://Audio/SE/bump.WAV")
 		$AudioStreamPlayer2D.play(0.0)
 	
 	# Start Tween
@@ -617,3 +656,52 @@ func trainer_encounter():
 				emit_signal("trainer_battle", trainer)
 				return
 	pass
+
+func get_position_relative_to_current_scene():
+	return self.position - Global.game.current_scene.position
+
+func jump():
+	canMove = false
+	Global.game.menu.locked = true
+	set_process(false)
+
+	move_direction = Vector2.ZERO
+	if direction == DIRECTION.DOWN:
+		move_direction.y = 64
+	if direction == DIRECTION.UP:
+		move_direction.y = -64
+	if direction == DIRECTION.LEFT:
+		move_direction.x = -64
+	if direction == DIRECTION.RIGHT:
+		move_direction.x = 64
+
+	$Tween.interpolate_property(self, "position", self.position, self.position + move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	$AudioStreamPlayer2D.stream = load("res://Audio/SE/jump.wav")
+	$AudioStreamPlayer2D.play(0.0)
+
+	$Tween.start()
+	$AnimationPlayer.play("Jump")
+	yield($Tween, "tween_all_completed")
+
+	var grass_found
+	for pos in Global.grass_positions:
+		if Global.game.player.position + move_direction == pos: # Should be only one of all grass positions.
+			#print("Grass found!")
+			grass_found = true
+
+			if !Global.onGrass:
+				entering_grass = true
+			Global.onGrass = true
+			break
+	if !grass_found: # No grass on next position
+		if Global.onGrass:
+			exiting_grass = true
+		Global.onGrass = false
+	
+	set_grass(direction)
+	
+	canMove = true
+	Global.game.menu.locked = false
+	set_idle_frame()
+	set_process(true)
+	

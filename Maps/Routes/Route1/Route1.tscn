@@ -15,12 +15,10 @@
 [ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Graphics/Characters/HGSS_003.png" type="Texture" id=14]
 [ext_resource path="res://Utilities/Route1Idle_Poke.tres" type="Animation" id=15]
+[ext_resource path="res://Utilities/CliffEdge.tscn" type="PackedScene" id=16]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 16, 80 )
 
 [node name="Route01" type="Node2D"]
 script = ExtResource( 6 )
@@ -190,9 +188,7 @@ type = "Smashable Rock"
 position = Vector2( 496, 560 )
 type = "Smashable Rock"
 
-[node name="Block" type="StaticBody2D" parent="NPC_Layer"]
-position = Vector2( 1808, 1360 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Layer/Block"]
-position = Vector2( 0, 32 )
-shape = SubResource( 2 )
+[node name="CliffEdge" parent="NPC_Layer" instance=ExtResource( 16 )]
+position = Vector2( 1808, 1328 )
+size = 5
+jump_direction = "Right"

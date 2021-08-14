@@ -172,8 +172,6 @@ func select(): # Stage should be 1
 		$Transition.fade_from_color()
 		yield($Transition, "finished")
 		$Transition.visible = false
-		
-		pass
 	else:
 		menu_stage = 1
 	
