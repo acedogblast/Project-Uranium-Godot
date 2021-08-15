@@ -152,8 +152,10 @@ func start_dialog(text):
 	load_text(tr(text))
 	pop_event()
 
-	if(point_to):
-		show_arrow(point_to)
+	if(force_arrow && point_to != null):
+		show_arrow(point_to) # Makes arrow visable
+	else:
+		$Arrow.hide()
 
 	if text_lines == 1:
 		$Box/Text1.bbcode_text = self.text[0]

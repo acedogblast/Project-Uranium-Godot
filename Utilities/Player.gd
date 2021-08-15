@@ -147,7 +147,7 @@ func get_input():
 	
 	# Check if cliff is ahead
 	var the_cliff = null
-	for cliff in get_tree().get_nodes_in_group("Cliff"):
+	for cliff in Global.game.cliffs:
 		var cliff_positions = cliff.get_cliff_positions()
 		if cliff_positions.has(ahead):
 			the_cliff = cliff

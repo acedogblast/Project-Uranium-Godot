@@ -9,6 +9,7 @@ var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene
 var scenes = []
 var trainers = [] # array of trainers in the current scene
+var cliffs = []
 
 var loaded = false
 var isInteracting = false
@@ -179,6 +180,10 @@ func change_scene(scene):
 	trainers.clear()
 	trainers = current_scene.get_tree().get_nodes_in_group("trainers")
 
+	# Get cliffs
+	cliffs.clear()
+	cliffs = get_cliffs()
+
 	# Load adjacent sceens
 	if "adjacent_scenes" in current_scene && current_scene.adjacent_scenes != null && current_scene.adjacent_scenes.size() != 0:
 		for scene_array in current_scene.adjacent_scenes:
@@ -281,6 +286,7 @@ func interaction(check_pos : Vector2, direction): # Starts the dialogue instead 
 #Wait .1 second, set isInteracting to false, and emit the signal event_dialogue_end
 func dialog_end():
 	yield(get_tree().create_timer(0.1), "timeout")
+	DialogueSystem.set_show_arrow(false)
 	isInteracting = false
 	emit_signal("event_dialogue_end")
 	
@@ -318,10 +324,11 @@ func load_state(): # Automatically called when loading a save file
 		emit_signal("loaded")
 
 func play_dialogue(title): # Plays a dialogue without freezing player
-	DialogueSystem.set_point_to(Vector2(0,0))
+	DialogueSystem.set_show_arrow(false)
 	DialogueSystem.start_dialog(title)
 	
 func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and without freezing player
+	DialogueSystem.set_show_arrow(true)
 	DialogueSystem.set_point_to(vector2)
 	DialogueSystem.start_dialog(title)
 
@@ -445,3 +452,10 @@ func player_defeated():
 func clock_timeout():
 	Global.time += 1
 	print("Tick")
+
+func get_cliffs():
+	var nodes = []
+	for node in current_scene.get_node("NPC_Layer").get_children():
+		if node.is_in_group("Cliff"):
+			nodes.append(node)
+	return nodes

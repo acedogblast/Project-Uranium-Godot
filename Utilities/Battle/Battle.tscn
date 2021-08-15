@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=2]
+[gd_scene load_steps=114 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -44,6 +44,7 @@
 [ext_resource path="res://Utilities/Battle/BattleAttackSelect.gd" type="Script" id=42]
 [ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=43]
 [ext_resource path="res://Utilities/Battle/StatChange.tres" type="Animation" id=44]
+[ext_resource path="res://Graphics/Pictures/BATTLE/choiceSel.png" type="Texture" id=45]
 [ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=46]
 [ext_resource path="res://Graphics/Pictures/pause.png" type="Texture" id=47]
 [ext_resource path="res://Utilities/Dialogue Box Arrow.tres" type="Animation" id=48]
@@ -62,6 +63,8 @@
 [ext_resource path="res://Audio/SE/jumptoball.wav" type="AudioStream" id=61]
 [ext_resource path="res://Audio/SE/balldrop.wav" type="AudioStream" id=62]
 [ext_resource path="res://Audio/SE/ballshake.wav" type="AudioStream" id=63]
+[ext_resource path="res://Graphics/Pictures/BATTLE/shadeRest.png" type="Texture" id=64]
+[ext_resource path="res://Utilities/NewMove.tscn" type="PackedScene" id=65]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Return"
@@ -3031,12 +3034,69 @@ hframes = 4
 autoplay = "Dialogue Box Arrow"
 "anims/Dialogue Box Arrow" = ExtResource( 48 )
 
+[node name="YesNo" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer"]
+visible = false
+
+[node name="BG" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
+margin_right = 512.0
+margin_bottom = 296.0
+texture = ExtResource( 64 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Yes" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
+position = Vector2( 170, 260 )
+texture = ExtResource( 45 )
+hframes = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/YesNo/Yes"]
+margin_left = -72.0
+margin_top = -11.0
+margin_right = 71.0
+margin_bottom = 18.0
+custom_fonts/font = ExtResource( 33 )
+text = "Yes"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="No" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
+position = Vector2( 350, 260 )
+texture = ExtResource( 45 )
+hframes = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer/BattleInterfaceLayer/YesNo/No"]
+margin_left = -73.0
+margin_top = -14.0
+margin_right = 74.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 33 )
+text = "No"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Select" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
+position = Vector2( 170, 260 )
+texture = ExtResource( 45 )
+hframes = 2
+frame = 1
+
+[node name="NewMove" parent="CanvasLayer/BattleInterfaceLayer" instance=ExtResource( 65 )]
+visible = false
+
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 

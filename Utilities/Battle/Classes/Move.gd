@@ -43,3 +43,5 @@ var target_ability
 # The main status effect of the move.
 var main_status_effect # = StatStageEffect.new(0, 0, 0, 0, 0, 0, 0) attack, defense, sp_attack, sp_defense, speed, accuracy, evasion
 
+# The description of the move.
+var description

@@ -49,7 +49,7 @@ func _ready():
 	$CanvasLayer/BattleGrounds/FoeBase/Battler.hide()
 	$CanvasLayer/BattleGrounds/FoeBase/Battler.position = Vector2(140, -80)
 	$CanvasLayer/BattleGrounds/FoeBase/Battler.scale = Vector2(0.2, 0.2)
-
+	$CanvasLayer/BattleInterfaceLayer/YesNo.hide()
 	action_timer = Timer.new()
 	self.add_child(action_timer)
 	action_timer.connect("timeout", self, "action_timeout")
@@ -67,6 +67,16 @@ func _process(_delta):
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		emit_signal("continue_pressed")
+
+	if $CanvasLayer/BattleInterfaceLayer/YesNo.visible:
+		if event.is_action_pressed("ui_left"):
+			$CanvasLayer/BattleInterfaceLayer/YesNo/Select.position = Vector2(170, 260)
+			$CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand/AudioStreamPlayer.play()
+		if event.is_action_pressed("ui_right"):
+			$CanvasLayer/BattleInterfaceLayer/YesNo/Select.position = Vector2(350, 260)
+			$CanvasLayer/BattleInterfaceLayer/BattleComandSelect/SelHand/AudioStreamPlayer.play()
+		pass
+	
 
 
 func Start_Battle(bid : BattleInstanceData):
@@ -673,7 +683,101 @@ func battle_loop():
 					$CanvasLayer/BattleInterfaceLayer/Message.visible = false
 					$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = false
 				else:	
-					#TODO when pokedex is made
+					var done = false
+
+					while !done:
+						$CanvasLayer/BattleInterfaceLayer/Message/Label.text = battler1.name + " is trying to learn " + new_moves + "."
+						$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+						$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+						yield(self, "continue_pressed")
+						$CanvasLayer/BattleInterfaceLayer/Message/Label.text = "But " + battler1.name + " can't learn more than four moves."
+						$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+						$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+						yield(self, "continue_pressed")
+
+						$CanvasLayer/BattleInterfaceLayer/YesNo/Select.position = Vector2(170,260)
+						$CanvasLayer/BattleInterfaceLayer/YesNo.show()
+
+						$CanvasLayer/BattleInterfaceLayer/Message/Label.text = "Delete a move to make room for " + new_moves + "?"
+						$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+						$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+						yield(self, "continue_pressed")
+
+						if $CanvasLayer/BattleInterfaceLayer/YesNo/Select.position == Vector2(170,260): # Yes replace move
+							$CanvasLayer/BattleInterfaceLayer/Message/Label.text = "Which move should be forgotten?"
+							$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+							$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+							yield(self, "continue_pressed")
+
+							# Fade to pokedex
+							$CanvasLayer/BattleInterfaceLayer/YesNo.hide()
+							$CanvasLayer/ColorRect/AnimationPlayer.play("FadeIn")
+							yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+							
+							$CanvasLayer/BattleInterfaceLayer/NewMove.setup(battler1, MoveDataBase.get_move_by_name(new_moves))
+							$CanvasLayer/BattleInterfaceLayer/NewMove.mode = 1
+							$CanvasLayer/BattleInterfaceLayer/NewMove.show()
+
+							$CanvasLayer/ColorRect/AnimationPlayer.play("FadeOut")
+							yield($CanvasLayer/BattleInterfaceLayer/NewMove, "close")
+
+							$CanvasLayer/ColorRect/AnimationPlayer.play("FadeIn")
+							yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+							$CanvasLayer/BattleInterfaceLayer/NewMove.hide()
+
+							$CanvasLayer/ColorRect/AnimationPlayer.play("FadeOut")
+							yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+
+							if $CanvasLayer/BattleInterfaceLayer/NewMove.selection != 0:
+								$CanvasLayer/BattleInterfaceLayer/Message/Label.text = "1, 2, and... ... ..."
+								$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+								$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+								yield(self, "continue_pressed")
+
+								$CanvasLayer/BattleInterfaceLayer/Message/Label.text = "Poof!"
+								$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+								$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+								yield(self, "continue_pressed")
+
+								var old_move_name
+								match $CanvasLayer/BattleInterfaceLayer/NewMove.selection:
+									1:
+										old_move_name = battler1.move_1.name
+										battler1.move_1 = MoveDataBase.get_move_by_name(new_moves)
+									2:
+										old_move_name = battler1.move_2.name
+										battler1.move_2 = MoveDataBase.get_move_by_name(new_moves)
+									3:
+										old_move_name = battler1.move_3.name
+										battler1.move_3 = MoveDataBase.get_move_by_name(new_moves)
+									4:
+										old_move_name = battler1.move_4.name
+										battler1.move_4 = MoveDataBase.get_move_by_name(new_moves)
+								$CanvasLayer/BattleInterfaceLayer/Message/Label.text = battler1.name + " forgot " + old_move_name + "."
+								$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+								$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+								yield(self, "continue_pressed")
+
+								$CanvasLayer/BattleInterfaceLayer/Message/Label.text = "And..."
+								$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+								$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+								yield(self, "continue_pressed")
+
+								$CanvasLayer/BattleInterfaceLayer/Message/Label.text = battler1.name + " learned " + new_moves + "!"
+								$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+								$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+								yield(self, "continue_pressed")
+								done = true
+							else:
+								continue
+							pass
+						else: # No skip
+							$CanvasLayer/BattleInterfaceLayer/Message/Label.text = battler1.name + " did not learn " + new_moves + "."
+							$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+							$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
+							done = true
+							yield(self, "continue_pressed")
+
 					pass
 					
 		action.UPDATE_MAJOR_AILMENT: # To be remade as update bars

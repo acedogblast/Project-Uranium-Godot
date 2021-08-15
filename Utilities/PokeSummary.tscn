@@ -1,0 +1,434 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Graphics/Pictures/Summary/summarybgoverlay.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/Pictures/Summary/summarybg.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Pictures/Summary/summary1text.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/Pictures/Summary/summary1.PNG" type="Texture" id=4]
+[ext_resource path="res://Utilities/PokeSummary.gd" type="Script" id=5]
+[ext_resource path="res://Graphics/Pictures/normalbar.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/Pictures/Summary/summaryicons.png" type="Texture" id=7]
+[ext_resource path="res://Graphics/Pictures/updownarrows.png" type="Texture" id=8]
+[ext_resource path="res://Graphics/Pictures/globalicons.png" type="Texture" id=9]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=10]
+[ext_resource path="res://Graphics/Pictures/typesbw.png" type="Texture" id=11]
+[ext_resource path="res://Graphics/Pictures/Summary/summaryball00.png" type="Texture" id=12]
+[ext_resource path="res://Graphics/Battlers/003.png" type="Texture" id=13]
+[ext_resource path="res://Graphics/Pictures/Summary/summary2.png" type="Texture" id=14]
+[ext_resource path="res://Graphics/Pictures/Summary/summary2text.png" type="Texture" id=15]
+[ext_resource path="res://Graphics/Pictures/Summary/summary3text.png" type="Texture" id=16]
+[ext_resource path="res://Graphics/Pictures/Summary/summary1_2.png" type="Texture" id=17]
+[ext_resource path="res://Graphics/Pictures/Summary/summary4text.png" type="Texture" id=18]
+[ext_resource path="res://Graphics/Pictures/Summary/summary3.PNG" type="Texture" id=19]
+
+[sub_resource type="Animation" id=1]
+resource_name = "BG_overlay"
+length = 12.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 12 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Rect2( 0, 0, 512, 384 ), Rect2( 512, 384, 512, 384 ) ]
+}
+
+[node name="Summary" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="BG" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Grid" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.392157 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 512, 384 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Grid"]
+autoplay = "BG_overlay"
+anims/BG_overlay = SubResource( 1 )
+
+[node name="Page1" type="Node2D" parent="."]
+visible = false
+
+[node name="Title" type="TextureRect" parent="Page1"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="TextureRect" parent="Page1"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="DexNo" type="Label" parent="Page1"]
+margin_left = 32.0
+margin_top = 50.0
+margin_right = 145.0
+margin_bottom = 74.0
+custom_fonts/font = ExtResource( 10 )
+text = "Dex No."
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Page1/DexNo"]
+margin_left = 133.0
+margin_right = 246.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Page1"]
+margin_left = 32.0
+margin_top = 84.0
+margin_right = 145.0
+margin_bottom = 108.0
+custom_fonts/font = ExtResource( 10 )
+text = "Name"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Page1/Name"]
+margin_left = 133.0
+margin_right = 246.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "Godot"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Type" type="Label" parent="Page1"]
+margin_left = 32.0
+margin_top = 117.0
+margin_right = 145.0
+margin_bottom = 140.0
+custom_fonts/font = ExtResource( 10 )
+text = "Type"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="T1" type="Sprite" parent="Page1/Type"]
+position = Vector2( 165, 12 )
+texture = ExtResource( 11 )
+vframes = 20
+
+[node name="T2" type="Sprite" parent="Page1/Type"]
+position = Vector2( 234, 12 )
+texture = ExtResource( 11 )
+vframes = 20
+
+[node name="OT" type="Label" parent="Page1"]
+margin_left = 32.0
+margin_top = 148.0
+margin_right = 145.0
+margin_bottom = 171.0
+custom_fonts/font = ExtResource( 10 )
+text = "OT"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Page1/OT"]
+margin_left = 133.0
+margin_right = 246.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0, 0, 1, 1 )
+text = "Ace"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ID" type="Label" parent="Page1"]
+margin_left = 32.0
+margin_top = 180.0
+margin_right = 145.0
+margin_bottom = 203.0
+custom_fonts/font = ExtResource( 10 )
+text = "ID No."
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Page1/ID"]
+margin_left = 133.0
+margin_right = 246.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "0000000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EXP" type="Label" parent="Page1"]
+margin_left = 32.0
+margin_top = 212.0
+margin_right = 145.0
+margin_bottom = 235.0
+custom_fonts/font = ExtResource( 10 )
+text = "Exp. Points"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Page1/EXP"]
+margin_left = 133.0
+margin_top = 32.0
+margin_right = 246.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "0000000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Item" type="Label" parent="Page1"]
+margin_left = 283.0
+margin_top = 274.0
+margin_right = 397.0
+margin_bottom = 298.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "Item"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="Page1/Item"]
+margin_left = -1.0
+margin_top = 30.0
+margin_right = 112.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "None"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Page2" type="Node2D" parent="."]
+visible = false
+
+[node name="Title" type="TextureRect" parent="Page2"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="TextureRect" parent="Page2"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Page3" type="Node2D" parent="."]
+visible = false
+
+[node name="Title" type="TextureRect" parent="Page3"]
+margin_right = 512.0
+margin_bottom = 40.0
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="TextureRect" parent="Page3"]
+margin_right = 512.0
+margin_bottom = 384.0
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Page4" type="Node2D" parent="."]
+
+[node name="Title" type="TextureRect" parent="Page4"]
+margin_right = 512.0
+margin_bottom = 40.0
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="TextureRect" parent="Page4"]
+margin_right = 512.0
+margin_bottom = 384.0
+texture = ExtResource( 19 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 400, 150 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 13 )
+hframes = 80
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Lv" type="Label" parent="."]
+margin_left = 323.0
+margin_top = 68.0
+margin_right = 436.0
+margin_bottom = 92.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "Lv. 5"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="."]
+margin_left = 361.0
+margin_top = 38.0
+margin_right = 475.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "Name"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Gender" type="Label" parent="."]
+margin_left = 485.0
+margin_top = 38.0
+margin_right = 501.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
+text = "♀"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Ball" type="TextureRect" parent="."]
+margin_left = 323.0
+margin_top = 35.0
+margin_right = 363.0
+margin_bottom = 75.0
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BottomBar" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BG" type="TextureRect" parent="BottomBar"]
+margin_top = 336.0
+margin_right = 512.0
+margin_bottom = 384.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Status" type="Sprite" parent="BottomBar"]
+position = Vector2( 45, 360 )
+texture = ExtResource( 7 )
+hframes = 4
+vframes = 2
+
+[node name="Status2" type="Sprite" parent="BottomBar"]
+position = Vector2( 120, 360 )
+texture = ExtResource( 7 )
+hframes = 4
+vframes = 2
+frame = 1
+
+[node name="Status3" type="Sprite" parent="BottomBar"]
+position = Vector2( 195, 360 )
+texture = ExtResource( 7 )
+hframes = 4
+vframes = 2
+frame = 2
+
+[node name="Status4" type="Sprite" parent="BottomBar"]
+position = Vector2( 270, 360 )
+texture = ExtResource( 7 )
+hframes = 4
+vframes = 2
+frame = 3
+
+[node name="Up" type="Sprite" parent="BottomBar"]
+position = Vector2( 330, 360 )
+texture = ExtResource( 8 )
+hframes = 2
+vframes = 3
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Down" type="Sprite" parent="BottomBar"]
+position = Vector2( 380, 360 )
+texture = ExtResource( 8 )
+hframes = 2
+vframes = 3
+frame = 1
+
+[node name="Back" type="Sprite" parent="BottomBar"]
+position = Vector2( 485, 340 )
+texture = ExtResource( 9 )
+hframes = 3
+vframes = 2
+frame = 3
