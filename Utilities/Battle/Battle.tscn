@@ -1,4 +1,4 @@
-[gd_scene load_steps=114 format=2]
+[gd_scene load_steps=115 format=2]
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
@@ -65,6 +65,7 @@
 [ext_resource path="res://Audio/SE/ballshake.wav" type="AudioStream" id=63]
 [ext_resource path="res://Graphics/Pictures/BATTLE/shadeRest.png" type="Texture" id=64]
 [ext_resource path="res://Utilities/NewMove.tscn" type="PackedScene" id=65]
+[ext_resource path="res://Utilities/Evolution.tscn" type="PackedScene" id=66]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Return"
@@ -3088,6 +3089,9 @@ hframes = 2
 frame = 1
 
 [node name="NewMove" parent="CanvasLayer/BattleInterfaceLayer" instance=ExtResource( 65 )]
+visible = false
+
+[node name="Evolution" parent="CanvasLayer/BattleInterfaceLayer" instance=ExtResource( 66 )]
 visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]

@@ -150,6 +150,10 @@ func update_stats() -> LevelUpChanges: # Needs to be called every time a stat ch
 	changes.spAtk_change = sp_attack - changes.spAtk_change
 	changes.spDef_change = sp_defense - changes.spDef_change
 	changes.speed_change = speed - changes.speed_change
+
+	# Additional changes for evolution if applicable
+	type1 = data.type1
+	type2 = data.type2
 	
 	return changes
 
@@ -202,7 +206,7 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 				move_3 = MoveDataBase.get_move_by_name(moveset.pop_front())
 			3: 
 				move_4 = MoveDataBase.get_move_by_name(moveset.pop_front())
-func get_cry():
+func get_cry() -> String:
 	return "res://Audio/SE/" + str("%03d" % ID) + "Cry.wav"
 func get_battle_foe_sprite() -> Sprite:
 	var sprite = Sprite.new()
@@ -223,8 +227,12 @@ func get_battle_foe_sprite() -> Sprite:
 	if sprite.texture.get_width() != 80:
 		var frames = sprite.texture.get_width() / 80
 		sprite.hframes = frames
-		
-		# To do: Add animation to battler
+		var tween = Tween.new()
+		sprite.add_child(tween)
+		tween.interpolate_property(sprite, "frame", 0, frames, 1.0, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+		tween.repeat = true
+		tween.start()
+
 	sprite.name = "Sprite"
 	sprite.material = ShaderMaterial.new()
 	#var effect = load("res://Graphics/Pictures/StatUp.png")

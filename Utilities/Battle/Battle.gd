@@ -21,6 +21,7 @@ var player_won = false
 
 var battle_debug = true
 var action_timer
+var leveled_up_pokes = []
 
 signal wait
 signal EndOfBattleLoop
@@ -50,6 +51,7 @@ func _ready():
 	$CanvasLayer/BattleGrounds/FoeBase/Battler.position = Vector2(140, -80)
 	$CanvasLayer/BattleGrounds/FoeBase/Battler.scale = Vector2(0.2, 0.2)
 	$CanvasLayer/BattleInterfaceLayer/YesNo.hide()
+	$CanvasLayer/BattleInterfaceLayer/Evolution.hide()
 	action_timer = Timer.new()
 	self.add_child(action_timer)
 	action_timer.connect("timeout", self, "action_timeout")
@@ -546,6 +548,34 @@ func battle_loop():
 						# Make a copy of the pokemon
 						var copy = registry.duplicate_pokemon(battle_instance.opponent.pokemon_group[0])
 						Global.add_poke_to_party(copy)
+
+					# Check for evolutions
+					for poke in leveled_up_pokes:
+						var poke_class = Global.registry.get_pokemon_class(poke.ID)
+						var evolution_level = poke_class.evolution_level
+						var evolution_ID = poke_class.evolution_ID
+						if evolution_level != null && poke.level >= evolution_level:
+							$CanvasLayer/AudioStreamPlayer.stop()
+							$CanvasLayer/BattleInterfaceLayer/Evolution.setup(poke, evolution_ID)
+							$CanvasLayer/ColorRect/AnimationPlayer.play("FadeIn")
+							yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+
+							$CanvasLayer/BattleInterfaceLayer/Evolution.show()
+							$CanvasLayer/ColorRect/AnimationPlayer.play("FadeOut")
+							yield($CanvasLayer/ColorRect/AnimationPlayer, "animation_finished")
+							$CanvasLayer/BattleInterfaceLayer/Evolution.run()
+
+							yield($CanvasLayer/BattleInterfaceLayer/Evolution, "close")
+
+							# Logically change the poke
+							var evolve_class = Global.registry.get_pokemon_class(evolution_ID)
+							if poke.name == poke_class.name: # Not using nickname
+								poke.name = evolve_class.name
+							poke.ID = evolution_ID
+							poke.update_stats()
+							$CanvasLayer/ColorRect/AnimationPlayer.play("FadeIn")
+
+
 				else: # Player loses
 					var message = Global.TrainerName + " has no more Pokémon that can fight!"
 					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
@@ -632,6 +662,10 @@ func battle_loop():
 			$CanvasLayer/BattleInterfaceLayer/BattleBars.call_deferred("reset_player_exp_bar")
 		action.LEVEL_UP:
 			action_timer.stop()
+
+			if !leveled_up_pokes.has(battler1):
+				leveled_up_pokes.append(battler1)
+
 			# Update player bar
 			$CanvasLayer/BattleInterfaceLayer/BattleBars.set_player_bar_by_pokemon(battler1)
 			# Set exp bar to zero

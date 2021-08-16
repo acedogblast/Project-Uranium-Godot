@@ -204,7 +204,6 @@ const pokemon = {
 	201: "Gastly",
 	202: "Haunter",
 	203: "Gengar"
-	
 }
 static func get_pokemon_class(id):
 	return load("res://Utilities/Battle/Database/Pokemon/" + pokemon[id] + ".gd").new()
