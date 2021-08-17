@@ -10,6 +10,14 @@ var type = "Outside"
 var place_name = "Nowtoch City"
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	update_NPCs()
+
+func update_NPCs():
+	if !Global.past_events.has("NOWTOCH_CITY_EVENT_1"):
+		
+
+
+
+
+		pass

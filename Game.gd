@@ -27,6 +27,7 @@ func _ready():
 	Global.game = self
 	menu = $CanvasLayer/Menu
 	$CanvasLayer/Fade.modulate = Color(1.0,1.0,1.0,0.0)
+	$BG.show()
 
 	#Makes player an instance of Player, makes it a child, and adds it to the group save
 	player = load("res://Utilities/Player.tscn").instance()
