@@ -39,6 +39,50 @@ func _ready():
 		$FullPanel/Load.region_rect = greenLoad
 
 		# set Load pannel to data of save001.tres
+		var save = SaveSystem.load_file(save_id)
+		var global_state = save.get_data("")
+		var game_state = save.get_data("res://Game.tscn")
+
+		var current_scene = load(game_state["current_scene"])
+		var current_scene_instance = current_scene.instance()
+
+		$FullPanel/Load/Location.text = current_scene_instance.place_name
+		match global_state["TrainerGender"]:
+			0:
+				$FullPanel/Load/Player.texture = load("res://Graphics/Characters/HERO.png")
+			1:
+				$FullPanel/Load/Player.texture = load("res://Graphics/Characters/PU-Pluto.png")
+			2:
+				$FullPanel/Load/Player.texture = load("res://Graphics/Characters/HEROINE.png")
+
+		$FullPanel/Load/Badges/Value.text = str(global_state["badges"])
+		$FullPanel/Load/Pokedex/Value.text = str(global_state["pokedex_caught"].size())
+		var minutes = global_state["time"]
+		$FullPanel/Load/Time/Value.text = str("%02d" % (minutes / 60)) + ":" + str("%02d" % (minutes % 60))
+		var poke_group = global_state["pokemon_group"]
+		var index = 0
+		for poke in poke_group:
+			match index:
+				0:
+					$FullPanel/Load/P1.texture = poke.get_icon_texture()
+					$FullPanel/Load/P1.show()
+				1:
+					$FullPanel/Load/P2.texture = poke.get_icon_texture()
+					$FullPanel/Load/P2.show()
+				2:
+					$FullPanel/Load/P3.texture = poke.get_icon_texture()
+					$FullPanel/Load/P3.show()
+				3:
+					$FullPanel/Load/P4.texture = poke.get_icon_texture()
+					$FullPanel/Load/P4.show()
+				4:
+					$FullPanel/Load/P5.texture = poke.get_icon_texture()
+					$FullPanel/Load/P5.show()
+				5:
+					$FullPanel/Load/P6.texture = poke.get_icon_texture()
+					$FullPanel/Load/P6.show()
+			index += 1
+
 
 
 

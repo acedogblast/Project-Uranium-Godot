@@ -7,9 +7,10 @@ Please note that this game is neither developed by, nor endorsed by Nintendo, Ga
 
 # Why am I doing this?
 Because Pokemon Uranium is a great game but has technical flaws. 
-One is that the game's performance is bad because it is built with the aging game engine, RPG Maker XP. This engine uses directdraw, an old and obsolete graphics API, that performs badly with today's computers. 
-Two is that it only supports the Windows PC platform. With Godot the game can run on Windows, Mac, Linux and Android support is also planned.
-Lastly I could fix existing bugs in the game.
+The original Pokémon Uranium was developed using Pokémon Essentials on the RPG Maker XP game engine. This remake project uses Godot, an modern game engine that is free and open source. Using Godot has several major advantages over RPG Maker XP. 
+
+Godot is cross platform which means it can run on many different platforms natively such as Windows, MacOS (Both intel and M1 based), Linux, *BSD, Android, iOS, and even on web browsers. 
+RPG Maker XP is just limited to Windows and requires 3rd party efforts such as wine and joiplay to run on other platforms suboptimally. This project aims to support as many platforms that Godot supports.
 
 # Current progress
 Only a limited portion of the game is playable currently.

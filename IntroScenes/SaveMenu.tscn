@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://IntroScenes/SaveMenu.gd" type="Script" id=1]
 [ext_resource path="res://Audio/SE/Choose.WAV" type="AudioStream" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Graphics/Pictures/loadPanels.png" type="Texture" id=4]
 [ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Graphics/Characters/PU-Pluto.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/Icons/icon003.png" type="Texture" id=7]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 4 )
@@ -74,6 +75,10 @@ stream = ExtResource( 2 )
 margin_right = 512.0
 margin_bottom = 384.0
 texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
 
 [node name="Panels" type="Node2D" parent="."]
 visible = false
@@ -108,6 +113,9 @@ text = "UI_SAVEMENU_EXIT"
 
 [node name="FullPanel" type="Node2D" parent="."]
 position = Vector2( 50, 32 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Load" type="Sprite" parent="FullPanel"]
 texture = ExtResource( 4 )
@@ -190,12 +198,13 @@ __meta__ = {
 }
 
 [node name="Location" type="Label" parent="FullPanel/Load"]
-margin_left = 200.0
+margin_left = 180.0
 margin_top = 12.0
-margin_right = 400.0
+margin_right = 395.0
 margin_bottom = 26.0
 custom_fonts/font = SubResource( 2 )
 text = "Location"
+align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -203,12 +212,48 @@ __meta__ = {
 [node name="Player" type="Sprite" parent="FullPanel/Load"]
 position = Vector2( 64, 88 )
 texture = ExtResource( 6 )
-vframes = 4
 hframes = 4
+vframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="FullPanel/Load/Player"]
 autoplay = "Walk"
 anims/Walk = SubResource( 5 )
+
+[node name="P1" type="Sprite" parent="FullPanel/Load"]
+visible = false
+position = Vector2( 280, 76 )
+texture = ExtResource( 7 )
+hframes = 2
+
+[node name="P2" type="Sprite" parent="FullPanel/Load"]
+visible = false
+position = Vector2( 350, 76 )
+texture = ExtResource( 7 )
+hframes = 2
+
+[node name="P3" type="Sprite" parent="FullPanel/Load"]
+visible = false
+position = Vector2( 280, 126 )
+texture = ExtResource( 7 )
+hframes = 2
+
+[node name="P4" type="Sprite" parent="FullPanel/Load"]
+visible = false
+position = Vector2( 350, 126 )
+texture = ExtResource( 7 )
+hframes = 2
+
+[node name="P5" type="Sprite" parent="FullPanel/Load"]
+visible = false
+position = Vector2( 280, 176 )
+texture = ExtResource( 7 )
+hframes = 2
+
+[node name="P6" type="Sprite" parent="FullPanel/Load"]
+visible = false
+position = Vector2( 350, 176 )
+texture = ExtResource( 7 )
+hframes = 2
 
 [node name="NewGame" type="TextureRect" parent="FullPanel"]
 margin_left = 18.0

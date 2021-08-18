@@ -3,7 +3,6 @@ var TrainerName : String = "TrainerName"
 var TrainerGender = 0 # 0 is boy, 1 is neutral, 2 is girl
 var badges = 0
 var time : int = 0 # number of minutes spend in-game
-var pokedex_count = 0
 var location : String = ""
 var money : int = 0
 var pokedex_seen = [] # list of id numbers
@@ -67,7 +66,6 @@ func save_state():
 		"TrainerGender": TrainerGender,
 		"badges": badges,
 		"time": time,
-		"pokedex_count": pokedex_count,
 		"can_run": can_run,
 		"pokemon_group": pokemon_group,
 		"past_events": past_events,
@@ -88,7 +86,6 @@ func load_state():
 		if typeof(state["time"]) == TYPE_INT:
 			time = state["time"]
 			
-		pokedex_count = state["pokedex_count"]
 		can_run = state["can_run"]
 		pokemon_group = state["pokemon_group"]
 		past_events = state["past_events"]
@@ -102,6 +99,8 @@ func load_state():
 		inventory = load("res://Utilities/Items/Inventory.gd").new()
 		inventory.set_save_state(state["inventory"])
 		
+		badges = state["badges"]
+
 		emit_signal("loaded")
 func heal_party(): # Heals all of the player's pokemon party.
 	for poke in pokemon_group:
