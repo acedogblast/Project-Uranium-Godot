@@ -75,7 +75,57 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		queue.push(action)
 	
 	if player_command.command_type == player_command.USE_BAG_ITEM:
-		print("Using item: " + str(player_command.item))
+		var item = load("res://Utilities/Items/database.gd").new().get_item_by_id(player_command.item)
+		print("Using item: " + item.name)
+
+		if player_command.item >= 170 && player_command.item <= 181: # Potion / Medicin
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = Global.TrainerName + " used the\n" + item.name + "."
+			queue.push(action)
+			
+			var effected_poke = Global.pokemon_group[player_command.attack_target]
+
+			match item.id:
+				170: # Potion
+					print("Before heal hp: " + str(effected_poke.current_hp))
+					var heal_amount = 20
+					if effected_poke.current_hp + heal_amount > effected_poke.hp:
+						effected_poke.current_hp = effected_poke.hp
+					else:
+						effected_poke.current_hp += heal_amount
+					print("After heal hp: " + str(effected_poke.current_hp))
+
+				171: # Super Potion
+					var heal_amount = 50
+					if effected_poke.current_hp + heal_amount > effected_poke.hp:
+						effected_poke.current_hp = effected_poke.hp
+					else:
+						effected_poke.current_hp += heal_amount
+				172: # Hyper Potion
+					var heal_amount = 200
+					if effected_poke.current_hp + heal_amount > effected_poke.hp:
+						effected_poke.current_hp = effected_poke.hp
+					else:
+						effected_poke.current_hp += heal_amount
+				173: # Max Potion
+					effected_poke.current_hp = effected_poke.hp
+				174: # Full Restore
+					effected_poke.current_hp = effected_poke.hp
+					effected_poke.major_ailment = null
+				176, 177, 178, 179, 180, 181: # Heals. NOTE: Not checked if the heal matches the ailment. Should be done before.
+					effected_poke.major_ailment = null
+			action = BattleQueueAction.new()
+			action.type = action.UPDATE_BARS
+			queue.push(action)
+
+			action = BattleQueueAction.new()
+			action.type = action.BATTLE_TEXT
+			action.battle_text = effected_poke.name + "'s HP was restored."
+			queue.push(action)
+
+
+
 		if player_command.item >= 208 && player_command.item <= 232 && battle_instance.battle_type == BattleInstanceData.BattleType.SINGLE_WILD: # Item is a type of pokeball
 			action = BattleQueueAction.new()
 			action.type = action.SET_BALL

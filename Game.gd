@@ -20,6 +20,7 @@ var player_defeated = false # True when player lost a battle and transioning to 
 signal event_dialogue_end
 signal tranistion_complete
 signal loaded
+signal end_of_event
 
 onready var transition = $CanvasLayer/Transition
 
@@ -400,8 +401,6 @@ func wild_battle():
 	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
 	battle.queue_free()
 	release_player()
-	#player.canMove = true
-	#Global.game.menu.locked = false
 func trainer_battle(bid : BattleInstanceData):
 	lock_player()
 	Global.game.get_node("Background_music").stop()
@@ -460,3 +459,26 @@ func get_cliffs():
 		if node.is_in_group("Cliff"):
 			nodes.append(node)
 	return nodes
+
+func recive_item(item_name_or_ID):
+	var item
+	var pocket
+	if typeof(item_name_or_ID) == TYPE_STRING:
+		item = Global.inventory.get_item_by_name(item_name_or_ID)
+	if typeof(item_name_or_ID) == TYPE_INT:
+		item = Global.inventory.get_item_by_id(item_name_or_ID)
+	
+	Global.game.get_node("Background_music").stream_paused = true
+	var sound = load("res://Audio/ME/Jingle - Regular Item.ogg")
+	sound.loop = false
+	Global.game.get_node("Effect_music").stream = sound
+	Global.game.get_node("Effect_music").play()
+
+	Global.game.play_dialogue(Global.TrainerName + " found one\n" + item.name + "!")
+	yield(Global.game, "event_dialogue_end")
+
+	Global.game.play_dialogue(Global.TrainerName + " put the " + item.name + "\nin the " + Global.inventory.get_pocket_name(item) + ".")
+	yield(Global.game, "event_dialogue_end")
+	Global.game.get_node("Background_music").stream_paused = false
+
+	emit_signal("end_of_event")

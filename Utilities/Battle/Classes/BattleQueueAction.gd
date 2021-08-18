@@ -15,6 +15,7 @@ enum {
 	HEAL,
 	LEVEL_UP,
 	LEVEL_UP_SE,
+	UPDATE_BARS,
 	UPDATE_MAJOR_AILMENT,
 	ESCAPE_SE,
 	BALL_CAPTURE_TOSS,
@@ -105,5 +106,7 @@ func get_type_name():
 			return "SWITCH_POKE"
 		NEXT_POKE:
 			return "NEXT_POKE"
+		UPDATE_BARS:
+			return "UPDATE_BARS"
 		_:
 			return str(self.type)

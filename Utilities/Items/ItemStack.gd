@@ -33,3 +33,14 @@ static func sort_ascending(a, b): # For sorting ItemStack objects in an array
 	if a.get_item_id() < b.get_item_id():
 		return true
 	return false
+
+
+func is_ball():
+	if item.id >= 208 && item.id <= 232:
+		return true
+	return false
+
+func is_potion():
+	if item.id >= 170 && item.id <= 181:
+		return true
+	return false

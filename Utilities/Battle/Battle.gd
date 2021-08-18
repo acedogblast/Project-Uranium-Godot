@@ -813,7 +813,9 @@ func battle_loop():
 							yield(self, "continue_pressed")
 
 					pass
-					
+		action.UPDATE_BARS: # Updates all bars
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.set_player_bar_by_pokemon(battler1)
+			$CanvasLayer/BattleInterfaceLayer/BattleBars.set_foe_bar_by_pokemon(battler2)
 		action.UPDATE_MAJOR_AILMENT: # To be remade as update bars
 			var battler1_ailment = $CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/MajorAilment
 			var battler2_ailment = $CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar/MajorAilment

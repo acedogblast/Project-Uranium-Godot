@@ -14,3 +14,24 @@ msgstr "It's crammed full of books about Pokémon \"Me and my Owten\", \"Jerbolt
 
 msgid "SMASHABLE_ROCK"
 msgstr "It's a rugged rock, but a\nPokémon may be able to smash it."
+
+msgid "POCKET_NAME_ITEMS"
+msgstr "Items Pocket"
+
+msgid "POCKET_NAME_MEDICINE"
+msgstr "Medicine Pocket"
+
+msgid "POCKET_NAME_BALLS"
+msgstr "Poké Balls Pocket"
+
+msgid "POCKET_NAME_TMS"
+msgstr "TMs Pocket"
+
+msgid "POCKET_NAME_BERRIES"
+msgstr "Berries Pocket"
+
+msgid "POCKET_NAME_BATTLE_ITEMS"
+msgstr "Battle Items Pocket"
+
+msgid "POCKET_NAME_KEY_ITEMS"
+msgstr "Key Items Pocket"

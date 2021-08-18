@@ -89,7 +89,7 @@ func add_item_multiple(item: Item, amount : int):
 func add_item_by_name(_name : String): # Adds a single item to the inventory
 	add_item(get_item_by_name(_name))
 
-func get_item_by_id(_id: int): # Adds a single item to the inventory
+func get_item_by_id(_id: int):
 	var database = load("res://Utilities/Items/database.gd").new()
 	return database.get_item_by_id(_id)
 
@@ -241,3 +241,23 @@ func get_save_state():
 func set_save_state(inventory_save_state):
 	for x in inventory_save_state:
 		add_item_by_id_multiple(x[0], x[1])
+
+func get_pocket_name(item : Item) -> String:
+	var pocket_name
+	match item.pocket:
+		ITEMS:
+			pocket_name = tr("POCKET_NAME_ITEMS")
+		MEDICINE:
+			pocket_name = tr("POCKET_NAME_MEDICINE")
+		BALLS:
+			pocket_name = tr("POCKET_NAME_BALLS")
+		TMS:
+			pocket_name = tr("POCKET_NAME_TMS")
+		BERRIES:
+			pocket_name = tr("POCKET_NAME_BERRIES")
+		BATTLE_ITEMS:
+			pocket_name = tr("POCKET_NAME_BATTLE_ITEMS")
+		KEY_ITEMS:
+			pocket_name = tr("POCKET_NAME_KEY_ITEMS")
+
+	return pocket_name

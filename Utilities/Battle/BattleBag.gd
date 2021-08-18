@@ -185,15 +185,40 @@ func _input(event):
 							selection = USE
 				3:
 					if selection == USE:
+						stage = 4
 						var command = BattleCommand.new()
 						command.command_type = command.USE_BAG_ITEM
 						command.item = get_item_stack().get_item_id()
 					
 						# If item is ball set target to foe.
-						command.attack_target = 2 # For single battles!
+						if get_item_stack().is_ball():
+							command.attack_target = 2 # For single battles!
 
-					
-						
+						if get_item_stack().is_potion():
+							var ani = self.get_parent().get_parent().get_node("ColorRect/AnimationPlayer")
+							var party = self.get_parent().get_node("PokemonPartyMenu")
+							ani.play("FadeIn")
+							yield(ani, "animation_finished")
+							self.hide()
+							party.setup(true)
+							party.set_prompt(tr("UI_PARTY_USE_ON_WHICH_POKE"))
+							party.mode = 2
+							party.show()
+							yield(party, "close_party")
+
+							if party.selection == party.CANCEL:
+								$BagMenu/Pages.visible = true
+								$BagMenu/Item.visible = false
+								stage = 2
+								update_selection()
+								return
+							else:
+								command.attack_target = party.selection # index of pokemon_group array!
+								ani.play("FadeIn")
+								yield(ani, "animation_finished")
+								party.hide()
+								ani.play("FadeOut")
+								yield(ani, "animation_finished")
 						
 						Global.inventory.remove_item(Global.inventory.get_item_by_id(command.item))
 						$AudioStreamPlayer.stream = load("res://Audio/SE/SE_Select1.wav")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_caves.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_watertiles+.tres" type="TileSet" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Graphics/Characters/HGSS_035.png" type="Texture" id=7]
 [ext_resource path="res://Graphics/Characters/HGSS_048.png" type="Texture" id=8]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=9]
+[ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=10]
 
 [node name="PassageCave" type="Node2D"]
 script = ExtResource( 5 )
@@ -159,3 +160,7 @@ trainer_reward = 400
 trainer_behavior = "Turning"
 seeking = true
 trainer_poke_group = [ [ 18, 8 ], [ 22, 6 ] ]
+
+[node name="Item" parent="NPC_Layer" instance=ExtResource( 10 )]
+position = Vector2( 752, 1328 )
+item_id = 210

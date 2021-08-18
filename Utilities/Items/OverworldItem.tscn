@@ -11,6 +11,7 @@ texture = ExtResource( 1 )
 hframes = 4
 vframes = 4
 script = ExtResource( 2 )
+type = "Pickable Item"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

@@ -192,3 +192,19 @@ type = "Smashable Rock"
 position = Vector2( 1808, 1328 )
 size = 5
 jump_direction = "Right"
+
+[node name="Item1" parent="NPC_Layer" instance=ExtResource( 13 )]
+position = Vector2( 1616, 240 )
+item_id = 170
+
+[node name="Item2" parent="NPC_Layer" instance=ExtResource( 13 )]
+position = Vector2( 944, 240 )
+item_id = 176
+
+[node name="Item3" parent="NPC_Layer" instance=ExtResource( 13 )]
+position = Vector2( 1008, 976 )
+item_id = 170
+
+[node name="Item4" parent="NPC_Layer" instance=ExtResource( 13 )]
+position = Vector2( 400, 304 )
+item_id = 176

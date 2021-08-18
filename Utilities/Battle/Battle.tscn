@@ -2854,6 +2854,7 @@ hframes = 3
 frame = 2
 
 [node name="BagMenu" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
+visible = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
 anims/Slide = SubResource( 45 )

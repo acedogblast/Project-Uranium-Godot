@@ -11,6 +11,11 @@ enum {
 
 var item_list = { # Can not pull data from Item or ItemStack from saves due to _init problems.
 	170: Item.new("Potion", "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points.", MEDICINE),
+	171: Item.new("Super Potion", "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 50 points.", MEDICINE),
+	172: Item.new("Hyper Potion", "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 200 points.", MEDICINE),
+	173: Item.new("Max Potion", "A spray-type medicine for wounds. It completely restores the HP of a single Pokémon.", MEDICINE),
+	174: Item.new("Max Potion", "A medicine that fully restores the HP and heals any status problems of a single Pokémon.", MEDICINE),
+	176: Item.new("Antidote", "A spray-type medicine. It lifts the effect of poison from one Pokémon.", MEDICINE),
 	211: Item.new("Pokéball", "A device for catching wild Pokémon. A capsule system that is thrown like a ball at the target.", BALLS),
 	210: Item.new("Great Ball", "A good, high-performance Poké Ball that provides a higher success rate for catching Pokémon than a standard Poké Ball.", BALLS)
 }

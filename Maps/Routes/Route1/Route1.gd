@@ -20,12 +20,22 @@ var trainer2
 var trainer3
 var trainer4
 
+# Items
+var item1
+var item2
+var item3
+var item4
+
 func _ready():
 	trainer1 = $NPC_Layer/Trainer1
 	trainer2 = $NPC_Layer/Trainer2
 	trainer3 = $NPC_Layer/Trainer3
 	trainer4 = $NPC_Layer/Trainer4
 	trainer4.turning_directions = ["Down", "Left"]
+	item1 = $NPC_Layer/Item1
+	item2 = $NPC_Layer/Item2
+	item3 = $NPC_Layer/Item3
+	item4 = $NPC_Layer/Item4
 
 	Global.game.player.connect("trainer_battle", self, "trainer_battle")
 
@@ -41,6 +51,19 @@ func _ready():
 	if Global.past_events.has("ROUTE1_TRAINER4_DEFEATED"):
 		trainer4.seeking = false
 		trainer4.defeated = true
+	if Global.past_events.has("ROUTE1_ITEM_1_TAKEN"):
+		item1.queue_free()
+		item1 = null
+	if Global.past_events.has("ROUTE1_ITEM_2_TAKEN"):
+		item2.queue_free()
+		item2 = null
+	if Global.past_events.has("ROUTE1_ITEM_3_TAKEN"):
+		item3.queue_free()
+		item3 = null
+	if Global.past_events.has("ROUTE1_ITEM_4_TAKEN"):
+		item4.queue_free()
+		item4 = null
+
 
 func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
 	if check_pos == $NPC_Layer/Trainer1.position:
@@ -71,7 +94,46 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		Global.game.play_dialogue_with_point("NPC_ROUTE1_CHYINMUNK" , $NPC_Layer/Chyinmunk.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 		Global.game.release_player()
-	pass
+	if item1 != null && check_pos == item1.position:
+		var item = item1
+		Global.game.lock_player()
+		Global.past_events.append("ROUTE1_ITEM_1_TAKEN")
+		Global.inventory.add_item_by_id_multiple(item.item_id, 1)
+		item.queue_free()
+		item1 = null
+		Global.game.recive_item(item.item_id)
+		yield(Global.game, "end_of_event")
+		Global.game.release_player()
+	if item2 != null && check_pos == item2.position:
+		var item = item2
+		Global.game.lock_player()
+		Global.past_events.append("ROUTE1_ITEM_2_TAKEN")
+		Global.inventory.add_item_by_id_multiple(item.item_id, 1)
+		item.queue_free()
+		item2 = null
+		Global.game.recive_item(item.item_id)
+		yield(Global.game, "end_of_event")
+		Global.game.release_player()
+	if item3 != null && check_pos == item3.position:
+		var item = item3
+		Global.game.lock_player()
+		Global.past_events.append("ROUTE1_ITEM_3_TAKEN")
+		Global.inventory.add_item_by_id_multiple(item.item_id, 1)
+		item.queue_free()
+		item3 = null
+		Global.game.recive_item(item.item_id)
+		yield(Global.game, "end_of_event")
+		Global.game.release_player()
+	if item4 != null && check_pos == item4.position:
+		var item = item4
+		Global.game.lock_player()
+		Global.past_events.append("ROUTE1_ITEM_4_TAKEN")
+		Global.inventory.add_item_by_id_multiple(item.item_id, 1)
+		item.queue_free()
+		item4 = null
+		Global.game.recive_item(item.item_id)
+		yield(Global.game, "end_of_event")
+		Global.game.release_player()
 
 func get_grass_cells():
 	return get_node("Tile Layer 1/PU_autotiles").get_used_cells()

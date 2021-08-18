@@ -317,7 +317,7 @@ func move(force_move : bool):
 	if "always_wild_gen_on_step" in Global.game.current_scene && Global.game.current_scene.always_wild_gen_on_step:
 		wild_gen_on_step = true
 
-	if (Global.onGrass || wild_gen_on_step) && !Global.block_wild:
+	if (Global.onGrass || wild_gen_on_step) && !Global.block_wild && move_direction != Vector2.ZERO:
 		wild_poke_encounter()
 
 	set_process(true)

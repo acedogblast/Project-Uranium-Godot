@@ -28,12 +28,16 @@ var trainer2
 var trainer3
 var trainer4
 
+# Items
+var item1
+
 func _ready():
 	trainer1 = $NPC_Layer/Trainer1
 	trainer2 = $NPC_Layer/Trainer2
 	#trainer3 = $NPC_Layer/Trainer3
 	#trainer4 = $NPC_Layer/Trainer4
 	#trainer4.turning_directions = ["Down", "Left"]
+	item1 = $NPC_Layer/Item1
 
 	Global.game.player.connect("trainer_battle", self, "trainer_battle")
 
@@ -49,7 +53,9 @@ func _ready():
 	if Global.past_events.has("ROUTE2_TRAINER4_DEFEATED"):
 		trainer4.seeking = false
 		trainer4.defeated = true
-
+	if Global.past_events.has("ROUTE2_ITEM_1_TAKEN"):
+		item1.queue_free()
+		item1 = null
 
 func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
 	if check_pos == $NPC_Layer/Trainer1.position:
@@ -81,6 +87,18 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		yield(Global.game, "event_dialogue_end")
 		Global.game.release_player()
 	pass
+
+	if item1 != null && check_pos == $NPC_Layer/Item1.position:
+		Global.game.lock_player()
+		Global.past_events.append("ROUTE2_ITEM_1_TAKEN")
+		Global.inventory.add_item_by_id_multiple(item1.item_id, 1)
+		item1.queue_free()
+		item1 = null
+		Global.game.recive_item($NPC_Layer/Item1.item_id)
+		yield(Global.game, "end_of_event")
+		Global.game.release_player()
+
+
 func trainer_battle(npc_trainer):
 	Global.game.lock_player()
 	npc_trainer.seeking = false

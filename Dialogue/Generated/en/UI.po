@@ -89,3 +89,7 @@ msgstr "Switch In"
 
 msgid "UI_PARTY_ALREADY_IN_BATTLE"
 msgstr " is already in battle!"
+
+# notice the space
+msgid "UI_PARTY_USE_ON_WHICH_POKE"
+msgstr "Use on which Pokémon?"

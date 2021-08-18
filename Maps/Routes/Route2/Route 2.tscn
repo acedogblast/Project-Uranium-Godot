@@ -149,3 +149,7 @@ size = 5
 [node name="CliffEdge4" parent="NPC_Layer" instance=ExtResource( 12 )]
 position = Vector2( 816, 560 )
 size = 5
+
+[node name="Item1" parent="NPC_Layer" instance=ExtResource( 10 )]
+position = Vector2( 528, 1360 )
+item_id = 170

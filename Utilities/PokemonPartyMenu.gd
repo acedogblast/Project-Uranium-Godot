@@ -25,7 +25,7 @@ var original_s4 = Vector2(256,112)
 var original_s5 = Vector2(0,192)
 var original_s6 = Vector2(256,208)
 
-var mode = 0 # 0 = out of battle, 1 = in battle, -2 = special
+var mode = 0 # 0 = out of battle, 1 = in battle, -2 = special, 2 = use item
 var cancel_locked = false
 signal close_party
 
@@ -151,13 +151,19 @@ func _input(event):
 									stage = 1
 									return
 								stage = 0
+								selection = CANCEL
 								emit_signal("close_party")
 						S1,S2,S3,S4,S5,S6: 
+							if mode == 2:
+								stage = 0
+								emit_signal("close_party")
+								return
 							stage = 2
 							$Prompt/NinePatchRect.rect_size = Vector2(360, 64)
 							multi_line = load("res://Utilities/UI/MultilinePrompt.tscn").instance()
 							add_child(multi_line)
 							var text_lines
+
 							if mode == 1: # In battle
 								text_lines = tr("UI_PARTY_SWITCH_IN") + ","
 								text_lines += tr("UI_PARTY_SUMMARY") + ","
@@ -526,3 +532,6 @@ func get_slot_original_pos_by_selection(var sel):
 			return original_s5
 		S6:
 			return original_s6
+func set_prompt(message : String):
+	$Prompt/Prompt.text = message
+	$Prompt/Prompt/Shadow.text = message
