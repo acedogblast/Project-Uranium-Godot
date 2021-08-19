@@ -455,6 +455,9 @@ func clock_timeout():
 
 func get_cliffs():
 	var nodes = []
+	if current_scene.get_node("NPC_Layer") == null:
+		return nodes
+
 	for node in current_scene.get_node("NPC_Layer").get_children():
 		if node.is_in_group("Cliff"):
 			nodes.append(node)
