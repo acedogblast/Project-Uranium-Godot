@@ -336,12 +336,10 @@ func play_dialogue_with_point(title, vector2): # Plays a dialogue with point and
 
 func lock_player(): # Locks player to prevent user input. Useful for events.
 	player.call_deferred("change_input", true)
-	#player.change_input(true)
 	Global.game.menu.locked = true
 	Global.block_wild = true
 func release_player(): # Releases player to prevent user input. Useful for events.
 	player.call_deferred("change_input", false)
-	#player.change_input(false)
 	Global.game.menu.locked = false
 	Global.block_wild = false
 

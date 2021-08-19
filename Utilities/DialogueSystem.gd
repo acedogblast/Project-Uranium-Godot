@@ -188,7 +188,7 @@ func _process(delta):
 				else: # Multi-line
 					$Box/Text1.visible_characters = $Box/Text1.text.length()
 					$Box/Text2.visible_characters = $Box/Text2.text.length()
-					pass
+					second_line_printed()
 				pass
 
 func finish_dialogue():

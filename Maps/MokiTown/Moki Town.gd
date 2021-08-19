@@ -47,13 +47,12 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 
 
 func block_exit(_body):
-	# Wait for player to stop moving
-	yield(Global.game.player, "step")
-
 	# Check if player has pokes
 	if (Global.pokemon_group.empty() && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE")):
-		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+		# Wait for player to stop moving
 		Global.game.lock_player()
+		yield(Global.game.player, "step")
+		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 		Global.game.play_dialogue("MOKI_TOWN_BLOCK")
 		yield(Global.game, "event_dialogue_end")
 		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.RIGHT, 1)
@@ -61,7 +60,9 @@ func block_exit(_body):
 		Global.game.release_player()
 		pass
 	if Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE") && !Global.past_events.has("EVENT_MOKI_TOWN_THEO_HOME_1"):
+		# Wait for player to stop moving
 		Global.game.lock_player()
+		yield(Global.game.player, "step")
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 		Global.game.play_dialogue_with_point("NPC_BAMBO_MOKI_TOWN_CATCH_DEMO_PREP_1", bambo.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
@@ -119,9 +120,9 @@ func event1(_body):
 		npc.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
 		npc_layer.add_child(npc)
 		
-		Global.game.player.direction = Global.game.player.DIRECTION.RIGHT
-		Global.game.player.call_deferred("set_idle_frame")
-		npc.position = Vector2(1104,496)
+		#Global.game.player.direction = Global.game.player.DIRECTION.RIGHT
+		Global.game.player.set_facing_direction(Global.game.player.DIRECTION.RIGHT)
+		npc.position = Vector2(1136,496)
 		npc.call_deferred("move_multi", "Left", 8)
 		yield(npc, "done_movement")
 		#print("NPC done")
@@ -142,20 +143,20 @@ func event2_prep():
 	bambo = load("res://Utilities/NPC.tscn").instance()
 	bambo.texture = load("res://Graphics/Characters/phone035.PNG")
 	npc_layer.add_child(bambo)
-	bambo.position = Vector2(464, 1424)
+	bambo.position = Vector2(496, 1424)
 	bambo.set_idle_frame("Right")
 
 	if Global.past_events.has("EVENT_MOKI_TOWN_THEO_HOME_1"):
 		theo = load("res://Utilities/NPC.tscn").instance()
 		theo.texture = load("res://Graphics/Characters/Rivaltheo.PNG")
 		npc_layer.add_child(theo)
-		theo.position = Vector2(496, 1456)
+		theo.position = Vector2(528, 1456)
 		theo.set_idle_frame("Left")
 	pass
 func event2():
 	Global.game.lock_player()
-
-	if Global.game.player.position == Vector2(496,1392):
+	yield(Global.game.player, "step")
+	if Global.game.player.position == Vector2(528,1392):
 		#Move player down
 		Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.DOWN, 1)
 		yield(Global.game.player, "done_movement")
@@ -192,7 +193,7 @@ func event2():
 	var chyinmunk = load("res://Utilities/NPC.tscn").instance()
 	chyinmunk.texture = load("res://Graphics/Characters/PU-Chyinmunk.png")
 	npc_layer.add_child(chyinmunk)
-	chyinmunk.position = Vector2(368, 1424)
+	chyinmunk.position = Vector2(400, 1424)
 	chyinmunk.set_idle_frame("Left")
 
 	# Play cry SE
@@ -221,7 +222,7 @@ func event2():
 	yield(Global.game, "event_dialogue_end")
 	
 	npc_layer.add_child(bambo_mon)
-	bambo_mon.position = Vector2(400, 1424)
+	bambo_mon.position = Vector2(432, 1424)
 	bambo_mon.set_idle_frame("Left")
 
 	Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_CAPTURE_DEMO_9", bambo.get_global_transform_with_canvas().get_origin())

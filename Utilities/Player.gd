@@ -136,12 +136,13 @@ func get_input():
 		DIRECTION.RIGHT:
 			ahead = get_position_relative_to_current_scene() + Vector2(32, 0)
 	var is_door_ahead = false
+	#print(ahead)
 	for door in get_tree().get_nodes_in_group("Doors"):
-		#var door_pos = door.position + Global.game.current_scene.position
 		var door_pos = door.position
-		if door_pos.x == ahead.x && (door_pos.y >= ahead.y - 4 && door_pos.y <= ahead.y + 4):
+		
+		if door_pos == ahead:
 			is_door_ahead = true
-			#print("door is ahead")
+			print("door is ahead")
 			door.transition()
 			return
 	
@@ -350,7 +351,7 @@ func load_texture():
 	$Position2D/Sprite.frame = 0
 	
 #Sets the sprite texture to the walkTexture and if the direction is not null then the sprite.frame is set to direction times 4
-func set_idle_frame(_dir = null):
+func set_idle_frame(_dir = null): # TO BE REMOVED! DO NOT USE. USE set_facing_direction instead
 	state = STATE.IDLE
 	$Position2D/Sprite.texture = walkTexture
 	if _dir == null: # Go with the last facing direction

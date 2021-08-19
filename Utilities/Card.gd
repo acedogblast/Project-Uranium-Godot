@@ -4,10 +4,6 @@ var mode = 0
 
 signal close
 
-func _ready():
-	setup()
-	pass
-
 func _input(event):
 	if mode == 1 && event.is_action_pressed("x"):
 		emit_signal("close")

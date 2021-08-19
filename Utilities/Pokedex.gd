@@ -32,7 +32,6 @@ func _ready():
 		$List.remove_child(n)
 		n.queue_free()
 
-	#start()
 func start():
 	setup_panels()
 	update_panels()

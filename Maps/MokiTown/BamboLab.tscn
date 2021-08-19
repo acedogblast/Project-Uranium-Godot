@@ -31041,7 +31041,7 @@ custom_offset = Vector2( 144, 0 )
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 240, 560 )
 scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
-location = Vector2( 528, 368 )
+location = Vector2( 560, 368 )
 exterior = false
 
 [node name="Tile Layer 3" type="TileMap" parent="."]

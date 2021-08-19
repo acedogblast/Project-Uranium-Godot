@@ -204,18 +204,29 @@ tracks/2/keys = {
 
 [node name="NPC" type="Node2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Tween" type="Tween" parent="."]
 
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 0, -16 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Sprite" type="Sprite" parent="Position2D"]
-position = Vector2( 0, -10 )
 hframes = 4
 vframes = 4
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Area2D" type="StaticBody2D" parent="Position2D/Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Position2D/Sprite/Area2D"]
 position = Vector2( 0, 16 )

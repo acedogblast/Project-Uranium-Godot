@@ -152,17 +152,24 @@ func select(): # Stage should be 1
 		$Bag.enabled = true
 		bag_setup()
 	elif current == ORDER.PARTY:
+		# Check if we have any pokes
+		if Global.pokemon_group.size() == 0:
+			menu_stage = 1
+			return
 		$PokemonPartyMenu.stage = 1
 		party_logic()
 	elif current == ORDER.POKEDEX:
-		$Transition.fade_to_color()
-		yield($Transition, "finished")
-		hide_all()
-		$Pokedex.start()
-		$Pokedex.show()
-		$Transition.fade_from_color()
-		yield($Transition, "finished")
-		$Transition.visible = false
+		if Global.past_events.has("EVENT_MOKI_TOWN_DEMO"):
+			$Transition.fade_to_color()
+			yield($Transition, "finished")
+			hide_all()
+			$Pokedex.start()
+			$Pokedex.show()
+			$Transition.fade_from_color()
+			yield($Transition, "finished")
+			$Transition.visible = false
+		else:
+			menu_stage = 1
 	elif current == ORDER.CARD:
 		$Transition.fade_to_color()
 		yield($Transition, "finished")
@@ -309,6 +316,7 @@ func close_bag():
 	$Transition.fade_from_color()
 
 func close_party():
+
 	$PokemonPartyMenu.stage = 0
 	$Transition.show()
 	$Transition.fade_to_color()

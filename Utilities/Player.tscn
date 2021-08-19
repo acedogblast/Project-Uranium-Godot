@@ -314,16 +314,25 @@ pause_mode = 2
 
 [node name="Position2D" type="Position2D" parent="."]
 pause_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Sprite" type="Sprite" parent="Position2D"]
-position = Vector2( 1, -16 )
+position = Vector2( 0, -16 )
 texture = ExtResource( 3 )
 hframes = 4
 vframes = 4
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Camera2D" type="Camera2D" parent="Position2D"]
 current = true
 smoothing_speed = 4.0
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="GrassAnimation" type="Sprite" parent="Position2D"]
 

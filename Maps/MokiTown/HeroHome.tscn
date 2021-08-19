@@ -183,7 +183,7 @@ texture = ExtResource( 6 )
 [node name="Outside" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1120, 336 )
 scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
-location = Vector2( 880, 1008 )
+location = Vector2( 912, 1008 )
 exterior = false
 
 [node name="UpStairs" parent="." instance=ExtResource( 3 )]

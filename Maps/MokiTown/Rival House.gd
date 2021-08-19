@@ -20,22 +20,19 @@ func _ready():
 
 func interaction(check_pos, direction): # check_pos is a Vector2 of the position of object to interact
 	if cameron != null && check_pos == cameron.position:
-		Global.game.player.change_input()
-		Global.game.menu.locked = true
+		Global.game.lock_player()
 
 		Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_THEO_HOME_23", cameron.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.player.change_input()
-		Global.game.menu.locked = false
+		Global.game.release_player()
 
 
 func event1(_body):
 	var event_name = "EVENT_MOKI_TOWN_THEO_HOME_1"
 	if !Global.past_events.has(event_name) && Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
 		print("New Event: " + event_name)
-		Global.game.player.change_input()
-		Global.game.menu.locked = true
+		Global.game.lock_player()
 
 		# Spawn NPCs
 		theo = load("res://Utilities/NPC.tscn").instance()
@@ -303,6 +300,5 @@ func event1(_body):
 
 			
 		DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
-		Global.game.player.change_input()
-		Global.game.menu.locked = false
+		Global.game.release_player()
 		Global.past_events.append(event_name)

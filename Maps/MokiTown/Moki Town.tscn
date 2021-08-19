@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -6,13 +6,11 @@
 [ext_resource path="res://Maps/tilesets/PU_autotiles.tres" type="TileSet" id=4]
 [ext_resource path="res://Maps/tilesets/PU_anim_tiles.tres" type="TileSet" id=5]
 [ext_resource path="res://Maps/MokiTown/Moki Town.gd" type="Script" id=6]
-[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=10]
 
 [node name="MokiTown" type="Node2D"]
-position = Vector2( -32, 0 )
 scale = Vector2( 2, 2 )
 script = ExtResource( 6 )
 
@@ -94,65 +92,61 @@ format = 1
 tile_data = PoolIntArray( 589862, 0, 9, 983089, 0, 7, 1114158, 0, 6, 1179674, 0, 65543, 1179680, 0, 65543, 1179692, 0, 65545, 1441809, 0, 9, 1507353, 0, 9, 1507372, 0, 8, 1507374, 0, 7, 1638423, 0, 9, 1638425, 0, 8, 2162709, 0, 7, 2293766, 0, 9, 2293768, 0, 8, 2293793, 0, 7, 2293806, 0, 9, 2359327, 0, 131081, 2424841, 0, 8, 2883588, 0, 9, 3080212, 0, 9, 3080217, 0, 9, 3145781, 0, 8, 3211269, 0, 9, 3211284, 0, 8, 3342350, 0, 8, 3473421, 0, 9, 3473430, 0, 8, 3604498, 0, 7, 3604508, 0, 8, 3670062, 0, 7, 3735579, 0, 9, 3801134, 0, 7, 3997730, 0, 6 )
 
 [node name="NPC_Layer" type="Node2D" parent="."]
-position = Vector2( 16, 0 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Block" parent="NPC_Layer" instance=ExtResource( 10 )]
-position = Vector2( 496, 1424 )
+position = Vector2( 528, 1424 )
 size = "custom"
 custom_size = Vector2( 16, 48 )
 
 [node name="HeroHomeDoor" parent="NPC_Layer" instance=ExtResource( 8 )]
-position = Vector2( 880, 1008 )
+position = Vector2( 912, 1008 )
 scene_destination = "res://Maps/MokiTown/HeroHome.tscn"
 location = Vector2( 1120, 304 )
 
 [node name="pokecenter test" parent="NPC_Layer" instance=ExtResource( 8 )]
-position = Vector2( 1360, 1008 )
+position = Vector2( 1392, 1008 )
 scene_destination = "res://Maps/MokiTown/Rival House.tscn"
 location = Vector2( 240, 432 )
 
 [node name="Door2" parent="NPC_Layer" instance=ExtResource( 8 )]
-position = Vector2( 528, 368 )
+position = Vector2( 560, 368 )
 scene_destination = "res://Maps/MokiTown/BamboLab.tscn"
 location = Vector2( 240, 528 )
 door_type = "Type 2 - Glass"
 
 [node name="RivalDoor" parent="NPC_Layer" instance=ExtResource( 8 )]
-position = Vector2( 1776, 1360 )
+position = Vector2( 1808, 1360 )
 scene_destination = "res://Maps/MokiTown/Rival House.tscn"
 location = Vector2( 272, 368 )
 
-[node name="NPC" parent="NPC_Layer" instance=ExtResource( 7 )]
-position = Vector2( 2288, 2064 )
-
 [node name="Event1" parent="NPC_Layer" instance=ExtResource( 10 )]
-position = Vector2( 816, 496 )
+position = Vector2( 848, 496 )
 size = "custom"
 custom_size = Vector2( 16, 80 )
 
 [node name="Route1Connection" parent="NPC_Layer" instance=ExtResource( 8 )]
-position = Vector2( 240, 1392 )
+position = Vector2( 272, 1392 )
 scene_destination = "res://Maps/Routes/Route1/Route1.tscn"
 location = Vector2( 2256, 368 )
 door_type = "Type 3 - Invisible"
 
 [node name="Route1Connection2" parent="NPC_Layer" instance=ExtResource( 8 )]
-position = Vector2( 240, 1424 )
+position = Vector2( 272, 1424 )
 scene_destination = "res://Maps/Routes/Route1/Route1.tscn"
 location = Vector2( 2256, 400 )
 door_type = "Type 3 - Invisible"
 
 [node name="Rock1" parent="NPC_Layer" instance=ExtResource( 9 )]
-position = Vector2( 2064, 1456 )
+position = Vector2( 2096, 1456 )
 type = "Smashable Rock"
 
 [node name="Rock2" parent="NPC_Layer" instance=ExtResource( 9 )]
-position = Vector2( 2096, 1424 )
+position = Vector2( 2128, 1424 )
 type = "Smashable Rock"
 
 [node name="Rock3" parent="NPC_Layer" instance=ExtResource( 9 )]
-position = Vector2( 2096, 1488 )
+position = Vector2( 2128, 1488 )
 type = "Smashable Rock"
 
 [connection signal="area_entered" from="NPC_Layer/Block" to="." method="block_exit"]

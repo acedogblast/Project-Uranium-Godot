@@ -138,7 +138,7 @@ func event2():
 		Global.game.play_dialogue_with_point("NPC_AUNT1_D5" , $Aunt.get_global_transform_with_canvas().get_origin())
 		yield(Global.game, "event_dialogue_end")
 
-		Global.game.play_dialogue_with_point("NPC_AUNT1_D6" , Vector2(0,0))
+		Global.game.play_dialogue("NPC_AUNT1_D6")
 		# Play key item sound
 		var time = Global.game.get_node("Background_music").get_playback_position()
 		Global.game.get_node("Background_music").stop()
@@ -152,7 +152,7 @@ func event2():
 		# Enable running
 		Global.can_run = true
 		
-		Global.game.play_dialogue_with_point("NPC_AUNT1_D7" , Vector2(0,0))
+		Global.game.play_dialogue("NPC_AUNT1_D7")
 		yield(Global.game, "event_dialogue_end")
 
 		DialogueSystem.set_box_position(DialogueSystem.TOP)

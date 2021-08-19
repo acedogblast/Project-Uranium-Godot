@@ -231,8 +231,7 @@ func event1_choice():
 		Global.game.get_node("Background_music").play()
 
 		Global.past_events.append("EVENT_BAMBOLAB_1_INTRO")
-		Global.game.player.change_input()
-		Global.game.menu.locked = false
+		Global.game.release_player()
 
 func event1_pick_up():
 	# Play open
@@ -782,6 +781,10 @@ func lab_battle():
 		yield(bambo, "done_movement")
 
 		bambo.queue_free()
+
+		bambo = null
+		theo = null
+
 		Global.past_events.append("EVENT_BAMBOLAB_1_LOSS")
 		pass
 	Global.past_events.append("EVENT_BAMBOLAB_1_COMPLETE")

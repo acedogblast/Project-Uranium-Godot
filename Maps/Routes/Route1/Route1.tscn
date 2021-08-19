@@ -103,13 +103,13 @@ tile_data = PoolIntArray( 196622, 0, 9, 196625, 0, 7, 196627, 0, 9, 262173, 0, 9
 [node name="MokiTownConnection" parent="NPC_Layer" instance=ExtResource( 7 )]
 position = Vector2( 2256, 368 )
 scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
-location = Vector2( 240, 1392 )
+location = Vector2( 272, 1392 )
 door_type = "Type 3 - Invisible"
 
 [node name="MokiTownConnection2" parent="NPC_Layer" instance=ExtResource( 7 )]
 position = Vector2( 2256, 400 )
 scene_destination = "res://Maps/MokiTown/Moki Town.tscn"
-location = Vector2( 240, 1424 )
+location = Vector2( 272, 1424 )
 door_type = "Type 3 - Invisible"
 
 [node name="KevlarTownConnection" parent="NPC_Layer" instance=ExtResource( 7 )]

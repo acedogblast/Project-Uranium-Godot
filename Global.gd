@@ -109,6 +109,8 @@ func add_poke_to_party(poke : Pokemon):
 	# Add to owned dex list
 	if !pokedex_caught.has(poke.ID):
 		pokedex_caught.append(poke.ID)
+	if !pokedex_seen.has(poke.ID):
+		pokedex_seen.append(poke.ID)
 		
 	if pokemon_group.size() >= 6:
 		print("party already full")
