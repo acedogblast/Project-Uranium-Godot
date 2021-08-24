@@ -10,7 +10,7 @@ var type = Type.NORMAL
 var style = MoveStyle.PHYSICAL
 
 # The base power of the move
-var base_power 80
+var base_power = 80
 
 # The accuracy of the move
 var accuracy = 100

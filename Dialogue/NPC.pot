@@ -196,3 +196,6 @@ msgstr "In hindsight, perhaps that was a silly vow to swear..."
 msgid "PASSAGE_CAVE_TRAINER_3_DEFEAT"
 msgstr "...I suppose all bullies eventually get their comeuppance..."
 
+msgid "NOWTOCH_CITY_CREEPY_GUY"
+msgstr "You can use that key to get into Maria's house. She lives in the southeast part of town."
+

@@ -261,3 +261,36 @@ func get_pocket_name(item : Item) -> String:
 			pocket_name = tr("POCKET_NAME_KEY_ITEMS")
 
 	return pocket_name
+
+func has_item_id(id):
+	var temp = get_item_by_id(id)
+	match temp.pocket:
+		ITEMS:
+			for item_stacks in items:
+				if item_stacks.get_item_id() == temp.id:
+					return true
+		MEDICINE:
+			for item_stacks in medicine:
+				if item_stacks.get_item_id() == temp.id:
+					return true
+		BALLS:
+			for item_stacks in balls:
+				if item_stacks.get_item_id() == temp.id:
+					return true
+		TMS:
+			for item_stacks in TMs:
+				if item_stacks.get_item_id() == temp.id:
+					return true
+		BERRIES:
+			for item_stacks in berries:
+				if item_stacks.get_item_id() == temp.id:
+					return true
+		BATTLE_ITEMS:
+			for item_stacks in battle_items:
+				if item_stacks.get_item_id() == temp.id:
+					return true
+		KEY_ITEMS:
+			for item_stacks in key_items:
+				if item_stacks.get_item_id() == temp.id:
+					return true
+	return false

@@ -567,6 +567,81 @@ msgstr "\\PN, I don't care that you got the stronger starter. I'm still gonna be
 msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_30"
 msgstr "You just wait and see!!"
 
+msgid "EVENT_NOWTOCH_CITY_1"
+msgstr "Oh! You! Are you maybe...\nperhaps... here to see Maria?"
 
+msgid "EVENT_NOWTOCH_CITY_2"
+msgstr "Oh my. You must be like me!\nI'm her biggest fan!\nOh, but she's hardly ever at her Gym..."
 
+msgid "EVENT_NOWTOCH_CITY_3"
+msgstr "You can probably find her at home.\nI can't go there, because of\\.\\.\\. Reasons."
+
+msgid "EVENT_NOWTOCH_CITY_4"
+msgstr "But, you still can!\nHere, take this!"
+
+msgid "EVENT_NOWTOCH_CITY_5"
+msgstr "Keep it, I made copies.\nHer house is in the southeast part of town."
+
+msgid "EVENT_NOWTOCH_CITY_6"
+msgstr "Zzzzzz\\.\\.\\.\\.\\.. muh?\nIs\\.\\.\\.\\. someone there...?"
+
+msgid "EVENT_NOWTOCH_CITY_7"
+msgstr "Who are you?\\.\nWhat are you doing in my house?\nYou can't just barge on people like that!!"
+
+msgid "EVENT_NOWTOCH_CITY_8"
+msgstr "Especially when they lock their doors.\nHow did you get in, anyway?"
+
+msgid "EVENT_NOWTOCH_CITY_9"
+msgstr "..."
+
+msgid "EVENT_NOWTOCH_CITY_10"
+msgstr "You have a copy of my house key?\nGive me that!"
+
+msgid "EVENT_NOWTOCH_CITY_11"
+msgstr "[\\PN handed over Maria's House Key.]"
+
+msgid "EVENT_NOWTOCH_CITY_12"
+msgstr "Where did you get this?!\n...Oh. From that guy...\nUgh, him again.\nWait, you're not another fan, are you?"
+
+msgid "EVENT_NOWTOCH_CITY_13"
+msgstr "You're... a Pokémon Trainer?\nThat must mean you're looking for a Gym Battle, right?"
+
+msgid "EVENT_NOWTOCH_CITY_14"
+msgstr "Sigh.\\.\\.\\.\\. I guess I need to do my job for once.\nBut first, I'm gonna need to talk to the guy who gave you that key."
+
+msgid "EVENT_NOWTOCH_CITY_15"
+msgstr "Come find me outside my Gym.\nLater~"
+
+msgid "EVENT_NOWTOCH_CITY_16"
+msgstr "Look, I've told you this before.\nI'm not the Champion any more, all right?\\.\nI'm retired! I'm just a Gym Leader now."
+
+msgid "EVENT_NOWTOCH_CITY_17"
+msgstr "But, Maria...\\. you were the strongest\ntrainer in Tandor..."
+
+msgid "EVENT_NOWTOCH_CITY_18"
+msgstr "So talented, and young, and beautiful...\\.\nWhy would you throw away all that fame?\nYour fans still love you!"
+
+msgid "EVENT_NOWTOCH_CITY_19"
+msgstr "I'm not interested in being famous any more! I just want to lead a normal life, run my Gym, and not have to deal with creeps like you. Seriously, it's not OK to make copies of people's house keys! I'm calling the Rangers."
+
+msgid "EVENT_NOWTOCH_CITY_20"
+msgstr "No!\\. Please!\\. I-\\.I'll leave you alone.\\.\nI promise."
+
+msgid "EVENT_NOWTOCH_CITY_21"
+msgstr "Good.\nYou aren't allowed at my Gym any more,\nso get lost.\nDon't make me say it again!"
+
+msgid "EVENT_NOWTOCH_CITY_22"
+msgstr "*sigh*"
+
+msgid "EVENT_NOWTOCH_CITY_23"
+msgstr "I'm sorry you had to see that.\nI'm not normally an angry person, you know?~"
+
+msgid "EVENT_NOWTOCH_CITY_24"
+msgstr "But, once you win the Tandor Championship, you can never escape it. Everyone knows your name... Sometimes, it's enough to make me want to skip town. But then, who would run the Gym?"
+
+msgid "EVENT_NOWTOCH_CITY_25"
+msgstr "Speaking of that...\\. I know you're\nhere for the Normal Badge."
+
+msgid "EVENT_NOWTOCH_CITY_26"
+msgstr "I've made you wait long enough.\nCome meet me inside, and show me your skills!~"
 

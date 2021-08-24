@@ -182,7 +182,7 @@ func trainer1_battle():
 	Global.game.get_node("Background_music").play()
 	Global.game.release_player()
 func trainer2_battle():
-	var trainer = trainer1
+	var trainer = trainer2
 	trainer.seeking = false
 
 	var bid = BattleInstanceData.new()

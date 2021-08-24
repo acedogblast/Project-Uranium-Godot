@@ -149,6 +149,7 @@ func set_idle_frame(_dir):
 			$Position2D/Sprite.frame = 8
 		_:
 			$Position2D/Sprite.frame = 0
+	facing = _dir
 
 func face_player(player_direction):
 	var dir

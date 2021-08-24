@@ -709,6 +709,7 @@ func lab_battle():
 		yield(bambo, "done_movement")
 
 		bambo.queue_free()
+		bambo = null
 		Global.past_events.append("EVENT_BAMBOLAB_1_WIN")
 	else:
 		

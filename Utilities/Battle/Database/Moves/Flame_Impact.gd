@@ -10,7 +10,7 @@ var type = Type.FIRE
 var style = MoveStyle.PHYSICAL
 
 # The base power of the move
-var base_power 65
+var base_power = 65
 
 # The accuracy of the move
 var accuracy = 100

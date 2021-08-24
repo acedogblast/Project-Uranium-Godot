@@ -122,7 +122,7 @@ __meta__ = {
 anims/Slide = SubResource( 1 )
 
 [node name="Fade" type="ColorRect" parent="CanvasLayer"]
-modulate = Color( 1, 1, 1, 0 )
+visible = false
 margin_right = 512.0
 margin_bottom = 384.0
 color = Color( 0, 0, 0, 1 )

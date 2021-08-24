@@ -10,7 +10,7 @@ var type = Type.GRASS
 var style = MoveStyle.PHYSICAL
 
 # The base power of the move
-var base_power 45
+var base_power = 45
 
 # The accuracy of the move
 var accuracy = 100

@@ -9,6 +9,9 @@ export(String, "No Change", "Down", "Up") var change_direction = "No Change"
 onready var type1_texture = load("res://Graphics/Characters/PU-doorsdew.PNG")
 onready var type2_texture = load("res://Graphics/Characters/FKdoors1.png")
 
+var locked = false
+var key_id
+
 signal animation_finished
 
 func _ready():
@@ -73,6 +76,22 @@ func animation_close():
 
 func transition():
 	Global.game.lock_player()
+
+	if locked:
+		if Global.inventory.has_item_id(key_id):
+			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+			Global.game.play_dialogue("This door is locked.")
+			yield(Global.game, "event_dialogue_end")
+			Global.game.release_player()
+		else:
+			var temp = Global.inventory.get_item_by_id(key_id)
+			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+			Global.game.play_dialogue("/PN used " + temp.name + "!")
+			locked = false
+			yield(Global.game, "event_dialogue_end")
+			Global.game.release_player()
+		return
+
 	var sound = null
 	if exterior:
 		match door_type:

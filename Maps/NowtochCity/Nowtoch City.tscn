@@ -133,5 +133,10 @@ scene_destination = "res://Maps/NowtochCity/Nowtoch Gym.tscn"
 location = Vector2( 192, 1072 )
 door_type = "Type 3 - Invisible"
 
-[node name="NPC" parent="NPC_Layer" instance=ExtResource( 7 )]
-position = Vector2( 1584, 496 )
+[node name="NPC_DELETE" parent="NPC_Layer" instance=ExtResource( 7 )]
+position = Vector2( 1616, 464 )
+
+[node name="MariaDoor" parent="NPC_Layer" instance=ExtResource( 5 )]
+position = Vector2( 1520, 1968 )
+scene_destination = "res://Maps/NowtochCity/Nowtoch NPC Houses.tscn"
+location = Vector2( 1936, 1200 )
