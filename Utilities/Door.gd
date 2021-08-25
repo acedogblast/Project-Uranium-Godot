@@ -10,7 +10,7 @@ onready var type1_texture = load("res://Graphics/Characters/PU-doorsdew.PNG")
 onready var type2_texture = load("res://Graphics/Characters/FKdoors1.png")
 
 var locked = false
-var key_id
+var key_id : int
 
 signal animation_finished
 
@@ -78,7 +78,7 @@ func transition():
 	Global.game.lock_player()
 
 	if locked:
-		if Global.inventory.has_item_id(key_id):
+		if !Global.inventory.has_item_id(key_id):
 			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 			Global.game.play_dialogue("This door is locked.")
 			yield(Global.game, "event_dialogue_end")
@@ -86,7 +86,7 @@ func transition():
 		else:
 			var temp = Global.inventory.get_item_by_id(key_id)
 			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
-			Global.game.play_dialogue("/PN used " + temp.name + "!")
+			Global.game.play_dialogue(Global.TrainerName + " used " + temp.name + "!")
 			locked = false
 			yield(Global.game, "event_dialogue_end")
 			Global.game.release_player()

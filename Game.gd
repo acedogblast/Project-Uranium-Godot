@@ -475,11 +475,14 @@ func recive_item(item_name_or_ID):
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
 
-	Global.game.play_dialogue(Global.TrainerName + " found one\n" + item.name + "!")
+	Global.game.play_dialogue(Global.TrainerName + " obtained \n" + item.name + "!")
 	yield(Global.game, "event_dialogue_end")
 
 	Global.game.play_dialogue(Global.TrainerName + " put the " + item.name + "\nin the " + Global.inventory.get_pocket_name(item) + ".")
 	yield(Global.game, "event_dialogue_end")
 	Global.game.get_node("Background_music").stream_paused = false
+
+	# Add item to bag
+	Global.inventory.add_item(item)
 
 	emit_signal("end_of_event")

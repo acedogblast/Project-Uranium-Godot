@@ -7,6 +7,7 @@ var npc_temp1
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if Global.past_events.has("NOWTOCH_CITY_EVENT_1") && !Global.past_events.has("NOWTOCH_CITY_EVENT_2"):
+		yield(Global.game, "tranistion_complete")
 		event2()
 	pass
 
@@ -71,7 +72,7 @@ func event2():
 	yield(Global.game, "event_dialogue_end")
 
 	Global.game.player.move_player_event(Global.game.player.DIRECTION.LEFT, 1)
-	npc_temp1.move_multi("Down", 1)
+	npc_temp1.move_multi("Down", 2)
 	yield(npc_temp1, "done_movement")
 
 	yield(get_tree().create_timer(0.25), "timeout")

@@ -36,7 +36,8 @@ func update_NPCs():
 		npc_temp1.texture = load("res://Graphics/Characters/HGSS_130.png")
 		npc_temp1.position = Vector2(1584,496)
 		$NPC_Layer.add_child(npc_temp1)
-		$NPC_Layer/Door.locked = true
+		$NPC_Layer/MariaDoor.locked = true
+		$NPC_Layer/MariaDoor.key_id = 579
 
 func event1():
 	Global.game.lock_player()
@@ -50,9 +51,11 @@ func event1():
 		yield(Global.game, "event_dialogue_end")
 
 	# Add key to inventory
+	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
 	Global.game.recive_item(579)
 	yield(Global.game, "end_of_event")
 
+	DialogueSystem.set_box_position(DialogueSystem.TOP)
 	Global.game.play_dialogue_with_point("EVENT_NOWTOCH_CITY_5" , npc_temp1.get_global_transform_with_canvas().get_origin())
 	yield(Global.game, "event_dialogue_end")
 

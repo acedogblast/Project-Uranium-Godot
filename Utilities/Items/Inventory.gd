@@ -262,7 +262,7 @@ func get_pocket_name(item : Item) -> String:
 
 	return pocket_name
 
-func has_item_id(id):
+func has_item_id(id: int):
 	var temp = get_item_by_id(id)
 	match temp.pocket:
 		ITEMS:
