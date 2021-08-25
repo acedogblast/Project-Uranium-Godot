@@ -199,3 +199,68 @@ msgstr "...I suppose all bullies eventually get their comeuppance..."
 msgid "NOWTOCH_CITY_CREEPY_GUY"
 msgstr "You can use that key to get into Maria's house. She lives in the southeast part of town."
 
+msgid "GYM1_TRAINER_1"
+msgstr "Hah! You think you have what it takes to beat Maria?\nAllow me to be the judge of that!"
+
+msgid "GYM1_TRAINER_1_DEFEAT"
+msgstr "Hmm. This one has potential."
+
+msgid "GYM1_TRAINER_2"
+msgstr "Maria may be the first Gym Leader,\nbut she used to be Champion!\nYou're still light years away from defeating her!"
+
+msgid "GYM1_TRAINER_2_DEFEAT"
+msgstr "Light years measure distance, not time..."
+
+msgid "GYM1_MARIA_1"
+msgstr "Hi again~\nSo, I don't think we were ever properly introduced."
+
+msgid "GYM1_MARIA_2"
+msgstr "What's your name?"
+
+msgid "GYM1_MARIA_3"
+msgstr "..."
+
+msgid "GYM1_MARIA_4"
+msgstr "\\PN?\\. I like it~\nWelcome to the Nowtoch City Pokémon Gym!~"
+
+msgid "GYM1_MARIA_5"
+msgstr "I'm Maria, Normal-type specialist...\nbut you know that already!\nOf course, most folks know me\nas \"Maria, Champion of Tandor\"...\nThose days of my life are over, though.\nNow, I supervise young Trainers like you,\non their way to greatness."
+
+msgid "GYM1_MARIA_6"
+msgstr "It's a long, difficult battle, all the way up to Champion... have you got what it takes?"
+
+msgid "GYM1_MARIA_7"
+msgstr "Your very first test in the\nTandor League... begins now!"
+
+msgid "GYM1_MARIA_8"
+msgstr "I see a great future ahead of you, but are you ready for this?"
+
+msgid "GYM1_MARIA_9"
+msgstr "There!~\nThat's the fighting spirit I wanted to see!\nYou're deserving of this Normal Badge!"
+
+msgid "GYM1_MARIA_10"
+msgstr "Congrats!~"
+
+msgid "GYM1_MARIA_11"
+msgstr "I gotta say, the spirit you showed in battle...\\.\nyou remind me of when I was just starting out.\nTry and hold on to that determination,\nand I'm sure it'll take you far!~"
+
+msgid "GYM1_MARIA_12"
+msgstr "Also, take this TM, too!~"
+
+msgid "GYM1_MARIA_13"
+msgstr "As you travel together with your Pokémon,\nthe bond between you will grow stronger.\nThe deeper your friendship, the\nmore powerful the Return is in battle!"
+
+msgid "GYM1_MARIA_14"
+msgstr "TMs are infinite-use, so feel free to teach it to as many Pokémon as you like! Nearly all of them can learn this one.~"
+
+msgid "GYM1_MARIA_15"
+msgstr "It was fun battling you, \PN. Good luck on your journey!~"
+
+msgid "GYM1_MARIA_16"
+msgstr "...You're asking if I like cats?\nWell, duuuuuh! They're the cutest!~\nI could probably change this to an all-cat Gym, if I wanted to... hmm."
+
+
+
+
+
+

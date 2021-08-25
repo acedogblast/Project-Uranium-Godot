@@ -351,7 +351,7 @@ func load_texture():
 	$Position2D/Sprite.frame = 0
 	
 #Sets the sprite texture to the walkTexture and if the direction is not null then the sprite.frame is set to direction times 4
-func set_idle_frame(_dir = null): # TO BE REMOVED! DO NOT USE. USE set_facing_direction instead
+func set_idle_frame(_dir = null):
 	state = STATE.IDLE
 	$Position2D/Sprite.texture = walkTexture
 	if _dir == null: # Go with the last facing direction

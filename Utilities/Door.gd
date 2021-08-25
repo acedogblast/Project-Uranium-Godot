@@ -3,11 +3,12 @@ extends Node2D
 export(String, FILE, "*.tscn") var scene_destination = "" # The scene to change to. Keep blank for room change.
 export(Vector2) var location # The location of the exit
 export(bool) var exterior # Is the door an exterior or interior
-export(String, "Type 1 - Wood", "Type 2 - Glass", "Type 3 - Invisible") var door_type # The texture of the exterior door
+export(String, "Type 1 - Wood", "Type 2 - Glass", "Type 3 - Invisible", "Type 4 - Bi-Glass") var door_type # The texture of the exterior door
 export(String, "No Change", "Down", "Up") var change_direction = "No Change"
 
 onready var type1_texture = load("res://Graphics/Characters/PU-doorsdew.PNG")
 onready var type2_texture = load("res://Graphics/Characters/FKdoors1.png")
+onready var type4_texture = load("res://Graphics/Characters/door2 (4).png")
 
 var locked = false
 var key_id : int
@@ -19,6 +20,7 @@ func _ready():
 		$Exterior.visible = false
 	else:
 		$Exterior.visible = true
+		$Exterior.offset = Vector2.ZERO
 		match door_type:
 			"Type 1 - Wood":
 				$Exterior.texture = type1_texture
@@ -35,6 +37,13 @@ func _ready():
 				$Exterior.region_enabled = false
 			"Type 3 - Invisible":
 				$Exterior.texture = null
+			"Type 4 - Bi-Glass":
+				$Exterior.texture = type4_texture
+				$Exterior.vframes = 4
+				$Exterior.hframes = 4
+				$Exterior.frame = 3
+				$Exterior.region_enabled = false
+				$Exterior.offset = Vector2(0, -16)
 	
 func animation_open():
 	match door_type:
@@ -52,6 +61,12 @@ func animation_open():
 			$Exterior.frame = 15
 		"Type 3 - Invisible":
 			yield(get_tree().create_timer(0.1), "timeout")
+		"Type 4 - Bi-Glass":
+			$Exterior.frame = 11
+			yield(get_tree().create_timer(0.2), "timeout")
+			$Exterior.frame = 15
+			yield(get_tree().create_timer(0.2), "timeout")
+			$Exterior.frame = 7
 	emit_signal("animation_finished")
 
 func animation_close():
@@ -72,6 +87,12 @@ func animation_close():
 			$Exterior.frame = 3
 		"Type 3 - Invisible":
 			yield(get_tree().create_timer(0.1), "timeout")
+		"Type 4 - Bi-Glass":
+			$Exterior.frame = 7
+			yield(get_tree().create_timer(0.2), "timeout")
+			$Exterior.frame = 15
+			yield(get_tree().create_timer(0.2), "timeout")
+			$Exterior.frame = 11
 	emit_signal("animation_finished")
 
 func transition():
@@ -95,7 +116,7 @@ func transition():
 	var sound = null
 	if exterior:
 		match door_type:
-			"Type 1 - Wood":
+			"Type 1 - Wood", "Type 4 - Bi-Glass":
 				sound = load("res://Audio/SE/Entering Door.wav")
 			"Type 2 - Glass":
 				sound = load("res://Audio/SE/Entering Door.wav") # Missing glass door sound?

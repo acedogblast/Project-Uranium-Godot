@@ -1,9 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_indoors+.tres" type="TileSet" id=1]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Maps/NowtochCity/Nowtoch Gym.gd" type="Script" id=3]
+[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Graphics/Characters/PU-Maria.png" type="Texture" id=5]
+[ext_resource path="res://Graphics/Characters/HGSS_057.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/Characters/HGSS_002.png" type="Texture" id=7]
+[ext_resource path="res://Graphics/Characters/HGSS_007.png" type="Texture" id=8]
 
 [node name="Gym1" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Tile Layer 1" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
@@ -24,15 +31,36 @@ tile_data = PoolIntArray( 1048581, 0, 786438, 1048582, 0, 786439, 1048583, 0, 98
 [node name="NPC_Layer" type="Node2D" parent="."]
 
 [node name="Door" parent="NPC_Layer" instance=ExtResource( 2 )]
-position = Vector2( 192, 1072 )
+position = Vector2( 208, 1072 )
 scene_destination = "res://Maps/NowtochCity/Nowtoch City.tscn"
 location = Vector2( 1584, 464 )
 exterior = false
 door_type = "Type 3 - Invisible"
 
-[node name="Door2" parent="NPC_Layer" instance=ExtResource( 2 )]
-position = Vector2( 224, 1072 )
-scene_destination = "res://Maps/NowtochCity/Nowtoch City.tscn"
-location = Vector2( 1584, 464 )
-exterior = false
-door_type = "Type 3 - Invisible"
+[node name="GymGuy" parent="NPC_Layer" instance=ExtResource( 4 )]
+position = Vector2( 176, 976 )
+texture = ExtResource( 6 )
+
+[node name="Maria" parent="NPC_Layer" instance=ExtResource( 4 )]
+position = Vector2( 208, 560 )
+texture = ExtResource( 5 )
+
+[node name="Trainer1" parent="NPC_Layer" instance=ExtResource( 4 )]
+position = Vector2( 304, 880 )
+trainer = true
+texture = ExtResource( 7 )
+trainer_name = "SCHOOL KID Jack"
+trainer_reward = 180
+seeking = true
+facing = "Left"
+trainer_poke_group = [ [ 7, 8 ], [ 35, 8 ], [ 7, 9 ] ]
+
+[node name="Trainer2" parent="NPC_Layer" instance=ExtResource( 4 )]
+position = Vector2( 112, 752 )
+trainer = true
+texture = ExtResource( 8 )
+trainer_name = "Lass Myla"
+trainer_reward = 240
+seeking = true
+facing = "Right"
+trainer_poke_group = [ [ 9, 9 ], [ 29, 10 ] ]

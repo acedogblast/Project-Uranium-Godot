@@ -6,7 +6,9 @@
 [ext_resource path="res://Maps/NowtochCity/Nowtoch City.gd" type="Script" id=4]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=5]
 [ext_resource path="res://TileMapsSource/Indoor(1).tres" type="TileSet" id=6]
-[ext_resource path="res://Utilities/NPC.tscn" type="PackedScene" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 48, 16 )
 
 [node name="NowtochCity" type="Node2D"]
 script = ExtResource( 4 )
@@ -130,13 +132,26 @@ door_type = "Type 2 - Glass"
 [node name="GymDoor" parent="NPC_Layer" instance=ExtResource( 5 )]
 position = Vector2( 1584, 464 )
 scene_destination = "res://Maps/NowtochCity/Nowtoch Gym.tscn"
-location = Vector2( 192, 1072 )
-door_type = "Type 3 - Invisible"
-
-[node name="NPC_DELETE" parent="NPC_Layer" instance=ExtResource( 7 )]
-position = Vector2( 1616, 464 )
+location = Vector2( 208, 1072 )
+door_type = "Type 4 - Bi-Glass"
 
 [node name="MariaDoor" parent="NPC_Layer" instance=ExtResource( 5 )]
 position = Vector2( 1520, 1968 )
 scene_destination = "res://Maps/NowtochCity/Nowtoch NPC Houses.tscn"
 location = Vector2( 1936, 1200 )
+
+[node name="Event3_Trigger" type="Area2D" parent="NPC_Layer"]
+position = Vector2( 1584, 624 )
+collision_layer = 2
+collision_mask = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Layer/Event3_Trigger"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="area_entered" from="NPC_Layer/Event3_Trigger" to="." method="event3"]

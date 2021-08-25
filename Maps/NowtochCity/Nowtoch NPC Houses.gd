@@ -74,6 +74,7 @@ func event2():
 	Global.game.player.move_player_event(Global.game.player.DIRECTION.LEFT, 1)
 	npc_temp1.move_multi("Down", 2)
 	yield(npc_temp1, "done_movement")
+	Global.game.player.set_facing_direction("Right")
 
 	yield(get_tree().create_timer(0.25), "timeout")
 	npc_temp1.queue_free()
