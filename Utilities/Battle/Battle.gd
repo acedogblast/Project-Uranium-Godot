@@ -125,7 +125,7 @@ func Start_Battle(bid : BattleInstanceData):
 	
 	# Add Foe introduction to queue
 	match battle_instance.battle_type:
-		battle_instance.BattleType.SINGLE_TRAINER:
+		battle_instance.BattleType.SINGLE_TRAINER, battle_instance.BattleType.SINGLE_GYML:
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = true
 			$CanvasLayer/BattleGrounds/FoeBase/Battler.hide()
 			var action = BattleQueueAction.new()
@@ -186,7 +186,7 @@ func Start_Battle(bid : BattleInstanceData):
 
 
 	# If human opponent add ball toss.
-	if battle_instance.battle_type == battle_instance.BattleType.RIVAL or battle_instance.battle_type == battle_instance.BattleType.SINGLE_TRAINER:
+	if battle_instance.battle_type == battle_instance.BattleType.RIVAL || battle_instance.battle_type == battle_instance.BattleType.SINGLE_TRAINER || battle_instance.battle_type == battle_instance.BattleType.SINGLE_GYML:
 		var action = BattleQueueAction.new()
 		action.type = action.FOE_BALLTOSS
 		queue.push(action)
@@ -286,10 +286,12 @@ func set_Vs_textures():
 			$CanvasLayer/TransitionEffects/Vs/OpponentBanner.texture = load("res://Graphics/Transitions/vsTrainer86.png")
 			$CanvasLayer/TransitionEffects/Vs/SpriteLeft.texture = load("res://Graphics/Transitions/vsBar86.png")
 			$CanvasLayer/TransitionEffects/Vs/SpriteRight.texture = load("res://Graphics/Transitions/vsBar86.png")
-		"Maria":
+			$CanvasLayer/TransitionEffects/Vs/OpponentBanner/Label.bbcode_text = "[center]" + battle_instance.opponent.name
+		"LEADER Maria":
 			$CanvasLayer/TransitionEffects/Vs/OpponentBanner.texture = load("res://Graphics/Transitions/vsTrainer71.png")
 			$CanvasLayer/TransitionEffects/Vs/SpriteLeft.texture = load("res://Graphics/Transitions/vsBar71.png")
 			$CanvasLayer/TransitionEffects/Vs/SpriteRight.texture = load("res://Graphics/Transitions/vsBar71.png")
+			$CanvasLayer/TransitionEffects/Vs/OpponentBanner/Label.bbcode_text = "[center]" + "Maira"
 		_:
 			print("Battle Error: Invalid opponent texture on function set_Vs_textures")
 	$CanvasLayer/TransitionEffects/Vs/SpriteLeft.texture.flags = Texture.FLAG_REPEAT
@@ -301,7 +303,7 @@ func set_Vs_textures():
 	
 	
 	
-	$CanvasLayer/TransitionEffects/Vs/OpponentBanner/Label.bbcode_text = "[center]" + battle_instance.opponent.name
+	
 func set_gender_textures():
 	match Global.TrainerGender:
 		0:
@@ -411,6 +413,8 @@ func battle_loop():
 			$CanvasLayer/BattleGrounds.foe_unveil()
 			$CanvasLayer/BattleGrounds/FoeBase/FoeHuman.visible = false
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")
+			
+
 		action.PLAYER_BALLTOSS:
 			$CanvasLayer/BattleGrounds.player_unveil()
 			yield($CanvasLayer/BattleGrounds, "unveil_finished")
@@ -988,7 +992,22 @@ func battle_loop():
 						Global.pokedex_seen.append(next_poke.ID)
 
 					yield($CanvasLayer/BattleGrounds, "unveil_finished")
-			pass
+
+					# Mid battle opponent quotes
+					match battle_instance.opponent.name:
+						"LEADER Maria":
+							if battler2.name == "Felunge":
+								$CanvasLayer/BattleGrounds/AnimationPlayer.play("Opponent_Quote")
+								$CanvasLayer/BattleInterfaceLayer/Message/Label.text = tr("GYM1_MARIA_8")
+								$CanvasLayer/BattleInterfaceLayer/Message.visible = true
+								$CanvasLayer/AudioStreamPlayer.stream = load("res://Audio/BGM/PU-DecisiveBattle.ogg")
+								$CanvasLayer/AudioStreamPlayer.play()
+								yield(self, "continue_pressed")
+								$CanvasLayer/BattleInterfaceLayer/Message.visible = false
+								$CanvasLayer/BattleGrounds/AnimationPlayer.play_backwards("Opponent_Quote")
+								yield($CanvasLayer/BattleGrounds/AnimationPlayer, "animation_finished")
+						
+							pass
 		_:
 			print("Battle Error: Battle Action type did not match any correct value. action.type = " + str(action.type))
 	action_timer.stop()

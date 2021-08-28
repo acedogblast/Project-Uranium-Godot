@@ -93,6 +93,8 @@ func animation_close():
 			$Exterior.frame = 15
 			yield(get_tree().create_timer(0.2), "timeout")
 			$Exterior.frame = 11
+			yield(get_tree().create_timer(0.2), "timeout")
+			$Exterior.frame = 3
 	emit_signal("animation_finished")
 
 func transition():

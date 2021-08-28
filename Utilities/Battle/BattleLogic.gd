@@ -96,7 +96,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						effected_poke.current_hp += heal_amount
 					print("After heal hp: " + str(effected_poke.current_hp))
 
-				171: # Super Potion
+				171, 187: # Super Potion or Fresh Water
 					var heal_amount = 50
 					if effected_poke.current_hp + heal_amount > effected_poke.hp:
 						effected_poke.current_hp = effected_poke.hp
@@ -312,7 +312,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 								if post_damage_checks(battler_index):
 									return queue
 								pass
-			
+					
 			if skip_turn:
 				continue
 			# Preturn Major Ailments
@@ -340,7 +340,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 							queue.push(action)
 							skip_turn = true
 					MajorAilment.SLEEP:
-						if get_effect_from_effects(BattleEffect.SLEEP_COUNTER, battler_index).turn_count == 0:
+						if get_effect_from_effects(BattleEffect.effects.SLEEP_COUNTER, battler_index).turn_count == 0:
 							action = BattleQueueAction.new()
 							action.type = action.BATTLE_TEXT
 							action.battle_text = get_battler_title_by_index(battler_index) + " woke up!"
@@ -355,7 +355,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 							action.type = action.BATTLE_TEXT
 							action.battle_text = get_battler_title_by_index(battler_index) + " is\nfast asleep."
 							queue.push(action)
-							get_effect_from_effects(BattleEffect.SLEEP_COUNTER, battler_index).turn_count -= 1
+							get_effect_from_effects(BattleEffect.effects.SLEEP_COUNTER, battler_index).turn_count -= 1
 							skip_turn = true
 					MajorAilment.PARALYSIS:
 							if percent_chance(0.25):
@@ -377,6 +377,17 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					move = battler.move_3
 				battler.move_4.name:
 					move = battler.move_4
+
+
+			# Change move if encore is in effect:
+			if get_effects_by_index(battler_index).has(BattleEffect.effects.ENCORE):
+				# Check if there is enough pp
+				var encore_indused_move = get_move_from_name_from_battler(get_past_moves_by_index(battler_index).back(), battler_index)
+				if encore_indused_move.remaining_pp == 0:
+					# Remove encore effect
+					remove_effect(battler_index, BattleEffect.effects.ENCORE)
+				else:
+					move = encore_indused_move
 			
 			# Charge target index to battler if move effects self
 			if move.target_ability == MoveTarget.SELF:
@@ -663,7 +674,22 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 								action.type = action.UPDATE_MAJOR_AILMENT
 								action.damage_target_index = target_index
 								queue.push(action)
-
+							"Yawn":
+								if get_effect_from_effects(BattleEffect.effects.DROWSY, target_index) == null:
+									var effect = BattleEffect.new()
+									effect.effect = BattleEffect.effects.DROWSY
+									effect.turn_count = 1
+									get_effects_by_index(target_index).append(effect)
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = get_battler_title_by_index(battler_index) + " made " + get_battler_title_by_index(target_index) + " drowsy!"
+									queue.push(action)
+								else:
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = "But it failed!"
+									queue.push(action)
+								pass
 							"Focus Energy":
 								# Check if Focus Energy was already used
 								if get_effect_from_effects(BattleEffect.effects.FOCUS_ENERGY, battler) == null:
@@ -671,12 +697,25 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 									effect.effect = BattleEffect.effects.FOCUS_ENERGY
 									get_effects_by_index(battler_index).append(effect)
 									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = battler.name + " is getting pumped!"
+									queue.push(action)
 								else:
 									action = BattleQueueAction.new()
 									action.type = action.BATTLE_TEXT
 									action.battle_text = "But it failed!"
 									queue.push(action)
-								pass
+							"Encore":
+								if get_effect_from_effects(BattleEffect.effects.ENCORE, target_index) == null:
+									var effect = BattleEffect.new()
+									effect.effect = BattleEffect.effects.ENCORE
+									effect.turn_count = 3
+									get_effects_by_index(target_index).append(effect)
+								else:
+									action = BattleQueueAction.new()
+									action.type = action.BATTLE_TEXT
+									action.battle_text = "But it failed!"
+									queue.push(action)
 				# Add move to past_moves
 				get_past_moves_by_index(battler_index).append(move.name)
 
@@ -721,7 +760,35 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					if post_damage_checks(battler_effects_index):
 						return queue
 				BattleEffect.effects.SLEEP_COUNTER:
-					effect.sleep_count -= 1
+					effect.turn_count -= 1
+				BattleEffect.effects.DROWSY:
+					if effect.turn_count == 0:
+						# Set sleep
+						action = BattleQueueAction.new()
+						action.type = action.BATTLE_TEXT
+						action.battle_text = get_battler_title_by_index(battler_effects_index) + " fell asleep!"
+						queue.push(action)
+						battler_by_index.major_ailment = MajorAilment.SLEEP
+						action = BattleQueueAction.new()
+						action.type = action.UPDATE_MAJOR_AILMENT
+						action.damage_target_index = battler_effects_index
+						queue.push(action)
+
+						# Remove Drowsey and add sleep_counter
+						remove_effect(battler_effects_index, BattleEffect.effects.DROWSY)
+						var new_effect = BattleEffect.new()
+						new_effect.effect = BattleEffect.effects.SLEEP_COUNTER
+						new_effect.turn_count = Global.rng.randi_range(1,3)
+						new_effect.turn_count += 1 # Add one due to being decremented on the next loop
+						get_effects_by_index(battler_effects_index).append(new_effect)
+					else:
+						effect.turn_count -= 1
+				BattleEffect.effects.ENCORE:
+					effect.turn_count -= 1
+					if effect.turn_count == 0:
+						remove_effect(battler_effects_index, BattleEffect.effects.ENCORE)
+
+
 
 	
 	# Post-Turn Major Ailments
@@ -859,6 +926,10 @@ func get_turn_order(player_command : BattleCommand, foe_command : BattleCommand)
 func does_attack_hit(move : Move, target_index : int, attaker_index : int):
 	if target_index == attaker_index: # Moves that effects self
 		return true
+
+	match move.name:
+		"Yawn":
+			return true
 
 	var target_stage = get_stage_stat_by_index(target_index)
 	var attacker_stage = get_stage_stat_by_index(attaker_index)
@@ -1197,3 +1268,23 @@ func check_if_battle_is_over() -> bool:
 		queue.push(action)
 		return true
 	return false
+func get_move_from_name_from_battler(move_name, battler_index) -> Move: # Returns the move of the battler by the move's name
+	var poke = get_battler_by_index(battler_index)
+	if poke.move_1 != null && poke.move_1.name == move_name:
+		return poke.move_1
+	if poke.move_2 != null && poke.move_2.name == move_name:
+		return poke.move_2
+	if poke.move_3 != null && poke.move_3.name == move_name:
+		return poke.move_3
+	if poke.move_4 != null && poke.move_4.name == move_name:
+		return poke.move_4
+	return null
+func remove_effect(battler_index, effect_enum):
+	var index = 0
+	for eff in get_effects_by_index(battler_index):
+		if eff.effect == effect_enum:
+			break
+		else:
+			index += 1
+	
+	get_effects_by_index(battler_index).remove(index)

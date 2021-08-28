@@ -142,6 +142,7 @@ location = Vector2( 1936, 1200 )
 
 [node name="Event3_Trigger" type="Area2D" parent="NPC_Layer"]
 position = Vector2( 1584, 624 )
+input_pickable = false
 collision_layer = 2
 collision_mask = 2
 __meta__ = {

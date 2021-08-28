@@ -42,7 +42,12 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		Global.game.play_dialogue("SMASHABLE_ROCK")
 		yield(Global.game, "event_dialogue_end")
 		Global.game.release_player()
-	
+	if check_pos == Vector2(816, 1040):
+		print("Modded")
+		var poke = Pokemon.new()
+		poke.set_basic_pokemon_by_level(3, 20)
+		Global.pokemon_group.append(poke)
+		pass
 	return null
 
 

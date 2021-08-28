@@ -18,6 +18,7 @@ var berries = []
 var battle_items = []
 var key_items = []
 
+var database = null
 
 func add_item(item: Item):# Adds a single item to the inventory
 	if item == null:
@@ -90,7 +91,8 @@ func add_item_by_name(_name : String): # Adds a single item to the inventory
 	add_item(get_item_by_name(_name))
 
 func get_item_by_id(_id: int):
-	var database = load("res://Utilities/Items/database.gd").new()
+	if database == null:
+		database = load("res://Utilities/Items/database.gd").new()
 	return database.get_item_by_id(_id)
 
 func add_item_by_name_multiple(_name : String, amount : int):
@@ -102,11 +104,13 @@ func add_item_by_id_multiple(_id : int, amount : int):
 		add_item(get_item_by_id(_id))	
 
 func get_item_id_by_name(_name : String):
-	var database = load("res://Utilities/Items/database.gd").new()
+	if database == null:
+		database = load("res://Utilities/Items/database.gd").new()
 	return database.get_id_by_name(_name)
 
 func get_item_by_name(_name : String):
-	var database = load("res://Utilities/Items/database.gd").new()
+	if database == null:
+		database = load("res://Utilities/Items/database.gd").new()
 	return database.get_item_by_name(_name)
 
 func remove_item(item: Item):

@@ -144,7 +144,11 @@ func change_scene(scene):
 		$CanvasLayer/ZoneMessage/AnimationPlayer.stop()
 		$CanvasLayer/ZoneMessage/Bar/Label.text = current_scene.place_name
 		$CanvasLayer/ZoneMessage/AnimationPlayer.play("Slide")
-	Global.location = current_scene.place_name
+	if "place_name" in current_scene:
+		Global.location = current_scene.place_name
+	else:
+		Global.location = "TBD"
+		print("GAME WARNGING: " + str(current_scene.filename) + " does not have place_name specified.")
 
 	# Apply dark mask over scene
 	if "dark" in current_scene && current_scene.dark == true:
@@ -272,6 +276,11 @@ func door_transition(path_scene, new_position, direction = null):
 #Checks to see if the player is interacting, if not and the interaction title isn't null then is interacting is set to true, the change_input method is called, the play_dialogue method is called, we wait until the dialogue event has ended, and the change_input method is called again
 func interaction(check_pos : Vector2, direction): # Starts the dialogue instead of the scene script
 	if !current_scene.has_method("interaction"):
+		# Check if the scene has pokecenter reference
+		if current_scene.get_node("PokeCenterReference") != null:
+			current_scene.get_node("PokeCenterReference").heal()
+			return
+		
 		print("ERROR: current scene does not have interaction method.")
 		return
 	
@@ -399,7 +408,7 @@ func wild_battle():
 	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
 	battle.queue_free()
 	release_player()
-func trainer_battle(bid : BattleInstanceData):
+func trainer_battle(bid : BattleInstanceData, auto_lock_and_release = true):
 	lock_player()
 	Global.game.get_node("Background_music").stop()
 	battle = load("res://Utilities/Battle/Battle.tscn").instance()
@@ -414,7 +423,8 @@ func trainer_battle(bid : BattleInstanceData):
 	Global.game.get_node("Background_music").play()
 	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
 	battle.queue_free()
-	release_player()
+	if auto_lock_and_release:
+		release_player()
 func generate_wild_poke() -> Pokemon:
 	var poke = Pokemon.new()
 	# Generate poke
@@ -463,7 +473,6 @@ func get_cliffs():
 
 func recive_item(item_name_or_ID):
 	var item
-	var pocket
 	if typeof(item_name_or_ID) == TYPE_STRING:
 		item = Global.inventory.get_item_by_name(item_name_or_ID)
 	if typeof(item_name_or_ID) == TYPE_INT:
@@ -475,7 +484,10 @@ func recive_item(item_name_or_ID):
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
 
-	Global.game.play_dialogue(Global.TrainerName + " obtained \n" + item.name + "!")
+	if item.pocket == Global.inventory.TMS:
+		Global.game.play_dialogue(Global.TrainerName + " obtained \n" + item.name + "!\nIt contained " + str(Global.inventory.database.tm_hm_database.get(item.name)) + ".")
+	else:
+		Global.game.play_dialogue(Global.TrainerName + " obtained \n" + item.name + "!")
 	yield(Global.game, "event_dialogue_end")
 
 	Global.game.play_dialogue(Global.TrainerName + " put the " + item.name + "\nin the " + Global.inventory.get_pocket_name(item) + ".")

@@ -1,7 +1,7 @@
 extends Object
 
 # The name of the pokemon
-var name = "Feleng"
+var name = "Felunge"
 
 # Pokedex ID#
 var ID = 30

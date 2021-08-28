@@ -154,7 +154,9 @@ func update_stats() -> LevelUpChanges: # Needs to be called every time a stat ch
 	# Additional changes for evolution if applicable
 	type1 = data.type1
 	type2 = data.type2
-	
+
+	# Add hp
+	current_hp += changes.hp_change
 	return changes
 
 func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of the pokemon by its ID and sets. Its IV values will be generated here.

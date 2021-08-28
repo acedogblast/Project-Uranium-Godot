@@ -48,8 +48,8 @@ func heal():
 		right.hide()
 		var party_size = Global.pokemon_group.size()
 		Global.heal_party()
-		var left_frame
-		var right_frame
+		var left_frame = 4
+		var right_frame = 4
 		match party_size:
 			1:
 				left.show()
