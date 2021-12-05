@@ -13,4 +13,4 @@ func interaction(check_pos, _direction): # check_pos is a Vector2 of the positio
 	if check_pos == Vector2(240, 400):
 		reference.heal()
 		# Add new heal point
-		Global.game.last_heal_point = "res://Maps/KevlarTown/Kevlar Town.tscn"
+		Global.game.last_heal_point = "res://Maps/NowtochCity/Nowtoch City.tscn"

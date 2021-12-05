@@ -8,6 +8,7 @@ var background_music = "res://Audio/BGM/PU-Kevlar Town.ogg";
 
 var type = "Outside"
 var place_name = "Kevlar Town"
+var heal_point = Vector2(656,432)
 
 func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
 	

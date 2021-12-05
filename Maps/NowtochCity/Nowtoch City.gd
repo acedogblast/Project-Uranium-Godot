@@ -8,6 +8,7 @@ var background_music = "res://Audio/BGM/PU-Nowtoch City.ogg";
 
 var type = "Outside"
 var place_name = "Nowtoch City"
+var heal_point = Vector2(656,432)
 
 var npc_temp1
 var npc_temp2
