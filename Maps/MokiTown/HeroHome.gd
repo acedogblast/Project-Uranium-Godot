@@ -17,10 +17,10 @@ var heal_point = Vector2(192,144)
 func _ready():
 	$BlackBG.visible = true
 	$Floor2/TileMap5.z_index = 9
-	#yield(get_tree().create_timer(1), "timeout")
 
 	$Aunt.set_idle_frame("Up")
 	Global.game.get_node("CanvasLayer/Fade").visible = false
+	event1()
 
 func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of the position of object to interact
 	if check_pos == $Floor2.position + $Floor2/Console.position:
@@ -108,7 +108,7 @@ func block(_body):
 		yield(Global.game.player, "done_movement")
 		Global.game.release_player()
 
-func event1(_body): # Aunt Calling player downstairs
+func event1(): # Aunt Calling player downstairs
 	var event_name = "EVENT_HEROHOME_1"
 	if !Global.past_events.has(event_name):
 		print("New Event: " + event_name)

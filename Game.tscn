@@ -61,9 +61,7 @@ tracks/1/keys = {
 "values": [ true, true ]
 }
 
-[node name="Game" type="Node2D" groups=[
-"save",
-]]
+[node name="Game" type="Node2D" groups=["save"]]
 pause_mode = 2
 script = ExtResource( 1 )
 

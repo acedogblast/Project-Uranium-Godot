@@ -119,3 +119,8 @@ func add_poke_to_party(poke : Pokemon):
 	else:
 		pokemon_group.append(poke)
 	pass
+func remove_money(amount : int):
+	if money - amount < 0:
+		money = 0
+	else:
+		money = money - amount

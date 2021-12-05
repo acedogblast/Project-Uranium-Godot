@@ -116,8 +116,8 @@ func change_scene(scene):
 		scenes.clear()
 
 	if scene is String:
-		var new_scene = load(scene)
-		scenes.append(new_scene.instance())
+		var new_scene = load(scene).instance()
+		scenes.append(new_scene)
 		current_scene = new_scene
 		add_child(current_scene)
 	elif scene is Resource:

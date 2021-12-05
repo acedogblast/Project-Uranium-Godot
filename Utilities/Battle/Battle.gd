@@ -595,7 +595,7 @@ func battle_loop():
 					# Remove money
 					Global.remove_money(get_money_loss())
 					yield(self, "continue_pressed")
-					message = Global.TrainerName + "blacked out!"
+					message = Global.TrainerName + " blacked out!"
 					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
 					yield(self, "continue_pressed")
 		action.STAT_CHANGE_ANIMATION:

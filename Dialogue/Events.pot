@@ -67,7 +67,7 @@ msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2_2"
 msgstr "Yeah, but not too long, all right?"
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_1"
-msgstr "The <b>Pokémon Trainer Aptitude Test</b>\nsorts Trainers into three basic types:\n\\c[3]<b>Defensive</b>\\c[0], \\c[2]<b>Offensive</b>\\c[0], and \\c[1]<b>Ballanced</b>\\c[0]."
+msgstr "The <b>Pokémon Trainer Aptitude Test</b>\nsorts Trainers into three basic types:\n\\c[3]<b>Defensive</b>\\c[0], \\c[2]<b>Offensive</b>\\c[0], and \\c[1]<b>Balanced</b>\\c[0]."
 
 msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_2"
 msgstr "The professor will then give you a starter Pokémon that best fits your battling style."
