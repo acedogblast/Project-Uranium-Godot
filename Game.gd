@@ -506,10 +506,7 @@ func recive_item(item_name_or_ID):
 
 func get_doors():
 	var nodes = []
-	if current_scene.get_node("NPC_Layer") == null:
-		return nodes
-
-	for node in current_scene.get_node("NPC_Layer").get_children():
-		if node.is_in_group("Doors"):
-			nodes.append(node)
+	for door in get_tree().get_nodes_in_group("Doors"):
+		if current_scene.is_a_parent_of(door):
+			nodes.append(door)
 	return nodes

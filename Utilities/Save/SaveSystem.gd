@@ -2,7 +2,7 @@ extends Node
 
 const SAVE_STATE = preload('res://Utilities/Save/State.gd')
 
-var SAVE_FOLDER # For Release Need to change to "user://"
+var SAVE_FOLDER # The location of where the save is stored
 var SAVE_NAME_TEMPLATE = "save_%03d.tres"
 
 var save_state : SAVE_STATE
@@ -14,7 +14,23 @@ func _ready():
 	if OS.is_debug_build():
 		SAVE_FOLDER = "res://Utilities/Save"
 	else:
-		SAVE_FOLDER = "user://"
+		if OS.get_name() == "Android": # Special case for Android for saving in an external directory
+			#SAVE_FOLDER = OS.get_external_data_dir().plus_file("UraniumSaves") # Crashes for some reason
+			# Workaround from: https://github.com/godotengine/godot/issues/23004#issue-369879623
+			var has_permissions: bool = false
+			
+			while not has_permissions:
+				var permissions: Array = OS.get_granted_permissions()
+				
+				if not permissions.has("android.permission.READ_EXTERNAL_STORAGE") or not permissions.has("android.permission.WRITE_EXTERNAL_STORAGE"):
+					OS.request_permissions()
+					yield(get_tree().create_timer(1), "timeout")
+				else:
+					has_permissions = true
+
+			SAVE_FOLDER = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS).plus_file("UraniumSaves")
+		else:
+			SAVE_FOLDER = "user://"
 
 	save_state = State.new()
 
