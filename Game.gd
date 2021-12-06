@@ -9,7 +9,8 @@ var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene
 var scenes = []
 var trainers = [] # array of trainers in the current scene
-var cliffs = []
+var cliffs = [] # array of cliffs in the current scene
+var doors = [] # array of doors in the current scene
 
 var loaded = false
 var isInteracting = false
@@ -189,6 +190,10 @@ func change_scene(scene):
 	# Get cliffs
 	cliffs.clear()
 	cliffs = get_cliffs()
+
+	# Get doors
+	doors.clear()
+	doors = get_doors()
 
 	# Load adjacent sceens
 	if "adjacent_scenes" in current_scene && current_scene.adjacent_scenes != null && current_scene.adjacent_scenes.size() != 0:
@@ -498,3 +503,13 @@ func recive_item(item_name_or_ID):
 	Global.inventory.add_item(item)
 
 	emit_signal("end_of_event")
+
+func get_doors():
+	var nodes = []
+	if current_scene.get_node("NPC_Layer") == null:
+		return nodes
+
+	for node in current_scene.get_node("NPC_Layer").get_children():
+		if node.is_in_group("Doors"):
+			nodes.append(node)
+	return nodes

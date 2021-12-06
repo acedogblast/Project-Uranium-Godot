@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Utilities/CliffEdge.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Graphics/Characters/itemball.png" type="Texture" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -152,4 +153,5 @@ size = 5
 
 [node name="Item1" parent="NPC_Layer" instance=ExtResource( 10 )]
 position = Vector2( 528, 1360 )
+texture = ExtResource( 13 )
 item_id = 170

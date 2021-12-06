@@ -137,7 +137,8 @@ func get_input():
 			ahead = get_position_relative_to_current_scene() + Vector2(32, 0)
 	var is_door_ahead = false
 	#print(ahead)
-	for door in get_tree().get_nodes_in_group("Doors"):
+
+	for door in Global.game.doors:
 		var door_pos = door.position
 		
 		if door_pos == ahead:
