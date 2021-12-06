@@ -811,10 +811,10 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 
 					action = BattleQueueAction.new()
 					action.type = action.BATTLE_TEXT
-					action.battle_text = get_battler_title_by_index(battler_index) + " is hurt\nby its burn!"
+					action.battle_text = get_battler_title_by_index(battler_ailment_index) + " is hurt\nby its burn!"
 					queue.push(action)
 
-					if post_damage_checks(battler_index):
+					if post_damage_checks(battler_ailment_index):
 						return queue
 				MajorAilment.POISON: # Note Badly poison mechanic is not implemented
 					var damage = battler_ailment.hp / 8
@@ -831,10 +831,10 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 
 					action = BattleQueueAction.new()
 					action.type = action.BATTLE_TEXT
-					action.battle_text = get_battler_title_by_index(battler_index) + " is hurt\nby poison!"
+					action.battle_text = get_battler_title_by_index(battler_ailment_index) + " is hurt\nby poison!"
 					queue.push(action)
 
-					if post_damage_checks(battler_index):
+					if post_damage_checks(battler_ailment_index):
 						return queue
 
 	# Print out the action queue for debug
