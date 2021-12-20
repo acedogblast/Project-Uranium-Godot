@@ -77,6 +77,7 @@ func setup():
 	var result = DialogueSystem.connect("dialogue_end", self, "dialog_end", [], CONNECT_DEFERRED)
 	player.set_idle_frame(player.direction)
 	player.canMove = true
+	player.load_texture()
 
 	if ("place_name" in current_scene):
 		Global.location = current_scene.place_name

@@ -347,7 +347,7 @@ func load_texture():
 		runTexture = preload("res://Graphics/Characters/PU-PlutoRun.png")
 	if Global.TrainerGender == 2:
 		walkTexture = preload("res://Graphics/Characters/HEROINE.png")
-		runTexture = preload("res://Graphics/Characters/HEROINE.png")
+		runTexture = preload("res://Graphics/Characters/HEROINE-RUN.png")
 	$Position2D/Sprite.texture = walkTexture
 	$Position2D/Sprite.frame = 0
 	
