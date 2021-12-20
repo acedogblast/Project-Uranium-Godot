@@ -451,7 +451,7 @@ msgid "EVENT_MOKI_TOWN_THEO_HOME_30"
 msgstr "Losing is as much a part of being a Trainer as winning. He will have to learn that, sooner or latter..."
 
 msgid "EVENT_MOKI_TOWN_THEO_HOME_31"
-msgstr "Oh, \\PN is here.\nAre you looking for a rematch?'Cause I ain't giving you one! I won, fair and square! Haha!"
+msgstr "Oh, \\PN is here.\nAre you looking for a rematch? 'Cause I ain't giving you one! I won, fair and square! Haha!"
 
 msgid "EVENT_MOKI_TOWN_THEO_HOME_32"
 msgstr "Theo, don't be rude.\nYou and \\PN will see a lot of each other on your journeys to come, so you'll need to get along."

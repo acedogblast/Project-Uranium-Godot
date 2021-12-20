@@ -232,11 +232,11 @@ func event1():
 			Global.game.player.call_deferred("set_facing_direction", Global.game.player.DIRECTION.UP)
 
 			theo.show()
-			theo.call_deferred("move_multi", "Right", 1)
+			theo.call_deferred("move_multi", "Left", 1)
 			yield(theo, "done_movement")
 			theo.call_deferred("move_multi", "Down", 2)
 			yield(theo, "done_movement")
-			theo.call_deferred("move_multi", "Right", 1)
+			theo.call_deferred("move_multi", "Left", 1)
 			yield(theo, "done_movement")
 			
 			theo.set_idle_frame("Down")
