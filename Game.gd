@@ -4,6 +4,8 @@ var player
 var menu
 var battle
 var overlay
+var save_system
+var dialogue_system
 
 var start_scene = preload("res://Maps/MokiTown/HeroHome.tscn")
 var current_scene
@@ -87,6 +89,9 @@ func setup():
 	player.connect("wild_battle", self, "wild_battle")
 	$Clock.connect("timeout", self, "clock_timeout")
 	$Clock.start()
+
+	dialogue_system = get_parent().get_node("DialogueSystem")
+	save_system = get_parent().get_node("SaveSystem")
 
 func _process(_delta):
 	# Sort and assign Z index
@@ -255,7 +260,7 @@ func room_transition(dest, dir):
 	release_player()
 	Global.location = current_scene.place_name
 
-#If the player is not transitioning, then set isTransitioning to true, and call the change_input method, and wait until the transition fade_to_color animation has finished
+#If the player is not transitioning, then set isTransitioning to true, and wait until the transition fade_to_color animation has finished
 func door_transition(path_scene, new_position, direction = null):
 	yield(transition.fade_to_color(), "completed")
 

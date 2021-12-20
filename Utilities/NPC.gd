@@ -224,3 +224,5 @@ func turning():
 			set_idle_frame(facing)
 			# check for player
 			Global.game.player.trainer_encounter()
+func get_dialogue_point():
+	return self.get_global_transform_with_canvas().get_origin()

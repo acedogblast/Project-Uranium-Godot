@@ -68,11 +68,10 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		Global.game.lock_player()
 		#Turn to face player
 		theo.face_player(direction)
-		if Global.past_events.has("EVENT_BAMBOLAB_1_INTRO") && !Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
-			Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_38_THEO", theo.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
-			Global.game.release_player()
-			return null
+		Global.game.play_dialogue_with_point("EVENT_MOKI_LAB_FIRST_POK_38_THEO", theo.get_dialogue_point())
+		yield(Global.game, "event_dialogue_end")
+		Global.game.release_player()
+		return null
 	
 	return null
 func event1_prep():
@@ -395,7 +394,7 @@ func event1_test():
 
 			DialogueSystem.hold = true
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OPTION_15")
-		1:
+		1: # Orchynx
 			Global.past_events.append("EVENT_MOKI_LAB_GOT_ORCHYNX")
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Orchynx")
 			yield(Global.game, "event_dialogue_end")
@@ -411,7 +410,7 @@ func event1_test():
 
 			DialogueSystem.hold = true
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OPTION_15_1")
-		2:
+		2: # Eletux
 			Global.past_events.append("EVENT_MOKI_LAB_GOT_ELETUX")
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_33_Eletux")
 			yield(Global.game, "event_dialogue_end")
@@ -464,6 +463,7 @@ func event1_poke_machine():
 				poke.set_basic_pokemon_by_level(5,5)
 				Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ELETUX")
 		Global.add_poke_to_party(poke)
+		Global.player_starter = starter
 
 		yield(Global.game.get_node("Effect_music"), "finished")
 		Global.game.get_node("Effect_music").stop()
@@ -535,20 +535,22 @@ func event_1_rival_poke():
 	yield(Global.game, "event_dialogue_end")
 
 	DialogueSystem.hold = true
-	match starter:
-		0,2:
+	match Global.player_starter:
+		0:
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_50_Orchynx")
 		1:
 			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_50_Eletux")
+		2:
+			Global.game.play_dialogue("EVENT_MOKI_LAB_FIRST_POK_50_Raptorch")
 	yield(DialogueSystem, "finished_printing")
 
-	match starter:
-		0,2:
+	match starter: # For Theo
+		0:
 			ui.Poke_get_slide(1)
-			Global.theo_starter = 1
 		1:
 			ui.Poke_get_slide(2)
-			Global.theo_starter = 2
+		2:
+			ui.Poke_get_slide(0)
 	DialogueSystem.hold = false
 	yield(ui, "selected")
 	ui.fadeout()
@@ -602,11 +604,13 @@ func lab_battle():
 	bid.victory_award = 350
 
 	var poke = Pokemon.new()
-	match Global.theo_starter:
-		1:
-			poke.set_basic_pokemon_by_level(1,5)
-		2:
-			poke.set_basic_pokemon_by_level(5,5)
+	match Global.player_starter:
+		0:# Player has gets Raptorch
+			poke.set_basic_pokemon_by_level(1,5) # Theo gets Orchynx
+		1:# Player has gets Orchynx
+			poke.set_basic_pokemon_by_level(5,5) # Theo gets Eletux
+		2:# Player has gets Eletux
+			poke.set_basic_pokemon_by_level(3,5) # Theo gets Raptorch
 	bid.opponent.pokemon_group.append(poke)
 	bid.opponent.battle_texture = load("res://Graphics/Characters/trainer086.png")
 	

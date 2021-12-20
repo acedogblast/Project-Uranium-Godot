@@ -101,7 +101,7 @@ func _input(event):
 		if event.is_action_pressed("ui_accept"):
 			match stage:
 				1:
-					if mode == -2:
+					if mode == -2: # Special case for battle
 						mode = 1
 						$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_1")
 						$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_1")
@@ -474,9 +474,19 @@ func get_multiline_result():
 			stage = 1
 			switch_poke_order()
 			return
-
+		
+		# TODO: Remove this when done
+		stage = 1
+		return
+		
 		stage = 3
 		# Open next menus
+		if result == 0: # TODO: Open Summary
+			pass
+		
+
+
+
 	
 	pass
 func switch_poke_order():

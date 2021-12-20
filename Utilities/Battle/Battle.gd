@@ -587,7 +587,7 @@ func battle_loop():
 					$CanvasLayer/BattleInterfaceLayer/Message/Arrow.visible = true
 					yield(self, "continue_pressed")
 
-					message = Global.TrainerName + " lost against\n" + get_opponent_title()
+					message = Global.TrainerName + " lost against\n" + get_opponent_title() + "."
 					$CanvasLayer/BattleInterfaceLayer/Message/Label.text = message
 					yield(self, "continue_pressed")
 					message = Global.TrainerName + " gave $" + str(get_money_loss()) + " to the winner..."

@@ -15,7 +15,7 @@ func _ready():
 	npc_layer = $NPC_Layer
 	$BG.show()
 	yield(Global.game, "tranistion_complete")
-	event1(null) # Play event on enter.
+	event1() # Play event on enter.
 	pass
 
 func interaction(check_pos, direction): # check_pos is a Vector2 of the position of object to interact
@@ -28,7 +28,7 @@ func interaction(check_pos, direction): # check_pos is a Vector2 of the position
 		Global.game.release_player()
 
 
-func event1(_body):
+func event1():
 	var event_name = "EVENT_MOKI_TOWN_THEO_HOME_1"
 	if !Global.past_events.has(event_name) && Global.past_events.has("EVENT_BAMBOLAB_1_COMPLETE"):
 		print("New Event: " + event_name)
@@ -190,7 +190,7 @@ func event1(_body):
 			cameron.set_idle_frame("Right")
 
 			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
-			Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_THEO_HOME_25", theo.get_global_transform_with_canvas().get_origin())
+			Global.game.play_dialogue("EVENT_MOKI_TOWN_THEO_HOME_25")
 			yield(Global.game, "event_dialogue_end")
 
 			Global.game.player.call_deferred("move_player_event", Global.game.player.DIRECTION.UP, 3)
@@ -202,7 +202,7 @@ func event1(_body):
 
 			DialogueSystem.hold = true
 			Global.game.play_dialogue_with_point("EVENT_MOKI_TOWN_THEO_HOME_27", cameron.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "finished_printing")
+			yield(Global.game.dialogue_system, "finished_printing")
 
 			# Show yesno prompt
 			var yesno = load("res://Utilities/UI/YesNoPrompt.tscn").instance()

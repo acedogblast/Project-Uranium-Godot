@@ -282,6 +282,9 @@ msgstr "Orchynx is the best pick!"
 msgid "EVENT_MOKI_LAB_FIRST_POK_50_Eletux"
 msgstr "Eletux! is the best pick!"
 
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Raptorch"
+msgstr "Raptorch! is the best pick!"
+
 msgid "EVENT_MOKI_LAB_FIRST_POK_51"
 msgstr "Yes!!\nMy first Pokémon!"
 
@@ -433,7 +436,7 @@ msgid "EVENT_MOKI_TOWN_THEO_HOME_25"
 msgstr "Hahaha! Wooooo!"
 
 msgid "EVENT_MOKI_TOWN_THEO_HOME_26"
-msgstr "Theo's certainly in a good mood.\nHe showed me his starter Pokémon and told me how pround he was that he finally beat you.\nI trust you didn't take it too hard..?\nMy song is very energetic.\nAnd, well, he has his heart set on winning."
+msgstr "Theo's certainly in a good mood.\nHe showed me his starter Pokémon and told me how pround he was that he finally beat you.\nI trust you didn't take it too hard..?\nMy son is very energetic.\nAnd, well, he has his heart set on winning."
 
 msgid "EVENT_MOKI_TOWN_THEO_HOME_27"
 msgstr "Although... I have to ask...\nDid you let him win on purpose?"

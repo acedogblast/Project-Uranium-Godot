@@ -100,6 +100,14 @@ func animation_close():
 func transition():
 	Global.game.lock_player()
 
+	# if scene_destination == null: Does not work!
+	# 	print("GAME WARNING: Door scene_destination is null.")
+	# 	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
+	# 	Global.game.play_dialogue("This door is locked and is null.")
+	# 	yield(Global.game, "event_dialogue_end")
+	# 	Global.game.release_player()
+	# 	return
+
 	if locked:
 		if !Global.inventory.has_item_id(key_id):
 			DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
