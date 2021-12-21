@@ -201,6 +201,8 @@ func _input(event):
 			1:
 				if cancel_locked:
 					return
+
+				selection = CANCEL
 				emit_signal("close_party")
 			2:
 				multi_line.queue_free()
@@ -448,7 +450,7 @@ func get_multiline_result():
 
 	if mode == 1: # In battle
 		match result:
-			0: # Switch out
+			0:  # Switch out
 				# Check if selection is already in battle
 				multi_line.queue_free()
 				var battle_node = self.get_parent().get_parent().get_parent()
@@ -483,8 +485,6 @@ func get_multiline_result():
 		# Open next menus
 		if result == 0: # TODO: Open Summary
 			pass
-		
-
 
 
 	

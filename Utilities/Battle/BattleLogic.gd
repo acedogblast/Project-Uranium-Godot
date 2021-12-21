@@ -734,6 +734,10 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 		for effect in get_effects_by_index(battler_effects_index):
 			match effect.effect:
 				BattleEffect.effects.SEEDED:
+					action.type = action.BATTLE_TEXT
+					action.battle_text = get_battler_title_by_index(battler_effects_index) + " is seeded!"
+					queue.push(action)
+
 					var damage = battler_by_index.hp / 16
 					if damage < 1:
 						damage = 1
