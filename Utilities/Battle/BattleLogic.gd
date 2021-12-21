@@ -745,7 +745,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 					
 					# Heal
 					var current_hp = get_battler_by_index(effect.seeded_heal_target_index).current_hp
-					if current_hp + damage > get_battler_by_index(effect.seeded_heal_target_index).hp:
+					if current_hp + damage >= get_battler_by_index(effect.seeded_heal_target_index).hp:
 						get_battler_by_index(effect.seeded_heal_target_index).current_hp = get_battler_by_index(effect.seeded_heal_target_index).hp
 					else:
 						get_battler_by_index(effect.seeded_heal_target_index).current_hp += damage
