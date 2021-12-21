@@ -22,6 +22,8 @@ enum SELECTED { # for the full pannel
 var selected = 0
 var save_id = 1
 func _ready():
+	$ErrorMessage.text = ""
+
 	#Gets the number of saves from the save system
 	var num = SaveSystem.get_number_of_saves()
 	#If there are no saves, then set the panel layout to panel.new, set the panels to visible, set the FullPanel to invisible, uses the greenbox texture region for a new game, and greybox for the exit
@@ -87,6 +89,11 @@ func _ready():
 
 
 func _process(delta):
+
+	# Get save system errors
+	$ErrorMessage.text = SaveSystem.error_messages
+
+
 	#If panel layout is pannel.new then run the next line
 	if pannel_layout == PANNEL.NEW:
 		#If the selected is 0, and down is pressed, then select one and call the updateboxes method

@@ -24,9 +24,6 @@ var current_page : int = 1
 var last_item
 var num_of_items
 
-func _ready():
-	pass # Replace with function body.
-
 func start():
 	enabled = true
 	stage = 1
@@ -46,8 +43,10 @@ func _input(event):
 					$AnimationPlayer.play_backwards("SlideBag")
 					yield($AnimationPlayer, "animation_finished")
 					self.visible = false
+					print("BattleBagHidden!")
 					self.get_parent().get_node("BattleComandSelect").enabled = true
 					self.get_parent().get_node("BattleComandSelect").visible = true
+					self.get_parent().get_node("BattleComandSelect").change_Sel_Hand_Pos(true)
 				2:
 					$BagMenu/Tween.interpolate_property($BagMenu/Pages, "position", $BagMenu/Pages.position, Vector2(512,0), 0.25, Tween.TRANS_SINE, Tween.EASE_OUT)
 					$BagMenu/Tween.start()
@@ -128,7 +127,6 @@ func _input(event):
 					select_right()
 			update_selection()
 		
-
 		if event.is_action_pressed("ui_accept"):
 			match stage:
 				1:
@@ -164,6 +162,7 @@ func _input(event):
 							$AnimationPlayer.play_backwards("SlideBag")
 							yield($AnimationPlayer, "animation_finished")
 							self.visible = false
+							print("BACK")
 							self.get_parent().get_node("BattleComandSelect").enabled = true
 							self.get_parent().get_node("BattleComandSelect").visible = true
 				2:
@@ -186,6 +185,7 @@ func _input(event):
 				3:
 					if selection == USE:
 						stage = 4
+						enabled = false
 						var command = BattleCommand.new()
 						command.command_type = command.USE_BAG_ITEM
 						command.item = get_item_stack().get_item_id()
@@ -207,9 +207,16 @@ func _input(event):
 							yield(party, "close_party")
 
 							if party.selection == party.CANCEL:
+								ani.play("FadeIn")
+								yield(ani, "animation_finished")
+								party.hide()
 								$BagMenu/Pages.visible = true
 								$BagMenu/Item.visible = false
+								self.show()
+								ani.play("FadeOut")
+								yield(ani, "animation_finished")
 								stage = 2
+								enabled = true
 								update_selection()
 								return
 							else:
@@ -227,6 +234,7 @@ func _input(event):
 						emit_signal("command_received", command)
 						$BagMenu/Item.visible = false
 						self.visible = false
+						print("No visible 237")
 						stage = 4
 					else:
 						$BagMenu/Pages.visible = true
@@ -392,7 +400,7 @@ func select_down():
 				selection = S4
 			else:
 				selection = BACK
-		S5, S6:
+		S5, S6, USE:
 			selection = BACK
 func select_up():
 	match selection:

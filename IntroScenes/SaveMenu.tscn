@@ -368,3 +368,11 @@ margin_right = 52.0
 margin_bottom = 24.0
 custom_fonts/font = SubResource( 4 )
 text = "UI_SAVEMENU_EXIT"
+
+[node name="ErrorMessage" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "This is a test error message"
+__meta__ = {
+"_edit_use_anchors_": false
+}

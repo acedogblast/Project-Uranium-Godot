@@ -2347,8 +2347,8 @@ margin_left = 2.0
 margin_top = 2.0
 margin_right = 462.0
 margin_bottom = 85.0
-custom_fonts/normal_font = SubResource( 22 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
 bbcode_text = "[center]What will Godot do?"
 text = "What will Godot do?"
@@ -2497,8 +2497,8 @@ margin_left = -85.0
 margin_top = -32.0
 margin_right = 73.0
 margin_bottom = -2.0
-custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+custom_fonts/normal_font = ExtResource( 43 )
 bbcode_enabled = true
 bbcode_text = "[center]Scratch"
 text = "Scratch"
@@ -2508,8 +2508,8 @@ margin_left = -67.0
 margin_top = -5.0
 margin_right = 42.0
 margin_bottom = 25.0
-custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+custom_fonts/normal_font = ExtResource( 43 )
 bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
 
@@ -2526,8 +2526,8 @@ margin_left = -85.0
 margin_top = -32.0
 margin_right = 73.0
 margin_bottom = -2.0
-custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+custom_fonts/normal_font = ExtResource( 43 )
 bbcode_enabled = true
 bbcode_text = "[center]Scratch"
 text = "Scratch"
@@ -2537,8 +2537,8 @@ margin_left = -67.0
 margin_top = -5.0
 margin_right = 42.0
 margin_bottom = 25.0
-custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+custom_fonts/normal_font = ExtResource( 43 )
 bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
 
@@ -2555,8 +2555,8 @@ margin_left = -85.0
 margin_top = -32.0
 margin_right = 73.0
 margin_bottom = -2.0
-custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+custom_fonts/normal_font = ExtResource( 43 )
 bbcode_enabled = true
 bbcode_text = "[center]Scratch"
 text = "Scratch"
@@ -2566,8 +2566,8 @@ margin_left = -67.0
 margin_top = -5.0
 margin_right = 42.0
 margin_bottom = 25.0
-custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+custom_fonts/normal_font = ExtResource( 43 )
 bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
 
@@ -2584,8 +2584,8 @@ margin_left = -85.0
 margin_top = -32.0
 margin_right = 73.0
 margin_bottom = -2.0
-custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+custom_fonts/normal_font = ExtResource( 43 )
 bbcode_enabled = true
 bbcode_text = "[center]Scratch"
 text = "Scratch"
@@ -2595,8 +2595,8 @@ margin_left = -67.0
 margin_top = -5.0
 margin_right = 42.0
 margin_bottom = 25.0
-custom_fonts/normal_font = ExtResource( 43 )
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+custom_fonts/normal_font = ExtResource( 43 )
 bbcode_text = "PP: 35/35"
 text = "PP: 35/35"
 
@@ -2778,7 +2778,6 @@ script = ExtResource( 55 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 
 [node name="BG" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-modulate = Color( 1, 1, 1, 0 )
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 50 )
@@ -2798,7 +2797,6 @@ anims/SlideBag = SubResource( 41 )
 anims/SlideToMenu = SubResource( 42 )
 
 [node name="Left" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-position = Vector2( -250, 0 )
 
 [node name="Medicine" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Left"]
 position = Vector2( 132, 78 )
@@ -2812,7 +2810,6 @@ hframes = 6
 frame = 2
 
 [node name="Right" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-position = Vector2( 250, 0 )
 
 [node name="PokeBalls" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Right"]
 position = Vector2( 385, 125 )
@@ -2827,7 +2824,6 @@ hframes = 6
 frame = 3
 
 [node name="Bottom" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-position = Vector2( 0, 100 )
 
 [node name="Back" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom"]
 position = Vector2( 430, 340 )
@@ -2860,6 +2856,7 @@ visible = false
 anims/Slide = SubResource( 45 )
 
 [node name="Pocket" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
+visible = false
 margin_left = -360.0
 margin_top = 320.0
 margin_right = -40.0
@@ -3096,6 +3093,7 @@ visible = false
 visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+visible = false
 modulate = Color( 1, 1, 1, 0 )
 margin_right = 512.0
 margin_bottom = 384.0

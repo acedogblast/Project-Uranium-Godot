@@ -203,6 +203,7 @@ func _input(event):
 					return
 
 				selection = CANCEL
+				stage = 0
 				emit_signal("close_party")
 			2:
 				multi_line.queue_free()

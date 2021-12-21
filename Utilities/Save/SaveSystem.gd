@@ -3,12 +3,15 @@ extends Node
 const SAVE_STATE = preload('res://Utilities/Save/State.gd')
 
 var SAVE_FOLDER # The location of where the save is stored
+var android_external_save_folder : String
 var SAVE_NAME_TEMPLATE = "save_%03d.tres"
 
 var save_state : SAVE_STATE
 
 # save_id are to start at 1 to n
 # This is to know how many save files there are.
+
+var error_messages = ""
 
 func _ready():
 	if OS.is_debug_build():
@@ -28,9 +31,10 @@ func _ready():
 				else:
 					has_permissions = true
 
-			SAVE_FOLDER = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS).plus_file("UraniumSaves")
-		else:
-			SAVE_FOLDER = "user://"
+			android_external_save_folder = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS, true).plus_file("UraniumSaves")
+			
+		
+		SAVE_FOLDER = "user://"
 
 	save_state = State.new()
 
@@ -71,14 +75,28 @@ func save_file(id):
 	
 	var save_path = SAVE_FOLDER.plus_file(SAVE_NAME_TEMPLATE % id)
 	var error = ResourceSaver.save(save_path, save_state)
+
+	if OS.get_name() == "Android":
+		# Make another save in external location
+		save_path = android_external_save_folder.plus_file(SAVE_NAME_TEMPLATE % id)
+		error = ResourceSaver.save(save_path, save_state)
+
 	if error != OK:
 		print('There was an issue writing the save %s to %s' % [id, save_path])
 
 func get_number_of_saves():
 	var directory : Directory = Directory.new()
-	if not directory.dir_exists(SAVE_FOLDER):
+
+	var error = directory.open(SAVE_FOLDER)
+
+	if error != 0:
+		print("Error opening save folder")
+		error_messages += "Error opening save folder\n"
+		print("Error code: %d" % error)
+		error_messages += "Error code: %d\n" % error
 		return 0
+
 	var num = 0
-	while directory.file_exists(SAVE_FOLDER.plus_file(SAVE_NAME_TEMPLATE % (num + 1))):
+	while directory.file_exists(SAVE_NAME_TEMPLATE % (num + 1)):
 		num += 1
 	return num

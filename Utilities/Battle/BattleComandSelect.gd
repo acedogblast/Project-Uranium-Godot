@@ -100,7 +100,7 @@ func _input(event):
 					
 
 	
-func change_Sel_Hand_Pos():
+func change_Sel_Hand_Pos(reset = false):
 	match selected:
 		ATTACK:
 			$SelHand.position = ATTACK_POS
@@ -154,8 +154,9 @@ func change_Sel_Hand_Pos():
 			$Bag/AnimationPlayer.stop(true)
 			$Poke/AnimationPlayer.stop(true)
 			$Run/AnimationPlayer.play("Slide")
-	$SelHand/AudioStreamPlayer.stream = select_se_1
-	$SelHand/AudioStreamPlayer.play()
+	if (reset == false):
+		$SelHand/AudioStreamPlayer.stream = select_se_1
+		$SelHand/AudioStreamPlayer.play()
 func submit_command(command):
 	self.get_parent().get_parent().get_parent().battle_command = command
 	emit_signal("command_received")
