@@ -1,0 +1,401 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "NPC_TRAINER_D1"
+msgstr "This is a test for NPCs.\n"
+
+msgid "NPC_TRAINER_D2"
+msgstr "And you know what?\\wt[16].\\wt[16].\\wt[16].\\wt[10]\n"
+
+msgid "NPC_TRAINER_D3"
+msgstr "It is also an event test!\n"
+
+msgid "NPC_AUNT1_D1"
+msgstr ""
+"\\PN, sweetie!\n"
+"Today's your big day, isn't it?"
+
+msgid "NPC_AUNT1_D2"
+msgstr ""
+"I can't help but feel glum, seeing my little one all grown up and leaving "
+"home.\n"
+"Oh if only these old bones could do more so that I could support us both!"
+
+msgid "NPC_AUNT1_D3"
+msgstr ""
+"But we both know that you're ready for this. You and that boy Theo...\n"
+"always following in your footsteps, that one.\n"
+"You've always been so capable,\n"
+"but I wonder about him?\n"
+"He is younger after all."
+
+msgid "NPC_AUNT1_D4"
+msgstr ""
+"I'm sure his father Cameron wouldn't allow his to go unless he was sure.\n"
+"Anyways, to celebrate your big day,\n"
+"I got you a present."
+
+msgid "NPC_AUNT1_D5"
+msgstr "Go ahead and open it!"
+
+msgid "NPC_AUNT1_D6"
+msgstr "\\PN obtained the Running Shoes!"
+
+msgid "NPC_AUNT1_D7"
+msgstr ""
+"(The instructions on them read: \"To run, hold Z. You can toggle auto-run in "
+"the Menu.\")"
+
+msgid "NPC_AUNT1_D8"
+msgstr "*sniffle*"
+
+msgid "NPC_AUNT1_D9"
+msgstr ""
+"O-oh, don't mind me, sweetie...\n"
+"I'm just an emotional old lady.\n"
+"If only your father were here right now...\n"
+"Well, I'm sure he's proud of you too.\n"
+"And I'm positive you'll run into him during your adventure."
+
+msgid "NPC_AUNT1_D10"
+msgstr ""
+"Now, I shouldn't keep you any longer.\n"
+"Say hi to that nice Professor man for me, will you?"
+
+msgid "NPC_AUNT1_D11"
+msgstr ""
+"And if you don't mind stopping by again after you get your first Pokémon,\n"
+"I'd love to see it."
+
+msgid "NPC_AUNT1_D12"
+msgstr "Good luck, sweetie!"
+
+msgid "NPC_AUNT1_D13"
+msgstr ""
+"If you don't mind stopping by after you get your first Pokémon, I'd love to "
+"see it.\n"
+"Good luck, sugarpie!"
+
+msgid "NPC_AUNT1_D14_RAPTORCH"
+msgstr ""
+"Oh, honey, you came back to say goodbye!\n"
+"How sweet. Is that your Pokémon? What's it called? RAPTORCH? It's so cute! "
+"Come back when you need a rest, or if you want humor your old aunt."
+
+msgid "NPC_AUNT1_D14_ORCHYNX"
+msgstr ""
+"Oh, honey, you came back to say goodbye!\n"
+"How sweet. Is that your Pokémon? What's it called? ORCHYNX? It's so cute! "
+"Come back when you need a rest, or if you want humor your old aunt."
+
+msgid "NPC_AUNT1_D14_ELETUX"
+msgstr ""
+"Oh, honey, you came back to say goodbye!\n"
+"How sweet. Is that your Pokémon? What's it called? ELETUX? It's so cute! "
+"Come back when you need a rest, or if you want humor your old aunt."
+
+msgid "NPC_BAMBO_MOKI_TOWN_CATCH_DEMO_PREP_1"
+msgstr ""
+"Hey there, \\PN! I want to show you and Theo how to catch a Pokémon.\n"
+"Can you go get him?\n"
+"He should be in his house."
+
+msgid "NPC_AUNT_HEAL_1"
+msgstr "Hello, honey! Take a break from all that tiring adventuring?"
+
+msgid "NPC_AUNT_HEAL_2"
+msgstr "Your Pokémon were healed..."
+
+msgid "NPC_AUNT_HEAL_3"
+msgstr "It's quiet without you around, you know..."
+
+msgid "NPC_AUNT_HEAL_RANDOM_1"
+msgstr "I've been playing your Wii tennis. It feels good to get moving."
+
+msgid "NPC_AUNT_HEAL_RANDOM_2"
+msgstr "I joined a swim aerobics class. It meets every Tuesday."
+
+msgid "NPC_AUNT_HEAL_RANDOM_3"
+msgstr "I asked our neighbors to help set up the internet."
+
+msgid "NPC_AUNT_HEAL_RANDOM_4"
+msgstr ""
+"Those kids next door seem very interested in your Wii. I let them play it."
+
+msgid "NPC_AUNT_HEAL_RANDOM_5"
+msgstr ""
+"I've been getting into indie game development. My latest project is called "
+"\"Pokémon Agate.\""
+
+msgid "NPC_AUNT_HEAL_RANDOM_6"
+msgstr ""
+"I haven't seen that nice boy Theo around lately. I wonder where he went?"
+
+msgid "NPC_AUNT_HEAL_RANDOM_7"
+msgstr ""
+"Don't you know, I tried to talk to Cam lately, and he just gave me the cold "
+"shoulder! How rude!"
+
+msgid "NPC_AUNT_HEAL_RANDOM_8"
+msgstr ""
+"Have you heard from my nephew-- your father-- lately? Must be tough, being a "
+"ranger."
+
+msgid "NPC_AUNT_HEAL_RANDOM_9"
+msgstr "I was thinking of getting a pet Pokémon to keep me company."
+
+msgid "NPC_AUNT_HEAL_RANDOM_10"
+msgstr ""
+"Did you ever talk to your neighbor Cam? He's an electrician, you know. Seems "
+"to be moving up in the world."
+
+msgid "NPC_AUNT_HEAL_RANDOM_11"
+msgstr "You know, back when I was a little girl, I was quite a looker. *sigh*"
+
+msgid "NPC_AUNT_HEAL_RANDOM_12"
+msgstr ""
+"I was watching the television, and they said your mother's name! Something "
+"about a new plant, I forget."
+
+msgid "NPC_AUNT_HEAL_RANDOM_13"
+msgstr "Beaten any of those gym leaders yet?"
+
+msgid "NPC_AUNT_HEAL_RANDOM_14"
+msgstr ""
+"Running off on another adventure, eh, \\PN? Why don't you stay and rest up a "
+"while?"
+
+msgid "NPC_ROUTE1_TRAINER_1"
+msgstr "You're a new Trainer, huh? I just started too!"
+
+msgid "NPC_ROUTE1_TRAINER_1_DEFEAT"
+msgstr ""
+"Anyone can be a Trainer, but some people definitely seem more suited for it "
+"than others, don't you think?"
+
+msgid "NPC_ROUTE1_TRAINER_2"
+msgstr ""
+"Oh! Hey! \\PN! I just got a new Pokémon and I want to see how it fares!"
+
+msgid "NPC_ROUTE1_TRAINER_2_DEFEAT"
+msgstr "Ah, it's not as strong as I'd hoped..."
+
+msgid "NPC_ROUTE1_CHYINMUNK"
+msgstr "Chyin.. Chyin!"
+
+msgid "NPC_ROUTE1_TRAINER_3"
+msgstr "Hey! You! Yeah, you, over there! We're gonna battle now, 'kay?"
+
+msgid "NPC_ROUTE1_TRAINER_3_DEFEAT"
+msgstr "Wooow! That was wicked!"
+
+msgid "NPC_ROUTE1_TRAINER_4"
+msgstr "Don't run away from me!"
+
+msgid "NPC_ROUTE1_TRAINER_4_DEFEAT"
+msgstr "Oh, crackers! I lost!"
+
+msgid "NPC_POKECENTER_NURSE_1"
+msgstr "Hello, and welcome to the Pokémon Center."
+
+msgid "NPC_POKECENTER_NURSE_2"
+msgstr "We restore your tired Pokémon to full health."
+
+msgid "NPC_POKECENTER_NURSE_3"
+msgstr "Would you like to rest your Pokémon?"
+
+msgid "NPC_POKECENTER_NURSE_4"
+msgstr "OK, I'll take your Pokémon for a few seconds."
+
+msgid "NPC_POKECENTER_NURSE_5"
+msgstr "Thank you for waiting."
+
+msgid "NPC_POKECENTER_NURSE_6"
+msgstr "We've restored your Pokémon to full health."
+
+msgid "NPC_POKECENTER_NURSE_7"
+msgstr "We hope to see you again!"
+
+msgid "NPC_ROUTE2_TRAINER_1"
+msgstr ""
+"I heard Owten nest in this area.\n"
+"I'm trying to catch one!"
+
+msgid "NPC_ROUTE2_TRAINER_1_DEFEAT"
+msgstr "You gotta tell me, what's your secret to Pokémon training? Pleeeease?"
+
+msgid "NPC_ROUTE2_TRAINER_2"
+msgstr "Hey, kid! Are you tough enough to make it through this cave?"
+
+msgid "NPC_ROUTE2_TRAINER_2_DEFEAT"
+msgstr "Looks like you're tough all right."
+
+msgid "NPC_ROUTE2_BAREWL"
+msgstr "Bare! Bar!"
+
+msgid "PASSAGE_CAVE_TRAINER_1"
+msgstr "This cave is dangerous! Only the manliest men can pass it!"
+
+msgid "PASSAGE_CAVE_TRAINER_2"
+msgstr ""
+"I have sworn never to leave this cave until I win 100 consecutive battles!"
+
+msgid "PASSAGE_CAVE_TRAINER_3"
+msgstr ""
+"Somehow, I find that it's fun to randomly beat up on innocent Trainers!"
+
+msgid "PASSAGE_CAVE_TRAINER_1_DEFEAT"
+msgstr "...Looks like you're manly, all right."
+
+msgid "PASSAGE_CAVE_TRAINER_2_DEFEAT"
+msgstr "In hindsight, perhaps that was a silly vow to swear..."
+
+msgid "PASSAGE_CAVE_TRAINER_3_DEFEAT"
+msgstr "...I suppose all bullies eventually get their comeuppance..."
+
+msgid "NOWTOCH_CITY_CREEPY_GUY"
+msgstr ""
+"You can use that key to get into Maria's house. She lives in the southeast "
+"part of town."
+
+msgid "GYM1_TRAINER_1"
+msgstr ""
+"Hah! You think you have what it takes to beat Maria?\n"
+"Allow me to be the judge of that!"
+
+msgid "GYM1_TRAINER_1_DEFEAT"
+msgstr "Hmm. This one has potential."
+
+msgid "GYM1_TRAINER_2"
+msgstr ""
+"Maria may be the first Gym Leader,\n"
+"but she used to be Champion!\n"
+"You're still light years away from defeating her!"
+
+msgid "GYM1_TRAINER_2_DEFEAT"
+msgstr "Light years measure distance, not time..."
+
+msgid "GYM1_MARIA_1"
+msgstr ""
+"Hi again~\n"
+"So, I don't think we were ever properly introduced."
+
+msgid "GYM1_MARIA_2"
+msgstr "What's your name?"
+
+msgid "GYM1_MARIA_3"
+msgstr "..."
+
+msgid "GYM1_MARIA_4"
+msgstr ""
+"\\PN?\\. I like it~\n"
+"Welcome to the Nowtoch City Pokémon Gym!~"
+
+msgid "GYM1_MARIA_5"
+msgstr ""
+"I'm Maria, Normal-type specialist...\n"
+"but you know that already!\n"
+"Of course, most folks know me\n"
+"as \"Maria, Champion of Tandor\"...\n"
+"Those days of my life are over, though.\n"
+"Now, I supervise young Trainers like you,\n"
+"on their way to greatness."
+
+msgid "GYM1_MARIA_6"
+msgstr ""
+"It's a long, difficult battle, all the way up to Champion... have you got "
+"what it takes?"
+
+msgid "GYM1_MARIA_7"
+msgstr ""
+"Your very first test in the\n"
+"Tandor League... begins now!"
+
+msgid "GYM1_MARIA_8"
+msgstr "I see a great future ahead of you, but are you ready for this?"
+
+msgid "GYM1_MARIA_9"
+msgstr ""
+"There!~\n"
+"That's the fighting spirit I wanted to see!\n"
+"You're deserving of this Normal Badge!"
+
+msgid "GYM1_MARIA_10"
+msgstr "Congrats!~"
+
+msgid "GYM1_MARIA_11"
+msgstr ""
+"I gotta say, the spirit you showed in battle...\\.\n"
+"you remind me of when I was just starting out.\n"
+"Try and hold on to that determination,\n"
+"and I'm sure it'll take you far!~"
+
+msgid "GYM1_MARIA_12"
+msgstr "Also, take this TM, too!~"
+
+msgid "GYM1_MARIA_13"
+msgstr ""
+"As you travel together with your Pokémon,\n"
+"the bond between you will grow stronger.\n"
+"The deeper your friendship, the\n"
+"more powerful the Return is in battle!"
+
+msgid "GYM1_MARIA_14"
+msgstr ""
+"TMs are infinite-use, so feel free to teach it to as many Pokémon as you "
+"like! Nearly all of them can learn this one.~"
+
+msgid "GYM1_MARIA_15"
+msgstr "It was fun battling you, \\PN. Good luck on your journey!~"
+
+msgid "GYM1_MARIA_16"
+msgstr ""
+"...You're asking if I like cats?\n"
+"Well, duuuuuh! They're the cutest!~\n"
+"I could probably change this to an all-cat Gym, if I wanted to... hmm."
+
+msgid "GYM1_GYM_GUY_1"
+msgstr ""
+"Howdy, Trainer!\n"
+"Is this your first Gym Challenge?\n"
+"You must be excited!"
+
+msgid "GYM1_GYM_GUY_2"
+msgstr ""
+"I'm called the Gym Guy, here to deliver tips to aspiring Trainers looking to "
+"conquer the Tandor League!"
+
+msgid "GYM1_GYM_GUY_3"
+msgstr ""
+"Maria here is a Normal type expert.\n"
+"Normal-types aren't Super Effective on any other type, but they have very "
+"few weaknesses."
+
+msgid "GYM1_GYM_GUY_4"
+msgstr ""
+"Fighting-types like Mankey are strong here,\n"
+"and Steel-types like Orchynx and Barewl are a good choice as well because "
+"they resist their attacks."
+
+msgid "GYM1_GYM_GUY_5"
+msgstr ""
+"Otherwise, an all-out attack from\n"
+"your most powerful Pokémon\n"
+"will probably do the trick.\n"
+"Good luck! I'll be rooting for you!\n"
+"...Oh, and take this, with my regards!"
+
+msgid "GYM1_GYM_GUY_6"
+msgstr ""
+"Otherwise, an all-out attack from\n"
+"your most powerful Pokémon\n"
+"will probably do the trick.\n"
+"Good luck! I'll be rooting for you!"

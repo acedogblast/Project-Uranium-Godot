@@ -49,3 +49,47 @@ msgstr "OK"
 
 msgid "UI_KEYBOARD_MOBILE_HELP"
 msgstr "Press X to delete and C to cancel."
+
+msgid "UI_SAVEMENU_DELETE_SAVE"
+msgstr "Delete This Save File"
+
+msgid "UI_SAVEMENU_OTHER_SAVE"
+msgstr "Other Save Files"
+
+msgid "UI_SAVEMENU_UPDATE"
+msgstr "Check for Updates"
+
+msgid "UI_SAVEMENU_OPTIONS"
+msgstr "Options"
+
+msgid "UI_MENU_SAVE_PROMPT"
+msgstr "Would you like to save the game?"
+
+msgid "UI_PARTY_PROMPT_1"
+msgstr "Choose Pokémon or cancel."
+
+msgid "UI_PARTY_PROMPT_2"
+msgstr "Do what with "
+
+# notice the space
+msgid "UI_PARTY_SUMMARY"
+msgstr "Summary"
+
+msgid "UI_PARTY_ITEM"
+msgstr "Item"
+
+msgid "UI_PARTY_CANCLE"
+msgstr "Cancel"
+
+msgid "UI_PARTY_SWITCH"
+msgstr "Switch"
+
+msgid "UI_PARTY_SWITCH_IN"
+msgstr "Switch In"
+
+msgid "UI_PARTY_ALREADY_IN_BATTLE"
+msgstr " is already in battle!"
+
+# notice the space
+msgid "UI_PARTY_USE_ON_WHICH_POKE"
+msgstr "Use on which Pokémon?"

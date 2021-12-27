@@ -1,0 +1,971 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "EVENT_HEROHOME_1"
+msgstr "\\PN come downstairs, you are late!"
+
+msgid "EVENT_MOKI_TOWN_THEO_1"
+msgstr "Hey, wait up!!!"
+
+msgid "EVENT_MOKI_TOWN_THEO_2"
+msgstr ""
+"Where do ya think you're goin', huh?\n"
+"Are you tryin' ta get to the lab before me so you can get the better "
+"Pokémon?\n"
+"Well, that ain't gonna happen!\n"
+"Because I'm gonna get the strongest one, first!\n"
+"Try to keep up, \\PN!!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_1"
+msgstr ""
+"Bamb'o: Hey, if is isn't \\PN!\n"
+"And uh, your friend...\n"
+"Tommy, was it?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_2"
+msgstr ""
+"Honestly, pops, can't you even remember my name?\n"
+"It's Theo! Theo!!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_3"
+msgstr ""
+"Right, right... Theo.\n"
+"You're just in time.\n"
+"Today is a very special day for both of you.\n"
+"It's your first day at work as Field Reasearch Assistants at Bambo's Pokémon "
+"Reasearch Labs."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_4"
+msgstr ""
+"Your job will have you traveling across Tandor, observing and capturing many "
+"different kinds of Pokémon to help me with my research on Pokémon Elements."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_5"
+msgstr "I have three Pokémon here that will aid you on your journey."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_6"
+msgstr ""
+"Before you get your starters, though, you both will take the <b>Pokémon "
+"Trainer Aptitude Test</b>."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_7"
+msgstr ""
+"Test?!\n"
+"I didn't study for any test!\n"
+"I thought you where gonna give us a rare, powerful Pokémon!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_8"
+msgstr ""
+"Now, now, don't worry...\n"
+"It's not the kind of test you have to study for.\n"
+"It's just a way to determine what kind of Pokémon Trainer you will be.\n"
+"Different starter Pokémon are better suited for different battling styles.\n"
+"A starter Pokémon will be your lifelong partner,\n"
+"so it's important for you to work well together!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_9"
+msgstr ""
+"Yeah, yeah, I get it. Enough talking!\n"
+"I want to get my Pokémon!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_10"
+msgstr "Sheesh, kid, you're not very patient, are you?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_11"
+msgstr "All right."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_12"
+msgstr ""
+"If you want to know more about what's on the test before we begin, you can "
+"talk to my Aide."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_13"
+msgstr "Now..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_14"
+msgstr "\\PN, are you ready to take the <b>Pokémon Trainer Aptitude Test</b>?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_1"
+msgstr "Yes!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2"
+msgstr "Wait a minute..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2_1"
+msgstr "That's all right. Take your time."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2_2"
+msgstr "Yeah, but not too long, all right?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_1"
+msgstr ""
+"The <b>Pokémon Trainer Aptitude Test</b>\n"
+"sorts Trainers into three basic types:\n"
+"\\c[3]<b>Defensive</b>\\c[0], \\c[2]<b>Offensive</b>\\c[0], and "
+"\\c[1]<b>Balanced</b>\\c[0]."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_2"
+msgstr ""
+"The professor will then give you a starter Pokémon that best fits your "
+"battling style."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_3"
+msgstr ""
+"\\c[3]<b>Defensive</b>\\c[0] trainers receive the Grass Pokémon \\c[3]Orchynx"
+"\\c[0].\n"
+"It's gentle, hardy, and easy to raise."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_4"
+msgstr ""
+"\\c[2]<b>Offensive</b>\\c[0] trainers receive the Fire Pokémon \\c[2]Raptorch"
+"\\c[0].\n"
+"It's strong and speedy, but can be hard to control."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_5"
+msgstr ""
+"\\c[1]<b>Ballanced</b>\\c[0] trainers receive the Water Pokémon \\c[1]Eletux"
+"\\c[0].\n"
+"It's calm, collected nature allows it to adapt to any situation."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_6"
+msgstr "Choose carefully - a starter is your main partner on your journey!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_15"
+msgstr ""
+"Excellent!\n"
+"So, without further ado..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_16"
+msgstr ""
+"When you encounter a new kind of Pokémon in the wild,\n"
+"what is your first reaction?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
+msgstr "Attack it right away!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_4"
+msgstr "Wait and see what it does."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_5"
+msgstr "Throw a Poké Ball at it!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_17"
+msgstr "Very good, both of you."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_18"
+msgstr ""
+"C'mon, that was easy!\n"
+"Give me a tougher one!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_19"
+msgstr "Okay... next question, then."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_20"
+msgstr ""
+"Which of these TMs would you\n"
+"prefer to teach to your Pokémon?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_6"
+msgstr "Hyper Beam"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_7"
+msgstr "Protect"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_8"
+msgstr "Hidden Power"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_21"
+msgstr ""
+"Hey, professor...\n"
+"What's a TM, anyway?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_22"
+msgstr ""
+"Um... I'll tell you later. Let's move on with the next question, shall we?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_23"
+msgstr ""
+"Which of the following Pokémon\n"
+"would win in an all-out battle?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_9"
+msgstr "Gyarados"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_10"
+msgstr "Gliscor"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_11"
+msgstr "Ampharos"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_24"
+msgstr "Is it possible to fail this test?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_25"
+msgstr ""
+"No, it isn't.\n"
+"Now, this is your final question, so answer it honestly!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_26"
+msgstr ""
+"What is your motivation for\n"
+"becoming a Pokémon Trainer?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_12"
+msgstr "Becoming the very best"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_13"
+msgstr "Exploring the region"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_14"
+msgstr "Making new friends"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_27"
+msgstr ""
+"No question about it!\n"
+"I'm gonna be a Pokémon Master!\n"
+"An' nobody's gonna stand in my way!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_28"
+msgstr ""
+"Haha... I dig your spirit, kid!\n"
+"Well, that's it for the <b>Pokémon Trainer Aptitude Test!</b>"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_29"
+msgstr "Now it's time to analyze your results\\wt[8].\\wt[8].\\wt[8]."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_30"
+msgstr "\\wt[8].\\wt[8].\\wt[8]."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_31"
+msgstr "Okay, I finished my analysis!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_32"
+msgstr "\\PN..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Raptorch"
+msgstr ""
+"You seem to be a trainer who won't\n"
+"hesitate to go for what you want."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Raptorch"
+msgstr ""
+"You prefer to overwhelm your opponents\n"
+"with sheer force and firepower."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Raptorch"
+msgstr ""
+"The saying \"the best defense is a good offense\" is probably your mantra."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Raptorch"
+msgstr ""
+"You have a burning spirit\n"
+"within you that never ceases!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_37_Raptorch"
+msgstr "For an Offensive trainer like you..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Orchynx"
+msgstr "You seem to be a trainer who plays it safe."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Orchynx"
+msgstr "Patience and endurance are your biggest assets."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Orchynx"
+msgstr "You know that the best things in life come to those who wait."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Orchynx"
+msgstr "For a Defensive trainer like you..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Eletux"
+msgstr "You seem to be a trainer what is capable of many different strategies."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Eletux"
+msgstr "You prefer to adapt to overcome challenges in your path."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Eletux"
+msgstr "You philosoly is probably to just \"go with the flow\"."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Eletux"
+msgstr "Your calm, rational approach will come to aid you in the future."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_37_Eletux"
+msgstr "For a Balanced trainer like you..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_15"
+msgstr "Raptorch is the best pick!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_15_1"
+msgstr "Orchynx is the best pick!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_15_2"
+msgstr "Eletux is the best pick!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_38"
+msgstr "Go ahead and take it, \\PN."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_38_THEO"
+msgstr ""
+"C'mon, \\PN, let's go already!!\n"
+"The suspense is killing me?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_39"
+msgstr "HEY! I'M TIRED OF WAITING!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_RAPTORCH"
+msgstr "\\PN obtained Raptorch!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ORCHYNX"
+msgstr "\\PN obtained Orchynx!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ELETUX"
+msgstr "\\PN obtained Eletux!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_PLAYER_RUN_AWAY"
+msgstr "Hey, where are you going?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_40"
+msgstr ""
+"\\PN got their starter already!\n"
+"When do I get mine?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_41"
+msgstr "I'm done analyzing your result, Theo."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_42"
+msgstr "Hmm\\wt[8].\\wt[8].\\wt[8]."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_43"
+msgstr "Theo.."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_44"
+msgstr ""
+"Well, you certainly know\n"
+"what you want out of life."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_45"
+msgstr ""
+"You're impulsive, impatient, and\n"
+"care mostly about your own desire."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_46"
+msgstr "But I sense something else in you..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_47"
+msgstr ""
+"Could it be the seed of greatness?\n"
+"The potential to transform yourself completly?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_48"
+msgstr ""
+"Or maybe it's just that you're\n"
+"so young, I can't tell."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_49"
+msgstr "Regardless... For a Trainer like you..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Orchynx"
+msgstr "Orchynx is the best pick!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Eletux"
+msgstr "Eletux! is the best pick!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Raptorch"
+msgstr "Raptorch! is the best pick!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_51"
+msgstr ""
+"Yes!!\n"
+"My first Pokémon!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_52"
+msgstr ""
+"\\PN... you have a Pokémon.\n"
+"And now I have a Pokémon, too.\n"
+"You know what this means, right?\n"
+"We hafta battle!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_53"
+msgstr "Oh, please, not in the Lab..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
+msgstr "What? B-but I was s'posed to win!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_54"
+msgstr ""
+"B-but... How...\n"
+"I'm s'posed to be the b-best trainer ever..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_55"
+msgstr ""
+"That's i-impossible...\n"
+"good trainers never l-lose..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_56"
+msgstr ""
+"I... I... *sniff*\n"
+"Waaaaaaaahhh!!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_57"
+msgstr "Please don't cry, Theo..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_58"
+msgstr "Here, I'll heal your Pokémon for you."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_59"
+msgstr ""
+"I w-wanted to be a-an unbeatable Trainer...\n"
+"How come I couldn't win?\n"
+"I really really wanted ot win..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_60"
+msgstr ""
+"Well... between your starter and \\PN's, theirs has the type advantage."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_61"
+msgstr "Water beats Fire, Fire beats Grass, and Grass beats Water."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_62"
+msgstr ""
+"That's the elemental type triangle. Well, one of them, at any rate.\n"
+"Learning to master type matchups is an important part of being a Trainer."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_63"
+msgstr ""
+"N-no way! I wanna do-over!\n"
+"How come \\PN gets the better starter?! Uuuuaaaaahhhhh! It isn't faaaaair!!\n"
+"I-I'm going home!!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_64"
+msgstr ""
+"Sign...\n"
+"He took that harder than I hoped."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_65"
+msgstr ""
+"But, you shouldn't be so quick to judge him. He is just a kid after all.\n"
+"I expect he'll soon discover that training Pokémon isn't as easy as he "
+"imagined..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_54_LOSS"
+msgstr ""
+"Yes!! My first win!\n"
+"My Pokémon an' me are gonna\n"
+"be the best, coolest team in Tandor! \\PN,you're nothing compared to me.\n"
+"Nothing!!\n"
+"Hahaha!\n"
+"I gotta go show dad!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_55_LOSS"
+msgstr ""
+"\\PN...\n"
+"I'm surprised you managed to lose that fight."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_56_LOSS"
+msgstr ""
+"You must have noticed that your stater has a type advantage over Theo's.\n"
+"Water beats Fire, Fire beats Grass, and Grass beats Water. That's the "
+"elemental type triangle.\n"
+"Well, one of them, at any rate."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_57_LOSS"
+msgstr ""
+"Normally, in a matchup like that, it's a foregone conclusion...\n"
+"Or maybe you let him win on purpose?\n"
+"If you did, that's kind of you."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_58_LOSS"
+msgstr ""
+"He talks a big game, but I get the feeling he wouldn't take it so well if he "
+"lost his first ever battle."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_59_LOSS"
+msgstr ""
+"You seem to be holding up alright, though.\n"
+" Here, let me heal your Pokémon quickly."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_HEAL"
+msgstr "Your Pokémon were healed..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_66"
+msgstr ""
+"I'm going out to the entrance to Route 01 by the edge of town. Bring Theo, "
+"and I'll teach you both how to catch Pokémon."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_67"
+msgstr "See you later, \\PN."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_1"
+msgstr ""
+"What did you say to my son?!\n"
+"He ran upstairs, crying, and locked the door behind him. He won't tell me "
+"what's wrong or come downstairs."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_2"
+msgstr "I swear, if you did anything to hurt him..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_3"
+msgstr ""
+"\\wt[5].\\wt[5].\\wt[5].\n"
+"Oh.\n"
+"So that's how it is."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_4"
+msgstr ""
+"So he got the weaker starter,\n"
+"and you beat him in a battle...\n"
+"Hm. I see... that explains it."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_5"
+msgstr ""
+"A harsh lesson, to be sure...\n"
+"but losing is as much as part of being a Trainer as winning.\n"
+"He had his heart set on this day being perfect,\n"
+"so losing right off the bat is somewhat of a shock."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_6"
+msgstr ""
+"Still, crying won't solve anything.\n"
+"That's something he has to learn."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_7"
+msgstr ""
+"THEO!\\wt[5] COME DOWNSTAIRS RIGHT NOW,\n"
+"YOUNG MAN!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_8"
+msgstr "*sniffle*"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_9"
+msgstr ""
+"Theo...\n"
+"You can't cry every time you lose a battle. That's just part of being a "
+"Trainer."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_10"
+msgstr ""
+"B-but it isn't fair...\n"
+"\\PN got the better starter 'n me...\n"
+"Now I'm never gonna win!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_11"
+msgstr ""
+"Then you'll have to catch more Pokémon to balance out your team's "
+"weaknesses. Besides, a well-raised Pokémon can still win, even at a "
+"disadvantage. There's no sense in giving up before you even begin."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_12"
+msgstr ""
+"*sniff*\n"
+"Y-yes, dad..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_13"
+msgstr ""
+"Now, Theo...\n"
+"I won't always be around to pick you up when you're feeling down.\n"
+"So, try and be strong for yourself, okay?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_14"
+msgstr ""
+"\\PN...\n"
+"Please be patient with my son.\n"
+"He looks up to you, you know."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_15"
+msgstr ""
+"Oh, I nearly forgot. \\PN,\n"
+"Theo, I have something for both of you."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_16"
+msgstr "L-like a present...?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_17"
+msgstr ""
+"Yes, exactly.\n"
+"\\PN, your father Kellyn send me these and told me to give them to you both "
+"when you began your journeys.\n"
+"I'm sure it will come in useful."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_18"
+msgstr "[\\PN and Theo received a PokéPod!]"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_19"
+msgstr "A PokéPod? What's that?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_20"
+msgstr ""
+"It's a high-tech device that's indispensable for Pokémon Trainers. It plays "
+"music and includes a map of the region. Most importantly, it contains a "
+"phone that will allow you to stay in touch with each other, and other "
+"Trainers."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_21"
+msgstr ""
+"Cool!\n"
+"Heheh, I got the red one...\n"
+"it's cooler than yours!\n"
+"I'm gonna go meet the Professor by the edge of town.\n"
+"I'll be the first to catch a Pokémon!\n"
+"Bye dad! Keep up, \\PN!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_22"
+msgstr ""
+"...Well. Talk about a dramatic turnaround. He always bounces back quickly."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_23"
+msgstr ""
+"\\PN, you don't want to keep the Professor waiting, so you should get moving "
+"too.\n"
+"I won't see you or Theo again for some time...\n"
+"You see, I'm starting a new job soon. I'm supervising the construction of "
+"the new Power Plant Epsilon.\n"
+"Perhaps I'll see you there, in time.\n"
+"After all... it's the last place Lucille was ever seen."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_24"
+msgstr "Best of luck on your journey, \\PN."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_25"
+msgstr "Hahaha! Wooooo!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_26"
+msgstr ""
+"Theo's certainly in a good mood.\n"
+"He showed me his starter Pokémon and told me how pround he was that he "
+"finally beat you.\n"
+"I trust you didn't take it too hard..?\n"
+"My son is very energetic.\n"
+"And, well, he has his heart set on winning."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_27"
+msgstr ""
+"Although... I have to ask...\n"
+"Did you let him win on purpose?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_28"
+msgstr "\\wt[5].\\wt[5].\\wt[5]."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_29"
+msgstr ""
+"I suppose I should thank you.\n"
+"You've certainly caused him to begin his journey on a high note. Although, "
+"he'll have a rough time of it when he encounters his first loss. Not "
+"everyone will go easy on him like you did..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_30"
+msgstr ""
+"Losing is as much a part of being a Trainer as winning. He will have to "
+"learn that, sooner or latter..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_31"
+msgstr ""
+"Oh, \\PN is here.\n"
+"Are you looking for a rematch? 'Cause I ain't giving you one! I won, fair "
+"and square! Haha!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_32"
+msgstr ""
+"Theo, don't be rude.\n"
+"You and \\PN will see a lot of each other on your journeys to come, so "
+"you'll need to get along."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_33"
+msgstr ""
+"...No? Really?\n"
+"But I thought your starter had a type advantage."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_34"
+msgstr ""
+"Perhaps Theo is a naturally talented Trainer, then... or perhaps he got "
+"lucky."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_35"
+msgstr "Time will tell how he fares."
+
+msgid "EVENT_MOKI_POKECENTER_HEAL_QUESTION"
+msgstr ""
+"Welcome to the Pokémon center.\n"
+"Would you like me to heal your Pokémon?"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_1"
+msgstr ""
+"Hey there, \\PN!\n"
+"Now that you and Theo are here,\n"
+"it's time to begin your first lesson as a Pokémon Trainer and a field "
+"research aid."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_2"
+msgstr "Now, watch closely."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_3"
+msgstr "Wild Pokémon, as you probably already know, inhabit tall grass."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_4"
+msgstr ""
+"But that's not the only place - you can also find them in caves, in water, "
+"and even in cities if you know where to look."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_5"
+msgstr ""
+"Still, tall grass is going to be your best bet for finding new Pokémon."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_6"
+msgstr "Simply take a few steps in and ..."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_7"
+msgstr ""
+"Look! It's a wild Chyinmunk!\n"
+"They're very common around here.\n"
+"It hasn't noticed me yet, so now's my chance..."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Eletux"
+msgstr "Go! Eletux!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Raptorch"
+msgstr "Go! Raptorch!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Orchynx"
+msgstr "Go! Orchynx!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_9"
+msgstr "This little guy was the other starter Pokémon you could have received."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_10"
+msgstr ""
+"I think he's taken a shine to me, and\n"
+"I rather like him too... so I'm gonna keep him."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_11"
+msgstr ""
+"Now! The next step is to weaken the enemy Pokémon to make it easier to catch."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Eletux"
+msgstr "Eletux! Use Tackle!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Raptorch"
+msgstr "Raptorch! Use Scratch!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Orchynx"
+msgstr "Orchynx! Use Scratch!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_13"
+msgstr "Chiiiin!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_14"
+msgstr "Now that it's weakened, now's my chance to catch it. Poké Ball, go!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_15"
+msgstr ""
+"...And that's how it's done.\n"
+"Now, Chyinmunk are fairly easy...\n"
+"but you're sure to encounter Pokémon that are a lot harder to capture.\n"
+"For those, you might need to inflict them with status effects, or use a "
+"special Poké Ball.\n"
+"Ah, but I'm sure you'll get the hang of it before too long."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_16"
+msgstr "\\PN, Theo, these are for you."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_17"
+msgstr "[\\PN and Theo received a PokéDex!]"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_18"
+msgstr ""
+"That PokéDex is an encyclopedia that will automatically update itself "
+"whenever you encounter or catch a new Pokémon."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_19"
+msgstr ""
+"It's very important for my research, so make sure to fill it out as much as "
+"possible!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_20"
+msgstr "Also, I want you to have these."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_21"
+msgstr "Obtained Poké Balls!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_22"
+msgstr "\\PN put the Poké Balls in the Poké Balls Pocket."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_23"
+msgstr ""
+"Poké Balls are necessary for catching Pokémon, of course.\n"
+"What's that thing the kids always say?\n"
+"\"Gotta Catch `Em All!\""
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_24"
+msgstr ""
+"If you run out, you can pick up some more at any Poké Mart.\n"
+"Moki Town doesn't have one of those... but there's one in Kevlar Town on the "
+"other side of Route 01.\n"
+"So, with that said...\n"
+"your lesson is now over."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_25"
+msgstr ""
+"Oh, but you two have PokéPods, don't you?\n"
+"Here, let me input my number."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_26"
+msgstr "Registered Professor Bamb`o in the PokéPod."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_27"
+msgstr ""
+"You can give me a call anytime, and I'll take a look at how your PokéDex is "
+"coming along. If you do a good job collecting many different kinds of "
+"Pokémon, I might even have special rewards for you."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_28"
+msgstr ""
+"With that said, I'm going back to my Lab. Best of luck on your journeys, "
+"both of you!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_29"
+msgstr ""
+"\\PN, I don't care that you got the stronger starter. I'm still gonna be the "
+"best Trainer ever! I'll catch tons of Pokémon and we'll win every battle!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_30"
+msgstr "You just wait and see!!"
+
+msgid "EVENT_NOWTOCH_CITY_1"
+msgstr ""
+"Oh! You! Are you maybe...\n"
+"perhaps... here to see Maria?"
+
+msgid "EVENT_NOWTOCH_CITY_2"
+msgstr ""
+"Oh my. You must be like me!\n"
+"I'm her biggest fan!\n"
+"Oh, but she's hardly ever at her Gym..."
+
+msgid "EVENT_NOWTOCH_CITY_3"
+msgstr ""
+"You can probably find her at home.\n"
+"I can't go there, because of\\.\\.\\. Reasons."
+
+msgid "EVENT_NOWTOCH_CITY_4"
+msgstr ""
+"But, you still can!\n"
+"Here, take this!"
+
+msgid "EVENT_NOWTOCH_CITY_5"
+msgstr ""
+"Keep it, I made copies.\n"
+"Her house is in the southeast part of town."
+
+msgid "EVENT_NOWTOCH_CITY_6"
+msgstr ""
+"Zzzzzz\\.\\.\\.\\.\\.. muh?\n"
+"Is\\.\\.\\.\\. someone there...?"
+
+msgid "EVENT_NOWTOCH_CITY_7"
+msgstr ""
+"Who are you?\\.\n"
+"What are you doing in my house?\n"
+"You can't just barge on people like that!!"
+
+msgid "EVENT_NOWTOCH_CITY_8"
+msgstr ""
+"Especially when they lock their doors.\n"
+"How did you get in, anyway?"
+
+msgid "EVENT_NOWTOCH_CITY_9"
+msgstr "..."
+
+msgid "EVENT_NOWTOCH_CITY_10"
+msgstr ""
+"You have a copy of my house key?\n"
+"Give me that!"
+
+msgid "EVENT_NOWTOCH_CITY_11"
+msgstr "[\\PN handed over Maria's House Key.]"
+
+msgid "EVENT_NOWTOCH_CITY_12"
+msgstr ""
+"Where did you get this?!\n"
+"...Oh. From that guy...\n"
+"Ugh, him again.\n"
+"Wait, you're not another fan, are you?"
+
+msgid "EVENT_NOWTOCH_CITY_13"
+msgstr ""
+"You're... a Pokémon Trainer?\n"
+"That must mean you're looking for a Gym Battle, right?"
+
+msgid "EVENT_NOWTOCH_CITY_14"
+msgstr ""
+"Sigh.\\.\\.\\.\\. I guess I need to do my job for once.\n"
+"But first, I'm gonna need to talk to the guy who gave you that key."
+
+msgid "EVENT_NOWTOCH_CITY_15"
+msgstr ""
+"Come find me outside my Gym.\n"
+"Later~"
+
+msgid "EVENT_NOWTOCH_CITY_16"
+msgstr ""
+"Look, I've told you this before.\n"
+"I'm not the Champion any more, all right?\\.\n"
+"I'm retired! I'm just a Gym Leader now."
+
+msgid "EVENT_NOWTOCH_CITY_17"
+msgstr ""
+"But, Maria...\\. you were the strongest\n"
+"trainer in Tandor..."
+
+msgid "EVENT_NOWTOCH_CITY_18"
+msgstr ""
+"So talented, and young, and beautiful...\\.\n"
+"Why would you throw away all that fame?\n"
+"Your fans still love you!"
+
+msgid "EVENT_NOWTOCH_CITY_19"
+msgstr ""
+"I'm not interested in being famous any more! I just want to lead a normal "
+"life, run my Gym, and not have to deal with creeps like you. Seriously, it's "
+"not OK to make copies of people's house keys! I'm calling the Rangers."
+
+msgid "EVENT_NOWTOCH_CITY_20"
+msgstr ""
+"No!\\. Please!\\. I-\\.I'll leave you alone.\\.\n"
+"I promise."
+
+msgid "EVENT_NOWTOCH_CITY_21"
+msgstr ""
+"Good.\n"
+"You aren't allowed at my Gym any more,\n"
+"so get lost.\n"
+"Don't make me say it again!"
+
+msgid "EVENT_NOWTOCH_CITY_22"
+msgstr "*sigh*"
+
+msgid "EVENT_NOWTOCH_CITY_23"
+msgstr ""
+"I'm sorry you had to see that.\n"
+"I'm not normally an angry person, you know?~"
+
+msgid "EVENT_NOWTOCH_CITY_24"
+msgstr ""
+"But, once you win the Tandor Championship, you can never escape it. Everyone "
+"knows your name... Sometimes, it's enough to make me want to skip town. But "
+"then, who would run the Gym?"
+
+msgid "EVENT_NOWTOCH_CITY_25"
+msgstr ""
+"Speaking of that...\\. I know you're\n"
+"here for the Normal Badge."
+
+msgid "EVENT_NOWTOCH_CITY_26"
+msgstr ""
+"I've made you wait long enough.\n"
+"Come meet me inside, and show me your skills!~"
