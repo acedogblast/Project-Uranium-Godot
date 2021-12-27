@@ -40,7 +40,8 @@ func _ready():
 	if OS.is_debug_build():
 		overlay = preload("res://Utilities/debug_overlay.tscn").instance()
 		overlay.add_stat("onGrass", Global, "onGrass", false)
-		#overlay.add_stat("Grass Position", Global, "grass_positions", false)
+		overlay.add_stat("lookingOnGrass", Global, "lookingOnGrass", false)
+		overlay.add_stat("Grass Position", Global, "grass_positions", false)
 		#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
 		#overlay.add_stat("Direction", player, "dir", false)
 		overlay.add_stat("Player Pos", player, "position", false)
@@ -124,11 +125,21 @@ func change_scene(scene):
 
 	if scene is String:
 		var new_scene = load(scene).instance()
+		
+		# change grass sprite to var set in scene | temporary for now
+		print(new_scene.grassSprite)
+		if new_scene.grassSprite != null:
+			Global.grassSprite = new_scene.grassSprite
 		scenes.append(new_scene)
 		current_scene = new_scene
 		add_child(current_scene)
 	elif scene is Resource:
 		var new_scene = scene.instance()
+		
+		# change grass sprite to var set in scene | temporary for now
+		print(new_scene.grassSprite)
+		if new_scene.grassSprite != null:
+			Global.grassSprite = new_scene.grassSprite
 		scenes.append(new_scene)
 		current_scene = new_scene
 		add_child(current_scene)

@@ -271,7 +271,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=18]
-extents = Vector2( 15, 15 )
+extents = Vector2( 13, 12.5 )
 
 [sub_resource type="RectangleShape2D" id=19]
 extents = Vector2( 14.9386, 15.0945 )
@@ -349,12 +349,12 @@ collision_mask = 2
 shape = SubResource( 18 )
 
 [node name="NextCollision" type="Position2D" parent="."]
-visible = false
 
 [node name="Up" type="Area2D" parent="NextCollision"]
 position = Vector2( 0, -32 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NextCollision/Up"]
+position = Vector2( 0, -0.5 )
 shape = SubResource( 18 )
 
 [node name="Down" type="Area2D" parent="NextCollision"]

@@ -9,9 +9,11 @@ var pokedex_seen = [] # list of id numbers
 var pokedex_caught = [] # list of id numbers
 
 var onGrass = false
+var lookingOnGrass = false
 var grass_positions = []
 var grassPos = ""
 var exitGrassPos = ""
+var grassSprite = "res://Graphics/Autotiles/Tall Grass2.png"
 
 var printFPS = false
 #var size

@@ -74,7 +74,7 @@ func _process(delta):
 	#If the hero is not moving
 	if !isMoving:
 		#If the hero can move and is not pressing accept, then get input
-		if canMove and !Input.is_action_pressed("ui_accept"):
+		if canMove and !Input.is_action_pressed("ui_accept") and !isMoving:
 			get_input()
 		#If the hero can move and presses accept, then call the interact method
 		elif canMove and Input.is_action_just_pressed("ui_accept"):
@@ -184,7 +184,6 @@ func get_input():
 
 func check_grass(dir):
 	for grass in get_tree().get_nodes_in_group("grass"):
-			
 		for collision in $NextCollision.get_children():
 			#print(grass.world_to_map(collision.global_position))
 			for g in grass.get_used_cells_by_id(0):
@@ -227,6 +226,7 @@ func interact():
 
 func move(force_move : bool):
 	set_process(false)
+	isMoving = true
 	move_direction = Vector2.ZERO
 
 	var was_indoors = false
@@ -302,6 +302,8 @@ func move(force_move : bool):
 	
 	if Global.onGrass:
 		$Grass.show()
+		if !Global.grass_positions.has( self.position + Vector2(32, 0) ):
+			$Grass/Sprite2.hide()
 		$Grass/Sprite.show()
 	else:
 		$Grass.hide()
@@ -323,6 +325,7 @@ func move(force_move : bool):
 		wild_poke_encounter()
 
 	set_process(true)
+	isMoving = false
 	set_idle_frame()
 	trainer_encounter()
 	
@@ -445,6 +448,8 @@ func move_player_event(_dir, steps): # Force moves player to direction and steps
 
 func set_grass(dir):
 	if entering_grass:
+		$Grass/Sprite.texture = load(Global.grassSprite)
+		$Grass/Sprite2.texture = load(Global.grassSprite)
 		#print("entering_grass")
 		match dir:
 			"Right", DIRECTION.RIGHT:
@@ -456,7 +461,6 @@ func set_grass(dir):
 				$Grass.show()
 				$Grass/Sprite2.hide()
 				$Grass/Sprite.show()
-
 				$Grass.position = Vector2(-32, 0)
 				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 			"Up", DIRECTION.UP:
@@ -509,7 +513,7 @@ func set_grass(dir):
 				$Grass/Sprite.show()
 				$Grass/Sprite2.hide()
 				if !Global.sprint:
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position + Vector2(0, 16), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position + Vector2(0, 32), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 				else:
 					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position + Vector2(0, 16), 0.125 * 0.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 				
@@ -523,6 +527,7 @@ func set_grass(dir):
 				"Right", DIRECTION.RIGHT:
 					$Grass/Sprite.show()
 					$Grass/Sprite2.show()
+					print(Global.grass_positions)
 					if Global.sprint:
 						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					else:
