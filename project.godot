@@ -222,6 +222,7 @@ gdscript/warnings/unused_variable=false
 
 window/size/width=512
 window/size/height=384
+window/vsync/use_vsync=false
 window/handheld/orientation="sensor_landscape"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
@@ -231,6 +232,10 @@ window/handheld/emulate_touchscreen=true
 [editor_plugins]
 
 enabled=PoolStringArray( "create_pokemon" )
+
+[global]
+
+vsync=false
 
 [importer_defaults]
 
