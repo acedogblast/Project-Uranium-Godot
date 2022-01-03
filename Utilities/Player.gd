@@ -103,6 +103,7 @@ func get_input():
 		direction = DIRECTION.RIGHT
 	else:
 		return
+		
 	#if the player presses z and is not holding z and can run, then set holding_z to be true and global sprint to false
 	if Input.is_action_pressed("z") and !holding_z and Global.can_run:
 		holding_z = true
