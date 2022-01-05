@@ -66,7 +66,7 @@ func _input(event):
 			move_sprites("Left")
 		if event.is_action_pressed("ui_right") and !saving:
 			move_sprites("Right")
-		if event.is_action_pressed("z") and !saving:
+		if event.is_action_pressed("z") and !saving and Global.can_run:
 			Global.sprint = !Global.sprint
 			if $Run/Sprite.frame == 0:
 				$Run/Sprite.frame = 1

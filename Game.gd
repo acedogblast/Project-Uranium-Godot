@@ -133,8 +133,8 @@ func change_scene(scene):
 		var new_scene = load(scene).instance()
 		
 		# change grass sprite to var set in scene | temporary for now
-		print(new_scene.grassSprite)
-		if new_scene.grassSprite != null:
+		if "grassSprite" in new_scene && new_scene.grassSprite != null:
+			print(new_scene.grassSprite)
 			Global.grassSprite = new_scene.grassSprite
 		scenes.append(new_scene)
 		current_scene = new_scene
@@ -143,8 +143,9 @@ func change_scene(scene):
 		var new_scene = scene.instance()
 		
 		# change grass sprite to var set in scene | temporary for now
-#		print(new_scene.grassSprite)
-		if "grassSprite" in new_scene:
+		
+		if "grassSprite" in new_scene && new_scene.grassSprite != null:
+			print(new_scene.grassSprite)
 			Global.grassSprite = new_scene.grassSprite
 		scenes.append(new_scene)
 		current_scene = new_scene
