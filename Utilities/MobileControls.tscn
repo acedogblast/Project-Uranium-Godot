@@ -131,6 +131,7 @@ expand = true
 position = Vector2( 250, 250 )
 shape = SubResource( 5 )
 shape_centered = false
+
 [connection signal="pressed" from="CanvasLayer/D_Pad/Up" to="." method="_on_Up_pressed"]
 [connection signal="released" from="CanvasLayer/D_Pad/Up" to="." method="_on_Up_released"]
 [connection signal="pressed" from="CanvasLayer/D_Pad/Down" to="." method="_on_Down_pressed"]

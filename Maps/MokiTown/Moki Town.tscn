@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Maps/tilesets/PU_groundtiles+.tres" type="TileSet" id=1]
 [ext_resource path="res://Maps/tilesets/PU_buildings+.tres" type="TileSet" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Utilities/Items/OverworldItem.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Utilities/Event.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Utilities/TerrainTags.tscn" type="PackedScene" id=11]
 
 [node name="MokiTown" type="Node2D"]
 scale = Vector2( 2, 2 )
@@ -154,6 +155,11 @@ type = "Smashable Rock"
 [node name="Rock3" parent="NPC_Layer" instance=ExtResource( 9 )]
 position = Vector2( 2128, 1488 )
 type = "Smashable Rock"
+
+[node name="TerrainTags" parent="." instance=ExtResource( 11 )]
+visible = false
+scale = Vector2( 1, 1 )
+tile_data = PoolIntArray( 2818060, 0, 0, 2818061, 0, 0, 2818062, 0, 0, 2818063, 0, 0, 2883595, 0, 0, 2883596, 0, 0, 2883597, 0, 0, 2883598, 0, 0, 2883599, 0, 0, 2949131, 0, 0, 2949132, 0, 0, 2949133, 0, 0, 2949134, 0, 0, 2949135, 0, 0, 3014667, 0, 0, 3014668, 0, 0, 3014669, 0, 0, 3014670, 0, 0, 3080205, 0, 0 )
 
 [connection signal="area_entered" from="NPC_Layer/Block" to="." method="block_exit"]
 [connection signal="area_entered" from="NPC_Layer/Event1" to="." method="event1"]

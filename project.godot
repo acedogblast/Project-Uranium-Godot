@@ -213,6 +213,7 @@ Global="*res://Global.gd"
 SaveSystem="*res://Utilities/Save/SaveSystem.tscn"
 DialogueSystem="*res://Utilities/DialogueSystem.tscn"
 TextParser="*res://Utilities/TextParser.gd"
+TerrainTags="*res://Utilities/TerrainTags.gd"
 
 [debug]
 
@@ -231,7 +232,7 @@ window/handheld/emulate_touchscreen=true
 
 [editor_plugins]
 
-enabled=PoolStringArray( "create_pokemon" )
+enabled=PoolStringArray( "res://addons/create_pokemon/plugin.cfg", "res://addons/terrain_tag_editor/plugin.cfg" )
 
 [global]
 
@@ -368,6 +369,11 @@ F1={
 F2={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777245,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_debug={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777238,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 

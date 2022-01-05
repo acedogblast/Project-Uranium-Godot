@@ -8,6 +8,12 @@ var money : int = 0
 var pokedex_seen = [] # list of id numbers
 var pokedex_caught = [] # list of id numbers
 
+var onStairsUp = false
+var onStairsDown = false
+var wasOnStairs = false
+
+var debug = true
+
 var onGrass = false
 var lookingOnGrass = false
 var grass_positions = []
@@ -61,6 +67,7 @@ func _process(_delta):
 	if printFPS == true:
 		print(Engine.get_frames_per_second())
 	pass
+
 func save_state():
 	load_game_from_id = null
 	var state = {

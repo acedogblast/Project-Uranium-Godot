@@ -27,6 +27,9 @@ signal end_of_event
 
 onready var transition = $CanvasLayer/Transition
 
+# only global for debug purpose
+var tile_position := Vector2.ZERO
+
 func _ready():
 	Global.game = self
 	menu = $CanvasLayer/Menu
@@ -40,6 +43,9 @@ func _ready():
 	if OS.is_debug_build():
 		overlay = preload("res://Utilities/debug_overlay.tscn").instance()
 		overlay.add_stat("onGrass", Global, "onGrass", false)
+		overlay.add_stat("onStairsUp", Global, "onStairsUp", false)
+		overlay.add_stat("wasOnStairs", Global, "wasOnStairs", false)
+		overlay.add_stat("TilePosition", self, "tile_position", false)
 		overlay.add_stat("lookingOnGrass", Global, "lookingOnGrass", false)
 		overlay.add_stat("Grass Position", Global, "grass_positions", false)
 		#overlay.add_stat("Exit Grass Position", Global, "exitGrassPos", false)
@@ -137,8 +143,8 @@ func change_scene(scene):
 		var new_scene = scene.instance()
 		
 		# change grass sprite to var set in scene | temporary for now
-		print(new_scene.grassSprite)
-		if new_scene.grassSprite != null:
+#		print(new_scene.grassSprite)
+		if "grassSprite" in new_scene:
 			Global.grassSprite = new_scene.grassSprite
 		scenes.append(new_scene)
 		current_scene = new_scene
@@ -230,6 +236,15 @@ func change_scene(scene):
 				scenes.append(new_scene)
 				new_scene.position = current_scene.position + scene_array[1]
 				add_child(new_scene)
+
+func get_tile_id(location: Vector2) -> int:
+	var tilemap = current_scene.get_node("TerrainTags")
+	if tilemap:
+		tile_position = tilemap.world_to_map(location / 2)
+		var tile : int = tilemap.get_cellv(tile_position)
+		#var autotile_tile = tilemap.get_cell_autotile_coord(position.x,position.y)
+		return tile
+	return -1
 
 
 #Gets the destination and direction from Stairs.gd, and goes to the next line

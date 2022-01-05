@@ -387,14 +387,12 @@ disabled = true
 visible = false
 
 [node name="Sprite" type="Sprite" parent="Grass"]
-visible = false
 position = Vector2( 0, 8 )
 texture = ExtResource( 4 )
 region_enabled = true
 region_rect = Rect2( 32, 80, 32, 16 )
 
 [node name="Sprite2" type="Sprite" parent="Grass"]
-visible = false
 position = Vector2( 32, 8 )
 texture = ExtResource( 4 )
 region_enabled = true
