@@ -10,10 +10,10 @@ Maps/TiledMaps/
 *.apk
 *.exe
 *.x86_64
+*.import
 export_presets.cfg
 *.keystore
 PermittedAssets/UraniumIcon.png
-PermittedAssets/UraniumIcon.png.import
 Utilities/Save/*.tres
 Pokémon Uranium.nro
 Pokémon Uranium.pck
