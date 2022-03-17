@@ -75,8 +75,8 @@ func _input(event):
 		if event.is_action_pressed("ui_accept"):
 			select()
 			return null # This breaks out of the current method. Needed after select()
-	
-	if menu_stage == 2:
+			
+	elif menu_stage == 2:
 		match current:
 			ORDER.SAVE:
 				if event.is_action_pressed("ui_down"):
@@ -91,13 +91,22 @@ func _input(event):
 						SaveSystem.save_game(1)
 						# Play save sound effect
 						$Sounds/Save.play()
+						DialogueSystem.start_dialog("UI_MENU_SAVE_DONE")
+						menu_stage = 3
 					else:
 						$Yes_no/Box/Cursor.position.y = 32
-					$Save_Menu.visible = false
+						$Save_Menu.visible = false
+						DialogueSystem.reset()
+						menu_stage = 1
 					$Yes_no.visible = false
+	elif menu_stage == 3:
+		match current:
+			ORDER.SAVE:
+				if event.is_action_pressed("ui_accept"):
+					$Save_Menu.visible = false
 					DialogueSystem.reset()
 					menu_stage = 1
-				
+					
 func party_logic():
 	print("party logic")
 	$Transition.fade_to_color()
