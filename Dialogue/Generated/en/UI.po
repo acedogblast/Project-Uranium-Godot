@@ -65,6 +65,9 @@ msgstr "Options"
 msgid "UI_MENU_SAVE_PROMPT"
 msgstr "Would you like to save the game?"
 
+msgid "UI_MENU_SAVE_DONE"
+msgstr "Game saved!"
+
 msgid "UI_PARTY_PROMPT_1"
 msgstr "Choose Pokémon or cancel."
 
