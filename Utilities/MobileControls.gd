@@ -9,6 +9,10 @@ func _ready():
 	$ViewportContainer/GameViewport.set_size_override_stretch(true)
 	$ViewportContainer/GameViewport.set_size_override(true, Vector2(512,384))
 	
+	var joypads = Input.get_connected_joypads()
+	if joypads.size() != 0:
+		hide_controls()
+
 	resize()
 	game = load("res://IntroScenes/Intro.tscn")
 	#game = load("res://Maps/Moki Town/HeroHome.tscn") 
@@ -17,6 +21,12 @@ func _ready():
 	gameInstance = game.instance()
 	$ViewportContainer/GameViewport.add_child(gameInstance)
 	pass
+
+func _process(delta): # Check for joypad input
+	if Input.is_joy_button_pressed(0, 0) || Input.is_joy_button_pressed(0, 1) || Input.is_joy_button_pressed(0, 2) || Input.is_joy_button_pressed(0, 3):
+		hide_controls()
+	if Input.is_joy_button_pressed(0, 12) || Input.is_joy_button_pressed(0, 13) || Input.is_joy_button_pressed(0, 14) || Input.is_joy_button_pressed(0, 15):
+		hide_controls()
 
 func resize():
 	deviceResolution = OS.get_real_window_size()
@@ -51,6 +61,7 @@ func _on_Up_pressed():
 	a.pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_up")
+	show_controls()
 
 
 func _on_Down_pressed():
@@ -59,6 +70,7 @@ func _on_Down_pressed():
 	a.pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_down")
+	show_controls()
 
 
 func _on_Left_pressed():
@@ -67,6 +79,7 @@ func _on_Left_pressed():
 	a.pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_left")
+	show_controls()
 
 
 func _on_Right_pressed():
@@ -75,6 +88,7 @@ func _on_Right_pressed():
 	a.pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_right")
+	show_controls()
 
 
 func _on_Up_released():
@@ -171,3 +185,10 @@ func _on_S_button_up():
 	a.pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("ui_accept")
+
+func hide_controls():
+	$CanvasLayer/D_Pad.hide()
+	$CanvasLayer/Buttons.hide()
+func show_controls():
+	$CanvasLayer/D_Pad.show()
+	$CanvasLayer/Buttons.show()

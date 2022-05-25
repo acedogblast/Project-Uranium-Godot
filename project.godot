@@ -223,12 +223,15 @@ gdscript/warnings/unused_variable=false
 
 window/size/width=512
 window/size/height=384
-window/vsync/use_vsync=false
 window/handheld/orientation="sensor_landscape"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 window/stretch/shrink="1"
 window/handheld/emulate_touchscreen=true
+
+[editor]
+
+main_run_args="-set_window_size 1280x800"
 
 [editor_plugins]
 
