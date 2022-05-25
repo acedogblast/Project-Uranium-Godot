@@ -232,7 +232,7 @@ window/handheld/emulate_touchscreen=true
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/create_pokemon/plugin.cfg", "res://addons/terrain_tag_editor/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/create_pokemon/plugin.cfg" )
 
 [global]
 
