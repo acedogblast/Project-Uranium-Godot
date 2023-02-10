@@ -73,6 +73,8 @@ var is_shiny = false
 # Weight in kg
 var weight
 
+enum {SLOW, MEDIUM_SLOW, MEDIUM_FAST, FAST, ERRATIC, FLUCTUATING}
+
 func generate_IV():
 	iv_hp = Global.rng.randi_range(0,31)
 	iv_attack = Global.rng.randi_range(0,31)
@@ -174,17 +176,17 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 
 	# Set experience points
 	match data.leveling_rate:
-		data.SLOW:
+		SLOW:
 			experience = exp_slow(lv)
-		data.MEDIUM_SLOW:
+		MEDIUM_SLOW:
 			experience = exp_medium_slow(lv)
-		data.MEDIUM_FAST:
+		MEDIUM_FAST:
 			experience = exp_medium_fast(lv)
-		data.FAST:
+		FAST:
 			experience = exp_fast(lv)
-		data.ERRATIC:
+		ERRATIC:
 			experience = exp_erratic(lv)
-		data.FLUCTUATING:
+		FLUCTUATING:
 			experience = exp_fluctuating(lv)
 	
 	# Set stats
@@ -210,54 +212,56 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 				move_4 = MoveDataBase.get_move_by_name(moveset.pop_front())
 func get_cry() -> String:
 	return "res://Audio/SE/" + str("%03d" % ID) + "Cry.wav"
-func get_battle_foe_sprite() -> Sprite:
-	var sprite = Sprite.new()
-	var tex : Texture
+func get_battle_foe_sprite() -> Sprite2D:
+	var sprite = Sprite2D.new()
+	var tex : Texture2D
 	if is_shiny:
-		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.png") as Texture
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.png") as Texture2D
 	else:
-		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".png") as Texture
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".png") as Texture2D
 
 	if tex == null:
 		# Try loading with .PNG instead of .png
 		if is_shiny:
-			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.PNG") as Texture
+			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.PNG") as Texture2D
 		else:
-			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".PNG") as Texture
+			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".PNG") as Texture2D
 	
 	sprite.texture = tex
 	if sprite.texture.get_width() != 80:
 		var frames = sprite.texture.get_width() / 80
 		sprite.hframes = frames
-		var tween = Tween.new()
-		sprite.add_child(tween)
+		
+		var tween = sprite.create_tween()
+		
+		#sprite.add_child(tween)
 		tween.interpolate_property(sprite, "frame", 0, frames, 1.0, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 		tween.repeat = true
 		tween.start()
 
-	sprite.name = "Sprite"
+	sprite.name = "Sprite2D"
 	sprite.material = ShaderMaterial.new()
 	#var effect = load("res://Graphics/Pictures/StatUp.png")
-	#effect.set_flags(Texture.FLAG_REPEAT)
-	sprite.material.shader = load("res://Utilities/Battle/StatChange.shader")
-	#sprite.material.set_shader_param("effect", effect)
-	sprite.material.set_shader_param("effect_weight", 0.0)
+	#effect.set_flags(Texture2D.FLAG_REPEAT)
+	sprite.material.gdshader = load("res://Utilities/Battle/StatChange.gdshader")
+	#sprite.material.set_shader_parameter("effect", effect)
+	sprite.material.set_shader_parameter("effect_weight", 0.0)
 	return sprite
-func get_battle_player_sprite() -> Sprite:
-	var sprite = Sprite.new()
-	var tex : Texture
+func get_battle_player_sprite() -> Sprite2D:
+	var sprite = Sprite2D.new()
+	var tex : Texture2D
 	if is_shiny:
-		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "bs.png") as Texture
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "bs.png") as Texture2D
 	else:
-		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "b.png") as Texture
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "b.png") as Texture2D
 	sprite.texture = tex
-	sprite.name = "Sprite"
+	sprite.name = "Sprite2D"
 	sprite.material = ShaderMaterial.new()
 	#var effect = load("res://Graphics/Pictures/StatUp.png")
-	#effect.set_flags(Texture.FLAG_REPEAT)
-	sprite.material.shader = load("res://Utilities/Battle/StatChange.shader")
-	#sprite.material.set_shader_param("effect", effect)
-	sprite.material.set_shader_param("effect_weight", 0.0)
+	#effect.set_flags(Texture2D.FLAG_REPEAT)
+	sprite.material.gdshader = load("res://Utilities/Battle/StatChange.gdshader")
+	#sprite.material.set_shader_parameter("effect", effect)
+	sprite.material.set_shader_parameter("effect_weight", 0.0)
 	return sprite
 func get_exp_bar_percent() -> float:
 	var result : float = 0.0
@@ -265,22 +269,22 @@ func get_exp_bar_percent() -> float:
 	var base : int
 	var top : int
 	match poke_class.leveling_rate:
-		poke_class.SLOW:
+		SLOW:
 			base = exp_slow(level)
 			top = exp_slow(level + 1)
-		poke_class.MEDIUM_SLOW:
+		MEDIUM_SLOW:
 			base = exp_medium_slow(level)
 			top = exp_medium_slow(level + 1)
-		poke_class.MEDIUM_FAST:
+		MEDIUM_FAST:
 			base = exp_medium_fast(level)
 			top = exp_medium_fast(level + 1)
-		poke_class.FAST:
+		FAST:
 			base = exp_fast(level)
 			top = exp_fast(level + 1)
-		poke_class.ERRATIC:
+		ERRATIC:
 			base = exp_erratic(level)
 			top = exp_erratic(level + 1)
-		poke_class.FLUCTUATING:
+		FLUCTUATING:
 			base = exp_fluctuating(level)
 			top = exp_fluctuating(level + 1)
 	var range_total = top - base
@@ -321,12 +325,12 @@ func add_ev(defeated_poke : Pokemon):
 	update_stats()
 func get_exp_yield() -> int:
 	return int (registry.new().get_pokemon_class(ID).exp_yield )
-func get_icon_texture() -> Texture:
-	var texture : Texture
+func get_icon_texture() -> Texture2D:
+	var texture : Texture2D
 	if is_shiny:
-		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + "s.png") as Texture
+		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + "s.png") as Texture2D
 	else:
-		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + ".png") as Texture
+		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + ".png") as Texture2D
 	return texture
 func heal(): # Restores HP and move PPs to max and removes all ailments.
 	current_hp = hp
@@ -339,7 +343,7 @@ func heal(): # Restores HP and move PPs to max and removes all ailments.
 		move_3.remaining_pp = move_3.total_pp
 	if move_4 != null:
 		move_4.remaining_pp = move_4.total_pp
-func get_level_up_times() -> int: # Returns how many levels the pokemon should level up too based on current experience. Does not apply the levels!
+func get_level_up_times() -> int: # Returns how many levels the pokemon should level up too based checked current experience. Does not apply the levels!
 	var levelUpTimes = 0
 	var lv = level
 	var data = registry.new().get_pokemon_class(ID)
@@ -356,17 +360,17 @@ func get_exp_by_level(lv) -> int:
 	var data = registry.new().get_pokemon_class(ID)
 	var value = 0
 	match data.leveling_rate:
-			data.SLOW:
+			SLOW:
 				value = exp_slow(lv)
-			data.MEDIUM_SLOW:
+			MEDIUM_SLOW:
 				value = exp_medium_slow(lv)
-			data.MEDIUM_FAST:
+			MEDIUM_FAST:
 				value = exp_medium_fast(lv)
-			data.FAST:
+			FAST:
 				value = exp_fast(lv)
-			data.ERRATIC:
+			ERRATIC:
 				value = exp_erratic(lv)
-			data.FLUCTUATING:
+			FLUCTUATING:
 				value = exp_fluctuating(lv)
 	print("Exp for level," + str(lv) + "is : " + str(value))
 	return value

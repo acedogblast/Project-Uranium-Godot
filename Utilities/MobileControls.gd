@@ -1,13 +1,13 @@
 extends Node
 var game = null
 var gameInstance = null
-var deviceResolution = OS.get_real_window_size()
+var deviceResolution = get_window().get_size_with_decorations()
 func _ready():
 	Global.isMobile = true
-	$ColorRect.rect_size = deviceResolution
+	$ColorRect.size = deviceResolution
 	
-	$ViewportContainer/GameViewport.set_size_override_stretch(true)
-	$ViewportContainer/GameViewport.set_size_override(true, Vector2(512,384))
+	$SubViewportContainer/GameViewport.set_size_2d_override_stretch(true)
+	$SubViewportContainer/GameViewport.set_size_2d_override(true, Vector2(512,384))
 	
 	var joypads = Input.get_connected_joypads()
 	if joypads.size() != 0:
@@ -18,8 +18,8 @@ func _ready():
 	#game = load("res://Maps/Moki Town/HeroHome.tscn") 
 	
 	
-	gameInstance = game.instance()
-	$ViewportContainer/GameViewport.add_child(gameInstance)
+	gameInstance = game.instantiate()
+	$SubViewportContainer/GameViewport.add_child(gameInstance)
 	pass
 
 func _process(delta): # Check for joypad input
@@ -29,18 +29,18 @@ func _process(delta): # Check for joypad input
 		hide_controls()
 
 func resize():
-	deviceResolution = OS.get_real_window_size()
+	deviceResolution = get_window().get_size_with_decorations()
 	#print(deviceResolution)
 	
 	var horizontalSize = int(round(deviceResolution.y * 1.333))
-	$ViewportContainer.rect_position = Vector2( (deviceResolution.x - horizontalSize) / 2, 0)
-	$ViewportContainer.rect_size = Vector2(horizontalSize, deviceResolution.y)
+	$SubViewportContainer.position = Vector2( (deviceResolution.x - horizontalSize) / 2, 0)
+	$SubViewportContainer.size = Vector2(horizontalSize, deviceResolution.y)
 	
 	DialogueSystem.rescale_mobile(deviceResolution)
 	
 	#print(horizontalSize)
-	#print($ViewportContainer.rect_size)
-	#print($ViewportContainer.rect_position)
+	#print($SubViewportContainer.size)
+	#print($SubViewportContainer.position)
 	
 	var controlScale = deviceResolution.y / 3000
 	$CanvasLayer/D_Pad.position = Vector2(0, int(round(deviceResolution.y / 2)))
@@ -52,13 +52,13 @@ func resize():
 func changeScene(scene):
 	gameInstance.queue_free()
 	game = load(scene)
-	gameInstance = game.instance()
-	$ViewportContainer/GameViewport.add_child(gameInstance)
+	gameInstance = game.instantiate()
+	$SubViewportContainer/GameViewport.add_child(gameInstance)
 	pass
 func _on_Up_pressed():
 	var a = InputEventAction.new()
 	a.action = "ui_up"
-	a.pressed = true
+	a.button_pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_up")
 	show_controls()
@@ -67,7 +67,7 @@ func _on_Up_pressed():
 func _on_Down_pressed():
 	var a = InputEventAction.new()
 	a.action = "ui_down"
-	a.pressed = true
+	a.button_pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_down")
 	show_controls()
@@ -76,7 +76,7 @@ func _on_Down_pressed():
 func _on_Left_pressed():
 	var a = InputEventAction.new()
 	a.action = "ui_left"
-	a.pressed = true
+	a.button_pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_left")
 	show_controls()
@@ -85,7 +85,7 @@ func _on_Left_pressed():
 func _on_Right_pressed():
 	var a = InputEventAction.new()
 	a.action = "ui_right"
-	a.pressed = true
+	a.button_pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_right")
 	show_controls()
@@ -94,7 +94,7 @@ func _on_Right_pressed():
 func _on_Up_released():
 	var a = InputEventAction.new()
 	a.action = "ui_up"
-	a.pressed = false
+	a.button_pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("ui_up")
 
@@ -102,7 +102,7 @@ func _on_Up_released():
 func _on_Down_released():
 	var a = InputEventAction.new()
 	a.action = "ui_down"
-	a.pressed = false
+	a.button_pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("ui_down")
 
@@ -110,7 +110,7 @@ func _on_Down_released():
 func _on_Left_released():
 	var a = InputEventAction.new()
 	a.action = "ui_left"
-	a.pressed = false
+	a.button_pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("ui_left")
 
@@ -118,7 +118,7 @@ func _on_Left_released():
 func _on_Right_released():
 	var a = InputEventAction.new()
 	a.action = "ui_right"
-	a.pressed = false
+	a.button_pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("ui_right")
 
@@ -126,7 +126,7 @@ func _on_Right_released():
 func _on_Z_button_down():
 	var a = InputEventAction.new()
 	a.action = "z"
-	a.pressed = true
+	a.button_pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("z")
 
@@ -134,7 +134,7 @@ func _on_Z_button_down():
 func _on_X_button_down():
 	var a = InputEventAction.new()
 	a.action = "x"
-	a.pressed = true
+	a.button_pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("x")
 
@@ -142,7 +142,7 @@ func _on_X_button_down():
 func _on_C_button_down():
 	var a = InputEventAction.new()
 	a.action = "c"
-	a.pressed = true
+	a.button_pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("c")
 
@@ -150,7 +150,7 @@ func _on_C_button_down():
 func _on_S_button_down():
 	var a = InputEventAction.new()
 	a.action = "ui_accept"
-	a.pressed = true
+	a.button_pressed = true
 	Input.parse_input_event(a)
 	#Input.action_press("ui_accept")
 
@@ -158,7 +158,7 @@ func _on_S_button_down():
 func _on_Z_button_up():
 	var a = InputEventAction.new()
 	a.action = "z"
-	a.pressed = false
+	a.button_pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("z")
 
@@ -166,7 +166,7 @@ func _on_Z_button_up():
 func _on_X_button_up():
 	var a = InputEventAction.new()
 	a.action = "x"
-	a.pressed = false
+	a.button_pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("x")
 
@@ -174,7 +174,7 @@ func _on_X_button_up():
 func _on_C_button_up():
 	var a = InputEventAction.new()
 	a.action = "c"
-	a.pressed = false
+	a.button_pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("c")
 
@@ -182,7 +182,7 @@ func _on_C_button_up():
 func _on_S_button_up():
 	var a = InputEventAction.new()
 	a.action = "ui_accept"
-	a.pressed = false
+	a.button_pressed = false
 	Input.parse_input_event(a)
 	#Input.action_release("ui_accept")
 

@@ -47,5 +47,5 @@ func changeScene(scene):
 	if Global.isMobile:
 		get_parent().newScene(scene)
 	else:
-		get_tree().change_scene(scene)
+		get_tree().change_scene_to_file(scene)
 	pass

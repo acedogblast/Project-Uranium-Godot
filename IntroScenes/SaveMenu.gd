@@ -46,7 +46,7 @@ func _ready():
 		var game_state = save.get_data("res://Game.tscn")
 
 		var current_scene = load(game_state["current_scene"])
-		var current_scene_instance = current_scene.instance()
+		var current_scene_instance = current_scene.instantiate()
 
 		$FullPanel/Load/Location.text = current_scene_instance.place_name
 		match global_state["TrainerGender"]:
@@ -66,23 +66,23 @@ func _ready():
 		for poke in poke_group:
 			match index:
 				0:
-					$FullPanel/Load/P1.texture = poke.get_icon_texture()
-					$FullPanel/Load/P1.show()
+					$FullPanel/Load/Pannel1.texture = poke.get_icon_texture()
+					$FullPanel/Load/Pannel1.show()
 				1:
-					$FullPanel/Load/P2.texture = poke.get_icon_texture()
-					$FullPanel/Load/P2.show()
+					$FullPanel/Load/Pannel2.texture = poke.get_icon_texture()
+					$FullPanel/Load/Pannel2.show()
 				2:
-					$FullPanel/Load/P3.texture = poke.get_icon_texture()
-					$FullPanel/Load/P3.show()
+					$FullPanel/Load/Pannel3.texture = poke.get_icon_texture()
+					$FullPanel/Load/Pannel3.show()
 				3:
-					$FullPanel/Load/P4.texture = poke.get_icon_texture()
-					$FullPanel/Load/P4.show()
+					$FullPanel/Load/Pannel4.texture = poke.get_icon_texture()
+					$FullPanel/Load/Pannel4.show()
 				4:
-					$FullPanel/Load/P5.texture = poke.get_icon_texture()
-					$FullPanel/Load/P5.show()
+					$FullPanel/Load/Pannel5.texture = poke.get_icon_texture()
+					$FullPanel/Load/Pannel5.show()
 				5:
-					$FullPanel/Load/P6.texture = poke.get_icon_texture()
-					$FullPanel/Load/P6.show()
+					$FullPanel/Load/Pannel6.texture = poke.get_icon_texture()
+					$FullPanel/Load/Pannel6.show()
 			index += 1
 
 
@@ -196,12 +196,12 @@ func updateBoxes():
 			$FullPanel.position = Vector2(50, -160)
 		$AudioStreamPlayer.play()
 		
-#Changes loads the method newscene in the parent node if on mobile, or gets change scene from the scene tree if not on mobile
+#Changes loads the method newscene in the parent node if checked mobile, or gets change scene from the scene tree if not checked mobile
 func changeScene(scene):
 	if Global.isMobile:
 		get_parent().newScene(scene)
 	else:
-		get_tree().change_scene(scene)
+		get_tree().change_scene_to_file(scene)
 	pass
 
 #Loads the map to continue your game

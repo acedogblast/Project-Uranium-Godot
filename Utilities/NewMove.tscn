@@ -1,23 +1,23 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Graphics/Pictures/Summary/summarymove.png" type="Texture" id=1]
-[ext_resource path="res://Graphics/Pictures/Summary/summarybg.png" type="Texture" id=2]
-[ext_resource path="res://Graphics/Icons/icon003.png" type="Texture" id=3]
-[ext_resource path="res://Graphics/Pictures/Summary/summarymovesel.PNG" type="Texture" id=4]
-[ext_resource path="res://Graphics/Pictures/categorybw.png" type="Texture" id=5]
-[ext_resource path="res://Graphics/Pictures/normalbar.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/Pictures/Summary/summarymove.png" type="Texture2D" id=1]
+[ext_resource path="res://Graphics/Pictures/Summary/summarybg.png" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Icons/icon003.png" type="Texture2D" id=3]
+[ext_resource path="res://Graphics/Pictures/Summary/summarymovesel.PNG" type="Texture2D" id=4]
+[ext_resource path="res://Graphics/Pictures/categorybw.png" type="Texture2D" id=5]
+[ext_resource path="res://Graphics/Pictures/normalbar.png" type="Texture2D" id=6]
 [ext_resource path="res://Utilities/NewMove.gd" type="Script" id=7]
-[ext_resource path="res://Graphics/Pictures/globalicons.png" type="Texture" id=9]
-[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=10]
-[ext_resource path="res://Graphics/Pictures/typesbw.png" type="Texture" id=11]
-[ext_resource path="res://Graphics/Pictures/Summary/summary4text.png" type="Texture" id=18]
+[ext_resource path="res://Graphics/Pictures/globalicons.png" type="Texture2D" id=9]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="FontFile" id=10]
+[ext_resource path="res://Graphics/Pictures/typesbw.png" type="Texture2D" id=11]
+[ext_resource path="res://Graphics/Pictures/Summary/summary4text.png" type="Texture2D" id=18]
 
 [node name="NewMove" type="Node2D"]
 script = ExtResource( 7 )
 
 [node name="BG" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true,
@@ -25,8 +25,8 @@ __meta__ = {
 }
 
 [node name="Body" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true,
@@ -34,8 +34,8 @@ __meta__ = {
 }
 
 [node name="Title" type="TextureRect" parent="."]
-margin_right = 512.0
-margin_bottom = 40.0
+offset_right = 512.0
+offset_bottom = 40.0
 texture = ExtResource( 18 )
 __meta__ = {
 "_edit_lock_": true,
@@ -48,16 +48,16 @@ __meta__ = {
 }
 
 [node name="BG" type="TextureRect" parent="BottomBar"]
-margin_top = 336.0
-margin_right = 512.0
-margin_bottom = 384.0
+offset_top = 336.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Back" type="Sprite" parent="BottomBar"]
+[node name="Back" type="Sprite2D" parent="BottomBar"]
 position = Vector2( 485, 340 )
 texture = ExtResource( 9 )
 hframes = 3
@@ -67,7 +67,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Poke" type="Sprite" parent="."]
+[node name="Poke" type="Sprite2D" parent="."]
 position = Vector2( 480, 40 )
 texture = ExtResource( 3 )
 hframes = 2
@@ -75,7 +75,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Move1" type="Sprite" parent="."]
+[node name="Move1" type="Sprite2D" parent="."]
 position = Vector2( 128, 66 )
 texture = ExtResource( 4 )
 vframes = 2
@@ -83,7 +83,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Type" type="Sprite" parent="Move1"]
+[node name="Type" type="Sprite2D" parent="Move1"]
 position = Vector2( -84, -13 )
 texture = ExtResource( 11 )
 vframes = 20
@@ -92,10 +92,10 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="Move1"]
-margin_left = -46.0
-margin_top = -26.0
-margin_right = 36.0
-margin_bottom = -10.0
+offset_left = -46.0
+offset_top = -26.0
+offset_right = 36.0
+offset_bottom = -10.0
 custom_fonts/font = ExtResource( 10 )
 text = "Scratch"
 __meta__ = {
@@ -103,10 +103,10 @@ __meta__ = {
 }
 
 [node name="PP" type="Label" parent="Move1"]
-margin_left = -29.0
-margin_top = 4.0
-margin_right = -5.0
-margin_bottom = 20.0
+offset_left = -29.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "PP"
 __meta__ = {
@@ -115,10 +115,10 @@ __meta__ = {
 }
 
 [node name="PP2" type="Label" parent="Move1"]
-margin_left = 36.0
-margin_top = 4.0
-margin_right = 96.0
-margin_bottom = 20.0
+offset_left = 36.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "33/35"
 __meta__ = {
@@ -126,7 +126,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Move2" type="Sprite" parent="."]
+[node name="Move2" type="Sprite2D" parent="."]
 position = Vector2( 128, 134 )
 texture = ExtResource( 4 )
 vframes = 2
@@ -134,7 +134,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Type" type="Sprite" parent="Move2"]
+[node name="Type" type="Sprite2D" parent="Move2"]
 position = Vector2( -84, -13 )
 texture = ExtResource( 11 )
 vframes = 20
@@ -143,10 +143,10 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="Move2"]
-margin_left = -46.0
-margin_top = -26.0
-margin_right = 36.0
-margin_bottom = -10.0
+offset_left = -46.0
+offset_top = -26.0
+offset_right = 36.0
+offset_bottom = -10.0
 custom_fonts/font = ExtResource( 10 )
 text = "Scratch"
 __meta__ = {
@@ -154,10 +154,10 @@ __meta__ = {
 }
 
 [node name="PP" type="Label" parent="Move2"]
-margin_left = -29.0
-margin_top = 4.0
-margin_right = -5.0
-margin_bottom = 20.0
+offset_left = -29.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "PP"
 __meta__ = {
@@ -166,10 +166,10 @@ __meta__ = {
 }
 
 [node name="PP2" type="Label" parent="Move2"]
-margin_left = 36.0
-margin_top = 4.0
-margin_right = 96.0
-margin_bottom = 20.0
+offset_left = 36.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "33/35"
 __meta__ = {
@@ -177,7 +177,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Move3" type="Sprite" parent="."]
+[node name="Move3" type="Sprite2D" parent="."]
 position = Vector2( 128, 202 )
 texture = ExtResource( 4 )
 vframes = 2
@@ -185,7 +185,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Type" type="Sprite" parent="Move3"]
+[node name="Type" type="Sprite2D" parent="Move3"]
 position = Vector2( -84, -13 )
 texture = ExtResource( 11 )
 vframes = 20
@@ -194,10 +194,10 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="Move3"]
-margin_left = -46.0
-margin_top = -26.0
-margin_right = 36.0
-margin_bottom = -10.0
+offset_left = -46.0
+offset_top = -26.0
+offset_right = 36.0
+offset_bottom = -10.0
 custom_fonts/font = ExtResource( 10 )
 text = "Scratch"
 __meta__ = {
@@ -205,10 +205,10 @@ __meta__ = {
 }
 
 [node name="PP" type="Label" parent="Move3"]
-margin_left = -29.0
-margin_top = 4.0
-margin_right = -5.0
-margin_bottom = 20.0
+offset_left = -29.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "PP"
 __meta__ = {
@@ -217,10 +217,10 @@ __meta__ = {
 }
 
 [node name="PP2" type="Label" parent="Move3"]
-margin_left = 36.0
-margin_top = 4.0
-margin_right = 96.0
-margin_bottom = 20.0
+offset_left = 36.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "33/35"
 __meta__ = {
@@ -228,7 +228,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Move4" type="Sprite" parent="."]
+[node name="Move4" type="Sprite2D" parent="."]
 position = Vector2( 128, 270 )
 texture = ExtResource( 4 )
 vframes = 2
@@ -236,7 +236,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Type" type="Sprite" parent="Move4"]
+[node name="Type" type="Sprite2D" parent="Move4"]
 position = Vector2( -84, -13 )
 texture = ExtResource( 11 )
 vframes = 20
@@ -245,10 +245,10 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="Move4"]
-margin_left = -46.0
-margin_top = -26.0
-margin_right = 36.0
-margin_bottom = -10.0
+offset_left = -46.0
+offset_top = -26.0
+offset_right = 36.0
+offset_bottom = -10.0
 custom_fonts/font = ExtResource( 10 )
 text = "Scratch"
 __meta__ = {
@@ -256,10 +256,10 @@ __meta__ = {
 }
 
 [node name="PP" type="Label" parent="Move4"]
-margin_left = -29.0
-margin_top = 4.0
-margin_right = -5.0
-margin_bottom = 20.0
+offset_left = -29.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "PP"
 __meta__ = {
@@ -268,10 +268,10 @@ __meta__ = {
 }
 
 [node name="PP2" type="Label" parent="Move4"]
-margin_left = 36.0
-margin_top = 4.0
-margin_right = 96.0
-margin_bottom = 20.0
+offset_left = 36.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "33/35"
 __meta__ = {
@@ -279,7 +279,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NewMove" type="Sprite" parent="."]
+[node name="NewMove" type="Sprite2D" parent="."]
 position = Vector2( 127, 347 )
 texture = ExtResource( 4 )
 vframes = 2
@@ -287,7 +287,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Type" type="Sprite" parent="NewMove"]
+[node name="Type" type="Sprite2D" parent="NewMove"]
 position = Vector2( -84, -13 )
 texture = ExtResource( 11 )
 vframes = 20
@@ -296,10 +296,10 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="NewMove"]
-margin_left = -46.0
-margin_top = -26.0
-margin_right = 36.0
-margin_bottom = -10.0
+offset_left = -46.0
+offset_top = -26.0
+offset_right = 36.0
+offset_bottom = -10.0
 custom_fonts/font = ExtResource( 10 )
 text = "Scratch"
 __meta__ = {
@@ -307,10 +307,10 @@ __meta__ = {
 }
 
 [node name="PP" type="Label" parent="NewMove"]
-margin_left = -29.0
-margin_top = 4.0
-margin_right = -5.0
-margin_bottom = 20.0
+offset_left = -29.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "PP"
 __meta__ = {
@@ -319,10 +319,10 @@ __meta__ = {
 }
 
 [node name="PP2" type="Label" parent="NewMove"]
-margin_left = 36.0
-margin_top = 4.0
-margin_right = 96.0
-margin_bottom = 20.0
+offset_left = 36.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 20.0
 custom_fonts/font = ExtResource( 10 )
 text = "33/35"
 __meta__ = {
@@ -331,10 +331,10 @@ __meta__ = {
 }
 
 [node name="Category" type="Label" parent="."]
-margin_left = 269.0
-margin_top = 67.0
-margin_right = 365.0
-margin_bottom = 83.0
+offset_left = 269.0
+offset_top = 67.0
+offset_right = 365.0
+offset_bottom = 83.0
 custom_fonts/font = ExtResource( 10 )
 text = "CATEGORY"
 __meta__ = {
@@ -342,7 +342,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Value" type="Sprite" parent="Category"]
+[node name="Value" type="Sprite2D" parent="Category"]
 position = Vector2( 143, 14 )
 texture = ExtResource( 5 )
 vframes = 3
@@ -351,10 +351,10 @@ __meta__ = {
 }
 
 [node name="Power" type="Label" parent="."]
-margin_left = 269.0
-margin_top = 99.0
-margin_right = 365.0
-margin_bottom = 115.0
+offset_left = 269.0
+offset_top = 99.0
+offset_right = 365.0
+offset_bottom = 115.0
 custom_fonts/font = ExtResource( 10 )
 text = "POWER"
 __meta__ = {
@@ -363,9 +363,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="Power"]
-margin_left = 109.0
-margin_right = 179.0
-margin_bottom = 16.0
+offset_left = 109.0
+offset_right = 179.0
+offset_bottom = 16.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "40"
@@ -376,10 +376,10 @@ __meta__ = {
 }
 
 [node name="Description" type="Label" parent="."]
-margin_left = 266.0
-margin_top = 180.0
-margin_right = 507.0
-margin_bottom = 336.0
+offset_left = 266.0
+offset_top = 180.0
+offset_right = 507.0
+offset_bottom = 336.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 custom_constants/line_spacing = 16
@@ -390,7 +390,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Type" type="Sprite" parent="."]
+[node name="Type" type="Sprite2D" parent="."]
 position = Vector2( 365, 48 )
 texture = ExtResource( 11 )
 vframes = 20
@@ -399,10 +399,10 @@ __meta__ = {
 }
 
 [node name="Accuracy" type="Label" parent="."]
-margin_left = 269.0
-margin_top = 132.0
-margin_right = 365.0
-margin_bottom = 148.0
+offset_left = 269.0
+offset_top = 132.0
+offset_right = 365.0
+offset_bottom = 148.0
 custom_fonts/font = ExtResource( 10 )
 text = "ACCURACY"
 __meta__ = {
@@ -411,9 +411,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="Accuracy"]
-margin_left = 109.0
-margin_right = 179.0
-margin_bottom = 16.0
+offset_left = 109.0
+offset_right = 179.0
+offset_bottom = 16.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "100"

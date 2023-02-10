@@ -18,8 +18,8 @@ signal close
 func _ready():
 	self.hide()
 	var grid_texture = load("res://Graphics/Pictures/Pokedex/dexbg_grid.png")
-	grid_texture.flags = Texture.FLAG_REPEAT
-	$BG/Sprite.texture = grid_texture
+	grid_texture.flags = Texture2D.FLAG_REPEAT
+	$BG/Sprite2D.texture = grid_texture
 	seen_count_label = $Seen/Count
 	obtained_count_label = $Obtained/Count2
 	seen_count_label.text = "0"
@@ -70,7 +70,7 @@ func _input(event):
 
 func setup_panels():
 	for i in range(6):
-		var panel_sprite = Sprite.new()
+		var panel_sprite = Sprite2D.new()
 		panel_sprite.texture = load("res://Graphics/Pictures/Pokedex/dexarrow.png")
 		panel_sprite.centered = false
 		panel_sprite.vframes = 4
@@ -80,8 +80,8 @@ func setup_panels():
 		$List.add_child(panel_sprite)
 		panels.append(panel_sprite)
 
-		var icon = Sprite.new()
-		icon.texture = load("res://Graphics/Icons/icon" + str("%03d" % (i + 1) ) + ".png") as Texture
+		var icon = Sprite2D.new()
+		icon.texture = load("res://Graphics/Icons/icon" + str("%03d" % (i + 1) ) + ".png") as Texture2D
 		icon.hframes = 2
 		icon.position = Vector2(35,15)
 		icon.name = "Icon"
@@ -89,20 +89,20 @@ func setup_panels():
 
 		var caught = TextureRect.new()
 		caught.texture = load("res://Graphics/Pictures/Pokedex/dexball.png")
-		caught.rect_position = Vector2(82,8)
+		caught.position = Vector2(82,8)
 		caught.name = "Caught"
 		panel_sprite.add_child(caught)
 
 		var id_label = Label.new()
-		id_label.rect_position = Vector2(122,9)
-		id_label.add_font_override("font",load("res://Utilities/Battle/MoveTextFont.tres"))
+		id_label.position = Vector2(122,9)
+		id_label.add_theme_font_override("font",load("res://Utilities/Battle/MoveTextFont.tres"))
 		id_label.text = str("%03d" % (i + 1) )
 		id_label.name = "ID"
 		panel_sprite.add_child(id_label)
 
 		var name_label = Label.new()
-		name_label.rect_position = Vector2(168,9)
-		name_label.add_font_override("font",load("res://Utilities/Battle/MoveTextFont.tres"))
+		name_label.position = Vector2(168,9)
+		name_label.add_theme_font_override("font",load("res://Utilities/Battle/MoveTextFont.tres"))
 		name_label.text = "?????"
 		name_label.name = "Name"
 		panel_sprite.add_child(name_label)
@@ -120,7 +120,7 @@ func update_panels():
 		if Global.pokedex_seen.has(panel_id):
 			panel.frame = 2
 			panel.get_node("Name").text = poke_data.name
-			panel.get_node("Icon").texture = load("res://Graphics/Icons/icon" + str("%03d" % panel_id ) + ".png") as Texture
+			panel.get_node("Icon").texture = load("res://Graphics/Icons/icon" + str("%03d" % panel_id ) + ".png") as Texture2D
 			panel.get_node("Icon").hframes = 2
 			panel.get_node("Icon").frame = 0
 			panel.get_node("Icon").show()
@@ -144,16 +144,16 @@ func update_panels():
 func update_pic():
 	if Global.pokedex_seen.has(selected_ID):
 		$Pic/Discover.frame = 0
-		var tex : Texture = load("res://Graphics/Battlers/" + str("%03d" % selected_ID) + ".png") as Texture
+		var tex : Texture2D = load("res://Graphics/Battlers/" + str("%03d" % selected_ID) + ".png") as Texture2D
 
 		if tex == null:
 			# Try loading with .PNG instead of .png
-			tex = load("res://Graphics/Battlers/" + str("%03d" % selected_ID) + ".PNG") as Texture
+			tex = load("res://Graphics/Battlers/" + str("%03d" % selected_ID) + ".PNG") as Texture2D
 	
 		$Pic/Poke.texture = tex
 		if $Pic/Poke.texture.get_width() != 80:
-			var frames = $Pic/Poke.texture.get_width() / 80
-			$Pic/Poke.hframes = frames
+			var sprite_frames = $Pic/Poke.texture.get_width() / 80
+			$Pic/Poke.hframes = sprite_frames
 		else:
 			$Pic/Poke.hframes = 1
 			

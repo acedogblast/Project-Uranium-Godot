@@ -1,11 +1,11 @@
-tool
+@tool
 extends Node2D
 
-export(Texture) var texture
-export var tileSize = Vector2(16, 16)
-export var tiles_to_map = Vector2(0, 0)
-export var generate = false
-export(Script) var gen_script
+@export var texture: Texture2D
+@export var tileSize = Vector2(16, 16)
+@export var tiles_to_map = Vector2(0, 0)
+@export var generate = false
+@export var gen_script: Script
 
 func _process(delta):
 	if generate:
@@ -26,7 +26,7 @@ func _process(delta):
 					var pos = Vector2(x,y) * tileSize
 					if texture.get_data().get_pixel(pos.x + tileSize.x/2.0, pos.y + tileSize.y/2.0).a < 0.2:
 						continue
-					var nd = Sprite.new()
+					var nd = Sprite2D.new()
 					nd.position = pos + Vector2(x,y)
 					nd.texture = texture
 					nd.region_enabled = true

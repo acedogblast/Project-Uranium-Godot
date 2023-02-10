@@ -20,11 +20,11 @@ func setup():
 			$Pic.texture = load("res://Graphics/Characters/trainer001.PNG")
 
 	$Text/Name.text = "NAME: " + Global.TrainerName
-	$Text/Money/number.bbcode_text = "[right]$" + str(Global.money) + "[/right]"
-	$Text/Pokedex/number.bbcode_text = "[right]" + str(Global.pokedex_caught.size()) + "[/right]"
+	$Text/Money/number.text = "[right]$" + str(Global.money) + "[/right]"
+	$Text/Pokedex/number.text = "[right]" + str(Global.pokedex_caught.size()) + "[/right]"
 
 	#warning-ignore:INTEGER_DIVISION
 	var hours : int = Global.time / 60
-	$Text/Time/number.bbcode_text = "[right]" + str("%02d" % hours) + ":" + str("%02d" % (Global.time % 60)) + "[/right]"
+	$Text/Time/number.text = "[right]" + str("%02d" % hours) + ":" + str("%02d" % (Global.time % 60)) + "[/right]"
 
 	# TODO check if player has badges.

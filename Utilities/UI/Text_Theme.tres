@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bkr6gnv8yrchk"]
+
+[ext_resource type="FontFile" uid="uid://bin7nfgeoqiym" path="res://Fonts/pkmndp.ttf" id="1_8fwek"]
+
+[resource]
+default_font = ExtResource("1_8fwek")
+default_font_size = 26

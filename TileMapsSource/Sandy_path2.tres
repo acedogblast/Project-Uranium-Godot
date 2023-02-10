@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=2 format=2]
 
-[ext_resource path="res://Graphics/Autotiles/Sandy Dirt.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/Autotiles/Sandy Dirt.png" type="Texture2D" id=1]
 
 [resource]
 1/name = "Sandy Dirt.png 1"

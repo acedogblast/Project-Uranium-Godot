@@ -3,7 +3,7 @@ extends Node2D
 var walkTexture = null
 var runTexture = null
 
-export var canMove = true
+@export var canMove = true
 var isMoving = false
 var last_facing_dir
 var inputDisabled = false
@@ -119,14 +119,14 @@ func get_input():
 	
 	state = STATE.MOVE
 	
-	#If the state equals STATE.MOVE, the player is on foot and global sprint is on, then movement speed is set to fast and the texture is set to run
+	#If the state equals STATE.MOVE, the player is checked foot and global sprint is checked, then movement speed is set to fast and the texture is set to run
 	if state == STATE.MOVE and movement_type == MOVEMENT_TYPE.FOOT and Global.sprint == true:
 		movement_speed = MOVEMENT_SPEED.FAST
-		$Position2D/Sprite.texture = runTexture
+		$Marker2D/Sprite2D.texture = runTexture
 	#If the above is false, then movemnet speed is set to normal and the walk texture is used
 	else:
 		movement_speed = MOVEMENT_SPEED.NORMAL
-		$Position2D/Sprite.texture = walkTexture
+		$Marker2D/Sprite2D.texture = walkTexture
 
 
 	# Check if door is ahead
@@ -190,24 +190,24 @@ func get_input():
 func check_grass(dir):
 	for grass in get_tree().get_nodes_in_group("grass"):
 		for collision in $NextCollision.get_children():
-			#print(grass.world_to_map(collision.global_position))
-			for g in grass.get_used_cells_by_id(0):
+			#print(grass.local_to_map(collision.global_position))
+			for g in grass.get_used_cells(0):
 				if collision.name == "Right":
 					pass
-				#print(str(collision.name, collision.global_position, "\n", grass.map_to_world(grass.get_used_cells_by_id(0)[0]) + Vector2(2208 + 64, 864) - Vector2(16, 16)))
+				#print(str(collision.name, collision.global_position, "\n", grass.map_to_local(grass.get_used_cells(0)[0]) + Vector2(2208 + 64, 864) - Vector2(16, 16)))
 
-				var tile_center_pos = grass.map_to_world(g) + grass.cell_size / 2
+				var tile_center_pos = grass.map_to_local(g) + grass.cell_size / 2
 				#print(g + Vector2(2208, 864))
-				if grass.map_to_world(g) == collision.global_position:
+				if grass.map_to_local(g) == collision.global_position:
 					if !Global.grassPos.has(collision.name):
 						Global.grassPos.append(collision.name)
 					found_grass = true
 					break
-					#Global.grassPos.remove(Global.grassPos.find(collision.name))
+					#Global.grassPos.remove_at(Global.grassPos.find(collision.name))
 				else:
 					if Global.grassPos.has(collision.name):
 						#print(collision.name)
-						Global.grassPos.remove(Global.grassPos.find(collision.name))
+						Global.grassPos.remove_at(Global.grassPos.find(collision.name))
 			#if found_grass:
 			#	return
 		found_grass = false
@@ -258,7 +258,7 @@ func move(force_move : bool):
 		move_direction = Vector2.ZERO
 
 	# Grass logic
-	var grass1 = $Grass/Sprite # Current grass under player
+	var grass1 = $Grass/Sprite2D # Current grass under player
 	var grass2 = $Grass/Sprite2 # Grass player is moving to
 	var grass_tween = $GrassTween
 	var grass_found = false
@@ -274,7 +274,7 @@ func move(force_move : bool):
 #				entering_grass = true
 #			Global.onGrass = true
 #			break
-#	if !grass_found: # No grass on next position
+#	if !grass_found: # No grass checked next position
 #		if Global.onGrass:
 #			exiting_grass = true
 #		Global.onGrass = false
@@ -322,13 +322,13 @@ func move(force_move : bool):
 	$Tween.start()
 
 	# Wait until player finish move
-	yield($Tween, "tween_all_completed")
+	await $Tween.tween_all_completed
 	
 	if Global.onGrass:
 		$Grass.show()
 		if !Global.grass_positions.has( self.position + Vector2(32, 0) ):
 			$Grass/Sprite2.hide()
-		$Grass/Sprite.show()
+		$Grass/Sprite2D.show()
 	else:
 		$Grass.hide()
 	
@@ -340,7 +340,7 @@ func move(force_move : bool):
 	else:
 		foot = 0
 
-	# Generate wild battle if on grass or if the scene calls for it.
+	# Generate wild battle if checked grass or if the scene calls for it.
 	var wild_gen_on_step = false
 	if "always_wild_gen_on_step" in Global.game.current_scene && Global.game.current_scene.always_wild_gen_on_step:
 		wild_gen_on_step = true
@@ -360,9 +360,9 @@ func move(force_move : bool):
 		var loc = Global.game.get_current_scene_where_player_is()
 		if Global.game.current_scene != loc:
 			if loc == null:
-				print("PLAYER ERROR: Got Null on current_scene.")
+				print("PLAYER ERROR: Got Null checked current_scene.")
 			print("Player seamlessly entering different scene -> " + str(loc))
-			Global.game.change_scene(null)
+			Global.game.change_scene_to_file(null)
 
 #Loads the texture of the sprites you picked for your character
 func load_texture():
@@ -375,31 +375,31 @@ func load_texture():
 	if Global.TrainerGender == 2:
 		walkTexture = preload("res://Graphics/Characters/HEROINE.png")
 		runTexture = preload("res://Graphics/Characters/HEROINE-RUN.png")
-	$Position2D/Sprite.texture = walkTexture
-	$Position2D/Sprite.frame = 0
+	$Marker2D/Sprite2D.texture = walkTexture
+	$Marker2D/Sprite2D.frame = 0
 	
 #Sets the sprite texture to the walkTexture and if the direction is not null then the sprite.frame is set to direction times 4
 func set_idle_frame(_dir = null):
 	state = STATE.IDLE
-	$Position2D/Sprite.texture = walkTexture
+	$Marker2D/Sprite2D.texture = walkTexture
 	if _dir == null: # Go with the last facing direction
 		_dir = last_facing_dir
 	match _dir:
 		"Down", DIRECTION.DOWN:
-			$Position2D/Sprite.frame = 0
+			$Marker2D/Sprite2D.frame = 0
 		"Up", DIRECTION.UP:
-			$Position2D/Sprite.frame = 12
+			$Marker2D/Sprite2D.frame = 12
 		"Left", DIRECTION.LEFT:
-			$Position2D/Sprite.frame = 4
+			$Marker2D/Sprite2D.frame = 4
 		"Right", DIRECTION.RIGHT:
-			$Position2D/Sprite.frame = 8
+			$Marker2D/Sprite2D.frame = 8
 		_:
-			$Position2D/Sprite.frame = 0
+			$Marker2D/Sprite2D.frame = 0
 
 func animate():
 	#If the sprite texture is the walk texture
-	if $Position2D/Sprite.texture == walkTexture:
-		#If the above is true and foot is equal to 0, then play the animation based on the direction the player is facing
+	if $Marker2D/Sprite2D.texture == walkTexture:
+		#If the above is true and foot is equal to 0, then play the animation based checked the direction the player is facing
 		if foot == 0:
 			if direction == DIRECTION.DOWN:
 				$AnimationPlayer.play("Down")
@@ -409,7 +409,7 @@ func animate():
 				$AnimationPlayer.play("Left")
 			elif direction == DIRECTION.RIGHT:
 				$AnimationPlayer.play("Right")
-		#If the above is false and foot is equal to 1, then play the second animation based on the player's direction
+		#If the above is false and foot is equal to 1, then play the second animation based checked the player's direction
 		elif foot == 1:
 			if direction == DIRECTION.DOWN:
 				$AnimationPlayer.play("Down2")
@@ -420,8 +420,8 @@ func animate():
 			elif direction == DIRECTION.RIGHT:
 				$AnimationPlayer.play("Right2")
 	#If the sprite texture is not set to the walk texture and is set to the run texture
-	elif $Position2D/Sprite.texture == runTexture:
-		#If the above it true and foot is equal to 0, then play the animation based on the direction the character is facing
+	elif $Marker2D/Sprite2D.texture == runTexture:
+		#If the above it true and foot is equal to 0, then play the animation based checked the direction the character is facing
 		if foot == 0:
 			if direction == DIRECTION.DOWN:
 				$AnimationPlayer.play("Down_sprint")
@@ -431,7 +431,7 @@ func animate():
 				$AnimationPlayer.play("Left_sprint")
 			elif direction == DIRECTION.RIGHT:
 				$AnimationPlayer.play("Right_sprint")
-		#If the above is false and the foot is equal to 1, then play the second animaiton based on the player's direction
+		#If the above is false and the foot is equal to 1, then play the second animaiton based checked the player's direction
 		elif foot == 1:
 			if direction == DIRECTION.DOWN:
 				$AnimationPlayer.play("Down_sprint2")
@@ -458,8 +458,8 @@ func set_facing_direction(facing_dir):
 			"Right", DIRECTION.RIGHT:
 				facing_dir = DIRECTION.RIGHT
 	direction = facing_dir
-	$Position2D/Sprite.texture = walkTexture
-	$Position2D/Sprite.frame = direction * 4
+	$Marker2D/Sprite2D.texture = walkTexture
+	$Marker2D/Sprite2D.frame = direction * 4
 
 func move_player_event(_dir, steps): # Force moves player to direction and steps
 	direction = _dir
@@ -467,41 +467,41 @@ func move_player_event(_dir, steps): # Force moves player to direction and steps
 	movement_speed = MOVEMENT_SPEED.NORMAL
 	for i in range(steps):
 		move(true)
-		yield(self, "step")
+		await self.step
 	emit_signal("done_movement")
 
 func set_grass(dir):
 	var speed := 0.125 if Global.sprint else 0.25
 	if entering_grass:
-		$Grass/Sprite.texture = load(Global.grassSprite)
+		$Grass/Sprite2D.texture = load(Global.grassSprite)
 		$Grass/Sprite2.texture = load(Global.grassSprite)
 		#print("entering_grass")
 		match dir:
 			"Right", DIRECTION.RIGHT:
 				$Grass.show()
 				$Grass/Sprite2.show()
-				$Grass/Sprite.hide()
+				$Grass/Sprite2D.hide()
 				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 			"Left", DIRECTION.LEFT:
 				$Grass.show()
 				$Grass/Sprite2.hide()
-				$Grass/Sprite.show()
+				$Grass/Sprite2D.show()
 				$Grass.position = Vector2(-32, 0)
 				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 			"Up", DIRECTION.UP:
-				$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+				$GrassTween.interpolate_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 			"Down", DIRECTION.DOWN:
 				$Grass.show()
 				$Grass/Sprite2.hide()
-				$Grass/Sprite.show()
-				$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+				$Grass/Sprite2D.show()
+				$GrassTween.interpolate_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 		return
 	elif exiting_grass:
 		#print("exiting_grass")
 		match dir:
 			"Right", DIRECTION.RIGHT:
 				$Grass.show()
-				$Grass/Sprite.show()
+				$Grass/Sprite2D.show()
 				$Grass/Sprite2.hide()
 				if !Global.sprint:
 					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
@@ -514,7 +514,7 @@ func set_grass(dir):
 			"Left", DIRECTION.LEFT:
 				$Grass.show()
 				$Grass/Sprite2.show()
-				$Grass/Sprite.hide()
+				$Grass/Sprite2D.hide()
 				
 				$Grass.position = Vector2(-32, 0)
 				if !Global.sprint:
@@ -529,7 +529,7 @@ func set_grass(dir):
 				return
 			"Up", DIRECTION.UP:
 				$Grass.show()
-				$Grass/Sprite.show()
+				$Grass/Sprite2D.show()
 				$Grass/Sprite2.hide()
 				if !Global.sprint:
 					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position + Vector2(0, 32), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
@@ -549,7 +549,7 @@ func set_grass(dir):
 			$Grass.show()
 			match dir:
 				"Right", DIRECTION.RIGHT:
-					$Grass/Sprite.show()
+					$Grass/Sprite2D.show()
 					$Grass/Sprite2.show()
 					print(Global.grass_positions)
 					if Global.sprint:
@@ -558,7 +558,7 @@ func set_grass(dir):
 						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					return
 				"Left", DIRECTION.LEFT:
-					$Grass/Sprite.show()
+					$Grass/Sprite2D.show()
 					$Grass/Sprite2.show()
 					$Grass.position = Vector2(-32, 0)
 					if Global.sprint:
@@ -569,16 +569,16 @@ func set_grass(dir):
 				"Up", DIRECTION.UP:
 					$Grass/Sprite2.hide()
 					if Global.sprint:
-						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+						$GrassTween.interpolate_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					else:
-						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+						$GrassTween.interpolate_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					return
 				"Down", DIRECTION.DOWN:
 					$Grass/Sprite2.hide()
 					if Global.sprint:
-						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+						$GrassTween.interpolate_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					else:
-						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+						$GrassTween.interpolate_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 					return
 		else:
 			$Grass.hide()
@@ -602,7 +602,7 @@ func remove_grass(exiting):
 					Global.exitGrassPos = ""
 					Global.grassPos = ""
 					Global.onGrass = false
-					$Grass/Sprite.hide()
+					$Grass/Sprite2D.hide()
 					$Grass/Sprite2.show()
 					return
 				else:
@@ -610,7 +610,7 @@ func remove_grass(exiting):
 					Global.onGrass = true
 				return
 
-func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/pokemon-encounter-rate
+func wild_poke_encounter(): # Info and formula based checked : https://sha.wn.zone/p/pokemon-encounter-rate
 	var trigger_wild_battle = false
 
 	if entering_grass: # 40% chance to skip
@@ -631,7 +631,7 @@ func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/
 	var modifier = 1.0
 	
 	# Apply modifers: TODO
-	# Being on a bike 	80%
+	# Being checked a bike 	80%
 	# Having played the White Flute 	150%
 	# Having played the Black Flute 	50%
 	# Lead Pokémon has a Cleanse Tag 	66%
@@ -712,7 +712,7 @@ func jump():
 
 	$Tween.start()
 	$AnimationPlayer.play("Jump")
-	yield($Tween, "tween_all_completed")
+	await $Tween.tween_all_completed
 
 	var grass_found
 	for pos in Global.grass_positions:
@@ -724,7 +724,7 @@ func jump():
 				entering_grass = true
 			Global.onGrass = true
 			break
-	if !grass_found: # No grass on next position
+	if !grass_found: # No grass checked next position
 		if Global.onGrass:
 			exiting_grass = true
 		Global.onGrass = false

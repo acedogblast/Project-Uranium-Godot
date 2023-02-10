@@ -70,7 +70,7 @@ var moveset = [
 	MoveSet.new(40, "Discharge"),
 	MoveSet.new(46, "Cotton Guard"),
 	MoveSet.new(51, "Signal Beam"),
-	MoveSet.new(57, "Light Screen"),
+	MoveSet.new(57, "Light3D Screen"),
 	MoveSet.new(62, "Thunder"),
 	MoveSet.new(66, "Dragon Pulse")
 ]

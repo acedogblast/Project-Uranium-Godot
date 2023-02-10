@@ -5,6 +5,6 @@ class_name MoveSet
 var level
 var move
 
-func _init(lv, mv):
+func _init(lv,mv):
 	level = lv
 	move = mv

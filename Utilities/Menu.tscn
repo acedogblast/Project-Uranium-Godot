@@ -1,25 +1,25 @@
 [gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Utilities/Menu.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/Pictures/MENU/menubg.png" type="Texture" id=2]
-[ext_resource path="res://Graphics/Pictures/MENU/menubot.png" type="Texture" id=3]
-[ext_resource path="res://Graphics/Pictures/MENU/menutop.png" type="Texture" id=4]
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_party.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_bag.png" type="Texture" id=7]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_pokepod.png" type="Texture" id=8]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_card.png" type="Texture" id=9]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_save.png" type="Texture" id=10]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_option.png" type="Texture" id=11]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_exit.png" type="Texture" id=12]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_pokedex.png" type="Texture" id=13]
-[ext_resource path="res://Graphics/Pictures/MENU/icon_run.png" type="Texture" id=14]
-[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=15]
-[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture" id=16]
+[ext_resource path="res://Graphics/Pictures/MENU/menubg.png" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Pictures/MENU/menubot.png" type="Texture2D" id=3]
+[ext_resource path="res://Graphics/Pictures/MENU/menutop.png" type="Texture2D" id=4]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="FontFile" id=5]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_party.png" type="Texture2D" id=6]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_bag.png" type="Texture2D" id=7]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_pokepod.png" type="Texture2D" id=8]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_card.png" type="Texture2D" id=9]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_save.png" type="Texture2D" id=10]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_option.png" type="Texture2D" id=11]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_exit.png" type="Texture2D" id=12]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_pokedex.png" type="Texture2D" id=13]
+[ext_resource path="res://Graphics/Pictures/MENU/icon_run.png" type="Texture2D" id=14]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture2D" id=15]
+[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture2D" id=16]
 [ext_resource path="res://Utilities/UI/Bounce.tres" type="Animation" id=17]
 [ext_resource path="res://Audio/SE/SE_Select1.wav" type="AudioStream" id=18]
 [ext_resource path="res://Audio/SE/SE_Zoom2.wav" type="AudioStream" id=19]
-[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=20]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="FontFile" id=20]
 [ext_resource path="res://Audio/SE/save.wav" type="AudioStream" id=21]
 [ext_resource path="res://Utilities/Bag.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Utilities/PokemonPartyMenu.tscn" type="PackedScene" id=23]
@@ -28,14 +28,14 @@
 [ext_resource path="res://Utilities/OptionsMenu.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Utilities/Transition.tscn" type="PackedScene" id=34]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=1]
 size = 25
-extra_spacing_top = 5
+spacing_top = 5
 font_data = ExtResource( 5 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 27
-extra_spacing_top = 8
+spacing_top = 8
 font_data = ExtResource( 5 )
 
 [sub_resource type="Animation" id=3]
@@ -48,8 +48,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -60,8 +60,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 137 ), Vector2( 0, 0 ) ]
 }
@@ -72,8 +72,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, -97.231 ), Vector2( 0, -2.72076 ) ]
 }
@@ -84,8 +84,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 146.061, 0 ), Vector2( 0, 0 ) ]
 }
@@ -96,8 +96,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, -97.3742 ), Vector2( 0, 0 ) ]
 }
@@ -108,8 +108,8 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.3, 0.6 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -120,8 +120,8 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 0.3, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.3, 0.6 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -132,8 +132,8 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0.3, 0.45 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0.3, 0.45 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -141,30 +141,30 @@ tracks/7/keys = {
 [node name="Menu" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="BG" type="Sprite" parent="."]
+[node name="BG" type="Sprite2D" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 texture = ExtResource( 2 )
 centered = false
 
-[node name="Bottom" type="Sprite" parent="."]
+[node name="Bottom" type="Sprite2D" parent="."]
 position = Vector2( 0, 137 )
 texture = ExtResource( 3 )
 centered = false
 
-[node name="Top" type="Sprite" parent="."]
+[node name="Top" type="Sprite2D" parent="."]
 position = Vector2( 0, -97.231 )
 texture = ExtResource( 4 )
 centered = false
 
 [node name="Place_Text" type="RichTextLabel" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 128.0
-margin_top = 256.0
-margin_right = 384.0
-margin_bottom = 288.0
+offset_left = 128.0
+offset_top = 256.0
+offset_right = 384.0
+offset_bottom = 288.0
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
-bbcode_text = "[center]Sample Text[/center]"
+text = "[center]Sample Text[/center]"
 text = "Sample Text"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -174,12 +174,12 @@ __meta__ = {
 modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = 186.0
-margin_right = 326.0
-margin_bottom = 32.0
+offset_left = 186.0
+offset_right = 326.0
+offset_bottom = 32.0
 custom_fonts/normal_font = SubResource( 2 )
 bbcode_enabled = true
-bbcode_text = "[center]POKÉMON[/center]"
+text = "[center]POKÉMON[/center]"
 text = "POKÉMON"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -188,13 +188,13 @@ __meta__ = {
 [node name="Options" type="Node2D" parent="."]
 position = Vector2( 0, -97.3742 )
 
-[node name="PARTY" type="Position2D" parent="Options"]
+[node name="PARTY" type="Marker2D" parent="Options"]
 position = Vector2( 256, 62.2673 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Pokémon" type="Sprite" parent="Options/PARTY"]
+[node name="Pokémon" type="Sprite2D" parent="Options/PARTY"]
 position = Vector2( -2, 0.526661 )
 texture = ExtResource( 6 )
 vframes = 2
@@ -205,102 +205,102 @@ frame = 1
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Options/PARTY"]
 anims/Bounce = ExtResource( 17 )
 
-[node name="BAG" type="Position2D" parent="Options"]
+[node name="BAG" type="Marker2D" parent="Options"]
 position = Vector2( 328, 61 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Bag" type="Sprite" parent="Options/BAG"]
+[node name="Bag" type="Sprite2D" parent="Options/BAG"]
 texture = ExtResource( 7 )
 vframes = 2
 
 [node name="Tween" type="Tween" parent="Options/BAG"]
 
-[node name="POKEPOD" type="Position2D" parent="Options"]
+[node name="POKEPOD" type="Marker2D" parent="Options"]
 position = Vector2( 406, 61 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Poképod" type="Sprite" parent="Options/POKEPOD"]
+[node name="Poképod" type="Sprite2D" parent="Options/POKEPOD"]
 texture = ExtResource( 8 )
 vframes = 2
 
 [node name="Tween" type="Tween" parent="Options/POKEPOD"]
 
-[node name="CARD" type="Position2D" parent="Options"]
+[node name="CARD" type="Marker2D" parent="Options"]
 position = Vector2( 479, 64 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Card" type="Sprite" parent="Options/CARD"]
+[node name="Card" type="Sprite2D" parent="Options/CARD"]
 position = Vector2( 0, -4 )
 texture = ExtResource( 9 )
 vframes = 2
 
 [node name="Tween" type="Tween" parent="Options/CARD"]
 
-[node name="SAVE" type="Position2D" parent="Options"]
+[node name="SAVE" type="Marker2D" parent="Options"]
 position = Vector2( 556, 64 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Save" type="Sprite" parent="Options/SAVE"]
+[node name="Save" type="Sprite2D" parent="Options/SAVE"]
 position = Vector2( -3, -3 )
 texture = ExtResource( 10 )
 vframes = 2
 
 [node name="Tween" type="Tween" parent="Options/SAVE"]
 
-[node name="OPTION" type="Position2D" parent="Options"]
+[node name="OPTION" type="Marker2D" parent="Options"]
 position = Vector2( 32, 64 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Options" type="Sprite" parent="Options/OPTION"]
+[node name="Options" type="Sprite2D" parent="Options/OPTION"]
 position = Vector2( 0, -5 )
 texture = ExtResource( 11 )
 vframes = 2
 
 [node name="Tween" type="Tween" parent="Options/OPTION"]
 
-[node name="EXIT" type="Position2D" parent="Options"]
+[node name="EXIT" type="Marker2D" parent="Options"]
 position = Vector2( 112, 64 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Exit" type="Sprite" parent="Options/EXIT"]
+[node name="Exit" type="Sprite2D" parent="Options/EXIT"]
 position = Vector2( 0, -4 )
 texture = ExtResource( 12 )
 vframes = 2
 
 [node name="Tween" type="Tween" parent="Options/EXIT"]
 
-[node name="POKEDEX" type="Position2D" parent="Options"]
+[node name="POKEDEX" type="Marker2D" parent="Options"]
 position = Vector2( 184, 64 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Pokedex" type="Sprite" parent="Options/POKEDEX"]
+[node name="Pokedex" type="Sprite2D" parent="Options/POKEDEX"]
 position = Vector2( 0, -1 )
 texture = ExtResource( 13 )
 vframes = 2
 
 [node name="Tween" type="Tween" parent="Options/POKEDEX"]
 
-[node name="Run" type="Position2D" parent="."]
+[node name="Run" type="Marker2D" parent="."]
 position = Vector2( 146.061, 0 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Run"]
+[node name="Sprite2D" type="Sprite2D" parent="Run"]
 position = Vector2( 367, 108 )
 texture = ExtResource( 14 )
 centered = false
@@ -310,8 +310,8 @@ vframes = 2
 visible = false
 
 [node name="Info" type="NinePatchRect" parent="Save_Menu"]
-margin_right = 228.0
-margin_bottom = 152.0
+offset_right = 228.0
+offset_bottom = 152.0
 texture = ExtResource( 15 )
 patch_margin_left = 6
 patch_margin_top = 6
@@ -326,26 +326,26 @@ __meta__ = {
 [node name="Player_Name" type="Node2D" parent="Save_Menu/Info"]
 
 [node name="Player" type="RichTextLabel" parent="Save_Menu/Info/Player_Name"]
-margin_left = 12.0
-margin_top = 40.0
-margin_right = 76.0
-margin_bottom = 72.0
+offset_left = 12.0
+offset_top = 40.0
+offset_right = 76.0
+offset_bottom = 72.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "Player"
+text = "Player"
 text = "Player"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Name" type="RichTextLabel" parent="Save_Menu/Info/Player_Name"]
-margin_left = 77.0
-margin_top = 40.0
-margin_right = 217.0
-margin_bottom = 72.0
+offset_left = 77.0
+offset_top = 40.0
+offset_right = 217.0
+offset_bottom = 72.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "Player"
+text = "Player"
 text = "Player"
 scroll_active = false
 __meta__ = {
@@ -355,23 +355,23 @@ __meta__ = {
 [node name="Time" type="Node2D" parent="Save_Menu/Info"]
 
 [node name="Time" type="RichTextLabel" parent="Save_Menu/Info/Time"]
-margin_left = 11.0
-margin_top = 72.0
-margin_right = 75.0
-margin_bottom = 104.0
+offset_left = 11.0
+offset_top = 72.0
+offset_right = 75.0
+offset_bottom = 104.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "Time"
+text = "Time"
 text = "Time"
 
 [node name="Count" type="RichTextLabel" parent="Save_Menu/Info/Time"]
-margin_left = 98.0
-margin_top = 72.0
-margin_right = 207.0
-margin_bottom = 104.0
+offset_left = 98.0
+offset_top = 72.0
+offset_right = 207.0
+offset_bottom = 104.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "Time"
+text = "Time"
 text = "Time"
 scroll_active = false
 __meta__ = {
@@ -381,36 +381,36 @@ __meta__ = {
 [node name="Badges" type="Node2D" parent="Save_Menu/Info"]
 
 [node name="Text" type="RichTextLabel" parent="Save_Menu/Info/Badges"]
-margin_left = 11.0
-margin_top = 104.0
-margin_right = 107.0
-margin_bottom = 137.0
+offset_left = 11.0
+offset_top = 104.0
+offset_right = 107.0
+offset_bottom = 137.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "Badges"
+text = "Badges"
 text = "Badges"
 
 [node name="Count" type="RichTextLabel" parent="Save_Menu/Info/Badges"]
-margin_left = 98.0
-margin_top = 104.0
-margin_right = 208.0
-margin_bottom = 137.0
+offset_left = 98.0
+offset_top = 104.0
+offset_right = 208.0
+offset_bottom = 137.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "0"
+text = "0"
 text = "0"
 scroll_active = false
 
 [node name="Node2D" type="Node2D" parent="Save_Menu/Info"]
 
 [node name="Location" type="RichTextLabel" parent="Save_Menu/Info/Node2D"]
-margin_left = 6.0
-margin_top = 8.0
-margin_right = 222.0
-margin_bottom = 38.0
+offset_left = 6.0
+offset_top = 8.0
+offset_right = 222.0
+offset_bottom = 38.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "[center]location[/center]"
+text = "[center]location[/center]"
 text = "location"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -420,10 +420,10 @@ __meta__ = {
 visible = false
 
 [node name="Box" type="NinePatchRect" parent="Yes_no"]
-margin_left = 416.0
-margin_top = 192.0
-margin_right = 512.0
-margin_bottom = 288.0
+offset_left = 416.0
+offset_top = 192.0
+offset_right = 512.0
+offset_bottom = 288.0
 texture = ExtResource( 15 )
 patch_margin_left = 6
 patch_margin_top = 6
@@ -431,13 +431,13 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="Yes" type="RichTextLabel" parent="Yes_no/Box"]
-margin_left = 40.0
-margin_top = 23.0
-margin_right = 84.0
-margin_bottom = 44.0
+offset_left = 40.0
+offset_top = 23.0
+offset_right = 84.0
+offset_bottom = 44.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "Yes"
+text = "Yes"
 text = "Yes"
 scroll_active = false
 __meta__ = {
@@ -445,17 +445,17 @@ __meta__ = {
 }
 
 [node name="No" type="RichTextLabel" parent="Yes_no/Box"]
-margin_left = 40.0
-margin_top = 55.0
-margin_right = 84.0
-margin_bottom = 76.0
+offset_left = 40.0
+offset_top = 55.0
+offset_right = 84.0
+offset_bottom = 76.0
 custom_fonts/normal_font = ExtResource( 20 )
 bbcode_enabled = true
-bbcode_text = "No"
+text = "No"
 text = "No"
 scroll_active = false
 
-[node name="Cursor" type="Sprite" parent="Yes_no/Box"]
+[node name="Cursor" type="Sprite2D" parent="Yes_no/Box"]
 position = Vector2( 23, 32 )
 texture = ExtResource( 16 )
 

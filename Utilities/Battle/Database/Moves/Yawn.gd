@@ -35,4 +35,4 @@ var target_ability = MoveTarget.ALL_FOE
 
 var main_status_effect
 
-var description = "The user lets loose a huge yawn that lulls the target into falling asleep on the next turn."
+var description = "The user lets loose a huge yawn that lulls the target into falling asleep checked the next turn."

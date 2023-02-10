@@ -1,14 +1,14 @@
 extends Node
-onready var NuclearPlantMusic = preload("res://Audio/BGM/PU-Nuclear Plant.ogg")
-onready var SpecialPokeMusic = preload("res://Audio/BGM/PU-Specialpoke.ogg")
-onready var AlarmMusic = preload("res://Audio/BGS/Emergency Civil Defense Alarm [Air Raid Siren].ogg")
-onready var EnteringDoor = preload("res://Audio/SE/Entering Door.wav")
-onready var ExitingDoor = preload("res://Audio/SE/Exit Door.WAV")
-onready var EarthQuakeSound = preload("res://Audio/SE/131-Earth03.ogg") 
+@onready var NuclearPlantMusic = preload("res://Audio/BGM/PU-Nuclear Plant.ogg")
+@onready var SpecialPokeMusic = preload("res://Audio/BGM/PU-Specialpoke.ogg")
+@onready var AlarmMusic = preload("res://Audio/BGS/Emergency Civil Defense Alarm [Air Raid Siren].ogg")
+@onready var EnteringDoor = preload("res://Audio/SE/Entering Door.wav")
+@onready var ExitingDoor = preload("res://Audio/SE/Exit Door.WAV")
+@onready var EarthQuakeSound = preload("res://Audio/SE/131-Earth03.ogg") 
 
-onready var EmotionSound = preload("res://Audio/SE/SE_EM.wav")
-onready var ExplosionSound = preload("res://Audio/SE/049-Explosion02.ogg") # Do not loop
-onready var EmotionIcon = preload("res://Graphics/Animations/029-Emotion01.png")
+@onready var EmotionSound = preload("res://Audio/SE/SE_EM.wav")
+@onready var ExplosionSound = preload("res://Audio/SE/049-Explosion02.ogg") # Do not loop
+@onready var EmotionIcon = preload("res://Graphics/Animations/029-Emotion01.png")
 
 var lastAnimationPos = 0.0
 var lastAnimation = null
@@ -19,14 +19,14 @@ func _ready():
 	$AnimationPlayer.play("Story")
 	TrainerName = Global.TrainerName
 
-	DialogueSystem.connect("dialogue_start", self, "pause")
-	DialogueSystem.connect("dialogue_end", self, "resume")
+	DialogueSystem.connect("dialogue_start",Callable(self,"pause"))
+	DialogueSystem.connect("dialogue_end",Callable(self,"resume"))
 	DialogueSystem.set_dialogue_sequence("CUTSCENE_INTRO_D")
 	pass
 
 func _exit_tree():
-	DialogueSystem.disconnect("dialogue_start", self, "pause")
-	DialogueSystem.disconnect("dialogue_end", self, "resume")
+	DialogueSystem.disconnect("dialogue_start",Callable(self,"pause"))
+	DialogueSystem.disconnect("dialogue_end",Callable(self,"resume"))
 
 func dialogue_set_bottom():
 	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
@@ -55,15 +55,15 @@ func dialogue_lucille(show_arrow = true):
 	pass
 
 func dialogue_cam(show_arrow = true):
-	dialogue_with_arrow($Room.to_global($Room/Cam.position), show_arrow)
+	dialogue_with_arrow($Node3D.to_global($Node3D/Cam.position), show_arrow)
 	pass
 
 func dialogue_scientist(show_arrow = true):
-	dialogue_with_arrow($Room.to_global($Room/Scientist2.position), show_arrow)
+	dialogue_with_arrow($Node3D.to_global($Node3D/Scientist2.position), show_arrow)
 	pass
 
 func final():
-	change_scene("res://Game.tscn")
+	change_scene_to_file("res://Game.tscn")
 	pass
 
 func earth_shake():
@@ -73,10 +73,10 @@ func earth_shake():
 	pass
 
 func shake_end():
-	$Room/Scientist1/AlertEM.visible = true
-	$Room/Scientist2/AlertEM.visible = true
-	$Room/Scientist3/AlertEM.visible = true
-	$Room/Cam/AlertEM2.visible = true
+	$Node3D/Scientist1/AlertEM.visible = true
+	$Node3D/Scientist2/AlertEM.visible = true
+	$Node3D/Scientist3/AlertEM.visible = true
+	$Node3D/Cam/AlertEM2.visible = true
 	$Lucille/AlertEM.visible = true
 	$AudioStreamPlayer.stop()
 	$AudioStreamPlayer.stream = SpecialPokeMusic
@@ -94,47 +94,47 @@ func flash_red_alert():
 	pass
 
 func end_EM():
-	$Room/Scientist1/AlertEM.visible = false
-	$Room/Scientist2/AlertEM.visible = false
-	$Room/Scientist3/AlertEM.visible = false
-	$Room/Cam/AlertEM2.visible = false
+	$Node3D/Scientist1/AlertEM.visible = false
+	$Node3D/Scientist2/AlertEM.visible = false
+	$Node3D/Scientist3/AlertEM.visible = false
+	$Node3D/Cam/AlertEM2.visible = false
 	$Lucille/AlertEM.visible = false
 	pass
 
 func scientist_move_1():
-	$Room/Scientist1/AnimationPlayer.play("WalkRight")
-	$Room/Scientist3/AnimationPlayer.play("WalkLeft")
+	$Node3D/Scientist1/AnimationPlayer.play("WalkRight")
+	$Node3D/Scientist3/AnimationPlayer.play("WalkLeft")
 	pass
 
 func scientist_move_2():
-	$Room/Scientist1/AnimationPlayer.play("WalkAhead")
-	$Room/Scientist3/AnimationPlayer.play("WalkForward")
+	$Node3D/Scientist1/AnimationPlayer.play("WalkAhead")
+	$Node3D/Scientist3/AnimationPlayer.play("WalkForward")
 	pass
 
 func scientist_move_3():
-	$Room/Scientist1/AnimationPlayer.stop()
-	$Room/Scientist1.frame = 12
-	$Room/Scientist3/AnimationPlayer.stop()
-	$Room/Scientist3.frame = 12
+	$Node3D/Scientist1/AnimationPlayer.stop()
+	$Node3D/Scientist1.frame = 12
+	$Node3D/Scientist3/AnimationPlayer.stop()
+	$Node3D/Scientist3.frame = 12
 	pass
 
 func scientist_move_4():
-	$Room/Scientist1/AnimationPlayer.stop()
-	$Room/Scientist2/AnimationPlayer.stop()
-	$Room/Scientist3/AnimationPlayer.stop()
-	$Room/Scientist1/AnimationPlayer.play("WalkRight")
-	$Room/Scientist2/AnimationPlayer.play("WalkAhead")
-	$Room/Scientist3/AnimationPlayer.play("WalkLeft")
+	$Node3D/Scientist1/AnimationPlayer.stop()
+	$Node3D/Scientist2/AnimationPlayer.stop()
+	$Node3D/Scientist3/AnimationPlayer.stop()
+	$Node3D/Scientist1/AnimationPlayer.play("WalkRight")
+	$Node3D/Scientist2/AnimationPlayer.play("WalkAhead")
+	$Node3D/Scientist3/AnimationPlayer.play("WalkLeft")
 	pass
 
 func scientist_move_5():
-	$Room/Scientist1/AnimationPlayer.stop()
-	$Room/Scientist1/AnimationPlayer.play("WalkAhead")
+	$Node3D/Scientist1/AnimationPlayer.stop()
+	$Node3D/Scientist1/AnimationPlayer.play("WalkAhead")
 	pass
 
 func scientist_move_6():
-	$Room/Scientist3/AnimationPlayer.stop()
-	$Room/Scientist3/AnimationPlayer.play("WalkAhead")
+	$Node3D/Scientist3/AnimationPlayer.stop()
+	$Node3D/Scientist3/AnimationPlayer.play("WalkAhead")
 	pass
 
 func open_door_sound():
@@ -168,33 +168,33 @@ func lucille_walk_left():
 	pass
 
 func cam_walk_left():
-	$Room/Cam/AnimationPlayer.stop()
-	$Room/Cam/AnimationPlayer.play("WalkLeft")
+	$Node3D/Cam/AnimationPlayer.stop()
+	$Node3D/Cam/AnimationPlayer.play("WalkLeft")
 	pass
 
 func cam_move_2():
-	$Room/Cam/AnimationPlayer.stop()
-	$Room/Cam/AnimationPlayer.play("WalkAhead")
+	$Node3D/Cam/AnimationPlayer.stop()
+	$Node3D/Cam/AnimationPlayer.play("WalkAhead")
 	pass
 
 func cam_move_3():
-	$Room/Cam/AnimationPlayer.stop()
-	$Room/Cam/AnimationPlayer.play("WalkLeft")
+	$Node3D/Cam/AnimationPlayer.stop()
+	$Node3D/Cam/AnimationPlayer.play("WalkLeft")
 	pass
 
 func cam_move_4():
-	$Room/Cam/AnimationPlayer.stop()
-	$Room/Cam/AnimationPlayer.play("WalkAhead")
+	$Node3D/Cam/AnimationPlayer.stop()
+	$Node3D/Cam/AnimationPlayer.play("WalkAhead")
 	pass
 
 func cam_move_5():
-	$Room/Cam/AnimationPlayer.stop()
-	$Room/Cam.frame = 12
+	$Node3D/Cam/AnimationPlayer.stop()
+	$Node3D/Cam.frame = 12
 	pass
 
 func cam_move_6():
-	$Room/Cam/AnimationPlayer.stop()
-	$Room/Cam.frame = 0
+	$Node3D/Cam/AnimationPlayer.stop()
+	$Node3D/Cam.frame = 0
 	pass
 
 func explosion():
@@ -227,9 +227,9 @@ func play_nuclear_plant_music():
 	$AudioStreamPlayer.play()
 	pass
 
-func change_scene(scene):
+func change_scene_to_file(scene):
 	if Global.isMobile:
 		get_parent().newScene(scene)
 	else:
-		get_tree().change_scene(scene)
+		get_tree().change_scene_to_file(scene)
 	pass

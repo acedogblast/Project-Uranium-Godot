@@ -17,8 +17,8 @@ const MOVE_SLIDE_4 = Vector2(-640, 0)
 
 var battler
 
-onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
-onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
+@onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
+@onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
 
 func _ready():
     $MoveSlide/SelHand/AnimationPlayer.play("Squeez")
@@ -61,7 +61,7 @@ func start(poke):
             $MoveSlide/SelHand.position = MOVE4_POS
 func set_move_sprite(sprite, move):
     sprite.frame = int(move.type)
-    sprite.get_node("Name").bbcode_text = "[center]" + move.name
+    sprite.get_node("Name").text = "[center]" + move.name
     sprite.get_node("PP").text = "PP: " + str(move.remaining_pp) + "/" + str(move.total_pp)
     pass
 func _input(event):

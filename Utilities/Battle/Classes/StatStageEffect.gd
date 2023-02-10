@@ -10,7 +10,7 @@ var speed : int = 0
 var accuracy : int = 0
 var evasion : int = 0
 
-func _init(at : int, def : int, sp_at : int, sp_def: int, speed_ : int, acc : int, eva : int):
+func _init(at : int,def : int,sp_at : int,sp_def: int,speed_ : int,acc : int,eva : int):
     attack = at
     defense = def
     sp_attack = sp_at

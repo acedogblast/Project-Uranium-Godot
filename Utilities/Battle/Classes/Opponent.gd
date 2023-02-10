@@ -13,6 +13,6 @@ var opponent_type
 
 var after_battle_quote : String
 
-var battle_texture : Texture
+var battle_texture : Texture2D
 
 var ai : AI

@@ -3,7 +3,7 @@ class_name AI
 
 enum {WILD , TESTING_1}
 var AI_Behavior
-func get_command(snapshot : BattleSnapshot) -> BattleCommand:
+func is_command_or_control_pressed(snapshot : BattleSnapshot) -> BattleCommand:
 	var command = load("res://Utilities/Battle/Classes/BattleCommand.gd").new()
 	match AI_Behavior:
 		TESTING_1:

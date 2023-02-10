@@ -1,378 +1,329 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=18 format=3 uid="uid://c5jtf0uw6a8qh"]
 
-[ext_resource path="res://IntroScenes/SaveMenu.gd" type="Script" id=1]
-[ext_resource path="res://Audio/SE/Choose.WAV" type="AudioStream" id=2]
-[ext_resource path="res://Graphics/Pictures/loadbg.png" type="Texture" id=3]
-[ext_resource path="res://Graphics/Pictures/loadPanels.png" type="Texture" id=4]
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://Graphics/Characters/PU-Pluto.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Icons/icon003.png" type="Texture" id=7]
+[ext_resource type="Script" path="res://IntroScenes/SaveMenu.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://vsb58powpguf" path="res://Audio/SE/Choose.WAV" id="2"]
+[ext_resource type="Texture2D" uid="uid://bj5i70omugqke" path="res://Graphics/Pictures/loadbg.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cqagyq08e2edh" path="res://Graphics/Pictures/loadPanels.png" id="4"]
+[ext_resource type="Theme" uid="uid://bkr6gnv8yrchk" path="res://Utilities/UI/Text_Theme.tres" id="5_0wj22"]
+[ext_resource type="Texture2D" uid="uid://bvx28m3b8wwvl" path="res://Graphics/Characters/PU-Pluto.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dm0ebqq5vrltt" path="res://Graphics/Icons/icon003.png" id="7"]
 
-[sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 444, 384, 46 )
+[sub_resource type="AtlasTexture" id="1"]
+atlas = ExtResource("4")
+region = Rect2(16, 444, 384, 46)
 
-[sub_resource type="DynamicFont" id=2]
-size = 26
-font_data = ExtResource( 5 )
+[sub_resource type="AtlasTexture" id="3"]
+atlas = ExtResource("4")
+region = Rect2(16, 444, 384, 46)
 
-[sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 444, 384, 46 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 26
-font_data = ExtResource( 5 )
-
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id="5"]
 resource_name = "Walk"
-loop = true
+loop_mode = 1
 step = 0.05
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ 0, 1, 2, 3 ]
+"values": [0, 1, 2, 3]
 }
 
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 444, 384, 46 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8nw68"]
+_data = {
+"Walk": SubResource("5")
+}
 
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 444, 384, 46 )
+[sub_resource type="AtlasTexture" id="6"]
+atlas = ExtResource("4")
+region = Rect2(16, 444, 384, 46)
 
-[sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 444, 384, 46 )
+[sub_resource type="AtlasTexture" id="7"]
+atlas = ExtResource("4")
+region = Rect2(16, 444, 384, 46)
 
-[sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 444, 384, 46 )
+[sub_resource type="AtlasTexture" id="8"]
+atlas = ExtResource("4")
+region = Rect2(16, 444, 384, 46)
 
-[sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 444, 384, 46 )
+[sub_resource type="AtlasTexture" id="9"]
+atlas = ExtResource("4")
+region = Rect2(16, 444, 384, 46)
 
-[sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 4 )
-region = Rect2( 16, 444, 384, 46 )
+[sub_resource type="AtlasTexture" id="10"]
+atlas = ExtResource("4")
+region = Rect2(16, 444, 384, 46)
+
+[sub_resource type="AtlasTexture" id="11"]
+atlas = ExtResource("4")
+region = Rect2(16, 444, 384, 46)
 
 [node name="Node" type="Node"]
-script = ExtResource( 1 )
+script = ExtResource("1")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
+stream = ExtResource("2")
 
 [node name="Background" type="TextureRect" parent="."]
-margin_right = 512.0
-margin_bottom = 384.0
-texture = ExtResource( 3 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": false
-}
+offset_right = 512.0
+offset_bottom = 384.0
+texture = ExtResource("3")
 
 [node name="Panels" type="Node2D" parent="."]
 visible = false
-position = Vector2( 68, 32 )
+position = Vector2(68, 32)
 
 [node name="NewGame" type="TextureRect" parent="Panels"]
-margin_right = 40.0
-margin_bottom = 40.0
-texture = SubResource( 1 )
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("1")
 
 [node name="Label" type="Label" parent="Panels/NewGame"]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 102.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 2 )
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 102.0
+offset_bottom = 24.0
+theme = ExtResource("5_0wj22")
 text = "UI_SAVEMENU_NEWGAME"
 
 [node name="Exit" type="TextureRect" parent="Panels"]
-margin_top = 48.0
-margin_right = 381.0
-margin_bottom = 93.0
-texture = SubResource( 3 )
+offset_top = 48.0
+offset_right = 381.0
+offset_bottom = 93.0
+texture = SubResource("3")
 
 [node name="Label" type="Label" parent="Panels/Exit"]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 52.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 4 )
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 52.0
+offset_bottom = 24.0
+theme = ExtResource("5_0wj22")
 text = "UI_SAVEMENU_EXIT"
 
 [node name="FullPanel" type="Node2D" parent="."]
-position = Vector2( 50, 32 )
-__meta__ = {
-"_edit_lock_": true
-}
+position = Vector2(50, 32)
 
-[node name="Load" type="Sprite" parent="FullPanel"]
-texture = ExtResource( 4 )
+[node name="Load" type="Sprite2D" parent="FullPanel"]
+texture = ExtResource("4")
 centered = false
 region_enabled = true
-region_rect = Rect2( 0, 222, 408, 222 )
+region_rect = Rect2(0, 222, 408, 222)
 
 [node name="Continue" type="Label" parent="FullPanel/Load"]
-margin_left = 30.0
-margin_top = 12.0
-margin_right = 121.0
-margin_bottom = 26.0
-custom_fonts/font = SubResource( 2 )
+offset_left = 30.0
+offset_top = 12.0
+offset_right = 121.0
+offset_bottom = 26.0
+theme = ExtResource("5_0wj22")
 text = "Continue"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Badges" type="Label" parent="FullPanel/Load"]
-margin_left = 30.0
-margin_top = 120.0
-margin_right = 121.0
-margin_bottom = 151.0
-custom_fonts/font = SubResource( 2 )
+offset_left = 30.0
+offset_top = 120.0
+offset_right = 121.0
+offset_bottom = 151.0
+theme = ExtResource("5_0wj22")
 text = "Badges:"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Value" type="Label" parent="FullPanel/Load/Badges"]
-margin_left = 150.0
-margin_right = 241.0
-margin_bottom = 31.0
-custom_fonts/font = SubResource( 2 )
+layout_mode = 0
+offset_left = 150.0
+offset_right = 241.0
+offset_bottom = 31.0
+theme = ExtResource("5_0wj22")
 text = "0"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Pokedex" type="Label" parent="FullPanel/Load"]
-margin_left = 30.0
-margin_top = 150.0
-margin_right = 121.0
-margin_bottom = 181.0
-custom_fonts/font = SubResource( 2 )
+offset_left = 30.0
+offset_top = 150.0
+offset_right = 121.0
+offset_bottom = 181.0
+theme = ExtResource("5_0wj22")
 text = "Pokédex:"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Value" type="Label" parent="FullPanel/Load/Pokedex"]
-margin_left = 150.0
-margin_right = 241.0
-margin_bottom = 31.0
-custom_fonts/font = SubResource( 2 )
+layout_mode = 0
+offset_left = 150.0
+offset_right = 241.0
+offset_bottom = 31.0
+theme = ExtResource("5_0wj22")
 text = "0"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Time" type="Label" parent="FullPanel/Load"]
-margin_left = 30.0
-margin_top = 180.0
-margin_right = 121.0
-margin_bottom = 211.0
-custom_fonts/font = SubResource( 2 )
+offset_left = 30.0
+offset_top = 180.0
+offset_right = 121.0
+offset_bottom = 211.0
+theme = ExtResource("5_0wj22")
 text = "Time:"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Value" type="Label" parent="FullPanel/Load/Time"]
-margin_left = 150.0
-margin_right = 241.0
-margin_bottom = 31.0
-custom_fonts/font = SubResource( 2 )
+layout_mode = 0
+offset_left = 150.0
+offset_right = 241.0
+offset_bottom = 31.0
+theme = ExtResource("5_0wj22")
 text = "0"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Location" type="Label" parent="FullPanel/Load"]
-margin_left = 180.0
-margin_top = 12.0
-margin_right = 395.0
-margin_bottom = 26.0
-custom_fonts/font = SubResource( 2 )
+offset_left = 180.0
+offset_top = 12.0
+offset_right = 395.0
+offset_bottom = 26.0
+theme = ExtResource("5_0wj22")
 text = "Location"
-align = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Player" type="Sprite" parent="FullPanel/Load"]
-position = Vector2( 64, 88 )
-texture = ExtResource( 6 )
+[node name="Player" type="Sprite2D" parent="FullPanel/Load"]
+position = Vector2(64, 88)
+texture = ExtResource("6")
 hframes = 4
 vframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="FullPanel/Load/Player"]
 autoplay = "Walk"
-anims/Walk = SubResource( 5 )
+libraries = {
+"": SubResource("AnimationLibrary_8nw68")
+}
 
-[node name="P1" type="Sprite" parent="FullPanel/Load"]
+[node name="Panel1" type="Sprite2D" parent="FullPanel/Load"]
 visible = false
-position = Vector2( 280, 76 )
-texture = ExtResource( 7 )
+position = Vector2(280, 76)
+texture = ExtResource("7")
 hframes = 2
 
-[node name="P2" type="Sprite" parent="FullPanel/Load"]
+[node name="Panel2" type="Sprite2D" parent="FullPanel/Load"]
 visible = false
-position = Vector2( 350, 76 )
-texture = ExtResource( 7 )
+position = Vector2(350, 76)
+texture = ExtResource("7")
 hframes = 2
 
-[node name="P3" type="Sprite" parent="FullPanel/Load"]
+[node name="Panel3" type="Sprite2D" parent="FullPanel/Load"]
 visible = false
-position = Vector2( 280, 126 )
-texture = ExtResource( 7 )
+position = Vector2(280, 126)
+texture = ExtResource("7")
 hframes = 2
 
-[node name="P4" type="Sprite" parent="FullPanel/Load"]
+[node name="Panel4" type="Sprite2D" parent="FullPanel/Load"]
 visible = false
-position = Vector2( 350, 126 )
-texture = ExtResource( 7 )
+position = Vector2(350, 126)
+texture = ExtResource("7")
 hframes = 2
 
-[node name="P5" type="Sprite" parent="FullPanel/Load"]
+[node name="Panel5" type="Sprite2D" parent="FullPanel/Load"]
 visible = false
-position = Vector2( 280, 176 )
-texture = ExtResource( 7 )
+position = Vector2(280, 176)
+texture = ExtResource("7")
 hframes = 2
 
-[node name="P6" type="Sprite" parent="FullPanel/Load"]
+[node name="Panel6" type="Sprite2D" parent="FullPanel/Load"]
 visible = false
-position = Vector2( 350, 176 )
-texture = ExtResource( 7 )
+position = Vector2(350, 176)
+texture = ExtResource("7")
 hframes = 2
 
 [node name="NewGame" type="TextureRect" parent="FullPanel"]
-margin_left = 18.0
-margin_top = 224.0
-margin_right = 402.0
-margin_bottom = 270.0
-texture = SubResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = 18.0
+offset_top = 224.0
+offset_right = 402.0
+offset_bottom = 270.0
+texture = SubResource("6")
 
 [node name="Label" type="Label" parent="FullPanel/NewGame"]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 102.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 2 )
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 102.0
+offset_bottom = 24.0
+theme = ExtResource("5_0wj22")
 text = "UI_SAVEMENU_NEWGAME"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="OtherSave" type="TextureRect" parent="FullPanel"]
-margin_left = 18.0
-margin_top = 272.0
-margin_right = 402.0
-margin_bottom = 318.0
-texture = SubResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = 18.0
+offset_top = 272.0
+offset_right = 402.0
+offset_bottom = 318.0
+texture = SubResource("7")
 
 [node name="Label" type="Label" parent="FullPanel/OtherSave"]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 52.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 4 )
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 52.0
+offset_bottom = 24.0
+theme = ExtResource("5_0wj22")
 text = "UI_SAVEMENU_OTHER_SAVE"
 
 [node name="Delete" type="TextureRect" parent="FullPanel"]
-margin_left = 18.0
-margin_top = 320.0
-margin_right = 402.0
-margin_bottom = 366.0
-texture = SubResource( 8 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = 18.0
+offset_top = 320.0
+offset_right = 402.0
+offset_bottom = 366.0
+texture = SubResource("8")
 
 [node name="Label" type="Label" parent="FullPanel/Delete"]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 288.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 4 )
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 288.0
+offset_bottom = 24.0
+theme = ExtResource("5_0wj22")
 text = "UI_SAVEMENU_DELETE_SAVE"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Update" type="TextureRect" parent="FullPanel"]
-margin_left = 18.0
-margin_top = 368.0
-margin_right = 402.0
-margin_bottom = 414.0
-texture = SubResource( 9 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = 18.0
+offset_top = 368.0
+offset_right = 402.0
+offset_bottom = 414.0
+texture = SubResource("9")
 
 [node name="Label" type="Label" parent="FullPanel/Update"]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 288.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 4 )
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 288.0
+offset_bottom = 24.0
+theme = ExtResource("5_0wj22")
 text = "UI_SAVEMENU_UPDATE"
 
 [node name="Options" type="TextureRect" parent="FullPanel"]
-margin_left = 18.0
-margin_top = 416.0
-margin_right = 402.0
-margin_bottom = 462.0
-texture = SubResource( 10 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = 18.0
+offset_top = 416.0
+offset_right = 402.0
+offset_bottom = 462.0
+texture = SubResource("10")
 
 [node name="Label" type="Label" parent="FullPanel/Options"]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 288.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 4 )
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 288.0
+offset_bottom = 24.0
+theme = ExtResource("5_0wj22")
 text = "UI_SAVEMENU_OPTIONS"
 
 [node name="Exit" type="TextureRect" parent="FullPanel"]
-margin_left = 18.0
-margin_top = 464.0
-margin_right = 402.0
-margin_bottom = 510.0
-texture = SubResource( 11 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+offset_left = 18.0
+offset_top = 464.0
+offset_right = 402.0
+offset_bottom = 510.0
+texture = SubResource("11")
 
 [node name="Label" type="Label" parent="FullPanel/Exit"]
-margin_left = 12.0
-margin_top = 10.0
-margin_right = 52.0
-margin_bottom = 24.0
-custom_fonts/font = SubResource( 4 )
+layout_mode = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 52.0
+offset_bottom = 24.0
+theme = ExtResource("5_0wj22")
 text = "UI_SAVEMENU_EXIT"
 
 [node name="ErrorMessage" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+offset_right = 40.0
+offset_bottom = 14.0
 text = "This is a test error message"
-__meta__ = {
-"_edit_use_anchors_": false
-}

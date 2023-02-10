@@ -17,7 +17,7 @@ func Start():
 		Keyboard = preload("res://Utilities/MobileKeyboard.tscn")
 	else:
 		Keyboard = preload("res://Utilities/DesktopKeyboard.tscn")
-	keyboard = Keyboard.instance()
+	keyboard = Keyboard.instantiate()
 	$ConfirmationBox.visible = false
 	$Dialoge.visible = false
 	$GenderColor/AnimationPlayerSlide.play("ColorSlide")
@@ -52,12 +52,12 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_up") and canSelect == false and confirmationSelect != 0:
 		confirmationSelect = 0
 		$ConfirmationBox/Arrow/AudioStreamPlayer.play()
-		$ConfirmationBox/Arrow.rect_position = Vector2(10, 15)
+		$ConfirmationBox/Arrow.position = Vector2(10, 15)
 		pass	
 	elif Input.is_action_just_pressed("ui_down") and canSelect == false and confirmationSelect != 1:
 		confirmationSelect = 1
 		$ConfirmationBox/Arrow/AudioStreamPlayer.play()
-		$ConfirmationBox/Arrow.rect_position = Vector2(10, 50)
+		$ConfirmationBox/Arrow.position = Vector2(10, 50)
 		pass
 	if Input.is_action_just_pressed("ui_accept") and selectStage == 0 and inGenderSelect == true:
 		#print("working")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Utilities/Door.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/Characters/PU-doorsdew.PNG" type="Texture" id=2]
+[ext_resource path="res://Graphics/Characters/PU-doorsdew.PNG" type="Texture2D" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -13,7 +13,7 @@ script = ExtResource( 1 )
 exterior = true
 door_type = "Type 1 - Wood"
 
-[node name="Exterior" type="Sprite" parent="."]
+[node name="Exterior" type="Sprite2D" parent="."]
 texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 4, 36, 32, 32 )

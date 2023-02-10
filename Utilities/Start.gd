@@ -13,7 +13,7 @@ func _ready() -> void:
 			continue
 
 		# Set game window size
-		if argument.find("-set_window_size") > -1: # Will only work on Desktop OSes
+		if argument.find("-set_window_size") > -1: # Will only work checked Desktop OSes
 			var size_str = args[index+1]
 			var height = 512
 			var width = 384
@@ -27,18 +27,26 @@ func _ready() -> void:
 
 	if OS.get_name() == "Android" || OS.get_name() == "iOS" || force_touchscreen_controls:
 		Global.isMobile = true
-		OS.window_resizable = false
-		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT, SceneTree.STRETCH_ASPECT_KEEP_HEIGHT, OS.get_real_window_size())
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+		
+		
+		#OS.window_resizable = false
+		#get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT, SceneTree.STRETCH_ASPECT_KEEP_HEIGHT, OS.get_real_window_size())
 		
 		#Sets up the mobile controls
-		get_tree().change_scene("res://Utilities/MobileControls.tscn")
+		get_tree().change_scene_to_file("res://Utilities/MobileControls.tscn")
 	
 	#If the above is false sets the window to be resizeable, and loads the intro scene
 	else:
 		Global.isMobile = false
-		OS.window_resizable = true
-		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT, SceneTree.STRETCH_ASPECT_KEEP, Vector2(512, 384))
+		#OS.window_resizable = true
+		#get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT, SceneTree.STRETCH_ASPECT_KEEP, Vector2(512, 384))
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+		DisplayServer.window_set_min_size(Vector2(512, 384))
+		
+		
+		
 		if custom_window_size != null:
 			print("setting custom window size: " + str(custom_window_size))
-			OS.window_size = custom_window_size
-		get_tree().change_scene("res://IntroScenes/Intro.tscn")
+			DisplayServer.window_set_size(custom_window_size)
+		get_tree().change_scene_to_file("res://IntroScenes/Intro.tscn")

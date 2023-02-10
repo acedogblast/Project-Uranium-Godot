@@ -23,7 +23,7 @@
 #  3. This notice may not be removed or altered from any source
 #     distribution.
 
-tool
+@tool
 extends EditorPlugin
 
 var AutoTileLayer = load("res://addons/autotile/layer.gd")
@@ -126,8 +126,8 @@ func forward_canvas_input_event(canvas_xform, event):
 			pass
 		else:
 			return
-		var pos = canvas_xform.affine_inverse().xform(Vector2(event.x, event.y))
-		pos = current.get_global_transform().affine_inverse().xform(pos)
+		var pos = canvas_xform.affine_inverse() * Vector2(event.x, event.y)
+		pos = current.get_global_transform().affine_inverse() * pos
 		pos = pos / current.tile_size
 		pos = Vector2(floor(pos.x), floor(pos.y))
 		if current_hover == null or current_hover != pos:
@@ -193,8 +193,8 @@ func forward_draw_over_canvas(canvas_xform, canvas):
 		if current_hover == null or mode == MODE_NONE:
 			return
 		var control_xform = current.get_global_transform()
-		var pos = control_xform.xform(current_hover * current.tile_size)
-		pos = canvas_xform.xform(pos)
+		var pos = control_xform * current_hover * current.tile_size
+		pos = canvas_xform * pos
 		var size = control_xform.basis_xform(Vector2(1, 1) * current.tile_size)
 		size = canvas_xform.basis_xform(size)
 		canvas.draw_rect(Rect2(pos, size), Color(1, 1, 1, 0.5))
@@ -204,8 +204,8 @@ func forward_draw_over_canvas(canvas_xform, canvas):
 			var min_y = min(current_hover.y, drag_start.y)
 			var max_y = max(current_hover.y, drag_start.y) + 1
 			pos = Vector2(min_x, min_y) * current.tile_size
-			pos = control_xform.xform(pos)
-			pos = canvas_xform.xform(pos)
+			pos = control_xform * pos
+			pos = canvas_xform * pos
 			size = Vector2(max_x - min_x, max_y - min_y) * current.tile_size
 			size = control_xform.basis_xform(size)
 			size = canvas_xform.basis_xform(size)
@@ -221,12 +221,12 @@ func edit(object):
 		drag_button = 0
 		_gd_21_connect()
 	if mode_toggle == null:
-		mode_toggle = ToolButton.new()
-		mode_toggle.connect("pressed", self, "_on_mode_pressed")
+		mode_toggle = Button.new()
+		mode_toggle.connect("pressed",Callable(self,"_on_mode_pressed"))
 		_update_mode_toggle()
 		add_control_to_container(CONTAINER_CANVAS_EDITOR_MENU, mode_toggle)
 
-func make_visible(visible):
+func _make_visible(visible):
 	if visible == false:
 		if current != null:
 			_gd_21_disconnect()
@@ -246,7 +246,7 @@ func update_canvas():
 	if old_methods:
 		current.update()
 		return
-	.update_canvas()
+	super.update_canvas()
 
 func _gd_21_connect():
 	if old_methods:

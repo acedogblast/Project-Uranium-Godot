@@ -7,13 +7,13 @@ var lastAnimation = null
 #onready var dialog = null
 
 func _ready():
-	DialogueSystem.connect("dialogue_start", self, "pause")
-	DialogueSystem.connect("dialogue_end", self, "resume")
+	DialogueSystem.connect("dialogue_start",Callable(self,"pause"))
+	DialogueSystem.connect("dialogue_end",Callable(self,"resume"))
 	DialogueSystem.set_dialogue_sequence("CUTSCENE_PLAYERCREATION_D")
 
 func _exit_tree():
-	DialogueSystem.disconnect("dialogue_start", self, "pause")
-	DialogueSystem.disconnect("dialogue_end", self, "resume")
+	DialogueSystem.disconnect("dialogue_start",Callable(self,"pause"))
+	DialogueSystem.disconnect("dialogue_end",Callable(self,"resume"))
 
 func dialogue(show_arrow = true):
 	DialogueSystem.set_show_arrow(show_arrow)
@@ -73,7 +73,7 @@ func final():
 	if Global.TrainerGender == 2:
 		$GenderColor.texture = red
 		$GenderColor/Hero.texture = Girl
-	$GenderColor.rect_size = Vector2(512,384)
+	$GenderColor.size = Vector2(512,384)
 	$GenderColor.stretch_mode = TextureRect.STRETCH_TILE
 	$GenderColor.visible = true
 	DialogueSystem.set_show_arrow(false)
@@ -81,11 +81,11 @@ func final():
 	pass
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	change_scene("res://IntroScenes/FirstStoryCutScene.tscn")
+	change_scene_to_file("res://IntroScenes/FirstStoryCutScene.tscn")
 	pass
-func change_scene(scene):
+func change_scene_to_file(scene):
 	if Global.isMobile:
 		get_parent().newScene(scene)
 	else:
-		get_tree().change_scene(scene)
+		get_tree().change_scene_to_file(scene)
 	pass

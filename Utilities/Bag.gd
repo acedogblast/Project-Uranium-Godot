@@ -93,7 +93,7 @@ func change_item_selected(dir):
 func change_selected():
 	match current:
 		OPTIONS.ITEMS:
-			$CurrentContainer.bbcode_text = "[center]Items"
+			$CurrentContainer.text = "[center]Items"
 			
 			hide_all()
 			$items/items.show()
@@ -105,7 +105,7 @@ func change_selected():
 				for c in $items/items.get_children():
 					c.show()
 		OPTIONS.MEDICINE:
-			$CurrentContainer.bbcode_text = "[center]Medicine"
+			$CurrentContainer.text = "[center]Medicine"
 			
 			hide_all()
 			$items/medicine.show()
@@ -116,7 +116,7 @@ func change_selected():
 				for c in $items/medicine.get_children():
 					c.show()
 		OPTIONS.BALLS:
-			$CurrentContainer.bbcode_text = "[center]Poké Balls"
+			$CurrentContainer.text = "[center]Poké Balls"
 			
 			hide_all()
 			$items/balls.show()
@@ -127,7 +127,7 @@ func change_selected():
 				for c in $items/balls.get_children():
 					c.show()
 		OPTIONS.TMs:
-			$CurrentContainer.bbcode_text = "[center]TMs & HMs"
+			$CurrentContainer.text = "[center]TMs & HMs"
 			
 			hide_all()
 			$items/tms.show()
@@ -139,7 +139,7 @@ func change_selected():
 				for c in $items/tms.get_children():
 					c.show()
 		OPTIONS.BERRIES:
-			$CurrentContainer.bbcode_text = "[center]Berries"
+			$CurrentContainer.text = "[center]Berries"
 			
 			hide_all()
 			$items/berries.show()
@@ -150,7 +150,7 @@ func change_selected():
 				for c in $items/berries.get_children():
 					c.show()
 		OPTIONS.BATTLE_ITEMS:
-			$CurrentContainer.bbcode_text = "[center]Battle Items"
+			$CurrentContainer.text = "[center]Battle Items"
 			
 			hide_all()
 			$items/battle_items.show()
@@ -161,7 +161,7 @@ func change_selected():
 				for c in $items/battle_items.get_children():
 					c.show()
 		OPTIONS.KEY_ITEMS:
-			$CurrentContainer.bbcode_text = "[center]Key Items"
+			$CurrentContainer.text = "[center]Key Items"
 			
 			hide_all()
 			$items/key_items.show()
@@ -179,59 +179,59 @@ func animate():
 	match current:
 		OPTIONS.ITEMS:
 			$containers/ITEMS.frame = 0
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/ITEMS.frame = 1
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/ITEMS.frame = 2
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			return
 		OPTIONS.MEDICINE:
 			$containers/MEDICINE.frame = 0
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/MEDICINE.frame = 1
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/MEDICINE.frame = 2
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			return
 		OPTIONS.BALLS:
 			$containers/BALLS.frame = 0
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/BALLS.frame = 1
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/BALLS.frame = 2
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			return
 		OPTIONS.TMs:
 			$containers/TMs.frame = 0
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/TMs.frame = 1
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/TMs.frame = 2
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			return
 		OPTIONS.BERRIES:
 			$containers/BERRIES.frame = 0
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/BERRIES.frame = 1
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/BERRIES.frame = 2
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			return
 		OPTIONS.BATTLE_ITEMS:
 			$containers/BATTLE_ITEMS.frame = 0
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/BATTLE_ITEMS.frame = 1
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/BATTLE_ITEMS.frame = 2
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			return
 		OPTIONS.KEY_ITEMS:
 			$containers/KEY_ITEMS.frame = 0
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/KEY_ITEMS.frame = 1
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			$containers/KEY_ITEMS.frame = 2
-			yield(get_tree().create_timer(0.1), "timeout")
+			await get_tree().create_timer(0.1).timeout
 			return
 
 func reset_frames():
@@ -246,11 +246,11 @@ func update_data():
 			# setup items
 			for c in $items/items.get_children():
 				$items/items.remove_child(c)
-			if !Global.inventory.items.empty():
+			if !Global.inventory.items.is_empty():
 				var temp_current = 0
 				for i in Global.inventory.items:
 					var base = $items/base_item_panel.duplicate()
-					base.get_child(1).bbcode_text = i.get_name()
+					base.get_child(1).text = i.get_name()
 					base.position.y += temp_current * 48
 					if temp_current == 0:
 						base.get_child(0).frame = 1
@@ -265,11 +265,11 @@ func update_data():
 			# setup medicine
 			for c in $items/medicine.get_children():
 				$items/medicine.remove_child(c)
-			if !Global.inventory.medicine.empty():
+			if !Global.inventory.medicine.is_empty():
 				var temp_current = 0
 				for i in Global.inventory.medicine:
 					var base = $items/base_item_panel.duplicate()
-					base.get_child(1).bbcode_text = i.get_name()
+					base.get_child(1).text = i.get_name()
 					base.position.y += temp_current * 48
 					if temp_current == 0:
 						base.get_child(0).frame = 1
@@ -284,11 +284,11 @@ func update_data():
 			# setup balls
 			for c in $items/balls.get_children():
 				$items/balls.remove_child(c)
-			if !Global.inventory.balls.empty():
+			if !Global.inventory.balls.is_empty():
 				var temp_current = 0
 				for i in Global.inventory.balls:
 					var base = $items/base_item_panel.duplicate()
-					base.get_child(1).bbcode_text = i.get_name()
+					base.get_child(1).text = i.get_name()
 					base.position.y += temp_current * 48
 					if temp_current == 0:
 						base.get_child(0).frame = 1
@@ -303,11 +303,11 @@ func update_data():
 			# setup tms
 			for c in $items/tms.get_children():
 				$items/tms.remove_child(c)
-			if Global.inventory.TMs.empty():
+			if Global.inventory.TMs.is_empty():
 				var temp_current = 0
 				for i in Global.inventory.TMs:
 					var base = $items/base_item_panel.duplicate()
-					base.get_child(1).bbcode_text = i.get_name()
+					base.get_child(1).text = i.get_name()
 					base.position.y += temp_current * 48
 					if temp_current == 0:
 						base.get_child(0).frame = 1
@@ -322,11 +322,11 @@ func update_data():
 			# setup berries
 			for c in $items/berries.get_children():
 				$items/berries.remove_child(c)
-			if Global.inventory.berries.empty():
+			if Global.inventory.berries.is_empty():
 				var temp_current = 0
 				for i in Global.inventory.berries:
 					var base = $items/base_item_panel.duplicate()
-					base.get_child(1).bbcode_text = i.get_name()
+					base.get_child(1).text = i.get_name()
 					base.position.y += temp_current * 48
 					if temp_current == 0:
 						base.get_child(0).frame = 1
@@ -341,11 +341,11 @@ func update_data():
 			# setup battle_items
 			for c in $items/battle_items.get_children():
 				$items/battle_items.remove_child(c)
-			if Global.inventory.battle_items.empty():
+			if Global.inventory.battle_items.is_empty():
 				var temp_current = 0
 				for i in Global.inventory.battle_items:
 					var base = $items/base_item_panel.duplicate()
-					base.get_child(1).bbcode_text = i.get_name()
+					base.get_child(1).text = i.get_name()
 					base.position.y += temp_current * 48
 					if temp_current == 0:
 						base.get_child(0).frame = 1
@@ -360,11 +360,11 @@ func update_data():
 			# setup key_items
 			for c in $items/key_items.get_children():
 				$items/key_items.remove_child(c)
-			if Global.inventory.key_items.empty():
+			if Global.inventory.key_items.is_empty():
 				var temp_current = 0
 				for i in Global.inventory.key_items:
 					var base = $items/base_item_panel.duplicate()
-					base.get_child(1).bbcode_text = i.get_name()
+					base.get_child(1).text = i.get_name()
 					base.position.y += temp_current * 48
 					if temp_current == 0:
 						base.get_child(0).frame = 1
@@ -382,31 +382,31 @@ func update_detail():
 	var section_empty = true
 	match current:
 		OPTIONS.ITEMS:
-			if !Global.inventory.items.empty():
+			if !Global.inventory.items.is_empty():
 				item_icon = Global.inventory.items[selected_item[current]].get_item_id()
 				section_empty = false
 		OPTIONS.MEDICINE:
-			if !Global.inventory.medicine.empty():
+			if !Global.inventory.medicine.is_empty():
 				item_icon = Global.inventory.medicine[selected_item[current]].get_item_id()
 				section_empty = false
 		OPTIONS.BALLS:
-			if !Global.inventory.balls.empty():
+			if !Global.inventory.balls.is_empty():
 				item_icon = Global.inventory.balls[selected_item[current]].get_item_id()
 				section_empty = false
 		OPTIONS.TMs:
-			if !Global.inventory.TMs.empty():
+			if !Global.inventory.TMs.is_empty():
 				item_icon = Global.inventory.TMs[selected_item[current]].get_item_id()
 				section_empty = false
 		OPTIONS.BERRIES:
-			if !Global.inventory.berries.empty():
+			if !Global.inventory.berries.is_empty():
 				item_icon = Global.inventory.berries[selected_item[current]].get_item_id()
 				section_empty = false
 		OPTIONS.BATTLE_ITEMS:
-			if !Global.inventory.battle_items.empty():
+			if !Global.inventory.battle_items.is_empty():
 				item_icon = Global.inventory.battle_items[selected_item[current]].get_item_id()
 				section_empty = false
 		OPTIONS.KEY_ITEMS:
-			if !Global.inventory.key_items.empty():
+			if !Global.inventory.key_items.is_empty():
 				item_icon = Global.inventory.key_items[selected_item[current]].get_item_id()
 				section_empty = false
 	

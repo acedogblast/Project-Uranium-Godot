@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://Graphics/Tilesets/Indoor-Resized.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/Tilesets/Indoor-Resized.png" type="Texture2D" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 8 )
@@ -52,28 +52,28 @@ extents = Vector2( 8, 16 )
 
 [node name="Node" type="Node"]
 
-[node name="WoodFloor" type="Sprite" parent="."]
+[node name="WoodFloor" type="Sprite2D" parent="."]
 position = Vector2( 32, 32 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 16, 80, 16, 16 )
 
-[node name="WoodFloor2" type="Sprite" parent="."]
+[node name="WoodFloor2" type="Sprite2D" parent="."]
 position = Vector2( 160, 288 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 48, 80, 16, 16 )
 
-[node name="WoodFloor2Shadow" type="Sprite" parent="."]
+[node name="WoodFloor2Shadow" type="Sprite2D" parent="."]
 position = Vector2( 192, 288 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 48, 96, 16, 16 )
 
-[node name="BlackBlock" type="Sprite" parent="."]
+[node name="BlackBlock" type="Sprite2D" parent="."]
 position = Vector2( 256, 192 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -85,14 +85,14 @@ region_rect = Rect2( 0, 0, 16, 16 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BlackBlock/StaticBody2D"]
 shape = SubResource( 1 )
 
-[node name="WoodFloorShadow" type="Sprite" parent="."]
+[node name="WoodFloorShadow" type="Sprite2D" parent="."]
 position = Vector2( 32, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 16, 96, 16, 16 )
 
-[node name="Desk" type="Sprite" parent="."]
+[node name="Desk" type="Sprite2D" parent="."]
 position = Vector2( 96, 32 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -104,70 +104,70 @@ region_rect = Rect2( 16, 288, 32, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Desk/StaticBody2D"]
 shape = SubResource( 2 )
 
-[node name="RedCarpetTopLeft" type="Sprite" parent="."]
+[node name="RedCarpetTopLeft" type="Sprite2D" parent="."]
 position = Vector2( 160, 32 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 240, 16, 16 )
 
-[node name="RedCarpetTopMiddle" type="Sprite" parent="."]
+[node name="RedCarpetTopMiddle" type="Sprite2D" parent="."]
 position = Vector2( 192, 32 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 16, 240, 16, 16 )
 
-[node name="RedCarpetTopRight" type="Sprite" parent="."]
+[node name="RedCarpetTopRight" type="Sprite2D" parent="."]
 position = Vector2( 224, 32 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 32, 240, 16, 16 )
 
-[node name="RedCarpetMiddleLeft" type="Sprite" parent="."]
+[node name="RedCarpetMiddleLeft" type="Sprite2D" parent="."]
 position = Vector2( 160, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 256, 16, 16 )
 
-[node name="RedCarpetCenter" type="Sprite" parent="."]
+[node name="RedCarpetCenter" type="Sprite2D" parent="."]
 position = Vector2( 192, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 16, 256, 16, 16 )
 
-[node name="RedCarpetMiddleRight" type="Sprite" parent="."]
+[node name="RedCarpetMiddleRight" type="Sprite2D" parent="."]
 position = Vector2( 224, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 32, 256, 16, 16 )
 
-[node name="RedCarpetBottomLeft" type="Sprite" parent="."]
+[node name="RedCarpetBottomLeft" type="Sprite2D" parent="."]
 position = Vector2( 160, 96 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 272, 16, 16 )
 
-[node name="RedCarpetBottomMiddle" type="Sprite" parent="."]
+[node name="RedCarpetBottomMiddle" type="Sprite2D" parent="."]
 position = Vector2( 192, 96 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 16, 272, 16, 16 )
 
-[node name="RedCarpetBottomRight" type="Sprite" parent="."]
+[node name="RedCarpetBottomRight" type="Sprite2D" parent="."]
 position = Vector2( 224, 96 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 32, 272, 16, 16 )
 
-[node name="PlantBottom" type="Sprite" parent="."]
+[node name="PlantBottom" type="Sprite2D" parent="."]
 position = Vector2( 256, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -179,14 +179,14 @@ region_rect = Rect2( 48, 224, 16, 16 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlantBottom/StaticBody2D"]
 shape = SubResource( 3 )
 
-[node name="PlantTop" type="Sprite" parent="."]
+[node name="PlantTop" type="Sprite2D" parent="."]
 position = Vector2( 256, 32 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 48, 208, 16, 16 )
 
-[node name="TV" type="Sprite" parent="."]
+[node name="TV" type="Sprite2D" parent="."]
 position = Vector2( 320, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -198,14 +198,14 @@ region_rect = Rect2( 96, 208, 32, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TV/StaticBody2D2"]
 shape = SubResource( 4 )
 
-[node name="TV_Flat" type="Sprite" parent="."]
+[node name="TV_Flat" type="Sprite2D" parent="."]
 position = Vector2( 192, 224 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 192, 0, 32, 32 )
 
-[node name="Table1" type="Sprite" parent="."]
+[node name="Table1" type="Sprite2D" parent="."]
 position = Vector2( 96, 288 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -217,7 +217,7 @@ region_rect = Rect2( 64, 144, 32, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Table1/StaticBody2D"]
 shape = SubResource( 5 )
 
-[node name="WhiteConsole" type="Sprite" parent="."]
+[node name="WhiteConsole" type="Sprite2D" parent="."]
 position = Vector2( 32, 128 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -229,7 +229,7 @@ region_rect = Rect2( 48, 288, 16, 16 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WhiteConsole/StaticBody2D"]
 shape = SubResource( 6 )
 
-[node name="Bed" type="Sprite" parent="."]
+[node name="Bed" type="Sprite2D" parent="."]
 position = Vector2( 96, 128 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -241,7 +241,7 @@ region_rect = Rect2( 64, 288, 32, 48 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bed/StaticBody2D"]
 shape = SubResource( 7 )
 
-[node name="BookSelf" type="Sprite" parent="."]
+[node name="BookSelf" type="Sprite2D" parent="."]
 position = Vector2( 192, 160 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -253,7 +253,7 @@ region_rect = Rect2( 80, 112, 32, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BookSelf/StaticBody2D"]
 shape = SubResource( 8 )
 
-[node name="Drawer" type="Sprite" parent="."]
+[node name="Drawer" type="Sprite2D" parent="."]
 position = Vector2( 288, 256 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -265,7 +265,7 @@ region_rect = Rect2( 48, 112, 32, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Drawer/StaticBody2D"]
 shape = SubResource( 8 )
 
-[node name="Bookshelf1" type="Sprite" parent="."]
+[node name="Bookshelf1" type="Sprite2D" parent="."]
 position = Vector2( 352, 256 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -277,7 +277,7 @@ region_rect = Rect2( 32, 144, 16, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bookshelf1/StaticBody2D"]
 shape = SubResource( 9 )
 
-[node name="Bookshelf2" type="Sprite" parent="."]
+[node name="Bookshelf2" type="Sprite2D" parent="."]
 position = Vector2( 384, 256 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -289,7 +289,7 @@ region_rect = Rect2( 48, 144, 16, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bookshelf2/StaticBody2D"]
 shape = SubResource( 10 )
 
-[node name="CaseDrawerLeft" type="Sprite" parent="."]
+[node name="CaseDrawerLeft" type="Sprite2D" parent="."]
 position = Vector2( 96, 224 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -301,7 +301,7 @@ region_rect = Rect2( 112, 112, 16, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CaseDrawerLeft/StaticBody2D"]
 shape = SubResource( 11 )
 
-[node name="CaseDrawerRight" type="Sprite" parent="."]
+[node name="CaseDrawerRight" type="Sprite2D" parent="."]
 position = Vector2( 128, 224 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -313,14 +313,14 @@ region_rect = Rect2( 0, 144, 16, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CaseDrawerRight/StaticBody2D2"]
 shape = SubResource( 11 )
 
-[node name="Seat" type="Sprite" parent="."]
+[node name="Seat" type="Sprite2D" parent="."]
 position = Vector2( 256, 128 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 16, 320, 16, 16 )
 
-[node name="StairDownLeft" type="Sprite" parent="."]
+[node name="StairDownLeft" type="Sprite2D" parent="."]
 position = Vector2( 320, 160 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -341,14 +341,14 @@ shape = SubResource( 13 )
 position = Vector2( 8, -16 )
 shape = SubResource( 13 )
 
-[node name="StairUpRight" type="Sprite" parent="."]
+[node name="StairUpRight" type="Sprite2D" parent="."]
 position = Vector2( 32, 256 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 64, 336, 32, 64 )
 
-[node name="Wall1Left" type="Sprite" parent="."]
+[node name="Wall1Left" type="Sprite2D" parent="."]
 position = Vector2( 384, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -360,7 +360,7 @@ region_rect = Rect2( 48, 48, 16, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1Left/StaticBody2D"]
 shape = SubResource( 14 )
 
-[node name="Wall1Center" type="Sprite" parent="."]
+[node name="Wall1Center" type="Sprite2D" parent="."]
 position = Vector2( 416, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -372,7 +372,7 @@ region_rect = Rect2( 64, 48, 16, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1Center/StaticBody2D"]
 shape = SubResource( 15 )
 
-[node name="Wall1Right" type="Sprite" parent="."]
+[node name="Wall1Right" type="Sprite2D" parent="."]
 position = Vector2( 448, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -384,42 +384,42 @@ region_rect = Rect2( 80, 48, 16, 32 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1Right/StaticBody2D"]
 shape = SubResource( 16 )
 
-[node name="Map" type="Sprite" parent="."]
+[node name="Map" type="Sprite2D" parent="."]
 position = Vector2( 384, 160 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 224, 64, 32, 32 )
 
-[node name="Clock" type="Sprite" parent="."]
+[node name="Clock" type="Sprite2D" parent="."]
 position = Vector2( 448, 128 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 96, 320, 16, 16 )
 
-[node name="GreenWallPoster" type="Sprite" parent="."]
+[node name="GreenWallPoster" type="Sprite2D" parent="."]
 position = Vector2( 480, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 112, 288, 16, 32 )
 
-[node name="Window1" type="Sprite" parent="."]
+[node name="Window1" type="Sprite2D" parent="."]
 position = Vector2( 32, 192 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 32, 208, 16, 32 )
 
-[node name="Refrigerator" type="Sprite" parent="."]
+[node name="Refrigerator" type="Sprite2D" parent="."]
 position = Vector2( 480, 128 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 16, 144, 16, 32 )
 
-[node name="Sink" type="Sprite" parent="."]
+[node name="Sink" type="Sprite2D" parent="."]
 position = Vector2( 448, 192 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )

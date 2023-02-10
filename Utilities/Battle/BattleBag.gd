@@ -41,7 +41,7 @@ func _input(event):
 					$Selection.visible = false
 					# Close menu and go back
 					$AnimationPlayer.play_backwards("SlideBag")
-					yield($AnimationPlayer, "animation_finished")
+					await $AnimationPlayer.animation_finished
 					self.visible = false
 					print("BattleBagHidden!")
 					self.get_parent().get_node("BattleComandSelect").enabled = true
@@ -137,14 +137,14 @@ func _input(event):
 							if get_item_stacks(selection).size() == 0:
 								get_parent().get_node("Message").get_node("Label").text = "You have no usable items in this pocket."
 								get_parent().get_node("Message").visible = true
-								yield(get_tree().create_timer(1.0), "timeout")
+								await get_tree().create_timer(1.0).timeout
 								get_parent().get_node("Message").visible = false
 								stage = 1
 								return
 							$AudioStreamPlayer.stream = load("res://Audio/SE/SE_Select1.wav")
 							$AudioStreamPlayer.play()
 							$AnimationPlayer.play("SlideToMenu")
-							yield($AnimationPlayer, "animation_finished")
+							await $AnimationPlayer.animation_finished
 							$BagMenu.visible = true
 							generate_pages(selection)
 							$BagMenu/Pages.visible = true
@@ -160,7 +160,7 @@ func _input(event):
 							enabled = false
 							# Close menu and go back
 							$AnimationPlayer.play_backwards("SlideBag")
-							yield($AnimationPlayer, "animation_finished")
+							await $AnimationPlayer.animation_finished
 							self.visible = false
 							print("BACK")
 							self.get_parent().get_node("BattleComandSelect").enabled = true
@@ -198,23 +198,23 @@ func _input(event):
 							var ani = self.get_parent().get_parent().get_node("ColorRect/AnimationPlayer")
 							var party = self.get_parent().get_node("PokemonPartyMenu")
 							ani.play("FadeIn")
-							yield(ani, "animation_finished")
+							await ani.animation_finished
 							self.hide()
 							party.setup(true)
 							party.set_prompt(tr("UI_PARTY_USE_ON_WHICH_POKE"))
 							party.mode = 2
 							party.show()
-							yield(party, "close_party")
+							await party.close_party
 
 							if party.selection == party.CANCEL:
 								ani.play("FadeIn")
-								yield(ani, "animation_finished")
+								await ani.animation_finished
 								party.hide()
 								$BagMenu/Pages.visible = true
 								$BagMenu/Item.visible = false
 								self.show()
 								ani.play("FadeOut")
-								yield(ani, "animation_finished")
+								await ani.animation_finished
 								stage = 2
 								enabled = true
 								update_selection()
@@ -222,10 +222,10 @@ func _input(event):
 							else:
 								command.attack_target = party.selection # index of pokemon_group array!
 								ani.play("FadeIn")
-								yield(ani, "animation_finished")
+								await ani.animation_finished
 								party.hide()
 								ani.play("FadeOut")
-								yield(ani, "animation_finished")
+								await ani.animation_finished
 						
 						Global.inventory.remove_item(Global.inventory.get_item_by_id(command.item))
 						$AudioStreamPlayer.stream = load("res://Audio/SE/SE_Select1.wav")
@@ -316,28 +316,28 @@ func generate_pages(pocket):
 
 	var slot_index = 0
 	for item_stack in item_stacks:
-		var sprite = Sprite.new()
+		var sprite = Sprite2D.new()
 		sprite.texture = load("res://Graphics/Pictures/BATTLE/battleBagChoices.png")
 		sprite.hframes = 6
 		sprite.frame = 5
 		sprite.position = get_position_by_slot_index(slot_index)
 		var label = Label.new()
-		label.add_font_override("font", load("res://Utilities/Battle/MoveTextFont.tres"))
+		label.add_theme_font_override("font", load("res://Utilities/Battle/MoveTextFont.tres"))
 		label.text = item_stack.get_name()
-		label.rect_size = Vector2(160, 35)
-		label.rect_position = Vector2(-80,-33)
-		label.align = label.ALIGN_CENTER
+		label.size = Vector2(160, 35)
+		label.position = Vector2(-80,-33)
+		label.align = label.ALIGNMENT_CENTER
 		sprite.add_child(label)
 		
 		label = Label.new()
-		label.add_font_override("font", load("res://Utilities/Battle/MoveTextFont.tres"))
+		label.add_theme_font_override("font", load("res://Utilities/Battle/MoveTextFont.tres"))
 		label.text = "x" + str(item_stack.get_item_quantity())
-		label.rect_size = Vector2(160, 35)
-		label.rect_position = Vector2(-80,5)
-		label.align = label.ALIGN_CENTER
+		label.size = Vector2(160, 35)
+		label.position = Vector2(-80,5)
+		label.align = label.ALIGNMENT_CENTER
 		sprite.add_child(label)
 
-		var icon = Sprite.new()
+		var icon = Sprite2D.new()
 		icon.texture = item_stack.get_item_icon()
 		icon.position = Vector2(72, 10)
 		sprite.add_child(icon)
@@ -459,7 +459,7 @@ func left_page(select):
 	$BagMenu/Pocket/Pages.text = str(current_page) + "/ " + str(page_count)
 	$BagMenu/Tween.interpolate_property($BagMenu/Pages, "position", $BagMenu/Pages.position, $BagMenu/Pages.position + Vector2(512,0), 0.25, Tween.TRANS_SINE, Tween.EASE_OUT)
 	$BagMenu/Tween.start()
-	yield($BagMenu/Tween, "tween_completed")
+	await $BagMenu/Tween.finished
 func right_page(select):
 	current_page += 1
 	var index = 0 * current_page # Index of next selection
@@ -479,7 +479,7 @@ func right_page(select):
 	$BagMenu/Pocket/Pages.text = str(current_page) + "/ " + str(page_count)
 	$BagMenu/Tween.interpolate_property($BagMenu/Pages, "position", $BagMenu/Pages.position, $BagMenu/Pages.position + Vector2(-512,0), 0.25, Tween.TRANS_SINE, Tween.EASE_OUT)
 	$BagMenu/Tween.start()
-	yield($BagMenu/Tween, "tween_completed")
+	await $BagMenu/Tween.finished
 func fill_icon_node(item: ItemStack):
 	$BagMenu/Item/Use/Icon.texture = item.get_item_icon()
 	$BagMenu/Item/Use/Label.text = item.get_description()

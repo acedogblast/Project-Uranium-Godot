@@ -37,7 +37,7 @@ var can_escape = false
 
 var double_battle = false
 
-func _init(b1, b2 , bid):
+func _init(b1,b2,bid):
 	battler1 = b1
 	battler2 = b2
 	battler1_stat_stage = BattleStatStage.new()
@@ -232,7 +232,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 			double_battle = false
 
 
-	while !turn_order.empty():
+	while !turn_order.is_empty():
 		var turn = turn_order.pop_front()
 		match turn:
 			B1:
@@ -269,8 +269,8 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 				match each_effect.effect:
 					BattleEffect.effects.CONFUSED:
 						if each_effect.turn_count <= 0:
-							# remove confusion
-							battler_effects.remove(battler_effects.find(each_effect))
+							# remove_at confusion
+							battler_effects.remove_at(battler_effects.find(each_effect))
 							action = BattleQueueAction.new()
 							action.type = action.BATTLE_TEXT
 							action.battle_text = get_battler_title_by_index(target_index) + " is no longer confused!"
@@ -783,7 +783,7 @@ func generate_action_queue(player_command : BattleCommand, foe_command : BattleC
 						var new_effect = BattleEffect.new()
 						new_effect.effect = BattleEffect.effects.SLEEP_COUNTER
 						new_effect.turn_count = Global.rng.randi_range(1,3)
-						new_effect.turn_count += 1 # Add one due to being decremented on the next loop
+						new_effect.turn_count += 1 # Add one due to being decremented checked the next loop
 						get_effects_by_index(battler_effects_index).append(new_effect)
 					else:
 						effect.turn_count -= 1
@@ -1291,4 +1291,4 @@ func remove_effect(battler_index, effect_enum):
 		else:
 			index += 1
 	
-	get_effects_by_index(battler_index).remove(index)
+	get_effects_by_index(battler_index).remove_at(index)

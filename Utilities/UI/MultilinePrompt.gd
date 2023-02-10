@@ -25,7 +25,7 @@ func setup(text_lines : String, given_size, screen_position : Vector2):
 		var label = Label.new()
 		label.name = str(i)
 		label.text = line
-		label.rect_position = Vector2(0, i * 35)
+		label.position = Vector2(0, i * 35)
 		label.set("custom_fonts/font", load("res://Utilities/Battle/MoveTextFont.tres"))
 		$Node2D/Lines.add_child(label)
 		i += 1
@@ -34,7 +34,7 @@ func setup(text_lines : String, given_size, screen_position : Vector2):
 	if given_size != Vector2(0,0) && given_size != null:
 		#Use given size
 		self.size = given_size
-		$Node2D/NinePatchRect.rect_size = given_size
+		$Node2D/NinePatchRect.size = given_size
 	else:
 		# Calculate size
 		var new_size = Vector2()
@@ -46,14 +46,14 @@ func setup(text_lines : String, given_size, screen_position : Vector2):
 		# Get the longest lines
 		var long = 0
 		for label in $Node2D/Lines.get_children():
-			if label.rect_size.x > long:
-				long = label.rect_size.x
+			if label.size.x > long:
+				long = label.size.x
 			pass
 		new_size.x += long
 		self.size = new_size
-		$Node2D/NinePatchRect.rect_size = new_size
+		$Node2D/NinePatchRect.size = new_size
 	mode = 1
-	return $Node2D/NinePatchRect.rect_size
+	return $Node2D/NinePatchRect.size
 
 func setup_BLC(text_lines : String, given_size, screen_position : Vector2): # Like setup exect screen_position is bottom left corner
 	var split_lines = text_lines.split(",")
@@ -65,7 +65,7 @@ func setup_BLC(text_lines : String, given_size, screen_position : Vector2): # Li
 		var label = Label.new()
 		label.name = str(i)
 		label.text = line
-		label.rect_position = Vector2(0, i * 35)
+		label.position = Vector2(0, i * 35)
 		label.set("custom_fonts/font", load("res://Utilities/Battle/MoveTextFont.tres"))
 		$Node2D/Lines.add_child(label)
 		i += 1
@@ -74,7 +74,7 @@ func setup_BLC(text_lines : String, given_size, screen_position : Vector2): # Li
 	if given_size != Vector2(0,0) && given_size != null:
 		#Use given size
 		self.size = given_size
-		$Node2D/NinePatchRect.rect_size = given_size
+		$Node2D/NinePatchRect.size = given_size
 	else:
 		# Calculate size
 		var new_size = Vector2()
@@ -86,15 +86,15 @@ func setup_BLC(text_lines : String, given_size, screen_position : Vector2): # Li
 		# Get the longest lines
 		var long = 0
 		for label in $Node2D/Lines.get_children():
-			if label.rect_size.x > long:
-				long = label.rect_size.x
+			if label.size.x > long:
+				long = label.size.x
 			pass
 		new_size.x += long
 		self.size = new_size
-		$Node2D/NinePatchRect.rect_size = new_size
-	$Node2D.position = screen_position - Vector2(0, $Node2D/NinePatchRect.rect_size.y)
+		$Node2D/NinePatchRect.size = new_size
+	$Node2D.position = screen_position - Vector2(0, $Node2D/NinePatchRect.size.y)
 	mode = 1
-	return $Node2D/NinePatchRect.rect_size
+	return $Node2D/NinePatchRect.size
 
 func _input(event):
 	if mode == 1:
@@ -113,16 +113,16 @@ func _input(event):
 		if event.is_action_pressed("ui_accept"):
 			$Node2D/Select/AudioStreamPlayer.play()
 			mode = 0
-			yield($Node2D/Select/AudioStreamPlayer, "finished")
+			await $Node2D/Select/AudioStreamPlayer.finished
 			emit_signal("selected")
 			$Node2D.hide()
 func update_select():
-	$Node2D/Select.rect_position = Vector2(10,18 + 35 * selected_line)
+	$Node2D/Select.position = Vector2(10,18 + 35 * selected_line)
 func get_size(): # Must be called after setup
-	return $Node2D/NinePatchRect.rect_size
+	return $Node2D/NinePatchRect.size
 func show():
 	$Node2D.show()
 func hide():
 	$Node2D.hide()
-func set_width(var width):
-	$Node2D/NinePatchRect.rect_size.x = width
+func set_width(width):
+	$Node2D/NinePatchRect.size.x = width

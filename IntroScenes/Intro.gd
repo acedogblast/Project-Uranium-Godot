@@ -1,7 +1,7 @@
 extends Node
 
 #Calls the animation player when it enters the scene
-onready var animplayer = $AnimationPlayer
+@onready var animplayer = $AnimationPlayer
 
 func _ready():
 	#Play Intro Animation
@@ -28,14 +28,14 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 	$Pokemon/Pokemon_Showcase/AnimationPlayer.play("Pokemon")
 	
 	#Creates a timer and waits 11 seconds to stop the animation player
-	yield(get_tree().create_timer(11), "timeout")
+	await get_tree().create_timer(11).timeout
 	$Pokemon/Pokemon_Showcase/AnimationPlayer.stop()
 	
 	#Sets pokemon showcase to invisible, and sets pokemon battle to visible
 	$Pokemon/Pokemon_Showcase.visible = false
 	$Pokemon/Battle/AnimationPlayer.play("Showcase")
 	$Pokemon/Battle.visible = true
-	#yield(get_tree().create_timer(0.6), "timeout")
+	#await get_tree().create_timer(0.6).timeout
 	
 	#Plays the battle animations for the starters
 	$Pokemon/Battle/Orchynx/Orchynx_anim.play("Orchynx")
@@ -43,7 +43,7 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 	$Pokemon/Battle/Raptorch/Raptorch_anim.play("Raptorch")
 	
 	#Waits until the pokemon battle animation has finished, then goes to the next line
-	yield($Pokemon/Battle/AnimationPlayer, "animation_finished")
+	await $Pokemon/Battle/AnimationPlayer.animation_finished
 	
 	#Sets the pokemon battle animation to invisible, and sets the Curie animation to visible
 	$Pokemon/Battle.visible = false
@@ -53,7 +53,7 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 	$Pokemon/Curie/AnimationPlayer.play("Curie")
 	
 	#Waits until the Curie animation has finished, then goes to the next line
-	yield($Pokemon/Curie/AnimationPlayer, "animation_finished")
+	await $Pokemon/Curie/AnimationPlayer.animation_finished
 	
 	#Sets pokemon Curie animation to invisible, and the Uranye animation to visible
 	$Pokemon/Curie.visible = false
@@ -64,7 +64,7 @@ func _on_AnimationPlayer_animation_finished(anim_name):
 	$Pokemon/Uranye/Uranye_Sprite/AnimationPlayer.play("Uranye_Sprite")
 	
 	#Waits until the Uranye animation has finished, then goes to the next line
-	yield($Pokemon/Uranye/AnimationPlayer, "animation_finished")
+	await $Pokemon/Uranye/AnimationPlayer.animation_finished
 	
 	#Changes the scene to the menu scene
 	changeScene("res://IntroScenes/Menu.tscn")
@@ -74,5 +74,5 @@ func changeScene(scene):
 	if Global.isMobile:
 		get_parent().newScene(scene)
 	else:
-		get_tree().change_scene(scene)
+		get_tree().change_scene_to_file(scene)
 	pass

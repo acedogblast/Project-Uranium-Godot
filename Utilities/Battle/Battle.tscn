@@ -2,68 +2,68 @@
 
 [ext_resource path="res://Utilities/Battle/Battle.gd" type="Script" id=1]
 [ext_resource path="res://Utilities/Battle/BattleGrounds.gd" type="Script" id=2]
-[ext_resource path="res://Graphics/Battlebacks/battlebgIndoorA.png" type="Texture" id=3]
-[ext_resource path="res://Graphics/Battlebacks/playerbaseIndoorA.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/Battlebacks/battlebgIndoorA.png" type="Texture2D" id=3]
+[ext_resource path="res://Graphics/Battlebacks/playerbaseIndoorA.png" type="Texture2D" id=4]
 [ext_resource path="res://Utilities/Battle/PlayerBase.gd" type="Script" id=5]
-[ext_resource path="res://Graphics/Battlers/003b.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/Battlers/003b.png" type="Texture2D" id=6]
 [ext_resource path="res://Utilities/Battle/Animations/FaintPlayer.tres" type="Animation" id=7]
 [ext_resource path="res://Utilities/Battle/Animations/LowDamage.tres" type="Animation" id=8]
 [ext_resource path="res://Utilities/Battle/Animations/NormalDamage.tres" type="Animation" id=9]
 [ext_resource path="res://Utilities/Battle/Animations/SuperDamage.tres" type="Animation" id=10]
 [ext_resource path="res://Utilities/Battle/Animations/UnveilDropPlayer.tres" type="Animation" id=11]
-[ext_resource path="res://Graphics/Pictures/BATTLE/pokeballs.png" type="Texture" id=12]
+[ext_resource path="res://Graphics/Pictures/BATTLE/pokeballs.png" type="Texture2D" id=12]
 [ext_resource path="res://Utilities/Battle/Animations/PlayerBallToss.tres" type="Animation" id=13]
 [ext_resource path="res://Audio/SE/throw.wav" type="AudioStream" id=14]
-[ext_resource path="res://Graphics/Battlebacks/enemybaseIndoorA.png" type="Texture" id=15]
+[ext_resource path="res://Graphics/Battlebacks/enemybaseIndoorA.png" type="Texture2D" id=15]
 [ext_resource path="res://Utilities/Battle/FoeBase.gd" type="Script" id=16]
-[ext_resource path="res://Graphics/Characters/trainer086.png" type="Texture" id=17]
-[ext_resource path="res://Graphics/Battlers/001.png" type="Texture" id=18]
+[ext_resource path="res://Graphics/Characters/trainer086.png" type="Texture2D" id=17]
+[ext_resource path="res://Graphics/Battlers/001.png" type="Texture2D" id=18]
 [ext_resource path="res://Utilities/Battle/Animations/FaintFoe.tres" type="Animation" id=19]
 [ext_resource path="res://Utilities/Battle/Animations/UnveilDrop.tres" type="Animation" id=20]
 [ext_resource path="res://Utilities/Battle/TransitionEffects.gd" type="Script" id=21]
 [ext_resource path="res://Utilities/Battle/GreyFlashing.tres" type="Animation" id=22]
-[ext_resource path="res://Graphics/Transitions/vsBar86.png" type="Texture" id=23]
-[ext_resource path="res://Graphics/Transitions/vsTrainer0.png" type="Texture" id=24]
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=25]
-[ext_resource path="res://Graphics/Transitions/vsTrainer86.png" type="Texture" id=26]
-[ext_resource path="res://Graphics/Transitions/vs.png" type="Texture" id=27]
-[ext_resource path="res://Graphics/Characters/trback000.png" type="Texture" id=28]
-[ext_resource path="res://Graphics/Pictures/BATTLE/newBattleMessageBox.png" type="Texture" id=29]
+[ext_resource path="res://Graphics/Transitions/vsBar86.png" type="Texture2D" id=23]
+[ext_resource path="res://Graphics/Transitions/vsTrainer0.png" type="Texture2D" id=24]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="FontFile" id=25]
+[ext_resource path="res://Graphics/Transitions/vsTrainer86.png" type="Texture2D" id=26]
+[ext_resource path="res://Graphics/Transitions/vs.png" type="Texture2D" id=27]
+[ext_resource path="res://Graphics/Characters/trback000.png" type="Texture2D" id=28]
+[ext_resource path="res://Graphics/Pictures/BATTLE/newBattleMessageBox.png" type="Texture2D" id=29]
 [ext_resource path="res://Utilities/Battle/BattleBars.gd" type="Script" id=30]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerBoxS.png" type="Texture" id=31]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerHPbar.png" type="Texture" id=32]
-[ext_resource path="res://Utilities/Battle/OutlinedTextFont.tres" type="DynamicFont" id=33]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleEXPbar.png" type="Texture" id=34]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeBoxS.png" type="Texture" id=35]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeHPbar.png" type="Texture" id=36]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerBoxS.png" type="Texture2D" id=31]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battlePlayerHPbar.png" type="Texture2D" id=32]
+[ext_resource path="res://Utilities/Battle/OutlinedTextFont.tres" type="FontFile" id=33]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleEXPbar.png" type="Texture2D" id=34]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeBoxS.png" type="Texture2D" id=35]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleFoeHPbar.png" type="Texture2D" id=36]
 [ext_resource path="res://Utilities/Battle/BattleComandSelect.gd" type="Script" id=37]
-[ext_resource path="res://Graphics/Pictures/BATTLE/newCommandBox.png" type="Texture" id=38]
-[ext_resource path="res://Graphics/Pictures/BATTLE/commandMenuButtons.png" type="Texture" id=39]
-[ext_resource path="res://Graphics/Pictures/BATTLE/selHand.png" type="Texture" id=40]
+[ext_resource path="res://Graphics/Pictures/BATTLE/newCommandBox.png" type="Texture2D" id=38]
+[ext_resource path="res://Graphics/Pictures/BATTLE/commandMenuButtons.png" type="Texture2D" id=39]
+[ext_resource path="res://Graphics/Pictures/BATTLE/selHand.png" type="Texture2D" id=40]
 [ext_resource path="res://Audio/SE/SE_Select1.wav" type="AudioStream" id=41]
 [ext_resource path="res://Utilities/Battle/BattleAttackSelect.gd" type="Script" id=42]
-[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=43]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="FontFile" id=43]
 [ext_resource path="res://Utilities/Battle/StatChange.tres" type="Animation" id=44]
-[ext_resource path="res://Graphics/Pictures/BATTLE/choiceSel.png" type="Texture" id=45]
-[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=46]
-[ext_resource path="res://Graphics/Pictures/pause.png" type="Texture" id=47]
+[ext_resource path="res://Graphics/Pictures/BATTLE/choiceSel.png" type="Texture2D" id=45]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture2D" id=46]
+[ext_resource path="res://Graphics/Pictures/pause.png" type="Texture2D" id=47]
 [ext_resource path="res://Utilities/Dialogue Box Arrow.tres" type="Animation" id=48]
-[ext_resource path="res://Graphics/Pictures/battlestatuses.PNG" type="Texture" id=49]
-[ext_resource path="res://Graphics/Pictures/BATTLE/shadeFull.png" type="Texture" id=50]
+[ext_resource path="res://Graphics/Pictures/battlestatuses.PNG" type="Texture2D" id=49]
+[ext_resource path="res://Graphics/Pictures/BATTLE/shadeFull.png" type="Texture2D" id=50]
 [ext_resource path="res://Utilities/PokemonPartyMenu.tscn" type="PackedScene" id=51]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleBagChoices.png" type="Texture" id=52]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleBackButtons.png" type="Texture" id=53]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleBagLast.png" type="Texture" id=54]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleBagChoices.png" type="Texture2D" id=52]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleBackButtons.png" type="Texture2D" id=53]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleBagLast.png" type="Texture2D" id=54]
 [ext_resource path="res://Utilities/Battle/BattleBag.gd" type="Script" id=55]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleLastItem.png" type="Texture" id=56]
-[ext_resource path="res://Graphics/Icons/item172.png" type="Texture" id=57]
-[ext_resource path="res://Graphics/Pictures/BATTLE/battleItemConfirm.png" type="Texture" id=58]
-[ext_resource path="res://Graphics/Icons/item208.png" type="Texture" id=59]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleLastItem.png" type="Texture2D" id=56]
+[ext_resource path="res://Graphics/Icons/item172.png" type="Texture2D" id=57]
+[ext_resource path="res://Graphics/Pictures/BATTLE/battleItemConfirm.png" type="Texture2D" id=58]
+[ext_resource path="res://Graphics/Icons/item208.png" type="Texture2D" id=59]
 [ext_resource path="res://Audio/SE/recall.wav" type="AudioStream" id=60]
 [ext_resource path="res://Audio/SE/jumptoball.wav" type="AudioStream" id=61]
 [ext_resource path="res://Audio/SE/balldrop.wav" type="AudioStream" id=62]
 [ext_resource path="res://Audio/SE/ballshake.wav" type="AudioStream" id=63]
-[ext_resource path="res://Graphics/Pictures/BATTLE/shadeRest.png" type="Texture" id=64]
+[ext_resource path="res://Graphics/Pictures/BATTLE/shadeRest.png" type="Texture2D" id=64]
 [ext_resource path="res://Utilities/NewMove.tscn" type="PackedScene" id=65]
 [ext_resource path="res://Utilities/Evolution.tscn" type="PackedScene" id=66]
 
@@ -77,8 +77,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 270, -20 ), Vector2( 270, 120 ) ]
 }
@@ -89,8 +89,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 2, 2 ), Vector2( 0.01, 0.01 ) ]
 }
@@ -101,8 +101,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -113,8 +113,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 1.0 ]
 }
@@ -128,8 +128,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -140,8 +140,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 140, 0 ), Vector2( 180, 0 ) ]
 }
@@ -152,8 +152,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 0.5, 0.5 ) ]
 }
@@ -164,8 +164,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -180,8 +180,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 28, 56, 84, 112, 140, 168, 196, 224, 252, 280, 308 ]
 }
@@ -192,8 +192,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.25, 0.5, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25, 0.5, 0.6 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 140, -60 ), Vector2( 140, -80 ), Vector2( 140, -60 ), Vector2( 140, -55 ) ]
 }
@@ -204,8 +204,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.6 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.6 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -216,8 +216,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0.5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0.5 ),
+"transitions": PackedFloat32Array( 1 ),
 "values": [ {
 "args": [  ],
 "method": "ball_flash"
@@ -233,8 +233,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "values": [ {
 "args": [  ],
 "method": "ball_open"
@@ -252,7 +252,7 @@ tracks/1/keys = {
 "start_offset": 0.0,
 "stream": ExtResource( 60 )
 } ],
-"times": PoolRealArray( 0 )
+"times": PackedFloat32Array( 0 )
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("../Battler:visible")
@@ -261,8 +261,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -273,8 +273,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 140, 68 ), Vector2( 140, 0 ) ]
 }
@@ -285,8 +285,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.1, 0.1 ), Vector2( 2, 2 ) ]
 }
@@ -297,8 +297,8 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -309,8 +309,8 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -326,8 +326,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 137.5, 65 ) ]
 }
@@ -343,7 +343,7 @@ tracks/1/keys = {
 "start_offset": 0.0,
 "stream": ExtResource( 63 )
 } ],
-"times": PoolRealArray( 0 )
+"times": PackedFloat32Array( 0 )
 }
 tracks/2/type = "method"
 tracks/2/path = NodePath("..")
@@ -352,8 +352,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "close_ball"
@@ -392,8 +392,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 1.65, 2.05 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.2, 0.4, 1.65, 2.05 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -108, 44 ), Vector2( -20.8333, -10 ), Vector2( 137.5, -65 ), Vector2( 137.5, -65 ), Vector2( 137.5, 65 ) ]
 }
@@ -404,8 +404,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 2, 2 ), Vector2( 1, 1 ) ]
 }
@@ -437,7 +437,7 @@ tracks/2/keys = {
 "start_offset": 0.0,
 "stream": ExtResource( 62 )
 } ],
-"times": PoolRealArray( 0, 1, 1.65, 2, 2.25 )
+"times": PackedFloat32Array( 0, 1, 1.65, 2, 2.25 )
 }
 tracks/3/type = "method"
 tracks/3/path = NodePath("..")
@@ -446,8 +446,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "rotate_ball"
@@ -523,8 +523,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 1, 1.45 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 1, 1.45 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 140, 0 ), Vector2( 140, -80 ) ]
 }
@@ -535,8 +535,8 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 1, 1.45 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 1, 1.45 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 2, 2 ), Vector2( 0.1, 0.1 ) ]
 }
@@ -547,8 +547,8 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 1 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 1 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
@@ -559,8 +559,8 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -571,8 +571,8 @@ tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0, 1.45 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1.45 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -583,8 +583,8 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
@@ -599,8 +599,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -256, 0 ), Vector2( -512, 0 ) ]
 }
@@ -611,20 +611,20 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1.5, 1.5 ), Vector2( 2, 2 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("FoeBase:rect_position")
+tracks/2/path = NodePath("FoeBase:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 382, 115 ), Vector2( 300, 115 ) ]
 }
@@ -638,8 +638,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
 }
@@ -650,8 +650,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -662,8 +662,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -674,8 +674,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 1, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 1, 2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
@@ -686,8 +686,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 1, 2 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
 }
@@ -702,8 +702,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -512, 0 ), Vector2( -256, 0 ) ]
 }
@@ -714,32 +714,32 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 2, 2 ), Vector2( 1.5, 1.5 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("FoeBase:rect_position")
+tracks/2/path = NodePath("FoeBase:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 345, 100 ), Vector2( 382, 115 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("PlayerBase:rect_position")
+tracks/3/path = NodePath("PlayerBase:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0.5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0.5 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 105, 175 ) ]
 }
@@ -750,8 +750,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
@@ -762,32 +762,32 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("FoeBase:rect_scale")
+tracks/6/path = NodePath("FoeBase:scale")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.6, 0.6 ), Vector2( 0.6, 0.6 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("PlayerBase:rect_scale")
+tracks/7/path = NodePath("PlayerBase:scale")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.5, 0.5 ), Vector2( 0.5, 0.5 ) ]
 }
@@ -800,32 +800,32 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( -256, 0 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("PlayerBase:rect_position")
+tracks/1/path = NodePath("PlayerBase:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 130, 145 ), Vector2( 110, 145 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("FoeBase:rect_position")
+tracks/2/path = NodePath("FoeBase:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 385, 100 ), Vector2( 365, 100 ) ]
 }
@@ -836,8 +836,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 238, 50 ) ]
 }
@@ -848,8 +848,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, true ]
 }
@@ -860,8 +860,8 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -872,8 +872,8 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ) ]
 }
@@ -881,74 +881,74 @@ tracks/6/keys = {
 [sub_resource type="Animation" id=11]
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("FoeBase:rect_position")
+tracks/0/path = NodePath("FoeBase:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 400, 105 ), Vector2( 385, 100 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("FoeBase:rect_scale")
+tracks/1/path = NodePath("FoeBase:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.35, 0.35 ), Vector2( 0.5, 0.5 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("PlayerBase:rect_position")
+tracks/2/path = NodePath("PlayerBase:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 215, 120 ), Vector2( 130, 145 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("PlayerBase:rect_scale")
+tracks/3/path = NodePath("PlayerBase:scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.35, 0.35 ), Vector2( 0.5, 0.5 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("BattleBack:rect_position")
+tracks/4/path = NodePath("BattleBack:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 170, 0 ), Vector2( 0, 0 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("BattleBack:rect_scale")
+tracks/5/path = NodePath("BattleBack:scale")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.67, 0.67 ), Vector2( 1, 1 ) ]
 }
@@ -957,38 +957,38 @@ tracks/5/keys = {
 resource_name = "player_switch"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("PlayerBase:rect_position")
+tracks/0/path = NodePath("PlayerBase:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 130, 145 ), Vector2( 164, 152 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("FoeBase:rect_position")
+tracks/1/path = NodePath("FoeBase:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 385, 100 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("FoeBase:rect_scale")
+tracks/2/path = NodePath("FoeBase:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.6, 0.6 ), Vector2( 0.5, 0.5 ) ]
 }
@@ -999,8 +999,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( -256, 0 ) ]
 }
@@ -1011,8 +1011,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Vector2( 1.5, 1.5 ) ]
 }
@@ -1020,74 +1020,74 @@ tracks/4/keys = {
 [sub_resource type="Animation" id=13]
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("PlayerBase:rect_position")
+tracks/0/path = NodePath("PlayerBase:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 105, 175 ), Vector2( 215, 120 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("FoeBase:rect_position")
+tracks/1/path = NodePath("FoeBase:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 382, 115 ), Vector2( 400, 105 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("FoeBase:rect_scale")
+tracks/2/path = NodePath("FoeBase:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.6, 0.6 ), Vector2( 0.35, 0.35 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("PlayerBase:rect_scale")
+tracks/3/path = NodePath("PlayerBase:scale")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0.5, 0.5 ), Vector2( 0.35, 0.35 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("BattleBack:rect_position")
+tracks/4/path = NodePath("BattleBack:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( 170, 0 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("BattleBack:rect_scale")
+tracks/5/path = NodePath("BattleBack:scale")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 0.67, 0.67 ) ]
 }
@@ -1102,8 +1102,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -128, 192 ), Vector2( 128, 192 ) ]
 }
@@ -1114,8 +1114,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 640, 192 ), Vector2( 384, 192 ) ]
 }
@@ -1126,34 +1126,34 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0.5 ),
+"transitions": PackedFloat32Array( 1 ),
 "values": [ {
 "args": [  ],
 "method": "play_Sound"
 } ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("PlayerBanner:rect_position")
+tracks/3/path = NodePath("PlayerBanner:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 1, 1.3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 1, 1.3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -198, 128 ), Vector2( 0, 128 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("OpponentBanner:rect_position")
+tracks/4/path = NodePath("OpponentBanner:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 1, 1.3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 1, 1.3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 512, 128 ), Vector2( 314, 128 ) ]
 }
@@ -1164,8 +1164,8 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -1176,8 +1176,8 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 1.5, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 1.5, 2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -1188,8 +1188,8 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -1200,8 +1200,8 @@ tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -1212,8 +1212,8 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -1224,8 +1224,8 @@ tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -1236,8 +1236,8 @@ tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 1.5, 1.55, 1.6, 1.65, 1.7, 1.75, 1.8, 1.85, 1.9, 1.95, 2, 2.05, 2.1, 2.15, 2.2, 2.25, 2.3, 2.35, 2.4, 2.45, 2.5, 2.55, 2.6, 2.65, 2.7, 2.75, 2.8, 2.85, 2.9, 2.95, 3, 3.05, 3.1, 3.15, 3.2, 3.25, 3.3, 3.35, 3.4, 3.45, 3.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 1.5, 1.55, 1.6, 1.65, 1.7, 1.75, 1.8, 1.85, 1.9, 1.95, 2, 2.05, 2.1, 2.15, 2.2, 2.25, 2.3, 2.35, 2.4, 2.45, 2.5, 2.55, 2.6, 2.65, 2.7, 2.75, 2.8, 2.85, 2.9, 2.95, 3, 3.05, 3.1, 3.15, 3.2, 3.25, 3.3, 3.35, 3.4, 3.45, 3.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ), Vector2( 262, 264 ), Vector2( 256, 270 ), Vector2( 250, 276 ), Vector2( 256, 270 ) ]
 }
@@ -1248,8 +1248,8 @@ tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 1.5, 3.5, 4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 1.5, 3.5, 4 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 8, 8 ) ]
 }
@@ -1260,8 +1260,8 @@ tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0, 4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 4 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -1272,8 +1272,8 @@ tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 4, 4.4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 4, 4.4 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -1287,8 +1287,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
 }
@@ -1302,13 +1302,13 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Rect2( 512, 0, 256, 128 ), Rect2( 0, 0, 256, 128 ) ]
 }
 
-[sub_resource type="DynamicFont" id=17]
+[sub_resource type="FontFile" id=17]
 size = 26
 font_data = ExtResource( 25 )
 
@@ -1321,8 +1321,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -1333,8 +1333,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, true ]
 }
@@ -1349,8 +1349,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.125, 0.25, 0.375 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.125, 0.25, 0.375 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 0, 1, 2, 3 ]
 }
@@ -1361,8 +1361,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.500165, 0.8 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.500165, 0.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 1,
 "values": [ true, true, false ]
 }
@@ -1373,8 +1373,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.5, 0.8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0.5, 0.8 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -1389,8 +1389,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -1401,8 +1401,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -1410,14 +1410,14 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=21]
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:rect_position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 539, 200 ), Vector2( 295, 200 ) ]
 }
@@ -1428,8 +1428,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
@@ -1440,16 +1440,16 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
 
-[sub_resource type="DynamicFont" id=22]
+[sub_resource type="FontFile" id=22]
 size = 26
 outline_color = Color( 0, 0, 0, 1 )
-extra_spacing_bottom = 15
+spacing_bottom = 15
 font_data = ExtResource( 25 )
 
 [sub_resource type="Animation" id=23]
@@ -1462,8 +1462,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -1474,8 +1474,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -1483,14 +1483,14 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=24]
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:rect_position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -254, -2 ), Vector2( -10, -2 ) ]
 }
@@ -1501,8 +1501,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ) ]
 }
@@ -1513,8 +1513,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -1528,8 +1528,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 384 ), Vector2( 0, 286 ) ]
 }
@@ -1544,8 +1544,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 75, 70 ), Vector2( 75, 50 ) ]
 }
@@ -1559,8 +1559,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 195, 70 ), Vector2( 195, 50 ) ]
 }
@@ -1574,8 +1574,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 315, 70 ), Vector2( 315, 50 ) ]
 }
@@ -1589,8 +1589,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 435, 70 ), Vector2( 435, 50 ) ]
 }
@@ -1606,8 +1606,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 1, 0.5 ), Vector2( 1, 1 ) ]
 }
@@ -1621,8 +1621,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 384 ), Vector2( 0, 286 ) ]
 }
@@ -1638,13 +1638,13 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 1, 0.5 ), Vector2( 1, 1 ) ]
 }
 
-[sub_resource type="StreamTexture" id=33]
+[sub_resource type="CompressedTexture2D" id=33]
 load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
 
 [sub_resource type="Animation" id=34]
@@ -1656,13 +1656,13 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 120, 54 ), Vector2( 120, 45 ) ]
 }
 
-[sub_resource type="StreamTexture" id=35]
+[sub_resource type="CompressedTexture2D" id=35]
 load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
 
 [sub_resource type="Animation" id=36]
@@ -1674,13 +1674,13 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 340, 54 ), Vector2( 340, 45 ) ]
 }
 
-[sub_resource type="StreamTexture" id=37]
+[sub_resource type="CompressedTexture2D" id=37]
 load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
 
 [sub_resource type="Animation" id=38]
@@ -1692,13 +1692,13 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 560, 54 ), Vector2( 560, 45 ) ]
 }
 
-[sub_resource type="StreamTexture" id=39]
+[sub_resource type="CompressedTexture2D" id=39]
 load_path = "res://.import/moveSelButtons.png-8c0dfe6efcc4c99431ebc3dcf6397157.stex"
 
 [sub_resource type="Animation" id=40]
@@ -1710,8 +1710,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 780, 54 ), Vector2( 780, 45 ) ]
 }
@@ -1726,8 +1726,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -1738,8 +1738,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -250, 0 ), Vector2( 0, 0 ) ]
 }
@@ -1750,8 +1750,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 250, 0 ), Vector2( 0, 0 ) ]
 }
@@ -1762,8 +1762,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 100 ), Vector2( 0, 0 ) ]
 }
@@ -1774,8 +1774,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 196, 342 ), Vector2( 196, 342 ) ]
 }
@@ -1790,8 +1790,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( -512, 0 ) ]
 }
@@ -1802,8 +1802,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( -512, 0 ) ]
 }
@@ -1814,8 +1814,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 196, 342 ), Vector2( 196, 432 ) ]
 }
@@ -1826,30 +1826,30 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, false ]
 }
 
-[sub_resource type="StreamTexture" id=43]
+[sub_resource type="CompressedTexture2D" id=43]
 load_path = "res://.import/battleBackButtons.png-a87d40f84dc198782e2fec5434afd200.stex"
 
-[sub_resource type="StreamTexture" id=44]
+[sub_resource type="CompressedTexture2D" id=44]
 load_path = "res://.import/battleBagLast.png-2f3c8d7c9da015988adb9ea980dffb03.stex"
 
 [sub_resource type="Animation" id=45]
 length = 0.25
 step = 0.05
 tracks/0/type = "value"
-tracks/0/path = NodePath("Pocket:rect_position")
+tracks/0/path = NodePath("Pocket:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -360, 320 ), Vector2( 0, 320 ) ]
 }
@@ -1860,17 +1860,17 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
 
-[sub_resource type="DynamicFont" id=46]
+[sub_resource type="FontFile" id=46]
 size = 13
 outline_size = 2
 outline_color = Color( 0.196078, 0.196078, 0.196078, 1 )
-extra_spacing_bottom = 9
+spacing_bottom = 9
 font_data = ExtResource( 25 )
 
 [sub_resource type="Animation" id=47]
@@ -1882,8 +1882,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -1894,8 +1894,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -1909,8 +1909,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -1921,8 +1921,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -1939,21 +1939,21 @@ scale = Vector2( 1.5, 1.5 )
 script = ExtResource( 2 )
 
 [node name="BattleBack" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
-margin_left = 170.0
-margin_right = 682.0
-margin_bottom = 384.0
-rect_scale = Vector2( 0.67, 0.67 )
+offset_left = 170.0
+offset_right = 682.0
+offset_bottom = 384.0
+scale = Vector2( 0.67, 0.67 )
 texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PlayerBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
-margin_left = 105.0
-margin_top = 175.0
-margin_right = 673.0
-margin_bottom = 431.0
-rect_scale = Vector2( 0.5, 0.5 )
+offset_left = 105.0
+offset_top = 175.0
+offset_right = 673.0
+offset_bottom = 431.0
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 script = ExtResource( 5 )
 __meta__ = {
@@ -1964,10 +1964,10 @@ __meta__ = {
 position = Vector2( 270, -100 )
 scale = Vector2( 0.2, 0.2 )
 
-[node name="Sprite" type="Sprite" parent="CanvasLayer/BattleGrounds/PlayerBase/Battler"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/BattleGrounds/PlayerBase/Battler"]
 texture = ExtResource( 6 )
 
-[node name="Shadow" type="Sprite" parent="CanvasLayer/BattleGrounds/PlayerBase/Battler"]
+[node name="Shadow" type="Sprite2D" parent="CanvasLayer/BattleGrounds/PlayerBase/Battler"]
 modulate = Color( 0, 0, 0, 0.588235 )
 show_behind_parent = true
 position = Vector2( 0, 28 )
@@ -1983,7 +1983,7 @@ anims/StatChange = ExtResource( 44 )
 anims/SuperDamage = ExtResource( 10 )
 anims/UnveilDropPlayer = ExtResource( 11 )
 
-[node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/PlayerBase"]
+[node name="Ball" type="Sprite2D" parent="CanvasLayer/BattleGrounds/PlayerBase"]
 position = Vector2( 7, -40 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 12 )
@@ -1997,18 +1997,18 @@ anims/PlayerBallToss = ExtResource( 13 )
 stream = ExtResource( 62 )
 
 [node name="FoeBase" type="TextureRect" parent="CanvasLayer/BattleGrounds"]
-margin_left = 382.0
-margin_top = 115.0
-margin_right = 654.001
-margin_bottom = 243.0
-rect_scale = Vector2( 0.6, 0.6 )
+offset_left = 382.0
+offset_top = 115.0
+offset_right = 654.001
+offset_bottom = 243.0
+scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 15 )
 script = ExtResource( 16 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="FoeHuman" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
+[node name="FoeHuman" type="Sprite2D" parent="CanvasLayer/BattleGrounds/FoeBase"]
 visible = false
 position = Vector2( 140, 0 )
 texture = ExtResource( 17 )
@@ -2016,14 +2016,14 @@ texture = ExtResource( 17 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleGrounds/FoeBase/FoeHuman"]
 anims/FadeOut = SubResource( 2 )
 
-[node name="HumanShadow" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase/FoeHuman"]
+[node name="HumanShadow" type="Sprite2D" parent="CanvasLayer/BattleGrounds/FoeBase/FoeHuman"]
 modulate = Color( 0, 0, 0, 0.588235 )
 show_behind_parent = true
 position = Vector2( 0, 50 )
 scale = Vector2( 1, 0.25 )
 texture = ExtResource( 17 )
 
-[node name="Ball" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase"]
+[node name="Ball" type="Sprite2D" parent="CanvasLayer/BattleGrounds/FoeBase"]
 position = Vector2( 140, -60 )
 texture = ExtResource( 12 )
 hframes = 28
@@ -2043,11 +2043,11 @@ stream = ExtResource( 60 )
 position = Vector2( 140, -80 )
 scale = Vector2( 0.2, 0.2 )
 
-[node name="Sprite" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
 texture = ExtResource( 18 )
 hframes = 64
 
-[node name="Shadow" type="Sprite" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
+[node name="Shadow" type="Sprite2D" parent="CanvasLayer/BattleGrounds/FoeBase/Battler"]
 modulate = Color( 0, 0, 0, 0.588235 )
 show_behind_parent = true
 position = Vector2( 0, 28 )
@@ -2073,8 +2073,8 @@ anims/player_toss = SubResource( 13 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/BattleGrounds"]
 visible = false
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 color = Color( 0, 0, 0, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -2087,8 +2087,8 @@ script = ExtResource( 21 )
 [node name="GreyFlash" type="ColorRect" parent="CanvasLayer/TransitionEffects"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 color = Color( 0.392157, 0.392157, 0.392157, 0 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -2102,7 +2102,7 @@ anims/GreyFlashing = ExtResource( 22 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
 anims/SlideBars = SubResource( 14 )
 
-[node name="SpriteLeft" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
+[node name="SpriteLeft" type="Sprite2D" parent="CanvasLayer/TransitionEffects/Vs"]
 position = Vector2( -128, 192 )
 texture = ExtResource( 23 )
 region_enabled = true
@@ -2111,7 +2111,7 @@ region_rect = Rect2( 0, 0, 256, 128 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionEffects/Vs/SpriteLeft"]
 anims/Scroll = SubResource( 15 )
 
-[node name="SpriteRight" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
+[node name="SpriteRight" type="Sprite2D" parent="CanvasLayer/TransitionEffects/Vs"]
 position = Vector2( 640, 192 )
 texture = ExtResource( 23 )
 region_enabled = true
@@ -2125,52 +2125,52 @@ anims/Scroll = SubResource( 16 )
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="CanvasLayer/TransitionEffects/Vs"]
 
 [node name="PlayerBanner" type="TextureRect" parent="CanvasLayer/TransitionEffects/Vs"]
-margin_left = -198.0
-margin_top = 128.0
-margin_bottom = 256.0
+offset_left = -198.0
+offset_top = 128.0
+offset_bottom = 256.0
 texture = ExtResource( 24 )
 
 [node name="Label" type="RichTextLabel" parent="CanvasLayer/TransitionEffects/Vs/PlayerBanner"]
 visible = false
-margin_top = 128.0
-margin_right = 200.0
-margin_bottom = 163.0
+offset_top = 128.0
+offset_right = 200.0
+offset_bottom = 163.0
 custom_fonts/normal_font = SubResource( 17 )
 bbcode_enabled = true
-bbcode_text = "[center]"
+text = "[center]"
 
 [node name="OpponentBanner" type="TextureRect" parent="CanvasLayer/TransitionEffects/Vs"]
 modulate = Color( 0, 0, 0, 1 )
-margin_left = 512.0
-margin_top = 128.0
-margin_right = 710.0
-margin_bottom = 256.0
+offset_left = 512.0
+offset_top = 128.0
+offset_right = 710.0
+offset_bottom = 256.0
 texture = ExtResource( 26 )
 
 [node name="Label" type="RichTextLabel" parent="CanvasLayer/TransitionEffects/Vs/OpponentBanner"]
 visible = false
-margin_top = 128.0
-margin_right = 200.0
-margin_bottom = 163.0
+offset_top = 128.0
+offset_right = 200.0
+offset_bottom = 163.0
 custom_fonts/normal_font = SubResource( 17 )
 bbcode_enabled = true
-bbcode_text = "[center]"
+text = "[center]"
 
-[node name="VsIcon" type="Sprite" parent="CanvasLayer/TransitionEffects/Vs"]
+[node name="VsIcon" type="Sprite2D" parent="CanvasLayer/TransitionEffects/Vs"]
 visible = false
 position = Vector2( 256, 270 )
 texture = ExtResource( 27 )
 
 [node name="WhiteFlash" type="ColorRect" parent="CanvasLayer/TransitionEffects/Vs"]
 visible = false
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 
 [node name="BlackFade" type="ColorRect" parent="CanvasLayer/TransitionEffects/Vs"]
 visible = false
 modulate = Color( 1, 1, 1, 0.125 )
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer"]
@@ -2178,7 +2178,7 @@ color = Color( 0, 0, 0, 1 )
 [node name="BattleInterfaceLayer" type="CanvasLayer" parent="CanvasLayer"]
 layer = 4
 
-[node name="PlayerToss" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer"]
+[node name="PlayerToss" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer"]
 visible = false
 texture = ExtResource( 28 )
 centered = false
@@ -2193,16 +2193,16 @@ anims/Toss = SubResource( 19 )
 script = ExtResource( 30 )
 
 [node name="PlayerBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
-margin_left = 539.0
-margin_top = 200.0
-margin_right = 783.0
-margin_bottom = 290.0
+offset_left = 539.0
+offset_top = 200.0
+offset_right = 783.0
+offset_bottom = 290.0
 texture = ExtResource( 31 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
+[node name="HP" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 texture = ExtResource( 32 )
 centered = false
 region_enabled = true
@@ -2215,10 +2215,10 @@ anims/Fade = SubResource( 20 )
 anims/Slide = SubResource( 21 )
 
 [node name="HPLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
-margin_left = 60.0
-margin_top = 35.0
-margin_right = 195.0
-margin_bottom = 60.0
+offset_left = 60.0
+offset_top = 35.0
+offset_right = 195.0
+offset_bottom = 60.0
 custom_fonts/normal_font = SubResource( 22 )
 text = "20/ 20"
 scroll_active = false
@@ -2226,19 +2226,19 @@ scroll_active = false
 [node name="HPLableShadow" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar/HPLable"]
 modulate = Color( 0, 0, 0, 0.588235 )
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 137.0
-margin_bottom = 27.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 137.0
+offset_bottom = 27.0
 custom_fonts/normal_font = SubResource( 22 )
 text = "20/ 20"
 scroll_active = false
 
 [node name="LevelLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
-margin_left = 185.0
-margin_top = 6.0
-margin_right = 240.0
-margin_bottom = 31.0
+offset_left = 185.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 31.0
 custom_fonts/normal_font = ExtResource( 33 )
 text = " 5"
 scroll_active = false
@@ -2247,38 +2247,38 @@ __meta__ = {
 }
 
 [node name="NameLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
-margin_left = 35.0
-margin_top = 6.0
-margin_right = 173.0
-margin_bottom = 31.0
+offset_left = 35.0
+offset_top = 6.0
+offset_right = 173.0
+offset_bottom = 31.0
 custom_fonts/normal_font = ExtResource( 33 )
 text = " Godot"
 scroll_active = false
 
-[node name="EXP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
+[node name="EXP" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 position = Vector2( 36, 60 )
 texture = ExtResource( 34 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 152, 10 )
 
-[node name="MajorAilment" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
+[node name="MajorAilment" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/PlayerBar"]
 visible = false
 position = Vector2( 165, 45 )
 texture = ExtResource( 49 )
 vframes = 5
 
 [node name="FoeBar" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBars"]
-margin_left = -254.0
-margin_top = -2.0
-margin_right = -10.0
-margin_bottom = 88.0
+offset_left = -254.0
+offset_top = -2.0
+offset_right = -10.0
+offset_bottom = 88.0
 texture = ExtResource( 35 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HP" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
+[node name="HP" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 texture = ExtResource( 36 )
 centered = false
 region_enabled = true
@@ -2291,10 +2291,10 @@ anims/Fade = SubResource( 23 )
 anims/Slide = SubResource( 24 )
 
 [node name="NameLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
-margin_left = 35.0
-margin_top = 6.0
-margin_right = 156.0
-margin_bottom = 31.0
+offset_left = 35.0
+offset_top = 6.0
+offset_right = 156.0
+offset_bottom = 31.0
 custom_fonts/normal_font = ExtResource( 33 )
 text = " Godot"
 scroll_active = false
@@ -2303,15 +2303,15 @@ __meta__ = {
 }
 
 [node name="LevelLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
-margin_left = 170.0
-margin_top = 6.0
-margin_right = 225.0
-margin_bottom = 31.0
+offset_left = 170.0
+offset_top = 6.0
+offset_right = 225.0
+offset_bottom = 31.0
 custom_fonts/normal_font = ExtResource( 33 )
 text = " 5"
 scroll_active = false
 
-[node name="MajorAilment" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
+[node name="MajorAilment" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBars/FoeBar"]
 visible = false
 position = Vector2( 156, 49 )
 texture = ExtResource( 49 )
@@ -2325,39 +2325,39 @@ position = Vector2( 0, 384 )
 script = ExtResource( 37 )
 
 [node name="Box" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-margin_right = 512.0
-margin_bottom = 98.0
+offset_right = 512.0
+offset_bottom = 98.0
 texture = ExtResource( 38 )
 
 [node name="Prompt" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-margin_left = 25.0
-margin_top = 10.0
-margin_right = 485.0
-margin_bottom = 93.0
+offset_left = 25.0
+offset_top = 10.0
+offset_right = 485.0
+offset_bottom = 93.0
 custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
-bbcode_text = "[center]What will Godot do?"
+text = "[center]What will Godot do?"
 text = "What will Godot do?"
 scroll_active = false
 
 [node name="PromptShadow" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Prompt"]
 modulate = Color( 0, 0, 0, 0.588235 )
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 462.0
-margin_bottom = 85.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 462.0
+offset_bottom = 85.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
-bbcode_text = "[center]What will Godot do?"
+text = "[center]What will Godot do?"
 text = "What will Godot do?"
 scroll_active = false
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 anims/Slide = SubResource( 25 )
 
-[node name="Attack" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
+[node name="Attack" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 75, 70 )
 z_index = 1
 texture = ExtResource( 39 )
@@ -2367,7 +2367,7 @@ vframes = 2
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Attack"]
 anims/Slide = SubResource( 26 )
 
-[node name="Bag" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
+[node name="Bag" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 195, 70 )
 z_index = 1
 texture = ExtResource( 39 )
@@ -2378,7 +2378,7 @@ frame = 1
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Bag"]
 anims/Slide = SubResource( 27 )
 
-[node name="Poke" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
+[node name="Poke" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 315, 70 )
 z_index = 1
 texture = ExtResource( 39 )
@@ -2389,7 +2389,7 @@ frame = 2
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect/Poke"]
 anims/Slide = SubResource( 28 )
 
-[node name="Run" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
+[node name="Run" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 435, 70 )
 z_index = 1
 texture = ExtResource( 39 )
@@ -2401,50 +2401,50 @@ frame = 3
 anims/Slide = SubResource( 29 )
 
 [node name="AttackLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-margin_left = 25.0
-margin_top = 70.0
-margin_right = 125.0
-margin_bottom = 97.0
+offset_left = 25.0
+offset_top = 70.0
+offset_right = 125.0
+offset_bottom = 97.0
 custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
-bbcode_text = "[center]Fight"
+text = "[center]Fight"
 text = "Fight"
 scroll_active = false
 
 [node name="BagLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-margin_left = 145.0
-margin_top = 70.0
-margin_right = 245.0
-margin_bottom = 97.0
+offset_left = 145.0
+offset_top = 70.0
+offset_right = 245.0
+offset_bottom = 97.0
 custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
-bbcode_text = "[center]Bag"
+text = "[center]Bag"
 text = "Bag"
 scroll_active = false
 
 [node name="PokeLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-margin_left = 265.0
-margin_top = 70.0
-margin_right = 365.0
-margin_bottom = 97.0
+offset_left = 265.0
+offset_top = 70.0
+offset_right = 365.0
+offset_bottom = 97.0
 custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
-bbcode_text = "[center]Pokémon"
+text = "[center]Pokémon"
 text = "Pokémon"
 scroll_active = false
 
 [node name="RunLable" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
-margin_left = 385.0
-margin_top = 70.0
-margin_right = 485.0
-margin_bottom = 97.0
+offset_left = 385.0
+offset_top = 70.0
+offset_right = 485.0
+offset_bottom = 97.0
 custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
-bbcode_text = "[center]Run"
+text = "[center]Run"
 text = "Run"
 scroll_active = false
 
-[node name="SelHand" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
+[node name="SelHand" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleComandSelect"]
 position = Vector2( 76, 20 )
 z_index = 1
 texture = ExtResource( 40 )
@@ -2462,8 +2462,8 @@ position = Vector2( 0, 384 )
 script = ExtResource( 42 )
 
 [node name="Box" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect"]
-margin_right = 512.0
-margin_bottom = 98.0
+offset_right = 512.0
+offset_bottom = 98.0
 texture = ExtResource( 38 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -2475,7 +2475,7 @@ anims/Slide = SubResource( 31 )
 [node name="MoveSlide" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect"]
 position = Vector2( 20, 0 )
 
-[node name="SelHand" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+[node name="SelHand" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 775, 0 )
 z_index = 1
 texture = ExtResource( 40 )
@@ -2487,117 +2487,117 @@ anims/Squeez = SubResource( 32 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/SelHand"]
 
-[node name="Move1" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+[node name="Move1" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 120, 54 )
 texture = SubResource( 33 )
 vframes = 20
 
 [node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move1"]
-margin_left = -85.0
-margin_top = -32.0
-margin_right = 73.0
-margin_bottom = -2.0
+offset_left = -85.0
+offset_top = -32.0
+offset_right = 73.0
+offset_bottom = -2.0
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 custom_fonts/normal_font = ExtResource( 43 )
 bbcode_enabled = true
-bbcode_text = "[center]Scratch"
+text = "[center]Scratch"
 text = "Scratch"
 
 [node name="PP" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move1"]
-margin_left = -67.0
-margin_top = -5.0
-margin_right = 42.0
-margin_bottom = 25.0
+offset_left = -67.0
+offset_top = -5.0
+offset_right = 42.0
+offset_bottom = 25.0
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 custom_fonts/normal_font = ExtResource( 43 )
-bbcode_text = "PP: 35/35"
+text = "PP: 35/35"
 text = "PP: 35/35"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move1"]
 anims/Slide = SubResource( 34 )
 
-[node name="Move2" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+[node name="Move2" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 340, 54 )
 texture = SubResource( 35 )
 vframes = 20
 
 [node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move2"]
-margin_left = -85.0
-margin_top = -32.0
-margin_right = 73.0
-margin_bottom = -2.0
+offset_left = -85.0
+offset_top = -32.0
+offset_right = 73.0
+offset_bottom = -2.0
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 custom_fonts/normal_font = ExtResource( 43 )
 bbcode_enabled = true
-bbcode_text = "[center]Scratch"
+text = "[center]Scratch"
 text = "Scratch"
 
 [node name="PP" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move2"]
-margin_left = -67.0
-margin_top = -5.0
-margin_right = 42.0
-margin_bottom = 25.0
+offset_left = -67.0
+offset_top = -5.0
+offset_right = 42.0
+offset_bottom = 25.0
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 custom_fonts/normal_font = ExtResource( 43 )
-bbcode_text = "PP: 35/35"
+text = "PP: 35/35"
 text = "PP: 35/35"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move2"]
 anims/Slide = SubResource( 36 )
 
-[node name="Move3" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+[node name="Move3" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 560, 54 )
 texture = SubResource( 37 )
 vframes = 20
 
 [node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move3"]
-margin_left = -85.0
-margin_top = -32.0
-margin_right = 73.0
-margin_bottom = -2.0
+offset_left = -85.0
+offset_top = -32.0
+offset_right = 73.0
+offset_bottom = -2.0
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 custom_fonts/normal_font = ExtResource( 43 )
 bbcode_enabled = true
-bbcode_text = "[center]Scratch"
+text = "[center]Scratch"
 text = "Scratch"
 
 [node name="PP" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move3"]
-margin_left = -67.0
-margin_top = -5.0
-margin_right = 42.0
-margin_bottom = 25.0
+offset_left = -67.0
+offset_top = -5.0
+offset_right = 42.0
+offset_bottom = 25.0
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 custom_fonts/normal_font = ExtResource( 43 )
-bbcode_text = "PP: 35/35"
+text = "PP: 35/35"
 text = "PP: 35/35"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move3"]
 anims/Slide = SubResource( 38 )
 
-[node name="Move4" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
+[node name="Move4" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide"]
 position = Vector2( 780, 54 )
 texture = SubResource( 39 )
 vframes = 20
 
 [node name="Name" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move4"]
-margin_left = -85.0
-margin_top = -32.0
-margin_right = 73.0
-margin_bottom = -2.0
+offset_left = -85.0
+offset_top = -32.0
+offset_right = 73.0
+offset_bottom = -2.0
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 custom_fonts/normal_font = ExtResource( 43 )
 bbcode_enabled = true
-bbcode_text = "[center]Scratch"
+text = "[center]Scratch"
 text = "Scratch"
 
 [node name="PP" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move4"]
-margin_left = -67.0
-margin_top = -5.0
-margin_right = 42.0
-margin_bottom = 25.0
+offset_left = -67.0
+offset_top = -5.0
+offset_right = 42.0
+offset_bottom = 25.0
 custom_colors/default_color = Color( 0.235294, 0.235294, 0.235294, 1 )
 custom_fonts/normal_font = ExtResource( 43 )
-bbcode_text = "PP: 35/35"
+text = "PP: 35/35"
 text = "PP: 35/35"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleAttackSelect/MoveSlide/Move4"]
@@ -2609,9 +2609,9 @@ anims/Slide = SubResource( 40 )
 visible = false
 
 [node name="Box" type="NinePatchRect" parent="CanvasLayer/BattleInterfaceLayer/LevelUp"]
-margin_left = 320.0
-margin_right = 512.0
-margin_bottom = 232.0
+offset_left = 320.0
+offset_right = 512.0
+offset_bottom = 232.0
 texture = ExtResource( 46 )
 region_rect = Rect2( 0, 0, 48, 48 )
 patch_margin_left = 6
@@ -2625,10 +2625,10 @@ __meta__ = {
 [node name="Improve" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box"]
 
 [node name="MaxHP" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
-margin_left = 17.4703
-margin_top = 12.8865
-margin_right = 89.4703
-margin_bottom = 36.8865
+offset_left = 17.4703
+offset_top = 12.8865
+offset_right = 89.4703
+offset_bottom = 36.8865
 custom_fonts/font = ExtResource( 43 )
 text = "Max. HP"
 valign = 1
@@ -2637,9 +2637,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/MaxHP"]
-margin_left = 78.0
-margin_right = 158.0
-margin_bottom = 24.0
+offset_left = 78.0
+offset_right = 158.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 43 )
 text = "+1"
 align = 2
@@ -2649,10 +2649,10 @@ __meta__ = {
 }
 
 [node name="Attack" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
-margin_left = 17.4703
-margin_top = 46.8865
-margin_right = 89.4703
-margin_bottom = 70.8865
+offset_left = 17.4703
+offset_top = 46.8865
+offset_right = 89.4703
+offset_bottom = 70.8865
 custom_fonts/font = ExtResource( 43 )
 text = "Attack"
 valign = 1
@@ -2661,9 +2661,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Attack"]
-margin_left = 78.0
-margin_right = 158.0
-margin_bottom = 24.0
+offset_left = 78.0
+offset_right = 158.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 43 )
 text = "+1"
 align = 2
@@ -2673,10 +2673,10 @@ __meta__ = {
 }
 
 [node name="Defense" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
-margin_left = 17.4703
-margin_top = 78.8865
-margin_right = 101.47
-margin_bottom = 113.887
+offset_left = 17.4703
+offset_top = 78.8865
+offset_right = 101.47
+offset_bottom = 113.887
 custom_fonts/font = ExtResource( 43 )
 text = "Defense"
 valign = 1
@@ -2685,9 +2685,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Defense"]
-margin_left = 78.0
-margin_right = 158.0
-margin_bottom = 24.0
+offset_left = 78.0
+offset_right = 158.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 43 )
 text = "+1"
 align = 2
@@ -2697,10 +2697,10 @@ __meta__ = {
 }
 
 [node name="SpAtck" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
-margin_left = 17.4703
-margin_top = 110.887
-margin_right = 101.47
-margin_bottom = 145.887
+offset_left = 17.4703
+offset_top = 110.887
+offset_right = 101.47
+offset_bottom = 145.887
 custom_fonts/font = ExtResource( 43 )
 text = "Sp. Atk"
 valign = 1
@@ -2709,9 +2709,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/SpAtck"]
-margin_left = 78.0
-margin_right = 158.0
-margin_bottom = 24.0
+offset_left = 78.0
+offset_right = 158.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 43 )
 text = "+1"
 align = 2
@@ -2721,10 +2721,10 @@ __meta__ = {
 }
 
 [node name="SpDef" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
-margin_left = 17.4703
-margin_top = 142.887
-margin_right = 101.47
-margin_bottom = 177.887
+offset_left = 17.4703
+offset_top = 142.887
+offset_right = 101.47
+offset_bottom = 177.887
 custom_fonts/font = ExtResource( 43 )
 text = "Sp. Def"
 valign = 1
@@ -2733,9 +2733,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/SpDef"]
-margin_left = 78.0
-margin_right = 158.0
-margin_bottom = 24.0
+offset_left = 78.0
+offset_right = 158.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 43 )
 text = "+1"
 align = 2
@@ -2745,10 +2745,10 @@ __meta__ = {
 }
 
 [node name="Speed" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve"]
-margin_left = 17.4703
-margin_top = 174.887
-margin_right = 101.47
-margin_bottom = 209.887
+offset_left = 17.4703
+offset_top = 174.887
+offset_right = 101.47
+offset_bottom = 209.887
 custom_fonts/font = ExtResource( 43 )
 text = "Speed"
 valign = 1
@@ -2757,9 +2757,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="CanvasLayer/BattleInterfaceLayer/LevelUp/Box/Improve/Speed"]
-margin_left = 78.0
-margin_right = 158.0
-margin_bottom = 24.0
+offset_left = 78.0
+offset_right = 158.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 43 )
 text = "+1"
 align = 2
@@ -2778,14 +2778,14 @@ script = ExtResource( 55 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 
 [node name="BG" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 50 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Selection" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
+[node name="Selection" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 visible = false
 position = Vector2( -118, 78 )
 texture = ExtResource( 52 )
@@ -2798,12 +2798,12 @@ anims/SlideToMenu = SubResource( 42 )
 
 [node name="Left" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 
-[node name="Medicine" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Left"]
+[node name="Medicine" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Left"]
 position = Vector2( 132, 78 )
 texture = ExtResource( 52 )
 hframes = 6
 
-[node name="Berries" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Left"]
+[node name="Berries" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Left"]
 position = Vector2( 132, 205 )
 texture = ExtResource( 52 )
 hframes = 6
@@ -2811,13 +2811,13 @@ frame = 2
 
 [node name="Right" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 
-[node name="PokeBalls" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Right"]
+[node name="PokeBalls" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Right"]
 position = Vector2( 385, 125 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 1
 
-[node name="BattleItems" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Right"]
+[node name="BattleItems" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Right"]
 position = Vector2( 385, 250 )
 texture = ExtResource( 52 )
 hframes = 6
@@ -2825,24 +2825,24 @@ frame = 3
 
 [node name="Bottom" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag"]
 
-[node name="Back" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom"]
+[node name="Back" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom"]
 position = Vector2( 430, 340 )
 texture = ExtResource( 53 )
 hframes = 3
 
-[node name="Select" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom/Back"]
+[node name="Select" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom/Back"]
 visible = false
 show_behind_parent = true
 texture = SubResource( 43 )
 hframes = 3
 frame = 2
 
-[node name="Last" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom"]
+[node name="Last" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom"]
 position = Vector2( 196, 342 )
 texture = ExtResource( 54 )
 hframes = 3
 
-[node name="Select" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom/Last"]
+[node name="Select" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/Bottom/Last"]
 visible = false
 show_behind_parent = true
 texture = SubResource( 44 )
@@ -2857,18 +2857,18 @@ anims/Slide = SubResource( 45 )
 
 [node name="Pocket" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
 visible = false
-margin_left = -360.0
-margin_top = 320.0
-margin_right = -40.0
-margin_bottom = 364.0
+offset_left = -360.0
+offset_top = 320.0
+offset_right = -40.0
+offset_bottom = 364.0
 texture = ExtResource( 56 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pocket"]
-margin_right = 272.0
-margin_bottom = 28.0
+offset_right = 272.0
+offset_bottom = 28.0
 custom_fonts/font = ExtResource( 43 )
 text = "Medicine"
 align = 1
@@ -2878,10 +2878,10 @@ __meta__ = {
 }
 
 [node name="Pages" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pocket"]
-margin_left = 318.0
-margin_top = 7.0
-margin_right = 396.0
-margin_bottom = 36.0
+offset_left = 318.0
+offset_top = 7.0
+offset_right = 396.0
+offset_bottom = 36.0
 custom_fonts/font = ExtResource( 33 )
 text = "1/ 2"
 valign = 1
@@ -2895,17 +2895,17 @@ __meta__ = {
 visible = false
 position = Vector2( 512, 0 )
 
-[node name="Sprite" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
 position = Vector2( 135, 72 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 5
 
-[node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite"]
-margin_left = -80.0
-margin_top = -33.0
-margin_right = 80.0
-margin_bottom = 2.0
+[node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite2D"]
+offset_left = -80.0
+offset_top = -33.0
+offset_right = 80.0
+offset_bottom = 2.0
 custom_fonts/font = ExtResource( 43 )
 text = "Hyper Potion"
 align = 1
@@ -2913,11 +2913,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite"]
-margin_left = -80.0
-margin_top = 5.0
-margin_right = 80.0
-margin_bottom = 40.0
+[node name="Label2" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite2D"]
+offset_left = -80.0
+offset_top = 5.0
+offset_right = 80.0
+offset_bottom = 40.0
 custom_fonts/font = ExtResource( 43 )
 text = "x64"
 align = 1
@@ -2925,35 +2925,35 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages/Sprite2D"]
 position = Vector2( 72, 10 )
 texture = ExtResource( 57 )
 
-[node name="Sprite2" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+[node name="Sprite2" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
 position = Vector2( 135, 165 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 5
 
-[node name="Sprite3" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+[node name="Sprite3" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
 position = Vector2( 135, 258 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 5
 
-[node name="Sprite4" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+[node name="Sprite4" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
 position = Vector2( 362, 72 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 5
 
-[node name="Sprite5" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+[node name="Sprite5" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
 position = Vector2( 362, 165 )
 texture = ExtResource( 52 )
 hframes = 6
 frame = 5
 
-[node name="Sprite6" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
+[node name="Sprite6" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Pages"]
 position = Vector2( 362, 258 )
 texture = ExtResource( 52 )
 hframes = 6
@@ -2962,26 +2962,26 @@ frame = 5
 [node name="Item" type="Node2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu"]
 visible = false
 
-[node name="Use" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Item"]
+[node name="Use" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Item"]
 position = Vector2( 256, 160 )
 texture = ExtResource( 58 )
 hframes = 4
 
 [node name="Icon" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Item/Use"]
-margin_left = -201.0
-margin_top = -49.0
-margin_right = -153.0
-margin_bottom = -1.0
+offset_left = -201.0
+offset_top = -49.0
+offset_right = -153.0
+offset_bottom = -1.0
 texture = ExtResource( 59 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Item/Use"]
-margin_left = -140.0
-margin_top = -54.0
-margin_right = 205.0
-margin_bottom = 32.0
+offset_left = -140.0
+offset_top = -54.0
+offset_right = 205.0
+offset_bottom = 32.0
 custom_fonts/font = SubResource( 46 )
 text = "Description
 Description
@@ -2991,13 +2991,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DontUse" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Item"]
+[node name="DontUse" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Item"]
 position = Vector2( 256, 316 )
 texture = ExtResource( 58 )
 hframes = 4
 frame = 1
 
-[node name="Select" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Item"]
+[node name="Select" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/BattleBag/BagMenu/Item"]
 position = Vector2( 256, 160 )
 texture = ExtResource( 58 )
 hframes = 4
@@ -3007,16 +3007,16 @@ frame = 2
 visible = false
 
 [node name="MessageBanner" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/Message"]
-margin_top = 288.0
-margin_right = 512.0
-margin_bottom = 384.0
+offset_top = 288.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 29 )
 
 [node name="Label" type="RichTextLabel" parent="CanvasLayer/BattleInterfaceLayer/Message"]
-margin_left = 25.0
-margin_top = 312.0
-margin_right = 485.0
-margin_bottom = 379.0
+offset_left = 25.0
+offset_top = 312.0
+offset_right = 485.0
+offset_bottom = 379.0
 custom_fonts/normal_font = SubResource( 22 )
 text = "Ace gained 9000 Exp. Points! Because this is cool!"
 scroll_active = false
@@ -3024,7 +3024,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Arrow" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/Message"]
+[node name="Arrow" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/Message"]
 position = Vector2( 492, 360 )
 texture = ExtResource( 47 )
 hframes = 4
@@ -3037,24 +3037,24 @@ autoplay = "Dialogue Box Arrow"
 visible = false
 
 [node name="BG" type="TextureRect" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
-margin_right = 512.0
-margin_bottom = 296.0
+offset_right = 512.0
+offset_bottom = 296.0
 texture = ExtResource( 64 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Yes" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
+[node name="Yes" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
 position = Vector2( 170, 260 )
 texture = ExtResource( 45 )
 hframes = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/BattleInterfaceLayer/YesNo/Yes"]
-margin_left = -72.0
-margin_top = -11.0
-margin_right = 71.0
-margin_bottom = 18.0
+offset_left = -72.0
+offset_top = -11.0
+offset_right = 71.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 33 )
 text = "Yes"
 align = 1
@@ -3062,16 +3062,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="No" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
+[node name="No" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
 position = Vector2( 350, 260 )
 texture = ExtResource( 45 )
 hframes = 2
 
 [node name="Label2" type="Label" parent="CanvasLayer/BattleInterfaceLayer/YesNo/No"]
-margin_left = -73.0
-margin_top = -14.0
-margin_right = 74.0
-margin_bottom = 22.0
+offset_left = -73.0
+offset_top = -14.0
+offset_right = 74.0
+offset_bottom = 22.0
 custom_fonts/font = ExtResource( 33 )
 text = "No"
 align = 1
@@ -3080,7 +3080,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Select" type="Sprite" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
+[node name="Select" type="Sprite2D" parent="CanvasLayer/BattleInterfaceLayer/YesNo"]
 position = Vector2( 170, 260 )
 texture = ExtResource( 45 )
 hframes = 2
@@ -3095,8 +3095,8 @@ visible = false
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 visible = false
 modulate = Color( 1, 1, 1, 0 )
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_lock_": true,

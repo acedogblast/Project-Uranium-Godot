@@ -1,6 +1,6 @@
 extends Node2D
 
-export var effect_weight = 0.0
+@export var effect_weight = 0.0
 var effect_shader
 var effect_shader_2
 var effect_enable = false
@@ -19,8 +19,8 @@ func _ready():
 
 func _process(_delta):
 	if effect_enable:
-		effect_shader.set_shader_param("effect_weight" , effect_weight)
-		effect_shader_2.set_shader_param("effect_weight" , effect_weight)
+		effect_shader.set_shader_parameter("effect_weight" , effect_weight)
+		effect_shader_2.set_shader_parameter("effect_weight" , effect_weight)
 	pass
 
 func setup(poke_start : Pokemon, poke_ID_end : int):
@@ -31,8 +31,8 @@ func setup(poke_start : Pokemon, poke_ID_end : int):
 	start_sprite.scale = Vector2(2,2)
 	start_sprite.visible = true
 	start_sprite.material = ShaderMaterial.new()
-	start_sprite.material.shader = load("res://Utilities/Battle/WhiteFade.shader")
-	start_sprite.material.set_shader_param("effect_weight", 0.0)
+	start_sprite.material.gdshader = load("res://Utilities/Battle/WhiteFade.gdshader")
+	start_sprite.material.set_shader_parameter("effect_weight", 0.0)
 	start_sprite.name = "StartSprite"
 	effect_shader = start_sprite.material
 	effect_weight = 0.0
@@ -48,8 +48,8 @@ func setup(poke_start : Pokemon, poke_ID_end : int):
 	end_sprite.scale = Vector2(2,2)
 	end_sprite.visible = false
 	end_sprite.material = ShaderMaterial.new()
-	end_sprite.material.shader = load("res://Utilities/Battle/WhiteFade.shader")
-	end_sprite.material.set_shader_param("effect_weight", 0.0)
+	end_sprite.material.gdshader = load("res://Utilities/Battle/WhiteFade.gdshader")
+	end_sprite.material.set_shader_parameter("effect_weight", 0.0)
 	end_sprite.name = "EndSprite"
 	effect_shader_2 = end_sprite.material
 	effect_weight = 0.0
@@ -57,19 +57,19 @@ func setup(poke_start : Pokemon, poke_ID_end : int):
 
 func run():
 	effect_enable = true
-	yield(get_tree().create_timer(1.0), "timeout")
+	await get_tree().create_timer(1.0).timeout
 	Global.game.get_node("Effect_music").stream = load(start_cry)
 	Global.game.get_node("Effect_music").play()
 
 	Global.game.play_dialogue("What?\n" + start_name + " is evolving!")
-	yield(Global.game, "event_dialogue_end")
+	await Global.game.event_dialogue_end
 
 	$AudioStreamPlayer.stream = load("res://Audio/BGM/PU-evolve.ogg")
 	$AudioStreamPlayer.play()
 	$AnimationPlayer.play("ShadeUp")
-	yield($AnimationPlayer, "animation_finished")
+	await $AnimationPlayer.animation_finished
 	$AnimationPlayer.play("Evolve")
-	yield($AnimationPlayer, "animation_finished")
+	await $AnimationPlayer.animation_finished
 	$AudioStreamPlayer.stop()
 	start_sprite.hide()
 	Global.game.get_node("Effect_music").stream = load(end_cry)
@@ -81,6 +81,6 @@ func run():
 	$AudioStreamPlayer.play()
 
 	Global.game.play_dialogue("Congratulations!\nYour " + start_name + " evolved into " + end_name + "!")
-	yield(Global.game, "event_dialogue_end")
+	await Global.game.event_dialogue_end
 	emit_signal("close")
 	effect_enable = false

@@ -1,17 +1,17 @@
 [gd_scene load_steps=22 format=2]
 
-[ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture" id=1]
-[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture" id=2]
-[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture2D" id=1]
+[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture2D" id=2]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="FontFile" id=3]
 [ext_resource path="res://Maps/MokiTown/FirstPokeLayer.gd" type="Script" id=4]
-[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=5]
-[ext_resource path="res://Graphics/Pictures/Starter/bg.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Pictures/Starter/bg_grid.png" type="Texture" id=7]
-[ext_resource path="res://Graphics/Pictures/Starter/bg_grid2.png" type="Texture" id=8]
-[ext_resource path="res://Graphics/Pictures/Starter/bg_light.png" type="Texture" id=9]
-[ext_resource path="res://Graphics/Battlers/003.png" type="Texture" id=10]
-[ext_resource path="res://Graphics/Battlers/001.png" type="Texture" id=11]
-[ext_resource path="res://Graphics/Battlers/005.png" type="Texture" id=12]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture2D" id=5]
+[ext_resource path="res://Graphics/Pictures/Starter/panel.png" type="Texture2D" id=6]
+[ext_resource path="res://Graphics/Pictures/Starter/bg_grid.png" type="Texture2D" id=7]
+[ext_resource path="res://Graphics/Pictures/Starter/bg_grid2.png" type="Texture2D" id=8]
+[ext_resource path="res://Graphics/Pictures/Starter/bg_light.png" type="Texture2D" id=9]
+[ext_resource path="res://Graphics/Battlers/003.png" type="Texture2D" id=10]
+[ext_resource path="res://Graphics/Battlers/001.png" type="Texture2D" id=11]
+[ext_resource path="res://Graphics/Battlers/005.png" type="Texture2D" id=12]
 [ext_resource path="res://Maps/MokiTown/FadeIn.tres" type="Animation" id=13]
 
 [sub_resource type="Animation" id=1]
@@ -25,8 +25,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 30 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 30 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Rect2( 0, 0, 512, 384 ), Rect2( 512, 384, 512, 384 ) ]
 }
@@ -42,8 +42,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 30 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 30 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Rect2( 0, 0, 512, 384 ), Rect2( 512, 0, 512, 384 ) ]
 }
@@ -59,8 +59,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 8 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Rect2( 0, 0, 1536, 384 ), Rect2( 1536, 0, 1536, 384 ) ]
 }
@@ -76,8 +76,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
@@ -93,8 +93,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
@@ -110,8 +110,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
@@ -126,8 +126,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -138,8 +138,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.25, 0.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -150,8 +150,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.25 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -166,8 +166,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
@@ -178,8 +178,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
@@ -191,10 +191,10 @@ script = ExtResource( 4 )
 visible = false
 
 [node name="Box" type="NinePatchRect" parent="Test"]
-margin_left = 10.0
-margin_top = 146.0
-margin_right = 500.0
-margin_bottom = 274.0
+offset_left = 10.0
+offset_top = 146.0
+offset_right = 500.0
+offset_bottom = 274.0
 texture = ExtResource( 1 )
 region_rect = Rect2( 8, 2, 66, 74 )
 patch_margin_left = 14
@@ -206,20 +206,20 @@ __meta__ = {
 }
 
 [node name="Arrow" type="TextureRect" parent="Test/Box"]
-margin_left = 12.0
-margin_top = 14.0
-margin_right = 24.0
-margin_bottom = 42.0
+offset_left = 12.0
+offset_top = 14.0
+offset_right = 24.0
+offset_bottom = 42.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Option1" type="Label" parent="Test/Box"]
-margin_left = 28.0
-margin_top = 16.0
-margin_right = 478.0
-margin_bottom = 41.0
+offset_left = 28.0
+offset_top = 16.0
+offset_right = 478.0
+offset_bottom = 41.0
 custom_fonts/font = ExtResource( 3 )
 text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
 __meta__ = {
@@ -228,10 +228,10 @@ __meta__ = {
 }
 
 [node name="Option2" type="Label" parent="Test/Box"]
-margin_left = 28.0
-margin_top = 48.0
-margin_right = 478.0
-margin_bottom = 73.0
+offset_left = 28.0
+offset_top = 48.0
+offset_right = 478.0
+offset_bottom = 73.0
 custom_fonts/font = ExtResource( 3 )
 text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
 __meta__ = {
@@ -240,10 +240,10 @@ __meta__ = {
 }
 
 [node name="Option3" type="Label" parent="Test/Box"]
-margin_left = 28.0
-margin_top = 82.0
-margin_right = 478.0
-margin_bottom = 107.0
+offset_left = 28.0
+offset_top = 82.0
+offset_right = 478.0
+offset_bottom = 107.0
 custom_fonts/font = ExtResource( 3 )
 text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
 __meta__ = {
@@ -255,10 +255,10 @@ __meta__ = {
 visible = false
 
 [node name="NinePatchRect" type="NinePatchRect" parent="YesNo"]
-margin_left = 300.0
-margin_top = 160.0
-margin_right = 500.0
-margin_bottom = 266.0
+offset_left = 300.0
+offset_top = 160.0
+offset_right = 500.0
+offset_bottom = 266.0
 texture = ExtResource( 5 )
 region_rect = Rect2( 0, 0, 48, 48 )
 patch_margin_left = 6
@@ -270,10 +270,10 @@ __meta__ = {
 }
 
 [node name="Label1" type="Label" parent="YesNo/NinePatchRect"]
-margin_left = 30.0
-margin_top = 20.0
-margin_right = 426.0
-margin_bottom = 46.0
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 426.0
+offset_bottom = 46.0
 custom_fonts/font = ExtResource( 3 )
 text = "Yes!"
 __meta__ = {
@@ -282,10 +282,10 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="YesNo/NinePatchRect"]
-margin_left = 30.0
-margin_top = 60.0
-margin_right = 426.0
-margin_bottom = 86.0
+offset_left = 30.0
+offset_top = 60.0
+offset_right = 426.0
+offset_bottom = 86.0
 custom_fonts/font = ExtResource( 3 )
 text = "Wait a minute..."
 __meta__ = {
@@ -294,10 +294,10 @@ __meta__ = {
 }
 
 [node name="Arrow" type="TextureRect" parent="YesNo/NinePatchRect"]
-margin_left = 14.0
-margin_top = 18.0
-margin_right = 26.0
-margin_bottom = 46.0
+offset_left = 14.0
+offset_top = 18.0
+offset_right = 26.0
+offset_bottom = 46.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -307,15 +307,15 @@ __meta__ = {
 visible = false
 
 [node name="BG" type="TextureRect" parent="PokeGet"]
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Grid" type="Sprite" parent="PokeGet"]
+[node name="Grid" type="Sprite2D" parent="PokeGet"]
 texture = ExtResource( 7 )
 centered = false
 region_enabled = true
@@ -325,7 +325,7 @@ region_rect = Rect2( 0, 0, 512, 384 )
 autoplay = "Slide"
 anims/Slide = SubResource( 1 )
 
-[node name="Grid2" type="Sprite" parent="PokeGet"]
+[node name="Grid2" type="Sprite2D" parent="PokeGet"]
 texture = ExtResource( 8 )
 centered = false
 region_enabled = true
@@ -335,17 +335,17 @@ region_rect = Rect2( 0, 0, 512, 384 )
 autoplay = "Slide"
 anims/Slide = SubResource( 2 )
 
-[node name="Light" type="Sprite" parent="PokeGet"]
+[node name="Light3D" type="Sprite2D" parent="PokeGet"]
 texture = ExtResource( 9 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 1536, 384 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="PokeGet/Light"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PokeGet/Light3D"]
 autoplay = "Slide"
 anims/Slide = SubResource( 3 )
 
-[node name="Orchynx" type="Sprite" parent="PokeGet"]
+[node name="Orchynx" type="Sprite2D" parent="PokeGet"]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 100, 170 )
 scale = Vector2( 2, 2 )
@@ -356,7 +356,7 @@ hframes = 64
 anims/FadeIn = ExtResource( 13 )
 anims/FadeOut = SubResource( 4 )
 
-[node name="Electux" type="Sprite" parent="PokeGet"]
+[node name="Electux" type="Sprite2D" parent="PokeGet"]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 392, 170 )
 scale = Vector2( 2, 2 )
@@ -367,7 +367,7 @@ hframes = 68
 anims/FadeIn = ExtResource( 13 )
 anims/FadeOut = SubResource( 5 )
 
-[node name="Raptorch" type="Sprite" parent="PokeGet"]
+[node name="Raptorch" type="Sprite2D" parent="PokeGet"]
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 246, 170 )
 scale = Vector2( 2, 2 )
@@ -382,8 +382,8 @@ anims/FadeOut = SubResource( 6 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color( 0, 0, 0, 0 )
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_lock_": true,

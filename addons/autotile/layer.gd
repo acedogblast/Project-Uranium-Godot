@@ -23,7 +23,7 @@
 #  3. This notice may not be removed or altered from any source
 #     distribution.
 
-tool
+@tool
 extends StaticBody2D
 
 const MASK_TL = 1
@@ -40,14 +40,14 @@ const SOLID_NONE = 0
 const SOLID_ALL = 1
 const SOLID_EXCEPT_TOP = 2
 
-export(Texture) var texture setget _set_texture
-export(int, 2, 128) var tile_size = 32 setget _set_tile_size
-export(bool) var draw_center = true setget _set_draw_center
-export(Vector2) var region_offset = Vector2(0, 0) setget _set_region_offset
-export(bool) var solid = false setget _set_solid
-export(Vector2) var solid_offset = Vector2(0, 0) setget _set_solid_offset
-onready var is_ready = true
-var data = {} setget _set_data
+@export var texture: Texture2D : set = _set_texture
+@export var tile_size = 32 setget _set_tile_size # (int, 2, 128)
+@export var draw_center: bool = true : set = _set_draw_center
+@export var region_offset: Vector2 = Vector2(0, 0) : set = _set_region_offset
+@export var solid: bool = false : set = _set_solid
+@export var solid_offset: Vector2 = Vector2(0, 0) : set = _set_solid_offset
+@onready var is_ready = true
+var data = {} : set = _set_data
 var data_cache = []
 var data_modified = true
 var min_pos = Vector2(0, 0)
@@ -64,7 +64,7 @@ func _get_property_list():
 		"hint": PROPERTY_HINT_NONE,
 		"usage": PROPERTY_USAGE_STORAGE,
 		"name": "autotile/data",
-		"type": TYPE_INT_ARRAY
+		"type": TYPE_PACKED_INT32_ARRAY
 	}]
 
 func _get(property):
@@ -151,8 +151,8 @@ func _regen_data():
 			mask = mask | MASK_BR
 		data[pos] = mask
 		if solid and is_inside_tree() and not get_tree().is_editor_hint():
-			var ofs = (pos + Vector2(0.5, 0.5)) * tile_size + solid_offset
-			add_shape(shape, Matrix32(0, ofs))
+			var offset = (pos + Vector2(0.5, 0.5)) * tile_size + solid_offset
+			add_shape(shape, Matrix32(0, offset))
 	data_modified = false
 	update()
 
@@ -289,12 +289,12 @@ func _draw():
 				continue
 			var size = Vector2(tile_size, tile_size) / 2
 			for corner in CORNERS:
-				var ofs = (pos + corner["offset"] / 2) * tile_size
+				var offset = (pos + corner["offset"] / 2) * tile_size
 				var rect = Rect2(region_offset + corner["offset"] * size, size)
 				for test in corner["tests"]:
 					if (mask & test[0]) == test[1]:
 						rect.pos += test[2] * tile_size
-						draw_texture_rect_region(texture, Rect2(ofs, size), rect)
+						draw_texture_rect_region(texture, Rect2(offset, size), rect)
 						break
 	# Backwards compatability. Remove when Godot 3.0 is released.
 	if _gd_21_editor:

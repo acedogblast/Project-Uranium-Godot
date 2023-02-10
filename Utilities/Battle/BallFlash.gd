@@ -1,7 +1,7 @@
-extends Sprite
+extends Sprite2D
 signal free
 var index = 0
-var frames = [
+var sprite_frames = [
 	"res://Graphics/Pictures/a09.png",
 	"res://Graphics/Pictures/a10.png",
 	"res://Graphics/Pictures/a11.png",
@@ -36,7 +36,7 @@ func nextFrame():
 	if index == 28:
 		emit_signal("free")
 		self.queue_free()
-	self.texture = load(frames[index])
+	self.texture = load(sprite_frames[index])
 	index += 1
 func _ready():
 	self.texture = load("res://Graphics/Pictures/a09.png")

@@ -39,7 +39,7 @@ func _ready():
 	#trainer4.turning_directions = ["Down", "Left"]
 	item1 = $NPC_Layer/Item1
 
-	Global.game.player.connect("trainer_battle", self, "trainer_battle")
+	Global.game.player.connect("trainer_battle",Callable(self,"trainer_battle"))
 
 	if Global.past_events.has("ROUTE2_TRAINER1_DEFEATED"):
 		trainer1.seeking = false
@@ -65,7 +65,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		else:
 			Global.game.lock_player()
 			Global.game.play_dialogue_with_point("NPC_ROUTE2_TRAINER_1_DEFEAT" , trainer1.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 			Global.game.release_player()
 		pass
 	if check_pos == $NPC_Layer/Trainer2.position:
@@ -75,7 +75,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		else:
 			Global.game.lock_player()
 			Global.game.play_dialogue_with_point("NPC_ROUTE2_TRAINER_2_DEFEAT" , trainer2.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 			Global.game.release_player()
 		pass
 	if check_pos == $NPC_Layer/Barewl.position:
@@ -84,7 +84,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		Global.game.get_node("Effect_music").stream = load("res://Audio/SE/015Cry.wav")
 		Global.game.get_node("Effect_music").play()
 		Global.game.play_dialogue_with_point("NPC_ROUTE2_BAREWL" , $NPC_Layer/Barewl.get_global_transform_with_canvas().get_origin())
-		yield(Global.game, "event_dialogue_end")
+		await Global.game.event_dialogue_end
 		Global.game.release_player()
 	pass
 
@@ -95,7 +95,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		item1.queue_free()
 		item1 = null
 		Global.game.recive_item($NPC_Layer/Item1.item_id)
-		yield(Global.game, "end_of_event")
+		await Global.game.end_of_event
 		Global.game.release_player()
 
 
@@ -104,7 +104,7 @@ func trainer_battle(npc_trainer):
 	npc_trainer.seeking = false
 	# Play encounter music
 	npc_trainer.alert()
-	yield(npc_trainer, "alert_done")
+	await npc_trainer.alert_done
 	match npc_trainer:
 		trainer1, trainer2:
 			Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-MaleEncounter.ogg")
@@ -125,7 +125,7 @@ func trainer_battle(npc_trainer):
 
 	# Walk towards player
 	npc_trainer.move_to_player()
-	yield(npc_trainer, "done_movement")
+	await npc_trainer.done_movement
 
 	# Pre-battle talk
 	match npc_trainer:
@@ -138,7 +138,7 @@ func trainer_battle(npc_trainer):
 		trainer4:
 			Global.game.play_dialogue_with_point("NPC_ROUTE2_TRAINER_4" , npc_trainer.get_global_transform_with_canvas().get_origin())
 
-	yield(Global.game, "event_dialogue_end")
+	await Global.game.event_dialogue_end
 
 	match npc_trainer:
 		trainer1:
@@ -172,7 +172,7 @@ func trainer1_battle():
 	bid.opponent.pokemon_group = trainer.get_poke_group()
 	
 	Global.game.trainer_battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("ROUTE2_TRAINER1_DEFEATED")
@@ -199,7 +199,7 @@ func trainer2_battle():
 	bid.opponent.pokemon_group = trainer.get_poke_group()
 	
 	Global.game.trainer_battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("ROUTE2_TRAINER2_DEFEATED")

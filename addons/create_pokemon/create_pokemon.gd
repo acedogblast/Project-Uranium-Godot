@@ -1,4 +1,4 @@
-tool
+@tool
 extends EditorPlugin
 
 var open = false
@@ -13,8 +13,8 @@ func _ready():
 func _input(event):
 	if Input.is_key_pressed(KEY_F12) && !open:
 		open = true
-		r = load("res://addons/create_pokemon/interface.tscn").instance()
-		r.get_node("ColorRect").get_node("Button").connect("pressed", self, "_on_pressed", [r])
+		r = load("res://addons/create_pokemon/interface.tscn").instantiate()
+		r.get_node("ColorRect").get_node("Button").connect("pressed",Callable(self,"_on_pressed").bind(r))
 		add_child(r)
 		pass
 	elif Input.is_key_pressed(KEY_F12) && open:
@@ -53,7 +53,7 @@ func _on_pressed(interface):
 	
 	ResourceSaver.save("res://Utilities/Battle/Database/Pokemon/" + res.name + ".tres", res)
 	
-	# remove interface
+	# remove_at interface
 	interface.queue_free()
 	open = false
 	pass

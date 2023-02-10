@@ -1,17 +1,17 @@
 [gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Utilities/PokemonPartyMenu.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/Pictures/partybg.PNG" type="Texture" id=2]
-[ext_resource path="res://Graphics/Pictures/partyPanelRound.png" type="Texture" id=3]
-[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=4]
-[ext_resource path="res://Graphics/Pictures/partyBall.PNG" type="Texture" id=5]
-[ext_resource path="res://Graphics/Pictures/partyHP.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Icons/icon003.png" type="Texture" id=7]
+[ext_resource path="res://Graphics/Pictures/partybg.PNG" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Pictures/partyPanelRound.png" type="Texture2D" id=3]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="FontFile" id=4]
+[ext_resource path="res://Graphics/Pictures/partyBall.PNG" type="Texture2D" id=5]
+[ext_resource path="res://Graphics/Pictures/partyHP.png" type="Texture2D" id=6]
+[ext_resource path="res://Graphics/Icons/icon003.png" type="Texture2D" id=7]
 [ext_resource path="res://Utilities/Battle/Animations/PokemonPartyIconIdle.tres" type="Animation" id=8]
 [ext_resource path="res://Utilities/Battle/Animations/PokemonPartyIconSelectedJumping.tres" type="Animation" id=9]
-[ext_resource path="res://Graphics/Pictures/partyPanelRect.png" type="Texture" id=10]
-[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=11]
-[ext_resource path="res://Graphics/Pictures/partyCancelSel.png" type="Texture" id=12]
+[ext_resource path="res://Graphics/Pictures/partyPanelRect.png" type="Texture2D" id=10]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture2D" id=11]
+[ext_resource path="res://Graphics/Pictures/partyCancelSel.png" type="Texture2D" id=12]
 [ext_resource path="res://Audio/SE/Choose.WAV" type="AudioStream" id=13]
 
 [sub_resource type="Animation" id=1]
@@ -25,8 +25,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.13 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.13 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
 }
@@ -42,8 +42,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ 0 ]
 }
@@ -54,8 +54,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ Vector2( 60, 32 ), Vector2( 60, 38 ) ]
 }
@@ -71,8 +71,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.13 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.13 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
 }
@@ -88,8 +88,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ 0 ]
 }
@@ -100,8 +100,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ Vector2( 60, 32 ), Vector2( 60, 38 ) ]
 }
@@ -117,8 +117,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.13 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.13 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
 }
@@ -134,8 +134,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ 0 ]
 }
@@ -146,8 +146,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ Vector2( 60, 32 ), Vector2( 60, 38 ) ]
 }
@@ -163,8 +163,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.13 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.13 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
 }
@@ -180,8 +180,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ 0 ]
 }
@@ -192,8 +192,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ Vector2( 60, 32 ), Vector2( 60, 38 ) ]
 }
@@ -209,8 +209,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.13 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.13 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ 0, 1 ]
 }
@@ -226,8 +226,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ 0 ]
 }
@@ -238,8 +238,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ Vector2( 60, 32 ), Vector2( 60, 38 ) ]
 }
@@ -252,8 +252,8 @@ __meta__ = {
 }
 
 [node name="Background" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -262,8 +262,8 @@ __meta__ = {
 [node name="Slot1" type="Node2D" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="Slot1"]
-margin_right = 256.0
-margin_bottom = 98.0
+offset_right = 256.0
+offset_bottom = 98.0
 texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -272,80 +272,80 @@ __meta__ = {
 [node name="Content" type="Node2D" parent="Slot1"]
 
 [node name="Name" type="Label" parent="Slot1/Content"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 184.0
-margin_bottom = 36.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 184.0
+offset_bottom = 36.0
 custom_fonts/font = ExtResource( 4 )
 text = "Raptorch"
 
 [node name="Shadow" type="Label" parent="Slot1/Content/Name"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 96.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Raptorch"
 
 [node name="Level" type="Label" parent="Slot1/Content"]
-margin_left = 20.0
-margin_top = 66.0
-margin_right = 62.0
-margin_bottom = 82.0
-rect_scale = Vector2( 0.7, 0.7 )
+offset_left = 20.0
+offset_top = 66.0
+offset_right = 62.0
+offset_bottom = 82.0
+scale = Vector2( 0.7, 0.7 )
 custom_fonts/font = ExtResource( 4 )
 text = "Lv.5"
 
 [node name="Shadow" type="Label" parent="Slot1/Content/Level"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 44.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 44.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lv.5"
 
 [node name="HP" type="Label" parent="Slot1/Content"]
-margin_left = 150.0
-margin_top = 62.0
-margin_right = 216.0
-margin_bottom = 78.0
+offset_left = 150.0
+offset_top = 62.0
+offset_right = 216.0
+offset_bottom = 78.0
 custom_fonts/font = ExtResource( 4 )
 text = "19/ 19"
 
 [node name="Shadow" type="Label" parent="Slot1/Content/HP"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 68.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 68.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "19/ 19"
 
 [node name="Gender" type="Label" parent="Slot1/Content"]
-margin_left = 220.0
-margin_top = 20.0
-margin_right = 240.0
-margin_bottom = 40.0
+offset_left = 220.0
+offset_top = 20.0
+offset_right = 240.0
+offset_bottom = 40.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0.478431, 0.972549, 1 )
 text = "♂"
 
 [node name="Shadow" type="Label" parent="Slot1/Content/Gender"]
 show_behind_parent = true
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 21.0
-margin_bottom = 21.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 21.0
+offset_bottom = 21.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0.470588, 0.721569, 0.909804, 1 )
 text = "♂"
 
-[node name="Ball" type="Sprite" parent="Slot1/Content"]
+[node name="Ball" type="Sprite2D" parent="Slot1/Content"]
 position = Vector2( 32, 28 )
 texture = ExtResource( 5 )
 
@@ -353,18 +353,18 @@ texture = ExtResource( 5 )
 position = Vector2( 90, 50 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot1/Content/HP_Bar"]
-margin_right = 138.0
-margin_bottom = 40.0
+offset_right = 138.0
+offset_bottom = 40.0
 texture = ExtResource( 6 )
 
 [node name="ColorRect" type="ColorRect" parent="Slot1/Content/HP_Bar"]
-margin_left = 32.0
-margin_top = 4.0
-margin_right = 128.0
-margin_bottom = 8.0
+offset_left = 32.0
+offset_top = 4.0
+offset_right = 128.0
+offset_bottom = 8.0
 color = Color( 0.129412, 0.831373, 0.0666667, 1 )
 
-[node name="Poke" type="Sprite" parent="Slot1/Content"]
+[node name="Poke" type="Sprite2D" parent="Slot1/Content"]
 position = Vector2( 60, 32 )
 texture = ExtResource( 7 )
 hframes = 2
@@ -377,8 +377,8 @@ anims/IconSelectedJumping = ExtResource( 9 )
 position = Vector2( 256, 16 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot2"]
-margin_right = 256.0
-margin_bottom = 98.0
+offset_right = 256.0
+offset_bottom = 98.0
 texture = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -387,65 +387,65 @@ __meta__ = {
 [node name="Content" type="Node2D" parent="Slot2"]
 
 [node name="Name" type="Label" parent="Slot2/Content"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 184.0
-margin_bottom = 36.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 184.0
+offset_bottom = 36.0
 custom_fonts/font = ExtResource( 4 )
 text = "Raptorch"
 
 [node name="Shadow" type="Label" parent="Slot2/Content/Name"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 96.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Raptorch"
 
 [node name="Level" type="Label" parent="Slot2/Content"]
-margin_left = 20.0
-margin_top = 66.0
-margin_right = 62.0
-margin_bottom = 82.0
-rect_scale = Vector2( 0.7, 0.7 )
+offset_left = 20.0
+offset_top = 66.0
+offset_right = 62.0
+offset_bottom = 82.0
+scale = Vector2( 0.7, 0.7 )
 custom_fonts/font = ExtResource( 4 )
 text = "Lv.5"
 
 [node name="Shadow" type="Label" parent="Slot2/Content/Level"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 44.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 44.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lv.5"
 
 [node name="HP" type="Label" parent="Slot2/Content"]
-margin_left = 150.0
-margin_top = 62.0
-margin_right = 216.0
-margin_bottom = 78.0
+offset_left = 150.0
+offset_top = 62.0
+offset_right = 216.0
+offset_bottom = 78.0
 custom_fonts/font = ExtResource( 4 )
 text = "19/ 19"
 
 [node name="Shadow" type="Label" parent="Slot2/Content/HP"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 68.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 68.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "19/ 19"
 
 [node name="Gender" type="Label" parent="Slot2/Content"]
-margin_left = 220.0
-margin_top = 20.0
-margin_right = 240.0
-margin_bottom = 40.0
+offset_left = 220.0
+offset_top = 20.0
+offset_right = 240.0
+offset_bottom = 40.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
 custom_colors/font_outline_modulate = Color( 0.470588, 0.721569, 0.909804, 1 )
@@ -453,15 +453,15 @@ text = "♂"
 
 [node name="Shadow" type="Label" parent="Slot2/Content/Gender"]
 show_behind_parent = true
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 21.0
-margin_bottom = 21.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 21.0
+offset_bottom = 21.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0.25098, 0.529412, 0.866667, 1 )
 text = "♂"
 
-[node name="Ball" type="Sprite" parent="Slot2/Content"]
+[node name="Ball" type="Sprite2D" parent="Slot2/Content"]
 position = Vector2( 32, 28 )
 texture = ExtResource( 5 )
 
@@ -469,18 +469,18 @@ texture = ExtResource( 5 )
 position = Vector2( 90, 50 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot2/Content/HP_Bar"]
-margin_right = 138.0
-margin_bottom = 40.0
+offset_right = 138.0
+offset_bottom = 40.0
 texture = ExtResource( 6 )
 
 [node name="ColorRect" type="ColorRect" parent="Slot2/Content/HP_Bar"]
-margin_left = 32.0
-margin_top = 4.0
-margin_right = 128.0
-margin_bottom = 8.0
+offset_left = 32.0
+offset_top = 4.0
+offset_right = 128.0
+offset_bottom = 8.0
 color = Color( 0.129412, 0.831373, 0.0666667, 1 )
 
-[node name="Poke" type="Sprite" parent="Slot2/Content"]
+[node name="Poke" type="Sprite2D" parent="Slot2/Content"]
 position = Vector2( 60, 32 )
 texture = ExtResource( 7 )
 hframes = 2
@@ -493,72 +493,72 @@ anims/IconSelectedJumping = SubResource( 2 )
 position = Vector2( 0, 96 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot3"]
-margin_right = 256.0
-margin_bottom = 98.0
+offset_right = 256.0
+offset_bottom = 98.0
 texture = ExtResource( 10 )
 
 [node name="Content" type="Node2D" parent="Slot3"]
 
 [node name="Name" type="Label" parent="Slot3/Content"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 184.0
-margin_bottom = 36.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 184.0
+offset_bottom = 36.0
 custom_fonts/font = ExtResource( 4 )
 text = "Raptorch"
 
 [node name="Shadow" type="Label" parent="Slot3/Content/Name"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 96.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Raptorch"
 
 [node name="Level" type="Label" parent="Slot3/Content"]
-margin_left = 20.0
-margin_top = 66.0
-margin_right = 62.0
-margin_bottom = 82.0
-rect_scale = Vector2( 0.7, 0.7 )
+offset_left = 20.0
+offset_top = 66.0
+offset_right = 62.0
+offset_bottom = 82.0
+scale = Vector2( 0.7, 0.7 )
 custom_fonts/font = ExtResource( 4 )
 text = "Lv.5"
 
 [node name="Shadow" type="Label" parent="Slot3/Content/Level"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 44.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 44.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lv.5"
 
 [node name="HP" type="Label" parent="Slot3/Content"]
-margin_left = 150.0
-margin_top = 62.0
-margin_right = 216.0
-margin_bottom = 78.0
+offset_left = 150.0
+offset_top = 62.0
+offset_right = 216.0
+offset_bottom = 78.0
 custom_fonts/font = ExtResource( 4 )
 text = "19/ 19"
 
 [node name="Shadow" type="Label" parent="Slot3/Content/HP"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 68.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 68.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "19/ 19"
 
 [node name="Gender" type="Label" parent="Slot3/Content"]
-margin_left = 220.0
-margin_top = 20.0
-margin_right = 240.0
-margin_bottom = 40.0
+offset_left = 220.0
+offset_top = 20.0
+offset_right = 240.0
+offset_bottom = 40.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
 custom_colors/font_outline_modulate = Color( 0.470588, 0.721569, 0.909804, 1 )
@@ -566,15 +566,15 @@ text = "♂"
 
 [node name="Shadow" type="Label" parent="Slot3/Content/Gender"]
 show_behind_parent = true
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 21.0
-margin_bottom = 21.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 21.0
+offset_bottom = 21.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0.25098, 0.529412, 0.866667, 1 )
 text = "♂"
 
-[node name="Ball" type="Sprite" parent="Slot3/Content"]
+[node name="Ball" type="Sprite2D" parent="Slot3/Content"]
 position = Vector2( 32, 28 )
 texture = ExtResource( 5 )
 
@@ -582,18 +582,18 @@ texture = ExtResource( 5 )
 position = Vector2( 90, 50 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot3/Content/HP_Bar"]
-margin_right = 138.0
-margin_bottom = 40.0
+offset_right = 138.0
+offset_bottom = 40.0
 texture = ExtResource( 6 )
 
 [node name="ColorRect" type="ColorRect" parent="Slot3/Content/HP_Bar"]
-margin_left = 32.0
-margin_top = 4.0
-margin_right = 128.0
-margin_bottom = 8.0
+offset_left = 32.0
+offset_top = 4.0
+offset_right = 128.0
+offset_bottom = 8.0
 color = Color( 0.129412, 0.831373, 0.0666667, 1 )
 
-[node name="Poke" type="Sprite" parent="Slot3/Content"]
+[node name="Poke" type="Sprite2D" parent="Slot3/Content"]
 position = Vector2( 60, 32 )
 texture = ExtResource( 7 )
 hframes = 2
@@ -606,72 +606,72 @@ anims/IconSelectedJumping = SubResource( 4 )
 position = Vector2( 256, 112 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot4"]
-margin_right = 256.0
-margin_bottom = 98.0
+offset_right = 256.0
+offset_bottom = 98.0
 texture = ExtResource( 10 )
 
 [node name="Content" type="Node2D" parent="Slot4"]
 
 [node name="Name" type="Label" parent="Slot4/Content"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 184.0
-margin_bottom = 36.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 184.0
+offset_bottom = 36.0
 custom_fonts/font = ExtResource( 4 )
 text = "Raptorch"
 
 [node name="Shadow" type="Label" parent="Slot4/Content/Name"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 96.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Raptorch"
 
 [node name="Level" type="Label" parent="Slot4/Content"]
-margin_left = 20.0
-margin_top = 66.0
-margin_right = 62.0
-margin_bottom = 82.0
-rect_scale = Vector2( 0.7, 0.7 )
+offset_left = 20.0
+offset_top = 66.0
+offset_right = 62.0
+offset_bottom = 82.0
+scale = Vector2( 0.7, 0.7 )
 custom_fonts/font = ExtResource( 4 )
 text = "Lv.5"
 
 [node name="Shadow" type="Label" parent="Slot4/Content/Level"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 44.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 44.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lv.5"
 
 [node name="HP" type="Label" parent="Slot4/Content"]
-margin_left = 150.0
-margin_top = 62.0
-margin_right = 216.0
-margin_bottom = 78.0
+offset_left = 150.0
+offset_top = 62.0
+offset_right = 216.0
+offset_bottom = 78.0
 custom_fonts/font = ExtResource( 4 )
 text = "19/ 19"
 
 [node name="Shadow" type="Label" parent="Slot4/Content/HP"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 68.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 68.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "19/ 19"
 
 [node name="Gender" type="Label" parent="Slot4/Content"]
-margin_left = 220.0
-margin_top = 20.0
-margin_right = 240.0
-margin_bottom = 40.0
+offset_left = 220.0
+offset_top = 20.0
+offset_right = 240.0
+offset_bottom = 40.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
 custom_colors/font_outline_modulate = Color( 0.470588, 0.721569, 0.909804, 1 )
@@ -679,15 +679,15 @@ text = "♂"
 
 [node name="Shadow" type="Label" parent="Slot4/Content/Gender"]
 show_behind_parent = true
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 21.0
-margin_bottom = 21.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 21.0
+offset_bottom = 21.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0.25098, 0.529412, 0.866667, 1 )
 text = "♂"
 
-[node name="Ball" type="Sprite" parent="Slot4/Content"]
+[node name="Ball" type="Sprite2D" parent="Slot4/Content"]
 position = Vector2( 32, 28 )
 texture = ExtResource( 5 )
 
@@ -695,18 +695,18 @@ texture = ExtResource( 5 )
 position = Vector2( 90, 50 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot4/Content/HP_Bar"]
-margin_right = 138.0
-margin_bottom = 40.0
+offset_right = 138.0
+offset_bottom = 40.0
 texture = ExtResource( 6 )
 
 [node name="ColorRect" type="ColorRect" parent="Slot4/Content/HP_Bar"]
-margin_left = 32.0
-margin_top = 4.0
-margin_right = 128.0
-margin_bottom = 8.0
+offset_left = 32.0
+offset_top = 4.0
+offset_right = 128.0
+offset_bottom = 8.0
 color = Color( 0.129412, 0.831373, 0.0666667, 1 )
 
-[node name="Poke" type="Sprite" parent="Slot4/Content"]
+[node name="Poke" type="Sprite2D" parent="Slot4/Content"]
 position = Vector2( 60, 32 )
 texture = ExtResource( 7 )
 hframes = 2
@@ -719,72 +719,72 @@ anims/IconSelectedJumping = SubResource( 6 )
 position = Vector2( 0, 192 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot5"]
-margin_right = 256.0
-margin_bottom = 98.0
+offset_right = 256.0
+offset_bottom = 98.0
 texture = ExtResource( 10 )
 
 [node name="Content" type="Node2D" parent="Slot5"]
 
 [node name="Name" type="Label" parent="Slot5/Content"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 184.0
-margin_bottom = 36.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 184.0
+offset_bottom = 36.0
 custom_fonts/font = ExtResource( 4 )
 text = "Raptorch"
 
 [node name="Shadow" type="Label" parent="Slot5/Content/Name"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 96.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Raptorch"
 
 [node name="Level" type="Label" parent="Slot5/Content"]
-margin_left = 20.0
-margin_top = 66.0
-margin_right = 62.0
-margin_bottom = 82.0
-rect_scale = Vector2( 0.7, 0.7 )
+offset_left = 20.0
+offset_top = 66.0
+offset_right = 62.0
+offset_bottom = 82.0
+scale = Vector2( 0.7, 0.7 )
 custom_fonts/font = ExtResource( 4 )
 text = "Lv.5"
 
 [node name="Shadow" type="Label" parent="Slot5/Content/Level"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 44.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 44.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lv.5"
 
 [node name="HP" type="Label" parent="Slot5/Content"]
-margin_left = 150.0
-margin_top = 62.0
-margin_right = 216.0
-margin_bottom = 78.0
+offset_left = 150.0
+offset_top = 62.0
+offset_right = 216.0
+offset_bottom = 78.0
 custom_fonts/font = ExtResource( 4 )
 text = "19/ 19"
 
 [node name="Shadow" type="Label" parent="Slot5/Content/HP"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 68.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 68.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "19/ 19"
 
 [node name="Gender" type="Label" parent="Slot5/Content"]
-margin_left = 220.0
-margin_top = 20.0
-margin_right = 240.0
-margin_bottom = 40.0
+offset_left = 220.0
+offset_top = 20.0
+offset_right = 240.0
+offset_bottom = 40.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
 custom_colors/font_outline_modulate = Color( 0.470588, 0.721569, 0.909804, 1 )
@@ -792,15 +792,15 @@ text = "♂"
 
 [node name="Shadow" type="Label" parent="Slot5/Content/Gender"]
 show_behind_parent = true
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 21.0
-margin_bottom = 21.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 21.0
+offset_bottom = 21.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0.25098, 0.529412, 0.866667, 1 )
 text = "♂"
 
-[node name="Ball" type="Sprite" parent="Slot5/Content"]
+[node name="Ball" type="Sprite2D" parent="Slot5/Content"]
 position = Vector2( 32, 28 )
 texture = ExtResource( 5 )
 
@@ -808,18 +808,18 @@ texture = ExtResource( 5 )
 position = Vector2( 90, 50 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot5/Content/HP_Bar"]
-margin_right = 138.0
-margin_bottom = 40.0
+offset_right = 138.0
+offset_bottom = 40.0
 texture = ExtResource( 6 )
 
 [node name="ColorRect" type="ColorRect" parent="Slot5/Content/HP_Bar"]
-margin_left = 32.0
-margin_top = 4.0
-margin_right = 128.0
-margin_bottom = 8.0
+offset_left = 32.0
+offset_top = 4.0
+offset_right = 128.0
+offset_bottom = 8.0
 color = Color( 0.129412, 0.831373, 0.0666667, 1 )
 
-[node name="Poke" type="Sprite" parent="Slot5/Content"]
+[node name="Poke" type="Sprite2D" parent="Slot5/Content"]
 position = Vector2( 60, 32 )
 texture = ExtResource( 7 )
 hframes = 2
@@ -832,8 +832,8 @@ anims/IconSelectedJumping = SubResource( 8 )
 position = Vector2( 256, 208 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot6"]
-margin_right = 256.0
-margin_bottom = 98.0
+offset_right = 256.0
+offset_bottom = 98.0
 texture = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -842,65 +842,65 @@ __meta__ = {
 [node name="Content" type="Node2D" parent="Slot6"]
 
 [node name="Name" type="Label" parent="Slot6/Content"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 184.0
-margin_bottom = 36.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 184.0
+offset_bottom = 36.0
 custom_fonts/font = ExtResource( 4 )
 text = "Raptorch"
 
 [node name="Shadow" type="Label" parent="Slot6/Content/Name"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 96.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Raptorch"
 
 [node name="Level" type="Label" parent="Slot6/Content"]
-margin_left = 20.0
-margin_top = 66.0
-margin_right = 62.0
-margin_bottom = 82.0
-rect_scale = Vector2( 0.7, 0.7 )
+offset_left = 20.0
+offset_top = 66.0
+offset_right = 62.0
+offset_bottom = 82.0
+scale = Vector2( 0.7, 0.7 )
 custom_fonts/font = ExtResource( 4 )
 text = "Lv.5"
 
 [node name="Shadow" type="Label" parent="Slot6/Content/Level"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 44.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 44.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lv.5"
 
 [node name="HP" type="Label" parent="Slot6/Content"]
-margin_left = 150.0
-margin_top = 62.0
-margin_right = 216.0
-margin_bottom = 78.0
+offset_left = 150.0
+offset_top = 62.0
+offset_right = 216.0
+offset_bottom = 78.0
 custom_fonts/font = ExtResource( 4 )
 text = "19/ 19"
 
 [node name="Shadow" type="Label" parent="Slot6/Content/HP"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 68.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 68.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "19/ 19"
 
 [node name="Gender" type="Label" parent="Slot6/Content"]
-margin_left = 220.0
-margin_top = 20.0
-margin_right = 240.0
-margin_bottom = 40.0
+offset_left = 220.0
+offset_top = 20.0
+offset_right = 240.0
+offset_bottom = 40.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0.439216, 0.972549, 1 )
 custom_colors/font_outline_modulate = Color( 0.470588, 0.721569, 0.909804, 1 )
@@ -908,15 +908,15 @@ text = "♂"
 
 [node name="Shadow" type="Label" parent="Slot6/Content/Gender"]
 show_behind_parent = true
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 21.0
-margin_bottom = 21.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 21.0
+offset_bottom = 21.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0.25098, 0.529412, 0.866667, 1 )
 text = "♂"
 
-[node name="Ball" type="Sprite" parent="Slot6/Content"]
+[node name="Ball" type="Sprite2D" parent="Slot6/Content"]
 position = Vector2( 32, 28 )
 texture = ExtResource( 5 )
 
@@ -924,18 +924,18 @@ texture = ExtResource( 5 )
 position = Vector2( 90, 50 )
 
 [node name="TextureRect" type="TextureRect" parent="Slot6/Content/HP_Bar"]
-margin_right = 138.0
-margin_bottom = 40.0
+offset_right = 138.0
+offset_bottom = 40.0
 texture = ExtResource( 6 )
 
 [node name="ColorRect" type="ColorRect" parent="Slot6/Content/HP_Bar"]
-margin_left = 32.0
-margin_top = 4.0
-margin_right = 128.0
-margin_bottom = 8.0
+offset_left = 32.0
+offset_top = 4.0
+offset_right = 128.0
+offset_bottom = 8.0
 color = Color( 0.129412, 0.831373, 0.0666667, 1 )
 
-[node name="Poke" type="Sprite" parent="Slot6/Content"]
+[node name="Poke" type="Sprite2D" parent="Slot6/Content"]
 position = Vector2( 60, 32 )
 texture = ExtResource( 7 )
 hframes = 2
@@ -948,27 +948,27 @@ anims/IconSelectedJumping = SubResource( 10 )
 position = Vector2( 396, 326 )
 
 [node name="TextureRect" type="TextureRect" parent="Cancel"]
-margin_right = 112.0
-margin_bottom = 48.0
+offset_right = 112.0
+offset_bottom = 48.0
 texture = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="Cancel"]
-margin_left = 24.0
-margin_top = 10.0
-margin_right = 96.0
-margin_bottom = 26.0
+offset_left = 24.0
+offset_top = 10.0
+offset_right = 96.0
+offset_bottom = 26.0
 custom_fonts/font = ExtResource( 4 )
 text = "CANCEL"
 
 [node name="Shadow" type="Label" parent="Cancel/Label"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 74.0
-margin_bottom = 18.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 74.0
+offset_bottom = 18.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "CANCEL"
@@ -977,8 +977,8 @@ text = "CANCEL"
 position = Vector2( 0, 320 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Prompt"]
-margin_right = 360.0
-margin_bottom = 64.0
+offset_right = 360.0
+offset_bottom = 64.0
 texture = ExtResource( 11 )
 patch_margin_left = 16
 patch_margin_top = 16
@@ -989,10 +989,10 @@ __meta__ = {
 }
 
 [node name="Prompt" type="Label" parent="Prompt"]
-margin_left = 16.0
-margin_top = 18.0
-margin_right = 396.0
-margin_bottom = 50.0
+offset_left = 16.0
+offset_top = 18.0
+offset_right = 396.0
+offset_bottom = 50.0
 custom_fonts/font = ExtResource( 4 )
 text = "Choose Pokemon or cancel."
 __meta__ = {
@@ -1001,10 +1001,10 @@ __meta__ = {
 
 [node name="Shadow" type="Label" parent="Prompt/Prompt"]
 show_behind_parent = true
-margin_left = 2.0
-margin_top = 2.0
-margin_right = 382.0
-margin_bottom = 34.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 382.0
+offset_bottom = 34.0
 custom_fonts/font = ExtResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Choose Pokemon or cancel."

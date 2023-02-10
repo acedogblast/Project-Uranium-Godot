@@ -1,68 +1,68 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Graphics/Pictures/Options/optionbg2.png" type="Texture" id=2]
-[ext_resource path="res://Graphics/Pictures/Options/bars.png" type="Texture" id=3]
-[ext_resource path="res://Graphics/Pictures/Options/fakebox.png" type="Texture" id=4]
-[ext_resource path="res://Graphics/Pictures/Options/optionbg.png" type="Texture" id=5]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="FontFile" id=1]
+[ext_resource path="res://Graphics/Pictures/Options/optionbg2.png" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Pictures/Options/bars.png" type="Texture2D" id=3]
+[ext_resource path="res://Graphics/Pictures/Options/fakebox.png" type="Texture2D" id=4]
+[ext_resource path="res://Graphics/Pictures/Options/optionbg.png" type="Texture2D" id=5]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=1]
 size = 26
-extra_spacing_top = 2
+spacing_top = 2
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 26
-extra_spacing_top = 2
+spacing_top = 2
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="FontFile" id=3]
 size = 32
-extra_spacing_top = 2
+spacing_top = 2
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="FontFile" id=4]
 size = 32
-extra_spacing_top = 2
+spacing_top = 2
 font_data = ExtResource( 1 )
 
 [node name="OptionsMenu" type="Node2D"]
 
-[node name="optionbg" type="Sprite" parent="."]
+[node name="optionbg" type="Sprite2D" parent="."]
 texture = ExtResource( 5 )
 centered = false
 
-[node name="optionbg2" type="Sprite" parent="."]
+[node name="optionbg2" type="Sprite2D" parent="."]
 texture = ExtResource( 2 )
 centered = false
 
-[node name="fakebox" type="Sprite" parent="."]
+[node name="fakebox" type="Sprite2D" parent="."]
 position = Vector2( 1, 288 )
 texture = ExtResource( 4 )
 centered = false
 
 [node name="shadow" type="RichTextLabel" parent="."]
-margin_left = 50.0
-margin_top = 19.0
-margin_right = 162.0
-margin_bottom = 44.0
+offset_left = 50.0
+offset_top = 19.0
+offset_right = 162.0
+offset_bottom = 44.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
 bbcode_enabled = true
-bbcode_text = "OPTIONS"
+text = "OPTIONS"
 text = "OPTIONS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="title" type="RichTextLabel" parent="."]
-margin_left = 48.0
-margin_top = 17.0
-margin_right = 160.0
-margin_bottom = 42.0
+offset_left = 48.0
+offset_top = 17.0
+offset_right = 160.0
+offset_bottom = 42.0
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
-bbcode_text = "OPTIONS"
+text = "OPTIONS"
 text = "OPTIONS"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -70,7 +70,7 @@ __meta__ = {
 
 [node name="MusicVolume" type="Node2D" parent="."]
 
-[node name="bars" type="Sprite" parent="MusicVolume"]
+[node name="bars" type="Sprite2D" parent="MusicVolume"]
 position = Vector2( 4, 50 )
 texture = ExtResource( 3 )
 centered = false
@@ -78,41 +78,41 @@ vframes = 2
 frame = 1
 
 [node name="shadow" type="RichTextLabel" parent="MusicVolume"]
-margin_left = 18.0
-margin_top = 58.0
-margin_right = 210.0
-margin_bottom = 90.0
+offset_left = 18.0
+offset_top = 58.0
+offset_right = 210.0
+offset_bottom = 90.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.419608, 0.611765, 0.713726, 1 )
 bbcode_enabled = true
-bbcode_text = "Music Volume"
+text = "Music Volume"
 text = "Music Volume"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="name" type="RichTextLabel" parent="MusicVolume"]
-margin_left = 16.0
-margin_top = 56.0
-margin_right = 208.0
-margin_bottom = 88.0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 208.0
+offset_bottom = 88.0
 custom_fonts/normal_font = SubResource( 2 )
 bbcode_enabled = true
-bbcode_text = "Music Volume"
+text = "Music Volume"
 text = "Music Volume"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="shadow_int" type="RichTextLabel" parent="MusicVolume"]
-margin_left = 413.0
-margin_top = 62.0
-margin_right = 468.0
-margin_bottom = 88.0
+offset_left = 413.0
+offset_top = 62.0
+offset_right = 468.0
+offset_bottom = 88.0
 custom_fonts/normal_font = SubResource( 3 )
 custom_colors/default_color = Color( 0.419608, 0.611765, 0.713726, 1 )
 bbcode_enabled = true
-bbcode_text = "[right]100"
+text = "[right]100"
 text = "100"
 scroll_active = false
 __meta__ = {
@@ -120,13 +120,13 @@ __meta__ = {
 }
 
 [node name="int" type="RichTextLabel" parent="MusicVolume"]
-margin_left = 407.0
-margin_top = 60.0
-margin_right = 466.0
-margin_bottom = 87.0
+offset_left = 407.0
+offset_top = 60.0
+offset_right = 466.0
+offset_bottom = 87.0
 custom_fonts/normal_font = SubResource( 4 )
 bbcode_enabled = true
-bbcode_text = "[right]100"
+text = "[right]100"
 text = "100"
 scroll_active = false
 __meta__ = {
@@ -136,49 +136,49 @@ __meta__ = {
 [node name="SEVolume" type="Node2D" parent="."]
 position = Vector2( 0, 48 )
 
-[node name="bars" type="Sprite" parent="SEVolume"]
+[node name="bars" type="Sprite2D" parent="SEVolume"]
 position = Vector2( 4, 50 )
 texture = ExtResource( 3 )
 centered = false
 vframes = 2
 
 [node name="shadow" type="RichTextLabel" parent="SEVolume"]
-margin_left = 18.0
-margin_top = 58.0
-margin_right = 210.0
-margin_bottom = 90.0
+offset_left = 18.0
+offset_top = 58.0
+offset_right = 210.0
+offset_bottom = 90.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
 bbcode_enabled = true
-bbcode_text = "SE Volume"
+text = "SE Volume"
 text = "SE Volume"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="name" type="RichTextLabel" parent="SEVolume"]
-margin_left = 16.0
-margin_top = 56.0
-margin_right = 208.0
-margin_bottom = 88.0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 208.0
+offset_bottom = 88.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
 bbcode_enabled = true
-bbcode_text = "SE Volume"
+text = "SE Volume"
 text = "SE Volume"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="shadow_int" type="RichTextLabel" parent="SEVolume"]
-margin_left = 413.0
-margin_top = 62.0
-margin_right = 468.0
-margin_bottom = 88.0
+offset_left = 413.0
+offset_top = 62.0
+offset_right = 468.0
+offset_bottom = 88.0
 custom_fonts/normal_font = SubResource( 3 )
 custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
 bbcode_enabled = true
-bbcode_text = "[right]100"
+text = "[right]100"
 text = "100"
 scroll_active = false
 __meta__ = {
@@ -186,14 +186,14 @@ __meta__ = {
 }
 
 [node name="int" type="RichTextLabel" parent="SEVolume"]
-margin_left = 407.0
-margin_top = 60.0
-margin_right = 466.0
-margin_bottom = 87.0
+offset_left = 407.0
+offset_top = 60.0
+offset_right = 466.0
+offset_bottom = 87.0
 custom_fonts/normal_font = SubResource( 4 )
 custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
 bbcode_enabled = true
-bbcode_text = "[right]100"
+text = "[right]100"
 text = "100"
 scroll_active = false
 __meta__ = {
@@ -203,49 +203,49 @@ __meta__ = {
 [node name="FPS" type="Node2D" parent="."]
 position = Vector2( 0, 96 )
 
-[node name="bars" type="Sprite" parent="FPS"]
+[node name="bars" type="Sprite2D" parent="FPS"]
 position = Vector2( 4, 50 )
 texture = ExtResource( 3 )
 centered = false
 vframes = 2
 
 [node name="shadow" type="RichTextLabel" parent="FPS"]
-margin_left = 18.0
-margin_top = 58.0
-margin_right = 210.0
-margin_bottom = 90.0
+offset_left = 18.0
+offset_top = 58.0
+offset_right = 210.0
+offset_bottom = 90.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
 bbcode_enabled = true
-bbcode_text = "FPS"
+text = "FPS"
 text = "FPS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="name" type="RichTextLabel" parent="FPS"]
-margin_left = 16.0
-margin_top = 56.0
-margin_right = 208.0
-margin_bottom = 88.0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 208.0
+offset_bottom = 88.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
 bbcode_enabled = true
-bbcode_text = "FPS"
+text = "FPS"
 text = "FPS"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="shadow_int" type="RichTextLabel" parent="FPS"]
-margin_left = 413.0
-margin_top = 62.0
-margin_right = 468.0
-margin_bottom = 88.0
+offset_left = 413.0
+offset_top = 62.0
+offset_right = 468.0
+offset_bottom = 88.0
 custom_fonts/normal_font = SubResource( 3 )
 custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
 bbcode_enabled = true
-bbcode_text = "[right]60"
+text = "[right]60"
 text = "60"
 scroll_active = false
 __meta__ = {
@@ -253,14 +253,14 @@ __meta__ = {
 }
 
 [node name="int" type="RichTextLabel" parent="FPS"]
-margin_left = 407.0
-margin_top = 60.0
-margin_right = 466.0
-margin_bottom = 87.0
+offset_left = 407.0
+offset_top = 60.0
+offset_right = 466.0
+offset_bottom = 87.0
 custom_fonts/normal_font = SubResource( 4 )
 custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
 bbcode_enabled = true
-bbcode_text = "[right]60"
+text = "[right]60"
 text = "60"
 scroll_active = false
 __meta__ = {
@@ -270,35 +270,35 @@ __meta__ = {
 [node name="TextSpeed" type="Node2D" parent="."]
 position = Vector2( 0, 144 )
 
-[node name="bars" type="Sprite" parent="TextSpeed"]
+[node name="bars" type="Sprite2D" parent="TextSpeed"]
 position = Vector2( 4, 50 )
 texture = ExtResource( 3 )
 centered = false
 vframes = 2
 
 [node name="shadow" type="RichTextLabel" parent="TextSpeed"]
-margin_left = 18.0
-margin_top = 58.0
-margin_right = 210.0
-margin_bottom = 90.0
+offset_left = 18.0
+offset_top = 58.0
+offset_right = 210.0
+offset_bottom = 90.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
 bbcode_enabled = true
-bbcode_text = "Text Speed"
+text = "Text Speed"
 text = "Text Speed"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="name" type="RichTextLabel" parent="TextSpeed"]
-margin_left = 16.0
-margin_top = 56.0
-margin_right = 208.0
-margin_bottom = 88.0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 208.0
+offset_bottom = 88.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
 bbcode_enabled = true
-bbcode_text = "Text Speed"
+text = "Text Speed"
 text = "Text Speed"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -307,35 +307,35 @@ __meta__ = {
 [node name="FontStyle" type="Node2D" parent="."]
 position = Vector2( 0, 192 )
 
-[node name="bars" type="Sprite" parent="FontStyle"]
+[node name="bars" type="Sprite2D" parent="FontStyle"]
 position = Vector2( 4, 50 )
 texture = ExtResource( 3 )
 centered = false
 vframes = 2
 
 [node name="shadow" type="RichTextLabel" parent="FontStyle"]
-margin_left = 18.0
-margin_top = 58.0
-margin_right = 210.0
-margin_bottom = 90.0
+offset_left = 18.0
+offset_top = 58.0
+offset_right = 210.0
+offset_bottom = 90.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.192157, 0.517647, 0.580392, 1 )
 bbcode_enabled = true
-bbcode_text = "Font Style"
+text = "Font Style"
 text = "Font Style"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="name" type="RichTextLabel" parent="FontStyle"]
-margin_left = 16.0
-margin_top = 56.0
-margin_right = 208.0
-margin_bottom = 88.0
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 208.0
+offset_bottom = 88.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.258824, 0.870588, 0.905882, 1 )
 bbcode_enabled = true
-bbcode_text = "Font Style"
+text = "Font Style"
 text = "Font Style"
 __meta__ = {
 "_edit_use_anchors_": false

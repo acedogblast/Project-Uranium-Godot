@@ -1,4 +1,4 @@
-tool
+@tool
 extends Node2D
 
 var current
@@ -27,19 +27,19 @@ enum ORDER {
 
 func _ready():
 	if(Engine.editor_hint):
-		# Special things when this is on editor mode
+		# Special things when this is checked editor mode
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
 	
-	$Bag.connect("close_bag", self, "close_bag")
-	$PokemonPartyMenu.connect("close_party", self, "close_party")
-	$Pokedex.connect("close", self, "close_dex")
-	$Card.connect("close", self, "close_card")
+	$Bag.connect("close_bag",Callable(self,"close_bag"))
+	$PokemonPartyMenu.connect("close_party",Callable(self,"close_party"))
+	$Pokedex.connect("close",Callable(self,"close_dex"))
+	$Card.connect("close",Callable(self,"close_card"))
 	
 	current = ORDER.PARTY
-	init_pos = $Option_Text.rect_position
+	init_pos = $Option_Text.position
 	$Bag.enabled = false
 	
-	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
+	$Save_Menu/Info/Player_Name/Name.text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
 
 func _input(event):
 	if event.is_action_pressed("x") && !locked:
@@ -50,7 +50,7 @@ func _input(event):
 				menu_stage = 1
 				print("Toggling")
 				$AnimationPlayer.play("Open Menu")
-				$Place_Text.bbcode_text = "[center]" + Global.game.current_scene.place_name + "[/center]"
+				$Place_Text.text = "[center]" + Global.game.current_scene.place_name + "[/center]"
 			1:
 				Global.game.player.call_deferred("change_input", false)
 				menu_stage = 0
@@ -68,10 +68,10 @@ func _input(event):
 			move_sprites("Right")
 		if event.is_action_pressed("z") and !saving and Global.can_run:
 			Global.sprint = !Global.sprint
-			if $Run/Sprite.frame == 0:
-				$Run/Sprite.frame = 1
+			if $Run/Sprite2D.frame == 0:
+				$Run/Sprite2D.frame = 1
 			else:
-				$Run/Sprite.frame = 0
+				$Run/Sprite2D.frame = 0
 		if event.is_action_pressed("ui_accept"):
 			select()
 			return null # This breaks out of the current method. Needed after select()
@@ -101,24 +101,24 @@ func _input(event):
 func party_logic():
 	print("party logic")
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	hide_all()
 	$PokemonPartyMenu.setup()
 	$PokemonPartyMenu.show()
 	$Transition.fade_from_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	$Transition.visible = false
 
 
 func bag_setup():
 	$Transition.visible = true
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	hide_all()
 	$Bag.setup()
 	$Bag.show()
 	$Transition.fade_from_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	$Transition.visible = false
 
 
@@ -161,23 +161,23 @@ func select(): # Stage should be 1
 	elif current == ORDER.POKEDEX:
 		if Global.past_events.has("EVENT_MOKI_TOWN_DEMO"):
 			$Transition.fade_to_color()
-			yield($Transition, "finished")
+			await $Transition.finished
 			hide_all()
 			$Pokedex.start()
 			$Pokedex.show()
 			$Transition.fade_from_color()
-			yield($Transition, "finished")
+			await $Transition.finished
 			$Transition.visible = false
 		else:
 			menu_stage = 1
 	elif current == ORDER.CARD:
 		$Transition.fade_to_color()
-		yield($Transition, "finished")
+		await $Transition.finished
 		hide_all()
 		$Card.setup()
 		$Card.show()
 		$Transition.fade_from_color()
-		yield($Transition, "finished")
+		await $Transition.finished
 		$Transition.visible = false
 	else:
 		menu_stage = 1
@@ -196,58 +196,58 @@ func move_sprites(dir):
 		if current == 8:
 			current = 0
 
-	$Option_Text.bbcode_text = "[center]"
+	$Option_Text.text = "[center]"
 	
 	if current == ORDER.PARTY:
-		#$Option_Text.rect_position = init_pos
-		$Option_Text.bbcode_text += "POKÉMON"
+		#$Option_Text.position = init_pos
+		$Option_Text.text += "POKÉMON"
 		
 		grey_frame()
 		$"Options/PARTY/Pokémon".frame = 1
 	elif current == ORDER.BAG:
-		#$Option_Text.rect_position.x = init_pos.x + 22
-		$Option_Text.bbcode_text += "BAG"
+		#$Option_Text.position.x = init_pos.x + 22
+		$Option_Text.text += "BAG"
 		
 		grey_frame()
 		$Options/BAG/Bag.frame = 1
 	elif current == ORDER.POKEPOD:
-		#$Option_Text.rect_position.x = init_pos.x - 2
-		$Option_Text.bbcode_text += "POKEPOD"
+		#$Option_Text.position.x = init_pos.x - 2
+		$Option_Text.text += "POKEPOD"
 		
 		grey_frame()
 		$"Options/POKEPOD/Poképod".frame = 1
 	elif current == ORDER.CARD:
-		#$Option_Text.rect_position.x = init_pos.x - 24
-		$Option_Text.bbcode_text += "TRAINERCARD"
+		#$Option_Text.position.x = init_pos.x - 24
+		$Option_Text.text += "TRAINERCARD"
 		
 		grey_frame()
 		$Options/CARD/Card.frame = 1
 	elif current == ORDER.SAVE:
-		#$Option_Text.rect_position.x = init_pos.x + 16
-		$Option_Text.bbcode_text += "SAVE"
+		#$Option_Text.position.x = init_pos.x + 16
+		$Option_Text.text += "SAVE"
 		
 		grey_frame()
 		$Options/SAVE/Save.frame = 1
 	elif current == ORDER.OPTION:
-		#$Option_Text.rect_position = init_pos
-		$Option_Text.bbcode_text += "OPTIONS"
+		#$Option_Text.position = init_pos
+		$Option_Text.text += "OPTIONS"
 		
 		grey_frame()
 		$Options/OPTION/Options.frame = 1
 	elif current == ORDER.EXIT:
-		#$Option_Text.rect_position.x = init_pos.x + 16
-		$Option_Text.bbcode_text += "EXIT"
+		#$Option_Text.position.x = init_pos.x + 16
+		$Option_Text.text += "EXIT"
 		
 		grey_frame()
 		$Options/EXIT/Exit.frame = 1
 	elif current == ORDER.POKEDEX:
-		#$Option_Text.rect_position = init_pos
-		$Option_Text.bbcode_text += "POKEDEX"
+		#$Option_Text.position = init_pos
+		$Option_Text.text += "POKEDEX"
 		
 		grey_frame()
 		$Options/POKEDEX/Pokedex.frame = 1
 	
-	$Option_Text.bbcode_text += "[/center]"
+	$Option_Text.text += "[/center]"
 	
 	slide(dir)
 
@@ -284,7 +284,7 @@ func slide(dir):
 	$Options/POKEDEX/Tween.start()
 	
 	$Sounds/Move.play()
-	yield($Options/POKEDEX/Tween, "tween_completed")
+	await $Options/POKEDEX/Tween.finished
 	
 
 func grey_frame():
@@ -298,17 +298,17 @@ func grey_frame():
 	$Options/EXIT/Exit.frame = 0
 
 func setup_save_boxes():
-	$Save_Menu/Info/Node2D/Location.bbcode_text = "[center][color=#209808]" + Global.location + "[/color][/center]"
-	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
-	$Save_Menu/Info/Time/Count.bbcode_text = "[right][color=#0070f8]" + str(Global.time) + "[/color][/right]"
-	$Save_Menu/Info/Badges/Count.bbcode_text = "[right][color=#0070f8]" + str(Global.badges) + "[/color][/right]"
+	$Save_Menu/Info/Node2D/Location.text = "[center][color=#209808]" + Global.location + "[/color][/center]"
+	$Save_Menu/Info/Player_Name/Name.text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
+	$Save_Menu/Info/Time/Count.text = "[right][color=#0070f8]" + str(Global.time) + "[/color][/right]"
+	$Save_Menu/Info/Badges/Count.text = "[right][color=#0070f8]" + str(Global.badges) + "[/color][/right]"
 
 func close_bag():
 	print("Closing bag")
 	$Bag.enabled = false
 	$Transition.show()
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	hide_all()
 	$Bag.hide()
 	show_base()
@@ -320,12 +320,12 @@ func close_party():
 	$PokemonPartyMenu.stage = 0
 	$Transition.show()
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	hide_all()
 	$PokemonPartyMenu.hide()
 	show_base()
 
-	yield(get_tree().create_timer(0.3), "timeout")
+	await get_tree().create_timer(0.3).timeout
 
 	menu_stage = 1
 	$Transition.fade_from_color()
@@ -334,7 +334,7 @@ func close_dex():
 	$Pokedex.mode = 0
 	$Transition.show()
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	$Pokedex.hide()
 	show_base()
 	menu_stage = 1
@@ -344,7 +344,7 @@ func close_card():
 	$Card.mode = 0
 	$Transition.show()
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	$Card.hide()
 	show_base()
 	menu_stage = 1

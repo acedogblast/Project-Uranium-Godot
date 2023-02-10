@@ -7,7 +7,7 @@ enum { YES, NO }
 func _ready():
 	$MultiLinePrompt.setup("Yes,No", Vector2(100,110), screen_position)
 	$MultiLinePrompt.mode = 1
-	$MultiLinePrompt.connect("selected", self, "_on_selected")
+	$MultiLinePrompt.connect("selected",Callable(self,"_on_selected"))
 
 func set_screen_position(position : Vector2): # Set before adding to scene tree!
 	screen_position = position

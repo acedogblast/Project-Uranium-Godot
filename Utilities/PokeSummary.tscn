@@ -1,24 +1,24 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://Graphics/Pictures/Summary/summarybgoverlay.png" type="Texture" id=1]
-[ext_resource path="res://Graphics/Pictures/Summary/summarybg.png" type="Texture" id=2]
-[ext_resource path="res://Graphics/Pictures/Summary/summary1text.png" type="Texture" id=3]
-[ext_resource path="res://Graphics/Pictures/Summary/summary1.PNG" type="Texture" id=4]
+[ext_resource path="res://Graphics/Pictures/Summary/summarybgoverlay.png" type="Texture2D" id=1]
+[ext_resource path="res://Graphics/Pictures/Summary/summarybg.png" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Pictures/Summary/summary1text.png" type="Texture2D" id=3]
+[ext_resource path="res://Graphics/Pictures/Summary/summary1.PNG" type="Texture2D" id=4]
 [ext_resource path="res://Utilities/PokeSummary.gd" type="Script" id=5]
-[ext_resource path="res://Graphics/Pictures/normalbar.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Pictures/Summary/summaryicons.png" type="Texture" id=7]
-[ext_resource path="res://Graphics/Pictures/updownarrows.png" type="Texture" id=8]
-[ext_resource path="res://Graphics/Pictures/globalicons.png" type="Texture" id=9]
-[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=10]
-[ext_resource path="res://Graphics/Pictures/typesbw.png" type="Texture" id=11]
-[ext_resource path="res://Graphics/Pictures/Summary/summaryball00.png" type="Texture" id=12]
-[ext_resource path="res://Graphics/Battlers/003.png" type="Texture" id=13]
-[ext_resource path="res://Graphics/Pictures/Summary/summary2.png" type="Texture" id=14]
-[ext_resource path="res://Graphics/Pictures/Summary/summary2text.png" type="Texture" id=15]
-[ext_resource path="res://Graphics/Pictures/Summary/summary3text.png" type="Texture" id=16]
-[ext_resource path="res://Graphics/Pictures/Summary/summary1_2.png" type="Texture" id=17]
-[ext_resource path="res://Graphics/Pictures/Summary/summary4text.png" type="Texture" id=18]
-[ext_resource path="res://Graphics/Pictures/Summary/summary3.PNG" type="Texture" id=19]
+[ext_resource path="res://Graphics/Pictures/normalbar.png" type="Texture2D" id=6]
+[ext_resource path="res://Graphics/Pictures/Summary/summaryicons.png" type="Texture2D" id=7]
+[ext_resource path="res://Graphics/Pictures/updownarrows.png" type="Texture2D" id=8]
+[ext_resource path="res://Graphics/Pictures/globalicons.png" type="Texture2D" id=9]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="FontFile" id=10]
+[ext_resource path="res://Graphics/Pictures/typesbw.png" type="Texture2D" id=11]
+[ext_resource path="res://Graphics/Pictures/Summary/summaryball00.png" type="Texture2D" id=12]
+[ext_resource path="res://Graphics/Battlers/003.png" type="Texture2D" id=13]
+[ext_resource path="res://Graphics/Pictures/Summary/summary2.png" type="Texture2D" id=14]
+[ext_resource path="res://Graphics/Pictures/Summary/summary2text.png" type="Texture2D" id=15]
+[ext_resource path="res://Graphics/Pictures/Summary/summary3text.png" type="Texture2D" id=16]
+[ext_resource path="res://Graphics/Pictures/Summary/summary1_2.png" type="Texture2D" id=17]
+[ext_resource path="res://Graphics/Pictures/Summary/summary4text.png" type="Texture2D" id=18]
+[ext_resource path="res://Graphics/Pictures/Summary/summary3.PNG" type="Texture2D" id=19]
 
 [sub_resource type="Animation" id=1]
 resource_name = "BG_overlay"
@@ -31,8 +31,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 12 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 12 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Rect2( 0, 0, 512, 384 ), Rect2( 512, 384, 512, 384 ) ]
 }
@@ -41,15 +41,15 @@ tracks/0/keys = {
 script = ExtResource( 5 )
 
 [node name="BG" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Grid" type="Sprite" parent="."]
+[node name="Grid" type="Sprite2D" parent="."]
 modulate = Color( 1, 1, 1, 0.392157 )
 texture = ExtResource( 1 )
 centered = false
@@ -67,8 +67,8 @@ anims/BG_overlay = SubResource( 1 )
 visible = false
 
 [node name="Title" type="TextureRect" parent="Page1"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 3 )
 __meta__ = {
 "_edit_lock_": true,
@@ -76,8 +76,8 @@ __meta__ = {
 }
 
 [node name="Body" type="TextureRect" parent="Page1"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 17 )
 __meta__ = {
 "_edit_lock_": true,
@@ -85,10 +85,10 @@ __meta__ = {
 }
 
 [node name="DexNo" type="Label" parent="Page1"]
-margin_left = 32.0
-margin_top = 50.0
-margin_right = 145.0
-margin_bottom = 74.0
+offset_left = 32.0
+offset_top = 50.0
+offset_right = 145.0
+offset_bottom = 74.0
 custom_fonts/font = ExtResource( 10 )
 text = "Dex No."
 __meta__ = {
@@ -97,9 +97,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="Page1/DexNo"]
-margin_left = 133.0
-margin_right = 246.0
-margin_bottom = 24.0
+offset_left = 133.0
+offset_right = 246.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "000"
@@ -108,10 +108,10 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="Page1"]
-margin_left = 32.0
-margin_top = 84.0
-margin_right = 145.0
-margin_bottom = 108.0
+offset_left = 32.0
+offset_top = 84.0
+offset_right = 145.0
+offset_bottom = 108.0
 custom_fonts/font = ExtResource( 10 )
 text = "Name"
 __meta__ = {
@@ -120,9 +120,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="Page1/Name"]
-margin_left = 133.0
-margin_right = 246.0
-margin_bottom = 24.0
+offset_left = 133.0
+offset_right = 246.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "Godot"
@@ -131,10 +131,10 @@ __meta__ = {
 }
 
 [node name="Type" type="Label" parent="Page1"]
-margin_left = 32.0
-margin_top = 117.0
-margin_right = 145.0
-margin_bottom = 140.0
+offset_left = 32.0
+offset_top = 117.0
+offset_right = 145.0
+offset_bottom = 140.0
 custom_fonts/font = ExtResource( 10 )
 text = "Type"
 __meta__ = {
@@ -142,21 +142,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="T1" type="Sprite" parent="Page1/Type"]
+[node name="T1" type="Sprite2D" parent="Page1/Type"]
 position = Vector2( 165, 12 )
 texture = ExtResource( 11 )
 vframes = 20
 
-[node name="T2" type="Sprite" parent="Page1/Type"]
+[node name="T2" type="Sprite2D" parent="Page1/Type"]
 position = Vector2( 234, 12 )
 texture = ExtResource( 11 )
 vframes = 20
 
 [node name="OT" type="Label" parent="Page1"]
-margin_left = 32.0
-margin_top = 148.0
-margin_right = 145.0
-margin_bottom = 171.0
+offset_left = 32.0
+offset_top = 148.0
+offset_right = 145.0
+offset_bottom = 171.0
 custom_fonts/font = ExtResource( 10 )
 text = "OT"
 __meta__ = {
@@ -165,9 +165,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="Page1/OT"]
-margin_left = 133.0
-margin_right = 246.0
-margin_bottom = 24.0
+offset_left = 133.0
+offset_right = 246.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0, 0, 1, 1 )
 text = "Ace"
@@ -176,10 +176,10 @@ __meta__ = {
 }
 
 [node name="ID" type="Label" parent="Page1"]
-margin_left = 32.0
-margin_top = 180.0
-margin_right = 145.0
-margin_bottom = 203.0
+offset_left = 32.0
+offset_top = 180.0
+offset_right = 145.0
+offset_bottom = 203.0
 custom_fonts/font = ExtResource( 10 )
 text = "ID No."
 __meta__ = {
@@ -188,9 +188,9 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="Page1/ID"]
-margin_left = 133.0
-margin_right = 246.0
-margin_bottom = 24.0
+offset_left = 133.0
+offset_right = 246.0
+offset_bottom = 24.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "0000000"
@@ -199,10 +199,10 @@ __meta__ = {
 }
 
 [node name="EXP" type="Label" parent="Page1"]
-margin_left = 32.0
-margin_top = 212.0
-margin_right = 145.0
-margin_bottom = 235.0
+offset_left = 32.0
+offset_top = 212.0
+offset_right = 145.0
+offset_bottom = 235.0
 custom_fonts/font = ExtResource( 10 )
 text = "Exp. Points"
 __meta__ = {
@@ -211,10 +211,10 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="Page1/EXP"]
-margin_left = 133.0
-margin_top = 32.0
-margin_right = 246.0
-margin_bottom = 56.0
+offset_left = 133.0
+offset_top = 32.0
+offset_right = 246.0
+offset_bottom = 56.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "0000000"
@@ -223,10 +223,10 @@ __meta__ = {
 }
 
 [node name="Item" type="Label" parent="Page1"]
-margin_left = 283.0
-margin_top = 274.0
-margin_right = 397.0
-margin_bottom = 298.0
+offset_left = 283.0
+offset_top = 274.0
+offset_right = 397.0
+offset_bottom = 298.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "Item"
@@ -236,10 +236,10 @@ __meta__ = {
 }
 
 [node name="Value" type="Label" parent="Page1/Item"]
-margin_left = -1.0
-margin_top = 30.0
-margin_right = 112.0
-margin_bottom = 54.0
+offset_left = -1.0
+offset_top = 30.0
+offset_right = 112.0
+offset_bottom = 54.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "None"
@@ -251,8 +251,8 @@ __meta__ = {
 visible = false
 
 [node name="Title" type="TextureRect" parent="Page2"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 15 )
 __meta__ = {
 "_edit_lock_": true,
@@ -260,8 +260,8 @@ __meta__ = {
 }
 
 [node name="Body" type="TextureRect" parent="Page2"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true,
@@ -272,8 +272,8 @@ __meta__ = {
 visible = false
 
 [node name="Title" type="TextureRect" parent="Page3"]
-margin_right = 512.0
-margin_bottom = 40.0
+offset_right = 512.0
+offset_bottom = 40.0
 texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true,
@@ -281,8 +281,8 @@ __meta__ = {
 }
 
 [node name="Body" type="TextureRect" parent="Page3"]
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true,
@@ -292,8 +292,8 @@ __meta__ = {
 [node name="Page4" type="Node2D" parent="."]
 
 [node name="Title" type="TextureRect" parent="Page4"]
-margin_right = 512.0
-margin_bottom = 40.0
+offset_right = 512.0
+offset_bottom = 40.0
 texture = ExtResource( 18 )
 __meta__ = {
 "_edit_lock_": true,
@@ -301,15 +301,15 @@ __meta__ = {
 }
 
 [node name="Body" type="TextureRect" parent="Page4"]
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 19 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2( 400, 150 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 13 )
@@ -319,10 +319,10 @@ __meta__ = {
 }
 
 [node name="Lv" type="Label" parent="."]
-margin_left = 323.0
-margin_top = 68.0
-margin_right = 436.0
-margin_bottom = 92.0
+offset_left = 323.0
+offset_top = 68.0
+offset_right = 436.0
+offset_bottom = 92.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "Lv. 5"
@@ -332,10 +332,10 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="."]
-margin_left = 361.0
-margin_top = 38.0
-margin_right = 475.0
-margin_bottom = 62.0
+offset_left = 361.0
+offset_top = 38.0
+offset_right = 475.0
+offset_bottom = 62.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "Name"
@@ -345,10 +345,10 @@ __meta__ = {
 }
 
 [node name="Gender" type="Label" parent="."]
-margin_left = 485.0
-margin_top = 38.0
-margin_right = 501.0
-margin_bottom = 62.0
+offset_left = 485.0
+offset_top = 38.0
+offset_right = 501.0
+offset_bottom = 62.0
 custom_fonts/font = ExtResource( 10 )
 custom_colors/font_color = Color( 0.388235, 0.419608, 0.45098, 1 )
 text = "♀"
@@ -358,10 +358,10 @@ __meta__ = {
 }
 
 [node name="Ball" type="TextureRect" parent="."]
-margin_left = 323.0
-margin_top = 35.0
-margin_right = 363.0
-margin_bottom = 75.0
+offset_left = 323.0
+offset_top = 35.0
+offset_right = 363.0
+offset_bottom = 75.0
 texture = ExtResource( 12 )
 __meta__ = {
 "_edit_lock_": true,
@@ -374,43 +374,43 @@ __meta__ = {
 }
 
 [node name="BG" type="TextureRect" parent="BottomBar"]
-margin_top = 336.0
-margin_right = 512.0
-margin_bottom = 384.0
+offset_top = 336.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Status" type="Sprite" parent="BottomBar"]
+[node name="Status" type="Sprite2D" parent="BottomBar"]
 position = Vector2( 45, 360 )
 texture = ExtResource( 7 )
 hframes = 4
 vframes = 2
 
-[node name="Status2" type="Sprite" parent="BottomBar"]
+[node name="Status2" type="Sprite2D" parent="BottomBar"]
 position = Vector2( 120, 360 )
 texture = ExtResource( 7 )
 hframes = 4
 vframes = 2
 frame = 1
 
-[node name="Status3" type="Sprite" parent="BottomBar"]
+[node name="Status3" type="Sprite2D" parent="BottomBar"]
 position = Vector2( 195, 360 )
 texture = ExtResource( 7 )
 hframes = 4
 vframes = 2
 frame = 2
 
-[node name="Status4" type="Sprite" parent="BottomBar"]
+[node name="Status4" type="Sprite2D" parent="BottomBar"]
 position = Vector2( 270, 360 )
 texture = ExtResource( 7 )
 hframes = 4
 vframes = 2
 frame = 3
 
-[node name="Up" type="Sprite" parent="BottomBar"]
+[node name="Up" type="Sprite2D" parent="BottomBar"]
 position = Vector2( 330, 360 )
 texture = ExtResource( 8 )
 hframes = 2
@@ -419,14 +419,14 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Down" type="Sprite" parent="BottomBar"]
+[node name="Down" type="Sprite2D" parent="BottomBar"]
 position = Vector2( 380, 360 )
 texture = ExtResource( 8 )
 hframes = 2
 vframes = 3
 frame = 1
 
-[node name="Back" type="Sprite" parent="BottomBar"]
+[node name="Back" type="Sprite2D" parent="BottomBar"]
 position = Vector2( 485, 340 )
 texture = ExtResource( 9 )
 hframes = 3

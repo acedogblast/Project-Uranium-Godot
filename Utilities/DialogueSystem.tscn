@@ -1,110 +1,128 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=12 format=3 uid="uid://bwx1a1auyl7fr"]
 
-[ext_resource path="res://Utilities/DialogueSystem.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture" id=2]
-[ext_resource path="res://Utilities/Dialogue Box Text Slide.tres" type="Animation" id=3]
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://Graphics/Pictures/pause.png" type="Texture" id=5]
-[ext_resource path="res://Utilities/Dialogue Box Arrow.tres" type="Animation" id=6]
-[ext_resource path="res://Audio/SE/Choose.WAV" type="AudioStream" id=7]
+[ext_resource type="Script" path="res://Utilities/DialogueSystem.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://d4gylyim3gb5e" path="res://Graphics/Windowskins/frlgtextskin.png" id="2"]
+[ext_resource type="Animation" uid="uid://dl1jxg0i3qp0a" path="res://Utilities/Dialogue Box Text Slide.tres" id="3"]
+[ext_resource type="Theme" uid="uid://bkr6gnv8yrchk" path="res://Utilities/UI/Text_Theme.tres" id="4_y2wbt"]
+[ext_resource type="Texture2D" uid="uid://cr1t83mfsop6l" path="res://Graphics/Pictures/pause.png" id="5"]
+[ext_resource type="Animation" uid="uid://bhk4fu0jqw8ev" path="res://Utilities/Dialogue Box Arrow.tres" id="6"]
+[ext_resource type="AudioStream" uid="uid://vsb58powpguf" path="res://Audio/SE/Choose.WAV" id="7"]
 
-[sub_resource type="DynamicFontData" id=1]
-font_path = "res://Fonts/pkmndpb.ttf"
+[sub_resource type="Animation" id="Animation_4o5bf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Text1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(17, 15)]
+}
 
-[sub_resource type="DynamicFont" id=2]
-size = 26
-font_data = SubResource( 1 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_py1pp"]
+_data = {
+"RESET": SubResource("Animation_4o5bf"),
+"Slide Text": ExtResource("3")
+}
 
-[sub_resource type="DynamicFont" id=3]
-size = 26
-font_data = ExtResource( 4 )
+[sub_resource type="Animation" id="Animation_5ufo2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
-[sub_resource type="DynamicFontData" id=4]
-font_path = "res://Fonts/pkmndpb.ttf"
-
-[sub_resource type="DynamicFont" id=5]
-size = 26
-font_data = SubResource( 4 )
-
-[sub_resource type="DynamicFont" id=6]
-size = 26
-font_data = ExtResource( 4 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ul4i8"]
+_data = {
+"Arrow": ExtResource("6"),
+"RESET": SubResource("Animation_5ufo2")
+}
 
 [node name="CanvasLayer" type="CanvasLayer"]
 layer = 10
-script = ExtResource( 1 )
+script = ExtResource("1")
 
 [node name="Box" type="NinePatchRect" parent="."]
-pause_mode = 2
+anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -246.0
-margin_top = -104.0
-margin_right = 244.0
-margin_bottom = -10.0
+offset_left = -246.0
+offset_top = -104.0
+offset_right = 244.0
+offset_bottom = -10.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture = ExtResource( 2 )
-region_rect = Rect2( 8, 2, 66, 74 )
+texture = ExtResource("2")
+region_rect = Rect2(8, 2, 66, 74)
 patch_margin_left = 14
 patch_margin_top = 14
 patch_margin_right = 16
 patch_margin_bottom = 16
-__meta__ = {
-"_edit_group_": true,
-"_edit_use_anchors_": false
-}
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Box"]
-"anims/Slide Text" = ExtResource( 3 )
+libraries = {
+"": SubResource("AnimationLibrary_py1pp")
+}
 
 [node name="Text1" type="RichTextLabel" parent="Box"]
-margin_left = 17.0
-margin_top = 15.0
-margin_right = 462.0
-margin_bottom = 50.0
-custom_fonts/bold_font = SubResource( 2 )
-custom_fonts/normal_font = SubResource( 3 )
+layout_mode = 0
+offset_left = 17.0
+offset_top = 15.0
+offset_right = 462.0
+offset_bottom = 50.0
+theme = ExtResource("4_y2wbt")
 bbcode_enabled = true
-bbcode_text = "Sample text."
-meta_underlined = false
 text = "Sample text."
 scroll_active = false
+meta_underlined = false
 
 [node name="Text2" type="RichTextLabel" parent="Box"]
-margin_left = 17.0
-margin_top = 50.0
-margin_right = 462.0
-margin_bottom = 85.0
-custom_fonts/bold_font = SubResource( 5 )
-custom_fonts/normal_font = SubResource( 6 )
+layout_mode = 0
+offset_left = 17.0
+offset_top = 50.0
+offset_right = 462.0
+offset_bottom = 85.0
+theme = ExtResource("4_y2wbt")
 bbcode_enabled = true
-bbcode_text = "Sample text"
-meta_underlined = false
 text = "Sample text"
 scroll_active = false
+meta_underlined = false
 
-[node name="PauseArrow" type="Sprite" parent="Box"]
-position = Vector2( 470, 66 )
-texture = ExtResource( 5 )
+[node name="PauseArrow" type="Sprite2D" parent="Box"]
+position = Vector2(470, 66)
+texture = ExtResource("5")
 hframes = 4
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Box/PauseArrow"]
 autoplay = "Arrow"
-anims/Arrow = ExtResource( 6 )
+playback_process_mode = 0
+libraries = {
+"": SubResource("AnimationLibrary_ul4i8")
+}
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Box"]
-stream = ExtResource( 7 )
+stream = ExtResource("7")
 volume_db = -12.0
 
-[node name="TypeDelay" type="Timer" parent="Box"]
+[node name="Arrow" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TypeDelay" type="Timer" parent="."]
 wait_time = 0.02
 
-[node name="Arrow" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-expand = true
-
-[connection signal="timeout" from="Box/TypeDelay" to="." method="_on_TypeDelay_timeout"]
+[connection signal="timeout" from="TypeDelay" to="." method="_on_type_delay_timeout" flags=3]

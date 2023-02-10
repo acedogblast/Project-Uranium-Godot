@@ -1,21 +1,21 @@
 [gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://Graphics/Pictures/Pokedex/dexbg1_1.png" type="Texture" id=1]
-[ext_resource path="res://Graphics/Pictures/Pokedex/dexbg1_2.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Pictures/Pokedex/dexbg1_1.png" type="Texture2D" id=1]
+[ext_resource path="res://Graphics/Pictures/Pokedex/dexbg1_2.png" type="Texture2D" id=2]
 [ext_resource path="res://Utilities/Pokedex.gd" type="Script" id=3]
-[ext_resource path="res://Graphics/Pictures/Pokedex/dexinfo.png" type="Texture" id=4]
-[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="DynamicFont" id=5]
-[ext_resource path="res://Graphics/Pictures/Pokedex/normalbar.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Pictures/Pokedex/searchdex.png" type="Texture" id=7]
-[ext_resource path="res://Graphics/Pictures/Pokedex/dexbg1_1info.png" type="Texture" id=8]
-[ext_resource path="res://Graphics/Pictures/Pokedex/dexarrow.png" type="Texture" id=9]
-[ext_resource path="res://Graphics/Icons/icon003.png" type="Texture" id=10]
-[ext_resource path="res://Graphics/Pictures/Pokedex/dexball.png" type="Texture" id=11]
-[ext_resource path="res://Graphics/Battlers/003.png" type="Texture" id=12]
-[ext_resource path="res://Graphics/Pictures/Pokedex/pokedexSlider.png" type="Texture" id=13]
-[ext_resource path="res://Graphics/Pictures/Pokedex/dex_discover.png" type="Texture" id=14]
+[ext_resource path="res://Graphics/Pictures/Pokedex/dexinfo.png" type="Texture2D" id=4]
+[ext_resource path="res://Utilities/Battle/MoveTextFont.tres" type="FontFile" id=5]
+[ext_resource path="res://Graphics/Pictures/Pokedex/normalbar.png" type="Texture2D" id=6]
+[ext_resource path="res://Graphics/Pictures/Pokedex/searchdex.png" type="Texture2D" id=7]
+[ext_resource path="res://Graphics/Pictures/Pokedex/dexbg1_1info.png" type="Texture2D" id=8]
+[ext_resource path="res://Graphics/Pictures/Pokedex/dexarrow.png" type="Texture2D" id=9]
+[ext_resource path="res://Graphics/Icons/icon003.png" type="Texture2D" id=10]
+[ext_resource path="res://Graphics/Pictures/Pokedex/dexball.png" type="Texture2D" id=11]
+[ext_resource path="res://Graphics/Battlers/003.png" type="Texture2D" id=12]
+[ext_resource path="res://Graphics/Pictures/Pokedex/pokedexSlider.png" type="Texture2D" id=13]
+[ext_resource path="res://Graphics/Pictures/Pokedex/dex_discover.png" type="Texture2D" id=14]
 
-[sub_resource type="StreamTexture" id=1]
+[sub_resource type="CompressedTexture2D" id=1]
 load_path = "res://.import/dexbg_grid.png-65e4d38b86ca5ddb0caf5abcb3d0c10a.stex"
 
 [sub_resource type="Animation" id=2]
@@ -29,8 +29,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 16 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 16 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Rect2( 0, 0, 512, 384 ), Rect2( -512, 0, 512, 384 ) ]
 }
@@ -39,15 +39,15 @@ tracks/0/keys = {
 script = ExtResource( 3 )
 
 [node name="BG" type="TextureRect" parent="."]
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
-[node name="Sprite" type="Sprite" parent="BG"]
+[node name="Sprite2D" type="Sprite2D" parent="BG"]
 texture = SubResource( 1 )
 centered = false
 region_enabled = true
@@ -56,13 +56,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="BG/Sprite"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BG/Sprite2D"]
 autoplay = "Slide"
 anims/Slide = SubResource( 2 )
 
 [node name="BG2" type="TextureRect" parent="."]
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true,
@@ -70,8 +70,8 @@ __meta__ = {
 }
 
 [node name="Info" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true,
@@ -79,10 +79,10 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Info"]
-margin_left = 25.0
-margin_top = 10.0
-margin_right = 328.0
-margin_bottom = 45.0
+offset_left = 25.0
+offset_top = 10.0
+offset_right = 328.0
+offset_bottom = 45.0
 custom_fonts/font = ExtResource( 5 )
 text = "Tandor Pokédex"
 __meta__ = {
@@ -90,9 +90,9 @@ __meta__ = {
 }
 
 [node name="Bar" type="TextureRect" parent="."]
-margin_top = 336.0
-margin_right = 512.0
-margin_bottom = 384.0
+offset_top = 336.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true,
@@ -100,10 +100,10 @@ __meta__ = {
 }
 
 [node name="Start" type="TextureRect" parent="Bar"]
-margin_left = 10.0
-margin_top = 4.0
-margin_right = 142.0
-margin_bottom = 44.0
+offset_left = 10.0
+offset_top = 4.0
+offset_right = 142.0
+offset_bottom = 44.0
 texture = ExtResource( 7 )
 __meta__ = {
 "_edit_lock_": true,
@@ -111,8 +111,8 @@ __meta__ = {
 }
 
 [node name="Scroll" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 8 )
 __meta__ = {
 "_edit_lock_": true,
@@ -120,20 +120,20 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Scroll"]
-margin_left = 500.328
-margin_top = 19.7982
-margin_right = 510.328
-margin_bottom = 35.7982
+offset_left = 500.328
+offset_top = 19.7982
+offset_right = 510.328
+offset_bottom = 35.7982
 texture = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Seen" type="Label" parent="."]
-margin_left = 15.4292
-margin_top = 274.16
-margin_right = 63.4292
-margin_bottom = 303.16
+offset_left = 15.4292
+offset_top = 274.16
+offset_right = 63.4292
+offset_bottom = 303.16
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "SEEN"
@@ -143,9 +143,9 @@ __meta__ = {
 }
 
 [node name="Count" type="Label" parent="Seen"]
-margin_left = 49.0
-margin_right = 170.0
-margin_bottom = 27.0
+offset_left = 49.0
+offset_right = 170.0
+offset_bottom = 27.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "000"
@@ -155,10 +155,10 @@ __meta__ = {
 }
 
 [node name="Obtained" type="Label" parent="."]
-margin_left = 15.4292
-margin_top = 307.16
-margin_right = 105.429
-margin_bottom = 336.16
+offset_left = 15.4292
+offset_top = 307.16
+offset_right = 105.429
+offset_bottom = 336.16
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "OBTAINED"
@@ -168,9 +168,9 @@ __meta__ = {
 }
 
 [node name="Count2" type="Label" parent="Obtained"]
-margin_left = 49.0
-margin_right = 170.0
-margin_bottom = 27.0
+offset_left = 49.0
+offset_right = 170.0
+offset_bottom = 27.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "000"
@@ -182,32 +182,32 @@ __meta__ = {
 [node name="List" type="Node2D" parent="."]
 position = Vector2( 190, 50 )
 
-[node name="Example" type="Sprite" parent="List"]
+[node name="Example" type="Sprite2D" parent="List"]
 texture = ExtResource( 9 )
 centered = false
 vframes = 4
 frame = 2
 
-[node name="Icon" type="Sprite" parent="List/Example"]
+[node name="Icon" type="Sprite2D" parent="List/Example"]
 position = Vector2( 35, 15 )
 texture = ExtResource( 10 )
 hframes = 2
 
 [node name="Caught" type="TextureRect" parent="List/Example"]
-margin_left = 82.0
-margin_top = 8.0
-margin_right = 108.0
-margin_bottom = 34.0
+offset_left = 82.0
+offset_top = 8.0
+offset_right = 108.0
+offset_bottom = 34.0
 texture = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ID" type="Label" parent="List/Example"]
-margin_left = 122.254
-margin_top = 9.47571
-margin_right = 162.254
-margin_bottom = 25.4757
+offset_left = 122.254
+offset_top = 9.47571
+offset_right = 162.254
+offset_bottom = 25.4757
 custom_fonts/font = ExtResource( 5 )
 text = "003"
 __meta__ = {
@@ -215,43 +215,43 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="List/Example"]
-margin_left = 168.254
-margin_top = 9.47571
-margin_right = 262.254
-margin_bottom = 25.4757
+offset_left = 168.254
+offset_top = 9.47571
+offset_right = 262.254
+offset_bottom = 25.4757
 custom_fonts/font = ExtResource( 5 )
 text = "Raptorch"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Example2" type="Sprite" parent="List"]
+[node name="Example2" type="Sprite2D" parent="List"]
 position = Vector2( 0, 50 )
 texture = ExtResource( 9 )
 centered = false
 vframes = 4
 frame = 2
 
-[node name="Icon" type="Sprite" parent="List/Example2"]
+[node name="Icon" type="Sprite2D" parent="List/Example2"]
 position = Vector2( 35, 15 )
 texture = ExtResource( 10 )
 hframes = 2
 
 [node name="Caught" type="TextureRect" parent="List/Example2"]
-margin_left = 82.0
-margin_top = 8.0
-margin_right = 108.0
-margin_bottom = 34.0
+offset_left = 82.0
+offset_top = 8.0
+offset_right = 108.0
+offset_bottom = 34.0
 texture = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ID" type="Label" parent="List/Example2"]
-margin_left = 122.0
-margin_top = 9.0
-margin_right = 162.0
-margin_bottom = 25.0
+offset_left = 122.0
+offset_top = 9.0
+offset_right = 162.0
+offset_bottom = 25.0
 custom_fonts/font = ExtResource( 5 )
 text = "003"
 __meta__ = {
@@ -259,10 +259,10 @@ __meta__ = {
 }
 
 [node name="Name" type="Label" parent="List/Example2"]
-margin_left = 168.0
-margin_top = 9.0
-margin_right = 262.0
-margin_bottom = 25.0
+offset_left = 168.0
+offset_top = 9.0
+offset_right = 262.0
+offset_bottom = 25.0
 custom_fonts/font = ExtResource( 5 )
 text = "Raptorch"
 __meta__ = {
@@ -272,12 +272,12 @@ __meta__ = {
 [node name="Pic" type="Node2D" parent="."]
 position = Vector2( 10, 60 )
 
-[node name="Discover" type="Sprite" parent="Pic"]
+[node name="Discover" type="Sprite2D" parent="Pic"]
 texture = ExtResource( 14 )
 centered = false
 hframes = 2
 
-[node name="Poke" type="Sprite" parent="Pic"]
+[node name="Poke" type="Sprite2D" parent="Pic"]
 position = Vector2( 84, 96 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 12 )

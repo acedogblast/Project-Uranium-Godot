@@ -1,13 +1,13 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Utilities/MobileKeyboard.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/Pictures/Gender/genderbg2.png" type="Texture" id=2]
-[ext_resource path="res://Graphics/Characters/trainer000.PNG" type="Texture" id=3]
-[ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture" id=4]
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Graphics/Pictures/Gender/genderbg2.png" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Characters/trainer000.PNG" type="Texture2D" id=3]
+[ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture2D" id=4]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="FontFile" id=5]
 [ext_resource path="res://Audio/SE/Select.WAV" type="AudioStream" id=6]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=1]
 size = 26
 font_data = ExtResource( 5 )
 
@@ -15,22 +15,22 @@ font_data = ExtResource( 5 )
 script = ExtResource( 1 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 2 )
 
 [node name="Picture" type="TextureRect" parent="."]
-margin_left = 180.0
-margin_top = 100.0
-margin_right = 340.0
-margin_bottom = 260.0
+offset_left = 180.0
+offset_top = 100.0
+offset_right = 340.0
+offset_bottom = 260.0
 texture = ExtResource( 3 )
 
 [node name="NameBox" type="NinePatchRect" parent="."]
-margin_left = 20.0
-margin_top = 20.0
-margin_right = 492.0
-margin_bottom = 130.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 492.0
+offset_bottom = 130.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 8, 2, 66, 74 )
 patch_margin_left = 14
@@ -39,27 +39,27 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 
 [node name="Prompt" type="Label" parent="."]
-margin_left = 37.0
-margin_top = 35.0
-margin_right = 482.0
-margin_bottom = 70.0
+offset_left = 37.0
+offset_top = 35.0
+offset_right = 482.0
+offset_bottom = 70.0
 custom_fonts/font = SubResource( 1 )
 text = "UI_KEYBOARD_NAME"
 
 [node name="Name" type="Label" parent="."]
-margin_left = 37.0
-margin_top = 70.0
-margin_right = 482.0
-margin_bottom = 105.0
+offset_left = 37.0
+offset_top = 70.0
+offset_right = 482.0
+offset_bottom = 105.0
 custom_fonts/font = SubResource( 1 )
 
 [node name="Keyboard" type="Node2D" parent="."]
 position = Vector2( 35, 150 )
 
 [node name="KeyboardBox" type="NinePatchRect" parent="Keyboard"]
-margin_left = -15.0
-margin_right = 457.0
-margin_bottom = 200.0
+offset_left = -15.0
+offset_right = 457.0
+offset_bottom = 200.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 8, 2, 66, 74 )
 patch_margin_left = 14
@@ -70,82 +70,82 @@ patch_margin_bottom = 16
 [node name="Numbers" type="Node2D" parent="Keyboard"]
 
 [node name="0" type="Label" parent="Keyboard/Numbers"]
-margin_left = 20.0
-margin_top = 20.0
-margin_right = 40.0
-margin_bottom = 40.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 40.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "0"
 
 [node name="1" type="Label" parent="Keyboard/Numbers"]
-margin_left = 55.0
-margin_top = 20.0
-margin_right = 75.0
-margin_bottom = 40.0
+offset_left = 55.0
+offset_top = 20.0
+offset_right = 75.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "1"
 
 [node name="2" type="Label" parent="Keyboard/Numbers"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 110.0
-margin_bottom = 40.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 110.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "2"
 
 [node name="3" type="Label" parent="Keyboard/Numbers"]
-margin_left = 125.0
-margin_top = 20.0
-margin_right = 145.0
-margin_bottom = 40.0
+offset_left = 125.0
+offset_top = 20.0
+offset_right = 145.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "3"
 
 [node name="4" type="Label" parent="Keyboard/Numbers"]
-margin_left = 160.0
-margin_top = 20.0
-margin_right = 180.0
-margin_bottom = 40.0
+offset_left = 160.0
+offset_top = 20.0
+offset_right = 180.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "4"
 
 [node name="5" type="Label" parent="Keyboard/Numbers"]
-margin_left = 195.0
-margin_top = 20.0
-margin_right = 215.0
-margin_bottom = 40.0
+offset_left = 195.0
+offset_top = 20.0
+offset_right = 215.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "5"
 
 [node name="6" type="Label" parent="Keyboard/Numbers"]
-margin_left = 230.0
-margin_top = 20.0
-margin_right = 250.0
-margin_bottom = 40.0
+offset_left = 230.0
+offset_top = 20.0
+offset_right = 250.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "6"
 
 [node name="7" type="Label" parent="Keyboard/Numbers"]
-margin_left = 265.0
-margin_top = 20.0
-margin_right = 285.0
-margin_bottom = 40.0
+offset_left = 265.0
+offset_top = 20.0
+offset_right = 285.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "7"
 
 [node name="8" type="Label" parent="Keyboard/Numbers"]
-margin_left = 300.0
-margin_top = 20.0
-margin_right = 320.0
-margin_bottom = 40.0
+offset_left = 300.0
+offset_top = 20.0
+offset_right = 320.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "8"
 
 [node name="9" type="Label" parent="Keyboard/Numbers"]
-margin_left = 335.0
-margin_top = 20.0
-margin_right = 355.0
-margin_bottom = 40.0
+offset_left = 335.0
+offset_top = 20.0
+offset_right = 355.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "9"
 
@@ -153,82 +153,82 @@ text = "9"
 position = Vector2( 0, 35 )
 
 [node name="0" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 20.0
-margin_top = 20.0
-margin_right = 40.0
-margin_bottom = 40.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 40.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "q"
 
 [node name="1" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 55.0
-margin_top = 20.0
-margin_right = 75.0
-margin_bottom = 40.0
+offset_left = 55.0
+offset_top = 20.0
+offset_right = 75.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "w"
 
 [node name="2" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 110.0
-margin_bottom = 40.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 110.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "e"
 
 [node name="3" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 125.0
-margin_top = 20.0
-margin_right = 145.0
-margin_bottom = 40.0
+offset_left = 125.0
+offset_top = 20.0
+offset_right = 145.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "r"
 
 [node name="4" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 160.0
-margin_top = 20.0
-margin_right = 180.0
-margin_bottom = 40.0
+offset_left = 160.0
+offset_top = 20.0
+offset_right = 180.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "t"
 
 [node name="5" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 195.0
-margin_top = 20.0
-margin_right = 215.0
-margin_bottom = 40.0
+offset_left = 195.0
+offset_top = 20.0
+offset_right = 215.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "y"
 
 [node name="6" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 230.0
-margin_top = 20.0
-margin_right = 250.0
-margin_bottom = 40.0
+offset_left = 230.0
+offset_top = 20.0
+offset_right = 250.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "u"
 
 [node name="7" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 265.0
-margin_top = 20.0
-margin_right = 285.0
-margin_bottom = 40.0
+offset_left = 265.0
+offset_top = 20.0
+offset_right = 285.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "i"
 
 [node name="8" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 300.0
-margin_top = 20.0
-margin_right = 320.0
-margin_bottom = 40.0
+offset_left = 300.0
+offset_top = 20.0
+offset_right = 320.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "o"
 
 [node name="9" type="Label" parent="Keyboard/LetterRow1"]
-margin_left = 335.0
-margin_top = 20.0
-margin_right = 355.0
-margin_bottom = 40.0
+offset_left = 335.0
+offset_top = 20.0
+offset_right = 355.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "p"
 
@@ -236,82 +236,82 @@ text = "p"
 position = Vector2( 0, 70 )
 
 [node name="0" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 20.0
-margin_top = 20.0
-margin_right = 40.0
-margin_bottom = 40.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 40.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "a"
 
 [node name="1" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 55.0
-margin_top = 20.0
-margin_right = 75.0
-margin_bottom = 40.0
+offset_left = 55.0
+offset_top = 20.0
+offset_right = 75.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "s"
 
 [node name="2" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 110.0
-margin_bottom = 40.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 110.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "d"
 
 [node name="3" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 125.0
-margin_top = 20.0
-margin_right = 145.0
-margin_bottom = 40.0
+offset_left = 125.0
+offset_top = 20.0
+offset_right = 145.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "f"
 
 [node name="4" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 160.0
-margin_top = 20.0
-margin_right = 180.0
-margin_bottom = 40.0
+offset_left = 160.0
+offset_top = 20.0
+offset_right = 180.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "g"
 
 [node name="5" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 195.0
-margin_top = 20.0
-margin_right = 215.0
-margin_bottom = 40.0
+offset_left = 195.0
+offset_top = 20.0
+offset_right = 215.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "h"
 
 [node name="6" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 230.0
-margin_top = 20.0
-margin_right = 250.0
-margin_bottom = 40.0
+offset_left = 230.0
+offset_top = 20.0
+offset_right = 250.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "j"
 
 [node name="7" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 265.0
-margin_top = 20.0
-margin_right = 285.0
-margin_bottom = 40.0
+offset_left = 265.0
+offset_top = 20.0
+offset_right = 285.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "k"
 
 [node name="8" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 300.0
-margin_top = 20.0
-margin_right = 320.0
-margin_bottom = 40.0
+offset_left = 300.0
+offset_top = 20.0
+offset_right = 320.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "l"
 
 [node name="9" type="Label" parent="Keyboard/LetterRow2"]
-margin_left = 335.0
-margin_top = 20.0
-margin_right = 355.0
-margin_bottom = 40.0
+offset_left = 335.0
+offset_top = 20.0
+offset_right = 355.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "UI_KEYBOARD_MOBILE_UPPER"
 
@@ -319,88 +319,88 @@ text = "UI_KEYBOARD_MOBILE_UPPER"
 position = Vector2( 0, 105 )
 
 [node name="0" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 20.0
-margin_top = 20.0
-margin_right = 40.0
-margin_bottom = 40.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 40.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "z"
 
 [node name="1" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 55.0
-margin_top = 20.0
-margin_right = 75.0
-margin_bottom = 40.0
+offset_left = 55.0
+offset_top = 20.0
+offset_right = 75.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "x"
 
 [node name="2" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 90.0
-margin_top = 20.0
-margin_right = 110.0
-margin_bottom = 40.0
+offset_left = 90.0
+offset_top = 20.0
+offset_right = 110.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "c"
 
 [node name="3" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 125.0
-margin_top = 20.0
-margin_right = 145.0
-margin_bottom = 40.0
+offset_left = 125.0
+offset_top = 20.0
+offset_right = 145.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "v"
 
 [node name="4" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 160.0
-margin_top = 20.0
-margin_right = 180.0
-margin_bottom = 40.0
+offset_left = 160.0
+offset_top = 20.0
+offset_right = 180.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "b"
 
 [node name="5" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 195.0
-margin_top = 20.0
-margin_right = 215.0
-margin_bottom = 40.0
+offset_left = 195.0
+offset_top = 20.0
+offset_right = 215.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "n"
 
 [node name="6" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 230.0
-margin_top = 20.0
-margin_right = 250.0
-margin_bottom = 40.0
+offset_left = 230.0
+offset_top = 20.0
+offset_right = 250.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "m"
 
 [node name="7" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 265.0
-margin_top = 20.0
-margin_right = 285.0
-margin_bottom = 40.0
+offset_left = 265.0
+offset_top = 20.0
+offset_right = 285.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 
 [node name="8" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 300.0
-margin_top = 20.0
-margin_right = 320.0
-margin_bottom = 40.0
+offset_left = 300.0
+offset_top = 20.0
+offset_right = 320.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 
 [node name="9" type="Label" parent="Keyboard/LetterRow3"]
-margin_left = 335.0
-margin_top = 20.0
-margin_right = 355.0
-margin_bottom = 40.0
+offset_left = 335.0
+offset_top = 20.0
+offset_right = 355.0
+offset_bottom = 40.0
 custom_fonts/font = SubResource( 1 )
 text = "UI_KEYBOARD_MOBILE_OK"
 
 [node name="Instruction" type="Label" parent="Keyboard"]
-margin_left = 20.0
-margin_top = 160.0
-margin_right = 40.0
-margin_bottom = 180.0
+offset_left = 20.0
+offset_top = 160.0
+offset_right = 40.0
+offset_bottom = 180.0
 custom_fonts/font = SubResource( 1 )
 text = "UI_KEYBOARD_MOBILE_HELP"
 

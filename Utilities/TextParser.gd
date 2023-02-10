@@ -104,7 +104,8 @@ func extract_events(text, timer):
 								event_array.push_back(SkipTextEvent.new(trueIndex, get_tree()))
 								length += 2 + str(value).length()
 
-						extracted_text.erase(index, length)
+						#extracted_text.erase(index, length)
+						extracted_text = str_erase(extracted_text, index, length)
 						index -= 1
 
 		index += 1
@@ -112,11 +113,19 @@ func extract_events(text, timer):
 	# Sort the events array by pos
 	return [extracted_text, event_array]
 
+# Apparently String.erase() was removed in Godot 4.x
+func str_erase(input : String, index : int, length : int) -> String:
+	var part1 = input.substr(0, index)
+	var part2 = input.substr(index + length)
+	
+	return part1 + part2
+
+
 func extract_arg(text, index):
 	var bracket_start = text.find("[", index)
 	var bracket_end = text.find("]", bracket_start)
 	if bracket_start == -1 or bracket_end == -1:
-		push_error("Invalid command! No [] brackets found on \"" + text + "\" at reported index " + index)
+		push_error("Invalid command! No [] brackets found checked \"" + text + "\" at reported index " + index)
 		get_tree().quit()
 	else:
 		return text.substr(bracket_start + 1, bracket_end - (bracket_start + 1))

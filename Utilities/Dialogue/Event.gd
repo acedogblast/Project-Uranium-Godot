@@ -6,7 +6,7 @@ var pos
 var tree
 var timer
 
-func _init(pos, tree):
+func _init(pos,tree):
 	self.pos = pos
 	self.tree = tree
 	self.timer = DialogueSystem.typeTimer

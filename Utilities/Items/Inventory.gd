@@ -153,7 +153,7 @@ func remove_item(item: Item):
 					item_stack = item_stacks
 					break
 	if item_stack == null:
-		print("Inventory Error. Can not remove non-existant item in inventory.")
+		print("Inventory Error. Can not remove_at non-existant item in inventory.")
 		return
 	else:
 		if item_stack.quantity == 1:
@@ -165,49 +165,49 @@ func remove_item(item: Item):
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					items.remove(index)
+					items.remove_at(index)
 				MEDICINE:
 					var index = 0
 					for item_stacks in medicine:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					medicine.remove(index)
+					medicine.remove_at(index)
 				BALLS:
 					var index = 0
 					for item_stacks in balls:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					balls.remove(index)
+					balls.remove_at(index)
 				TMS:
 					var index = 0
 					for item_stacks in TMs:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					TMs.remove(index)
+					TMs.remove_at(index)
 				BERRIES:
 					var index = 0
 					for item_stacks in berries:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					berries.remove(index)
+					berries.remove_at(index)
 				BATTLE_ITEMS:
 					var index = 0
 					for item_stacks in battle_items:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					battle_items.remove(index)
+					battle_items.remove_at(index)
 				KEY_ITEMS:
 					var index = 0
 					for item_stacks in key_items:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					key_items.remove(index)
+					key_items.remove_at(index)
 		else:
 			item_stack.quantity -= 1
 

@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Fonts/NotoSansCJKsc-Medium.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/NotoSansCJKsc-Medium.otf" type="FontFile" id=1]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.12549, 0.145098, 0.192157, 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 30
 font_data = ExtResource( 1 )
 
@@ -21,10 +21,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -204.5
-margin_top = -199.0
-margin_right = 200.5
-margin_bottom = 279.0
+offset_left = -204.5
+offset_top = -199.0
+offset_right = 200.5
+offset_bottom = 279.0
 color = Color( 0.12549, 0.145098, 0.192157, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -35,343 +35,343 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -195.0
-margin_top = -190.0
-margin_right = 190.0
-margin_bottom = 269.0
+offset_left = -195.0
+offset_top = -190.0
+offset_right = 190.0
+offset_bottom = 269.0
 color = Color( 0.2, 0.231373, 0.309804, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Name_Label" type="Label" parent="ColorRect"]
-margin_left = 14.6611
-margin_top = 73.3055
-margin_right = 54.6611
-margin_bottom = 87.3055
+offset_left = 14.6611
+offset_top = 73.3055
+offset_right = 54.6611
+offset_bottom = 87.3055
 text = "Name"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ID_Label" type="Label" parent="ColorRect"]
-margin_left = 14.6611
-margin_top = 104.305
-margin_right = 54.6611
-margin_bottom = 118.305
+offset_left = 14.6611
+offset_top = 104.305
+offset_right = 54.6611
+offset_bottom = 118.305
 text = "ID"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Exp_yield_Label" type="Label" parent="ColorRect"]
-margin_left = 230.661
-margin_top = 104.305
-margin_right = 288.661
-margin_bottom = 118.305
+offset_left = 230.661
+offset_top = 104.305
+offset_right = 288.661
+offset_bottom = 118.305
 text = "EXP yield"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Name" type="LineEdit" parent="ColorRect"]
-margin_left = 60.8004
-margin_top = 67.9619
-margin_right = 254.8
-margin_bottom = 91.9619
+offset_left = 60.8004
+offset_top = 67.9619
+offset_right = 254.8
+offset_bottom = 91.9619
 
 [node name="ID" type="SpinBox" parent="ColorRect"]
-margin_left = 61.0606
-margin_top = 99.9665
-margin_right = 135.061
-margin_bottom = 123.966
+offset_left = 61.0606
+offset_top = 99.9665
+offset_right = 135.061
+offset_bottom = 123.966
 
 [node name="Exp_yield" type="SpinBox" parent="ColorRect"]
-margin_left = 299.061
-margin_top = 99.9665
-margin_right = 373.061
-margin_bottom = 123.966
+offset_left = 299.061
+offset_top = 99.9665
+offset_right = 373.061
+offset_bottom = 123.966
 max_value = 65000.0
 
 [node name="Stats" type="Control" parent="ColorRect"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="HP" type="SpinBox" parent="ColorRect/Stats"]
-margin_left = 101.061
-margin_top = 131.966
-margin_right = 175.061
-margin_bottom = 155.966
+offset_left = 101.061
+offset_top = 131.966
+offset_right = 175.061
+offset_bottom = 155.966
 max_value = 65000.0
 
 [node name="Attack" type="SpinBox" parent="ColorRect/Stats"]
-margin_left = 101.061
-margin_top = 163.966
-margin_right = 175.061
-margin_bottom = 187.966
+offset_left = 101.061
+offset_top = 163.966
+offset_right = 175.061
+offset_bottom = 187.966
 max_value = 65000.0
 
 [node name="Defense" type="SpinBox" parent="ColorRect/Stats"]
-margin_left = 101.061
-margin_top = 195.966
-margin_right = 175.061
-margin_bottom = 219.966
+offset_left = 101.061
+offset_top = 195.966
+offset_right = 175.061
+offset_bottom = 219.966
 max_value = 65000.0
 
 [node name="Sp Attack" type="SpinBox" parent="ColorRect/Stats"]
-margin_left = 101.061
-margin_top = 227.966
-margin_right = 175.061
-margin_bottom = 251.966
+offset_left = 101.061
+offset_top = 227.966
+offset_right = 175.061
+offset_bottom = 251.966
 max_value = 65000.0
 
 [node name="Sp Defense" type="SpinBox" parent="ColorRect/Stats"]
-margin_left = 101.061
-margin_top = 259.966
-margin_right = 175.061
-margin_bottom = 283.966
+offset_left = 101.061
+offset_top = 259.966
+offset_right = 175.061
+offset_bottom = 283.966
 max_value = 65000.0
 
 [node name="Speed" type="SpinBox" parent="ColorRect/Stats"]
-margin_left = 101.061
-margin_top = 291.966
-margin_right = 175.061
-margin_bottom = 315.966
+offset_left = 101.061
+offset_top = 291.966
+offset_right = 175.061
+offset_bottom = 315.966
 max_value = 65000.0
 
 [node name="HP_Label" type="Label" parent="ColorRect/Stats"]
-margin_left = 14.6611
-margin_top = 136.305
-margin_right = 54.6611
-margin_bottom = 150.305
+offset_left = 14.6611
+offset_top = 136.305
+offset_right = 54.6611
+offset_bottom = 150.305
 text = "HP"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Attack_Label" type="Label" parent="ColorRect/Stats"]
-margin_left = 14.6611
-margin_top = 168.305
-margin_right = 54.6611
-margin_bottom = 182.305
+offset_left = 14.6611
+offset_top = 168.305
+offset_right = 54.6611
+offset_bottom = 182.305
 text = "Attack"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Defense_Label" type="Label" parent="ColorRect/Stats"]
-margin_left = 14.6611
-margin_top = 200.305
-margin_right = 54.6611
-margin_bottom = 214.305
+offset_left = 14.6611
+offset_top = 200.305
+offset_right = 54.6611
+offset_bottom = 214.305
 text = "Defense"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Sp Attack_Label" type="Label" parent="ColorRect/Stats"]
-margin_left = 14.6611
-margin_top = 232.305
-margin_right = 54.6611
-margin_bottom = 246.305
+offset_left = 14.6611
+offset_top = 232.305
+offset_right = 54.6611
+offset_bottom = 246.305
 text = "Sp. Attack"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Sp Defense_Label" type="Label" parent="ColorRect/Stats"]
-margin_left = 14.6611
-margin_top = 264.305
-margin_right = 54.6611
-margin_bottom = 278.305
+offset_left = 14.6611
+offset_top = 264.305
+offset_right = 54.6611
+offset_bottom = 278.305
 text = "Sp. Defense"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Speed_Label" type="Label" parent="ColorRect/Stats"]
-margin_left = 14.6611
-margin_top = 296.305
-margin_right = 54.6611
-margin_bottom = 310.305
+offset_left = 14.6611
+offset_top = 296.305
+offset_right = 54.6611
+offset_bottom = 310.305
 text = "Speed"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="EV yield" type="Control" parent="ColorRect"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="EV HP" type="SpinBox" parent="ColorRect/EV yield"]
-margin_left = 300.061
-margin_top = 131.966
-margin_right = 374.061
-margin_bottom = 155.966
+offset_left = 300.061
+offset_top = 131.966
+offset_right = 374.061
+offset_bottom = 155.966
 max_value = 31.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="EV Attack" type="SpinBox" parent="ColorRect/EV yield"]
-margin_left = 300.061
-margin_top = 163.966
-margin_right = 374.061
-margin_bottom = 187.966
+offset_left = 300.061
+offset_top = 163.966
+offset_right = 374.061
+offset_bottom = 187.966
 max_value = 31.0
 
 [node name="EV Defense" type="SpinBox" parent="ColorRect/EV yield"]
-margin_left = 300.061
-margin_top = 195.966
-margin_right = 374.061
-margin_bottom = 219.966
+offset_left = 300.061
+offset_top = 195.966
+offset_right = 374.061
+offset_bottom = 219.966
 max_value = 31.0
 
 [node name="EV Sp Attack" type="SpinBox" parent="ColorRect/EV yield"]
-margin_left = 300.061
-margin_top = 227.966
-margin_right = 374.061
-margin_bottom = 251.966
+offset_left = 300.061
+offset_top = 227.966
+offset_right = 374.061
+offset_bottom = 251.966
 max_value = 31.0
 
 [node name="EV Sp Defense" type="SpinBox" parent="ColorRect/EV yield"]
-margin_left = 300.061
-margin_top = 259.966
-margin_right = 374.061
-margin_bottom = 283.966
+offset_left = 300.061
+offset_top = 259.966
+offset_right = 374.061
+offset_bottom = 283.966
 max_value = 31.0
 
 [node name="EV Speed" type="SpinBox" parent="ColorRect/EV yield"]
-margin_left = 300.061
-margin_top = 291.966
-margin_right = 374.061
-margin_bottom = 315.966
+offset_left = 300.061
+offset_top = 291.966
+offset_right = 374.061
+offset_bottom = 315.966
 max_value = 31.0
 
 [node name="HP_Label2" type="Label" parent="ColorRect/EV yield"]
-margin_left = 190.661
-margin_top = 136.305
-margin_right = 230.661
-margin_bottom = 150.305
+offset_left = 190.661
+offset_top = 136.305
+offset_right = 230.661
+offset_bottom = 150.305
 text = "EV HP"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Attack_Label2" type="Label" parent="ColorRect/EV yield"]
-margin_left = 190.661
-margin_top = 168.305
-margin_right = 230.661
-margin_bottom = 182.305
+offset_left = 190.661
+offset_top = 168.305
+offset_right = 230.661
+offset_bottom = 182.305
 text = "EV Attack"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Defense_Label2" type="Label" parent="ColorRect/EV yield"]
-margin_left = 190.661
-margin_top = 200.305
-margin_right = 243.661
-margin_bottom = 214.305
+offset_left = 190.661
+offset_top = 200.305
+offset_right = 243.661
+offset_bottom = 214.305
 text = "EV Defense"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Sp Attack_Label2" type="Label" parent="ColorRect/EV yield"]
-margin_left = 190.661
-margin_top = 232.305
-margin_right = 253.661
-margin_bottom = 246.305
+offset_left = 190.661
+offset_top = 232.305
+offset_right = 253.661
+offset_bottom = 246.305
 text = "EV Sp. Attack"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Sp Defense_Label2" type="Label" parent="ColorRect/EV yield"]
-margin_left = 190.661
-margin_top = 264.305
-margin_right = 266.661
-margin_bottom = 278.305
+offset_left = 190.661
+offset_top = 264.305
+offset_right = 266.661
+offset_bottom = 278.305
 text = "EV Sp. Defense"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Speed_Label2" type="Label" parent="ColorRect/EV yield"]
-margin_left = 190.661
-margin_top = 296.305
-margin_right = 230.661
-margin_bottom = 310.305
+offset_left = 190.661
+offset_top = 296.305
+offset_right = 230.661
+offset_bottom = 310.305
 text = "EV Speed"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Evolution" type="Control" parent="ColorRect"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Level_Label" type="Label" parent="ColorRect/Evolution"]
-margin_left = 195.368
-margin_top = 344.721
-margin_right = 292.368
-margin_bottom = 358.721
+offset_left = 195.368
+offset_top = 344.721
+offset_right = 292.368
+offset_bottom = 358.721
 text = "Evolution Level"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Level" type="SpinBox" parent="ColorRect/Evolution"]
-margin_left = 301.0
-margin_top = 340.0
-margin_right = 375.0
-margin_bottom = 364.0
+offset_left = 301.0
+offset_top = 340.0
+offset_right = 375.0
+offset_bottom = 364.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ID_Label" type="Label" parent="ColorRect/Evolution"]
-margin_left = 195.368
-margin_top = 376.721
-margin_right = 292.368
-margin_bottom = 390.721
+offset_left = 195.368
+offset_top = 376.721
+offset_right = 292.368
+offset_bottom = 390.721
 text = "Evolution ID"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ID" type="SpinBox" parent="ColorRect/Evolution"]
-margin_left = 301.061
-margin_top = 371.966
-margin_right = 375.061
-margin_bottom = 395.966
+offset_left = 301.061
+offset_top = 371.966
+offset_right = 375.061
+offset_bottom = 395.966
 max_value = 200.0
 
 [node name="Male_Rate_Label" type="Label" parent="ColorRect"]
-margin_left = 14.2
-margin_top = 377.3
-margin_right = 77.2
-margin_bottom = 391.3
+offset_left = 14.2
+offset_top = 377.3
+offset_right = 77.2
+offset_bottom = 391.3
 text = "Male Rate"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Male_Rate" type="SpinBox" parent="ColorRect"]
-margin_left = 100.0
-margin_top = 372.0
-margin_right = 174.0
-margin_bottom = 397.0
+offset_left = 100.0
+offset_top = 372.0
+offset_right = 174.0
+offset_bottom = 397.0
 step = 0.5
 value = 87.5
 
@@ -380,30 +380,30 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -53.8649
-margin_top = 182.304
-margin_right = 58.1351
-margin_bottom = 218.304
+offset_left = -53.8649
+offset_top = 182.304
+offset_right = 58.1351
+offset_bottom = 218.304
 text = "Add"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="leveling_Rate" type="OptionButton" parent="ColorRect"]
-margin_left = 45.5999
-margin_top = 329.65
-margin_right = 155.6
-margin_bottom = 349.65
+offset_left = 45.5999
+offset_top = 329.65
+offset_right = 155.6
+offset_bottom = 349.65
 custom_styles/normal = SubResource( 1 )
 text = "SLOW"
 items = [ "SLOW", null, false, 0, null, "MEDIUM_SLOW", null, false, 1, null, "MEDIUM_FAST", null, false, 2, null, "FAST", null, false, 3, null, "ERRATIC", null, false, 4, null, "FLUCTUATING", null, false, 5, null ]
 selected = 0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
-margin_left = 11.9507
-margin_top = 7.89461
-margin_right = 302.951
-margin_bottom = 47.8946
+offset_left = 11.9507
+offset_top = 7.89461
+offset_right = 302.951
+offset_bottom = 47.8946
 custom_fonts/normal_font = SubResource( 2 )
 text = "CREATE POKEMON"
 scroll_active = false

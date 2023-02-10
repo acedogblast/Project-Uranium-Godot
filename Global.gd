@@ -36,7 +36,7 @@ var past_events = [] # All events that had occured
 
 var isMobile = false
 
-var load_game_from_id # Used on loading a save
+var load_game_from_id # Used checked loading a save
 
 var player_starter # 0 = Raptorch, 1 = Orchynx, 2 = Electux
 
@@ -61,12 +61,15 @@ func _ready():
 
 func _process(_delta):
 	if Input.is_action_just_pressed("toggle_fullscreen"):
-		OS.window_fullscreen = !OS.window_fullscreen
-	if Input.is_action_just_pressed("toggle_fps"):
-		printFPS = true
-	if printFPS == true:
-		print(Engine.get_frames_per_second())
-	pass
+		if !DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+		if Input.is_action_just_pressed("toggle_fps"):
+			printFPS = true
+		if printFPS == true:
+			print(Engine.get_frames_per_second())
+		pass
 
 func save_state():
 	load_game_from_id = null
@@ -82,10 +85,10 @@ func save_state():
 		"pokedex_seen": pokedex_seen,
 		"pokedex_caught" : pokedex_caught
 	}
-	SaveSystem.set_state(filename, state)
+	SaveSystem.set_state(self.filename, state)
 func load_state():
-	if SaveSystem.has_state(filename):
-		var state = SaveSystem.get_state(filename)
+	if SaveSystem.has_state(self.filename):
+		var state = SaveSystem.get_state(self.filename)
 		TrainerName = state["TrainerName"]
 		TrainerGender = state["TrainerGender"]
 		badges = state["badges"]

@@ -37,7 +37,7 @@ func _ready():
 	item3 = $NPC_Layer/Item3
 	item4 = $NPC_Layer/Item4
 
-	Global.game.player.connect("trainer_battle", self, "trainer_battle")
+	Global.game.player.connect("trainer_battle",Callable(self,"trainer_battle"))
 
 	if Global.past_events.has("ROUTE1_TRAINER1_DEFEATED"):
 		trainer1.seeking = false
@@ -73,7 +73,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		else:
 			Global.game.lock_player()
 			Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_1_DEFEAT" , trainer1.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 			Global.game.release_player()
 		pass
 	if check_pos == $NPC_Layer/Trainer2.position:
@@ -83,7 +83,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		else:
 			Global.game.lock_player()
 			Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_2_DEFEAT" , trainer2.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 			Global.game.release_player()
 		pass
 	if check_pos == $NPC_Layer/Chyinmunk.position:
@@ -92,7 +92,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		Global.game.get_node("Effect_music").stream = load("res://Audio/SE/007Cry.wav")
 		Global.game.get_node("Effect_music").play()
 		Global.game.play_dialogue_with_point("NPC_ROUTE1_CHYINMUNK" , $NPC_Layer/Chyinmunk.get_global_transform_with_canvas().get_origin())
-		yield(Global.game, "event_dialogue_end")
+		await Global.game.event_dialogue_end
 		Global.game.release_player()
 	if item1 != null && check_pos == item1.position:
 		var item = item1
@@ -102,7 +102,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		item.queue_free()
 		item1 = null
 		Global.game.recive_item(item.item_id)
-		yield(Global.game, "end_of_event")
+		await Global.game.end_of_event
 		Global.game.release_player()
 	if item2 != null && check_pos == item2.position:
 		var item = item2
@@ -112,7 +112,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		item.queue_free()
 		item2 = null
 		Global.game.recive_item(item.item_id)
-		yield(Global.game, "end_of_event")
+		await Global.game.end_of_event
 		Global.game.release_player()
 	if item3 != null && check_pos == item3.position:
 		var item = item3
@@ -122,7 +122,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		item.queue_free()
 		item3 = null
 		Global.game.recive_item(item.item_id)
-		yield(Global.game, "end_of_event")
+		await Global.game.end_of_event
 		Global.game.release_player()
 	if item4 != null && check_pos == item4.position:
 		var item = item4
@@ -132,7 +132,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		item.queue_free()
 		item4 = null
 		Global.game.recive_item(item.item_id)
-		yield(Global.game, "end_of_event")
+		await Global.game.end_of_event
 		Global.game.release_player()
 
 func get_grass_cells():
@@ -143,7 +143,7 @@ func trainer_battle(npc_trainer):
 	npc_trainer.seeking = false
 	# Play encounter music
 	npc_trainer.alert()
-	yield(npc_trainer, "alert_done")
+	await npc_trainer.alert_done
 	match npc_trainer:
 		trainer1, trainer2:
 			Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-FemaleEncounter.ogg")
@@ -164,7 +164,7 @@ func trainer_battle(npc_trainer):
 
 	# Walk towards player
 	npc_trainer.move_to_player()
-	yield(npc_trainer, "done_movement")
+	await npc_trainer.done_movement
 
 	# Pre-battle talk
 	match npc_trainer:
@@ -177,7 +177,7 @@ func trainer_battle(npc_trainer):
 		trainer4:
 			Global.game.play_dialogue_with_point("NPC_ROUTE1_TRAINER_4" , npc_trainer.get_global_transform_with_canvas().get_origin())
 
-	yield(Global.game, "event_dialogue_end")
+	await Global.game.event_dialogue_end
 
 	match npc_trainer:
 		trainer1:
@@ -207,7 +207,7 @@ func trainer1_battle():
 	bid.opponent.pokemon_group = trainer.get_poke_group()
 	
 	Global.game.trainer_battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("ROUTE1_TRAINER1_DEFEATED")
@@ -234,7 +234,7 @@ func trainer2_battle():
 	bid.opponent.pokemon_group = trainer.get_poke_group()
 	
 	Global.game.trainer_battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("ROUTE1_TRAINER2_DEFEATED")
@@ -261,7 +261,7 @@ func trainer3_battle():
 	bid.opponent.pokemon_group = trainer.get_poke_group()
 	
 	Global.game.trainer_battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("ROUTE1_TRAINER3_DEFEATED")
@@ -288,7 +288,7 @@ func trainer4_battle():
 	bid.opponent.pokemon_group = trainer.get_poke_group()
 	
 	Global.game.trainer_battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("ROUTE1_TRAINER4_DEFEATED")

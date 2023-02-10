@@ -1,8 +1,8 @@
-tool
+@tool
 extends Node2D
 
-export(int) var size = 1
-export(String, "Up", "Down", "Left", "Right") var jump_direction = "Down"
+@export var size: int = 1
+@export var jump_direction = "Down" # (String, "Up", "Down", "Left", "Right")
 
 func _process(_delta):
 	if Engine.editor_hint:

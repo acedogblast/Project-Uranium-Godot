@@ -19,7 +19,7 @@ func _ready():
 	trainer1 = $NPC_Layer/Trainer1
 	trainer2 = $NPC_Layer/Trainer2
 
-	Global.game.player.connect("trainer_battle", self, "trainer_battle")
+	Global.game.player.connect("trainer_battle",Callable(self,"trainer_battle"))
 
 	if Global.past_events.has("GYM1_TRAINER1_DEFEATED"):
 		trainer1.seeking = false
@@ -36,7 +36,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		else:
 			Global.game.lock_player()
 			Global.game.play_dialogue_with_point("GYM1_TRAINER_1_DEFEAT" , trainer1.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 			Global.game.release_player()
 	if check_pos == trainer2.position:
 		trainer2.face_player(direction)
@@ -45,7 +45,7 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		else:
 			Global.game.lock_player()
 			Global.game.play_dialogue_with_point("GYM1_TRAINER_2_DEFEAT" , trainer2.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 			Global.game.release_player()
 	if check_pos == maria.position:
 		maria.face_player(direction)
@@ -54,48 +54,48 @@ func interaction(check_pos : Vector2, direction): # check_pos is a Vector2 of th
 		if !Global.past_events.has("GYM1_COMPLETE"):
 			for i in range(1, 8):
 				Global.game.play_dialogue_with_point("GYM1_MARIA_" + str(i) , maria.get_global_transform_with_canvas().get_origin())
-				yield(Global.game, "event_dialogue_end")
+				await Global.game.event_dialogue_end
 			maira_battle()
-			yield(self, "battle_done")
+			await self.battle_done
 			Global.game.lock_player()
 			for i in range(10, 13):
 				Global.game.play_dialogue_with_point("GYM1_MARIA_" + str(i) , maria.get_global_transform_with_canvas().get_origin())
-				yield(Global.game, "event_dialogue_end")
+				await Global.game.event_dialogue_end
 			
 			# Add TM27
 			Global.game.recive_item(259)
-			yield(Global.game, "end_of_event")
+			await Global.game.end_of_event
 
 			for i in range(13, 16):
 				Global.game.play_dialogue_with_point("GYM1_MARIA_" + str(i) , maria.get_global_transform_with_canvas().get_origin())
-				yield(Global.game, "event_dialogue_end")
+				await Global.game.event_dialogue_end
 
 		else:
 			Global.game.play_dialogue_with_point("GYM1_MARIA_16" , maria.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 
 		Global.game.release_player()
 	if check_pos == gym_guy.position:
 		Global.game.lock_player()
 		gym_guy.face_player(direction)
 		Global.game.play_dialogue_with_point("GYM1_GYM_GUY_1" , gym_guy.get_global_transform_with_canvas().get_origin())
-		yield(Global.game, "event_dialogue_end")
+		await Global.game.event_dialogue_end
 		Global.game.play_dialogue_with_point("GYM1_GYM_GUY_2" , gym_guy.get_global_transform_with_canvas().get_origin())
-		yield(Global.game, "event_dialogue_end")
+		await Global.game.event_dialogue_end
 		Global.game.play_dialogue_with_point("GYM1_GYM_GUY_3" , gym_guy.get_global_transform_with_canvas().get_origin())
-		yield(Global.game, "event_dialogue_end")
+		await Global.game.event_dialogue_end
 		Global.game.play_dialogue_with_point("GYM1_GYM_GUY_4" , gym_guy.get_global_transform_with_canvas().get_origin())
-		yield(Global.game, "event_dialogue_end")
+		await Global.game.event_dialogue_end
 
 		if !Global.past_events.has("GYM1_GOT_WATER"):
 			Global.game.play_dialogue_with_point("GYM1_GYM_GUY_5" , gym_guy.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 			Global.past_events.append("GYM1_GOT_WATER")
 			Global.game.recive_item(187)
-			yield(Global.game, "end_of_event")
+			await Global.game.end_of_event
 		else:
 			Global.game.play_dialogue_with_point("GYM1_GYM_GUY_6" , gym_guy.get_global_transform_with_canvas().get_origin())
-			yield(Global.game, "event_dialogue_end")
+			await Global.game.event_dialogue_end
 		Global.game.release_player()
 	if check_pos == Vector2(112, 1040) && OS.is_debug_build(): # TO BE DELETED
 		Global.inventory.add_item_by_id_multiple(171, 5)
@@ -107,7 +107,7 @@ func trainer_battle(npc_trainer):
 	npc_trainer.seeking = false
 	# Play encounter music
 	npc_trainer.alert()
-	yield(npc_trainer, "alert_done")
+	await npc_trainer.alert_done
 	match npc_trainer:
 		trainer1:
 			Global.game.get_node("Background_music").stream = load("res://Audio/ME/PU-MaleEncounter.ogg")
@@ -128,7 +128,7 @@ func trainer_battle(npc_trainer):
 
 	# Walk towards player
 	npc_trainer.move_to_player()
-	yield(npc_trainer, "done_movement")
+	await npc_trainer.done_movement
 
 	# Pre-battle talk
 	match npc_trainer:
@@ -136,7 +136,7 @@ func trainer_battle(npc_trainer):
 			Global.game.play_dialogue_with_point("GYM1_TRAINER_1" , npc_trainer.get_global_transform_with_canvas().get_origin())
 		trainer2:
 			Global.game.play_dialogue_with_point("GYM1_TRAINER_2" , npc_trainer.get_global_transform_with_canvas().get_origin())
-	yield(Global.game, "event_dialogue_end")
+	await Global.game.event_dialogue_end
 
 	match npc_trainer:
 		trainer1:
@@ -162,7 +162,7 @@ func trainer1_battle():
 	bid.opponent.pokemon_group = trainer.get_poke_group()
 	
 	Global.game.trainer_battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("GYM1_TRAINER1_DEFEATED")
@@ -190,7 +190,7 @@ func trainer2_battle():
 	bid.opponent.pokemon_group = trainer.get_poke_group()
 	
 	Global.game.trainer_battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		trainer.defeated = true
 		Global.past_events.append("GYM1_TRAINER2_DEFEATED")
@@ -229,7 +229,7 @@ func maira_battle():
 	bid.opponent.pokemon_group = poke_group
 	
 	Global.game.trainer_battle(bid, false)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	if Global.game.battle.player_won:
 		Global.past_events.append("GYM1_COMPLETE")
 	else:

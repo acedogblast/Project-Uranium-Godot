@@ -1,84 +1,84 @@
 [gd_scene load_steps=24 format=2]
 
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Graphics/Pictures/Bag/bagbgup.PNG" type="Texture" id=2]
-[ext_resource path="res://Graphics/Pictures/Bag/bag4.png" type="Texture" id=3]
-[ext_resource path="res://Graphics/Pictures/Bag/bagbglight.png" type="Texture" id=4]
-[ext_resource path="res://Graphics/Pictures/Bag/bag8.png" type="Texture" id=5]
-[ext_resource path="res://Graphics/Icons/item170.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Pictures/Bag/bagReg.PNG" type="Texture" id=7]
-[ext_resource path="res://Graphics/Pictures/Bag/bagSlider.png" type="Texture" id=8]
-[ext_resource path="res://Graphics/Pictures/Bag/bagoverlay.png" type="Texture" id=9]
-[ext_resource path="res://Graphics/Pictures/Bag/bag1.png" type="Texture" id=10]
-[ext_resource path="res://Graphics/Pictures/Bag/bag2.png" type="Texture" id=11]
-[ext_resource path="res://Graphics/Pictures/Bag/bg_grid.png" type="Texture" id=12]
-[ext_resource path="res://Graphics/Pictures/Bag/bag3.png" type="Texture" id=13]
-[ext_resource path="res://Graphics/Pictures/Bag/bagitems.png" type="Texture" id=14]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="FontFile" id=1]
+[ext_resource path="res://Graphics/Pictures/Bag/bagbgup.PNG" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Pictures/Bag/bag4.png" type="Texture2D" id=3]
+[ext_resource path="res://Graphics/Pictures/Bag/bagbglight.png" type="Texture2D" id=4]
+[ext_resource path="res://Graphics/Pictures/Bag/bag8.png" type="Texture2D" id=5]
+[ext_resource path="res://Graphics/Icons/item170.png" type="Texture2D" id=6]
+[ext_resource path="res://Graphics/Pictures/Bag/bagReg.PNG" type="Texture2D" id=7]
+[ext_resource path="res://Graphics/Pictures/Bag/bagSlider.png" type="Texture2D" id=8]
+[ext_resource path="res://Graphics/Pictures/Bag/bagoverlay.png" type="Texture2D" id=9]
+[ext_resource path="res://Graphics/Pictures/Bag/bag1.png" type="Texture2D" id=10]
+[ext_resource path="res://Graphics/Pictures/Bag/bag2.png" type="Texture2D" id=11]
+[ext_resource path="res://Graphics/Pictures/Bag/bg_grid.png" type="Texture2D" id=12]
+[ext_resource path="res://Graphics/Pictures/Bag/bag3.png" type="Texture2D" id=13]
+[ext_resource path="res://Graphics/Pictures/Bag/bagitems.png" type="Texture2D" id=14]
 [ext_resource path="res://Utilities/Bag.gd" type="Script" id=15]
-[ext_resource path="res://Graphics/Pictures/Bag/bag5.png" type="Texture" id=16]
-[ext_resource path="res://Graphics/Pictures/Bag/bag7.png" type="Texture" id=17]
-[ext_resource path="res://Graphics/Pictures/leftrightarrows.png" type="Texture" id=18]
+[ext_resource path="res://Graphics/Pictures/Bag/bag5.png" type="Texture2D" id=16]
+[ext_resource path="res://Graphics/Pictures/Bag/bag7.png" type="Texture2D" id=17]
+[ext_resource path="res://Graphics/Pictures/leftrightarrows.png" type="Texture2D" id=18]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="FontFile" id=1]
 size = 32
-extra_spacing_top = 6
+spacing_top = 6
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="FontFile" id=2]
 size = 26
-extra_spacing_top = 2
+spacing_top = 2
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="FontFile" id=3]
 size = 32
-extra_spacing_top = 2
+spacing_top = 2
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="FontFile" id=4]
 size = 22
-extra_spacing_top = 5
-extra_spacing_bottom = 3
+spacing_top = 5
+spacing_bottom = 3
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="FontFile" id=5]
 size = 26
-extra_spacing_top = 4
-extra_spacing_bottom = 8
+spacing_top = 4
+spacing_bottom = 8
 font_data = ExtResource( 1 )
 
 [node name="Bag" type="Node2D"]
 script = ExtResource( 15 )
 
-[node name="bg" type="Sprite" parent="."]
+[node name="panel" type="Sprite2D" parent="."]
 texture = ExtResource( 2 )
 centered = false
 
-[node name="bg_grid" type="Sprite" parent="."]
+[node name="bg_grid" type="Sprite2D" parent="."]
 position = Vector2( 256, 192 )
 texture = ExtResource( 12 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 528, 396 )
 
-[node name="light" type="Sprite" parent="."]
+[node name="light" type="Sprite2D" parent="."]
 texture = ExtResource( 4 )
 centered = false
 
-[node name="overlay" type="Sprite" parent="."]
+[node name="overlay" type="Sprite2D" parent="."]
 texture = ExtResource( 9 )
 centered = false
 
-[node name="bagSlider" type="Sprite" parent="."]
+[node name="bagSlider" type="Sprite2D" parent="."]
 visible = false
 position = Vector2( 496, 52 )
 texture = ExtResource( 8 )
 
 [node name="CurrentContainer" type="RichTextLabel" parent="."]
-margin_left = 3.0
-margin_right = 208.0
-margin_bottom = 40.0
+offset_left = 3.0
+offset_right = 208.0
+offset_bottom = 40.0
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
-bbcode_text = "[center]Medicine[/center]"
+text = "[center]Medicine[/center]"
 text = "Medicine"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -86,38 +86,38 @@ __meta__ = {
 
 [node name="containers" type="Node2D" parent="."]
 
-[node name="ITEMS" type="Sprite" parent="containers"]
+[node name="ITEMS" type="Sprite2D" parent="containers"]
 position = Vector2( 162.822, 91.243 )
 texture = ExtResource( 10 )
 vframes = 3
 
-[node name="BERRIES" type="Sprite" parent="containers"]
+[node name="BERRIES" type="Sprite2D" parent="containers"]
 position = Vector2( 203.081, 128.854 )
 texture = ExtResource( 16 )
 vframes = 3
 
-[node name="BALLS" type="Sprite" parent="containers"]
+[node name="BALLS" type="Sprite2D" parent="containers"]
 position = Vector2( 60, 112 )
 texture = ExtResource( 13 )
 vframes = 3
 
-[node name="MEDICINE" type="Sprite" parent="containers"]
+[node name="MEDICINE" type="Sprite2D" parent="containers"]
 position = Vector2( 38.5297, 184.697 )
 texture = ExtResource( 11 )
 vframes = 3
 frame = 2
 
-[node name="TMs" type="Sprite" parent="containers"]
+[node name="TMs" type="Sprite2D" parent="containers"]
 position = Vector2( 116.595, 138.605 )
 texture = ExtResource( 3 )
 vframes = 3
 
-[node name="KEY_ITEMS" type="Sprite" parent="containers"]
+[node name="KEY_ITEMS" type="Sprite2D" parent="containers"]
 position = Vector2( 104.486, 180.865 )
 texture = ExtResource( 5 )
 vframes = 3
 
-[node name="BATTLE_ITEMS" type="Sprite" parent="containers"]
+[node name="BATTLE_ITEMS" type="Sprite2D" parent="containers"]
 position = Vector2( 180.768, 190.4 )
 texture = ExtResource( 17 )
 vframes = 3
@@ -127,21 +127,21 @@ vframes = 3
 [node name="base_item_panel" type="Node2D" parent="items"]
 visible = false
 
-[node name="panel" type="Sprite" parent="items/base_item_panel"]
+[node name="panel" type="Sprite2D" parent="items/base_item_panel"]
 position = Vector2( 378, 48 )
 texture = ExtResource( 14 )
 vframes = 2
 frame = 1
 
 [node name="item_name" type="RichTextLabel" parent="items/base_item_panel"]
-margin_left = 284.0
-margin_top = 32.0
-margin_right = 464.0
-margin_bottom = 64.0
+offset_left = 284.0
+offset_top = 32.0
+offset_right = 464.0
+offset_bottom = 64.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
 bbcode_enabled = true
-bbcode_text = "Potion"
+text = "Potion"
 text = "Potion"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -164,55 +164,55 @@ __meta__ = {
 [node name="Details" type="Node2D" parent="."]
 
 [node name="name" type="RichTextLabel" parent="Details"]
-margin_left = 16.0
-margin_top = 256.0
-margin_right = 192.0
-margin_bottom = 288.0
+offset_left = 16.0
+offset_top = 256.0
+offset_right = 192.0
+offset_bottom = 288.0
 custom_fonts/normal_font = SubResource( 3 )
 custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
 bbcode_enabled = true
-bbcode_text = "[center]Potion[/center]"
+text = "[center]Potion[/center]"
 text = "Potion"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="text" type="RichTextLabel" parent="Details"]
-margin_left = 121.0
-margin_top = 289.0
-margin_right = 494.0
-margin_bottom = 379.0
-rect_clip_content = false
+offset_left = 121.0
+offset_top = 289.0
+offset_right = 494.0
+offset_bottom = 379.0
+clip_contents = false
 size_flags_horizontal = 4
 size_flags_vertical = 4
 custom_fonts/normal_font = SubResource( 4 )
 bbcode_enabled = true
-bbcode_text = "A good, high-performance Poké Ball that provides a higher success rate for catching Pokémon than a standard Poké Ball."
+text = "A good, high-performance Poké Ball that provides a higher success rate for catching Pokémon than a standard Poké Ball."
 text = "A good, high-performance Poké Ball that provides a higher success rate for catching Pokémon than a standard Poké Ball."
 scroll_active = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="icon" type="Sprite" parent="Details"]
+[node name="icon" type="Sprite2D" parent="Details"]
 position = Vector2( 37.4297, 339.517 )
 texture = ExtResource( 6 )
 
 [node name="quantity" type="RichTextLabel" parent="Details"]
-margin_left = 62.0
-margin_top = 326.0
-margin_right = 112.0
-margin_bottom = 366.0
+offset_left = 62.0
+offset_top = 326.0
+offset_right = 112.0
+offset_bottom = 366.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0.239216, 0.239216, 0.239216, 1 )
 bbcode_enabled = true
-bbcode_text = "x 1"
+text = "x 1"
 text = "x 1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="bagReg" type="Sprite" parent="."]
+[node name="bagReg" type="Sprite2D" parent="."]
 position = Vector2( 489, 361 )
 texture = ExtResource( 7 )
 vframes = 3
@@ -222,40 +222,40 @@ frame = 1
 visible = false
 
 [node name="EMPTY_SHADOW" type="RichTextLabel" parent="empty_text"]
-margin_left = 321.0
-margin_top = 145.0
-margin_right = 449.0
-margin_bottom = 185.0
+offset_left = 321.0
+offset_top = 145.0
+offset_right = 449.0
+offset_bottom = 185.0
 custom_fonts/normal_font = SubResource( 5 )
 custom_colors/default_color = Color( 0.113725, 0.113725, 0.113725, 1 )
 bbcode_enabled = true
-bbcode_text = "It`s empty."
+text = "It`s empty."
 text = "It`s empty."
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="EMPTY" type="RichTextLabel" parent="empty_text"]
-margin_left = 320.0
-margin_top = 144.0
-margin_right = 448.0
-margin_bottom = 184.0
+offset_left = 320.0
+offset_top = 144.0
+offset_right = 448.0
+offset_bottom = 184.0
 custom_fonts/normal_font = SubResource( 5 )
 custom_colors/default_color = Color( 0.298039, 0.298039, 0.298039, 1 )
 bbcode_enabled = true
-bbcode_text = "It`s empty."
+text = "It`s empty."
 text = "It`s empty."
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="left" type="Sprite" parent="."]
+[node name="left" type="Sprite2D" parent="."]
 position = Vector2( 23, 21 )
 texture = ExtResource( 18 )
 hframes = 3
 vframes = 2
 
-[node name="right" type="Sprite" parent="."]
+[node name="right" type="Sprite2D" parent="."]
 position = Vector2( 187, 21 )
 texture = ExtResource( 18 )
 hframes = 3

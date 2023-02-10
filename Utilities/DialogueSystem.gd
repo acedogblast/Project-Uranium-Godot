@@ -1,9 +1,9 @@
 extends CanvasLayer
 
-onready var ArrowBottomLeft = preload("res://Graphics/Pictures/Arrow1.png")
-onready var ArrowBottomRight = preload("res://Graphics/Pictures/Arrow2.png")
-onready var ArrowTopLeft = preload("res://Graphics/Pictures/Arrow3.png")
-onready var ArrowTopRight = preload("res://Graphics/Pictures/Arrow4.png")
+@onready var ArrowBottomLeft = preload("res://Graphics/Pictures/Arrow1.png")
+@onready var ArrowBottomRight = preload("res://Graphics/Pictures/Arrow2.png")
+@onready var ArrowTopLeft = preload("res://Graphics/Pictures/Arrow3.png")
+@onready var ArrowTopRight = preload("res://Graphics/Pictures/Arrow4.png")
 
 # Used to indicate current text mode
 enum mode {
@@ -15,13 +15,14 @@ const TOP = Vector2(10, 10)
 const MIDDLE = Vector2(10, 150)
 const BOTTOM = Vector2(10, 280)
 
-onready var typeTimer = $Box/TypeDelay
+@onready var typeTimer = $TypeDelay
 
 signal dialogue_start
 signal dialogue_end
 signal dialogue_sequence_start
 signal dialogue_sequence_end
 signal finished_printing
+
 
 var text = []
 var events = []
@@ -52,8 +53,8 @@ func _ready():
 # Internal function: rescales the dialogue box for mobile displays
 func rescale_mobile(deviceSize):
 	offset.x = (deviceSize.x - (deviceSize.y * 1.333)) / 2
-	var boxRatio = ProjectSettings.get_setting("display/window/size/width") / $Box.rect_size.x
-	var scale = deviceSize.y * 1.333 / boxRatio / $Box.rect_size.x
+	var boxRatio = ProjectSettings.get_setting("display/window/size/width") / $Box.size.x
+	var scale = deviceSize.y * 1.333 / boxRatio / $Box.size.x
 	
 	self.scale.x = scale
 	self.scale.y = scale
@@ -69,39 +70,39 @@ func load_text(text_array):
 func show_arrow(source_vector):
 	var arrow_height = 0
 	var arrow_width = 0
-	if $Box.rect_position == BOTTOM:
+	if $Box.position == BOTTOM:
 		arrow_height = 280 - source_vector.y
 		arrow_width = int(arrow_height * 1.333)
 		if source_vector.x >= 256:
 			$Arrow.texture = ArrowBottomRight
-			$Arrow.rect_position = Vector2(source_vector.x - arrow_width, source_vector.y)
+			$Arrow.position = Vector2(source_vector.x - arrow_width, source_vector.y)
 			pass
 		elif source_vector.x < 256:
 			$Arrow.texture = ArrowBottomLeft
-			$Arrow.rect_position = Vector2(source_vector.x, source_vector.y)
+			$Arrow.position = Vector2(source_vector.x, source_vector.y)
 			pass
 		pass
-	elif $Box.rect_position == TOP:
+	elif $Box.position == TOP:
 		if source_vector.x >= 256:
 			$Arrow.texture = ArrowTopRight
-			$Arrow.rect_position = Vector2(10, 80)
+			$Arrow.position = Vector2(10, 80)
 			pass
 		elif source_vector.x < 256:
 			$Arrow.texture = ArrowTopLeft
-			$Arrow.rect_position = Vector2(10, 80)
+			$Arrow.position = Vector2(10, 80)
 			pass
 		arrow_height = source_vector.y - 80
 		arrow_width = source_vector.x - 10
 		pass
-	$Arrow.rect_size = Vector2(arrow_width,arrow_height)
+	$Arrow.size = Vector2(arrow_width,arrow_height)
 	$Arrow.visible = true
 
 # Resets the dialogue system, clearing everything
 func reset():
 	for node in [$Box/Text1, $Box/Text2]:
 		node.bbcode_enabled = true
-		node.bbcode_text = ""
-		node.percent_visible = 0
+		node.text = ""
+		node.visible_ratio = 0.0
 	$Box/AudioStreamPlayer.play()
 	$Box/PauseArrow.hide()
 	$Box.hide()
@@ -120,11 +121,17 @@ func set_dialogue_sequence(sequence):
 # Starts a dialogue sequence
 func start_dialogue_sequence():
 	$Box.show()
-	emit_signal("dialogue_sequence_start")
-	while next_dialogue():
-		yield(self, "dialogue_end")
+	dialogue_sequence_start.emit()
+	#emit_signal("dialogue_sequence_start") Old way
 	
-	emit_signal("dialogue_sequence_end")
+	print("Started Dialogue Sequence")
+	
+	while next_dialogue():
+		print("Awaiing for dialogue_end")
+		await self.dialogue_end
+	
+	dialogue_sequence_end.emit()
+	#emit_signal("dialogue_sequence_end") Old way
 
 # Show the next dialogue string. set_sequence must have been set
 func next_dialogue():
@@ -140,14 +147,15 @@ func set_show_arrow(show_arrow = true):
 	force_arrow = show_arrow
 
 func set_box_position(pos = BOTTOM):
-	$Box.rect_position = pos
+	$Box.position = pos
 
 func set_point_to(point_to = null):
 	self.point_to = point_to
 
 # Starts a dialogue text
 func start_dialog(text):
-	emit_signal("dialogue_start")
+	dialogue_start.emit()
+	#emit_signal("dialogue_start") Old way
 	reset()
 	load_text(tr(text))
 	pop_event()
@@ -158,31 +166,32 @@ func start_dialog(text):
 		$Arrow.hide()
 
 	if text_lines == 1:
-		$Box/Text1.bbcode_text = self.text[0]
+		$Box/Text1.text = self.text[0]
 		currentMode = mode.SingleText
 	else:
-		$Box/Text1.bbcode_text = self.text[0]
+		$Box/Text1.text = self.text[0]
 		format_to_copy = TextParser.get_last_format(self.text[0])
-		$Box/Text2.bbcode_text = format_to_copy + self.text[1]
+		$Box/Text2.text = format_to_copy + self.text[1]
 		currentMode = mode.MultiText
 	$Box.show()
-	$Box/TypeDelay.start()
+	typeTimer.start()
 	active = true
 	pass
 
 # warning-ignore:unused_argument
-func _process(delta):
+func _process(_delta):
 	if active and Input.is_action_just_pressed("ui_accept"):
-		if is_finished == true and !hold and $Box/TypeDelay.is_stopped():
+		if is_finished == true and !hold and typeTimer.is_stopped():
 			finish_dialogue()
 		elif currentMode == mode.MultiText:
-
-			if $Box/TypeDelay.is_stopped():
+			
+			if typeTimer.is_stopped():
 				slide_text()
 				return
 			else:
 				# Skip printing text
-				$Box/TypeDelay.stop()
+				print("Skipping")
+				typeTimer.stop()
 				if(currentMode == mode.SingleText):
 					$Box/Text1.visible_characters = $Box/Text1.text.length()
 				else: # Multi-line
@@ -195,7 +204,8 @@ func finish_dialogue():
 		$Box.hide()
 		$Arrow.hide()
 		active = false
-		emit_signal("dialogue_end")
+		dialogue_end.emit()
+		#emit_signal("dialogue_end") Old way to emit signal
 
 func slide_text():
 	$Box/PauseArrow.hide()
@@ -204,22 +214,23 @@ func slide_text():
 			sliding_text = true
 			current_line = current_line + 1
 			$Box/AnimationPlayer.play("Slide Text")
-			yield($Box/AnimationPlayer, "animation_finished")
+			await $Box/AnimationPlayer.animation_finished
 			$Box/AudioStreamPlayer.play()
 		else:
 			is_finished = true
 
 func swap_text():
+	print("on Slide Text")
 	if text_lines > 1:
-		var tempText = $Box/Text2.bbcode_text
-		$Box/Text1.rect_position = Vector2(17,15)
-		$Box/Text2.rect_position = Vector2(17,50)
-		$Box/Text1.bbcode_text = tempText
+		var tempText = $Box/Text2.text
+		$Box/Text1.position = Vector2(17,15)
+		$Box/Text2.position = Vector2(17,50)
+		$Box/Text1.text = tempText
 		format_to_copy = TextParser.get_last_format(tempText)
-		$Box/Text2.bbcode_text = format_to_copy + text[current_line + 1]
+		$Box/Text2.text = format_to_copy + text[current_line + 1]
 		$Box/Text1.visible_characters = $Box/Text2.visible_characters
 		$Box/Text2.visible_characters = 0
-		$Box/TypeDelay.start()
+		typeTimer.start()
 		sliding_text = false
 
 func second_line_printed():
@@ -232,10 +243,11 @@ func finished():
 	if force_arrow == true:
 		$Box/PauseArrow.show()
 	is_finished = true
-	emit_signal("finished_printing")
+	finished_printing.emit()
+	#emit_signal("finished_printing") Old way to emit signal
 
 func parse_string(text):
-	var returns = TextParser.extract_events(TextParser.expand(text), $Box/TypeDelay)
+	var returns = TextParser.extract_events(TextParser.expand(text), typeTimer)
 	var expanded_text = returns[0].split("\n")
 	events = returns[1]
 	var final_text = []
@@ -251,11 +263,11 @@ func parse_string(text):
 			var text_line = text_array[index]
 			var stripped_text_line = TextParser.strip_metadata(text_line)
 			# If text wraps, we move the last word to the next line, until it no longer overflows
-			while $Box/Text1.get_font("normal_font").get_string_size(stripped_text_line).x > $Box/Text1.rect_size.x:
+			while $Box/Text1.get_theme_font("normal_font").get_string_size(stripped_text_line).x > $Box/Text1.size.x:     # TODO: Text overflow is still happening
 				var stripped_last_word = stripped_text_line.rsplit(" ", false, 1)[-1]
 				var last_word = text_line.rsplit(" ", false, 1)[-1]
 				# If the word itself is bigger than the text box, we exit the loop to prevent infinite tries of wrapping
-				if($Box/Text1.get_font("normal_font").get_string_size(last_word).x > $Box/Text1.rect_size.x):
+				if($Box/Text1.get_theme_font("normal_font").get_string_size(last_word).x > $Box/Text1.size.x):
 					break
 				stripped_text_line = stripped_text_line.substr(0, stripped_text_line.length() - stripped_last_word.length() - 1)
 				text_line = text_line.substr(0, text_line.length() - last_word.length() - 1)
@@ -270,12 +282,20 @@ func parse_string(text):
 
 		for l in text_array:
 			final_text.append(TextParser.parse_text(l))
+	print(final_text)
 	return final_text
 
-func _on_TypeDelay_timeout():
+func pop_event():
+	current_event = null
+	if not events.is_empty():
+		current_event = events[0]
+		events.remove_at(0)
+
+
+func _on_type_delay_timeout():
 	while(current_event != null and current_event.pos == pos):
 		active = false
-		yield(current_event.on_event(), "completed")
+		await current_event.on_event().completed
 		pop_event()
 	active = true
 	if($Box/Text1.visible_characters < $Box/Text1.text.length()):
@@ -283,23 +303,18 @@ func _on_TypeDelay_timeout():
 		pos += 1
 	else:
 		if(currentMode == mode.SingleText):
-			$Box/TypeDelay.stop()
+			typeTimer.stop()
 			finished()
 		elif(currentMode == mode.MultiText):
 			while(current_event != null and current_event.pos == pos):
 				active = false
-				yield(current_event.on_event(), "completed")
+				await current_event.on_event().completed
 				pop_event()
 			active = true
 			if($Box/Text2.visible_characters < $Box/Text2.text.length()):
 				$Box/Text2.visible_characters += 1
 				pos += 1
 			else:
-				$Box/TypeDelay.stop()
+				typeTimer.stop()
 				second_line_printed()
-
-func pop_event():
-	current_event = null
-	if not events.empty():
-		current_event = events[0]
-		events.remove(0)
+	

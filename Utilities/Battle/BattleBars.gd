@@ -73,7 +73,7 @@ func slide_player_bar(percent: float , final_hp : int): #TODO: Figure out how to
 			player_hp_width = player_hp_width + 1
 		else:
 			player_hp_width = player_hp_width - 1
-		yield(get_tree().create_timer(0.01), "timeout")
+		await get_tree().create_timer(0.01).timeout
 	$PlayerBar/HP.region_rect = get_player_rect2d_by_percentage(percent)
 	$PlayerBar/HPLable.text = str(final_hp) + "/ " + str(player_total_hp)
 	$PlayerBar/HPLable/HPLableShadow.text = $PlayerBar/HPLable.text
@@ -92,7 +92,7 @@ func slide_foe_bar(percent: float):
 			foe_hp_width = foe_hp_width + 1
 		else:
 			foe_hp_width = foe_hp_width - 1
-		yield(get_tree().create_timer(0.01), "timeout")
+		await get_tree().create_timer(0.01).timeout
 	$FoeBar/HP.region_rect = get_foe_rect2d_by_percentage(percent)
 	foe_hp_percent = percent
 	emit_signal("finished")
@@ -122,7 +122,7 @@ func slide_player_exp_bar(percent: float): # Maximum length is 2 seconds.
 	for i in range(loops):
 		$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(current_percent)
 		current_percent = current_percent + step
-		yield(get_tree().create_timer(0.033), "timeout")
+		await get_tree().create_timer(0.033).timeout
 	$AudioStreamPlayer.stop()
 	player_exp_percent = percent
 	$PlayerBar/EXP.region_rect = get_player_exp_rect2d_by_percentage(player_exp_percent)

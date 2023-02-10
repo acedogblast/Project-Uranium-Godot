@@ -1,9 +1,9 @@
-tool
+@tool
 extends Area2D
 
-export(String, "1x1", "2x1", "custom") var size
-export(Vector2) var custom_size
-export(Vector2) var custom_offset
+@export var size # (String, "1x1", "2x1", "custom")
+@export var custom_size: Vector2
+@export var custom_offset: Vector2
 func _ready():
 	if size != "custom":
 		match size:
