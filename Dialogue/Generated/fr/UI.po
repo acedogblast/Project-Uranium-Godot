@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "UI_INTRO_DISCLAIMER"
+msgstr "Ce jeu est une création de fans\nà but non lucratif.\n\nPokémon appartient à\nGame Freak et Nintendo.\n\nSoutenez les jeux officiels !"
+
+msgid "UI_SAVEMENU_NEWGAME"
+msgstr "Nouvelle Partie"
+
+msgid "UI_SAVEMENU_EXIT"
+msgstr "Quitter"
+
+msgid "UI_OPTIONS"
+msgstr "Oui\nNon"
+
+msgid "UI_KEYBOARD_NAME"
+msgstr "Ton nom?"
+
+msgid "UI_KEYBOARD_DESKTOP_HELP"
+msgstr "Entrez votre texte en utilisant le clavier. Pressez \nESC pour annuler, ou ENTRER pour confirmer."
+
+msgid "UI_KEYBOARD_MOBILE_UPPER"
+msgstr "MAJ"
+
+msgid "UI_KEYBOARD_MOBILE_LOWER"
+msgstr "min"
+
+msgid "UI_KEYBOARD_MOBILE_OK"
+msgstr "You can see every letter, but somehow cannot read the message written here."
+
+msgid "UI_KEYBOARD_MOBILE_HELP"
+msgstr "Appuyez sur X pour effacer et sur C pour annuler."
+
+msgid "UI_SAVEMENU_DELETE_SAVE"
+msgstr "Mystery Gift"
+
+msgid "UI_SAVEMENU_OTHER_SAVE"
+msgstr "Delete This Save File"
+
+msgid "UI_SAVEMENU_UPDATE"
+msgstr "Options"
+
+msgid "UI_SAVEMENU_OPTIONS"
+msgstr "\\me[Jinlge - KeyItem]Randomizer Mode has been unlocked!\\wt[30]\nIt will be available when starting a new Custom Game."
+
+msgid "UI_MENU_SAVE_PROMPT"
+msgstr "There is already a saved file. Is it OK to overwrite it?"
+
+msgid "UI_PARTY_PROMPT_1"
+msgstr "Choisissez un Pokémon ou annulez."
+
+msgid "UI_PARTY_PROMPT_2"
+msgstr "Que faire avec {1}?"
+
+msgid "UI_PARTY_SUMMARY"
+msgstr "Resumé"
+
+msgid "UI_PARTY_ITEM"
+msgstr "Objet"
+
+msgid "UI_PARTY_CANCLE"
+msgstr "Annuler"
+
+msgid "UI_PARTY_SWITCH"
+msgstr "Echanger"
+
+msgid "UI_PARTY_SWITCH_IN"
+msgstr "Echanger"
+
+msgid "UI_PARTY_ALREADY_IN_BATTLE"
+msgstr "{1} est déjà en combat!"
+
+msgid "UI_PARTY_USE_ON_WHICH_POKE"
+msgstr "L'utiliser sur quel Pokémon?"

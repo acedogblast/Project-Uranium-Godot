@@ -27,18 +27,22 @@ func _ready() -> void:
 
 	if OS.get_name() == "Android" || OS.get_name() == "iOS" || force_touchscreen_controls:
 		Global.isMobile = true
-		OS.window_resizable = false
-		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT, SceneTree.STRETCH_ASPECT_KEEP_HEIGHT, OS.get_real_window_size())
+		get_window().unresizable = not (false)
+		get_tree().root.content_scale_mode = Window.CONTENT_SCALE_MODE_VIEWPORT
+		get_tree().root.content_scale_aspect = Window.CONTENT_SCALE_ASPECT_KEEP_HEIGHT
+		get_tree().root.content_scale_size = get_window().get_size_with_decorations()
 		
 		#Sets up the mobile controls
-		get_tree().change_scene("res://Utilities/MobileControls.tscn")
+		get_tree().change_scene_to_file.call_deferred("res://Utilities/MobileControls.tscn")
 	
 	#If the above is false sets the window to be resizeable, and loads the intro scene
 	else:
 		Global.isMobile = false
-		OS.window_resizable = true
-		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT, SceneTree.STRETCH_ASPECT_KEEP, Vector2(512, 384))
+		get_window().unresizable = not (true)
+		get_tree().root.content_scale_mode = Window.CONTENT_SCALE_MODE_VIEWPORT
+		get_tree().root.content_scale_aspect = Window.CONTENT_SCALE_ASPECT_KEEP
+		get_tree().root.content_scale_size = Vector2(512, 384)
 		if custom_window_size != null:
 			print("setting custom window size: " + str(custom_window_size))
-			OS.window_size = custom_window_size
-		get_tree().change_scene("res://IntroScenes/Intro.tscn")
+			get_window().size = custom_window_size
+		get_tree().change_scene_to_file.call_deferred("res://IntroScenes/Intro.tscn")

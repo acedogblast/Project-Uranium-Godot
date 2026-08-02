@@ -19,8 +19,8 @@ var sp_defense = 100
 var speed = 65
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Battle Armor"
+var hidden_ability = "Overgrow"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0

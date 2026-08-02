@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Maps/Towns/Town Houses/PokecenterReference.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Maps/Towns/TownHouses/PokecenterReference.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Utilities/Door.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Maps/NowtochCity/PokeCenter.gd" type="Script" id=3]
 
@@ -13,12 +13,12 @@ script = ExtResource( 3 )
 
 [node name="Door" parent="NPC_Layer" instance=ExtResource( 2 )]
 position = Vector2( 208, 624 )
-scene_destination = "res://Maps/NowtochCity/Nowtoch City.tscn"
+scene_destination = "res://Maps/NowtochCity/Nowtoch_City.tscn"
 location = Vector2( 784, 1776 )
 exterior = false
 
 [node name="Door2" parent="NPC_Layer" instance=ExtResource( 2 )]
 position = Vector2( 240, 624 )
-scene_destination = "res://Maps/NowtochCity/Nowtoch City.tscn"
+scene_destination = "res://Maps/NowtochCity/Nowtoch_City.tscn"
 location = Vector2( 784, 1776 )
 exterior = false

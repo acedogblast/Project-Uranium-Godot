@@ -19,8 +19,9 @@ var sp_defense = 70
 var speed = 92
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Swarm"
+var ability_2 = "Natural Cure"
+var hidden_ability = "Magic Bounce"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0

@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: tlh\n"
+
+msgid "01- Lakeside Path"
+msgstr "01- 14k35id3 P4th"
+
+msgid "02- Owten Nook"
+msgstr "02- 0wt3n Nuk"
+
+msgid "03- Seabreeze Way"
+msgstr "03- 53a8reeze Way"
+
+msgid "04- Baa Grassland"
+msgstr "04- 84a 6ra5sl&"
+
+msgid "05- Tancoon Way"
+msgstr "05- 74ncun Way"
+
+msgid "06- Pahar Hills"
+msgstr "06- P4h4r H1ll5"
+
+msgid "07- Tandor Sheets"
+msgstr "07- 7&or Sh3et5"
+
+msgid "08- Vinoville Lake"
+msgstr "08- V1n0vil1e 1ake"
+
+msgid "09- FireValley"
+msgstr "09- F1r3Val1ey"
+
+msgid "10- Baykal Forest"
+msgstr "10- 84yk4l For3s7"
+
+msgid "11- Nature Preserve"
+msgstr "11- N4ture Pre5erv3"
+
+msgid "12- Maskara Channel"
+msgstr "12- M4sk4ra Ch4nne1"
+
+msgid "13- Maskara Island"
+msgstr "13- M4sk4ra Is1and"
+
+msgid "14- Maskara Sea"
+msgstr "14- M4sk4ra Se4"
+
+msgid "15- Shallow Channel"
+msgstr "15- 5ha11ow Ch4nne1"
+
+msgid "Amatree Town"
+msgstr "4m47r3e 7own"
+
+msgid "Anthell"
+msgstr "4n73h1l"
+
+msgid "Bealbeach City"
+msgstr "834183ach C1ty"
+
+msgid "Berry Traders"
+msgstr "83rry Tr4ders"
+
+msgid "Bike Shop"
+msgstr "81k3 5h0p"
+
+msgid "Burole Town"
+msgstr "8ur013 70wn"
+
+msgid "Championship Site"
+msgstr "Ch4mp1on5hip S1t3"
+
+msgid "Comet Cave"
+msgstr "C0m37 C4ve"
+
+msgid "Dpt. Store, Casino"
+msgstr "Dp7. 52r3, Cas1n0"
+
+msgid "Kevlar Town"
+msgstr "K3v14r 70wn"
+
+msgid "Lanthanite Tunnel"
+msgstr "14n7h4n17e 7unne1"
+
+msgid "Larkspur's Lab"
+msgstr "14rk5pur's 1ab"
+
+msgid "Legen Town"
+msgstr "1363n T0wn"
+
+msgid "Moki Town"
+msgstr "M0k1 7own"
+
+msgid "Name Rater"
+msgstr "N4m3 Ra73r"
+
+msgid "Nowtoch City"
+msgstr "N0w2ch C1ty"
+
+msgid "Nuclear Plant Epsilon"
+msgstr "Nuc134r Plant 3p5i10n"
+
+msgid "Nuclear Plant Omicron"
+msgstr "Nuc134r Plant 0m1cr0n"
+
+msgid "Nuclear Plant Zeta"
+msgstr "Nuc134r Plant Ze7a"
+
+msgid "Passage Cave"
+msgstr "P45546e Cav3"
+
+msgid "Pokemon School"
+msgstr "P0k3m0n 5chul"
+
+msgid "Professor Bambo Lab"
+msgstr "Pr0f35s0r B4mb0 1a8"
+
+msgid "Professor Cypress Lab"
+msgstr "Pr0f35s0r Cypr3s5 148"
+
+msgid "Rochfale Town"
+msgstr "R0chf4l3 Town"
+
+msgid "Rochfale Tunnel"
+msgstr "R0chf4l3 Tunne1"
+
+msgid "Route 16"
+msgstr "R0u73 16"
+
+msgid "Silverport Town"
+msgstr "511v3rp0rt 7own"
+
+msgid "Snowbank Town"
+msgstr "5n0w84nk Town"
+
+msgid "The Labyrinth"
+msgstr "7h3 14byrin7h"
+
+msgid "The Tipsy Tancoon, etc"
+msgstr "7h3 71p5y T4ncun, 37c"
+
+msgid "Tinkerer's Workshop"
+msgstr "71nk3rer's Workshop"
+
+msgid "Training Dojo"
+msgstr "7r41n1n6 Dojo"
+
+msgid "Tsukinami Village"
+msgstr "75uk1nam1 V1ll4g3"
+
+msgid "Venesi City"
+msgstr "V3n351 C1ty"
+
+msgid "Victory Road"
+msgstr "V1c2ry R0ad"
+
+msgid "Vinoville Town"
+msgstr "V1n0v1l13 T0wn"
+

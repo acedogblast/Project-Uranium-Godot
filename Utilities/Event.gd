@@ -1,9 +1,9 @@
-tool
+@tool
 extends Area2D
 
-export(String, "1x1", "2x1", "custom") var size
-export(Vector2) var custom_size
-export(Vector2) var custom_offset
+@export_enum("1x1", "2x1", "custom") var size: String
+@export var custom_size: Vector2
+@export var custom_offset: Vector2
 func _ready():
 	if size != "custom":
 		match size:
@@ -17,7 +17,7 @@ func _ready():
 		$CollisionShape2D.shape.extents = custom_size
 		$CollisionShape2D.position = custom_offset
 func _process(_delta):
-	if Engine.editor_hint:
+	if Engine.is_editor_hint():
 		if size != "custom":
 			match size:
 				"1x1":

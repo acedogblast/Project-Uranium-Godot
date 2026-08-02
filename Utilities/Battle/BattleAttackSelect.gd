@@ -17,8 +17,8 @@ const MOVE_SLIDE_4 = Vector2(-640, 0)
 
 var battler
 
-onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
-onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
+@onready var select_se_1 = load("res://Audio/SE/SE_Select1.wav")
+@onready var select_se_2 = load("res://Audio/SE/SE_Select2.wav")
 
 func _ready():
     $MoveSlide/SelHand/AnimationPlayer.play("Squeez")
@@ -50,6 +50,7 @@ func start(poke):
         $MoveSlide/Move4.visible = true
         moves += 1
     enabled = true
+    update_category_badges()
     match selected:
         1:
             $MoveSlide/SelHand.position = MOVE1_POS
@@ -61,17 +62,27 @@ func start(poke):
             $MoveSlide/SelHand.position = MOVE4_POS
 func set_move_sprite(sprite, move):
     sprite.frame = int(move.type)
-    sprite.get_node("Name").bbcode_text = "[center]" + move.name
+    sprite.get_node("Name").text = "[center]" + tr(move.name)
     sprite.get_node("PP").text = "PP: " + str(move.remaining_pp) + "/" + str(move.total_pp)
+    sprite.get_node("CatBadge").frame = int(move.style)
     pass
+
+func update_category_badges():
+    # Original (EliteBattle_UI:472): the SELECTED move shows its category icon over the badge
+    for i in range(1, 5):
+        var s = get_node_or_null("MoveSlide/Move" + str(i))
+        if s != null and s.has_node("CatBadge"):
+            s.get_node("CatBadge").visible = (i == selected) and s.visible
 func _input(event):
     if enabled:
         if event.is_action_pressed("ui_left") and selected > 1:
             selected -= 1
             change_Sel_Hand_Pos()
+            update_category_badges()
         if event.is_action_pressed("ui_right") and selected < moves:
             selected += 1
             change_Sel_Hand_Pos()
+            update_category_badges()
         if event.is_action_pressed("ui_accept"):
             $MoveSlide/SelHand/AudioStreamPlayer.stream = select_se_2
             $MoveSlide/SelHand/AudioStreamPlayer.play()
@@ -120,50 +131,47 @@ func _input(event):
 func change_Sel_Hand_Pos():
     $MoveSlide/SelHand/AudioStreamPlayer.stream = select_se_1
     $MoveSlide/SelHand/AudioStreamPlayer.play()
-    var tween = $MoveSlide/Tween
+    # Godot 4: Create tween programmatically
+    var move_tween = create_tween()
     match selected:
         1:
             $MoveSlide/SelHand.position = MOVE1_POS
             $MoveSlide/Move1/AnimationPlayer.play("Slide")
-            $MoveSlide/Move2/AnimationPlayer.stop(true)
-            $MoveSlide/Move3/AnimationPlayer.stop(true)
-            $MoveSlide/Move4/AnimationPlayer.stop(true)
+            $MoveSlide/Move2/AnimationPlayer.stop()
+            $MoveSlide/Move3/AnimationPlayer.stop()
+            $MoveSlide/Move4/AnimationPlayer.stop()
             $MoveSlide/Move2.position = Vector2(340, 54)
             $MoveSlide/Move3.position = Vector2(560, 54)
             $MoveSlide/Move4.position = Vector2(780, 54)
-            tween.interpolate_property($MoveSlide, "position", $MoveSlide.position, MOVE_SLIDE_1,0.5,Tween.TRANS_SINE, Tween.EASE_OUT)
-            tween.start()
+            move_tween.tween_property($MoveSlide, "position", MOVE_SLIDE_1, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
         2:
             $MoveSlide/SelHand.position = MOVE2_POS
             $MoveSlide/Move2/AnimationPlayer.play("Slide")
-            $MoveSlide/Move1/AnimationPlayer.stop(true)
-            $MoveSlide/Move3/AnimationPlayer.stop(true)
-            $MoveSlide/Move4/AnimationPlayer.stop(true)
+            $MoveSlide/Move1/AnimationPlayer.stop()
+            $MoveSlide/Move3/AnimationPlayer.stop()
+            $MoveSlide/Move4/AnimationPlayer.stop()
             $MoveSlide/Move1.position = Vector2(120, 54)
             $MoveSlide/Move3.position = Vector2(560, 54)
             $MoveSlide/Move4.position = Vector2(780, 54)
-            tween.interpolate_property($MoveSlide, "position", $MoveSlide.position, MOVE_SLIDE_2,0.5,Tween.TRANS_SINE, Tween.EASE_OUT)
-            tween.start()
+            move_tween.tween_property($MoveSlide, "position", MOVE_SLIDE_2, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
         3:
             $MoveSlide/SelHand.position = MOVE3_POS
             $MoveSlide/Move3/AnimationPlayer.play("Slide")
-            $MoveSlide/Move1/AnimationPlayer.stop(true)
-            $MoveSlide/Move2/AnimationPlayer.stop(true)
-            $MoveSlide/Move4/AnimationPlayer.stop(true)
+            $MoveSlide/Move1/AnimationPlayer.stop()
+            $MoveSlide/Move2/AnimationPlayer.stop()
+            $MoveSlide/Move4/AnimationPlayer.stop()
             $MoveSlide/Move1.position = Vector2(120, 54)
             $MoveSlide/Move2.position = Vector2(340, 54)
             $MoveSlide/Move4.position = Vector2(780, 54)
-            tween.interpolate_property($MoveSlide, "position", $MoveSlide.position, MOVE_SLIDE_3,0.5,Tween.TRANS_SINE, Tween.EASE_OUT)
-            tween.start()
+            move_tween.tween_property($MoveSlide, "position", MOVE_SLIDE_3, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
         4:
             $MoveSlide/SelHand.position = MOVE4_POS
             $MoveSlide/Move4/AnimationPlayer.play("Slide")
-            $MoveSlide/Move1/AnimationPlayer.stop(true)
-            $MoveSlide/Move2/AnimationPlayer.stop(true)
-            $MoveSlide/Move3/AnimationPlayer.stop(true)
+            $MoveSlide/Move1/AnimationPlayer.stop()
+            $MoveSlide/Move2/AnimationPlayer.stop()
+            $MoveSlide/Move3/AnimationPlayer.stop()
             $MoveSlide/Move1.position = Vector2(120, 54)
             $MoveSlide/Move2.position = Vector2(340, 54)
             $MoveSlide/Move3.position = Vector2(560, 54)
-            tween.interpolate_property($MoveSlide, "position", $MoveSlide.position, MOVE_SLIDE_4,0.5,Tween.TRANS_SINE, Tween.EASE_OUT)
-            tween.start()
+            move_tween.tween_property($MoveSlide, "position", MOVE_SLIDE_4, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
     pass

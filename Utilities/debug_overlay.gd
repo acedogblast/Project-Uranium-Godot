@@ -6,7 +6,14 @@ func add_stat(stat_name, object, stat_ref, is_method):
 	stats.append([stat_name, object, stat_ref, is_method])
 	pass
 
+func _input(event):
+	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F3:
+		visible = not visible
+
 func _process(delta):
+	if not visible:
+		return
+
 	var label_text = ""
 	
 	var fps = Engine.get_frames_per_second()

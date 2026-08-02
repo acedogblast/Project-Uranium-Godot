@@ -35,3 +35,4 @@ var target_ability = MoveTarget.SINGLE_FOE
 
 # attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
 var main_status_effect # = MajorAilment.POISON
+var secondary_effect = MajorAilment.POISON

@@ -1,7 +1,22 @@
-msginit --no-translator --input=Cutscenes.pot --locale=en --output=Generated/en/Cutscenes.po
-msginit --no-translator --input=Events.pot --locale=en --output=Generated/en/Events.po
-msginit --no-translator --input=NPC.pot --locale=en --output=Generated/en/NPC.po
-msginit --no-translator --input=Objects.pot --locale=en --output=Generated/en/Objects.po
-msginit --no-translator --input=UI.pot --locale=en --output=Generated/en/UI.po
-msginit --no-translator --input=Battle.pot --locale=en --output=Generated/en/Battle.po
-msginit --no-translator --input=Maps.pot --locale=en --output=Generated/en/Maps.po
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")" || exit 1
+
+if command -v msginit > /dev/null 2>&1; then
+    for cat in Cutscenes Events NPC Objects UI Battle Maps; do
+        msginit --no-translator --input=$cat.pot --locale=en --output=Generated/en/$cat.po
+    done
+else
+    echo "msginit absent (gettext) : catalogues .pot inchangés"
+fi
+
+UDATA="$1"
+if [ -n "$UDATA" ] && [ -d "$UDATA/Data" ]; then
+    cd ..
+    for lang in french german spanish portuguese dutch chinese korean; do
+        UDATA_DIR="$UDATA" python3 Tools/extract_translations.py "$lang"
+    done
+else
+    [ -n "$UDATA" ] && echo "udata introuvable: $UDATA"
+fi
+echo "Traductions à jour."

@@ -35,3 +35,5 @@ var target_ability = MoveTarget.SINGLE_FOE
 
 var main_status_effect 
  
+
+var mechanic = {"kind": "power_rollout"}

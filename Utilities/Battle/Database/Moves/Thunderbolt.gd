@@ -25,7 +25,7 @@ var critical_hit_level = 1
 var secondary_effect_chance = 0.1
 
 # The secondary effect of the move
-var secondary_effect = MajorAilment.PARALYZE
+var secondary_effect = MajorAilment.PARALYSIS
 
 # The flags of the move
 var flags = []

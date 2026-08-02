@@ -36,3 +36,5 @@ var target_ability = MoveTarget.ALL_FOE
 var main_status_effect
 
 var description = "A soothing lullaby is sung in a calming voice that puts the target into a deep slumber."
+
+var secondary_effect = MajorAilment.SLEEP

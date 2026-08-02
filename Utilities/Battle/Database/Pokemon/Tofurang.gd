@@ -19,8 +19,8 @@ var sp_defense = 85
 var speed = 60
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Intimidate"
+var hidden_ability = "Moxie"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0

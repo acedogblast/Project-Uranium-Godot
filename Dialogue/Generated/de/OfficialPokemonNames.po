@@ -1,0 +1,475 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+
+msgid "Orchynx"
+msgstr "Orchiluks"
+
+msgid "Metalynx"
+msgstr "Metaluks"
+
+msgid "Raptorch"
+msgstr "Glutino"
+
+msgid "Archilles"
+msgstr "Brandillo"
+
+msgid "Eletux"
+msgstr "Voltus"
+
+msgid "Electruxo"
+msgstr "Ampuxo"
+
+msgid "Chyinmunk"
+msgstr "Schiflink"
+
+msgid "Kinetmunk"
+msgstr "Schiflör"
+
+msgid "Aveden"
+msgstr "Feradie"
+
+msgid "Splendifowl"
+msgstr "Paradieh"
+
+msgid "Cubbug"
+msgstr "Knuddelurm"
+
+msgid "Cubblfly"
+msgstr "Knuddeling"
+
+msgid "Barewl"
+msgstr "Erzel"
+
+msgid "dearewl"
+msgstr "Bamberz"
+
+msgid "Gararewl"
+msgstr "Erzrawel"
+
+msgid "Grozard"
+msgstr "Erdechs"
+
+msgid "Terlard"
+msgstr "Naterra"
+
+msgid "Tonemy"
+msgstr "Giffind"
+
+msgid "Tofurang"
+msgstr "Toxanell"
+
+msgid "Dunsparce"
+msgstr "Dummisel"
+
+msgid "Dunseraph"
+msgstr "Dummago"
+
+msgid "Fortog"
+msgstr "Froxig"
+
+msgid "Folerog"
+msgstr "Froxor"
+
+msgid "Blubelrog"
+msgstr "Frochillox"
+
+msgid "Magikarp"
+msgstr "Karpador"
+
+msgid "Gyarados"
+msgstr "Garados"
+
+msgid "Feleng"
+msgstr "Feling"
+
+msgid "Felunge"
+msgstr "Felung"
+
+msgid "Mankey"
+msgstr "Menki"
+
+msgid "Primeape"
+msgstr "Rasaff"
+
+msgid "Empirilla"
+msgstr "Imperilla"
+
+msgid "Owten"
+msgstr "Eulzchen"
+
+msgid "Eshouten"
+msgstr "Eultze"
+
+msgid "Lotad"
+msgstr "Loturzel"
+
+msgid "Lombre"
+msgstr "Lombrero"
+
+msgid "Ludicolo"
+msgstr "Kappalores"
+
+msgid "Smore"
+msgstr "Amauch"
+
+msgid "Firoke"
+msgstr "Amafera"
+
+msgid "Brailip"
+msgstr "Hirlip"
+
+msgid "Brainoar"
+msgstr "Welsirn"
+
+msgid "Ekans"
+msgstr "Rettan"
+
+msgid "Tancoon"
+msgstr "Maruki"
+
+msgid "Tanscure"
+msgstr "Marduskur"
+
+msgid "Sponee"
+msgstr "Poriflo"
+
+msgid "Sponaree"
+msgstr "Schakade"
+
+msgid "Pahar"
+msgstr "Pahara"
+
+msgid "Palij"
+msgstr "Pakamin"
+
+msgid "Panjay"
+msgstr "Pahäher"
+
+msgid "Jerbolta"
+msgstr "Jebitza"
+
+msgid "Comite"
+msgstr "Komerit"
+
+msgid "Cometeor"
+msgstr "Kometeor"
+
+msgid "Astronite"
+msgstr "Komenaut"
+
+msgid "Mareep"
+msgstr "Voltilamm"
+
+msgid "Flaaffy"
+msgstr "Waaty"
+
+msgid "Baashaun"
+msgstr "Bäshaun"
+
+msgid "Baaschaf"
+msgstr "Bäschaf"
+
+msgid "Baariette"
+msgstr "Bäphomet"
+
+msgid "Tricwe"
+msgstr "Amaja"
+
+msgid "Harylect"
+msgstr "Heleksekt"
+
+msgid "Costraw"
+msgstr "Säugel"
+
+msgid "Trawpint"
+msgstr "Blugegel"
+
+msgid "Lunapup"
+msgstr "Weluna"
+
+msgid "Herolune"
+msgstr "Heluno"
+
+msgid "Minyan"
+msgstr "Lakiau"
+
+msgid "Vilucard"
+msgstr "Halukard"
+
+msgid "Buizel"
+msgstr "Bamelin"
+
+msgid "Floatzel"
+msgstr "Bojelin"
+
+msgid "Modrille"
+msgstr "Mawore"
+
+msgid "Drilgann"
+msgstr "Borgann"
+
+msgid "Gligar"
+msgstr "Skorgla"
+
+msgid "Gliscor"
+msgstr "Skorgro"
+
+msgid "Sableye"
+msgstr "Zobiris"
+
+msgid "Cocaran"
+msgstr "Kokoran"
+
+msgid "Cararalm"
+msgstr "Kokoralm"
+
+msgid "Cocancer"
+msgstr "Kokorebs"
+
+msgid "Corsola"
+msgstr "Corasonn"
+
+msgid "Corsoreef"
+msgstr "Corariff"
+
+msgid "Tubjaw"
+msgstr "Tubarahn"
+
+msgid "Tubareel"
+msgstr "Tubaraal"
+
+msgid "Cassnail"
+msgstr "Schnurg"
+
+msgid "Escartress"
+msgstr "Fescargot"
+
+msgid "Nupin"
+msgstr "Caulerpi"
+
+msgid "Gellin"
+msgstr "Geleria"
+
+msgid "Cottonee"
+msgstr "Waumboll"
+
+msgid "Whimsicott"
+msgstr "Elfun"
+
+msgid "Misdreavus"
+msgstr "Traunfugil"
+
+msgid "Mismagius"
+msgstr "Traunmagil"
+
+msgid "Barand"
+msgstr "Manyrm"
+
+msgid "Glaslug"
+msgstr "Firneck"
+
+msgid "Glavinug"
+msgstr "Glawikus"
+
+msgid "Paraboom"
+msgstr "Parawumm"
+
+msgid "Flager"
+msgstr "Felitze"
+
+msgid "Inflagetah"
+msgstr "Geperno"
+
+msgid "Chimical"
+msgstr "Chimikal"
+
+msgid "Chimaconda"
+msgstr "Chimakonda"
+
+msgid "Unymph"
+msgstr "Nimphe"
+
+msgid "Chicoatl"
+msgstr "Kükoatl"
+
+msgid "Quetzoral"
+msgstr "Quetzora"
+
+msgid "Coatlith"
+msgstr "Quetzalith"
+
+msgid "Tracton"
+msgstr "Drachtor"
+
+msgid "Snopach"
+msgstr "Pachynee"
+
+msgid "Slothohm"
+msgstr "Faulohm"
+
+msgid "Titanice"
+msgstr "Frostanic"
+
+msgid "Frynai"
+msgstr "Brunai"
+
+msgid "Syrentide"
+msgstr "Sajade"
+
+msgid "Spritzee"
+msgstr "Parfi"
+
+msgid "Aromatisse"
+msgstr "Parfinesse"
+
+msgid "Miasmedic"
+msgstr "Miasani"
+
+msgid "Jackdeary"
+msgstr "Wolpereh"
+
+msgid "Winotinger"
+msgstr "Saufotinger"
+
+msgid "Duplicat"
+msgstr "Duplikatz"
+
+msgid "Eevee"
+msgstr "Evoli"
+
+msgid "Vaporeon"
+msgstr "Aquana"
+
+msgid "Jolteon"
+msgstr "Blitza"
+
+msgid "Flareon"
+msgstr "Flamara"
+
+msgid "Espeon"
+msgstr "Psiana"
+
+msgid "Umbreon"
+msgstr "Nachtara"
+
+msgid "Leafeon"
+msgstr "Folipurba"
+
+msgid "Glaceon"
+msgstr "Glaziola"
+
+msgid "Sylveon"
+msgstr "Feelinara"
+
+msgid "Nucleon"
+msgstr "Radiana"
+
+msgid "Gargryph"
+msgstr "Gargreif"
+
+msgid "Luchabra"
+msgstr "Chupador"
+
+msgid "Linkite"
+msgstr "Spukett"
+
+msgid "Chainite"
+msgstr "Poltett"
+
+msgid "Anderind"
+msgstr "Andelar"
+
+msgid "Colarva"
+msgstr "Kalarva"
+
+msgid "Frosulo"
+msgstr "Frokon"
+
+msgid "Frosthra"
+msgstr "Frostra"
+
+msgid "Fafurr"
+msgstr "Fafnell"
+
+msgid "Shrimputy"
+msgstr "Garnole"
+
+msgid "Lavent"
+msgstr "Lavalt"
+
+msgid "Swabone"
+msgstr "Semanoch"
+
+msgid "Skelerogue"
+msgstr "Skelunke"
+
+msgid "Navighast"
+msgstr "Navigeist"
+
+msgid "Jungore"
+msgstr "Jungerz"
+
+msgid "Hagoop"
+msgstr "Schlebri"
+
+msgid "Haagross"
+msgstr "Schlekel"
+
+msgid "Xenomite"
+msgstr "Xenomilb"
+
+msgid "Hazma"
+msgstr "Fermi"
+
+msgid "Geigeroach"
+msgstr "Geigerlake"
+
+msgid "Minicorn"
+msgstr "Kleinhorn"
+
+msgid "Kiricorn"
+msgstr "Kirihorn"
+
+msgid "Oblivicorn"
+msgstr "Fatalihorn"
+
+msgid "Luxi"
+msgstr "Glüchsi"
+
+msgid "Luxor"
+msgstr "Glüchsur"
+
+msgid "Luxelong"
+msgstr "Glüchselong"
+
+msgid "Sheebit"
+msgstr "Schaase"
+
+msgid "Terrabit"
+msgstr "Kaniterra"
+
+msgid "Laissure"
+msgstr "Leporitera"
+
+msgid "Volchik"
+msgstr "Voltuk"
+
+msgid "Devimp"
+msgstr "Kofel"
+
+msgid "Fallengel"
+msgstr "Grausengel"
+
+msgid "Belliadon"
+msgstr "Beliadon"
+
+msgid "Garlikid"
+msgstr "Knobikid"
+
+msgid "Urayne"
+msgstr "Uratom"
+
+msgid "Gastly"
+msgstr "Gengar"

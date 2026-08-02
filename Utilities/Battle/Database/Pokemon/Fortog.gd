@@ -19,8 +19,9 @@ var sp_defense = 80
 var speed = 35
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Clear Body"
+var ability_2 = "Damp"
+var hidden_ability = "Water Absorb"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0

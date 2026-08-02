@@ -4,13 +4,10 @@ class_name MoveDataBase
 static func get_move_by_name(name):
 	var file_name = "res://Utilities/Battle/Database/Moves/" + name.replace(" ", "_") + ".gd"
 	var data = load(file_name)
-
-	if data == null:
-		file_name = "res://Utilities/Battle/Database/Moves/" + name + ".gd"
-		data = load(file_name)
 	
 	if data == null:
 		print("MoveDatabase ERROR: The move, '" + name + "' does not have a file.")
+		return null
 	
 	data = load(file_name).new()
 
@@ -24,9 +21,15 @@ static func get_move_by_name(name):
 	move.priority = data.priority
 	move.critical_hit_level = data.critical_hit_level
 	move.secondary_effect_chance = data.secondary_effect_chance
+	if "secondary_effect" in data:
+		move.secondary_effect = data.secondary_effect
+	if "stat_effect_chance" in data:
+		move.stat_effect_chance = data.stat_effect_chance
 	move.flags = data.flags
 	move.total_pp = data.total_pp
 	move.target_ability = data.target_ability
 	move.main_status_effect = data.main_status_effect
+	if "mechanic" in data:
+		move.mechanic = data.mechanic
 	move.remaining_pp = move.total_pp
 	return move

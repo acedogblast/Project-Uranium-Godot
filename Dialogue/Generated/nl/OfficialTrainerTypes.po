@@ -1,0 +1,226 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: nl\n"
+
+msgid "PkMn TRAINER"
+msgstr "PkMn-TRAINER"
+
+msgid "LASS"
+msgstr "MEISJE"
+
+msgid "YOUNGSTER"
+msgstr "JONGEN"
+
+msgid "HIKER"
+msgstr "WANDELAAR"
+
+msgid "BEAUTY"
+msgstr "SCHOONHEID"
+
+msgid "FISHERMAN"
+msgstr "VISSER"
+
+msgid "LADY"
+msgstr "DAME"
+
+msgid "TRIATHLETE"
+msgstr "TRIATLEET"
+
+msgid "TWINS"
+msgstr "TWEELING"
+
+msgid "SWIMMER♀"
+msgstr "ZWEMMER♀"
+
+msgid "BUG CATCHER"
+msgstr "INSECTENVANGER"
+
+msgid "SCHOOL KID"
+msgstr "SCHOOLKIND"
+
+msgid "RICH BOY"
+msgstr "RIJK VENTJE"
+
+msgid "SR. AND JR."
+msgstr "STUDENTEN"
+
+msgid "BLACK BELT"
+msgstr "ZWARTE BAND"
+
+msgid "TUBER"
+msgstr "ZWEMBANDKIND"
+
+msgid "HEX MANIAC"
+msgstr "HEKS"
+
+msgid "PkMn BREEDER"
+msgstr "PkMn-FOKKER"
+
+msgid "WORKER"
+msgstr "ARBEIDER"
+
+msgid "YOUNG COUPLE"
+msgstr "JONG STEL"
+
+msgid "GUITARIST"
+msgstr "GITARIST"
+
+msgid "GENTLEMAN"
+msgstr "DE HEER"
+
+msgid "CHAMPION"
+msgstr "KAMPIOEN"
+
+msgid "MAGMA LEADER"
+msgstr "MAGMA-LEIDER"
+
+msgid "BATTLE GIRL"
+msgstr "VECHTERSMEID"
+
+msgid "SWIMMER♂"
+msgstr "ZWEMMER♂"
+
+msgid "DRAGON TAMER"
+msgstr "DRAKENTEMMER"
+
+msgid "BIRD KEEPER"
+msgstr "VOGELHOUDER"
+
+msgid "NINJA BOY"
+msgstr "NINJA-JONGEN"
+
+msgid "PARASOL LADY"
+msgstr "PARAPLUDAME"
+
+msgid "BUG MANIAC"
+msgstr "INSECTENFAN"
+
+msgid "SAILOR"
+msgstr "ZEEMAN"
+
+msgid "COLLECTOR"
+msgstr "VERZAMELAAR"
+
+msgid "PkMn RANGER"
+msgstr "PkMn-RANGER"
+
+msgid "AROMA LADY"
+msgstr "PARFUMDAME"
+
+msgid "RUIN MANIAC"
+msgstr "RUÏNEMANIAK"
+
+msgid "COOLTRAINER"
+msgstr "COOLE TRAINER"
+
+msgid "POKéMANIAC"
+msgstr "POKéMANIAK"
+
+msgid "KINDLER"
+msgstr "HEETHOOFD"
+
+msgid "CAMPER"
+msgstr "KAMPEERDER"
+
+msgid "PICNICKER"
+msgstr "PICKNICKER"
+
+msgid "PSYCHIC"
+msgstr "MEDIUM"
+
+msgid "SIS AND BRO"
+msgstr "ZUS EN BROER"
+
+msgid "OLD COUPLE"
+msgstr "OUD KOPPEL"
+
+msgid "AQUA LEADER"
+msgstr "AQUA-LEIDER"
+
+msgid "LEADER"
+msgstr "GYMLEIDER"
+
+msgid "LEADERS"
+msgstr "GYMLEIDERS"
+
+msgid "ELITE FOUR"
+msgstr "ELITE VIER"
+
+msgid "ACE TRAINER"
+msgstr "ACE-TRAINER"
+
+msgid "ROCKET GRUNT"
+msgstr "ROCKET-HANDLANGER"
+
+msgid "SCHOOLKIDDO"
+msgstr "SCHOOLKIND"
+
+msgid "RIVAL"
+msgstr "RIVAAL"
+
+msgid "HERO"
+msgstr "POKÉHELD"
+
+msgid "SUPER SCIENTIST"
+msgstr "SUPERWETENSCHAPPER"
+
+msgid "COOL COUPLE"
+msgstr "COOL STEL"
+
+msgid "FARMER"
+msgstr "BOER"
+
+msgid "PYROMANIAC"
+msgstr "PYROMAAN"
+
+msgid "BIKER"
+msgstr "MOTORRIJDER"
+
+msgid "NINJA SURFERS"
+msgstr "NINJA-SURFERS"
+
+msgid "NINJA BOSS"
+msgstr "NINJA-BAAS"
+
+msgid "ACTOR"
+msgstr "ACTEUR"
+
+msgid "ACTRESS"
+msgstr "ACTRICE"
+
+msgid "LEADER?"
+msgstr "GYMLEIDER?"
+
+msgid "ACOLYTE"
+msgstr "ACOLIET"
+
+msgid "DIVER"
+msgstr "DUIKER"
+
+msgid "TSUKI NINJA"
+msgstr "TSUKI-NINJA"
+
+msgid "NAMI NINJA"
+msgstr "NAMI-NINJA"
+
+msgid "NINJA MASTER"
+msgstr "NINJA-MEESTER"
+
+msgid "NUCLEAR HORDE"
+msgstr "NUCLEAIRE PkMn"
+
+msgid "APOCALYPSE"
+msgstr "APOCALYPS"
+
+msgid "PIRATE"
+msgstr "PIRAAT"
+
+msgid "DREAM"
+msgstr "DROOM"
+
+msgid "KING"
+msgstr "KONING"
+
+msgid "BIOFIBER CONSTRUCT"
+msgstr "BIOVEZEL CONSTRUCTIE"

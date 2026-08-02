@@ -1,17 +1,17 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Graphics/Tilesets/PU-NuclearPlantInside-Resized.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/Tilesets/PU-NuclearPlantInside-Resized.png" type="Texture2D" id=1]
 
 [node name="Node" type="Node"]
 
-[node name="Floor" type="Sprite" parent="."]
+[node name="Floor" type="Sprite2D" parent="."]
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 16, 16 )
 
-[node name="Reactor" type="Sprite" parent="."]
+[node name="Reactor" type="Sprite2D" parent="."]
 position = Vector2( 0, 32 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -19,7 +19,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 0, 176, 80, 80 )
 
-[node name="FloorRailing" type="Sprite" parent="."]
+[node name="FloorRailing" type="Sprite2D" parent="."]
 position = Vector2( 0, 192 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -27,7 +27,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 48, 80, 32, 16 )
 
-[node name="TableTopLeft" type="Sprite" parent="."]
+[node name="TableTopLeft" type="Sprite2D" parent="."]
 position = Vector2( 64, 192 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -35,7 +35,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 64, 384, 16, 16 )
 
-[node name="TableTop" type="Sprite" parent="."]
+[node name="TableTop" type="Sprite2D" parent="."]
 position = Vector2( 96, 192 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -43,7 +43,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 80, 384, 16, 16 )
 
-[node name="TableTopRight" type="Sprite" parent="."]
+[node name="TableTopRight" type="Sprite2D" parent="."]
 position = Vector2( 128, 192 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -51,7 +51,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 96, 384, 16, 16 )
 
-[node name="TableCenter" type="Sprite" parent="."]
+[node name="TableCenter" type="Sprite2D" parent="."]
 position = Vector2( 96, 224 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -59,7 +59,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 80, 400, 16, 16 )
 
-[node name="TableLeft" type="Sprite" parent="."]
+[node name="TableLeft" type="Sprite2D" parent="."]
 position = Vector2( 64, 224 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -67,7 +67,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 64, 400, 16, 16 )
 
-[node name="TableRight" type="Sprite" parent="."]
+[node name="TableRight" type="Sprite2D" parent="."]
 position = Vector2( 128, 224 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -75,7 +75,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 96, 400, 16, 16 )
 
-[node name="TableBottomLeft" type="Sprite" parent="."]
+[node name="TableBottomLeft" type="Sprite2D" parent="."]
 position = Vector2( 64, 256 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -83,7 +83,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 64, 416, 16, 16 )
 
-[node name="TableBottom" type="Sprite" parent="."]
+[node name="TableBottom" type="Sprite2D" parent="."]
 position = Vector2( 96, 256 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -91,7 +91,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 80, 416, 16, 16 )
 
-[node name="TableBottomRight" type="Sprite" parent="."]
+[node name="TableBottomRight" type="Sprite2D" parent="."]
 position = Vector2( 128, 256 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -99,7 +99,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 96, 416, 16, 16 )
 
-[node name="Desk" type="Sprite" parent="."]
+[node name="Desk" type="Sprite2D" parent="."]
 position = Vector2( 0, 224 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -107,7 +107,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 0, 864, 32, 32 )
 
-[node name="Seat" type="Sprite" parent="."]
+[node name="Seat" type="Sprite2D" parent="."]
 position = Vector2( 0, 288 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -115,7 +115,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 48, 432, 16, 16 )
 
-[node name="Book" type="Sprite" parent="."]
+[node name="Book" type="Sprite2D" parent="."]
 position = Vector2( 32, 288 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -123,7 +123,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 64, 432, 16, 16 )
 
-[node name="Exit" type="Sprite" parent="."]
+[node name="Exit" type="Sprite2D" parent="."]
 position = Vector2( 64, 288 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -131,7 +131,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 32, 592, 48, 16 )
 
-[node name="Drum" type="Sprite" parent="."]
+[node name="Drum" type="Sprite2D" parent="."]
 position = Vector2( 0, 320 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -139,7 +139,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 96, 688, 16, 32 )
 
-[node name="StairsDownRight" type="Sprite" parent="."]
+[node name="StairsDownRight" type="Sprite2D" parent="."]
 position = Vector2( 160, 0 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -147,7 +147,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 0, 528, 32, 48 )
 
-[node name="ServerRack" type="Sprite" parent="."]
+[node name="ServerRack" type="Sprite2D" parent="."]
 position = Vector2( 160, 96 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -155,7 +155,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 16, 496, 16, 32 )
 
-[node name="Screen" type="Sprite" parent="."]
+[node name="Screen" type="Sprite2D" parent="."]
 position = Vector2( 224, 0 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -163,7 +163,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 80, 208, 48, 32 )
 
-[node name="ControlLeft" type="Sprite" parent="."]
+[node name="ControlLeft" type="Sprite2D" parent="."]
 position = Vector2( 160, 160 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -171,7 +171,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 16, 656, 16, 32 )
 
-[node name="ControlCenter" type="Sprite" parent="."]
+[node name="ControlCenter" type="Sprite2D" parent="."]
 position = Vector2( 192, 160 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -179,7 +179,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 32, 656, 48, 32 )
 
-[node name="ControlRight" type="Sprite" parent="."]
+[node name="ControlRight" type="Sprite2D" parent="."]
 position = Vector2( 288, 160 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -187,7 +187,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 80, 656, 16, 32 )
 
-[node name="Window" type="Sprite" parent="."]
+[node name="Window" type="Sprite2D" parent="."]
 position = Vector2( 224, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
@@ -195,7 +195,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2( 16, 32, 16, 48 )
 
-[node name="Wall" type="Sprite" parent="."]
+[node name="Wall" type="Sprite2D" parent="."]
 position = Vector2( 256, 64 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )

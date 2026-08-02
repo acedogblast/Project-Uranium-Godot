@@ -2,14 +2,17 @@
 Audio/
 Fonts/
 Graphics/
+Tools/
 .import/
 .vscode/
 bin/
 Maps/TiledMaps/
 .directory
+*.rb
 *.apk
 *.exe
 *.x86_64
+*.pck
 export_presets.cfg
 *.keystore
 PermittedAssets/UraniumIcon.png
@@ -18,3 +21,4 @@ Utilities/Save/*.tres
 Pokémon Uranium.nro
 Pokémon Uranium.pck
 SetUpComplete.txt
+.godot/

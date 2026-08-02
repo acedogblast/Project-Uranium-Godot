@@ -1,4 +1,5 @@
 extends Object
+# TODO: Essentials function code 0x0DC not fully implemented (plain move for now)
 
 # The name of the move
 var name = "Leech Seed"
@@ -24,11 +25,14 @@ var critical_hit_level = 0
 # The secondary effect chance of the move
 var secondary_effect_chance
 
+# The secondary effect of the move
+var secondary_effect
+
 # The flags of the move
 var flags = []
 
 # The total pp of the move
-var total_pp = 25
+var total_pp = 10
 
 # The target ability of the move (Single, Double, All_Foes, Self)
 var target_ability = MoveTarget.SINGLE_FOE

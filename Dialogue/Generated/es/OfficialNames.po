@@ -1,0 +1,173 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es\n"
+
+msgid "Alice"
+msgstr "Alicia"
+
+msgid "Alphonse"
+msgstr "Alfonso"
+
+msgid "Amalya"
+msgstr "Amalia"
+
+msgid "Amber"
+msgstr "Ámbar"
+
+msgid "Angelica"
+msgstr "Angélica"
+
+msgid "Benjamin"
+msgstr "Benjamín"
+
+msgid "Caesar"
+msgstr "César"
+
+msgid "Caroline"
+msgstr "Carolina"
+
+msgid "Cathy"
+msgstr "Caty"
+
+msgid "Cedric"
+msgstr "Rubén"
+
+msgid "Charles"
+msgstr "Carlos"
+
+msgid "Curie"
+msgstr "CURIE"
+
+msgid "Ethan & Alice"
+msgstr "Ethan & Alicia"
+
+msgid "Eustace"
+msgstr "Eustaquio"
+
+msgid "Everst"
+msgstr "Everest"
+
+msgid "Flood"
+msgstr "Fausto"
+
+msgid "Flower"
+msgstr "Florencia"
+
+msgid "George"
+msgstr "Jorge"
+
+msgid "Gertha"
+msgstr "Gertrudis"
+
+msgid "Gregorison"
+msgstr "Gregorio"
+
+msgid "Homer"
+msgstr "Homero"
+
+msgid "Horace"
+msgstr "Horacio"
+
+msgid "Horde"
+msgstr "Nuclear"
+
+msgid "Immanuel"
+msgstr "Emanuel"
+
+msgid "James"
+msgstr "Jaime"
+
+msgid "Johnny"
+msgstr "Julián"
+
+msgid "Jonathan"
+msgstr "Joaquín"
+
+msgid "Julianna"
+msgstr "Juliana"
+
+msgid "Julius"
+msgstr "Julio"
+
+msgid "Larrie"
+msgstr "Larry"
+
+msgid "Luke"
+msgstr "Lucas"
+
+msgid "Lynette"
+msgstr "Lina"
+
+msgid "Marc"
+msgstr "Adrián"
+
+msgid "Marcus"
+msgstr "Marcos"
+
+msgid "Maria"
+msgstr "María"
+
+msgid "Marino"
+msgstr "Mariano"
+
+msgid "Martin"
+msgstr "Martín"
+
+msgid "Matt"
+msgstr "Matías"
+
+msgid "Mercury"
+msgstr "Mercurio"
+
+msgid "Merlin"
+msgstr "Merlín"
+
+msgid "Michael"
+msgstr "Miguel"
+
+msgid "Monica"
+msgstr "Mónica"
+
+msgid "Myla"
+msgstr "Marcia"
+
+msgid "OF DREAMS"
+msgstr "de los Sueños"
+
+msgid "Phoenix"
+msgstr "Fénix"
+
+msgid "Rich"
+msgstr "Rico"
+
+msgid "Richey"
+msgstr "Ricky"
+
+msgid "Sasha"
+msgstr "Alex"
+
+msgid "Sophy"
+msgstr "Sofía"
+
+msgid "Sr. Goldkorn"
+msgstr "Sir Goldkorn"
+
+msgid "Tath"
+msgstr "Tita"
+
+msgid "Theo"
+msgstr "Teo"
+
+msgid "Timothy"
+msgstr "Timoteo"
+
+msgid "Tracey"
+msgstr "Tadeo"
+
+msgid "Vanessa"
+msgstr "Vanesa"
+
+msgid "Wilma"
+msgstr "Laura"
+

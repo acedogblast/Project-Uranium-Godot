@@ -1,14 +1,14 @@
 extends Node
-onready var NuclearPlantMusic = preload("res://Audio/BGM/PU-Nuclear Plant.ogg")
-onready var SpecialPokeMusic = preload("res://Audio/BGM/PU-Specialpoke.ogg")
-onready var AlarmMusic = preload("res://Audio/BGS/Emergency Civil Defense Alarm [Air Raid Siren].ogg")
-onready var EnteringDoor = preload("res://Audio/SE/Entering Door.wav")
-onready var ExitingDoor = preload("res://Audio/SE/Exit Door.WAV")
-onready var EarthQuakeSound = preload("res://Audio/SE/131-Earth03.ogg") 
+@onready var NuclearPlantMusic = preload("res://Audio/BGM/PU-Nuclear_Plant.ogg")
+@onready var SpecialPokeMusic = preload("res://Audio/BGM/PU-Specialpoke.ogg")
+@onready var AlarmMusic = preload("res://Audio/BGS/Emergency_Civil_Defense_Alarm_[Air_Raid_Siren].ogg")
+@onready var EnteringDoor = preload("res://Audio/SE/Entering_Door.wav")
+@onready var ExitingDoor = preload("res://Audio/SE/Exit_Door.WAV")
+@onready var EarthQuakeSound = preload("res://Audio/SE/131-Earth03.ogg") 
 
-onready var EmotionSound = preload("res://Audio/SE/SE_EM.wav")
-onready var ExplosionSound = preload("res://Audio/SE/049-Explosion02.ogg") # Do not loop
-onready var EmotionIcon = preload("res://Graphics/Animations/029-Emotion01.png")
+@onready var EmotionSound = preload("res://Audio/SE/SE_EM.wav")
+@onready var ExplosionSound = preload("res://Audio/SE/049-Explosion02.ogg") # Do not loop
+@onready var EmotionIcon = preload("res://Graphics/Animations/029-Emotion01.png")
 
 var lastAnimationPos = 0.0
 var lastAnimation = null
@@ -19,14 +19,14 @@ func _ready():
 	$AnimationPlayer.play("Story")
 	TrainerName = Global.TrainerName
 
-	DialogueSystem.connect("dialogue_start", self, "pause")
-	DialogueSystem.connect("dialogue_end", self, "resume")
+	DialogueSystem.connect("dialogue_start", Callable(self, "pause"))
+	DialogueSystem.connect("dialogue_end", Callable(self, "resume"))
 	DialogueSystem.set_dialogue_sequence("CUTSCENE_INTRO_D")
 	pass
 
 func _exit_tree():
-	DialogueSystem.disconnect("dialogue_start", self, "pause")
-	DialogueSystem.disconnect("dialogue_end", self, "resume")
+	DialogueSystem.disconnect("dialogue_start", Callable(self, "pause"))
+	DialogueSystem.disconnect("dialogue_end", Callable(self, "resume"))
 
 func dialogue_set_bottom():
 	DialogueSystem.set_box_position(DialogueSystem.BOTTOM)
@@ -63,7 +63,7 @@ func dialogue_scientist(show_arrow = true):
 	pass
 
 func final():
-	change_scene("res://Game.tscn")
+	change_scene_to_file("res://Game.tscn")
 	pass
 
 func earth_shake():
@@ -212,14 +212,12 @@ func explosion():
 func pause():
 	lastAnimationPos = $AnimationPlayer.current_animation_position
 	lastAnimation = $AnimationPlayer.current_animation
-	$AnimationPlayer.stop(false)
+	$AnimationPlayer.pause()
 	#print("Paused")
 	pass
 
 func resume():
-	$AnimationPlayer.play(lastAnimation)
-	$AnimationPlayer.seek(lastAnimationPos)
-	#print("Resumed")
+	$AnimationPlayer.play()
 	pass
 
 func play_nuclear_plant_music():
@@ -227,9 +225,9 @@ func play_nuclear_plant_music():
 	$AudioStreamPlayer.play()
 	pass
 
-func change_scene(scene):
+func change_scene_to_file(scene):
 	if Global.isMobile:
 		get_parent().newScene(scene)
 	else:
-		get_tree().change_scene(scene)
+		get_tree().change_scene_to_file(scene)
 	pass

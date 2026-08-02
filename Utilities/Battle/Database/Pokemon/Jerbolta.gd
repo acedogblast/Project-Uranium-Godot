@@ -19,8 +19,8 @@ var sp_defense = 85
 var speed = 65
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Quick Charge"
+var hidden_ability = "Volt Absorb"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -61,7 +61,7 @@ var moveset = [
 	MoveSet.new(13, "Spark"),
 	MoveSet.new(17, "Endure"),
 	MoveSet.new(21, "Mud Shot"),
-	MoveSet.new(25, "Electroball"),
+	MoveSet.new(25, "Electro Ball"),
 	MoveSet.new(29, "Magnitude"),
 	MoveSet.new(33, "Rollout"),
 	MoveSet.new(37, "Hyper Fang"),

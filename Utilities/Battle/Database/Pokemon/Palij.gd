@@ -19,8 +19,9 @@ var sp_defense = 80
 var speed = 85
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Flash Fire"
+var ability_2 = "Big Pecks"
+var hidden_ability = "Flame Body"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0

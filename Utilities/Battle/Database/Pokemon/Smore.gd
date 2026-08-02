@@ -19,7 +19,7 @@ var sp_defense = 40
 var speed = 45
 
 # The pokemon's public and hidden abilities
-var ability
+var ability = "Swarm"
 var hidden_ability
 
 # The pokemon's Effort Value Yeild

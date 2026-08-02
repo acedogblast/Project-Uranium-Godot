@@ -24,6 +24,9 @@ var critical_hit_level = 0
 # The secondary effect chance of the move
 var secondary_effect_chance
 
+# The secondary effect of the move
+var secondary_effect
+
 # The flags of the move
 var flags = []
 

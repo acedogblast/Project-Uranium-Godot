@@ -9,4 +9,4 @@ func peek(): # Returns the first action but donsn't remove it.
 func pop(): # Returns and removes the first action.
 	return queue.pop_front()
 func is_empty():
-	return queue.empty()
+	return queue.is_empty()

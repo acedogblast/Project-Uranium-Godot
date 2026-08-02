@@ -15,13 +15,21 @@ enum SELECTED { # for the full pannel
 	NEW_GAME,
 	OTHER_SAVES,
 	DELETE_SAVE,
+	MYSTERY_GIFT,
 	UPDATE,
 	OPTIONS,
 	EXIT
 }
 var selected = 0
 var save_id = 1
+func _icon_for(poke) -> Texture2D:
+	if typeof(poke) == TYPE_DICTIONARY:
+		var suffix = "s" if poke.get("is_shiny", false) else ""
+		return load("res://Graphics/Icons/icon" + str("%03d" % int(poke["ID"])) + suffix + ".png") as Texture2D
+	return poke.get_icon_texture()
+
 func _ready():
+	Global.localize_textures(self)
 	$ErrorMessage.text = ""
 
 	#Gets the number of saves from the save system
@@ -45,10 +53,20 @@ func _ready():
 		var global_state = save.get_data("")
 		var game_state = save.get_data("res://Game.tscn")
 
-		var current_scene = load(game_state["current_scene"])
-		var current_scene_instance = current_scene.instance()
+		var scene_path = Global.migrate_scene_path(game_state["current_scene"])
+		var current_scene = load(scene_path)
+		var current_scene_instance = null
+		if current_scene != null:
+			current_scene_instance = current_scene.instantiate()
 
-		$FullPanel/Load/Location.text = current_scene_instance.place_name
+		var loc = "???"
+		if current_scene_instance != null:
+			loc = current_scene_instance.get("place_name")
+			if loc == null:
+				loc = current_scene_instance.get("map_name")
+			if loc == null:
+				loc = "???"
+		$FullPanel/Load/Location.text = loc
 		match global_state["TrainerGender"]:
 			0:
 				$FullPanel/Load/Player.texture = load("res://Graphics/Characters/HERO.png")
@@ -66,22 +84,22 @@ func _ready():
 		for poke in poke_group:
 			match index:
 				0:
-					$FullPanel/Load/P1.texture = poke.get_icon_texture()
+					$FullPanel/Load/P1.texture = _icon_for(poke)
 					$FullPanel/Load/P1.show()
 				1:
-					$FullPanel/Load/P2.texture = poke.get_icon_texture()
+					$FullPanel/Load/P2.texture = _icon_for(poke)
 					$FullPanel/Load/P2.show()
 				2:
-					$FullPanel/Load/P3.texture = poke.get_icon_texture()
+					$FullPanel/Load/P3.texture = _icon_for(poke)
 					$FullPanel/Load/P3.show()
 				3:
-					$FullPanel/Load/P4.texture = poke.get_icon_texture()
+					$FullPanel/Load/P4.texture = _icon_for(poke)
 					$FullPanel/Load/P4.show()
 				4:
-					$FullPanel/Load/P5.texture = poke.get_icon_texture()
+					$FullPanel/Load/P5.texture = _icon_for(poke)
 					$FullPanel/Load/P5.show()
 				5:
-					$FullPanel/Load/P6.texture = poke.get_icon_texture()
+					$FullPanel/Load/P6.texture = _icon_for(poke)
 					$FullPanel/Load/P6.show()
 			index += 1
 
@@ -136,6 +154,8 @@ func _process(delta):
 					continueGame(save_id)
 				SELECTED.NEW_GAME:
 					NewGame()
+				SELECTED.OPTIONS:
+					_open_options()
 				SELECTED.EXIT:
 					get_tree().quit()
 		pass
@@ -164,6 +184,7 @@ func updateBoxes():
 		$FullPanel/NewGame.texture.region = grayBox
 		$FullPanel/OtherSave.texture.region = grayBox
 		$FullPanel/Delete.texture.region = grayBox
+		$FullPanel/Mystery.texture.region = grayBox
 		$FullPanel/Update.texture.region = grayBox
 		$FullPanel/Options.texture.region = grayBox
 		$FullPanel/Exit.texture.region = grayBox
@@ -181,6 +202,9 @@ func updateBoxes():
 			SELECTED.DELETE_SAVE:
 				$FullPanel/Delete.texture.region = greenBox
 				pannel_pos = 1
+			SELECTED.MYSTERY_GIFT:
+				$FullPanel/Mystery.texture.region = greenBox
+				pannel_pos = 1
 			SELECTED.UPDATE:
 				$FullPanel/Update.texture.region = greenBox
 				pannel_pos = 1
@@ -191,9 +215,12 @@ func updateBoxes():
 				$FullPanel/Exit.texture.region = greenBox
 				pannel_pos = 1
 		if pannel_pos == 0:
-			$FullPanel.position = Vector2(50, 32)
+			$FullPanel.position = Vector2(30, 32)
+			$FullPanel/Load.visible = true
 		else:
-			$FullPanel.position = Vector2(50, -160)
+			# Original PScreen_Load: panels at x=48, the save panel scrolls fully out
+			$FullPanel.position = Vector2(30, -192)
+			$FullPanel/Load.visible = false
 		$AudioStreamPlayer.play()
 		
 #Changes loads the method newscene in the parent node if on mobile, or gets change scene from the scene tree if not on mobile
@@ -201,10 +228,18 @@ func changeScene(scene):
 	if Global.isMobile:
 		get_parent().newScene(scene)
 	else:
-		get_tree().change_scene(scene)
+		get_tree().change_scene_to_file(scene)
 	pass
 
 #Loads the map to continue your game
 func continueGame(id):
 	Global.load_game_from_id = id
 	changeScene("res://Game.tscn")
+
+
+var _options = null
+func _open_options():
+	if _options == null:
+		_options = load("res://Utilities/OptionsMenu.tscn").instantiate()
+		add_child(_options)
+	_options.open()

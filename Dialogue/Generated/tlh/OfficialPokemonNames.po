@@ -1,0 +1,595 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: tlh\n"
+
+msgid "Orchynx"
+msgstr "0rchynx"
+
+msgid "Metalynx"
+msgstr "Met41ynx"
+
+msgid "Raptorch"
+msgstr "Rap2rch"
+
+msgid "Archilles"
+msgstr "4rch11135"
+
+msgid "Eletux"
+msgstr "3le7ux"
+
+msgid "Electruxo"
+msgstr "3lec7rux0"
+
+msgid "Chyinmunk"
+msgstr "Chy1nmunk"
+
+msgid "Kinetmunk"
+msgstr "Kin37munk"
+
+msgid "Birbie"
+msgstr "8ir813"
+
+msgid "Aveden"
+msgstr "4ved3n"
+
+msgid "Splendifowl"
+msgstr "5pl3nd1f0w1"
+
+msgid "Cubbug"
+msgstr "Cub8u6"
+
+msgid "Cubblfly"
+msgstr "Cub81f1y"
+
+msgid "Nimflora"
+msgstr "Nimf10r4"
+
+msgid "Barewl"
+msgstr "8ar3w1"
+
+msgid "dearewl"
+msgstr "Dear3w1"
+
+msgid "Gararewl"
+msgstr "6ar4r3w1"
+
+msgid "Grozard"
+msgstr "6roz4rd"
+
+msgid "Terlard"
+msgstr "7er14rd"
+
+msgid "Tonemy"
+msgstr "7on3my"
+
+msgid "Tofurang"
+msgstr "7ofur4n6"
+
+msgid "Dunsparce"
+msgstr "Dun5p4rc3"
+
+msgid "Dunseraph"
+msgstr "Dun53r4ph"
+
+msgid "Fortog"
+msgstr "For26"
+
+msgid "Folerog"
+msgstr "Fol3r06"
+
+msgid "Blubelrog"
+msgstr "8lu831r06"
+
+msgid "Magikarp"
+msgstr "Mag1k4rp"
+
+msgid "Gyarados"
+msgstr "6yar4d05"
+
+msgid "Feleng"
+msgstr "Fel3n6"
+
+msgid "Felunge"
+msgstr "Felun63"
+
+msgid "Feliger"
+msgstr "Fel163r"
+
+msgid "Mankey"
+msgstr "Mank3y"
+
+msgid "Primeape"
+msgstr "Prim34p3"
+
+msgid "Empirilla"
+msgstr "3mp1r1114"
+
+msgid "Owten"
+msgstr "0wt3n"
+
+msgid "Eshouten"
+msgstr "3sh0u73n"
+
+msgid "Lotad"
+msgstr "1ot4d"
+
+msgid "Lombre"
+msgstr "1om8r3"
+
+msgid "Ludicolo"
+msgstr "1ud1c010"
+
+msgid "Smore"
+msgstr "5mor3"
+
+msgid "Firoke"
+msgstr "Fir0k3"
+
+msgid "Brailip"
+msgstr "8ra111p"
+
+msgid "Brainoar"
+msgstr "8ra1n04r"
+
+msgid "Ekans"
+msgstr "3kan5"
+
+msgid "Arbok"
+msgstr "4rb0k"
+
+msgid "Tancoon"
+msgstr "7ancun"
+
+msgid "Tanscure"
+msgstr "7an5cur3"
+
+msgid "Sponee"
+msgstr "5pon33"
+
+msgid "Sponaree"
+msgstr "5pon4r33"
+
+msgid "Pahar"
+msgstr "Pah4r"
+
+msgid "Palij"
+msgstr "Pal1j"
+
+msgid "Panjay"
+msgstr "Paj4y"
+
+msgid "Jerbolta"
+msgstr "Jer80174"
+
+msgid "Comite"
+msgstr "Com173"
+
+msgid "Cometeor"
+msgstr "Com3730r"
+
+msgid "Astronite"
+msgstr "4str0n173"
+
+msgid "Mareep"
+msgstr "Mar33p"
+
+msgid "Flaaffy"
+msgstr "Fla4ffy"
+
+msgid "Ampharos"
+msgstr "4mph4r05"
+
+msgid "Baashaun"
+msgstr "8aa5h4un"
+
+msgid "Baaschaf"
+msgstr "8aa5ch4f"
+
+msgid "Baariette"
+msgstr "8aar13773"
+
+msgid "Tricwe"
+msgstr "7ricw3"
+
+msgid "Harylect"
+msgstr "Hary13c7"
+
+msgid "Costraw"
+msgstr "Cos7r4w"
+
+msgid "Trawpint"
+msgstr "7rawp1n7"
+
+msgid "Lunapup"
+msgstr "1un4pup"
+
+msgid "Herolune"
+msgstr "Her01un3"
+
+msgid "Minyan"
+msgstr "Miny4n"
+
+msgid "Vilucard"
+msgstr "Viluc4rd"
+
+msgid "Buizel"
+msgstr "8uiz31"
+
+msgid "Floatzel"
+msgstr "Flo47z31"
+
+msgid "Modrille"
+msgstr "Modr1113"
+
+msgid "Drilgann"
+msgstr "Dri164nn"
+
+msgid "Gligar"
+msgstr "6li64r"
+
+msgid "Gliscor"
+msgstr "6li5c0r"
+
+msgid "Sableye"
+msgstr "5ab13y3"
+
+msgid "Cocaran"
+msgstr "Coc4r4n"
+
+msgid "Cararalm"
+msgstr "Car4r41m"
+
+msgid "Cocancer"
+msgstr "Coc4nc3r"
+
+msgid "Corsola"
+msgstr "Cor5014"
+
+msgid "Corsoreef"
+msgstr "Cor50r33f"
+
+msgid "Tubjaw"
+msgstr "7ubj4w"
+
+msgid "Tubareel"
+msgstr "7ub4r331"
+
+msgid "Cassnail"
+msgstr "Cas5n411"
+
+msgid "Sableau"
+msgstr "5ab134u"
+
+msgid "Escartress"
+msgstr "3sc4r7r355"
+
+msgid "Nupin"
+msgstr "Nup1n"
+
+msgid "Gellin"
+msgstr "6el11n"
+
+msgid "Cottonee"
+msgstr "Cot2n33"
+
+msgid "Whimsicott"
+msgstr "Whim51c077"
+
+msgid "Misdreavus"
+msgstr "Misdr34vu5"
+
+msgid "Mismagius"
+msgstr "Mism461u5"
+
+msgid "Barand"
+msgstr "8ar&"
+
+msgid "Glaslug"
+msgstr "6la51u6"
+
+msgid "Glavinug"
+msgstr "6lav1nu6"
+
+msgid "S51"
+msgstr "551"
+
+msgid "S51-A"
+msgstr "551-4"
+
+msgid "Paraudio"
+msgstr "Par4ud10"
+
+msgid "Paraboom"
+msgstr "Par48um"
+
+msgid "Flager"
+msgstr "Fla63r"
+
+msgid "Inflagetah"
+msgstr "1nf146374h"
+
+msgid "Chimical"
+msgstr "Chim1c41"
+
+msgid "Chimaconda"
+msgstr "Chim4c0nd4"
+
+msgid "Tikiki"
+msgstr "7ik1k1"
+
+msgid "Frikitiki"
+msgstr "Frik171k1"
+
+msgid "Harptera"
+msgstr "Harp73r4"
+
+msgid "Chicoatl"
+msgstr "Chic0471"
+
+msgid "Quetzoral"
+msgstr "Que7z0r41"
+
+msgid "Coatlith"
+msgstr "Coa7117h"
+
+msgid "Tracton"
+msgstr "7rac2n"
+
+msgid "Snopach"
+msgstr "5nop4ch"
+
+msgid "Dermafrost"
+msgstr "Derm4fr057"
+
+msgid "Slothohm"
+msgstr "5lo7h0hm"
+
+msgid "Theriamp"
+msgstr "7her14mp"
+
+msgid "Titanice"
+msgstr "7it4n1c3"
+
+msgid "Frynai"
+msgstr "Fryn41"
+
+msgid "Saidine"
+msgstr "5aid1n3"
+
+msgid "Daikatuna"
+msgstr "Daik47un4"
+
+msgid "Selkid"
+msgstr "5elk1d"
+
+msgid "Syrentide"
+msgstr "5yr3n71d3"
+
+msgid "Spritzee"
+msgstr "5pr17z33"
+
+msgid "Aromatisse"
+msgstr "4rom471553"
+
+msgid "Miasmedic"
+msgstr "Mia5m3d1c"
+
+msgid "Jackdeary"
+msgstr "Jackd34ry"
+
+msgid "Winotinger"
+msgstr "Win071n63r"
+
+msgid "Duplicat"
+msgstr "Dup11c47"
+
+msgid "Eevee"
+msgstr "3ev33"
+
+msgid "Vaporeon"
+msgstr "Vap0r30n"
+
+msgid "Jolteon"
+msgstr "Jol730n"
+
+msgid "Flareon"
+msgstr "Flar30n"
+
+msgid "Espeon"
+msgstr "3sp30n"
+
+msgid "Umbreon"
+msgstr "Umbr30n"
+
+msgid "Leafeon"
+msgstr "1eaf30n"
+
+msgid "Glaceon"
+msgstr "6lac30n"
+
+msgid "Sylveon"
+msgstr "5ylv30n"
+
+msgid "Nucleon"
+msgstr "Nuc130n"
+
+msgid "Ratsy"
+msgstr "Rat5y"
+
+msgid "Raffiti"
+msgstr "Raff171"
+
+msgid "Gargryph"
+msgstr "6ar6ryph"
+
+msgid "Masking"
+msgstr "Mask1n6"
+
+msgid "Dramsama"
+msgstr "Dram54m4"
+
+msgid "Antarki"
+msgstr "4nt4rk1"
+
+msgid "Chupacho"
+msgstr "Chup4ch0"
+
+msgid "Luchabra"
+msgstr "1uch48r4"
+
+msgid "Linkite"
+msgstr "1ink173"
+
+msgid "Chainite"
+msgstr "Cha1n173"
+
+msgid "Pufluff"
+msgstr "Puf1uff"
+
+msgid "Alpico"
+msgstr "4lp1c0"
+
+msgid "Anderind"
+msgstr "4nd3r1nd"
+
+msgid "Colarva"
+msgstr "Col4rv4"
+
+msgid "Frosulo"
+msgstr "Fro5u10"
+
+msgid "Frosthra"
+msgstr "Fro57hr4"
+
+msgid "Fafninter"
+msgstr "Fafn1n73r"
+
+msgid "Shrimputy"
+msgstr "5hr1mpu7y"
+
+msgid "Krilvolver"
+msgstr "Kri1v01v3r"
+
+msgid "Lavent"
+msgstr "1av3n7"
+
+msgid "Swabone"
+msgstr "5wa80n3"
+
+msgid "Skelerogue"
+msgstr "5ke13r06u3"
+
+msgid "Navighast"
+msgstr "Nav16h457"
+
+msgid "Stenowatt"
+msgstr "5ten0w477"
+
+msgid "Jungore"
+msgstr "Jun60r3"
+
+msgid "Majungold"
+msgstr "Majun601d"
+
+msgid "Hagoop"
+msgstr "Hagup"
+
+msgid "Haagross"
+msgstr "Haa6r055"
+
+msgid "Xenomite"
+msgstr "Xen0m173"
+
+msgid "Xenogen"
+msgstr "Xen063n"
+
+msgid "Xenoqueen"
+msgstr "Xen0qu33n"
+
+msgid "Hazma"
+msgstr "Hazm4"
+
+msgid "Geigeroach"
+msgstr "6ei63r04ch"
+
+msgid "Minicorn"
+msgstr "Min1c0rn"
+
+msgid "Kiricorn"
+msgstr "Kir1c0rn"
+
+msgid "Oblivicorn"
+msgstr "0bl1v1c0rn"
+
+msgid "Luxi"
+msgstr "1ux1"
+
+msgid "Luxor"
+msgstr "1ux0r"
+
+msgid "Luxelong"
+msgstr "1ux310n6"
+
+msgid "Praseopunk"
+msgstr "Pra530punk"
+
+msgid "Sheebit"
+msgstr "5he3817"
+
+msgid "Terrabit"
+msgstr "7err48817"
+
+msgid "Laissure"
+msgstr "1ai55ur3"
+
+msgid "Volchik"
+msgstr "Volch1k"
+
+msgid "Voltasu"
+msgstr "Vol745u"
+
+msgid "Yatagaryu"
+msgstr "Yat464ryu"
+
+msgid "Devimp"
+msgstr "Dev1mp"
+
+msgid "Fallengel"
+msgstr "Fal13n631"
+
+msgid "Belliadon"
+msgstr "8el14dd0n"
+
+msgid "Seikamater"
+msgstr "5eik4m473r"
+
+msgid "Garlikid"
+msgstr "6ar11k1d"
+
+msgid "Baitatao"
+msgstr "8ai74740"
+
+msgid "Leviathao"
+msgstr "1ev147h40"
+
+msgid "Krakanao"
+msgstr "Krak4n40"
+
+msgid "Lanthan"
+msgstr "1an7h4n"
+
+msgid "Actan"
+msgstr "4ct4n"
+
+msgid "Urayne"
+msgstr "Urayn3"
+
+msgid "Aotius"
+msgstr "4ot1u5"
+
+msgid "Mutios"
+msgstr "Mut105"
+
+msgid "Gastly"
+msgstr "6en64r"

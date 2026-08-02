@@ -3,7 +3,7 @@ extends Node2D
 var walkTexture = null
 var runTexture = null
 
-export var canMove = true
+@export var canMove = true
 var isMoving = false
 var last_facing_dir
 var inputDisabled = false
@@ -32,6 +32,10 @@ var exiting_grass = false
 
 var blocked = false
 var do_jump = false
+
+# Godot 4: Tweens are now created programmatically
+var tween : Tween
+var grass_tween : Tween
 
 #signal step
 signal step
@@ -122,11 +126,11 @@ func get_input():
 	#If the state equals STATE.MOVE, the player is on foot and global sprint is on, then movement speed is set to fast and the texture is set to run
 	if state == STATE.MOVE and movement_type == MOVEMENT_TYPE.FOOT and Global.sprint == true:
 		movement_speed = MOVEMENT_SPEED.FAST
-		$Position2D/Sprite.texture = runTexture
+		$Marker2D/Sprite2D.texture = runTexture
 	#If the above is false, then movemnet speed is set to normal and the walk texture is used
 	else:
 		movement_speed = MOVEMENT_SPEED.NORMAL
-		$Position2D/Sprite.texture = walkTexture
+		$Marker2D/Sprite2D.texture = walkTexture
 
 
 	# Check if door is ahead
@@ -141,7 +145,6 @@ func get_input():
 		DIRECTION.RIGHT:
 			ahead = get_position_relative_to_current_scene() + Vector2(32, 0)
 	var is_door_ahead = false
-	#print(ahead)
 
 	for door in Global.game.doors:
 		var door_pos = door.position
@@ -151,6 +154,39 @@ func get_input():
 			print("door is ahead")
 			door.transition()
 			return
+	
+	# Edge connections (connections.dat): walking off a connected edge transfers to the neighbor map
+	var _cs = Global.game.current_scene
+	if _cs != null and _cs.get("edge_connections") != null :
+		var _sz: Vector2 = _cs.map_px_size
+		for ec in _cs.edge_connections:
+			var hit = false
+			var newpos := Vector2.ZERO
+			match ec[0]:
+				"E":
+					if direction == DIRECTION.RIGHT and ahead.x > _sz.x:
+						hit = true
+						newpos = Vector2(ec[3], ahead.y + ec[2])
+				"W":
+					if direction == DIRECTION.LEFT and ahead.x < 0:
+						hit = true
+						newpos = Vector2(ec[3], ahead.y + ec[2])
+				"S":
+					if direction == DIRECTION.DOWN and ahead.y > _sz.y:
+						hit = true
+						newpos = Vector2(ahead.x + ec[2], ec[3])
+				"N":
+					if direction == DIRECTION.UP and ahead.y < 0:
+						hit = true
+						newpos = Vector2(ahead.x + ec[2], ec[3])
+			if hit:
+				# Connection coverage: the mapped coordinate must land inside the destination
+				var _axis = newpos.y if ec[0] in ["E", "W"] else newpos.x
+				if _axis < 0 or _axis >= ec[4]:
+					continue
+				Global.game.lock_player()
+				Global.game.door_transition(ec[1], newpos)
+				return
 	
 	# Check if cliff is ahead
 	var the_cliff = null
@@ -190,26 +226,21 @@ func get_input():
 func check_grass(dir):
 	for grass in get_tree().get_nodes_in_group("grass"):
 		for collision in $NextCollision.get_children():
-			#print(grass.world_to_map(collision.global_position))
 			for g in grass.get_used_cells_by_id(0):
 				if collision.name == "Right":
 					pass
-				#print(str(collision.name, collision.global_position, "\n", grass.map_to_world(grass.get_used_cells_by_id(0)[0]) + Vector2(2208 + 64, 864) - Vector2(16, 16)))
 
-				var tile_center_pos = grass.map_to_world(g) + grass.cell_size / 2
-				#print(g + Vector2(2208, 864))
-				if grass.map_to_world(g) == collision.global_position:
+				# Godot 4: tile_set.tile_size instead of cell_size
+				var tile_center_pos = grass.map_to_local(g) + grass.tile_set.tile_size / 2
+				if grass.map_to_local(g) == collision.global_position:
 					if !Global.grassPos.has(collision.name):
 						Global.grassPos.append(collision.name)
 					found_grass = true
 					break
-					#Global.grassPos.remove(Global.grassPos.find(collision.name))
 				else:
 					if Global.grassPos.has(collision.name):
-						#print(collision.name)
-						Global.grassPos.remove(Global.grassPos.find(collision.name))
-			#if found_grass:
-			#	return
+						# Godot 4: remove_at() instead of remove()
+						Global.grassPos.remove_at(Global.grassPos.find(collision.name))
 		found_grass = false
 	pass
 
@@ -258,35 +289,16 @@ func move(force_move : bool):
 		move_direction = Vector2.ZERO
 
 	# Grass logic
-	var grass1 = $Grass/Sprite # Current grass under player
+	var grass1 = $Grass/Sprite2D # Current grass under player
 	var grass2 = $Grass/Sprite2 # Grass player is moving to
-	var grass_tween = $GrassTween
 	var grass_found = false
 	entering_grass = false
 	exiting_grass = false
-
-#	for pos in Global.grass_positions:
-#		if Global.game.player.position + move_direction == pos: # Should be only one of all grass positions.
-#			#print("Grass found!")
-#			grass_found = true
-#
-#			if !Global.onGrass:
-#				entering_grass = true
-#			Global.onGrass = true
-#			break
-#	if !grass_found: # No grass on next position
-#		if Global.onGrass:
-#			exiting_grass = true
-#		Global.onGrass = false
 	
 	if move_direction != Vector2.ZERO:
 		TerrainTags.get_tile_terrain_tag(self.position + move_direction)
 	
 	if Global.onStairsUp:
-#		if move_direction.x > 0:
-#			stair_offset = Vector2(0, 32)
-#		elif move_direction.x > 0:
-#			stair_offset = Vector2(0, 16)
 		Global.wasOnStairs = true
 	elif Global.wasOnStairs and !Global.onStairsUp:
 		if move_direction.x < 0:
@@ -303,32 +315,32 @@ func move(force_move : bool):
 	# Start Animation
 	animate()
 	
+	# Godot 4: Create tween programmatically
+	if tween:
+		tween.kill()
+	tween = create_tween()
+	
 	# Set Tween settings
+	# Original timings (RMXP 40fps, realRes 128/tile): walk move_speed 3.6 -> 128/2^3.6/40 = 0.264 s/tile;
+	# run 4.6 -> 0.132 s/tile (the remake was ~5% fast at 0.25/0.125)
 	if movement_speed == MOVEMENT_SPEED.FAST:
-		$Tween.interpolate_property(self, "position", self.position, self.position + move_direction + stair_offset, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+		tween.tween_property(self, "position", self.position + move_direction + stair_offset, 0.132).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 	else:
-		$Tween.interpolate_property(self, "position", self.position, self.position + move_direction + stair_offset, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	
-	
+		tween.tween_property(self, "position", self.position + move_direction + stair_offset, 0.264).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 	
 	# Play bump effect is player can't move
-	if move_direction == Vector2.ZERO: #TODO: add delay 
+	if move_direction == Vector2.ZERO:
 		$AudioStreamPlayer2D.stream = load("res://Audio/SE/bump.WAV")
 		$AudioStreamPlayer2D.play(0.0)
-	
-	# Start Tween
-	if entering_grass || exiting_grass || Global.onGrass:
-		$GrassTween.start()
-	$Tween.start()
 
-	# Wait until player finish move
-	yield($Tween, "tween_all_completed")
+	# Wait until player finish move (Godot 4: await tween.finished)
+	await tween.finished
 	
 	if Global.onGrass:
 		$Grass.show()
 		if !Global.grass_positions.has( self.position + Vector2(32, 0) ):
 			$Grass/Sprite2.hide()
-		$Grass/Sprite.show()
+		$Grass/Sprite2D.show()
 	else:
 		$Grass.hide()
 	
@@ -362,7 +374,7 @@ func move(force_move : bool):
 			if loc == null:
 				print("PLAYER ERROR: Got Null on current_scene.")
 			print("Player seamlessly entering different scene -> " + str(loc))
-			Global.game.change_scene(null)
+			Global.game.change_scene_to_file(null)
 
 #Loads the texture of the sprites you picked for your character
 func load_texture():
@@ -375,31 +387,30 @@ func load_texture():
 	if Global.TrainerGender == 2:
 		walkTexture = preload("res://Graphics/Characters/HEROINE.png")
 		runTexture = preload("res://Graphics/Characters/HEROINE-RUN.png")
-	$Position2D/Sprite.texture = walkTexture
-	$Position2D/Sprite.frame = 0
+	$Marker2D/Sprite2D.texture = walkTexture
+	$Marker2D/Sprite2D.frame = 0
 	
 #Sets the sprite texture to the walkTexture and if the direction is not null then the sprite.frame is set to direction times 4
 func set_idle_frame(_dir = null):
 	state = STATE.IDLE
-	$Position2D/Sprite.texture = walkTexture
+	$Marker2D/Sprite2D.texture = walkTexture
 	if _dir == null: # Go with the last facing direction
 		_dir = last_facing_dir
 	match _dir:
 		"Down", DIRECTION.DOWN:
-			$Position2D/Sprite.frame = 0
+			$Marker2D/Sprite2D.frame = 0
 		"Up", DIRECTION.UP:
-			$Position2D/Sprite.frame = 12
+			$Marker2D/Sprite2D.frame = 12
 		"Left", DIRECTION.LEFT:
-			$Position2D/Sprite.frame = 4
+			$Marker2D/Sprite2D.frame = 4
 		"Right", DIRECTION.RIGHT:
-			$Position2D/Sprite.frame = 8
+			$Marker2D/Sprite2D.frame = 8
 		_:
-			$Position2D/Sprite.frame = 0
+			$Marker2D/Sprite2D.frame = 0
 
 func animate():
 	#If the sprite texture is the walk texture
-	if $Position2D/Sprite.texture == walkTexture:
-		#If the above is true and foot is equal to 0, then play the animation based on the direction the player is facing
+	if $Marker2D/Sprite2D.texture == walkTexture:
 		if foot == 0:
 			if direction == DIRECTION.DOWN:
 				$AnimationPlayer.play("Down")
@@ -409,7 +420,6 @@ func animate():
 				$AnimationPlayer.play("Left")
 			elif direction == DIRECTION.RIGHT:
 				$AnimationPlayer.play("Right")
-		#If the above is false and foot is equal to 1, then play the second animation based on the player's direction
 		elif foot == 1:
 			if direction == DIRECTION.DOWN:
 				$AnimationPlayer.play("Down2")
@@ -419,9 +429,7 @@ func animate():
 				$AnimationPlayer.play("Left2")
 			elif direction == DIRECTION.RIGHT:
 				$AnimationPlayer.play("Right2")
-	#If the sprite texture is not set to the walk texture and is set to the run texture
-	elif $Position2D/Sprite.texture == runTexture:
-		#If the above it true and foot is equal to 0, then play the animation based on the direction the character is facing
+	elif $Marker2D/Sprite2D.texture == runTexture:
 		if foot == 0:
 			if direction == DIRECTION.DOWN:
 				$AnimationPlayer.play("Down_sprint")
@@ -431,7 +439,6 @@ func animate():
 				$AnimationPlayer.play("Left_sprint")
 			elif direction == DIRECTION.RIGHT:
 				$AnimationPlayer.play("Right_sprint")
-		#If the above is false and the foot is equal to 1, then play the second animaiton based on the player's direction
 		elif foot == 1:
 			if direction == DIRECTION.DOWN:
 				$AnimationPlayer.play("Down_sprint2")
@@ -441,11 +448,13 @@ func animate():
 				$AnimationPlayer.play("Left_sprint2")
 			elif direction == DIRECTION.RIGHT:
 				$AnimationPlayer.play("Right_sprint2")
-#This method, does indeed, stop the tween
-func stop_tween():
-	$Tween.stop_all()
 
-#Sets the texture to the walk texture, and if the pacing direction isn't null then set the frame to be the facing_dir * 4
+#This method stops the tween (Godot 4: use kill())
+func stop_tween():
+	if tween:
+		tween.kill()
+
+#Sets the texture to the walk texture
 func set_facing_direction(facing_dir):
 	if typeof(facing_dir) == TYPE_STRING:
 		match facing_dir:
@@ -458,8 +467,8 @@ func set_facing_direction(facing_dir):
 			"Right", DIRECTION.RIGHT:
 				facing_dir = DIRECTION.RIGHT
 	direction = facing_dir
-	$Position2D/Sprite.texture = walkTexture
-	$Position2D/Sprite.frame = direction * 4
+	$Marker2D/Sprite2D.texture = walkTexture
+	$Marker2D/Sprite2D.frame = direction * 4
 
 func move_player_event(_dir, steps): # Force moves player to direction and steps
 	direction = _dir
@@ -467,118 +476,105 @@ func move_player_event(_dir, steps): # Force moves player to direction and steps
 	movement_speed = MOVEMENT_SPEED.NORMAL
 	for i in range(steps):
 		move(true)
-		yield(self, "step")
+		await self.step
 	emit_signal("done_movement")
 
 func set_grass(dir):
 	var speed := 0.125 if Global.sprint else 0.25
 	if entering_grass:
-		$Grass/Sprite.texture = load(Global.grassSprite)
+		$Grass/Sprite2D.texture = load(Global.grassSprite)
 		$Grass/Sprite2.texture = load(Global.grassSprite)
-		#print("entering_grass")
+		
+		# Godot 4: Create grass_tween programmatically
+		if grass_tween:
+			grass_tween.kill()
+		grass_tween = create_tween()
+		
 		match dir:
 			"Right", DIRECTION.RIGHT:
 				$Grass.show()
 				$Grass/Sprite2.show()
-				$Grass/Sprite.hide()
-				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+				$Grass/Sprite2D.hide()
+				grass_tween.tween_property($Grass, "position", $Grass.position - move_direction, speed).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 			"Left", DIRECTION.LEFT:
 				$Grass.show()
 				$Grass/Sprite2.hide()
-				$Grass/Sprite.show()
+				$Grass/Sprite2D.show()
 				$Grass.position = Vector2(-32, 0)
-				$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+				grass_tween.tween_property($Grass, "position", $Grass.position - move_direction, speed).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 			"Up", DIRECTION.UP:
-				$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+				grass_tween.tween_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), speed).from(Rect2(Vector2(32, 80), Vector2(32, 16))).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 			"Down", DIRECTION.DOWN:
 				$Grass.show()
 				$Grass/Sprite2.hide()
-				$Grass/Sprite.show()
-				$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+				$Grass/Sprite2D.show()
+				grass_tween.tween_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), speed).from(Rect2(Vector2(32, 80 - 32), Vector2(32, 16))).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 		return
 	elif exiting_grass:
-		#print("exiting_grass")
+		# Godot 4: Create grass_tween programmatically
+		if grass_tween:
+			grass_tween.kill()
+		grass_tween = create_tween()
+		
 		match dir:
 			"Right", DIRECTION.RIGHT:
 				$Grass.show()
-				$Grass/Sprite.show()
+				$Grass/Sprite2D.show()
 				$Grass/Sprite2.hide()
-				if !Global.sprint:
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-				else:
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-				
+				var duration = 0.25 if !Global.sprint else 0.125
+				grass_tween.tween_property($Grass, "position", $Grass.position - move_direction, duration).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 				return
-				
-				pass
 			"Left", DIRECTION.LEFT:
 				$Grass.show()
 				$Grass/Sprite2.show()
-				$Grass/Sprite.hide()
-				
+				$Grass/Sprite2D.hide()
 				$Grass.position = Vector2(-32, 0)
-				if !Global.sprint:
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-				else:
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-				
+				var duration = 0.25 if !Global.sprint else 0.125
+				grass_tween.tween_property($Grass, "position", $Grass.position - move_direction, duration).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 				return
-				pass
 			"Down", DIRECTION.DOWN:
 				$Grass.hide()
 				return
 			"Up", DIRECTION.UP:
 				$Grass.show()
-				$Grass/Sprite.show()
+				$Grass/Sprite2D.show()
 				$Grass/Sprite2.hide()
-				if !Global.sprint:
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position + Vector2(0, 32), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-				else:
-					$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position + Vector2(0, 16), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-				
+				var duration = 0.25 if !Global.sprint else 0.125
+				var target_y = 32 if !Global.sprint else 16
+				grass_tween.tween_property($Grass, "position", $Grass.position + Vector2(0, target_y), duration).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 				return
-		pass
 	else:
-		#print("else grass")
 		if Global.onGrass:
-			# change sprite texture
 			if !Global.grass_positions.has(self.position + Vector2(32, 0)):
 				print("TEST")
 			
+			# Godot 4: Create grass_tween programmatically
+			if grass_tween:
+				grass_tween.kill()
+			grass_tween = create_tween()
 			
 			$Grass.show()
+			var duration = 0.125 if Global.sprint else 0.25
 			match dir:
 				"Right", DIRECTION.RIGHT:
-					$Grass/Sprite.show()
+					$Grass/Sprite2D.show()
 					$Grass/Sprite2.show()
 					print(Global.grass_positions)
-					if Global.sprint:
-						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-					else:
-						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+					grass_tween.tween_property($Grass, "position", $Grass.position - move_direction, duration).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 					return
 				"Left", DIRECTION.LEFT:
-					$Grass/Sprite.show()
+					$Grass/Sprite2D.show()
 					$Grass/Sprite2.show()
 					$Grass.position = Vector2(-32, 0)
-					if Global.sprint:
-						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-					else:
-						$GrassTween.interpolate_property($Grass, "position", $Grass.position, $Grass.position - move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+					grass_tween.tween_property($Grass, "position", $Grass.position - move_direction, duration).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 					return
 				"Up", DIRECTION.UP:
 					$Grass/Sprite2.hide()
-					if Global.sprint:
-						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-					else:
-						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+					grass_tween.tween_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), duration).from(Rect2(Vector2(32, 80), Vector2(32, 16))).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 					return
 				"Down", DIRECTION.DOWN:
 					$Grass/Sprite2.hide()
-					if Global.sprint:
-						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.125, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-					else:
-						$GrassTween.interpolate_property($Grass/Sprite, "region_rect", Rect2(Vector2(32, 80 - 32), Vector2(32, 16)), Rect2(Vector2(32, 80), Vector2(32, 16)), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+					grass_tween.tween_property($Grass/Sprite2D, "region_rect", Rect2(Vector2(32, 80), Vector2(32, 16)), duration).from(Rect2(Vector2(32, 80 - 32), Vector2(32, 16))).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 					return
 		else:
 			$Grass.hide()
@@ -602,7 +598,7 @@ func remove_grass(exiting):
 					Global.exitGrassPos = ""
 					Global.grassPos = ""
 					Global.onGrass = false
-					$Grass/Sprite.hide()
+					$Grass/Sprite2D.hide()
 					$Grass/Sprite2.show()
 					return
 				else:
@@ -610,41 +606,24 @@ func remove_grass(exiting):
 					Global.onGrass = true
 				return
 
-func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/pokemon-encounter-rate
+func wild_poke_encounter():
 	var trigger_wild_battle = false
 
-	if entering_grass: # 40% chance to skip
+	if entering_grass:
 		var num = Global.rng.randf()
 		if num <= 0.4:
-			# Skip
 			return
 	
-	# Core Encounter Rate
-	var rate : int = 20 # Base rate for external areas
+	var rate : int = 20
 	
-	# Get custom rate if map specified
 	if "base_encounter_rate" in Global.game.current_scene:
 		rate = Global.game.current_scene.base_encounter_rate
 
 	rate = rate * 16
 
 	var modifier = 1.0
-	
-	# Apply modifers: TODO
-	# Being on a bike 	80%
-	# Having played the White Flute 	150%
-	# Having played the Black Flute 	50%
-	# Lead Pokémon has a Cleanse Tag 	66%
-	# Lead Pokémon has the Stench ability (in Battle Pyramid) 	75%
-	# Lead Pokémon has the Stench ability (everywhere else) 	50%
-	# Lead Pokémon has the Illuminate ability 	200%
-	# Lead Pokémon has the White Smoke ability 	50%
-	# Lead Pokémon has the Arena Trap ability 	200%
-	# Lead Pokémon has the Sand Veil ability in a sandstorm 	50%
-	
 	rate = int(rate * modifier)
 
-	# Cap at 2880
 	if rate > 2888:
 		rate = 2880
 
@@ -657,12 +636,12 @@ func wild_poke_encounter(): # Info and formula based on : https://sha.wn.zone/p/
 		canMove = false
 		set_idle_frame(direction)
 		emit_signal("wild_battle")
+
 func trainer_encounter():
-	# Check if any trainers see the player
 	if Global.game.trainers == null:
 		return
 
-	if !canMove: # Already in a battle.
+	if !canMove:
 		return
 
 	for trainer in Global.game.trainers:
@@ -706,25 +685,28 @@ func jump():
 	if direction == DIRECTION.RIGHT:
 		move_direction.x = 64
 
-	$Tween.interpolate_property(self, "position", self.position, self.position + move_direction, 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	# Godot 4: Create tween programmatically
+	if tween:
+		tween.kill()
+	tween = create_tween()
+	tween.tween_property(self, "position", self.position + move_direction, 0.25).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+	
 	$AudioStreamPlayer2D.stream = load("res://Audio/SE/jump.wav")
 	$AudioStreamPlayer2D.play(0.0)
 
-	$Tween.start()
 	$AnimationPlayer.play("Jump")
-	yield($Tween, "tween_all_completed")
+	await tween.finished
 
-	var grass_found
+	var grass_found_local = false
 	for pos in Global.grass_positions:
-		if Global.game.player.position + move_direction == pos: # Should be only one of all grass positions.
-			#print("Grass found!")
-			grass_found = true
+		if Global.game.player.position + move_direction == pos:
+			grass_found_local = true
 
 			if !Global.onGrass:
 				entering_grass = true
 			Global.onGrass = true
 			break
-	if !grass_found: # No grass on next position
+	if !grass_found_local:
 		if Global.onGrass:
 			exiting_grass = true
 		Global.onGrass = false
@@ -735,4 +717,3 @@ func jump():
 	Global.game.menu.locked = false
 	set_idle_frame()
 	set_process(true)
-	

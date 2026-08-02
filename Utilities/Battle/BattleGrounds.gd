@@ -19,7 +19,7 @@ func setPosistion(pos):
 			aniplayer.play("CaptureZoom")
 		BattlePositions.CAPTURE_ZOOM_BACK:
 			aniplayer.play_backwards("CaptureZoom")
-	yield(aniplayer, "animation_finished")
+	await aniplayer.animation_finished
 	emit_signal("wait")
 
 
@@ -37,7 +37,7 @@ func foe_unveil():
 	# Play toss animation
 	$FoeBase/Ball.visible = true
 	$FoeBase/Ball/AnimationPlayer.play("Ball")
-	yield($FoeBase/Battler/AnimationPlayer, "animation_finished")
+	await $FoeBase/Battler/AnimationPlayer.animation_finished
 	
 	emit_signal("unveil_finished")
 func player_unveil():
@@ -56,13 +56,13 @@ func player_unveil():
 		t.set_one_shot(true)
 		self.add_child(t)
 		t.start()
-		yield(t, "timeout")
+		await t.timeout
 		t.queue_free()
 		is_first_toss = false
 	# Play sound for toss
 	$PlayerBase/Ball/AudioStreamPlayer.stream = load("res://Audio/SE/throw.wav")
 	$PlayerBase/Ball/AudioStreamPlayer.play()
 	get_parent().get_parent().get_node("CanvasLayer/BattleGrounds/PlayerBase/Ball/AnimationPlayer").play("PlayerBallToss")
-	yield(get_parent().get_parent().get_node("CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer"), "animation_finished")
+	await get_parent().get_parent().get_node("CanvasLayer/BattleGrounds/PlayerBase/Battler/AnimationPlayer").animation_finished
 	emit_signal("unveil_finished")
 	pass

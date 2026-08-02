@@ -1,0 +1,220 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+
+msgid "PkMn TRAINER"
+msgstr "POKÉMON-TRAINER"
+
+msgid "LASS"
+msgstr "GÖRE"
+
+msgid "YOUNGSTER"
+msgstr "KNIRPS"
+
+msgid "HIKER"
+msgstr "WANDERER"
+
+msgid "BEAUTY"
+msgstr "SCHÖNHEIT"
+
+msgid "FISHERMAN"
+msgstr "ANGLER"
+
+msgid "TRIATHLETE"
+msgstr "TRIATHLET"
+
+msgid "TWINS"
+msgstr "ZWILLINGE"
+
+msgid "SWIMMER♀"
+msgstr "SCHWIMMERIN"
+
+msgid "BUG CATCHER"
+msgstr "KÄFERSAMMLER"
+
+msgid "SCHOOL KID"
+msgstr "SCHULKIND"
+
+msgid "RICH BOY"
+msgstr "SCHNÖSEL"
+
+msgid "SR. AND JR."
+msgstr "SENIOR&JUNIOR"
+
+msgid "BLACK BELT"
+msgstr "SCHWARZGURT"
+
+msgid "TUBER"
+msgstr "PLANSCHER"
+
+msgid "HEX MANIAC"
+msgstr "HEXE"
+
+msgid "PkMn BREEDER"
+msgstr "POKÉMON-ZÜCHTERIN"
+
+msgid "WORKER"
+msgstr "ARBEITER"
+
+msgid "INTERVIEWERS"
+msgstr "INTERVIEWER"
+
+msgid "YOUNG COUPLE"
+msgstr "JUNGES GLÜCK"
+
+msgid "GUITARIST"
+msgstr "GITARRIST"
+
+msgid "CHAMPION"
+msgstr "CHAMP"
+
+msgid "MAGMA LEADER"
+msgstr "TEAM-MAGMA-BOSS"
+
+msgid "BATTLE GIRL"
+msgstr "KÄMPFERIN"
+
+msgid "SWIMMER♂"
+msgstr "SCHWIMMER"
+
+msgid "EXPERT"
+msgstr "EXPERTE"
+
+msgid "DRAGON TAMER"
+msgstr "DRACHENPROFI"
+
+msgid "BIRD KEEPER"
+msgstr "VOGELFÄNGER"
+
+msgid "NINJA BOY"
+msgstr "NINJAJUNGE"
+
+msgid "PARASOL LADY"
+msgstr "SCHIRMDAME"
+
+msgid "BUG MANIAC"
+msgstr "KÄFERMANIAC"
+
+msgid "SAILOR"
+msgstr "MATROSE"
+
+msgid "COLLECTOR"
+msgstr "POKéMON-SAMMLER"
+
+msgid "PkMn RANGER"
+msgstr "POKéMON-RANGER"
+
+msgid "AROMA LADY"
+msgstr "AROMALADY"
+
+msgid "RUIN MANIAC"
+msgstr "RUINENMANIAC"
+
+msgid "COOLTRAINER"
+msgstr "ASS-TRAINER"
+
+msgid "KINDLER"
+msgstr "HITZKOPF"
+
+msgid "PICNICKER"
+msgstr "PICKNICKERIN"
+
+msgid "PSYCHIC"
+msgstr "PSYCHO"
+
+msgid "SIS AND BRO"
+msgstr "GESCHWISTER"
+
+msgid "OLD COUPLE"
+msgstr "ALTES PAAR"
+
+msgid "AQUA LEADER"
+msgstr "TEAM-AQUA-BOSS"
+
+msgid "LEADER"
+msgstr "ARENALEITERIN"
+
+msgid "LEADERS"
+msgstr "ARENALEITER"
+
+msgid "ELITE FOUR"
+msgstr "TOP VIER"
+
+msgid "ACE TRAINER"
+msgstr "ASS-TRAINERIN"
+
+msgid "ROCKET GRUNT"
+msgstr "ROCKET RÜPEL"
+
+msgid "SCHOOLKIDDO"
+msgstr "PIRAT"
+
+msgid "RIVAL"
+msgstr "RIVALE"
+
+msgid "HERO"
+msgstr "HELD"
+
+msgid "SUPER SCIENTIST"
+msgstr "SPITZENFORSCHER"
+
+msgid "COOL COUPLE"
+msgstr "PRIMAPAAR"
+
+msgid "FARMER"
+msgstr "FARMERIN"
+
+msgid "BIKER"
+msgstr "ROWDY"
+
+msgid "NINJA SURFERS"
+msgstr "NINJA-SURFER"
+
+msgid "NINJA BOSS"
+msgstr "NINJA-BOSS"
+
+msgid "ACTOR"
+msgstr "SCHAUSPIELER"
+
+msgid "ACTRESS"
+msgstr "SCHAUSPIELERIN"
+
+msgid "LEADER?"
+msgstr "ARENALEITER?"
+
+msgid "ACOLYTE"
+msgstr "AKOLYTH"
+
+msgid "DIVER"
+msgstr "TAUCHER"
+
+msgid "TSUKI NINJA"
+msgstr "TSUKI-NINJA"
+
+msgid "NAMI NINJA"
+msgstr "NAMI-NINJA"
+
+msgid "NINJA MASTER"
+msgstr "NINJA-MEISTER"
+
+msgid "NUCLEAR HORDE"
+msgstr "NUKLEARHORDE"
+
+msgid "APOCALYPSE"
+msgstr "APOKALYPSE"
+
+msgid "ELITE TRAINER"
+msgstr "ASS-TRAINER"
+
+msgid "PIRATE"
+msgstr "PIRAT"
+
+msgid "DREAM"
+msgstr "TRAUM"
+
+msgid "KING"
+msgstr "KÖNIG"
+
+msgid "BIOFIBER CONSTRUCT"
+msgstr "BIOFASER-KONSTRUKT"

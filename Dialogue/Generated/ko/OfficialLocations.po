@@ -1,0 +1,161 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "01- Lakeside Path"
+msgstr "01- 호숫가의 길"
+
+msgid "02- Owten Nook"
+msgstr "02- 나르냥 골짜기"
+
+msgid "03- Seabreeze Way"
+msgstr "03- 바닷바람 나들길"
+
+msgid "04- Baa Grassland"
+msgstr "04- 까메르 초원"
+
+msgid "05- Tancoon Way"
+msgstr "05- 헌티쿤 오솔길"
+
+msgid "06- Pahar Hills"
+msgstr "06- 화르코 언덕"
+
+msgid "07- Tandor Sheets"
+msgstr "07- 탄도르 백사장"
+
+msgid "08- Vinoville Lake"
+msgstr "08- 감로호수"
+
+msgid "09- FireValley"
+msgstr "09- 정열의 계곡"
+
+msgid "10- Baykal Forest"
+msgstr "10- 바이칼 숲"
+
+msgid "11- Nature Preserve"
+msgstr "11- 자연보호구역"
+
+msgid "12- Maskara Channel"
+msgstr "12- 마스크라 바닷길"
+
+msgid "13- Maskara Island"
+msgstr "13- 마스크라섬"
+
+msgid "14- Maskara Sea"
+msgstr "14- 마스크라해"
+
+msgid "15- Shallow Channel"
+msgstr "15- 샛바람 물길"
+
+msgid "Amatree Town"
+msgstr "우림마을"
+
+msgid "Anthell"
+msgstr "개미나락"
+
+msgid "Bealbeach City"
+msgstr "아라시티"
+
+msgid "Berry Traders"
+msgstr "나무열매 교역소"
+
+msgid "Bike Shop"
+msgstr "자전거 가게"
+
+msgid "Burole Town"
+msgstr "동혈마을"
+
+msgid "Championship Site"
+msgstr "챔피언십 아레나"
+
+msgid "Church"
+msgstr "교회"
+
+msgid "Comet Cave"
+msgstr "혜성동굴"
+
+msgid "Dpt. Store, Casino"
+msgstr "백화점, 게임센터"
+
+msgid "Kevlar Town"
+msgstr "가락마을"
+
+msgid "Lanthanite Tunnel"
+msgstr "란타나이트터널"
+
+msgid "Larkspur's Lab"
+msgstr "라크 교수 연구소"
+
+msgid "Legen Town"
+msgstr "영탄마을"
+
+msgid "Moki Town"
+msgstr "옹연마을"
+
+msgid "Name Rater"
+msgstr "이름 감정사"
+
+msgid "Nowtoch City"
+msgstr "마루시티"
+
+msgid "Nuclear Plant Epsilon"
+msgstr "핵발전소 엡실론"
+
+msgid "Nuclear Plant Omicron"
+msgstr "핵발전소 오미크론"
+
+msgid "Nuclear Plant Zeta"
+msgstr "핵발전소 제타"
+
+msgid "Passage Cave"
+msgstr "통행동굴"
+
+msgid "Pokemon School"
+msgstr "트레이너스쿨"
+
+msgid "Professor Bambo Lab"
+msgstr "봉박사 포켓몬 연구소"
+
+msgid "Professor Cypress Lab"
+msgstr "송박사 포켓몬 연구소"
+
+msgid "Rochfale Town"
+msgstr "낙암마을"
+
+msgid "Rochfale Tunnel"
+msgstr "낙암터널"
+
+msgid "Route 16"
+msgstr "16번도로"
+
+msgid "Silverport Town"
+msgstr "은항마을"
+
+msgid "Snowbank Town"
+msgstr "설봉마을"
+
+msgid "The Labyrinth"
+msgstr "뒤틀린 미궁"
+
+msgid "The Tipsy Tancoon, etc"
+msgstr "술 취한 헌티쿤 외"
+
+msgid "Tinkerer's Workshop"
+msgstr "발명왕의 작업실"
+
+msgid "Training Dojo"
+msgstr "훈련도장"
+
+msgid "Tsukinami Village"
+msgstr "츠키나미마을"
+
+msgid "Venesi City"
+msgstr "흰여울시티"
+
+msgid "Victory Road"
+msgstr "챔피언로드"
+
+msgid "Vinoville Town"
+msgstr "감로마을"
+

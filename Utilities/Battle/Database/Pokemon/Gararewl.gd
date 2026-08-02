@@ -19,8 +19,9 @@ var sp_defense = 85
 var speed = 55
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Sturdy"
+var ability_2 = "Rock Head"
+var hidden_ability = "Sheer Force"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -59,7 +60,7 @@ var moveset = [
 	MoveSet.new(1, "Stomp"),
 	MoveSet.new(1, "Headbutt"),
 	MoveSet.new(4, "Harden"),
-	MoveSet.new(7, "Mudslap"),
+	MoveSet.new(7, "Mud-Slap"),
 	MoveSet.new(10, "Headbutt"),
 	MoveSet.new(13, "Metal Claw"),
 	MoveSet.new(17, "Iron Defense"),

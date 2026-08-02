@@ -1,0 +1,1903 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es\n"
+
+msgid "Megahorn"
+msgstr "Megacuerno"
+
+msgid "Attack Order"
+msgstr "Al Ataque"
+
+msgid "Bug Buzz"
+msgstr "Zumbido"
+
+msgid "X-Scissor"
+msgstr "Tijera X"
+
+msgid "Signal Beam"
+msgstr "Doble Rayo"
+
+msgid "U-turn"
+msgstr "Ida y Vuelta"
+
+msgid "Steamroller"
+msgstr "Rodillo Púas"
+
+msgid "Bug Bite"
+msgstr "Picadura"
+
+msgid "Silver Wind"
+msgstr "Viento Plata"
+
+msgid "Struggle Bug"
+msgstr "Estoicismo"
+
+msgid "Twineedle"
+msgstr "Doble Ataque"
+
+msgid "Fury Cutter"
+msgstr "Corte Furia"
+
+msgid "Leech Life"
+msgstr "Chupavidas"
+
+msgid "Pin Missile"
+msgstr "Pin Misil"
+
+msgid "Defend Order"
+msgstr "A Defender"
+
+msgid "Heal Order"
+msgstr "Auxilio"
+
+msgid "Quiver Dance"
+msgstr "Danza Aleteo"
+
+msgid "Rage Powder"
+msgstr "Polvo Ira"
+
+msgid "Spider Web"
+msgstr "Telaraña"
+
+msgid "String Shot"
+msgstr "Disparo Demora"
+
+msgid "Tail Glow"
+msgstr "Ráfaga"
+
+msgid "Foul Play"
+msgstr "Juego Sucio"
+
+msgid "Night Daze"
+msgstr "Pulso Noche"
+
+msgid "Crunch"
+msgstr "Triturar"
+
+msgid "Dark Pulse"
+msgstr "Pulso Umbrío"
+
+msgid "Sucker Punch"
+msgstr "Golpe Bajo"
+
+msgid "Night Slash"
+msgstr "Tajo Umbrío"
+
+msgid "Bite"
+msgstr "Mordisco"
+
+msgid "Feint Attack"
+msgstr "Finta"
+
+msgid "Snarl"
+msgstr "Alarido"
+
+msgid "Assurance"
+msgstr "Buena Baza"
+
+msgid "Payback"
+msgstr "Vendetta"
+
+msgid "Pursuit"
+msgstr "Persecución"
+
+msgid "Thief"
+msgstr "Ladrón"
+
+msgid "Knock Off"
+msgstr "Desarme"
+
+msgid "Beat Up"
+msgstr "Paliza"
+
+msgid "Fling"
+msgstr "Lanzamiento"
+
+msgid "Punishment"
+msgstr "Castigo"
+
+msgid "Dark Void"
+msgstr "Brecha Negra"
+
+msgid "Fake Tears"
+msgstr "Llanto Falso"
+
+msgid "Flatter"
+msgstr "Camelo"
+
+msgid "Hone Claws"
+msgstr "Afilagarras"
+
+msgid "Memento"
+msgstr "Legado"
+
+msgid "Nasty Plot"
+msgstr "Maquinación"
+
+msgid "Quash"
+msgstr "Último Lugar"
+
+msgid "Snatch"
+msgstr "Robo"
+
+msgid "Switcheroo"
+msgstr "Trapicheo"
+
+msgid "Taunt"
+msgstr "Mofa"
+
+msgid "Torment"
+msgstr "Tormento"
+
+msgid "Roar of Time"
+msgstr "Distorsión"
+
+msgid "Draco Meteor"
+msgstr "Cometa Draco"
+
+msgid "Outrage"
+msgstr "Enfado"
+
+msgid "Dragon Rush"
+msgstr "Carga Dragón"
+
+msgid "Spacial Rend"
+msgstr "Corte Vacío"
+
+msgid "Dragon Pulse"
+msgstr "Pulso Dragón"
+
+msgid "Dragon Claw"
+msgstr "Garra Dragón"
+
+msgid "Dragon Tail"
+msgstr "Cola Dragón"
+
+msgid "Dragon Breath"
+msgstr "Dragoaliento"
+
+msgid "Dual Chop"
+msgstr "Golpe Bis"
+
+msgid "Twister"
+msgstr "Ciclón"
+
+msgid "Dragon Rage"
+msgstr "Furia Dragón"
+
+msgid "Dragon Dance"
+msgstr "Danza Dragón"
+
+msgid "Bolt Strike"
+msgstr "Ataque Fulgor"
+
+msgid "Thunder"
+msgstr "Trueno"
+
+msgid "Volt Tackle"
+msgstr "Placaje Eléc."
+
+msgid "Zap Cannon"
+msgstr "Electrocañón"
+
+msgid "Fusion Bolt"
+msgstr "Rayo Fusión"
+
+msgid "Thunderbolt"
+msgstr "Rayo"
+
+msgid "Wild Charge"
+msgstr "Voltio Cruel"
+
+msgid "Discharge"
+msgstr "Chispazo"
+
+msgid "Thunder Punch"
+msgstr "Puño Trueno"
+
+msgid "Volt Switch"
+msgstr "Voltiocambio"
+
+msgid "Spark"
+msgstr "Chispa"
+
+msgid "Thunder Fang"
+msgstr "Colmillo Rayo"
+
+msgid "Shock Wave"
+msgstr "Onda Voltio"
+
+msgid "Electroweb"
+msgstr "Electrotela"
+
+msgid "Charge Beam"
+msgstr "Rayo Carga"
+
+msgid "Thunder Shock"
+msgstr "Impactrueno"
+
+msgid "Electro Ball"
+msgstr "Bola Voltio"
+
+msgid "Charge"
+msgstr "Carga"
+
+msgid "Magnet Rise"
+msgstr "Levitón"
+
+msgid "Thunder Wave"
+msgstr "Onda Trueno"
+
+msgid "Focus Punch"
+msgstr "Puño Certero"
+
+msgid "High Jump Kick"
+msgstr "Pat. Super Alta"
+
+msgid "Close Combat"
+msgstr "A Bocajarro"
+
+msgid "Focus Blast"
+msgstr "Onda Certera"
+
+msgid "Superpower"
+msgstr "Fuerza Bruta"
+
+msgid "Cross Chop"
+msgstr "Tajo Cruzado"
+
+msgid "Dynamic Punch"
+msgstr "Puño Dinámico"
+
+msgid "Hammer Arm"
+msgstr "Machada"
+
+msgid "Jump Kick"
+msgstr "Patada Salto"
+
+msgid "Aura Sphere"
+msgstr "Esfera Aural"
+
+msgid "Sacred Sword"
+msgstr "Espada Santa"
+
+msgid "Secret Sword"
+msgstr "Sablemístico"
+
+msgid "Sky Uppercut"
+msgstr "Gancho Alto"
+
+msgid "Submission"
+msgstr "Sumisión"
+
+msgid "Brick Break"
+msgstr "Demolición"
+
+msgid "Drain Punch"
+msgstr "Puño Drenaje"
+
+msgid "Vital Throw"
+msgstr "Tiro Vital"
+
+msgid "Circle Throw"
+msgstr "Llave Giro"
+
+msgid "Force Palm"
+msgstr "Palmeo"
+
+msgid "Low Sweep"
+msgstr "Puntapié"
+
+msgid "Revenge"
+msgstr "Desquite"
+
+msgid "Rolling Kick"
+msgstr "Patada Giro"
+
+msgid "Wake-Up Slap"
+msgstr "Espabila"
+
+msgid "Karate Chop"
+msgstr "Golpe Karate"
+
+msgid "Mach Punch"
+msgstr "Ultrapuño"
+
+msgid "Rock Smash"
+msgstr "Golpe Roca"
+
+msgid "Storm Throw"
+msgstr "Llave Corsé"
+
+msgid "Vacuum Wave"
+msgstr "Onda Vacío"
+
+msgid "Double Kick"
+msgstr "Doble Patada"
+
+msgid "Arm Thrust"
+msgstr "Empujón"
+
+msgid "Triple Kick"
+msgstr "Triplepatada"
+
+msgid "Counter"
+msgstr "Contraataque"
+
+msgid "Final Gambit"
+msgstr "Sacrificio"
+
+msgid "Low Kick"
+msgstr "Patada Baja"
+
+msgid "Reversal"
+msgstr "Inversión"
+
+msgid "Seismic Toss"
+msgstr "Mov. Sísmico"
+
+msgid "Bulk Up"
+msgstr "Corpulencia"
+
+msgid "Detect"
+msgstr "Detección"
+
+msgid "Quick Guard"
+msgstr "Anticipo"
+
+msgid "V-create"
+msgstr "V de Fuego"
+
+msgid "Blast Burn"
+msgstr "Anillo Ígneo"
+
+msgid "Eruption"
+msgstr "Estallido"
+
+msgid "Overheat"
+msgstr "Sofoco"
+
+msgid "Blue Flare"
+msgstr "Llama Azul"
+
+msgid "Fire Blast"
+msgstr "Llamarada"
+
+msgid "Flare Blitz"
+msgstr "Envite Ígneo"
+
+msgid "Magma Storm"
+msgstr "Lluvia Ígnea"
+
+msgid "Fusion Flare"
+msgstr "Llama Fusión"
+
+msgid "Heat Wave"
+msgstr "Onda Ígnea"
+
+msgid "Inferno"
+msgstr "Infierno"
+
+msgid "Sacred Fire"
+msgstr "Fuego Sagrado"
+
+msgid "Searing Shot"
+msgstr "Bomba Ígnea"
+
+msgid "Flamethrower"
+msgstr "Lanzallamas"
+
+msgid "Blaze Kick"
+msgstr "Patada Ígnea"
+
+msgid "Fiery Dance"
+msgstr "Danza Llama"
+
+msgid "Lava Plume"
+msgstr "Humareda"
+
+msgid "Fire Punch"
+msgstr "Puño Fuego"
+
+msgid "Flame Burst"
+msgstr "Pirotecnia"
+
+msgid "Fire Fang"
+msgstr "Colmillo Ígneo"
+
+msgid "Flame Wheel"
+msgstr "Rueda Fuego"
+
+msgid "Fire Pledge"
+msgstr "Voto Fuego"
+
+msgid "Flame Charge"
+msgstr "Nitrocarga"
+
+msgid "Ember"
+msgstr "Ascuas"
+
+msgid "Fire Spin"
+msgstr "Giro Fuego"
+
+msgid "Incinerate"
+msgstr "Calcinación"
+
+msgid "Heat Crash"
+msgstr "Golpe Calor"
+
+msgid "Sunny Day"
+msgstr "Día Soleado"
+
+msgid "Will-O-Wisp"
+msgstr "Fuego Fatuo"
+
+msgid "Sky Attack"
+msgstr "Ataque Aéreo"
+
+msgid "Brave Bird"
+msgstr "Pájaro Osado"
+
+msgid "Hurricane"
+msgstr "Vendaval"
+
+msgid "Aeroblast"
+msgstr "Aerochorro"
+
+msgid "Fly"
+msgstr "Vuelo"
+
+msgid "Bounce"
+msgstr "Bote"
+
+msgid "Drill Peck"
+msgstr "Pico Taladro"
+
+msgid "Air Slash"
+msgstr "Tajo Aéreo"
+
+msgid "Aerial Ace"
+msgstr "Golpe Aéreo"
+
+msgid "Chatter"
+msgstr "Cháchara"
+
+msgid "Pluck"
+msgstr "Picoteo"
+
+msgid "Sky Drop"
+msgstr "Caída Libre"
+
+msgid "Wing Attack"
+msgstr "Ataque Ala"
+
+msgid "Acrobatics"
+msgstr "Acróbata"
+
+msgid "Air Cutter"
+msgstr "Aire Afilado"
+
+msgid "Gust"
+msgstr "Tornado"
+
+msgid "Peck"
+msgstr "Picotazo"
+
+msgid "Defog"
+msgstr "Despejar"
+
+msgid "Feather Dance"
+msgstr "Danza Pluma"
+
+msgid "Mirror Move"
+msgstr "Mov. Espejo"
+
+msgid "Roost"
+msgstr "Respiro"
+
+msgid "Tailwind"
+msgstr "Viento Afín"
+
+msgid "Shadow Force"
+msgstr "Golpe Umbrío"
+
+msgid "Shadow Ball"
+msgstr "Bola Sombra"
+
+msgid "Shadow Claw"
+msgstr "Garra Umbría"
+
+msgid "Ominous Wind"
+msgstr "Viento Aciago"
+
+msgid "Shadow Punch"
+msgstr "Puño Sombra"
+
+msgid "Hex"
+msgstr "Infortunio"
+
+msgid "Shadow Sneak"
+msgstr "Sombra Vil"
+
+msgid "Astonish"
+msgstr "Impresionar"
+
+msgid "Lick"
+msgstr "Lengüetazo"
+
+msgid "Night Shade"
+msgstr "Tinieblas"
+
+msgid "Confuse Ray"
+msgstr "Rayo Confuso"
+
+msgid "Curse"
+msgstr "Maldición"
+
+msgid "Destiny Bond"
+msgstr "Mismo Destino"
+
+msgid "Grudge"
+msgstr "Rabia"
+
+msgid "Nightmare"
+msgstr "Pesadilla"
+
+msgid "Spite"
+msgstr "Rencor"
+
+msgid "Frenzy Plant"
+msgstr "Planta Feroz"
+
+msgid "Leaf Storm"
+msgstr "Lluevehojas"
+
+msgid "Petal Dance"
+msgstr "Danza Pétalo"
+
+msgid "Power Whip"
+msgstr "Latigazo"
+
+msgid "Seed Flare"
+msgstr "Fogonazo"
+
+msgid "Solar Beam"
+msgstr "Rayo Solar"
+
+msgid "Wood Hammer"
+msgstr "Mazazo"
+
+msgid "Leaf Blade"
+msgstr "Hoja Aguda"
+
+msgid "Energy Ball"
+msgstr "Energibola"
+
+msgid "Seed Bomb"
+msgstr "Bomba Germen"
+
+msgid "Giga Drain"
+msgstr "Gigadrenado"
+
+msgid "Horn Leech"
+msgstr "Astadrenaje"
+
+msgid "Leaf Tornado"
+msgstr "Ciclón Hojas"
+
+msgid "Magical Leaf"
+msgstr "Hoja Mágica"
+
+msgid "Needle Arm"
+msgstr "Brazo Pincho"
+
+msgid "Razor Leaf"
+msgstr "Hoja Afilada"
+
+msgid "Grass Pledge"
+msgstr "Voto Planta"
+
+msgid "Mega Drain"
+msgstr "Megaagotar"
+
+msgid "Vine Whip"
+msgstr "Látigo Cepa"
+
+msgid "Bullet Seed"
+msgstr "Recurrente"
+
+msgid "Absorb"
+msgstr "Absorber"
+
+msgid "Grass Knot"
+msgstr "Hierba Lazo"
+
+msgid "Aromatherapy"
+msgstr "Aromaterapia"
+
+msgid "Cotton Guard"
+msgstr "Rizo Algodón"
+
+msgid "Cotton Spore"
+msgstr "Esporagodón"
+
+msgid "Grass Whistle"
+msgstr "Silbato"
+
+msgid "Ingrain"
+msgstr "Arraigo"
+
+msgid "Leech Seed"
+msgstr "Drenadoras"
+
+msgid "Sleep Powder"
+msgstr "Somnífero"
+
+msgid "Spore"
+msgstr "Espora"
+
+msgid "Stun Spore"
+msgstr "Paralizador"
+
+msgid "Synthesis"
+msgstr "Síntesis"
+
+msgid "Worry Seed"
+msgstr "Abatidoras"
+
+msgid "Earthquake"
+msgstr "Terremoto"
+
+msgid "Earth Power"
+msgstr "Tierra Viva"
+
+msgid "Dig"
+msgstr "Excavar"
+
+msgid "Drill Run"
+msgstr "Taladradora"
+
+msgid "Bone Club"
+msgstr "Hueso Palo"
+
+msgid "Mud Bomb"
+msgstr "Bomba Fango"
+
+msgid "Bulldoze"
+msgstr "Terratemblor"
+
+msgid "Mud Shot"
+msgstr "Disparo Lodo"
+
+msgid "Bonemerang"
+msgstr "Huesomerang"
+
+msgid "Sand Tomb"
+msgstr "Bucle Arena"
+
+msgid "Bone Rush"
+msgstr "Ataque Óseo"
+
+msgid "Mud-Slap"
+msgstr "Bofetón Lodo"
+
+msgid "Fissure"
+msgstr "Fisura"
+
+msgid "Magnitude"
+msgstr "Magnitud"
+
+msgid "Mud Sport"
+msgstr "Chapoteo Lodo"
+
+msgid "Sand Attack"
+msgstr "Ataque Arena"
+
+msgid "Spikes"
+msgstr "Púas"
+
+msgid "Freeze Shock"
+msgstr "Rayo Gélido"
+
+msgid "Ice Burn"
+msgstr "Llama Gélida"
+
+msgid "Blizzard"
+msgstr "Ventisca"
+
+msgid "Ice Beam"
+msgstr "Rayo Hielo"
+
+msgid "Icicle Crash"
+msgstr "Chuzos"
+
+msgid "Ice Punch"
+msgstr "Puño Hielo"
+
+msgid "Aurora Beam"
+msgstr "Rayo Aurora"
+
+msgid "Glaciate"
+msgstr "Mundo Gélido"
+
+msgid "Ice Fang"
+msgstr "Colmillo Hielo"
+
+msgid "Avalanche"
+msgstr "Alud"
+
+msgid "Icy Wind"
+msgstr "Viento Hielo"
+
+msgid "Frost Breath"
+msgstr "Vaho Gélido"
+
+msgid "Ice Shard"
+msgstr "Canto Helado"
+
+msgid "Powder Snow"
+msgstr "Nieve Polvo"
+
+msgid "Ice Ball"
+msgstr "Bola Hielo"
+
+msgid "Icicle Spear"
+msgstr "Carámbano"
+
+msgid "Sheer Cold"
+msgstr "Frío Polar"
+
+msgid "Hail"
+msgstr "Granizo"
+
+msgid "Haze"
+msgstr "Niebla"
+
+msgid "Mist"
+msgstr "Neblina"
+
+msgid "Explosion"
+msgstr "Explosión"
+
+msgid "Self-Destruct"
+msgstr "Autodestrucción"
+
+msgid "Giga Impact"
+msgstr "Giga Impacto"
+
+msgid "Hyper Beam"
+msgstr "Hiperrayo"
+
+msgid "Last Resort"
+msgstr "Última Baza"
+
+msgid "Double-Edge"
+msgstr "Doble Filo"
+
+msgid "Head Charge"
+msgstr "Ariete"
+
+msgid "Mega Kick"
+msgstr "Megapatada"
+
+msgid "Thrash"
+msgstr "Golpe"
+
+msgid "Egg Bomb"
+msgstr "Bomba Huevo"
+
+msgid "Judgment"
+msgstr "Sentencia"
+
+msgid "Skull Bash"
+msgstr "Cabezazo"
+
+msgid "Hyper Voice"
+msgstr "Vozarrón"
+
+msgid "Rock Climb"
+msgstr "Treparrocas"
+
+msgid "Take Down"
+msgstr "Derribo"
+
+msgid "Uproar"
+msgstr "Alboroto"
+
+msgid "Body Slam"
+msgstr "Golpe Cuerpo"
+
+msgid "Techno Blast"
+msgstr "Tecno Shock"
+
+msgid "Extreme Speed"
+msgstr "Veloc. Extrema"
+
+msgid "Hyper Fang"
+msgstr "Hipercolmillo"
+
+msgid "Mega Punch"
+msgstr "Megapuño"
+
+msgid "Razor Wind"
+msgstr "V. Cortante"
+
+msgid "Slam"
+msgstr "Atizar"
+
+msgid "Strength"
+msgstr "Fuerza"
+
+msgid "Tri Attack"
+msgstr "Triataque"
+
+msgid "Crush Claw"
+msgstr "Garra Brutal"
+
+msgid "Relic Song"
+msgstr "Canto Arcaico"
+
+msgid "Chip Away"
+msgstr "Guardia Baja"
+
+msgid "Dizzy Punch"
+msgstr "Puño Mareo"
+
+msgid "Facade"
+msgstr "Imagen"
+
+msgid "Headbutt"
+msgstr "Golpe Cabeza"
+
+msgid "Retaliate"
+msgstr "Represalia"
+
+msgid "Secret Power"
+msgstr "Daño Secreto"
+
+msgid "Slash"
+msgstr "Cuchillada"
+
+msgid "Horn Attack"
+msgstr "Cornada"
+
+msgid "Stomp"
+msgstr "Pisotón"
+
+msgid "Covet"
+msgstr "Antojo"
+
+msgid "Round"
+msgstr "Canon"
+
+msgid "Smelling Salts"
+msgstr "Estímulo"
+
+msgid "Swift"
+msgstr "Rapidez"
+
+msgid "Vice Grip"
+msgstr "Agarre"
+
+msgid "Cut"
+msgstr "Corte"
+
+msgid "Struggle"
+msgstr "Combate"
+
+msgid "Tackle"
+msgstr "Placaje"
+
+msgid "Weather Ball"
+msgstr "Meteorobola"
+
+msgid "Echoed Voice"
+msgstr "Eco Voz"
+
+msgid "Fake Out"
+msgstr "Sorpresa"
+
+msgid "False Swipe"
+msgstr "Falsotortazo"
+
+msgid "Golden Fist"
+msgstr "Puño de Oro"
+
+msgid "Pound"
+msgstr "Destructor"
+
+msgid "Quick Attack"
+msgstr "Ataque Rápido"
+
+msgid "Scratch"
+msgstr "Arañazo"
+
+msgid "Snore"
+msgstr "Ronquido"
+
+msgid "Double Hit"
+msgstr "Doble Golpe"
+
+msgid "Feint"
+msgstr "Amago"
+
+msgid "Tail Slap"
+msgstr "Plumerazo"
+
+msgid "Rage"
+msgstr "Furia"
+
+msgid "Rapid Spin"
+msgstr "Giro Rápido"
+
+msgid "Spike Cannon"
+msgstr "Clavo Cañón"
+
+msgid "Comet Punch"
+msgstr "Puño Cometa"
+
+msgid "Fury Swipes"
+msgstr "Golpes Furia"
+
+msgid "Barrage"
+msgstr "Presa"
+
+msgid "Bind"
+msgstr "Atadura"
+
+msgid "Double Slap"
+msgstr "Doblebofetón"
+
+msgid "Fury Attack"
+msgstr "Ataque Furia"
+
+msgid "Wrap"
+msgstr "Repetición"
+
+msgid "Constrict"
+msgstr "Restricción"
+
+msgid "Bide"
+msgstr "Venganza"
+
+msgid "Crush Grip"
+msgstr "Agarrón"
+
+msgid "Endeavor"
+msgstr "Esfuerzo"
+
+msgid "Flail"
+msgstr "Azote"
+
+msgid "Frustration"
+msgstr "Frustración"
+
+msgid "Guillotine"
+msgstr "Guillotina"
+
+msgid "Hidden Power"
+msgstr "Poder Oculto"
+
+msgid "Horn Drill"
+msgstr "Perforador"
+
+msgid "Natural Gift"
+msgstr "Don Natural"
+
+msgid "Present"
+msgstr "Presente"
+
+msgid "Return"
+msgstr "Retribución"
+
+msgid "Sonic Boom"
+msgstr "Bomba Sónica"
+
+msgid "Spit Up"
+msgstr "Escupir"
+
+msgid "Super Fang"
+msgstr "Superdiente"
+
+msgid "Trump Card"
+msgstr "As Oculto"
+
+msgid "Wring Out"
+msgstr "Estrujón"
+
+msgid "Acupressure"
+msgstr "Acupresión"
+
+msgid "After You"
+msgstr "Cede Paso"
+
+msgid "Assist"
+msgstr "Ayuda"
+
+msgid "Attract"
+msgstr "Atracción"
+
+msgid "Baton Pass"
+msgstr "Relevo"
+
+msgid "Belly Drum"
+msgstr "Tambor"
+
+msgid "Bestow"
+msgstr "Ofrenda"
+
+msgid "Block"
+msgstr "Bloqueo"
+
+msgid "Camouflage"
+msgstr "Camuflaje"
+
+msgid "Captivate"
+msgstr "Seducción"
+
+msgid "Charm"
+msgstr "Encanto"
+
+msgid "Conversion"
+msgstr "Conversión"
+
+msgid "Conversion 2"
+msgstr "Conversión2"
+
+msgid "Copycat"
+msgstr "Copión"
+
+msgid "Defense Curl"
+msgstr "Rizo Defensa"
+
+msgid "Disable"
+msgstr "Anulación"
+
+msgid "Double Team"
+msgstr "Doble Equipo"
+
+msgid "Encore"
+msgstr "Otra Vez"
+
+msgid "Endure"
+msgstr "Aguante"
+
+msgid "Entrainment"
+msgstr "Danza Amiga"
+
+msgid "Flash"
+msgstr "Destello"
+
+msgid "Focus Energy"
+msgstr "Foco Energía"
+
+msgid "Follow Me"
+msgstr "Señuelo"
+
+msgid "Foresight"
+msgstr "Profecía"
+
+msgid "Glare"
+msgstr "Deslumbrar"
+
+msgid "Growl"
+msgstr "Gruñido"
+
+msgid "Growth"
+msgstr "Desarrollo"
+
+msgid "Harden"
+msgstr "Fortaleza"
+
+msgid "Heal Bell"
+msgstr "Campana Cura"
+
+msgid "Helping Hand"
+msgstr "Refuerzo"
+
+msgid "Howl"
+msgstr "Aullido"
+
+msgid "Leer"
+msgstr "Malicioso"
+
+msgid "Lock-On"
+msgstr "Fijar Blanco"
+
+msgid "Lovely Kiss"
+msgstr "Beso Amoroso"
+
+msgid "Lucky Chant"
+msgstr "Conjuro"
+
+msgid "Me First"
+msgstr "Yo Primero"
+
+msgid "Mean Look"
+msgstr "Mal de Ojo"
+
+msgid "Metronome"
+msgstr "Metrónomo"
+
+msgid "Milk Drink"
+msgstr "Batido"
+
+msgid "Mimic"
+msgstr "Mimético"
+
+msgid "Mind Reader"
+msgstr "Telépata"
+
+msgid "Minimize"
+msgstr "Reducción"
+
+msgid "Moonlight"
+msgstr "Luz Lunar"
+
+msgid "Morning Sun"
+msgstr "Sol Matinal"
+
+msgid "Nature Power"
+msgstr "Adaptación"
+
+msgid "Odor Sleuth"
+msgstr "Rastreo"
+
+msgid "Pain Split"
+msgstr "Divide Dolor"
+
+msgid "Perish Song"
+msgstr "Canto Mortal"
+
+msgid "Protect"
+msgstr "Protección"
+
+msgid "Psych Up"
+msgstr "Más Psique"
+
+msgid "Recover"
+msgstr "Recuperación"
+
+msgid "Recycle"
+msgstr "Reciclaje"
+
+msgid "Reflect Type"
+msgstr "Clonatipo"
+
+msgid "Refresh"
+msgstr "Alivio"
+
+msgid "Roar"
+msgstr "Rugido"
+
+msgid "Safeguard"
+msgstr "Velo Sagrado"
+
+msgid "Scary Face"
+msgstr "Cara Susto"
+
+msgid "Screech"
+msgstr "Chirrido"
+
+msgid "Sharpen"
+msgstr "Afilar"
+
+msgid "Shell Smash"
+msgstr "Rompecoraza"
+
+msgid "Simple Beam"
+msgstr "Onda Simple"
+
+msgid "Sing"
+msgstr "Canto"
+
+msgid "Sketch"
+msgstr "Esquema"
+
+msgid "Slack Off"
+msgstr "Relajo"
+
+msgid "Sleep Talk"
+msgstr "Sonámbulo"
+
+msgid "Smoke Screen"
+msgstr "Pantalla de Humo"
+
+msgid "Soft-Boiled"
+msgstr "Amortiguador"
+
+msgid "Splash"
+msgstr "Salpicadura"
+
+msgid "Stockpile"
+msgstr "Reserva"
+
+msgid "Substitute"
+msgstr "Sustituto"
+
+msgid "Supersonic"
+msgstr "Supersónico"
+
+msgid "Swagger"
+msgstr "Contoneo"
+
+msgid "Swallow"
+msgstr "Tragar"
+
+msgid "Sweet Kiss"
+msgstr "Beso Dulce"
+
+msgid "Sweet Scent"
+msgstr "Dulce Aroma"
+
+msgid "Swords Dance"
+msgstr "Danza Espada"
+
+msgid "Tail Whip"
+msgstr "Látigo"
+
+msgid "Teeter Dance"
+msgstr "Danza Caos"
+
+msgid "Tickle"
+msgstr "Cosquillas"
+
+msgid "Transform"
+msgstr "Transformación"
+
+msgid "Whirlwind"
+msgstr "Remolino"
+
+msgid "Wish"
+msgstr "Deseo"
+
+msgid "Work Up"
+msgstr "Avivar"
+
+msgid "Yawn"
+msgstr "Bostezo"
+
+msgid "Gunk Shot"
+msgstr "Lanza Mugre"
+
+msgid "Sludge Wave"
+msgstr "Onda Tóxica"
+
+msgid "Sludge Bomb"
+msgstr "Bomba Lodo"
+
+msgid "Poison Jab"
+msgstr "Puya Nociva"
+
+msgid "Cross Poison"
+msgstr "Veneno X"
+
+msgid "Sludge"
+msgstr "Residuos"
+
+msgid "Venoshock"
+msgstr "Carga Tóxica"
+
+msgid "Clear Smog"
+msgstr "Nieblaclara"
+
+msgid "Poison Fang"
+msgstr "Colmillo Ven"
+
+msgid "Poison Tail"
+msgstr "Cola Veneno"
+
+msgid "Acid"
+msgstr "Ácido"
+
+msgid "Acid Spray"
+msgstr "Bomba Ácida"
+
+msgid "Smog"
+msgstr "Polución"
+
+msgid "Poison Sting"
+msgstr "Picotazo Ven"
+
+msgid "Acid Armor"
+msgstr "Armadura Ácida"
+
+msgid "Coil"
+msgstr "Enrosque"
+
+msgid "Gastro Acid"
+msgstr "Bilis"
+
+msgid "Poison Gas"
+msgstr "Gas Venenoso"
+
+msgid "Poison Powder"
+msgstr "Polvo Veneno"
+
+msgid "Toxic"
+msgstr "Tóxico"
+
+msgid "Toxic Spikes"
+msgstr "Púas Tóxicas"
+
+msgid "Psycho Boost"
+msgstr "Psicoataque"
+
+msgid "Dream Eater"
+msgstr "Come Sueños"
+
+msgid "Future Sight"
+msgstr "Premonición"
+
+msgid "Psystrike"
+msgstr "Onda Mental"
+
+msgid "Psychic"
+msgstr "Psíquico"
+
+msgid "Extrasensory"
+msgstr "Paranormal"
+
+msgid "Psyshock"
+msgstr "Psicocarga"
+
+msgid "Zen Headbutt"
+msgstr "Cabezazo Zen"
+
+msgid "Luster Purge"
+msgstr "Resplandor"
+
+msgid "Mist Ball"
+msgstr "Bola Neblina"
+
+msgid "Psycho Cut"
+msgstr "Psicocorte"
+
+msgid "Synchronoise"
+msgstr "Sincrorruido"
+
+msgid "Psybeam"
+msgstr "Psicorrayo"
+
+msgid "Heart Stamp"
+msgstr "Arrumaco"
+
+msgid "Confusion"
+msgstr "Confusión"
+
+msgid "Mirror Coat"
+msgstr "Manto Espejo"
+
+msgid "Psywave"
+msgstr "Psicoonda"
+
+msgid "Stored Power"
+msgstr "Poder Reserva"
+
+msgid "Agility"
+msgstr "Agilidad"
+
+msgid "Ally Switch"
+msgstr "Cambio Banda"
+
+msgid "Barrier"
+msgstr "Barrera"
+
+msgid "Calm Mind"
+msgstr "Paz Mental"
+
+msgid "Cosmic Power"
+msgstr "Masa Cósmica"
+
+msgid "Gravity"
+msgstr "Gravedad"
+
+msgid "Guard Split"
+msgstr "Isoguardia"
+
+msgid "Guard Swap"
+msgstr "Cambia Defensa"
+
+msgid "Heal Block"
+msgstr "Anticura"
+
+msgid "Heal Pulse"
+msgstr "Pulso Cura"
+
+msgid "Healing Wish"
+msgstr "Deseo Cura"
+
+msgid "Heart Swap"
+msgstr "Cambia Almas"
+
+msgid "Hypnosis"
+msgstr "Hipnosis"
+
+msgid "Imprison"
+msgstr "Cerca"
+
+msgid "Kinesis"
+msgstr "Kinético"
+
+msgid "Light Screen"
+msgstr "Pantalla Luz"
+
+msgid "Lunar Dance"
+msgstr "Danza Lunar"
+
+msgid "Magic Coat"
+msgstr "Capa Mágica"
+
+msgid "Magic Room"
+msgstr "Zona Mágica"
+
+msgid "Meditate"
+msgstr "Meditación"
+
+msgid "Miracle Eye"
+msgstr "Gran Ojo"
+
+msgid "Power Split"
+msgstr "Isofuerza"
+
+msgid "Power Swap"
+msgstr "Cambia Fuerza"
+
+msgid "Power Trick"
+msgstr "Truco Fuerza"
+
+msgid "Psycho Shift"
+msgstr "Psico-cambio"
+
+msgid "Reflect"
+msgstr "Reflejo"
+
+msgid "Rest"
+msgstr "Descanso"
+
+msgid "Role Play"
+msgstr "Imitación"
+
+msgid "Skill Swap"
+msgstr "Intercambio"
+
+msgid "Telekinesis"
+msgstr "Telequinesis"
+
+msgid "Teleport"
+msgstr "Teletransporte"
+
+msgid "Trick"
+msgstr "Truco"
+
+msgid "Trick Room"
+msgstr "Espacio Raro"
+
+msgid "Wonder Room"
+msgstr "Zona Extraña"
+
+msgid "Head Smash"
+msgstr "Testarazo"
+
+msgid "Rock Wrecker"
+msgstr "Romperrocas"
+
+msgid "Stone Edge"
+msgstr "Roca Afilada"
+
+msgid "Rock Slide"
+msgstr "Avalancha"
+
+msgid "Power Gem"
+msgstr "Joya de Luz"
+
+msgid "Ancient Power"
+msgstr "Poder Pasado"
+
+msgid "Rock Throw"
+msgstr "Lanzarrocas"
+
+msgid "Rock Tomb"
+msgstr "Tumba Rocas"
+
+msgid "Smack Down"
+msgstr "Antiaéreo"
+
+msgid "Rollout"
+msgstr "Desenrollar"
+
+msgid "Rock Blast"
+msgstr "Pedrada"
+
+msgid "Rock Polish"
+msgstr "Pulimento"
+
+msgid "Sandstorm"
+msgstr "Tormenta Arena"
+
+msgid "Stealth Rock"
+msgstr "Trampa Rocas"
+
+msgid "Wide Guard"
+msgstr "Vastaguardia"
+
+msgid "Doom Desire"
+msgstr "Deseo Oculto"
+
+msgid "Iron Tail"
+msgstr "Cola Férrea"
+
+msgid "Meteor Mash"
+msgstr "Puño Meteoro"
+
+msgid "Flash Cannon"
+msgstr "Foco Resplandor"
+
+msgid "Iron Head"
+msgstr "Cabeza Hierro"
+
+msgid "Steel Wing"
+msgstr "Ala de Acero"
+
+msgid "Mirror Shot"
+msgstr "Disparo Espejo"
+
+msgid "Magnet Bomb"
+msgstr "Bomba Imán"
+
+msgid "Gear Grind"
+msgstr "Rueda Doble"
+
+msgid "Metal Claw"
+msgstr "Garra Metal"
+
+msgid "Bullet Punch"
+msgstr "Puño Bala"
+
+msgid "Gyro Ball"
+msgstr "Giro Bola"
+
+msgid "Heavy Slam"
+msgstr "Cuerpo Pesado"
+
+msgid "Metal Burst"
+msgstr "Represión Metal"
+
+msgid "Autotomize"
+msgstr "Aligerar"
+
+msgid "Iron Defense"
+msgstr "Defensa Férrea"
+
+msgid "Metal Sound"
+msgstr "Eco Metálico"
+
+msgid "Shift Gear"
+msgstr "Cambio Marcha"
+
+msgid "Hydro Cannon"
+msgstr "Hidrocañón"
+
+msgid "Water Spout"
+msgstr "Salpicar"
+
+msgid "Hydro Pump"
+msgstr "Hidrobomba"
+
+msgid "Muddy Water"
+msgstr "Agua Lodosa"
+
+msgid "Aqua Tail"
+msgstr "Acua Cola"
+
+msgid "Crabhammer"
+msgstr "Martillazo"
+
+msgid "Dive"
+msgstr "Buceo"
+
+msgid "Scald"
+msgstr "Escaldar"
+
+msgid "Waterfall"
+msgstr "Cascada"
+
+msgid "Razor Shell"
+msgstr "Concha Filo"
+
+msgid "Brine"
+msgstr "Salmuera"
+
+msgid "Bubble Beam"
+msgstr "Rayo Burbuja"
+
+msgid "Octazooka"
+msgstr "Pulpocañón"
+
+msgid "Water Pulse"
+msgstr "Hidropulso"
+
+msgid "Water Pledge"
+msgstr "Voto Agua"
+
+msgid "Water Gun"
+msgstr "Pistola Agua"
+
+msgid "Clamp"
+msgstr "Tenaza"
+
+msgid "Whirlpool"
+msgstr "Torbellino"
+
+msgid "Bubble"
+msgstr "Burbuja"
+
+msgid "Aqua Ring"
+msgstr "Acua Aro"
+
+msgid "Rain Dance"
+msgstr "Danza Lluvia"
+
+msgid "Soak"
+msgstr "Anegar"
+
+msgid "Water Sport"
+msgstr "Hidrochorro"
+
+msgid "Withdraw"
+msgstr "Refugio"
+
+msgid "Coral Break"
+msgstr "Rompecoral"
+
+msgid "Atomic Punch"
+msgstr "Puño Atómico"
+
+msgid "Metal Whip"
+msgstr "Ferrolátigo"
+
+msgid "Shuffle"
+msgstr "Barajada"
+
+msgid "Nuclear Waste"
+msgstr "Desecho Tóxico"
+
+msgid "Gamma Ray"
+msgstr "Rayo Gamma"
+
+msgid "Radioacid"
+msgstr "Radiácido"
+
+msgid "Sky Fall"
+msgstr "Aeropresión"
+
+msgid "Flame Impact"
+msgstr "Combustión"
+
+msgid "Draining Kiss"
+msgstr "Beso Drenaje"
+
+msgid "Eerie Impulse"
+msgstr "Onda Anómala"
+
+msgid "Electric Terrain"
+msgstr "Campo Eléctrico"
+
+msgid "Electrify"
+msgstr "Electrificación"
+
+msgid "Fairy Lock"
+msgstr "Cerrojo Feérico"
+
+msgid "Fairy Wind"
+msgstr "Viento Feérico"
+
+msgid "Fell Stinger"
+msgstr "Aguijón Letal"
+
+msgid "Flower Shield"
+msgstr "Defensa Floral"
+
+msgid "Flying Press"
+msgstr "Plancha Voladora"
+
+msgid "Forest's Curse"
+msgstr "Condena Silvana"
+
+msgid "Freeze-Dry"
+msgstr "Liofilización"
+
+msgid "Geomancy"
+msgstr "Geocontrol"
+
+msgid "Grassy Terrain"
+msgstr "Campo de Hierba"
+
+msgid "Infestation"
+msgstr "Acoso"
+
+msgid "Ion Deluge"
+msgstr "Cortina Plasma"
+
+msgid "King's Shield"
+msgstr "Escudo Real"
+
+msgid "Land's Wrath"
+msgstr "Fuerza Telúrica"
+
+msgid "Magnetic Flux"
+msgstr "Aura Magnética"
+
+msgid "Mat Block"
+msgstr "Escudo Tatami"
+
+msgid "Misty Terrain"
+msgstr "Campo de Niebla"
+
+msgid "Moonblast"
+msgstr "Fuerza Lunar"
+
+msgid "Mystical Fire"
+msgstr "Llama Embrujada"
+
+msgid "Noble Roar"
+msgstr "Rugido de Guerra"
+
+msgid "Nuzzle"
+msgstr "Moflete Estático"
+
+msgid "Oblivion Wing"
+msgstr "Ala Mortífera"
+
+msgid "Parabolic Charge"
+msgstr "Carga Parábola"
+
+msgid "Parting Shot"
+msgstr "Última Palabra"
+
+msgid "Petal Blizzard"
+msgstr "Tormenta Floral"
+
+msgid "Phantom Force"
+msgstr "Golpe Fantasma"
+
+msgid "Play Nice"
+msgstr "Camaradería"
+
+msgid "Play Rough"
+msgstr "Carantoña"
+
+msgid "Powder"
+msgstr "Polvo Explosivo"
+
+msgid "Power-Up Punch"
+msgstr "Puño Incremento"
+
+msgid "Rototiller"
+msgstr "Fertilizante"
+
+msgid "Spiky Shield"
+msgstr "Barrera Espinosa"
+
+msgid "Sticky Web"
+msgstr "Red Viscosa"
+
+msgid "Topsy-Turvy"
+msgstr "Reversión"
+
+msgid "Trick-or-Treat"
+msgstr "Halloween"
+
+msgid "Venom Drench"
+msgstr "Trampa Venenosa"
+
+msgid "Water Shuriken"
+msgstr "Shuriken de Agua"
+
+msgid "Aromatic Mist"
+msgstr "Niebla Aromática"
+
+msgid "Baby-Doll Eyes"
+msgstr "Ojitos Tiernos"
+
+msgid "Belch"
+msgstr "Eructo"
+
+msgid "Boomburst"
+msgstr "Estruendo"
+
+msgid "Confide"
+msgstr "Confidencia"
+
+msgid "Crafty Shield"
+msgstr "Truco Defensa"
+
+msgid "Dazzling Gleam"
+msgstr "Brillo Mágico"
+
+msgid "Disarming Voice"
+msgstr "Voz Cautivadora"
+
+msgid "Subduction"
+msgstr "Subducción"
+
+msgid "Instant Crush"
+msgstr "Psicovoltio"
+
+msgid "Get Lucky"
+msgstr "Arranque"
+
+msgid "Laser Pulse"
+msgstr "Pulso Láser"
+
+msgid "Gemstone Glimmer"
+msgstr "Centelleo"
+
+msgid "Half-life"
+msgstr "Vida Media"
+
+msgid "Ocean's Wrath"
+msgstr "Fuerza Oceánica"
+
+msgid "Fission Burst"
+msgstr "Fisión Nuclear"
+
+msgid "Caustic Breath"
+msgstr "Aliento Letal"
+
+msgid "Nuclear Slash"
+msgstr "Corte Atómico"
+
+msgid "Thunderstorm"
+msgstr "Tormenta"
+
+msgid "Sudden Strike"
+msgstr "Emboscada"
+
+msgid "Expunge"
+msgstr "Pulcritud"
+
+msgid "Fallout"
+msgstr "Catástrofe"
+
+msgid "Proton Beam"
+msgstr "Cañón de Protones"
+
+msgid "Infernal Blade"
+msgstr "Sable Infernal"
+
+msgid "Quantum Leap"
+msgstr "Salto Cuántico"
+
+msgid "Metal Cruncher"
+msgstr "Trituradora"
+
+msgid "Drain Life"
+msgstr "Drenavida"
+
+msgid "Sticky Terrain"
+msgstr "Campo Pegajoso"
+
+msgid "Nuclear Wind"
+msgstr "Viento Nuclear"

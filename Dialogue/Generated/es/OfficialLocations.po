@@ -1,0 +1,161 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es\n"
+
+msgid "01- Lakeside Path"
+msgstr "Ruta 01 - Senda Raíz"
+
+msgid "02- Owten Nook"
+msgstr "Ruta 02 - Rincón Owten"
+
+msgid "03- Seabreeze Way"
+msgstr "Ruta 03 - Vía Marina"
+
+msgid "04- Baa Grassland"
+msgstr "Ruta 04 - Pampa Oveja"
+
+msgid "05- Tancoon Way"
+msgstr "Ruta 05 - Claro Tancoon"
+
+msgid "06- Pahar Hills"
+msgstr "Ruta 06 - Cuesta Pahar"
+
+msgid "07- Tandor Sheets"
+msgstr "Ruta 07 - El Litoral"
+
+msgid "08- Vinoville Lake"
+msgstr "Ruta 08 - Campos de Trigo"
+
+msgid "09- FireValley"
+msgstr "Ruta 09 - Valle Pasión"
+
+msgid "10- Baykal Forest"
+msgstr "Ruta 10 - Jungla de Baykal"
+
+msgid "11- Nature Preserve"
+msgstr "Ruta 11 - Reserva Natural"
+
+msgid "12- Maskara Channel"
+msgstr "Ruta 12 - Canal Sigiloso"
+
+msgid "13- Maskara Island"
+msgstr "Ruta 13 - Isla Maskara"
+
+msgid "14- Maskara Sea"
+msgstr "Ruta 14 - Mar Pintado"
+
+msgid "15- Shallow Channel"
+msgstr "Ruta 15 - Mar Ventisca"
+
+msgid "Amatree Town"
+msgstr "Pueblo Amaukari"
+
+msgid "Anthell"
+msgstr "Infraguero"
+
+msgid "Bealbeach City"
+msgstr "Ciudad Miraplaya"
+
+msgid "Berry Traders"
+msgstr "Trueque de Bayas"
+
+msgid "Bike Shop"
+msgstr "Tienda de Bicis"
+
+msgid "Burole Town"
+msgstr "Pueblo Barullo"
+
+msgid "Championship Site"
+msgstr "Sede del Campeonato"
+
+msgid "Church"
+msgstr "Iglesia"
+
+msgid "Comet Cave"
+msgstr "Cueva Cometa"
+
+msgid "Dpt. Store, Casino"
+msgstr "Centro Comercial, Casino"
+
+msgid "Kevlar Town"
+msgstr "Pueblo Kevlar"
+
+msgid "Lanthanite Tunnel"
+msgstr "Cueva Lantánida"
+
+msgid "Larkspur's Lab"
+msgstr "Laboratorios Larkspur"
+
+msgid "Legen Town"
+msgstr "Pueblo Valeón"
+
+msgid "Moki Town"
+msgstr "Pueblo Moki"
+
+msgid "Name Rater"
+msgstr "Experto en Apodos"
+
+msgid "Nowtoch City"
+msgstr "Ciudad Tecuelo"
+
+msgid "Nuclear Plant Epsilon"
+msgstr "Planta Nuclear Épsilon"
+
+msgid "Nuclear Plant Omicron"
+msgstr "Planta Nuclear Ómicron"
+
+msgid "Nuclear Plant Zeta"
+msgstr "Planta Nuclear Zeta"
+
+msgid "Passage Cave"
+msgstr "Pasaje Térreo"
+
+msgid "Pokemon School"
+msgstr "Escuela Pokémon"
+
+msgid "Professor Bambo Lab"
+msgstr "Laboratorios Bamb'o"
+
+msgid "Professor Cypress Lab"
+msgstr "Laboratorios Cypress"
+
+msgid "Rochfale Town"
+msgstr "Pueblo Lionte"
+
+msgid "Rochfale Tunnel"
+msgstr "Túnel Onte"
+
+msgid "Route 16"
+msgstr "Ruta 16 - Pase Lantánido"
+
+msgid "Silverport Town"
+msgstr "Pueblo Claravío"
+
+msgid "Snowbank Town"
+msgstr "Pueblo Nevisca"
+
+msgid "The Labyrinth"
+msgstr "El Laberinto"
+
+msgid "The Tipsy Tancoon, etc"
+msgstr "Recuerda-Movimientos"
+
+msgid "Tinkerer's Workshop"
+msgstr "Casa del Inventor"
+
+msgid "Training Dojo"
+msgstr "Dojo de Entrenamiento"
+
+msgid "Tsukinami Village"
+msgstr "Aldea Tsukinami"
+
+msgid "Venesi City"
+msgstr "Ciudad Venesí"
+
+msgid "Victory Road"
+msgstr "Calle Victoria"
+
+msgid "Vinoville Town"
+msgstr "Pueblo Viñedo"
+

@@ -1,0 +1,601 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "Orchynx"
+msgstr "초나비"
+
+msgid "Metalynx"
+msgstr "스라디움"
+
+msgid "Raptorch"
+msgstr "랩토치"
+
+msgid "Archilles"
+msgstr "아르킬렉스"
+
+msgid "Eletux"
+msgstr "망아찌리"
+
+msgid "Electruxo"
+msgstr "일레쿠스"
+
+msgid "Chyinmunk"
+msgstr "저리람"
+
+msgid "Kinetmunk"
+msgstr "찌람쥐"
+
+msgid "Birbie"
+msgstr "베이로빈"
+
+msgid "Aveden"
+msgstr "에델버드"
+
+msgid "Splendifowl"
+msgstr "깃멋부리"
+
+msgid "Cubbug"
+msgstr "곰벵이"
+
+msgid "Cubblfly"
+msgstr "그리플라"
+
+msgid "Nimflora"
+msgstr "님플로라"
+
+msgid "Barewl"
+msgstr "투구리"
+
+msgid "dearewl"
+msgstr "투구록"
+
+msgid "Gararewl"
+msgstr "무장록"
+
+msgid "Grozard"
+msgstr "지무기"
+
+msgid "Terlard"
+msgstr "토와룡"
+
+msgid "Tonemy"
+msgstr "독구르술"
+
+msgid "Tofurang"
+msgstr "독터르니"
+
+msgid "Dunsparce"
+msgstr "노고치"
+
+msgid "Dunseraph"
+msgstr "노고미르"
+
+msgid "Fortog"
+msgstr "딩구리"
+
+msgid "Folerog"
+msgstr "둔꺼비"
+
+msgid "Blubelrog"
+msgstr "푸루꺼비"
+
+msgid "Magikarp"
+msgstr "잉어킹"
+
+msgid "Gyarados"
+msgstr "갸라도스"
+
+msgid "Feleng"
+msgstr "냐오미"
+
+msgid "Felunge"
+msgstr "사냐옹"
+
+msgid "Feliger"
+msgstr "아수라옹"
+
+msgid "Mankey"
+msgstr "망키"
+
+msgid "Primeape"
+msgstr "성원숭"
+
+msgid "Empirilla"
+msgstr "성님숭"
+
+msgid "Owten"
+msgstr "나르냥"
+
+msgid "Eshouten"
+msgstr "샤우캐트"
+
+msgid "Lotad"
+msgstr "연꽃몬"
+
+msgid "Lombre"
+msgstr "로토스"
+
+msgid "Ludicolo"
+msgstr "로파파"
+
+msgid "Smore"
+msgstr "스모르"
+
+msgid "Firoke"
+msgstr "파이로크"
+
+msgid "Brailip"
+msgstr "뇌골치"
+
+msgid "Brainoar"
+msgstr "뇌골장어"
+
+msgid "Ekans"
+msgstr "아보"
+
+msgid "Arbok"
+msgstr "아보크"
+
+msgid "Tancoon"
+msgstr "헌티쿤"
+
+msgid "Tanscure"
+msgstr "러프라쿤"
+
+msgid "Sponee"
+msgstr "스퍼니"
+
+msgid "Sponaree"
+msgstr "스퍼나리"
+
+msgid "Pahar"
+msgstr "화르코"
+
+msgid "Palij"
+msgstr "화르키아"
+
+msgid "Panjay"
+msgstr "화르닉스"
+
+msgid "Jerbolta"
+msgstr "제르볼타"
+
+msgid "Comite"
+msgstr "꼬메트"
+
+msgid "Cometeor"
+msgstr "메테락"
+
+msgid "Astronite"
+msgstr "아스트론"
+
+msgid "Mareep"
+msgstr "메리프"
+
+msgid "Flaaffy"
+msgstr "보송송"
+
+msgid "Ampharos"
+msgstr "전룡"
+
+msgid "Baashaun"
+msgstr "까메르"
+
+msgid "Baaschaf"
+msgstr "메느와르"
+
+msgid "Baariette"
+msgstr "흑귀"
+
+msgid "Tricwe"
+msgstr "티키비"
+
+msgid "Harylect"
+msgstr "티키퓨라"
+
+msgid "Costraw"
+msgstr "쪽쪼기"
+
+msgid "Trawpint"
+msgstr "스트로피"
+
+msgid "Lunapup"
+msgstr "루키멍"
+
+msgid "Herolune"
+msgstr "히어룬"
+
+msgid "Minyan"
+msgstr "수하냥"
+
+msgid "Vilucard"
+msgstr "사아카드"
+
+msgid "Buizel"
+msgstr "브이젤"
+
+msgid "Floatzel"
+msgstr "플로젤"
+
+msgid "Modrille"
+msgstr "몰그렌"
+
+msgid "Drilgann"
+msgstr "두더라간"
+
+msgid "Gligar"
+msgstr "글라이거"
+
+msgid "Gliscor"
+msgstr "글라이온"
+
+msgid "Sableye"
+msgstr "깜까미"
+
+msgid "Cocaran"
+msgstr "코코랑"
+
+msgid "Cararalm"
+msgstr "팜크랩"
+
+msgid "Cocancer"
+msgstr "팜트로스"
+
+msgid "Corsola"
+msgstr "코산호"
+
+msgid "Corsoreef"
+msgstr "코산호쵸"
+
+msgid "Tubjaw"
+msgstr "터크죠"
+
+msgid "Tubareel"
+msgstr "터크일라"
+
+msgid "Cassnail"
+msgstr "탑팽이"
+
+msgid "Sableau"
+msgstr "캐스네일"
+
+msgid "Escartress"
+msgstr "포트카르고"
+
+msgid "Nupin"
+msgstr "우메바"
+
+msgid "Gellin"
+msgstr "유그론"
+
+msgid "Cottonee"
+msgstr "소미안"
+
+msgid "Whimsicott"
+msgstr "엘풍"
+
+msgid "Misdreavus"
+msgstr "무우마"
+
+msgid "Mismagius"
+msgstr "무우마직"
+
+msgid "Barand"
+msgstr "핸드라"
+
+msgid "Glaslug"
+msgstr "글라나"
+
+msgid "Glavinug"
+msgstr "글라키아"
+
+msgid "Paraudio"
+msgstr "파라디오"
+
+msgid "Paraboom"
+msgstr "파라앰프"
+
+msgid "Flager"
+msgstr "화랑이"
+
+msgid "Inflagetah"
+msgstr "화라르타"
+
+msgid "Chimical"
+msgstr "케미라"
+
+msgid "Chimaconda"
+msgstr "키메콘다"
+
+msgid "Tikiki"
+msgstr "티끼끼"
+
+msgid "Frikitiki"
+msgstr "탈부리끼"
+
+msgid "Unymph"
+msgstr "무루수채"
+
+msgid "Harptera"
+msgstr "자르퓌아"
+
+msgid "Chicoatl"
+msgstr "케차피"
+
+msgid "Quetzoral"
+msgstr "케차플로"
+
+msgid "Coatlith"
+msgstr "코아틀리스"
+
+msgid "Tracton"
+msgstr "크레이곤"
+
+msgid "Snopach"
+msgstr "스노팡"
+
+msgid "Dermafrost"
+msgstr "터스토돈"
+
+msgid "Slothohm"
+msgstr "옴보"
+
+msgid "Theriamp"
+msgstr "암페르보"
+
+msgid "Titanice"
+msgstr "타이타니스"
+
+msgid "Frynai"
+msgstr "시노피"
+
+msgid "Saidine"
+msgstr "시노배스"
+
+msgid "Daikatuna"
+msgstr "카타랑어"
+
+msgid "Selkid"
+msgstr "세이키드"
+
+msgid "Syrentide"
+msgstr "세일리아"
+
+msgid "Spritzee"
+msgstr "슈쁘"
+
+msgid "Aromatisse"
+msgstr "프레프티르"
+
+msgid "Miasmedic"
+msgstr "미아스마르"
+
+msgid "Jackdeary"
+msgstr "디어벅"
+
+msgid "Winotinger"
+msgstr "곤드래빗"
+
+msgid "Duplicat"
+msgstr "클로냥"
+
+msgid "Eevee"
+msgstr "이브이"
+
+msgid "Vaporeon"
+msgstr "샤미드"
+
+msgid "Jolteon"
+msgstr "쥬피썬더"
+
+msgid "Flareon"
+msgstr "부스터"
+
+msgid "Espeon"
+msgstr "에브이"
+
+msgid "Umbreon"
+msgstr "블래키"
+
+msgid "Leafeon"
+msgstr "리피아"
+
+msgid "Glaceon"
+msgstr "글레이시아"
+
+msgid "Sylveon"
+msgstr "님피아"
+
+msgid "Nucleon"
+msgstr "라디아"
+
+msgid "Ratsy"
+msgstr "치라스"
+
+msgid "Raffiti"
+msgstr "래피티"
+
+msgid "Gargryph"
+msgstr "가고르폰"
+
+msgid "Masking"
+msgstr "마스코"
+
+msgid "Dramsama"
+msgstr "오페로스"
+
+msgid "Antarki"
+msgstr "호롱별"
+
+msgid "Chupacho"
+msgstr "아초오"
+
+msgid "Luchabra"
+msgstr "야차도르"
+
+msgid "Linkite"
+msgstr "고리혼"
+
+msgid "Chainite"
+msgstr "사슬아귀"
+
+msgid "Pufluff"
+msgstr "머플러프"
+
+msgid "Alpico"
+msgstr "알피크"
+
+msgid "Anderind"
+msgstr "안데린드"
+
+msgid "Colarva"
+msgstr "진눈드기"
+
+msgid "Frosulo"
+msgstr "서리데기"
+
+msgid "Frosthra"
+msgstr "박각서리"
+
+msgid "Fafurr"
+msgstr "파푸르"
+
+msgid "Fafninter"
+msgstr "파르설록"
+
+msgid "Shrimputy"
+msgstr "쏴버릴"
+
+msgid "Krilvolver"
+msgstr "크리볼버"
+
+msgid "Lavent"
+msgstr "라바티곤"
+
+msgid "Swabone"
+msgstr "데크루키"
+
+msgid "Skelerogue"
+msgstr "후크령"
+
+msgid "Navighast"
+msgstr "이리고스"
+
+msgid "Stenowatt"
+msgstr "와트로돈"
+
+msgid "Jungore"
+msgstr "엘도라스"
+
+msgid "Majungold"
+msgstr "케랏타우르스"
+
+msgid "Hagoop"
+msgstr "끈적어"
+
+msgid "Haagross"
+msgstr "테러브릴"
+
+msgid "Xenomite"
+msgstr "제노카리스"
+
+msgid "Xenogen"
+msgstr "제노제네아"
+
+msgid "Xenoqueen"
+msgstr "제노퀸"
+
+msgid "Hazma"
+msgstr "뉴크리터"
+
+msgid "Geigeroach"
+msgstr "핵강구"
+
+msgid "Minicorn"
+msgstr "미니마"
+
+msgid "Kiricorn"
+msgstr "세피리온"
+
+msgid "Oblivicorn"
+msgstr "카오수스"
+
+msgid "Luxi"
+msgstr "우니복"
+
+msgid "Luxor"
+msgstr "다오리온"
+
+msgid "Luxelong"
+msgstr "옥무두리"
+
+msgid "Praseopunk"
+msgstr "프라세펑크"
+
+msgid "Neopunk"
+msgstr "네오다프트"
+
+msgid "Sheebit"
+msgstr "램빗"
+
+msgid "Terrabit"
+msgstr "테라빗"
+
+msgid "Laissure"
+msgstr "크러스테어"
+
+msgid "Volchik"
+msgstr "볼치크"
+
+msgid "Voltasu"
+msgstr "파지크로"
+
+msgid "Yatagaryu"
+msgstr "라이카라스"
+
+msgid "Devimp"
+msgstr "악깨비"
+
+msgid "Fallengel"
+msgstr "트루시펠"
+
+msgid "Belliadon"
+msgstr "벨리아돈"
+
+msgid "Seikamater"
+msgstr "마테르도라"
+
+msgid "Garlikid"
+msgstr "갈리키드"
+
+msgid "Baitatao"
+msgstr "바이타타오"
+
+msgid "Leviathao"
+msgstr "레비아타오"
+
+msgid "Krakanao"
+msgstr "크라카나오"
+
+msgid "Lanthan"
+msgstr "란타넌"
+
+msgid "Actan"
+msgstr "악티언"
+
+msgid "Urayne"
+msgstr "우레인"
+
+msgid "Aotius"
+msgstr "아오투스"
+
+msgid "Mutios"
+msgstr "무티오스"
+
+msgid "Zephy"
+msgstr "제피"
+
+msgid "Gastly"
+msgstr "팬텀"

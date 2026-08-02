@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "INTERACT_MOKITOWN_HOUSE_TV"
+msgstr "Il y a une pub pour un nouveau jeu vidéo à la télé.\nC'est une simulation de combat Pokémon appelée \"Version Bleue et Rouge\"."
+
+msgid "INTERACT_MOKITOWN_HOUSE_CONSOLE"
+msgstr "C'est une Nintendo Wii U. Mais la nouvelle Nintendo Switch est mieux."
+
+msgid "INTERACT_MOKITOWN_HOUSE_BOOKSHELF"
+msgstr "C'est rempli de livres sur les Pokémon : \"Mon Owten et moi\", \"La Grande Aventure de Jerbolta\", \"La Quête des Légendes\". Je les ai tous lus des dizaines de fois."
+
+msgid "SMASHABLE_ROCK"
+msgstr "C'est un rocher solide, mais un Pokémon pourrait l'éclater."
+
+msgid "POCKET_NAME_ITEMS"
+msgstr "Poche Objets"
+
+msgid "POCKET_NAME_MEDICINE"
+msgstr "Poche Soins"
+
+msgid "POCKET_NAME_BALLS"
+msgstr "Poche Poké Balls"
+
+msgid "POCKET_NAME_TMS"
+msgstr "Poche CT"
+
+msgid "POCKET_NAME_BERRIES"
+msgstr "Poche Baies"
+
+msgid "POCKET_NAME_BATTLE_ITEMS"
+msgstr "Poche Objets Combat"
+
+msgid "POCKET_NAME_KEY_ITEMS"
+msgstr "Poche Objets Rares"

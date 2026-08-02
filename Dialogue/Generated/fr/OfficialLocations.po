@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "01- Lakeside Path"
+msgstr "01 - Sentier du Lac"
+
+msgid "02- Owten Nook"
+msgstr "02 - Bosquet des Chouetton"
+
+msgid "03- Seabreeze Way"
+msgstr "03 - Chemin de la Brise Marine"
+
+msgid "04- Baa Grassland"
+msgstr "04 - Prairie de Baa"
+
+msgid "05- Tancoon Way"
+msgstr "05 - Chemin des Tanoctur"
+
+msgid "06- Pahar Hills"
+msgstr "06 - Collines aux Phénincelle"
+
+msgid "07- Tandor Sheets"
+msgstr "07 - Plateaux de Tandor"
+
+msgid "08- Vinoville Lake"
+msgstr "08 - Lac de Vinoville"
+
+msgid "09- FireValley"
+msgstr "09 - Vallée des Flammes"
+
+msgid "10- Baykal Forest"
+msgstr "10 - Forêt Baykal"
+
+msgid "11- Nature Preserve"
+msgstr "11 - Réserve Naturelle"
+
+msgid "12- Maskara Channel"
+msgstr "12 - Chenal Maskara"
+
+msgid "13- Maskara Island"
+msgstr "13 - Ile Maskara"
+
+msgid "14- Maskara Sea"
+msgstr "14 - Mer Maskara"
+
+msgid "15- Shallow Channel"
+msgstr "15 - Chenal marée-basse"
+
+msgid "Amatree Town"
+msgstr "Feuillis"
+
+msgid "Anthell"
+msgstr "Enfermillière"
+
+msgid "Bealbeach City"
+msgstr "Vagune"
+
+msgid "Berry Traders"
+msgstr "Marchand de Baies"
+
+msgid "Bike Shop"
+msgstr "Cycles à gogo"
+
+msgid "Burole Town"
+msgstr "Burole"
+
+msgid "Championship Site"
+msgstr "Site du Tournoi"
+
+msgid "Church"
+msgstr "Eglise"
+
+msgid "Comet Cave"
+msgstr "Grotte Comète"
+
+msgid "Dpt. Store, Casino"
+msgstr "Grand Magasin, Casino"
+
+msgid "Kevlar Town"
+msgstr "Kevlar"
+
+msgid "Lanthanite Tunnel"
+msgstr "Tunnel de Lanthanite"
+
+msgid "Larkspur's Lab"
+msgstr "Laboratoires Larkspur"
+
+msgid "Legen Town"
+msgstr "Fort Légende"
+
+msgid "Moki Town"
+msgstr "Bourg Moki"
+
+msgid "Name Rater"
+msgstr "Spécialiste des noms"
+
+msgid "Nowtoch City"
+msgstr "Néotech"
+
+msgid "Nuclear Plant Epsilon"
+msgstr "Centrale nucléaire EPSILON"
+
+msgid "Nuclear Plant Omicron"
+msgstr "Centrale Nucléaire Omicron"
+
+msgid "Nuclear Plant Zeta"
+msgstr "Centrale nucléaire ZETA"
+
+msgid "Passage Cave"
+msgstr "Grotte Sillage"
+
+msgid "Pokemon School"
+msgstr "École Pokémon"
+
+msgid "Professor Bambo Lab"
+msgstr "Laboratoire du Professeur Bamb'o"
+
+msgid "Professor Cypress Lab"
+msgstr "Laboratoire de la Prof. Cyprès"
+
+msgid "Rochfale Town"
+msgstr "Cascaroc"
+
+msgid "Rochfale Tunnel"
+msgstr "Tunnel de Cascaroc"
+
+msgid "Silverport Town"
+msgstr "Port-Argent"
+
+msgid "Snowbank Town"
+msgstr "RiveNeige"
+
+msgid "The Labyrinth"
+msgstr "Le Labyrinthe"
+
+msgid "The Tipsy Tancoon, etc"
+msgstr "Le Tanoctur Pompette, etc"
+
+msgid "Tinkerer's Workshop"
+msgstr "Atelier des Bricoleurs"
+
+msgid "Training Dojo"
+msgstr "Dojo"
+
+msgid "Tsukinami Village"
+msgstr "Village Tsukinami"
+
+msgid "Venesi City"
+msgstr "Venesi"
+
+msgid "Victory Road"
+msgstr "Route Victoire"
+
+msgid "Vinoville Town"
+msgstr "Vinoville"
+

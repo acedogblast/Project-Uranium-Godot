@@ -19,8 +19,9 @@ var sp_defense = 45
 var speed = 70
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Vital Spirit"
+var ability_2 = "Anger Point"
+var hidden_ability = "Defiant"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -59,7 +60,7 @@ var moveset = [
 	MoveSet.new(1, "Low Kick"),
 	MoveSet.new(1, "Leer"),
 	MoveSet.new(1, "Focus Energy"),
-	MoveSet.new(9, "Furry Swipes"),
+	MoveSet.new(9, "Fury Swipes"),
 	MoveSet.new(13, "Karate Chop"),
 	MoveSet.new(17, "Seismic Toss"),
 	MoveSet.new(21, "Screech"),

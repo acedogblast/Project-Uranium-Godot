@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+
+msgid "Davern"
+msgstr "Dave"
+
+msgid "Dick"
+msgstr "Richard"
+
+msgid "Garlikid"
+msgstr "Knobikid"
+
+msgid "OF DREAMS"
+msgstr "DER TRÄUME"
+
+msgid "Sack"
+msgstr "Zach"
+
+msgid "Tod"
+msgstr "Todd"
+
+msgid "URAYNE"
+msgstr "URAMOK"
+

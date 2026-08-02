@@ -1,0 +1,7388 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "$ {1:d}"
+msgstr "{1:d}원"
+
+msgid "$ENABLE_NEUTRAL_PRONOUN"
+msgstr "true"
+
+msgid "$ENABLE_PRONOUN_SELECTION"
+msgstr "false"
+
+msgid "$TAG_LANGUAGE"
+msgstr "ko"
+
+msgid "$TAG_USE_CJK_FONT"
+msgstr "true"
+
+msgid "${1}"
+msgstr "{1}원"
+
+msgid "(Default)"
+msgstr "(기본)"
+
+msgid "({1}) PP: {2}/{3}"
+msgstr " ({1}) PP: {2}/{3}"
+
+msgid "*10 battles needed for Global Rank"
+msgstr "* 배틀 횟수 10회 달성 시 글로벌 랭킹 진입"
+
+msgid "*Part of the Online Gym!"
+msgstr "* 온라인 체육관의 일원!"
+
+msgid "--- power core ------ from over----. It ---- ------ a large ---- -- nuclear fuel to -------. ---- ---- activated- -- --- -- prod--- ---- limitless energy."
+msgstr "-- --으로부터 전력 코어- 왔-\n------ 엄청난 -- 핵연료가 --- ---\n--- 활성화되- 무한한 에너지- -산해낼 - -- ---"
+
+msgid "---- -- the Interface --- final---- today. Th- -erator - -- ---- - ----- full control -- --e Sp-cimen. ---- chief reseacher, Dr. ----- --s ---- granted clearance."
+msgstr "인터페이스 --이 오늘 완료---\n-- -구자가 표-을 완전히 제어- - --\n수석 연구원 -- 박사가 사용 허가를 ---"
+
+msgid "---- has been - breach -- confidential--. ----- --- ------ shall -- relocate --- undergr-- --. Project 092 --- have -- -- --rminated."
+msgstr "기밀 -- 유출이 --했다\n따라- -- ---- - --- --- 지하 --로 옮긴다\n프로젝트 092를 -료해야 할-- ----"
+
+msgid "... ... ... ...Nope!\nThere's no response."
+msgstr "... ... 휴우!\n...아무 반응이 없다"
+
+msgid "...Oh. It's you.\nListen, I might've been a jerk to you back in Vinoville Town.\nBut, well, what you did, it kind of saved my family and my town.\nWhen the Rangers are done cleaning the area, I'll have a home again.\nSo... I guess... What I'm trying to say is...\nI owe you. We all do.\nBut I'm not going easy on you because of it.\nI've been training non-stop since you beat me!\nMy team will crush anybody that stands in our way...\nEven the Hero of Tandor!!"
+msgstr "...아, 너구나\n저번에 감로마을에선 네게 모질게 굴었지만\n그, 네 덕분에... 우리 가족과 마을이\n무사할 수 있었던 모양이야\n레인저들이 마을을 정화하고 나면\n우리 집이 돌아올 거고\n또... 그러니까... 내가 하려는 말은...\n네게 빚을 졌어\n나도, 그리고 우리 모두가 말이야\n하지만 그렇다고 내가 봐줄 거라\n생각한다면 큰 오산이야\n너에게 패배한 뒤로 끝없이\n훈련을 반복했으니까!\n나의 포켓몬들은 그 어떤 적도\n압도할 만큼 강해졌다...\n탄도르의 영웅인 너라 해도!!"
+
+msgid "...Pfeh. I guess you win.\nThat's embarrassing... But whatever.\nIf there's anyone I'll allow to beat me, it should be you."
+msgstr "...쳇\n네가 이겼구나\n분하지만... 뭐 상관없어\n날 이길 사람이 너 하나뿐이라면\n그리 나쁘진 않아"
+
+msgid "1, 2, and... ... ..."
+msgstr "1, 2, ... ... ..."
+
+msgid "<<"
+msgstr " <<"
+
+msgid "<ac>Search Mode</ac>"
+msgstr "<ac>검색 모드</ac>"
+
+msgid "<c3=0000D6,7394FF>{1} <c3=5A5252,A5A5AD>nature."
+msgstr "<c3=0000D6,7394FF>{1} 성격."
+
+msgid "<c3=404040,B0B0B0>Egg hatched."
+msgstr "<c3=404040,B0B0B0>에서 부화하여 만났다.\n"
+
+msgid "<c3=404040,B0B0B0>{1} {2}, {3}"
+msgstr "<c3=404040,B0B0B0>{3}년 {1} {2}일\n"
+
+msgid "<c3=5A5252,A5A5AD>Egg obtained."
+msgstr "<c3=5A5252,A5A5AD>에서 알을 받았다."
+
+msgid "<c3=5A5252,A5A5AD>Had a fateful encounter at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>에서 Lv.{1}일 때\n운명적인 만남을 가졌다."
+
+msgid "<c3=5A5252,A5A5AD>Met at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>에서 Lv.{1}일 때\n만났다."
+
+msgid "<c3=5A5252,A5A5AD>Traded at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>에서 Lv.{1}일 때\n왔다."
+
+msgid "<c3=F83820,E09890>Faraway place"
+msgstr "<c3=F83820,E09890>먼 곳\n"
+
+msgid "<c3=fff,282828>\"The Egg Watch\""
+msgstr "<c3=fff,282828>\"알의 상태\"\n"
+
+msgid "<c3=fff,282828>A mysterious Pokémon\nEgg received from\n<c3=0000D6,7394FF>{1}<c3=fff,282828>."
+msgstr "<c3=0000D6,7394FF>{1}\n<c3=fff,282828>에게서 받은 이상한\n포켓몬 알이다.\n"
+
+msgid "<c3=fff,282828>{1}/{2}/{3}"
+msgstr "<c3=fff,282828>{3}년 {2} {1}일\n"
+
+msgid "<r>{1}<br>"
+msgstr " <r>{1}명<br>"
+
+msgid ">>"
+msgstr " >>"
+
+msgid "????? Pokémon"
+msgstr "?????포켓몬"
+
+msgid "A Key Item in the Bag can be registered to this key for instant use."
+msgstr "가방에 들어 있는 도구를\n편리 버튼에 등록할 수 있습니다"
+
+msgid "A Map\nShows visited Places."
+msgstr "지도를 열어\n유명한 장소를 확인합니다"
+
+msgid "A Nuclear Horde appeared!"
+msgstr "우왓! 핵포켓몬 무리와\n조우했다!"
+
+msgid "A Phone\nUsed to call People."
+msgstr "전화를 걸어\n사람들과 대화합니다"
+
+msgid "A Pokémon could be in this tree. Maybe a Pokémon could shake it."
+msgstr "이런 나무에는 포켓몬이 있을지도..."
+
+msgid "A Pokémon could be in this tree. Want to headbutt it?"
+msgstr "이런 나무에는 포켓몬이 있을지도...\n박치기를 쓰겠습니까?"
+
+msgid "A Radio\nUsed to listen to Music."
+msgstr "라디오로\n음악을 재생합니다"
+
+msgid "A Ribbon awarded for completing the Battle Tower Double challenge."
+msgstr "배틀타워 더블을\n연승한 기념리본"
+
+msgid "A Ribbon awarded for completing the Battle Tower Link Multi challenge."
+msgstr "배틀타워 통신멀티를\n연승한 기념리본"
+
+msgid "A Ribbon awarded for completing the Battle Tower Multi challenge."
+msgstr "배틀타워 멀티를\n연승한 기념리본"
+
+msgid "A Ribbon awarded for completing the Wi-Fi Battle Tower challenge."
+msgstr "Wi-Fi 배틀타워를\n연승한 기념리본"
+
+msgid "A Ribbon awarded for defeating the Tower Tycoon at the Battle Tower."
+msgstr "배틀타워에서 타워타이쿤에게\n승리한 기념리본"
+
+msgid "A Ribbon awarded for overcoming all difficult challenges."
+msgstr "모든 고난을\n극복한 기념리본"
+
+msgid "A Ribbon awarded for setting a legendary record."
+msgstr "전설적 기록을 남긴\n기념리본"
+
+msgid "A Ribbon awarded for setting an incredible record."
+msgstr "대단한 기록을 남긴\n기념리본"
+
+msgid "A Ribbon awarded for winning 100 matches in a row."
+msgstr "100명에게 승리 달성\n기념리본"
+
+msgid "A Ribbon awarded to a Pokémon deemed to have a top-quality footprint."
+msgstr "최고의 발자국을 가진\n포켓몬이 받을 수 있는 리본"
+
+msgid "A Ribbon for recalling a careless error that helped steer life decisions."
+msgstr "깜빡했던 실패를 떠올려서\n인생의 에센스가 되는 리본"
+
+msgid "A Ribbon for recalling a deep slumber that made life soothing."
+msgstr "푹 잠들었던 것을 떠올려서\n인생에 평온함이 되는 리본"
+
+msgid "A Ribbon for recalling a refreshing event that added sparkle to life."
+msgstr "산뜻했던 경험을 떠올려서\n인생을 산뜻하게 만들어 주는 리본"
+
+msgid "A Ribbon for recalling a thrilling event that made life more exciting."
+msgstr "두근두근했던 일을 떠올려서\n인생을 설레게 하는 리본"
+
+msgid "A Ribbon for recalling an invigorating event that created life energy."
+msgstr "기분이 맑아지는 일을 떠올려서\n인생의 에너지가 되는 리본"
+
+msgid "A Ribbon for recalling feelings of sadness that added spice to life."
+msgstr "쓸쓸했던 기분을 떠올려서\n인생의 묘미가 되는 리본"
+
+msgid "A Ribbon for recalling that smiles enrich the quality of life."
+msgstr "방긋 미소지을 일을 떠올려서\n인생을 풍부하게 해주는 리본"
+
+msgid "A Ribbon said to make your wish come true."
+msgstr "소원이 이루어진다고 전해지는 리본"
+
+msgid "A Ribbon that proclaims love for Pokémon."
+msgstr "포켓몬을 매우 좋아하는 것을\n증명하는 기념리본"
+
+msgid "A Ribbon to celebrate a birthday."
+msgstr "생일 기념리본"
+
+msgid "A Ribbon to cherish a special memory."
+msgstr "특별한 추억을 기념하는 리본"
+
+msgid "A Toxic Fallout has set in!"
+msgstr "방사능 낙진이 흩날리기 시작했다!"
+
+msgid "A bell chimed!"
+msgstr "방울소리가 울려 퍼졌다!"
+
+msgid "A critical hit!"
+msgstr "급소에 맞았다!"
+
+msgid "A gorgeous and regal Ribbon that is the peak of fabulous."
+msgstr "이 이상 훌륭한 것이 없을\n호화스럽고 기품있는 리본"
+
+msgid "A heavy rain began to fall!"
+msgstr "강한 비가 내리기 시작했다!"
+
+msgid "A little quick tempered."
+msgstr "약간 화를 잘 내는 성미임."
+
+msgid "A mysterious air current is protecting Flying-type Pokémon!"
+msgstr "수수께끼의 난기류가\n비행포켓몬을 지킨다!"
+
+msgid "A nuclear fallout has hit!"
+msgstr "방사능 낙진이 덮쳐왔다!"
+
+msgid "A sandstorm is raging."
+msgstr "모래바람이 세차게 불고 있다"
+
+msgid "A sandstorm kicked up!"
+msgstr "모래바람이 불기 시작했다!"
+
+msgid "A soothing aroma wafted through the area!"
+msgstr "기분 좋은 향기가 퍼졌다!"
+
+msgid "A special Ribbon for a special day."
+msgstr "특별한 날의 특별한 리본"
+
+msgid "A sticky ooze covers the battlefield!"
+msgstr "발밑이 점액으로 범벅이 되었다!"
+
+msgid "A sticky web has been laid out beneath the opposing team's feet!"
+msgstr "상대 발밑에\n끈적끈적네트가 펼쳐졌다!"
+
+msgid "A sticky web has been laid out beneath your team's feet!"
+msgstr "우리 편 발밑에\n끈적끈적네트가 펼쳐졌다!"
+
+msgid "A thrilling display from trainers and Pokémon alike!"
+msgstr "트레이너와 포켓몬 모두 손에 땀을\n쥐게 하는 투지를 보여주셨군요!"
+
+msgid "A thunderstorm is raging."
+msgstr "번개폭풍이 거칠다"
+
+msgid "A thunderstorm started!"
+msgstr "번개폭풍이 일어나기 시작했다!"
+
+msgid "A to Z"
+msgstr "가나다순"
+
+msgid "A wall of water is crashing down with a mighty roar."
+msgstr "큰 소리를 내며\n물이 흘러 떨어진다!"
+
+msgid "A {1} was planted here."
+msgstr "{1}를 심은 장소다!"
+
+msgid "A: Add map to canvas"
+msgstr "A: Add map to canvas\n"
+
+msgid "ABLE"
+msgstr "가능"
+
+msgid "ACCURACY"
+msgstr "명중"
+
+msgid "ADD NEW FRIEND"
+msgstr "친구 추가"
+
+msgid "AFTER LOSING..."
+msgstr "패배 후..."
+
+msgid "Aargh! Almost had it!"
+msgstr "아쉽다!\n조금만 더하면 잡을 수 있었는데!"
+
+msgid "Ability"
+msgstr "특성"
+
+msgid "Ability Ribbon"
+msgstr "어빌리티리본"
+
+msgid "Ability: {1}"
+msgstr "특성: {1}"
+
+msgid "Acai Berries"
+msgstr "아카열매"
+
+msgid "Adamant"
+msgstr "고집<c3=5A5252,A5A5AD>스런"
+
+msgid "Add Friend"
+msgstr "친구를 추가한다"
+
+msgid "Add another Pokémon?"
+msgstr "계속해서 포켓몬을 추가할까요?"
+
+msgid "Advanced to Game Lv. {1}!"
+msgstr "게임 레벨이\nLv.{1}(으)로 올랐습니다!"
+
+msgid "Aguav Berries"
+msgstr "아바열매"
+
+msgid "Aha! It is the \\PN!\nWe fight before. I lose in disgrace.\nMy Ninja clan forsake me. So I train.\nI train and train, in hopes to encounter \\PN again.\nIn this arena, we fight to regain honor!\nI will defeat you, and restore glory to my Ninja Clan!"
+msgstr "이게 누구신가! \\PN!\n예전에 승부한 적이 있었지\n네게 패배의 굴욕을 맛본 뒤로\n부하들에게 버림받은 신세가 되었다\n그 뒤로 훈련을 거듭했지\n너를 다시 만날 날을 꿈꾸며 말이야\n이 경기장에서 너를 쓰러뜨려\n나의 명예와 서퍼즈의 영광을 되찾겠다!"
+
+msgid "Alas, the final curtain falls...\nThe result is clear:\nYour victory was written in the stars!"
+msgstr "아아, 내려가는 막이 말해주는\n공연의 결실...\n그것은 당신의 승리가\n빛나는 별에 새겨졌다는 거예요!"
+
+msgid "Alert Ribbon"
+msgstr "뚝심리본"
+
+msgid "Alert to sounds."
+msgstr "주위 소리에 민감함."
+
+msgid "All Pokémon hearing the song will faint in three turns!"
+msgstr "멸망의노래를 들은 포켓몬은\n3턴 후에 쓰러져 버린다!"
+
+msgid "All Pokémon in this box have been released."
+msgstr "이 박스에 있던 포켓몬들을\n모두 놓아주었다"
+
+msgid "All data will be lost. Confirm once more to proceed."
+msgstr "모든 데이터가 사라집니다\n다시 한 번 확인해 주십시오"
+
+msgid "All recording devices are in use. Recording is not possible now."
+msgstr "녹음 장치가 모두 사용 중입니다\n지금은 녹음할 수 없습니다"
+
+msgid "All stat changes were eliminated!"
+msgstr "모든 상태가\n원래대로 되돌아왔다!"
+
+msgid "All the world's a stage... and we play the leading role! Can you see past our splendid masquerade?"
+msgstr "세상이라는 무대 위에서...\n우리들은 인생이라는 극의 주인공!\n찬란한 가면의 향연을 꿰뚫어볼 수 있겠나요?"
+
+msgid "Also, look for a special NPC in Kevlar Town!"
+msgstr "한 가지 더!\n가락마을에서 특별한 NPC를 찾아보세요"
+
+msgid "An Egg can't battle!"
+msgstr "알은\n배틀에 내보낼 수 없습니다"
+
+msgid "An egg can't be an active Pokémon"
+msgstr "알은 배틀에 나올 수 없습니다"
+
+msgid "An electric current runs across the battlefield!"
+msgstr "발밑에 전기가 떠돌기 시작했다!"
+
+msgid "An extraordinarily gorgeous and extravagant Ribbon."
+msgstr "더할 나위 없이 호화롭고\n화려한 느낌의 리본"
+
+msgid "An incredibly regal Ribbon with an air of nobility."
+msgstr "굉장히 기품있고\n고상한 느낌이 나는 리본"
+
+msgid "And now, their battling skills will determine which of them get to move on to the Champion's Arena after this match."
+msgstr "또 한 가지, 이번 경기 후에\n챔피언 아레나로 진출할 선수가 결정됩니다"
+
+msgid "And the winner is \\PN!"
+msgstr "승자는 바로 \\PN!"
+
+msgid "And..."
+msgstr "그리고!"
+
+msgid "And..."
+msgstr "그리고..."
+
+msgid "Announcer: You're out of Safari Balls! Game over!"
+msgstr "Announcer:  You're out of Safari Balls!  Game over!"
+
+msgid "Apicot Berries"
+msgstr "규살열매"
+
+msgid "Apr."
+msgstr "4월"
+
+msgid "April"
+msgstr "4월"
+
+msgid "Aqua Ring restored {1}'s HP!"
+msgstr "{1}은(는)\n물의 고리로 체력을 회복했다!"
+
+msgid "Are you sure you want to create a new Virtual Trainer?"
+msgstr "정말 버추얼 트레이너를\n새로 만들겠습니까?"
+
+msgid "Are you sure you want to delete this save file?"
+msgstr "정말 이 리포트를 삭제하시겠습니까?"
+
+msgid "Are you sure you want to play on this mode?"
+msgstr "이 모드가 확실합니까?"
+
+msgid "Are you sure you want to play with these settings?"
+msgstr "정말 이 설정으로 플레이하겠습니까?"
+
+msgid "Are you sure you want to release all Pokémon in this box?"
+msgstr "정말로 이 박스 안에 있는\n포켓몬을 모두 놓아주겠습니까?"
+
+msgid "Are you sure you want to remove this friend?"
+msgstr "정말로 이 친구를 삭제하시겠습니까?"
+
+msgid "Are you sure you want to withdraw your pokemon?"
+msgstr "정말로 포켓몬을 꺼내겠습니까?"
+
+msgid "Are you sure?"
+msgstr "확실하니?"
+
+msgid "Area Unknown"
+msgstr "서식지 불명"
+
+msgid "Artist Ribbon"
+msgstr "브로마이드리본"
+
+msgid "Aspear Berries"
+msgstr "배리열매"
+
+msgid "Attack"
+msgstr "공격"
+
+msgid "Aug."
+msgstr "8월"
+
+msgid "August"
+msgstr "8월"
+
+msgid "Autosave"
+msgstr "자동 리포트"
+
+msgid "Autosave failed. t(-.-t)"
+msgstr "자동 리포트를 작성 못했습니다. t(-.-t)"
+
+msgid "Autumn"
+msgstr "가을"
+
+msgid "Aww... It appeared to be caught!"
+msgstr "아아!\n잡았다고 생각했는데!"
+
+msgid "BAG"
+msgstr "가방"
+
+msgid "BANNED"
+msgstr "나갈 수 없어요"
+
+msgid "BATTLE MOVES"
+msgstr "싸울 기술"
+
+msgid "BATTLES:"
+msgstr "배틀 횟수:"
+
+msgid "Babiri Berries"
+msgstr "바리비열매"
+
+msgid "Back"
+msgstr "뒤로"
+
+msgid "Backup Autosave"
+msgstr "자동 리포트 백업"
+
+msgid "Backup Save"
+msgstr "리포트 백업"
+
+msgid "Bacu Berries"
+msgstr "쿠리열매"
+
+msgid "Bad IV: {1} (must be from 0-31)\n{2}"
+msgstr "Bad IV: {1} (must be from 0-31)\n{2}"
+
+msgid "Bad abilityflag: {1} (must be 0 or 1 or 2-5)\n{2}"
+msgstr "Bad abilityflag: {1} (must be 0 or 1 or 2-5)\n{2}"
+
+msgid "Bad form: {1} (must be 0 or greater)\n{2}"
+msgstr "Bad form: {1} (must be 0 or greater)\n{2}"
+
+msgid "Bad genderflag: {1} (must be M or F, or 0 or 1)\n{2}"
+msgstr "Bad genderflag: {1} (must be M or F, or 0 or 1)\n{2}"
+
+msgid "Bad happiness: {1} (must be from 0-255)\n{2}"
+msgstr "Bad happiness: {1} (must be from 0-255)\n{2}"
+
+msgid "Bad level: {1} (must be from 1-{2})\n{3}"
+msgstr "Bad level: {1} (must be from 1-{2})\n{3}"
+
+msgid "Bad line syntax (expected syntax like XXX=YYY)\n{1}"
+msgstr "Bad line syntax (expected syntax like XXX=YYY)\n{1}"
+
+msgid "Bad money amount (must be from 0 through 255)\n{1}"
+msgstr "Bad money amount (must be from 0 through 255)\n{1}"
+
+msgid "Bad nickname: {1} (must be 1-20 characters)\n{2}"
+msgstr "Bad nickname: {1} (must be 1-20 characters)\n{2}"
+
+msgid "Bad skill value (must be from 0 through 255)\n{1}"
+msgstr "Bad skill value (must be from 0 through 255)\n{1}"
+
+msgid "Badges:"
+msgstr "가진 배지:"
+
+msgid "Badges<r><c3={1}>{2}</c3><br>"
+msgstr "가진 배지<r><c3={1}>{2}</c3><br>"
+
+msgid "Bag"
+msgstr "가방"
+
+msgid "Bait"
+msgstr "먹이"
+
+msgid "Ball"
+msgstr "볼"
+
+msgid "Bashful"
+msgstr "수줍음<c3=5A5252,A5A5AD>을 타는"
+
+msgid "Battle"
+msgstr "배틀한다"
+
+msgid "Battle Champion Ribbon"
+msgstr "배틀챔피언리본"
+
+msgid "Battle Competition Champion Ribbon."
+msgstr "배틀 대회 우승 기념리본"
+
+msgid "Battle Items"
+msgstr "배틀용"
+
+msgid "Battle Link"
+msgstr "배틀링크"
+
+msgid "Battle Scene"
+msgstr "배틀 애니메이션"
+
+msgid "Battle Style"
+msgstr "시합 룰"
+
+msgid "Battle me, Now!"
+msgstr "나랑 승부하자!"
+
+msgid "Battle!"
+msgstr "배틀한다!"
+
+msgid "Battle... start!"
+msgstr "배틀... 시작!"
+
+msgid "Beach"
+msgstr "바닷가"
+
+msgid "Beauty Ribbon"
+msgstr "뷰티리본"
+
+msgid "Beauty Ribbon Great"
+msgstr "뷰티리본그레이트"
+
+msgid "Beauty Ribbon Hyper"
+msgstr "뷰티리본하이퍼"
+
+msgid "Beauty Ribbon Master"
+msgstr "뷰티리본마스터"
+
+msgid "Beauty Ribbon Super"
+msgstr "뷰티리본슈퍼"
+
+msgid "Beauty Ribbon Ultra"
+msgstr "뷰티리본울트라"
+
+msgid "Begin your game."
+msgstr "게임을 시작합니다"
+
+msgid "Behold! The power of Mega Evolution!"
+msgstr "보아라!\n메가진화의 힘을!"
+
+msgid "Belue Berries"
+msgstr "루베열매"
+
+msgid "Berries"
+msgstr "나무열매"
+
+msgid "Berry"
+msgstr "나무열매"
+
+msgid "Bill"
+msgstr "이수재"
+
+msgid "Birthday Ribbon"
+msgstr "버스데이리본"
+
+msgid "Black"
+msgstr "검정"
+
+msgid "Black Tiles: {1}"
+msgstr "검은색 타일: {1}"
+
+msgid "Blue"
+msgstr "파랑"
+
+msgid "Bluk Berries"
+msgstr "블리열매"
+
+msgid "Bold"
+msgstr "대담<c3=5A5252,A5A5AD>한"
+
+msgid "Boost PP of which move?"
+msgstr "어느 기술을\n늘릴까?"
+
+msgid "Both of these trainers took home a win in the previous round."
+msgstr "이전 라운드에서 승리를 거머쥔\n2명이 선수들이 격돌합니다"
+
+msgid "Box \"{1}\" on someone's PC was full."
+msgstr "누군가의 PC\n박스 \"{1}\"이(가) 가득 찼다!"
+
+msgid "Box \"{1}\" on someone's PC was full."
+msgstr "누군가의 PC\n박스 \"{1}\"이(가) 가득 찼다!"
+
+msgid "Box \"{1}\" on {2}'s PC was full."
+msgstr "{2}의 PC\n박스 \"{1}\"이(가) 가득 찼다!"
+
+msgid "Box \"{1}\" on {2}'s PC was full."
+msgstr "{2}의 PC\n박스 \"{1}\"이(가) 가득 찼다!"
+
+msgid "Box name?"
+msgstr "박스의 이름은?"
+
+msgid "Box {1:d}"
+msgstr "박스{1:d}"
+
+msgid "Brave"
+msgstr "용감<c3=5A5252,A5A5AD>한"
+
+msgid "Brown"
+msgstr "갈색"
+
+msgid "Bug"
+msgstr "벌레"
+
+msgid "Bug Catcher Benny"
+msgstr "곤충채집소년 정남"
+
+msgid "Bug Catcher Ed"
+msgstr "곤충채집소년 태민"
+
+msgid "Bug Catcher Josh"
+msgstr "곤충채집소년 희주"
+
+msgid "But I sense something else in you...\\^"
+msgstr "하지만 네 안에 또 다른 무언가가\n꿈틀대는 게 느껴져...\\^"
+
+msgid "But it failed to spit up a thing!"
+msgstr "그러나 아무것도 토해낼 수 없었다!"
+
+msgid "But it failed to swallow a thing!"
+msgstr "그러나 아무것도 꿀꺽할 수 없었다!"
+
+msgid "But it failed!"
+msgstr "그러나 실패하고 말았다!"
+
+msgid "But it had no effect!"
+msgstr "그러나 효과가 없었다!"
+
+msgid "But nothing happened!"
+msgstr "그러나 아무 일도 일어나지 않았다!"
+
+msgid "But the effects of a Repel lingered from earlier."
+msgstr "아직 전에 썼던\n스프레이의 효과가 남아 있습니다!"
+
+msgid "But there was no PP left for the move!"
+msgstr "그러나 남은 기술 포인트가\n없었다!"
+
+msgid "But there was no target..."
+msgstr "그러나 상대가 없으므로\n실패하고 말았다!"
+
+msgid "But {1} already caught a Pokémon in this area!"
+msgstr "{1}은(는) 이미\n이곳의 야생 포켓몬을 잡았다!"
+
+msgid "But {1} already fought a wild Pokémon in this area!"
+msgstr "{1}은(는) 이미\n이곳의 야생 포켓몬과 싸웠다!"
+
+msgid "But {1} can't learn more than four moves."
+msgstr "그러나 {1}은(는) 기술을 4개\n알고 있으므로 더 이상 배울 수 없다!"
+
+msgid "But {1} can't learn more than four moves."
+msgstr "그러나 {1}은(는) 기술을 4개\n알고 있으므로 더 이상 배울 수 없다!"
+
+msgid "But {1} can't sleep in an uproar!"
+msgstr "그러나 {1}은(는)\n소란스러워서 잠들 수 없다!"
+
+msgid "But {1} couldn't sleep!"
+msgstr "그러나 {1}은(는) 잠들 수 없었다!"
+
+msgid "But, only one will be crowned Champion today."
+msgstr "그러나 챔피언의 왕좌에\n오르는 자는 단 한 명뿐"
+
+msgid "But,\\. don't worry!\\nYour Pokémon are safe and sound."
+msgstr "하지만...\\. 걱정 마세요!\\n포켓몬들은 무사하답니다"
+
+msgid "Buy"
+msgstr "사러 왔다"
+
+msgid "By ID"
+msgstr "ID에 따라"
+
+msgid "By Pokemon"
+msgstr "포켓몬에 따라"
+
+msgid "By Wanted"
+msgstr "조건에 따라"
+
+msgid "By the blessing of Aotius!"
+msgstr "아오투스신의 은총으로!"
+
+msgid "Bye-bye, {1}!"
+msgstr "바이바이, {1}!"
+
+msgid "CANCEL"
+msgstr "취소"
+
+msgid "CATEGORY"
+msgstr "분류"
+
+msgid "CLOSE BAG"
+msgstr "닫는다"
+
+msgid "CONFIRM"
+msgstr "결정"
+
+msgid "Call"
+msgstr "부른다"
+
+msgid "Calm"
+msgstr "차분<c3=5A5252,A5A5AD>한"
+
+msgid "Camper Barry"
+msgstr "캠프보이 웅일"
+
+msgid "Can't catch any more..."
+msgstr "더 이상 잡을 수 없다..."
+
+msgid "Can't deposit from box..."
+msgstr "박스에 있는 포켓몬은\n맡길 수 없습니다..."
+
+msgid "Can't deposit the last Pokémon!"
+msgstr "싸울 포켓몬이 없어집니다!"
+
+msgid "Can't escape!"
+msgstr "도망칠 수 없다!"
+
+msgid "Can't find deposited Pokémon"
+msgstr "맡긴 포켓몬을 찾을 수 없습니다"
+
+msgid "Can't find the map 'Map{1:03d}' in the Data folder. The game will resume at the player's position."
+msgstr "Data 폴더에서 'Map{1:03d}'을(를) 찾을 수 없습니다\n주인공의 현재 위치에서 게임을 계속합니다"
+
+msgid "Can't find {1}"
+msgstr "{1}을(를) 찾을 수 없습니다"
+
+msgid "Can't re-store deleted item in bag"
+msgstr "삭제된 도구는 다시 가방에\n넣을 수 없습니다"
+
+msgid "Can't save. No name was entered."
+msgstr "Can't save.  No name was entered."
+
+msgid "Can't save. The Pokémon list is empty."
+msgstr "Can't save.  The Pokémon list is empty."
+
+msgid "Can't store the Pokémon..."
+msgstr "포켓몬을 보관할 수 없습니다..."
+
+msgid "Can't store the egg"
+msgstr "알은 맡길 수 없습니다"
+
+msgid "Can't store the {1}."
+msgstr "{1}을(를)\n보관할 수 없습니다"
+
+msgid "Can't use that here."
+msgstr "여기서는 쓸 수 없습니다"
+
+msgid "Can't use that while on a bicycle."
+msgstr "자전거를 타는 중에는\n쓸 수 없습니다!"
+
+msgid "Can't withdraw from party..."
+msgstr "지닌 포켓몬은\n꺼낼 수 없습니다..."
+
+msgid "Cancel"
+msgstr "돌아간다"
+
+msgid "Cancel?"
+msgstr "취소할까요?"
+
+msgid "Capable of taking hits."
+msgstr "맷집이 강함."
+
+msgid "Careful"
+msgstr "신중<c3=5A5252,A5A5AD>한"
+
+msgid "Careless Ribbon"
+msgstr "덜렁이리본"
+
+msgid "Cave"
+msgstr "동굴"
+
+msgid "Certainly. You want {1}.\nThat will be ${2}. OK?"
+msgstr "{1}(이)로군요\n{2}원입니다"
+
+msgid "Certainly. You want {2} {1}(s)?"
+msgstr "{1} {2}개로군요?"
+
+msgid "Challenge Mode"
+msgstr "챌린지 모드"
+
+msgid "Challenge accepted!\\wtnp[100]"
+msgstr "배틀이 수락되었습니다!\\wtnp[100]"
+
+msgid "Challenge {1} to a battle?"
+msgstr "{1}님에게\n배틀을 신청하겠습니까?"
+
+msgid "Champion Ribbon"
+msgstr "챔피언리본"
+
+msgid "Changed to Blade Forme!"
+msgstr "블레이드폼 체인지!"
+
+msgid "Changed to Shield Forme!"
+msgstr "실드폼 체인지!"
+
+msgid "Charti Berries"
+msgstr "루미열매"
+
+msgid "Check Virtual Trainer"
+msgstr "버추얼 트레이너를 확인한다"
+
+msgid "Check for Updates"
+msgstr "업데이트가 있는지 확인한다"
+
+msgid "Checks"
+msgstr "체크"
+
+msgid "Cheri Berries"
+msgstr "버치열매"
+
+msgid "Chesto Berries"
+msgstr "유루열매"
+
+msgid "Chilan Berries"
+msgstr "카리열매"
+
+msgid "Choose Pokémon and confirm."
+msgstr "포켓몬을 선택하고 결정"
+
+msgid "Choose Pokémon or cancel."
+msgstr "포켓몬을 선택하거나 취소"
+
+msgid "Choose Trainer Type"
+msgstr "트레이너 타입은?"
+
+msgid "Choose a Letter."
+msgstr "문자를 골라 주십시오"
+
+msgid "Choose a Pokémon to trade."
+msgstr "교환할 포켓몬을 선택해 주십시오"
+
+msgid "Choose a Pokémon."
+msgstr "포켓몬을 선택해 주십시오"
+
+msgid "Choose a battle."
+msgstr "배틀 방식을 골라 주십시오"
+
+msgid "Choose a command."
+msgstr "명령을 선택해 주십시오"
+
+msgid "Choose save file to be loaded"
+msgstr "불러올 리포트를 선택하십시오"
+
+msgid "Choose the gift you want to receive.\\wtnp[0]"
+msgstr "어느 소포를 받으시겠습니까?\\wtnp[0]"
+
+msgid "Choose your game mode:"
+msgstr "게임 모드를 선택해 주십시오"
+
+msgid "Chople Berries"
+msgstr "로플열매"
+
+msgid "City"
+msgstr "시티"
+
+msgid "Classic Ribbon"
+msgstr "클래식리본"
+
+msgid "Click to select a map"
+msgstr "Click to select a map\n"
+
+msgid "Click!\n...... ......"
+msgstr "삣!\n...... ......"
+
+msgid "Close bag."
+msgstr "가방을 닫습니다"
+
+msgid "Close storage."
+msgstr "보관 시스템을 닫습니다"
+
+msgid "Closes the PokéPod and returns to the game."
+msgstr "포켓팟을 닫고\n게임으로 돌아갑니다"
+
+msgid "Coba Berries"
+msgstr "바코열매"
+
+msgid "Coins were scattered everywhere!"
+msgstr "돈이 주위에 흩어졌다!"
+
+msgid "Coins:\n<ar>{1}</ar>"
+msgstr "동전\n<ar>{1}개</ar>"
+
+msgid "Coins: {1}"
+msgstr "동전: {1}개"
+
+msgid "Colbur Berries"
+msgstr "마코열매"
+
+msgid "Compete"
+msgstr "경쟁"
+
+msgid "Competitive sharply raised {1}'s Special Attack!"
+msgstr "{1}의 승기 때문에\n특수공격이 크게 올랐다!"
+
+msgid "Congratulations on advancing to the final round!\nThe final battle will take place in the Champion's Arena. Its winner will be crowned Champion of Tandor!"
+msgstr "최종 라운드 진출을 축하합니다!\n챔피언 아레나에서 탄도르리그 챔피언의\n자리를 건 마지막 배틀이 진행되겠습니다"
+
+msgid "Congratulations!"
+msgstr "축하합니다!"
+
+msgid "Congratulations!\nYour {1} evolved into {2}!"
+msgstr "축하합니다! {1}은(는)\n{2}(으)로 진화했습니다!"
+
+msgid "Congratulations, {1}!"
+msgstr "축하해!\n{1}!!"
+
+msgid "Continue"
+msgstr "모험을 계속한다"
+
+msgid "Continue Box operations?"
+msgstr "박스 조작을 계속하겠습니까?"
+
+msgid "Continue the game with those options permanently disabled?"
+msgstr "이 옵션들을 영구히 해제한 상태로\n모험을 계속하겠습니까?"
+
+msgid "Controls"
+msgstr "조작 방법"
+
+msgid "Cool Ribbon"
+msgstr "쿨리본"
+
+msgid "Cool Ribbon Great"
+msgstr "쿨리본그레이트"
+
+msgid "Cool Ribbon Hyper"
+msgstr "쿨리본하이퍼"
+
+msgid "Cool Ribbon Master"
+msgstr "쿨리본마스터"
+
+msgid "Cool Ribbon Super"
+msgstr "쿨리본슈퍼"
+
+msgid "Cool Ribbon Ultra"
+msgstr "쿨리본울트라"
+
+msgid "Cool Trainer Nick"
+msgstr "엘리트 트레이너 켄"
+
+msgid "Cornn Berries"
+msgstr "수숙열매"
+
+msgid "Corrupted Save File"
+msgstr "손상된 리포트"
+
+msgid "Could it be the seed of greatness?\\.\nThe potential to transform yourself completely?\\^"
+msgstr "위인이 될 씨앗일까?\\. \n아니면 자신을 뜯어고칠 잠재력?\\^"
+
+msgid "Could not load VT data!"
+msgstr "VT 데이터를 불러오지 못했습니다!"
+
+msgid "Could not reach server to determine if your game is up-to-date. \\wtnp[40]"
+msgstr "서버에 연결할 수 없어 최신 버전인지 확인하지 못했습니다 \\wtnp[40]"
+
+msgid "Couldn't find an unclaimed Mystery Gift with ID {1}."
+msgstr "받은 적이 없는 ID {1}의\n이상한 소포를 찾지 못했습니다"
+
+msgid "Couldn't return unusable item to Bag somehow."
+msgstr "알 수 없는 이유로 사용 불가능한 도구를 가방에 도로 넣지 못했습니다"
+
+msgid "Couldn't return unused item to Bag somehow."
+msgstr "알 수 없는 이유로 미사용 도구를 가방에 도로 넣지 못했습니다"
+
+msgid "Country Ribbon"
+msgstr "컨트리리본"
+
+msgid "Crafty Shield protected your team!"
+msgstr "우리 편 주변을\n트릭가드가 보호하고 있다!"
+
+msgid "Crafty Shield protected {1}!"
+msgstr "{1} 주변을\n트릭가드가 보호하고 있다!"
+
+msgid "Crag"
+msgstr "바위산"
+
+msgid "Create new Virtual Trainer"
+msgstr "버추얼 트레이너를 만든다"
+
+msgid "Creating a new Virtual Trainer will delete your older one and will reset your ranking and battle stats."
+msgstr "버추얼 트레이너를 새로 만들면\n기존에 있던 버추얼 트레이너가 지워지고\n랭킹과 전적이 초기화됩니다"
+
+msgid "Credits"
+msgstr "만든 사람들"
+
+msgid "Cupu Berries"
+msgstr "수아열매"
+
+msgid "Current Version = {1} \\wtnp[30]"
+msgstr "현재 버전 {1} \\wtnp[30]"
+
+msgid "Custap Berries"
+msgstr "애슈열매"
+
+msgid "Custom"
+msgstr "선택"
+
+msgid "Custom Game Settings"
+msgstr "규칙 설정"
+
+msgid "Custom {1}"
+msgstr "사용자 지정 {1}"
+
+msgid "Custom/Nuzlocke Mode"
+msgstr "규칙 설정/너즐록"
+
+msgid "Cute Ribbon"
+msgstr "큐트리본"
+
+msgid "Cute Ribbon Great"
+msgstr "큐트리본그레이트"
+
+msgid "Cute Ribbon Hyper"
+msgstr "큐트리본하이퍼"
+
+msgid "Cute Ribbon Master"
+msgstr "큐트리본마스터"
+
+msgid "Cute Ribbon Super"
+msgstr "큐트리본슈퍼"
+
+msgid "Cute Ribbon Ultra"
+msgstr "큐트리본울트라"
+
+msgid "DEFEND"
+msgstr "수비한다"
+
+msgid "DEL: Delete map from canvas"
+msgstr "DEL: Delete map from canvas\n"
+
+msgid "DEPOSIT POKéMON"
+msgstr "포켓몬을 맡긴다"
+
+msgid "DOUBLE Cup"
+msgstr "더블 컵"
+
+msgid "Dark"
+msgstr "악"
+
+msgid "Dark Mega Dramsama"
+msgstr "다크메가오페로스"
+
+msgid "Day-Care Couple"
+msgstr "키우미집 부부"
+
+msgid "Debug"
+msgstr "디버그"
+
+msgid "Dec."
+msgstr "12월"
+
+msgid "December"
+msgstr "12월"
+
+msgid "Default"
+msgstr "기본값으로 설정"
+
+msgid "Defense"
+msgstr "방어"
+
+msgid "Defiant sharply raised {1}'s Attack!"
+msgstr "{1}의 오기 때문에\n공격이 크게 올랐다!"
+
+msgid "Delete This Save File"
+msgstr "이 리포트를 지운다"
+
+msgid "Delete a move to make\nroom for {1}?"
+msgstr "{1} 대신\n다른 기술을 잊게 하겠습니까?"
+
+msgid "Delete a move to make room for {1}?"
+msgstr "{1} 대신\n다른 기술을 잊게 하겠습니까?"
+
+msgid "Deposit"
+msgstr "맡긴다"
+
+msgid "Deposit Item"
+msgstr "도구를 맡긴다"
+
+msgid "Deposit Pokémon"
+msgstr "포켓몬을 맡긴다"
+
+msgid "Deposit in which Box?"
+msgstr "어느 박스에 맡기겠습니까?"
+
+msgid "Deposited {1} {2}(s)."
+msgstr "{2}을(를)\n{1}개 맡겼습니다"
+
+msgid "Deposited {1}."
+msgstr "{1}을(를) 맡겼습니다"
+
+msgid "Deselect"
+msgstr "해제"
+
+msgid "Desert"
+msgstr "사막"
+
+msgid "Dex No."
+msgstr "도감No."
+
+msgid "Disable Healing In Battle"
+msgstr "배틀 중 회복 불가"
+
+msgid "Disable Pokémarts"
+msgstr "프렌들리숍 이용 불가"
+
+msgid "Do it! {1}!"
+msgstr "널 믿어! {1}!"
+
+msgid "Do not underestimate the might of Dragons!"
+msgstr "드래곤의 힘을 얕보지 말라!"
+
+msgid "Do what with an item?"
+msgstr "지닌물건을\n어떻게 할까?"
+
+msgid "Do what with the mail?"
+msgstr "메일을\n어떻게 할까?"
+
+msgid "Do what with {1}?"
+msgstr "{1}을(를)\n어떻게 할까?"
+
+msgid "Do you want to change {1}'s ability to {2}?"
+msgstr "{1}의 특성을\n{2}(으)로 바꾸겠습니까?"
+
+msgid "Do you want to delete the save file and start anew?"
+msgstr "리포트를 지우고 처음부터 하시겠습니까?"
+
+msgid "Do you want to run the patcher now?"
+msgstr "지금 실행할까요?"
+
+msgid "Do you want to try and run the patcher anyway?"
+msgstr "그래도 패치 프로그램을 실행해 보시겠습니까?"
+
+msgid "Do you want to use another Repel?"
+msgstr "계속해서 쓰시겠습니까?"
+
+msgid "Do you want to withdraw your pokemon from the GTS?"
+msgstr "GTS에서 포켓몬을 꺼내겠습니까?"
+
+msgid "Docile"
+msgstr "온순<c3=5A5252,A5A5AD>한"
+
+msgid "Done!"
+msgstr "완료!"
+
+msgid "Double Ability Ribbon"
+msgstr "더블어빌리티리본"
+
+msgid "Double Battle (lv50)"
+msgstr "더블배틀 (Lv.50)"
+
+msgid "Double-click: Edit map's metadata"
+msgstr "Double-click: Edit map's metadata\n"
+
+msgid "Down"
+msgstr "아래"
+
+msgid "Downcast Ribbon"
+msgstr "풀죽기리본"
+
+msgid "Drag map to move it"
+msgstr "Drag map to move it\n"
+
+msgid "Dragon"
+msgstr "드래곤"
+
+msgid "Dreams"
+msgstr "꿈"
+
+msgid "Dupes Clause"
+msgstr "중복 변칙"
+
+msgid "Durin Berries"
+msgstr "두리열매"
+
+msgid "E: Edit map's encounters"
+msgstr "E: Edit map's encounters\n"
+
+msgid "EV/IV/pID"
+msgstr "노력/개체/pID"
+
+msgid "EXIT"
+msgstr "나가기"
+
+msgid "Earned coins"
+msgstr "획득한 동전"
+
+msgid "Earth Ribbon"
+msgstr "어스리본"
+
+msgid "East side of first map must connect with west side of second map\n{1}"
+msgstr "East side of first map must connect with west side of second map\n{1}"
+
+msgid "Effort Ribbon"
+msgstr "노력리본"
+
+msgid "Egg"
+msgstr "알"
+
+msgid "Eggs can't hold items."
+msgstr "알은 도구를 지닐 수 없습니다!"
+
+msgid "Eggs can't hold mail."
+msgstr "알은 메일을 지닐 수 없습니다!"
+
+msgid "Either"
+msgstr "상관없다"
+
+msgid "Electric"
+msgstr "전기"
+
+msgid "Electricity's power was weakened!"
+msgstr "전기의 위력이 약해졌다!"
+
+msgid "Eletux is the best pick!\\wtnp[160]"
+msgstr "망아찌리가 최고의 파트너가 될 거야!\\wtnp[160]"
+
+msgid "Encounter type out of range"
+msgstr "등장 타입 범위 외"
+
+msgid "Enigma Berries"
+msgstr "의문열매"
+
+msgid "Enter text using the keyboard. Press ENTER to confirm."
+msgstr "키보드로 입력합니다 (ENTER: 확인 / 한글 입력 불가)"
+
+msgid "Enter text using the keyboard. Press ESC to cancel, or ENTER to confirm."
+msgstr "키보드로 입력합니다 (ESC: 취소, ENTER: 확인 / 한글 입력 불가)"
+
+msgid "Enter the speech for when you are challenged"
+msgstr "승부가 걸렸을 때\n당신이 할 말을 입력하세요"
+
+msgid "Enter the speech for when you lost"
+msgstr "승부에서 졌을 때\n당신이 할 말을 입력하세요"
+
+msgid "Enter the speech for when you win"
+msgstr "승부에서 이겼을 때\n당신이 할 말을 입력하세요"
+
+msgid "Enter {1}'s name."
+msgstr "{1}의 이름은?"
+
+msgid "Entry"
+msgstr "참가한다"
+
+msgid "Enumeration not defined\n{1}"
+msgstr "Enumeration not defined\n{1}"
+
+msgid "Event Ribbon"
+msgstr "이벤트리본"
+
+msgid "Exit"
+msgstr "그만둔다"
+
+msgid "Exit To Desktop"
+msgstr "게임을 종료한다"
+
+msgid "Exit To Menu"
+msgstr "메뉴로 나간다"
+
+msgid "Exit from the Box?"
+msgstr "박스를 종료하겠습니까?"
+
+msgid "Exit from the map?"
+msgstr "지도에서 나갈까요?"
+
+msgid "Exp. Points"
+msgstr "현재 경험치"
+
+msgid "Expected a number for the number of Pokémon\n{1}"
+msgstr "Expected a number for the number of Pokémon\n{1}"
+
+msgid "Expected a number for the trainer battle ID\n{1}"
+msgstr "Expected a number for the trainer battle ID\n{1}"
+
+msgid "Expected a section at the beginning of the file\n{1}"
+msgstr "Expected a section at the beginning of the file\n{1}"
+
+msgid "Expected a section at the beginning of the file. This error may also occur if the file was not saved in UTF-8.\n{1}"
+msgstr "Expected a section at the beginning of the file.  This error may also occur if the file was not saved in UTF-8.\n{1}"
+
+msgid "Expected a species name: {1}\n{2}"
+msgstr "Expected a species name: {1}\n{2}"
+
+msgid "Export"
+msgstr "내보내기"
+
+msgid "FANCY Cup"
+msgstr "팬시 컵"
+
+msgid "FIERCE ATTACK"
+msgstr "맹렬히 공격한다"
+
+msgid "FIFTH"
+msgstr "다섯 번째"
+
+msgid "FIRST"
+msgstr "첫 번째"
+
+msgid "FORMS"
+msgstr "모습"
+
+msgid "FORMS SEEN"
+msgstr "발견한 모습"
+
+msgid "FOURTH"
+msgstr "네 번째"
+
+msgid "Failed to compile text: {1}"
+msgstr "Failed to compile text:  {1}"
+
+msgid "Failed to connect, the servers may be experiencing problems. Please try again later."
+msgstr "접속에 실패했습니다\n서버에 문제가 발생했을 수 있습니다\n잠시 후 다시 시도해 주십시오"
+
+msgid "Failed to create the trainer type. Choose a different name."
+msgstr "Failed to create the trainer type.  Choose a different name."
+
+msgid "Failed to delete stored items"
+msgstr "보관된 도구를 없애지 못했습니다"
+
+msgid "Failed to get Pokemon data, trade aborted."
+msgstr "포켓몬의 정보를 입수하지 못했습니다\n교환을 중지합니다"
+
+msgid "Failed to load data from server!"
+msgstr "서버로부터 데이터를 불러오지 못했습니다!"
+
+msgid "Fainted Pokémon are considered dead and only one can be caught per route."
+msgstr "기절한 포켓몬은 사망하며 도로/수로별로\n처음 마주친 포켓몬만을 잡을 수 있습니다"
+
+msgid "Fairy"
+msgstr "페어리"
+
+msgid "Faraway place"
+msgstr "먼 곳"
+
+msgid "Fast"
+msgstr "빠르게"
+
+msgid "Feb."
+msgstr "2월"
+
+msgid "February"
+msgstr "2월"
+
+msgid "Female"
+msgstr "암컷"
+
+msgid "Female Shiny"
+msgstr "암컷 (특별한 색)"
+
+msgid "Feminine"
+msgstr "여성"
+
+msgid "Fertilize"
+msgstr "비료를 준다"
+
+msgid "Field '{1}' is not a hexadecimal number\n{2}"
+msgstr "Field '{1}' is not a hexadecimal number\n{2}"
+
+msgid "Field '{1}' must be 0 or greater\n{2}"
+msgstr "Field '{1}' must be 0 or greater\n{2}"
+
+msgid "Field '{1}' must be greater than 0\n{2}"
+msgstr "Field '{1}' must be greater than 0\n{2}"
+
+msgid "Field '{1}' must contain only letters, digits, and\nunderscores and can't begin with a number.\n{2}"
+msgstr "Field '{1}' must contain only letters, digits, and\nunderscores and can't begin with a number.\n{2}"
+
+msgid "Field {1} is not a Boolean value (true, false, 1, 0)\n{2}"
+msgstr "Field {1} is not a Boolean value (true, false, 1, 0)\n{2}"
+
+msgid "Field {1} is not a number\n{2}"
+msgstr "Field {1} is not a number\n{2}"
+
+msgid "Field {1} is not a positive integer\n{2}"
+msgstr "Field {1} is not a positive integer\n{2}"
+
+msgid "Field {1} is not an integer\n{2}"
+msgstr "Field {1} is not an integer\n{2}"
+
+msgid "Fight"
+msgstr "싸운다"
+
+msgid "Fighting"
+msgstr "격투"
+
+msgid "Figy Berries"
+msgstr "무화열매"
+
+msgid "File {1}, line {2}\n{3}"
+msgstr "File {1}, line {2}\n{3}\n"
+
+msgid "File {1}, section {2}, key {3}\n{4}"
+msgstr "File {1}, section {2}, key {3}\n{4}\n"
+
+msgid "Fill all fields!"
+msgstr "모두 배정해야 합니다!"
+
+msgid "Finally someone worth battling!"
+msgstr "이 정도 실력은 돼야 배틀할 맛이 나지!"
+
+msgid "Fire"
+msgstr "불꽃"
+
+msgid "Fire's power was weakened!"
+msgstr "불꽃의 위력이 약해졌다!"
+
+msgid "First move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "First move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "Flying"
+msgstr "비행"
+
+msgid "Folks, we're back with Round 2!"
+msgstr "여러분\n이제 2라운드가 시작됩니다!"
+
+msgid "Font Style"
+msgstr "글꼴 스타일"
+
+msgid "Footprint Ribbon"
+msgstr "발자국리본"
+
+msgid "For a Balanced trainer like you...\\^"
+msgstr "그런 균형적인 트레이너인 네게는...\\^"
+
+msgid "For a Defensive trainer like you...\\^"
+msgstr "그런 수비적인 트레이너인 네게는...\\^"
+
+msgid "For an Offensive trainer like you...\\^"
+msgstr "그런 공격적인 트레이너인 네게는...\\^"
+
+msgid "For some reason this Pokémon can't be caught!"
+msgstr "어째서인지 포켓몬을 잡을 수 없다!"
+
+msgid "For {1}'s {2},\n{3} sends {4}."
+msgstr "{1}이(가) {2}을(를) 보내는 대신\n{3}은(는) {4}을(를) 줍니다"
+
+msgid "For {1}'s {2},\n{3} sends {4}."
+msgstr "{1}이(가) {2}을(를) 보내는 대신\n{3}은(는) {4}을(를) 줍니다"
+
+msgid "For {1}, the {2} was too bitter!"
+msgstr "{2}은(는) {1}에게는\n너무 쓰다!"
+
+msgid "For {1}, the {2} was too dry!"
+msgstr "{2}은(는) {1}에게는\n너무 떫다!"
+
+msgid "For {1}, the {2} was too sour!"
+msgstr "{2}은(는) {1}에게는\n너무 시다!"
+
+msgid "For {1}, the {2} was too spicy!"
+msgstr "{2}은(는) {1}에게는\n너무 맵다!"
+
+msgid "For {1}, the {2} was too sweet!"
+msgstr "{2}은(는) {1}에게는\n너무 달다!"
+
+msgid "Foreign Pokémon\n{1}\n{2}\n{3} ({4})"
+msgstr "타인의 포켓몬\n{1}\n{2}\n{3} ({4})"
+
+msgid "Forest"
+msgstr "숲"
+
+msgid "Form"
+msgstr "모습"
+
+msgid "Fourth move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Fourth move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "Friday"
+msgstr "금요일"
+
+msgid "Friends: {1}"
+msgstr "친구 수: {1}"
+
+msgid "Fuse with which Pokémon?"
+msgstr "어느 포켓몬과 합체할까?"
+
+msgid "GLOBAL RANKING:"
+msgstr "글로벌 랭킹:"
+
+msgid "Game Version: {1}\nServer Version: {2}"
+msgstr "게임 버전: {1}\n서버 버전: {2}"
+
+msgid "Ganlon Berries"
+msgstr "용아열매"
+
+msgid "Gender"
+msgstr "성별"
+
+msgid "Genderless"
+msgstr "무성별"
+
+msgid "Genderless Shiny"
+msgstr "무성별 (특별한 색)"
+
+msgid "Generating teams ({1} of {2})"
+msgstr "팀 생성 중 ({1}/{2})"
+
+msgid "Gentle"
+msgstr "얌전<c3=5A5252,A5A5AD>한"
+
+msgid "Ghost"
+msgstr "고스트"
+
+msgid "Give"
+msgstr "건네준다"
+
+msgid "Give to which Pokémon?"
+msgstr "어느 포켓몬에게 건네줄까?"
+
+msgid "Give up trying to teach a new move to {1}?"
+msgstr "{1}에게 기술을\n배우게 하는 것을 포기하겠습니까?"
+
+msgid "Go back to the previous menu."
+msgstr "도구 보관 시스템과의\n통신을 종료합니다"
+
+msgid "Go for it, {1}!"
+msgstr "힘내! {1}!"
+
+msgid "Go! {1} and {2}!"
+msgstr "가랏! {1}!\n{2}!"
+
+msgid "Go! {1}!"
+msgstr "가랏! {1}!"
+
+msgid "Good endurance."
+msgstr "인내심이 강함."
+
+msgid "Good perseverance."
+msgstr "잘 참음."
+
+msgid "Goodness! That was quite a thorough rout.\nI may require some tea and\nbiscuits after this match.\nIf you like, you would be welcome to join me."
+msgstr "어이쿠! 영락없는 완패로군\n경기가 끝나면 차 한잔에\n비스킷을 즐겨야겠어\n원한다면 자네도 함께 해도 좋네"
+
+msgid "Goodness, you are really quite strong."
+msgstr "세상에...\n너 진짜로 강하구나"
+
+msgid "Gorgeous Ribbon"
+msgstr "고저스리본"
+
+msgid "Gorgeous Royal Ribbon"
+msgstr "고저스로열리본"
+
+msgid "Got away safely!"
+msgstr "무사히 도망쳤다!"
+
+msgid "Gotcha! {1} was caught!"
+msgstr "신난다-!\n{1}을(를) 잡았다!"
+
+msgid "Graphics/Pictures/BATTLE/battleBagChoices"
+msgstr "Graphics/Translations/Korean/battleBagChoices_korean"
+
+msgid "Graphics/Pictures/BATTLE/battleBagLast"
+msgstr "Graphics/Translations/Korean/battleBagLast_korean"
+
+msgid "Graphics/Pictures/BATTLE/battleItemConfirm"
+msgstr "Graphics/Translations/Korean/battleItemConfirm_korean"
+
+msgid "Graphics/Pictures/BATTLE/moveSelButtons"
+msgstr "Graphics/Translations/Korean/moveSelButtons_korean"
+
+msgid "Graphics/Pictures/Pokedex/dexbg2_grid2"
+msgstr "Graphics/Pictures/Pokedex/dexbg2_grid2x"
+
+msgid "Graphics/Pictures/Pokedex/entryicons"
+msgstr "Graphics/Translations/Korean/entryicons_korean"
+
+msgid "Graphics/Pictures/Summary/summary0text"
+msgstr "Graphics/Translations/Korean/summary0text_korean"
+
+msgid "Graphics/Pictures/Summary/summary1text"
+msgstr "Graphics/Translations/Korean/summary1text_korean"
+
+msgid "Graphics/Pictures/Summary/summary2text"
+msgstr "Graphics/Translations/Korean/summary2text_korean"
+
+msgid "Graphics/Pictures/Summary/summary3text"
+msgstr "Graphics/Translations/Korean/summary3text_korean"
+
+msgid "Graphics/Pictures/Summary/summary4text"
+msgstr "Graphics/Translations/Korean/summary4text_korean"
+
+msgid "Graphics/Pictures/battleStatuses"
+msgstr "Graphics/Translations/Korean/battleStatuses_korean"
+
+msgid "Graphics/Pictures/boxpartytab"
+msgstr "Graphics/Translations/Korean/boxpartytab_korean"
+
+msgid "Graphics/Pictures/boxsides"
+msgstr "Graphics/Translations/Korean/boxsides_korean"
+
+msgid "Graphics/Pictures/jukeboxbg"
+msgstr "Graphics/Translations/Korean/jukeboxbg_korean"
+
+msgid "Graphics/Pictures/statuses"
+msgstr "Graphics/Translations/Korean/statuses_korean"
+
+msgid "Graphics/Pictures/types"
+msgstr "Graphics/Translations/Korean/types_korean"
+
+msgid "Graphics/Pictures/typesbw"
+msgstr "Graphics/Translations/Korean/typesbw_korean"
+
+msgid "Graphics/Titles/custom_pokelogo"
+msgstr "Graphics/Translations/Korean/custom_pokelogo_korean"
+
+msgid "Graphics/Titles/custom_pokelogo_shine"
+msgstr "Graphics/Translations/Korean/custom_pokelogo_shine_korean"
+
+msgid "Graphics/Titles/pic_4"
+msgstr "Graphics/Translations/Korean/pic_4_korean"
+
+msgid "Graphics/Titles/pic_4under"
+msgstr "Graphics/Translations/Korean/pic_4under_korean"
+
+msgid "Grass"
+msgstr "풀"
+
+msgid "Grass grew to cover the battlefield!"
+msgstr "발밑에 풀이 무성해졌다!"
+
+msgid "Gravity intensified!"
+msgstr "중력이 강해졌다!"
+
+msgid "Gravity returned to normal!"
+msgstr "중력이 원래대로 되돌아왔다!"
+
+msgid "Gray"
+msgstr "회색"
+
+msgid "Great Ability Ribbon"
+msgstr "그레이트어빌리티리본"
+
+msgid "Green"
+msgstr "초록"
+
+msgid "Grepa Berries"
+msgstr "또뽀열매"
+
+msgid "Ground"
+msgstr "땅"
+
+msgid "Guara Berries"
+msgstr "라냐열매"
+
+msgid "Gyahahaha! I expected nothing less from you! Go on to the next round, then. You deserve it!"
+msgstr "우하하하! 과연 기대한 대로야!\n자, 다음 라운드로 가거라!"
+
+msgid "HM moves can't be forgotten now."
+msgstr "중요한 기술입니다\n잊게 할 수 없습니다!"
+
+msgid "HP greater than total HP"
+msgstr "HP가 최대치를 넘었습니다"
+
+msgid "HP less than 0"
+msgstr "HP가 0 미만입니다"
+
+msgid "HP/Status"
+msgstr "HP/상태"
+
+msgid "HT"
+msgstr "키"
+
+msgid "Haban Berries"
+msgstr "하반열매"
+
+msgid "Hafli Berries"
+msgstr "하플열매"
+
+msgid "Hail continues to fall."
+msgstr "싸라기눈이 계속 내리고 있다"
+
+msgid "Hail is falling."
+msgstr "싸라기눈이 내리고 있다"
+
+msgid "Hall of Fame"
+msgstr "전당등록"
+
+msgid "Hall of Fame No."
+msgstr "       전당등록 No."
+
+msgid "Happiness"
+msgstr "친밀도"
+
+msgid "Hardy"
+msgstr "노력<c3=5A5252,A5A5AD>하는"
+
+msgid "Hasty"
+msgstr "성급<c3=5A5252,A5A5AD>한"
+
+msgid "Hates to lose."
+msgstr "지기 싫어함."
+
+msgid "HeL̳ o-f FAmr"
+msgstr "견당들롞"
+
+msgid "Healing in-battle is disabled by your custom game settings!"
+msgstr "설정한 규칙에 따라\n배틀 중에는 회복할 수 없습니다!"
+
+msgid "Heavy to Light"
+msgstr "무거운 순서"
+
+msgid "Helloooooo ladies, gentlemen,\npeople of Tandor!"
+msgstr "아아아아안녕하십니까\n탄도르의 신사숙녀 여러분!"
+
+msgid "Here I come!"
+msgstr "간다!"
+
+msgid "Here we are! Round 4, the semifinals!"
+msgstr "자 4라운드입니다!\n드디어 준결승전!"
+
+msgid "Here you are!\nThank you!"
+msgstr "네 여기 있습니다\n대단히 감사합니다"
+
+msgid "Hi there, \\PN!\nI wanted to thank you for stopping the Power Plant attacks.\nYou really did a good thing for Bealbeach City, and for all of Tandor!\nEver since I heard about that, I've been itching for a rematch.\nThis time, my team and I are going all-out!\nI hope you'll go all-out, too!"
+msgstr "안녕, \\PN!\n발전소 습격을 막아줘서 고마워\n아라시티는 물론이고\n탄도르지방 모두가 네 덕을 봤어!\n그 소식을 들은 뒤로 다시 승부하고 싶어서\n몸이 계속 쑤셨지\n이번에는 우리 모두 전력으로 싸울 거야!\n그러니 너도 전력으로 덤벼랏!"
+
+msgid "Highly curious."
+msgstr "호기심이 강함."
+
+msgid "Highly persistent."
+msgstr "끈질김."
+
+msgid "Hit {1} time!"
+msgstr "{1}번 맞았다!"
+
+msgid "Hit {1} times!"
+msgstr "{1}번 맞았다!"
+
+msgid "Hiyah! I have honed my skills as a Surfer and a Ninja! We command mastery over the waves!"
+msgstr "하압! 갈고닦은 나의 서핑 실력과 인술!\n우리들은 파도 너머까지 위세를 떨친다!"
+
+msgid "Hmm... impressive."
+msgstr "호오... 훌륭하군"
+
+msgid "Hmph."
+msgstr "후우"
+
+msgid "Hoenn Beauty Contest Hyper Rank winner!"
+msgstr "호연지방 아름다움콘테스트\n하이퍼랭크 우승!"
+
+msgid "Hoenn Beauty Contest Master Rank winner!"
+msgstr "호연지방 아름다움콘테스트\n마스터랭크 우승!"
+
+msgid "Hoenn Beauty Contest Normal Rank winner!"
+msgstr "호연지방 아름다움콘테스트\n노말랭크 우승!"
+
+msgid "Hoenn Beauty Contest Super Rank winner!"
+msgstr "호연지방 아름다움콘테스트\n슈퍼랭크 우승!"
+
+msgid "Hoenn Cool Contest Hyper Rank winner!"
+msgstr "호연지방 근사함콘테스트\n하이퍼랭크 우승!"
+
+msgid "Hoenn Cool Contest Master Rank winner!"
+msgstr "호연지방 근사함콘테스트\n마스터랭크 우승!"
+
+msgid "Hoenn Cool Contest Normal Rank winner!"
+msgstr "호연지방 근사함콘테스트\n노말랭크 우승!"
+
+msgid "Hoenn Cool Contest Super Rank winner!"
+msgstr "호연지방 근사함콘테스트\n슈퍼랭크 우승!"
+
+msgid "Hoenn Cute Contest Hyper Rank winner!"
+msgstr "호연지방 귀여움콘테스트\n하이퍼랭크 우승!"
+
+msgid "Hoenn Cute Contest Master Rank winner!"
+msgstr "호연지방 귀여움콘테스트\n마스터랭크 우승!"
+
+msgid "Hoenn Cute Contest Normal Rank winner!"
+msgstr "호연지방 귀여움콘테스트\n노말랭크 우승!"
+
+msgid "Hoenn Cute Contest Super Rank winner!"
+msgstr "호연지방 귀여움콘테스트\n슈퍼랭크 우승!"
+
+msgid "Hoenn Smart Contest Hyper Rank winner!"
+msgstr "호연지방 슬기로움콘테스트\n하이퍼랭크 우승!"
+
+msgid "Hoenn Smart Contest Master Rank winner!"
+msgstr "호연지방 슬기로움콘테스트\n마스터랭크 우승!"
+
+msgid "Hoenn Smart Contest Normal Rank winner!"
+msgstr "호연지방 슬기로움콘테스트\n노말랭크 우승!"
+
+msgid "Hoenn Smart Contest Super Rank winner!"
+msgstr "호연지방 슬기로움콘테스트\n슈퍼랭크 우승!"
+
+msgid "Hoenn Tough Contest Hyper Rank winner!"
+msgstr "호연지방 강인함콘테스트\n하이퍼랭크 우승!"
+
+msgid "Hoenn Tough Contest Master Rank winner!"
+msgstr "호연지방 강인함콘테스트\n마스터랭크 우승!"
+
+msgid "Hoenn Tough Contest Normal Rank winner!"
+msgstr "호연지방 강인함콘테스트\n노말랭크 우승!"
+
+msgid "Hoenn Tough Contest Super Rank winner!"
+msgstr "호연지방 강인함콘테스트\n슈퍼랭크 우승!"
+
+msgid "Hold down while walking to run."
+msgstr "움직일 때 누르고 있으면 달립니다"
+
+msgid "Hondew Berries"
+msgstr "로매열매"
+
+msgid "Honored \\PN,\nThere is a stirring in the wind.\nThe Gods murmur in the deep.\nA storm brews on the horizon.\nOur Village will soon be in danger.\nWithout your help, Tsukinami will fall."
+msgstr "친애하는 \\PN님께\n바람이 요동치고\n신들이 심연에서 속삭이며\n폭풍이 지평선 너머로 들이쳐오니 이는\n우리의 마을에 위험이 닥칠 징조입니다\n당신이 와주시지 않으면\n츠키나미는 무너질 것입니다"
+
+msgid "How many do you want to deposit?"
+msgstr "몇 개 맡기겠습니까?"
+
+msgid "How many do you want to withdraw?"
+msgstr "몇 개 꺼내겠습니까?"
+
+msgid "Huh?"
+msgstr "어라...?"
+
+msgid "Huh?\nThe {1}'s responding!"
+msgstr "앗!\n기계가 반응하고 있어!"
+
+msgid "Huh?\n{1} stopped evolving!"
+msgstr "얼라리...?\n{1}의 변화가 멈췄다!"
+
+msgid "I Lost..."
+msgstr "졌다..."
+
+msgid "I alone command the incredible power of Dragons! Fear our unstoppable might!"
+msgstr "내가 지휘하는 일기당천 드래곤포켓몬의\n압도적인 힘 앞에 전율하도록 해라!"
+
+msgid "I am a fossil revivification expert."
+msgstr "나는 화석 복원 전문가란다"
+
+msgid "I can feel the anticipation in the air.\nThese trainers have spent their entire lives preparing for this moment!"
+msgstr "기대의 열기가 한껏 느껴지는군요\n우리의 선수들은 지금 이 순간만을 학수고대하며 준비했으니까요!"
+
+msgid "I can feel the tension crackling in the air."
+msgstr "숨막히는 긴장이 감도는군요"
+
+msgid "I can pay ${1}.\nWould that be OK?"
+msgstr "그 물건은 {1}원으로\n쳐 드리겠습니다"
+
+msgid "I can pay ${1}. Would that be OK?"
+msgstr "I can pay ${1}.  Would that be OK?"
+
+msgid "I can tell that they both are itching for another fight!"
+msgstr "선수들 모두 다음 싸움을 기다리느라 좀이 쑤셔 보이네요!"
+
+msgid "I can tell the crowd is loving this! It only gets more intense from here on out, folks!"
+msgstr "이 어마어마한 기대의 열기!\n하지만 앞으로 더욱 더 거세질 겁니다!"
+
+msgid "I do say!\nHave we perchance met before?\nI am certain we have.\nYou do leave quite an impression, indeed.\nHowever, allow me to reintroduce myself:\nI am Sr. Goldkorn.\nI represent a refined style of battle.\nA tradition which is sadly going away, it seems... But, I shall prove that refinement still has a place in the arena.\nPlease allow us to have a clean, civil match."
+msgstr "오호라!\n우리 면식이 있는 사이던가?\n그렇다마다!\n자네의 그 강함을 어찌 잊을 수 있겠는가\n어찌 됐든 다시 한번 내 소개를 하지\n나의 이름은 금작\n고상한 배틀 방식의 전승자라네\n애석하게도 세월의 풍파에 쓸려내려가는\n옛 전통이라고들 하네만...\n이 대회에서도 품위의 힘이\n빛을 잃지 않음을 증명해 보이겠네\n정정당당하고 신사적인 승부를 빌지!"
+
+msgid "I have created... life!"
+msgstr "내가... 생명을 창조했어!"
+
+msgid "I kept the best for last!"
+msgstr "이때를 노렸어!"
+
+msgid "I know I look cute, but you shouldn't underestimate me! I won last year and I'll do it again!"
+msgstr "아무리 내가 예뻐도 방심하면 안 된다!\n연패를 목표로 달릴 테다!"
+
+msgid "I say!"
+msgstr "오호!"
+
+msgid "I see a great future ahead of you, but are you ready for this?"
+msgstr "그대의 앞날은 창창해 보이지만\n이걸 감당할 수 있을까?"
+
+msgid "I see you command your Pokémon with great intelligence and respect. A lesser trainer could not have triumphed against us. I must bow to your superiority."
+msgstr "자네의 지시에는 매서운 날카로움과\n따뜻한 마음이 담겨 있는 듯하군\n그만한 정신이 없었다면 우리에게\n승리를 거두지 못했을 걸세\n감복하지 않을 수 없네"
+
+msgid "I specialize in the mysterious and mystical Fairy type. Soon, you'll be under our spell."
+msgstr "나는 신비의 페어리타입 전문\n너도 곧 우리의 마력에 사로잡히겠지"
+
+msgid "I use only the most perfect mechanical Pokémon. Your puny team won't stand a chance."
+msgstr "내가 사용하는 건 완벽한 기계 포켓몬뿐\n너의 약해빠진 포켓몬은 상대조차 못 돼"
+
+msgid "I will bring your Pokémon back to life in just a moment."
+msgstr "포켓몬을 부활시킬 테니\n잠시만 기다리려무나"
+
+msgid "I win!"
+msgstr "내가 이겼다!"
+
+msgid "I'd like to know your name.\nPlease tell me."
+msgstr "이름도 알려주지 않겠어?"
+
+msgid "I'll throw in a Premier Ball, too."
+msgstr "프리미어볼 1개를\n서비스로 드리겠습니다!"
+
+msgid "I've done it!"
+msgstr "끝났다!"
+
+msgid "ID No."
+msgstr "IDNo."
+
+msgid "ID No. {1}"
+msgstr "IDNo. {1}"
+
+msgid "INELIGIBLE"
+msgstr "세팅한다"
+
+msgid "INFO"
+msgstr "설명"
+
+msgid "Iapapa Berries"
+msgstr "파야열매"
+
+msgid "Ice"
+msgstr "얼음"
+
+msgid "If both trainers are ready, then..."
+msgstr "모두 준비하시고..."
+
+msgid "If the mail is removed, the message will be lost. OK?"
+msgstr "메일을 받으면 메시지가 지워집니다\n괜찮겠습니까?"
+
+msgid "If true, this map is part of the Safari Zone (both indoor and outdoor). Not to be used in the reception desk."
+msgstr "If true, this map is part of the Safari Zone (both indoor and outdoor).  Not to be used in the reception desk."
+
+msgid "If you bring me a Pokémon fossil, I can restore it to life."
+msgstr "포켓몬 화석을 가져오면 되살려주마"
+
+msgid "If you quit now, you will recieve {1} Coin(s). Will you quit?"
+msgstr "지금 게임을 그만두면\n동전을 {1}개 얻을 수 있습니다\n게임을 그만두겠습니까?"
+
+msgid "If you see one, bring it to me."
+msgstr "화석을 발견하면 내게 가져오렴"
+
+msgid "Impetuous and silly."
+msgstr "촐랑대는 성격임."
+
+msgid "Impish"
+msgstr "장난꾸러기 <c3=5A5252,A5A5AD>같은"
+
+msgid "In Bag:<r>{1:d}"
+msgstr "갖고 있음<r>{1:d}개"
+
+msgid "In encounters.txt, expected a species entry line,\ngot \"{1}\" instead (probably too few entries in an encounter type).\nPlease check the format of the section numbered {2},\nwhich is just before this line.\n{3}"
+msgstr "In encounters.txt, expected a species entry line,\ngot \"{1}\" instead (probably too few entries in an encounter type).\nPlease check the format of the section numbered {2},\nwhich is just before this line.\n{3}"
+
+msgid "In the spirit of fairness all online features will be disabled on this save."
+msgstr "공정성을 위해 이 리포트에서는\n모든 온라인 기능이 정지됩니다"
+
+msgid "Incorrect value {1} in {2}\n{3}"
+msgstr "Incorrect value {1} in {2}\n{3}"
+
+msgid "Invalid pocket: {1}"
+msgstr "유효하지 않는 포켓: {1}"
+
+msgid "Invalid quoted field (in: {1})\n{2}"
+msgstr "Invalid quoted field (in: {1})\n{2}"
+
+msgid "Invalid section name {1}"
+msgstr "잘못된 섹션 이름 {1}"
+
+msgid "Invite {1} to trade?"
+msgstr "{1}님에게\n교환을 신청하겠습니까?"
+
+msgid "Is it OK to throw away {1} {2}(s)?"
+msgstr "{2}을(를)\n{1}개 버려도 괜찮겠습니까?"
+
+msgid "Is there anything else I can help you with?"
+msgstr "그 밖에 저희가\n뭐 도와드릴 건 없습니까?"
+
+msgid "It appears to move occasionally. It may be close to hatching."
+msgstr "가끔 움직이고 있는 것\n같다. 태어나기까지\n이제 조금 남은 건가?"
+
+msgid "It can't be used when you have someone with you."
+msgstr "일행이 있을 때는 쓸 수 없습니다!"
+
+msgid "It can't be used while in the Hazard Suit."
+msgstr "해저드슈트를 착용한 동안은\n쓸 수 없습니다"
+
+msgid "It contained {1}."
+msgstr "안에는 {1}이(가)\n기록되어 있다!"
+
+msgid "It created a bizarre area in which Pokémon's held items lose their effects!"
+msgstr "지니게 한 도구의 효과가\n없어지는 공간을 만들어 냈다!"
+
+msgid "It created a bizarre area in which the Defense and Sp. Def stats are swapped!"
+msgstr "방어와 특수방어가 바뀌는\n공간을 만들어 냈다!"
+
+msgid "It doesn't affect\n{1}..."
+msgstr "{1}에게는\n효과가 없는 것 같다..."
+
+msgid "It doesn't affect {1}.."
+msgstr "{1}에게는\n효과가 없는 것 같다.."
+
+msgid "It doesn't affect {1}..."
+msgstr "{1}에게는\n효과가 없는 것 같다..."
+
+msgid "It had no effect."
+msgstr "효과가 없었다"
+
+msgid "It hurt itself from its confusion!"
+msgstr "영문도 모른 채\n자신을 공격했다!"
+
+msgid "It hurt itself in its confusion!"
+msgstr "영문도 모른 채\n자신을 공격했다!"
+
+msgid "It is not often that we come down from the peak of Mt. Lanthanite. But, this region deserves a reminder of the power of dragons! You, who have proved yourself in the Five Trials... Have you what it takes to defeat us at our full strength?\nWRRRROOOAAAAARRRR!\nHear our battle cry!"
+msgstr "우리 일족이 란타나이트산에서\n내려오는 일은 극히 드물네만\n이 지방에 드래곤의 힘을\n다시금 각인시킬 필요가 있었지!\n다섯 시련을 통과해 보인 자여...\n온 힘을 다해 부딪히는 우리들을\n쓰러뜨릴 준비는 되었는가?\n크오오오오오오오!\n들어보아라, 우리의 함성을!"
+
+msgid "It is raining."
+msgstr "비가 내리고 있다"
+
+msgid "It looks like this Egg will take a long time to hatch."
+msgstr "이 알은\n태어나기까지 상당한\n시간이 걸릴 것 같다."
+
+msgid "It poisoned {1}!"
+msgstr "{1}의 몸에 독이 퍼졌다!"
+
+msgid "It reduced the PP of {1}'s {2} by {3}!"
+msgstr "{1}의\n{2}을(를) {3} 깎았다!"
+
+msgid "It started to hail!"
+msgstr "싸라기눈이 내리기 시작했다!"
+
+msgid "It started to rain!"
+msgstr "비가 내리기 시작했다!"
+
+msgid "It stole {1}'s {2}!"
+msgstr "{1}(으)로부터\n{2}을(를) 빼앗았다!"
+
+msgid "It was alerted to {1}'s {2}!"
+msgstr "{1}의\n{2}을(를) 간파했다!"
+
+msgid "It was stored in box \"{1}\"."
+msgstr "박스 \"{1}\"에 보관되었다!"
+
+msgid "It was stored in box \"{1}.\""
+msgstr "박스 \"{1}\"에 보관되었다!"
+
+msgid "It was too weak to make a substitute!"
+msgstr "그러나 대타를 내보내기에는\n체력이 부족했다!"
+
+msgid "It won't have any effect"
+msgstr "써도 효과가 없다"
+
+msgid "It won't have any effect."
+msgstr "사용해도 효과가 없다!"
+
+msgid "It's a Slot Machine."
+msgstr "슬롯머신이다"
+
+msgid "It's a big boulder, but a Pokémon may be able to push it aside."
+msgstr "큰 바위이지만...\n포켓몬 기술로 밀 수 있을지도?"
+
+msgid "It's a dead coral, but a Pokémon may be able to smash it."
+msgstr "생명이 사라진 산호...\n포켓몬 기술로 깰 수 있을지도?"
+
+msgid "It's a large waterfall. Would you like to climb it?"
+msgstr "큰 폭포다!\n폭포오르기를 쓰겠습니까?"
+
+msgid "It's a one-hit KO!"
+msgstr "일격필살!"
+
+msgid "It's a rugged rock, but a Pokémon may be able to smash it."
+msgstr "단단해 보이는 바위지만...\n포켓몬 기술로 깰 수 있을지도?"
+
+msgid "It's empty."
+msgstr "아무것도 없습니다"
+
+msgid "It's impossible to aim without being focused!"
+msgstr "집중하지 않으면\n볼을 잘 던질 수 없어!"
+
+msgid "It's no good! It's impossible to aim when there are two Pokémon!"
+msgstr "안돼! 2마리 있어서\n목표를 정할 수가 없어...!"
+
+msgid "It's not very effective..."
+msgstr "효과가 별로인 듯하다..."
+
+msgid "It's soft, earthy soil."
+msgstr "푹신푹신한 흙이다"
+
+msgid "It's soft, loamy soil.\nPlant a berry?"
+msgstr "푹신푹신한 흙이다\n나무열매를 심겠습니까?"
+
+msgid "It's super effective!"
+msgstr "효과가 굉장했다!"
+
+msgid "It's too dangerous to fly to this location!"
+msgstr "이곳은 너무 위험해서\n공중날기할 수 없습니다!"
+
+msgid "Item"
+msgstr "지닌물건"
+
+msgid "Item Storage"
+msgstr "도구 보관소"
+
+msgid "Item: {1}"
+msgstr "지닌물건: {1}"
+
+msgid "Items"
+msgstr "도구"
+
+msgid "Items aren't allowed in Tandor Championship battles."
+msgstr "탄도르 챔피언십 배틀에서는\n도구 사용이 불가능합니다"
+
+msgid "Items aren't allowed in the Trial of Truth."
+msgstr "진실의 시련에서는\n도구 사용이 불가능합니다"
+
+msgid "Items can't be used here."
+msgstr "여기서는 도구를 쓸 수 없습니다..."
+
+msgid "Jaboca Berries"
+msgstr "자보열매"
+
+msgid "Jan."
+msgstr "1월"
+
+msgid "January"
+msgstr "1월"
+
+msgid "Jolly"
+msgstr "명랑<c3=5A5252,A5A5AD>한"
+
+msgid "Jukebox"
+msgstr "주크박스"
+
+msgid "Jul."
+msgstr "7월"
+
+msgid "July"
+msgstr "7월"
+
+msgid "Jump"
+msgstr "점프"
+
+msgid "Jump to which Box?"
+msgstr "어느 박스로 점프하겠습니까?"
+
+msgid "Jun."
+msgstr "6월"
+
+msgid "June"
+msgstr "6월"
+
+msgid "Kasib Berries"
+msgstr "수불열매"
+
+msgid "Kebia Berries"
+msgstr "으름열매"
+
+msgid "Kelpsy Berries"
+msgstr "시마열매"
+
+msgid "Key Items"
+msgstr "중요한 물건"
+
+msgid "Kimono Girl"
+msgstr "전통무용수"
+
+msgid "LEARNED"
+msgstr "이미 알고 있다"
+
+msgid "LIGHT Cup"
+msgstr "라이트 컵"
+
+msgid "LITTLE Cup"
+msgstr "리틀 컵"
+
+msgid "Landed a Pokémon!"
+msgstr "포켓몬을 낚았다!"
+
+msgid "Language"
+msgstr "언어"
+
+msgid "Lansat Berries"
+msgstr "랑사열매"
+
+msgid "Latest Version = {1} \\wtnp[30]"
+msgstr "최신 버전 {1} \\wtnp[30]"
+
+msgid "Lax"
+msgstr "촐랑<c3=5A5252,A5A5AD>거리는"
+
+msgid "Lazy made {1} sleep!"
+msgstr "{1}은(는)\n나태함 때문에 잠들었다!"
+
+msgid "League Champion! Congratulations!"
+msgstr "포켓몬리그 챔피언을 축하합니다!"
+
+msgid "League champion!\nCongratulations!\\^"
+msgstr "포켓몬리그 챔피언을\n축하합니다!\\^"
+
+msgid "Left"
+msgstr "왼쪽"
+
+msgid "Left: {1}"
+msgstr "{1}개 남음"
+
+msgid "Legend Ribbon"
+msgstr "레전드리본"
+
+msgid "Leppa Berries"
+msgstr "과사열매"
+
+msgid "Let me register you."
+msgstr "번호를 등록할게"
+
+msgid "Let me tell you a story.\nThere once was a girl who dreamed of being a star in the Opera. ...Oh? You have heard this before? Alas... I was looking forward to my monologue.\nNow, I recall... you are \\PN.\nOn ye of great destiny... have your dreams become reality?\nOr are they still dreams?\nCan you tell the difference?\nCome, let us captivate the audience with our spectacular act!"
+msgstr "옛날 옛날에, 오페라 무대에\n서고 싶어하는 작은 소녀가 있었답니다\n...에? 이미 들었다고요?\n아아... 공들인 독백이었건만\n이제야 기억나는군요... \\PN님\n드넓은 운명의 장 위에서...\n그대의 꿈이 실현되었는지\n아니면 아직은 공상에 지나지 않은지\n당신은 구분할 수 있겠습니까?\n자아, 이제 저와 함께 관중석을\n낭만과 두근거림의 도가니로 만들어봐요!"
+
+msgid "Let's enjoy cycling!"
+msgstr "지금은 자전거를 즐기자!"
+
+msgid "Let's go!"
+msgstr "레츠 고!"
+
+msgid "Let's make this battle one to remember!"
+msgstr "길이 기억될 승부를 펼쳐주시길!"
+
+msgid "Let's see how you fare against this final dance move!"
+msgstr "이 최후의 춤사위를 버틸 수 있을까!"
+
+msgid "Level"
+msgstr "레벨"
+
+msgid "Level Range"
+msgstr "레벨의 범위"
+
+msgid "Level number is not valid: {1}\n{2}"
+msgstr "Level number is not valid: {1}\n{2}"
+
+msgid "Level {1}"
+msgstr "Lv.{1}"
+
+msgid "Liechi Berries"
+msgstr "치리열매"
+
+msgid "Light"
+msgstr "빛"
+
+msgid "Light Screen raised the opposing team's Special Defense!"
+msgstr "상대는 빛의장막으로\n특수공격에 강해졌다!"
+
+msgid "Light Screen raised your team's Special Defense!"
+msgstr "우리 편은 빛의장막으로\n특수공격에 강해졌다!"
+
+msgid "Light is filtering down from above. A Pokémon may be able to surface here."
+msgstr "위에서 빛이 들어오고 있다!\n포켓몬 기술로 올라갈 수 있을지도?"
+
+msgid "Light is filtering down from above. Would you like to surface?"
+msgstr "위에서 빛이 들어오고 있다!\n올라가 보겠습니까?"
+
+msgid "Light to Heavy"
+msgstr "가벼운 순서"
+
+msgid "Likes to fight."
+msgstr "싸움을 좋아함."
+
+msgid "Likes to relax."
+msgstr "유유자적함을 좋아함."
+
+msgid "Likes to run."
+msgstr "달리기를 좋아함."
+
+msgid "Likes to thrash about."
+msgstr "난동부리기를 좋아함."
+
+msgid "List by body color.\nSpotted Pokémon only."
+msgstr "List by body color.\nSpotted Pokémon only."
+
+msgid "List by the first letter in the name.\nSpotted Pokémon only."
+msgstr "List by the first letter in the name.\nSpotted Pokémon only."
+
+msgid "List by type.\nOwned Pokémon only."
+msgstr "List by type.\nOwned Pokémon only."
+
+msgid "Little Cup Battle"
+msgstr "리틀 컵"
+
+msgid "Log Off"
+msgstr "스위치를 끈다"
+
+msgid "Log O̳f"
+msgstr "스읶치를 끋ㅏ"
+
+msgid "Lonely"
+msgstr "외로움<c3=5A5252,A5A5AD>을 타는"
+
+msgid "Look like the innocent flower, but be the serpent under it."
+msgstr "순결한 꽃처럼 보이되\n그 밑에 숨은 뱀이 되소서"
+
+msgid "Loves to eat."
+msgstr "먹는 것을 제일 좋아함."
+
+msgid "Lucky Chant shielded the opposing team from critical hits!"
+msgstr "주술의 힘으로\n상대의 급소가 숨겨졌다!"
+
+msgid "Lucky Chant shielded your team from critical hits!"
+msgstr "주술의 힘으로\n우리 편의 급소가 숨겨졌다!"
+
+msgid "Lullaby"
+msgstr "자장가"
+
+msgid "Lum Berries"
+msgstr "리샘열매"
+
+msgid "MONEY:"
+msgstr "용돈"
+
+msgid "MOVE"
+msgstr "잡는다"
+
+msgid "MOVE ITEMS"
+msgstr "지닌물건을 정리한다"
+
+msgid "MOVE POKéMON"
+msgstr "박스를 정리한다"
+
+msgid "Machine"
+msgstr "금속"
+
+msgid "Magic Room wore off, and held items' effects returned to normal!"
+msgstr "매직룸이 해제되어\n도구의 효과가 원래대로 되돌아왔다!"
+
+msgid "Magnificent! A flawless performance!"
+msgstr "아름다워요!\n완벽한 공연이었습니다!"
+
+msgid "Magnitude {1}!"
+msgstr "매그니튜드{1}!"
+
+msgid "Mago Berries"
+msgstr "마고열매"
+
+msgid "Magost Berries"
+msgstr "고스티열매"
+
+msgid "Mail"
+msgstr "메일"
+
+msgid "Mail must be removed before holding an item."
+msgstr "메일이 있으면\n도구를 지닐 수 없습니다!"
+
+msgid "Mail was taken from the Pokémon."
+msgstr "포켓몬으로부터 메일을\n받았습니다!"
+
+msgid "Mail was transferred from the Mailbox."
+msgstr "박스에서 메일을 옮겼습니다"
+
+msgid "Mailbox"
+msgstr "메일박스"
+
+msgid "Main Save"
+msgstr "메인 리포트"
+
+msgid "Main version is up-to-date however, there MAY be a new minor patch available.\\wtnp[30]"
+msgstr "주버전은 최신이나 마이너 패치를\n적용할 수 있을지도 모릅니다\\wtnp[30]"
+
+msgid "Main version is up-to-date however, there is a new minor patch available.\\wtnp[30]"
+msgstr "주버전은 최신이나\n마이너 패치를 적용할 수 있습니다\\wtnp[30]"
+
+msgid "Make Mystery Gift"
+msgstr "이상한 소포를 만든다"
+
+msgid "Male"
+msgstr "수컷"
+
+msgid "Male Shiny"
+msgstr "수컷 (특별한 색)"
+
+msgid "Man, I lost!"
+msgstr "이런, 졌다!"
+
+msgid "Map"
+msgstr "지도"
+
+msgid "Map {1} was not found."
+msgstr "{1} 맵을 찾을 수 없습니다"
+
+msgid "Mar."
+msgstr "3월"
+
+msgid "March"
+msgstr "3월"
+
+msgid "Mark"
+msgstr "마킹"
+
+msgid "Mark your Pokemon."
+msgstr "마킹해 주십시오"
+
+msgid "Masculine"
+msgstr "남성"
+
+msgid "Max"
+msgstr "최대"
+
+msgid "Max. HP<r>+{1}\nAttack<r>+{2}\nDefense<r>+{3}\nSp. Atk<r>+{4}\nSp. Def<r>+{5}\nSpeed<r>+{6}"
+msgstr "최대HP<r>+{1}\n공격<r>+{2}\n방어<r>+{3}\n특수공격<r>+{4}\n특수방어<r>+{5}\n스피드<r>+{6}"
+
+msgid "Max. HP<r>{1}\nAttack<r>{2}\nDefense<r>{3}\nSp. Atk<r>{4}\nSp. Def<r>{5}\nSpeed<r>{6}"
+msgstr "최대HP<r>{1}\n공격<r>{2}\n방어<r>{3}\n특수공격<r>{4}\n특수방어<r>{5}\n스피드<r>{6}"
+
+msgid "May"
+msgstr "5월"
+
+msgid "Medicine"
+msgstr "회복"
+
+msgid "Mega Ampharos"
+msgstr "메가전룡"
+
+msgid "Mega Arbok"
+msgstr "메가아보크"
+
+msgid "Mega Archilles"
+msgstr "메가아르킬렉스"
+
+msgid "Mega Baariette"
+msgstr "메가흑귀"
+
+msgid "Mega Daikatuna"
+msgstr "메가카타랑어"
+
+msgid "Mega Dramsama"
+msgstr "메가오페로스"
+
+msgid "Mega Drilgann"
+msgstr "메가두더라간"
+
+msgid "Mega Electruxo"
+msgstr "메가일레쿠스"
+
+msgid "Mega Gengar"
+msgstr "메가팬텀"
+
+msgid "Mega Gyarados"
+msgstr "메가갸라도스"
+
+msgid "Mega Inflagetah"
+msgstr "메가화라르타"
+
+msgid "Mega Kiricorn"
+msgstr "메가세피리온"
+
+msgid "Mega Metalynx"
+msgstr "메가스라디움"
+
+msgid "Mega S51-A T"
+msgstr "메가S51-A T"
+
+msgid "Mega Sableye"
+msgstr "메가깜까미"
+
+msgid "Mega Syrentide"
+msgstr "메가세일리아"
+
+msgid "Mega Whimsicott"
+msgstr "메가엘풍"
+
+msgid "Mega {1}"
+msgstr "메가{1}"
+
+msgid "Micle Berries"
+msgstr "미클열매"
+
+msgid "Mid"
+msgstr "보통"
+
+msgid "Mild"
+msgstr "의젓<c3=5A5252,A5A5AD>한"
+
+msgid "Minimum level is greater than maximum level: {1}\n{2}"
+msgstr "Minimum level is greater than maximum level: {1}\n{2}"
+
+msgid "Mischievous."
+msgstr "장난을 좋아함."
+
+msgid "Mist swirled about the battlefield!"
+msgstr "발밑이 안개로 자욱해졌다!"
+
+msgid "Modest"
+msgstr "조심<c3=5A5252,A5A5AD>스러운"
+
+msgid "Monday"
+msgstr "월요일"
+
+msgid "Money:\n<ar>{1}</ar>"
+msgstr "용돈\n<ar>{1}</ar>"
+
+msgid "Money:\n<r>${1}"
+msgstr "용돈\n<r>{1}원"
+
+msgid "Most of it is illegible, I can only make out a few words."
+msgstr "내용을 거의 알아보기 힘들지만\n단어 몇몇은 읽을 수 있다"
+
+msgid "Most of the pages are missing. I can't make out anything."
+msgstr "페이지가 대부분 없어져서\n내용을 전혀 알 수 없다"
+
+msgid "Move"
+msgstr "잡는다"
+
+msgid "Move Pokémon"
+msgstr "박스를 정리한다"
+
+msgid "Move Pokémon stored in Boxes to your party."
+msgstr "박스에 맡긴 포켓몬을\n지닐 수 있습니다"
+
+msgid "Move Pokémon stored in boxes to your party."
+msgstr "박스에 맡긴 포켓몬을\n지닐 수 있습니다"
+
+msgid "Move items held by any Pokémon in a Box and your party."
+msgstr "포켓몬이 지니고 있는 도구를\n정리할 수 있습니다"
+
+msgid "Move to Bag"
+msgstr "가방에 넣는다"
+
+msgid "Move to where?"
+msgstr "어디로 이동할까?"
+
+msgid "Moves"
+msgstr "기술"
+
+msgid "Moves the main character. Also used to scroll through list entries."
+msgstr "전후좌우로 주인공을 움직입니다\n또한 항목을 선택할 때 사용합니다"
+
+msgid "Multi Ability Ribbon"
+msgstr "멀티어빌리티리본"
+
+msgid "Music Volume"
+msgstr "배경음악 음량"
+
+msgid "My Pokémon have saved countless lives on the sea. We're ready for any challenge!"
+msgstr "나의 포켓몬들은 바다에서 수없이\n많은 생명을 구한 베테랑들이지\n도전은 언제든지 받아주겠어!"
+
+msgid "My Pokémon's fiery dance moves will ignite the battlefield!"
+msgstr "나의 포켓몬은 춤사위에 담긴 열정으로\n전장마저 불사르지!"
+
+msgid "Mystery Gift"
+msgstr "이상한 소포"
+
+msgid "N/A"
+msgstr "없음"
+
+msgid "NAME: {1}"
+msgstr "이름: {1}"
+
+msgid "NOT ABLE"
+msgstr "불가"
+
+msgid "NOT ENTERED"
+msgstr "참가 안 한다"
+
+msgid "NOW RECORDING\nPress ESC to stop recording."
+msgstr "기록 중입니다\nPress ESC to stop recording."
+
+msgid "Naive"
+msgstr "천진난만<c3=5A5252,A5A5AD>한"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Name<r>{1}<br>"
+msgstr "이름<r>{1}<br>"
+
+msgid "Nanab Berries"
+msgstr "나나열매"
+
+msgid "National Champion Ribbon"
+msgstr "내셔널챔피언리본"
+
+msgid "National Pokédex"
+msgstr "전국도감"
+
+msgid "National Ribbon"
+msgstr "내셔널리본"
+
+msgid "Nature"
+msgstr "성격"
+
+msgid "Nature: {1}"
+msgstr "성격: {1}"
+
+msgid "Naughty"
+msgstr "개구쟁이 <c3=5A5252,A5A5AD>같은"
+
+msgid "Neutral"
+msgstr "중성"
+
+msgid "New Game"
+msgstr "새로운 모험을 시작한다"
+
+msgid "New Virtual Trainer created successfully!"
+msgstr "새로운 버추얼 트레이너를 만들었습니다!"
+
+msgid "Newer"
+msgstr "최신"
+
+msgid "Nickname"
+msgstr "닉네임"
+
+msgid "No"
+msgstr "아니오"
+
+msgid "No Entry"
+msgstr "참가하지 않는다"
+
+msgid "No Pokemon were found."
+msgstr "포켓몬을 찾지 못했습니다"
+
+msgid "No Pokemon with this online ID exists!"
+msgstr "입력한 온라인 ID를 사용하는\n포켓몬이 존재하지 않습니다!"
+
+msgid "No Trainer with this online ID exists!"
+msgstr "입력한 온라인 ID를 사용하는\n트레이너가 존재하지 않습니다!"
+
+msgid "No Virtual Trainer around your level."
+msgstr "가까운 레벨의\n버추얼 트레이너가 없습니다"
+
+msgid "No ability"
+msgstr "특성 없음"
+
+msgid "No identical hold items."
+msgstr "같은 도구는 가질 수 없습니다"
+
+msgid "No identical nicknames."
+msgstr "같은 닉네임을 쓸 수 없습니다"
+
+msgid "No item"
+msgstr "지닌물건 없음"
+
+msgid "No items may be used other than what the Pokémon already hold."
+msgstr "첫째, 포켓몬이 이미 지닌 것 외의\n도구를 사용하지 말 것"
+
+msgid "No matching Pokémon were found."
+msgstr "포켓몬을 찾지 못했습니다..."
+
+msgid "No more than {1} Pokémon may enter."
+msgstr "참가할 수 있는 포켓몬은\n{1}마리까지입니다!"
+
+msgid "No new gifts are available."
+msgstr "받을 수 있는 소포가 없습니다"
+
+msgid "No online Mystery Gifts found.\\wtnp[20]"
+msgstr "소포를 찾을 수 없습니다\\wtnp[20]"
+
+msgid "No options have been disabled."
+msgstr "해제된 옵션이 없습니다"
+
+msgid "No room to deposit a Pokémon"
+msgstr "포켓몬을 맡길 공간이 없습니다"
+
+msgid "No species found"
+msgstr "찾을 수 없습니다"
+
+msgid "No starting position was set in the map editor."
+msgstr "맵 편집기에서 시작 위치가 설정되지 않았습니다"
+
+msgid "No supported recording device was found. Recording is not possible."
+msgstr "지원하는 녹음 장치를 찾을 수 없습니다\n녹음은 할 수 없습니다"
+
+msgid "No surfing here!"
+msgstr "여기서는 파도타기를 할 수 없습니다!"
+
+msgid "No targets somehow..."
+msgstr "어째서인지 목표가 없었다..."
+
+msgid "No trainer data file given in section {1}\n{2}"
+msgstr "No trainer data file given in section {1}\n{2}"
+
+msgid "No! There's no running from a Nuclear Horde!"
+msgstr "안 돼!\n무리에게선 도망칠 수 없어!"
+
+msgid "No! There's no running from a Trainer battle!"
+msgstr "안 돼!\n배틀 중에는 도망칠 수 없어!"
+
+msgid "Nomel Berries"
+msgstr "노멜열매"
+
+msgid "None"
+msgstr "없음"
+
+msgid "Nope. Nothing..."
+msgstr "아무 것도 없네..."
+
+msgid "Normal"
+msgstr "노말"
+
+msgid "Normal Save"
+msgstr "보통 리포트"
+
+msgid "North side of first map must connect with south side of second map\n{1}"
+msgstr "North side of first map must connect with south side of second map\n{1}"
+
+msgid "Not enough HP..."
+msgstr "체력이 부족합니다..."
+
+msgid "Not even a nibble..."
+msgstr "잡히지 않네..."
+
+msgid "Not... strong enough..."
+msgstr "힘이... 부족했는가..."
+
+msgid "Note: Please do not tab out of the game window during battles or trades.\\wtnp[100]"
+msgstr "주의: 배틀이나 교환 도중에\n게임 화면 밖을 클릭하지 마십시오\\wtnp[100]"
+
+msgid "Note: You will NOT be able to change these later!"
+msgstr "주의: 나중에 바꿀 수 없습니다!"
+
+msgid "Nov."
+msgstr "11월"
+
+msgid "November"
+msgstr "11월"
+
+msgid "Nuclear"
+msgstr "핵"
+
+msgid "Number"
+msgstr "번호순"
+
+msgid "Number of rounds is 0 or less."
+msgstr "라운드의 숫자가 1보다 작습니다"
+
+msgid "Nuzlocke"
+msgstr "너즐록"
+
+msgid "OBTAINED<r>{1:d}"
+msgstr "잡은 수<r>{1:d}"
+
+msgid "OPTIONS"
+msgstr "옵션"
+
+msgid "OT"
+msgstr "어버이"
+
+msgid "OT/{1}"
+msgstr "어버이/{1}"
+
+msgid "Oak"
+msgstr "오박사"
+
+msgid "Occa Berries"
+msgstr "오카열매"
+
+msgid "Oct."
+msgstr "10월"
+
+msgid "October"
+msgstr "10월"
+
+msgid "Of the 32 trainers that entered the arena today, only 8 remain!"
+msgstr "오늘 아레나에 입성한 32인의 트레이너\n가운데 8명만이 살아남았습니다!"
+
+msgid "Off"
+msgstr "끈다"
+
+msgid "Offer"
+msgstr "내놓는다"
+
+msgid "Often dozes off."
+msgstr "낮잠을 잘 잠."
+
+msgid "Often lost in thought."
+msgstr "걱정거리가 많음."
+
+msgid "Often scatters things."
+msgstr "말뚝잠이 많음."
+
+msgid "Oh no! The Pokémon broke free!"
+msgstr "안돼! 포켓몬이\n볼에서 나와버렸다!"
+
+msgid "Oh!\nA Shadow Pokemon!"
+msgstr "우왓!\n그림자 포켓몬이다!"
+
+msgid "Oh! A bite!"
+msgstr "\n걸렸다 걸렸다!!"
+
+msgid "Oh! \\PN, it is good to see you again.\nI'll never forget how you rescued me from the clutches of the Seikamater.\nIn my Gym, you dazzled us with your flawless coordinated moves.\nI can see you have gotten far stronger. But so have we!\nCan you keep up with our fast footwork?\nLet our beautiful dance moves set this arena aflame!"
+msgstr "\\PN! 다시 만나서 반갑다\n네가 마테르도라의 손아귀에서\n날 구해준 일은 절대 잊지 못할 거야\n체육관 배틀에서 너희들의 기술은\n우리에게 치밀함의 극치를 보여주었지\n너희가 그동안 얼마나 실력을\n갈고닦았는지는 잘 알겠다\n허나 그건 우리도 마찬가지지!\n우리의 매서운 발놀림을 따라올 수 있을까?\n함께 아름다운 춤으로\n경기장을 불태워보자꾸나!"
+
+msgid "Oh, marvelous! And in such good condition too."
+msgstr "오오 멋진 화석!\n상태도 아주 좋군"
+
+msgid "Oh, your {1}... It's Hidden Power is {2} type with a base power of {3}."
+msgstr "너의 {1}...\n위력이 {3}인 {2}타입의\n잠재파워를 가지고 있구나"
+
+msgid "Oh... my... GOSH!!\nCan it be? Is it \\PN?\nI totally remember you!\nIt feels like forever ago that you challenged my gym.\nYou know, I totally went easy on you back then, right?~\nBut here in the arena, I won't hold back at all!\nI didn't win the Championship one time by slacking off, ya know?"
+msgstr "어머... 어머 어쩜 좋아!!\n너 \\PN 맞지?\n완전 기억하고 있지!\n네가 우리 체육관에 도전한 지\n한 세월은 흐른 것 같아\n그땐 내가 너무 살살 덤벼줬지, 응~?\n하지만 여기 아레나에선 최대 출력으로 갈 거야!\n내가 예전에 설렁설렁\n챔피언 자리에 오른 건 아니라고, 앙?"
+
+msgid "Old School Poison"
+msgstr "구세대식 중독"
+
+msgid "Omigosh! You're totally incredible!~"
+msgstr "어뜨케! 너무 쎄잖어~!"
+
+msgid "On"
+msgstr "켠다"
+
+msgid "Once again...\nI am shown defeat.\nHow can I cope with such disgrace?\nTo my home village, I return once again."
+msgstr "또 다시...\n지고 말았군\n이 치욕을 어찌 하면 좋단 말인가?\n난 다시 고향으로 돌아가겠다"
+
+msgid "One or more fonts used in this game do not exist on the system."
+msgstr "게임에 사용되는 글꼴이\n1개 이상 설치되지 않았습니다"
+
+msgid "Online ID: {1}"
+msgstr "온라인ID: {1}"
+
+msgid "Online Lobby"
+msgstr "온라인 로비"
+
+msgid "Online Mystery Gifts found.\\wtnp[20]"
+msgstr "소포를 발견했습니다\\wtnp[20]"
+
+msgid "Online: {1}"
+msgstr "접속 수: {1}"
+
+msgid "Only four trainers remain in the arena. They are Tandor's best and brightest!"
+msgstr "이제 아레나에 남은 탄도르지방\n최강의 트레이너는 단 4명!"
+
+msgid "Only one or two wild Pokémon are allowed"
+msgstr "야생 포켓몬은 1마리 또는 2마리만이 나올 수 있습니다"
+
+msgid "Only one wild Pokémon is allowed in single battles"
+msgstr "싱글배틀에서는 1마리의 야생 포켓몬만이 나올 수 있습니다"
+
+msgid "Only two wild Pokémon are allowed in double battles"
+msgstr "더블배틀에서는 2마리의 야생 포켓몬만이 나올 수 있습니다"
+
+msgid "Ooh, I'm so excited!"
+msgstr "오오, 이 뜨거운 전율!"
+
+msgid "Opponent 1 doesn't have any eligible pokemon for a sky battle"
+msgstr "상대 1이 스카이배틀이 가능한 포켓몬을 가지고 있지 않습니다"
+
+msgid "Opponent 1 has no unfainted Pokémon"
+msgstr "상대 1에게 기절하지 않은 포켓몬이 존재하지 않습니다"
+
+msgid "Opponent 1's party has more than three Pokémon, which is not allowed"
+msgstr "상대 1이 지닌 포켓몬이 허용치인 3마리를 넘습니다"
+
+msgid "Opponent 2 doesn't have any eligible pokemon for a sky battle"
+msgstr "상대 2가 스카이배틀이 가능한 포켓몬을 가지고 있지 않습니다"
+
+msgid "Opponent 2 has no unfainted Pokémon"
+msgstr "상대 2에게 기절하지 않은 포켓몬이 존재하지 않습니다"
+
+msgid "Opponent 2's party has more than three Pokémon, which is not allowed"
+msgstr "상대 2가 지닌 포켓몬이 허용치인 3마리를 넘습니다"
+
+msgid "Opponent doesn't have two unfainted Pokémon"
+msgstr "상대에게 기절하지 않은 포켓몬 2마리가 존재하지 않습니다"
+
+msgid "Opponent trainer must be only one person in single battles"
+msgstr "싱글배틀에서 상대 트레이너는 1명뿐이어야 합니다"
+
+msgid "Opponents with zero or more than two people are not allowed"
+msgstr "상대가 0명이거나 2명보다 많을 수는 없습니다"
+
+msgid "Options"
+msgstr "설정을 바꾼다"
+
+msgid "Or maybe it's just that you're so young, I can't tell.\\^"
+msgstr "아니면 네가 너무 어려서일 뿐일지도\n잘은 모르겠다\\^"
+
+msgid "Oran Berries"
+msgstr "오랭열매"
+
+msgid "Orchynx is the best pick!\\wtnp[160]"
+msgstr "초나비가 최고의 파트너가 될 거야!\\wtnp[160]"
+
+msgid "Organize the Pokémon in Boxes and in your party."
+msgstr "박스에 맡긴 포켓몬이나\n지닌 포켓몬을 정리할 수 있습니다"
+
+msgid "Other Save Files"
+msgstr "다른 리포트를 불러온다"
+
+msgid "Our sophisticated strategy will overcome trainers of a lower class."
+msgstr "우리의 정제된 전술로\n저급한 트레이너들을 짓누를 것이야"
+
+msgid "Ownership"
+msgstr "소유"
+
+msgid "PA: Ding-dong!"
+msgstr "PA:  Ding-dong!"
+
+msgid "PA: You have no Safari Balls left! Game over!"
+msgstr "딩동! 볼이 다 떨어졌으므로\n사파리 게임을 종료합니다"
+
+msgid "PA: Your safari game is over!"
+msgstr "PA:  Your safari game is over!"
+
+msgid "PLAYING BACK..."
+msgstr "재생 중..."
+
+msgid "POKeDEX:"
+msgstr "포켓몬 도감"
+
+msgid "POKÉDEX"
+msgstr "도감"
+
+msgid "POKÉMON"
+msgstr "포켓몬"
+
+msgid "POKÉPOD"
+msgstr "포켓팟"
+
+msgid "POWER"
+msgstr "위력"
+
+msgid "PP was restored."
+msgstr "기술포인트를 회복했다!"
+
+msgid "PRECISE ATTACK"
+msgstr "신중히 공격한다"
+
+msgid "PU-Intro1"
+msgstr "../Translations/Korean/PU-Intro1_korean"
+
+msgid "Pair Ability Ribbon"
+msgstr "페어어빌리티리본"
+
+msgid "Pamtre Berries"
+msgstr "자야열매"
+
+msgid "Party 1 has more than {1} Pokémon."
+msgstr "지닌 포켓몬 1의 수가 {1}보다 큽니다"
+
+msgid "Party 1 has no Pokémon."
+msgstr "지닌 포켓몬 1이 비었습니다"
+
+msgid "Party 2 has more than {1} Pokémon."
+msgstr "지닌 포켓몬 2의 수가 {1}보다 큽니다"
+
+msgid "Party 2 has no Pokémon."
+msgstr "지닌 포켓몬 2가 비었습니다"
+
+msgid "Passho Berries"
+msgstr "꼬시개열매"
+
+msgid "Patience and endurance are your biggest assets.\\^"
+msgstr "참을성과 인내심이 네가 가진\n최대의 강점이라 할 수 있지\\^"
+
+msgid "Payapa Berries"
+msgstr "야파열매"
+
+msgid "Pecha Berries"
+msgstr "복슝열매"
+
+msgid "Performance Mode"
+msgstr "성능 강화"
+
+msgid "Permanently disable the options you unchecked."
+msgstr "체크되지 않은 옵션을\n영구히 해제합니다"
+
+msgid "Persim Berries"
+msgstr "시몬열매"
+
+msgid "Petaya Berries"
+msgstr "야타비열매"
+
+msgid "Phew! That was fun!"
+msgstr "휴! 즐거운 승부였어!"
+
+msgid "Phone"
+msgstr "전화"
+
+msgid "Pick the wallpaper."
+msgstr "어느 벽지로 하겠습니까?"
+
+msgid "Pika"
+msgstr "번쩍번쩍"
+
+msgid "Pinap Berries"
+msgstr "파인열매"
+
+msgid "Pink"
+msgstr "담홍"
+
+msgid "PkMn Trainer"
+msgstr "포켓몬 트레이너"
+
+msgid "Place"
+msgstr "여기에 둔다"
+
+msgid "Plant Berry"
+msgstr "나무열매를 심는다"
+
+msgid "Play Voltorb Flip Lv. {1}?"
+msgstr "찌리리공 뒤집기 Lv.{1}(으)로\n즐기겠습니까?"
+
+msgid "Play the game in {1}?"
+msgstr "{1}로 플레이하겠습니까?"
+
+msgid "Play the game in..."
+msgstr "플레이할 언어는..."
+
+msgid "Play the game with a custom ruleset for increased difficulty.\nNot recommended for new players."
+msgstr "규칙을 지정하여 게임의 난이도를 높힙니다\n새로 하시는 분에게는 추천드리지 않습니다"
+
+msgid "Player 1 has no unfainted Pokémon"
+msgstr "플레이어 1에게 기절하지 않은 포켓몬이 존재하지 않습니다"
+
+msgid "Player 2 has no unfainted Pokémon"
+msgstr "플레이어 2에게 기절하지 않은 포켓몬이 존재하지 않습니다"
+
+msgid "Player doesn't have two unfainted Pokémon"
+msgstr "플레이어에게 기절하지 않은 포켓몬 2마리가 존재하지 않습니다"
+
+msgid "Player has no unfainted Pokémon"
+msgstr "플레이어에게 기절하지 않은 포켓몬이 존재하지 않습니다"
+
+msgid "Player trainer must be only one person in single battles"
+msgstr "싱글배틀에서 아군 트레이너는 1명뿐이어야 합니다"
+
+msgid "Player trainers with zero or more than two people are not allowed"
+msgstr "아군이 0명이거나 2명보다 많을 수는 없습니다"
+
+msgid "Player's Pokémon\n{1}\n{2}\n{3} ({4})"
+msgstr "당신의 포켓몬\n{1}\n{2}\n{3} ({4})"
+
+msgid "Player<r><c3={1}>{2}</c3><br>"
+msgstr "주인공<r><c3={1}>{2}</c3><br>"
+
+msgid "Please choose the new settings for your Nuzlocke game."
+msgstr "너즐록 모드의 새로운 설정을 골라주세요"
+
+msgid "Please come again!"
+msgstr "또 오세요!"
+
+msgid "Please enter a message (max. 256 characters)."
+msgstr "메시지를 넣어 주십시오 (최대 256자)"
+
+msgid "Please enter a message (max. {1} characters)."
+msgstr "메시지를 넣어 주십시오 (최대 {1}자)"
+
+msgid "Please enter the first Pokémon."
+msgstr "첫 포켓몬을 입력해 주십시오"
+
+msgid "Please enter the search criteria."
+msgstr "조건을 입력해 주십시오"
+
+msgid "Please pick up your gift from the deliveryman in any Poké Mart."
+msgstr "프렌들리숍에서\n배달원에게 받으십시오!"
+
+msgid "Please remove the Mail."
+msgstr "메일을 제거해 주십시오!"
+
+msgid "Please remove the mail."
+msgstr "메일을 제거해 주십시오!"
+
+msgid "Please, run the patcher.exe on your game folder."
+msgstr "게임 폴더의 patcher.exe를 실행해 주십시오"
+
+msgid "Pointed stones dug into {1}!"
+msgstr "{1}에게\n뾰족한 바위가 박혔다!"
+
+msgid "Pointed stones float in the air around your foe's team!"
+msgstr "상대의 주변에\n뾰족한 바위가 떠다니기 시작했다!"
+
+msgid "Pointed stones float in the air around your team!"
+msgstr "우리 편 주변에\n뾰족한 바위가 떠다니기 시작했다!"
+
+msgid "Poison"
+msgstr "독"
+
+msgid "Poison spikes were scattered all around the opposing team's feet!"
+msgstr "상대의 발밑에\n독압정이 뿌려졌다!"
+
+msgid "Poison spikes were scattered all around your team's feet!"
+msgstr "우리 편의 발밑에\n독압정이 뿌려졌다!"
+
+msgid "Pokemon"
+msgstr "포켓몬"
+
+msgid "Pokemon Box data is corrupt and can not be automatically recovered."
+msgstr "포켓몬 박스의 데이터가 손상되었으며 자동으로 복구할 수 없습니다"
+
+msgid "Pokemon Box data was corrupt and has been automatically recovered."
+msgstr "포켓몬 박스의 데이터가 손상되어 자동으로 복구되었습니다"
+
+msgid "Pokemon Wanted Data"
+msgstr "원하는 포켓몬의 정보"
+
+msgid "Pokemon You Want"
+msgstr "원하는 포켓몬"
+
+msgid "Pokemon withdrawn, please be aware that your pokemon may have had been taken by now."
+msgstr "포켓몬을 꺼냈습니다\n맡긴 포켓몬을\n누군가가 데려갈 경우 되돌릴 수 없으니\n다음부터는 신중히 결정해 주십시오"
+
+msgid "Poké Ball"
+msgstr "볼"
+
+msgid "Poké Balls"
+msgstr "볼"
+
+msgid "Poké Center"
+msgstr "포켓센"
+
+msgid "Poké Marts are disabled by your custom game settings!"
+msgstr "설정한 규칙에 따라\n프렌들리숍은 이용할 수 없습니다!"
+
+msgid "Pokédex"
+msgstr "도감"
+
+msgid "Pokédex registration completed."
+msgstr "포켓몬 도감 등록 완료!"
+
+msgid "Pokédex:"
+msgstr "포켓몬 도감:"
+
+msgid "Pokédex<r><c3={1}>{2}/{3}</c3>"
+msgstr "포켓몬 도감<r><c3={1}>{2}/{3}</c3>"
+
+msgid "Pokédex<r>{1}/{2}<br>"
+msgstr "포켓몬 도감<r>{1}/{2}<br>"
+
+msgid "Pokémon"
+msgstr "포켓몬"
+
+msgid "Pokémon Event Participation Ribbon."
+msgstr "포켓몬 이벤트에\n참가한 기념리본"
+
+msgid "Pokémon League Champion Ribbon."
+msgstr "포켓몬리그\n우승 기념리본"
+
+msgid "Pokémon World Championships National Champion Ribbon."
+msgstr "포켓몬 월드 챔피언십\n국내 대회 우승 기념리본"
+
+msgid "Pokémon World Championships Regional Champion Ribbon."
+msgstr "포켓몬 월드 챔피언십\n에리어 대회 우승 기념리본"
+
+msgid "Pokémon World Championships World Champion Ribbon."
+msgstr "포켓몬 월드 챔피언십\n세계 대회 우승 기념리본"
+
+msgid "Pokémon already has mail"
+msgstr "이미 메일을 지니고 있습니다"
+
+msgid "Pokémon can be killed by poison outside of battle as in the first three gens."
+msgstr "포켓몬이 3세대 이전처럼 배틀 밖에서도\n독으로 쓰러질 수 있습니다"
+
+msgid "Pokémon can't be the same."
+msgstr "같은 포켓몬은 쓸 수 없습니다"
+
+msgid "Pokémon of a species you already caught don't count as an encounter if you run."
+msgstr "이미 잡은 포켓몬이면 배틀이 종료되더라도\n마주친 것으로 간주하지 않습니다"
+
+msgid "Pokérus"
+msgstr "포켓러스"
+
+msgid "Pomeg Berries"
+msgstr "유석열매"
+
+msgid "Poof!"
+msgstr "짠!"
+
+msgid "Position {1},{2} is empty..."
+msgstr "박스{1} {2}번이\n비어 있습니다..."
+
+msgid "Position {1},{2} is not empty..."
+msgstr "박스{1} {2}번이\n비어 있지 않습니다..."
+
+msgid "Premier Ribbon"
+msgstr "프리미어리본"
+
+msgid "Press a new key."
+msgstr "새로 배정할 키를 눌러 주십시오"
+
+msgid "Press to use a registered Key Item."
+msgstr "등록해둔 도구를 쓸 수 있습니다"
+
+msgid "Prevents Pokémarts from being used."
+msgstr "프렌들리숍을 이용할 수 없게 합니다"
+
+msgid "Prevents the player from using healing items in battle."
+msgstr "주인공이 배틀 중에 회복용 도구를\n사용할 수 없게 합니다"
+
+msgid "Proceed anyway?"
+msgstr "계속하시겠습니까?"
+
+msgid "Professor Bamb'o"
+msgstr "봉박사"
+
+msgid "Prog--- is ---- --- -- --dename 092. --- ----- --- from radiation-----s biofiber. It ---- -- ---- to reconstru-- --- -- damage-"
+msgstr "-험- 092- --는 ----\n- --- 방사선을 차--- 생물섬유로 -----\n손상-- -- 스스로 재생- - -- ---"
+
+msgid "Pronouns"
+msgstr "성별 호칭"
+
+msgid "Proud of its power."
+msgstr "힘자랑이 특기임."
+
+msgid "Psychic"
+msgstr "에스퍼"
+
+msgid "Purple"
+msgstr "보라"
+
+msgid "Qualot Berries"
+msgstr "파비열매"
+
+msgid "Quick Guard protected your team!"
+msgstr "우리 편 주변을\n패스트가드가 보호하고 있다!"
+
+msgid "Quick Guard protected {1}!"
+msgstr "{1} 주변을\n패스트가드가 보호하고 있다!"
+
+msgid "Quick tempered."
+msgstr "혈기가 왕성함."
+
+msgid "Quick to flee."
+msgstr "도망에는 선수임."
+
+msgid "Quiet"
+msgstr "냉정<c3=5A5252,A5A5AD>한"
+
+msgid "Quirky"
+msgstr "변덕<c3=5A5252,A5A5AD>스러운"
+
+msgid "Quit"
+msgstr "아무것도 아닙니다"
+
+msgid "Quit shopping."
+msgstr "쇼핑을 그만둡니다"
+
+msgid "RENTAL"
+msgstr "렌탈"
+
+msgid "RESULTS<r>{1:d}"
+msgstr "검색 결과<r>{1:d}"
+
+msgid "Rabuta Berries"
+msgstr "라부탐열매"
+
+msgid "Radio"
+msgstr "라디오"
+
+msgid "Rain"
+msgstr "비"
+
+msgid "Rain continues to fall."
+msgstr "비가 계속 내리고 있다"
+
+msgid "Raises trainer's Pokémon levels while keeping the same EXP yields."
+msgstr "EXP 획득량은 유지하면서\n트레이너 포켓몬의 레벨을 높힙니다"
+
+msgid "Randomizer"
+msgstr "랜덤"
+
+msgid "Ranked Battle"
+msgstr "랭크배틀"
+
+msgid "Raptorch is the best pick!\\wtnp[160]"
+msgstr "랩토치가 최고의 파트너가 될 거야!\\wtnp[160]"
+
+msgid "Rash"
+msgstr "덜렁<c3=5A5252,A5A5AD>거리는"
+
+msgid "Rawst Berries"
+msgstr "복분열매"
+
+msgid "Razz Berries"
+msgstr "라즈열매"
+
+msgid "Reached end of file unexpectedly. There were too few entries in the last section, expected {1} entries.\nPlease check the format of the section numbered {2}.\n{3}"
+msgstr "Reached end of file unexpectedly. There were too few entries in the last section, expected {1} entries.\nPlease check the format of the section numbered {2}.\n{3}"
+
+msgid "Read"
+msgstr "메일을 읽는다"
+
+msgid "Received the {1} from {2}."
+msgstr "{2}(으)로부터\n{1}을(를) 가져왔습니다!"
+
+msgid "Record Ribbon"
+msgstr "레코드리본"
+
+msgid "Recording failed: {1}"
+msgstr "녹음 실패: {1}"
+
+msgid "Recording in {1:d} second(s)...\nPress ESC to cancel."
+msgstr "기록까지 {1:d}초\nESC를 눌러 취소"
+
+msgid "Red"
+msgstr "빨강"
+
+msgid "Reflect raised the opposing team's Defense!"
+msgstr "상대는 리플렉터로\n물리공격에 강해졌다!"
+
+msgid "Reflect raised your team's Defense!"
+msgstr "우리 편은 리플렉터로\n물리공격에 강해졌다!"
+
+msgid "Regardless...\\. For a Trainer like you...\\^"
+msgstr "아무래도 좋아...\\. 너같은 트레이너에게는...\\^"
+
+msgid "Regional Champion Ribbon"
+msgstr "에리어챔피언리본"
+
+msgid "Register"
+msgstr "등록"
+
+msgid "Registered {1} in the Poképod."
+msgstr "{1}을(를)\n포켓팟에 등록했습니다"
+
+msgid "Registered<br>"
+msgstr "등록된 수<br>"
+
+msgid "Regular Mode"
+msgstr "일반"
+
+msgid "Relax Ribbon"
+msgstr "상쾌리본"
+
+msgid "Relaxed"
+msgstr "무사태평<c3=5A5252,A5A5AD>한"
+
+msgid "Release"
+msgstr "놓아준다"
+
+msgid "Release All"
+msgstr "모두 놓아준다"
+
+msgid "Release this Pokémon?"
+msgstr "정말 놓아주겠습니까?"
+
+msgid "Remap controls to any other keys."
+msgstr "조작 방법을 다른 키로\n재배치할 수 있습니다"
+
+msgid "Remember Save"
+msgstr "리포트 기억"
+
+msgid "Remove Friend"
+msgstr "친구를 삭제한다"
+
+msgid "Removes some details to improve performance, specially in battle."
+msgstr "디테일을 줄여서 성능을\n향상시킬 수 있습니다 (특히 배틀에서)"
+
+msgid "Repel isn't working in this location!"
+msgstr "이곳에서는 스프레이가 듣지 않습니다!"
+
+msgid "Repel's effect wore off..."
+msgstr "스프레이의 효과가 사라졌다"
+
+msgid "Report #01"
+msgstr "보고서 #01"
+
+msgid "Report #01:"
+msgstr "보고서 #01"
+
+msgid "Report #02"
+msgstr "보고서 #02"
+
+msgid "Report #02:"
+msgstr "보고서 #02"
+
+msgid "Report #03"
+msgstr "보고서 #03"
+
+msgid "Report #03:"
+msgstr "보고서 #03"
+
+msgid "Report #04"
+msgstr "보고서 #04"
+
+msgid "Report #04:"
+msgstr "보고서 #04"
+
+msgid "Report #05"
+msgstr "보고서 #05"
+
+msgid "Report #05:"
+msgstr "보고서 #05"
+
+msgid "Required value '{1}' not given in section '{2}'\n{3}"
+msgstr "Required value '{1}' not given in section '{2}'\n{3}"
+
+msgid "Restore which move?"
+msgstr "어느 기술을 회복하겠습니까?"
+
+msgid "Retro"
+msgstr "레트로"
+
+msgid "Return To Game"
+msgstr "게임으로 돌아간다"
+
+msgid "Return To Menu"
+msgstr "메뉴로 돌아간다"
+
+msgid "Return to game mode selection menu?"
+msgstr "게임 모드 선택으로 돌아갈까요?"
+
+msgid "Return to previous menu."
+msgstr "이전 메뉴로 돌아갑니다"
+
+msgid "Return to the previous menu."
+msgstr "포켓몬 보관 시스템과의\n통신을 종료합니다"
+
+msgid "Ribbon awarded for beating the Sinnoh Champion and entering the Hall of Fame."
+msgstr "신오에서 챔피언에게 이겨서\n전당등록한 기념리본"
+
+msgid "Ribbon awarded for being an exceptionally hard worker."
+msgstr "많이 노력하고 있는\n포켓몬에게 수여되는 리본"
+
+msgid "Ribbon awarded for being chosen as a super sketch model in Hoenn."
+msgstr "호연에서 호화로운 초상화의\n모델이 된 기념리본"
+
+msgid "Ribbon awarded for clearing Hoenn's Battle Tower's Lv. 100 challenge."
+msgstr "호연의 배틀타워 레벨 100에서\n연승한 기념리본"
+
+msgid "Ribbon awarded for clearing Hoenn's Battle Tower's Lv. 50 challenge."
+msgstr "호연의 배틀타워 레벨 50에서\n연승한 기념리본"
+
+msgid "Ribbon for clearing the Pokémon League and entering the Hall of Fame in another region."
+msgstr "다른 지방 리그에서 이겨서\n전당등록한 기념리본"
+
+msgid "Ribbons"
+msgstr "리본"
+
+msgid "Right"
+msgstr "오른쪽"
+
+msgid "Rindo Berries"
+msgstr "린드열매"
+
+msgid "River"
+msgstr "강"
+
+msgid "Rock"
+msgstr "바위"
+
+msgid "Rocket"
+msgstr "로켓단"
+
+msgid "Rowap Berries"
+msgstr "애터열매"
+
+msgid "Royal Ribbon"
+msgstr "로열리본"
+
+msgid "Run"
+msgstr "도망간다"
+
+msgid "S: Go to another map"
+msgstr "S: Go to another map\n"
+
+msgid "SAVE"
+msgstr "리포트"
+
+msgid "SE Volume"
+msgstr "음향 효과 음량"
+
+msgid "SECOND"
+msgstr "두 번째"
+
+msgid "SEE YA!"
+msgstr "종료"
+
+msgid "SEEN<r>{1:d}"
+msgstr "발견한 수<r>{1:d}"
+
+msgid "SHINY SEEN"
+msgstr "색이 다른 모습"
+
+msgid "SIXTH"
+msgstr "여섯 번째"
+
+msgid "SPECIAL ATTACK"
+msgstr "필살기를 쓴다"
+
+msgid "STANDARD Cup"
+msgstr "스탠더드 컵"
+
+msgid "START"
+msgstr "시작"
+
+msgid "STOCK POKéMON:\n{1} Lv{2} MaxHP: {3}\nTHIS POKéMON:\n{4} Lv{5} MaxHP: {6}"
+msgstr "STOCK POKéMON:\n {1} Lv{2} MaxHP: {3}\nTHIS POKéMON:\n {4} Lv{5} MaxHP: {6}"
+
+msgid "SUMMARY"
+msgstr "상태를 본다"
+
+msgid "Safari Balls"
+msgstr "사파리볼"
+
+msgid "Safari Balls: {1}"
+msgstr "사파리볼:    {1}"
+
+msgid "Salac Berries"
+msgstr "캄라열매"
+
+msgid "Sandstorm"
+msgstr "모래바람"
+
+msgid "Sassy"
+msgstr "건방<c3=5A5252,A5A5AD>진"
+
+msgid "Saturday"
+msgstr "토요일"
+
+msgid "Savanna"
+msgstr "사바나"
+
+msgid "Save changes?"
+msgstr "변경 사항을 저장할까요?"
+
+msgid "Save files from BETA 4.3 and earlier are no longer compatible with Uranium 1.0."
+msgstr "베타 버전 4.3 또는 그 이전의 리포트는 더 이상 호환되지 않습니다"
+
+msgid "Scatters things often."
+msgstr "물건을 잘 어지름."
+
+msgid "Score: {1}\nHits: {2}/{3}"
+msgstr "점수: {1} \n때린 횟수: {2}/{3}"
+
+msgid "Screen Size"
+msgstr "화면 크기"
+
+msgid "Seafloor"
+msgstr "해저"
+
+msgid "Search"
+msgstr "검색"
+
+msgid "Search ID"
+msgstr "ID로 찾는다"
+
+msgid "Search Match"
+msgstr "상대를 찾는다"
+
+msgid "Search Mode"
+msgstr "검색 모드"
+
+msgid "Search Name"
+msgstr "이름으로 찾는다"
+
+msgid "Search with these Conditions!"
+msgstr "이 조건으로 찾는다!"
+
+msgid "Searching for a gift.\nPlease wait...\\wtnp[0]"
+msgstr "소포를 찾고 있습니다\n잠시 기다려 주십시오...\\wtnp[0]"
+
+msgid "Searching for online gifts...\\wtnp[0]"
+msgstr "온라인에서 소포를 찾고 있습니다...\\wtnp[0]"
+
+msgid "Second move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Second move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "See ya!"
+msgstr "종료"
+
+msgid "Select"
+msgstr "선택한다"
+
+msgid "Select Level (Max 20)"
+msgstr "레벨을 선택하십시오 (최대 20)"
+
+msgid "Select Search Method"
+msgstr "검색 방법 선택"
+
+msgid "Select a Species"
+msgstr "종족을 선택해 주십시오"
+
+msgid "Select the friend Online ID you want to add."
+msgstr "추가하고 싶은 친구의\n온라인 ID를 선택해 주십시오"
+
+msgid "Select the online ID."
+msgstr "온라인 ID을 선택해 주십시오"
+
+msgid "Sell"
+msgstr "팔러 왔다"
+
+msgid "Send the removed mail to your PC?"
+msgstr "받은 메일을 PC로\n전송하겠습니까?"
+
+msgid "Sep."
+msgstr "9월"
+
+msgid "September"
+msgstr "9월"
+
+msgid "Serious"
+msgstr "성실<c3=5A5252,A5A5AD>한"
+
+msgid "Set"
+msgstr "토너먼트"
+
+msgid "Set Controls"
+msgstr "조작법을 변경한다"
+
+msgid "Set how often the game will autosave in minutes."
+msgstr "자동 리포트를 몇 분마다\n작성할지 조절할 수 있습니다"
+
+msgid "Set the Maximum wanted level."
+msgstr "원하는 레벨의\n최댓값을 설정해 주십시오"
+
+msgid "Set the Minimum wanted level."
+msgstr "원하는 레벨의\n최솟값을 설정해 주십시오"
+
+msgid "Set the level for {1}."
+msgstr "{1}의 레벨을 정해주세요"
+
+msgid "Set the name for this point."
+msgstr "이 지점의 이름을 정해 주십시오"
+
+msgid "Shade"
+msgstr "그림자"
+
+msgid "Shift"
+msgstr "교체"
+
+msgid "Shininess"
+msgstr "특별한 색"
+
+msgid "Shiny Clause"
+msgstr "특별한 색 변칙"
+
+msgid "Shock Ribbon"
+msgstr "철렁리본"
+
+msgid "Shoot! It was so close, too!"
+msgstr "아깝다!\n조금만 더하면 됐는데!"
+
+msgid "Short to Tall"
+msgstr "작은 순서"
+
+msgid "Should {1} stop learning {2}?"
+msgstr "그럼... {2}을(를)\n배우는 것을 포기하겠습니까?"
+
+msgid "Shuca Berries"
+msgstr "슈캐열매"
+
+msgid "Simple"
+msgstr "심플"
+
+msgid "Simply stunning!"
+msgstr "놀라움 그 자체야!"
+
+msgid "Simulating battles ({1} of {2})"
+msgstr "배틀 시뮬레이션 중 ({1}/{2})"
+
+msgid "Single Battle (lv50)"
+msgstr "싱글배틀 (Lv.50)"
+
+msgid "Sinnoh Champ Ribbon"
+msgstr "신오챔피언리본"
+
+msgid "Sitrus Berries"
+msgstr "자뭉열매"
+
+msgid "Skip intro?"
+msgstr "오프닝을 스킵할까요?"
+
+msgid "Sky"
+msgstr "하늘"
+
+msgid "Slot Machine/bg"
+msgstr "../Translations/Korean/bg_korean"
+
+msgid "Slow"
+msgstr "느리게"
+
+msgid "Smart Ribbon"
+msgstr "지니어스리본"
+
+msgid "Smart Ribbon Great"
+msgstr "지니어스리본그레이트"
+
+msgid "Smart Ribbon Hyper"
+msgstr "지니어스리본하이퍼"
+
+msgid "Smart Ribbon Master"
+msgstr "지니어스리본마스터"
+
+msgid "Smart Ribbon Super"
+msgstr "지니어스리본슈퍼"
+
+msgid "Smart Ribbon Ultra"
+msgstr "지니어스리본울트라"
+
+msgid "Smile Ribbon"
+msgstr "방글방글리본"
+
+msgid "Snooze Ribbon"
+msgstr "잠보리본"
+
+msgid "Snow"
+msgstr "설산"
+
+msgid "Some of the fonts were successfully installed."
+msgstr "사용되는 글꼴 중 일부가\n성공적으로 설치되었습니다"
+
+msgid "Someone's PC"
+msgstr "누군가의 PC"
+
+msgid "Somewhat of a clown."
+msgstr "약간 우쭐쟁이임."
+
+msgid "Somewhat stubborn."
+msgstr "조금 고집통이임."
+
+msgid "Somewhat vain."
+msgstr "조금 겉치레를 좋아함."
+
+msgid "Sorry, a new Badge is required."
+msgstr "새로운 배지를 얻을 때까지\n아직 쓸 수 없습니다"
+
+msgid "Sorry, but the trainer file could not be created.\nThis may be because you have a banned pokemon or an egg in your party.\n Banned Pokemon Are: {1}."
+msgstr "죄송합니다\n트레이너 파일을 만들지 못했습니다\n밴이 걸린 포켓몬이나 알을\n지니고 있어서일지도 모릅니다\n밴이 걸린 포켓몬은 다음과 같습니다\n\"{1}\""
+
+msgid "Sorry, but you're stuck with this one."
+msgstr "지금은 체크할 수 없습니다"
+
+msgid "Sounds can be heard coming from inside! It will hatch soon!"
+msgstr "안에서 소리가\n들려온다!\n이제 곧 태어날 것 같아!"
+
+msgid "South side of first map must connect with north side of second map\n{1}"
+msgstr "South side of first map must connect with north side of second map\n{1}"
+
+msgid "Souvenir Ribbon"
+msgstr "메모리얼리본"
+
+msgid "Sp. Atk."
+msgstr "특수공격"
+
+msgid "Sp. Def"
+msgstr "특수방어"
+
+msgid "Special Attack"
+msgstr "특수공격"
+
+msgid "Special Defense"
+msgstr "특수방어"
+
+msgid "Special Holiday Ribbon."
+msgstr "기념일 기념리본"
+
+msgid "Special Ribbon"
+msgstr "스페셜리본"
+
+msgid "Species"
+msgstr "종족"
+
+msgid "Specifies the underwater layer of this map. Use only if this map has deep water."
+msgstr "Specifies the underwater layer of this map.  Use only if this map has deep water."
+
+msgid "Speed"
+msgstr "스피드"
+
+msgid "Spelon Berries"
+msgstr "메호키열매"
+
+msgid "Spikes were scattered all around the feet of the opposing team!"
+msgstr "상대의 발밑에\n압정이 뿌려졌다!"
+
+msgid "Spikes were scattered all around the feet of your team!"
+msgstr "우리 편의 발밑에\n압정이 뿌려졌다!"
+
+msgid "Splendid!\nYou battle with great finesse and expertise.\nLet us tango together again sometime!"
+msgstr "훌륭해!\n노련하고도 능숙한 배틀을 보여줬다\n언젠가 다시 한번 탱고의 무대를 펼치자!"
+
+msgid "Spring"
+msgstr "봄"
+
+msgid "Starf Berries"
+msgstr "스타열매"
+
+msgid "Start Game"
+msgstr "게임 시작"
+
+msgid "Status moves must have a base damage of 0, use either Physical or Special\n{1}"
+msgstr "Status moves must have a base damage of 0, use either Physical or Special\n{1}"
+
+msgid "Steel"
+msgstr "강철"
+
+msgid "Stop giving the Pokémon Mail?"
+msgstr "메일을 지니게 하지 않겠습니까?"
+
+msgid "Stop looking for a pokemon?"
+msgstr "그만 찾아보시겠습니까?"
+
+msgid "Store"
+msgstr "맡긴다"
+
+msgid "Store Pokémon in your party in Boxes."
+msgstr "지닌 포켓몬을\n박스에 맡길 수 있습니다"
+
+msgid "Store items in the PC."
+msgstr "PC에 도구를 보관합니다"
+
+msgid "Strength is already being used."
+msgstr "괴력이 이미 발동되어 있습니다"
+
+msgid "Strength made it possible to move boulders around."
+msgstr "괴력 덕분에\n바위를 밀어 움직일 수 있다!"
+
+msgid "Strong willed."
+msgstr "기가 센 성격임."
+
+msgid "Strongly defiant."
+msgstr "오기가 센 성격임."
+
+msgid "Sturdy body."
+msgstr "몸이 튼튼함."
+
+msgid "Summary"
+msgstr "능력치를 본다"
+
+msgid "Summer"
+msgstr "여름"
+
+msgid "Sunday"
+msgstr "일요일"
+
+msgid "Sunny"
+msgstr "쾌청"
+
+msgid "Super Contest Beauty Category Great Rank winner!"
+msgstr "슈퍼콘테스트 아름다움 부문\n그레이트랭크 우승!"
+
+msgid "Super Contest Beauty Category Master Rank winner!"
+msgstr "슈퍼콘테스트 아름다움 부문\n마스터랭크 우승!"
+
+msgid "Super Contest Beauty Category Normal Rank winner!"
+msgstr "슈퍼콘테스트 아름다움 부문\n노말랭크 우승!"
+
+msgid "Super Contest Beauty Category Ultra Rank winner!"
+msgstr "슈퍼콘테스트 아름다움 부문\n울트라랭크 우승!"
+
+msgid "Super Contest Cool Category Great Rank winner!"
+msgstr "슈퍼콘테스트 근사함 부문\n그레이트랭크 우승!"
+
+msgid "Super Contest Cool Category Master Rank winner!"
+msgstr "슈퍼콘테스트 근사함 부문\n마스터랭크 우승!"
+
+msgid "Super Contest Cool Category Normal Rank winner!"
+msgstr "슈퍼콘테스트 근사함 부문\n노말랭크 우승!"
+
+msgid "Super Contest Cool Category Ultra Rank winner!"
+msgstr "슈퍼콘테스트 근사함 부문\n울트라랭크 우승!"
+
+msgid "Super Contest Cute Category Great Rank winner!"
+msgstr "슈퍼콘테스트 귀여움 부문\n그레이트랭크 우승!"
+
+msgid "Super Contest Cute Category Master Rank winner!"
+msgstr "슈퍼콘테스트 귀여움 부문\n마스터랭크 우승!"
+
+msgid "Super Contest Cute Category Normal Rank winner!"
+msgstr "슈퍼콘테스트 귀여움 부문\n노말랭크 우승!"
+
+msgid "Super Contest Cute Category Ultra Rank winner!"
+msgstr "슈퍼콘테스트 귀여움 부문\n울트라랭크 우승!"
+
+msgid "Super Contest Smart Category Great Rank winner!"
+msgstr "슈퍼콘테스트 슬기로움 부문\n그레이트랭크 우승!"
+
+msgid "Super Contest Smart Category Master Rank winner!"
+msgstr "슈퍼콘테스트 슬기로움 부문\n마스터랭크 우승!"
+
+msgid "Super Contest Smart Category Normal Rank winner!"
+msgstr "슈퍼콘테스트 슬기로움 부문\n노말랭크 우승!"
+
+msgid "Super Contest Smart Category Ultra Rank winner!"
+msgstr "슈퍼콘테스트 슬기로움 부문\n울트라랭크 우승!"
+
+msgid "Super Contest Tough Category Great Rank winner!"
+msgstr "슈퍼콘테스트 강인함 부문\n그레이트랭크 우승!"
+
+msgid "Super Contest Tough Category Master Rank winner!"
+msgstr "슈퍼콘테스트 강인함 부문\n마스터랭크 우승!"
+
+msgid "Super Contest Tough Category Normal Rank winner!"
+msgstr "슈퍼콘테스트 강인함 부문\n노말랭크 우승!"
+
+msgid "Super Contest Tough Category Ultra Rank winner!"
+msgstr "슈퍼콘테스트 강인함 부문\n울트라랭크 우승!"
+
+msgid "Switch"
+msgstr "교체한다"
+
+msgid "Switch In"
+msgstr "교체한다"
+
+msgid "Switched the Experience Share {1}."
+msgstr "학습장치를 {1}습니다"
+
+msgid "THIRD"
+msgstr "세 번째"
+
+msgid "TIME:"
+msgstr "플레이 시간"
+
+msgid "TMs & HMs"
+msgstr "기술머신"
+
+msgid "TYPE"
+msgstr "타입"
+
+msgid "Take"
+msgstr "가져온다"
+
+msgid "Take good care of {1}."
+msgstr "{1}을(를)\n귀여워해 주세요"
+
+msgid "Take out items from the PC."
+msgstr "PC에서 도구를 꺼냅니다"
+
+msgid "Take this {1}?"
+msgstr "{1}을(를)\n가져오겠습니까?"
+
+msgid "Tall to Short"
+msgstr "큰 순서"
+
+msgid "Tamato Berries"
+msgstr "토망열매"
+
+msgid "Tandor Pokédex"
+msgstr "탄도르도감"
+
+msgid "Tanga Berries"
+msgstr "리체열매"
+
+msgid "Teach which Pokémon?"
+msgstr "어느 포켓몬에게 가르칠까?"
+
+msgid "Teach which move to {1}?"
+msgstr "{1}에게\n어느 기술을 배우게 하겠습니까?"
+
+msgid "Teach {1} to a Pokémon?"
+msgstr "{1}을(를)\n포켓몬에게 배우게 하겠습니까?"
+
+msgid "Teach {1} to {2}?"
+msgstr "{1}을(를)\n{2}에게 배우게 하겠습니까?"
+
+msgid "Teach {1}?"
+msgstr "{1}을(를)\n배우게 하겠습니까?"
+
+msgid "Team level: {1}"
+msgstr "팀 레벨: {1}"
+
+msgid "Test Vibration"
+msgstr "진동 테스트"
+
+msgid "Test if controller vibration is working."
+msgstr "컨트롤러의 진동이\n작동하는지 테스트합니다"
+
+msgid "Text Speed"
+msgstr "이야기의 속도"
+
+msgid "Th- MRI ------ anomalous brainwave ------ns. --- specim-n ----- -- inca----e -- indep---ent thoug--. We --- ---ing -- - suppress---."
+msgstr "MRI- 비정상적- 뇌파 --- ----\n표-은 독--인 생-을 - - --- ---...\n억제-를 --하고 있-"
+
+msgid "That won't fertilize the soil!"
+msgstr "그것은 비료로 사용할 수 없다!"
+
+msgid "That's not Mulch."
+msgstr "이건 비료가 아니다"
+
+msgid "That's not a Berry."
+msgstr "이건 나무열매가 아니다"
+
+msgid "That's too important to toss out!"
+msgstr "중요한 물건이므로\n버릴 수 없습니다!"
+
+msgid "That's your last Pokémon!"
+msgstr "싸울 포켓몬이 없어집니다!"
+
+msgid "The Bag is full."
+msgstr "가방이 가득 찼습니다!"
+
+msgid "The Bag is full. The Pokémon's item could not be removed."
+msgstr "가방이 가득 차서\n도구를 받을 수 없습니다!"
+
+msgid "The Box is full."
+msgstr "이 박스는 가득 찼습니다!"
+
+msgid "The Fire-type attack fizzled out in the heavy rain!"
+msgstr "강한 비의 영향으로\n불꽃타입의 공격이 사라졌다!"
+
+msgid "The Hall Of Fame!"
+msgstr "전당등록을 축하합니다!"
+
+msgid "The Happy Hour started!"
+msgstr "해피타임이 시작되었다!"
+
+msgid "The Ion Deluge started!"
+msgstr "플라스마샤워가 내리기 시작했다!"
+
+msgid "The Mail was returned to the Bag with its message erased."
+msgstr "내용을 지운 메일을\n가방에 집어넣었습니다"
+
+msgid "The Pokémon Boxes are full and can't accept any more!"
+msgstr "포켓몬 박스가 가득 차서\n더 이상 넣을 수 없습니다!"
+
+msgid "The Pokémon got away..."
+msgstr "도망가버렸다..."
+
+msgid "The Power Glove made it possible to move boulders around!"
+msgstr "파워글러브 덕분에\n바위를 밀어 움직일 수 있다!"
+
+msgid "The Tailwind blew from behind the opposing team!"
+msgstr "상대에게\n순풍이 불기 시작했다!"
+
+msgid "The Tailwind blew from behind your team!"
+msgstr "우리 편에게\n순풍이 불기 시작했다!"
+
+msgid "The Trainer blocked the Ball!\nDon't be a thief!"
+msgstr "트레이너가 볼을 튕겨내 버렸다!\n남의 것에 손대면 도둑!"
+
+msgid "The Trainer is close by.\nTalk to the Trainer in person!"
+msgstr "트레이너가 근처에 있습니다\n만나서 대화합시다!"
+
+msgid "The Trainer is out of range."
+msgstr "트레이너가 너무 멀리 있습니다"
+
+msgid "The Water-type attack evaporated in the harsh sunlight!"
+msgstr "강한 햇살의 영향으로\n물타입의 공격이 증발했다!"
+
+msgid "The Weakness Policy raised {1}'s Attack!"
+msgstr "약점보험 때문에\n{1}의 공격이 올랐다!"
+
+msgid "The Weakness Policy raised {1}'s Special Attack!"
+msgstr "약점보험 때문에\n{1}의 특수공격이 올랐다!"
+
+msgid "The air is clean again."
+msgstr "공기가 맑아졌다!"
+
+msgid "The air is filled with toxicity."
+msgstr "방사능 낙진이 흩날리고 있다"
+
+msgid "The ally {1}"
+msgstr "우리 편 {1}"
+
+msgid "The animation file {1} was not found. The animation will load anyway."
+msgstr "The animation file {1} was not found.  The animation will load anyway."
+
+msgid "The battery has run dry!\nFor it to recharge, you need to walk another {1} steps."
+msgstr "배터리가 부족해!\n충전 완료까지 앞으로 {1}보"
+
+msgid "The battle will continue until either side has no Pokémon left that can fight."
+msgstr "둘째, 양쪽 모두 싸울 포켓몬이\n남지 않을 때까지 배틀을 계속할 것"
+
+msgid "The battlers shared their pain!"
+msgstr "서로의 체력을 나누어 가졌다!"
+
+msgid "The boxes are full! You can't catch any more Pokémon!"
+msgstr "박스가 가득 찼습니다!\n포켓몬을 더 이상 잡을 수 없습니다!"
+
+msgid "The bursting flame hit the opposing {2}!"
+msgstr "상대 {1}에게도\n불티가 튀었다!"
+
+msgid "The bursting flame hit {2}!"
+msgstr "{1}에게도\n불티가 튀었다!"
+
+msgid "The combined levels exceed {1:d}."
+msgstr "레벨의 총합이\n{1:d}을(를) 넘습니다"
+
+msgid "The current map has no region set. Please set the MapPosition metadata setting for this map."
+msgstr "현재 지도의 지방이 설정되지 않았습니다\nMapPosition 메타데이터를 설정해 주십시오"
+
+msgid "The darkness of caves is my home. My Pokémon team knows no fear!"
+msgstr "동굴의 어둠은 나의 고향\n나의 포켓몬 군단에게 두려움은 없다!"
+
+msgid "The effects of Mud Sport have faded."
+msgstr "흙놀이의 효과가\n없어졌다!"
+
+msgid "The effects of Water Sport have faded."
+msgstr "물놀이의 효과가\n없어졌다!"
+
+msgid "The effects of the weather disappeared!"
+msgstr "날씨의 영향이 없어졌다!"
+
+msgid "The effects of the {1} prevent status moves from being used!"
+msgstr "{1}의 효과로\n변화 기술을 쓸 수 없다!"
+
+msgid "The electricity disappeared from the battlefield."
+msgstr "발밑의 전기가 사라졌다!"
+
+msgid "The foe {1}"
+msgstr "상대 {1}"
+
+msgid "The fonts were successfully installed."
+msgstr "글꼴이 성공적으로 설치되었습니다"
+
+msgid "The future is a blank slate.\\. You, together with your Pokémon, are going to fill it. There will be challenges and thrills, and you're bound to make exciting discoveries."
+msgstr "너의 미래는 아직 빈 페이지로 가득하지만 너와 네 포켓몬이 함께 채워나가게 되겠지\n그 길에는 많은 어려움과 설렘\n그리고 흥미로운 발견이 기다리고 있다"
+
+msgid "The game can be played, but the look of the game's text will not be optimal."
+msgstr "플레이는 가능하지만 메시지가\n어색하게 보일 수 있습니다"
+
+msgid "The game cannot continue."
+msgstr "모험을 계속할 수 없습니다"
+
+msgid "The game has detected that the battery is low. You should save soon to avoid losing your progress."
+msgstr "배터리가 얼마 남지 않은 것 같습니다\n진행 상황이 사라지지 않도록\n서둘러 리포트를 작성해 주세요"
+
+msgid "The gift has been received!"
+msgstr "소포를 받았습니다!"
+
+msgid "The gifts were saved to MysteryGift.txt."
+msgstr "소포를 MysteryGift.txt에 저장했습니다"
+
+msgid "The grass disappeared from the battlefield."
+msgstr "발밑의 풀이 사라졌다!"
+
+msgid "The grassy patch remained quiet..."
+msgstr "풀숲은 조용했다..."
+
+msgid "The hail stopped."
+msgstr "싸라기눈이 그쳤다!"
+
+msgid "The healing wish came true for {1}!"
+msgstr "치유소원이\n{1}에게 전해졌다!"
+
+msgid "The item number is invalid."
+msgstr "도구 번호가 유효하지 않습니다"
+
+msgid "The level number ({1}) is invalid."
+msgstr "레벨 번호({1})이(가) 유효하지 않습니다"
+
+msgid "The mail was sent to your PC."
+msgstr "받은 메일을 PC에\n전송하였습니다"
+
+msgid "The map data cannot be found."
+msgstr "지도 데이터를 찾을 수 없습니다"
+
+msgid "The map is corrupt. The game cannot continue."
+msgstr "맵이 손상되어 모험을 계속할 수 없습니다"
+
+msgid "The map was not found. The game cannot continue."
+msgstr "맵을 찾을 수 없어 모험을 계속할 수 없습니다"
+
+msgid "The message will be lost. Is that OK?"
+msgstr "내용은 지워져 버립니다\n괜찮겠습니까?"
+
+msgid "The mirror move failed!"
+msgstr "그러나 따라하기는\n실패로 끝났다!"
+
+msgid "The mist disappeared from the battlefield."
+msgstr "발밑의 안개가 사라졌다!"
+
+msgid "The new level ({1}) is less than the Pokémon's\ncurrent level ({2}), which shouldn't happen.\n[Debug: {3}]"
+msgstr "새 레벨({1})이 포켓몬의 현재 레벨({2})보다 높습니다\n그런 일은 있을 수 없습니다\n[Debug: {3}]"
+
+msgid "The opponents don't have any eligible pokemon for a sky battle"
+msgstr "상대가 스카이배틀이 가능한 포켓몬을 가지고 있지 않습니다"
+
+msgid "The opposing team became cloaked in a mystical veil!"
+msgstr "상대 편은\n신비의 베일에 둘러싸였다!"
+
+msgid "The opposing team became shrouded in mist!"
+msgstr "상대 편은\n흰안개에 둘러싸였다!"
+
+msgid "The opposing team is no longer protected by Safeguard!"
+msgstr "상대 편을 감싸던\n신비의 베일이 없어졌다!"
+
+msgid "The opposing team is no longer protected by mist!"
+msgstr "상대를 감싸던\n흰안개가 없어졌다!"
+
+msgid "The opposing team is too nervous to eat Berries!"
+msgstr "상대는 긴장해서\n나무열매를 먹을 수 없게 되었다!"
+
+msgid "The opposing team's Light Screen faded!"
+msgstr "상대의 빛의장막이\n없어졌다!"
+
+msgid "The opposing team's Light Screen wore off!"
+msgstr "상대의 빛의장막이\n없어졌다!"
+
+msgid "The opposing team's Lucky Chant wore off!"
+msgstr "상대의 주술이 풀렸다!"
+
+msgid "The opposing team's Mist faded!"
+msgstr "상대를 감싸던\n흰안개가 없어졌다!"
+
+msgid "The opposing team's Reflect faded!"
+msgstr "상대의 리플렉터가\n없어졌다!"
+
+msgid "The opposing team's Reflect wore off!"
+msgstr "상대의 리플렉터가\n없어졌다!"
+
+msgid "The opposing team's Tailwind petered out!"
+msgstr "상대의\n순풍이 멈췄다!"
+
+msgid "The opposing {1}"
+msgstr "상대 {1}"
+
+msgid "The options you unchecked can't be turned back on."
+msgstr "해제한 옵션은 다시 켤 수 없습니다"
+
+msgid "The phone is not working."
+msgstr "전화가 작동하지 않습니다!"
+
+msgid "The plant seemed to be delighted."
+msgstr "식물은\n매우 기뻐하는 듯하다!"
+
+msgid "The player is not on a map, so the region could not be determined."
+msgstr "주인공이 지도 밖에 있어\n지방을 특정할 수 없습니다"
+
+msgid "The pointed stones disappeared from around the opposing team!"
+msgstr "상대 주변의\n스텔스록이 사라졌다!"
+
+msgid "The pointed stones disappeared from around your team!"
+msgstr "우리 편 주변의\n스텔스록이 사라졌다!"
+
+msgid "The poisoned spikes disappeared from around the opposing team's feet!"
+msgstr "상대 발밑의\n독압정이 사라졌다!"
+
+msgid "The poisoned spikes disappeared from around the your team's feet!"
+msgstr "우리 편 발밑의\n독압정이 사라졌다!"
+
+msgid "The poisoned spikes disappeared from around your team's feet!"
+msgstr "우리 편 발밑의\n독압정이 사라졌다!"
+
+msgid "The poisoned spikes disappeared from around {1}'s feet!"
+msgstr "{1} 발밑의\n독압정이 사라졌다!"
+
+msgid "The power of {1}'s Fire-type moves rose!"
+msgstr "{1}은(는)\n불꽃의 위력이 올라갔다!"
+
+msgid "The rain stopped."
+msgstr "비가 그쳤다!"
+
+msgid "The recorded data could not be found or saved."
+msgstr "기록된 데이터를\n찾거나 저장할 수 없습니다"
+
+msgid "The recorded data was in an invalid format."
+msgstr "기록된 데이터가\n잘못된 포맷으로 되어 있습니다"
+
+msgid "The recorded data's format is not supported."
+msgstr "기록된 데이터가\n지원하지 않는 포맷으로 되어 있습니다"
+
+msgid "The rules of battle will be as follows:"
+msgstr "배틀은 두 가지 규칙으로 진행됩니다"
+
+msgid "The sandstorm rages."
+msgstr "모래바람이 세차게 분다"
+
+msgid "The sandstorm subsided."
+msgstr "모래바람이 가라앉았다!"
+
+msgid "The save file was deleted."
+msgstr "리포트가 삭제되었습니다"
+
+msgid "The saying \"the best defense is a good offense\" is probably your mantra.\\^"
+msgstr "\"공격은 최선의 방어\"라는 것을\n신조로 삼고 있을지도 몰라\\^"
+
+msgid "The sea is deep here. A Pokémon may be able to go underwater."
+msgstr "깊은 바다다!\n포켓몬 기술로 잠수할 수 있을지도?"
+
+msgid "The sea is deep here. Would you like to go underwater?"
+msgstr "깊은 바다다!\n다이빙을 하겠습니까?"
+
+msgid "The settings file is corrupt and could not be loaded.\nSettings have been reset to default."
+msgstr "설정 파일이 손상되어 불러오지 못했습니다\n설정을 기본값으로 초기화했습니다"
+
+msgid "The soil returned to its soft and earthy state."
+msgstr "푹신푹신한 흙으로 되돌아갔다"
+
+msgid "The soil returned to its soft and loamy state."
+msgstr "푹신푹신한 흙으로 되돌아갔다"
+
+msgid "The species number (no. {1} of {2}) is invalid."
+msgstr "종족값({2} 중 {1}번)이(가) 유효하지 않습니다"
+
+msgid "The spikes disappeared from around the opposing team's feet!"
+msgstr "상대 편의\n압정이 사라졌다!"
+
+msgid "The spikes disappeared from around your team's feet!"
+msgstr "우리 편의\n압정이 사라졌다!"
+
+msgid "The stickiness disappeared from the battlefield."
+msgstr "발밑의 점액이 사라졌다!"
+
+msgid "The sticky web has disappeared from beneath the opposing team's feet!"
+msgstr "상대 발밑의\n끈적끈적네트가 사라졌다!"
+
+msgid "The sticky web has disappeared from beneath your team's feet!"
+msgstr "우리 편 발밑의\n끈적끈적네트가 사라졌다!"
+
+msgid "The substitute took damage for {1}!"
+msgstr "{1}을(를) 대신하여\n대타가 공격을 받았다!"
+
+msgid "The sunlight faded."
+msgstr "햇살이 원래대로 되돌아왔다!"
+
+msgid "The sunlight is strong."
+msgstr "햇살이 강하다"
+
+msgid "The sunlight turned extremely harsh!"
+msgstr "햇살이 아주 강해졌다!"
+
+msgid "The sunlight turned harsh!"
+msgstr "햇살이 강해졌다!"
+
+msgid "The thunderstorm rages."
+msgstr "번개폭풍이 거칠다"
+
+msgid "The thunderstorm subsided."
+msgstr "번개폭풍이 잠잠해졌다!"
+
+msgid "The twisted dimensions returned to normal!"
+msgstr "뒤틀린 시공이 원래대로 되돌아왔다!"
+
+msgid "The value \"{1}\" must be from -128 through 127, got a value of {2}\n{3}"
+msgstr "The value \"{1}\" must be from -128 through 127, got a value of {2}\n{3}"
+
+msgid "The value \"{1}\" must be from -32768 through 32767, got a value of {2}\n{3}"
+msgstr "The value \"{1}\" must be from -32768 through 32767, got a value of {2}\n{3}"
+
+msgid "The value \"{1}\" must be from 0 through 255 (0x00-0xFF in hex), got a value of {2}\n{3}"
+msgstr "The value \"{1}\" must be from 0 through 255 (0x00-0xFF in hex), got a value of {2}\n{3}"
+
+msgid "The value \"{1}\" must be from 0 through 65535 (0x0000-0xFFFF in hex), got a value of {2}\n{3}"
+msgstr "The value \"{1}\" must be from 0 through 65535 (0x0000-0xFFFF in hex), got a value of {2}\n{3}"
+
+msgid "The water is dyed a deep blue...\nWould you like to surf?"
+msgstr "물은 깊고 푸른 색이다\n파도타기를 하겠습니까?"
+
+msgid "The wild {1}"
+msgstr "야생 {1}"
+
+msgid "The {1} can't be held."
+msgstr "{1}을(를)\n지니게 할 수 없습니다!"
+
+msgid "The {1} card? Certainly.\nHow many would you like?"
+msgstr "The {1} card?  Certainly.\nHow many would you like?"
+
+msgid "The {1} card? How many would you like to sell?"
+msgstr "The {1} card?  How many would you like to sell?"
+
+msgid "The {1} card? Oh, no.\nI can't buy that."
+msgstr "The {1} card?  Oh, no.\nI can't buy that."
+
+msgid "The {1} has sprouted."
+msgstr "{1}의 싹이 나왔다!"
+
+msgid "The {1} only allows the use of {2}!"
+msgstr "{1}의 효과로\n{2}밖에 쓸 수 없다!"
+
+msgid "The {1} plant is growing bigger."
+msgstr "{1}의 줄기가\n크게 자랐다!"
+
+msgid "The {1} strengthened {2}'s power!"
+msgstr "{1}은(는) {2}의\n위력을 강하게 했다!"
+
+msgid "The {1} was planted in the soft, earthy soil."
+msgstr "푹신푹신한 흙에\n{1}를 심었다!"
+
+msgid "The {1} was scattered on the soil."
+msgstr "{1}를\n흙에 뿌렸습니다!"
+
+msgid "The {1} was taken and replaced with the {2}."
+msgstr "{1}을(를) 가져오고\n{2}을(를) 지니게 했습니다!"
+
+msgid "The {1} weakened the damage to {2}!"
+msgstr "{2}이(가) 입는 데미지를\n{1}이(가) 약하게 했다!"
+
+msgid "The {1}'s indicating something right underfoot!"
+msgstr "{1}이 발밑에\n엄청 반응하고 있어!"
+
+msgid "The {2} raised {1}'s Attack!"
+msgstr "{2}은(는) {1}(으)로\n공격이 올랐다!"
+
+msgid "The {2} raised {1}'s Defense!"
+msgstr "{2}은(는) {1}(으)로\n방어가 올랐다!"
+
+msgid "The {2} raised {1}'s Special Attack!"
+msgstr "{2}은(는) {1}(으)로\n특수공격이 올랐다!"
+
+msgid "The {2} raised {1}'s Special Defense!"
+msgstr "{2}은(는) {1}(으)로\n특수방어가 올랐다!"
+
+msgid "Their strength is no joke!"
+msgstr "만만한 실력의 소유자들이 아니죠!"
+
+msgid "Theo...\\^"
+msgstr "테오...\\^"
+
+msgid "There appears to be nothing here..."
+msgstr "여기에는\n아무것도 없는 것 같다..."
+
+msgid "There are no items."
+msgstr "도구가 없습니다"
+
+msgid "There are no phone numbers stored."
+msgstr "등록된 전화번호가 없습니다"
+
+msgid "There are no trainers in the Phone."
+msgstr "전화에 등록된 트레이너가 없습니다"
+
+msgid "There are {1} {2}!\nWant to pick them?"
+msgstr "{2}가 {1}개 열려 있다!\n나무열매를 따겠습니까?"
+
+msgid "There is 1 {1}!\nWant to pick it?"
+msgstr "{1}가 1개 열려 있다!\n나무열매를 따겠습니까?"
+
+msgid "There is a gift for you there!"
+msgstr "당신에게 드릴 선물이 있답니다!"
+
+msgid "There is a more recent update available."
+msgstr "현 버전에서 업데이트가 가능합니다"
+
+msgid "There is already a saved file. Is it OK to overwrite it?"
+msgstr "전에 작성한 리포트에\n덮어써도 괜찮습니까?"
+
+msgid "There is no Pokémon."
+msgstr "포켓몬이 없습니다"
+
+msgid "There is no room left in the PC!"
+msgstr "박스가 가득 찼습니다!"
+
+msgid "There was no sound in the recording. Please ensure that a microphone is attached to the computer and is ready."
+msgstr "녹음된 소리가 없었습니다\n마이크가 PC에 연결되어 있고\n준비된 상태인지 확인해 주십시오"
+
+msgid "There! All happy!"
+msgstr "매우 기뻐하는 듯하다!"
+
+msgid "There's an item buried around here!"
+msgstr "어딘가에 도구가 묻혀 있어!"
+
+msgid "There's no Mail here."
+msgstr "메일이 없습니다"
+
+msgid "There's no PP left for this move!"
+msgstr "남은 기술 포인트가 없다!"
+
+msgid "There's no Pokémon here..."
+msgstr "여기에는 포켓몬이 없습니다..."
+
+msgid "There's no more room for Pokémon!"
+msgstr "더 이상 포켓몬을 넣을 수 없습니다!"
+
+msgid "There's no more room in the Bag."
+msgstr "가방이 가득 찼습니다"
+
+msgid "There's no room to store items."
+msgstr "도구를 넣을 공간이 없습니다"
+
+msgid "These are among the toughest of Tandor! The paragons of our region!"
+msgstr "이들 가운데서 최강의 실력자!\n탄도르의 제패자가 탄생할 것입니다!"
+
+msgid "These trainers' skill in battle will determine that answer!"
+msgstr "그 답을 결정지을 승부가 곧 펼쳐집니다!"
+
+msgid "They can be transferred over and will be deposited in your PC."
+msgstr "현재 버전으로 전송해 와서\nPC에 맡겨놓을 수 있습니다"
+
+msgid "Third move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Third move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "This Pokémon can't be chosen."
+msgstr "이 포켓몬은 선택할 수 없습니다"
+
+msgid "This Pokémon is holding an item. It can't hold mail."
+msgstr "이미 도구를 지니고 있으므로\n메일을 지니게 할 수 없습니다"
+
+msgid "This box is already empty."
+msgstr "이 박스는 이미 비어 있습니다"
+
+msgid "This is in use already."
+msgstr "이미 사용 중입니다"
+
+msgid "This isn't a fossil!"
+msgstr "화석이 아니잖아!"
+
+msgid "This isn't over yet!"
+msgstr "아직 끝이 아니다!"
+
+msgid "This item can't be used on that Pokémon."
+msgstr "그 포켓몬에게는\n쓸 수 없습니다"
+
+msgid "This means you've found all the Coins in this game, so the game is now over."
+msgstr "이번 게임에서 얻을 수 있는\n동전을 모두 손에 넣었으므로\n이 게임을 종료합니다"
+
+msgid "This old, dead coral looks like it can be broken. Would you like to use Coral Break?"
+msgstr "이 죽은 산호는 깨뜨릴 수 있을 것 같다!\n산호크래시를 쓰겠습니까?"
+
+msgid "This option isn't available yet!"
+msgstr "아직은 이용할 수 없는 옵션입니다!"
+
+msgid "This player is busy trading."
+msgstr "이 플레이어는 교환 중이므로\n통신할 수 없습니다"
+
+msgid "This player is currently offline."
+msgstr "이 플레이어는 현재\n온라인에 접속되어 있지 않습니다"
+
+msgid "This rock appears breakable. Would you like to smash it?"
+msgstr "이 바위는 깨뜨릴 수 있을 것 같다!\n바위깨기를 쓰겠습니까?"
+
+msgid "This save file is corrupt or incompatible with this game."
+msgstr "리포트가 손상되었거나 게임과 호환되지 않습니다"
+
+msgid "This save file is corrupt, but an automatic backup has been found and will be loaded instead."
+msgstr "리포트가 손상되었지만 자동 백업이 발견되어 대신 읽겠습니다"
+
+msgid "This save file is corrupt, but another working file in this slot has been found and will be loaded instead."
+msgstr "리포트가 손상되었지만 이 슬롯에\n사용 가능한 다른 리포트가 발견되어\n대신 읽겠습니다"
+
+msgid "This save file is corrupt, but other working files in this slot were found."
+msgstr "리포트가 손상되었지만 이 슬롯에\n사용 가능한 다른 리포트가 있습니다"
+
+msgid "This team is not allowed."
+msgstr "이 팀은 내보낼 수 없습니다"
+
+msgid "This trainer must have at least 1 Pokémon!"
+msgstr "이 트레이너는 포켓몬이 1마리 이상 가지고 있어야 합니다!"
+
+msgid "This tree looks like it can be cut down!"
+msgstr "이 나무는 왠지 자를 수 있을 것 같다!"
+
+msgid "This tree looks like it can be cut down."
+msgstr "이 나무는 왠지\n자를 수 있을 것 같다!"
+
+msgid "This {1} plant is blooming cutely!"
+msgstr "{1}의 꽃이\n아기자기하게 피어 있다!"
+
+msgid "This {1} plant is blooming prettily!"
+msgstr "{1}의 꽃이\n예쁘게 피어 있다!"
+
+msgid "This {1} plant is blooming very beautifully!"
+msgstr "{1}의 꽃이\n매우 아름답게 피어 있다!"
+
+msgid "This {1} plant is in bloom!"
+msgstr "{1}의 꽃이\n피어 있다!"
+
+msgid "This {1} plant is in fabulous bloom!"
+msgstr "{1}의 꽃이\n멋들어져있다!"
+
+msgid "Thoroughly cunning."
+msgstr "빈틈이 없음."
+
+msgid "Threw away {1} {2}(s)."
+msgstr "{2}을(를)\n{1}개 버렸습니다"
+
+msgid "Throw away items stored in the PC."
+msgstr "PC에 보관된 도구를 버립니다"
+
+msgid "Thursday"
+msgstr "목요일"
+
+msgid "Time:"
+msgstr "시간:"
+
+msgid "Time<r><c3={1:s}>{2:02d}:{3:02d}</c3><br>"
+msgstr "플레이 시간<r><c3={1:s}>{2:02d}:{3:02d}</c3><br>"
+
+msgid "Time<r>{1:02d}:{2:02d}<br>"
+msgstr "플레이 시간<r>{1:02d}:{2:02d}<br>"
+
+msgid "Timid"
+msgstr "겁쟁이 <c3=5A5252,A5A5AD>같은"
+
+msgid "To Continue, please select a pokemon of yours, we will match it up with any possible matches and allow you to choose a match."
+msgstr "계속 진행하시려면 당신이 지닌\n포켓몬 1마리를 골라 주십시오\n교환 가능한 상대를 모두 찾아\n선택하게 해 드리겠습니다"
+
+msgid "To Next Lv."
+msgstr "다음 레벨까지"
+
+msgid "To install the other fonts, copy the files in this game's Fonts folder to the Fonts folder in Control Panel."
+msgstr "나머지 글꼴까지 설치하려면\n이 게임의 Fonts 폴더에 있는 파일들을\n제어판의 글꼴 폴더에 복사해 주십시오"
+
+msgid "Too bad...\nThe bag is full."
+msgstr "가방이 가득 차서 포기했다"
+
+msgid "Too bad... The Bag is full..."
+msgstr "아쉽다!\n가방이 가득 차 있다!"
+
+msgid "Took the {1}."
+msgstr "{1}을(를)\n가져왔다!"
+
+msgid "Toss"
+msgstr "버린다"
+
+msgid "Toss\nItem"
+msgstr "도구를\n버린다"
+
+msgid "Toss Item"
+msgstr "도구를 버린다"
+
+msgid "Toss out how many {1}(s)?"
+msgstr "{1}을(를)\n몇 개 버리겠습니까?"
+
+msgid "Tough Ribbon"
+msgstr "파워풀리본"
+
+msgid "Tough Ribbon Great"
+msgstr "파워풀리본그레이트"
+
+msgid "Tough Ribbon Hyper"
+msgstr "파워풀리본하이퍼"
+
+msgid "Tough Ribbon Master"
+msgstr "파워풀리본마스터"
+
+msgid "Tough Ribbon Super"
+msgstr "파워풀리본슈퍼"
+
+msgid "Tough Ribbon Ultra"
+msgstr "파워풀리본울트라"
+
+msgid "Trade"
+msgstr "교환한다"
+
+msgid "Trade accepted!\\wtnp[30]"
+msgstr "교환이 수락되었습니다!\\wtnp[30]"
+
+msgid "Trade your {1} for their {2}?"
+msgstr "{1}와(과) {2}을(를}\n교환하겠습니까?"
+
+msgid "Trainer has no unfainted Pokémon"
+msgstr "트레이너에게 기절하지 않은 포켓몬이 존재하지 않습니다"
+
+msgid "Trainer name too long\n{1}"
+msgstr "Trainer name too long\n{1}"
+
+msgid "Trainer type does not exist ({1}, {2}, ID {3})"
+msgstr "트레이너 계급이 존재하지 않습니다 ({1}, {2}, ID {3})"
+
+msgid "Transferring\\wt[8].\\wt[8].\\wt[8].\\wtnp[18]"
+msgstr "전송 중\\wt[8].\\wt[8].\\wt[8].\\wtnp[18]"
+
+msgid "Treat this battle as a loss?"
+msgstr "배틀에서 진 것으로 할까요?"
+
+msgid "Treat this battle as a win?"
+msgstr "배틀에서 이긴 것으로 할까요?"
+
+msgid "Trio"
+msgstr "트리오"
+
+msgid "Tuesday"
+msgstr "화요일"
+
+msgid "Turn Off"
+msgstr "접속을 끊는다"
+
+msgid "Turned over the {1} and received ${2}."
+msgstr "{1}을(를) 건네고\n{2}원을 받았다"
+
+msgid "Twitch"
+msgstr "트위치"
+
+msgid "Two trainer types ({1} and {2}) have the same ID ({3}), which is not allowed.\n{4}"
+msgstr "Two trainer types ({1} and {2}) have the same ID ({3}), which is not allowed.\n{4}"
+
+msgid "Tw̳Ich̳s PCc"
+msgstr "도읶치익 PCc"
+
+msgid "Type"
+msgstr "타입"
+
+msgid "UPPER"
+msgstr "대문자"
+
+msgid "Undefined Trainer constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nIn addition, the name must be defined\nin trainertypes.txt.\n{1}"
+msgstr "Undefined Trainer constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nIn addition, the name must be defined\nin trainertypes.txt.\n{1}"
+
+msgid "Undefined encounter type {1}, expected one of the following:\n{2}\n{3}"
+msgstr "Undefined encounter type {1}, expected one of the following:\n{2}\n{3}"
+
+msgid "Undefined item constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the item is defined in\nPBS/items.txt.\n{1}"
+msgstr "Undefined item constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the item is defined in\nPBS/items.txt.\n{1}"
+
+msgid "Undefined move constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nPBS/moves.txt.\n{1}"
+msgstr "Undefined move constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nPBS/moves.txt.\n{1}"
+
+msgid "Undefined nature constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nthe script section PBNatures.\n{1}"
+msgstr "Undefined nature constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nthe script section PBNatures.\n{1}"
+
+msgid "Undefined species constant name: [%s]\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nPBS/pokemon.txt.\n{1}"
+msgstr "Undefined species constant name: [%s]\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nPBS/pokemon.txt.\n{1}"
+
+msgid "Undefined value {1} (expected one of: {2})\n{3}"
+msgstr "Undefined value {1} (expected one of: {2})\n{3}"
+
+msgid "Undefined value {1} in {2}\n{3}"
+msgstr "Undefined value {1} in {2}\n{3}"
+
+msgid "Unknown"
+msgstr "알 수 없음"
+
+msgid "Unknown happiness-changing method."
+msgstr "알 수 없는 친밀도 증감 방식입니다"
+
+msgid "Up"
+msgstr "위"
+
+msgid "Up next:\\wt[20] Round {1}\\wt[25]\n\\PN versus {2}!"
+msgstr "다음 순서:\\wt[20] {1}라운드\\wt[25]\n\\PN 대 {2}!"
+
+msgid "Updating game maps, you will be sent to the nearest Pokémon Center"
+msgstr "게임 맵이 업데이트되어\n가장 가까운 포켓몬센터로 이동합니다"
+
+msgid "Upon this consecrated ground, I shall invoke the blessings of the sea!"
+msgstr "성스러운 이 땅 위에서...\n나는 바다의 가호를 염원하노라!"
+
+msgid "Use"
+msgstr "쓴다"
+
+msgid "Use next Pokémon?"
+msgstr "다음 포켓몬을 사용하겠습니까?"
+
+msgid "Use on which Pokémon?"
+msgstr "어느 포켓몬에게 쓰겠습니까?"
+
+msgid "Use the patcher.exe in your game folder to check for patches!\\wtnp[40]"
+msgstr "게임 폴더의 patcher.exe를 이용해 확인하세요!\\wtnp[40]"
+
+msgid "Used to confirm a choice, check things, and talk to people."
+msgstr "결정 또는 조사를 하거나\n이야기를 진행할 때 사용합니다"
+
+msgid "Used to exit, cancel a choice or mode, and open the pause menu."
+msgstr "되돌아가거나 취소할 때\n그리고 메뉴를 열 때 사용합니다"
+
+msgid "Using item..."
+msgstr "도구를 쓰는 중..."
+
+msgid "Using its {1}, the Attack of {2} rose!"
+msgstr "{1}(으)로 {2}의\n공격이 올라갔다!"
+
+msgid "Using its {1}, the Defense of {2} rose!"
+msgstr "{1}(으)로 {2}의\n방어가 올라갔다!"
+
+msgid "Using its {1}, the Special Attack of {2} rose!"
+msgstr "{1}(으)로 {2}의\n특수공격이 올라갔다!"
+
+msgid "Using its {1}, the Special Defense of {2} rose!"
+msgstr "{1}(으)로 {2}의\n특수방어가 올라갔다!"
+
+msgid "Using its {1}, the Speed of {2} rose!"
+msgstr "{1}(으)로 {2}의\n스피드가 올라갔다!"
+
+msgid "Using {1}, the Attack of {2} rose sharply!"
+msgstr "{1}(으)로 {2}의\n공격이 크게 올라갔다!"
+
+msgid "Using {1}, the Defense of {2} rose sharply!"
+msgstr "{1}(으)로 {2}의\n방어가 크게 올라갔다!"
+
+msgid "Using {1}, the Special Attack of {2} rose sharply!"
+msgstr "{1}(으)로 {2}의\n특수공격이 크게 올라갔다!"
+
+msgid "Using {1}, the Special Defense of {2} rose sharply!"
+msgstr "{1}(으)로 {2}의\n특수방어가 크게 올라갔다!"
+
+msgid "Using {1}, the Speed of {2} rose sharply!"
+msgstr "{1}(으)로 {2}의\n스피드가 크게 올라갔다!"
+
+msgid "VGC 2015 Battle"
+msgstr "월드챔피언십 2015"
+
+msgid "VTrainer"
+msgstr "V트레이너"
+
+msgid "Version is up-to-date, no update needed! \\wtnp[30]"
+msgstr "최신 버전입니다\n업데이트는 필요 없습니다! \\wtnp[30]"
+
+msgid "Very finicky."
+msgstr "매우 꼼꼼함."
+
+msgid "Vibration"
+msgstr "진동"
+
+msgid "Victory Ribbon"
+msgstr "빅토리리본"
+
+msgid "Virtual Trainer created successfully!"
+msgstr "버추얼 트레이너를 만들었습니다!"
+
+msgid "Virtual Trainer not created."
+msgstr "버추얼 트레이너를 만들지 못했습니다"
+
+msgid "Volcano"
+msgstr "화산"
+
+msgid "WIN RATE:"
+msgstr "승률:"
+
+msgid "WITHDRAW"
+msgstr "데리고 간다"
+
+msgid "WITHDRAW POKéMON"
+msgstr "포켓몬을 데리고 간다"
+
+msgid "WT"
+msgstr "몸무게"
+
+msgid "Wacan Berries"
+msgstr "초나열매"
+
+msgid "Waiting for a rematch<r>{1}"
+msgstr "승부 대기 중<br> <r>{1}명"
+
+msgid "Waiting for other player's offer..."
+msgstr "상대의 선택을 기다리고 있습니다..."
+
+msgid "Waiting response ({1})...\\wtnp[30]"
+msgstr "응답 대기 중 ({1})...\\wtnp[30]"
+
+msgid "Waiting trainer... ({1})\\wtnp[30]"
+msgstr "트레이너 대기 중... ({1})\\wtnp[30]"
+
+msgid "Wallpaper"
+msgstr "벽지"
+
+msgid "Want to escape from here and return to {1}?"
+msgstr "{1}(으)로 탈출하겠습니까?"
+
+msgid "Want to plant a Berry?"
+msgstr "나무열매를 심겠습니까?"
+
+msgid "Want to return to the healing spot used last in {1}?"
+msgstr "{1}에 있는 마지막으로 회복한 장소로 돌아가겠습니까?"
+
+msgid "Want to sprinkle some water with the {1}?"
+msgstr "{1}로 물을 주겠습니까?"
+
+msgid "Warning this pokemon is holding a {1}. Are you sure you want to trade it?"
+msgstr "경고: 포켓몬이 {1}을(를)\n지니고 있습니다\n정말 교환해도 괜찮습니까?"
+
+msgid "Warning: Map {1}, as mentioned in the map\nconnection data, was not found.\n{2}"
+msgstr "Warning: Map {1}, as mentioned in the map\nconnection data, was not found.\n{2}"
+
+msgid "Warning: Physical and special moves can't have a base damage of 0, changing to a Status move\n{1}"
+msgstr "Warning: Physical and special moves can't have a base damage of 0, changing to a Status move\n{1}"
+
+msgid "Warning: Randomizer Mode greatly affects the balance of the game."
+msgstr "경고: 랜덤 모드는 게임의 밸런스에\n지대한 영향을 줍니다"
+
+msgid "Water"
+msgstr "물"
+
+msgid "Watmel Berries"
+msgstr "슈박열매"
+
+msgid "We have some of Tandor's best and brightest here to dazzle you with their spectacular battling skills!"
+msgstr "화려한 배틀 실력으로\n여러분의 눈을 사로잡을\n탄도르 최고 최강의 트레이너들이\n이곳에 모였습니다!"
+
+msgid "We hope you enjoy playing Pokémon Uranium!"
+msgstr "앞으로도 포켓몬스터 우라늄을 즐겨주세요!"
+
+msgid "We tried our hardest in this battle, and that's what counts."
+msgstr "우리는 최선의 최선을 다했어\n거기에 의의를 둘 거야"
+
+msgid "We're back with Round 3, the quarterfinals!"
+msgstr "3라운드의 시간이 왔습니다!\n준준결승전이로군요"
+
+msgid "Wednesday"
+msgstr "수요일"
+
+msgid "Welcome to the Hall of Fame!"
+msgstr "전당등록을 축하합니다!"
+
+msgid "Welcome to the first round of the\nPokémon League Tournament!"
+msgstr "포켓몬리그 토너먼트\n그 첫 라운드에 오신 걸 환영합니다!"
+
+msgid "Welcome!\nHow may I serve you?"
+msgstr "어서 오세요!\n쇼핑하러 오셨군요?"
+
+msgid "Well fought, indeed! You deserved this victory."
+msgstr "참으로 잘 싸워주었다!\n넌 승부를 거머쥘 자격이 있어"
+
+msgid "Well, it has been a while, hasn't it?\nWhen I battled you, you were just a naive child, fumbling around in the dark.\nNow, you face me in the arena with confidence!\nYour fighting spirit is like a bright, shining light!\nI can tell you are no longer afraid.\nGyahahaha!! That's what I like to see!\nShow me your fearlessness in battle!"
+msgstr "이거, 우리 오랜만이지?\n저번에 싸웠을 땐 어둠 속을 헤매는\n순진한 꼬맹이 같았는데\n지금은 자신감을 가지고 내 앞에 서 있구나!\n그 밝게 빛나는 투혼!\n두려움은 온데간데없어졌어\n우하하하!! 그렇게 나와야지!\n배틀에서는 어떨지 어디 확인해볼까!"
+
+msgid "Well, let's not delay... on with the match!"
+msgstr "자 그럼 더 지체 않고...\n시합을 시작하겠습니다!"
+
+msgid "Well, you certainly know what you want out of life.\\^"
+msgstr "말하자면... 너는 인생에게\n기대하는 바가 뚜렷하지\\^"
+
+msgid "Wepear Berries"
+msgstr "서배열매"
+
+msgid "West side of first map must connect with east side of second map\n{1}"
+msgstr "West side of first map must connect with east side of second map\n{1}"
+
+msgid "What a match!"
+msgstr "멋진 승부였습니다!"
+
+msgid "What could be in store for us this round?"
+msgstr "이번 라운드에선 과연\n무엇이 기다리고 있을지?"
+
+msgid "What do you want to do with {1}'s Mail?"
+msgstr "{1}의\n메일을 어떻게 하겠습니까?"
+
+msgid "What do you want to do?"
+msgstr "무엇을 하겠습니까?"
+
+msgid "What will\n{1} do?"
+msgstr "{1}은(는) 무엇을 할까?"
+
+msgid "What will\n{1} throw?"
+msgstr "{1}은(는) 무엇을 던질까?"
+
+msgid "What will hatch from this? It doesn't seem close to hatching."
+msgstr "무엇이 태어날까?\n태어나기까지 아직\n시간이 걸릴 것 같다."
+
+msgid "What will {1} do?"
+msgstr "{1}은(는) 무엇을 할까?"
+
+msgid "What?\n{1} is evolving!"
+msgstr "...오잉!?\n{1}의 모습이...!"
+
+msgid "When the flame touched the powder on the Pokémon, it exploded!"
+msgstr "{1}에 반응하여\n분진이 폭발했다!"
+
+msgid "Which PC should be accessed?"
+msgstr "어느 PC에 접속해서\n통신할까요?"
+
+msgid "Which gender do you want"
+msgstr "어떤 성별이 좋습니까?"
+
+msgid "Which move should be forgotten?"
+msgstr "어느 기술을 잊게 하겠습니까?"
+
+msgid "Which one will you take?"
+msgstr "데리고 갈 포켓몬을\n선택하십시오!"
+
+msgid "Which report should I read?"
+msgstr "어느 보고서를 읽을까?"
+
+msgid "White"
+msgstr "흰색"
+
+msgid "White Tiles: {1}"
+msgstr "흰색 타일: {1}"
+
+msgid "Who are you?\\^"
+msgstr "너는 누구지?\\^"
+
+msgid "Who will it be?"
+msgstr "과연 누가 될 것인가?"
+
+msgid "Wide Guard protected your team!"
+msgstr "우리 편 주변을\n와이드가드가 보호하고 있다!"
+
+msgid "Wide Guard protected {1}!"
+msgstr "{1} 주변을\n와이드가드가 보호하고 있다!"
+
+msgid "Wiki Berries"
+msgstr "위키열매"
+
+msgid "Wild Pokémon will be lured."
+msgstr "포켓몬과 마주치기 쉬워졌다!"
+
+msgid "Wild Pokémon will be repelled."
+msgstr "포켓몬과 마주치기 힘들어졌다!"
+
+msgid "Wild battles with more than two Pokémon are not allowed."
+msgstr "2마리 이상의 야생 포켓몬과는 배틀할 수 없습니다"
+
+msgid "Wild {1} and\n{2} appeared!"
+msgstr "앗! 야생 {1}와(과)\n{2}이(가)\n튀어나왔다!"
+
+msgid "Wild {1} appeared!"
+msgstr "앗! 야생 {1}이(가)\n튀어나왔다!"
+
+msgid "Will you switch your Pokémon?"
+msgstr "포켓몬을 교체하시겠습니까?"
+
+msgid "Winning Ribbon"
+msgstr "위닝리본"
+
+msgid "Winter"
+msgstr "겨울"
+
+msgid "Wishing Ribbon"
+msgstr "위시리본"
+
+msgid "Withdraw"
+msgstr "꺼낸다"
+
+msgid "Withdraw\nItem"
+msgstr "도구를\n꺼낸다"
+
+msgid "Withdraw Item"
+msgstr "도구를 꺼낸다"
+
+msgid "Withdraw Pokémon"
+msgstr "포켓몬을 데리고 간다"
+
+msgid "Withdrew {1} {2}(s)."
+msgstr "{2}을(를)\n{1}개 꺼냈습니다"
+
+msgid "Wonder Room wore off, and the Defense and Sp. Def stats returned to normal!"
+msgstr "원더룸이 해제되어\n방어와 특수방어가 원래대로 되돌아왔다!"
+
+msgid "Wonder Trade"
+msgstr "미라클 교환"
+
+msgid "Wonder Trade!"
+msgstr "미라클 교환!"
+
+msgid "Woooow! Like, that was a totally sweet battle!~ I guess this just isn't my year to win. But now, you'd better win in my stead, okay?~"
+msgstr "우와아아!\n너무너무 좋은 승부였고요~!\n올해는 내 운이 따라주지 않나 보네\n대신 네가 내 몫까지 힘내서\n우승해 줘야 한다, 알겠지~?"
+
+msgid "World Ability Ribbon"
+msgstr "월드어빌리티리본"
+
+msgid "World Champion Ribbon"
+msgstr "월드챔피언리본"
+
+msgid "World Ribbon"
+msgstr "월드리본"
+
+msgid "Would you like to cut it?"
+msgstr "풀베기로 자르겠습니까?"
+
+msgid "Would you like to forfeit the match and quit now?"
+msgstr "승부를 포기하고\n항복하겠습니까?"
+
+msgid "Would you like to give a nickname to {1}?"
+msgstr "{1}에게\n닉네임을 붙이겠습니까?"
+
+msgid "Would you like to move it?"
+msgstr "바위를 밀겠습니까?"
+
+msgid "Would you like to nickname the newly hatched {1}?"
+msgstr "태어난 {1}에게\n별명을 붙일까요?"
+
+msgid "Would you like to restart the game and apply the changes?"
+msgstr "게임을 재시작하여\n변경 사항을 적용하겠습니까?"
+
+msgid "Would you like to save the game?"
+msgstr "지금까지의 활약을\n포켓몬 리포트로 작성할까요?"
+
+msgid "Would you like to switch the two items?"
+msgstr "지니고 있는 도구를\n교환하겠습니까?"
+
+msgid "Wow! That battle was quite a workout, huh?\nI think it's safe to say that you're the stronger among us.\nI'll be cheering you on from here on out!"
+msgstr "히야! 장난 아니었어, 그치?\n네 실력이 한 수 위라고 봐야겠네\n앞으로 계속 응원할게!"
+
+msgid "Wow, you look like a really strong trainer...\nUm. I'm Angelica, and I train Fairy types.\nWe're cute, but don't let it fool you:\nwe're really strong too.\nAfter all, Fairies can stand up to the power of dragons. So we aren't afraid of any tough-looking trainers, either. If you aren't acquainted with the power of fairies, then, you'll know soon enough!"
+msgstr "어머 너 정말 강해보이네...\n나는 안젤리카, 페어리포켓몬을 기르고 있어\n깜찍한 외모에 속지 않는 게 좋을 거야\n무지하게 강하기도 하니까\n뭐 페어리타입은 드래곤타입을\n상대로도 끄떡없으니\n상대가 험상궂게 나와도 겁나지 않아\n페어리의 진가를 모르겠다면...\n이제 알게 해줄게!"
+
+msgid "Writing results"
+msgstr "결과 작성 중"
+
+msgid "Wrong syntax for densities in encounters.txt; got \"{1}\"\n{2}"
+msgstr "Wrong syntax for densities in encounters.txt; got \"{1}\"\n{2}"
+
+msgid "Yache Berries"
+msgstr "플카열매"
+
+msgid "Yellow"
+msgstr "노랑"
+
+msgid "Yes"
+msgstr "예"
+
+msgid "Yes, I won!"
+msgstr "좋아, 이겼다!"
+
+msgid "You are banned from using online features! If you think that this is a mistake, please ask for more info on the Discord server or on Reddit."
+msgstr "온라인 기능에 밴이 걸리셨습니다!\n오류라고 생각하신다면\n포켓몬스터 우라늄 Discord 서버나\n레딧에서 상세 정보를 구하시기 바랍니다"
+
+msgid "You can catch shiny Pokemon even if they aren't your first encounter."
+msgstr "처음 마주친 포켓몬이 아니더라도\n색이 다르다면 잡을 수 있습니다"
+
+msgid "You can choose from three different game screen sizes."
+msgstr "게임 화면의 크기를\n3종류 중에서 선택할 수 있습니다"
+
+msgid "You can choose from three different text-scrolling speeds."
+msgstr "메시지의 표시 속도를\n3종류 중에서 선택할 수 있습니다"
+
+msgid "You can choose if the game should remember the last save you loaded."
+msgstr "마지막으로 불러온 리포트를\n기억할지 선택할 수 있습니다"
+
+msgid "You can choose the style of the game's font."
+msgstr "글꼴의 스타일을 선택할 수 있습니다\n(한국어에는 영향을 주지 않습니다)"
+
+msgid "You can choose to switch Pokémon when an opponent's Pokémon faints."
+msgstr "상대 포켓몬이 기절했을 때 포켓몬을\n교체할지 말지를 선택할 수 있습니다"
+
+msgid "You can choose whether controller vibration is enabled."
+msgstr "컨트롤러의 진동을 사용할지 말지를\n선택할 수 있습니다"
+
+msgid "You can choose whether to view move animations."
+msgstr "배틀할 때 포켓몬 기술의 애니메이션을\n볼지 말지를 선택할 수 있습니다"
+
+msgid "You can receive even more Coins in the next game!"
+msgstr "다음 게임에서\n받을 수 있는 동전이 늘어납니다!"
+
+msgid "You can select your preferred pronouns."
+msgstr "선호하는 성별 호칭을 고를 수 있습니다"
+
+msgid "You can set the game's SFX volume."
+msgstr "게임의 음향 효과의\n음량을 조절할 수 있습니다"
+
+msgid "You can set the game's frames per second."
+msgstr "게임의 초당 프레임을\n조절할 수 있습니다"
+
+msgid "You can set the game's language."
+msgstr "게임의 언어를 선택할 수 있습니다"
+
+msgid "You can set the game's music volume."
+msgstr "게임의 배경음악의\n음량을 조절할 수 있습니다"
+
+msgid "You can use the patcher.exe in your game folder to update! \\wtnp[40]"
+msgstr "게임 폴더의 patcher.exe를 이용하면 업데이트할 수 있습니다! \\wtnp[40]"
+
+msgid "You can't dismount your Bike here."
+msgstr "여기서는 내릴 수 없다!"
+
+msgid "You can't play unless you have a Coin Case."
+msgstr "동전케이스를 갖고 있지 않으면\n즐길 수 없는 듯하다..."
+
+msgid "You can't release an Egg."
+msgstr "알은 놓아줄 수 없습니다!"
+
+msgid "You can't release eggs."
+msgstr "알은 놓아줄 수 없습니다!"
+
+msgid "You can't switch {1}'s Pokémon with one of yours!"
+msgstr "{1}의 포켓몬과\n바꿀 수 없습니다!"
+
+msgid "You cannot add your own online ID!"
+msgstr "자기 자신의 온라인 ID는\n추가할 수 없습니다!"
+
+msgid "You cannot search by your own online ID!"
+msgstr "자기 자신의 온라인 ID로는\n상대를 찾을 수 없습니다!"
+
+msgid "You cannot trade this Pokemon!"
+msgstr "이 포켓몬은 교환에 내보낼 수 없습니다!"
+
+msgid "You don't have any Coins to play!"
+msgstr "동전이 없어서 즐길 수 없다!"
+
+msgid "You don't have any other save files"
+msgstr "다른 리포트가 없습니다"
+
+msgid "You don't have enough berries."
+msgstr "나무열매가 부족하군요"
+
+msgid "You don't have enough money."
+msgstr "돈이 부족하시군요!"
+
+msgid "You don't have your bag."
+msgstr "가방이 없습니다"
+
+msgid "You fail to block the opponent's attack!"
+msgstr "상대의 공격을 막지 못했다!"
+
+msgid "You have a burning spirit within you that never ceases!\\^"
+msgstr "결코 사그라들지 않는\n투혼을 불태우고 있어!\\^"
+
+msgid "You have a great future ahead, but what about now?"
+msgstr "네 앞날은 창창하지만\n지금은 어떨까?"
+
+msgid "You have no more room in the Bag."
+msgstr "그 이상은\n가지고 다닐 수 없어요!"
+
+msgid "You have no usable items in this pocket."
+msgstr "포켓에 도구가 없습니다"
+
+msgid "You haven't found any Coins! Are you sure you want to quit?"
+msgstr "동전을 손에 넣을 수 없습니다!\n이 게임을 그만두겠습니까?"
+
+msgid "You know that the best things in life come to those who wait.\\^"
+msgstr "기다리는 자에게 최고의 복이 온다는\n사실을 잘 알고 있어\\^"
+
+msgid "You lost the battle!\\wtnp[30]"
+msgstr "배틀에서 패배했습니다!\\wtnp[100]"
+
+msgid "You must choose a move!"
+msgstr "기술을 선택해야 합니다"
+
+msgid "You must choose at least one rule to play a custom game."
+msgstr "특수 규칙으로 플레이하려면\n규칙을 적어도 하나는 선택해야 합니다"
+
+msgid "You must complete the game at least once to unlock Randomizer."
+msgstr "랜덤 모드를 활성화하려면\n게임을 한 번 이상 클리어해야 합니다"
+
+msgid "You must enable Nuzlocke to select this."
+msgstr "너즐록을 먼저 체크해야 합니다"
+
+msgid "You need an internet connection to use the GTS, WT and VT"
+msgstr "GTS, 미라클 교환, 버추얼 트레이닝을\n이용하려면 인터넷에 접속해야 합니다"
+
+msgid "You picked the {1} {2}.\\wtnp[30]"
+msgstr "{2}를 {1}개 땄다!\\wtnp[30]"
+
+msgid "You picked the {1}.\\wtnp[30]"
+msgstr "{1}를 1개 땄다!\\wtnp[30]"
+
+msgid "You pierce through the opponent's defenses!"
+msgstr "상대의 방어를 뚫었다!"
+
+msgid "You prefer to adapt to overcome challenges in your path.\\^"
+msgstr "모험의 길에 난관이 나타나면\n그에 적응해 이겨내려 하지\\^"
+
+msgid "You prefer to overwhelm your opponents with sheer force and firepower.\\^"
+msgstr "상대가 나타나면 주먹다짐과 화력으로\n돌파하려 하지\\^"
+
+msgid "You seem to be a Trainer who likes to play it safe.\\^"
+msgstr "너는 안전에 신경을 기울이는\n트레이너 같아\\^"
+
+msgid "You seem to be a trainer that is capable of many different strategies.\\^"
+msgstr "너는 각양각색의 전술에 능숙한\n트레이너 같아\\^"
+
+msgid "You seem to be a trainer who won't hesitate to go for what you want.\\^"
+msgstr "너는 원하는 목표가 있다면\n주저없이 달려드는 트레이너 같아\\^"
+
+msgid "You study each other's movements..."
+msgstr "서로의 움직임을 분석했다..."
+
+msgid "You used your last {1}."
+msgstr "{1}이(가) 더 이상 없습니다"
+
+msgid "You're already surfing."
+msgstr "이미 파도타기를 하고 있습니다"
+
+msgid "You're holding a Pokémon!"
+msgstr "포켓몬을 쥐고 있습니다!"
+
+msgid "You're impulsive, impatient, and care mostly about your own desires.\\^"
+msgstr "충동적이고, 참을성이 없는 데다\n원하는 것만 바라보고 있어\\^"
+
+msgid "You've found all of the hidden x2 and x3 cards."
+msgstr "숨어 있던 2와 3의 패널이\n모두 뒤집혔습니다"
+
+msgid "You've got 99,999 Coins."
+msgstr "동전을 99999개 얻었습니다!"
+
+msgid "You've run out of Coins.\nGame over!"
+msgstr "동전이 다 떨어졌습니다\n게임 오버!"
+
+msgid "Your Coin Case is full!"
+msgstr "동전케이스가 가득 찼다!"
+
+msgid "Your ID: {1}"
+msgstr "내 ID: {1}"
+
+msgid "Your PC's Mailbox is full."
+msgstr "PC의 메일박스가\n가득 찼습니다!"
+
+msgid "Your Pokémon will be waiting for you in the Pokémon Storage System."
+msgstr "포켓몬들이 포켓몬 보관 시스템에서 기다리고 있습니다"
+
+msgid "Your attack was evaded!"
+msgstr "공격이 맞지 않았다!"
+
+msgid "Your attack was not blocked!"
+msgstr "공격이 막히지 않았다!"
+
+msgid "Your calm, rational approach will come to aid you in the future.\\^"
+msgstr "그 침착하고 이성적인 접근이\n장차 강점으로 다가올 거야\\^"
+
+msgid "Your coins"
+msgstr "모은 동전"
+
+msgid "Your foe's weak!\nGet 'em, {1}!"
+msgstr "상대가 약해져 있어!\n기회다! {1}!"
+
+msgid "Your game is out-of-date!\nUpdate required. \\wtnp[30]"
+msgstr "최신 버전이 아닙니다!\n업데이트가 필요합니다 \\wtnp[30]"
+
+msgid "Your journey --- your story --- is about to unfold."
+msgstr "지금부터 너의 여정이 시작되려 해"
+
+msgid "Your name is {1}?"
+msgstr "{1}(이)라고 하는구나?"
+
+msgid "Your name?"
+msgstr "당신의 이름은?"
+
+msgid "Your old Nuzlocke savefile needs to be converted to the new system."
+msgstr "너즐록 모드의 리포트가 오래되어 새 시스템에 맞춰 변환해야 합니다"
+
+msgid "Your party Pokémon and any in the Daycare will be deposited, too."
+msgstr "뿐만 아니라 지닌 포켓몬과\n키우미집에 있는 포켓몬도 맡겨집니다"
+
+msgid "Your party is full!"
+msgstr "지닌 포켓몬이 가득합니다!"
+
+msgid "Your party is full! You can't unfuse {1}."
+msgstr "지닌 포켓몬이 가득하므로\n{1}을(를) 분리할 수 없습니다"
+
+msgid "Your party's full!"
+msgstr "지닌 포켓몬이 가득합니다!"
+
+msgid "Your philosophy is probably to just \"go with the flow\".\\^"
+msgstr "\"흐름에 몸을 맡기는 것\"이\n인생의 철학일지도 몰라\\^"
+
+msgid "Your starter as well as all wild and trainer Pokémon will be randomized."
+msgstr "야생 포켓몬과 트레이너의 포켓몬\n그리고 파트너까지도 무작위가 됩니다"
+
+msgid "Your team became cloaked in a mystical veil!"
+msgstr "우리 편은\n신비의 베일에 둘러싸였다!"
+
+msgid "Your team became shrouded in mist!"
+msgstr "우리 편은\n흰안개에 둘러싸였다!"
+
+msgid "Your team is no longer protected by Safeguard!"
+msgstr "우리 편을 감싸던\n신비의 베일이 없어졌다!"
+
+msgid "Your team is no longer protected by mist!"
+msgstr "우리 편을 감싸던\n흰안개가 없어졌다!"
+
+msgid "Your team is too nervous to eat Berries!"
+msgstr "우리 편은 긴장해서\n나무열매를 먹을 수 없게 되었다!"
+
+msgid "Your team's Light Screen faded!"
+msgstr "우리 편의 빛의장막이\n없어졌다!"
+
+msgid "Your team's Light Screen wore off!"
+msgstr "우리 편의 빛의장막이\n없어졌다!"
+
+msgid "Your team's Lucky Chant wore off!"
+msgstr "우리 편의 주술이 풀렸다!"
+
+msgid "Your team's Mist faded!"
+msgstr "우리 편을 감싸던\n흰안개가 없어졌다!"
+
+msgid "Your team's Reflect faded!"
+msgstr "우리 편의 리플렉터가\n없어졌다!"
+
+msgid "Your team's Reflect wore off!"
+msgstr "우리 편의 리플렉터가\n없어졌다!"
+
+msgid "Your team's Tailwind petered out!"
+msgstr "우리 편의\n순풍이 멈췄다!"
+
+msgid "Your trade was declined."
+msgstr "교환이 거절되었습니다"
+
+msgid "[Custom]"
+msgstr "[지정]"
+
+msgid "\\PN, are you ready?"
+msgstr "\\PN, 준비됐니?"
+
+msgid "\\c[7]ENGAGEMENT FAILED.\\wt[16]\nA POWER CELL IS NEEDED."
+msgstr "\\c[7]준비 실패\\wt[16]\n동력전지가 필요함"
+
+msgid "\\c[7]ENGAGEMENT SUCCESSFUL."
+msgstr "\\c[7]준비 완료"
+
+msgid "\\c[7]OBSTACLE DETECTED.\\wt[20]\nENGAGING STRENGTH PROTOCOL\\wt[8].\\wt[8].\\wt[8].\\wt[8]"
+msgstr "\\c[7]장애물 감지됨\\wt[20]\n괴력 프로토콜 준비 중\\wt[8].\\wt[8].\\wt[8].\\wt[8]"
+
+msgid "\\me[Jingle - HMTM]Obtained \\c[1]{1}\\c[0]!\nIt contained \\c[1]{2}\\c[0].\\wtnp[55]"
+msgstr "\\me[Jingle - HMTM]\\c[1]{1}\\c[0] \"\\c[1]{2}\\c[0]\"을(를)\n손에 넣었다!\\wtnp[55]"
+
+msgid "\\me[Jingle - HMTM]{1} found \\c[1]{2}\\c[0]!\nIt contained \\c[1]{3}\\c[0].\\wtnp[55]"
+msgstr "\\me[Jingle - HMTM]{1}은(는) \\c[1]{2}\\c[0]\n\"\\c[1]{3}\\c[0]\"을(를) 발견했다!\\wtnp[55]"
+
+msgid "\\me[Jingle - Regular Item]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]\\c[1]{1}\\c[0]을(를) 손에 넣었다!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]Obtained \\c[1]{1}s\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]\\c[1]{1}\\c[0]을(를) 손에 넣었다!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]Obtained some \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]\\c[1]{1}\\c[0]을(를) 손에 넣었다!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found one \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}은(는)\n\\c[1]{2}\\c[0]을(를) 발견했다!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found some \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}은(는)\n\\c[1]{2}\\c[0]을(를) 발견했다!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}은(는)\n\\c[1]{3}\\c[0]을(를) {2}개 발견했다!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}은(는)\n\\c[1]{3}\\c[0]을(를) {2}개 발견했다!\\wtnp[30]"
+
+msgid "\\me[Jinlge - KeyItem]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jinlge - KeyItem]\\c[1]{1}\\c[0]을(를) 손에 넣었다!\\wtnp[30]"
+
+msgid "\\me[Jinlge - KeyItem]Randomizer Mode has been unlocked!\\wt[30]\nIt will be available when starting a new Custom Game."
+msgstr "\\me[Jinlge - KeyItem]랜덤 모드가 잠금 해제되었습니다!\\wt[30]\n규칙 설정으로 시작할 때 사용 가능합니다"
+
+msgid "\\me[Jinlge - KeyItem]\\sign[sign1]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jinlge - KeyItem]\\sign[sign1]\\c[1]{1}\\c[0]을(를) 손에 넣었다!\\wtnp[30]"
+
+msgid "\\me[Voltorb Flip Game Over]Oh no! You get 0 Coins!\\wtnp[50]"
+msgstr "\\me[Voltorb Flip Game Over]아쉽군요! 동전 0개!\\wtnp[50]"
+
+msgid "\\me[Voltorb Flip Win]Board clear!\\wtnp[40]"
+msgstr "\\me[Voltorb Flip Win]게임 클리어-!!\\wtnp[40]"
+
+msgid "\\se[Voltorb Flip Level Dropped]Dropped to Game Lv. {1}!"
+msgstr "\\se[Voltorb Flip Level Dropped]게임 레벨이\nLv.{1}(으)로 내려갔습니다"
+
+msgid "\\se[]1,\\wt[4] 2,\\wt[4] and...\\wt[8] ...\\wt[8] ...\\wt[8] Poof!\\se[balldrop]"
+msgstr "\\se[]1,\\wt[4] 2,\\wt[4] ...\\wt[8] ...\\wt[8] ...\\wt[8] 짠!\\se[balldrop]"
+
+msgid "\\se[]Save failed.\\wtnp[30]"
+msgstr "\\se[]리포트를 작성하지 못했습니다\\wtnp[30]"
+
+msgid "\\se[]{1} hatched from the Egg!\\wt[80]"
+msgstr "\\se[]알이 부화해서\n{1}이(가) 태어났다!\\wt[80]"
+
+msgid "\\se[]{1} learned {2}!\\se[itemlevel]"
+msgstr "\\se[]{1}은(는)\n{2}을(를) 배웠다!\\se[itemlevel]"
+
+msgid "\\se[]{1} saved the game.\\se[save]\\wtnp[30]"
+msgstr "\\se[]{1}은(는)\n리포트를 꼼꼼히 기록했다!\\se[save]\\wtnp[30]"
+
+msgid "\\se[accesspc]Accessed the Hall of Fame."
+msgstr "\\se[accesspc]전당등록 데이터를\n불러왔습니다!"
+
+msgid "\\se[accesspc]Accessed {1}'s PC."
+msgstr "\\se[accesspc]{1}의\nPC에 접속했다!"
+
+msgid "\\se[accesspc]Booted up a TM."
+msgstr "\\se[accesspc]기술머신을 켰다!"
+
+msgid "\\se[accesspc]Booted up an HM."
+msgstr "\\se[accesspc]비전머신을 켰다!"
+
+msgid "\\se[accesspc]The Pokémon Storage System was opened."
+msgstr "\\se[accesspc]포켓몬 보관 시스템을\n불러왔습니다!"
+
+msgid "\\se[computeropen]{1} booted up the PC."
+msgstr "\\se[computeropen]{1}은(는)\nPC 전원을 켰다!"
+
+msgid "\\se[itemlevel]{1} received \\c[1]{2}\\c[0]!\\nIt contained \\c[1]{3}\\c[0].\\wtnp[30]"
+msgstr "\\se[itemlevel]{1}은(는) \\c[1]{2}\\c[0]\\n\"\\c[1]{3}\\c[0]\"을(를) 받았다!\\wtnp\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received a \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "{1}은(는)\n\\c[1]{2}\\c[0]을(를) 1개 받았다!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received an \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "{1}은(는)\n\\c[1]{2}\\c[0]을(를) 1개 받았다!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received some \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1}은(는)\n\\c[1]{2}\\c[0]을(를) 받았다!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+msgstr "{1}은(는)\n\\c[1]{3}\\c[0]을(를) {2}개 받았다!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+msgstr "{1}은(는)\n\\c[1]{3}\\c[0]을(를) {2}개 받았다!\\wtnp[30]"
+
+msgid "\\ts[]Manage Mystery Gifts (X=online)."
+msgstr "\\ts[]소포를 관리한다 (X=온라인)."
+
+msgid "\\w[]\\wm\\c[8]\\l[3]After the unfortunate defeat, {1} scurried home."
+msgstr "\\w[]\\wm\\c[8]\\l[3]분한 패배의 쓰라림을 뒤로 하고\n{1}은(는) 급하게 집으로 돌아갔다"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]After the unfortunate defeat, {1} scurried to a Pokémon Center."
+msgstr "\\w[]\\wm\\c[8]\\l[3]분한 패배의 쓰라림을 뒤로 하고\n{1}은(는) 급하게 포켓몬센터로 돌아갔다"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]{1} scurried home, protecting the exhausted and fainted Pokémon from further harm."
+msgstr "\\w[]\\wm\\c[8]\\l[3]지쳐서 기절해 버린 포켓몬들을 데리고\n{1}은(는) 급하게 집으로 돌아갔다"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]{1} scurried to a Pokémon Center, protecting the exhausted and fainted Pokémon from further harm."
+msgstr "\\w[]\\wm\\c[8]\\l[3]지쳐서 기절해 버린 포켓몬들을 데리고\n{1}은(는) 급하게 포켓몬센터로 돌아갔다"
+
+msgid "accuracy"
+msgstr "명중률"
+
+msgid "an egg"
+msgstr "알"
+
+msgid "boardbg"
+msgstr "../../Translations/Korean/boardbg_korean"
+
+msgid "egg"
+msgstr "알"
+
+msgid "evasiveness"
+msgstr "회피율"
+
+msgid "lower"
+msgstr "소문자"
+
+msgid "memo"
+msgstr "../../Translations/Korean/memo_korean"
+
+msgid "off"
+msgstr "껐"
+
+msgid "on"
+msgstr "켰"
+
+msgid "other"
+msgstr "기타"
+
+msgid "phonebg"
+msgstr "../Translations/Korean/phonebg_korean"
+
+msgid "the ally {1}"
+msgstr "우리 편 {1}"
+
+msgid "the egg"
+msgstr "알"
+
+msgid "the foe {1}"
+msgstr "상대 {1}"
+
+msgid "the opposing {1}"
+msgstr "상대 {1}"
+
+msgid "the wild {1}"
+msgstr "야생 {1}"
+
+msgid "their egg"
+msgstr "알"
+
+msgid "wh̳hC PC sHoulD bE̳ acCe̳sEd?̳̳̳"
+msgstr "ㅇㅓㄴ PC에 겹슥해ㅒ 돟쇠할ㄱ가요?̳̳̳"
+
+msgid "x{1:d}<r>$ {2:d}"
+msgstr "x{1:d}<r>{2:d}원"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}"
+msgstr "{1:s}\nID: {2:05d}  어버이: {3:s}"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}"
+msgstr "{1:s}\nID: {2:05d}  어버이: {3:s}"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[0]"
+msgstr "{1:s}\nID: {2:05d}  어버이: {3:s}\\wtnp[0]"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[100]"
+msgstr "{1:s}\nID: {2:05d}  어버이: {3:s}\\wtnp[100]"
+
+msgid "{1:s} (F, Lv{2:d})"
+msgstr "{1:s} (암컷, Lv{2:d})"
+
+msgid "{1:s} (M, Lv{2:d})"
+msgstr "{1:s} (수컷, Lv{2:d})"
+
+msgid "{1:s} Pokémon"
+msgstr "{1:s}포켓몬"
+
+msgid "{1:s}: Search Mode"
+msgstr "{1:s}: 검색 모드"
+
+msgid "{1:s}<r>POWER/{2:s}\nPP/{3:d}<r>ACCURACY/{4:s}"
+msgstr " {1:s}<r>위력/{2:s}\n PP/{3:d}<r>명중/{4:s}"
+
+msgid "{1:s}PP: ---<br>TYPE/{2:s}"
+msgstr "{1:s}PP: ---<br>타입/{2:s}"
+
+msgid "{1:s}PP: {2: 2d}/{3: 2d}<br>TYPE/{4:s}"
+msgstr "{1:s}PP: {2: 2d}/{3: 2d}<br>타입/{4:s}"
+
+msgid "{1}\nwould like to battle!"
+msgstr "{1}이(가)\n승부를 걸어왔다!"
+
+msgid "{1}\n{2}"
+msgstr "{1}\n{2}"
+
+msgid "{1} Female"
+msgstr "{1} 암컷"
+
+msgid "{1} Female Shiny"
+msgstr "{1} 암컷 (특별한 색)"
+
+msgid "{1} Lv{2} {3}"
+msgstr "{1}  Lv{2}  {3}"
+
+msgid "{1} Lv{2} {3}/{4}"
+msgstr "{1}  Lv{2}  {3}/{4}"
+
+msgid "{1} Male"
+msgstr "{1} 수컷"
+
+msgid "{1} Male Shiny"
+msgstr "{1} 수컷 (특별한 색)"
+
+msgid "{1} Pokémon are in the Day Care."
+msgstr "키우미집에 {1}마리의 포켓몬이 있습니다"
+
+msgid "{1} Pokémon are needed."
+msgstr "포켓몬은 {1}마리가 필요합니다"
+
+msgid "{1} Pokémon will be released, 1 of them is shiny. Are you absolutely certain?"
+msgstr "색이 다른 1마리를 포함한\n{1}마리의 포켓몬이 모두 풀려납니다!\n정말 확실합니까?"
+
+msgid "{1} Pokémon will be released, {2} of them are shiny. Are you absolutely certain?"
+msgstr "색이 다른 {2}마리를 포함한\n{1}마리의 포켓몬이 모두 풀려납니다!\n정말 확실합니까?"
+
+msgid "{1} Pokémon will be released. Are you absolutely certain?"
+msgstr "{1}마리의 포켓몬이\n모두 풀려납니다!\n정말 확실합니까?"
+
+msgid "{1} Shiny"
+msgstr "{1} (특별한 색)"
+
+msgid "{1} To {2}"
+msgstr "{1}~{2}"
+
+msgid "{1} absorbed nutrients with its roots!"
+msgstr "{1}은(는) 뿌리로부터\n양분을 흡수했다!"
+
+msgid "{1} acquired {2}!"
+msgstr "{1}은(는)\n{2}이(가) 되었다!"
+
+msgid "{1} adores you!\nThe base Attack fell!"
+msgstr "{1}은(는)\n최고로 친한 상태다!\n공격의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} adores you!\nThe base Defense fell!"
+msgstr "{1}은(는)\n최고로 친한 상태다!\n방어의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} adores you!\nThe base HP fell!"
+msgstr "{1}은(는)\n최고로 친한 상태다!\nHP의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} adores you!\nThe base Special Attack fell!"
+msgstr "{1}은(는)\n최고로 친한 상태다!\n특수공격의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} adores you!\nThe base Special Defense fell!"
+msgstr "{1}은(는)\n최고로 친한 상태다!\n특수방어의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} adores you!\nThe base Speed fell!"
+msgstr "{1}은(는)\n최고로 친한 상태다!\n스피드의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} already has a burn."
+msgstr "{1}은(는) 이미\n화상을 입은 상태다"
+
+msgid "{1} already has a substitute!"
+msgstr "{1}의\n대타는 이미 나와 있다"
+
+msgid "{1} already knows\n{2}."
+msgstr "{1}은(는) 이미\n{2}을(를) 기억하고 있습니다"
+
+msgid "{1} anchored itself with its roots!"
+msgstr "{1}은(는) 뿌리를 뻗어서\n움직이지 않는다!"
+
+msgid "{1} anchored itself with {2}!"
+msgstr "{1}의 {2} 때문에\n엉겨 붙었다!"
+
+msgid "{1} anchored itself!"
+msgstr "{1}은(는)\n흡반 때문에 들러붙어 있다!"
+
+msgid "{1} and {2} are attacking!"
+msgstr "{1}와(과)\n{2}이(가) 공격한다!"
+
+msgid "{1} and {2} want to battle!"
+msgstr "{1}와(과)\n{2}이(가)\n승부를 걸어왔다!"
+
+msgid "{1} avoided damage with Wonder Guard!"
+msgstr "{1}은(는) 불가사의부적 때문에\n데미지를 입지 않는다!"
+
+msgid "{1} avoided the attack!"
+msgstr "{1}에게는\n맞지 않았다!"
+
+msgid "{1} avoids attacks by its ally Pokémon!"
+msgstr "{1}은(는)\n같은 편의 공격을 받지 않는다!"
+
+msgid "{1} became cloaked in a freezing light!"
+msgstr "{1}은(는)\n차가운 빛에 둘러싸였다!"
+
+msgid "{1} became cloaked in freezing air!"
+msgstr "{1}은(는)\n차디찬 공기에 둘러싸였다!"
+
+msgid "{1} became cloaked in mystical moonlight!"
+msgstr "{1}은(는)\n신비한 달빛에 둘러싸였다!"
+
+msgid "{1} became confused due to fatigue!"
+msgstr "{1}은(는)\n몹시 지쳐서 혼란에 빠졌다!"
+
+msgid "{1} became confused!"
+msgstr "{1}은(는)\n혼란에 빠졌다!"
+
+msgid "{1} became healthy!"
+msgstr "{1}은(는)\n건강해졌다!"
+
+msgid "{1} became healthy."
+msgstr "{1}은(는)\n건강해졌다!"
+
+msgid "{1} became nimble!"
+msgstr "{1}의\n몸이 가벼워졌다!"
+
+msgid "{1} became the center of attention!"
+msgstr "{1}은(는)\n주목의 대상이 되었다!"
+
+msgid "{1} became trapped by Sand Tomb!"
+msgstr "{1}은(는)\n모래지옥에 붙잡혔다!"
+
+msgid "{1} became trapped by swirling magma!"
+msgstr "{1}은(는)\n마그마의 소용돌이에 갇혔다!"
+
+msgid "{1} began charging power!"
+msgstr "{1}은(는)\n충전을 시작했다!"
+
+msgid "{1} began having a nightmare!"
+msgstr "{1}은(는)\n악몽을 꾸기 시작했다!"
+
+msgid "{1} bids farewell to {2}."
+msgstr "{1}이(가) 석별의 정을 아쉬워하며\n{2}을(를) 보냅니다"
+
+msgid "{1} blacked out!"
+msgstr "{1}은(는)\n눈앞이 캄캄해졌다!"
+
+msgid "{1} bounced the {2} back!"
+msgstr "{1}은(는)\n{2}을(를) 되받아쳤다!"
+
+msgid "{1} braced itself!"
+msgstr "{1}은(는)\n버티기 태세에 들어갔다!"
+
+msgid "{1} breaks the mold!"
+msgstr "{1}의\n틀깨기!"
+
+msgid "{1} burrowed its way under the ground!"
+msgstr "{1}은(는)\n땅으로 파고들었다!"
+
+msgid "{1} called {2}!"
+msgstr "{1}은(는)\n{2}을(를) 불렀다!"
+
+msgid "{1} calmed down."
+msgstr "{1}은(는)\n얌전해졌다!"
+
+msgid "{1} came to its senses from the Trainer's call!"
+msgstr "{1}은(는)\n트레이너의 외침을 듣고\n원래 모습으로 돌아왔다!"
+
+msgid "{1} can use items again!"
+msgstr "{1}은(는)\n도구를 쓸 수 있게 되었다!"
+
+msgid "{1} can't be fused with itself!"
+msgstr "{1}은(는) 자기 자신과는\n합체할 수 없습니다!"
+
+msgid "{1} can't be fused with {2}."
+msgstr "{1}은(는) {2}와(과)는\n합체할 수 없습니다"
+
+msgid "{1} can't be learned."
+msgstr "{1}은(는)\n배울 수 없다!"
+
+msgid "{1} can't be switched out!"
+msgstr "{1}은(는)\n되돌아오게 할 수 없다!"
+
+msgid "{1} can't be taught to an Egg."
+msgstr "{1}은(는) 알에게 가르칠 수 없습니다"
+
+msgid "{1} can't be taught to this Pokémon."
+msgstr "{1}은(는) 이 포켓몬에게 가르칠 수 없습니다"
+
+msgid "{1} can't be used in a sky battle!"
+msgstr "{1}은(는) 스카이배틀에서는\n쓸 수 없다!"
+
+msgid "{1} can't escape now!"
+msgstr "{1}은(는)\n이제 도망칠 수 없다!"
+
+msgid "{1} can't fight in a sky battle!"
+msgstr "{1}은(는)\n스카이배틀에 내보낼 수 없다!"
+
+msgid "{1} can't get it going!"
+msgstr "{1}은(는)\n컨디션이 좋아지지 않는다!"
+
+msgid "{1} can't move!"
+msgstr "{1}은(는)\n움직일 수 없다!"
+
+msgid "{1} can't stockpile any more!"
+msgstr "{1}은(는)\n더 이상 비축할 수 없다!"
+
+msgid "{1} can't use items anymore!"
+msgstr "{1}은(는)\n도구를 쓸 수 없게 되었다!"
+
+msgid "{1} can't use the same move twice in a row due to the torment!"
+msgstr "{1}은(는)\n트집을 잡혔기 때문에\n계속해서 같은 기술을 쓸 수 없다!"
+
+msgid "{1} can't use the sealed {2}!"
+msgstr "{1}은(는) 봉인 때문에\n{2}을(를) 쓸 수 없다!"
+
+msgid "{1} can't use {2} after the taunt!"
+msgstr "{1}은(는) 도발당한 상태라서\n{2}을(를) 쓸 수 없다!"
+
+msgid "{1} can't use {2} because of Heal Block!"
+msgstr "{1}은(는) 회복봉인 때문에\n{2}을(를) 쓸 수 없다!"
+
+msgid "{1} cannot use {2}!"
+msgstr "{1}은(는)\n{2}을(를) 쓸 수 없다!"
+
+msgid "{1} caused an uproar!"
+msgstr "{1}은(는)\n소란을 피우기 시작했다!"
+
+msgid "{1} changed Forme!"
+msgstr "{1}은(는)\n다른 모습으로 변화했다"
+
+msgid "{1} chose Doom Desire as its destiny!"
+msgstr "{1}은(는)\n파멸의소원을 미래에 맡겼다!"
+
+msgid "{1} clamped {2}!"
+msgstr "{2}은(는)\n{1}의 껍질에 꼈다!"
+
+msgid "{1} copied {2}'s stat changes!"
+msgstr "{1}은(는)\n{2}의\n능력 변화를 복사했다!"
+
+msgid "{1} copied {2}'s {3}!"
+msgstr "{1}은(는)\n{2}의\n{3}을(를) 복사했다!"
+
+msgid "{1} cured its infatuation status using its {2}!"
+msgstr "{1}은(는)\n{2}(으)로\n헤롱헤롱 상태가 나았다!"
+
+msgid "{1} cut its own HP and laid a curse on {2}!"
+msgstr "{1}은(는)\n자신의 체력을 깎아서\n{2}에게 저주를 걸었다!"
+
+msgid "{1} cut its own HP and maximized its Attack!"
+msgstr "{1}은(는)\n체력을 깎아서 풀 파워로 만들었다!"
+
+msgid "{1} defeated\n{2}!"
+msgstr "{1}은(는)\n{2}와(과)의\n승부에서 이겼다!"
+
+msgid "{1} defeated {2} and {3}!"
+msgstr "{1}은(는)\n{2}와(과) {3}와(과)의\n승부에서 이겼다!"
+
+msgid "{1} did a headbutt!"
+msgstr "{1}은(는)\n박치기를 썼다!"
+
+msgid "{1} did not learn {2}."
+msgstr "{1}은(는) {2}을(를)\n결국 배우지 않았다!"
+
+msgid "{1} doesn't become confused!"
+msgstr "{1}은(는)\n혼란되지 않는다!"
+
+msgid "{1} endured the hit!"
+msgstr "{1}은(는)\n공격을 버텼다!"
+
+msgid "{1} evaded the attack!"
+msgstr "{1}은(는)\n공격을 피했다!"
+
+msgid "{1} fainted!"
+msgstr "{1}은(는) 쓰러졌다!"
+
+msgid "{1} fainted...\\"
+msgstr "{1}은(는)\n쓰러졌다\\"
+
+msgid "{1} fell asleep!"
+msgstr "{1}은(는)\n잠들어 버렸다!"
+
+msgid "{1} fell for the taunt!"
+msgstr "{1}은(는)\n도발에 넘어가 버렸다!"
+
+msgid "{1} fell in love!"
+msgstr "{1}은(는)\n헤롱헤롱해졌다!"
+
+msgid "{1} fell straight down!"
+msgstr "{1}은(는)\n떨어뜨리기를 당해서 땅에 떨어졌다!"
+
+msgid "{1} fled from battle!"
+msgstr "{1}은(는)\n배틀에서 이탈했다!"
+
+msgid "{1} fled using Run Away!"
+msgstr "{1}은(는)\n도주를 써서 도망쳤다!"
+
+msgid "{1} fled using its {2}!"
+msgstr "{1}은(는)\n{2}을(를) 써서 도망쳤다"
+
+msgid "{1} fled!"
+msgstr "{1}은(는)\n하늘 높이 날아올랐다!"
+
+msgid "{1} flew up high!"
+msgstr "{1}은(는)\n하늘 높이 날아올랐다!"
+
+msgid "{1} flew {2} up into the air!"
+msgstr "{1}은(는)\n{2}을(를) 날려버렸다!"
+
+msgid "{1} flinched and couldn't move!"
+msgstr "{1}은(는)\n풀이 죽어 기술을 쓸 수 없다!"
+
+msgid "{1} flung its {2}!"
+msgstr "{1}은(는)\n{2}을(를) 내던졌다!"
+
+msgid "{1} foresaw an attack!"
+msgstr "{1}은(는)\n미래의 공격을 예지했다!"
+
+msgid "{1} forfeited the match!"
+msgstr "{1}의 항복으로\n대전이 중지되었습니다!"
+
+msgid "{1} forgot how to\nuse {2}."
+msgstr "{1}은(는) {2}을(를)\n깨끗이 잊었다!"
+
+msgid "{1} forgot {2}."
+msgstr "{1}은(는) {2}을(를)\n깨끗이 잊었다!"
+
+msgid "{1} forgot {2}..."
+msgstr "{1}은(는)\n{2}을(를) 깨끗이 잊었다..."
+
+msgid "{1} found \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1}은(는)\n\\c[1]{2}\\c[0]을(를) 발견했다!\\wtnp[30]0]"
+
+msgid "{1} found one \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1}은(는)\n\\c[1]{2}\\c[0]을(를) 발견했다!\\wtnp[30]"
+
+msgid "{1} found one {2}!"
+msgstr "{1}은(는)\n{2}을(를) 주웠다!"
+
+msgid "{1} found some \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1}은(는)\n\\c[1]{2}\\c[0]을(를) 발견했다!\\wtnp[30]"
+
+msgid "{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[20]"
+msgstr "{1}은(는)\n\\c[1]{3}\\c[0]을(를) {2}개 발견했다!\\wtnp[30]"
+
+msgid "{1} found {2} \\c[1]{3}s\\c[0]!\\wtnp[20]"
+msgstr "{1}은(는)\n\\c[1]{3}\\c[0]을(를) {2}개 발견했다!\\wtnp[30]"
+
+msgid "{1} frisked the foe and found one {2}!"
+msgstr "{1}은(는)\n{2}을(를) 통찰했다!"
+
+msgid "{1} frisked {2} and found its {3}!"
+msgstr "{1}은(는) {2}의\n{3}을(를) 통찰했다!"
+
+msgid "{1} gained a boosted {2} Exp. Points!"
+msgstr "{1}은(는) 많은 양의\n{2} 경험치를 얻었다!"
+
+msgid "{1} gained {2} Exp. Points!"
+msgstr "{1}은(는)\n{2} 경험치를 얻었다!"
+
+msgid "{1} gave ${2} to the winner..."
+msgstr "{1}은(는) 상금으로\n{2}원을 지불했다..."
+
+msgid "{1} gave {2} its {3}!"
+msgstr "{1}은(는) {3}을(를)\n{2}에게 지니게 했다!"
+
+msgid "{1} got ${2}\nfor winning!"
+msgstr "{1}은(는) 상금으로\n{2}원을 손에 넣었다!"
+
+msgid "{1} got free of {2}'s {3}!"
+msgstr "{1}은(는)\n{2}의 {3}(으)로부터 풀려났다!"
+
+msgid "{1} got over its infatuation."
+msgstr "{1}의\n헤롱헤롱이 풀렸다!"
+
+msgid "{1} grew to Lv. {2}!"
+msgstr "{1}은(는)\n레벨 {2}(으)로 올랐다!"
+
+msgid "{1} had its HP restored."
+msgstr "{1}의\n체력이 회복되었다!"
+
+msgid "{1} had its energy drained!"
+msgstr "{1}(으)로부터\n체력을 흡수했다!"
+
+msgid "{1} harvested one {2}!"
+msgstr "{1}은(는)\n{2}을(를) 수확했다!"
+
+msgid "{1} has Air Lock!"
+msgstr "{1}의\n에어록!"
+
+msgid "{1} has Mega Evolved into {2}!"
+msgstr "{1}은(는)\n{2}(으)로 메가진화했다!"
+
+msgid "{1} has already been selected."
+msgstr "{1}은(는)\n이미 선택되었습니다"
+
+msgid "{1} has been afflicted with infestation by {2}!"
+msgstr "{2}은(는)\n{1}에게 엉겨 붙었다!"
+
+msgid "{1} has been cured of its corruption!"
+msgstr "{1}은(는)\n피폭 상태에서 벗어났다!"
+
+msgid "{1} has been laid down."
+msgstr "{1}가 뿌려져 있다"
+
+msgid "{1} has no energy left to battle!"
+msgstr "{1}은(는) 싸우기 위한\n기력이 남아있지 않습니다!"
+
+msgid "{1} has no more Pokémon that can fight!"
+msgstr "{1}에게는\n싸울 수 있는 포켓몬이 없다!"
+
+msgid "{1} has no moves left!"
+msgstr "{1}은(는)\n쓸 수 있는 기술이 없다!"
+
+msgid "{1} has no usable Pokémon!"
+msgstr "{1}에게는 사용할 수 있는 포켓몬이 없다!"
+
+msgid "{1} held up its Red Card against {2}!"
+msgstr "{1}은(는) 레드카드를\n{2}에게 꺼내 들었다!"
+
+msgid "{1} helped {2} move next!"
+msgstr "{2}은(는) {1}의\n배려를 받아들이기로 했다!"
+
+msgid "{1} hid underwater!"
+msgstr "{1}은(는)\n물속에 몸을 숨겼다!"
+
+msgid "{1} hung on using its Focus Band!"
+msgstr "{1}은(는)\n기합의머리띠로 버텼다!"
+
+msgid "{1} hung on using its Focus Sash!"
+msgstr "{1}은(는)\n기합의띠로 버텼다!"
+
+msgid "{1} hung on with Sturdy!"
+msgstr "{1}은(는)\n공격을 버텼다!"
+
+msgid "{1} ignored orders while asleep!"
+msgstr "{1}은(는) 잠든 채로\n명령을 무시했다!"
+
+msgid "{1} ignored orders!"
+msgstr "{1}은(는)\n명령을 무시했다!"
+
+msgid "{1} intends to flip up a mat and block incoming attacks!"
+msgstr "{1}은(는)\n마룻바닥세워막기를 노리고 있다!"
+
+msgid "{1} invited you to a trade, accept?"
+msgstr "{1}님이 교환을\n신청했습니다\n수락할까요?"
+
+msgid "{1} is about to send in {2}."
+msgstr "{1}은(는)\n{2}을(를) 내보내려 하고 있다"
+
+msgid "{1} is absorbing power!"
+msgstr "{1}은(는)\n파워를 모으고 있다!"
+
+msgid "{1} is affected by the radiation!"
+msgstr "{1}은(는)\n방사선의 피해를 입었다!"
+
+msgid "{1} is afflicted by the curse!"
+msgstr "{1}은(는)\n저주받고 있다!"
+
+msgid "{1} is already asleep!"
+msgstr "{1}은(는)\n이미 잠들어 있다"
+
+msgid "{1} is already confused!"
+msgstr "{1}은(는) 이미\n혼란에 빠져 있다"
+
+msgid "{1} is already holding one {2}."
+msgstr "{1}은(는) 이미\n{2}을(를) 지니고 있습니다"
+
+msgid "{1} is already in battle!"
+msgstr "{1}은(는)\n이미 배틀에 나가 있습니다"
+
+msgid "{1} is already paralyzed!"
+msgstr "{1}은(는)\n이미 마비되어 있다"
+
+msgid "{1} is already poisoned."
+msgstr "{1}은(는) 이미\n몸에 독이 퍼진 상태다"
+
+msgid "{1} is angry!"
+msgstr "{1}은(는)\n화내고 있다!"
+
+msgid "{1} is attacking!"
+msgstr "{1}이(가) 공격한다!"
+
+msgid "{1} is badly poisoned!"
+msgstr "{1}의\n몸에 맹독이 퍼졌다!"
+
+msgid "{1} is buffeted by the hail!"
+msgstr "싸라기눈이\n{1}을(를) 덮쳤다!"
+
+msgid "{1} is buffeted by the sandstorm!"
+msgstr "모래바람이\n{1}을(를) 덮쳤다!"
+
+msgid "{1} is confused!"
+msgstr "{1}은(는)\n혼란에 빠져 있다!"
+
+msgid "{1} is covered in powder!"
+msgstr "{1}에게\n분진을 뒤집어씌웠다!"
+
+msgid "{1} is damaged by the recoil!"
+msgstr "{1}은(는)\n반동으로 데미지를 입었다!"
+
+msgid "{1} is disabled no more!"
+msgstr "{1}의\n사슬묶기가 풀렸다!"
+
+msgid "{1} is eager for more!"
+msgstr "(아래 미번역 구간은 배틀프런티어)"
+
+msgid "{1} is eating!"
+msgstr "{1}은(는)\n먹이를 먹고 있다!"
+
+msgid "{1} is exerting its Pressure!"
+msgstr "{1}은(는)\n프레셔를 발산하고 있다!"
+
+msgid "{1} is fast asleep."
+msgstr "{1}은(는)\n쿨쿨 잠들어 있다"
+
+msgid "{1} is frozen solid!"
+msgstr "{1}은(는)\n얼어버려서 움직일 수 없다!"
+
+msgid "{1} is getting pumped!"
+msgstr "{1}은(는)\n힘이 넘쳐흐른다!"
+
+msgid "{1} is glowing!"
+msgstr "{1}을(를)\n세찬 빛이 감쌌다!"
+
+msgid "{1} is having a bad dream!"
+msgstr "{1}은(는)\n나이트메어 때문에 시달리고 있다!"
+
+msgid "{1} is healed by poison!"
+msgstr "{1}은(는)\n독으로 회복했다!"
+
+msgid "{1} is hit by lightning!"
+msgstr "{1}은(는)\n번개에 맞았다!"
+
+msgid "{1} is hurt by its burn!"
+msgstr "{1}은(는)\n화상 데미지를 입었다!"
+
+msgid "{1} is hurt by its {2}!"
+msgstr "{1}은(는) {2} 때문에\n데미지를 입었다!"
+
+msgid "{1} is hurt by poison!"
+msgstr "{1}은(는)\n독에 의한 데미지를 입었다!"
+
+msgid "{1} is hurt by {2}!"
+msgstr "{1}은(는) {2}의\n데미지를 입고 있다"
+
+msgid "{1} is immobilized by love!"
+msgstr "{1}은(는)\n헤롱헤롱해서 기술을 쓸 수 없었다!"
+
+msgid "{1} is in love with {2}!"
+msgstr "{1}은(는)\n{2}에게 헤롱헤롱해 있다!"
+
+msgid "{1} is loafing around!"
+msgstr "{1}은(는) 게으름을 피우고 있다!"
+
+msgid "{1} is locked in a nightmare!"
+msgstr "{1}은(는)\n악몽에 시달리고 있다!"
+
+msgid "{1} is making an uproar!"
+msgstr "{1}은(는)\n소란을 피우고 있다!"
+
+msgid "{1} is not affected by {2} thanks to its Safety Goggles!"
+msgstr "{1}은(는) 방진고글 때문에\n{2}에 당하지 않는다!"
+
+msgid "{1} is not allowed."
+msgstr "{1}은(는) 내보낼 수 없습니다"
+
+msgid "{1} is not compatible with {2}."
+msgstr "{1}와(과) {2}은(는)\n상성이 좋지 않았다!"
+
+msgid "{1} is now being held."
+msgstr "{1}을(를)\n지니게 했다!"
+
+msgid "{1} is paralyzed! It can't move!"
+msgstr "{1}은(는)\n몸이 저려서 움직일 수 없다!"
+
+msgid "{1} is paralyzed! It may be unable to move!"
+msgstr "{1}은(는) 마비되어\n기술이 나오기 어려워졌다!"
+
+msgid "{1} is poisoned!"
+msgstr "{1}의\n몸에 독이 퍼졌다!"
+
+msgid "{1} is protected by Aroma Veil!"
+msgstr "{1}을(를)\n아로마베일이 지켜주고 있다!"
+
+msgid "{1} is protected by Mist!"
+msgstr "{1}을(를)\n흰안개가 지켜주고 있다!"
+
+msgid "{1} is protected by Safeguard!"
+msgstr "{1}을(를)\n신비의 베일이 지켜주고 있다!"
+
+msgid "{1} is protected by the Sticky Terrain!"
+msgstr "{1}을(를)\n끈적끈적필드가 지켜주고 있다!"
+
+msgid "{1} is protected by the mist!"
+msgstr "{1}을(를)\n흰안개가 지켜주고 있다!"
+
+msgid "{1} is radiating a blazing aura!"
+msgstr "{1}은(는)\n활활 타오르는 오라를 발산하고 있다!"
+
+msgid "{1} is radiating a bursting aura!"
+msgstr "{1}은(는)\n세차게 튀는 오라를 발산하고 있다!"
+
+msgid "{1} is radiating a dark aura!"
+msgstr "{1}은(는)\n다크오라를 발산하고 있다!"
+
+msgid "{1} is radiating a fairy aura!"
+msgstr "{1}은(는)\n페어리오라를 발산하고 있다!"
+
+msgid "{1} is ready to help {2}!"
+msgstr "{1}은(는) {2}에게\n도우미가 되어주려 한다!"
+
+msgid "{1} is selected."
+msgstr "{1}을(를)\n어떻게 할까?"
+
+msgid "{1} is storing energy!"
+msgstr "{1}은(는) 참고 있다"
+
+msgid "{1} is struggling!"
+msgstr "{1}은(는)\n발버둥쳤다!"
+
+msgid "{1} is switched out with the Eject Button!"
+msgstr "{1}은(는)\n탈출버튼 때문에 돌아간다!"
+
+msgid "{1} is tightening its focus!"
+msgstr "{1}은(는)\n집중력을 높이고 있다!"
+
+msgid "{1} is tormented!"
+msgstr "{1}은(는)\n트집을 잡혔다!"
+
+msgid "{1} is trying to\nlearn {2}."
+msgstr "{1}은(는) 새로\n{2}을(를) 배우고 싶다..."
+
+msgid "{1} is trying to learn {2}."
+msgstr "{1}은(는) 새로\n{2}을(를) 배우고 싶다...!"
+
+msgid "{1} is trying to take its foe down with it!"
+msgstr "{1}은(는) 상대를\n길동무로 삼으려 하고 있다!"
+
+msgid "{1} is unaffected!"
+msgstr "{1}에게는\n전혀 효과가 없다!"
+
+msgid "{1} is waiting for {2}'s move..."
+msgstr "{1}은(는)\n{2}을(를) 기다리고 있다..."
+
+msgid "{1} is watching carefully!"
+msgstr "{1}은(는)\n상황을 살피고 있다!"
+
+msgid "{1} isn't holding anything."
+msgstr "{1}은(는) 도구를 아무것도\n지니고 있지 않습니다!"
+
+msgid "{1} kept going and crashed!"
+msgstr "{1}은(는)\n의욕이 넘쳐서 땅에 부딪혔다!"
+
+msgid "{1} knocked off {2}'s {3}!"
+msgstr "{1}은(는)\n{2}의\n{3}을(를) 탁 쳐서 떨구었다!"
+
+msgid "{1} learned {2}!"
+msgstr "{1}은(는)\n{2}을(를) 배웠다!"
+
+msgid "{1} learned {2}!\\se[itemlevel]"
+msgstr "{1}은(는)\n{2}을(를) 배웠다!\\se[itemlevel]"
+
+msgid "{1} levitated with electromagnetism!"
+msgstr "{1}은(는)\n전자력으로 떠올랐다!"
+
+msgid "{1} lost against\n{2}!"
+msgstr "{1}은(는)\n{2}와(과)의\n승부에서 졌다!"
+
+msgid "{1} lost against {2} and {3}!"
+msgstr "{1}은(는)\n{2}와(과) {3}와(과)의\n승부에서 졌다!"
+
+msgid "{1} lost its focus and couldn't move!"
+msgstr "{1}은(는) 집중력이\n떨어져서 기술을 쓸 수 없다!"
+
+msgid "{1} lost some of its HP!"
+msgstr "{1}의\n생명이 조금 깎였다!"
+
+msgid "{1} lowered its head!"
+msgstr "{1}은(는)\n목을 움츠렸다!"
+
+msgid "{1} made {2} drowsy!"
+msgstr "{1}은(는) {2}의\n졸음을 유도했다!"
+
+msgid "{1} makes Fairy-type moves miss with Disenchant!"
+msgstr "{1}은(는) 환상의끝 때문에\n페어리타입 기술에 당하지 않는다!"
+
+msgid "{1} makes Ground moves miss with Levitate!"
+msgstr "{1}은(는) 부유 때문에\n땅타입 기술에 당하지 않는다!"
+
+msgid "{1} makes Nuclear-type moves miss with Radiation Proof!"
+msgstr "{1}은(는) 납의피부 때문에\n핵타입 기술에 당하지 않는다!"
+
+msgid "{1} maxed its Attack!"
+msgstr "{1}의\n공격이 최고치까지 올라갔다!"
+
+msgid "{1} must recharge!"
+msgstr "{1}은(는)\n공격의 반동으로 움직일 수 없다!"
+
+msgid "{1} obtained {2}!\\me[PU-PokemonObtained]"
+msgstr "{1}은(는) {2}을(를)\n손에 넣었다!\\me[PU-PokemonObtained]"
+
+msgid "{1} obtained {2}!\\se[itemlevel]"
+msgstr "{1}은(는) {2}을(를)\n손에 넣었다!\\se[itemlevel]"
+
+msgid "{1} obtained {2}."
+msgstr "{1}은(는)\n{2}을(를) 손에 넣었다!"
+
+msgid "{1} opened the door to its heart!"
+msgstr "(이하 미번역 구간은 그림자 포켓몬)"
+
+msgid "{1} panicked and dropped\n${2}..."
+msgstr "{1}은(는) 당황해서\n{2}원을 잃어버렸다..."
+
+msgid "{1} picked up ${2}!"
+msgstr "{1}은(는) {2}원을 주웠다!"
+
+msgid "{1} picked up {2} from the pokemon!"
+msgstr "{1}은(는) {2}을(를) 주웠다!"
+
+msgid "{1} planted a {2} in the soft loamy soil."
+msgstr "{1}은(는) 푹신푹신한 흙에\n{2}를 심었다!"
+
+msgid "{1} planted its roots!"
+msgstr "{1}은(는) 뿌리를 뻗었다!"
+
+msgid "{1} pretended not to notice!"
+msgstr "{1}은(는) 모른 체했다!"
+
+msgid "{1} protected itself!"
+msgstr "{1}은(는)\n공격으로부터 몸을 지켰다!"
+
+msgid "{1} put away the {2} in the <icon=bagPocket{3}>\\c[1]Berries\\c[0] Pocket."
+msgstr "{1}은(는) {2}를\n<icon=bagPocket{3}>\\c[1]나무열매\\c[0] 포켓에 넣었다"
+
+msgid "{1} put in a substitute!"
+msgstr "{1}의\n대타가 나타났다!"
+
+msgid "{1} put the \\c[1]{2}\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket."
+msgstr "{1}은(는) \\c[1]{2}\\c[0]을(를)\n<icon=bagPocket{3}>\\c[1]{4}\\c[0] 포켓에 넣었다"
+
+msgid "{1} put the \\c[1]{2}s\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket."
+msgstr "{1}은(는) \\c[1]{2}\\c[0]을(를)\n<icon=bagPocket{3}>\\c[1]{4}\\c[0] 포켓에 넣었다"
+
+msgid "{1} received a Pokémon from {2}."
+msgstr "{1}은(는) {2}에게\n포켓몬을 받았다"
+
+msgid "{1} received a Pokémon."
+msgstr "{1}은(는)\n포켓몬을 받았다"
+
+msgid "{1} received an encore!"
+msgstr "{1}은(는)\n앙코르를 받았다!"
+
+msgid "{1} received {2} Coin(s)!"
+msgstr "{1}은(는)\n동전을 {2}개 손에 넣었다!"
+
+msgid "{1} received {2} Coins!"
+msgstr "{1}은(는)\n동전을 {2}개 손에 넣었다!"
+
+msgid "{1} received {2} from {3}!"
+msgstr "{1}은(는) {3}(으)로부터\n{2}을(를) 받았다!"
+
+msgid "{1} received {2}!\\se[itemlevel]"
+msgstr "{1}은(는)\n{2}을(를) 받았다!\\se[itemlevel]"
+
+msgid "{1} regained the move\n{2}!"
+msgstr "{1} regained the move \n{2}!"
+
+msgid "{1} restored a little HP using its Shell Bell!"
+msgstr "{1}은(는) 조개껍질방울로\n조금 회복했다"
+
+msgid "{1} restored a little HP using its {2}!"
+msgstr "{1}은(는)\n{2}(으)로 인해 조금 회복했다"
+
+msgid "{1} reversed all other Pokémon's auras!"
+msgstr "{1}은(는)\n모든 오라를 제압한다!"
+
+msgid "{1} sealed the opponent's move(s)!"
+msgstr "{1}은(는)\n상대의 기술을 봉인했다!"
+
+msgid "{1} sent\nout {2} and {3}!"
+msgstr "{1}은(는) {2}와(과)\n{3}을(를) 내보냈다!"
+
+msgid "{1} sent\nout {2}!"
+msgstr "{1}은(는)\n{2}을(를) 내보냈다!"
+
+msgid "{1} sent\nout {2}! Go! {3}!"
+msgstr "{1}은(는)\n{2}을(를) 꺼냈다!\n가랏! {3}!"
+
+msgid "{1} sent\nout {2}! {3} sent\nout {4}!"
+msgstr "{1}은(는)\n{2}을(를) 내보냈다!\n{3}은(는)\n{4}을(를) 내보냈다!"
+
+msgid "{1} shared its guard with the target!"
+msgstr "{1}은(는)\n서로의 가드를 셰어했다!"
+
+msgid "{1} shared its power with the target!"
+msgstr "{1}은(는)\n서로의 파워를 셰어했다!"
+
+msgid "{1} shrouded itself with Magic Coat!"
+msgstr "{1}은(는)\n매직코트에 둘러싸였다!"
+
+msgid "{1} shuddered with anticipation!"
+msgstr "위험예지 때문에\n{1}은(는) 몸을 떨었다!"
+
+msgid "{1} sketched {2}!"
+msgstr "{1}은(는)\n{2}을(를) 스케치했다!"
+
+msgid "{1} slept and became healthy!"
+msgstr "{1}은(는)\n잠이 들어 건강해졌다!"
+
+msgid "{1} snapped out of confusion!"
+msgstr "{1}의\n혼란이 풀렸다!"
+
+msgid "{1} snapped out of confusion."
+msgstr "{1}의\n혼란이 풀렸다!"
+
+msgid "{1} snapped out of its confusion."
+msgstr "{1}의\n혼란이 풀렸다!"
+
+msgid "{1} snatched {2}'s move!"
+msgstr "{1}은(는)\n{2}의 기술을 가로챘다!"
+
+msgid "{1} sprang up!"
+msgstr "{1}은(는)\n높이 뛰어올랐다!"
+
+msgid "{1} stayed awake using its {2}!"
+msgstr "{1}은(는)\n{2} 때문에 잠들지 않는다!"
+
+msgid "{1} stockpiled {2}!"
+msgstr "{1}은(는)\n{2}개 비축했다!"
+
+msgid "{1} stole and ate its target's {2}!"
+msgstr "{1}은(는)\n{2}을(를) 빼앗아 먹었다!"
+
+msgid "{1} stole {2}'s {3} with Magician!"
+msgstr "{1}은(는)\n{2}(으)로부터\n{3}을(를) 빼앗았다!"
+
+msgid "{1} stole {2}'s {3}!"
+msgstr "{1}은(는)\n{2}의 {3}을(를) 빼앗았다!"
+
+msgid "{1} sucked up the liquid ooze!"
+msgstr "{1}은(는)\n해감액을 흡수했다!"
+
+msgid "{1} surrounded itself with a veil of petals!"
+msgstr "{1}을(를)\n플라워베일이 지켜주고 있다!"
+
+msgid "{1} surrounded itself with a veil of sweetness!"
+msgstr "{1}은(는)\n스위트베일 때문에 잠들지 않는다!"
+
+msgid "{1} surrounded itself with a veil of water!"
+msgstr "{1}은(는)\n물의 고리를 머금었다!"
+
+msgid "{1} surrounds itself with a protective mist!"
+msgstr "{1}을(를)\n미스트필드가 지켜주고 있다!"
+
+msgid "{1} surrounds itself with electrified terrain!"
+msgstr "{1}을(를)\n일렉트릭필드가 지켜주고 있다!"
+
+msgid "{1} survived the poisoning.\nThe poison faded away!"
+msgstr "{1}은(는) 어떻게든 독을 견뎠다\n독이 사라졌다!"
+
+msgid "{1} swapped its {2} ability with its target's {3} ability!"
+msgstr "{1}은(는) 서로의 특성\n{2}과 {3}를 교체했다!"
+
+msgid "{1} switched all changes to its Attack and Sp. Atk with the target!"
+msgstr "{1}은(는) 상대와 자신의\n공격과 특수공격의\n능력 변화를 바꿨다!"
+
+msgid "{1} switched all changes to its Defense and Sp. Def with the target!"
+msgstr "{1}은(는) 상대와 자신의\n방어와 특수방어의\n능력 변화를 바꿨다!"
+
+msgid "{1} switched items with its opponent!"
+msgstr "{1}은(는) 서로의\n도구를 교체했다!"
+
+msgid "{1} switched its Attack and Defense!"
+msgstr "{1}은(는)\n공격과 방어를 바꿨다!"
+
+msgid "{1} switched places with its ally!"
+msgstr "{1}은(는)\n같은 편과 자리를 바꿨다!"
+
+msgid "{1} switched stat changes with the target!"
+msgstr "{1}은(는) 상대와 자신의\n능력 변화를 바꿨다!"
+
+msgid "{1} thawed out!"
+msgstr "{1}의\n얼음이 녹았다!"
+
+msgid "{1} threw a rock at the {2}!"
+msgstr "{1}은(는)\n{2}에게 바위를 던졌다!"
+
+msgid "{1} threw a {2}."
+msgstr "{1}은(는)\n{2}을(를) 썼다!"
+
+msgid "{1} threw some bait at the {2}!"
+msgstr "{1}은(는)\n{2}에게 먹이를 던졌다!"
+
+msgid "{1} took a nap!"
+msgstr "{1}은(는)\n낮잠을 자기 시작했다!"
+
+msgid "{1} took aim at {2}!"
+msgstr "{1}은(는)\n{2}에게 조준했다!"
+
+msgid "{1} took in sunlight!"
+msgstr "{1}은(는)\n빛을 흡수했다!"
+
+msgid "{1} took its attacker down with it!"
+msgstr "{1}은(는) 상대를\n길동무로 삼았다!"
+
+msgid "{1} took the attack!"
+msgstr "{1}은(는)\n공격을 받았다!"
+
+msgid "{1} took the {2} attack!"
+msgstr "{1}은(는)\n{2} 공격을 받았다!"
+
+msgid "{1} traced {2}'s {3}!"
+msgstr "{1}은(는) {2}의\n{3}을(를) 트레이스했다!"
+
+msgid "{1} transformed into the {2} type!"
+msgstr "{1}은(는)\n{2}타입이 됐다!"
+
+msgid "{1} transformed into {2}!"
+msgstr "{1}은(는)\n{2}(으)로 변신했다!"
+
+msgid "{1} transformed!"
+msgstr "{1}은(는)\n다른 모습으로 변화했다"
+
+msgid "{1} turned away!"
+msgstr "{1}은(는) 외면했다!"
+
+msgid "{1} turned friendly.\nThe base Attack can't fall!"
+msgstr "{1}은(는)\n조금 친해졌다!\n공격의\n기초 포인트는 더 떨어지지 않는다!"
+
+msgid "{1} turned friendly.\nThe base Attack fell!"
+msgstr "{1}은(는)\n조금 친해졌다!\n공격의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} turned friendly.\nThe base Defense can't fall!"
+msgstr "{1}은(는)\n조금 친해졌다!\n방어의\n기초 포인트는 더 떨어지지 않는다!"
+
+msgid "{1} turned friendly.\nThe base Defense fell!"
+msgstr "{1}은(는)\n조금 친해졌다!\n방어의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} turned friendly.\nThe base HP can't fall!"
+msgstr "{1}은(는)\n조금 친해졌다!\nHP의\n기초 포인트는 더 떨어지지 않는다!"
+
+msgid "{1} turned friendly.\nThe base HP fell!"
+msgstr "{1}은(는)\n조금 친해졌다!\nHP의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} turned friendly.\nThe base Special Attack can't fall!"
+msgstr "{1}은(는)\n조금 친해졌다!\n특수공격의\n기초 포인트는 더 떨어지지 않는다!"
+
+msgid "{1} turned friendly.\nThe base Special Attack fell!"
+msgstr "{1}은(는)\n조금 친해졌다!\n특수공격의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} turned friendly.\nThe base Special Defense can't fall!"
+msgstr "{1}은(는)\n조금 친해졌다!\n특수방어의\n기초 포인트는 더 떨어지지 않는다!"
+
+msgid "{1} turned friendly.\nThe base Special Defense fell!"
+msgstr "{1}은(는)\n조금 친해졌다!\n특수방어의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} turned friendly.\nThe base Speed can't fall!"
+msgstr "{1}은(는)\n조금 친해졌다!\n스피드의\n기초 포인트는 더 떨어지지 않는다!"
+
+msgid "{1} turned friendly.\nThe base Speed fell!"
+msgstr "{1}은(는)\n조금 친해졌다!\n스피드의\n기초 포인트가 떨어졌다!"
+
+msgid "{1} turned into {2}!"
+msgstr "{1}은(는)\n{2}이(가) 되었다!"
+
+msgid "{1} twisted the dimensions!"
+msgstr "{1}은(는)\n시공을 뒤틀었다!"
+
+msgid "{1} unleashed energy!"
+msgstr "{1}의\n참기가 풀렸다!"
+
+msgid "{1} used\n{2}!"
+msgstr "{1}의\n{2}!"
+
+msgid "{1} used Coral Break!"
+msgstr "{1}은(는)\n산호크래시를 썼다!"
+
+msgid "{1} used Cut!"
+msgstr "{1}은(는)\n풀베기를 썼다!"
+
+msgid "{1} used Dive."
+msgstr "{1}은(는)\n다이빙을 썼다!"
+
+msgid "{1} used Fly!"
+msgstr "{1}은(는)\n공중날기를 썼다!"
+
+msgid "{1} used Rock Smash!"
+msgstr "{1}은(는)\n바위깨기를 썼다!"
+
+msgid "{1} used Strength!"
+msgstr "{1}은(는)\n괴력을 발휘했다!"
+
+msgid "{1} used Surf!"
+msgstr "{1}은(는)\n파도타기를 썼다!"
+
+msgid "{1} used Waterfall."
+msgstr "{1}은(는)\n폭포오르기를 썼다!"
+
+msgid "{1} used its {2} to get pumped!"
+msgstr "{1}은(는) {2}을(를) 써서\n의욕이 넘치기 시작했다!"
+
+msgid "{1} used the\n{2}!"
+msgstr "{1}은(는)\n{2}을(를) 썼다!"
+
+msgid "{1} used the\n{2}."
+msgstr "{1}은(는)\n{2}을(를) 썼다!"
+
+msgid "{1} used the Boxing Gloves!"
+msgstr "{1}은(는)\n복싱글러브를 썼다!"
+
+msgid "{1} used the Climbing Pick"
+msgstr "{1}은(는)\n등반장비를 썼다!"
+
+msgid "{1} used the Climbing Pick!"
+msgstr "{1}은(는)\n등반장비를 썼다!"
+
+msgid "{1} used the Escape Rope."
+msgstr "{1}은(는)\n동굴탈출로프를 썼다!"
+
+msgid "{1} used the Power Glove!"
+msgstr "{1}은(는)\n파워글러브를 썼다!"
+
+msgid "{1} used the Scuba Gear"
+msgstr "{1}은(는)\n잠수세트를 썼다!"
+
+msgid "{1} used the Scuba Gear."
+msgstr "{1}은(는)\n잠수세트를 썼다!"
+
+msgid "{1} used the Surfboard!"
+msgstr "{1}은(는)\n서핑보드를 썼다!"
+
+msgid "{1} used the {2}!"
+msgstr "{1}은(는)\n{2}을(를) 썼다!"
+
+msgid "{1} used the {2}."
+msgstr "{1}은(는)\n{2}을(를) 썼다!"
+
+msgid "{1} used {2}!"
+msgstr "{1}의\n{2}!"
+
+msgid "{1} vanished instantly!"
+msgstr "{1}의 모습이\n일순간에 사라졌다!"
+
+msgid "{1} waits for a target to make a move!"
+msgstr "{1}은(는)\n상대의 움직임을 살피고 있다!"
+
+msgid "{1} wants its target to bear a grudge!"
+msgstr "{1}은(는) 상대에게\n원념을 걸려 하고 있다!"
+
+msgid "{1} was badly poisoned by its {2}!"
+msgstr "{1}은(는)\n{2} 때문에 맹독에 중독됐다!"
+
+msgid "{1} was badly poisoned!"
+msgstr "{1}의\n몸에 맹독이 퍼졌다!"
+
+msgid "{1} was blocked by the kicked-up mat!"
+msgstr "{1}은(는)\n마룻바닥세워막기로 막혔다!"
+
+msgid "{1} was burned by its {2}!"
+msgstr "{1}은(는)\n{2} 때문에 화상을 입었다!"
+
+msgid "{1} was burned!"
+msgstr "{1}은(는)\n화상을 입었다!"
+
+msgid "{1} was caught in a sticky web!"
+msgstr "{1}은(는)\n끈적끈적네트에 걸렸다!"
+
+msgid "{1} was cured of its burn."
+msgstr "{1}의\n화상이 나았다!"
+
+msgid "{1} was cured of its paralysis."
+msgstr "{1}의\n몸저림이 풀렸다!"
+
+msgid "{1} was cured of its poisoning."
+msgstr "{1}의 독은\n말끔하게 해독됐다!"
+
+msgid "{1} was cured of paralysis."
+msgstr "{1}의\n마비가 풀렸다!"
+
+msgid "{1} was defrosted by {2}!"
+msgstr "{1}의\n{2} 때문에 얼음이 녹았다!"
+
+msgid "{1} was defrosted."
+msgstr "{1}의\n얼음이 녹았다!"
+
+msgid "{1} was downgraded to Level {2}!"
+msgstr "{1}은(는)\n레벨 {2}(으)로 내려갔다!"
+
+msgid "{1} was dragged out!"
+msgstr "{1}은(는)\n배틀에 끌려 나왔다!"
+
+msgid "{1} was elevated to Level {2}!"
+msgstr "{1}은(는)\n레벨 {2}(으)로 올랐다!"
+
+msgid "{1} was freed from Leech Seed!"
+msgstr "{1}은(는)\n{2}씨뿌리기로부터 풀려났다!"
+
+msgid "{1} was freed from the telekinesis!"
+msgstr "{1}은(는)\n{2}텔레키네시스로부터 풀려났다!"
+
+msgid "{1} was freed from {2}!"
+msgstr "{1}은(는)\n{2}(으)로부터 풀려났다!"
+
+msgid "{1} was frisked, revealing its {2}!"
+msgstr "{1}의\n{2}도 통찰했다!"
+
+msgid "{1} was frozen solid!"
+msgstr "{1}은(는)\n얼어붙었다!"
+
+msgid "{1} was given the {2} to hold."
+msgstr "{1}에게\n{2}을(를) 지니게 했다!"
+
+msgid "{1} was hurled into the air!"
+msgstr "{1}을(를)\n허공에 띄웠다!"
+
+msgid "{1} was hurt by its {2}!"
+msgstr "{1}은(는)\n{2} 데미지를 입었다!"
+
+msgid "{1} was hurt by spikes!"
+msgstr "{1}은(는)\n압정뿌리기의 데미지를 입었다!"
+
+msgid "{1} was hurt by the sunlight!"
+msgstr "{1}은(는)\n햇살의 데미지를 입었다!"
+
+msgid "{1} was hurt by the {2}!"
+msgstr "{1}은(는) {2} 때문에\n상처를 입었다!"
+
+msgid "{1} was hurt!"
+msgstr "{1}은(는)\n상처를 입었다!"
+
+msgid "{1} was identified!"
+msgstr "{1}의\n정체를 꿰뚫어 보았다!"
+
+msgid "{1} was paralyzed!"
+msgstr "{1}은(는) 마비되어\n기술이 나오기 어려워졌다!"
+
+msgid "{1} was paralyzed! It may be unable to move!"
+msgstr "{1}은(는) 마비되어\n기술이 나오기 어려워졌다!"
+
+msgid "{1} was poisoned!"
+msgstr "{1}의\n몸에 독이 퍼졌다!"
+
+msgid "{1} was prevented from healing due to Heal Block!"
+msgstr "{1}은(는)\n회복봉인 때문에 회복할 수 없다!"
+
+msgid "{1} was prevented from healing!"
+msgstr "{1}은(는)\n회복 동작을 봉인당했다!"
+
+msgid "{1} was protected by {2}!"
+msgstr "{1}의 {2} 때문에\n보호되었다!"
+
+msgid "{1} was released."
+msgstr "{1}을(를)\n밖에 놓아주었다"
+
+msgid "{1} was seeded!"
+msgstr "{1}에게\n씨앗을 심었다!"
+
+msgid "{1} was squeezed by {2}!"
+msgstr "{1}은(는)\n{2}에게 조이기를 당했다!"
+
+msgid "{1} was subjected to torment!"
+msgstr "{1}은(는)\n트집을 잡혔다!"
+
+msgid "{1} was thawed out."
+msgstr "{1}은(는)\n얼었던 몸이 녹았다!"
+
+msgid "{1} was transferred to box \"{2}\"."
+msgstr "{1}은(는) 박스 \"{2}\"(으)로\n전송되었다!"
+
+msgid "{1} was transferred to box \"{2}.\""
+msgstr "{1}은(는) 박스 \"{2}\"(으)로\n전송되었다!"
+
+msgid "{1} was transferred to someone's PC."
+msgstr "{1}은(는) 누군가의 PC로\n전송되었다!"
+
+msgid "{1} was transferred to someone's PC."
+msgstr "{1}은(는) 누군가의 PC로\n전송되었다!"
+
+msgid "{1} was transferred to {2}'s PC."
+msgstr "{1}은(는) {2}의 PC로\n전송되었다!"
+
+msgid "{1} was transferred to {2}'s PC."
+msgstr "{1}은(는) {2}의 PC로\n전송되었다!"
+
+msgid "{1} was trapped in the vortex!"
+msgstr "{1}은(는)\n소용돌이 속에 갇혔다!"
+
+msgid "{1} was unaffected!"
+msgstr "{1}에게는\n전혀 효과가 없다!"
+
+msgid "{1} was wrapped by {2}!"
+msgstr "{1}은(는)\n{2}에게 휘감겼다!"
+
+msgid "{1} wasn't affected!"
+msgstr "{1}에게는\n전혀 효과가 없다!"
+
+msgid "{1} watered the plant.\\wtnp[40]"
+msgstr "{1}은(는)\n열매에 물을 주었다\\wtnp[40]"
+
+msgid "{1} went back to {2}!"
+msgstr "{1}은(는)\n{2}의 곁으로 돌아간다!"
+
+msgid "{1} went to sleep!"
+msgstr "{1}은(는)\n잠을 자기 시작했다!"
+
+msgid "{1} whipped up a whirlwind!"
+msgstr "{1}의 주위에서\n공기가 소용돌이친다!"
+
+msgid "{1} withdrew {2}!"
+msgstr "{1}은(는)\n{2}을(를) 넣어버렸다!"
+
+msgid "{1} woke up in the uproar!"
+msgstr "{1}은(는)\n소란스러워서 눈을 떴다!"
+
+msgid "{1} woke up!"
+msgstr "{1}은(는)\n눈을 떴다!"
+
+msgid "{1} woke up."
+msgstr "{1}은(는)\n눈을 떴다!"
+
+msgid "{1} won't flinch because of its {2}!"
+msgstr "{1}의 {2} 때문에\n풀이 죽지 않는다!"
+
+msgid "{1}'s"
+msgstr "{1}의"
+
+msgid "{1}'s AREA"
+msgstr "{1}의 분포"
+
+msgid "{1}'s Air Balloon popped!"
+msgstr "{1}의\n풍선이 터졌다!"
+
+msgid "{1}'s Attack fell!"
+msgstr "{1}의\n공격이 떨어졌다!"
+
+msgid "{1}'s Attack harshly fell!"
+msgstr "{1}의\n공격이 크게 떨어졌다!"
+
+msgid "{1}'s Attack increased."
+msgstr "{1}은(는)\n공격의 기초 포인트가 올라갔다!"
+
+msgid "{1}'s Attack rose drastically!"
+msgstr "{1}의\n공격이 매우 크게 올라갔다!"
+
+msgid "{1}'s Attack rose sharply!"
+msgstr "{1}의\n공격이 크게 올라갔다!"
+
+msgid "{1}'s Attack rose!"
+msgstr "{1}의\n공격이 올라갔다!"
+
+msgid "{1}'s Attack sharply rose!"
+msgstr "{1}의\n공격이 크게 올라갔다!"
+
+msgid "{1}'s Attack was not lowered!"
+msgstr "{1}의\n공격은 떨어지지 않는다!"
+
+msgid "{1}'s Attack went way up!"
+msgstr "{1}의\n공격이 부쩍 올랐다!"
+
+msgid "{1}'s Attack won't go any higher!"
+msgstr "{1}의\n공격은 더 올라가지 않는다!"
+
+msgid "{1}'s Attack won't go any lower!"
+msgstr "{1}의\n공격은 더 떨어지지 않는다!"
+
+msgid "{1}'s Attack won't go lower!"
+msgstr "{1}의\n공격은 더 떨어지지 않는다!"
+
+msgid "{1}'s Chernobyl started a Toxic Fallout!"
+msgstr "{1}의 체르노빌 때문에\n방사능 낙진이 흩날렸다!"
+
+msgid "{1}'s Contrary raised its Attack!"
+msgstr "{1}의 심술꾸러기 때문에\n공격이 올랐다!"
+
+msgid "{1}'s Contrary raised its Speed!"
+msgstr "{1}의 심술꾸러기 때문에\n스피드가 올랐다!"
+
+msgid "{1}'s Defense fell!"
+msgstr "{1}의\n방어가 떨어졌다!"
+
+msgid "{1}'s Defense harshly fell!"
+msgstr "{1}의\n방어가 크게 떨어졌다!"
+
+msgid "{1}'s Defense increased."
+msgstr "{1}은(는)\n방어의 기초 포인트가 올라갔다!"
+
+msgid "{1}'s Defense rose drastically!"
+msgstr "{1}의\n방어가 매우 크게 올라갔다!"
+
+msgid "{1}'s Defense rose sharply!"
+msgstr "{1}의\n방어가 크게 올라갔다!"
+
+msgid "{1}'s Defense rose!"
+msgstr "{1}의\n방어가 올라갔다!"
+
+msgid "{1}'s Defense was lowered!"
+msgstr "{1}의\n방어가 떨어졌다!"
+
+msgid "{1}'s Defense was not lowered!"
+msgstr "{1}의\n방어는 떨어지지 않는다!"
+
+msgid "{1}'s Defense went way up!"
+msgstr "{1}의\n방어가 부쩍 올랐다!"
+
+msgid "{1}'s Defense won't go any higher!"
+msgstr "{1}의\n방어는 더 올라가지 않는다!"
+
+msgid "{1}'s Defense won't go any lower!"
+msgstr "{1}의\n방어는 더 떨어지지 않는다!"
+
+msgid "{1}'s Desolate Land made the sun turn harsh!"
+msgstr "{1}의 끝의대지 때문에\n햇살이 아주 강해졌다!"
+
+msgid "{1}'s Drizzle made it rain!"
+msgstr "{1}의 잔비 때문에\n비가 내리기 시작했다!"
+
+msgid "{1}'s Drought intensified the sun's rays!"
+msgstr "{1}의 가뭄 때문에\n햇살이 강해졌다!"
+
+msgid "{1}'s Forewarn alerted it to {2}!"
+msgstr "{1}은(는) 예지몽으로\n{2}을(를) 간파했다!"
+
+msgid "{1}'s Geiger Sense raised its Attack!"
+msgstr "{1}의 가이거센스 때문에\n공격이 올라갔다!"
+
+msgid "{1}'s Geiger Sense raised its Special Attack!"
+msgstr "{1}의 가이거센스 때문에\n특수공격이 올라갔다!"
+
+msgid "{1}'s HP increased."
+msgstr "{1}은(는)\nHP의 기초 포인트가 올라갔다!"
+
+msgid "{1}'s HP is full!"
+msgstr "그러나 {1}의\n체력은 가득 찼다!"
+
+msgid "{1}'s HP was restored by {2} points."
+msgstr "{1}의 체력이\n{2} 회복되었다!"
+
+msgid "{1}'s HP was restored!"
+msgstr "{1}의\n체력이 회복되었다!"
+
+msgid "{1}'s HP was restored."
+msgstr "{1}의\n체력이 회복되었다!"
+
+msgid "{1}'s Heal Block wore off!"
+msgstr "{1}의\n회복봉인 효과가 떨어졌다!"
+
+msgid "{1}'s Kee Berry was activated!"
+msgstr "{1}이(가) 쓴\n악키열매가 발동됐다!"
+
+msgid "{1}'s Lightning Rod took the move!"
+msgstr "{1}의 피뢰침 때문에\n공격을 받았다!"
+
+msgid "{1}'s Maranga Berry was activated!"
+msgstr "{1}이(가) 쓴\n타라프열매가 발동됐다!"
+
+msgid "{1}'s Moody lowered its {2}!"
+msgstr "{1}은(는) 변덕쟁이 때문에\n{2}이(가) 떨어졌다!"
+
+msgid "{1}'s Moody sharply raised its {2}!"
+msgstr "{1}의 변덕쟁이 때문에\n{2}이(가) 크게 올랐다!"
+
+msgid "{1}'s Moxie raised its Attack!"
+msgstr "{1}의 자기과신 때문에\n공격이 올라갔다!"
+
+msgid "{1}'s PC"
+msgstr "{1}의 PC"
+
+msgid "{1}'s PP increased."
+msgstr "{1}의\n기술포인트가 늘었다!"
+
+msgid "{1}'s Perish count fell to {2}!"
+msgstr "{1}의\n멸망의 카운트가 {2}이(가) 되었다!"
+
+msgid "{1}'s Primal Reversion!\nIt reverted to its Primal Form!"
+msgstr "{1}의 원시회귀!\n원시의 모습으로 돌아갔다!"
+
+msgid "{1}'s Primordial Sea caused a heavy rain to fall."
+msgstr "{1}의 시작의바다 때문에\n강한 비가 내리기 시작했다!"
+
+msgid "{1}'s Rain Dish restored its HP a little!"
+msgstr "{1}'s Rain Dish {1}'s Rain Dish restored its HP a little!"
+
+msgid "{1}'s Sand Stream whipped up a sandstorm!"
+msgstr "{1}의 모래날림 때문에\n모래바람이 불기 시작했다!"
+
+msgid "{1}'s Snow Warning made it hail!"
+msgstr "{1}의 눈퍼뜨리기 때문에\n싸라기눈이 내리기 시작했다!"
+
+msgid "{1}'s Special Attack fell!"
+msgstr "{1}의\n특수공격이 떨어졌다!"
+
+msgid "{1}'s Special Attack harshly fell!"
+msgstr "{1}의\n특수공격이 크게 떨어졌다!"
+
+msgid "{1}'s Special Attack increased."
+msgstr "{1}은(는)\n특수공격의 기초 포인트가 올라갔다!"
+
+msgid "{1}'s Special Attack rose drastically!"
+msgstr "{1}의\n특수공격이 매우 크게 올라갔다!"
+
+msgid "{1}'s Special Attack rose sharply!"
+msgstr "{1}의\n특수공격이 크게 올라갔다!"
+
+msgid "{1}'s Special Attack rose!"
+msgstr "{1}의\n특수공격이 올라갔다!"
+
+msgid "{1}'s Special Attack sharply rose!"
+msgstr "{1}의\n특수공격이 크게 올라갔다!"
+
+msgid "{1}'s Special Attack went way up!"
+msgstr "{1}의\n특수공격이 부쩍 올랐다!"
+
+msgid "{1}'s Special Attack won't go any higher!"
+msgstr "{1}의\n특수공격은 더 올라가지 않는다!"
+
+msgid "{1}'s Special Attack won't go any lower!"
+msgstr "{1}의\n특수공격은 더 떨어지지 않는다!"
+
+msgid "{1}'s Special Defense fell!"
+msgstr "{1}의\n특수방어가 떨어졌다!"
+
+msgid "{1}'s Special Defense harshly fell!"
+msgstr "{1}의\n특수방어가 크게 떨어졌다!"
+
+msgid "{1}'s Special Defense increased."
+msgstr "{1}은(는)\n특수방어의 기초 포인트가 올라갔다!"
+
+msgid "{1}'s Special Defense rose drastically!"
+msgstr "{1}의\n특수방어가 매우 크게 올라갔다!"
+
+msgid "{1}'s Special Defense rose sharply!"
+msgstr "{1}의\n특수방어가 크게 올라갔다!"
+
+msgid "{1}'s Special Defense rose!"
+msgstr "{1}의\n특수방어가 올라갔다!"
+
+msgid "{1}'s Special Defense went way up!"
+msgstr "{1}의\n특수방어가 부쩍 올랐다!"
+
+msgid "{1}'s Special Defense won't go any higher!"
+msgstr "{1}의\n특수방어는 더 올라가지 않는다!"
+
+msgid "{1}'s Special Defense won't go any lower!"
+msgstr "{1}의\n특수방어는 더 떨어지지 않는다!"
+
+msgid "{1}'s Speed Boost raised its Speed!"
+msgstr "{1}의 가속 때문에\n스피드가 올랐다!"
+
+msgid "{1}'s Speed fell!"
+msgstr "{1}의\n스피드가 떨어졌다!"
+
+msgid "{1}'s Speed harshly fell!"
+msgstr "{1}의\n스피드가 크게 떨어졌다!"
+
+msgid "{1}'s Speed increased."
+msgstr "{1}은(는)\n스피드의 기초 포인트가 올라갔다!"
+
+msgid "{1}'s Speed rose drastically!"
+msgstr "{1}의\n스피드가 매우 크게 올라갔다!"
+
+msgid "{1}'s Speed rose sharply!"
+msgstr "{1}의\n스피드가 크게 올라갔다!"
+
+msgid "{1}'s Speed rose!"
+msgstr "{1}의\n스피드가 올라갔다!"
+
+msgid "{1}'s Speed went way up!"
+msgstr "{1}의\n스피드가 부쩍 올랐다!"
+
+msgid "{1}'s Speed won't go any higher!"
+msgstr "{1}의\n스피드는 더 올라가지 않는다!"
+
+msgid "{1}'s Speed won't go any lower!"
+msgstr "{1}의\n스피드는 더 떨어지지 않는다!"
+
+msgid "{1}'s Storm Drain took the move!"
+msgstr "{1}의 마중물 때문에\n공격을 받았다!"
+
+msgid "{1}'s Stormbringer whipped up a thunderstorm!"
+msgstr "{1}의 스톰브링어가\n번개폭풍을 불러일으켰다!"
+
+msgid "{1}'s Strength made it possible to move boulders around!"
+msgstr "{1}의 괴력 덕분에\n바위를 밀어 움직일 수 있다!"
+
+msgid "{1}'s Taunt wore off!"
+msgstr "{1}은(는)\n도발의 효과가 풀렸다!"
+
+msgid "{1}'s ability became Mummy!"
+msgstr "{1}은(는)\n특성이 미라가 되어버렸다!"
+
+msgid "{1}'s ability was changed to {2}!"
+msgstr "{1}의 특성이\n{2}(으)로 변화했다!"
+
+msgid "{1}'s ability was suppressed!"
+msgstr "{1}의\n특성이 효과를 발휘하지 못하게 되었다!"
+
+msgid "{1}'s accuracy fell!"
+msgstr "{1}의\n명중률이 떨어졌다!"
+
+msgid "{1}'s accuracy harshly fell!"
+msgstr "{1}의\n명중률이 크게 떨어졌다!"
+
+msgid "{1}'s accuracy rose drastically!"
+msgstr "{1}의\n명중률이 매우 크게 올라갔다!"
+
+msgid "{1}'s accuracy rose sharply!"
+msgstr "{1}의\n명중률이 크게 올라갔다!"
+
+msgid "{1}'s accuracy rose!"
+msgstr "{1}의\n명중률이 올라갔다!"
+
+msgid "{1}'s accuracy was not lowered!"
+msgstr "{1}의\n명중률은 떨어지지 않는다!"
+
+msgid "{1}'s accuracy went way up!"
+msgstr "{1}의\n명중률이 부쩍 올랐다!"
+
+msgid "{1}'s accuracy won't go any higher!"
+msgstr "{1}의\n명중률은 더 올라가지 않는다!"
+
+msgid "{1}'s accuracy won't go any lower!"
+msgstr "{1}의\n명중률은 더 떨어지지 않는다!"
+
+msgid "{1}'s attack missed!"
+msgstr "그러나 {1}의\n공격은 빗나갔다!"
+
+msgid "{1}'s burn was healed."
+msgstr "{1}의\n화상이 나았다!"
+
+msgid "{1}'s data was added to the Pokédex."
+msgstr "{1}의 데이터가 새로\n포켓몬 도감에 등록됩니다!"
+
+msgid "{1}'s electromagnetism wore off!"
+msgstr "{1}의\n전자력이 없어졌다!"
+
+msgid "{1}'s encore ended!"
+msgstr "{1}의\n앙코르 상태가 풀렸다!"
+
+msgid "{1}'s evasiveness fell!"
+msgstr "{1}의\n회피율이 떨어졌다!"
+
+msgid "{1}'s evasiveness harshly fell!"
+msgstr "{1}의\\회피율이 크게 떨어졌다!"
+
+msgid "{1}'s evasiveness rose drastically!"
+msgstr "{1}의\n회피율이 매우 크게 올라갔다!"
+
+msgid "{1}'s evasiveness rose sharply!"
+msgstr "{1}의\n회피율이 크게 올라갔다!"
+
+msgid "{1}'s evasiveness rose!"
+msgstr "{1}의\n회피율이 올라갔다!"
+
+msgid "{1}'s evasiveness went way up!"
+msgstr "{1}의\n회피율이 부쩍 올랐다!"
+
+msgid "{1}'s evasiveness won't go any higher!"
+msgstr "{1}의\n회피율은 더 올라가지 않는다!"
+
+msgid "{1}'s evasiveness won't go any lower!"
+msgstr "{1}의\n회피율은 더 떨어지지 않는다!"
+
+msgid "{1}'s health was sapped by Leech Seed!"
+msgstr "씨뿌리기가 {1}의\n체력을 빼앗는다!"
+
+msgid "{1}'s level remained unchanged."
+msgstr "{1}의 레벨이 변하지 않았다"
+
+msgid "{1}'s messages not defined.\nCouldn't call common event {2}."
+msgstr "{1}의 메시지가 정의되지 않았습니다\n커먼 이벤트 {2}을(를) 불러올 수 없습니다"
+
+msgid "{1}'s move is no longer disabled!"
+msgstr "{1}의\n사슬묶기가 풀렸다!"
+
+msgid "{1}'s moves have been electrified!"
+msgstr "{1}의 기술이\n송전으로 전기타입이 되었다!"
+
+msgid "{1}'s nickname?"
+msgstr "{1}의 이름은?"
+
+msgid "{1}'s poisoning was cured."
+msgstr "{1}의 독은\n말끔하게 해독됐다!"
+
+msgid "{1}'s rage is building!"
+msgstr "{1}의\n분노 볼티지가 올라가고 있다!"
+
+msgid "{1}'s stat changes were all reversed!"
+msgstr "{1}은(는)\n능력 변화가 뒤집혔다!"
+
+msgid "{1}'s stat changes were removed!"
+msgstr "{1}의\n능력 변화가 원래대로 되돌아왔다!"
+
+msgid "{1}'s stats were not lowered!"
+msgstr "{1}의\n능력은 떨어지지 않는다!"
+
+msgid "{1}'s stats were not lowered."
+msgstr "{1}의\n능력은 떨어지지 않는다!"
+
+msgid "{1}'s stats won't go any higher!"
+msgstr "{1}의\n능력은(는)\n더 올라가지 않는다!"
+
+msgid "{1}'s stats won't go any lower!"
+msgstr "{1}의\n능력은 더 떨어지지 않는다!"
+
+msgid "{1}'s stockpiled effect wore off!"
+msgstr "{1}이(가)\n비축해 두었던 효과가 떨어졌다!"
+
+msgid "{1}'s substitute faded!"
+msgstr "{1}의\n대타는 사라져 버렸다..."
+
+msgid "{1}'s taunt wore off!"
+msgstr "{1}은(는)\n도발의 효과가 풀렸다!"
+
+msgid "{1}'s torment wore off!"
+msgstr "{1}의\n트집 효과가 떨어졌다!"
+
+msgid "{1}'s type changed to match {2}'s!"
+msgstr "{1}은(는)\n{2}와(과)\n같은 타입이 되었다!"
+
+msgid "{1}'s was healed through Rebuild!"
+msgstr "{1}의 몸은\n재구축되었다!"
+
+msgid "{1}'s wish came true!"
+msgstr "{1}의\n희망사항이 이루어졌다!"
+
+msgid "{1}'s {2} badly poisoned {3}!"
+msgstr "{3}은(는)\n{1}의 {2} 때문에\n맹독에 중독됐다!"
+
+msgid "{1}'s {2} blocks {3}!"
+msgstr "{1}의 {2} 때문에\n{3}을(를) 받지 않는다!"
+
+msgid "{1}'s {2} burned {3}!"
+msgstr "{1}의 {2} 때문에\n{3}은(는) 화상을 입었다!"
+
+msgid "{1}'s {2} cured its burn problem!"
+msgstr "{1}은(는) {2}(으)로\n화상이 나았다!"
+
+msgid "{1}'s {2} cured its confusion problem!"
+msgstr "{1}은(는) {2}(으)로\n혼란이 풀렸다!"
+
+msgid "{1}'s {2} cured its frozen problem!"
+msgstr "{1}은(는) {2}(으)로\n얼음 상태가 나았다!"
+
+msgid "{1}'s {2} cured its ice problem!"
+msgstr "{1}은(는) {2}(으)로\n얼음 상태가 나았다!"
+
+msgid "{1}'s {2} cured its love problem!"
+msgstr "{1}은(는) {2}(으)로\n헤롱헤롱 상태가 나았다!"
+
+msgid "{1}'s {2} cured its paralysis problem!"
+msgstr "{1}은(는) {2}(으)로\n마비가 풀렸다!"
+
+msgid "{1}'s {2} cured its partner's burn problem!"
+msgstr "{1}은(는) {2}(으)로\n화상이 나았다!"
+
+msgid "{1}'s {2} cured its partner's ice problem!"
+msgstr "{1}은(는) {2}(으)로\n얼음 상태가 나았다!"
+
+msgid "{1}'s {2} cured its partner's paralysis problem!"
+msgstr "{1}은(는) {2}(으)로\n마비가 풀렸다!"
+
+msgid "{1}'s {2} cured its partner's poison problem!"
+msgstr "{1}은(는) {2}(으)로\n독이 해독됐다!"
+
+msgid "{1}'s {2} cured its partner's sleep problem!"
+msgstr "{1}은(는) {2}(으)로\n눈을 떴다!"
+
+msgid "{1}'s {2} cured its poison problem!"
+msgstr "{1}은(는) {2}(으)로\n독이 해독됐다!"
+
+msgid "{1}'s {2} cured its sleep problem!"
+msgstr "{1}은(는) {2}(으)로\n눈을 떴다!"
+
+msgid "{1}'s {2} cured {3}'s love problem!"
+msgstr "{1}은(는) {2}(으)로\n헤롱헤롱 상태가 나았다!"
+
+msgid "{1}'s {2} cuts {3}'s Attack!"
+msgstr "{1}의 {2} 때문에\n{3}의\n공격이 떨어졌다!"
+
+msgid "{1}'s {2} fell!"
+msgstr "{1}의\n{2}이(가) 떨어졌다!"
+
+msgid "{1}'s {2} had no effect on {3}!"
+msgstr "{1}의 {2}은(는)\n{3}에게는 효과가 없었다!"
+
+msgid "{1}'s {2} hurt {3}!"
+msgstr "{1}의 {2} 때문에\n{3}은(는)\n상처를 입었다!"
+
+msgid "{1}'s {2} infatuated {3}!"
+msgstr "{1}의 {2} 때문에\n{3}은(는) 헤롱헤롱해졌다!"
+
+msgid "{1}'s {2} is disabled!"
+msgstr "{1}은(는) 사슬묶기 때문에\n{2}을(를) 쓸 수 없다!"
+
+msgid "{1}'s {2} is reacting to {3}'s Mega Ring!"
+msgstr "{1}의 {2}와\n{3}의 메가뱅글이 반응했다!"
+
+msgid "{1}'s {2} lost all its PP due to the grudge!"
+msgstr "{1}의 {2}은(는)\n원념으로 PP가 0이 되었다!"
+
+msgid "{1}'s {2} lowered its Defense!"
+msgstr "{1}의 {2} 때문에\n방어가 떨어졌다!"
+
+msgid "{1}'s {2} lowered {3}'s Speed!"
+msgstr "{1}의 {2} 때문에\n{3}의 스피드가 떨어졌다!"
+
+msgid "{1}'s {2} made it the {3} type!"
+msgstr "{1}의 {2} 때문에\n{3}타입이 됐다!"
+
+msgid "{1}'s {2} made {3} ineffective!"
+msgstr "{1}의 {2} 때문에\n{3}은(는) 효과가 없다!"
+
+msgid "{1}'s {2} made {3} sleep!"
+msgstr "{1}의 {2} 때문에\n{3}은(는) 잠들어 버렸다!"
+
+msgid "{1}'s {2} made {3} useless!"
+msgstr "{1}의 {2} 때문에\n{3}을(를) 쓸 수 없다!"
+
+msgid "{1}'s {2} maxed its Attack!"
+msgstr "{1}은(는) {2} 때문에\n공격이 최고치까지 올라갔다!"
+
+msgid "{1}'s {2} paralyzed {3}! It may be unable to move!"
+msgstr "{1}의 {2} 때문에\n{3}은(는) 마비되어\n기술이 나오기 어려워졌다!"
+
+msgid "{1}'s {2} poisoned {3}!"
+msgstr "{1}의 {2} 때문에\n{3}의 몸에 독이 퍼졌다!"
+
+msgid "{1}'s {2} prevented {3}'s {4} from working!"
+msgstr "{1}의 {2} 때문에\n{3}의\n{4}은(는) 효과가 없었다!"
+
+msgid "{1}'s {2} prevents Attack loss!"
+msgstr "{1}의 {2} 때문에\n공격이 떨어지지 않는다!"
+
+msgid "{1}'s {2} prevents Defense loss!"
+msgstr "{1}의 {2} 때문에\n방어가 떨어지지 않는다!"
+
+msgid "{1}'s {2} prevents accuracy loss!"
+msgstr "{1}의 {2} 때문에\n명중률이 떨어지지 않는다!"
+
+msgid "{1}'s {2} prevents burns!"
+msgstr "{1}의 {2} 때문에\n화상을 입지 않는다!"
+
+msgid "{1}'s {2} prevents confusion!"
+msgstr "{1}의 {2} 때문에\n혼란되지 않는다!"
+
+msgid "{1}'s {2} prevents paralysis!"
+msgstr "{1}의 {2} 때문에\n마비되지 않는다!"
+
+msgid "{1}'s {2} prevents poisoning!"
+msgstr "{1}의 {2} 때문에\n독에 중독되지 않는다!"
+
+msgid "{1}'s {2} prevents romance!"
+msgstr "{1}의 {2} 때문에\n헤롱헤롱되지 않는다!"
+
+msgid "{1}'s {2} prevents stat loss!"
+msgstr "{1}의 {2} 때문에\n능력이 떨어지지 않는다!"
+
+msgid "{1}'s {2} prevents switching!"
+msgstr "{1}의 {2} 때문에\n교체할 수 없다!"
+
+msgid "{1}'s {2} prevents {3} from using {4}!"
+msgstr "{1}의 {2} 때문에\n{3}은(는)\n{4}을(를) 쓸 수 없다!"
+
+msgid "{1}'s {2} prevents {3}'s {4} from working!"
+msgstr "{1}의 {2} 때문에\n{3}의\n{4}은(는) 효과가 없었다!"
+
+msgid "{1}'s {2} raised its Attack!"
+msgstr "{1}의 {2} 때문에\n공격이 올라갔다!"
+
+msgid "{1}'s {2} raised its Fire power!"
+msgstr "{1}의 {2} 때문에\n불꽃의 위력이 올라갔다!"
+
+msgid "{1}'s {2} raised its Special Attack!"
+msgstr "{1}의 {2} 때문에\n특수공격이 올랐다!"
+
+msgid "{1}'s {2} raised its Speed!"
+msgstr "{1}의 {2} 때문에\n스피드가 올랐다!"
+
+msgid "{1}'s {2} raised its speed!"
+msgstr "{1}의 {2} 때문에\n스피드가 올라갔다!"
+
+msgid "{1}'s {2} restored health!"
+msgstr "{1}은(는) {2}(으)로\n체력을 회복했다!"
+
+msgid "{1}'s {2} restored its HP a little!"
+msgstr "{1}은(는)\n{2}(으)로 인해 조금 회복했다"
+
+msgid "{1}'s {2} restored its status!"
+msgstr "{1}은(는) {2}(으)로\n상태이상을 회복했다!"
+
+msgid "{1}'s {2} restored {3}'s PP!"
+msgstr "{1}은(는) {2}(으)로\n{3}의 PP를 회복했다!"
+
+msgid "{1}'s {2} rose sharply!"
+msgstr "{1}의\n{2}이(가) 크게 올라갔다!"
+
+msgid "{1}'s {2} was bounced back by Magic Coat!"
+msgstr "{1}의\n{2}을(를) 되받아쳤다!"
+
+msgid "{1}'s {2} was burned up!"
+msgstr "{1}의\n{2}은(는) 불타 없어졌다!"
+
+msgid "{1}'s {2} was disabled!"
+msgstr "{1}의\n{2}을(를) 봉인했다!"
+
+msgid "{1}'s {2} was transferred to {3}!"
+msgstr "{1}의 {2}이(가)\n{3}에게 붙었다!"
+
+msgid "{1}'s {2} wore off!"
+msgstr "{1}의 {2}이(가)\n그쳤다!"
+
+msgid "{1}, and you want {2}.\nThat will be ${3}. OK?"
+msgstr "{1} {2}개로군요\n총 {3}원입니다"
+
+msgid "{1}, switch out! Come back!"
+msgstr "{1} 교대!\n돌아와!"
+
+msgid "{1}/{2}/{3}"
+msgstr "{3}년 {2}월 {1}일"
+
+msgid "{1}?\nHow many would you like to sell?"
+msgstr "{1}을(를)\n몇 개 파시겠습니까?"
+
+msgid "{1}? Certainly.\nHow many would you like?"
+msgstr "{1}을(를)\n몇 개 구입하시겠습니까?"
+
+msgid "{1}? Oh, no.\nI can't buy that."
+msgstr "{1}은(는)\n파실 수 없습니다!"
+
+msgid "{1}h {2}m"
+msgstr "{1}시간 {2}분"
+
+msgid "{1}m"
+msgstr "{1}분"
+
+msgid "{1}{2}<c2=06644bd2>\nHP: {3}"
+msgstr "{1}{2}<c2=06644bd2>\nHP: {3}"
+
+msgid "{2} type was added to {1}!"
+msgstr "{1}에게\n{2}타입이 추가되었다!"
+
+msgid "̳'s pPcC"
+msgstr "̳익 pPcC"
+

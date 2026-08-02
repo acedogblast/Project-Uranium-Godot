@@ -1,10 +1,7 @@
-[gd_resource type="DynamicFont" load_steps=2 format=2]
+[gd_resource type="FontVariation" load_steps=2 format=2]
 
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="FontFile" id=1]
 
 [resource]
-size = 26
-outline_size = 2
-outline_color = Color( 0.196078, 0.196078, 0.196078, 1 )
-extra_spacing_bottom = 15
-font_data = ExtResource( 1 )
+base_font = ExtResource( 1 )
+spacing_bottom = 15

@@ -19,8 +19,9 @@ var sp_defense = 65
 var speed = 55
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Guts"
+var ability_2 = "Moxie"
+var hidden_ability = "Intimidate"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -67,6 +68,6 @@ var moveset = [
 	MoveSet.new(41, "Shadow Ball"),
 	MoveSet.new(46, "Cross Chop"),
 	MoveSet.new(51, "Foul Play"),
-	MoveSet.new(59, "Hi Jump Kick")
+	MoveSet.new(59, "High Jump Kick")
 ]
  

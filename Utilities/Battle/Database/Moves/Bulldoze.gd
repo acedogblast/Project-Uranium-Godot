@@ -37,3 +37,5 @@ var total_pp = 20
 var target_ability = MoveTarget.ALL_FOE
 # attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
 var main_status_effect = StatStageEffect.new(0, 0, 0, 0, -1, 0, 0)
+
+var stat_effect_chance = 1.0

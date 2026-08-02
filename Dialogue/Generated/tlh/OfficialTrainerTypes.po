@@ -1,0 +1,238 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: tlh\n"
+
+msgid "PkMn TRAINER"
+msgstr "PkMn 7R41NER"
+
+msgid "LASS"
+msgstr "1A55"
+
+msgid "YOUNGSTER"
+msgstr "YOUN6573R"
+
+msgid "HIKER"
+msgstr "HIK3R"
+
+msgid "BEAUTY"
+msgstr "8E4U7Y"
+
+msgid "FISHERMAN"
+msgstr "FI5H3RM4N"
+
+msgid "LADY"
+msgstr "1ADY"
+
+msgid "TRIATHLETE"
+msgstr "7R147H1373"
+
+msgid "TWINS"
+msgstr "7W1N5"
+
+msgid "SWIMMER♀"
+msgstr "5W1MM3R♀"
+
+msgid "BUG CATCHER"
+msgstr "8U6 C47CH3R"
+
+msgid "SCHOOL KID"
+msgstr "5CH001 K1D"
+
+msgid "RICH BOY"
+msgstr "RICH 80Y"
+
+msgid "SR. AND JR."
+msgstr "5R. 4ND JR."
+
+msgid "BLACK BELT"
+msgstr "8L4CK 8317"
+
+msgid "TEAM AQUA"
+msgstr "7E4M 4QU4"
+
+msgid "TUBER"
+msgstr "7U83R"
+
+msgid "HEX MANIAC"
+msgstr "HEX M4N14C"
+
+msgid "PkMn BREEDER"
+msgstr "PkMn 8R33DER"
+
+msgid "WORKER"
+msgstr "WORK3R"
+
+msgid "TEAM MAGMA"
+msgstr "7E4M M46M4"
+
+msgid "INTERVIEWERS"
+msgstr "1N73RV13W3RS"
+
+msgid "YOUNG COUPLE"
+msgstr "YOUN6 C0UPLE"
+
+msgid "GUITARIST"
+msgstr "6U174R157"
+
+msgid "GENTLEMAN"
+msgstr "6EN713M4N"
+
+msgid "CHAMPION"
+msgstr "CH4MP10N"
+
+msgid "MAGMA LEADER"
+msgstr "MA6M4 134DER"
+
+msgid "BATTLE GIRL"
+msgstr "8A7713 61RL"
+
+msgid "SWIMMER♂"
+msgstr "5W1MM3R♂"
+
+msgid "POKéFAN"
+msgstr "POK3F4N"
+
+msgid "EXPERT"
+msgstr "3XP3R7"
+
+msgid "DRAGON TAMER"
+msgstr "DR460N 74MER"
+
+msgid "BIRD KEEPER"
+msgstr "8IRD K33P3R"
+
+msgid "NINJA BOY"
+msgstr "NINJ4 80Y"
+
+msgid "PARASOL LADY"
+msgstr "PAR4501 14DY"
+
+msgid "BUG MANIAC"
+msgstr "8U6 M4N14C"
+
+msgid "SAILOR"
+msgstr "5A110R"
+
+msgid "COLLECTOR"
+msgstr "CO113C70R"
+
+msgid "PkMn RANGER"
+msgstr "PkMn R4N63R"
+
+msgid "AROMA LADY"
+msgstr "4R0M4 14DY"
+
+msgid "RUIN MANIAC"
+msgstr "RU1N M4N14C"
+
+msgid "COOLTRAINER"
+msgstr "CO017R41N3R"
+
+msgid "POKéMANIAC"
+msgstr "POK3M4N14C"
+
+msgid "KINDLER"
+msgstr "KIND13R"
+
+msgid "CAMPER"
+msgstr "CAMP3R"
+
+msgid "PICNICKER"
+msgstr "PICN1CK3R"
+
+msgid "PSYCHIC"
+msgstr "PSYCH1C"
+
+msgid "SIS AND BRO"
+msgstr "5I5 4ND 8RO"
+
+msgid "OLD COUPLE"
+msgstr "0LD C0UP13"
+
+msgid "AQUA LEADER"
+msgstr "4QU4 134D3R"
+
+msgid "LEADER"
+msgstr "1E4D3R"
+
+msgid "LEADERS"
+msgstr "1E4D3R5"
+
+msgid "ELITE FOUR"
+msgstr "3L173 F0UR"
+
+msgid "ACE TRAINER"
+msgstr "4C3 7R41N3R"
+
+msgid "ROCKET GRUNT"
+msgstr "NEW813"
+
+msgid "SCHOOLKIDDO"
+msgstr "5CH001K1DDO"
+
+msgid "RIVAL"
+msgstr "RIV41"
+
+msgid "HERO"
+msgstr "HER0"
+
+msgid "SUPER SCIENTIST"
+msgstr "5UP3R 5C13NTI57"
+
+msgid "COOL COUPLE"
+msgstr "CO01 C0UP1E"
+
+msgid "FARMER"
+msgstr "FARM3R"
+
+msgid "PYROMANIAC"
+msgstr "PYR0M4N14C"
+
+msgid "BIKER"
+msgstr "8IK3R"
+
+msgid "NINJA SURFERS"
+msgstr "NINJ4 5URFERS"
+
+msgid "NINJA BOSS"
+msgstr "NINJ4 8055"
+
+msgid "ACTOR"
+msgstr "4C70R"
+
+msgid "ACTRESS"
+msgstr "4C7R355"
+
+msgid "LEADER?"
+msgstr "1E4D3R?"
+
+msgid "PROFESSOR"
+msgstr "PR0F3550R"
+
+msgid "ACOLYTE"
+msgstr "4C01Y73"
+
+msgid "DIVER"
+msgstr "DIV3R"
+
+msgid "TSUKI NINJA"
+msgstr "7SUK1 N1NJA"
+
+msgid "NAMI NINJA"
+msgstr "NAM1 N1NJ4"
+
+msgid "NINJA MASTER"
+msgstr "NINJ4 M457ER"
+
+msgid "NUCLEAR HORDE"
+msgstr "NUC134R H0RDE"
+
+msgid "APOCALYPSE"
+msgstr "4P0C41YP53"
+
+msgid "ELITE TRAINER"
+msgstr "3L173 7R41NER"
+
+msgid "PIRATE"
+msgstr "PIR473"

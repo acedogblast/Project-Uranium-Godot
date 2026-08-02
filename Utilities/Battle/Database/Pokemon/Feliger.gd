@@ -19,7 +19,7 @@ var sp_defense = 95
 var speed = 65
 
 # The pokemon's public and hidden abilities
-var ability
+var ability = "Lazy"
 var hidden_ability
 
 # The pokemon's Effort Value Yeild

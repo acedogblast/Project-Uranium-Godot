@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "Buenas noches, \\PN!\\mThis is \\TN!"
+msgstr "Buenas noches（晚上好），\\PN！\\m我是\\TN！"
+
+msgid "Did you hear about Nuclear Pokemon?\\mI hope I don't run into one of those, they sound scary.\\mBe careful out there, ok?"
+msgstr "你知道核属性宝可梦吗？\\m我可不希望碰到它们，它们听起来好可怕。\\m你那边要小心呀！"
+
+msgid "Do you remember my \\TP?\\m My \\TP is awesome. It's so cool.\\m I'd even say my \\TP is in the top percentage of \\TPs."
+msgstr "你还记得我的\\TP吗？\\m我的\\TP现在真是棒极了。\\m我甚至敢说我的\\TP绝对是所有\\TP里数一数二的！"
+
+msgid "Do you want to battle? I'm going to win this time!\\mI'll be waiting for you around \\TM.\\mLook for me, OK? My \\TP will be expecting you."
+msgstr "你想来场对战吗？这次我会赢的！\\m我会在\\TM附近等着你。\\m想对战的话就再来找我吧。\n我的\\TP很期待能与你的宝可梦对战。"
+
+msgid "Good day, \\PN! Hi. This is \\TN."
+msgstr "你好，\\PN！嗨，我是\\TN。"
+
+msgid "Good morning!\\m This is \\PN, right? It's me, \\TN."
+msgstr "早上好，\\m是\\PN吗？是我，\\TN。"
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Did I wake you?"
+msgstr "早上好，\\PN。\\m我是\\TN。我吵醒你了吗？"
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Rise and shine!"
+msgstr "早上好，\\PN。\\m我是\\TN。该起床啦！"
+
+msgid "Guess what happened the other day. I missed catching \\TE again.\\mMaybe I'm not very good at this."
+msgstr "猜猜前几天发生了什么。我又没能收服\\TE。\\m也许我不太擅长做这种事情。"
+
+msgid "Have you ever hatched a Pokemon Egg?\\mI raised my \\TP from an egg."
+msgstr "你敷过蛋吗？\\m我的\\TP就是从蛋中孵出来的呢。"
+
+msgid "Have you seen the \\TEs around \\TM?\\mThey scare me so much! I always run away!"
+msgstr "你有没有在\\TM附近见过\\TE？\\m真是吓到我了！我见到它们就会逃跑！"
+
+msgid "Have you tried trading with your friends?\\mI got my \\TP in a trade, and it grows so fast!\\mTrades can be an awesome way to get strong Pokemon."
+msgstr "你试过和你的朋友交换宝可梦吗？我的\\TP是我交换来的，它成长得非常快！\\m交换是种得到强力宝可梦的好方法。"
+
+msgid "Hello, \\PN. This is \\TN. How are things?"
+msgstr "你好，\\PN。我是\\TN。近来可好？"
+
+msgid "Hello. This is \\TN."
+msgstr "你好。我是\\TN。"
+
+msgid "Hey, \\PN! Good evening!\\mThis is \\TN."
+msgstr "嘿，\\PN，晚上好！\\m我是\\TN。"
+
+msgid "Hey, \\PN, wassup? It's \\TN."
+msgstr "嘿，\\PN，最近怎么样？我是\\TN。"
+
+msgid "Hey, are you ready for another throw-down?\\mYou, me, battle. Place, \\TM.\\mTime, whenever you want! Let's do it!"
+msgstr "嘿，你准备好再来一战了吗？\\m你，与我，对战。地点，\\TM。\\m时间，随你挑！来战吧！"
+
+msgid "Hey, listen! I almost caught \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "嘿，在听吗！前几天我差点收服了一只\\TE。\\m实在是太可惜了！"
+
+msgid "How are you doing? \\PN, howdy! This is \\TN. Isn't it nice out?"
+msgstr "在干嘛呢？\\PN，泥好！我是\\TN。\n最近过得还不错吧？"
+
+msgid "How are your Pokemon doing?\\mI always keep my \\TP in top shape by going to Pokemon Centers."
+msgstr "你的宝可梦怎么样了？\\m为了能让我的\\TP保持最佳状态，我经常去宝可梦中心呢。"
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!"
+msgstr "你的宝可梦怎么样了？\\m我的\\TP精力真是旺盛，甚至我都管不住！"
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!\\mOh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "你的宝可梦怎么样了？\\m我的\\TP精力真是旺盛，甚至我都管不住！\\m我们成功地打倒了一只强大的\\TE。\\m我还要让我的队伍变得更强。"
+
+msgid "I dressed my \\TP and it looks even cuter than before."
+msgstr "我打扮了我的\\TP一番，它现在看起来比之前还要。"
+
+msgid "I painted a portrait of my beloved \\TP.\\mIt didn't like sitting still though."
+msgstr "我给我最喜欢的\\TP画了一副肖像。\\m尽管它不太喜欢静坐。"
+
+msgid "I spent all day hunting for a shiny \\TE.\\mI didn't manage to find any, though."
+msgstr "我一整天都在找异色的\\TE。\\m尽管最后还是没能找到。"
+
+msgid "I tried to use the Wonder Trade today.\\mAll I got was a Lv.3 Chyinmunk though.\\mWhy do people put up such lame Pokemon for trade?"
+msgstr "我今天用了奇迹交换。\\m但我换到的全都是Lv.3的小栗鼠。\\m为什么大家都拿这么弱的宝可梦来交换？"
+
+msgid "Let's have a battle! I want to see how much you've gown!\\mI'm still hanging around \\TM.\\mCome see if you can beat my \\TP!"
+msgstr "让我们来场对战吧！我想要看看你成长了多少！\\m我仍然在\\TM闲荡。\\m来看看你能否打败我的\\TP！"
+
+msgid "My \\TP and I love playing games.\\m Its favorite game is fetch."
+msgstr "我的\\TP和我都喜欢玩游戏。\\m它最喜欢玩接球游戏了。"
+
+msgid "My \\TP is fantastic.\\mI'd say it's even in the top percentage of \\TPs."
+msgstr "我的\\TP现在真是棒极了。\\m我甚至敢说我的\\TP绝对是所有\\TP里数一数二的！"
+
+msgid "My \\TP's looking really awesome. I wish I could show you."
+msgstr "我想让你来看看我的\\TP，\\m它现在看起来棒极了！"
+
+msgid "My \\TP's looking really awesome.\\mI wish I could show you.\\mHey, listen! I almost caught a \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "我想让你来看看我的\\TP，\\m它现在看起来棒极了！\\m说来，前几天我差点收服了一只\\TE。\\m实在是太可惜了！"
+
+msgid "Oh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "我们成功地打倒了一只强大的\\TE。\\m我还要让我的队伍变得更强。"
+
+msgid "Ready for a rematch? \\TP and I have been training hard!\\mI'll be waiting for you around \\TM where we met.\\mCome find me and let's battle!"
+msgstr "准备好再次对战了吗？\\TP和我已经努力修炼过了！\\m我会在老地方\\TM附近等着你。\\m来找我对战吧！"
+
+msgid "Remember the last time we battled? Let's rematch!\\mI promise it won't be a repeat of last time.\\mCome find me around \\TM!"
+msgstr "记得我们上次的对战吗？让我们再来一次吧！\\m我保证结果不会和上次一样。来\\TM找我吧！"
+
+msgid "Top of the morning, \\PN!\\m\\TN here, at your service."
+msgstr "愿你有个美好的早上，\\PN。\\m\\TN愿为你效劳。"
+
+msgid "Want to battle? It's not going to be a repeat of the last time we met.\\mI'll be waiting for you around \\TM."
+msgstr "来场对战吧！这次你可不会那么走运了。\\m我会在\\TM附近等着你。"
+
+msgid "What did you eat for lunch today? I had a grilled \\TE.\\mI don't think I cooked it well enough.\\mOr did you not eat lunch at all?"
+msgstr "今天午饭你吃了哪些东西？我烤了些\\TE。\\m其实我感觉我烤得不是特别好。\\m呃，还是说你根本还没有吃午饭？"
+
+msgid "Yo, \\PN, my main homie! This is \\TN!"
+msgstr "哟，\\PN，我的好哥们。我是\\TN！"
+
+msgid "You have to hear this! I battled \\TE the other day.\\mIt was easy! I had a type advantage."
+msgstr "你得听听这个！前几天我打倒了\\TE。\\m真是简单极了！我可是有着属性优势呢。"
+
+msgid "\\PN, good day! It's me, \\TN. Got a minute?"
+msgstr "\\PN，你好！是我，\\TN。能打扰一会儿吗？"
+
+msgid "\\PN, good evening! Hi.\\mThis is \\TN."
+msgstr "\\PN，晚上好！嗨。\\m我是\\TN。"
+

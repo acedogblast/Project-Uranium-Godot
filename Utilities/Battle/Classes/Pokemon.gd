@@ -119,7 +119,10 @@ func exp_fluctuating(level : int) -> int:
 	return xp
 func generate_nature():
 	nature = Global.rng.randi_range(0,24)
-func generate_gender(male_ratio : float):
+func generate_gender(male_ratio):
+	if male_ratio == null:
+		gender = GENDERLESS
+		return
 	if gender == GENDERLESS:
 		return
 	if Global.rng.randf_range(0.0, 100.0) <= male_ratio:
@@ -167,6 +170,8 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 	type2 = data.type2
 	level = lv
 	weight = data.weight
+	if "ability" in data:
+		ability = data.ability
 	generate_IV()
 	generate_nature() # For now random but should be determined by something else
 	generate_gender(data.male_ratio)
@@ -210,54 +215,53 @@ func set_basic_pokemon_by_level(id : int, lv : int): # Sets a level n version of
 				move_4 = MoveDataBase.get_move_by_name(moveset.pop_front())
 func get_cry() -> String:
 	return "res://Audio/SE/" + str("%03d" % ID) + "Cry.wav"
-func get_battle_foe_sprite() -> Sprite:
-	var sprite = Sprite.new()
-	var tex : Texture
+func get_battle_foe_sprite() -> Sprite2D:
+	var sprite = Sprite2D.new()
+	var tex : Texture2D
 	if is_shiny:
-		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.png") as Texture
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.png") as Texture2D
 	else:
-		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".png") as Texture
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".png") as Texture2D
 
 	if tex == null:
 		# Try loading with .PNG instead of .png
 		if is_shiny:
-			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.PNG") as Texture
+			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "s.PNG") as Texture2D
 		else:
-			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".PNG") as Texture
+			tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + ".PNG") as Texture2D
 	
 	sprite.texture = tex
-	if sprite.texture.get_width() != 80:
-		var frames = sprite.texture.get_width() / 80
-		sprite.hframes = frames
-		var tween = Tween.new()
-		sprite.add_child(tween)
-		tween.interpolate_property(sprite, "frame", 0, frames, 1.0, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-		tween.repeat = true
-		tween.start()
+	if sprite.texture.get_width() != sprite.texture.get_height():
+		var frames = BattlerSheet.setup(sprite)
+		# Godot 4: Tweens are created from a node, not with Tween.new()
+		# We'll create a small AnimatedSprite2D-like behavior
+		# Note: We need to defer the tween creation until the sprite is in the tree
+		sprite.set_meta("frames", frames)
+		sprite.tree_entered.connect(_setup_sprite_animation.bind(sprite))
 
-	sprite.name = "Sprite"
+	sprite.name = "Sprite2D"
 	sprite.material = ShaderMaterial.new()
 	#var effect = load("res://Graphics/Pictures/StatUp.png")
 	#effect.set_flags(Texture.FLAG_REPEAT)
-	sprite.material.shader = load("res://Utilities/Battle/StatChange.shader")
+	sprite.material.shader = load("res://Utilities/Battle/StatChange.gdshader")
 	#sprite.material.set_shader_param("effect", effect)
-	sprite.material.set_shader_param("effect_weight", 0.0)
+	sprite.material.set_shader_parameter("effect_weight", 0.0)
 	return sprite
-func get_battle_player_sprite() -> Sprite:
-	var sprite = Sprite.new()
-	var tex : Texture
+func get_battle_player_sprite() -> Sprite2D:
+	var sprite = Sprite2D.new()
+	var tex : Texture2D
 	if is_shiny:
-		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "bs.png") as Texture
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "bs.png") as Texture2D
 	else:
-		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "b.png") as Texture
+		tex = load("res://Graphics/Battlers/" + str("%03d" % ID) + "b.png") as Texture2D
 	sprite.texture = tex
-	sprite.name = "Sprite"
+	sprite.name = "Sprite2D"
 	sprite.material = ShaderMaterial.new()
 	#var effect = load("res://Graphics/Pictures/StatUp.png")
 	#effect.set_flags(Texture.FLAG_REPEAT)
-	sprite.material.shader = load("res://Utilities/Battle/StatChange.shader")
+	sprite.material.shader = load("res://Utilities/Battle/StatChange.gdshader")
 	#sprite.material.set_shader_param("effect", effect)
-	sprite.material.set_shader_param("effect_weight", 0.0)
+	sprite.material.set_shader_parameter("effect_weight", 0.0)
 	return sprite
 func get_exp_bar_percent() -> float:
 	var result : float = 0.0
@@ -321,12 +325,12 @@ func add_ev(defeated_poke : Pokemon):
 	update_stats()
 func get_exp_yield() -> int:
 	return int (registry.new().get_pokemon_class(ID).exp_yield )
-func get_icon_texture() -> Texture:
-	var texture : Texture
+func get_icon_texture() -> Texture2D:
+	var texture : Texture2D
 	if is_shiny:
-		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + "s.png") as Texture
+		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + "s.png") as Texture2D
 	else:
-		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + ".png") as Texture
+		texture = load("res://Graphics/Icons/icon" + str("%03d" % ID) + ".png") as Texture2D
 	return texture
 func heal(): # Restores HP and move PPs to max and removes all ailments.
 	current_hp = hp
@@ -382,3 +386,11 @@ func get_moves():
 		moves.append(move_4)
 	return moves
 								
+
+# Godot 4: Helper function to set up sprite animation
+func _setup_sprite_animation(sprite):
+	var frames = sprite.get_meta("frames")
+	var anim_tween = sprite.create_tween()
+	anim_tween.set_loops()  # Loop forever
+	# Constant 60 fps playback (sheets are 60 fps captures); duration scales with frame count
+	anim_tween.tween_property(sprite, "frame", frames - 1, float(frames) / 60.0).from(0).set_trans(Tween.TRANS_LINEAR)

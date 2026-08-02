@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: nl\n"
+
+msgid "Buenas noches, \\PN!\\mThis is \\TN!"
+msgstr "Buenas noches, \\PN!\\mDit is \\TN!"
+
+msgid "Did you hear about Nuclear Pokemon?\\mI hope I don't run into one of those, they sound scary.\\mBe careful out there, ok?"
+msgstr "Heb je gehoord van die Nucleaire Pokémon?\\mIk hoop dat ik er geen tegenkom. Ze klinken griezelig.\\mWees voorzichtig oké?"
+
+msgid "Do you remember my \\TP?\\m My \\TP is awesome. It's so cool.\\m I'd even say my \\TP is in the top percentage of \\TPs."
+msgstr "Herinner je je mijn \\TP nog?\\mMijn \\TP is geweldig. Het is zo cool.\\mIk zou zelfs zeggen dat mijn \\TP de beste \\TP ooit is."
+
+msgid "Do you want to battle? I'm going to win this time!\\mI'll be waiting for you around \\TM.\\mLook for me, OK? My \\TP will be expecting you."
+msgstr "Zin in een gevecht? Het wordt eens tijd dat ik van je win!\\mIk zal op \\TM op je wachten.\\mZoek me op, oké? Mijn \\TP zal je vast wel weer een keer willen zien."
+
+msgid "Good day, \\PN! Hi. This is \\TN."
+msgstr "Goedemiddag, \\PN! Hoi, dit is \\TN."
+
+msgid "Good morning!\\m This is \\PN, right? It's me, \\TN."
+msgstr "Goedemorgen!\\mDit is \\PN, toch? Ik ben het, \\TN."
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Did I wake you?"
+msgstr "Goedemorgen, \\PN.\\mDit is \\TN. Heb ik je wakker gebeld?"
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Rise and shine!"
+msgstr "Goedemorgen, \\PN.\\mDit is \\TN. Wakker worden!"
+
+msgid "Guess what happened the other day. I missed catching \\TE again.\\mMaybe I'm not very good at this."
+msgstr "Raad wat ik heb meegemaakt. Ik ben alweer een \\TE misgelopen!\\mMisschien ben ik hier niet zo goed in..."
+
+msgid "Have you ever hatched a Pokemon Egg?\\mI raised my \\TP from an egg."
+msgstr "Heb je ooit een Pokémon-Ei laten uitkomen?\\mIk heb mijn \\TP al sinds het klein was."
+
+msgid "Have you seen the \\TEs around \\TM?\\mThey scare me so much! I always run away!"
+msgstr "Heb je die \\TE rond \\TM gezien?\\mIk vind ze zo eng! Ik ren altijd weg!"
+
+msgid "Have you tried trading with your friends?\\mI got my \\TP in a trade, and it grows so fast!\\mTrades can be an awesome way to get strong Pokemon."
+msgstr "Heb je al geprobeerd met vrienden te ruilen?\\mIk heb mijn \\TP van een ruiling, en het groeit super snel!\\mRuilingen kunnen enorm helpen bij het krijgen van sterke Pokémon."
+
+msgid "Hello, \\PN. This is \\TN. How are things?"
+msgstr "Hallo \\PN. Dit is \\TN. Hoe is het?"
+
+msgid "Hello. This is \\TN."
+msgstr "Hallo. Je spreekt met \\TN."
+
+msgid "Hey, \\PN! Good evening!\\mThis is \\TN."
+msgstr "Hé, \\PN! Goedenavond!\\mDit is \\TN."
+
+msgid "Hey, \\PN, wassup? It's \\TN."
+msgstr "Hé \\PN, wassup? \\TN hier."
+
+msgid "Hey, are you ready for another throw-down?\\mYou, me, battle. Place, \\TM.\\mTime, whenever you want! Let's do it!"
+msgstr "Zin in een knokpartij?\\mJij, ik, gevecht. Plaats, \\TM.\\mTijd, wanneer je maar wil! Kom maar op!"
+
+msgid "Hey, listen! I almost caught \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "Moet je eens horen! Ik had laatst bijna een \\TE gevangen.\\mHet scheelde maar zoooo weinig!"
+
+msgid "How are you doing? \\PN, howdy! This is \\TN. Isn't it nice out?"
+msgstr "\\PN, hallo hallo! Hoe gaat het met je? Dit is \\TN. Lekker weer, is het niet?"
+
+msgid "How are your Pokemon doing?\\mI always keep my \\TP in top shape by going to Pokemon Centers."
+msgstr "Hoe gaat het met je Pokémon?\\mIk hou mijn \\TP altijd in topvorm door middel van Pokémon-Centra."
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!"
+msgstr "Hoe gaat het met je Pokémon?\\mMijn \\TP heeft super veel energie, ik heb er mijn handen vol aan!"
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!\\mOh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "Hoe gaat het met je Pokémon?\\mMijn \\TP heeft super veel energie, ik heb er mijn handen vol aan!\\mO ja, ik heb het voor elkaar gekregen een sterke \\TE te verslaan.\\mIk moet mijn team sterker trainen."
+
+msgid "I dressed my \\TP and it looks even cuter than before."
+msgstr "Ik heb mijn \\TP aangekleed, en nu ziet het er nog schattiger uit!"
+
+msgid "I painted a portrait of my beloved \\TP.\\mIt didn't like sitting still though."
+msgstr "Ik heb een portret van mijn geliefde \\TP geschilderd.\\mHet wilde alleen niet stilzitten."
+
+msgid "I spent all day hunting for a shiny \\TE.\\mI didn't manage to find any, though."
+msgstr "Ik ben de hele dag op zoek geweest naar een Shiny \\TE.\\mIk heb er alleen geen kunnen vinden."
+
+msgid "I tried to use the Wonder Trade today.\\mAll I got was a Lv.3 Chyinmunk though.\\mWhy do people put up such lame Pokemon for trade?"
+msgstr "Ik heb vandaag Wonderruil geprobeerd.\\mIk kreeg echter alleen een Chyinmunk...\\mWaarom ruilen mensen zulke stomme Pokémon?"
+
+msgid "Let's have a battle! I want to see how much you've grown!\\mI'm still hanging around \\TM.\\mCome see if you can beat my \\TP!"
+msgstr "Laten we vechten! Ik wil weten hoeveel je bent gegroeid!\\mIk hang nog steeds rond \\TM.\\mKom eens langs als je denkt mijn \\TP te kunnen verslaan!"
+
+msgid "My \\TP and I love playing games.\\m Its favorite game is fetch."
+msgstr "Mijn \\TP en ik spelen graag.\\mHet kan heel goed apporteren."
+
+msgid "My \\TP is fantastic.\\mI'd say it's even in the top percentage of \\TPs."
+msgstr "Mijn \\TP is fantastisch.\\mHet is de beste \\TP ooit!"
+
+msgid "My \\TP's looking really awesome. I wish I could show you."
+msgstr "Mijn \\TP ziet er super vet uit. Ik wou dat ik het je kon laten zien."
+
+msgid "My \\TP's looking really awesome.\\mI wish I could show you.\\mHey, listen! I almost caught a \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "Mijn \\TP ziet er super vet uit.\\mIk wou dat ik het je kon laten zien.\\mMoet je eens horen! Ik had laatst bijna een \\TE gevangen.\\mHet scheelde maar zoooo weinig!"
+
+msgid "Oh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "O ja, ik heb het voor elkaar gekregen een sterke \\TE te verslaan.\\mIk moet mijn team sterker trainen."
+
+msgid "Ready for a rematch? \\TP and I have been training hard!\\mI'll be waiting for you around \\TM where we met.\\mCome find me and let's battle!"
+msgstr "Klaar voor een nieuwe ronde? Mijn \\TP en ik hebben heel hard getraind!\\mIk zal rond \\TM op je wachten, waar we elkaar hebben ontmoet.\\mKom me eens opzoeken,\ndan kunnen we weer vechten!"
+
+msgid "Remember the last time we battled? Let's rematch!\\mI promise it won't be a repeat of last time.\\mCome find me around \\TM!"
+msgstr "Herinner je je de laatste keer dat we gevochten hebben?\\mLaten we dat nog eens doen!\\mIk beloof dat het dit keer anders zal zijn.\\mKom me rond \\TM opzoeken!"
+
+msgid "Top of the morning, \\PN!\\m\\TN here, at your service."
+msgstr "Goedemorgen, \\PN!\\m\\TN hier, tot je dienst."
+
+msgid "Want to battle? It's not going to be a repeat of the last time we met.\\mI'll be waiting for you around \\TM."
+msgstr "Zin om te vechten? Het zal geen herhaling van de vorige keer worden.\\mIk wacht je op op \\TM."
+
+msgid "What did you eat for lunch today? I had a grilled \\TE.\\mI don't think I cooked it well enough.\\mOr did you not eat lunch at all?"
+msgstr "Wat heb jij vanmiddag gegeten? Ik heb gebakken \\TE op.\\mHet was echter niet goed doorbakken.\\mOf heb je misschien helemaal niet geluncht?"
+
+msgid "Yo, \\PN, my main homie! This is \\TN!"
+msgstr "Yo, \\PN, mattie van me! Dit is \\TN!"
+
+msgid "You have to hear this! I battled \\TE the other day.\\mIt was easy! I had a type advantage."
+msgstr "Moet je horen! Ik had laatst een \\TE bevochten.\\mHet was zooo makkelijk!\nIk had het Soortvoordeel."
+
+msgid "\\PN, good day! It's me, \\TN. Got a minute?"
+msgstr "\\PN, goedendag! Ik ben het, \\TN. Heb je even?"
+
+msgid "\\PN, good evening! Hi.\\mThis is \\TN."
+msgstr "\\PN, goedenavond! Hoi.\\mDit is \\TN."
+

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Audio/SE/Choose.WAV" type="AudioStream" id=1]
-[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=2]
-[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture2D" id=3]
 [ext_resource path="res://Utilities/UI/MultilinePrompt.gd" type="Script" id=4]
 
 [node name="MultiLinePrompt" type="CanvasLayer"]
@@ -12,8 +12,8 @@ script = ExtResource( 4 )
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Node2D"]
-margin_right = 100.0
-margin_bottom = 110.0
+offset_right = 100.0
+offset_bottom = 110.0
 texture = ExtResource( 2 )
 region_rect = Rect2( 0, 0, 48, 48 )
 patch_margin_left = 6
@@ -25,10 +25,10 @@ __meta__ = {
 }
 
 [node name="Select" type="TextureRect" parent="Node2D"]
-margin_left = 10.0
-margin_top = 18.0
-margin_right = 22.0
-margin_bottom = 46.0
+offset_left = 10.0
+offset_top = 18.0
+offset_right = 22.0
+offset_bottom = 46.0
 texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false

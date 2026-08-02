@@ -1,7 +1,7 @@
 extends Area2D
 
-export var destination : Vector2
-export(String, "Up", "Down") var dir
+@export var destination : Vector2
+@export_enum("Up", "Down") var dir: String
 
 func _ready():
 	self.add_to_group("Stairs")

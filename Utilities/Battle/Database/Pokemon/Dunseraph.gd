@@ -19,8 +19,8 @@ var sp_defense = 75
 var speed = 75
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Serene Grace"
+var hidden_ability = "Cloud Nine"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 3

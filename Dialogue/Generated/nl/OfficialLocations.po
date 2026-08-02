@@ -1,0 +1,161 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: nl\n"
+
+msgid "01- Lakeside Path"
+msgstr "01 - Oeverpad"
+
+msgid "02- Owten Nook"
+msgstr "02 - Owtenhoek"
+
+msgid "03- Seabreeze Way"
+msgstr "03 - Zeebriesweg"
+
+msgid "04- Baa Grassland"
+msgstr "04 - Herdersweide"
+
+msgid "05- Tancoon Way"
+msgstr "05 - Tancoonweg"
+
+msgid "06- Pahar Hills"
+msgstr "06 - Paharheuvels"
+
+msgid "07- Tandor Sheets"
+msgstr "07 - Tandorzandbanken"
+
+msgid "08- Vinoville Lake"
+msgstr "08 - Vinnelvelds Meer"
+
+msgid "09- FireValley"
+msgstr "09 - Vlammenvallei"
+
+msgid "10- Baykal Forest"
+msgstr "10 - Baykalbos"
+
+msgid "11- Nature Preserve"
+msgstr "11 - Natuurreservaat"
+
+msgid "12- Maskara Channel"
+msgstr "12 - Maskara-Bocht"
+
+msgid "13- Maskara Island"
+msgstr "13 - Maskara-Eiland"
+
+msgid "14- Maskara Sea"
+msgstr "14 - Maskara-Zee"
+
+msgid "15- Shallow Channel"
+msgstr "15 - Ondiep Rif"
+
+msgid "Amatree Town"
+msgstr "Amelaar"
+
+msgid "Anthell"
+msgstr "Miereneuvel"
+
+msgid "Bealbeach City"
+msgstr "Bruisbank"
+
+msgid "Berry Traders"
+msgstr "Ruilmarkt"
+
+msgid "Bike Shop"
+msgstr "Fietsenwinkel"
+
+msgid "Burole Town"
+msgstr "Burucht"
+
+msgid "Championship Site"
+msgstr "Tandorkampioenschap"
+
+msgid "Church"
+msgstr "Kerk"
+
+msgid "Comet Cave"
+msgstr "Kometengrot"
+
+msgid "Dpt. Store, Casino"
+msgstr "Winkelcentrum, Casino"
+
+msgid "Kevlar Town"
+msgstr "Kevlar"
+
+msgid "Lanthanite Tunnel"
+msgstr "Lanthanidentunnel"
+
+msgid "Larkspur's Lab"
+msgstr "Larkspurs Laboratorium"
+
+msgid "Legen Town"
+msgstr "Legendum"
+
+msgid "Moki Town"
+msgstr "Moki"
+
+msgid "Name Rater"
+msgstr "Naamcriticus"
+
+msgid "Nowtoch City"
+msgstr "Noutocht"
+
+msgid "Nuclear Plant Epsilon"
+msgstr "Kerncentrale Epsilon"
+
+msgid "Nuclear Plant Omicron"
+msgstr "Kerncentrale Omicron"
+
+msgid "Nuclear Plant Zeta"
+msgstr "Kerncentrale Zeta"
+
+msgid "Passage Cave"
+msgstr "Doorgangsgrot"
+
+msgid "Pokemon School"
+msgstr "Pokémon-School"
+
+msgid "Professor Bambo Lab"
+msgstr "Bamb'o's Laboratorium"
+
+msgid "Professor Cypress Lab"
+msgstr "Cipres' Laboratorium"
+
+msgid "Rochfale Town"
+msgstr "Rotstort"
+
+msgid "Rochfale Tunnel"
+msgstr "Rotstortse Tunnel"
+
+msgid "Route 16"
+msgstr "16 - Lanthanidenberg"
+
+msgid "Silverport Town"
+msgstr "Zilverkade"
+
+msgid "Snowbank Town"
+msgstr "Sneeuwpoort"
+
+msgid "The Labyrinth"
+msgstr "Het Labyrint"
+
+msgid "The Tipsy Tancoon, etc"
+msgstr "De Aangeschoten Aveden"
+
+msgid "Tinkerer's Workshop"
+msgstr "Knutselaar"
+
+msgid "Training Dojo"
+msgstr "Dojo"
+
+msgid "Tsukinami Village"
+msgstr "Tsukinami"
+
+msgid "Venesi City"
+msgstr "Venesi"
+
+msgid "Victory Road"
+msgstr "Overwinnaarspad"
+
+msgid "Vinoville Town"
+msgstr "Vinnelveld"
+

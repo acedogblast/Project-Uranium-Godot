@@ -18,8 +18,9 @@ var sp_defense = 70
 var speed = 95
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Sand Veil"
+var ability_2 = "Arena Trap"
+var hidden_ability = "Sand Force"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -64,7 +65,7 @@ var moveset = [
 	MoveSet.new(17, "Endure"),
 	MoveSet.new(25, "Dual Chop"),
 	MoveSet.new(31, "Dig"),
-	MoveSet.new(38, "Spike"),
+	MoveSet.new(38, "Spikes"),
 	MoveSet.new(44, "Earthquake"),
 	MoveSet.new(50, "Dragon Rush"),
 	MoveSet.new(56, "Fissure"),

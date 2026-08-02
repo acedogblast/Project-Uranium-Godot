@@ -50,19 +50,27 @@ func strip_metadata(text):
 	while index < text.length():
 		if text[index] == '\\':
 			index += 1
+			if index >= text.length():
+				break
 			match text[index]:
 				'\\':
 					pass
 				'c':
 					index = text.find("]", index)
+					if index < 0:
+						break
 				'<':
 					index = text.find(">", index)
+					if index < 0:
+						break
 				'.':
 					pass
 				'|':
 					pass
 		elif text[index] == '<':
 			index = text.find(">", index)
+			if index < 0:
+				break
 		else:
 			strippedText += text[index]
 
@@ -104,7 +112,7 @@ func extract_events(text, timer):
 								event_array.push_back(SkipTextEvent.new(trueIndex, get_tree()))
 								length += 2 + str(value).length()
 
-						extracted_text.erase(index, length)
+						extracted_text = extracted_text.substr(0, index) + extracted_text.substr(index + length)
 						index -= 1
 
 		index += 1

@@ -1,0 +1,265 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: pt\n"
+
+msgid "Megahorn"
+msgstr "Megachifre"
+
+msgid "Attack Order"
+msgstr "Ordem de Ataque"
+
+msgid "Bug Buzz"
+msgstr "Zumbido de Inseto"
+
+msgid "X-Scissor"
+msgstr "Tesoura X"
+
+msgid "Signal Beam"
+msgstr "Sinalizador"
+
+msgid "U-turn"
+msgstr "Giro em U"
+
+msgid "Steamroller"
+msgstr "Rolo Compressor"
+
+msgid "Bug Bite"
+msgstr "Mordida de Inseto"
+
+msgid "Silver Wind"
+msgstr "Vento prateado"
+
+msgid "Struggle Bug"
+msgstr "Ira de Inseto"
+
+msgid "Twineedle"
+msgstr "Agulha Dupla"
+
+msgid "Fury Cutter"
+msgstr "Corte Furioso"
+
+msgid "Leech Life"
+msgstr "Sanguessuga"
+
+msgid "Pin Missile"
+msgstr "Míssill de Agulha"
+
+msgid "Defend Order"
+msgstr "Ordem de Defesa"
+
+msgid "Heal Order"
+msgstr "Ordem de Cura"
+
+msgid "Quiver Dance"
+msgstr "Dança Vibratória"
+
+msgid "Rage Powder"
+msgstr "Pó da Fúria"
+
+msgid "Spider Web"
+msgstr "Teia de Aranha"
+
+msgid "String Shot"
+msgstr "Lança-Teia"
+
+msgid "Tail Glow"
+msgstr "Cauda ardente"
+
+msgid "Foul Play"
+msgstr "Jogo Sujo"
+
+msgid "Night Daze"
+msgstr "Confusão Noturna"
+
+msgid "Crunch"
+msgstr "Triturar"
+
+msgid "Dark Pulse"
+msgstr "Pulso negro"
+
+msgid "Sucker Punch"
+msgstr "Soco Enganador"
+
+msgid "Night Slash"
+msgstr "Golpe Noturno"
+
+msgid "Bite"
+msgstr "Mordida"
+
+msgid "Feint Attack"
+msgstr "Ataque Furtivo"
+
+msgid "Snarl"
+msgstr "Rosnado"
+
+msgid "Assurance"
+msgstr "Garantia"
+
+msgid "Payback"
+msgstr "Revide"
+
+msgid "Pursuit"
+msgstr "Perseguição"
+
+msgid "Thief"
+msgstr "Ladrão"
+
+msgid "Knock Off"
+msgstr "Derrubar"
+
+msgid "Beat Up"
+msgstr "Espancar"
+
+msgid "Fling"
+msgstr "Arremessar"
+
+msgid "Punishment"
+msgstr "Punição"
+
+msgid "Dark Void"
+msgstr "Vácuo Negro"
+
+msgid "Embargo"
+msgstr "Confiscar"
+
+msgid "Fake Tears"
+msgstr "Choro Falso"
+
+msgid "Flatter"
+msgstr "Bajular"
+
+msgid "Hone Claws"
+msgstr "Garras Afiadas"
+
+msgid "Memento"
+msgstr "Lembrança"
+
+msgid "Nasty Plot"
+msgstr "Conspiração"
+
+msgid "Quash"
+msgstr "Retardar"
+
+msgid "Snatch"
+msgstr "Arrebatar"
+
+msgid "Switcheroo"
+msgstr "Troca Secreta"
+
+msgid "Taunt"
+msgstr "provocar"
+
+msgid "Torment"
+msgstr "Tormento"
+
+msgid "Roar of Time"
+msgstr "Rugido do tempo"
+
+msgid "Draco Meteor"
+msgstr "Meteoro Dragão"
+
+msgid "Outrage"
+msgstr "Atrocidade"
+
+msgid "Dragon Rush"
+msgstr "Investida de Dragão"
+
+msgid "Spacial Rend"
+msgstr "Fenda Espacial"
+
+msgid "Dragon Pulse"
+msgstr "Pulso do Dragão"
+
+msgid "Dragon Claw"
+msgstr "Garra de Dragão"
+
+msgid "Dragon Tail"
+msgstr "Cauda de dragão"
+
+msgid "Dragon Breath"
+msgstr "Sopro de Dragão"
+
+msgid "Dual Chop"
+msgstr "Golpe duplo"
+
+msgid "Twister"
+msgstr "Ciclone"
+
+msgid "Dragon Rage"
+msgstr "Fúria do Dragão"
+
+msgid "Dragon Dance"
+msgstr "Dança do Dragão"
+
+msgid "Bolt Strike"
+msgstr "Queda de Raios"
+
+msgid "Thunder"
+msgstr "Trovão"
+
+msgid "Volt Tackle"
+msgstr "Investida Trovão"
+
+msgid "Zap Cannon"
+msgstr "Canhão Elétrico"
+
+msgid "Fusion Bolt"
+msgstr "Raio de Fusão"
+
+msgid "Thunderbolt"
+msgstr "Choque do Trovão"
+
+msgid "Wild Charge"
+msgstr "Ataque Selvagem"
+
+msgid "Discharge"
+msgstr "Descarga"
+
+msgid "Thunder Punch"
+msgstr "Soco Trovão"
+
+msgid "Volt Switch"
+msgstr "Troca Elétrica"
+
+msgid "Thunder Fang"
+msgstr "Presa do Trovão"
+
+msgid "Shock Wave"
+msgstr "Onda de Choques"
+
+msgid "Electroweb"
+msgstr "Teia Elétrica"
+
+msgid "Charge Beam"
+msgstr "Carga de Raio"
+
+msgid "Thunder Shock"
+msgstr "Choque Elétrico"
+
+msgid "Electro Ball"
+msgstr "Bola Elétrica"
+
+msgid "Charge"
+msgstr "Carga"
+
+msgid "Magnet Rise"
+msgstr "Levitação Magnética"
+
+msgid "Thunder Wave"
+msgstr "Onda Trovão"
+
+msgid "Focus Punch"
+msgstr "Soco Focalizado"
+
+msgid "High Jump Kick"
+msgstr "Voadora"
+
+msgid "Close Combat"
+msgstr "Corpo-a-corpo"
+
+msgid "Focus Blast"
+msgstr "Explosão Focalizada"
+
+msgid "Nuclear Wind"
+msgstr "Vento Nuclear"

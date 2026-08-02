@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "Garlikid"
+msgstr "Marmail"
+
+msgid "Kellyn"
+msgstr "Primo"
+
+msgid "Nu es"
+msgstr "Nuñes"
+
+msgid "OF DREAMS"
+msgstr "ONIRIQUE"
+
+msgid "Theo"
+msgstr "Théo"
+

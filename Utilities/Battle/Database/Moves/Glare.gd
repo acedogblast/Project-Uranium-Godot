@@ -34,4 +34,5 @@ var total_pp = 30
 var target_ability = MoveTarget.SINGLE_FOE
 
 # attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
-var main_status_effect # = MajorAilment.PARALYZE
+var main_status_effect # = MajorAilment.PARALYSIS
+var secondary_effect = MajorAilment.PARALYSIS

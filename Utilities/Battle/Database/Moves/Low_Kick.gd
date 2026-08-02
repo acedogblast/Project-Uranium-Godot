@@ -1,4 +1,5 @@
 extends Object
+# TODO: Essentials function code 0x09A not fully implemented (plain move for now)
 
 # The name of the move
 var name = "Low Kick"
@@ -10,7 +11,7 @@ var type = Type.FIGHTING
 var style = MoveStyle.PHYSICAL
 
 # The base power of the move
-var base_power
+var base_power = 1
 
 # The accuracy of the move
 var accuracy = 100
@@ -25,7 +26,7 @@ var critical_hit_level = 1
 var secondary_effect_chance
 
 # The secondary effect of the move
-var secondary_effect 
+var secondary_effect
 
 # The flags of the move
 var flags = []
@@ -35,5 +36,5 @@ var total_pp = 20
 
 # The target ability of the move (Single, Double, All_Foes, Self)
 var target_ability = MoveTarget.SINGLE_FOE
-# attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
-var main_status_effect  
+
+var main_status_effect

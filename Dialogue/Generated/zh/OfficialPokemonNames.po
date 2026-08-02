@@ -1,0 +1,607 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "Orchynx"
+msgstr "罗兰猫"
+
+msgid "Metalynx"
+msgstr "绿甲猫"
+
+msgid "Raptorch"
+msgstr "火炬龙"
+
+msgid "Archilles"
+msgstr "巨焰龙"
+
+msgid "Eletux"
+msgstr "蓝电马"
+
+msgid "Electruxo"
+msgstr "游雷马"
+
+msgid "Chyinmunk"
+msgstr "小栗鼠"
+
+msgid "Kinetmunk"
+msgstr "跃动鼠"
+
+msgid "Birbie"
+msgstr "回乡雀"
+
+msgid "Aveden"
+msgstr "伊甸鸟"
+
+msgid "Splendifowl"
+msgstr "炫羽鹰"
+
+msgid "Cubbug"
+msgstr "叶衣虫"
+
+msgid "Cubblfly"
+msgstr "樱粉蝶"
+
+msgid "Nimflora"
+msgstr "妖仙蝶"
+
+msgid "Barewl"
+msgstr "顽石鹿"
+
+msgid "dearewl"
+msgstr "钢加鹿"
+
+msgid "Gararewl"
+msgstr "钢齿鹿"
+
+msgid "Grozard"
+msgstr "钻地蜥"
+
+msgid "Terlard"
+msgstr "双头地蛟"
+
+msgid "Tonemy"
+msgstr "小毒丸"
+
+msgid "Tofurang"
+msgstr "猛颚兽"
+
+msgid "Dunsparce"
+msgstr "土龙弟弟"
+
+msgid "Dunseraph"
+msgstr "天翼土龙"
+
+msgid "Fortog"
+msgstr "壮壮蛙"
+
+msgid "Folerog"
+msgstr "寻水蟾"
+
+msgid "Blubelrog"
+msgstr "毒蟾老大"
+
+msgid "Magikarp"
+msgstr "鲤鱼王"
+
+msgid "Gyarados"
+msgstr "暴鲤龙"
+
+msgid "Feleng"
+msgstr "卖萌猫"
+
+msgid "Felunge"
+msgstr "猎刺猫"
+
+msgid "Feliger"
+msgstr "虎虎猫"
+
+msgid "Mankey"
+msgstr "猴怪"
+
+msgid "Primeape"
+msgstr "火爆猴"
+
+msgid "Empirilla"
+msgstr "暴君猴"
+
+msgid "Owten"
+msgstr "小猫鹰"
+
+msgid "Eshouten"
+msgstr "高吼猫鹰"
+
+msgid "Lotad"
+msgstr "莲叶童子"
+
+msgid "Lombre"
+msgstr "莲帽小童"
+
+msgid "Ludicolo"
+msgstr "乐天河童"
+
+msgid "Smore"
+msgstr "烟棉蚁"
+
+msgid "Firoke"
+msgstr "烽火蚁"
+
+msgid "Brailip"
+msgstr "核脑鱼"
+
+msgid "Brainoar"
+msgstr "脑白鳗"
+
+msgid "Ekans"
+msgstr "阿柏蛇"
+
+msgid "Arbok"
+msgstr "阿柏怪"
+
+msgid "Tancoon"
+msgstr "浣狸"
+
+msgid "Tanscure"
+msgstr "棕隐狸"
+
+msgid "Sponee"
+msgstr "水蛛儿"
+
+msgid "Sponaree"
+msgstr "海绵蛛"
+
+msgid "Pahar"
+msgstr "火雏鹦"
+
+msgid "Palij"
+msgstr "火羽鹦"
+
+msgid "Panjay"
+msgstr "浴火鸟"
+
+msgid "Jerbolta"
+msgstr "电跳鼠"
+
+msgid "Comite"
+msgstr "流星岩"
+
+msgid "Cometeor"
+msgstr "彗星岩"
+
+msgid "Astronite"
+msgstr "宇航岩"
+
+msgid "Mareep"
+msgstr "咩利羊"
+
+msgid "Flaaffy"
+msgstr "绵绵"
+
+msgid "Ampharos"
+msgstr "电龙"
+
+msgid "Baashaun"
+msgstr "肖恩咩"
+
+msgid "Baaschaf"
+msgstr "坏咩咩"
+
+msgid "Baariette"
+msgstr "战魔咩"
+
+msgid "Tricwe"
+msgstr "戏法蛛"
+
+msgid "Harylect"
+msgstr "电绒蛛"
+
+msgid "Costraw"
+msgstr "吸管虫"
+
+msgid "Trawpint"
+msgstr "鸩壶龙"
+
+msgid "Lunapup"
+msgstr "月野狗"
+
+msgid "Herolune"
+msgstr "英月狗"
+
+msgid "Minyan"
+msgstr "调皮蝠"
+
+msgid "Vilucard"
+msgstr "魔王蝠"
+
+msgid "Buizel"
+msgstr "泳圈鼬"
+
+msgid "Floatzel"
+msgstr "浮潜鼬"
+
+msgid "Modrille"
+msgstr "钻头鼹鼠"
+
+msgid "Drilgann"
+msgstr "超钻鼹鼠"
+
+msgid "Gligar"
+msgstr "天蝎"
+
+msgid "Gliscor"
+msgstr "天蝎王"
+
+msgid "Sableye"
+msgstr "勾魂眼"
+
+msgid "Cocaran"
+msgstr "椰子蟹"
+
+msgid "Cararalm"
+msgstr "椰树蟹"
+
+msgid "Cocancer"
+msgstr "椰岛巨蟹"
+
+msgid "Corsola"
+msgstr "太阳珊瑚"
+
+msgid "Corsoreef"
+msgstr "珊瑚岩"
+
+msgid "Tubjaw"
+msgstr "大颌鳗"
+
+msgid "Tubareel"
+msgstr "卷桶鳗"
+
+msgid "Cassnail"
+msgstr "沙堡蜗"
+
+msgid "Sableau"
+msgstr "宫殿蜗"
+
+msgid "Escartress"
+msgstr "天守蜗"
+
+msgid "Nupin"
+msgstr "草履胞"
+
+msgid "Gellin"
+msgstr "绿电胞"
+
+msgid "Cottonee"
+msgstr "木棉球"
+
+msgid "Whimsicott"
+msgstr "风妖精"
+
+msgid "Misdreavus"
+msgstr "梦妖"
+
+msgid "Mismagius"
+msgstr "梦妖魔"
+
+msgid "Barand"
+msgstr "尾爪龙"
+
+msgid "Glaslug"
+msgstr "冻原虫"
+
+msgid "Glavinug"
+msgstr "冰帝海牛"
+
+msgid "S51"
+msgstr "Ｓ５１"
+
+msgid "S51-A"
+msgstr "Ｓ５１－Ａ"
+
+msgid "Paraudio"
+msgstr "轻音蜥"
+
+msgid "Paraboom"
+msgstr "爆音蜥"
+
+msgid "Flager"
+msgstr "幼焰虎"
+
+msgid "Inflagetah"
+msgstr "业火豹"
+
+msgid "Chimical"
+msgstr "喀迈卡"
+
+msgid "Chimaconda"
+msgstr "喀迈蟒"
+
+msgid "Tikiki"
+msgstr "土著猴"
+
+msgid "Frikitiki"
+msgstr "酋长猴"
+
+msgid "Unymph"
+msgstr "幼蜻蜓"
+
+msgid "Harptera"
+msgstr "蜻蜓龙"
+
+msgid "Chicoatl"
+msgstr "小羽枭"
+
+msgid "Quetzoral"
+msgstr "羽花鹃"
+
+msgid "Coatlith"
+msgstr "羽蛇龙"
+
+msgid "Tracton"
+msgstr "恐龙战车"
+
+msgid "Snopach"
+msgstr "雪厚象"
+
+msgid "Dermafrost"
+msgstr "冰河猛犸"
+
+msgid "Slothohm"
+msgstr "欧姆树懒"
+
+msgid "Theriamp"
+msgstr "安培地懒"
+
+msgid "Titanice"
+msgstr "泰坦冰克"
+
+msgid "Frynai"
+msgstr "小苦无"
+
+msgid "Saidine"
+msgstr "十手沙丁"
+
+msgid "Daikatuna"
+msgstr "忍刀金枪"
+
+msgid "Selkid"
+msgstr "海仙童"
+
+msgid "Syrentide"
+msgstr "潮汐海妖"
+
+msgid "Spritzee"
+msgstr "粉香香"
+
+msgid "Aromatisse"
+msgstr "香香粉"
+
+msgid "Miasmedic"
+msgstr "瘴气巫"
+
+msgid "Jackdeary"
+msgstr "鹿角兔"
+
+msgid "Winotinger"
+msgstr "武痴兔"
+
+msgid "Duplicat"
+msgstr "拷贝猫"
+
+msgid "Eevee"
+msgstr "伊布"
+
+msgid "Vaporeon"
+msgstr "水伊布"
+
+msgid "Jolteon"
+msgstr "雷伊布"
+
+msgid "Flareon"
+msgstr "火伊布"
+
+msgid "Espeon"
+msgstr "太阳伊布"
+
+msgid "Umbreon"
+msgstr "月伊布"
+
+msgid "Leafeon"
+msgstr "叶伊布"
+
+msgid "Glaceon"
+msgstr "冰伊布"
+
+msgid "Sylveon"
+msgstr "仙子伊布"
+
+msgid "Nucleon"
+msgstr "原子伊布"
+
+msgid "Ratsy"
+msgstr "画画鼠"
+
+msgid "Raffiti"
+msgstr "涂鸦鼠"
+
+msgid "Gargryph"
+msgstr "石狮鹫"
+
+msgid "Masking"
+msgstr "乔装鸟"
+
+msgid "Dramsama"
+msgstr "舞王鸟"
+
+msgid "Antarki"
+msgstr "叹火灵"
+
+msgid "Chupacho"
+msgstr "德布拉"
+
+msgid "Luchabra"
+msgstr "假面古拉"
+
+msgid "Linkite"
+msgstr "镣铐鬼"
+
+msgid "Chainite"
+msgstr "锁链恶灵"
+
+msgid "Pufluff"
+msgstr "泡芙卷"
+
+msgid "Alpico"
+msgstr "滑翔雪灵"
+
+msgid "Anderind"
+msgstr "乘风雪灵"
+
+msgid "Colarva"
+msgstr "雪迹螨"
+
+msgid "Frosulo"
+msgstr "霜冻蛹"
+
+msgid "Frosthra"
+msgstr "天霜蛾"
+
+msgid "Fafurr"
+msgstr "冰绒龙"
+
+msgid "Fafninter"
+msgstr "临冬龙"
+
+msgid "Shrimputy"
+msgstr "小炮龙虾"
+
+msgid "Krilvolver"
+msgstr "火炮龙虾"
+
+msgid "Lavent"
+msgstr "岩浆龙"
+
+msgid "Swabone"
+msgstr "恶骨灵"
+
+msgid "Skelerogue"
+msgstr "海贼骷"
+
+msgid "Navighast"
+msgstr "海鬼王"
+
+msgid "Stenowatt"
+msgstr "迅爪电龙"
+
+msgid "Jungore"
+msgstr "矿石小生"
+
+msgid "Majungold"
+msgstr "蛮金力士"
+
+msgid "Hagoop"
+msgstr "鼻涕鳗"
+
+msgid "Haagross"
+msgstr "黏美鳗"
+
+msgid "Xenomite"
+msgstr "异能小虫"
+
+msgid "Xenogen"
+msgstr "异能兽"
+
+msgid "Xenoqueen"
+msgstr "异能皇后"
+
+msgid "Hazma"
+msgstr "哈兹马"
+
+msgid "Geigeroach"
+msgstr "啮骨蟑螂"
+
+msgid "Minicorn"
+msgstr "小麟"
+
+msgid "Kiricorn"
+msgstr "独角麟"
+
+msgid "Oblivicorn"
+msgstr "夜恋麟"
+
+msgid "Luxi"
+msgstr "运福龙"
+
+msgid "Luxor"
+msgstr "聚福龙"
+
+msgid "Luxelong"
+msgstr "永福龙"
+
+msgid "Praseopunk"
+msgstr "镨朋克"
+
+msgid "Neopunk"
+msgstr "钕朋克"
+
+msgid "Sheebit"
+msgstr "羊绒兔"
+
+msgid "Terrabit"
+msgstr "荒野兔"
+
+msgid "Laissure"
+msgstr "崩山兔"
+
+msgid "Volchik"
+msgstr "电伏鸟"
+
+msgid "Voltasu"
+msgstr "三足乌"
+
+msgid "Yatagaryu"
+msgstr "八咫龙"
+
+msgid "Devimp"
+msgstr "小焰魔"
+
+msgid "Fallengel"
+msgstr "火鬼卒"
+
+msgid "Belliadon"
+msgstr "炎冥王"
+
+msgid "Seikamater"
+msgstr "瑟卡梅德"
+
+msgid "Garlikid"
+msgstr "蒜头小子"
+
+msgid "Baitatao"
+msgstr "铂伊塔奥"
+
+msgid "Leviathao"
+msgstr "利维陶"
+
+msgid "Krakanao"
+msgstr "克拉卡纳"
+
+msgid "Lanthan"
+msgstr "镧斩"
+
+msgid "Actan"
+msgstr "锕凯丹"
+
+msgid "Urayne"
+msgstr "铀瑞利恩"
+
+msgid "Aotius"
+msgstr "奥提乌斯"
+
+msgid "Mutios"
+msgstr "穆提欧斯"
+
+msgid "Zephy"
+msgstr "哈比"
+
+msgid "Gastly"
+msgstr "耿鬼"

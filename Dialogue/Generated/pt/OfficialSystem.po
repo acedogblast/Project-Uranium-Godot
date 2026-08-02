@@ -1,0 +1,6188 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: pt\n"
+
+msgid "(Default)"
+msgstr "(padrão)"
+
+msgid "({1}) PP: {2}/{3}"
+msgstr " ({1}) PP: {2}/{3}"
+
+msgid "--- power core ------ from over----. It ---- ------ a large ---- -- nuclear fuel to -------. ---- ---- activated- -- --- -- prod--- ---- limitless energy."
+msgstr "- núcleo de energia ------ mais de----. Isso ---- ------ um grande ---- -- combustível nuclear para -------. ---- ---- ativado- -- --- -- prod--- ---- energia ilimitada."
+
+msgid "---- -- the Interface --- final---- today. Th- -erator - -- ---- - ----- full control -- --e Sp-cimen. ---- chief reseacher, Dr. ----- --s ---- granted clearance."
+msgstr "---- -- a Interface --- final---- hoje. O -erador - -- ---- - -----  controle total -- --e Esp-cime. ---- pesquisador chefe, Dr. ----- --s ---- garantiu esclarecimentos."
+
+msgid "---- has been - breach -- confidential--. ----- --- ------ shall -- relocate --- undergr-- --. Project 092 --- have -- -- --rminated."
+msgstr "---- foi- quebrado-- confidential--. ----- --- ------ deve realocar --- abaixo da ----. Projeto 092 --- foi --nalizado."
+
+msgid "... ... ... ...Nope!\nThere's no response."
+msgstr "... ... ... ...Nope!\nThere's no response."
+
+msgid "...Oh. It's you.\nListen, I might've been a jerk to you back in Vinoville Town.\nBut, well, what you did, it kind of saved my family and my town.\nWhen the Rangers are done cleaning the area, I'll have a home again.\nSo... I guess... What I'm trying to say is...\nI owe you. We all do.\nBut I'm not going easy on you because of it.\nI've been training non-stop since you beat me!\nMy team will crush anybody that stands in our way...\nEven the Hero of Tandor!!"
+msgstr "...Oh. É você.\nEscute, eu posso ter sido um babaca com você em Vinoville.\nMas, bem, o que você fez, isso meio que salvou minha cidade e família.\nQuando os Rangers limparem a área, eu terei uma casa novamente.\nEntão... Eu acho... O que estou tentando dizer...\nEu devo a você, todos nós, na verdade.\nMas não pegarei leve com você por isso\nVenho treinando sem parar desde que você me venceu\nMeu time vai destruir qualquer coisa que aparecer na nossa frente...\nMesmo o Herói de Tandor!!"
+
+msgid "...Pfeh. I guess you win.\nThat's embarrassing... But whatever.\nIf there's anyone I'll allow to beat me, it should be you."
+msgstr "...Pfeh.Acho que você venceu.\nisso é embaraçoso... mas tanto faz.\nSe há alguém que permitirei me vencer, é você"
+
+msgid "1, 2, and... ... ..."
+msgstr "1, 2, e... ... ..."
+
+msgid "<<"
+msgstr " <<"
+
+msgid "<ac>Search Mode</ac>"
+msgstr "<ac>Modo de busca</ac>"
+
+msgid "<c3=0000D6,7394FF>{1} <c3=5A5252,A5A5AD>nature."
+msgstr "<c3=0000D6,7394FF>{1} <c3=5A5252,A5A5AD>natureza."
+
+msgid "<c3=404040,B0B0B0>Egg hatched."
+msgstr "<c3=404040,B0B0B0>Egg hatched.\n"
+
+msgid "<c3=404040,B0B0B0>{1} {2}, {3}"
+msgstr "<c3=404040,B0B0B0>{1} {2}, {3}\n"
+
+msgid "<c3=5A5252,A5A5AD>Egg obtained."
+msgstr "<c3=5A5252,A5A5AD>Ovo obtido."
+
+msgid "<c3=5A5252,A5A5AD>Had a fateful encounter at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>Teve um encontro decidido pelo destino no Nv. {1}."
+
+msgid "<c3=5A5252,A5A5AD>Met at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>Encontrado no Nv. {1}."
+
+msgid "<c3=5A5252,A5A5AD>Traded at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>Trocado no Nv. {1}."
+
+msgid "<c3=F83820,E09890>Faraway place"
+msgstr "<c3=F83820,E09890>Faraway place\n"
+
+msgid "<c3=fff,282828>\"The Egg Watch\""
+msgstr "<c3=fff,282828>\"O relógio do Ovo\"\n"
+
+msgid "<c3=fff,282828>A mysterious Pokémon\nEgg received from\n<c3=0000D6,7394FF>{1}<c3=fff,282828>."
+msgstr "<c3=fff,282828>Um Pokémon misterioso\nOvo recebido  de\n<c3=0000D6,7394FF>{1}<c3=fff,282828>.\n"
+
+msgid "<c3=fff,282828>{1}/{2}/{3}"
+msgstr "<c3=fff,282828>{1}/{2}/{3}\n"
+
+msgid "<r>{1}<br>"
+msgstr " <r>{1}<br>"
+
+msgid ">>"
+msgstr " >>"
+
+msgid "A Key Item in the Bag can be registered to this key for instant use."
+msgstr "Um Item Chave na Mochila pode ser registrado para essa tecla para acesso rápido."
+
+msgid "A Map\nShows visited Places."
+msgstr "Um Mapa\nMostra lugares visitados."
+
+msgid "A Nuclear Horde appeared!"
+msgstr "Uma Horda Nuclear apareceu!"
+
+msgid "A Phone\nUsed to call People."
+msgstr "Um telefone\nUsado para ligar para pessoas."
+
+msgid "A Pokémon could be in this tree. Maybe a Pokémon could shake it."
+msgstr "Um Pokémon poderia estar nessa árvore. Talvez um Pokémon possa sacudi-la."
+
+msgid "A Pokémon could be in this tree. Want to headbutt it?"
+msgstr "Um pokémon pode estar nessa árvore, gostaria de dar uma cabeçada?"
+
+msgid "A Radio\nUsed to listen to Music."
+msgstr "Um Rádio\nUsado para ouvir Música."
+
+msgid "A Toxic Fallout has set in!"
+msgstr "Um Desastre Nuclear ocorreu!"
+
+msgid "A bell chimed!"
+msgstr "Um sino tocou!"
+
+msgid "A critical hit!"
+msgstr "Um acerto crítico!"
+
+msgid "A heavy rain began to fall!"
+msgstr "Uma chuva pesada começou a cair!"
+
+msgid "A little quick tempered."
+msgstr "Um pouco pavio curto."
+
+msgid "A mysterious air current is protecting Flying-type Pokémon!"
+msgstr "Um ar misterioso está protegendo pokémons do tipo Voador."
+
+msgid "A nuclear fallout has hit!"
+msgstr "Um desastre nuclear começou!"
+
+msgid "A sandstorm brewed!"
+msgstr "Uma tempestade de areia se inicia!!"
+
+msgid "A sandstorm is raging."
+msgstr "Tempestade de areia está ocorrendo."
+
+msgid "A sandstorm kicked up!"
+msgstr "Uma tempestade de areia começou!"
+
+msgid "A soothing aroma wafted through the area!"
+msgstr "Um aroma tranquilizador se espalha pela área!"
+
+msgid "A sticky web has been laid out beneath the opposing team's feet!"
+msgstr "Uma teia grudenta foi posta debaixo dos pés do time adversário!"
+
+msgid "A sticky web has been laid out beneath your team's feet!"
+msgstr "Uma teia grudenta foi posta debaixo dos pés de seu time!"
+
+msgid "A thrilling display from trainers and Pokémon alike!"
+msgstr "Uma apresentação impressionante de treinadores e seus Pokémons!"
+
+msgid "A thunderstorm is raging."
+msgstr "Uma tempestade está ocorrendo."
+
+msgid "A thunderstorm started!"
+msgstr "Uma tempestade começou!"
+
+msgid "A to Z"
+msgstr "A a Z"
+
+msgid "A wall of water is crashing down with a mighty roar."
+msgstr "Uma parede de água está caindo com um poderoso rugido.."
+
+msgid "A {1} was planted here."
+msgstr "{1} foi plantado aqui"
+
+msgid "A: Add map to canvas"
+msgstr "A: Add map to canvas\n"
+
+msgid "ABLE"
+msgstr "PODE"
+
+msgid "ACCURACY"
+msgstr "PRECISÃO"
+
+msgid "Aargh! Almost had it!"
+msgstr "Aargh!  Quase!"
+
+msgid "Ability"
+msgstr "Habilidade"
+
+msgid "Ability Ribbon"
+msgstr "Fita de Habilidade"
+
+msgid "Acai Berries"
+msgstr "Frutas Açaí"
+
+msgid "Adamant"
+msgstr "Dura"
+
+msgid "Add another Pokémon?"
+msgstr "Adicionar outro Pokémon?"
+
+msgid "Advanced to Game Lv. {1}!"
+msgstr "Avançou para o Nv. {1}!"
+
+msgid "Aguav Berries"
+msgstr "Frutas Aguav"
+
+msgid "Aha! It is the \\PN!\nWe fight before. I lose in disgrace.\nMy Ninja clan forsake me. So I train.\nI train and train, in hopes to encounter \\PN again.\nIn this arena, we fight to regain honor!\nI will defeat you, and restore glory to my Ninja Clan!"
+msgstr "Aha! É \\PN!\nLutamos antes. Eu cai em desgraça.\nMeu clã Ninja me abandonou. Então eu treino.\nTreino e treino, na esperança de encontrar \\PN de novo.\nNessa arena, lutaremos paar recuperar a honra!\nVou vencê-lo, e restaurar glória para meu clã Ninja!"
+
+msgid "Alas, the final curtain falls...\nThe result is clear:\nYour victory was written in the stars!"
+msgstr "Infelizmente, A última curtina cai...\no resultado é claro:\nSua vitória foi escrita ans estrelas."
+
+msgid "Alert Ribbon"
+msgstr "Fita de Alerta"
+
+msgid "Alert to sounds."
+msgstr "Alerta a sons."
+
+msgid "All Pokémon hearing the song will faint in three turns!"
+msgstr "Todo Pokémon que ouviu essa canção irá desmaiar em 3 turnos!"
+
+msgid "All data will be lost. Confirm once more to proceed."
+msgstr "Todos os dados serão deletados. Confirme mais uma vez para prosseguir.."
+
+msgid "All recording devices are in use. Recording is not possible now."
+msgstr "All recording devices are in use.  Recording is not possible now."
+
+msgid "All stat changes were eliminated!"
+msgstr "Todas as alterações de atributo foram eliminadas"
+
+msgid "All the world's a stage... and we play the leading role! Can you see past our splendid masquerade?"
+msgstr "Todo o mundo é um palco... e nós somos os protagonistas! Você pode ver atráves de nossas máscaras?"
+
+msgid "Also, look for a special NPC in Kevlar Town!"
+msgstr " Also, look for a special NPC in Kevlar Town!"
+
+msgid "An Egg can't battle!"
+msgstr "Um ovo não pode batalhar!"
+
+msgid "An egg can't be an active Pokémon"
+msgstr "Um ovo não pode ser um Pokémon ativo"
+
+msgid "An electric current runs across the battlefield!"
+msgstr "Uma corrente Elétrica corre pelo campo de batalha!"
+
+msgid "And now, their battling skills will determine which of them get to move on to the Champion's Arena after this match."
+msgstr "E agora, suas habilidades determinarão quem irá para a Arena dos Campeões após essa batalha"
+
+msgid "And the winner is \\PN!"
+msgstr "E o vencedor é \\PN!"
+
+msgid "And..."
+msgstr "E..."
+
+msgid "And..."
+msgstr "E..."
+
+msgid "Announcer: You're out of Safari Balls! Game over!"
+msgstr "Announcer:  You're out of Safari Balls!  Game over!"
+
+msgid "Apicot Berries"
+msgstr "Frutas Apicot"
+
+msgid "Apr."
+msgstr "Abr."
+
+msgid "April"
+msgstr "Abril"
+
+msgid "Aqua Ring restored {1}'s HP!"
+msgstr "Anél de Água restaurou os PV de {1}!"
+
+msgid "Are you sure you want to delete this save file?"
+msgstr "Você tem certeza de que quer deletar esse arquivo salvo?"
+
+msgid "Are you sure you want to give up?"
+msgstr "Tem certeza de que gostaria de desistir?"
+
+msgid "Are you sure you want to play on this mode?"
+msgstr "Tem certeza que quer jogar nesse modo?"
+
+msgid "Are you sure you want to play with these settings?"
+msgstr "Você tem certeza de que gostaria de jogar com essas definições?"
+
+msgid "Are you sure you want to remove this friend?"
+msgstr "Você tem certeza que quer remover esse amigo?"
+
+msgid "Are you sure?"
+msgstr "Você tem certeza?"
+
+msgid "Area Unknown"
+msgstr "Área Desconhecida"
+
+msgid "Artist Ribbon"
+msgstr "Fita de Artista"
+
+msgid "Aspear Berries"
+msgstr "Frutas Aspear"
+
+msgid "Attack"
+msgstr "Ataque"
+
+msgid "Aug."
+msgstr "Ago."
+
+msgid "August"
+msgstr "Agosto"
+
+msgid "Autosave"
+msgstr "Salv. Automatico"
+
+msgid "Autosave failed. t(-.-t)"
+msgstr "Salvamento Automatico falhou. t(-.-t)"
+
+msgid "Aww... It appeared to be caught!"
+msgstr "Aww... Parecia que ia ser capturado!"
+
+msgid "BAG"
+msgstr "MOCHILA"
+
+msgid "BANNED"
+msgstr "BANIDO"
+
+msgid "BATTLE MOVES"
+msgstr "MOVIMENTOS DE BATALHA"
+
+msgid "Babiri Berries"
+msgstr "Frutas Babiri"
+
+msgid "Bacu Berries"
+msgstr "Frutas Bacu"
+
+msgid "Bad IV: {1} (must be from 0-31)\n{2}"
+msgstr "Bad IV: {1} (must be from 0-31)\n{2}"
+
+msgid "Bad abilityflag: {1} (must be 0 or 1 or 2-5)\n{2}"
+msgstr "Bad abilityflag: {1} (must be 0 or 1 or 2-5)\n{2}"
+
+msgid "Bad form: {1} (must be 0 or greater)\n{2}"
+msgstr "Bad form: {1} (must be 0 or greater)\n{2}"
+
+msgid "Bad genderflag: {1} (must be M or F, or 0 or 1)\n{2}"
+msgstr "Bad genderflag: {1} (must be M or F, or 0 or 1)\n{2}"
+
+msgid "Bad happiness: {1} (must be from 0-255)\n{2}"
+msgstr "Bad happiness: {1} (must be from 0-255)\n{2}"
+
+msgid "Bad level: {1} (must be from 1-{2})\n{3}"
+msgstr "Bad level: {1} (must be from 1-{2})\n{3}"
+
+msgid "Bad line syntax (expected syntax like XXX=YYY)\n{1}"
+msgstr "Bad line syntax (expected syntax like XXX=YYY)\n{1}"
+
+msgid "Bad money amount (must be from 0 through 255)\n{1}"
+msgstr "Bad money amount (must be from 0 through 255)\n{1}"
+
+msgid "Bad nickname: {1} (must be 1-20 characters)\n{2}"
+msgstr "Bad nickname: {1} (must be 1-20 characters)\n{2}"
+
+msgid "Bad skill value (must be from 0 through 255)\n{1}"
+msgstr "Bad skill value (must be from 0 through 255)\n{1}"
+
+msgid "Badges:"
+msgstr "Insígnias:"
+
+msgid "Badges<r><c3={1}>{2}</c3><br>"
+msgstr "Insígnias<r><c3={1}>{2}</c3><br>"
+
+msgid "Bag"
+msgstr "Mochila"
+
+msgid "Balls: {1}"
+msgstr "Bolas: {1}"
+
+msgid "Bashful"
+msgstr "Acanhada"
+
+msgid "Battle Champion Ribbon"
+msgstr "Fita do Campeão de Batalha"
+
+msgid "Battle Items"
+msgstr "Itens de Batalha"
+
+msgid "Battle Scene"
+msgstr "Cenas de Batalha"
+
+msgid "Battle Style"
+msgstr "Trocar PKMN nocauteado"
+
+msgid "Battle... start!"
+msgstr "Batalha... Começar!"
+
+msgid "Beach"
+msgstr "Praia"
+
+msgid "Beauty Ribbon"
+msgstr "Fita Bonita"
+
+msgid "Beauty Ribbon Great"
+msgstr "Fita Bonita Ótima"
+
+msgid "Beauty Ribbon Hyper"
+msgstr "Fita Hiper Bonita"
+
+msgid "Beauty Ribbon Master"
+msgstr "Fita Bonita Maestral"
+
+msgid "Beauty Ribbon Super"
+msgstr "Fita Super Bonita"
+
+msgid "Beauty Ribbon Ultra"
+msgstr "Fita Ultra Bonita"
+
+msgid "Begin your game."
+msgstr "Começa seu jogo."
+
+msgid "Behold! The power of Mega Evolution!"
+msgstr "Observe! O poder da mega Evolução!"
+
+msgid "Belue Berries"
+msgstr "Frutas Belue"
+
+msgid "Berries"
+msgstr "Frutas"
+
+msgid "Birthday Ribbon"
+msgstr "Fita de Aniversário"
+
+msgid "Black"
+msgstr "Preto"
+
+msgid "Black Tiles: {1}"
+msgstr "Azulejos Pretos: {1}"
+
+msgid "Blue"
+msgstr "Azul"
+
+msgid "Bluk Berries"
+msgstr "Frutas Bluk"
+
+msgid "Bold"
+msgstr "Audaz"
+
+msgid "Boost PP of which move?"
+msgstr "Aumentar PP de qual movimento?"
+
+msgid "Both of these trainers took home a win in the previous round."
+msgstr "Ambos treinadores conseguiram vencer a rodada anterior."
+
+msgid "Brave"
+msgstr "Corajosa"
+
+msgid "Brown"
+msgstr "Marrom"
+
+msgid "Bug"
+msgstr "Inseto"
+
+msgid "But I sense something else in you...\\^"
+msgstr "Mas sinto algo em você...\\^"
+
+msgid "But it failed to spit up a thing!"
+msgstr "Mas falhou em cuspir algo!"
+
+msgid "But it failed to swallow a thing!"
+msgstr "Mas falhgou em engolir algo!"
+
+msgid "But it failed!"
+msgstr "Mas falhou!"
+
+msgid "But it had no effect!"
+msgstr "Mas não teve efeito!"
+
+msgid "But nothing happened!"
+msgstr "Mas nada aconteceu!"
+
+msgid "But the effects of a Repel lingered from earlier."
+msgstr "Mas os efeitos do repelente anterior ainda persistem."
+
+msgid "But there was no PP left for the move!"
+msgstr "Mas não há PP sobrando paar esse movimento!"
+
+msgid "But there was no target..."
+msgstr "Mas não há alvo..."
+
+msgid "But {1} already caught a pokemon in this area!"
+msgstr "Mas {1} já capturou um Pokémon nessa área!"
+
+msgid "But {1} already fought a wild pokemon in this area!"
+msgstr "Mas {1} já enfrentou um Pokémon nessa área!"
+
+msgid "But {1} can't learn more than four moves."
+msgstr "Mas {1} não pode conhecer mais do que 4 movimentos"
+
+msgid "But {1} can't learn more than four moves."
+msgstr "Mas {1} não pode conhecer mais do que 4 movimentos."
+
+msgid "But {1} can't sleep in an uproar!"
+msgstr "Mas {1} não pode dormir com esse tumulto!"
+
+msgid "But {1} couldn't sleep!"
+msgstr "Mas {1} não pode dormir!"
+
+msgid "But, only one will be crowned Champion today."
+msgstr "Mas, somente um será coroado como Campeão hoje."
+
+msgid "Buy"
+msgstr "Comprar"
+
+msgid "By the blessing of Aotius!"
+msgstr "Pela benção de Aotius!"
+
+msgid "Bye-bye, {1}!"
+msgstr "Falou, {1}!"
+
+msgid "CANCEL"
+msgstr "CANCELAR"
+
+msgid "CATEGORY"
+msgstr "CATEGORIA"
+
+msgid "CLOSE BAG"
+msgstr "FECHAR MOCHILA"
+
+msgid "CONFIRM"
+msgstr "CONFIRMAR"
+
+msgid "Call"
+msgstr "Chamar"
+
+msgid "Calm"
+msgstr "Calma"
+
+msgid "Can't catch any more..."
+msgstr "Não pode capturar mais nenhum..."
+
+msgid "Can't deposit from box..."
+msgstr "Não se pode depositar a partir da BOX..."
+
+msgid "Can't deposit the last Pokémon!"
+msgstr "Não pode depositar o último Pokémon!"
+
+msgid "Can't escape!"
+msgstr "Não conseguiu fugir!"
+
+msgid "Can't find deposited Pokémon"
+msgstr "Não foi possivel encontrar um Pokémon depositado"
+
+msgid "Can't find the map 'Map{1:03d}' in the Data folder. The game will resume at the player's position."
+msgstr "Can't find the map 'Map{1:03d}' in the Data folder.  The game will resume at the player's position."
+
+msgid "Can't re-store deleted item in bag"
+msgstr "Não se pode recolocar um item deletado de volta à Mochila"
+
+msgid "Can't save. No name was entered."
+msgstr "Can't save.  No name was entered."
+
+msgid "Can't save. The Pokémon list is empty."
+msgstr "Can't save.  The Pokémon list is empty."
+
+msgid "Can't store the Pokémon..."
+msgstr "Não foi possível guardar o Pokémon..."
+
+msgid "Can't store the egg"
+msgstr "Não pode guardar o ovo"
+
+msgid "Can't store the {1}."
+msgstr "Não pode guardar {1}."
+
+msgid "Can't use that here."
+msgstr "Não pode usar isso aqui."
+
+msgid "Can't use that while on a bicycle."
+msgstr "Não pode usar enquanto ewstiver na Bicicleta."
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Cancel?"
+msgstr "Cancelar?"
+
+msgid "Capable of taking hits."
+msgstr "Capaz de levar golpes."
+
+msgid "Careful"
+msgstr "Cuidadosa"
+
+msgid "Careless Ribbon"
+msgstr "Fita Descuidada"
+
+msgid "Cave"
+msgstr "Caverna"
+
+msgid "Certainly. You want {1}.\nThat will be ${2}. OK?"
+msgstr "Certamente.  Você quer {1}.\nIsso será ${2}.  OK?"
+
+msgid "Certainly. You want {2} {1}(s)?"
+msgstr "Certamente. Você quer {2} {1}(s)?"
+
+msgid "Challenge Mode"
+msgstr "Modo de Desafio"
+
+msgid "Champion Ribbon"
+msgstr "Fita de Campeão"
+
+msgid "Charti Berries"
+msgstr "Frutas Charti"
+
+msgid "Check for Updates"
+msgstr "Checar por Atualizações"
+
+msgid "Cheri Berries"
+msgstr "Frutas Cheri"
+
+msgid "Chesto Berries"
+msgstr "Frutas Chesto"
+
+msgid "Chilan Berries"
+msgstr "Frutas Chilan"
+
+msgid "Choose Pokémon and confirm."
+msgstr "Escolha um Pokémon e confirme."
+
+msgid "Choose Pokémon or cancel."
+msgstr "Escolha um Pokémon ou cancele."
+
+msgid "Choose a Pokémon."
+msgstr "Escolha um Pokémon."
+
+msgid "Choose the gift you want to receive.\\wtnp[0]"
+msgstr "Escolha o Presente que você gostaria de receber\\wtnp[0]"
+
+msgid "Choose your game mode:"
+msgstr "Escolha seu modo de jogo:"
+
+msgid "Chople Berries"
+msgstr "Frutas Chople"
+
+msgid "City"
+msgstr "Cidade"
+
+msgid "Classic Ribbon"
+msgstr "Fita Clássica"
+
+msgid "Clear"
+msgstr "Limpar"
+
+msgid "Click to select a map"
+msgstr "Click to select a map\n"
+
+msgid "Close bag."
+msgstr "Fechar mochila."
+
+msgid "Close storage."
+msgstr "Fechar depósito."
+
+msgid "Closes the PokéPod and returns to the game."
+msgstr "Fecha o PokéPod e retorta ao jogo."
+
+msgid "Coba Berries"
+msgstr "Frutas Coba"
+
+msgid "Coins were scattered everywhere!"
+msgstr "Moedas se espalharam por todo lugar!"
+
+msgid "Coins:\n<ar>{1}</ar>"
+msgstr "Moedas:\n<ar>{1}</ar>"
+
+msgid "Coins: {1}"
+msgstr "Moedas: {1}"
+
+msgid "Colbur Berries"
+msgstr "Frutas Colbur"
+
+msgid "Compete"
+msgstr "Competir"
+
+msgid "Competitive sharply raised {1}'s Special Attack!"
+msgstr "{1} teve seu Ataque especial aumentado por meio de Competitivo!"
+
+msgid "Compile Text?"
+msgstr "Compilar Texto?"
+
+msgid "Congratulations on advancing to the final round!\nThe final battle will take place in the Champion's Arena. Its winner will be crowned Champion of Tandor!"
+msgstr "Parabéns ao avançar à rodada final!\nA batalha final será realizada na Arena dos Campeões. O vencedor será coroado o Campeão de Tandor!"
+
+msgid "Congratulations!"
+msgstr "Parabéns!"
+
+msgid "Congratulations!\nYour {1} evolved into {2}!"
+msgstr "Parabéns!\n{1} evoluiu para {2}!"
+
+msgid "Congratulations, {1}!"
+msgstr "Parabéns, {1}!"
+
+msgid "Continue"
+msgstr "Continuar"
+
+msgid "Continue the game with those options permanently disabled?"
+msgstr "Continuar o jogo novo com essas opções permanentemente desabilitadas?"
+
+msgid "Controls"
+msgstr "Controles"
+
+msgid "Cool Ribbon"
+msgstr "Fita Legal"
+
+msgid "Cool Ribbon Great"
+msgstr "Fita Legal Ótima"
+
+msgid "Cool Ribbon Hyper"
+msgstr "Fita Hiper Legal"
+
+msgid "Cool Ribbon Master"
+msgstr "Fita Legal Maestral"
+
+msgid "Cool Ribbon Super"
+msgstr "Fita Super Legal"
+
+msgid "Cool Ribbon Ultra"
+msgstr "Fita Ultra Legal"
+
+msgid "Cornn Berries"
+msgstr "Frutas Cornn"
+
+msgid "Could it be the seed of greatness?\\.\nThe potential to transform yourself completely?\\^"
+msgstr "Poderia ser a semente da grandeza?\\. \nO potencial de se transformar por completo?\\^"
+
+msgid "Could not reach server to determine if your game is up-to-date. \\wtnp[40]"
+msgstr "Não foi possível localizar um servidor para determinar se o jogo precisa de atualização. \\wtnp[40]"
+
+msgid "Couldn't return unusable item to Bag somehow."
+msgstr "O item inutilizável não pode voltar à mochila por alguma razão."
+
+msgid "Couldn't return unused item to Bag somehow."
+msgstr "O item não usado não pode voltar à Mochila por alguma razão."
+
+msgid "Country Ribbon"
+msgstr "Fita do País"
+
+msgid "Crafty Shield protected your team!"
+msgstr "Escudo Astuto protegeu seu time!"
+
+msgid "Crafty Shield protected {1}!"
+msgstr "Escudo Astuto protegeu {1}!"
+
+msgid "Crag"
+msgstr "Penhasco"
+
+msgid "Cupu Berries"
+msgstr "Frutas Cupu"
+
+msgid "Current Version = {1} \\wtnp[30]"
+msgstr "Versão Atual = {1} \\wtnp[30]"
+
+msgid "Custap Berries"
+msgstr "Frutas Custap"
+
+msgid "Custom"
+msgstr "Personalizada"
+
+msgid "Custom Game Settings"
+msgstr "Opções de Customização do Jogo"
+
+msgid "Custom/Nuzlocke Mode"
+msgstr "Modo Customizado/Nuzlocke"
+
+msgid "Cute Ribbon"
+msgstr "Fita Fofa"
+
+msgid "Cute Ribbon Great"
+msgstr "Fita Fofa Ótima"
+
+msgid "Cute Ribbon Hyper"
+msgstr "Fita Hiper Fofa"
+
+msgid "Cute Ribbon Master"
+msgstr "Fita Fofa Maestral"
+
+msgid "Cute Ribbon Super"
+msgstr "Fita Super Fofa"
+
+msgid "Cute Ribbon Ultra"
+msgstr "Fita Ultra Fofa"
+
+msgid "DEL: Delete map from canvas"
+msgstr "DEL: Delete map from canvas\n"
+
+msgid "DEPOSIT POKéMON"
+msgstr "DEPOSITAR POKÉMON"
+
+msgid "Dark"
+msgstr "Noturno"
+
+msgid "Day-Care Couple"
+msgstr "Casal de cuidadores"
+
+msgid "Dec."
+msgstr "Dez."
+
+msgid "December"
+msgstr "Dezembro"
+
+msgid "Default"
+msgstr "Padrão"
+
+msgid "Defense"
+msgstr "Defesa"
+
+msgid "Defiant sharply raised {1}'s Attack!"
+msgstr "{1} teve seu ataque aumentado acentuadamente por meio de Desafiador"
+
+msgid "Delete This Save File"
+msgstr "Deletar Esse Arquivo salvo"
+
+msgid "Delete a move to make\nroom for {1}?"
+msgstr "Deletar um movimento para criar\nespaço para {1}?"
+
+msgid "Delete a move to make room for {1}?"
+msgstr "Deletar um movimento para criar espaço para {1}?"
+
+msgid "Delete all saved data?"
+msgstr "Deletar todos os dados salvos?"
+
+msgid "Delete the saved data anyway?"
+msgstr "Deletar os dados mesmo assim?"
+
+msgid "Deleting all data.\nDon't turn off the power.\\wtnp[0]"
+msgstr "Deletando os dados.\nNão desligue a energia.\\wtnp[0]"
+
+msgid "Deposit Item"
+msgstr "Depositar Ítem"
+
+msgid "Deposit Pokémon"
+msgstr "Depositar Pokémon"
+
+msgid "Deposited {1} {2}(s)."
+msgstr "Depositou {1} {2}(s)."
+
+msgid "Deselect"
+msgstr "Desselecionar"
+
+msgid "Desert"
+msgstr "Deserto"
+
+msgid "Disable Healing In Battle"
+msgstr "Desabilitar Cura em batalha"
+
+msgid "Disable Pokémarts"
+msgstr "Desabilitar Pokémarts"
+
+msgid "Do it! {1}!"
+msgstr "Faça isso! {1}!"
+
+msgid "Do not underestimate the might of Dragons!"
+msgstr "Não subestime o poder dos Dragões!"
+
+msgid "Do what with an item?"
+msgstr "Fazer o que com um ítem?"
+
+msgid "Do what with {1}?"
+msgstr "Fazer o que com {1}?"
+
+msgid "Do you want to run the patcher now?"
+msgstr "Deseja executar o atualizador agora?"
+
+msgid "Do you want to try and run the patcher anyway?"
+msgstr "Deseja tentar executar o atualizador de qualquer forma?"
+
+msgid "Do you want to use another Repel?"
+msgstr "Você gostaria de usar outro repelente?"
+
+msgid "Docile"
+msgstr "Dócil"
+
+msgid "Done! All your converted sprites are saved in the Graphics/Battlers/Cut/ folder."
+msgstr "Feito! Todos os seus sprites convertidos estão salvos na pasta Graphics/Battlers/Cut/."
+
+msgid "Double Ability Ribbon"
+msgstr "Fita de Habilidade em Dobro"
+
+msgid "Double-click: Edit map's metadata"
+msgstr "Double-click: Edit map's metadata\n"
+
+msgid "Downcast Ribbon"
+msgstr "Fita Triste"
+
+msgid "Drag map to move it"
+msgstr "Drag map to move it\n"
+
+msgid "Dragon"
+msgstr "Dragão"
+
+msgid "Dupes Clause"
+msgstr "Cláusula de repetidos"
+
+msgid "Durin Berries"
+msgstr "Frutas Durin"
+
+msgid "E: Edit map's encounters"
+msgstr "E: Edit map's encounters\n"
+
+msgid "EDIT"
+msgstr "EDITAR"
+
+msgid "EXCHANGE"
+msgstr "TROCAR"
+
+msgid "EXIT"
+msgstr "SAIR"
+
+msgid "Each Pokemon's HP was halved!"
+msgstr "Os PV de cada Pokémon foi reduzido pela metade!"
+
+msgid "Earned coins"
+msgstr "Moedas ganhas"
+
+msgid "Earth Ribbon"
+msgstr "Fita da Terra"
+
+msgid "East side of first map must connect with west side of second map\n{1}"
+msgstr "East side of first map must connect with west side of second map\n{1}"
+
+msgid "Effort Ribbon"
+msgstr "Fita do Esforço"
+
+msgid "Egg"
+msgstr "Ovo"
+
+msgid "Eggs can't hold items."
+msgstr "Ovos não pdoem segurar itens."
+
+msgid "Electric"
+msgstr "Elétrico"
+
+msgid "Electricity's power was weakened!"
+msgstr "O poder de golpes tipo Elétrico foi enfraquecido!"
+
+msgid "Eletux is the best pick!\\wtnp[160]"
+msgstr "Eletux é a melhor escolha!\\wtnp[160]"
+
+msgid "Encounter type out of range"
+msgstr "Tipo de encontro fora de área"
+
+msgid "Enigma Berries"
+msgstr "Frutas Enigma"
+
+msgid "Enter text using the keyboard. Press ENTER to confirm."
+msgstr "Escreva textos usando o teclado. Aperte ENTER para confirmar."
+
+msgid "Enter text using the keyboard. Press ESC to cancel, or ENTER to confirm."
+msgstr "Escreva textos usando o teclado.  Aperte ESC para cancelar,ou ENTER para confirmar."
+
+msgid "Enter {1}'s name."
+msgstr "Coloque o nome de {1}."
+
+msgid "Entry"
+msgstr "Entrada"
+
+msgid "Enumeration not defined\n{1}"
+msgstr "Enumeration not defined\n{1}"
+
+msgid "Erase name"
+msgstr "Apagar apelido"
+
+msgid "Event Ribbon"
+msgstr "Fita de Evento"
+
+msgid "Everything was dug up!"
+msgstr "Tudo foi enterrado!"
+
+msgid "Execute search."
+msgstr "Executar busca."
+
+msgid "Execute sort."
+msgstr "Executar ordenamento."
+
+msgid "Exit"
+msgstr "Sair"
+
+msgid "Exit To Desktop"
+msgstr "Sair pra Área de Trabalho"
+
+msgid "Exit To Menu"
+msgstr "Sair para o menu"
+
+msgid "Exit from the map?"
+msgstr "Sair do mapa?"
+
+msgid "Exp. Points"
+msgstr "Pontos exp."
+
+msgid "Expected a number for the number of Pokémon\n{1}"
+msgstr "Expected a number for the number of Pokémon\n{1}"
+
+msgid "Expected a number for the trainer battle ID\n{1}"
+msgstr "Expected a number for the trainer battle ID\n{1}"
+
+msgid "Expected a section at the beginning of the file\n{1}"
+msgstr "Expected a section at the beginning of the file\n{1}"
+
+msgid "Expected a section at the beginning of the file. This error may also occur if the file was not saved in UTF-8.\n{1}"
+msgstr "Expected a section at the beginning of the file.  This error may also occur if the file was not saved in UTF-8.\n{1}"
+
+msgid "Expected a species name: {1}\n{2}"
+msgstr "Expected a species name: {1}\n{2}"
+
+msgid "FIFTH"
+msgstr "QUINTO"
+
+msgid "FIRST"
+msgstr "PRIMEIRO"
+
+msgid "FORMS"
+msgstr "FORMAS"
+
+msgid "FORMS SEEN"
+msgstr "FORMAS VISTAS"
+
+msgid "FOURTH"
+msgstr "QUARTO"
+
+msgid "Failed to compile text: {1}"
+msgstr "Failed to compile text:  {1}"
+
+msgid "Failed to connect, the servers may be experiencing problems. Please try again later."
+msgstr "Falha ao conectar, os servidores podem estar passando por dificuldades. Por favor tente novamente mais tarde."
+
+msgid "Failed to create the trainer type. Choose a different name."
+msgstr "Failed to create the trainer type.  Choose a different name."
+
+msgid "Failed to delete stored items"
+msgstr "Falha ao tentar deletar ítens guardados"
+
+msgid "Failed to load data from server!"
+msgstr "Falha ao carregar os dados do servidor"
+
+msgid "Fainted"
+msgstr "Nocauteado"
+
+msgid "Fainted Pokémon are considered dead and only one can be caught per route."
+msgstr "Se um Pokémon cair em batalha, ele será considerado como morto, e apenas um pokémon pode ser capturado por rota."
+
+msgid "Faraway place"
+msgstr "Lugar Distante"
+
+msgid "Fast"
+msgstr "Rápido"
+
+msgid "Feb."
+msgstr "Fev."
+
+msgid "February"
+msgstr "Fevereiro"
+
+msgid "Female"
+msgstr "Fêmea"
+
+msgid "Fertilize"
+msgstr "Fertilizar"
+
+msgid "Field '{1}' is not a hexadecimal number\n{2}"
+msgstr "Field '{1}' is not a hexadecimal number\n{2}"
+
+msgid "Field '{1}' must be 0 or greater\n{2}"
+msgstr "Field '{1}' must be 0 or greater\n{2}"
+
+msgid "Field '{1}' must be greater than 0\n{2}"
+msgstr "Field '{1}' must be greater than 0\n{2}"
+
+msgid "Field '{1}' must contain only letters, digits, and\nunderscores and can't begin with a number.\n{2}"
+msgstr "Field '{1}' must contain only letters, digits, and\nunderscores and can't begin with a number.\n{2}"
+
+msgid "Field {1} is not a Boolean value (true, false, 1, 0)\n{2}"
+msgstr "Field {1} is not a Boolean value (true, false, 1, 0)\n{2}"
+
+msgid "Field {1} is not a number\n{2}"
+msgstr "Field {1} is not a number\n{2}"
+
+msgid "Field {1} is not a positive integer\n{2}"
+msgstr "Field {1} is not a positive integer\n{2}"
+
+msgid "Field {1} is not an integer\n{2}"
+msgstr "Field {1} is not an integer\n{2}"
+
+msgid "Fight"
+msgstr "Lutar"
+
+msgid "Fighting"
+msgstr "Lutador"
+
+msgid "Figy Berries"
+msgstr "Frutas Figy"
+
+msgid "File {1}, line {2}\n{3}"
+msgstr "File {1}, line {2}\n{3}\n"
+
+msgid "File {1}, section {2}, key {3}\n{4}"
+msgstr "File {1}, section {2}, key {3}\n{4}\n"
+
+msgid "Fill all fields!"
+msgstr "Preencha todos os campos"
+
+msgid "Finally someone worth battling!"
+msgstr "Finalmente alguémque valha a pena batalhar!"
+
+msgid "Fire"
+msgstr "Fogo"
+
+msgid "Fire's power was weakened!"
+msgstr "O poder de golpes tipo Fogo foi enfraquecido!"
+
+msgid "First move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "First move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "Flying"
+msgstr "Voador"
+
+msgid "Folks, we're back with Round 2!"
+msgstr "Pessoal, estamos de volta com a segunda rodada!"
+
+msgid "Footprint Ribbon"
+msgstr "Fita da Pegada"
+
+msgid "For a Balanced trainer like you...\\^"
+msgstr "Para um treinador Balanceado como você...\\^"
+
+msgid "For a Defensive trainer like you...\\^"
+msgstr "Para um treinador Defensivo como você...\\^"
+
+msgid "For an Offensive trainer like you...\\^"
+msgstr "Para um treinador Ofensivo como você..\\^"
+
+msgid "For some reason this Pokémon can't be caught!"
+msgstr "Por alguma razão esse pokémon não pode ser capturado!"
+
+msgid "For {1}'s {2},\n{3} sends {4}."
+msgstr "Por {2} de {1},\n{3} envia {4}."
+
+msgid "For {1}'s {2},\n{3} sends {4}."
+msgstr "For {2} de {1},\n{3} envia {4}."
+
+msgid "Forest"
+msgstr "Floresta"
+
+msgid "Forget move"
+msgstr "Esquecer movimento"
+
+msgid "Form"
+msgstr "Forma"
+
+msgid "Fourth move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Fourth move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "Friday"
+msgstr "Sexta"
+
+msgid "Game Version: {1}\nServer Version: {2}"
+msgstr "Versão de Jogo {1}\nVersão do Servidor: {2}"
+
+msgid "Ganlon Berries"
+msgstr "Frutas Ganlon"
+
+msgid "Gender"
+msgstr "Gênero"
+
+msgid "Genderless"
+msgstr "Sem Gênero"
+
+msgid "Gentle"
+msgstr "Gentil"
+
+msgid "Ghost"
+msgstr "Fantasma"
+
+msgid "Give"
+msgstr "Dar"
+
+msgid "Give to which Pokémon?"
+msgstr "Dar isso para qual Pokémon?"
+
+msgid "Give up trying to teach a new move to {1}?"
+msgstr "Desistir de ensinar um movimento a {1}?"
+
+msgid "Go back to the previous menu."
+msgstr "Voltar ao menu anterior."
+
+msgid "Go for it, {1}!"
+msgstr "Vai com tudo, {1}!"
+
+msgid "Go! {1} and {2}!"
+msgstr "Vá! {1} e {2}!"
+
+msgid "Go! {1}!"
+msgstr "Vá! {1}!"
+
+msgid "Good endurance."
+msgstr "Boa resistência."
+
+msgid "Good perseverance."
+msgstr "Boa perseverança."
+
+msgid "Goodness! That was quite a thorough rout.\nI may require some tea and\nbiscuits after this match.\nIf you like, you would be welcome to join me."
+msgstr "Meu Deus! Essa foi uma derrota difícil.\nAcho que vou pedir chá e\nbiscoitos apóes essa partida.\nSe quiser, você é bem vindo para se juntar a mim."
+
+msgid "Goodness, you are really quite strong."
+msgstr "Meu Deus, você realmente é forte."
+
+msgid "Gorgeous Ribbon"
+msgstr "Fita Linda"
+
+msgid "Gorgeous Royal Ribbon"
+msgstr "Fita Real Linda"
+
+msgid "Got away safely!"
+msgstr "Fugiu em segurança!"
+
+msgid "Gotcha! {1} was caught!"
+msgstr "Peguei!  {1} foi capturado!"
+
+msgid "Grass"
+msgstr "Grama"
+
+msgid "Grass grew to cover the battlefield!"
+msgstr "Grama cresceu para cobrir o campo de batalha!"
+
+msgid "Gravity intensified!"
+msgstr "A Gravidade se intensificou!"
+
+msgid "Gravity returned to normal!"
+msgstr "A Gravidade voltou ao normal!"
+
+msgid "Gray"
+msgstr "Cinza"
+
+msgid "Great Ability Ribbon"
+msgstr "Fita de Habilidade Ótima"
+
+msgid "Green"
+msgstr "Verde"
+
+msgid "Grepa Berries"
+msgstr "Frutas Grepa"
+
+msgid "Ground"
+msgstr "Terrestre"
+
+msgid "Guara Berries"
+msgstr "Frutas Guaraná"
+
+msgid "Gyahahaha! I expected nothing less from you! Go on to the next round, then. You deserve it!"
+msgstr "Gyahahaha! Eu não esperava menos de você! Então vá para a próxima rodada. Você merece isso!"
+
+msgid "HM moves can't be forgotten now."
+msgstr "HMs não podem ser esquecidos agora ."
+
+msgid "HP"
+msgstr "PV"
+
+msgid "HP greater than total HP"
+msgstr "PV maior que o HP"
+
+msgid "HP less than 0"
+msgstr "PV menor que 0"
+
+msgid "HP/Status"
+msgstr "PV/Estado"
+
+msgid "HT"
+msgstr "Peso"
+
+msgid "Haban Berries"
+msgstr "Frutas Haban"
+
+msgid "Hafli Berries"
+msgstr "Frutas Hafli"
+
+msgid "Hail continues to fall."
+msgstr "A chuva de Granizo continua a acair."
+
+msgid "Hail is falling."
+msgstr "Granizo está caindo."
+
+msgid "Hall of Fame"
+msgstr "Hall da Fama"
+
+msgid "Hall of Fame No."
+msgstr "Hallda Fama No."
+
+msgid "Happiness"
+msgstr "Felicidade"
+
+msgid "Hardy"
+msgstr "Destemida"
+
+msgid "Hasty"
+msgstr "Apressada"
+
+msgid "Hates to lose."
+msgstr "Odeia perder."
+
+msgid "Heal"
+msgstr "Curar"
+
+msgid "Healing in-battle is disabled by your custom game settings!"
+msgstr "Curar em batalha está desabilitado pelas suas definições de Jogo customizado!"
+
+msgid "Heart"
+msgstr "Coração"
+
+msgid "Heavy to Light"
+msgstr "Pesado a Leve"
+
+msgid "Helloooooo ladies, gentlemen,\npeople of Tandor!"
+msgstr "Olááááááá, senhoras e senhores\npessoas de Tandor!"
+
+msgid "Help"
+msgstr "Ajuda"
+
+msgid "Here we are! Round 4, the semifinals!"
+msgstr "Aqui estamos! Quarta Rodada, as semifinais"
+
+msgid "Here you are!\nThank you!"
+msgstr "Aqui está!\nObrigado!"
+
+msgid "Hi there, \\PN!\nI wanted to thank you for stopping the Power Plant attacks.\nYou really did a good thing for Bealbeach City, and for all of Tandor!\nEver since I heard about that, I've been itching for a rematch.\nThis time, my team and I are going all-out!\nI hope you'll go all-out, too!"
+msgstr "Olá, \\PN!\nEu queria agradecê-lo por parar os ataques à Usina.\nVocê fez bem pela Cidade de Bealbeach, e por toda Tandor!\nDesde aqulo, estava me coçando por uma revanche.\nAgora meu time e eu iremos com tudo!\nEspero que você vá com tudo também!"
+
+msgid "Hidden Power:\n{1}, power {2}."
+msgstr "Poder Oculto:\n{1}."
+
+msgid "Highly curious."
+msgstr "Muito curioso."
+
+msgid "Highly persistent."
+msgstr "Muito persistente."
+
+msgid "Hit {1} time!"
+msgstr "Acertou {1} vez!"
+
+msgid "Hit {1} times!"
+msgstr "Acertou {1} vezes!"
+
+msgid "Hiyah! I have honed my skills as a Surfer and a Ninja! We command mastery over the waves!"
+msgstr "Hiyah! Honrei minhas habilidades como Surfadpr e Ninja! Nós comandamos sob as ondas!"
+
+msgid "Hmm... impressive."
+msgstr "Hmm... impressionante."
+
+msgid "Hoenn Beauty Contest Hyper Rank winner!"
+msgstr "Vencedor do ranking na categoria  de hiper beleza de Hoenn!"
+
+msgid "Hoenn Beauty Contest Master Rank winner!"
+msgstr "Vencedor do ranking na categoria  de beleza maestral de Hoenn!"
+
+msgid "Hoenn Beauty Contest Normal Rank winner!"
+msgstr "Vencedor do ranking na categoria de beleza normal de Hoenn!"
+
+msgid "Hoenn Beauty Contest Super Rank winner!"
+msgstr "Vencedor do ranking na categoria de super beleza de Hoenn!"
+
+msgid "Hoenn Cool Contest Hyper Rank winner!"
+msgstr "Vencedor do ranking da categoria hiper legal de Hoenn!"
+
+msgid "Hoenn Cool Contest Master Rank winner!"
+msgstr "Vencedor do ranking da categoria legal maestral de Hoenn!"
+
+msgid "Hoenn Cool Contest Normal Rank winner!"
+msgstr "Vencedor do ranking na categoria legal de Hoenn!"
+
+msgid "Hoenn Cool Contest Super Rank winner!"
+msgstr "Vencedor do ranking na categoria super legal de hoenn!"
+
+msgid "Hoenn Cute Contest Hyper Rank winner!"
+msgstr "Vencedor do ranking na categoria  de hiper fofura de Hoenn!"
+
+msgid "Hoenn Cute Contest Master Rank winner!"
+msgstr "Vencedor do ranking na categoria  de fofura maestral de Hoenn!"
+
+msgid "Hoenn Cute Contest Normal Rank winner!"
+msgstr "Vencedor do ranking na categoria  de fofura normal de Hoenn!"
+
+msgid "Hoenn Cute Contest Super Rank winner!"
+msgstr "Vencedor do ranking na categoria  de super fofura de Hoenn!"
+
+msgid "Hoenn Smart Contest Hyper Rank winner!"
+msgstr "Vencedor do ranking na categoria  de hiper inteligencia de Hoenn!"
+
+msgid "Hoenn Smart Contest Master Rank winner!"
+msgstr "Vencedor do ranking na categoria  de inteligencia maestral de Hoenn!"
+
+msgid "Hoenn Smart Contest Normal Rank winner!"
+msgstr "Vencedor do ranking na categoria  de inteligencia de Hoenn!"
+
+msgid "Hoenn Smart Contest Super Rank winner!"
+msgstr "Vencedor do ranking na categoria  de super inteligencia de Hoenn!"
+
+msgid "Hoenn Tough Contest Hyper Rank winner!"
+msgstr "Vencedor do ranking na categoria  de hiper durão de Hoenn!"
+
+msgid "Hoenn Tough Contest Master Rank winner!"
+msgstr "Vencedor do ranking na categoria  de durão maestral de Hoenn!"
+
+msgid "Hoenn Tough Contest Normal Rank winner!"
+msgstr "Vencedor do ranking na categoria  de durão normal de Hoenn!"
+
+msgid "Hoenn Tough Contest Super Rank winner!"
+msgstr "Vencedor do ranking na categoria  de super durão de Hoenn!"
+
+msgid "Hold down while walking to run."
+msgstr "Segure enquanto anda para correr."
+
+msgid "Hondew Berries"
+msgstr "Frutas Hondew"
+
+msgid "Honored \\PN,\nThere is a stirring in the wind.\nThe Gods murmur in the deep.\nA storm brews on the horizon.\nOur Village will soon be in danger.\nWithout your help, Tsukinami will fall."
+msgstr "Honrado \\PN,\nHá uma agitação no vento\nOs Deuses murmuram na profundeza.\nUma tempestade se agita no horizonte.\nNosso Vilarejo logo estará em perigo .\nSem sua ajuda, Tsukinami cairá."
+
+msgid "How many do you want to deposit?"
+msgstr "Quantos você quer depositar?"
+
+msgid "How many do you want to withdraw?"
+msgstr "Quantos você quer retirar?"
+
+msgid "Huh?\n{1} stopped evolving!"
+msgstr "Huh?\n{1} parou de evoluir!"
+
+msgid "I alone command the incredible power of Dragons! Fear our unstoppable might!"
+msgstr "Eu sozinho comando o incrível poder dos Dragões! Tema nosso poder sem limites!"
+
+msgid "I am a fossil revivification expert."
+msgstr "Sou um perito no processo de reviver Pokémon."
+
+msgid "I can feel the anticipation in the air.\nThese trainers have spent their entire lives preparing for this moment!"
+msgstr "Posso sentir a antecipação no ar.\nEsses treinadores passaram a vida se preparando para esse momento!"
+
+msgid "I can feel the tension crackling in the air."
+msgstr "Posso sentir a tensão aumentando no ar."
+
+msgid "I can pay ${1}.\nWould that be OK?"
+msgstr "Posso pagar ${1}.\nTudo bem?"
+
+msgid "I can pay ${1}. Would that be OK?"
+msgstr "I can pay ${1}.  Would that be OK?"
+
+msgid "I can tell that they both are itching for another fight!"
+msgstr "Sinto que ambos estão ansiosos pela próxima batalha!"
+
+msgid "I can tell the crowd is loving this! It only gets more intense from here on out, folks!"
+msgstr "Posso dizer que a plateia está amando isso! Está ficando mais e mais intenso, pessoal"
+
+msgid "I do say!\nHave we perchance met before?\nI am certain we have.\nYou do leave quite an impression, indeed.\nHowever, allow me to reintroduce myself:\nI am Sr. Goldkorn.\nI represent a refined style of battle.\nA tradition which is sadly going away, it seems... But, I shall prove that refinement still has a place in the arena.\nPlease allow us to have a clean, civil match."
+msgstr "Tenho dito!\nPor ventura nós já nos encontramos?\nEstou certoque sim.\nVocê deixa uma forte impressão, de fato.\nPorém, deixe-me reintroduzir\nEu sou o Sr. Goldkorn.\nEu represento um estilo refinado de batalhar.\nUma tradição que infelizmente está sendo esquecida, pelo jeito... Mas vou provar que esse estilo tem lugar na arena.\nPor favor, que tenhamos uma partida civil e limpa."
+
+msgid "I have created... life!"
+msgstr "Eu criei… vida!"
+
+msgid "I kept the best for last!"
+msgstr "Guardei o melhor por último!"
+
+msgid "I know I look cute, but you shouldn't underestimate me! I won last year and I'll do it again!"
+msgstr "Eu sei que pareço fofa, mas eu ganhei ano passado, então você não deveria me subestimar. Ganhei ano passado e farei de novo!!"
+
+msgid "I say!"
+msgstr "Tenho dito!"
+
+msgid "I see a great future ahead of you, but are you ready for this?"
+msgstr "Eu vejo um ótimo futuro para você, mas está preparado para isso?"
+
+msgid "I see you command your Pokémon with great intelligence and respect. A lesser trainer could not have triumphed against us. I must bow to your superiority."
+msgstr "Vejo que você comanda seus Pokémons com grande integência e respeito. Um treinador mais fraco não triunfaria sobre nós. Devo me curvar perante sua superioridade."
+
+msgid "I specialize in the mysterious and mystical Fairy type. Soon, you'll be under our spell."
+msgstr "Eu me especializo no misterioso e místico Tipo Fada. em breve, você estará sob nosso feitiço."
+
+msgid "I use only the most perfect mechanical Pokémon. Your puny team won't stand a chance."
+msgstr "Eu só uso os Pokémons mecanizados mais perfeitamente. Seu time ridículo não tem chance."
+
+msgid "I will bring your Pokémon back to life in just a moment."
+msgstr "Vou trazer esse Pokémon de volta em alguns instantes."
+
+msgid "I'd like to know your name.\nPlease tell me."
+msgstr "Eu gostaria de saber seu nome.\nPor favor me diga."
+
+msgid "I'll throw in a Premier Ball, too."
+msgstr "Você ganhou uma Bola Premiada de brinde!."
+
+msgid "I've done it!"
+msgstr "Consegui!"
+
+msgid "INELIGIBLE"
+msgstr "NÃO É PERMITIDO"
+
+msgid "INFO"
+msgstr "INFORMAÇÃO"
+
+msgid "Iapapa Berries"
+msgstr "Frutas Iapapa"
+
+msgid "Ice"
+msgstr "Gelo"
+
+msgid "If both trainers are ready, then..."
+msgstr "Se os treinadores estão prontos, então..."
+
+msgid "If the mail is removed, the message will be lost. OK?"
+msgstr "If the mail is removed, the message will be lost.  OK?"
+
+msgid "If true, this map is part of the Safari Zone (both indoor and outdoor). Not to be used in the reception desk."
+msgstr "If true, this map is part of the Safari Zone (both indoor and outdoor).  Not to be used in the reception desk."
+
+msgid "If you bring me a Pokémon fossil, I can restore it to life."
+msgstr "Se você me trouxer um fóssil de Pokémon, eu posso trazê-lo à vida."
+
+msgid "If you quit now, you will recieve {1} Coin(s). Will you quit?"
+msgstr "Se sair agora você receberá {1} CMoeda(s). Você sairá?"
+
+msgid "If you see one, bring it to me."
+msgstr "Se você ver algum, traga-o para mim."
+
+msgid "Impetuous and silly."
+msgstr "Impetuoso(a) e bobo(a)."
+
+msgid "Impish"
+msgstr "Inquieta"
+
+msgid "In encounters.txt, expected a species entry line,\ngot \"{1}\" instead (probably too few entries in an encounter type).\nPlease check the format of the section numbered {2},\nwhich is just before this line.\n{3}"
+msgstr "In encounters.txt, expected a species entry line,\ngot \"{1}\" instead (probably too few entries in an encounter type).\nPlease check the format of the section numbered {2},\nwhich is just before this line.\n{3}"
+
+msgid "In the spirit of fairness all online features will be disabled on this save."
+msgstr "Para manter o jogo justo, todas as funções online estarão desabilitadas nesse modo."
+
+msgid "Incorrect value {1} in {2}\n{3}"
+msgstr "Incorrect value {1} in {2}\n{3}"
+
+msgid "Invalid quoted field (in: {1})\n{2}"
+msgstr "Invalid quoted field (in: {1})\n{2}"
+
+msgid "Is it OK to throw away {1} {2}(s)?"
+msgstr "Quer mesmo descartar {1} {2}(s)?"
+
+msgid "Is there anything else I can help you with?"
+msgstr "Posso te ajudar em mais alguma coisa?"
+
+msgid "It appears to move occasionally. It may be close to hatching."
+msgstr "Parece que está se movendo às vezes. Pode estar próximo de chocar."
+
+msgid "It broke all barriers!"
+msgstr "Quebrou todas as barreiras!"
+
+msgid "It can't be used when you have someone with you."
+msgstr "Isso não pode ser feito quando há alguém com voc~e."
+
+msgid "It can't be used while in the Hazard Suit."
+msgstr "Isso não pdoe ser utilizado enquanto estiver com a Roupa de proteção"
+
+msgid "It contained {1}."
+msgstr "IContém {1}."
+
+msgid "It created a bizarre area in which Pokémon's held items lose their effects!"
+msgstr "Criou-se uma área bizarra na qual itens segurados por Pokémon perdem seus efeitos!"
+
+msgid "It created a bizarre area in which the Defense and Sp. Def stats are swapped!"
+msgstr "Uma área bizarra em que Defesa e Defesa especial são trocadas foi criada!"
+
+msgid "It doesn't affect\n{1}..."
+msgstr "Isso não afeta\n{1}..."
+
+msgid "It doesn't affect {1}.."
+msgstr "Isso não afeta{1}.."
+
+msgid "It doesn't affect {1}..."
+msgstr "Isso não afeta {1}..."
+
+msgid "It had no effect."
+msgstr "Isso não teve efeito."
+
+msgid "It hurt itself from its confusion!"
+msgstr "Se feriu com a confusão!"
+
+msgid "It hurt itself in its confusion!"
+msgstr "Se feriu em sua confusão!"
+
+msgid "It is not often that we come down from the peak of Mt. Lanthanite. But, this region deserves a reminder of the power of dragons! You, who have proved yourself in the Five Trials... Have you what it takes to defeat us at our full strength?\nWRRRROOOAAAAARRRR!\nHear our battle cry!"
+msgstr "Não é sempre que descemos do pico do Mt. Lanthanite. Mas, essa região merece lembrar do poder dos Dragões! Você, que se provou nos Cinco Testes... Tem o que é necessário para nos derrotar com força total?\nWRRRROOOAAAAARRRR!\nEscute nosso grito de batalha!"
+
+msgid "It is raining."
+msgstr "Está chovendo."
+
+msgid "It looks like this Egg will take a long time to hatch."
+msgstr "Parece que vai demorar bastante para chocar."
+
+msgid "It poisoned {1}!"
+msgstr "Isso envenenou {1}!"
+
+msgid "It reduced the PP of {1}'s {2} by {3}!"
+msgstr "Isso reduziu os PP de {2} de {1} por {3}!"
+
+msgid "It started to hail!"
+msgstr "Granizo começou a cair!"
+
+msgid "It started to rain!"
+msgstr "Começou a chover!"
+
+msgid "It stole {1}'s {2}!"
+msgstr "Roubou {2} de {2}!"
+
+msgid "It was alerted to {1}'s {2}!"
+msgstr "Foi alertado sobre {2} de {1}!"
+
+msgid "It was too weak to make a substitute!"
+msgstr "Estava muito fraco para criar um Substituto!"
+
+msgid "It won't have any effect"
+msgstr "Isso não terá efeito"
+
+msgid "It won't have any effect."
+msgstr "Isso não terá efeito."
+
+msgid "It's a Slot Machine."
+msgstr "É um caça níqueis."
+
+msgid "It's a big boulder, but a Pokémon may be able to push it aside."
+msgstr "É uma grande pedra, mas um Pokémon pode ser capaz de movê-la."
+
+msgid "It's a dead coral, but a Pokémon may be able to smash it."
+msgstr "É um coral morto, mas um Pokémon pode ser capaz de quebrá-lo."
+
+msgid "It's a large waterfall. Would you like to climb it?"
+msgstr "É uma grande cachoeira. Você gostaria de escalá-la?"
+
+msgid "It's a one-hit KO!"
+msgstr "Nocaute de um golpe!"
+
+msgid "It's a rugged rock, but a Pokémon may be able to smash it."
+msgstr "É uma pedra desmoronada, mas um pokémon poderia despedaçá-la."
+
+msgid "It's empty."
+msgstr "Está vazio."
+
+msgid "It's impossible to aim without being focused!"
+msgstr "É impossível mirar sem estar concentrado!"
+
+msgid "It's no good! It's impossible to aim when there are two Pokémon!"
+msgstr "Não é bom, é impossível mirar quando há dois Pokémons!"
+
+msgid "It's not very effective..."
+msgstr "Não é muito efetivo..."
+
+msgid "It's soft, earthy soil."
+msgstr "É um solo macio e com boa terra."
+
+msgid "It's soft, loamy soil.\nPlant a berry?"
+msgstr "É um solo argiloso.\nPlantar umafruta?"
+
+msgid "It's super effective!"
+msgstr "É super efetivo !"
+
+msgid "It's too dangerous to fly to this location!"
+msgstr "É muito perigoso voar para esse local"
+
+msgid "Item"
+msgstr "Ítem"
+
+msgid "Items"
+msgstr "Itens"
+
+msgid "Items aren't allowed in Tandor Championship battles."
+msgstr "Ítens não são permitidos nas batalhas do Campeonato de Tandor"
+
+msgid "Items aren't allowed in the Trial of Truth."
+msgstr "Itens não são permitidos no Teste da Verdade."
+
+msgid "Items can't be used here."
+msgstr "Ítens não podem ser utilizados aqui ."
+
+msgid "Jaboca Berries"
+msgstr "Frutas Jaboca"
+
+msgid "January"
+msgstr "Janeiro"
+
+msgid "Jolly"
+msgstr "Alegre"
+
+msgid "Jukebox"
+msgstr "Caixa de som"
+
+msgid "July"
+msgstr "Julho"
+
+msgid "Jump"
+msgstr "Pular"
+
+msgid "June"
+msgstr "Junho"
+
+msgid "Kasib Berries"
+msgstr "Frutas Kasib"
+
+msgid "Kebia Berries"
+msgstr "Frutas Kebia"
+
+msgid "Kelpsy Berries"
+msgstr "Frutas Kelpsy"
+
+msgid "Key Items"
+msgstr "Itens Chave"
+
+msgid "Kimono Girl"
+msgstr "Moça de Kimono"
+
+msgid "LEARNED"
+msgstr "APRENDIDO"
+
+msgid "Landed a Pokémon!"
+msgstr "Fisgou um Pokémon!"
+
+msgid "Language"
+msgstr "Língua"
+
+msgid "Lansat Berries"
+msgstr "Frutas Lansat"
+
+msgid "Latest Version = {1} \\wtnp[30]"
+msgstr "Última versão = {1} \\wtnp[30]"
+
+msgid "Lax"
+msgstr "Frouxa"
+
+msgid "Lazy made {1} sleep!"
+msgstr "Preguiça fez {1} dormir!"
+
+msgid "League Champion! Congratulations!"
+msgstr "Campeão! Parabéns"
+
+msgid "League champion!\nCongratulations!\\^"
+msgstr "Campeão!\nParabéns!\\^"
+
+msgid "Left: {1}"
+msgstr "Restando: {1}"
+
+msgid "Legend Ribbon"
+msgstr "Fita Lendária"
+
+msgid "Leppa Berries"
+msgstr "Frutas Leppa"
+
+msgid "Let me register you."
+msgstr "Deixe-me registrar você."
+
+msgid "Let me tell you a story.\nThere once was a girl who dreamed of being a star in the Opera. ...Oh? You have heard this before? Alas... I was looking forward to my monologue.\nNow, I recall... you are \\PN.\nOn ye of great destiny... have your dreams become reality?\nOr are they still dreams?\nCan you tell the difference?\nCome, let us captivate the audience with our spectacular act!"
+msgstr "Deixe-me contar uma história.\nHavia uma garota que gostaria de cantar na Opera. ...Oh? Já ouviu isso? Que triste... eu estava me preparando para um monólogo.\nAgora, me lembrei... você é \\PN.\nÓ o destino... Seus sonhos se tornaram realidade?\nou ainda são sonhos? \nVocê consegue perceber a diferença?\nVenha, vamos cativar a audiência com nosso ato espetacular!"
+
+msgid "Let's enjoy cycling!"
+msgstr "Vamos andar de bicicleta!"
+
+msgid "Let's go!"
+msgstr "Vamos lá!"
+
+msgid "Let's make this battle one to remember!"
+msgstr "Vamos fazer essa batalha entrar para a história!"
+
+msgid "Let's see how you fare against this final dance move!"
+msgstr "Vamos ver como voce se saira contra esse movimento final de danca!"
+
+msgid "Level"
+msgstr "Nível"
+
+msgid "Level number is not valid: {1}\n{2}"
+msgstr "Level number is not valid: {1}\n{2}"
+
+msgid "Level {1}"
+msgstr "Nível {1}"
+
+msgid "Liechi Berries"
+msgstr "Frutas Liechi"
+
+msgid "Light Screen raised the opposing team's Special Defense!"
+msgstr "Tela de Luz aumentou a Defesa Especial do time adversário!"
+
+msgid "Light Screen raised your team's Special Defense!"
+msgstr "Tela de Luz aumentou a Defesa Especial de seu time!"
+
+msgid "Light is filtering down from above. A Pokémon may be able to surface here."
+msgstr "Há uma luz passando por aqui. Um Pokémon pode ser capaz de voltar à superfície?"
+
+msgid "Light is filtering down from above. Would you like to surface?"
+msgstr "Há uma luz passando por aqui. Você gostaria de voltar à superfície?"
+
+msgid "Light to Heavy"
+msgstr "Leve a pesado"
+
+msgid "Likes to fight."
+msgstr "Gosta de lutar."
+
+msgid "Likes to relax."
+msgstr "Gosta de relaxar."
+
+msgid "Likes to run."
+msgstr "Gosta de correr."
+
+msgid "Likes to thrash about."
+msgstr "Gosta de se debater."
+
+msgid "List by body color.\nSpotted Pokémon only."
+msgstr "Lista por do corpo\nPokémons vistos apenas."
+
+msgid "List by the first letter in the name.\nSpotted Pokémon only."
+msgstr "Lista pela primeira letra no nome\nPokémons vistos apenas."
+
+msgid "List by type.\nOwned Pokémon only."
+msgstr "Lista por tipo.\nPokémons capturados apenas"
+
+msgid "Log Off"
+msgstr "Deslogar"
+
+msgid "Lonely"
+msgstr "Solitaria"
+
+msgid "Look like the innocent flower, but be the serpent under it."
+msgstr "Se pareça com uma flor inocente, mas seja a serpente debaixo dela."
+
+msgid "Loves to eat."
+msgstr "Ama comer."
+
+msgid "Lucky Chant shielded the opposing team from critical hits!"
+msgstr "Mantra de Sorte protegeu o time oponente de acertos críticos!"
+
+msgid "Lucky Chant shielded your team from critical hits!"
+msgstr "Mantra de Sorte protegeu seu time de acertos críticos!"
+
+msgid "Lullaby"
+msgstr "Canção de ninar"
+
+msgid "Lum Berries"
+msgstr "Frutas Lum"
+
+msgid "Lv."
+msgstr "Nv."
+
+msgid "Lv. {1}"
+msgstr "Nv. {1}"
+
+msgid "Lv.{1}"
+msgstr "Nv.{1}"
+
+msgid "MONEY:"
+msgstr "DINHEIRO:"
+
+msgid "MOVE"
+msgstr "MOVIMENTO"
+
+msgid "MOVE ITEMS"
+msgstr "MOVER ÍTENS"
+
+msgid "MOVE POKéMON"
+msgstr "MOVER POKéMON"
+
+msgid "Machine"
+msgstr "Máquina"
+
+msgid "Magic Room wore off, and held items' effects returned to normal!"
+msgstr "Zona mágica se desfez e os efeitos de itens que Pokémon seguram voltaram ao normal!"
+
+msgid "Magnificent! A flawless performance!"
+msgstr "Magnífico! Uma performance sem falhas!"
+
+msgid "Mago Berries"
+msgstr "Frutas Mago"
+
+msgid "Magost Berries"
+msgstr "Frutas Magost"
+
+msgid "Mail"
+msgstr "Correio"
+
+msgid "Main version is up-to-date however, there MAY be a new minor patch available.\\wtnp[30]"
+msgstr "Versão principal está atualizada, porém PODE haver um patch de correção disponível\\wtnp[30]"
+
+msgid "Main version is up-to-date however, there is a new minor patch available.\\wtnp[30]"
+msgstr "Versão principal está atualizada, porém há um patch de correção disponível.\\wtnp[30]"
+
+msgid "Male"
+msgstr "Macho"
+
+msgid "Map"
+msgstr "Mapa"
+
+msgid "Map View"
+msgstr "mapa"
+
+msgid "March"
+msgstr "Março"
+
+msgid "Mark"
+msgstr "Marcar"
+
+msgid "Mark your Pokemon."
+msgstr "Marcar seu Pokemon."
+
+msgid "Max. HP<r>+{1}\nAttack<r>+{2}\nDefense<r>+{3}\nSp. Atk<r>+{4}\nSp. Def<r>+{5}\nSpeed<r>+{6}"
+msgstr "Max. HP<r>+{1}\nAttack<r>+{2}\nDefense<r>+{3}\nSp. Atk<r>+{4}\nSp. Def<r>+{5}\nSpeed<r>+{6}"
+
+msgid "Max. HP<r>{1}\nAttack<r>{2}\nDefense<r>{3}\nSp. Atk<r>{4}\nSp. Def<r>{5}\nSpeed<r>{6}"
+msgstr "Max. HP<r>{1}\nAttack<r>{2}\nDefense<r>{3}\nSp. Atk<r>{4}\nSp. Def<r>{5}\nSpeed<r>{6}"
+
+msgid "May"
+msgstr "Maio"
+
+msgid "Medicine"
+msgstr "Medicina"
+
+msgid "Micle Berries"
+msgstr "Frutas Micle"
+
+msgid "Mid"
+msgstr "Médio"
+
+msgid "Mild"
+msgstr "Moderada"
+
+msgid "Minimum level is greater than maximum level: {1}\n{2}"
+msgstr "Minimum level is greater than maximum level: {1}\n{2}"
+
+msgid "Mischievous."
+msgstr "Danado."
+
+msgid "Mist swirled about the battlefield!"
+msgstr "Névoa envolve o campo de batalha!"
+
+msgid "Modest"
+msgstr "Modesta"
+
+msgid "Monday"
+msgstr "Segunda"
+
+msgid "Money:\n<ar>{1}</ar>"
+msgstr "Dinheiro:\n<ar>{1}</ar>"
+
+msgid "Money:\n<r>${1}"
+msgstr "Dinheiro:\n<r>${1}"
+
+msgid "Most of it is illegible, I can only make out a few words."
+msgstr "A maioria é ilegível. Só consigo entender algumas palavras."
+
+msgid "Most of the pages are missing. I can't make out anything."
+msgstr "A maioria das páginas está faltando, Posso fazer nada.."
+
+msgid "Move"
+msgstr "Mover"
+
+msgid "Move Pokémon"
+msgstr "Mover Pokémon"
+
+msgid "Move to where?"
+msgstr "Mover para onde?"
+
+msgid "Moves"
+msgstr "Moveimentos"
+
+msgid "Moves the main character. Also used to scroll through list entries."
+msgstr "Move o personagem principal. Também é usado para percorrer listas."
+
+msgid "Multi Ability Ribbon"
+msgstr "Fita de Multi-Habilidade"
+
+msgid "Music Volume"
+msgstr "Volume da Música"
+
+msgid "My Pokémon have saved countless lives on the sea. We're ready for any challenge!"
+msgstr "Meus Pokémons salvaram inúmeras vidas no mar. Estamos prontos para qualquer desafio!"
+
+msgid "My Pokémon's fiery dance moves will ignite the battlefield!"
+msgstr "Os movimentos fogosos de dança de meus Pokémon vão incendiar o campo de batalha!"
+
+msgid "NAME: {1}"
+msgstr "NOME: {1}"
+
+msgid "NOT ABLE"
+msgstr "NÃO PODE"
+
+msgid "NOT ENTERED"
+msgstr "NOT ENTROU"
+
+msgid "Na Mochila:<r>{1:d}"
+msgstr "In Bag:<r>{1:d}"
+
+msgid "Naive"
+msgstr "Ingênua"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Name<r>{1}<br>"
+msgstr "Nome<r>{1}<br>"
+
+msgid "Nanab Berries"
+msgstr "Frutas Nanab"
+
+msgid "National Champion Ribbon"
+msgstr "Fita do Campeão Nacional"
+
+msgid "National Pokédex"
+msgstr "Pokédex Nacional"
+
+msgid "National Ribbon"
+msgstr "Fita Nacional"
+
+msgid "Nature"
+msgstr "Natureza"
+
+msgid "Naughty"
+msgstr "Malcriada"
+
+msgid "Neutral"
+msgstr "Neutrrol"
+
+msgid "New Game"
+msgstr "Novo Jogo"
+
+msgid "Newer"
+msgstr "Mais Novo"
+
+msgid "Nickname"
+msgstr "Apelido"
+
+msgid "No"
+msgstr "Não"
+
+msgid "No Entry"
+msgstr "Sem entrada"
+
+msgid "No Pokemon was found."
+msgstr "Nenhum Pokemon foi achado."
+
+msgid "No ability"
+msgstr "Sem habilidade"
+
+msgid "No item"
+msgstr "Sem item"
+
+msgid "No items may be used other than what the Pokémon already hold."
+msgstr "Nenhum ítem pode ser utilizado exceto o que o Pokémon já estiver segurando."
+
+msgid "No matching Pokémon were found."
+msgstr "Não foram encontrados pokémons que atendecem aos critérios"
+
+msgid "No more than {1} Pokémon may enter."
+msgstr "Não mais de{1} Pokémon pode(m) entrar."
+
+msgid "No new gifts are available."
+msgstr "Não há presentes disponíveis."
+
+msgid "No options have been disabled."
+msgstr "Nenhuma opção foi desabilitada."
+
+msgid "No room to deposit a Pokémon"
+msgstr "Não há espalo para depositar um Pokémon"
+
+msgid "No save file was found."
+msgstr "Nenhum arquivo salvo foi encontrado."
+
+msgid "No supported recording device was found. Recording is not possible."
+msgstr "No supported recording device was found.  Recording is not possible."
+
+msgid "No surfing here!"
+msgstr "Proibido surfar aqui!"
+
+msgid "No targets somehow..."
+msgstr "Não há alvos de alguma forma..."
+
+msgid "No trainer data file given in section {1}\n{2}"
+msgstr "No trainer data file given in section {1}\n{2}"
+
+msgid "No! There's no running from a Nuclear Horde!"
+msgstr "Não! Não há como fugir de uma horda nuclear!"
+
+msgid "No! There's no running from a Trainer battle!"
+msgstr "Não! Não há como fugir de uma batalha contra um treinador!"
+
+msgid "None"
+msgstr "Nenhum"
+
+msgid "Nope. Nothing..."
+msgstr "Não. Nada..."
+
+msgid "Normal Save"
+msgstr "Salv. Padrão"
+
+msgid "North side of first map must connect with south side of second map\n{1}"
+msgstr "North side of first map must connect with south side of second map\n{1}"
+
+msgid "Not enough HP..."
+msgstr "Não tem PV suficiente.."
+
+msgid "Not even a nibble..."
+msgstr "Nem mesmo uma mordidinha..."
+
+msgid "Not... strong enough..."
+msgstr "Não... forte demais..."
+
+msgid "Note: You will NOT be able to change these later!"
+msgstr "Nota: Você NÃO poderá mudá-las depois!"
+
+msgid "November"
+msgstr "Novembro"
+
+msgid "Number"
+msgstr "Número"
+
+msgid "Nuzlocke Disabled."
+msgstr "Nuzlocke Não Liberado."
+
+msgid "Nuzlocke Enabled."
+msgstr "Nuzlocke Liberado."
+
+msgid "OBTAINED<r>{1:d}"
+msgstr "OBTIDO<r>{1:d}"
+
+msgid "OFF"
+msgstr "DESLIGADO"
+
+msgid "ON"
+msgstr "LIGADO"
+
+msgid "OPTIONS"
+msgstr "OPÇÕES"
+
+msgid "Oak"
+msgstr "carvalho"
+
+msgid "Occa Berries"
+msgstr "Frutas Occa"
+
+msgid "Oct."
+msgstr "Out."
+
+msgid "October"
+msgstr "Outubro"
+
+msgid "Of the 32 trainers that entered the arena today, only 8 remain!"
+msgstr "Dos 32 treinadores que entraram na arena, somente 8 permanecem!"
+
+msgid "Off"
+msgstr "Desligado"
+
+msgid "Often dozes off."
+msgstr "Cochila com frequência"
+
+msgid "Often lost in thought."
+msgstr "Normalmente perdido em seus pensamentos."
+
+msgid "Often scatters things."
+msgstr "Com frequência espalha coisas."
+
+msgid "Oh no! The Pokémon broke free!"
+msgstr "Ah não! O pokémon se libertou!"
+
+msgid "Oh!\nA Shadow Pokemon!"
+msgstr "Oh!\nUm Pokemon Sombrio!"
+
+msgid "Oh! A bite!"
+msgstr "\nOh!  Uma mordida!"
+
+msgid "Oh! Hello there."
+msgstr "Oh! Olá."
+
+msgid "Oh! \\PN, it is good to see you again.\nI'll never forget how you rescued me from the clutches of the Seikamater.\nIn my Gym, you dazzled us with your flawless coordinated moves.\nI can see you have gotten far stronger. But so have we!\nCan you keep up with our fast footwork?\nLet our beautiful dance moves set this arena aflame!"
+msgstr "Oh! \\PN, é bom revê-lo.\nNunca vou esquecer como você me salvou das garras das Seikamater.\nNo meu Ginásio, você nos impressionou com seus movimentos coordenados e sem falhas.\nvejo que você ficou muito mais forte. Mas nós também!\nVocê pode acompanhar nossa ginga?\nDeixe nossos belos passos de dança por essa arena em chamas!"
+
+msgid "Oh, marvelous! And in such good condition too."
+msgstr "Oh, incrível! E em uma ótima condição."
+
+msgid "Oh, your {1}... It's Hidden Power is {2} type with a base power of {3}."
+msgstr "Oh, {1}... Seu Poder Oculto é Tipo {2} com poder de {3}."
+
+msgid "Oh... my... GOSH!!\nCan it be? Is it \\PN?\nI totally remember you!\nIt feels like forever ago that you challenged my gym.\nYou know, I totally went easy on you back then, right?~\nBut here in the arena, I won't hold back at all!\nI didn't win the Championship one time by slacking off, ya know?"
+msgstr "Oh... deu... DEUS!!\nPoderia ser? É você, \\PN?\nEu lembro de você!\nParecem eras desde que você desafiou meu Ginásio.\nVocê sabe, na época eu peguei muito leve com você, certo?~\nMas aqui na arena, eu não vou me segurar!\nEu não ganhei o campeonato uma vez fazendo corpo mole, cê sabe?"
+
+msgid "Old School Poison"
+msgstr "Veneno Old School"
+
+msgid "Omigosh! You're totally incredible!~"
+msgstr "Mds! Você é totalmente incrível!~"
+
+msgid "On"
+msgstr "Ligado"
+
+msgid "Once again...\nI am shown defeat.\nHow can I cope with such disgrace?\nTo my home village, I return once again."
+msgstr "Novamente...\nEu perdi.\nComo posso conviver com tanta desgraça\npara minha casa em meu vilarejo, eu retorno novamente."
+
+msgid "Once data has been deleted, there is no way to recover it."
+msgstr "Assim que os dados forem deletados, não há como recuperá-los."
+
+msgid "One Form"
+msgstr "Uma Forma"
+
+msgid "One or more fonts used in this game do not exist on the system."
+msgstr "Uma ou mais fontes utilizadas não existem no sistema."
+
+msgid "One {1} was found, but you have no room for it."
+msgstr "{1} foi encontrado, mas você não tem espaço pra isso."
+
+msgid "One {1} was obtained.\\se[itemlevel]\\wtnp[30]"
+msgstr "{1} foi obtido.\\se[itemlevel]\\wtnp[30]"
+
+msgid "Only four trainers remain in the arena. They are Tandor's best and brightest!"
+msgstr "Somente 4 treinadores permanecem nessa arena Eles são os melhores de Tandor!"
+
+msgid "Only two wild Pokémon are allowed in double battles"
+msgstr "Somente 2 pokémons selvagens são permitidos em Batalhas Duplas"
+
+msgid "Ooh, I'm so excited!"
+msgstr "Ooh, estou tão animado!"
+
+msgid "Options"
+msgstr "Opções"
+
+msgid "Or maybe it's just that you're so young, I can't tell.\\^"
+msgstr "Ou talvez seja porque você é muito jovem, eu não sei.\\^"
+
+msgid "Oran Berries"
+msgstr "Frutas Oran"
+
+msgid "Orchynx is the best pick!\\wtnp[160]"
+msgstr "Orchynx é a melhor escolha!\\wtnp[160]"
+
+msgid "Orgulhoso de seu poder"
+msgstr "Proud of its power."
+
+msgid "Other Save Files"
+msgstr "Outros Arquivos Salvos"
+
+msgid "Our sophisticated strategy will overcome trainers of a lower class."
+msgstr "Nossa estratégia sofisticada irá superar treinadores de classe baixa."
+
+msgid "Owned Pokémon are listed from heaviest to lightest."
+msgstr "Pokémons Capturados estão listados do mais pesado ao mais leve."
+
+msgid "Owned Pokémon are listed from lightest to heaviest."
+msgstr "Pokémons Capturados estão listados do mais leve ao mais pesado."
+
+msgid "Owned Pokémon are listed from smallest to tallest."
+msgstr "Pokémons Capturados estão listados do mais baixo ao mais alto."
+
+msgid "Owned Pokémon are listed from tallest to smallest."
+msgstr "Pokémons Capturados estão listados do mais alto ao mais baixo."
+
+msgid "Ownership"
+msgstr "Dono"
+
+msgid "PA: Ding-dong!"
+msgstr "PA:  Ding-dong!"
+
+msgid "PA: You have no Safari Balls left! Game over!"
+msgstr "PA:  You have no Safari Balls left!  Game over!"
+
+msgid "PA: Your safari game is over!"
+msgstr "PA:  Your safari game is over!"
+
+msgid "PLACE"
+msgstr "COLOCAR"
+
+msgid "POWER"
+msgstr "PODER"
+
+msgid "PP was restored."
+msgstr "PP foram restaurados."
+
+msgid "Pair Ability Ribbon"
+msgstr "Fita de Habilidade Dupla"
+
+msgid "Pamtre Berries"
+msgstr "Frutas Pamtre"
+
+msgid "Passho Berries"
+msgstr "Frutas Passho"
+
+msgid "Patience and endurance are your biggest assets.\\^"
+msgstr "Paciência e persistência são seus melhores atributos.\\^"
+
+msgid "Payapa Berries"
+msgstr "Frutas Payapa"
+
+msgid "Pecha Berries"
+msgstr "Frutas Pecha"
+
+msgid "Performance Mode"
+msgstr "Modo Performático"
+
+msgid "Permanently disable the options you unchecked."
+msgstr "Permanentemente desabilitar as opções que você desmarcou."
+
+msgid "Persim Berries"
+msgstr "Frutas Persim"
+
+msgid "Personal ID is {1}."
+msgstr "ID Pessoal é {1}."
+
+msgid "Perspective"
+msgstr "Perspectiva"
+
+msgid "Petaya Berries"
+msgstr "Frutas Petaya"
+
+msgid "Phew! That was fun!"
+msgstr "Phew! Foi divertido!"
+
+msgid "Phone"
+msgstr "Telefone"
+
+msgid "Pick the wallpaper."
+msgstr "Escolher wallpaper."
+
+msgid "Pinap Berries"
+msgstr "Frutas Pinap"
+
+msgid "Pink"
+msgstr "Rosa"
+
+msgid "PkMn Trainer"
+msgstr "TreinadorPkMn"
+
+msgid "Place"
+msgstr "Colocar"
+
+msgid "Plant Berry"
+msgstr "Plantar Fruta"
+
+msgid "Play Voltorb Flip Lv. {1}?"
+msgstr "Jogar Voltorb Flip Nv. {1}?"
+
+msgid "Play the game with a custom ruleset for increased difficulty.\nNot recommended for new players."
+msgstr "Escolha o jogo com regras customizadas para aumentar a dificuldade.\nNão recomendado para novatos."
+
+msgid "Player<r><c3={1}>{2}</c3><br>"
+msgstr "Jogador<r><c3={1}>{2}</c3><br>"
+
+msgid "Please choose the new settings for your Nuzlocke game."
+msgstr "Por favor escolha os parâmetros para o seu jogo no modo Nuzlocke."
+
+msgid "Please come again!"
+msgstr "Volte sempre!"
+
+msgid "Please enter the first Pokémon."
+msgstr "Por favor entre com o primeiro Pokémon."
+
+msgid "Please enter the search criteria."
+msgstr "Por favor insira os critérios de busca."
+
+msgid "Please pick up your gift from the deliveryman in any Poké Mart."
+msgstr "Por favor pegue o presente com o entregador em qualquer mercado Pokémon."
+
+msgid "Please see the documentation to learn how to set up the trainer player."
+msgstr "Por favor veja a documentação para aprender como fazer o treinador."
+
+msgid "Please wait.\\wtnp[0]"
+msgstr "Por favor eespere.\\wtnp[0]"
+
+msgid "Please, run the patcher.exe on your game folder."
+msgstr "Por favor, execute o patcher.exe na sua pasta de jogo"
+
+msgid "Pointed stones dug into {1}!"
+msgstr "Pedras pontudas acertaram {1}!"
+
+msgid "Pointed stones float in the air around your foe's team!"
+msgstr "Pedras pontudas flutuam no ar em volta do time adversário!"
+
+msgid "Pointed stones float in the air around your team!"
+msgstr "Pedras pontudas flutuam no ar em volta de seu time!"
+
+msgid "Poison"
+msgstr "Veneno"
+
+msgid "Poison spikes were scattered all around the opposing team's feet!"
+msgstr "Espinhos envenenados foram espalhados pela área do time oponente!"
+
+msgid "Poison spikes were scattered all around your team's feet!"
+msgstr "Espinhos envenenados foram espalhados pela área de seu time!"
+
+msgid "Pokemon Box data is corrupt and can not be automatically recovered."
+msgstr "Os dados da Pokémon Box foram corrompidos e não pode ser automaticamente recuperada."
+
+msgid "Pokemon Box data was corrupt and has been automatically recovered."
+msgstr "Os dados da Pokémon Box foram corrompidos e automaticamente recuperada."
+
+msgid "Poké Ball"
+msgstr "Poké Bola"
+
+msgid "Poké Balls"
+msgstr "Poké Bolas"
+
+msgid "Poké Center"
+msgstr "Centro Pokémon"
+
+msgid "Poké Marts are disabled by your custom game settings!"
+msgstr "Poké Marts estão desabilitados pela suas definições de Jogo customizado!"
+
+msgid "Pokémon are listed according to their number."
+msgstr "Pokémon estão listados de acordo com seus números."
+
+msgid "Pokémon can be killed by poison outside of battle as in the first three gens."
+msgstr "Pokémon pode ser morto por veneno fora de batalhas assim como nas primeira três gerações."
+
+msgid "Pokémon of a species you already caught don't count as an encounter if you run."
+msgstr "Pokémon de uma espécie que você já capturou não contam como um encontro se você correr."
+
+msgid "Pomeg Berries"
+msgstr "Frutas Pomeg"
+
+msgid "Premier Ribbon"
+msgstr "Fita Premier"
+
+msgid "Press a new key."
+msgstr "Pressione uma nova tecla."
+
+msgid "Press to use a registered Key Item."
+msgstr "Aperte para usar um item chave."
+
+msgid "Prevents Pokémarts from being used."
+msgstr "Previne Pokémarts de serem usados."
+
+msgid "Prevents the player from using healing items in battle."
+msgstr "Previne o jogador de usar ítens de cura em batalha."
+
+msgid "Proceed anyway?"
+msgstr "Proseguir mesmo assim?"
+
+msgid "Processing moves {1}..."
+msgstr "Processando movimentos {1}..."
+
+msgid "Prog--- is ---- --- -- --dename 092. --- ----- --- from radiation-----s biofiber. It ---- -- ---- to reconstru-- --- -- damage-"
+msgstr "Prog----- está ---- --- -- --dódigo 092. --- ----- --- da radiação-----s biofibra. Isso ---- -- ---- para reconstru-- --- -- dano-"
+
+msgid "Psychic"
+msgstr "Psíquico"
+
+msgid "Purple"
+msgstr "Roxo"
+
+msgid "Qualot Berries"
+msgstr "Frutas Qualot"
+
+msgid "Quick Guard protected your team!"
+msgstr "Defesa Rápida protegeu seu time!!"
+
+msgid "Quick Guard protected {1}!"
+msgstr "Defesa Rápida protegeu {1}!"
+
+msgid "Quick tempered."
+msgstr "Pavio curto."
+
+msgid "Quick to flee."
+msgstr "Ágil para fugir."
+
+msgid "Quiet"
+msgstr "Quieta"
+
+msgid "Quirky"
+msgstr "Peculiar"
+
+msgid "Quit"
+msgstr "Sair"
+
+msgid "Quit shopping."
+msgstr "Sair."
+
+msgid "REPLACE"
+msgstr "RECOLOCAR"
+
+msgid "RESULTS<r>{1:d}"
+msgstr "RESULTADOS<r>{1:d}"
+
+msgid "ROTATE"
+msgstr "ROTACIONAR"
+
+msgid "Rabuta Berries"
+msgstr "Frutas Rabuta"
+
+msgid "Radio"
+msgstr "Rádio"
+
+msgid "Rain continues to fall."
+msgstr "A chuva continua a caiu."
+
+msgid "Raises trainer's Pokémon levels while keeping the same EXP yields."
+msgstr "Aumenta os níveis dos pokémons dos treinadores, sem aumentar o ganho de experiência."
+
+msgid "Raptorch is the best pick!\\wtnp[160]"
+msgstr "Raptorch é a melhor escolha!\\wtnp[160]"
+
+msgid "Rash"
+msgstr "Imprudente"
+
+msgid "Rawst Berries"
+msgstr "Frutas Rawst"
+
+msgid "Razz Berries"
+msgstr "Frutas Razz"
+
+msgid "Reached end of file unexpectedly. There were too few entries in the last section, expected {1} entries.\nPlease check the format of the section numbered {2}.\n{3}"
+msgstr "Reached end of file unexpectedly. There were too few entries in the last section, expected {1} entries.\nPlease check the format of the section numbered {2}.\n{3}"
+
+msgid "Received the {1} from {2}."
+msgstr "Recebeu {1} de {2}."
+
+msgid "Record Ribbon"
+msgstr "Fita de Récord"
+
+msgid "Red"
+msgstr "Vermelho"
+
+msgid "Reflect raised the opposing team's Defense!"
+msgstr "Reflexo aumentou a Defesa do time adversário!"
+
+msgid "Reflect raised your team's Defense!"
+msgstr "Reflexo aumentou a Defesa de seu time!"
+
+msgid "Regardless...\\. For a Trainer like you...\\^"
+msgstr "Mesmo assim...\\. Para um treinador como você..\\^"
+
+msgid "Regional Champion Ribbon"
+msgstr "Fita do Campeão Regional"
+
+msgid "Register"
+msgstr "Registrar"
+
+msgid "Registered {1} in the Poképod."
+msgstr "Registrou {1} no Poképod."
+
+msgid "Registered<br>"
+msgstr "Registrou<br>"
+
+msgid "Regular Mode"
+msgstr "Modo Padrão"
+
+msgid "Relax Ribbon"
+msgstr "Fita Relaxada"
+
+msgid "Relaxed"
+msgstr "Relaxada"
+
+msgid "Release"
+msgstr "Soltar"
+
+msgid "Release this Pokémon?"
+msgstr "Soltar Pokémon?"
+
+msgid "Remap controls to any other keys."
+msgstr "Remapear os controles para qualquer tecla."
+
+msgid "Remember Save"
+msgstr "Auto Carregar"
+
+msgid "Removes some details to improve performance, specially in battle."
+msgstr "Remove alguns detalhes e aumenta a performance do jogo, especialmente em batalha."
+
+msgid "Rename"
+msgstr "Renomear"
+
+msgid "Repel isn't working in this location!"
+msgstr "Repelente não está funcionando nesse local!"
+
+msgid "Repel's effect wore off..."
+msgstr "O efeito do repelente acabou..."
+
+msgid "Report #01"
+msgstr "Relatório #01"
+
+msgid "Report #01:"
+msgstr "Relatório #01:"
+
+msgid "Report #02"
+msgstr "Relatório #02"
+
+msgid "Report #02:"
+msgstr "Relatório #02:"
+
+msgid "Report #03"
+msgstr "Relatório #03"
+
+msgid "Report #03:"
+msgstr "Relatório #03:"
+
+msgid "Report #04"
+msgstr "Relatório #04"
+
+msgid "Report #04:"
+msgstr "Relatório #04:"
+
+msgid "Report #05"
+msgstr "Relatório #05"
+
+msgid "Report #05:"
+msgstr "Relatório #05:"
+
+msgid "Required value '{1}' not given in section '{2}'\n{3}"
+msgstr "Required value '{1}' not given in section '{2}'\n{3}"
+
+msgid "Restore which move?"
+msgstr "Restaurar qual movimento?"
+
+msgid "Return To Game"
+msgstr "Retornar ao Jogo"
+
+msgid "Return To Menu"
+msgstr "Retornar Ao Menu"
+
+msgid "Return to game mode selection menu?"
+msgstr "Retornar ao menu de seleção do modo de jogo?"
+
+msgid "Return to previous menu."
+msgstr "Retornar ao menu anterior."
+
+msgid "Rindo Berries"
+msgstr "Frutas Rindo"
+
+msgid "River"
+msgstr "Rio"
+
+msgid "Rowap Berries"
+msgstr "Frutas Rowap"
+
+msgid "Royal Ribbon"
+msgstr "Fita Real"
+
+msgid "S: Go to another map"
+msgstr "S: Go to another map\n"
+
+msgid "SAVE"
+msgstr "SALVAR"
+
+msgid "SE Volume"
+msgstr "Vol. dos E. Sonoros"
+
+msgid "SECOND"
+msgstr "SEGUNDO"
+
+msgid "SEE YA!"
+msgstr "ATÉ!"
+
+msgid "SEEN<r>{1:d}"
+msgstr "VISTO<r>{1:d}"
+
+msgid "SHINY SEEN"
+msgstr "SHINY VISTOS"
+
+msgid "SIXTH"
+msgstr "SEXTO"
+
+msgid "SKIPPING BATTLE..."
+msgstr "PULANDO BATALHA..."
+
+msgid "START"
+msgstr "COMEÇAR"
+
+msgid "STOCK POKéMON:\n{1} Lv{2} MaxHP: {3}\nTHIS POKéMON:\n{4} Lv{5} MaxHP: {6}"
+msgstr "STOCK POKéMON:\n {1} Lv{2} MaxHP: {3}\nTHIS POKéMON:\n {4} Lv{5} MaxHP: {6}"
+
+msgid "STYLE"
+msgstr "FONTE"
+
+msgid "SUMMARY"
+msgstr "SUMÁRIO"
+
+msgid "SWITCH"
+msgstr "TROCAR"
+
+msgid "Safari Balls"
+msgstr "Bolas de safari"
+
+msgid "Salac Berries"
+msgstr "Frutas Salac"
+
+msgid "Sassy"
+msgstr "Atrevida"
+
+msgid "Saturday"
+msgstr "Sábado"
+
+msgid "Savanna"
+msgstr "Savana"
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "Save changes?"
+msgstr "Salvar alterações?"
+
+msgid "Save failed."
+msgstr "Save falhou."
+
+msgid "Scatters things often."
+msgstr "Espalha coisas com frequência."
+
+msgid "Score: {1}\nHits: {2}/{3}"
+msgstr "Pontuação: {1} \nHits: {2}/{3}"
+
+msgid "Screen Size"
+msgstr "Tamanho da Tela"
+
+msgid "Seafloor"
+msgstr "Fundo do Mar"
+
+msgid "Search"
+msgstr "Busca"
+
+msgid "Search Mode"
+msgstr "Modo de Busca"
+
+msgid "Search for Pokémon based on selected parameters."
+msgstr "Busca por Pokémon baseado nos parâmetros selecionados."
+
+msgid "Searching for a gift.\nPlease wait...\\wtnp[0]"
+msgstr "Procurando por algum Presente.\nPor favor espere...\\wtnp[0]"
+
+msgid "Second move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Second move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "See ya!"
+msgstr "Até!"
+
+msgid "Select"
+msgstr "Selecionar"
+
+msgid "Select Level (Max 20)"
+msgstr "Selecionar Nível (Máx 20)"
+
+msgid "Select the Pokédex listing mode."
+msgstr "Seleione o modo de lista da Pokédex."
+
+msgid "Sell"
+msgstr "Vender"
+
+msgid "Sep."
+msgstr "Set."
+
+msgid "September"
+msgstr "Setembro"
+
+msgid "Serious"
+msgstr "Séria"
+
+msgid "Set"
+msgstr "Não"
+
+msgid "Set Controls"
+msgstr "Definir Comandos"
+
+msgid "Set HP"
+msgstr "Escolher PV"
+
+msgid "Set how often the game will autosave in minutes."
+msgstr "Escolha a frequência de auto salvar em minutos."
+
+msgid "Set the level for {1}."
+msgstr "Ajustar o nível para {1}."
+
+msgid "Set the name for this point."
+msgstr "Escolha um nome para este ponto."
+
+msgid "Shift"
+msgstr "Sim"
+
+msgid "Shininess"
+msgstr "Shiny"
+
+msgid "Shiny Clause"
+msgstr "Cláusula de Shiny"
+
+msgid "Shock Ribbon"
+msgstr "Fita de Choque"
+
+msgid "Shoot! It was so close, too!"
+msgstr "Droga!  Tão perto!"
+
+msgid "Short to Tall"
+msgstr "Baixo a Alto"
+
+msgid "Should {1} stop learning {2}?"
+msgstr "{1} deveria parar de aprender {2}?"
+
+msgid "Shuca Berries"
+msgstr "Frutas Shuca"
+
+msgid "Simple"
+msgstr "Simples"
+
+msgid "Simply stunning!"
+msgstr "Simplesmente estonteante!"
+
+msgid "Sinnoh Champ Ribbon"
+msgstr "Fida de Campeão de Sinnoh"
+
+msgid "Sitrus Berries"
+msgstr "Frutas Sitrus"
+
+msgid "Sky"
+msgstr "Céu"
+
+msgid "Slow"
+msgstr "Lento"
+
+msgid "Smart Ribbon"
+msgstr "Fita Inteligente"
+
+msgid "Smart Ribbon Great"
+msgstr "Fita Inteligente Ótima"
+
+msgid "Smart Ribbon Hyper"
+msgstr "Fita Hiper Inteligente"
+
+msgid "Smart Ribbon Master"
+msgstr "Fita Inteligente Maestral"
+
+msgid "Smart Ribbon Super"
+msgstr "Fita Super Inteligente"
+
+msgid "Smart Ribbon Ultra"
+msgstr "Fita Ultra Inteligente"
+
+msgid "Smile Ribbon"
+msgstr "Fita do Sorriso"
+
+msgid "Snooze Ribbon"
+msgstr "Fita da Soneca"
+
+msgid "Snow"
+msgstr "Neve"
+
+msgid "Some of the fonts were successfully installed."
+msgstr "Alguma das fontes foram instaladas com sucesso."
+
+msgid "Someone's PC"
+msgstr "PC de Alguém"
+
+msgid "Somewhat of a clown."
+msgstr "Meio que um palhaço."
+
+msgid "Somewhat stubborn."
+msgstr "Teimoso de alguma forma."
+
+msgid "Somewhat vain."
+msgstr "Vaidoso de alguma forma."
+
+msgid "Sorry for keeping you waiting so long."
+msgstr "Desculpe por fazê-lo esperar por tanto tempo."
+
+msgid "Sorry, a new Badge is required."
+msgstr "Desculpe, você precisa de uma nova insígnia."
+
+msgid "Sorry, but you're stuck with this one."
+msgstr "Desculpa, você vai ter que marcar essa opção."
+
+msgid "Soul"
+msgstr "Alma"
+
+msgid "Sounds can be heard coming from inside! It will hatch soon!"
+msgstr "Sons podem ser ouvidos de dentro do ovo! Vai chocar logo!"
+
+msgid "South side of first map must connect with north side of second map\n{1}"
+msgstr "South side of first map must connect with north side of second map\n{1}"
+
+msgid "Souvenir Ribbon"
+msgstr "Fita de Lembrança"
+
+msgid "Sp. Atk."
+msgstr "Atq. Esp."
+
+msgid "Sp. Attack"
+msgstr "Atq. Esp."
+
+msgid "Sp. Def"
+msgstr "Def. Esp."
+
+msgid "Sp. Defense"
+msgstr "Def. Esp."
+
+msgid "Special Attack"
+msgstr "Atq. Esp."
+
+msgid "Special Defense"
+msgstr "Def. Esp."
+
+msgid "Special Ribbon"
+msgstr "Fita Especial"
+
+msgid "Species"
+msgstr "Espécie"
+
+msgid "Specifies the underwater layer of this map. Use only if this map has deep water."
+msgstr "Specifies the underwater layer of this map.  Use only if this map has deep water."
+
+msgid "Speech frame {1}."
+msgstr "Balão de fala {1}."
+
+msgid "Speed"
+msgstr "Velocidade"
+
+msgid "Spelon Berries"
+msgstr "Frutas Spelon"
+
+msgid "Spikes were scattered all around the feet of the opposing team!"
+msgstr "Espinhos foram espalhados pela área do time oponente!"
+
+msgid "Spikes were scattered all around the feet of your team!"
+msgstr "Espinhos foram espalhados pela área de seu time!"
+
+msgid "Splendid!\nYou battle with great finesse and expertise.\nLet us tango together again sometime!"
+msgstr "Esplendido!\nVocê batalha com grande técnica e conhecimento\nvamos dançar tango juntos novamente alguma outra vez!"
+
+msgid "Spotted and owned Pokémon are listed alphabetically."
+msgstr "Pokémons vistos e capturados estão listados alfabeticamente."
+
+msgid "Starf Berries"
+msgstr "Frutas Starf"
+
+msgid "Start Game"
+msgstr "Começar Jogo"
+
+msgid "Status moves must have a base damage of 0, use either Physical or Special\n{1}"
+msgstr "Status moves must have a base damage of 0, use either Physical or Special\n{1}"
+
+msgid "Status: Burn"
+msgstr "Status: Queimadura"
+
+msgid "Status: Frozen"
+msgstr "Status: Congelado"
+
+msgid "Status: Paralysis"
+msgstr "Status: Paralisia"
+
+msgid "Status: Poison"
+msgstr "Status: Envenenado"
+
+msgid "Status: Sleep"
+msgstr "Status: Dormindo"
+
+msgid "Steel"
+msgstr "Aço"
+
+msgid "Store"
+msgstr "Guardar"
+
+msgid "Store items in the PC."
+msgstr "Guardar ítens no PC."
+
+msgid "Strength is already being used."
+msgstr "Super Força já está em uso."
+
+msgid "Strength made it possible to move boulders around."
+msgstr "Super Força tornou possível mover pedras."
+
+msgid "Strong willed."
+msgstr "Muita força de vontade."
+
+msgid "Strongly defiant."
+msgstr "Muito desafiador."
+
+msgid "Sturdy body."
+msgstr "Corpo resistente."
+
+msgid "Summary"
+msgstr "Summário"
+
+msgid "Sunday"
+msgstr "Domingo"
+
+msgid "Switch"
+msgstr "Trocar"
+
+msgid "Switch In"
+msgstr "Colocar em jogo"
+
+msgid "Switch Pokédex listings."
+msgstr "Trocar forma de listar da Pokédex"
+
+msgid "Switched the Experience Share {1}."
+msgstr "Trocando a Divisão de Experiência {1}."
+
+msgid "THIRD"
+msgstr "TERCEIRO"
+
+msgid "TIME:"
+msgstr "TEMPO:"
+
+msgid "TYPE"
+msgstr "TIPO"
+
+msgid "Take good care of {1}."
+msgstr "Cuide bem de1}."
+
+msgid "Take out items from the PC."
+msgstr "Tirar ítens do PC."
+
+msgid "Take this {1}?"
+msgstr "Pegar esse {1}?"
+
+msgid "Tall to Short"
+msgstr "Alto a baixo"
+
+msgid "Tamato Berries"
+msgstr "Frutas Tamato"
+
+msgid "Tandor Pokédex"
+msgstr "Pokédex de Tandor"
+
+msgid "Tanga Berries"
+msgstr "Frutas Tanga"
+
+msgid "Teach move"
+msgstr "Ensinar movimento"
+
+msgid "Teach which Pokémon?"
+msgstr "Ensinar qual Pokémon?"
+
+msgid "Teach which move to {1}?"
+msgstr "Ensinar qual movimento a{1}?"
+
+msgid "Teach {1} to a Pokémon?"
+msgstr "Ensinar {1} a um Pokémon?"
+
+msgid "Teach {1} to {2}?"
+msgstr "Ensinar {1} a {2}?"
+
+msgid "Teach {1}?"
+msgstr "Ensinar {1}?"
+
+msgid "Text Speed"
+msgstr "Velocidade do Texto"
+
+msgid "Th- MRI ------ anomalous brainwave ------ns. --- specim-n ----- -- inca----e -- indep---ent thoug--. We --- ---ing -- - suppress---."
+msgstr "O MRI ------ onda cerebral anormal ------ns. --- espécime-n ----- -- inca-a -- pensament-- indep---ente-. Nós ------- ----ando -- suprim----."
+
+msgid "That Pokémon can't be placed there."
+msgstr "Esse Pokémon não pode ser colocado aqui."
+
+msgid "That won't fertilize the soil!"
+msgstr "Isso não vai fertilizar esse solo!"
+
+msgid "That's not Mulch."
+msgstr "Isso não é Adubo."
+
+msgid "That's not a Berry."
+msgstr "Isso não é uma Fruta."
+
+msgid "That's not the right item."
+msgstr "Não é o ítem correto."
+
+msgid "That's too important to toss out!"
+msgstr "Isso é muito importante para se descartar!"
+
+msgid "That's your last Pokémon!"
+msgstr "Esse é seu último PokémonPokémon!"
+
+msgid "The Bag is full. The Pokémon's item could not be removed."
+msgstr "A Mochila está cheia.  O item do Pokémon não pode ser removido."
+
+msgid "The Fire-type attack fizzled out in the heavy rain!"
+msgstr "O ataque de Fogo saiu mais fraco devido à forte chuva!"
+
+msgid "The Hall Of Fame!"
+msgstr "O Hall Da Fama!"
+
+msgid "The Happy Hour started!"
+msgstr "A Hora de Alegria começou!"
+
+msgid "The Ion Deluge started!"
+msgstr "Dilúvio de íons começou!"
+
+msgid "The Pokémon got away..."
+msgstr "O Pokémon fugiu..."
+
+msgid "The Power Glove made it possible to move boulders around!"
+msgstr "A Luva Poderosa tornou possível mover pedras!"
+
+msgid "The Tailwind blew from behind the opposing team!"
+msgstr "Cauda de Vento sopra por detrás do time oponente!"
+
+msgid "The Tailwind blew from behind your team!"
+msgstr "Cauda de Vento sopra por detrás de seu time!"
+
+msgid "The Trainer blocked the Ball!\nDon't be a thief!"
+msgstr "O treinador bloqueou a bola!\nnão seja um ladrão!"
+
+msgid "The Trainer is close by.\nTalk to the Trainer in person!"
+msgstr "O Treinador está por perto.\nFale com ele pessoalmente!"
+
+msgid "The Trainer is out of range."
+msgstr "O Treinador está fora de alcance."
+
+msgid "The Trainer's data was added to the list of battles and at PBS/trainers.txt."
+msgstr "Os dados  desse Treinadorforam adicionados à lista de treinadores em PBS/trainers.txt."
+
+msgid "The Water-type attack evaporated in the harsh sunlight!"
+msgstr "O ataque de Água saiu mais fraco devido aos fortes raios solares!"
+
+msgid "The Weakness Policy raised {1}'s Attack!"
+msgstr "A Política de Fraqueza aumentou o Ataque de {1}!"
+
+msgid "The Weakness Policy raised {1}'s Special Attack!"
+msgstr "A Política de Fraqueza aumentou o Ataque de {1}!"
+
+msgid "The air is clean again."
+msgstr "O ar está limpo novamente."
+
+msgid "The air is filled with toxicity."
+msgstr "O ar está cheio de toxicidade."
+
+msgid "The ally {1}"
+msgstr "O {1} aliado"
+
+msgid "The animation file {1} was not found. The animation will load anyway."
+msgstr "The animation file {1} was not found.  The animation will load anyway."
+
+msgid "The battery has run dry!\nFor it to recharge, you need to walk another {1} steps."
+msgstr "A bateria acabou!\nPara ecarregar, você precisa andar outros {1} passos."
+
+msgid "The battle will continue until either side has no Pokémon left that can fight."
+msgstr "A batalha continuará até que um dos lados não tenha pokémons aptos a lutar."
+
+msgid "The battlers shared their pain!"
+msgstr "Ambos pokémons estão com a mesma quantidade de PV!"
+
+msgid "The boxes are full! You can't catch any more Pokémon!"
+msgstr "The boxes are full!  You can't catch any more Pokémon!"
+
+msgid "The bursting flame hit the opposing {2}!"
+msgstr "A chama flamejante acerta o oponente {2}!"
+
+msgid "The bursting flame hit {2}!"
+msgstr "A chama flamejante acerta {2}!"
+
+msgid "The current map has no region set. Please set the MapPosition metadata setting for this map."
+msgstr "The current map has no region set.  Please set the MapPosition metadata setting for this map."
+
+msgid "The darkness of caves is my home. My Pokémon team knows no fear!"
+msgstr "A escuridão das cavernas é minha casa. Meu time Pokémon não conhece o medo!"
+
+msgid "The effects of Mud Sport have faded."
+msgstr "Os efeitos do Campo de Lama acabaram."
+
+msgid "The effects of Water Sport have faded."
+msgstr "Os efeitos do Campo de Água acabaram."
+
+msgid "The effects of the weather disappeared!"
+msgstr "Os efeitos do clima desapareceram!"
+
+msgid "The effects of the {1} prevent status moves from being used!"
+msgstr "Os efeitos de {1} previnem movimentos de estado de serem utilizados"
+
+msgid "The electricity disappeared from the battlefield."
+msgstr "A eletricidade desapareceu do campo de batalha."
+
+msgid "The foe {1}"
+msgstr "O oponente {1}"
+
+msgid "The fonts were successfully installed."
+msgstr "As fontes foram instaladas com sucesso"
+
+msgid "The future is a blank slate.\\. You, together with your Pokémon, are going to fill it. There will be challenges and thrills, and you're bound to make exciting discoveries."
+msgstr "O futuro é um papel em branco.\\. Você, junto com seus Pokémons, irão desenhá-lo. Haverá desafio e emoções e você está destinado a fazer grandes descobertas."
+
+msgid "The game can be played, but the look of the game's text will not be optimal."
+msgstr "É possível jogar, mas a aparência dos textos não será boa."
+
+msgid "The game has detected that the battery is low. You should save soon to avoid losing your progress."
+msgstr "The game has detected that the battery is low.  You should save soon to avoid losing your progress."
+
+msgid "The gift has been received!"
+msgstr "O Presente foi recebido!"
+
+msgid "The grass disappeared from the battlefield."
+msgstr "A grama desapareceu do campo de batalha."
+
+msgid "The grassy patch remained quiet..."
+msgstr "O espaço de grama permaneceu quieto..."
+
+msgid "The hail stopped."
+msgstr "A chuva de granizo parou ."
+
+msgid "The healing wish came true for {1}!"
+msgstr "O Desejo de Cura se tornou realidade para {1}!"
+
+msgid "The map data cannot be found."
+msgstr "Os dados do mapa não podem ser encontrados."
+
+msgid "The message will be lost. Is that OK?"
+msgstr "The message will be lost.  Is that OK?"
+
+msgid "The mirror move failed!"
+msgstr "O Movimento Espelho falhou!"
+
+msgid "The mist disappeared from the battlefield."
+msgstr "A névoa desapareceu do campo de batalha.."
+
+msgid "The new level ({1}) is less than the Pokémon's\ncurrent level ({2}), which shouldn't happen.\n[Debug: {3}]"
+msgstr "The new level ({1}) is less than the Pokémon's\ncurrent level ({2}), which shouldn't happen.\n[Debug: {3}]"
+
+msgid "The opposing team became cloaked in a mystical veil!"
+msgstr "O time adversário está envolto em um véu misterioso!"
+
+msgid "The opposing team became shrouded in mist!"
+msgstr "O time adversário ficou envolto em névoa!"
+
+msgid "The opposing team is no longer protected by Safeguard!"
+msgstr "O time adversário não está mais protegido por Resguarda!"
+
+msgid "The opposing team is no longer protected by mist!"
+msgstr "O time adversário não está mais protegido pela névoa!"
+
+msgid "The opposing team is too nervous to eat Berries!"
+msgstr "O time oponente está muito nervoso para comer Frutas!"
+
+msgid "The opposing team's Light Screen faded!"
+msgstr "A Tela de Reflexo do time oponente acabou!"
+
+msgid "The opposing team's Light Screen wore off!"
+msgstr "A Tela de Luz do time adversário se desgastou!"
+
+msgid "The opposing team's Lucky Chant wore off!"
+msgstr "O Mantra de Sorte do time oponente se terminou!!"
+
+msgid "The opposing team's Mist faded!"
+msgstr "A Névoa do time oponente acabou!!"
+
+msgid "The opposing team's Reflect faded!"
+msgstr "O Reflexo do time acabou oponente!"
+
+msgid "The opposing team's Reflect wore off!"
+msgstr "O reflexo do time adversário se desgastou!"
+
+msgid "The opposing team's Tailwind petered out!"
+msgstr "Cauda de vento do time oponente terminou!!"
+
+msgid "The opposing {1}"
+msgstr "O {1} adversário"
+
+msgid "The options you unchecked can't be turned back on."
+msgstr "As opções que você desmarcou não podem ser ativadas novamente."
+
+msgid "The phone is not working."
+msgstr "O telefone não está funcionando."
+
+msgid "The plant seemed to be delighted."
+msgstr "A planta parece estar agradecida."
+
+msgid "The player trainer was not defined, so the menu can't be displayed."
+msgstr "O treinador do jogador não foi definido, então o menu não pode ser apresentado."
+
+msgid "The pointed stones disappeared from around the opposing team!"
+msgstr "As pedras pontudas desapareceram da área do time adversário!"
+
+msgid "The pointed stones disappeared from around your team!"
+msgstr "As pedras pontudas desapareceram da área de seu time!"
+
+msgid "The poisoned spikes disappeared from around the opposing team's feet!"
+msgstr "Os espinhos envenenados desapareceram da área do time adversário!"
+
+msgid "The poisoned spikes disappeared from around the your team's feet!"
+msgstr "Os espinhos envenenados desapareceram da área de seu time!"
+
+msgid "The poisoned spikes disappeared from around your team's feet!"
+msgstr "Os espinhos envenenados desapareceram da área de seu time!"
+
+msgid "The poisoned spikes disappeared from around {1}'s feet!"
+msgstr "Os espinhos envenenados desapareceram da área envolta de {1}!"
+
+msgid "The power of {1}'s Fire-type moves rose!"
+msgstr "O poder de ataques de Fogo de {1}aumentaram!"
+
+msgid "The rain stopped."
+msgstr "A chuva passou."
+
+msgid "The rainbow faded."
+msgstr "O arco-íris desapareceu."
+
+msgid "The rules of battle will be as follows:"
+msgstr "As regras da batalha são as seguintes:"
+
+msgid "The sandstorm rages."
+msgstr "A tempestade de areia segue firme."
+
+msgid "The sandstorm subsided."
+msgstr "A tempestade de areia sumiu."
+
+msgid "The save file was deleted."
+msgstr "O arquivo salvo foi deletado"
+
+msgid "The saying \"the best defense is a good offense\" is probably your mantra.\\^"
+msgstr "O ditado “O ataque é a melhor defesa\" é provavelmente seu mantra.\\^"
+
+msgid "The script is taking too long. The game will restart."
+msgstr "The script is taking too long.  The game will restart."
+
+msgid "The sea is deep here. A Pokémon may be able to go underwater."
+msgstr "O mar é fundo aqui Um Pokémon pode ser capaz de mergulhar."
+
+msgid "The sea is deep here. Would you like to go underwater?"
+msgstr "O mar é fundo aqui. Você gostaria de mergulhar?"
+
+msgid "The sea of fire faded."
+msgstr "O mar de chamas desapareceu."
+
+msgid "The soil returned to its soft and earthy state."
+msgstr "O solo voltou ao seu estado normal, macio e somente terra."
+
+msgid "The soil returned to its soft and loamy state."
+msgstr "O solo voltou ao seu estado normal, macio e terra argilosa."
+
+msgid "The spikes disappeared from around the opposing team's feet!"
+msgstr "Os espinhos desapareceram da área do time adversário!"
+
+msgid "The spikes disappeared from around your team's feet!"
+msgstr "Os espinhos desapareceram da área de seu time!"
+
+msgid "The sticky web has disappeared from beneath the opposing team's feet!"
+msgstr "A teia grudenta desapareceu da área do time adversário!"
+
+msgid "The sticky web has disappeared from beneath your team's feet!"
+msgstr "A teia grudenta desapareceu da área de seu time!"
+
+msgid "The substitute took damage for {1}!"
+msgstr "O substituto levou o dano para {1}!"
+
+msgid "The sunlight faded."
+msgstr "A luz solar diminuiu."
+
+msgid "The sunlight is strong."
+msgstr "A luz solar está forte."
+
+msgid "The sunlight turned extremely harsh!"
+msgstr "A luz solar ficou extremamente forte!"
+
+msgid "The sunlight turned harsh!"
+msgstr "A luz solar ficou mais forte!"
+
+msgid "The swamp faded."
+msgstr "O pântano desapareceu."
+
+msgid "The thunderstorm rages."
+msgstr "A tempestade segue forte."
+
+msgid "The thunderstorm subsided."
+msgstr "A tempestade passou."
+
+msgid "The twisted dimensions returned to normal!"
+msgstr "As dimensões distorcidas voltaram ao normal!"
+
+msgid "The value \"{1}\" must be from -128 through 127, got a value of {2}\n{3}"
+msgstr "The value \"{1}\" must be from -128 through 127, got a value of {2}\n{3}"
+
+msgid "The value \"{1}\" must be from -32768 through 32767, got a value of {2}\n{3}"
+msgstr "The value \"{1}\" must be from -32768 through 32767, got a value of {2}\n{3}"
+
+msgid "The value \"{1}\" must be from 0 through 255 (0x00-0xFF in hex), got a value of {2}\n{3}"
+msgstr "The value \"{1}\" must be from 0 through 255 (0x00-0xFF in hex), got a value of {2}\n{3}"
+
+msgid "The value \"{1}\" must be from 0 through 65535 (0x0000-0xFFFF in hex), got a value of {2}\n{3}"
+msgstr "The value \"{1}\" must be from 0 through 65535 (0x0000-0xFFFF in hex), got a value of {2}\n{3}"
+
+msgid "The wall collapsed!"
+msgstr "A parede caiu!"
+
+msgid "The water is dyed a deep blue...\nWould you like to surf?"
+msgstr "A água parece estar azul escuro...\nVocê gostaria de usar Surfar?"
+
+msgid "The wild {1}"
+msgstr "O {1} selvagem"
+
+msgid "The {1} can't be held."
+msgstr "{1} não pode ser segurado."
+
+msgid "The {1} card? Certainly.\nHow many would you like?"
+msgstr "The {1} card?  Certainly.\nHow many would you like?"
+
+msgid "The {1} card? How many would you like to sell?"
+msgstr "The {1} card?  How many would you like to sell?"
+
+msgid "The {1} card? Oh, no.\nI can't buy that."
+msgstr "The {1} card?  Oh, no.\nI can't buy that."
+
+msgid "The {1} has sprouted."
+msgstr "{1} brotou."
+
+msgid "The {1} only allows the use of {2}!"
+msgstr "{1} permite apenas o uso de {2}!"
+
+msgid "The {1} plant is growing bigger."
+msgstr "{1} está crescendo."
+
+msgid "The {1} strengthened {2}'s power!"
+msgstr "{1} fortificou o poder de {2}!"
+
+msgid "The {1} was planted in the soft, earthy soil."
+msgstr "{1} foi plantado no solo."
+
+msgid "The {1} was scattered on the soil."
+msgstr "{1} foi espalhado no solo."
+
+msgid "The {1} was taken and replaced with the {2}."
+msgstr "{1} retirado e trocado por {2}."
+
+msgid "The {1} weakened the damage to {2}!"
+msgstr "{1} enfraqueceu o dano para {2}!"
+
+msgid "The {2} raised {1}'s Attack!"
+msgstr "{2} aumentou o Ataque de {1}!"
+
+msgid "The {2} raised {1}'s Defense!"
+msgstr "{2} aumentou a Defesa de  {1}!"
+
+msgid "The {2} raised {1}'s Special Attack!"
+msgstr "{2} aumentou o Ataque Especial de {1}!"
+
+msgid "The {2} raised {1}'s Special Defense!"
+msgstr "{2} aumentou a Defesa Especial de {1}!"
+
+msgid "Their strength is no joke!"
+msgstr "Suas forças não são brincadeira !"
+
+msgid "There appears to be nothing here..."
+msgstr "Parece haver nada aqui..."
+
+msgid "There are no items."
+msgstr "Não há ítens."
+
+msgid "There are no phone numbers stored."
+msgstr "Não há números de telefone salvos ainda."
+
+msgid "There are {1} {2}!\nWant to pick them?"
+msgstr "Há {1} {2}!\nGostaria de colhê-las?"
+
+msgid "There is 1 {1}!\nWant to pick it?"
+msgstr "Há 1 {1}!\nGostaria de colhê-la?"
+
+msgid "There is a more recent update available."
+msgstr "Há uma atualização disponével."
+
+msgid "There is a total of #{@files.length} PNG(s) available for conversion. Would you like to begin the process?"
+msgstr "Tem um total de #{@files.length} PNG(s) prontos para conversão. Você gostaria de iniciar o processo?"
+
+msgid "There is already a saved file. Is it OK to overwrite it?"
+msgstr "Já existe um jogo salvo. Tudo bem Sobreescrevê-lo?"
+
+msgid "There is no Pokémon."
+msgstr "Não há Pokémon."
+
+msgid "There is no room left in the PC!"
+msgstr "Não há espaço livre no Computador!"
+
+msgid "There was no sound in the recording. Please ensure that a microphone is attached to the computer and is ready."
+msgstr "There was no sound in the recording.  Please ensure that a microphone is attached to the computer and is ready."
+
+msgid "There! All happy!"
+msgstr "Pronto!"
+
+msgid "There's a Pokemon that may open the door to its heart!"
+msgstr "Há um Pokémon que pode abrir a porta para seu coração!"
+
+msgid "There's no PP left for this move!"
+msgstr "Não há mais PP sobrando pare esse movimento!"
+
+msgid "There's no Pokémon here..."
+msgstr "Não háPokémon aqui..."
+
+msgid "There's no more room for Pokémon!"
+msgstr "Não há mais espaço para Pokémon!"
+
+msgid "There's no more room in the Bag."
+msgstr "Não há espaço na mochila."
+
+msgid "There's no room to store items."
+msgstr "Não há espaço para depositar."
+
+msgid "These are among the toughest of Tandor! The paragons of our region!"
+msgstr "Estão entre os mais fortes de tandor! Os ideiais de nossa região!"
+
+msgid "These trainers' skill in battle will determine that answer!"
+msgstr "A habilidade desses treinadores determinará a resposta!"
+
+msgid "Third move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Third move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "This Pokémon can't be chosen."
+msgstr "Esse Pokémon não pode ser escolhido."
+
+msgid "This Pokémon is holding an item. It can't hold mail."
+msgstr "This Pokémon is holding an item.  It can't hold mail."
+
+msgid "This is in use already."
+msgstr "Isso já está em uso."
+
+msgid "This isn't a fossil!"
+msgstr "Isso não é um fóssil!"
+
+msgid "This isn't over yet!"
+msgstr "Isso ainda não acabou!"
+
+msgid "This item can't be used on that Pokemon."
+msgstr "Esse item não pode ser usado nesse pokémon Pokemon."
+
+msgid "This item can't be used on that Pokémon."
+msgstr "Esse ítem não pode ser usado nesse Pokémon ."
+
+msgid "This means you've found all the Coins in this game, so the game is now over."
+msgstr "Isso significa que você achou todas as Moedas desse jogo, então ele acabou."
+
+msgid "This old, dead coral looks like it can be broken. Would you like to use Coral Break?"
+msgstr "Esse coral velho e morto parece ser quebrável. Você gostaria de usar Quebra Coral?"
+
+msgid "This rock appears breakable. Would you like to smash it?"
+msgstr "Essa rocha parece quebrável. Você gostaria de despedaçá-la?"
+
+msgid "This save file is corrupt or incompatible with this game."
+msgstr "Esse arquivo de jogo está corrompido ou incompatível com esse jogo."
+
+msgid "This save file is corrupt, but an automatic backup has been found and will be loaded instead."
+msgstr "O arquivo de jogo foi corrompido, mas um backup automático foi encontrado e ele será carregado no lugar."
+
+msgid "This trainer must have at least 1 Pokémon!"
+msgstr "Esse treinador deve ter pelo menos 1 Pokémon!"
+
+msgid "This {1} plant is blooming cutely!"
+msgstr "{1} está em um florescimento muito bonitinho!"
+
+msgid "This {1} plant is blooming prettily!"
+msgstr "{1} está em um florescimento lindamente!"
+
+msgid "This {1} plant is blooming very beautifully!"
+msgstr "{1} está em um florescimento muito bonito!"
+
+msgid "This {1} plant is in bloom!"
+msgstr "{1} está florecendo!"
+
+msgid "This {1} plant is in fabulous bloom!"
+msgstr "{1} está em um florescimento fabuloso"
+
+msgid "Thoroughly cunning."
+msgstr "Ardiloso."
+
+msgid "Threw away {1} {2}(s)."
+msgstr "Descartou {1} {2}(s)."
+
+msgid "Throw away items stored in the PC."
+msgstr "Descartar ítens guardados no PC."
+
+msgid "Thursday"
+msgstr "Quinta"
+
+msgid "Time:"
+msgstr "Tempo:"
+
+msgid "Time<r><c3={1:s}>{2:02d}:{3:02d}</c3><br>"
+msgstr "Tempo<r><c3={1:s}>{2:02d}:{3:02d}</c3><br>"
+
+msgid "Time<r>{1:02d}:{2:02d}<br>"
+msgstr "Tempo<r>{1:02d}:{2:02d}<br>"
+
+msgid "Timid"
+msgstr "Medrosa"
+
+msgid "To Next Lv."
+msgstr "Para o próximo Nv."
+
+msgid "To install the necessary fonts, copy the files in this game's Fonts folder to the Fonts folder in Control Panel."
+msgstr "Para instalar as fontes necessárias, copie os arquivos na pasta Fonts desse jogo para Fonts no Painel de Controle"
+
+msgid "To install the other fonts, copy the files in this game's Fonts folder to the Fonts folder in Control Panel."
+msgstr "Para instalar outras fontes, copie o arquivo na pasta Fonts para Fonts no Painel de Controle."
+
+msgid "Too bad...\nThe bag is full."
+msgstr "Que pena...\nA mochila está cheial."
+
+msgid "Too bad... The Bag is full..."
+msgstr "Uma pena, a Mochila está cheia..."
+
+msgid "Took the {1}."
+msgstr "Pegar {1}."
+
+msgid "Toss"
+msgstr "Descartar"
+
+msgid "Toss\nItem"
+msgstr "Descartar\nItem"
+
+msgid "Toss Item"
+msgstr "Descartar Item"
+
+msgid "Toss out how many {1}(s)?"
+msgstr "Descartar quantos {1}(s)?"
+
+msgid "Tough Ribbon"
+msgstr "Fita Durona"
+
+msgid "Tough Ribbon Great"
+msgstr "Fita Durona Ótima"
+
+msgid "Tough Ribbon Hyper"
+msgstr "Fita Hiper Durona"
+
+msgid "Tough Ribbon Master"
+msgstr "Fita Durona Maestral"
+
+msgid "Tough Ribbon Super"
+msgstr "Fita Super Durona"
+
+msgid "Tough Ribbon Ultra"
+msgstr "Fita Ultra Durona"
+
+msgid "Trainer name too long\n{1}"
+msgstr "Trainer name too long\n{1}"
+
+msgid "Trainer type does not exist ({1}, {2}, ID {3})"
+msgstr "O tipo de Treinador não existe ({1}, {2}, ID {3})"
+
+msgid "Treat this battle as a loss?"
+msgstr "Tratar essa batalha como uma derrota??"
+
+msgid "Treat this battle as a win?"
+msgstr "Tratar essa batalha como uma vitória?"
+
+msgid "Tuesday"
+msgstr "Terça"
+
+msgid "Turn Off"
+msgstr "Desligar"
+
+msgid "Turned over the {1} and received ${2}."
+msgstr "Entregou {1} e recebeu ${2}."
+
+msgid "Two trainer types ({1} and {2}) have the same ID ({3}), which is not allowed.\n{4}"
+msgstr "Two trainer types ({1} and {2}) have the same ID ({3}), which is not allowed.\n{4}"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "UPPER"
+msgstr "ALTO"
+
+msgid "Undefined Trainer constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nIn addition, the name must be defined\nin trainertypes.txt.\n{1}"
+msgstr "Undefined Trainer constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nIn addition, the name must be defined\nin trainertypes.txt.\n{1}"
+
+msgid "Undefined encounter type {1}, expected one of the following:\n{2}\n{3}"
+msgstr "Undefined encounter type {1}, expected one of the following:\n{2}\n{3}"
+
+msgid "Undefined item constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the item is defined in\nPBS/items.txt.\n{1}"
+msgstr "Undefined item constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the item is defined in\nPBS/items.txt.\n{1}"
+
+msgid "Undefined move constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nPBS/moves.txt.\n{1}"
+msgstr "Undefined move constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nPBS/moves.txt.\n{1}"
+
+msgid "Undefined nature constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nthe script section PBNatures.\n{1}"
+msgstr "Undefined nature constant name: %s\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nthe script section PBNatures.\n{1}"
+
+msgid "Undefined species constant name: [%s]\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nPBS/pokemon.txt.\n{1}"
+msgstr "Undefined species constant name: [%s]\nName must consist only of letters, numbers, and\nunderscores and can't begin with a number.\nMake sure the name is defined in\nPBS/pokemon.txt.\n{1}"
+
+msgid "Undefined value {1} (expected one of: {2})\n{3}"
+msgstr "Undefined value {1} (expected one of: {2})\n{3}"
+
+msgid "Undefined value {1} in {2}\n{3}"
+msgstr "Undefined value {1} in {2}\n{3}"
+
+msgid "Up next:\\wt[20] Round {1}\\wt[25]\n\\PN versus {2}!"
+msgstr "A seguir:\\wt[20] Rodada {1}\\wt[25]\n\\PN contra {2}!"
+
+msgid "Upon this consecrated ground, I shall invoke the blessings of the sea!"
+msgstr "Sobre esse solo sagrado eu invoco as bênçãos do mar!"
+
+msgid "Use"
+msgstr "Usar"
+
+msgid "Use next Pokémon?"
+msgstr "Usar o próximo pokémon??"
+
+msgid "Use on which Pokémon?"
+msgstr "Usar em qual pokemon Pokémon?"
+
+msgid "Use the patcher.exe in your game folder to check for patches!\\wtnp[40]"
+msgstr "Use oe patcher.exe na sua pasta de jogo para procurar por atualizações!\\wtnp[40]"
+
+msgid "Used to confirm a choice, check things, and talk to people."
+msgstr "Usado para confirmar uma escolha, checar coisas e falar com pessoas."
+
+msgid "Used to exit, cancel a choice or mode, and open the pause menu."
+msgstr "Usado para sair, cancelar uma escolha ou modo e para abrir o menu de pausa."
+
+msgid "Using item..."
+msgstr "Usando item..."
+
+msgid "Using its {1}, the Attack of {2} rose!"
+msgstr "Usando {1}, o Ataque de {2} aumentou!"
+
+msgid "Using its {1}, the Defense of {2} rose!"
+msgstr "Usando {1}, a Defesa de {2} aumentou!"
+
+msgid "Using its {1}, the Special Attack of {2} rose!"
+msgstr "Usando {1}, o Ataque Especial de {2} aumentou!"
+
+msgid "Using its {1}, the Special Defense of {2} rose!"
+msgstr "Usando {1}, a Defesa Especial de {2} aumentou!"
+
+msgid "Using its {1}, the Speed of {2} rose!"
+msgstr "Usando {1}, a Velocidade de {2} aumentou!"
+
+msgid "Using {1}, the Attack of {2} rose sharply!"
+msgstr "Usando {1}, o Ataque de {2} aumentou acentuadamente!"
+
+msgid "Using {1}, the Defense of {2} rose sharply!"
+msgstr "Usando {1}, a Defesa de {2} aumentou acentuadamente!"
+
+msgid "Using {1}, the Special Attack of {2} rose sharply!"
+msgstr "Usando {1}, o Ataque Especial de {2} aumentou acentuadamente!"
+
+msgid "Using {1}, the Special Defense of {2} rose sharply!"
+msgstr "Usando {1}, a Defesa Especial de {2} aumentou acentuadamente!"
+
+msgid "Using {1}, the Speed of {2} rose sharply!"
+msgstr "Usando {1}, a Velocidade de {2} aumentou acentuadamente!"
+
+msgid "Version is up-to-date, no update needed! \\wtnp[30]"
+msgstr "Versão está atualizada, não há necessidade de atualizar! \\wtnp[30]"
+
+msgid "Very finicky."
+msgstr "Muito mimado."
+
+msgid "Victory Ribbon"
+msgstr "Fia da Vitória"
+
+msgid "Volcano"
+msgstr "Vulcão"
+
+msgid "WITHDRAW"
+msgstr "RETIRAR"
+
+msgid "WITHDRAW POKéMON"
+msgstr "RETIRAR POKÉMON"
+
+msgid "WT"
+msgstr "Altura"
+
+msgid "Wacan Berries"
+msgstr "Frutas Wacan"
+
+msgid "Waiting for a rematch<r>{1}"
+msgstr "Esperando por uma revanche<r>{1}"
+
+msgid "Wallpaper"
+msgstr "Papel de parede"
+
+msgid "Want to escape from here and return to {1}?"
+msgstr "Gostaria de escapar daqui eretornar para {1}?"
+
+msgid "Want to plant a Berry?"
+msgstr "Gostaria de plantar uma Fruta?"
+
+msgid "Want to return to the healing spot used last in {1}?"
+msgstr "Gostaria de retornar ao Pokécenter utilizado mais recentemente, em {1}?"
+
+msgid "Want to sprinkle some water with the {1}?"
+msgstr "Gostaria de molhar {1}?"
+
+msgid "Warning: Map {1}, as mentioned in the map\nconnection data, was not found.\n{2}"
+msgstr "Warning: Map {1}, as mentioned in the map\nconnection data, was not found.\n{2}"
+
+msgid "Warning: Physical and special moves can't have a base damage of 0, changing to a Status move\n{1}"
+msgstr "Warning: Physical and special moves can't have a base damage of 0, changing to a Status move\n{1}"
+
+msgid "Warning: Randomizer Mode greatly affects the balance of the game."
+msgstr "Alerta: O Modo Randomizer afeta o balanceamento do jogo em uma escala imensa."
+
+msgid "Water"
+msgstr "Água"
+
+msgid "Watmel Berries"
+msgstr "Frutas Watmel"
+
+msgid "We have some of Tandor's best and brightest here to dazzle you with their spectacular battling skills!"
+msgstr "Temos aqui alguns dos melhores e mais brilhantes de tantor para impressioná-los com suas espetaculares habilidades de batalha!"
+
+msgid "We tried our hardest in this battle, and that's what counts."
+msgstr "Nós tentamos o nosso melhor nessa batalha, e é isso que conta."
+
+msgid "We're back with Round 3, the quarterfinals!"
+msgstr "Estamos de volta com a terceira rodada, as quartas de final!"
+
+msgid "Wednesday"
+msgstr "Quarta"
+
+msgid "Welcome to the Hall of Fame!"
+msgstr "Bem vindo ao Hall da Fama!"
+
+msgid "Welcome to the first round of the\nPokémon League Tournament!"
+msgstr "Bem vindos à primeira rodada do\nTorneio da Liga Pokémon!"
+
+msgid "Welcome!\nHow may I serve you?"
+msgstr "Bem vindo(a)!\nO que gostaria?"
+
+msgid "Well fought, indeed! You deserved this victory."
+msgstr "Bem lutado,d e fato!. Você mereceu a vitória."
+
+msgid "Well, it has been a while, hasn't it?\nWhen I battled you, you were just a naive child, fumbling around in the dark.\nNow, you face me in the arena with confidence!\nYour fighting spirit is like a bright, shining light!\nI can tell you are no longer afraid.\nGyahahaha!! That's what I like to see!\nShow me your fearlessness in battle!"
+msgstr "Bem, faz um tempo, né?\nQuando eu batalhei com você, você era apenas uma criança ingênua e desastrada na escuridão.\nAgora, você me encara na arena com confiança!\nSeu espírito de luta é como uma luz forte e brilhante!\nPosso dizer que você não está mais assustado.\nGyahahaha!! E é isso que eu gosto de ver\nDeixe-me ver sua falta de medo em batalha!"
+
+msgid "Well, let's not delay... on with the match!"
+msgstr "Então, sem amis delongas.. à partida"
+
+msgid "Well, you certainly know what you want out of life.\\^"
+msgstr "Bem, você certamente sabe o que você quer da vida\\^"
+
+msgid "Wepear Berries"
+msgstr "Frutas Wepear"
+
+msgid "West side of first map must connect with east side of second map\n{1}"
+msgstr "West side of first map must connect with east side of second map\n{1}"
+
+msgid "What a match!"
+msgstr "Que partida!"
+
+msgid "What could be in store for us this round?"
+msgstr "O que nos reserva para essa rodada?"
+
+msgid "What do you want to do?"
+msgstr "O que você quer fazer?"
+
+msgid "What shall I do with this {1}?"
+msgstr "O que eu deveria fazer com esse{1}?"
+
+msgid "What will\n{1} do?"
+msgstr "O que\n{1} fará?"
+
+msgid "What will hatch from this? It doesn't seem close to hatching."
+msgstr "O que será que vai nascer? Não parece perto de chocar."
+
+msgid "What will {1} do?"
+msgstr "O que {1} fará?"
+
+msgid "What?\n{1} is evolving!"
+msgstr "O quê?\n{1} está evoluindo!"
+
+msgid "When the flame touched the powder on the Pokémon, it exploded!"
+msgstr "Quando a chama tocou o pó no Pokémon, houve uma explosão!"
+
+msgid "Which PC should be accessed?"
+msgstr "Qual PC deve ser acessado?"
+
+msgid "Which move should be forgotten?"
+msgstr "Qual movimento deve ser esquecido?"
+
+msgid "Which one will you take?"
+msgstr "Qual você pegará?"
+
+msgid "Which report should I read?"
+msgstr "Qual Relatório eu deveria ler?"
+
+msgid "White"
+msgstr "Branco"
+
+msgid "White Tiles: {1}"
+msgstr "Azulejos Brancos{1}"
+
+msgid "Who are you?\\^"
+msgstr "Quem é você?\\^"
+
+msgid "Who will it be?"
+msgstr "Quem será?"
+
+msgid "Wide Guard protected your team!"
+msgstr "Defesa Aberta protegeu seu time!!"
+
+msgid "Wide Guard protected {1}!"
+msgstr "Defesa Aberta {1}!"
+
+msgid "Wiki Berries"
+msgstr "Frutas Wiki"
+
+msgid "Wild Pokémon will be lured."
+msgstr "Pokémons selvagens serão atraídos."
+
+msgid "Wild Pokémon will be repelled."
+msgstr "Pokémons selvagens serão repelidos."
+
+msgid "Wild battles with more than two Pokémon are not allowed."
+msgstr "Batalhas contra pokémons selvagens não são permitidas quando há mais de 2 Pokémons."
+
+msgid "Wild {1} and\n{2} appeared!"
+msgstr "{1} Selvagem e\n{2} Selvagem apareceram!"
+
+msgid "Wild {1} appeared!"
+msgstr "Um {1} Selvagem apareceu!"
+
+msgid "Will you switch your Pokémon?"
+msgstr "Você irá substituir seu pokémon?"
+
+msgid "Winning Ribbon"
+msgstr "Fita de Vencedor"
+
+msgid "Wishing Ribbon"
+msgstr "Fita do Desejo"
+
+msgid "Withdraw"
+msgstr "Retirar"
+
+msgid "Withdraw\nItem"
+msgstr "Retirar\nÍtens"
+
+msgid "Withdraw Item"
+msgstr "Retirar Ítem"
+
+msgid "Withdraw Pokémon"
+msgstr "Retirar Pokémon"
+
+msgid "Withdrew {1} {2}(s)."
+msgstr "retirar {1} {2}(s)."
+
+msgid "Wonder Room wore off, and the Defense and Sp. Def stats returned to normal!"
+msgstr "Sala maravilhosa desapareceu, então Defesa e Defesa Especial voltaram ao normal"
+
+msgid "Woooow! Like, that was a totally sweet battle!~ I guess this just isn't my year to win. But now, you'd better win in my stead, okay?~"
+msgstr "Uaaaaau! Tipo, que batalha incrível!~ Acho que esse não era meu ano. Mas agora, é melhor que você vença por mim, entendeu?~"
+
+msgid "World Ability Ribbon"
+msgstr "Fita de Habilidade Mundial"
+
+msgid "World Champion Ribbon"
+msgstr "Fita do Campeão Mundial"
+
+msgid "World Ribbon"
+msgstr "Fita Mundial"
+
+msgid "Would you like to forfeit the match and quit now?"
+msgstr "Você gostaria de desistir da batalha e sair agora?"
+
+msgid "Would you like to give a nickname to {1}?"
+msgstr "Você quer dar um apelido a {1}?"
+
+msgid "Would you like to move it?"
+msgstr "Você gostaria de movê-la?"
+
+msgid "Would you like to nickname the newly hatched {1}?"
+msgstr "Você gostaria de dar um apelido ao recém nascido {1}?"
+
+msgid "Would you like to restart the game and apply the changes?"
+msgstr "Você gostaria de reiniciar o jogo e aplicar as mudanças?"
+
+msgid "Would you like to save the game?"
+msgstr "Você gostaria de salvar o jogo?"
+
+msgid "Would you like to switch the two items?"
+msgstr "Você gostaria de trocar os dois itens?"
+
+msgid "Wow! That battle was quite a workout, huh?\nI think it's safe to say that you're the stronger among us.\nI'll be cheering you on from here on out!"
+msgstr "Uau! Essa batalha foi um exercício, huh?\nAcho que é seguro dizer que você é o mais forte de nós.\nEstarei torcendo por você!"
+
+msgid "Wow, you look like a really strong trainer...\nUm. I'm Angelica, and I train Fairy types.\nWe're cute, but don't let it fool you:\nwe're really strong too.\nAfter all, Fairies can stand up to the power of dragons. So we aren't afraid of any tough-looking trainers, either. If you aren't acquainted with the power of fairies, then, you'll know soon enough!"
+msgstr "Uau, você parece ser um treinador bem forte...\nUm. Eu sou Angélica, e eu treino tipo Fada.\nNós somos fofos, mas não se engane:\nNós também somos fortes.\nAté porque, Fadas podem aguentar golpes de Dragões. Então não temos medo de treinadores que parecem ser fortes. Se você não está acostumado com o poder das Fadas, estará em breve!"
+
+msgid "Wrong syntax for densities in encounters.txt; got \"{1}\"\n{2}"
+msgstr "Wrong syntax for densities in encounters.txt; got \"{1}\"\n{2}"
+
+msgid "Yache Berries"
+msgstr "Frutas Yache"
+
+msgid "Yellow"
+msgstr "Amarelo"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "You are banned from using online features! If you think that this is a mistake, please ask for more info on the Discord server or on Reddit."
+msgstr "Você foi banido das funcionalidades online! Se você acha que isso é um erro, por favor pergunte por mais informações no servidor do Discord ou no Reddit."
+
+msgid "You can catch shiny Pokemon even if they aren't your first encounter."
+msgstr "Você pode capturar Pokémons Shiny mesmo que não seja seu primeiro encontro."
+
+msgid "You can choose from three different game screen sizes."
+msgstr "Você pode escolher entre 3 tamanhos de tela."
+
+msgid "You can choose from three different text-scrolling speeds."
+msgstr "Você pode escolher entre 3 velocidades de texto"
+
+msgid "You can choose if the game should remember the last save you loaded."
+msgstr "Escolha se o jogo começa no último save carregado."
+
+msgid "You can choose the style of the game's font."
+msgstr "Você pode escolher o estilo de fonte do jogo."
+
+msgid "You can choose to switch Pokémon when an opponent's Pokémon faints."
+msgstr "Você tem a opção de trocar Pokémon ao derrotar outro."
+
+msgid "You can choose whether to view move animations."
+msgstr "Você pode escolher quando quer ver animações de movimentos."
+
+msgid "You can receive even more Coins in the next game!"
+msgstr "Você pode receber ainda mais Moedas no próximo jogo!"
+
+msgid "You can set the game's SFX volume."
+msgstr "Você pode definir o volume dos efeitos de som do jogo."
+
+msgid "You can set the game's frames per second."
+msgstr "Você pode definir os frames pro segundo do jogo."
+
+msgid "You can set the game's language."
+msgstr "Você pode escolher a língua do jogo"
+
+msgid "You can set the game's music volume."
+msgstr "Você pode definir o volume da música do jogo."
+
+msgid "You can use the patcher.exe in your game folder to update! \\wtnp[40]"
+msgstr "Você pode usar patcher.exe na sua pasta de jogo para atualizar! \\wtnp[40]"
+
+msgid "You can't dismount your Bike here."
+msgstr "Você não pode descer da Bicicleta aqui."
+
+msgid "You can't play unless you have a Coin Case."
+msgstr "Você não pode jogar a não ser que tenha um estojo de Moedas."
+
+msgid "You can't release an Egg."
+msgstr "Você não pode soltar um ovo."
+
+msgid "You can't switch {1}'s Pokémon with one of yours!"
+msgstr "Você não pode substituir um Pokémon de {1} com um dos seus!"
+
+msgid "You cannot trade a fainted pokemon!"
+msgstr "Você não pode trocar um Pokémon desmaiado!"
+
+msgid "You cannot trade this Pokemon!"
+msgstr "Você não pode trocar esse Pokémon!"
+
+msgid "You don't have any Coins to play!"
+msgstr "Você não tem moedas para jogar!!"
+
+msgid "You don't have any other save files"
+msgstr "Você não tem outros arquivos salvos"
+
+msgid "You don't have enough berries."
+msgstr "Você não tem Frutas o suficiente."
+
+msgid "You don't have enough money."
+msgstr "Você não tem dinheiro suficiente."
+
+msgid "You have a burning spirit within you that never ceases!\\^"
+msgstr "Há um espírito que queima sem parar dentro de você\\^"
+
+msgid "You have a great future ahead, but what about now?"
+msgstr "Você tem um grande futuro a frente, mas e sobre agora?"
+
+msgid "You have no Pokemon that can be purified."
+msgstr "Você não tem Pokémon que precise ser purificado."
+
+msgid "You have no more room in the Bag."
+msgstr "Você não tem mais espaço na Mochila."
+
+msgid "You have no usable items in this pocket."
+msgstr "Você não tem itens usáveis em sua mochila."
+
+msgid "You haven't found any Coins! Are you sure you want to quit?"
+msgstr "Você não achou nenhuma Moeda! Tem certeza de que gostaria de sair?"
+
+msgid "You know that the best things in life come to those who wait.\\^"
+msgstr "Você sabe que as melhores coisas na vida vem para aqueles que esperam.\\^"
+
+msgid "You must choose a move!"
+msgstr "Você tem que escolher um movimento!"
+
+msgid "You must enable Nuzlocke to select this."
+msgstr "Você deve habilitar Nuzlocke para selecionar essa opção."
+
+msgid "You need an internet connection to use the GTS, WT and VT"
+msgstr "Você precisa de uma conexão de internet para usar GTS, WT and VT"
+
+msgid "You picked the {1} {2}.\\wtnp[30]"
+msgstr "Você colheu {1} {2}.\\wtnp[30]"
+
+msgid "You picked the {1}.\\wtnp[30]"
+msgstr "Você colheu {1}.\\wtnp[30]"
+
+msgid "You prefer to adapt to overcome challenges in your path.\\^"
+msgstr "Você prefere se adaptar para superar desafios em seu caminho.\\^"
+
+msgid "You prefer to overwhelm your opponents with sheer force and firepower.\\^"
+msgstr "Você prefere superar seus oponentes na base da força bruta e poder de fogo.\\^"
+
+msgid "You seem to be a Trainer who likes to play it safe.\\^"
+msgstr "Você parece ser um treinador que só vai na boa.\\^"
+
+msgid "You seem to be a trainer that is capable of many different strategies.\\^"
+msgstr "Você parece ser um treinador capaz de várias estratégias.\\^"
+
+msgid "You seem to be a trainer who won't hesitate to go for what you want.\\^"
+msgstr "Você parece ser um treinador que não hesita em agir pelo que você quer.\\^"
+
+msgid "You used your last {1}."
+msgstr "Você usou seu último {1}."
+
+msgid "You're already surfing."
+msgstr "Você já está surfando."
+
+msgid "You're holding a Pokémon!"
+msgstr "Você está segurando um  Pokémon!"
+
+msgid "You're impulsive, impatient, and care mostly about your own desires.\\^"
+msgstr "Você é impulsivo, impaciente e se importa mais com seus próprios desejos.\\^"
+
+msgid "You've found all of the hidden x2 and x3 cards."
+msgstr "Você achou todos os x2 and x3."
+
+msgid "You've got 99,999 Coins."
+msgstr "Você tem 99,999 Moedas."
+
+msgid "You've run out of Coins.\nGame over!"
+msgstr "Você não tem mais moedas.\nFim de jogo!"
+
+msgid "Your Coin Case has been filled."
+msgstr "Seu estojo de moedas foi preenchido."
+
+msgid "Your Coin Case is full!"
+msgstr "Seu estojo de moedas está cheio"
+
+msgid "Your calm, rational approach will come to aid you in the future.\\^"
+msgstr "Seu pensamento calmo e racional irá te ajudar no futuro.\\^"
+
+msgid "Your coins"
+msgstr "Suas moedas"
+
+msgid "Your foe's weak!\nGet 'em, {1}!"
+msgstr "Seu adversário está fraco!<n>>Pegue-o, {1}!"
+
+msgid "Your game is out-of-date!\nUpdate required. \\wtnp[30]"
+msgstr "Seu jogo está desatualizado! \nAtualização requerida. \\wtnp[30]"
+
+msgid "Your journey --- your story --- is about to unfold."
+msgstr "Sua jornada --- sua história --- está para se desenrolar."
+
+msgid "Your name is {1}?"
+msgstr "Seu nome é {1}?"
+
+msgid "Your name?"
+msgstr "Seu nome?"
+
+msgid "Your philosophy is probably to just \"go with the flow\".\\^"
+msgstr "Sua filosofia é provavelmente apenas “siga a corrente”\\^"
+
+msgid "Your starter as well as all wild and trainer Pokémon will be randomized."
+msgstr "Seu Pokémon inicial, os Pokémon selvagens e até os treinadores serão escolhidos aleatoriamente."
+
+msgid "Your team became cloaked in a mystical veil!"
+msgstr "Seu time está envolto em um véu misterioso!"
+
+msgid "Your team became shrouded in mist!"
+msgstr "Seu time ficou envolto em névoa!"
+
+msgid "Your team is no longer protected by Safeguard!"
+msgstr "Seu time não está mais protegido por Resguarda!"
+
+msgid "Your team is no longer protected by mist!"
+msgstr "Seu time não está mais protegido pela névoa!"
+
+msgid "Your team is too nervous to eat Berries!"
+msgstr "Seu time está muito nervoso para comer Frutas!"
+
+msgid "Your team's Light Screen faded!"
+msgstr "A Tela de Reflexo de seu time acabou!"
+
+msgid "Your team's Light Screen wore off!"
+msgstr "A Tela de Luz de seu time se desgastou!"
+
+msgid "Your team's Lucky Chant wore off!"
+msgstr "O Mantra de Sorte de seu time se terminou!"
+
+msgid "Your team's Mist faded!"
+msgstr "A Névoa de seu time acabou!"
+
+msgid "Your team's Reflect faded!"
+msgstr "O Reflexo de seu time acabou!"
+
+msgid "Your team's Reflect wore off!"
+msgstr "O Reflexo de seu time se desgastou!"
+
+msgid "Your team's Tailwind petered out!"
+msgstr "Cauda de vento de seu time terminou!"
+
+msgid "\\PN, are you ready?"
+msgstr "\\PN, você está pronto?"
+
+msgid "\\c[7]ENGAGEMENT FAILED.\\wt[16]\nA POWER CELL IS NEEDED."
+msgstr "\\c[7]OCORREU UMA FALHA.\\wt[16]\nUMA CÉLULA DE ENERGIA É NECESSÁRIA."
+
+msgid "\\c[7]ENGAGEMENT SUCCESSFUL."
+msgstr "\\c[7]INICIADO COM SUCESSO."
+
+msgid "\\c[7]OBSTACLE DETECTED.\\wt[20]\nENGAGING STRENGTH PROTOCOL\\wt[8].\\wt[8].\\wt[8].\\wt[8]"
+msgstr "\\c[7]OBSTÁCULO DETECTADO.\\wt[20]\nINICIANDO PROTOCOLO DE SUPER FORÇA.\\wt[8].\\wt[8].\\wt[8].\\wt[8]"
+
+msgid "\\me[Jingle - HMTM]Obtained \\c[1]{1}\\c[0]!\nIt contained \\c[1]{2}\\c[0].\\wtnp[55]"
+msgstr "\\me[Jingle - HMTM]Obteve \\c[1]{1}\\c[0]!\nContém \\c[1]{2}\\c[0].\\wtnp[55]"
+
+msgid "\\me[Jingle - HMTM]{1} found \\c[1]{2}\\c[0]!\nIt contained \\c[1]{3}\\c[0].\\wtnp[55]"
+msgstr "\\me[Jingle - HMTM]{1} encontrou \\c[1]{2}\\c[0]!\ncontém \\c[1]{3}\\c[0].\\wtnp[55]"
+
+msgid "\\me[Jingle - Regular Item]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]Obteve \\c[1]{1}\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]Obtained \\c[1]{1}s\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]Obteve \\c[1]{1}s\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]Obtained some \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]Obteve \\c[1]{1}\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found one \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1} encontrou \\c[1]{2}\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found some \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1} encontrou \\c[1]{2}\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}encontrou {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1} encontrou {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Jinlge - KeyItem]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jinlge - KeyItem]Obteve \\c[1]{1}\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Jinlge - KeyItem]Randomizer Mode has been unlocked!\\wt[30]\nIt will be available when starting a new Custom Game."
+msgstr "\\me[Jinlge - KeyItem]Modo Randomizer foi desbloqueado!\\wt[30]\nEle estará disponível ao criar um novo jogo Customizado."
+
+msgid "\\me[Jinlge - KeyItem]\\sign[sign1]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jinlge - KeyItem]\\sign[sign1]Obteve \\c[1]{1}\\c[0]!\\wtnp[30]"
+
+msgid "\\me[Voltorb Flip Game Over]Oh no! You get 0 Coins!\\wtnp[50]"
+msgstr "\\me[Voltorb Flip Game Over]Oh não! Você conseguiu 0 Moedas!\\wtnp[50]"
+
+msgid "\\me[Voltorb Flip Win]Board clear!\\wtnp[40]"
+msgstr "\\me[Voltorb Flip Win]Jogo limpor!\\wtnp[40]"
+
+msgid "\\se[Voltorb Flip Level Dropped]Dropped to Game Lv. {1}!"
+msgstr "\\se[Voltorb Flip Level Dropped]Caiu para o nível {1}!"
+
+msgid "\\se[]Congratulations! Your {1} evolved into {2}!\\wt[80]"
+msgstr "\\se[]parabéns! {1} evoluiu para {2}!\\wt[80]"
+
+msgid "\\se[]Save failed.\\wtnp[30]"
+msgstr "\\se[]ocorreu uma falha ao salvar.\\wtnp[30]"
+
+msgid "\\se[]The game was saved.\\se[save]\\wtnp[30]"
+msgstr "\\se[]O jogo foi salvo\\se[save]\\wtnp[30]"
+
+msgid "\\se[]What?\n{1} is evolving!\\^"
+msgstr "\\se[]O quê?\n{1} está evoluindo!\\^"
+
+msgid "\\se[]{1} hatched from the Egg!\\wt[80]"
+msgstr "\\se[]{1} nasceu do Ovo!\\wt[80]"
+
+msgid "\\se[]{1} learned {2}!\\se[itemlevel]"
+msgstr "\\se[]{1} aprendeu {2}!\\se[itemlevel]"
+
+msgid "\\se[]{1} saved the game.\\se[save]\\wtnp[30]"
+msgstr "\\se[]{1} salvou o jogo.\\se[save]\\wtnp[30]"
+
+msgid "\\se[accesspc]Accessed the Hall of Fame."
+msgstr "\\se[accesspc]Acessou o Hall da Fame."
+
+msgid "\\se[accesspc]Accessed {1}'s PC."
+msgstr "\\se[accesspc]Accessou o PC de {1}."
+
+msgid "\\se[accesspc]Booted up a TM."
+msgstr "\\se[accesspc]Escolheu um TM."
+
+msgid "\\se[accesspc]Booted up an HM."
+msgstr "\\se[accesspc]Escolheu um HM."
+
+msgid "\\se[accesspc]The Pokémon Storage System was opened."
+msgstr "\\se[accesspc]O Sistema de depósito Pokémon foi aberto"
+
+msgid "\\se[computeropen]{1} booted up the PC."
+msgstr "\\se[computeropen]{1} ligou o PC."
+
+msgid "\\se[itemlevel]{1} received \\c[1]{2}\\c[0]!\\nIt contained \\c[1]{3}\\c[0].\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} recebeu \\c[1]{2}\\c[0]!\\nContém \\c[1]{3}\\c[0].\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received a \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} recebeu \\c[1]{2}\\c[0]!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received an \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} recebeu \\c[1]{2}\\c[0]!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received some \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} recebeu \\c[1]{2}\\c[0]!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} recebeu {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} recebeu {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]After the unfortunate defeat, {1} scurried home."
+msgstr "\\w[]\\wm\\c[8]\\l[3]Após uma infortuna derrota , {1} correu para casa."
+
+msgid "\\w[]\\wm\\c[8]\\l[3]After the unfortunate defeat, {1} scurried to a Pokémon Center."
+msgstr "\\w[]\\wm\\c[8]\\l[3]Após a infortuna derrota, {1} se apressou para ir a um Centro Pokémon."
+
+msgid "\\w[]\\wm\\c[8]\\l[3]{1} scurried home, protecting the exhausted and fainted Pokémon from further harm."
+msgstr "\\w[]\\wm\\c[8]\\l[3]{1} correu para casa, protegendo seus Pokémons desmaiados de qualquer perigo"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]{1} scurried to a Pokémon Center, protecting the exhausted and fainted Pokémon from further harm."
+msgstr "\\w[]\\wm\\c[8]\\l[3]{1} Se apressou para um Centro p Pokémon, protegendo seus pokémons desmaiados de qualquer perigo"
+
+msgid "accuracy"
+msgstr "Precisão"
+
+msgid "an egg"
+msgstr "Um ovo"
+
+msgid "egg"
+msgstr "ovo"
+
+msgid "evasiveness"
+msgstr "Evasão"
+
+msgid "female"
+msgstr "fêmea"
+
+msgid "lower"
+msgstr "baixo"
+
+msgid "male"
+msgstr "macho"
+
+msgid "other"
+msgstr "outro"
+
+msgid "the ally {1}"
+msgstr "o {1} aliado"
+
+msgid "the egg"
+msgstr "O ovo"
+
+msgid "the foe {1}"
+msgstr "o oponente {1}"
+
+msgid "the opposing {1}"
+msgstr "o {1} adversário"
+
+msgid "the wild {1}"
+msgstr "o {1} selvagem"
+
+msgid "their egg"
+msgstr "O ovo dele(a)"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}"
+msgstr "{1:s}\nID: {2:05d} OT: {3:s}"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}"
+msgstr "{1:s}\nID: {2:05d} OT: {3:s}"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[0]"
+msgstr "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[0]"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[100]"
+msgstr "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[100]"
+
+msgid "{1:s}: Search Mode"
+msgstr "{1:s}: Modo de Busca"
+
+msgid "{1:s}<r>POWER/{2:s}\nPP/{3:d}<r>ACCURACY/{4:s}"
+msgstr " {1:s}<r>PODER/{2:s}\n PP/{3:d}<r>PRECISÃO/{4:s}"
+
+msgid "{1}\nwould like to battle!"
+msgstr "{1}\ngostaria de batalhar!"
+
+msgid "{1}\n{2}"
+msgstr "{1}\n{2}"
+
+msgid "{1} Female"
+msgstr "{1} Fêmea"
+
+msgid "{1} Female Shiny"
+msgstr "{1} Fêmea Shiny"
+
+msgid "{1} Lv{2} {3}"
+msgstr "{1}  Lv{2}  {3}"
+
+msgid "{1} Lv{2} {3}/{4}"
+msgstr "{1}  Lv{2}  {3}/{4}"
+
+msgid "{1} Male"
+msgstr "{1} Macho"
+
+msgid "{1} Male Shiny"
+msgstr "{1} Macho Shiny"
+
+msgid "{1} absorbed nutrients with its roots!"
+msgstr "{1} absorveu nutrientes com suas raízes!"
+
+msgid "{1} acquired {2}!"
+msgstr "{1} adquiriu {2}!"
+
+msgid "{1} adores you!\nThe base Attack fell!"
+msgstr "{1} adora você!\nO Ataque base caiu!"
+
+msgid "{1} adores you!\nThe base Defense fell!"
+msgstr "{1} adora você!\nA Defesa base caiu!"
+
+msgid "{1} adores you!\nThe base HP fell!"
+msgstr "{1} adora você!\nOs PV base cairam!"
+
+msgid "{1} adores you!\nThe base Special Attack fell!"
+msgstr "{1} adora você!\nO Ataque Especial base caiu!"
+
+msgid "{1} adores you!\nThe base Special Defense fell!"
+msgstr "{1} adora você!\nA Defesa Especial base caiu!"
+
+msgid "{1} adores you!\nThe base Speed fell!"
+msgstr "{1} adora você!\nA Velocidade base caiu!"
+
+msgid "{1} already has a burn."
+msgstr "{1} já possui uma queimadura."
+
+msgid "{1} already has a substitute!"
+msgstr "{1} já possui um Substituto!"
+
+msgid "{1} already knows\n{2}."
+msgstr "{1} já sabe\n{2}."
+
+msgid "{1} anchored itself with its roots!"
+msgstr "{1} se ancorou com suas raízes!"
+
+msgid "{1} anchored itself with {2}!"
+msgstr "{1} se ancorou com {2}!"
+
+msgid "{1} anchored itself!"
+msgstr "{1} se ancorou!"
+
+msgid "{1} and {2} are attacking!"
+msgstr "{1} e {2} estão atacando!"
+
+msgid "{1} and {2} want to battle!"
+msgstr "{1} e {2} que!"
+
+msgid "{1} appears incapable of using its power!"
+msgstr "{1} parece ser incapaz de usar seu poder"
+
+msgid "{1} avoided damage with Wonder Guard!"
+msgstr "{1} esquivou dano com Guarda Mística!"
+
+msgid "{1} avoided the attack!"
+msgstr "{1} esquivou o ataque!"
+
+msgid "{1} avoids attacks by its ally Pokémon!"
+msgstr "{1} evita ataques de seus aliados!"
+
+msgid "{1} became cloaked in a freezing light!"
+msgstr "{1} ficou encoberto por uma luz congelanre"
+
+msgid "{1} became cloaked in freezing air!"
+msgstr "{1}  ficou encoberto por um ar congelanre!"
+
+msgid "{1} became cloaked in mystical moonlight!"
+msgstr "{1} se envolveu em uma luz lunar mística!"
+
+msgid "{1} became confused due to fatigue!"
+msgstr "{1} ficou confuso devido a fadiga!"
+
+msgid "{1} became confused!"
+msgstr "{1} ficou confuso!"
+
+msgid "{1} became healthy!"
+msgstr "{1} ficou saudável!"
+
+msgid "{1} became healthy."
+msgstr "{1} ficou saudável."
+
+msgid "{1} became nimble!"
+msgstr "{1} ficou mais leve!"
+
+msgid "{1} became the center of attention!"
+msgstr "{1}se tornou o centro das atenções!"
+
+msgid "{1} became trapped by Sand Tomb!"
+msgstr "{1} ficou preso pela Tumba de Pedra!"
+
+msgid "{1} became trapped by swirling magma!"
+msgstr "{1} ficou preso pelo magma!"
+
+msgid "{1} began charging power!"
+msgstr "{1} começou a acumular energia!"
+
+msgid "{1} began having a nightmare!"
+msgstr "{1} começou a ter pesadelos!"
+
+msgid "{1} bids farewell to {2}."
+msgstr "{1} se despede de {2}."
+
+msgid "{1} blacked out!"
+msgstr "{1} desmaiou!"
+
+msgid "{1} bounced the {2} back!"
+msgstr "{1} ricocheteou {2}!"
+
+msgid "{1} braced itself!"
+msgstr "{1} se preparou!"
+
+msgid "{1} breaks the mold!"
+msgstr "{1} quebrou o molde!"
+
+msgid "{1} burrowed its way under the ground!"
+msgstr "{1} se enterrou no solo!"
+
+msgid "{1} called {2}!"
+msgstr "{1} chamou {2}!"
+
+msgid "{1} calmed down."
+msgstr "{1} se acalmou."
+
+msgid "{1} came to its senses from the Trainer's call!"
+msgstr "{1} recuperou seus sentidos pelo chamado de seu treinador!"
+
+msgid "{1} can now be purified!"
+msgstr "{1} pode ser purificado!"
+
+msgid "{1} can use items again!"
+msgstr "{1} pode usar ítens novamente!"
+
+msgid "{1} can't be learned."
+msgstr "{1}não pode ser aprendido."
+
+msgid "{1} can't be switched out!"
+msgstr "{1} não pode ser trocado!"
+
+msgid "{1} can't be taught to an Egg."
+msgstr "{1} não pode ser ensinado a um Ovo."
+
+msgid "{1} can't be taught to this Pokémon."
+msgstr "{1} não pode ser ensinado a esse Pokémon."
+
+msgid "{1} can't be used in a sky battle!"
+msgstr "{1} não pode ser utilizado em uma batalha aérea!"
+
+msgid "{1} can't escape now!"
+msgstr "{1} não pode mais escapar!"
+
+msgid "{1} can't fight in a sky battle!"
+msgstr "{1} não pode entrar em uma batalha aérea!"
+
+msgid "{1} can't get it going!"
+msgstr "{1} não consegue continuar!"
+
+msgid "{1} can't move!"
+msgstr "{1} não pode se mover!"
+
+msgid "{1} can't stockpile any more!"
+msgstr "{1} não pode acumular mais!"
+
+msgid "{1} can't use items anymore!"
+msgstr "{1} não pode mais usar itens!"
+
+msgid "{1} can't use the same move twice in a row due to the torment!"
+msgstr "{1} não pode usar o mesmo movimento de forma seguida por causa do tormento!"
+
+msgid "{1} can't use the sealed {2}!"
+msgstr "{1} não pdoe usar o selado {2}!"
+
+msgid "{1} can't use {2} after the taunt!"
+msgstr "{1} não pode usar {2} após a provocação!"
+
+msgid "{1} can't use {2} because of Heal Block!"
+msgstr "{1} não pode usar {2} por causa do Bloqueio de Cura!"
+
+msgid "{1} cannot use {2}!"
+msgstr "{1} não pode usar {2}!"
+
+msgid "{1} caused an uproar!"
+msgstr "{1} causou um tumulto!"
+
+msgid "{1} changed Forme!"
+msgstr "{1} mudou de Forma!"
+
+msgid "{1} chose Doom Desire as its destiny!"
+msgstr "{1} escolheu um Desejo de Apocalipse como seu destino!"
+
+msgid "{1} clamped {2}!"
+msgstr "{1} apertou{2}!"
+
+msgid "{1} consumed its {2}!"
+msgstr "{1} consumiu {2}!"
+
+msgid "{1} copied {2}'s stat changes!"
+msgstr "{1} copiou as mudanças de atributo com {2}!"
+
+msgid "{1} copied {2}'s {3}!"
+msgstr "{1} copiou {3} de {2}!"
+
+msgid "{1} cured its infatuation status using its {2}!"
+msgstr "{1} curou sua paixão usando seu {2}!"
+
+msgid "{1} cut its own HP and laid a curse on {2}!"
+msgstr "{1} reduziu seus próprios PV e jogou uma maldição em {2}!"
+
+msgid "{1} cut its own HP and maximized its Attack!"
+msgstr "{1} reduziu seus PV e maximizou seu Ataque!"
+
+msgid "{1} defeated\n{2}!"
+msgstr "{1} derrotou\n{2}!"
+
+msgid "{1} defeated {2} and {3}!"
+msgstr "{1} derrotou {2} e {3}!"
+
+msgid "{1} did a headbutt!"
+msgstr "{1} deu uma cabeçada!"
+
+msgid "{1} did not learn {2}."
+msgstr "{1} não aprendeu {2}."
+
+msgid "{1} doesn't become confused!"
+msgstr "{1} não ficou confuso!"
+
+msgid "{1} endured the hit!"
+msgstr "{1} aguentou o acerto!"
+
+msgid "{1} evaded the attack!"
+msgstr "{1} evitou o ataque!"
+
+msgid "{1} fainted!"
+msgstr "{1} desmaiou!"
+
+msgid "{1} fainted...\\"
+msgstr "{1} desmaiou...\\"
+
+msgid "{1} fell asleep!"
+msgstr "{1} dormiu!"
+
+msgid "{1} fell for the taunt!"
+msgstr "{1} caiu na provocação!"
+
+msgid "{1} fell in love!"
+msgstr "{1} se apaixonou!"
+
+msgid "{1} fell straight down!"
+msgstr "{1} caiu em linha reta!"
+
+msgid "{1} fled from battle!"
+msgstr "{1} fugiu da batalha"
+
+msgid "{1} fled using Run Away!"
+msgstr "{1} fugiu usando Escapar!"
+
+msgid "{1} fled using its {2}!"
+msgstr "{1} fugiu usando {2}!"
+
+msgid "{1} fled!"
+msgstr "{1} fugiu!"
+
+msgid "{1} flew up high!"
+msgstr "{1} voou alto!"
+
+msgid "{1} flew {2} up into the air!"
+msgstr "{1} fez {2} voar pelo ar!"
+
+msgid "{1} flinched and couldn't move!"
+msgstr "{1} hesitou e não conseguiu se mover"
+
+msgid "{1} flung its {2}!"
+msgstr "{1} jogou {2}!"
+
+msgid "{1} foresaw an attack!"
+msgstr "{1} previu um ataque"
+
+msgid "{1} forfeited the match!"
+msgstr "{1} desistiu da batalha!"
+
+msgid "{1} forgot how to\nuse {2}."
+msgstr "{1} esqueceu como\nusar {2}."
+
+msgid "{1} forgot {2}."
+msgstr "{1} esqueceu {2}."
+
+msgid "{1} forgot {2}..."
+msgstr "{1} esqueceu {2}..."
+
+msgid "{1} found \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1} encontrou \\c[1]{2}\\c[0]!\\wtnp[20]"
+
+msgid "{1} found one \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1} fencontrou \\c[1]{2}\\c[0]!\\wtnp[20]"
+
+msgid "{1} found one {2}!"
+msgstr "{1} achou um {2}!"
+
+msgid "{1} found some \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1} encontrou \\c[1]{2}\\c[0]!\\wtnp[20]"
+
+msgid "{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[20]"
+msgstr "{1} encontrou {2} \\c[1]{3}\\c[0]!\\wtnp[20]"
+
+msgid "{1} found {2} \\c[1]{3}s\\c[0]!\\wtnp[20]"
+msgstr "{1} encontrou {2} \\c[1]{3}s\\c[0]!\\wtnp[20]"
+
+msgid "{1} frisked the foe and found one {2}!"
+msgstr "{1} revistou o adversário e descobriu um {2}!"
+
+msgid "{1} frisked the other foe and found one {2}!"
+msgstr "{1} revistou o outro adversário e achou um {2}!"
+
+msgid "{1} frisked {2} and found its {3}!"
+msgstr "{1} revistou {2} e descobriu {3}!"
+
+msgid "{1} gained a boosted {2} Exp. Points!"
+msgstr "{1} ganhou aumentados {2} Pontos de Experiência!"
+
+msgid "{1} gained {2} Exp. Points!"
+msgstr "{1} ganhou {2} Pontos de Experiência!"
+
+msgid "{1} gave ${2} to the winner..."
+msgstr "{1} deu ${2} ao vencedor..."
+
+msgid "{1} gave {2} its {3}!"
+msgstr "{1} deu  {3} a {2}!"
+
+msgid "{1} got ${2}\nfor winning!"
+msgstr "{1} ganhou ${2}\npor vencer!"
+
+msgid "{1} got free of {2}'s {3}!"
+msgstr "{1} se livrou de {3} de {2}!"
+
+msgid "{1} got over its infatuation."
+msgstr "{1} superou o crush."
+
+msgid "{1} grew to Lv. {2}!"
+msgstr "{1} cresceu para o Nível {2}!"
+
+msgid "{1} had its HP restored."
+msgstr "{1} teve sua vida recuperada."
+
+msgid "{1} had its energy drained!"
+msgstr "{1} teve sua energia drenada!"
+
+msgid "{1} harvested one {2}!"
+msgstr "{1} colheu um {2}!"
+
+msgid "{1} has Air Lock!"
+msgstr "{1} possui Bloqueio de Ar!"
+
+msgid "{1} has Mega Evolved into {2}!"
+msgstr "{1} Mega Evoluiu para {2}!"
+
+msgid "{1} has already been selected."
+msgstr "{1} já foi selecionado."
+
+msgid "{1} has been afflicted with infestation by {2}!"
+msgstr "{1} sofreu uma infestação por {2}!"
+
+msgid "{1} has been laid down."
+msgstr "{1} foi colocado."
+
+msgid "{1} has no energy left to battle!"
+msgstr "{1} não tem mais energia sobrando para batalhar!"
+
+msgid "{1} has no more Pokémon that can fight!"
+msgstr "{1} não possui mais Pokémons aptos a lutar!"
+
+msgid "{1} has no moves left!"
+msgstr "{1} não te mais movimentos sobrando!"
+
+msgid "{1} has no nickname."
+msgstr "{1} não tem apelido."
+
+msgid "{1} has the nickname {2}."
+msgstr "{1} tem o apelido {2}."
+
+msgid "{1} held up its Red Card against {2}!"
+msgstr "{1} mostrou seu Cartão vermelho a {2}!"
+
+msgid "{1} helped {2} move next!"
+msgstr "{1} ajudou {2} a se mover em seguida!"
+
+msgid "{1} hid underwater!"
+msgstr "{1} se escondeu embaixo d´água!"
+
+msgid "{1} hung on using its Focus Band!"
+msgstr "{1} sobreviveu usando Faixa de Foco!"
+
+msgid "{1} hung on using its Focus Sash!"
+msgstr "{1} sobreviveu usando Cinta de Foco!"
+
+msgid "{1} hung on with Sturdy!"
+msgstr "{1} sobreviveu com Resistente!"
+
+msgid "{1} ignored orders while asleep!"
+msgstr "{1} ignorou ordens enquanto dormia!"
+
+msgid "{1} ignored orders!"
+msgstr "{1} ignorou ordens!"
+
+msgid "{1} intends to flip up a mat and block incoming attacks!"
+msgstr "{1} pretende virar o tatami e bloquear os próximos ataques nesse turno!"
+
+msgid "{1} is about to send in {2}."
+msgstr "{1} está para enviar{2}."
+
+msgid "{1} is absorbing power!"
+msgstr "{1} está absorvendo poder!"
+
+msgid "{1} is affected by the radiation!"
+msgstr "{1}está sendo afetado pela radiação!"
+
+msgid "{1} is afflicted by the curse!"
+msgstr "{1} está sendo afetado por uma maldição!"
+
+msgid "{1} is already asleep!"
+msgstr "{1} já está dormindo!"
+
+msgid "{1} is already confused!"
+msgstr "{1} já está confuso!"
+
+msgid "{1} is already holding one {2}."
+msgstr "{1} já está segurando {2}."
+
+msgid "{1} is already in battle!"
+msgstr "{1} já está em batalha!"
+
+msgid "{1} is already paralyzed!"
+msgstr "{1} já está paralizado!"
+
+msgid "{1} is already poisoned."
+msgstr "{1} já está envenenado."
+
+msgid "{1} is attacking!"
+msgstr "{1} está atacando!"
+
+msgid "{1} is badly poisoned!"
+msgstr "{1} foi afetado por um veneno terrível!"
+
+msgid "{1} is buffeted by the hail!"
+msgstr "{1}está sendo castigado pelo granizo!"
+
+msgid "{1} is buffeted by the sandstorm!"
+msgstr "{1} foi castigado pela tempestade de areia!"
+
+msgid "{1} is confused!"
+msgstr "{1} está confuso!"
+
+msgid "{1} is covered in powder!"
+msgstr "{1} está coberto por pó!"
+
+msgid "{1} is damaged by the recoil!"
+msgstr "{1} foi ferido pelo ricochete!"
+
+msgid "{1} is disabled no more!"
+msgstr "{1} não está mais desabilitado!"
+
+msgid "{1} is exerting its Pressure!"
+msgstr "{1} está exercendo Pressão!"
+
+msgid "{1} is fast asleep."
+msgstr "{1} está adormecido"
+
+msgid "{1} is frozen solid!"
+msgstr "{1} está congelado!"
+
+msgid "{1} is genderless."
+msgstr "{1} não tem gênero."
+
+msgid "{1} is getting pumped!"
+msgstr "{1} está ficando bombado!"
+
+msgid "{1} is glowing!"
+msgstr "{1} está brilhando!"
+
+msgid "{1} is having a bad dream!"
+msgstr "{1} está tendo maus sonhos"
+
+msgid "{1} is healed by poison!"
+msgstr "{1} é curado por veneno!"
+
+msgid "{1} is hit by lightning!"
+msgstr "{1foi atingido por um raio!"
+
+msgid "{1} is hurt by its burn!"
+msgstr "{1} se fere por causa de sua queimadura"
+
+msgid "{1} is hurt by its {2}!"
+msgstr "{1} se feriu por {2}!"
+
+msgid "{1} is hurt by poison!"
+msgstr "{1} se fere por envenenamento!"
+
+msgid "{1} is hurt by {2}!"
+msgstr "{1} é ferido por {2}!"
+
+msgid "{1} is immobilized by love!"
+msgstr "{1} está imobilizado por amor"
+
+msgid "{1} is in love with {2}!"
+msgstr "{1} está apaixonado por {2}!"
+
+msgid "{1} is loafing around!"
+msgstr "{1} está vadiando!"
+
+msgid "{1} is locked in a nightmare!"
+msgstr "{1}está preso em um pesadelo!"
+
+msgid "{1} is making an uproar!"
+msgstr "{1} está fazendo um tumulto!"
+
+msgid "{1} is not affected by {2} thanks to its Safety Goggles!"
+msgstr "{1} não é afetado por {2} devido aos Óculos de Proteção!"
+
+msgid "{1} is not compatible with {2}."
+msgstr "{1} não é compatível com{2}."
+
+msgid "{1} is now being held."
+msgstr "{1} está sendo segurado"
+
+msgid "{1} is paralyzed! It can't move!"
+msgstr "{1} está paralizado! Não pode se mexer!"
+
+msgid "{1} is paralyzed! It may be unable to move!"
+msgstr "{1} está paralizado! {1} pode ser incapaz de se mexer!"
+
+msgid "{1} is poisoned!"
+msgstr "{1} está envenenado!"
+
+msgid "{1} is protected by Aroma Veil!"
+msgstr "{1} está protegido por Véu de Aroma!"
+
+msgid "{1} is protected by Mist!"
+msgstr "{1} está protegido pela Névoa!"
+
+msgid "{1} is protected by Safeguard!"
+msgstr "{1} está protegido pelo Abrigo!"
+
+msgid "{1} is protected by the mist!"
+msgstr "{1} está protegido pela névoa!"
+
+msgid "{1} is radiating a blazing aura!"
+msgstr "{1} está irradiando uma aura em chamas!"
+
+msgid "{1} is radiating a bursting aura!"
+msgstr "{1} está irradiando uma aura que queima!"
+
+msgid "{1} is radiating a dark aura!"
+msgstr "{1} está irradiando uma aura negra!"
+
+msgid "{1} is radiating a fairy aura!"
+msgstr "{1} está irradiando uma aura de fada!"
+
+msgid "{1} is ready to help {2}!"
+msgstr "{1} está pronto para ajudar {2}!"
+
+msgid "{1} is selected."
+msgstr "{1} foi selecionado."
+
+msgid "{1} is storing energy!"
+msgstr "{1} está acumulando energia!"
+
+msgid "{1} is struggling!"
+msgstr "{1} está se debatendo!"
+
+msgid "{1} is switched out with the Eject Button!"
+msgstr "{1} é trocado com o Botão de Ejeção!"
+
+msgid "{1} is tightening its focus!"
+msgstr "{1} aumentando seu foco!"
+
+msgid "{1} is tormented!"
+msgstr "{1} está atormentado!"
+
+msgid "{1} is trying to\nlearn {2}."
+msgstr "{1} está tentando\naprender {2}."
+
+msgid "{1} is trying to learn {2}."
+msgstr "{1} está tentando aprender {2}."
+
+msgid "{1} is trying to take its foe down with it!"
+msgstr "{1} está tentando levar seu adversário consigo!"
+
+msgid "{1} is unaffected!"
+msgstr "{1} não foi afetado!"
+
+msgid "{1} is waiting for {2}'s move..."
+msgstr "{1} está esperando pelo movimento de {2}..."
+
+msgid "{1} isn't holding anything."
+msgstr "{1} não está segurtando um item."
+
+msgid "{1} kept going and crashed!"
+msgstr "{1} seguiu e bateu!"
+
+msgid "{1} knocked off {2}'s {3}!"
+msgstr "{1} derrubou {3} de {2}!"
+
+msgid "{1} learned {2}!"
+msgstr "{1} aprendeu {2}!"
+
+msgid "{1} learned {2}!\\se[itemlevel]"
+msgstr "{1} aprendeu {2}!\\se[itemlevel]"
+
+msgid "{1} levitated with electromagnetism!"
+msgstr "{1} começou a levitar com eletromagnetismo!"
+
+msgid "{1} lost against\n{2}!"
+msgstr "{1} perdeu contra\n{2}!"
+
+msgid "{1} lost against {2} and {3}!"
+msgstr "{1} perdeu contra {2} e {3}!"
+
+msgid "{1} lost its focus and couldn't move!"
+msgstr "{1} perdeu seu foco e não pode se mover!"
+
+msgid "{1} lost some of its HP!"
+msgstr "{1} perdeu alguns PV!"
+
+msgid "{1} lowered its head!"
+msgstr "{1} baixou sua cabeça!"
+
+msgid "{1} made {2} drowsy!"
+msgstr "{1} fez {2} sonolento!"
+
+msgid "{1} makes Fairy-type moves miss with Disenchant!"
+msgstr "{1} faz movimentos Fada falhar com um Desencanto!"
+
+msgid "{1} makes Ground moves miss with Levitate!"
+msgstr "{1} faz Movimentos Terrestres falhar com Levitar"
+
+msgid "{1} makes Nuclear-type moves miss with Radiation Proof!"
+msgstr "{1} faz movimentos Nucleares falhar por ser À Prova de Radiação!"
+
+msgid "{1} maxed its Attack!"
+msgstr "{1} maximizou seu Ataque!"
+
+msgid "{1} must recharge!"
+msgstr "{1}precisa recarregar!"
+
+msgid "{1} obtained {2}!\\me[PU-PokemonObtained]"
+msgstr "{1} obteve {2}!\\me[PU-PokemonObtained]"
+
+msgid "{1} obtained {2}!\\se[itemlevel]"
+msgstr "{1} obteve {2}!\\se[itemlevel]"
+
+msgid "{1} obtained {2}."
+msgstr "{1} obteve {2}."
+
+msgid "{1} opened the door to its heart!"
+msgstr "{1} abriu a porta para seu coração"
+
+msgid "{1} panicked and dropped\n${2}..."
+msgstr "{1} entrou em pânico e deixou cair\n${2}..."
+
+msgid "{1} picked up ${2}!"
+msgstr "{1} pegou ${2}!"
+
+msgid "{1} picked up {2} from the pokemon!"
+msgstr "{1} pegou {2} from the pokemon!"
+
+msgid "{1} pickpocketed {2}'s {3}!"
+msgstr "{1} furtou {3} de {2}!"
+
+msgid "{1} planted a {2} in the soft loamy soil."
+msgstr "{1} plantou {2} no solo"
+
+msgid "{1} planted its roots!"
+msgstr "{1} plantou suas raízes!"
+
+msgid "{1} pretended not to notice!"
+msgstr "{1} fingiu não perceber"
+
+msgid "{1} protected itself!"
+msgstr "{1} se protegeu!"
+
+msgid "{1} put away the {2} in the <icon=bagPocket{3}>\\c[1]Berries\\c[0] Pocket."
+msgstr "{1} colocou{2} no <icon=bagPocket{3}>\\c[1]Bolso de\\c[0] Frutas."
+
+msgid "{1} put in a substitute!"
+msgstr "{1} colocou um Substituto!"
+
+msgid "{1} put the \\c[1]{2}\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket."
+msgstr "{1} colocou \\c[1]{2}\\c[0]\nno <icon=bagPocket{3}>\\c[1]{4}\\c[0] Bolso."
+
+msgid "{1} put the \\c[1]{2}s\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket."
+msgstr "{1} botou \\c[1]{2}s\\c[0]\nno <icon=bagPocket{3}>\\c[1]{4}\\c[0] Bolso."
+
+msgid "{1} received a Pokémon from {2}."
+msgstr "{1} recebeu um Pokémon de {2}."
+
+msgid "{1} received a Pokémon."
+msgstr "{1} recebeu um Pokémon."
+
+msgid "{1} received an encore!"
+msgstr "{1}recebeu Repetição!"
+
+msgid "{1} received {2} Coin(s)!"
+msgstr "{1} recebeu {2} Moeda(s)!"
+
+msgid "{1} received {2} Coins!"
+msgstr "{1} recebeu {2} Moedas!"
+
+msgid "{1} received {2} from {3}!"
+msgstr "{1} recebeu {2} de {3}!"
+
+msgid "{1} received {2}!\\se[itemlevel]"
+msgstr "{1} recebeu {2}!\\se[itemlevel]"
+
+msgid "{1} regained the move\n{2}!"
+msgstr "{1} recuperou o movimento \n{2}!"
+
+msgid "{1} regained {2} Exp. Points!"
+msgstr "{1} recuperou {2} Pontos de Experiência"
+
+msgid "{1} restored a little HP using its Shell Bell!"
+msgstr "{1} restaurou um pouco de PV usando o Sino de Conchal!"
+
+msgid "{1} restored a little HP using its {2}!"
+msgstr "{1} restaurou um pouco de vida utilizando {2}!"
+
+msgid "{1} reversed all other Pokémon's auras!"
+msgstr "{1} reverteu todas as outras auras!"
+
+msgid "{1} saved the game"
+msgstr "{1} salvou o jogo"
+
+msgid "{1} sealed the opponent's move(s)!"
+msgstr "{1} selou o(s) movimento(s) do oponente!"
+
+msgid "{1} sent\nout {2} and {3}!"
+msgstr "{1} enviou\n{2} and {3}!"
+
+msgid "{1} sent\nout {2}!"
+msgstr "{1} enviou\n{2}!"
+
+msgid "{1} sent\nout {2}! Go! {3}!"
+msgstr "{1} enviou\n{2}!  Vá! {3}!"
+
+msgid "{1} sent\nout {2}! {3} sent\nout {4}!"
+msgstr "{1} enviou\n{2}! {3} enviou\n{4}!"
+
+msgid "{1} shared its guard with the target!"
+msgstr "{1} dividiu sua Defesa e Defesa Especial com o alvo!"
+
+msgid "{1} shared its power with the target!"
+msgstr "{1} dividiu seu Ataque e Ataque Especial com o alvo!"
+
+msgid "{1} shrouded itself with Magic Coat!"
+msgstr "{1} se encobriu com Capa Mágica!"
+
+msgid "{1} shuddered with anticipation!"
+msgstr "{1} estremeceu com antecipação!"
+
+msgid "{1} sketched {2}!"
+msgstr "{1} rabiscou {2}!"
+
+msgid "{1} slept and became healthy!"
+msgstr "{1} dormiu e ficou saudável!"
+
+msgid "{1} snapped out of confusion!"
+msgstr "{1} saiu da confusão"
+
+msgid "{1} snapped out of confusion."
+msgstr "{1} se livrou da confusção."
+
+msgid "{1} snapped out of its confusion."
+msgstr "{1} saiu da confusão."
+
+msgid "{1} snatched {2}'s move!"
+msgstr "{1} arrebatou o movimento de {2}!"
+
+msgid "{1} sprang up!"
+msgstr "{1} saltou!"
+
+msgid "{1} stayed awake using its partner's {2}!"
+msgstr "{1} permaneceu acordado usando o {2} de seu parceiro!"
+
+msgid "{1} stayed awake using its {2}!"
+msgstr "{1} permanece acordado usando {2}!"
+
+msgid "{1} stockpiled {2}!"
+msgstr "{1} acumulou {2}!"
+
+msgid "{1} stole and ate its target's {2}!"
+msgstr "{1} roubou e comeu a {2} de seu alvo!"
+
+msgid "{1} stole {2}'s {3} with Magician!"
+msgstr "{1} roubou {3} de {2} com Mágico!"
+
+msgid "{1} stole {2}'s {3}!"
+msgstr "{1} roubou {3} de {2}!"
+
+msgid "{1} sucked up the liquid ooze!"
+msgstr "{1} sugou o líquido enlamaçado!"
+
+msgid "{1} surrounded itself with a veil of petals!"
+msgstr "{1} se cercou em um véu de pétalas!"
+
+msgid "{1} surrounded itself with a veil of sweetness!"
+msgstr "{1} se cerca com um véu de doçura!"
+
+msgid "{1} surrounded itself with a veil of water!"
+msgstr "{1} se cercou com um véu de água"
+
+msgid "{1} surrounds itself with a protective mist!"
+msgstr "{1} se cerca com uma névoa protetora!"
+
+msgid "{1} surrounds itself with electrified terrain!"
+msgstr "{1} se cerca com Terreno Elétrico"
+
+msgid "{1} survived the poisoning.\nThe poison faded away!"
+msgstr "{1} sobreviveu ao envenenamento.\nO envenenamento parou!"
+
+msgid "{1} swapped its {2} ability with its target's {3} ability!"
+msgstr "{1} trocou sua habilidade {2} pela habilidade do alvo, {3}!"
+
+msgid "{1} switched all changes to its Attack and Sp. Atk with the target!"
+msgstr "{1} trocou as mudanças de Ataque e Ataque Especial com o alvo!"
+
+msgid "{1} switched all changes to its Defense and Sp. Def with the target!"
+msgstr "{1} trocou as mudanças de Defesa e Defesa Especial com o alvo!"
+
+msgid "{1} switched items with its opponent!"
+msgstr "{1} trocou de itens com o oponente!"
+
+msgid "{1} switched its Attack and Defense!"
+msgstr "{1} trocou seu Ataque e Defesa!"
+
+msgid "{1} switched places with its ally!"
+msgstr "{1} trocou de lugar com seu aliado!"
+
+msgid "{1} switched stat changes with the target!"
+msgstr "{1} trocou as mudanças de atributo com o alvo!"
+
+msgid "{1} thawed out!"
+msgstr "{1} descongelou!"
+
+msgid "{1} threw a {2}."
+msgstr "{1} arremessou uma {2}."
+
+msgid "{1} took a nap!"
+msgstr "{1} tirou um cochilo!"
+
+msgid "{1} took aim at {2}!"
+msgstr "{1} mirou em {2}!"
+
+msgid "{1} took in sunlight!"
+msgstr "{1} ttrouxe raios solares!"
+
+msgid "{1} took its attacker down with it!"
+msgstr "{1} levou seu adversário consigo!"
+
+msgid "{1} took the attack!"
+msgstr "{1} recebeu o ataque!"
+
+msgid "{1} took the {2} attack!"
+msgstr "{1} recebeu o ataque {2}!"
+
+msgid "{1} traced {2}'s {3}!"
+msgstr "{1} copiou {3} de {2}!"
+
+msgid "{1} transformed into the {2} type!"
+msgstr "{1} se transformou no tipo {2}!"
+
+msgid "{1} transformed into {2}!"
+msgstr "{1} se transformou em {2}!"
+
+msgid "{1} transformed!"
+msgstr "{1} se transformou!"
+
+msgid "{1} turned away!"
+msgstr "{1} se virou!"
+
+msgid "{1} turned friendly."
+msgstr "{1} tse tornou amigável."
+
+msgid "{1} turned friendly.\nA Defesa base caiu!"
+msgstr "{1} se tornou amigável.\nA Defesa base caiu!"
+
+msgid "{1} turned friendly.\nThe base Attack can't fall!"
+msgstr "{1} se tornou amigável.\nO Ataque base não pode diminuir!"
+
+msgid "{1} turned friendly.\nThe base Attack fell!"
+msgstr "{1} se tornou amigável.\nO Ataque base caiu!"
+
+msgid "{1} turned friendly.\nThe base Defense can't fall!"
+msgstr "{1} se tornou amigável.\nA Defesa base não pode diminuir!"
+
+msgid "{1} turned friendly.\nThe base HP can't fall!"
+msgstr "{1} se tornou amigável.\nOs PV base não podem cair!"
+
+msgid "{1} turned friendly.\nThe base HP fell!"
+msgstr "{1} se tornou amigável.\nOs PV base cairam"
+
+msgid "{1} turned friendly.\nThe base Special Attack can't fall!"
+msgstr "{1} se tornou amigável.\nO Ataque Especial base não pode diminuir!"
+
+msgid "{1} turned friendly.\nThe base Special Attack fell!"
+msgstr "{1} se tornou amigável.\nO Ataque Especial base caiu!"
+
+msgid "{1} turned friendly.\nThe base Special Defense can't fall!"
+msgstr "{1} se tornou amigável.\nA Defesa Especial base não pode diminuir!"
+
+msgid "{1} turned friendly.\nThe base Special Defense fell!"
+msgstr "{1} se tornou amigável.\nA Defesa Especial base caiu!"
+
+msgid "{1} turned friendly.\nThe base Speed can't fall!"
+msgstr "{1} se tornou amigável.\nA Velocidade base não pode diminuir!"
+
+msgid "{1} turned friendly.\nThe base Speed fell!"
+msgstr "{1} se tornou amigável.\nA Velocidade base caiu!"
+
+msgid "{1} turned into {2}!"
+msgstr "{1} virou {2}!"
+
+msgid "{1} twisted the dimensions!"
+msgstr "{1} distorceu as dimensões!"
+
+msgid "{1} unleashed energy!"
+msgstr "{1} liberou energia!"
+
+msgid "{1} used\n{2}!"
+msgstr "{1} usou\n{2}!"
+
+msgid "{1} used Coral Break!"
+msgstr "{1} usou Quebra Coral!"
+
+msgid "{1} used Dive."
+msgstr "{1} usou Mergulhar."
+
+msgid "{1} used Fly!"
+msgstr "{1} usou Voar!"
+
+msgid "{1} used Rock Smash!"
+msgstr "{1} usou Quebra Pedras!"
+
+msgid "{1} used Strength!"
+msgstr "{1} usou Super Força!"
+
+msgid "{1} used Surf!"
+msgstr "{1} usou Surfar!"
+
+msgid "{1} used Waterfall."
+msgstr "{1} used Cachoeira."
+
+msgid "{1} used its {2} to get pumped!"
+msgstr "{1} usou seu {2} pra ficar monstro!"
+
+msgid "{1} used the\n{2}!"
+msgstr "{1} usou\n{2}!"
+
+msgid "{1} used the\n{2}."
+msgstr "{1} usou\n{2}."
+
+msgid "{1} used the Boxing Gloves!"
+msgstr "{1} usou Luvas de Boxe!"
+
+msgid "{1} used the Climbing Pick"
+msgstr "{1} usou Picareta de escalada"
+
+msgid "{1} used the Climbing Pick!"
+msgstr "{1} usou Picareta de Escalada!"
+
+msgid "{1} used the Escape Rope."
+msgstr "{1} usou Corda de Fuga."
+
+msgid "{1} used the Power Glove!"
+msgstr "{1} usou Luva Poderosa!"
+
+msgid "{1} used the Scuba Gear"
+msgstr "{1} usou Roupa de Mergulho."
+
+msgid "{1} used the Scuba Gear."
+msgstr "{1} usou Roupa de Mergulho."
+
+msgid "{1} used the Surfboard!"
+msgstr "{1} usou Prancha de Surf!"
+
+msgid "{1} used the {2}!"
+msgstr "{1} usou {2}!"
+
+msgid "{1} used the {2}."
+msgstr "{1} usou {2}."
+
+msgid "{1} used {2}!"
+msgstr "{1} usou {2}!"
+
+msgid "{1} used."
+msgstr "{1} usou."
+
+msgid "{1} vanished instantly!"
+msgstr "{1} desapareceu instantaneamente!"
+
+msgid "{1} waits for a target to make a move!"
+msgstr "{1} espera por um alvo fazer um movimento!"
+
+msgid "{1} wants its target to bear a grudge!"
+msgstr "{1} quer que seu alvo guarde Rancor!"
+
+msgid "{1} was Mummified by {2}!"
+msgstr "{1} foi mumificado por {2}!"
+
+msgid "{1} was badly poisoned by its {2}!"
+msgstr "{1} foi gravemente envenenado por {2}!"
+
+msgid "{1} was badly poisoned!"
+msgstr "{1} foi afetado por um veneno terrível!"
+
+msgid "{1} was blocked by the kicked-up mat!"
+msgstr "{1} foi bloqueado pelo tatami levantado!"
+
+msgid "{1} was burned by its {2}!"
+msgstr "{1} se queimou por causa de {2}!"
+
+msgid "{1} was burned!"
+msgstr "{1} se queimou!"
+
+msgid "{1} was caught in a sticky web!"
+msgstr "{1} foi pego por uma teia grudenta!"
+
+msgid "{1} was caught in the aftermath!"
+msgstr "{1} foi pego no pós-partida!"
+
+msgid "{1} was cured of its burn."
+msgstr "{1} se curou de sua queimadura."
+
+msgid "{1} was cured of its paralysis."
+msgstr "{1} se curou de sua paralisia."
+
+msgid "{1} was cured of its poisoning."
+msgstr "{1} se curou de seu envenenamento."
+
+msgid "{1} was cured of paralysis."
+msgstr "{1} se curou da paralisia."
+
+msgid "{1} was defrosted by {2}!"
+msgstr "{1} foi descongelado por {2}!"
+
+msgid "{1} was defrosted."
+msgstr "{1} foi descongelado."
+
+msgid "{1} was downgraded to Level {2}!"
+msgstr "{1} teve seu Nível reduzido para {2}!"
+
+msgid "{1} was dragged out!"
+msgstr "{1} foi forçado a sair!"
+
+msgid "{1} was elevated to Level {2}!"
+msgstr "{1} teve seu nível aumentado para {2}!"
+
+msgid "{1} was freed from Leech Seed!"
+msgstr "{1} se livrou das Sementes Sanguessugas!"
+
+msgid "{1} was freed from the telekinesis!"
+msgstr "{1} se livrou da telequinese!"
+
+msgid "{1} was freed from {2}!"
+msgstr "{1} se livrou de{2}!"
+
+msgid "{1} was frisked, revealing its {2}!"
+msgstr "{1} foi revistado, revelando {2}!"
+
+msgid "{1} was frozen solid!"
+msgstr "{1} foi congelado!"
+
+msgid "{1} was given the {2} to hold."
+msgstr "{1} recebeu {2} para segurar."
+
+msgid "{1} was hurled into the air!"
+msgstr "{1}foi jogado no ar!"
+
+msgid "{1} was hurt by its {2}!"
+msgstr "{1} se feriu por causa de seu {2}!"
+
+msgid "{1} was hurt by spikes!"
+msgstr "{1} se feriu com espinhos!"
+
+msgid "{1} was hurt by the sunlight!"
+msgstr "{1} se feriu pela luz solar!"
+
+msgid "{1} was hurt by the {2}!"
+msgstr "{1} se feriu por {2}!"
+
+msgid "{1} was hurt!"
+msgstr "{1} se feriu!"
+
+msgid "{1} was identified!"
+msgstr "{1} foi identificado!"
+
+msgid "{1} was paralyzed!"
+msgstr "{1} foi paralizado!"
+
+msgid "{1} was paralyzed! It may be unable to move!"
+msgstr "{1} foi paralizado!  Pode ser que não seja capaz de se mover!"
+
+msgid "{1} was poisoned!"
+msgstr "{1} foi envenenado!"
+
+msgid "{1} was prevented from healing due to Heal Block!"
+msgstr "{1} foi prevenido de se curar devido ao Bloqueio de Cura!"
+
+msgid "{1} was prevented from healing!"
+msgstr "{1} foi impedido de se curar!"
+
+msgid "{1} was protected by {2}!"
+msgstr "{1} foi protegido por {2}!"
+
+msgid "{1} was quashed!"
+msgstr "{1} foi anulado!"
+
+msgid "{1} was released."
+msgstr "{1} foi solto."
+
+msgid "{1} was seeded!"
+msgstr "Sementes foram jogadas ao redor de {1}!"
+
+msgid "{1} was squeezed by {2}!"
+msgstr "{1} foi apertado por {2}!"
+
+msgid "{1} was subjected to torment!"
+msgstr "{1} foi subjulgado ao tormento!"
+
+msgid "{1} was thawed out."
+msgstr "{1} foi descongelado."
+
+msgid "{1} was transferred to someone's PC."
+msgstr "{1} foi transferido para o Computador de alguém."
+
+msgid "{1} was transferred to someone's PC."
+msgstr "{1} foi transferido para o PC de Alguém."
+
+msgid "{1} was transferred to {2}'s PC."
+msgstr "{1} foi transferido para o Computador de {2}."
+
+msgid "{1} was transferred to {2}'s PC."
+msgstr "{1} foi transferido para o PC de {2}."
+
+msgid "{1} was trapped in the vortex!"
+msgstr "{1} foi preso pelo vortex!"
+
+msgid "{1} was unaffected!"
+msgstr "{1} não foi afetado!"
+
+msgid "{1} was woken from its sleep."
+msgstr "{1} acordou de seu descanso."
+
+msgid "{1} was wrapped by {2}!"
+msgstr "{1} foi envolto por {2}!"
+
+msgid "{1} wasn't affected!"
+msgstr "{1} não foi afetado!"
+
+msgid "{1} watered the plant.\\wtnp[40]"
+msgstr "{1} molhou a planta.\\wtnp[40]"
+
+msgid "{1} went back to {2}!"
+msgstr "{1} retornou a {2}!"
+
+msgid "{1} went to sleep!"
+msgstr "{1} dormiu!"
+
+msgid "{1} whipped up a whirlwind!"
+msgstr "{1} iniciou uma ventania!"
+
+msgid "{1} withdrew {2}!"
+msgstr "{1} recolheu {2}!"
+
+msgid "{1} woke up in the uproar!"
+msgstr "{1} acordou no tumulto"
+
+msgid "{1} woke up!"
+msgstr "{1} acordou!"
+
+msgid "{1} woke up."
+msgstr "{1} acordou."
+
+msgid "{1} won't flinch because of its {2}!"
+msgstr "{1} não hesitará por causa de {2}!"
+
+msgid "{1}'s"
+msgstr "{1} ativou"
+
+msgid "{1}'s AREA"
+msgstr "ÁREA DE {1}"
+
+msgid "{1}'s Air Balloon popped!"
+msgstr "O Balão de Ar de {1} 'estourou!"
+
+msgid "{1}'s Attack fell!"
+msgstr "{1} teve seu Ataque diminuido!"
+
+msgid "{1}'s Attack harshly fell!"
+msgstr "O Ataque de {1} caiu drasticamente!"
+
+msgid "{1}'s Attack increased."
+msgstr "O Ataque de {1} aumentou."
+
+msgid "{1}'s Attack rose drastically!"
+msgstr "{1} teve seu Ataque aumentado drasticamente!"
+
+msgid "{1}'s Attack rose sharply!"
+msgstr "O Ataque de {1}aumentou acentuadamente!"
+
+msgid "{1}'s Attack rose!"
+msgstr "O Ataque de {1} aumentou!"
+
+msgid "{1}'s Attack sharply rose!"
+msgstr "O Ataque de {1} aumentou acentuadamente!"
+
+msgid "{1}'s Attack was not lowered!"
+msgstr "{1} não teve seu Ataque reduzido!"
+
+msgid "{1}'s Attack won't go any higher!"
+msgstr "{1} não tem como aumentar mais seu Ataque!"
+
+msgid "{1}'s Attack won't go any lower!"
+msgstr "O Ataque de {1} não pode ser reduzido ainda mais!"
+
+msgid "{1}'s Attack won't go lower!"
+msgstr "O Ataque de {1} não pode diminuir mais!"
+
+msgid "{1}'s Chernobyl started a Toxic Fallout!"
+msgstr "Chernobyl de {1} causou um Desastre Nuclear!"
+
+msgid "{1}'s Cloud Nine made the effects of weather disappear."
+msgstr "Antitempo de {1} fez os efeitos do clima desaparecerem."
+
+msgid "{1}'s Contrary raised its Attack!"
+msgstr "{1} aumentou seu Ataque por meio de Contrário!"
+
+msgid "{1}'s Contrary raised its Speed!"
+msgstr "{1} aumentou sua Defesa por meio de Contrário!"
+
+msgid "{1}'s Defense fell!"
+msgstr "{1} teve sua Defesa diminuida!"
+
+msgid "{1}'s Defense harshly fell!"
+msgstr "{1} teve sua Defesa diminuida acentuadamente!"
+
+msgid "{1}'s Defense increased."
+msgstr "A Defesa de {1} aumentou."
+
+msgid "{1}'s Defense rose drastically!"
+msgstr "{1} teve sua Defesa aumentada drasticamente!"
+
+msgid "{1}'s Defense rose sharply!"
+msgstr "{1} teve sua Defesa aumentada acentuadamente!"
+
+msgid "{1}'s Defense rose!"
+msgstr "{1} teve sua Defesa aumentada!"
+
+msgid "{1}'s Defense was lowered!"
+msgstr "A Defesa de {1}foi reduzida!"
+
+msgid "{1}'s Defense was not lowered!"
+msgstr "{1} não teve sua Defesa reduzida!"
+
+msgid "{1}'s Defense won't go any higher!"
+msgstr "{1} não tem como aumentar mais sua Defesa!"
+
+msgid "{1}'s Defense won't go any lower!"
+msgstr "A Defesa de {1} não pode ser reduzida ainda mais!"
+
+msgid "{1}'s Desolate Land made the sun turn harsh!"
+msgstr "A Área Desolada de {1}fez o sol ficar mais forte!"
+
+msgid "{1}'s Drizzle made it rain!"
+msgstr "A Garoa de {1} fez chover!"
+
+msgid "{1}'s Drought intensified the sun's rays!"
+msgstr "A Seca de {1} intensificou os raios solares!"
+
+msgid "{1}'s Dry Skin was healed by the rain!"
+msgstr "Pele Seca de {1} foi curada pela chuva!"
+
+msgid "{1}'s Dry Skin was hurt by the sunlight!"
+msgstr "Pele Seca de {1}foi ferida pela luz solar!"
+
+msgid "{1}'s Forewarn alerted it to {2}!"
+msgstr "Previsão de {1} o alertou para {2}!"
+
+msgid "{1}'s Geiger Sense raised its Attack!"
+msgstr "Senso Geiger de {1}aumentou seu Ataque"
+
+msgid "{1}'s Geiger Sense raised its Special Attack!"
+msgstr "Senso Geiger de {1}aumentou seu Ataque Especial!"
+
+msgid "{1}'s HP increased."
+msgstr "Os PV de {1} aumentaram."
+
+msgid "{1}'s HP is full!"
+msgstr "Os PV de {1} estão no máximo!"
+
+msgid "{1}'s HP was restored by {2} points."
+msgstr "PV de{1} foram restaurados por {2} pontos."
+
+msgid "{1}'s HP was restored!"
+msgstr "{1} teve seus PV restaurados!"
+
+msgid "{1}'s HP was restored."
+msgstr "Os PV de {1} foram restaurados."
+
+msgid "{1}'s Heal Block wore off!"
+msgstr "O Bloqueio de Cura de {1}acabou!"
+
+msgid "{1}'s Ice Body restored its HP a little!"
+msgstr "Corpo de Gelo de {1} restaurou um pouco seus PV!"
+
+msgid "{1}'s Kee Berry was activated!"
+msgstr "A Fruta Kee de {1} foi ativado!"
+
+msgid "{1}'s Lightning Rod took the move!"
+msgstr "Pararraio de {1} recebeu o movimento!"
+
+msgid "{1}'s Maranga Berry was activated!"
+msgstr "A Fruta Maranga de {1} foi ativado!"
+
+msgid "{1}'s Moody lowered its {2}!"
+msgstr "Mau Humor de {1} diminuiu {2}!"
+
+msgid "{1}'s Moody sharply raised its {2}!"
+msgstr "Mau Humor de {1} aumentou acentuadamente {2}!"
+
+msgid "{1}'s Moxie raised its Attack!"
+msgstr "A Arrogância de {1}aumentou seu Ataque!"
+
+msgid "{1}'s Oblivious prevents taunting!"
+msgstr "Esquecido de {1} previne provocação!"
+
+msgid "{1}'s PC"
+msgstr "PC de {1}"
+
+msgid "{1}'s PP increased."
+msgstr "Os PP de {1} aumentaram."
+
+msgid "{1}'s Perish count fell to {2}!"
+msgstr "A Canção de Perecer de {1} irá ocorrer em {2} turnos!"
+
+msgid "{1}'s Primordial Sea caused a heavy rain to fall."
+msgstr "O Mar Primordial de {1} causou uma Chuva Pesada."
+
+msgid "{1}'s Rain Dish restored its HP a little!"
+msgstr "Absorver a chuva de {1}restaurou um pouco seus PV!"
+
+msgid "{1}'s Sand Stream whipped up a sandstorm!"
+msgstr "O Fluxo de Areia de {1} iniciou uma tempestade de areia!"
+
+msgid "{1}'s Snow Warning made it hail!"
+msgstr "Alerta de Neve de {1} fez chover granizo!"
+
+msgid "{1}'s Special Attack fell!"
+msgstr "O Ataque Especial de {1} caiu!"
+
+msgid "{1}'s Special Attack harshly fell!"
+msgstr "{1} teve seu Ataque Especial diminuido acentuadamente!"
+
+msgid "{1}'s Special Attack increased."
+msgstr "O Ataque Especial de {1}aumentou."
+
+msgid "{1}'s Special Attack rose drastically!"
+msgstr "{1} teve seu Ataque Especial aumentado drasticamente!"
+
+msgid "{1}'s Special Attack rose sharply!"
+msgstr "O Ataque Especial de {1}aumentou acentuadamente!"
+
+msgid "{1}'s Special Attack rose!"
+msgstr "O Ataque Especial de {1} aumentou!"
+
+msgid "{1}'s Special Attack sharply rose!"
+msgstr "{1} teve seu Ataque Especial aumentado acentuadamente!"
+
+msgid "{1}'s Special Attack won't go any higher!"
+msgstr "{1} não tem como aumentar mais seu Ataque!"
+
+msgid "{1}'s Special Attack won't go any lower!"
+msgstr "O Ataque Especial de {1} não pode ser reduzida ainda mais!"
+
+msgid "{1}'s Special Defense fell!"
+msgstr "{1} teve sua Defesa Especial diminuida!"
+
+msgid "{1}'s Special Defense harshly fell!"
+msgstr "{1} teve sua Defesa Especial diminuida acentuadamente!"
+
+msgid "{1}'s Special Defense increased."
+msgstr "A Defesa Especial de {1} aumentou."
+
+msgid "{1}'s Special Defense rose drastically!"
+msgstr "{1} teve sua Defesa aumentada drasticamente!"
+
+msgid "{1}'s Special Defense rose sharply!"
+msgstr "{1} teve sua Defesa Especial aumentada Acentuadamente!"
+
+msgid "{1}'s Special Defense rose!"
+msgstr "{1} teve sua Defesa aumentada!"
+
+msgid "{1}'s Special Defense won't go any higher!"
+msgstr "{1} não tem como aumentar mais sua Defesa Especial!"
+
+msgid "{1}'s Special Defense won't go any lower!"
+msgstr "A Defesa de {1} não pode ser reduzida ainda mais!"
+
+msgid "{1}'s Speed Boost raised its Speed!"
+msgstr "Aumento de Velocidade de {1}aumentou sua Velocidade!"
+
+msgid "{1}'s Speed fell!"
+msgstr "A Velocidade de {1}caiu!"
+
+msgid "{1}'s Speed harshly fell!"
+msgstr "{1} teve sua Velocidade diminuida!"
+
+msgid "{1}'s Speed increased."
+msgstr "A Velocidade de{1} aumentou."
+
+msgid "{1}'s Speed rose drastically!"
+msgstr "{1} teve sua Velocidade aumentada drasticamente!"
+
+msgid "{1}'s Speed rose sharply!"
+msgstr "{1} teve sua Velocidade aumentada acentuadamente!"
+
+msgid "{1}'s Speed rose!"
+msgstr "A velocidade de {1}aumentou!"
+
+msgid "{1}'s Speed won't go any higher!"
+msgstr "{1} não tem como aumentar mais sua Velocidade!"
+
+msgid "{1}'s Speed won't go any lower!"
+msgstr "A Velocidade de {1} não pode ser reduzida ainda mais!"
+
+msgid "{1}'s Storm Drain took the move!"
+msgstr "Bueiro de {1}recebeu o movimento!"
+
+msgid "{1}'s Stormbringer whipped up a thunderstorm!"
+msgstr "Portador de Tempestade de {1} iniciou uma tempestade!"
+
+msgid "{1}'s Strength made it possible to move boulders around!"
+msgstr "Super Força de {1} tornou possível mover pedras!"
+
+msgid "{1}'s Taunt wore off!"
+msgstr "A provocação de {1}passou!"
+
+msgid "{1}'s ability became Mummy!"
+msgstr "A habilidade de {1} se tornou Múmia!"
+
+msgid "{1}'s ability was suppressed!"
+msgstr "A habilidade de {1} foi suprimida!"
+
+msgid "{1}'s accuracy fell!"
+msgstr "{1} teve sua Precisão diminuida!"
+
+msgid "{1}'s accuracy harshly fell!"
+msgstr "{1} teve sua Precisão diminuida acentuadamente!"
+
+msgid "{1}'s accuracy rose drastically!"
+msgstr "{1} teve sua Precisão aumentada drasticamente!"
+
+msgid "{1}'s accuracy rose sharply!"
+msgstr "{1} teve sua Precisão aumentada acentuadamente!"
+
+msgid "{1}'s accuracy rose!"
+msgstr "{1} teve sua Precisão aumentada!"
+
+msgid "{1}'s accuracy was not lowered!"
+msgstr "A Precisão de {1} não foi reduzida!"
+
+msgid "{1}'s accuracy won't go any higher!"
+msgstr "{1} não tem como aumentar mais sua Precisão!"
+
+msgid "{1}'s accuracy won't go any lower!"
+msgstr "A Precisão de {1} não pode ser reduzida ainda mais!"
+
+msgid "{1}'s attack missed!"
+msgstr "O ataque de {1} falhou!"
+
+msgid "{1}'s burn was healed."
+msgstr "A queimadura de{1}foi curada."
+
+msgid "{1}'s data was added to the Pokédex."
+msgstr "Os dados de {1} foram adicionados à Pokédex."
+
+msgid "{1}'s electromagnetism wore off!"
+msgstr "O eletromagnetismo de {1}desapareceu!"
+
+msgid "{1}'s encore ended!"
+msgstr "O Bis de {1}acabou!"
+
+msgid "{1}'s evasiveness fell!"
+msgstr "{1} teve sua Evasão diminuida!"
+
+msgid "{1}'s evasiveness harshly fell!"
+msgstr "{1} teve sua Evasão diminuida acentuadamente!"
+
+msgid "{1}'s evasiveness rose drastically!"
+msgstr "{1} teve sua Defesa aumentada drasticamente!"
+
+msgid "{1}'s evasiveness rose sharply!"
+msgstr "{1} teve sua Evasão aumentada!"
+
+msgid "{1}'s evasiveness rose!"
+msgstr "{1} teve sua Evasão aumentada!!"
+
+msgid "{1}'s evasiveness won't go any higher!"
+msgstr "{1} não tem como aumentar mais sua Evasão!"
+
+msgid "{1}'s evasiveness won't go any lower!"
+msgstr "A Evasão de {1} não pode ser reduzida ainda mais!"
+
+msgid "{1}'s health was sapped by Leech Seed!"
+msgstr "{1} teve seus PV roubados por Semente Sanguessuga!"
+
+msgid "{1}'s level remained unchanged."
+msgstr "O nível de {1}permaneceu inalterado."
+
+msgid "{1}'s move is no longer disabled!"
+msgstr "O Movimento de {1}não está mais desabilitado!"
+
+msgid "{1}'s moves have been electrified!"
+msgstr "Os movimentos de {1} se tornaram do tipo Elétrico!"
+
+msgid "{1}'s nest"
+msgstr "Ninho de {1}"
+
+msgid "{1}'s nickname?"
+msgstr "Apelido de {1}?"
+
+msgid "{1}'s poisoning was cured."
+msgstr "O envenenamento de {1} foi curado."
+
+msgid "{1}'s rage is building!"
+msgstr "A raiva de {1} está aumentando!"
+
+msgid "{1}'s stat changes were all reversed!"
+msgstr "As mudanças de estado de {1}foram todas invertidas!"
+
+msgid "{1}'s stat changes were removed!"
+msgstr "As mudanças de atributo de {1} foram removidas!"
+
+msgid "{1}'s stats were not lowered!"
+msgstr "{1} não teve seus atributos reduzidos!"
+
+msgid "{1}'s stats were not lowered."
+msgstr "Os atributos de {1}não foram reduzidos."
+
+msgid "{1}'s stats won't go any higher!"
+msgstr "Os atributos de {1}não podem aumentar mais!"
+
+msgid "{1}'s stats won't go any lower!"
+msgstr "Os atributos de {1}não podem ser mais reduzidos!"
+
+msgid "{1}'s stockpiled effect wore off!"
+msgstr "Os efeitos da acumulação de {1} desapareceram!"
+
+msgid "{1}'s substitute faded!"
+msgstr "O substituto de {1} desapareceu!"
+
+msgid "{1}'s taunt wore off!"
+msgstr "A provocação de {1} acabou!"
+
+msgid "{1}'s team was disqualified!"
+msgstr "O time de {1}foi desqualificado!"
+
+msgid "{1}'s torment wore off!"
+msgstr "O tormento de {1} acabou!"
+
+msgid "{1}'s type changed to match {2}'s!"
+msgstr "O tipo de {1}mudou para se igualar ao de {2}!"
+
+msgid "{1}'s was healed through Rebuild!"
+msgstr "{1}se curou por meio de Reconstruir!"
+
+msgid "{1}'s wish came true!"
+msgstr "O desejo de {1} se tornou verdade!"
+
+msgid "{1}'s {2} badly poisoned {3}!"
+msgstr "{2} de {1} causou um envenenamento terrível em {3}!"
+
+msgid "{1}'s {2} blocks {3}!"
+msgstr "{2} de {1} bloqueia {3}!"
+
+msgid "{1}'s {2} boosted its Attack!"
+msgstr "{2} de {1} aumentou seu Ataque!"
+
+msgid "{1}'s {2} boosted its Special Attack!"
+msgstr "{2} de {1} aumentou seu Ataque Especial!"
+
+msgid "{1}'s {2} burned {3}!"
+msgstr "{2} de {1} queimou {3}!"
+
+msgid "{1}'s {2} changed it into the {3} type!"
+msgstr "{2} de {1} mudou para o tipo {3}!"
+
+msgid "{1}'s {2} cured its burn problem!"
+msgstr "{2} de {1} curou seu problema com a queimadura!"
+
+msgid "{1}'s {2} cured its confusion problem!"
+msgstr "{2} de {1} curou seu problema com confusão!"
+
+msgid "{1}'s {2} cured its frozen problem!"
+msgstr "{2} de {1} curou seu problema de congelamento!"
+
+msgid "{1}'s {2} cured its ice problem!"
+msgstr "{2} de {1} curou seu problema com gelo!"
+
+msgid "{1}'s {2} cured its love problem!"
+msgstr "{2} de {1} curou seu problema de amor!"
+
+msgid "{1}'s {2} cured its paralysis problem!"
+msgstr "{2} de {1} curou seu problema com a paralisia!"
+
+msgid "{1}'s {2} cured its partner's burn problem!"
+msgstr "{2} de {1} curou o problema de queimadura de seu parceiro!"
+
+msgid "{1}'s {2} cured its partner's ice problem!"
+msgstr "{2} de {1} curou o problema de congelamento de seu parceiro!"
+
+msgid "{1}'s {2} cured its partner's paralysis problem!"
+msgstr "{2} de {1} curou o problema de paralisia de seu parceiro!"
+
+msgid "{1}'s {2} cured its partner's poison problem!"
+msgstr "{2} de {1} curou o problema de envenenamento de seu parceiro!"
+
+msgid "{1}'s {2} cured its partner's sleep problem!"
+msgstr "{2} de {1} curou o problema de sono de seu parceiro!"
+
+msgid "{1}'s {2} cured its poison problem!"
+msgstr "{2} de {1} curou seu problema com o envenenamento!"
+
+msgid "{1}'s {2} cured its sleep problem!"
+msgstr "{2} de {1} curou seu problema de dormir!"
+
+msgid "{1}'s {2} cured {3}'s love problem!"
+msgstr "{2} de {1} curou o problema de amor de {3}!"
+
+msgid "{1}'s {2} cuts {3}'s Attack!"
+msgstr "{2} de {1} reduziu o Ataque de {3}!"
+
+msgid "{1}'s {2} cuts {3}'s Speed!"
+msgstr "{2} de {1} reduziu a Velocidade de {3}!"
+
+msgid "{1}'s {2} disabled {3}!"
+msgstr "{2} de {2} desabilitou {3}!"
+
+msgid "{1}'s {2} fell!"
+msgstr "{2} de {1} caiu!"
+
+msgid "{1}'s {2} had no effect on {3}!"
+msgstr "{2} de {1} não teve efeito em {3}!"
+
+msgid "{1}'s {2} hurt {3}!"
+msgstr "{2} de {1} feriu {3}!"
+
+msgid "{1}'s {2} infatuated {3}!"
+msgstr "{2} de {1} apaixonou {3}!"
+
+msgid "{1}'s {2} is disabled!"
+msgstr "{2} de {1} está desabilitado!"
+
+msgid "{1}'s {2} is reacting to {3}'s Mega Ring!"
+msgstr "{2} de {1} está reagindo ao Mega Anel de {3}!"
+
+msgid "{1}'s {2} lost all its PP due to the grudge!"
+msgstr "{2} de {1} perdeu todos os PP por causa do Rancor"
+
+msgid "{1}'s {2} lowered its Defense!"
+msgstr "{2} de {1} diminuiu sua Defesa!"
+
+msgid "{1}'s {2} lowered {3}'s Speed!"
+msgstr "{2} de {1} baixou a Velocidade de {3}!"
+
+msgid "{1}'s {2} made it the {3} type!"
+msgstr "{2} de {1} o fez do tipo {3}!"
+
+msgid "{1}'s {2} made {3} ineffective!"
+msgstr "{2} de {1} fez {3} ineficaz!"
+
+msgid "{1}'s {2} made {3} sleep!"
+msgstr "{2} de {1} fez {3} dormir!"
+
+msgid "{1}'s {2} made {3} useless!"
+msgstr "{2} de {1} fez {3} ínutil!"
+
+msgid "{1}'s {2} maxed its Attack!"
+msgstr "{2} de {1} maximizou seu Ataque!"
+
+msgid "{1}'s {2} paralyzed {3}! It may be unable to move!"
+msgstr "{2} de {1} paralizou {3}! Pode ser que seja incapaz de se mover!"
+
+msgid "{1}'s {2} poisoned {3}!"
+msgstr "{2} de {1} envenenou {3}!"
+
+msgid "{1}'s {2} prevented {3}'s {4} from working!"
+msgstr "{2} de {1} preveniu {4} de {3} de funcionar!"
+
+msgid "{1}'s {2} prevents Attack loss!"
+msgstr "{2} de {1} previne perda de Ataque!"
+
+msgid "{1}'s {2} prevents Defense loss!"
+msgstr "{2} de {1} previne perda de Defesa!"
+
+msgid "{1}'s {2} prevents accuracy loss!"
+msgstr "{2} de {1} previne perda de Precisão!"
+
+msgid "{1}'s {2} prevents burns!"
+msgstr "{2} de {1} previne queimaduras"
+
+msgid "{1}'s {2} prevents confusion!"
+msgstr "{2} de {1} previne confusão!"
+
+msgid "{1}'s {2} prevents paralysis!"
+msgstr "{2} de {1} previne paralisia!"
+
+msgid "{1}'s {2} prevents poisoning!"
+msgstr "{2} de {1} previne envenenamento!"
+
+msgid "{1}'s {2} prevents romance!"
+msgstr "{2} de {1} previne romance!"
+
+msgid "{1}'s {2} prevents stat decrease!"
+msgstr "{2} de {1} previne redução de atributo!"
+
+msgid "{1}'s {2} prevents stat loss!"
+msgstr "{2} de {1} previne perda de atributos!"
+
+msgid "{1}'s {2} prevents switching!"
+msgstr "{2} de {1} prevprevine trocas!"
+
+msgid "{1}'s {2} prevents {3} from using {4}!"
+msgstr "{2} de {1} previne {3} de usar{4}!"
+
+msgid "{1}'s {2} prevents {3}'s {4} from working!"
+msgstr "{2} de {1} previne {4} de {3} de funcionar!"
+
+msgid "{1}'s {2} raised its Attack!"
+msgstr "{2} de {1} aumentou seu Ataque!"
+
+msgid "{1}'s {2} raised its Fire power!"
+msgstr "{2} de {1} aumentou seu poder de Fogo!"
+
+msgid "{1}'s {2} raised its Special Attack!"
+msgstr "{2} de {1} aumentou seu Ataque Especial!"
+
+msgid "{1}'s {2} raised its Speed!"
+msgstr "{2} de {1} aumentou sua Velocidade!"
+
+msgid "{1}'s {2} raised its speed!"
+msgstr "{2} de {1} aumentou sua velocidade!"
+
+msgid "{1}'s {2} raised the power of its Fire-type moves!"
+msgstr "{1} aumentou o poder de movimentos do tipo Fogo por meio de {2}!"
+
+msgid "{1}'s {2} restored health!"
+msgstr "{2} de {1} restaurou vida!"
+
+msgid "{1}'s {2} restored its HP a little!"
+msgstr "{2} de {1} restaurou um pouco de seus PV!"
+
+msgid "{1}'s {2} restored its HP!"
+msgstr "{2} de {1} restaurou seus PV!"
+
+msgid "{1}'s {2} restored its status!"
+msgstr "{2} de {1} restourou seu estado!"
+
+msgid "{1}'s {2} restored {3}'s PP!"
+msgstr "{2} de {11} restaurou os PP de {3}!"
+
+msgid "{1}'s {2} restored {3}'s status!"
+msgstr "{2} de {1} restaurou o estado de {3}!"
+
+msgid "{1}'s {2} rose sharply!"
+msgstr "{2} de {1} aumentou acentuadamente"
+
+msgid "{1}'s {2} was bounced back by Magic Coat!"
+msgstr "{2} de {1} foi ricocheteado pela Capa Mágica!"
+
+msgid "{1}'s {2} was broken!"
+msgstr "{2} de {1} foi quebrado!"
+
+msgid "{1}'s {2} was burned up!"
+msgstr "{2} de {1} foi queimado!"
+
+msgid "{1}'s {2} was disabled!"
+msgstr "{2} de {1} foi desabilitado!"
+
+msgid "{1}'s {2} was transferred to {3}!"
+msgstr "{2} de {1} foi transferido para {3}!"
+
+msgid "{1}'s {2} wore off!"
+msgstr "{2} de {1} se desgastou"
+
+msgid "{1}, and you want {2}.\nThat will be ${3}. OK?"
+msgstr "{1e você quer {2}.\nCustará ${3}.  OK?"
+
+msgid "{1}, switch out! Come back!"
+msgstr "{1}, Troca! Volte!"
+
+msgid "{1}?\nHow many would you like to sell?"
+msgstr "{1}?\nVocê gostaria de vender quanto?"
+
+msgid "{1}? Certainly.\nHow many would you like?"
+msgstr "{1}?  Certamente.\nDe quantos você gostaria?"
+
+msgid "{1}? Oh, no.\nI can't buy that."
+msgstr "{1}?  Oh, não.\nNão posso comprar isso"
+
+msgid "{1}{2}<c2=06644bd2>\nHP: {3}"
+msgstr "{1}{2}<c2=06644bd2>\nHP: {3}"
+
+msgid "{2} type was added to {1}!"
+msgstr "O Tipo {2} foi adicionado a {1}!"
+

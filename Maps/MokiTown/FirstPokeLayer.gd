@@ -10,6 +10,7 @@ var arrow_bot = Vector2(12,80)
 signal selected
 
 func _ready():
+	Global.localize_textures(self)
 	$YesNo/NinePatchRect/Label1.text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_1"
 	$YesNo/NinePatchRect/Label2.text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_2"
 	$Test/Box/Option1.text = "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
@@ -23,9 +24,9 @@ func _ready():
 	$Test.visible = false
 	$YesNo.visible = false
 
-	$PokeGet/Grid.texture.flags = Texture.FLAG_REPEAT
-	$PokeGet/Grid2.texture.flags = Texture.FLAG_REPEAT
-	$PokeGet/Light.texture.flags = Texture.FLAG_REPEAT
+	$PokeGet/Grid.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
+	$PokeGet/Grid2.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
+	$PokeGet/Light3D.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
 
 
 func _input(event):
@@ -59,17 +60,17 @@ func update_arrow():
 		0:
 			match arrow_pos:
 				TOP:
-					$YesNo/NinePatchRect/Arrow.rect_position = Vector2(14,18)
+					$YesNo/NinePatchRect/Arrow.position = Vector2(14,18)
 				BOT:
-					$YesNo/NinePatchRect/Arrow.rect_position = Vector2(14,58)
+					$YesNo/NinePatchRect/Arrow.position = Vector2(14,58)
 		1:
 			match arrow_pos:
 				TOP:
-					$Test/Box/Arrow.rect_position = arrow_top
+					$Test/Box/Arrow.position = arrow_top
 				MID:
-					$Test/Box/Arrow.rect_position = arrow_mid
+					$Test/Box/Arrow.position = arrow_mid
 				BOT:
-					$Test/Box/Arrow.rect_position = arrow_bot
+					$Test/Box/Arrow.position = arrow_bot
 		
 
 func prompt_yes_no():
@@ -77,7 +78,7 @@ func prompt_yes_no():
 	$Test.visible = false
 	$YesNo.visible = true
 	$ColorRect.visible = false
-	yield(self, "selected")
+	await self.selected
 	$YesNo.visible = false
 	stage = -1
 	#arrow_pos = TOP
@@ -143,7 +144,7 @@ func Poke_get():
 	#Fade
 	$ColorRect.visible = true
 	$ColorRect/AnimationPlayer.play("Fade")
-	yield($ColorRect/AnimationPlayer, "animation_finished")
+	await $ColorRect/AnimationPlayer.animation_finished
 	emit_signal("selected")
 
 
@@ -157,23 +158,25 @@ func Poke_get_slide(poke : int):
 			orchynx.play("FadeOut")
 			electux.play("FadeOut")
 			raptorch.play("FadeIn")
-			yield(raptorch, "animation_finished")
+			await raptorch.animation_finished
 		1:
 			orchynx.play("FadeIn")
 			electux.play("FadeOut")
 			raptorch.play("FadeOut")
 
-			$PokeGet/Tween.interpolate_property($PokeGet/Orchynx, "position", $PokeGet/Orchynx.position, Vector2(246,170), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-			$PokeGet/Tween.start()
-			yield($PokeGet/Tween, "tween_completed")
+			# Godot 4: Create tween programmatically
+			var poke_tween = create_tween()
+			poke_tween.tween_property($PokeGet/Orchynx, "position", Vector2(246,170), 0.25).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+			await poke_tween.finished
 		2:
 			orchynx.play("FadeOut")
 			electux.play("FadeIn")
 			raptorch.play("FadeOut")
 
-			$PokeGet/Tween.interpolate_property($PokeGet/Electux, "position", $PokeGet/Electux.position, Vector2(246,170), 0.25, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-			$PokeGet/Tween.start()
-			yield($PokeGet/Tween, "tween_completed")
+			# Godot 4: Create tween programmatically
+			var poke_tween = create_tween()
+			poke_tween.tween_property($PokeGet/Electux, "position", Vector2(246,170), 0.25).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+			await poke_tween.finished
 	# Play music
 	var time = Global.game.get_node("Background_music").get_playback_position()
 	Global.game.get_node("Background_music").stop()
@@ -182,7 +185,7 @@ func Poke_get_slide(poke : int):
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
 
-	yield(Global.game.get_node("Effect_music"), "finished")
+	await Global.game.get_node("Effect_music").finished
 	Global.game.get_node("Effect_music").stop()
 	Global.game.get_node("Background_music").play(time)
 	emit_signal("selected")
@@ -192,6 +195,6 @@ func fadeout():
 	$YesNo.visible = false
 
 	$ColorRect/AnimationPlayer.play_backwards("Fade")
-	yield($ColorRect/AnimationPlayer, "animation_finished")
+	await $ColorRect/AnimationPlayer.animation_finished
 	
 	emit_signal("selected")

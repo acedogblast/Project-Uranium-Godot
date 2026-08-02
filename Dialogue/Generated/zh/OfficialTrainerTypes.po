@@ -1,0 +1,238 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "PkMn TRAINER"
+msgstr "宝可梦训练家"
+
+msgid "LASS"
+msgstr "迷你裙"
+
+msgid "YOUNGSTER"
+msgstr "短裤小子"
+
+msgid "HIKER"
+msgstr "登山男"
+
+msgid "BEAUTY"
+msgstr "大姐姐"
+
+msgid "FISHERMAN"
+msgstr "钓鱼者"
+
+msgid "LADY"
+msgstr "大小姐"
+
+msgid "TRIATHLETE"
+msgstr "铁人三项运动员"
+
+msgid "TWINS"
+msgstr "双胞胎"
+
+msgid "SWIMMER♀"
+msgstr "比基尼姐姐"
+
+msgid "BUG CATCHER"
+msgstr "捕虫少年"
+
+msgid "SCHOOL KID"
+msgstr "刚下课的学生"
+
+msgid "RICH BOY"
+msgstr "富家少爷"
+
+msgid "SR. AND JR."
+msgstr "学姐与学妹"
+
+msgid "BLACK BELT"
+msgstr "空手道王"
+
+msgid "TEAM AQUA"
+msgstr "海洋队"
+
+msgid "TUBER"
+msgstr "泳圈女孩"
+
+msgid "HEX MANIAC"
+msgstr "灵异狂"
+
+msgid "PkMn BREEDER"
+msgstr "宝可梦培育家"
+
+msgid "WORKER"
+msgstr "工人"
+
+msgid "TEAM MAGMA"
+msgstr "熔岩队"
+
+msgid "INTERVIEWERS"
+msgstr "采访者"
+
+msgid "YOUNG COUPLE"
+msgstr "热恋情侣"
+
+msgid "GUITARIST"
+msgstr "吉他手"
+
+msgid "GENTLEMAN"
+msgstr "绅士"
+
+msgid "CHAMPION"
+msgstr "冠军"
+
+msgid "MAGMA LEADER"
+msgstr "熔岩队首领"
+
+msgid "BATTLE GIRL"
+msgstr "对战少女"
+
+msgid "SWIMMER♂"
+msgstr "泳裤小伙子"
+
+msgid "POKéFAN"
+msgstr "宝可梦迷"
+
+msgid "EXPERT"
+msgstr "达人"
+
+msgid "DRAGON TAMER"
+msgstr "龙之使者"
+
+msgid "BIRD KEEPER"
+msgstr "饲鸟使者"
+
+msgid "NINJA BOY"
+msgstr "忍者小子"
+
+msgid "PARASOL LADY"
+msgstr "阳伞姐姐"
+
+msgid "BUG MANIAC"
+msgstr "昆虫狂"
+
+msgid "SAILOR"
+msgstr "水手"
+
+msgid "COLLECTOR"
+msgstr "宝可梦收藏家"
+
+msgid "PkMn RANGER"
+msgstr "宝可梦保育家"
+
+msgid "AROMA LADY"
+msgstr "芳香姐姐"
+
+msgid "RUIN MANIAC"
+msgstr "遗迹狂"
+
+msgid "COOLTRAINER"
+msgstr "精英训练家"
+
+msgid "POKéMANIAC"
+msgstr "怪兽狂"
+
+msgid "KINDLER"
+msgstr "生营火者"
+
+msgid "CAMPER"
+msgstr "露营少年"
+
+msgid "PICNICKER"
+msgstr "野餐少"
+
+msgid "PSYCHIC"
+msgstr "超能力者"
+
+msgid "SIS AND BRO"
+msgstr "海上姐弟"
+
+msgid "OLD COUPLE"
+msgstr "金婚夫妻"
+
+msgid "AQUA LEADER"
+msgstr "海洋队首领"
+
+msgid "LEADER"
+msgstr "道馆馆主"
+
+msgid "LEADERS"
+msgstr "道馆馆主"
+
+msgid "ELITE FOUR"
+msgstr "四天王"
+
+msgid "ACE TRAINER"
+msgstr "精英训练家"
+
+msgid "ROCKET GRUNT"
+msgstr "菜鸟"
+
+msgid "SCHOOLKIDDO"
+msgstr "刚下课的学生"
+
+msgid "RIVAL"
+msgstr "劲敌"
+
+msgid "HERO"
+msgstr "英雄"
+
+msgid "SUPER SCIENTIST"
+msgstr "超级科学家"
+
+msgid "COOL COUPLE"
+msgstr "菁英情侣"
+
+msgid "FARMER"
+msgstr "农民"
+
+msgid "PYROMANIAC"
+msgstr "纵火狂"
+
+msgid "BIKER"
+msgstr "暴走族"
+
+msgid "NINJA SURFERS"
+msgstr "冲浪忍者"
+
+msgid "NINJA BOSS"
+msgstr "忍者首领"
+
+msgid "ACTOR"
+msgstr "男演员"
+
+msgid "ACTRESS"
+msgstr "女演员"
+
+msgid "LEADER?"
+msgstr "道馆馆主？"
+
+msgid "PROFESSOR"
+msgstr "博士"
+
+msgid "ACOLYTE"
+msgstr "侍祭"
+
+msgid "DIVER"
+msgstr "潜水员"
+
+msgid "TSUKI NINJA"
+msgstr "月族忍者"
+
+msgid "NAMI NINJA"
+msgstr "波族忍者"
+
+msgid "NINJA MASTER"
+msgstr "忍者大师"
+
+msgid "NUCLEAR HORDE"
+msgstr "核难游民"
+
+msgid "APOCALYPSE"
+msgstr "末世"
+
+msgid "ELITE TRAINER"
+msgstr "精英训练家"
+
+msgid "PIRATE"
+msgstr "海盗"

@@ -1,0 +1,247 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "PkMn TRAINER"
+msgstr "Dresseur PkMn"
+
+msgid "LASS"
+msgstr "Fillette"
+
+msgid "YOUNGSTER"
+msgstr "Gamin"
+
+msgid "HIKER"
+msgstr "Montagnard"
+
+msgid "BEAUTY"
+msgstr "Canon"
+
+msgid "FISHERMAN"
+msgstr "Pêcheur"
+
+msgid "LADY"
+msgstr "Mademoiselle"
+
+msgid "TRIATHLETE"
+msgstr "Triathlète"
+
+msgid "TWINS"
+msgstr "Jumelles"
+
+msgid "SWIMMER♀"
+msgstr "Nageuse"
+
+msgid "BUG CATCHER"
+msgstr "Scout"
+
+msgid "SCHOOL KID"
+msgstr "Élève"
+
+msgid "RICH BOY"
+msgstr "Richard"
+
+msgid "SR. AND JR."
+msgstr "Senior et Junior"
+
+msgid "BLACK BELT"
+msgstr "Karatéka"
+
+msgid "TEAM AQUA"
+msgstr "Team AQUA"
+
+msgid "TUBER"
+msgstr "Flotteur"
+
+msgid "HEX MANIAC"
+msgstr "Mystimaniac"
+
+msgid "PkMn BREEDER"
+msgstr "Éleveur PkMn"
+
+msgid "WORKER"
+msgstr "Ouvrier"
+
+msgid "TEAM MAGMA"
+msgstr "Team MAGMA"
+
+msgid "INTERVIEWERS"
+msgstr "Journalistes"
+
+msgid "YOUNG COUPLE"
+msgstr "Jeune Couple"
+
+msgid "GUITARIST"
+msgstr "Guitariste"
+
+msgid "GENTLEMAN"
+msgstr "Gentleman"
+
+msgid "CHAMPION"
+msgstr "Maître"
+
+msgid "MAGMA LEADER"
+msgstr "Leader MAGMA"
+
+msgid "BATTLE GIRL"
+msgstr "Combattante"
+
+msgid "SWIMMER♂"
+msgstr "Nageur"
+
+msgid "POKéFAN"
+msgstr "Pokéfan"
+
+msgid "EXPERT"
+msgstr "Expert"
+
+msgid "DRAGON TAMER"
+msgstr "Dracologue"
+
+msgid "BIRD KEEPER"
+msgstr "Ornithologue"
+
+msgid "NINJA BOY"
+msgstr "Ninja Fan"
+
+msgid "PARASOL LADY"
+msgstr "Soeur Parasol"
+
+msgid "BUG MANIAC"
+msgstr "Entomomaniac"
+
+msgid "SAILOR"
+msgstr "Marin"
+
+msgid "COLLECTOR"
+msgstr "Collectioneur"
+
+msgid "PkMn RANGER"
+msgstr "Pokémon Ranger"
+
+msgid "AROMA LADY"
+msgstr "Aromathérapeute"
+
+msgid "RUIN MANIAC"
+msgstr "Ruinemaniac"
+
+msgid "COOLTRAINER"
+msgstr "Top Dresseur"
+
+msgid "POKéMANIAC"
+msgstr "Pokémaniac"
+
+msgid "KINDLER"
+msgstr "Saltimbanque"
+
+msgid "CAMPER"
+msgstr "Campeur"
+
+msgid "PICNICKER"
+msgstr "Fan de Pique-Nique"
+
+msgid "PSYCHIC"
+msgstr "Kinésiste"
+
+msgid "SIS AND BRO"
+msgstr "Frère et Soeur"
+
+msgid "OLD COUPLE"
+msgstr "Vieux Couple"
+
+msgid "AQUA LEADER"
+msgstr "Leader Aqua"
+
+msgid "LEADER"
+msgstr "Chef"
+
+msgid "LEADERS"
+msgstr "Chefs"
+
+msgid "ELITE FOUR"
+msgstr "Conseil 4"
+
+msgid "ACE TRAINER"
+msgstr "TopDresseur"
+
+msgid "ROCKET GRUNT"
+msgstr "Sbire de la Team Rocket"
+
+msgid "SCHOOLKIDDO"
+msgstr "Élève"
+
+msgid "RIVAL"
+msgstr "Rival"
+
+msgid "HERO"
+msgstr "Héros"
+
+msgid "SUPER SCIENTIST"
+msgstr "Scientifique"
+
+msgid "COOL COUPLE"
+msgstr "Couple Cool"
+
+msgid "FARMER"
+msgstr "Fermier"
+
+msgid "PYROMANIAC"
+msgstr "Pyromane"
+
+msgid "BIKER"
+msgstr "Motard"
+
+msgid "NINJA SURFERS"
+msgstr "Surfeur ninja"
+
+msgid "NINJA BOSS"
+msgstr "Chef ninja"
+
+msgid "ACTOR"
+msgstr "Acteur"
+
+msgid "ACTRESS"
+msgstr "Actrice"
+
+msgid "LEADER?"
+msgstr "Chef?"
+
+msgid "PROFESSOR"
+msgstr "Professeur"
+
+msgid "ACOLYTE"
+msgstr "Acolyte"
+
+msgid "DIVER"
+msgstr "Plongeur"
+
+msgid "TSUKI NINJA"
+msgstr "Ninja TSUKI"
+
+msgid "NAMI NINJA"
+msgstr "Ninja NAMI"
+
+msgid "NINJA MASTER"
+msgstr "Maitre ninja"
+
+msgid "NUCLEAR HORDE"
+msgstr "Horde nucléaire"
+
+msgid "APOCALYPSE"
+msgstr "Apocalypse"
+
+msgid "ELITE TRAINER"
+msgstr "Dresseur d'élite"
+
+msgid "PIRATE"
+msgstr "Pirate"
+
+msgid "DREAM"
+msgstr "Rêve"
+
+msgid "KING"
+msgstr "Roi"
+
+msgid "BIOFIBER CONSTRUCT"
+msgstr "Construction de Biofibres"

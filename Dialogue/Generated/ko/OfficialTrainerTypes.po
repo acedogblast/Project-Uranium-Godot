@@ -1,0 +1,247 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "PkMn TRAINER"
+msgstr "포켓몬 트레이너"
+
+msgid "LASS"
+msgstr "짧은 치마"
+
+msgid "YOUNGSTER"
+msgstr "반바지 꼬마"
+
+msgid "HIKER"
+msgstr "등산가"
+
+msgid "BEAUTY"
+msgstr "아가씨"
+
+msgid "FISHERMAN"
+msgstr "낚시꾼"
+
+msgid "LADY"
+msgstr "아기씨"
+
+msgid "TRIATHLETE"
+msgstr "트라이 애슬리트"
+
+msgid "TWINS"
+msgstr "쌍둥이"
+
+msgid "SWIMMER♀"
+msgstr "비키니 아가씨"
+
+msgid "BUG CATCHER"
+msgstr "곤충채집소년"
+
+msgid "SCHOOL KID"
+msgstr "학원 끝난 아이"
+
+msgid "RICH BOY"
+msgstr "도련님"
+
+msgid "SR. AND JR."
+msgstr "선배&후배"
+
+msgid "BLACK BELT"
+msgstr "태권왕"
+
+msgid "TEAM AQUA"
+msgstr "아쿠아단"
+
+msgid "TUBER"
+msgstr "튜브걸"
+
+msgid "HEX MANIAC"
+msgstr "오컬트마니아"
+
+msgid "PkMn BREEDER"
+msgstr "포켓몬 브리더"
+
+msgid "WORKER"
+msgstr "작업원"
+
+msgid "TEAM MAGMA"
+msgstr "마그마단"
+
+msgid "INTERVIEWERS"
+msgstr "인터뷰어"
+
+msgid "YOUNG COUPLE"
+msgstr "러브러브커플"
+
+msgid "GUITARIST"
+msgstr "기타리스트"
+
+msgid "GENTLEMAN"
+msgstr "신사"
+
+msgid "CHAMPION"
+msgstr "챔피언"
+
+msgid "MAGMA LEADER"
+msgstr "마그마단리더"
+
+msgid "BATTLE GIRL"
+msgstr "배틀걸"
+
+msgid "SWIMMER♂"
+msgstr "수영팬티소년"
+
+msgid "POKéFAN"
+msgstr "애호가클럽"
+
+msgid "EXPERT"
+msgstr "달인"
+
+msgid "DRAGON TAMER"
+msgstr "드래곤 조련사"
+
+msgid "BIRD KEEPER"
+msgstr "새 조련사"
+
+msgid "NINJA BOY"
+msgstr "닌자놀이"
+
+msgid "PARASOL LADY"
+msgstr "파라솔 아가씨"
+
+msgid "BUG MANIAC"
+msgstr "곤충마니아"
+
+msgid "SAILOR"
+msgstr "선원"
+
+msgid "COLLECTOR"
+msgstr "포켓몬 컬렉터"
+
+msgid "PkMn RANGER"
+msgstr "포켓몬 레인저"
+
+msgid "AROMA LADY"
+msgstr "아로마 아가씨"
+
+msgid "RUIN MANIAC"
+msgstr "유적 마니아"
+
+msgid "COOLTRAINER"
+msgstr "엘리트 트레이너"
+
+msgid "POKéMANIAC"
+msgstr "포켓몬 매니아"
+
+msgid "KINDLER"
+msgstr "캠프파이어"
+
+msgid "CAMPER"
+msgstr "캠프보이"
+
+msgid "PICNICKER"
+msgstr "피크닉걸"
+
+msgid "PSYCHIC"
+msgstr "초능력자"
+
+msgid "SIS AND BRO"
+msgstr "바다남매"
+
+msgid "OLD COUPLE"
+msgstr "금혼식부부"
+
+msgid "AQUA LEADER"
+msgstr "아쿠아단리더"
+
+msgid "LEADER"
+msgstr "체육관 관장"
+
+msgid "LEADERS"
+msgstr "체육관 관장"
+
+msgid "ELITE FOUR"
+msgstr "사천왕"
+
+msgid "ACE TRAINER"
+msgstr "엘리트 트레이너"
+
+msgid "ROCKET GRUNT"
+msgstr "로켓단 조무래기"
+
+msgid "SCHOOLKIDDO"
+msgstr "학원 끝난 아이"
+
+msgid "RIVAL"
+msgstr "라이벌"
+
+msgid "HERO"
+msgstr "정의의 사도"
+
+msgid "SUPER SCIENTIST"
+msgstr "슈퍼 사이언티스트"
+
+msgid "COOL COUPLE"
+msgstr "엘리트콤비"
+
+msgid "FARMER"
+msgstr "농부"
+
+msgid "PYROMANIAC"
+msgstr "연쇄방화범"
+
+msgid "BIKER"
+msgstr "폭주족"
+
+msgid "NINJA SURFERS"
+msgstr "닌자 서퍼즈"
+
+msgid "NINJA BOSS"
+msgstr "닌자 두목"
+
+msgid "ACTOR"
+msgstr "배우"
+
+msgid "ACTRESS"
+msgstr "여배우"
+
+msgid "LEADER?"
+msgstr "체육관 관장?"
+
+msgid "PROFESSOR"
+msgstr "교수"
+
+msgid "ACOLYTE"
+msgstr "인도자"
+
+msgid "DIVER"
+msgstr "다이버"
+
+msgid "TSUKI NINJA"
+msgstr "츠키 일족"
+
+msgid "NAMI NINJA"
+msgstr "나미 일족"
+
+msgid "NINJA MASTER"
+msgstr "닌자 사범"
+
+msgid "NUCLEAR HORDE"
+msgstr "핵포켓몬"
+
+msgid "APOCALYPSE"
+msgstr "복수자"
+
+msgid "ELITE TRAINER"
+msgstr "엘리트 트레이너"
+
+msgid "PIRATE"
+msgstr "해적"
+
+msgid "DREAM"
+msgstr "드림"
+
+msgid "KING"
+msgstr "꿈의"
+
+msgid "BIOFIBER CONSTRUCT"
+msgstr "생물섬유바디"

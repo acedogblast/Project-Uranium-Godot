@@ -25,7 +25,7 @@ var critical_hit_level = 1
 var secondary_effect_chance = 0.1
 
 # The secondary effect of the move
-var secondary_effect = MajorAilment.FREEZE
+var secondary_effect = MajorAilment.FROZEN
 
 # The flags of the move
 var flags = []

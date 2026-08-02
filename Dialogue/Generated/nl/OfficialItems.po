@@ -1,0 +1,3250 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: nl\n"
+
+msgid "Repel"
+msgstr "Afweer"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 100 steps after its use."
+msgstr "Een voorwerp dat wilde Pokémon voor 100 stappen na gebruik weghoudt."
+
+msgid "Super Repel"
+msgstr "Superafweer"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 200 steps after its use."
+msgstr "Een voorwerp dat wilde Pokémon voor 200 stappen na gebruik weghoudt."
+
+msgid "Max Repel"
+msgstr "Max-Afweer"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 250 steps after its use."
+msgstr "Een voorwerp dat wilde Pokémon voor 250 stappen na gebruik weghoudt."
+
+msgid "Black Flute"
+msgstr "Zwarte Fluit"
+
+msgid "A black flute made from blown glass. Its melody makes wild Pokémon less likely to appear."
+msgstr "Een zwarte fluit gemaakt van geblazen glas. Het melodie laat wilde Pokémon minder snel verschijnen."
+
+msgid "White Flute"
+msgstr "Witte Fluit"
+
+msgid "A white flute made from blown glass. Its melody makes wild Pokémon more likely to appear."
+msgstr "Een witte fluit gemaakt van geblazen glas. Het melodie laat wilde Pokémon sneller verschijnen."
+
+msgid "Honey"
+msgstr "Honing"
+
+msgid "A sweet honey with an aroma that attracts wild Pokémon when used in grass, caves or on special trees."
+msgstr "Zoete honing. Het trekt wilde Pokémon aan wanneer het in gras of grotten gebruikt wordt."
+
+msgid "Escape Rope"
+msgstr "Ontsnappingstouw"
+
+msgid "A long, durable rope. Use it to escape instantly from a cave or a dungeon."
+msgstr "Een lang, duurzaam touw. Gebruik het om een grot te verlaten."
+
+msgid "Red Shard"
+msgstr "Rode Scherf"
+
+msgid "A small red shard. It appears to be from some sort of implement made long ago."
+msgstr "Een kleine, rode scherf. Het lijkt van een oeroud voorwerp afgebrokkeld te zijn."
+
+msgid "Blue Shard"
+msgstr "Blauwe Scherf"
+
+msgid "A small blue shard. It appears to be from some sort of implement made long ago."
+msgstr "Een kleine, blauwe scherf. Het lijkt van een oeroud voorwerp afgebrokkeld te zijn."
+
+msgid "Yellow Shard"
+msgstr "Gele Scherf"
+
+msgid "A small yellow shard. It appears to be from some sort of implement made long ago."
+msgstr "Een kleine, gele scherf. Het lijkt van een oeroud voorwerp afgebrokkeld te zijn."
+
+msgid "Green Shard"
+msgstr "Groene Scherf"
+
+msgid "A small green shard. It appears to be from some sort of implement made long ago."
+msgstr "Een kleine, groene scherf. Het lijkt van een oeroud voorwerp afgebrokkeld te zijn."
+
+msgid "Fire Stone"
+msgstr "Vuursteen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is colored orange."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het is oranje van kleur."
+
+msgid "Water Stone"
+msgstr "Watersteen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is a clear, light blue."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het is doorzichtig en lichtblauw."
+
+msgid "Thunderstone"
+msgstr "Dondersteen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a thunderbolt pattern."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het heeft een bliksempatroon."
+
+msgid "Leaf Stone"
+msgstr "Bladersteen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a leaf pattern."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het heeft een bladerpatroon."
+
+msgid "Moon Stone"
+msgstr "Maansteen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as black as the night sky."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het is zo zwart als de nacht."
+
+msgid "Sun Stone"
+msgstr "Zonnesteen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as red as the sun."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het is zo rood als de zon."
+
+msgid "Shiny Stone"
+msgstr "Glimmende Steen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It shines with a dazzling light."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het schittert met een verblindend licht."
+
+msgid "Dusk Stone"
+msgstr "Schemersteen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as dark as dark can be."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het is zo duister als het maar kan zijn."
+
+msgid "Dawn Stone"
+msgstr "Dageraadsteen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It sparkles like eyes."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het sprankelt als een oog."
+
+msgid "Oval Stone"
+msgstr "Ovale Steen"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is shaped like an egg."
+msgstr "Een speciale steen dat bepaalde Pokémon laat evolueren. Het is eivormig."
+
+msgid "Helix Fossil"
+msgstr "Schelpfossiel"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a seashell."
+msgstr "Een fossiel van een oeroude Pokémon die onderzee leefde. Het lijkt deel van een zeeschelp te zijn."
+
+msgid "Dome Fossil"
+msgstr "Koepelfossiel"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a shell."
+msgstr "Een fossiel van een oeroude Pokémon die onderzee leefde. Het lijkt deel van een schelp te zijn."
+
+msgid "Old Amber"
+msgstr "Oud Barnsteen"
+
+msgid "A piece of clear amber that contains the genetic material of an ancient Pokémon."
+msgstr "Een stuk barnsteen met de genetische opmaak van een oeroude Pokémon."
+
+msgid "Root Fossil"
+msgstr "Wortelfossiel"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a plant root."
+msgstr "Een fossiel van een oeroude Pokémon die onderzee leefde. Het lijkt deel van een wortel te zijn."
+
+msgid "Claw Fossil"
+msgstr "Klauwfossiel"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a claw."
+msgstr "Een fossiel van een oeroude Pokémon die onderzee leefde. Het lijkt deel van een klauw te zijn."
+
+msgid "Armor Fossil"
+msgstr "Pantserfossiel"
+
+msgid "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a collar."
+msgstr "Een fossiel van een oeroude Pokémon die op het land leefde. Het lijkt deel van een pantser te zijn."
+
+msgid "Skull Fossil"
+msgstr "Schedelfossiel"
+
+msgid "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a head."
+msgstr "Een fossiel van een oeroude Pokémon die op het land leefde. Het lijkt deel van een schedel te zijn."
+
+msgid "TinyMushroom"
+msgstr "Kleine Paddenstoel"
+
+msgid "A small and rare mushroom. It is quite popular among certain maniacal fan segments."
+msgstr "Een kleine, zeldzame paddenstoel. Het is best gewild bij verzamelaars."
+
+msgid "Big Mushroom"
+msgstr "Grote Paddenstoel"
+
+msgid "A large and rare mushroom. It is very popular among certain maniacal fan segments."
+msgstr "Een grote, zeldzame paddenstoel. Het is zeer gewild bij verzamelaars."
+
+msgid "Pearl"
+msgstr "Parel"
+
+msgid "A somewhat-small pearl that sparkles in a pretty silver color. It can be sold cheaply to shops."
+msgstr "Een schitterende, kleine parel. Het is iets waard."
+
+msgid "Big Pearl"
+msgstr "Grote Parel"
+
+msgid "A quite-large pearl that sparkles in a pretty silver color. It can be sold at a high price to shops."
+msgstr "Een schitterende, grote parel. Het is veel waard."
+
+msgid "Stardust"
+msgstr "Sterrenstof"
+
+msgid "Lovely, red-colored sand with a loose, silky feel. It can be sold at a high price to shops."
+msgstr "Een zijdezacht, roodgekleurd zand. Het is veel waard."
+
+msgid "Star Piece"
+msgstr "Sterrenfragment"
+
+msgid "A shard of a pretty gem that sparkles in a red color. It can be sold at a high price to shops."
+msgstr "Een scherf van een rood glinsterende edelsteen. Het is veel waard."
+
+msgid "Nugget"
+msgstr "Goudklompje"
+
+msgid "A nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops."
+msgstr "Een glanzend klompje massief goud. Het is veel waard."
+
+msgid "Heart Scale"
+msgstr "Hartvormige Schub"
+
+msgid "A pretty, heart-shaped scale that is extremely rare. It glows faintly in the colors of the rainbow."
+msgstr "Een zeldzame, hartvormige schub. Het glimt met de kleuren van de regenboog."
+
+msgid "Rare Bone"
+msgstr "Zeldzaam Bot"
+
+msgid "A bone that is extremely valuable for Pokémon archaeology. It can be sold for a high price to shops."
+msgstr "Een uiterst zeldzaam bot dat handig is voor Pokémon-archeologie. Het is veel waard."
+
+msgid "Shoal Salt"
+msgstr "Zeezout"
+
+msgid "Pure salt that was discovered deep inside the Shoal Cave. It is extremely salty."
+msgstr "Puur zout, gevonden in de Shoalgrot. Het smaakt heel zout."
+
+msgid "Shoal Shell"
+msgstr "Zeeschelp"
+
+msgid "A pretty seashell that was found deep inside the Shoal Cave. It is striped in blue and white."
+msgstr "Een prachtige zeeschelp, gevonden in de Shoalgrot. Het is wit en blauw gestreept."
+
+msgid "Odd Keystone"
+msgstr "Vreemde Sluitsteen"
+
+msgid "A vital item that is needed to keep a stone tower from collapsing. Voices can be heard from it occasionally."
+msgstr "Een belangrijk voorwerp dat het instorten van een stenen toren voorkomt. Er komen soms stemmen uit."
+
+msgid "Growth Mulch"
+msgstr "Haastige Compost"
+
+msgid "A plant fertilizer. It speeds up the growth of Berries. However, it also dries the soil faster."
+msgstr "Een plantenmest. Het droogt de grond sneller uit, maar versnelt Bessengroei."
+
+msgid "Damp Mulch"
+msgstr "Vochtige Compost"
+
+msgid "A plant fertilizer. It slows the growth of Berries and causes the soil to dry slower."
+msgstr "Een plantenmest. Het houdt de grond langer vochtig, maar vertraagt Bessengroei."
+
+msgid "Stable Mulch"
+msgstr "Stabiele Compost"
+
+msgid "A plant fertilizer. It extends the time ripened Berries remain on their plants before falling."
+msgstr "Een plantenmest. Het verlengt hoe lang rijpe Bessen aan de plant blijven hangen."
+
+msgid "Gooey Mulch"
+msgstr "Kleverige Compost"
+
+msgid "A plant fertilizer. It ups the number of times new plants grow where mature plants withered."
+msgstr "Een plantenmest. Het verhoogt het aantal keer dat nieuwe planten kunnen groeien."
+
+msgid "Red Apricorn"
+msgstr "Rode Apricorn"
+
+msgid "A red Apricorn. It assails your nostrils."
+msgstr "Een rode Apricorn. De geur prikt in je neusgaten."
+
+msgid "Ylw Apricorn"
+msgstr "Gele Apricorn"
+
+msgid "A yellow Apricorn. It has an invigorating scent."
+msgstr "Een gele Apricorn. Het ruikt verfrissend."
+
+msgid "Blu Apricorn"
+msgstr "Blauwe Apricorn"
+
+msgid "A blue Apricorn. It smells a bit like grass."
+msgstr "Een blauwe Apricorn. Het ruikt een beetje naar gras."
+
+msgid "Grn Apricorn"
+msgstr "Groene Apricorn"
+
+msgid "A green Apricorn. It has a mysterious, aromatic scent."
+msgstr "Een groene Apricorn. Het heeft een sterk aroma."
+
+msgid "Pnk Apricorn"
+msgstr "Roze Apricorn"
+
+msgid "A pink Apricorn. It has a nice, sweet scent."
+msgstr "Een roze Apricorn. Het ruikt lekker zoet."
+
+msgid "Wht Apricorn"
+msgstr "Witte Apricorn"
+
+msgid "A white Apricorn. It doesn't smell like anything."
+msgstr "Een witte Apricorn. Het ruikt nergens naar."
+
+msgid "Blk Apricorn"
+msgstr "Zwarte Apricorn"
+
+msgid "A black Apricorn. It has an indescribable scent."
+msgstr "Een zwarte Apricorn. Het heeft een onbeschrijfelijke geur."
+
+msgid "BrightPowder"
+msgstr "Fel Poeder"
+
+msgid "An item to be held by a Pokémon. It casts a tricky glare that lowers the opponent's accuracy."
+msgstr "Kan worden vastgehouden. Het schittert in de ogen van de tegenstander en verlaagt zo zijn precisie."
+
+msgid "White Herb"
+msgstr "Wit Kruid"
+
+msgid "An item to be held by a Pokémon. It restores any lowered stat in battle. It can be used only once."
+msgstr "Kan worden vastgehouden. Het herstelt verlaagde statistieken, maar kan slechts één keer gebruikt worden."
+
+msgid "Exp. Share"
+msgstr "Exp.-Deler"
+
+msgid "An item to be held by a Pokémon. The holder gets a share of a battle's Exp. Points without battling."
+msgstr "Kan worden vastgehouden. De houder krijgt een deel van de gewonnen Exp. zonder zelf te vechten."
+
+msgid "Quick Claw"
+msgstr "Flitsklauw"
+
+msgid "An item to be held by a Pokémon. A light, sharp claw that lets the bearer move first occasionally."
+msgstr "Kan worden vastgehouden. Een lichte, scherpe klauw die de houder af en toe eerst laat bewegen."
+
+msgid "Soothe Bell"
+msgstr "Troostbelletje"
+
+msgid "An item to be held by a Pokémon. It is a bell with a comforting chime that calms the holder."
+msgstr "Kan worden vastgehouden. Het is een belletje met een gerinkel dat de houder kalmeert."
+
+msgid "Mental Herb"
+msgstr "Mentaal Kruid"
+
+msgid "An item to be held by a Pokémon. It snaps the holder out of infatuation, just once."
+msgstr "Kan worden vastgehouden. Het verhelpt de verzotheid van de houder eens per gevecht."
+
+msgid "King's Rock"
+msgstr "Koningsrots"
+
+msgid "An item to be held by a Pokémon. It may cause the foe to flinch when the holder inflicts damage."
+msgstr "Kan worden vastgehouden. Het kan de tegenstander terug laten deinzen wanneer de houder schade toebrengt."
+
+msgid "SilverPowder"
+msgstr "Zilverpoeder"
+
+msgid "An item to be held by a Pokémon. It is a shiny, silver powder that ups the power of Bug-type moves."
+msgstr "Kan worden vastgehouden. Het is een glimmend, zilverkleurig poeder dat Insect-acties sterker maakt."
+
+msgid "Amulet Coin"
+msgstr "Munt Amulet"
+
+msgid "An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in."
+msgstr "Kan worden vastgehouden. Het verdubbelt het gewonnen geldbedrag als de houder meevecht."
+
+msgid "Cleanse Tag"
+msgstr "Talisman"
+
+msgid "An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party."
+msgstr "Kan worden vastgehouden. Het houdt Pokémon vaker op afstand als de houder vooraan het team staat."
+
+msgid "Smoke Ball"
+msgstr "Rookbom"
+
+msgid "An item to be held by a Pokémon. It enables the holder to flee from any wild Pokémon without fail."
+msgstr "Kan worden vastgehouden. Hiermee kan de houder altijd wegvluchten van wilde Pokémon."
+
+msgid "Everstone"
+msgstr "Eeuwensteen"
+
+msgid "An item to be held by a Pokémon. The Pokémon holding this peculiar stone is prevented from evolving."
+msgstr "Kan worden vastgehouden. De houder kan niet evolueren zolang het deze bijzondere steen vasthoudt."
+
+msgid "Focus Band"
+msgstr "Focusband"
+
+msgid "An item to be held by a Pokémon. The holder may endure a potential KO attack, leaving it with just 1 HP."
+msgstr "Kan worden vastgehouden. De houder kan een fatale klap verdragen, waardoor het 1 HP behoudt."
+
+msgid "Lucky Egg"
+msgstr "Geluks-Ei"
+
+msgid "An item to be held by a Pokémon. It is an egg filled with happiness that earns extra Exp. Points in battle."
+msgstr "Kan worden vastgehouden. Het is een ei vol geluk dat Exp.-toename verhoogt tijdens gevechten."
+
+msgid "Scope Lens"
+msgstr "Richtkijkerlens"
+
+msgid "An item to be held by a Pokémon. It is a lens that boosts the holder's critical-hit ratio."
+msgstr "Kan worden vastgehouden. Het is een lens die de kans op voltreffers verhoogt."
+
+msgid "Wide Lens"
+msgstr "Groothoeklens"
+
+msgid "An item to be held by a Pokémon. It is a magnifying lens that slightly boosts the accuracy of moves."
+msgstr "Kan worden vastgehouden. Het is een vergrootglas dat de precisie van de houder iets verhoogt."
+
+msgid "Zoom Lens"
+msgstr "Zoomlens"
+
+msgid "An item to be held by a Pokémon. If the holder moves after the foe, its critical-hit ratio will be boosted."
+msgstr "Kan worden vastgehouden. Als de houder na zijn tegenstander beweegt, heeft het meer kans op voltreffers."
+
+msgid "Metal Coat"
+msgstr "Metalen Mantel"
+
+msgid "An item to be held by a Pokémon. It is a special metallic film that ups the power of Steel-type moves."
+msgstr "Kan worden vastgehouden. Het is een soort metaalfilm dat Staal-acties sterker maakt."
+
+msgid "Leftovers"
+msgstr "Voedselresten"
+
+msgid "An item to be held by a Pokémon. The holder's HP is gradually restored during battle."
+msgstr "Kan worden vastgehouden. De houder herstelt tijdens een gevecht elke beurt een beetje HP."
+
+msgid "Dragon Scale"
+msgstr "Drakenschub"
+
+msgid "A thick and tough scale. Dragon-type Pokémon may be holding this item when caught."
+msgstr "Een dikke sterke schub. Draak-soorten kunnen dit voorwerp bij zich dragen wanneer ze worden gevangen."
+
+msgid "Shell Bell"
+msgstr "Schelpbelletje"
+
+msgid "An item to be held by a Pokémon. The holder's HP is restored a little every time it inflicts damage."
+msgstr "Kan worden vastgehouden. De houder herstelt een beetje HP elke keer dat het schade toebrengt."
+
+msgid "Muscle Band"
+msgstr "Spierband"
+
+msgid "An item to be held by a Pokémon. It is a headband that slightly boosts the power of physical moves."
+msgstr "Kan worden vastgehouden. Het is een hoofdband die fysieke acties sterker maakt."
+
+msgid "Wise Glasses"
+msgstr "Wijsheidsbril"
+
+msgid "An item to be held by a Pokémon. It is a thick pair of glasses that boosts the power of special moves."
+msgstr "Kan worden vastgehouden. Het is een dikke bril die speciale acties sterker maakt."
+
+msgid "Expert Belt"
+msgstr "Expertband"
+
+msgid "An item to be held by a Pokémon. It is a well-worn belt that boosts the power of supereffective moves."
+msgstr "Kan worden vastgehouden. Het is een vaak gedragen band die zeer effectieve acties sterker maakt."
+
+msgid "Life Orb"
+msgstr "Levensbol"
+
+msgid "An item to be held by a Pokémon. It boosts the power of moves, but at the cost of some HP on each hit."
+msgstr "Kan worden vastgehouden. Het maakt acties sterker in ruil voor schade aan de houder."
+
+msgid "Power Herb"
+msgstr "Krachtig Kruid"
+
+msgid "A single-use item to be held by a Pokémon. It allows the immediate use of a move that charges."
+msgstr "Kan eenmalig worden vastgehouden. Het zorgt voor onmiddellijk gebruik van oplaadacties."
+
+msgid "Toxic Orb"
+msgstr "Gifbol"
+
+msgid "An item to be held by a Pokémon. It is a bizarre orb that badly poisons the holder in battle."
+msgstr "Kan worden vastgehouden. Het is een vreemde bol die de houder tijdens gevechten ernstig vergiftigt."
+
+msgid "Flame Orb"
+msgstr "Vlammenbol"
+
+msgid "An item to be held by a Pokémon. It is a bizarre orb that inflicts a burn on the holder in battle."
+msgstr "Kan worden vastgehouden. Het is een vreemde bol die de houder tijdens gevechten verbrandt."
+
+msgid "Focus Sash"
+msgstr "Focuslint"
+
+msgid "An item to be held by a Pokémon. If it has full HP, the holder will endure a potential KO attack."
+msgstr "Kan worden vastgehouden. Als de houder al zijn HP heeft, kan het een fatale klap verdragen."
+
+msgid "Metronome"
+msgstr "Metronoom"
+
+msgid "A Pokémon hold item that boosts a move used consecutively."
+msgstr "Kan worden vastgehouden. Het maakt een actie sterker hoe vaker het achter elkaar gebruikt wordt."
+
+msgid "Iron Ball"
+msgstr "Ijzeren Bal"
+
+msgid "A Pokémon hold item that cuts Speed. It makes airborne holders susceptible to Ground moves."
+msgstr "Kan worden vastgehouden. Het maakt vliegende houders vatbaar voor Grond-acties, maar verlaagt ook Snelheid."
+
+msgid "Lagging Tail"
+msgstr "Zware Staart"
+
+msgid "An item to be held by a Pokémon. It is tremendously heavy and makes the holder move slower than usual."
+msgstr "Kan worden vastgehouden. Het is zeer zwaar en laat de houder veel langzamer bewegen dan normaal."
+
+msgid "Destiny Knot"
+msgstr "Draad van het Lot"
+
+msgid "A long, bright red string to be held by a Pokémon. If the holder becomes infatuated, the foe does too."
+msgstr "Kan worden vastgehouden. Het is een lang, rood draad. Als de houder verzot raakt, wordt de tegenstander dat ook."
+
+msgid "Black Sludge"
+msgstr "Zwart Slijm"
+
+msgid "A hold item that gradually restores the HP of Poison-type Pokémon. It inflicts damage on all other types."
+msgstr "Kan worden vastgehouden. Vergif-soorten herstellen er elke beurt een beetje HP aan. Aan anderen brengt het schade toe."
+
+msgid "Grip Claw"
+msgstr "Vastklampklauw"
+
+msgid "A Pokémon hold item that extends the duration of multiturn attacks like Bind and Wrap."
+msgstr "Kan worden vastgehouden. Het verlengt de duur van meerbeurtige acties als Bind en Wrap."
+
+msgid "Sticky Barb"
+msgstr "Plakdoorn"
+
+msgid "A hold item that damages the holder on every turn. It may latch on to foes that touch the holder."
+msgstr "Kan worden vastgehouden. Het brengt de houder elke beurt schade toe. Het kan aan de tegenstander blijven haken."
+
+msgid "Shed Shell"
+msgstr "Verlaten Schelp"
+
+msgid "A tough, discarded carapace to be held by a Pokémon. It enables the holder to switch out of battle."
+msgstr "Kan worden vastgehouden. Het is een sterke verlaten huls. Hiermee kan de houder zich altijd terugtrekken."
+
+msgid "Big Root"
+msgstr "Grote Wortel"
+
+msgid "A Pokémon hold item that boosts the power of HP-stealing moves to let the holder recover more HP."
+msgstr "Kan worden vastgehouden. Het laat de houder meer HP herstellen wanneer het HP-stelende acties gebruikt."
+
+msgid "Choice Band"
+msgstr "Keuzeband"
+
+msgid "An item to be held by a Pokémon. This headband ups Attack, but allows the use of only one kind of move."
+msgstr "Kan worden vastgehouden. Deze hoofdband verhoogt Sterkte, maar laat de houder slechts één soort actie gebruiken."
+
+msgid "Choice Specs"
+msgstr "Keuzebril"
+
+msgid "A Pokémon hold item. These distinctive glasses boost Sp. Atk, but allow only one move to be used."
+msgstr "Kan worden vastgehouden. Deze unieke bril verhoogt Sp.-Str, maar laat de houder slechts één soort actie gebruiken."
+
+msgid "Choice Scarf"
+msgstr "Keuzebandana"
+
+msgid "An item to be held by a Pokémon. This scarf boosts Speed, but allows the use of only one kind of move."
+msgstr "Kan worden vastgehouden. Deze bandana verhoogt Snelheid, maar laat de houder slechts één soort actie gebruiken."
+
+msgid "Light Clay"
+msgstr "Lichte Klei"
+
+msgid "A Pokémon hold item that extends the duration of barrier moves like Light Screen and Reflect."
+msgstr "Kan worden vastgehouden. Het verlengt de duur van barrière-acties als Screen en Reflect."
+
+msgid "Icy Rock"
+msgstr "Bevroren Rots"
+
+msgid "A Pokémon hold item that extends the duration of the move Hail used by the holder."
+msgstr "Kan worden vastgehouden. Het verlengt de duur van de actie Hail."
+
+msgid "Smooth Rock"
+msgstr "Gladde Rots"
+
+msgid "A Pokémon hold item that extends the duration of the move Sandstorm used by the holder."
+msgstr "Kan worden vastgehouden. Het verlengt de duur van de actie Sandstorm."
+
+msgid "Heat Rock"
+msgstr "Hete Rots"
+
+msgid "A Pokémon hold item that extends the duration of the move Sunny Day used by the holder."
+msgstr "Kan worden vastgehouden. Het verlengt de duur van de actie Sunny Day."
+
+msgid "Damp Rock"
+msgstr "Vochtige Rots"
+
+msgid "A Pokémon hold item that extends the duration of the move Rain Dance used by the holder."
+msgstr "Kan worden vastgehouden. Het verlengt de duur van de actie Rain Dance."
+
+msgid "Macho Brace"
+msgstr "Machobrace"
+
+msgid "A Pokémon hold item that is a stiff and heavy brace that promotes strong growth but lowers Speed."
+msgstr "Kan worden vastgehouden. Het stimuleert ontwikkeling bij de houder, maar verlaagt Snelheid."
+
+msgid "Power Bracer"
+msgstr "Krachtbrace"
+
+msgid "A Pokémon hold item that promotes Attack gain on leveling, but reduces the Speed stat."
+msgstr "Kan worden vastgehouden. Het stimuleert Sterkte-ontwikkeling, maar verlaagt Snelheid."
+
+msgid "Power Belt"
+msgstr "Krachtriem"
+
+msgid "A Pokémon hold item that promotes Defense gain on leveling, but reduces the Speed stat."
+msgstr "Kan worden vastgehouden. Het stimuleert Verdediging-ontwikkeling, maar verlaagt Snelheid."
+
+msgid "Power Lens"
+msgstr "Krachtlens"
+
+msgid "A Pokémon hold item that promotes Sp. Atk gain on leveling, but reduces the Speed stat."
+msgstr "Kan worden vastgehouden. Het stimuleert Sp.-Str.-ontwikkeling, maar verlaagt Snelheid."
+
+msgid "Power Band"
+msgstr "Krachtband"
+
+msgid "A Pokémon hold item that promotes Sp. Def gain on leveling, but reduces the Speed stat."
+msgstr "Kan worden vastgehouden. Het stimuleert Sp.-Ver.-ontwikkeling, maar verlaagt Snelheid."
+
+msgid "Power Anklet"
+msgstr "Krachtboei"
+
+msgid "A Pokémon hold item that promotes Speed gain on leveling, but reduces the Speed stat."
+msgstr "Kan worden vastgehouden. Het stimuleert Snelheid-ontwikkeling, maar verlaagt Snelheid."
+
+msgid "Power Weight"
+msgstr "Krachtgewicht"
+
+msgid "A Pokémon hold item that promotes HP gain on leveling, but reduces the Speed stat."
+msgstr "Kan worden vastgehouden. Het stimuleert HP-ontwikkeling, maar verlaagt Snelheid."
+
+msgid "Sea Incense"
+msgstr "Waterig Aroma"
+
+msgid "A Pokémon hold item. It is incense with a curious aroma that boosts the power of Water-type moves."
+msgstr "Kan worden vastgehouden. Het heeft een bijzondere geur die Water-acties sterker maakt."
+
+msgid "Lax Incense"
+msgstr "Ontspannend Aroma"
+
+msgid "A Pokémon hold item. The tricky aroma of this incense lowers the foe's accuracy."
+msgstr "Kan worden vastgehouden. Het heeft een bijzondere geur die de precisie van de tegenstander verlaagt."
+
+msgid "Odd Incense"
+msgstr "Vreemd Aroma"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Psychic-type moves."
+msgstr "Kan worden vastgehouden. Het heeft een bijzondere geur die Psychisch-acties sterker maakt."
+
+msgid "Rock Incense"
+msgstr "Rotsachtig Aroma"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Rock-type moves."
+msgstr "Kan worden vastgehouden. Het heeft een bijzondere geur die Steen-acties sterker maakt."
+
+msgid "Full Incense"
+msgstr "Vertragend Aroma"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that makes the holder bloated and slow moving."
+msgstr "Kan worden vastgehouden. Het heeft een bijzondere geur die de houder langzamer laat bewegen."
+
+msgid "Wave Incense"
+msgstr "Golvend Aroma"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Water-type moves."
+msgstr "Kan worden vastgehouden. Het heeft een bijzondere geur die Water-acties sterker maakt."
+
+msgid "Rose Incense"
+msgstr "Roosachtig Aroma"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Grass-type moves."
+msgstr "Kan worden vastgehouden. Het heeft een bijzondere geur die Gras-acties sterker maakt."
+
+msgid "Luck Incense"
+msgstr "Gunstig Aroma"
+
+msgid "Pure Incense"
+msgstr "Puur Aroma"
+
+msgid "Soft Sand"
+msgstr "Zacht Zand"
+
+msgid "An item to be held by a Pokémon. It is a loose, silky sand that boosts the power of Ground-type moves."
+msgstr "Kan worden vastgehouden. Het is een zijdezacht zand dat Grond-acties sterker maakt."
+
+msgid "Hard Stone"
+msgstr "Harde Steen"
+
+msgid "An item to be held by a Pokémon. It is an unbreakable stone that ups the power of Rock-type moves."
+msgstr "Kan worden vastgehouden. Het is een onbreekbare steen die Steen-acties sterker maakt."
+
+msgid "Miracle Seed"
+msgstr "Wonderzaad"
+
+msgid "An item to be held by a Pokémon. It is a seed imbued with life that ups the power of Grass-type moves."
+msgstr "Kan worden vastgehouden. Het is een zaad vol leven dat Gras-acties sterker maakt."
+
+msgid "BlackGlasses"
+msgstr "Zonnebril"
+
+msgid "An item to be held by a Pokémon. It is a shady-looking pair of glasses that boosts Dark-type moves."
+msgstr "Kan worden vastgehouden. Het is een verdachte bril die Duister-acties sterker maakt."
+
+msgid "Black Belt"
+msgstr "Zwarte Band"
+
+msgid "An item to be held by a Pokémon. It is a belt that boosts determination and Fighting-type moves."
+msgstr "Kan worden vastgehouden. Het is een zwarte band die Vecht-acties sterker maakt."
+
+msgid "Magnet"
+msgstr "Magneet"
+
+msgid "An item to be held by a Pokémon. It is a powerful magnet that boosts the power of Electric-type moves."
+msgstr "Kan worden vastgehouden. Het is een krachtig magneet dat Elektrisch-acties sterker maakt."
+
+msgid "Mystic Water"
+msgstr "Mystieke Druppel"
+
+msgid "An item to be held by a Pokémon. It is a teardrop-shaped gem that ups the power of Water-type moves."
+msgstr "Kan worden vastgehouden. Het is een traanvormige edelsteen die Water-acties sterker maakt."
+
+msgid "Sharp Beak"
+msgstr "Scherpe Snavel"
+
+msgid "An item to be held by a Pokémon. It is a long, sharp beak that boosts the power of Flying-type moves."
+msgstr "Kan worden vastgehouden. Het is een lange, scherpe snavel die Vlieg-acties sterker maakt."
+
+msgid "Poison Barb"
+msgstr "Gifstekel"
+
+msgid "An item to be held by a Pokémon. It is a small, poisonous barb that ups the power of Poison-type moves."
+msgstr "Kan worden vastgehouden. Het is een kleine, giftige stekel die Vergif-acties sterker maakt."
+
+msgid "NeverMeltIce"
+msgstr "Eeuwig Ijs"
+
+msgid "An item to be held by a Pokémon. It is a piece of ice that repels heat and boosts Ice-type moves."
+msgstr "Kan worden vastgehouden. Het is een stuk niet-smeltend ijs dat Ijs-acties sterker maakt."
+
+msgid "Spell Tag"
+msgstr "Vloektalisman"
+
+msgid "An item to be held by a Pokémon. It is a sinister, eerie tag that boosts the power of Ghost-type moves."
+msgstr "Kan worden vastgehouden. Het is een luguber kaartje dat Spook-acties sterker maakt."
+
+msgid "TwistedSpoon"
+msgstr "Gebogen Lepel"
+
+msgid "A Pokémon hold item. It is a spoon imbued with telekinetic power that boosts Psychic-type moves."
+msgstr "Kan worden vastgehouden. Het is een krachtige lepel die Psychisch-acties sterker maakt."
+
+msgid "Charcoal"
+msgstr "Houtskool"
+
+msgid "An item to be held by a Pokémon. It is a combustible fuel that boosts the power of Fire-type moves."
+msgstr "Kan worden vastgehouden. Het is een brandbaar brandstof dat Vuur-acties sterker maakt."
+
+msgid "Dragon Fang"
+msgstr "Drakentand"
+
+msgid "An item to be held by a Pokémon. It is a hard and sharp fang that ups the power of Dragon-type moves."
+msgstr "Kan worden vastgehouden. Het is een harde, scherpe tand die Draak-acties sterker maakt."
+
+msgid "Silk Scarf"
+msgstr "Zijden Sjaal"
+
+msgid "An item to be held by a Pokémon. It is a sumptuous scarf that boosts the power of Normal-type moves."
+msgstr "Kan worden vastgehouden. Het is een luxueuze sjaal die Normaal-acties sterker maakt."
+
+msgid "Flame Plate"
+msgstr "Vuurplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fire-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Vuur-acties sterker maakt."
+
+msgid "Splash Plate"
+msgstr "Waterplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Water-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Water-acties sterker maakt."
+
+msgid "Zap Plate"
+msgstr "Bliksemplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Electric-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Elektrisch-acties sterker maakt."
+
+msgid "Meadow Plate"
+msgstr "Grasplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Grass-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Gras-acties sterker maakt."
+
+msgid "Icicle Plate"
+msgstr "Ijsplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ice-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Ijs-acties sterker maakt."
+
+msgid "Fist Plate"
+msgstr "Vechtplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fighting-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Vecht-acties sterker maakt."
+
+msgid "Toxic Plate"
+msgstr "Gifplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Poison-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Vergif-acties sterker maakt."
+
+msgid "Earth Plate"
+msgstr "Aardplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ground-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Grond-acties sterker maakt."
+
+msgid "Sky Plate"
+msgstr "Luchtplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Flying-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Vlieg-acties sterker maakt."
+
+msgid "Mind Plate"
+msgstr "Zielplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Psychic-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Psychisch-acties sterker maakt."
+
+msgid "Insect Plate"
+msgstr "Insectenplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Bug-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Insect-acties sterker maakt."
+
+msgid "Stone Plate"
+msgstr "Steenplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Rock-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Steen-acties sterker maakt."
+
+msgid "Spooky Plate"
+msgstr "Spookplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ghost-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Spook-acties sterker maakt."
+
+msgid "Draco Plate"
+msgstr "Drakenplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dragon-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Draak-acties sterker maakt."
+
+msgid "Dread Plate"
+msgstr "Angstplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dark-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Duister-acties sterker maakt."
+
+msgid "Iron Plate"
+msgstr "Ijzerplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Steel-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Staal-acties sterker maakt."
+
+msgid "Light Ball"
+msgstr "Bliksembol"
+
+msgid "An item to be held by Pikachu. It is a puzzling orb that raises the Sp. Atk stat."
+msgstr "Kan door Pikachu worden vastgehouden. Het is een elektrische bol die Sp.-Str. verhoogt."
+
+msgid "Lucky Punch"
+msgstr "Geluksvuisten"
+
+msgid "An item to be held by Chansey. It is a pair of gloves that boosts CHANSEY's critical-hit ratio."
+msgstr "Kan door Chansey worden vastgehouden. Het zijn handschoenen die de kans op voltreffers verhogen."
+
+msgid "Metal Powder"
+msgstr "Metaalpoeder"
+
+msgid "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Defense stat."
+msgstr "Kan door Ditto worden vastgehouden. Het is een behoorlijk hard maar fijn poeder dat Verdediging verhoogt."
+
+msgid "Quick Powder"
+msgstr "Flitspoeder"
+
+msgid "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Speed stat."
+msgstr "Kan door Ditto worden vastgehouden. Het is een behoorlijk hard maar fijn poeder dat Snelheid verhoogt."
+
+msgid "Thick Club"
+msgstr "Dik Bot"
+
+msgid "An item to be held by Cubone or Marowak. It is a hard bone of some sort that boosts the Attack stat."
+msgstr "Kan door Cubone of Marowak worden vastgehouden. Het is een hard bot dat Sterkte verhoogt."
+
+msgid "Stick"
+msgstr "Tak"
+
+msgid "An item to be held by Farfetch'd. It is a long and stiff leek stalk that boosts the critical-hit ratio."
+msgstr "Kan door Barand worden vastgehouden. Het is een lange preisteel die de kans op voltreffers verhoogt."
+
+msgid "Soul Dew"
+msgstr "Zieljuweel"
+
+msgid "A wondrous orb to be held by Latios or Latias. It raises both the Sp. Atk and Sp. Def stats."
+msgstr "Kan door Latios of Latias worden vastgehouden. Het is een bol die Sp.-Str. en Sp.-Ver. verhoogt."
+
+msgid "DeepSeaTooth"
+msgstr "Diepzeetand"
+
+msgid "An item to be held by Clamperl. A fang that gleams a sharp silver, it raises the Sp. Atk stat."
+msgstr "Kan door Clamperl worden vastgehouden. Een zilver glinsterende tand die Sp.-Str. verhoogt."
+
+msgid "DeepSeaScale"
+msgstr "Diepzeeschub"
+
+msgid "An item to be held by Clamperl. A scale that shines a faint pink, it raises the Sp. Def stat."
+msgstr "Kan door Clamperl worden vastgehouden. Een roze glinsterende schub die Sp.-Ver. verhoogt."
+
+msgid "Adamant Orb"
+msgstr "Robuuste Diamant"
+
+msgid "A brightly gleaming orb to be held by Dialga. It boosts the power of Dragon- and Steel-type moves."
+msgstr "Kan door Dialga worden vastgehouden. Het is een diamant die Draak- en Staal-acties sterker maakt."
+
+msgid "Lustrous Orb"
+msgstr "Glanzende Parel"
+
+msgid "A beautifully glowing orb to be held by Palkia. It boosts the power of Dragon- and Water-type moves."
+msgstr "Kan door Palkia worden vastgehouden. Het is een parel die Draak- en Water-acties sterker maakt."
+
+msgid "Griseous Orb"
+msgstr "Platina Fragment"
+
+msgid "A glowing orb to be held by Giratina. It boosts the power of Dragon- and Ghost-type moves."
+msgstr "Kan door Giratina worden vastgehouden. Het is een fragment dat Draak- en Spook-acties sterker maakt."
+
+msgid "Up-Grade"
+msgstr "Upgrade"
+
+msgid "A transparent device filled with all sorts of data. It was produced by Silph Co."
+msgstr "Een transparant apparaat vol data. Geproduceerd door Silph Co."
+
+msgid "Dubious Disc"
+msgstr "Defecte Schijf"
+
+msgid "A transparent device overflowing with dubious data. Its producer is unknown."
+msgstr "Een transparant apparaat vol verdachte data. Producent onbekend."
+
+msgid "Protector"
+msgstr "Beschermer"
+
+msgid "A protective item of some sort. It is extremely stiff and heavy. It is loved by a certain Pokémon."
+msgstr "Een soort beschermend pantser. Het is zeer zwaar. Geliefd door een bepaalde Pokémon."
+
+msgid "Electirizer"
+msgstr "Stroomversterker"
+
+msgid "A box packed with a tremendous amount of electric energy. It is loved by a certain Pokémon."
+msgstr "Een doos vol grote hoeveelheden elektrische energie. Geliefd door een bepaalde Pokémon."
+
+msgid "Magmarizer"
+msgstr "Magmaversterker"
+
+msgid "A box packed with a tremendous amount of magma energy. It is loved by a certain Pokémon."
+msgstr "Een doos vol grote hoeveelheden vulkanische energie. Geliefd door een bepaalde Pokémon."
+
+msgid "Reaper Cloth"
+msgstr "Doek des Doods"
+
+msgid "A cloth imbued with horrifyingly strong spiritual energy. It is loved by a certain Pokémon."
+msgstr "Een doek doordrenkt met vervloekte, spirituele energie. Geliefd door een bepaalde Pokémon."
+
+msgid "Razor Claw"
+msgstr "Scherpe Klauw"
+
+msgid "An item to be held by a Pokémon. It is a sharply hooked claw that ups the holder's critical-hit ratio."
+msgstr "Kan worden vastgehouden. Het is een vlijmscherpe klauw die de kans op voltreffers verhoogt."
+
+msgid "Razor Fang"
+msgstr "Scherpe Tand"
+
+msgid "Red Scarf"
+msgstr "Rode Sjaal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Cool” aspect of the holder in a Contest."
+msgstr "Kan worden vastgehouden. Het maakt een Pokémon cooler tijdens Wedstrijden."
+
+msgid "Blue Scarf"
+msgstr "Blauwe Sjaal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Beauty” aspect of the holder in a Contest."
+msgstr "Kan worden vastgehouden. Het maakt een Pokémon mooier tijdens Wedstrijden."
+
+msgid "Pink Scarf"
+msgstr "Roze Sjaal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Cute” aspect of the holder in a Contest."
+msgstr "Kan worden vastgehouden. Het maakt een Pokémon liever tijdens Wedstrijden."
+
+msgid "Green Scarf"
+msgstr "Groene Sjaal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Smart” aspect of the holder in a Contest."
+msgstr "Kan worden vastgehouden. Het maakt een Pokémon slimmer tijdens Wedstrijden."
+
+msgid "Yellow Scarf"
+msgstr "Gele Sjaal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Tough” aspect of the holder in a Contest."
+msgstr "Kan worden vastgehouden. Het maakt een Pokémon stoerder tijdens Wedstrijden."
+
+msgid "Potion"
+msgstr "Geneesspray"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points."
+msgstr "Een sproeimedicijn bedoeld voor wonden. Het herstelt 20 HP voor één Pokémon."
+
+msgid "Super Potion"
+msgstr "Superspray"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by 50 points."
+msgstr "Een sproeimedicijn bedoeld voor wonden. Het herstelt 50 HP voor één Pokémon."
+
+msgid "Hyper Potion"
+msgstr "Hyperspray"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by 200 points."
+msgstr "Een sproeimedicijn bedoeld voor wonden. Het herstelt 200 HP voor één Pokémon."
+
+msgid "Max Potion"
+msgstr "Max-Spray"
+
+msgid "A spray-type medicine for wounds. It completely restores the HP of a single Pokémon."
+msgstr "Een sproeimedicijn bedoeld voor wonden. Het herstelt al de HP voor één Pokémon."
+
+msgid "Full Restore"
+msgstr "Volledig Herstel"
+
+msgid "A medicine that fully restores the HP and heals any status problems of a single Pokémon."
+msgstr "Een sproeimedicijn dat de HP van één Pokémon volledig herstelt en daarbij alle aandoeningen geneest."
+
+msgid "Sacred Ash"
+msgstr "Heilig As"
+
+msgid "It revives all fainted Pokémon. In doing so, it also fully restores their HP."
+msgstr "Het wekt alle bezweken Pokémon op. Daarmee herstelt het ook hun volledige HP."
+
+msgid "Antidote"
+msgstr "Tegengif"
+
+msgid "A spray-type medicine. It lifts the effect of poison from one Pokémon."
+msgstr "Een sproeimedicijn bedoeld voor vergiftiging. Het geneest de vergiftiging van één Pokémon."
+
+msgid "Burn Heal"
+msgstr "Brandwondenmiddel"
+
+msgid "A spray-type medicine. It heals a single Pokémon that is suffering from a burn."
+msgstr "Een sproeimedicijn bedoeld voor brandwonden. Het geneest de verbranding van één Pokémon."
+
+msgid "Ice Heal"
+msgstr "Antivries"
+
+msgid "A spray-type medicine. It defrosts a Pokémon that has been frozen solid."
+msgstr "Een sproeimedicijn bedoeld voor bevriezing. Het ontdooit één Pokémon."
+
+msgid "Awakening"
+msgstr "Wekker"
+
+msgid "A spray-type medicine. It awakens a Pokémon from the clutches of sleep."
+msgstr "Een sproeimedicijn bedoeld voor slaperigheid. Het wekt één Pokémon."
+
+msgid "Parlyz Heal"
+msgstr "Verlammingsmiddel"
+
+msgid "A spray-type medicine. It eliminates paralysis from a single Pokémon."
+msgstr "Een sproeimedicijn bedoeld voor verlamming. Het behandelt de verlamming van één Pokémon."
+
+msgid "Full Heal"
+msgstr "Volledige Genezing"
+
+msgid "A spray-type medicine. It heals all the status problems of a single Pokémon."
+msgstr "Een sproeimedicijn bedoeld voor aandoeningen. Het geneest al de aandoeningen van één Pokémon."
+
+msgid "Lava Cookie"
+msgstr "Lavakoekje"
+
+msgid "Lavaridge Town's local specialty. It heals all the status problems of one Pokémon."
+msgstr "De lokale specialiteit van Lavaridge. Het geneest al de aandoeningen van één Pokémon."
+
+msgid "Old Gateau"
+msgstr "Oude Lekkernij"
+
+msgid "Old Chateau's hidden specialty. It heals all the status problems of a single Pokémon."
+msgstr "De verborgen specialiteit van het Oude Chateau. Het geneest al de aandoeningen van één Pokémon."
+
+msgid "Revive"
+msgstr "Opwekking"
+
+msgid "A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP."
+msgstr "Een medicijn dat één bezweken Pokémon opwekt. Daarmee herstelt het de helft van zijn HP."
+
+msgid "Max Revive"
+msgstr "Max-Opwekking"
+
+msgid "A medicine that revives a fainted Pokémon. It fully restores the Pokémon's HP."
+msgstr "Een medicijn dat één bezweken Pokémon opwekt. Daarmee hestelt het al zijn HP."
+
+msgid "Berry Juice"
+msgstr "Bessensap"
+
+msgid "A 100% pure juice made of Berries. It restores the HP of one Pokémon by just 20 points."
+msgstr "Het is gemaakt van 100% puur bessensap. Het herstelt 20 HP voor één Pokémon."
+
+msgid "Fresh Water"
+msgstr "Vers Water"
+
+msgid "Water with a high mineral content. It restores the HP of one Pokémon by 50 points."
+msgstr "Water met een hoog mineraalgehalte. Het herstelt 50 HP voor één Pokémon."
+
+msgid "Soda Pop"
+msgstr "Frisdrank"
+
+msgid "A fizzy soda drink. It restores the HP of one Pokémon by 60 points."
+msgstr "Een bruisende frisdrank. Het herstelt 60 HP voor één Pokémon."
+
+msgid "Lemonade"
+msgstr "Limonade"
+
+msgid "A very sweet drink. It restores the HP of one Pokémon by 80 points."
+msgstr "Een vrij zoet drankje. Het herstelt 80 HP voor één Pokémon."
+
+msgid "Moomoo Milk"
+msgstr "Moomoo-Melk"
+
+msgid "Milk with a very high nutrition content. It restores the HP of one Pokémon by 100 points."
+msgstr "Melk met hartstikke veel voedingsstoffen. Het herstelt 100 HP voor één Pokémon."
+
+msgid "EnergyPowder"
+msgstr "Energiepoeder"
+
+msgid "A very bitter medicine powder. It restores the HP of one Pokémon by 50 points."
+msgstr "Een zeer bitter, geneeskrachtig poeder. Het herstelt 50 HP voor één Pokémon."
+
+msgid "Energy Root"
+msgstr "Energiewortel"
+
+msgid "A very bitter root. It restores the HP of one Pokémon by 200 points."
+msgstr "Een zeer bittere plantenwortel. Het herstelt 200 HP voor één Pokémon."
+
+msgid "Heal Powder"
+msgstr "Geneespoeder"
+
+msgid "A very bitter medicine powder. It heals all the status problems of a single Pokémon."
+msgstr "Een zeer bitter, geneeskrachtig poeder. Het geneest al de aandoeningen van één Pokémon."
+
+msgid "Revival Herb"
+msgstr "Opwekkingskruid"
+
+msgid "A very bitter medicinal herb. It revives a fainted Pokémon, fully restoring its HP."
+msgstr "Een zeer bitter, geneeskrachtig kruid. Het wekt één bezweken Pokémon op en herstelt daarbij al de HP."
+
+msgid "It restores the PP of a Pokémon's selected move by a maximum of 10 points."
+msgstr "Een medicijn bedoeld voor energieherstel. Het herstelt 10 AP voor één Pokémon-actie."
+
+msgid "Max Ether"
+msgstr "Max-Ether"
+
+msgid "It fully restores the PP of a single selected move that has been learned by the target Pokémon."
+msgstr "Een medicijn bedoeld voor energieherstel. Het herstelt al de AP voor één Pokémon-actie."
+
+msgid "It restores the PP of all the moves learned by the targeted Pokémon by 10 points each."
+msgstr "Een medicijn bedoeld voor energieherstel. Het herstelt 10 AP voor al de acties van één Pokémon."
+
+msgid "Max Elixir"
+msgstr "Max-Elixir"
+
+msgid "It fully restores the PP of all the moves learned by the targeted Pokémon."
+msgstr "Een medicijn bedoeld voor energieherstel. Het herstelt al de AP voor de acties van één Pokémon."
+
+msgid "HP Up"
+msgstr "HP-Plus"
+
+msgid "A nutritious drink for Pokémon. It raises the base HP of a single Pokémon."
+msgstr "Een voedzaam drankje bedoeld voor Pokémon. Het verhoogt de basis HP van één Pokémon."
+
+msgid "Protein"
+msgstr "Proteïne"
+
+msgid "A nutritious drink for Pokémon. It raises the base Attack stat of a single Pokémon."
+msgstr "Een voedzaam drankje bedoeld voor Pokémon. Het verhoogt de basis Sterkte van één Pokémon."
+
+msgid "Iron"
+msgstr "Ijzer"
+
+msgid "A nutritious drink for Pokémon. It raises the base Defense stat of a single Pokémon."
+msgstr "Een voedzaam drankje bedoeld voor Pokémon. Het verhoogt de basis Verdediging van één Pokémon."
+
+msgid "Carbos"
+msgstr "Koolstof"
+
+msgid "A nutritious drink for Pokémon. It raises the base Speed stat of a single Pokémon."
+msgstr "Een voedzaam drankje bedoeld voor Pokémon. Het verhoogt de basis Snelheid van één Pokémon."
+
+msgid "A nutritious drink for Pokémon. It raises the base Sp. Atk (Special Attack) stat of a single Pokémon."
+msgstr "Een voedzaam drankje bedoeld voor Pokémon. Het verhoogt de basis Speciale Sterkte van één Pokémon."
+
+msgid "Zinc"
+msgstr "Zink"
+
+msgid "A nutritious drink for Pokémon. It raises the base Sp. Def (Special Defense) stat of a single Pokémon."
+msgstr "Een voedzaam drankje bedoeld voor Pokémon. Het verhoogt de basis Speciale Verdediging van één Pokémon."
+
+msgid "PP Up"
+msgstr "AP-Plus"
+
+msgid "It slightly raises the maximum PP of a selected move that has been learned by the target Pokémon."
+msgstr "Een voedzaam drankje bedoeld voor Pokémon. Het verhoogt de maximale AP van één Pokémon-actie."
+
+msgid "PP Max"
+msgstr "AP-Max"
+
+msgid "It maximally raises the top PP of a selected move that has been learned by the target Pokémon."
+msgstr "Een voedzaam drankje bedoeld voor Pokémon. Het maximaliseert de maximale AP van één Pokémon-actie."
+
+msgid "Rare Candy"
+msgstr "Wondersnoepje"
+
+msgid "A candy that is packed with energy. It raises the level of a single Pokémon by one."
+msgstr "Een snoepje bomvol energie. Het laat een Pokémon met één Level stijgen."
+
+msgid "Master Ball"
+msgstr "Meesterbal"
+
+msgid "The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail."
+msgstr "De beste Pokébal met een perfect vangstpercentage. Het vangt elke wilde Pokémon zonder te falen."
+
+msgid "Ultra Ball"
+msgstr "Ultrabal"
+
+msgid "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball."
+msgstr "Een Pokébal met een geweldig vangstpercentage. Het is beter dan de Topbal."
+
+msgid "Great Ball"
+msgstr "Topbal"
+
+msgid "A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball."
+msgstr "Een Pokébal met een goed vangstpercentage. Het is beter dan een normale Pokébal."
+
+msgid "Poké Ball"
+msgstr "Pokébal"
+
+msgid "A device for catching wild Pokémon. A capsule system that is thrown like a ball at the target."
+msgstr "Een apparaat om wilde Pokémon mee te vangen. Het wordt als een bal naar de Pokémon gegooid."
+
+msgid "Safari Ball"
+msgstr "Safaribal"
+
+msgid "A special Poké Ball that is used only in the Great Marsh. It is decorated in a camouflage pattern."
+msgstr "Een speciale Pokébal die alleen in het Grote Moeras wordt gebruikt. Het is bedekt met een camo-print."
+
+msgid "Net Ball"
+msgstr "Netbal"
+
+msgid "A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon."
+msgstr "Een iets andere Pokébal die beter werkt op Water- en Insect-soorten."
+
+msgid "Dive Ball"
+msgstr "Duikbal"
+
+msgid "A somewhat different Poké Ball that works especially well on Pokémon that live in the sea."
+msgstr "Een iets andere Pokébal die beter werkt op Pokémon die zich in of op het water bevinden."
+
+msgid "Nest Ball"
+msgstr "Nestbal"
+
+msgid "A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild."
+msgstr "Een iets andere Pokébal die beter werkt op zwakkere wilde Pokémon."
+
+msgid "Repeat Ball"
+msgstr "Herhaalbal"
+
+msgid "A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught."
+msgstr "Een iets andere Pokébal die beter werkt op al gevangen Pokémon-soorten."
+
+msgid "Timer Ball"
+msgstr "Aftelbal"
+
+msgid "A somewhat different Ball that becomes progressively better the more turns there are in a battle."
+msgstr "Een iets andere Pokébal die beter werkt naarmate het gevecht langer duurt."
+
+msgid "Luxury Ball"
+msgstr "Luxe Bal"
+
+msgid "A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly."
+msgstr "Een comfortabele Pokébal die vriendschap stimuleert."
+
+msgid "Premier Ball"
+msgstr "Premiumbal"
+
+msgid "A somewhat rare Poké Ball that has been specially made to commemorate an event of some sort."
+msgstr "Een enigszins zeldzame Pokébal die als actie wordt weggegeven."
+
+msgid "Dusk Ball"
+msgstr "Schemerbal"
+
+msgid "A somewhat different Poké Ball that can easily catch wild Pokémon at night or in dark places."
+msgstr "Een iets andere Pokébal die beter in het donker werkt."
+
+msgid "Heal Ball"
+msgstr "Geneesbal"
+
+msgid "A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem."
+msgstr "Een geneeskrachtige Pokébal die de HP en aandoeningen van de gevangen Pokémon geneest."
+
+msgid "Quick Ball"
+msgstr "Flitsbal"
+
+msgid "A somewhat different Poké Ball that works better at the start of a wild encounter."
+msgstr "Een iets andere Pokébal die beter werkt aan het begin van een gevecht."
+
+msgid "Cherish Ball"
+msgstr "Koesterbal"
+
+msgid "A quite rare Poké Ball that has been specially crafted to commemorate an occasion of some sort."
+msgstr "Een zeldzame Pokébal bedoeld voor speciale gelegenheden. Dit zou je niet moeten hebben."
+
+msgid "Fast Ball"
+msgstr "Turbobal"
+
+msgid "A Poké Ball that makes it easier to catch Pokémon which are quick to run away."
+msgstr "Een iets andere Pokébal die beter werkt op Pokémon die snel wegrennen."
+
+msgid "Level Ball"
+msgstr "Levelbal"
+
+msgid "A Poké Ball for catching Pokémon that are a lower level than your own."
+msgstr "Een iets andere Pokébal die beter werkt op Pokémon met een lager Level dan die van jou."
+
+msgid "Lure Ball"
+msgstr "Lokaasbal"
+
+msgid "A Poké Ball for catching Pokémon hooked by a Rod when fishing."
+msgstr "Een iets andere Pokébal die beter werkt op Pokémon die met een Vishengel zijn binnengehaald."
+
+msgid "Heavy Ball"
+msgstr "Gewichtsbal"
+
+msgid "A Poké Ball for catching very heavy Pokémon."
+msgstr "Een iets andere Pokébal die beter werkt op zware Pokémon."
+
+msgid "Love Ball"
+msgstr "Liefdesbal"
+
+msgid "A Poké Ball for catching Pokémon that are the opposite gender of your Pokémon."
+msgstr "Een iets andere Pokébal die beter werkt op Pokémon van het andere geslacht."
+
+msgid "Friend Ball"
+msgstr "Vriendbal"
+
+msgid "A Poké Ball that makes caught Pokémon more friendly."
+msgstr "Een iets andere Pokébal die een net gevangen Pokémon vriendelijker maakt."
+
+msgid "Moon Ball"
+msgstr "Maanbal"
+
+msgid "A Poké Ball for catching Pokémon that evolve using the Moon Stone."
+msgstr "Een iets andere Pokébal die beter werkt op Pokémon die met een Maansteen evolueren."
+
+msgid "Sport Ball"
+msgstr "Toernooibal"
+
+msgid "A special Poké Ball for the Bug-Catching Contest."
+msgstr "Een speciale Pokébal voor de Insectenwedstrijd."
+
+msgid "Park Ball"
+msgstr "Parkbal"
+
+msgid "A special Poké Ball for the Pal Park."
+msgstr "Een speciale Pokébal voor het Vriendenpark."
+
+msgid "The user focuses its mind before launching this attack. It will fail if the user is hit before it is used."
+msgstr "De gebruiker focust en geeft daarna een stomp. Het mislukt als de gebruiker eerst geraakt wordt."
+
+msgid "Sharp, huge claws hook and slash the foe quickly and with great power."
+msgstr "De gebruiker slaat het doelwit met zijn gigantische, scherpe klauwen."
+
+msgid "The foe is hit with a pulsing blast of water. It may also confuse the target."
+msgstr "De gebruiker valt aan met een pulserende plons water. Het kan het doelwit verwarren."
+
+msgid "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats."
+msgstr "De gebruiker kalmeert en focust zijn geest om zijn Sp.-Str. en Sp.-Ver. te verhogen."
+
+msgid "The foe is scared off, to be replaced by another Pokémon in its party. In the wild, the battle ends."
+msgstr "Het doelwit schrikt en wordt met een andere Pokémon vervangen. Het gevecht eindigt in het wild."
+
+msgid "A move that leaves the foe badly poisoned. This poison damage worsens every turn."
+msgstr "Een actie die het doelwit ernstig vergiftigt. Het gif wordt met elke beurt ernstiger."
+
+msgid "Summons a hailstorm that lasts for five turns. The hailstorm damages all types except Ice."
+msgstr "Steekt een vijfbeurtige hagelstorm op. Het brengt geen schade toe aan Ijs-Pokémon."
+
+msgid "The user tenses its muscles to bulk up its body, boosting both its Attack and Defense stats."
+msgstr "De gebruiker spant zijn spieren om zijn lichaam te bulken. Het verhoogt Sterkte en Verdediging."
+
+msgid "The user forcefully shoots seeds at the foe. Two to five seeds are shot in rapid succession."
+msgstr "De gebruiker schiet een aantal zaden naar het doelwit. Het raakt twee tot vijf keer achter elkaar."
+
+msgid "A variable move that changes type and power depending on the hidden ability of the Pokémon using it."
+msgstr "Een unieke aanval die van Soort en kracht varieert. Het hangt af van de Pokémon."
+
+msgid "The user intensifies the sun for five turns, powering up Fire-type moves."
+msgstr "De gebruiker versterkt de zon voor vijf beurten, waardoor Vuur-acties sterker worden."
+
+msgid "The target is taunted into a rage that allows it to use only attack moves for three turns."
+msgstr "Het doelwit wordt geplaagd, waardoor het drie beurten lang alleen aanvallende acties kan gebruiken."
+
+msgid "The foe is struck with an icy-cold beam of energy. It may also freeze the target solid."
+msgstr "Het doelwit wordt met een ijskoude straal geraakt. Het doelwit kan bevriezen."
+
+msgid "A howling blizzard is summoned to strike the foe. It may also freeze the target solid."
+msgstr "De gebruiker valt aan met een hevige sneeuwstorm. Het kan het verdedigende team bevriezen."
+
+msgid "The foe is attacked with a powerful beam. The user must rest on the next turn to regain its energy."
+msgstr "Het doelwit wordt met een krachtige straal beschoten. De gebruiker moet een beurt rusten."
+
+msgid "A wondrous wall of light is put up to suppress damage from special attacks for five turns."
+msgstr "Een muur van licht die de kracht van speciale aanvallen onderdrukt. Het duurt vijf beurten."
+
+msgid "It enables the user to evade all attacks. Its chance of failing rises if it is used in succession."
+msgstr "Laat de gebruiker alle acties ontwijken. De kans dat het mislukt wordt na elk gebruik groter."
+
+msgid "The user summons a heavy rain that falls for five turns, powering up Water-type moves."
+msgstr "Steekt een vijfbeurtige regenbui op. Het maakt Water-acties sterker."
+
+msgid "A nutrient-draining attack. The user's HP is restored by half the damage taken by the target."
+msgstr "Het zuigt voedingsstoffen weg. De HP van de gebruiker herstelt met 50% van de schade."
+
+msgid "The user creates a protective field that prevents status problems like poison, paralysis, burn, and sleep."
+msgstr "De gebruiker beschermt het team gedurende vijf beurten tegen aandoeningen."
+
+msgid "A full-power attack that grows more powerful the less the user likes its Trainer."
+msgstr "Een aanval op volle kracht die meer schade toebrengt als de gebruiker zijn Trainer niet leuk vindt."
+
+msgid "A two-turn attack. The user gathers light, then blasts a bundled beam on the second turn."
+msgstr "Een tweebeurtige actie. De gebruiker absorbeert licht, en schiet vervolgens een straal naar het doelwit."
+
+msgid "The foe is slammed with a sturdy tail of steel. It may also lower the target's Defense stat if it hits."
+msgstr "Het doelwit wordt met een ijzersterke staart geslagen. Het kan ook de Verdediging van het doelwit verlagen."
+
+msgid "A strong electric blast is loosed at the foe. It may also leave the foe paralyzed."
+msgstr "Er wordt een elektrische explosie op het doelwit gericht. Het kan het doelwit verlammen."
+
+msgid "A wicked thunderbolt is dropped on the foe to inflict damage. It may also leave the target paralyzed."
+msgstr "Het doelwit wordt met een bliksemschicht geraakt. Het kan verlammen."
+
+msgid "The user sets off an earthquake that hits all the Pokémon in the battle."
+msgstr "De gebruiker veroorzaakt een aardbeving die heel het veld kan voelen."
+
+msgid "A full-power attack that grows more powerful the more the user likes its Trainer."
+msgstr "Een aanval op volle kracht die meer schade toebrengt als de gebruiker zijn Trainer leuk vindt."
+
+msgid "The user burrows, then attacks on the second turn. It can also be used to exit dungeons."
+msgstr "De gebruiker begraaft zichzelf, en valt vervolgens aan. Kan ook gebruikt worden om uit grotten te ontsnappen."
+
+msgid "The foe is hit by a strong telekinetic force. It may also reduce the foe's Sp. Def stat."
+msgstr "Het doelwit wordt met een sterke telekinetische kracht geraakt. Het kan Sp.-Ver. verlagen."
+
+msgid "The user hurls a shadowy blob at the foe. It may also lower the foe's Sp. Def stat."
+msgstr "De gebruiker gooit een schaduwbal naar het doelwit. Het kan Sp.-Ver. verlagen."
+
+msgid "The user attacks with tough fists, etc. It can also break any barrier such as Light Screen and Reflect."
+msgstr "De gebruiker hakt bliksemsnel. Het doorbreekt ook barrière-acties als Light Screen en Reflect."
+
+msgid "The user begins moving so quickly that it creates illusory copies to raise its evasiveness."
+msgstr "De gebruiker maakt kopieën van zichzelf door bliksemsnel te bewegen. Het verhoogt ontwijking."
+
+msgid "A wondrous wall of light is put up to suppress damage from physical attacks for five turns."
+msgstr "Een muur van licht die de kracht van speciale aanvallen onderdrukt. Het duurt vijf beurten."
+
+msgid "The user strikes the foe with a quick jolt of electricity. This attack cannot be evaded."
+msgstr "De gebruiker raakt het doelwit met een kleine stroomstoot. Het raakt altijd."
+
+msgid "The foe is scorched with an intense blast of fire. The target may also be left with a burn."
+msgstr "De gebruiker verschroeit het doelwit door vlammen te spuwen. Het kan het doelwit verbranden."
+
+msgid "Unsanitary sludge is hurled at the foe. It may also poison the target."
+msgstr "Er wordt smerige troep naar het doelwit geworpen. Het kan het doelwit vergiftigen."
+
+msgid "A five-turn sandstorm is summoned to hurt all combatants except the Rock, Ground, and Steel types."
+msgstr "Steekt een vijfbeurtige zandstorm op. Het brengt geen schade toe aan Steen-, Grond- en Staal-Pokémon."
+
+msgid "The foe is attacked with an intense blast of all-consuming fire. It may also leave the target with a burn."
+msgstr "Het doelwit wordt geraakt door een allesverslindende vuurbal. Het kan het doelwit verbranden."
+
+msgid "Large boulders are hurled at the foe to inflict damage. It may also make the target flinch."
+msgstr "Er worden keien naar het doelwit geworpen. Het verlaagt de Snelheid van het doelwit."
+
+msgid "The user confounds the foe with speed, then strikes. The attack lands without fail."
+msgstr "De gebruiker verward het doelwit met zijn snelheid en valt aan met een snee. Het raakt altijd."
+
+msgid "The user torments and enrages the foe, making it incapable of using the same move twice in a row."
+msgstr "De gebruiker pest het doelwit, waardoor het dezelfde actie niet twee keer achter elkaar kan gebruiken."
+
+msgid "An attack move that doubles its power if the user is poisoned, paralyzed, or has a burn."
+msgstr "Brengt dubbel het aantal schade toe als de gebruiker vergiftigd, verlamd of verbrand is."
+
+msgid "An attack move with effects that vary depending on the user's environment."
+msgstr "De gebruiker zet een geheime kracht in. De effecten van deze actie hangen af van de omgeving."
+
+msgid "The user goes to sleep for two turns. It fully restores the user's HP and heals any status problem."
+msgstr "De gebruikter slaapt voor twee beurten. Het herstelt al de HP en geneest alle aandoeningen."
+
+msgid "If it is the opposite gender of the user, the foe becomes infatuated and less likely to attack."
+msgstr "Als het doelwit van het andere geslacht is, raakt het verzot en zal het minder snel aanvallen."
+
+msgid "The user attacks and steals the foe's held item simultaneously. It can't steal if the user holds an item."
+msgstr "De gebruiker steelt het vastgehouden voorwerp terwijl het het doelwit aanvalt."
+
+msgid "The foe is hit with wings of steel. It may also raise the user's Defense stat."
+msgstr "Het doelwit wordt met ijzeren vleugels geraakt. Het kan de Verdediging van de gebruiker verhogen."
+
+msgid "The user employs its psychic power to exchange abilities with the foe."
+msgstr "Psychische krachten die de Vaardigheid van de gebruiker met die van het doelwit verwisselt."
+
+msgid "The user steals the effects of any healing or status-changing move the foe attempts to use."
+msgstr "De gebruiker jat de effecten van alle genezende of statistiek-veranderende acties."
+
+msgid "The user attacks the foe at full power using fiery energy. It also sharply reduces the user's Sp. Atk."
+msgstr "De gebruiker vuurt zijn vlammen op volle kracht af. Het verlaagt zijn Sp.-Str. aanzienlijk."
+
+msgid "The user lands and rests its body. It restores the user's HP by up to half of its top HP."
+msgstr "De gebruiker landt en rust. Het herstelt zijn HP tot de helft van zijn maximale HP."
+
+msgid "The user attacks at full power. It may also lower the foe's Sp. Def stat if it hits."
+msgstr "De gebruiker focust mentaal en laat zijn krachten vrij. Het kan de Sp.-Ver. van het doelwit verlagen."
+
+msgid "The user draws power from nature and fires it at the foe. It may also lower the target's Sp. Def."
+msgstr "De gebruiker haalt zijn krachten uit de natuur en vuurt het af, wat Sp.-Ver. kan verlagen."
+
+msgid "A restrained attack that prevents the foe from fainting. The target is left with at least 1 HP."
+msgstr "Een beheerste aanval die voorkomt dat het doelwit bezwijkt. Het doelwit behoudt minstens 1 HP."
+
+msgid "If the foe's HP is down to under half, this attack will hit with double the power."
+msgstr "Het brengt dubbel het aantal schade toe als de gebruiker minder dan de helft van zijn maximale HP over heeft."
+
+msgid "The user flings its held item at the foe to attack. Its power and effects depend on the item."
+msgstr "De gebruiker werpt zijn voorwerp. De schade en effecten zijn afhankelijk van het voorwerp."
+
+msgid "The user attacks with an electric charge. The user uses the remaining electricity to up its Sp. Atk."
+msgstr "De gebruiker vuurt een elektriciteitsstraal af. Het kan de Sp.-Str. van de gebruiker verhogen."
+
+msgid "The user endures any attack, leaving 1 HP. Its chance of failing rises if it is used in succession."
+msgstr "De gebruiker verdraagt welke aanval dan ook met 1 HP. De kans dat het mislukt stijgt elke keer meer."
+
+msgid "The foe is attacked with a shock wave generated by the user's gaping mouth."
+msgstr "Het doelwit wordt aangevallen met een schokgolf uit de mond."
+
+msgid "An energy-draining punch. The user's HP is restored by half the damage taken by the target."
+msgstr "Een energievretende stoot. De HP van de gebruiker herstelt met 50% van de schade."
+
+msgid "The user shoots a sinister, bluish white flame at the foe to inflict a burn."
+msgstr "De gebruiker vuurt een luguber blauw vlammetje naar het doelwit om verbranding te veroorzaken."
+
+msgid "The foe is attacked with powdery scales blown by wind. It may also raise all the user's stats."
+msgstr "De gebruiker valt aan met een wervelwind aan poederige schubben. Het kan alle statistieken verhogen."
+
+msgid "It prevents the foe from using its held item. Its Trainer is also prevented from using items on it."
+msgstr "Het voorkomt het gebruik van vastgehouden voorwerpen bij het doelwit. Zijn Trainer kan ook niks gebruiken."
+
+msgid "The user explodes to inflict damage on all Pokémon in battle. The user faints upon using this move."
+msgstr "De gebruiker explodeert om enorm veel schade toe te brengen. Vervolgens bezwijkt het."
+
+msgid "The user slashes with a sharp claw made from shadows. It has a high critical-hit ratio."
+msgstr "De gebruiker haalt uit met een scherpe schaduwklauw. Het heeft een grotere kans op voltreffers."
+
+msgid "The user stores power, then attacks. Its power is doubled if used after the foe."
+msgstr "Als de gebruiker na het doelwit beweegt, breng dit dubbel het aantal schade toe."
+
+msgid "The user recycles a single-use item that has been used in battle so it can be used again."
+msgstr "De gebruiker recycleert het gebruikte vastgehouden voorwerp zodat het weer gebruikt kan worden."
+
+msgid "The user charges the foe using every bit of its power. It must rest on the next turn to recover."
+msgstr "De gebruiker ramt het doelwit met volle kracht. Het moet daarna een beurt rusten."
+
+msgid "The user polishes its body to reduce drag. It sharply raises the Speed stat."
+msgstr "De gebruiker polijst zijn lichaam om weerstand te voorkomen. Het verhoogt zijn Snelheid aanzienlijk."
+
+msgid "The user flashes a light that cuts the foe's accuracy. It can also be used to illuminate caves."
+msgstr "De gebruiker schijnt een licht dat precisie verlaagt. Het kan ook in grotten gebruikt worden."
+
+msgid "The user stabs the foe with a sharpened stone from below. It has a high critical-hit ratio."
+msgstr "Het doelwit wordt van onderaf met stenen gestoken. Het heeft een grotere kans op voltreffers."
+
+msgid "An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn."
+msgstr "Brengt dubbel het aantal schade toe als de gebruiker eerder die beurt al schade heeft opgelopen."
+
+msgid "A weak electric charge is launched at the foe. It causes paralysis if it hits."
+msgstr "Er wordt een zwak schokje op het doelwit gevuurd. Het verlamt het doelwit als het raakt."
+
+msgid "The user tackles the foe from a high-speed spin. The slower the user, the greater the damage."
+msgstr "Een bliksemsnelle, tollende actie. Hoe langzamer de gebruiker, hoe meer schade het toebrengt."
+
+msgid "A frenetic dance to uplift the fighting spirit. It sharply raises the user's Attack stat."
+msgstr "Een fanatieke dans om vechtlust te versterken. Het verhoogt de Sterkte van de gebruiker aanzienlijk."
+
+msgid "The user lays a trap of levitating stones around the foe. The trap hurts foes that switch into battle."
+msgstr "Verspreidt zwevende stenen rond het verdedigende team. Het brengt schade toe aan verwisselende Pokémon."
+
+msgid "The user hypnotizes itself into copying any stat change made by the foe."
+msgstr "De gebruiker hypnotiseert zichzelf om de statistiekveranderingen van het doelwit te kopiëren."
+
+msgid "If it is the opposite gender of the user, the foe is charmed into sharply lowering its Sp. Atk stat."
+msgstr "Als het doelwit van het andere geslacht is, wordt het gecharmeerd en verlaagt het zijn Sp.-Str."
+
+msgid "The user releases a horrible aura imbued with dark thoughts. It may also make the target flinch."
+msgstr "De gebruiker laat nare gedachten vrij. Het kan het doelwit doen terugdeinzen."
+
+msgid "The user slashes at the foe by crossing its scythes or claws as if they were a pair of scissors."
+msgstr "De gebruiker snijdt het doelwit door zijn klauwen te kruisen als een schaar."
+
+msgid "While it is asleep, the user randomly uses one of the moves it knows."
+msgstr "De gebruiker doet een van zijn acties terwijl het slaapt."
+
+msgid "The user draws power from the Berry it is holding to attack. The Berry determines its type and power."
+msgstr "De gebruiker haalt krachten uit zijn vastgehouden Bes. Het Soort en de kracht hangen af van de Bes."
+
+msgid "The foe is stabbed with a tentacle or arm seeped with poison. It may also poison the foe."
+msgstr "Het doelwit wordt met een giftige tentakel of arm gestoken. Het kan het doelwit vergiftigen."
+
+msgid "An attack that works only on a sleeping foe. It absorbs half the damage caused to heal the user's HP."
+msgstr "De gebruiker eet de dromen van het slapende doelwit. Zijn HP herstelt met 50% van de schade."
+
+msgid "The user snares the foe with grass and trips it. The heavier the foe, the greater the damage."
+msgstr "Het doelwit raakt verstrikt door gras en struikelt. Hoe zwaarder het doelwit, hoe meer schade het toebrengt."
+
+msgid "The user enrages the foe into confusion. However, it also sharply raises the foe's Attack stat."
+msgstr "Het doelwit raakt witheet en verward. Het verhoogt echter ook aanzienlijk zijn Sterkte."
+
+msgid "The user pecks the foe. If the foe is holding a Berry, the user plucks it and gains its effect."
+msgstr "De gebruiker pikt naar het doelwit. Als het doelwit een Bes vasthoudt, wordt deze opgegeten."
+
+msgid "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+msgstr "De gebruiker trekt zich na zijn aanval terug om zich met een andere Pokémon te verwisselen."
+
+msgid "The user makes a copy of itself using some of its HP. The copy serves as the user's decoy."
+msgstr "De gebruiker offert wat van zijn HP op om een kopie te maken. Dit kopie werkt als afleiding."
+
+msgid "The user gathers all its light energy and releases it in one shot. It may also lower the foe's Sp. Def stat."
+msgstr "De gebruiker slaat het licht om zich heen op en vuurt het vervolgens af. Het kan Sp.-Ver. verlagen."
+
+msgid "The user creates a bizarre space in which slower Pokémon get to move first for five turns."
+msgstr "Creërt een bizar gebied waar slome Pokémon als eerste kunnen bewegen. Het duurt vijf beurten."
+
+msgid "HM01"
+msgstr "VM01"
+
+msgid "The foe is cut with a scythe or a claw. It can also be used to cut down thin trees."
+msgstr "De gebruiker wordt door een klauw gesneden. Het kan ook gebruikt worden om kleine bomen te kappen."
+
+msgid "HM02"
+msgstr "VM02"
+
+msgid "The user soars, then strikes on the second turn. It can also be used to fly to any familiar town."
+msgstr "De gebruiker vliegt omhoog om in de tweede beurt aan te vallen. Het kan je ook naar andere steden brengen."
+
+msgid "HM03"
+msgstr "VM03"
+
+msgid "It swamps the entire battlefield with a giant wave. It can also be used to cross water."
+msgstr "De gebruiker overspoelt het gebied met een golf. Kan ook gebruikt worden om in het water te zwemmen."
+
+msgid "HM04"
+msgstr "VM04"
+
+msgid "The foe is slugged with a punch thrown at maximum power. It can also be used to move boulders."
+msgstr "Het doelwit wordt met volle kracht gestompt. Het kan ook gebruikt worden om grote stenen te verschuiven."
+
+msgid "HM05"
+msgstr "VM05"
+
+msgid "Obstacles are moved, reducing the foe's evasion stat. It can also be used to clear deep fog."
+msgstr "Het blaast obstakels als Light Screen weg. Het verlaagt ook de ontwijking van het verdedigende team."
+
+msgid "HM06"
+msgstr "VM06"
+
+msgid "The user slugs the foe with a shattering punch. It can also smash cracked boulders."
+msgstr "Een stoot die zelfs rotsen kan splijten. Het kan Sp.-Ver. verlagen. Kan ook buiten gevechten gebruikt worden."
+
+msgid "HM07"
+msgstr "VM07"
+
+msgid "The user charges the foe at an awesome speed. It can also be used to climb a waterfall."
+msgstr "Water dat het doelwit kan doen terugdeinzen. Kan ook gebruikt worden om een waterval te beklimmen."
+
+msgid "HM08"
+msgstr "VM08"
+
+msgid "Diving on the first turn, the user floats up and attacks on the second turn."
+msgstr "De gebruiker duikt dieper het water in om vervolgens aan te vallen. Kan ook op het water gebruikt worden."
+
+msgid "Cheri Berry"
+msgstr "Cheri-Bes"
+
+msgid "It may be used or held by a Pokémon to recover from paralysis."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om van verlamming te herstellen."
+
+msgid "Chesto Berry"
+msgstr "Chesto-Bes"
+
+msgid "It may be used or held by a Pokémon to recover from sleep."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om een Pokémon op te wekken."
+
+msgid "Pecha Berry"
+msgstr "Pecha-Bes"
+
+msgid "It may be used or held by a Pokémon to recover from poison."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om van vergiftiging te herstellen."
+
+msgid "Rawst Berry"
+msgstr "Rawst-Bes"
+
+msgid "It may be used or held by a Pokémon to recover from a burn."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om van verbranding te herstellen."
+
+msgid "Aspear Berry"
+msgstr "Aspear-Bes"
+
+msgid "It may be used or held by a Pokémon to defrost it."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om een Pokémon te ontdooien."
+
+msgid "Leppa Berry"
+msgstr "Leppa-Bes"
+
+msgid "It may be used or held by a Pokémon to restore a move's PP by 10."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om 10 AP van één actie te herstellen."
+
+msgid "Oran Berry"
+msgstr "Oran-Bes"
+
+msgid "It may be used or held by a Pokémon to heal the user by just 10 HP."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om 10 HP te herstellen."
+
+msgid "Persim Berry"
+msgstr "Persim-Bes"
+
+msgid "It may be used or held by a Pokémon to recover from confusion."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om van verwarring te herstellen."
+
+msgid "Lum Berry"
+msgstr "Lum-Bes"
+
+msgid "It may be used or held by a Pokémon to recover from any status problem."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om van aandoeningen te herstellen."
+
+msgid "Sitrus Berry"
+msgstr "Sitrus-Bes"
+
+msgid "It may be used or held by a Pokémon to heal the user's HP a little."
+msgstr "Kan gebruikt of eenmalig vastgehouden worden om een kwart van de maximale HP te herstellen."
+
+msgid "Figy Berry"
+msgstr "Figy-Bes"
+
+msgid "If held by a Pokémon, it restores the user's HP in a pinch, but may also cause confusion."
+msgstr "Kan eenmalig worden vastgehouden om HP te herstellen, maar kan ook verwarring veroorzaken."
+
+msgid "Wiki Berry"
+msgstr "Wiki-Bes"
+
+msgid "Mago Berry"
+msgstr "Mago-Bes"
+
+msgid "Aguav Berry"
+msgstr "Aguav-Bes"
+
+msgid "Iapapa Berry"
+msgstr "Iapapa-Bes"
+
+msgid "Razz Berry"
+msgstr "Razz-Bes"
+
+msgid "Bury it in soft soil to grow a Razz Plant."
+msgstr "Begraaf het in aarde om een Razz-plant te kweken."
+
+msgid "Bluk Berry"
+msgstr "Bluk-Bes"
+
+msgid "Bury it in soft soil to grow a Bluk Plant."
+msgstr "Begraaf het in aarde om een Bluk-plant te kweken."
+
+msgid "Nanab Berry"
+msgstr "Nanab-Bes"
+
+msgid "Bury it in soft soil to grow a Nanab Plant."
+msgstr "Begraaf het in aarde om een Nanab-plant te kweken."
+
+msgid "Wepear Berry"
+msgstr "Wepear-Bes"
+
+msgid "Bury it in soft soil to grow a Wepear Plant."
+msgstr "Begraaf het in aarde om een Wepear-plant te kweken."
+
+msgid "Pinap Berry"
+msgstr "Pinap-Bes"
+
+msgid "Bury it in soft soil to grow a Pinap Plant."
+msgstr "Begraaf het in aarde om een Pinap-plant te kweken."
+
+msgid "Pomeg Berry"
+msgstr "Pomeg-Bes"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base HP."
+msgstr "Het maakt een Pokémon vriendelijker, maar verlaagt ook de basis HP."
+
+msgid "Kelpsy Berry"
+msgstr "Kelpsy-Bes"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Attack stat."
+msgstr "Het maakt een Pokémon vriendelijker, maar verlaagt ook de basis Sterkte."
+
+msgid "Qualot Berry"
+msgstr "Qualot-Bes"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Defense stat."
+msgstr "Het maakt een Pokémon vriendelijker, maar verlaagt ook de basis Verdediging."
+
+msgid "Hondew Berry"
+msgstr "Hondew-Bes"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Atk stat."
+msgstr "Het maakt een Pokémon vriendelijker, maar verlaagt ook de basis Speciale Sterkte."
+
+msgid "Grepa Berry"
+msgstr "Grepa-Bes"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Def stat."
+msgstr "Het maakt een Pokémon vriendelijker, maar verlaagt ook de basis Speciale Verdediging."
+
+msgid "Tamato Berry"
+msgstr "Tamato-Bes"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Speed stat."
+msgstr "Het maakt een Pokémon vriendelijker, maar verlaagt ook de basis Snelheid."
+
+msgid "Cornn Berry"
+msgstr "Cornn-Bes"
+
+msgid "Bury it in soft soil to grow a Cornn Plant."
+msgstr "Begraaf het in aarde om een Cornn-plant te kweken."
+
+msgid "Magost Berry"
+msgstr "Magost-Bes"
+
+msgid "Bury it in soft soil to grow a Magost Plant."
+msgstr "Begraaf het in aarde om een Magost-plant te kweken."
+
+msgid "Rabuta Berry"
+msgstr "Rabuta-Bes"
+
+msgid "Bury it in soft soil to grow a Rabuta Plant."
+msgstr "Begraaf het in aarde om een Rabuta-plant te kweken."
+
+msgid "Nomel Berry"
+msgstr "Nomel-Bes"
+
+msgid "Bury it in soft soil to grow a Nomel Plant."
+msgstr "Begraaf het in aarde om een Nomel-plant te kweken."
+
+msgid "Spelon Berry"
+msgstr "Spelon-Bes"
+
+msgid "Bury it in soft soil to grow a Spelon Plant."
+msgstr "Begraaf het in aarde om een Spelon-plant te kweken."
+
+msgid "Pamtre Berry"
+msgstr "Pamtre-Bes"
+
+msgid "Bury it in soft soil to grow a Pamtre Plant."
+msgstr "Begraaf het in aarde om een Pamtre-plant te kweken."
+
+msgid "Watmel Berry"
+msgstr "Watmel-Bes"
+
+msgid "Bury it in soft soil to grow a Watmel Plant."
+msgstr "Begraaf het in aarde om een Watmel-plant te kweken."
+
+msgid "Durin Berry"
+msgstr "Durin-Bes"
+
+msgid "Bury it in soft soil to grow a Durin Plant."
+msgstr "Begraaf het in aarde om een Durin-plant te kweken."
+
+msgid "Belue Berry"
+msgstr "Belue-Bes"
+
+msgid "Bury it in soft soil to grow a Belue Plant."
+msgstr "Begraaf het in aarde om een Belue-plant te kweken."
+
+msgid "Occa Berry"
+msgstr "Occa-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Fire-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Vuur-aanval te beschermen."
+
+msgid "Passho Berry"
+msgstr "Passho-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Water-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Water-aanval te beschermen."
+
+msgid "Wacan Berry"
+msgstr "Wacan-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Electric-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Elektrisch-aanval te beschermen."
+
+msgid "Rindo Berry"
+msgstr "Rindo-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Grass-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Gras-aanval te beschermen."
+
+msgid "Yache Berry"
+msgstr "Yache-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ice-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Ijs-aanval te beschermen."
+
+msgid "Chople Berry"
+msgstr "Chople-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Fighting-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Vecht-aanval te beschermen."
+
+msgid "Kebia Berry"
+msgstr "Kebia-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Poison-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Vergif-aanval te beschermen."
+
+msgid "Shuca Berry"
+msgstr "Shuca-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ground-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Grond-aanval te beschermen."
+
+msgid "Coba Berry"
+msgstr "Coba-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Flying-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Vlieg-aanval te beschermen."
+
+msgid "Payapa Berry"
+msgstr "Payapa-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Psychic-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Psychisch-aanval te beschermen."
+
+msgid "Tanga Berry"
+msgstr "Tanga-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Bug-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Insect-aanval te beschermen."
+
+msgid "Charti Berry"
+msgstr "Charti-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Rock-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Steen-aanval te beschermen."
+
+msgid "Kasib Berry"
+msgstr "Kasib-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ghost-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Spook-aanval te beschermen."
+
+msgid "Haban Berry"
+msgstr "Haban-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Dragon-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Draak-aanval te beschermen."
+
+msgid "Colbur Berry"
+msgstr "Colbur-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Dark-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Duister-aanval te beschermen."
+
+msgid "Babiri Berry"
+msgstr "Babiri-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Steel-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Staal-aanval te beschermen."
+
+msgid "Chilan Berry"
+msgstr "Chilan-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's Normal-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Normaal-aanval te beschermen."
+
+msgid "Liechi Berry"
+msgstr "Liechi-Bes"
+
+msgid "If held by a Pokémon, it raises its Attack stat in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om de Sterkte in nood te verhogen."
+
+msgid "Ganlon Berry"
+msgstr "Ganlon-Bes"
+
+msgid "If held by a Pokémon, it raises its Defense stat in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om de Verdediging in nood te verhogen."
+
+msgid "Salac Berry"
+msgstr "Salac-Bes"
+
+msgid "If held by a Pokémon, it raises its Speed stat in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om de Snelheid in nood te verhogen."
+
+msgid "Petaya Berry"
+msgstr "Petaya-Bes"
+
+msgid "If held by a Pokémon, it raises its Sp. Atk stat in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om de Speciale Sterkte in nood te verhogen."
+
+msgid "Apicot Berry"
+msgstr "Apicot-Bes"
+
+msgid "If held by a Pokémon, it raises its Sp. Def stat in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om de Speciale Verdediging in nood te verhogen."
+
+msgid "Lansat Berry"
+msgstr "Lansat-Bes"
+
+msgid "If held by a Pokémon, it raises its critical-hit ratio in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om de kans op voltreffers in nood te verhogen."
+
+msgid "Starf Berry"
+msgstr "Starf-Bes"
+
+msgid "If held by a Pokémon, it sharply raises one of its stats in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om één statistiek in nood aanzienlijk te verhogen."
+
+msgid "Enigma Berry"
+msgstr "Enigma-Bes"
+
+msgid "If held by a Pokémon, it restores its HP if it is hit by a foe's supereffective attack."
+msgstr "Kan eenmalig worden vastgehouden om HP te herstellen wanneer de Pokémon door een zeer effectieve aanval wordt geraakt."
+
+msgid "Micle Berry"
+msgstr "Micle-Bes"
+
+msgid "If held by a Pokémon, it raises the accuracy of a move just once in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om de precisie van een actie in nood te verhogen."
+
+msgid "Custap Berry"
+msgstr "Custap-Bes"
+
+msgid "If held by a Pokémon, it gets to move first just once in a pinch."
+msgstr "Kan eenmalig worden vastgehouden om in nood één keer eerst te bewegen."
+
+msgid "Jaboca Berry"
+msgstr "Jaboca-Bes"
+
+msgid "If held by a Pokémon, and if a foe's physical attack lands, the foe also takes damage."
+msgstr "Kan eenmalig worden vastgehouden om schade toe te brengen wanneer de houder door een fysieke aanval geraakt wordt."
+
+msgid "Rowap Berry"
+msgstr "Rowap-Bes"
+
+msgid "If held by a Pokémon, and if a foe's special attack lands, the foe also takes damage."
+msgstr "Kan eenmalig worden vastgehouden om schade toe te brengen wanneer de houder door een speciale aanval geraakt wordt."
+
+msgid "Orange Mail"
+msgstr "Oranje Brief"
+
+msgid "A piece of mail featuring a cute Zigzagoon print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een schattige Zigzagoon-print."
+
+msgid "Harbor Mail"
+msgstr "Havenbrief"
+
+msgid "A piece of mail featuring a cute Wingull print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een schattige Wingull-print."
+
+msgid "Glitter Mail"
+msgstr "Glitterbrief"
+
+msgid "A piece of mail featuring a cute Pikachu print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een schattige Pikachu-print."
+
+msgid "Mech Mail"
+msgstr "Magneetbrief"
+
+msgid "A piece of mail featuring a cute Magnemite print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een schattige Magnemite-print."
+
+msgid "Wood Mail"
+msgstr "Woudbrief"
+
+msgid "A piece of mail featuring a cute Slakoth print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een schattige Slakoth-print."
+
+msgid "Wave Mail"
+msgstr "Golfbrief"
+
+msgid "A piece of mail featuring a cute Wailmer print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een schattige Wailmer-print."
+
+msgid "Bead Mail"
+msgstr "Parelbrief"
+
+msgid "A piece of mail to be held by a Pokémon. It will bear the print of the Pokémon holding it."
+msgstr "Kan worden vastgehouden. Het krijgt een print van de Pokémon die het vasthoudt."
+
+msgid "Shadow Mail"
+msgstr "Schaduwbrief"
+
+msgid "A piece of mail featuring a cute Duskull print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een schattige Duskull-print."
+
+msgid "Tropic Mail"
+msgstr "Tropische Brief"
+
+msgid "A piece of mail featuring a cute Bellossom print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een schattige Bellossom-print."
+
+msgid "Dream Mail"
+msgstr "Droombrief"
+
+msgid "Fab Mail"
+msgstr "Wonderbrief"
+
+msgid "A piece of mail featuring a gorgeous, extravagant print. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een ongelooflijk prachtige print."
+
+msgid "Retro Mail"
+msgstr "Retrobrief"
+
+msgid "A piece of mail featuring a print of three cute Pokémon. It is to be held by a Pokémon."
+msgstr "Kan worden vastgehouden. Een brief met een print van drie schattige Pokémon."
+
+msgid "X Attack"
+msgstr "X-Sterkte"
+
+msgid "An item that raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Een gevechtsvoorwerp dat de Sterkte van een Pokémon tijdelijk verhoogt."
+
+msgid "X Defend"
+msgstr "X-Verdediging"
+
+msgid "An item that raises the Defense of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Een gevechtsvoorwerp dat de Verdediging van een Pokémon tijdelijk verhoogt."
+
+msgid "X Special"
+msgstr "X-Sp.-Str."
+
+msgid "An item that raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Een gevechtsvoorwerp dat de Speciale Sterkte van een Pokémon tijdelijk verhoogt."
+
+msgid "X Sp. Def"
+msgstr "X-Sp.-Ver."
+
+msgid "An item that raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Een gevechtsvoorwerp dat de Speciale Verdediging van een Pokémon tijdelijk verhoogt."
+
+msgid "X Speed"
+msgstr "X-Snelheid"
+
+msgid "An item that raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Een gevechtsvoorwerp dat de Snelheid van een Pokémon tijdelijk verhoogt."
+
+msgid "X Accuracy"
+msgstr "X-Precisie"
+
+msgid "An item that raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Een gevechtsvoorwerp dat de precisie van een Pokémon tijdelijk verhoogt."
+
+msgid "Dire Hit"
+msgstr "Beslissende Klap"
+
+msgid "An item that raises the critical-hit ratio of a Pokémon in battle."
+msgstr "Een gevechtsvoorwerp dat de kans op voltreffers van een Pokémon tijdelijk verhoogt."
+
+msgid "Guard Spec."
+msgstr "Statistiekbarrière"
+
+msgid "An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use."
+msgstr "Een gevechtsvoorwerp dat statistiekdalingen voor vijf beurten stuit. Dit geldt voor heel het team."
+
+msgid "Poké Doll"
+msgstr "Pokéknuffel"
+
+msgid "A doll that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+msgstr "Een onweerstaanbare knuffel. Gebruik het om van wilde Pokémon te vluchten."
+
+msgid "Fluffy Tail"
+msgstr "Pluizige Staart"
+
+msgid "An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+msgstr "Een afleidende staart. Gebruik het om van wilde Pokémon te vluchten."
+
+msgid "Blue Flute"
+msgstr "Blauwe Fluit"
+
+msgid "A blue flute made from blown glass. Its melody awakens a single Pokémon from sleep."
+msgstr "Een blauwe fluit gemaakt van geblazen glas. Het melodie kan een Pokémon opwekken."
+
+msgid "Yellow Flute"
+msgstr "Gele Fluit"
+
+msgid "A yellow flute made from blown glass. Its melody snaps a single Pokémon out of confusion."
+msgstr "Een gele fluit gemaakt van geblazen glas. Het melodie kan een Pokémon uit zijn verwarring helpen."
+
+msgid "Red Flute"
+msgstr "Rode Fluit"
+
+msgid "A red flute made from blown glass. Its melody snaps a single Pokémon out of infatuation."
+msgstr "Een rode fluit gemaakt van geblazen glas. Het melodie kan een Pokémon uit zijn verzotheid helpen."
+
+msgid "Bicycle"
+msgstr "Fiets"
+
+msgid "A folding Bicycle that enables much faster movement than the Running Shoes."
+msgstr "Een opvouwbare Fiets die iemand veel sneller laat bewegen dan Hardloopschoenen."
+
+msgid "Old Rod"
+msgstr "Oude Hengel"
+
+msgid "An old and beat-up fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "Een oude, gebroken vishengel. Gebruik het naast een waterlichaam om Pokémon op te vissen."
+
+msgid "Good Rod"
+msgstr "Tophengel"
+
+msgid "A new, good-quality fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "Een gloednieuwe vishengel. Gebruik het naast een waterlichaam om Pokémon op te vissen."
+
+msgid "Super Rod"
+msgstr "Superhengel"
+
+msgid "An awesome, high-tech fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "Een luxe hoogwaardige vishengel. Gebruik het naast een waterlichaam om Pokémon op te vissen."
+
+msgid "Dowsing MCHN"
+msgstr "Detector"
+
+msgid "It checks for unseen items in the area and makes noise and lights when it finds something."
+msgstr "Het zoekt voor verbogen voorwerpen in de buurt en maakt geluid wanneer het iets vindt."
+
+msgid "The user creates shockwaves to attack the target. This attack does physical damage."
+msgstr "De gebruiker stuurt een aantal golven op het doelwit af. Kan ook gebruikt worden om koraal te breken."
+
+msgid "Town Map"
+msgstr "Plattegrond"
+
+msgid "A very convenient map that can be viewed anytime. It even shows your present location."
+msgstr "Een heel handige kaart die op elk moment bekeken kan worden. Het laat je huidige locatie zien."
+
+msgid "Coin Case"
+msgstr "Muntenkist"
+
+msgid "A case for holding Coins obtained at the Game Corner. It holds up to 99,999 Coins."
+msgstr "Een kistje speciaal voor Casino-munten. Er passen 50.000 munten in."
+
+msgid "A flower sometimes bundled in bouquets to convey gratitude on special occasions like birthdays."
+msgstr "Een bloem die vaak voor speciale gelegenheden in boeketten wordt gedaan om dankbaarheid te tonen."
+
+msgid "Soot Sack"
+msgstr "Aszak"
+
+msgid "A sack used to gather and hold volcanic ash."
+msgstr "Een zak om volkanische as in te bewaren."
+
+msgid "Explorer Kit"
+msgstr "Reisuitrusting"
+
+msgid "A bag filled with convenient tools for exploring. It provides access to the Underground."
+msgstr "Een zak vol handig avonturiersgereedschap. Het biedt toegang tot de Ondergrond."
+
+msgid "Loot Sack"
+msgstr "Prijzenzak"
+
+msgid "A sturdy, spacious bag that is used to carry loot obtained in the coal mine."
+msgstr "Een stevige ruime zak om prijzen uit de kolenmijn in te bewaren."
+
+msgid "Rule Book"
+msgstr "Spelregels"
+
+msgid "It lists the rules for holding battles. For linked battles, you may choose which rules to use."
+msgstr "Een lijst met spelregels voor het houden van gevechten. VT-spelregels kunnen aangepast worden."
+
+msgid "Point Card"
+msgstr "Puntenkaart"
+
+msgid "A card that lists the Battle Points you have earned."
+msgstr "Een kaart met het aantal verdiende Gevechtspunten."
+
+msgid "Journal"
+msgstr "Dagboek"
+
+msgid "A notebook that keeps a day-to-day record of your adventure so far."
+msgstr "Een notitieboek met een samenvatting van je avonturen tot nu toe."
+
+msgid "Seal Case"
+msgstr "Stickerdoos"
+
+msgid "A case for storing Seals that can be applied to the capsule cases of Poké Balls."
+msgstr "Een doosje om Pokébal-stickers in te bewaren."
+
+msgid "Fashion Case"
+msgstr "Accessoiredoos"
+
+msgid "A fancy case for the tidy and organized storage of colorful Pokémon Accessories."
+msgstr "Een sierlijk doosje om Pokémon-accessoires in te bewaren."
+
+msgid "Seal Bag"
+msgstr "Stickerzak"
+
+msgid "A tiny bag that can hold ten Seals for decorating Poké Balls."
+msgstr "Een schattig zakje waar 10 Pokébal-stickers in passen."
+
+msgid "Pal Pad"
+msgstr "Vriendenalbum"
+
+msgid "A convenient notepad that is used for registering your friends and keeping a record of game play."
+msgstr "Een handig album om vrienden aan toe te voegen. Het houdt ook je voortgang bij."
+
+msgid "Works Key"
+msgstr "Kernsleutel"
+
+msgid "A large key for operating the doors of the Valley Windworks. It was held by a Team Galactic Grunt."
+msgstr "Een sleutel voor de deuren van het Windmolenpark. Het werd door een Galactic-Handlanger vastgehouden."
+
+msgid "Old Charm"
+msgstr "Oud Bedeltje"
+
+msgid "An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town."
+msgstr "Een oud bedeltje gemaakt van Pokémon-botten. Het moet aan de ouderling gegeven worden."
+
+msgid "Galactic Key"
+msgstr "Galactic-Sleutel"
+
+msgid "A card key for disengaging security systems in the Galactic HQ. Losing it can result in punishment, apparently."
+msgstr "Een sleutelkaart voor het uitschakelen van beveiligingssystemen in het Galactic-Hoofdkwartier."
+
+msgid "Red Chain"
+msgstr "Rode Ketting"
+
+msgid "A mythical chain that is said to link the legendary Pokémon that created the Sinnoh region."
+msgstr "Een mythische ketting om de Legendarische Pokémon van de Sinnohregio mee vast te ketenen."
+
+msgid "Sprayduck"
+msgstr "Sproeiduck"
+
+msgid "A watering can shaped like a Psyduck. It helps promote healthy growth of planted Berries."
+msgstr "Een gieter in de vorm van een Psyduck. Het stimuleert Bessengroei."
+
+msgid "Poffin Case"
+msgstr "Poffindoos"
+
+msgid "A case for storing Poffin cooked from Berries."
+msgstr "Een doos om Poffins in te bewaren."
+
+msgid "Suite Key"
+msgstr "Hotelsleutel"
+
+msgid "A key to one of the suites at the luxury hotel by a lake. For some odd reason, it often disappears."
+msgstr "Een sleutel voor een van de hotelkamers bij het meer. Op de een of andere manier raakt het vaak kwijt."
+
+msgid "Oak's Letter"
+msgstr "Oaks Brief"
+
+msgid "A letter from Prof. Oak. Written in it is a request for you to go to Rt. 224."
+msgstr "Een brief van Professor Oak. Het bevat een schriftelijk verzoek om naar Route 224 te gaan."
+
+msgid "Lunar Wing"
+msgstr "Maanveer"
+
+msgid "A feather that glows like the moon. It is said to possess the power to dispel nightmares."
+msgstr "Een veer die schijnt als de maan. Men zegt dat het nachtmerries kan verdrijven."
+
+msgid "Member Card"
+msgstr "Ledenkaart"
+
+msgid "A card needed for entering the inn in Canalave City. Oddly, the last date marked on it was 50 years ago."
+msgstr "Een kaart die nodig is om de herberg van Canalave te betreden. De laatste datum is van 50 jaar geleden."
+
+msgid "Azure Flute"
+msgstr "Hemelfluit"
+
+msgid "A flute that puts out echoing sounds that do not seem to be of this world. It is unknown who made it."
+msgstr "Een fluit die buitenaardse, echoënde geluiden maakt. Wie het gemaakt heeft is onbekend."
+
+msgid "BBFerry Ticket"
+msgstr "Luxecruiseticket"
+
+msgid "The ticket required for sailing on the ferry on Bealbeach Lake. It has a drawing of a ship on it."
+msgstr "Een ticket voor de Luxecruise van Tandor in Bruisbank. Het heeft een tekening van een boot."
+
+msgid "Contest Pass"
+msgstr "Competitiekaart"
+
+msgid "The pass required for entering Pokémon Contests. It has a drawing of an award ribbon on it."
+msgstr "Een kaart om deel te nemen aan Pokémon-Wedstrijden. Het heeft een tekening van een prijslintje."
+
+msgid "Magma Stone"
+msgstr "Magmasteen"
+
+msgid "A stone formed when boulders melted in intensely hot magma. Magma remains sealed inside."
+msgstr "Een steen gevormd door samengesmolten magma. Er zit nog steeds magma in."
+
+msgid "Parcel"
+msgstr "Pakketje"
+
+msgid "A parcel that you are supposed to deliver to your childhood friend who left Twinleaf Town."
+msgstr "Een pakketje dat aan je jeugdvriend geleverd moet worden."
+
+msgid "A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed."
+msgstr "Een coupon die ingewisseld kan worden voor een Pokétch. Er zijn drie coupons voor nodig."
+
+msgid "Storage Key"
+msgstr "Magazijnsleutel"
+
+msgid "The key to Team Galactic's sinister warehouse located at the edge of Veilstone City."
+msgstr "De sleutel voor het magazijn van Team Galactic, gelegen in Veilstone."
+
+msgid "SecretPotion"
+msgstr "Geheim Medicijn"
+
+msgid "A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment."
+msgstr "Een fantastisch medicijn van de apotheek van Cianwood. Het verhelpt een Pokémon van al zijn of haar aandoeningen."
+
+msgid "Vs. Seeker"
+msgstr "Gevechtszoeker"
+
+msgid "A device that indicates Trainers who want to battle. Its battery charges while you walk."
+msgstr "Een apparaat dat aangeeft welke Trainers willen vechten. Het laadt op terwijl je loopt."
+
+msgid "Vs. Recorder"
+msgstr "Gevechtsrecorder"
+
+msgid "An amazing device that can record a battle either between friends or at a special battle facility."
+msgstr "Een geweldig apparaat dat gevechten op speciale locaties en gevechten tussen jou en je vrienden kan opnemen."
+
+msgid "Secret Key"
+msgstr "Geheime Sleutel"
+
+msgid "A high-tech key to be used at a specific location. It emits a special electric signal to open a door."
+msgstr "Een geavanceerde sleutel voor een specifieke locatie. Het zendt een signaal uit om een deur te openen."
+
+msgid "Apricorn Box"
+msgstr "Apricorndoos"
+
+msgid "A handy box where you can store up to 99 Apricorns of each kind."
+msgstr "Een handig doosje waar tot wel 99 Apricornen van elke soort in passen."
+
+msgid "Unown Report"
+msgstr "Unowndex"
+
+msgid "A report of all the discovered kinds of Unown."
+msgstr "Een overzicht van alle ontdekte Unown-soorten."
+
+msgid "Berry Pots"
+msgstr "Bessenpotjes"
+
+msgid "Handy containers for cultivating Berries wherever you go."
+msgstr "Handige potjes om Bessen onderweg te kweken."
+
+msgid "Blue Card"
+msgstr "Blauwe Kaart"
+
+msgid "A card to save points for the Buena's Password show."
+msgstr "Een kaart om punten voor Buena's Wachtwoordenspel op te sparen."
+
+msgid "SlowpokeTail"
+msgstr "Slowpoke-Staart"
+
+msgid "A very tasty tail of something. It sells for a high price."
+msgstr "Een verrukkelijke staart van iets. Het is veel waard."
+
+msgid "Clear Bell"
+msgstr "Kristallen Bel"
+
+msgid "A very old-fashioned bell that makes a gentle ringing."
+msgstr "Een ouderwets belletje dat zachtjes rinkelt."
+
+msgid "Card Key"
+msgstr "Sleutelkaart"
+
+msgid "A card key that opens a shutter in the Radio Tower."
+msgstr "Een sleutelkaart om de luiken van de Radiotoren te openen."
+
+msgid "Basement Key"
+msgstr "Keldersleutel"
+
+msgid "A key that opens a door in the Goldenrod Tunnel."
+msgstr "Een sleutel voor een deur in de Goldenrodtunnel."
+
+msgid "Squirtbottle"
+msgstr "Squirtle-Sproeier"
+
+msgid "A bottle used for watering plants in the Berry Pots."
+msgstr "Een Squirtle-vormig gietertje bedoeld voor Bessenpotjes."
+
+msgid "Red Scale"
+msgstr "Rode Schub"
+
+msgid "A scale from the red Gyarados. It glows red like a flame."
+msgstr "Een schub van de rode Gyarados. Het glinstert rood als een vlam."
+
+msgid "Lost Item"
+msgstr "Verloren Voorwerp"
+
+msgid "The Poké Doll lost by the Copycat."
+msgstr "De verloren Pokéknuffel van de Na-aper."
+
+msgid "Pass"
+msgstr "Ticket"
+
+msgid "A ticket to ride the Magnet Train, whenever and however much you like."
+msgstr "Een ticket voor de Magnetentrein. Het is levenslang geldig en kan oneindig keer gebruikt worden."
+
+msgid "Machine Part"
+msgstr "Machineonderdeel"
+
+msgid "An important machine part for the Power Plant that was stolen."
+msgstr "Een belangrijk machineonderdeel, gestolen uit een kerncentrale."
+
+msgid "Silver Wing"
+msgstr "Zilverveer"
+
+msgid "A strange, silvery feather that sparkles."
+msgstr "Een vreemde, zilverkleurige veer. Het schittert en straalt."
+
+msgid "Rainbow Wing"
+msgstr "Regenboogveer"
+
+msgid "A mystical rainbow feather that sparkles."
+msgstr "Een vreemde regenboogveer. Het schittert en straalt."
+
+msgid "Mystery Egg"
+msgstr "Raadsel-Ei"
+
+msgid "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown."
+msgstr "Een mysterieus Ei gekregen van Dhr. Pokémon. Wat er in zit is onbekend."
+
+msgid "Photo Album"
+msgstr "Fotoalbum"
+
+msgid "A nice photo album for storing all the photos taken along your adventure."
+msgstr "Een fijn fotoalbum om al je foto's in te bewaren."
+
+msgid "GB Sounds"
+msgstr "GB-Speler"
+
+msgid "A music player that allows you to listen to nostalgic songs. It's operated with a single switch."
+msgstr "Een muziekspeler om nostalgische deuntjes mee af te spelen. Het wordt met één knop bediend."
+
+msgid "Tidal Bell"
+msgstr "Golfbel"
+
+msgid "RageCandyBar"
+msgstr "Rage-Lekkernij"
+
+msgid "A famous candy in Mahogany Town. Many tourists like to buy them to take home."
+msgstr "Een beroemde lekkernij uit Mahogany. Veel toeristen kopen ze om mee naar huis te nemen."
+
+msgid "Jade Orb"
+msgstr "Jade Bol"
+
+msgid "A shiny green orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "Een glanzende, groene bol uit een legende. Het heeft een diep verband met de Hoennregio."
+
+msgid "Lock Capsule"
+msgstr "TM-Capsule"
+
+msgid "A sturdy Capsule that can only be opened with a special key."
+msgstr "Een stevige capsule die alleen met een speciale sleutel geopend kan worden."
+
+msgid "Red Orb"
+msgstr "Rode Bol"
+
+msgid "A shiny red orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "Een glanzende, rode bol uit een legende. Het heeft een diep verband met de Hoennregio."
+
+msgid "Blue Orb"
+msgstr "Blauwe Bol"
+
+msgid "A shiny blue orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "Een glanzende, blauwe bol uit een legende. Het heeft een diep verband met de Hoennregio."
+
+msgid "Enigma Stone"
+msgstr "Mythisch Kristal"
+
+msgid "A crystal ball from an excavation. A very beautiful stone that is covered with bits of rock and earth."
+msgstr "Een kristallen bol gevonden tijdens een opgraving. Het is bedekt met kleine deeltjes rots en aarde."
+
+msgid "A scope that makes unseeable Pokémon visible.  It is made by Silph Co."
+msgstr "Een bril waar onzichtbare Pokémon zichtbaar mee worden. Het is gemaakt door Silph Co."
+
+msgid "LAB KEY"
+msgstr "Labsleutel"
+
+msgid "This is a custom Key Item."
+msgstr "Dit is een aangepast belangrijk voorwerp."
+
+msgid "Poké Radar"
+msgstr "PokéRadar"
+
+msgid "A tool that can search out Pokémon that are hiding in grass. Its battery is recharged as you walk."
+msgstr "Een apparaat dat in hoog gras voor wilde Pokémon zoekt. Het laadt op terwijl je loopt."
+
+msgid "Sticker Case"
+msgstr "Stickerdoos"
+
+msgid "This device helps you find a defeated wild Pokemon more easily."
+msgstr "Een apparaat waarmee je verslagen wilde Pokémon gemakkelijker kunt vinden."
+
+msgid "Atom Ball"
+msgstr "Atoombal"
+
+msgid "A special Poké Ball created to contain Urayne. You should not have this."
+msgstr "Een Pokébal speciaal gemaakt voor Urayne. Dit zou je niet moeten hebben."
+
+msgid "T.U.R Ticket"
+msgstr "T.M.N.-Ticket"
+
+msgid "A ticket for the Tandor Underground Railway."
+msgstr "Een ticket voor het Tandormetronetwerk."
+
+msgid "PST"
+msgstr "PSV"
+
+msgid "Pokémon Speech Translator. Can help you understand some Pokémon. It's still a prototype."
+msgstr "Een prototype van de Pokéspraakvertaler. Het kan sommige Pokémon verstaanbaar maken."
+
+msgid "Coconut Milk"
+msgstr "Kokosmelk"
+
+msgid "Fresh Coconut milk. Heals 50 HP and cures status effects."
+msgstr "Verse kokosmelk. Het herstelt 50 HP en geneest al de aandoeningen van één Pokémon."
+
+msgid "Jungle's Crown"
+msgstr "Junglekroon"
+
+msgid "An item to be held by a Pokémon. It belongs to the king of the jungle. Boosts Fighting attacks."
+msgstr "Kan worden vastgehouden. Het behoort toe aan de koning van de jungle. Het maakt Vecht-acties sterker."
+
+msgid "Royal Jelly"
+msgstr "Koninginnengelei"
+
+msgid "An item to be held by a Pokémon. A mysterious goo left behind by Seikamater."
+msgstr "Kan worden vastgehouden. Een mysterieus mengsel dat Seikamater heeft achtergelaten."
+
+msgid "Bug Spray"
+msgstr "Insectenspray"
+
+msgid "Bug spray. Works better than any Repel to get bugs scurrying!"
+msgstr "Een insectenspray die beter op insecten werkt dan welke Afweer dan ook."
+
+msgid "Acai Berry"
+msgstr "Acai-Bes"
+
+msgid "Bacu Berry"
+msgstr "Bacu-Bes"
+
+msgid "Cupu Berry"
+msgstr "Cupu-Bes"
+
+msgid "Guara Berry"
+msgstr "Guara-Bes"
+
+msgid "Hair Fossil"
+msgstr "Haarfossiel"
+
+msgid "A fossil of an ancient Pokémon that lived in the Mountains. It appears to be a wisp of Hair."
+msgstr "Een fossiel van een oeroude Pokémon die in de bergen leefde. Het lijkt een pluk haar te zijn."
+
+msgid "Tusk Fossil"
+msgstr "Slagtandfossiel"
+
+msgid "A fossil of an ancient Pokémon that lived in the Plains. It appears to be part of a Tusk."
+msgstr "Een fossiel van een oeroude Pokémon die op vlaktes leefde. Het lijkt deel van een slagtand te zijn."
+
+msgid "Moss Shard"
+msgstr "Bemoste Scherf"
+
+msgid "Ice Shard"
+msgstr "Ijsscherf"
+
+msgid "Pretty Ribbon"
+msgstr "Sierlijk Lintje"
+
+msgid "An item to be held by a Pokémon. It is an elegant pink ribbon that boosts Fairy-type moves."
+msgstr "Kan worden vastgehouden. Het is een stijlvol, roze lintje dat Fee-acties sterker maakt."
+
+msgid "Mega Bracelet"
+msgstr "Mega-Armband"
+
+msgid "This bracelet contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle."
+msgstr "Deze armband bevat een onvoorstelbare kracht die Pokémon met een Megasteen laat Mega-Evolueren tijdens een gevecht."
+
+msgid "Metalynxite"
+msgstr "Metalynxiet"
+
+msgid "One variety of the mysterious Mega Stones. Have Metalynx hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Metalynx het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Archillesite"
+msgstr "Archillesiet"
+
+msgid "One variety of the mysterious Mega Stones. Have Archilles hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Archilles het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Electruxolite"
+msgstr "Electruxoliet"
+
+msgid "One variety of the mysterious Mega Stones. Have Electruxo hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Electruxo het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Gyaradosite"
+msgstr "Gyaradosiet"
+
+msgid "One variety of the mysterious Mega Stones. Have Gyarados hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Gyarados het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Ampharosite"
+msgstr "Ampharosiet"
+
+msgid "One variety of the mysterious Mega Stones. Have Ampharos hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Ampharos het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Baariettite"
+msgstr "Baariettiet"
+
+msgid "One variety of the mysterious Mega Stones. Have Baariette hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Baariette het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Drilgannite"
+msgstr "Drilganniet"
+
+msgid "One variety of the mysterious Mega Stones. Have Drilgann hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Drilgann het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Sableyeite"
+msgstr "Sableyeriet"
+
+msgid "One variety of the mysterious Mega Stones. Have Sableye hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Sableye het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Inflagetite"
+msgstr "Inflagetaliet"
+
+msgid "One variety of the mysterious Mega Stones. Have Inflagetah hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Inflagetah het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Dramsamaite"
+msgstr "Dramsamaliet"
+
+msgid "One variety of the mysterious Mega Stones. Have Dramsama hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Dramsama het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Daikatunite"
+msgstr "Daikatuniet"
+
+msgid "One variety of the mysterious Mega Stones. Have Daikatuna hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Daikatuna het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "The target is infested and attacked for four to five turns. The target can't flee during this time."
+msgstr "Het doelwit wordt gedurende vier tot vijf beurten door een insectenplaag aangevallen. Het kan hierdoor niet vluchten."
+
+msgid "The user damages opposing Pokémon by emitting a powerful flash."
+msgstr "De gebruiker brengt schade toe aan het verdedigende team door een verblindend licht uit te stralen."
+
+msgid "Bike Wheel"
+msgstr "Fietswiel"
+
+msgid "This bike wheel can be used to fix a bicycle."
+msgstr "Dit fietswiel kan van pas komen bij een fietsreparatie."
+
+msgid "Carrot Wine"
+msgstr "Wortelwijn"
+
+msgid "Delicious Carrot Wine, be careful to not drink too much! Heals 100 HP and cures status effects."
+msgstr "Heerlijke wortelwijn; drink er niet te veel van! Herstelt 100 HP en geneest al de aandoeningen van één Pokémon."
+
+msgid "Secret Note"
+msgstr "Geheim Briefje"
+
+msgid "You don't know who gave you this. It says that the password is 092."
+msgstr "Volgens dit briefje is het wachtwoord \"092\". Je weet niet wie dit je heeft gegeven."
+
+msgid "Syrentideite"
+msgstr "Syrentidiet"
+
+msgid "One variety of the mysterious Mega Stones. Have Syrentide hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Syrentide het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Unidentified Fallen Object"
+msgstr "Gevallen Voorwerp"
+
+msgid "One variety of the mysterious Mega Stones. Have s51-A hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat    S51-A het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "The user damages opposing Pokémon and lowers it's defense and special defense."
+msgstr "De gebruiker valt het verdedigende team aan en verlaagt hun Verdediging en Sp.-Ver."
+
+msgid "Boxing Gloves"
+msgstr "Bokshandschoen"
+
+msgid "This device given to you by the Tinkerer allows you to easily smash rugged rocks in your way."
+msgstr "Met deze uitvinding van de Knutselaar kun je met gemak rotsen breken."
+
+msgid "Eviolite"
+msgstr "Evoluliet"
+
+msgid "A mysterious evolutionary lump. When held, it raises the Defense and Sp. Def of a Pokémon that can still evolve."
+msgstr "Kan worden vastgehouden. Het verhoogt de Verdediging en Sp.-Ver. van een nog evolueerbare Pokémon."
+
+msgid "Fire Gem"
+msgstr "Vuur-Juweel"
+
+msgid "A gem with an essence of fire. When held, it strengthens the power of a Fire-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Vuur-actie één keer sterker."
+
+msgid "Water Gem"
+msgstr "Water-Juweel"
+
+msgid "A gem with an essence of water. When held, it strengthens the power of a Water-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Water-actie één keer sterker."
+
+msgid "Electric Gem"
+msgstr "Elektrisch-Juweel"
+
+msgid "A gem with an essence of electricity. When held, it strengthens the power of an Electric-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Elektrisch-actie één keer sterker."
+
+msgid "Grass Gem"
+msgstr "Gras-Juweel"
+
+msgid "A gem with an essence of nature. When held, it strengthens the power of a Grass-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Gras-actie één keer sterker."
+
+msgid "Ice Gem"
+msgstr "Ijs-Juweel"
+
+msgid "A gem with an essence of ice. When held, it strengthens the power of an Ice-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Ijs-actie één keer sterker."
+
+msgid "Fighting Gem"
+msgstr "Vecht-Juweel"
+
+msgid "A gem with an essence of combat. When held, it strengthens the power of a Fighting-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Vecht-actie één keer sterker."
+
+msgid "Poison Gem"
+msgstr "Vergif-Juweel"
+
+msgid "A gem with an essence of poison. When held, it strengthens the power of a Poison-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Vergif-actie één keer sterker."
+
+msgid "Ground Gem"
+msgstr "Grond-Juweel"
+
+msgid "A gem with an essence of land. When held, it strengthens the power of a Ground-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Grond-actie één keer sterker."
+
+msgid "Flying Gem"
+msgstr "Vlieg-Juweel"
+
+msgid "A gem with an essence of air. When held, it strengthens the power of a Flying-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Vlieg-actie één keer sterker."
+
+msgid "Psychic Gem"
+msgstr "Psychisch-Juweel"
+
+msgid "A gem with an essence of the mind. When held, it strengthens the power of a Psychic-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Psychisch-actie één keer sterker."
+
+msgid "Bug Gem"
+msgstr "Insect-Juweel"
+
+msgid "A gem with an insect-like essence. When held, it strengthens the power of a Bug-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Insect-actie één keer sterker."
+
+msgid "Rock Gem"
+msgstr "Steen-Juweel"
+
+msgid "A gem with an essence of rock. When held, it strengthens the power of a Rock-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Steen-actie één keer sterker."
+
+msgid "Ghost Gem"
+msgstr "Spook-Juweel"
+
+msgid "A gem with a spectral essence. When held, it strengthens the power of a Ghost-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Spook-actie één keer sterker."
+
+msgid "Dragon Gem"
+msgstr "Draak-Juweel"
+
+msgid "A gem with a draconic essence. When held, it strengthens the power of a Dragon-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Draak-actie één keer sterker."
+
+msgid "Dark Gem"
+msgstr "Duister-Juweel"
+
+msgid "A gem with an essence of darkness. When held, it strengthens the power of a Dark-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Duister-actie één keer sterker."
+
+msgid "Steel Gem"
+msgstr "Staal-Juweel"
+
+msgid "A gem with an essence of steel. When held, it strengthens the power of a Steel-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Staal-actie één keer sterker."
+
+msgid "Normal Gem"
+msgstr "Normaal-Juweel"
+
+msgid "A gem with an ordinary essence. When held, it strengthens the power of a Normal-type move only once."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Normaal-actie één keer sterker."
+
+msgid "Whimsicottite"
+msgstr "Whimsicottiet"
+
+msgid "One variety of the mysterious Mega Stones. Have Whimsicott hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Whimsicott het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Arbokite"
+msgstr "Arbokiet"
+
+msgid "One variety of the mysterious Mega Stones. Have Arbok hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Arbok het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Yoshitaka's Letter"
+msgstr "Yoshitaka's Brief"
+
+msgid "A letter from the great Yoshitaka, show it to his grandsons."
+msgstr "Een brief van Grootmeester Yoshitaka. Laat het aan zijn zes kleinkinderen zien."
+
+msgid "Rocky Helmet"
+msgstr "Stenen Helm"
+
+msgid "If the holder of this item takes damage, the attacker will also be damaged upon contact."
+msgstr "Kan worden vastgehouden. Als er schade aan de houder toegebracht wordt, brengt het ook schade toe aan de tegenstander."
+
+msgid "Eject Button"
+msgstr "Schietstoel"
+
+msgid "If the holder is hit by an attack, it will switch with another Pokémon in your party."
+msgstr "Kan worden vastgehouden. Als er schade aan de houder toegebracht wordt, verwisselt het met een andere Pokémon in zijn team."
+
+msgid "Red Card"
+msgstr "Rode Kaart"
+
+msgid "A card with a mysterious power. When the holder is struck by a foe, the attacker is removed from battle."
+msgstr "Kan worden vastgehouden. De tegenstander verwisselt met een andere Pokémon in zijn team wanneer de houder aangevallen wordt."
+
+msgid "Float Stone"
+msgstr "Puimsteen"
+
+msgid "A very light stone. It reduces the weight of a Pokémon when held."
+msgstr "Kan worden vastgehouden. Het is een zeer lichte steen. Het verlaagt het gewicht van de houder."
+
+msgid "Binding Band"
+msgstr "Bundelband"
+
+msgid "A band that increases the power of binding moves when held."
+msgstr "Kan worden vastgehouden. Het is een band die de duur van bindende beurten verlengt."
+
+msgid "Absorb Bulb"
+msgstr "Plantenbol"
+
+msgid "A consumable bulb. If the holder is hit by a Water-type move, its Sp. Atk will rise."
+msgstr "Kan eenmalig worden vastgehouden. Het verhoogt de Sp.-Str. van de houder wanneer het door een Water-actie geraakt wordt."
+
+msgid "Cell Battery"
+msgstr "Batterij"
+
+msgid "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise."
+msgstr "Kan eenmalig worden vastgehouden. Het verhoogt de Sterkte van de houder wanneer het door een Elektrisch-actie geraakt wordt."
+
+msgid "Ring Target"
+msgstr "Doelwit"
+
+msgid "Moves that would otherwise have no effect will land on the Pokémon that holds it."
+msgstr "Kan worden vastgehouden. Acties die normaal geen effect hebben werken wel met dit voorwerp."
+
+msgid "Air Balloon"
+msgstr "Ballon"
+
+msgid "When held by a Pokémon, the Pokémon will float into the air. When the holder is attacked, this item will burst."
+msgstr "Kan worden vastgehouden. Het laat de houder zweven. Het knapt zodra de houder aangevallen wordt."
+
+msgid "Assault Vest"
+msgstr "Aanvalsvest"
+
+msgid "An item to be held by a Pokémon. This offensive vest raises Sp. Def but prevents the use of status moves."
+msgstr "Kan worden vastgehouden. Dit vest verhoogt de Sp.-Ver. van de houder maar voorkomt het gebruik van statusacties."
+
+msgid "Fairy Gem"
+msgstr "Fee-Juweel"
+
+msgid "A gem with an essence of nature. When held, it strengthens the power of a Fairy-type move one time."
+msgstr "Kan worden vastgehouden. Het is een juweel vol energie. Het maakt een Fee-actie één keer sterker."
+
+msgid "Prison Bottle"
+msgstr "Opsluitpot"
+
+msgid "A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago."
+msgstr "Een pot waarvan men denkt dat het lang geleden een Pokémon bevatte."
+
+msgid "Luminous Moss"
+msgstr "Lichtgevend Mos"
+
+msgid "An item to be held by a Pokémon. It boosts Sp. Def if hit with a Water-type attack. It can only be used once."
+msgstr "Kan eenmalig worden vastgehouden. Het verhoogt de Sp.-Str. van de houder wanneer het door een Water-actie geraakt wordt."
+
+msgid "Weakness Policy"
+msgstr "Verzekering"
+
+msgid "An item to be held by a Pokémon. Attack and Sp. Atk sharply increase if the holder is hit with a move it's weak to."
+msgstr "Kan eenmalig worden vastgehouden om de Sp.-Str. en Sterkte aanzienlijk te verhogen na een zeer effectieve actie."
+
+msgid "Pixie Plate"
+msgstr "Sprookjesplaat"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fairy-type moves."
+msgstr "Kan worden vastgehouden. Het is een stenen plaat die Fee-acties sterker maakt."
+
+msgid "Roseli Berry"
+msgstr "Roseli-Bes"
+
+msgid "Weakens a supereffective Fairy-type attack against the holding Pokémon."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Fee-aanval te beschermen."
+
+msgid "Kee Berry"
+msgstr "Kee-Bes"
+
+msgid "If held by a Pokémon, this Berry will increase the Pokémon's Defense stat when hit by a physical attack."
+msgstr "Kan eenmalig worden vastgehouden om Verdediging te verhogen wanneer de houder door een fysieke aanval geraakt wordt."
+
+msgid "Maranga Berry"
+msgstr "Maranga-Bes"
+
+msgid "If held by a Pokémon, this Berry will increase the Pokémon's Special Defense stat when hit by a special attack."
+msgstr "Kan eenmalig worden vastgehouden om Sp.-Ver. te verhogen wanneer de houder door een speciale aanval geraakt wordt."
+
+msgid "Snowball"
+msgstr "Sneeuwbal"
+
+msgid "An item to be held by a Pokémon. It boosts Attack if hit with an Ice-type attack. It can only be used once."
+msgstr "Kan eenmalig worden vastgehouden om de Sterkte van een Pokémon te verhogen wanneer het door een Ijs-aanval geraakt wordt."
+
+msgid "Safety Goggles"
+msgstr "Veiligheidsbril"
+
+msgid "An item to be held by a Pokémon. These goggles protect the holder from both weather-related damage and powder."
+msgstr "Kan worden vastgehouden. Deze veiligheidsbril beschermt de houder tegen weer- en poederschade."
+
+msgid "Hafli Berry"
+msgstr "Hafli-Bes"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Nuclear-type attack."
+msgstr "Kan eenmalig worden vastgehouden om een Pokémon tegen een zeer effectieve Nucleair-aanval te beschermen."
+
+msgid "Kellyn's Letter"
+msgstr "Kellyns Brief"
+
+msgid "A letter from Kellyn. Deliver it to Cameron on the Power Plant Island."
+msgstr "Een brief van Kellyn. Geef het aan Cameron bij Kerncentrale Epsilon."
+
+msgid "Burnt Notebook"
+msgstr "Oud Notitieboek"
+
+msgid "A burnt notebook found in the power plant, it's pages seem to be scattered about."
+msgstr "Een verbrand notitieboek dat in de kerncentrale is gevonden. De pagina's lijken te missen."
+
+msgid "Rusty Key"
+msgstr "Roestige Sleutel"
+
+msgid "A rusty key found in the power plant."
+msgstr "Een roestige sleutel die in de kerncentrale is gevonden."
+
+msgid "Power Glove"
+msgstr "Krachthandschoen"
+
+msgid "This device given to you by the Tinkerer allows you to push boulders on your own as if you had super-strength."
+msgstr "Met deze uitvinding van de Knutselaar kun je met gemak stenen verplaatsen."
+
+msgid "Nuclear Ball"
+msgstr "Nucleaire Bal"
+
+msgid "A new kind of Poké Ball that works especially well on Nuclear-type Pokémon."
+msgstr "Een nieuwe soort Pokébal die beter werkt op Nucleair-soorten."
+
+msgid "Sachet"
+msgstr "Parfumzakje"
+
+msgid "A sachet filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
+msgstr "Een zakje vol aromatische parfums die net te sterk ruiken. Geliefd door een bepaalde Pokémon."
+
+msgid "Power Cell"
+msgstr "Accu"
+
+msgid "A power cell used to power up advanced electrical equipments."
+msgstr "Een accu om elektrische apparatuur van stroom te voorzien."
+
+msgid "Maria's Key"
+msgstr "Maria's Sleutel"
+
+msgid "A key given by a creepy guy that unlocks Gym Leader Maria's house."
+msgstr "Een sleutel voor Gymleider Maria's huis, gekregen van een enge vent."
+
+msgid "Oval Charm"
+msgstr "Ovaal Bedeltje"
+
+msgid "An oval charm said to increase the chance of Eggs being found at the Day Care."
+msgstr "Een ovaal bedeltje dat de kans op eieren bij het Dagverblijf verhoogt."
+
+msgid "Shiny Charm"
+msgstr "Shiny-Bedeltje"
+
+msgid "A shiny charm said to increase the chance of finding a Shiny Pokémon."
+msgstr "Een glimmend bedeltje dat de kans op Shiny-Pokémon verhoogt."
+
+msgid "Aromatic Herb"
+msgstr "Aromatisch Kruid"
+
+msgid "A herb filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
+msgstr "Een aromatisch kruid dat net te sterk ruikt. Geliefd door een bepaalde Pokémon."
+
+msgid "Air Mail"
+msgstr "Luchtbrief"
+
+msgid "Stationery featuring a print of colorful letter sets. Let a Pokémon hold it for delivery."
+msgstr "Kan worden vastgehouden. Een brief met een schattig lettersetje."
+
+msgid "Gengarite"
+msgstr "Gengariet"
+
+msgid "One of the mysterious Mega Stones. Have Gengar hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Gengar het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Uranium Core"
+msgstr "Uraniumkern"
+
+msgid "Concentrated nuclear fuel used to power Nuclear Plants."
+msgstr "Geconcentreerd kernbrandstof voor gebruik in een kerncentrale."
+
+msgid "Kiricornite"
+msgstr "Kiricorniet"
+
+msgid "One of the mysterious Mega Stones. Have Kiricorn hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Kiricorn het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Gold Fossil"
+msgstr "Goudfossiel"
+
+msgid "A fossil of an ancient Pokémon that lived in Islands. It appears to be a golden bone."
+msgstr "Een fossiel van een oeroude Pokémon die op eilanden leefde. Het lijkt een goud bot te zijn."
+
+msgid "The user chomps hard on the target with its sharp front fangs. It cuts the target's HP to half."
+msgstr "De gebruiker bijt hard met zijn scherpe voortanden. Het halveert de HP van het doelwit."
+
+msgid "This move can be used only after the user has used all the other moves it knows in the battle."
+msgstr "Deze actie kan alleen gebruikt worden als de gebruiker al zijn andere acties al gebruikt heeft."
+
+msgid "An attack move that cuts down the target's HP to equal the user's HP."
+msgstr "Een actie die de HP van het doelwit verlaagt tot de HP van de gebruiker."
+
+msgid "The user focuses its willpower to its head and attacks the foe. It may also make the target flinch."
+msgstr "De gebruiker trekt alle energie naar het hoofd en valt aan. Het kan het doelwit doen terugdeinzen."
+
+msgid "Surfboard"
+msgstr "Surfplank"
+
+msgid "This device given to you by the Tinkerer makes it possible to surf on water without the help of a Pokémon. Cowabunga!"
+msgstr "Met deze uitvinding van de Knutselaar kun je met gemak op het water surfen."
+
+msgid "Scuba Gear"
+msgstr "Duikuitrusting"
+
+msgid "This device given to you by the Tinkerer allows you to dive underwater on your own. Who ever used Dive anyways?"
+msgstr "Met deze uitvinding van de Knutselaar kun je met gemak onderwater zwemmen."
+
+msgid "Climbing Pick"
+msgstr "Klimbijl"
+
+msgid "This device given to you by the Tinkerer allows you to climb up waterfalls while using your surfboard. Extreme sports are fun!"
+msgstr "Met deze uitvinding van de Knutselaar kun je met gemak watervallen beklimmen."
+
+msgid "Rich Mulch"
+msgstr "Voedzame Compost"
+
+msgid "A plant fertilizer. It increases Berry harvest without the need for particularly diligent care."
+msgstr "Een plantenmest. Het verhoogt Bessenoogst zonder goed voor de planten te hoeven zorgen."
+
+msgid "Sprinklotad"
+msgstr "Lotad-Gieter"
+
+msgid "A watering can shaped like a Lotad. It helps promote healthy growth of planted Berries."
+msgstr "Een gieter in de vorm van een Lotad. Het stimuleert Bessengroei."
+
+msgid "Final device created by the Tinkerer. Use this remote-controlled drone to Fly anywhere without the help of a Pokémon!"
+msgstr "Met deze uitvinding van de Knutselaar kun je met gemak vliegen."
+
+msgid "Ferry Pass"
+msgstr "Veerbootpas"
+
+msgid "A Frequent Sailor card for the Venesi Ferry to Bealbeach and Silverport."
+msgstr "Een Frequente Zeilers pas waarmee je oneindig tussen Venesi, Bruisbank en Zilverkade kan varen."
+
+msgid "Dark Dramsamaite"
+msgstr "Zwart Dramsamaliet"
+
+msgid "A disturbing variety of the mysterious Mega Stones. Have Dramsama hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Een verontrustende Megasteen. Laat Dramsama het vasthouden, en deze steen zal het laten Mega-Evolueren."
+
+msgid "Map Scrap 1"
+msgstr "Kaartstuk 1"
+
+msgid "A torn piece of an ancient sea map. This item refers to a quest that is not yet implemented."
+msgstr "Een gescheurd stuk van een oude zeekaart."
+
+msgid "Map Scrap 2"
+msgstr "Kaartstuk 2"
+
+msgid "Map Scrap 3"
+msgstr "Kaartstuk 3"
+
+msgid "Map Scrap 4"
+msgstr "Kaartstuk 4"
+
+msgid "Map Scrap 5"
+msgstr "Kaartstuk 5"
+
+msgid "Map Scrap 6"
+msgstr "Kaartstuk 6"
+
+msgid "Exp. All"
+msgstr "Exp.-Allen"
+
+msgid "Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles."
+msgstr "Door dit apparaat de activeren krijgen al de Pokémon in je team een deel van de gewonnen Exp. uit een gevecht."
+
+msgid "Oblivicornite"
+msgstr "Oblivicorniet"
+
+msgid "One of the mysterious Mega Stones. Have Oblivicorn hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Een van de mysterieuze Megastenen. Laat Oblivicorn het vasthouden, en deze steen zal het laten Mega-Evolueren."

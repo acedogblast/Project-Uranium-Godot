@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+
+msgid "01- Lakeside Path"
+msgstr "1- Seeuferpfad"
+
+msgid "02- Owten Nook"
+msgstr "2- Eulzchennest"
+
+msgid "03- Seabreeze Way"
+msgstr "3- Seebrisenweg"
+
+msgid "04- Baa Grassland"
+msgstr "4- Bäwiese"
+
+msgid "05- Tancoon Way"
+msgstr "5- Marukiweg"
+
+msgid "06- Pahar Hills"
+msgstr "6- Paharahügel"
+
+msgid "07- Tandor Sheets"
+msgstr "7- Tandorstraße"
+
+msgid "08- Vinoville Lake"
+msgstr "8- Vinovillesee"
+
+msgid "09- FireValley"
+msgstr "9- Feuertal"
+
+msgid "10- Baykal Forest"
+msgstr "10- Baykal-Wald"
+
+msgid "11- Nature Preserve"
+msgstr "11- Naturresort"
+
+msgid "12- Maskara Channel"
+msgstr "12- Maskarakanal"
+
+msgid "13- Maskara Island"
+msgstr "13- Maskarainsel"
+
+msgid "14- Maskara Sea"
+msgstr "14- Maskarameer"
+
+msgid "15- Shallow Channel"
+msgstr "15- Seichter Kanal"
+
+msgid "Amatree Town"
+msgstr "Amabaumstadt"
+
+msgid "Anthell"
+msgstr "Ameisenhölle"
+
+msgid "Bealbeach City"
+msgstr "Sonnenstrand"
+
+msgid "Berry Traders"
+msgstr "Beerenhändler"
+
+msgid "Bike Shop"
+msgstr "Fahrradladen"
+
+msgid "Burole Town"
+msgstr "Burole"
+
+msgid "Championship Site"
+msgstr "Pokémon-Liga"
+
+msgid "Church"
+msgstr "Kirche"
+
+msgid "Comet Cave"
+msgstr "Kometenhöhle"
+
+msgid "Dpt. Store, Casino"
+msgstr "Kaufhaus, Kasino"
+
+msgid "Kevlar Town"
+msgstr "Kevlarstadt"
+
+msgid "Lanthanite Tunnel"
+msgstr "Lanthanittunnel"
+
+msgid "Larkspur's Lab"
+msgstr "Larkspurs Labor"
+
+msgid "Legen Town"
+msgstr "Legenstadt"
+
+msgid "Moki Town"
+msgstr "Mokistadt"
+
+msgid "Name Rater"
+msgstr "Namensbewerter"
+
+msgid "Nuclear Plant Epsilon"
+msgstr "Kernkraftwerk Epsilon"
+
+msgid "Nuclear Plant Omicron"
+msgstr "Kernkraftwerk Omicron"
+
+msgid "Nuclear Plant Zeta"
+msgstr "Kernkraftwerk Zeta"
+
+msgid "Passage Cave"
+msgstr "Höhlenpassage"
+
+msgid "Pokemon School"
+msgstr "Pokémon-Schule"
+
+msgid "Professor Bambo Lab"
+msgstr "Professor Bamb'us Labor"
+
+msgid "Professor Cypress Lab"
+msgstr "Professor Zypress' Labor"
+
+msgid "Rochfale Town"
+msgstr "Schroffstein"
+
+msgid "Rochfale Tunnel"
+msgstr "Schroffsteintunnel"
+
+msgid "Silverport Town"
+msgstr "Silberhafen"
+
+msgid "Snowbank Town"
+msgstr "Schneeufer"
+
+msgid "The Labyrinth"
+msgstr "Das Labyrinth"
+
+msgid "The Tipsy Tancoon, etc"
+msgstr "Das beschwipste Maruki, etc"
+
+msgid "Tinkerer's Workshop"
+msgstr "Bastlers Werkstatt"
+
+msgid "Training Dojo"
+msgstr "Trainingsdojo"
+
+msgid "Tsukinami Village"
+msgstr "Tsukinami"
+
+msgid "Venesi City"
+msgstr "Venesi"
+
+msgid "Victory Road"
+msgstr "Siegesstraße"
+
+msgid "Vinoville Town"
+msgstr "Vinoville"
+

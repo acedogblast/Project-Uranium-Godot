@@ -15,9 +15,9 @@ func _input(event):
 			$Name.text = $Name.text + key.substr(6,1)
 		elif key.length() == 1 and $Name.text.length() <= max_length:
 			$Name.text = $Name.text + key.to_lower()
-		if key == "BackSpace":
+		if event.keycode == KEY_BACKSPACE:
 			$Name.text = str($Name.text).substr(0, str($Name.text).length() - 1)
-		if key == "Enter":
+		if event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER:
 			if $Name.text != "":
 				get_parent().NameResult($Name.text)
 	pass

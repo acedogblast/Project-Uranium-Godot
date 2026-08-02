@@ -22,7 +22,10 @@ var priority = 0
 var critical_hit_level = 0
 
 # The secondary effect chance of the move
-var secondary_effect_chance 
+var secondary_effect_chance = 1.0
+
+# The secondary effect of the move
+var secondary_effect = MajorAilment.PARALYSIS
 
 # The flags of the move
 var flags = []
@@ -31,7 +34,6 @@ var flags = []
 var total_pp = 20
 
 # The target ability of the move (Single, Double, All_Foes, Self)
-var target_ability = MoveTarget.ALL_FOE
+var target_ability = MoveTarget.SINGLE_FOE
 
-# attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
-var main_status_effect # = MajorAilment.PARALYSIS
+var main_status_effect

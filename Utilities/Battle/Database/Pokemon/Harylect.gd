@@ -19,7 +19,7 @@ var sp_defense = 60
 var speed = 85
 
 # The pokemon's public and hidden abilities
-var ability
+var ability = "Volt Absorb"
 var hidden_ability
 
 # The pokemon's Effort Value Yeild

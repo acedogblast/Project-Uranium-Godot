@@ -19,8 +19,9 @@ var sp_defense = 80
 var speed = 45
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Swift Swim"
+var ability_2 = "Rock Head"
+var hidden_ability = "Telepathy"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 1

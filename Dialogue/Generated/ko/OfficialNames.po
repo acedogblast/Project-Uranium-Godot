@@ -1,0 +1,746 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "Abe & Gayle"
+msgstr "지엽&감서"
+
+msgid "Adam"
+msgstr "태극"
+
+msgid "Adelina"
+msgstr "아델리나"
+
+msgid "Ahmed"
+msgstr "암석"
+
+msgid "Alana"
+msgstr "은나"
+
+msgid "Albert"
+msgstr "성혁"
+
+msgid "Alice"
+msgstr "엘리스"
+
+msgid "Alphonse"
+msgstr "문재"
+
+msgid "Amalya"
+msgstr "초영"
+
+msgid "Amber"
+msgstr "아이"
+
+msgid "Ame"
+msgstr "아메"
+
+msgid "Amy"
+msgstr "다연"
+
+msgid "Angelica"
+msgstr "안젤리카"
+
+msgid "Ant"
+msgstr "개미"
+
+msgid "Aoi"
+msgstr "아오이"
+
+msgid "Ayumi"
+msgstr "아유미"
+
+msgid "Ayumu"
+msgstr "아유무"
+
+msgid "Azalea"
+msgstr "고동"
+
+msgid "Barry"
+msgstr "용식"
+
+msgid "Ben"
+msgstr "준화"
+
+msgid "Benjamin"
+msgstr "병만"
+
+msgid "Bernard"
+msgstr "버나드"
+
+msgid "Bernhold"
+msgstr "두룩"
+
+msgid "Bill"
+msgstr "수재"
+
+msgid "Billy & Jenny"
+msgstr "빌리&제니"
+
+msgid "Bob"
+msgstr "희돌"
+
+msgid "Bocelli"
+msgstr "보첼리"
+
+msgid "Brandon"
+msgstr "기선"
+
+msgid "Brent"
+msgstr "한솔"
+
+msgid "Brooke"
+msgstr "주상"
+
+msgid "Caesar"
+msgstr "시저"
+
+msgid "Caiman"
+msgstr "어악"
+
+msgid "Cali"
+msgstr "캘리"
+
+msgid "Cameron"
+msgstr "카메론"
+
+msgid "Caren"
+msgstr "하리"
+
+msgid "Carla"
+msgstr "가령"
+
+msgid "Carlton"
+msgstr "태일"
+
+msgid "Caroline"
+msgstr "시혜"
+
+msgid "Caruso"
+msgstr "카루소"
+
+msgid "Catarina"
+msgstr "나래"
+
+msgid "Cathy"
+msgstr "아스카"
+
+msgid "Cecilia"
+msgstr "세실리아"
+
+msgid "Cedric"
+msgstr "세란"
+
+msgid "Chan"
+msgstr "강찬"
+
+msgid "Charles"
+msgstr "철수"
+
+msgid "Chelsea"
+msgstr "첼시"
+
+msgid "Chris"
+msgstr "신종"
+
+msgid "Chuck"
+msgstr "척"
+
+msgid "Cielo"
+msgstr "시로"
+
+msgid "Claire"
+msgstr "난란"
+
+msgid "Clapton"
+msgstr "클랩튼"
+
+msgid "Claude"
+msgstr "동배"
+
+msgid "Claudio"
+msgstr "시도"
+
+msgid "Cloe"
+msgstr "클로이"
+
+msgid "Conca"
+msgstr "콘가"
+
+msgid "Corben"
+msgstr "궁민"
+
+msgid "Coulton"
+msgstr "칼튼"
+
+msgid "Cureau"
+msgstr "구류"
+
+msgid "Curie"
+msgstr "퀴리"
+
+msgid "Cylan"
+msgstr "사이란"
+
+msgid "Daichi"
+msgstr "다이치"
+
+msgid "Damian"
+msgstr "우정"
+
+msgid "Davern"
+msgstr "석호"
+
+msgid "Derek"
+msgstr "형덕"
+
+msgid "Diana"
+msgstr "지애"
+
+msgid "Dick"
+msgstr "대물"
+
+msgid "Din"
+msgstr "소굉"
+
+msgid "Doug"
+msgstr "더그"
+
+msgid "Dovak"
+msgstr "두복"
+
+msgid "Draugr"
+msgstr "드록르"
+
+msgid "Drew"
+msgstr "수형"
+
+msgid "Dunn"
+msgstr "단느"
+
+msgid "Eddard"
+msgstr "에다르드"
+
+msgid "Ellen"
+msgstr "유나"
+
+msgid "Elsa"
+msgstr "엘사"
+
+msgid "Elwyn"
+msgstr "엘윈"
+
+msgid "Emile"
+msgstr "에밀"
+
+msgid "Esther"
+msgstr "에스더"
+
+msgid "Ethan & Alice"
+msgstr "에단&엘리스"
+
+msgid "Eustace"
+msgstr "유스타"
+
+msgid "Evan"
+msgstr "에반"
+
+msgid "Everst"
+msgstr "에베"
+
+msgid "Faeh"
+msgstr "화란"
+
+msgid "Felice"
+msgstr "참월"
+
+msgid "Flood"
+msgstr "오준"
+
+msgid "Flower"
+msgstr "장미"
+
+msgid "Fly"
+msgstr "파리"
+
+msgid "Gargryph"
+msgstr "가고르폰"
+
+msgid "Garlikid"
+msgstr "갈리키드"
+
+msgid "Genin & Chuunin"
+msgstr "게닌&쥬닌"
+
+msgid "George"
+msgstr "조지"
+
+msgid "Gerard"
+msgstr "전중"
+
+msgid "Gertha"
+msgstr "궁화"
+
+msgid "Gordon"
+msgstr "고등"
+
+msgid "Gregorison"
+msgstr "수한무"
+
+msgid "Griffin"
+msgstr "채수"
+
+msgid "Hanks"
+msgstr "민식"
+
+msgid "Harold"
+msgstr "도단"
+
+msgid "Havost"
+msgstr "하보스트"
+
+msgid "Hayato"
+msgstr "하야토"
+
+msgid "Hilda"
+msgstr "투희"
+
+msgid "Hinata"
+msgstr "히나타"
+
+msgid "Hitomi"
+msgstr "히토미"
+
+msgid "Hokage"
+msgstr "호카게"
+
+msgid "Homer"
+msgstr "호머"
+
+msgid "Horace"
+msgstr "호섭"
+
+msgid "Horde"
+msgstr "무리"
+
+msgid "Horton"
+msgstr "호동"
+
+msgid "Hotaru"
+msgstr "호타루"
+
+msgid "Houaiss"
+msgstr "후안"
+
+msgid "Iago"
+msgstr "이아고"
+
+msgid "Ifrit"
+msgstr "염령"
+
+msgid "Immanuel"
+msgstr "마누"
+
+msgid "Indiana"
+msgstr "인디아나"
+
+msgid "Isaac"
+msgstr "이삭"
+
+msgid "Izumi"
+msgstr "이즈미"
+
+msgid "Jack"
+msgstr "잭"
+
+msgid "Jade"
+msgstr "옥주"
+
+msgid "James"
+msgstr "종서"
+
+msgid "Jang"
+msgstr "무상"
+
+msgid "Jason"
+msgstr "웅비"
+
+msgid "Jenny"
+msgstr "제니"
+
+msgid "Jessica"
+msgstr "보라"
+
+msgid "Jessy"
+msgstr "선"
+
+msgid "Jin"
+msgstr "진"
+
+msgid "Joe"
+msgstr "죠"
+
+msgid "Johnny"
+msgstr "죠니"
+
+msgid "Jonathan"
+msgstr "선후"
+
+msgid "Joss"
+msgstr "서현"
+
+msgid "Judo"
+msgstr "유도"
+
+msgid "Julianna"
+msgstr "주아"
+
+msgid "Julius"
+msgstr "율"
+
+msgid "Juno"
+msgstr "주노"
+
+msgid "Kaito"
+msgstr "카이토"
+
+msgid "Keichi"
+msgstr "케이치"
+
+msgid "Kellyn"
+msgstr "창희"
+
+msgid "Kenichi"
+msgstr "켄이치"
+
+msgid "Kili"
+msgstr "킬리"
+
+msgid "Kim"
+msgstr "킴"
+
+msgid "Kouki"
+msgstr "코우키"
+
+msgid "Lara"
+msgstr "라나"
+
+msgid "Laramie"
+msgstr "재하"
+
+msgid "Larkspur"
+msgstr "라크"
+
+msgid "Larrie"
+msgstr "진광"
+
+msgid "Logan"
+msgstr "로건"
+
+msgid "Lorraine"
+msgstr "루인"
+
+msgid "Lou"
+msgstr "류"
+
+msgid "Luigi"
+msgstr "유기"
+
+msgid "Luka"
+msgstr "류카"
+
+msgid "Luke"
+msgstr "신평"
+
+msgid "Lynette"
+msgstr "은지"
+
+msgid "Magrat"
+msgstr "마권"
+
+msgid "Manny"
+msgstr "마니"
+
+msgid "Mantis"
+msgstr "사마"
+
+msgid "Marc"
+msgstr "주창"
+
+msgid "Marcque"
+msgstr "당선"
+
+msgid "Marcus"
+msgstr "기신"
+
+msgid "Maria"
+msgstr "마리아"
+
+msgid "Marino"
+msgstr "위훈"
+
+msgid "Mario"
+msgstr "역구"
+
+msgid "Mark"
+msgstr "마가"
+
+msgid "Marko"
+msgstr "경택"
+
+msgid "Marta"
+msgstr "미나"
+
+msgid "Martin"
+msgstr "재성"
+
+msgid "Matt"
+msgstr "해조"
+
+msgid "Mawuli"
+msgstr "이도"
+
+msgid "Maynard"
+msgstr "메이나드"
+
+msgid "Melanie"
+msgstr "명린"
+
+msgid "Mercury"
+msgstr "수성"
+
+msgid "Merlin"
+msgstr "멀린"
+
+msgid "Michael"
+msgstr "마이클"
+
+msgid "Miki"
+msgstr "미키"
+
+msgid "Mohammed"
+msgstr "무함마드"
+
+msgid "Monica"
+msgstr "새아"
+
+msgid "Myla"
+msgstr "밀라"
+
+msgid "Nelson"
+msgstr "한솔"
+
+msgid "Nia"
+msgstr "니아"
+
+msgid "Nora"
+msgstr "늬하"
+
+msgid "Norman"
+msgstr "덕수"
+
+msgid "Nuñes"
+msgstr "수복"
+
+msgid "Nu�es"
+msgstr "수복"
+
+msgid "OF DREAMS"
+msgstr "대왕"
+
+msgid "Ogilvy"
+msgstr "정석"
+
+msgid "Olly"
+msgstr "현승"
+
+msgid "Owen"
+msgstr "현진"
+
+msgid "Paul"
+msgstr "폴"
+
+msgid "Pavarotti"
+msgstr "파바로티"
+
+msgid "Penny"
+msgstr "모란"
+
+msgid "Perch"
+msgstr "농이"
+
+msgid "Perry"
+msgstr "청수"
+
+msgid "Phoenix"
+msgstr "그래"
+
+msgid "Pick"
+msgstr "피키"
+
+msgid "Pop"
+msgstr "부치"
+
+msgid "Quito"
+msgstr "모기"
+
+msgid "Ravin"
+msgstr "자오"
+
+msgid "Raymond"
+msgstr "레이"
+
+msgid "Rich"
+msgstr "도령"
+
+msgid "Richard"
+msgstr "릭"
+
+msgid "Richey"
+msgstr "리키"
+
+msgid "Roach"
+msgstr "바퀴"
+
+msgid "Roger"
+msgstr "붕언"
+
+msgid "Roland"
+msgstr "롤랑"
+
+msgid "Ronin & Juunin"
+msgstr "로닌&죠닌"
+
+msgid "Rosalind"
+msgstr "로잘린드"
+
+msgid "Rowin"
+msgstr "로인"
+
+msgid "Rylai"
+msgstr "릴라이"
+
+msgid "Sack"
+msgstr "서리"
+
+msgid "Saijin"
+msgstr "사이진"
+
+msgid "Samuel"
+msgstr "서문"
+
+msgid "Sasha"
+msgstr "산하"
+
+msgid "Sean"
+msgstr "명인"
+
+msgid "Shauna"
+msgstr "수아"
+
+msgid "Sheldon"
+msgstr "강빈"
+
+msgid "Silva"
+msgstr "실바"
+
+msgid "Slash"
+msgstr "슬래시"
+
+msgid "Slim"
+msgstr "아권"
+
+msgid "Sol"
+msgstr "솔"
+
+msgid "Sophy"
+msgstr "소피"
+
+msgid "Sora"
+msgstr "라희"
+
+msgid "Sr. Goldkorn"
+msgstr "금작"
+
+msgid "Stark"
+msgstr "스탈크"
+
+msgid "Stu"
+msgstr "무환"
+
+msgid "Tarou"
+msgstr "타로"
+
+msgid "Tath"
+msgstr "연우"
+
+msgid "Tetsuo"
+msgstr "테츠오"
+
+msgid "Theo"
+msgstr "테오"
+
+msgid "Tiko"
+msgstr "티코"
+
+msgid "Tim & Trese"
+msgstr "팀&트리세"
+
+msgid "Timothy"
+msgstr "티미"
+
+msgid "Toby"
+msgstr "토비"
+
+msgid "Tod"
+msgstr "토도키"
+
+msgid "Toru"
+msgstr "토루"
+
+msgid "Tracey"
+msgstr "태산"
+
+msgid "Trofgar"
+msgstr "트로프가"
+
+msgid "Tuskar"
+msgstr "터스카"
+
+msgid "URAYNE"
+msgstr "우레인"
+
+msgid "Vaeryn"
+msgstr "베른"
+
+msgid "Vanessa"
+msgstr "화병"
+
+msgid "Vanskor"
+msgstr "반스콜"
+
+msgid "Veritum"
+msgstr "베리툼"
+
+msgid "Wally"
+msgstr "민진"
+
+msgid "William"
+msgstr "산해"
+
+msgid "Wilma"
+msgstr "예서"
+
+msgid "Wyle"
+msgstr "이봐"
+
+msgid "Wylie"
+msgstr "해일"
+
+msgid "Xana"
+msgstr "이숙"
+
+msgid "Zai"
+msgstr "자이"
+

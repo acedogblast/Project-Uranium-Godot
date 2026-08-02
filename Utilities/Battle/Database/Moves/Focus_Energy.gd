@@ -1,4 +1,5 @@
 extends Object
+# TODO: Essentials function code 0x023 not fully implemented (plain move for now)
 
 # The name of the move
 var name = "Focus Energy"
@@ -13,19 +14,19 @@ var style = MoveStyle.STATUS
 var base_power
 
 # The accuracy of the move
-var accuracy
+var accuracy = 100
 
 # The priority of the move
 var priority = 0
 
 # The critical hit level of the move 1=6.25% 2=12.5% 3=25% 4=33.3% 5=50% 
-var critical_hit_level = 1
+var critical_hit_level = 0
 
 # The secondary effect chance of the move
 var secondary_effect_chance
 
 # The secondary effect of the move
-var secondary_effect 
+var secondary_effect
 
 # The flags of the move
 var flags = []
@@ -35,5 +36,5 @@ var total_pp = 30
 
 # The target ability of the move (Single, Double, All_Foes, Self)
 var target_ability = MoveTarget.SELF
-# attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
+
 var main_status_effect

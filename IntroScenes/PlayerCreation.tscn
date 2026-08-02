@@ -1,26 +1,26 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://IntroScenes/PlayerCreation.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/Pictures/BAMBO_PIC.png" type="Texture" id=2]
-[ext_resource path="res://Graphics/Pictures/introbg.PNG" type="Texture" id=3]
-[ext_resource path="res://Graphics/Pictures/trainer000.PNG" type="Texture" id=4]
+[ext_resource path="res://Graphics/Pictures/BAMBO_PIC.png" type="Texture2D" id=2]
+[ext_resource path="res://Graphics/Pictures/introbg.PNG" type="Texture2D" id=3]
+[ext_resource path="res://Graphics/Pictures/trainer000.PNG" type="Texture2D" id=4]
 [ext_resource path="res://Audio/BGM/PU-Intro.ogg" type="AudioStream" id=5]
-[ext_resource path="res://Graphics/Pictures/BAMBO_PIC2.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Pictures/BAMBO_BLINK.png" type="Texture" id=7]
-[ext_resource path="res://Graphics/Battlers/035.png" type="Texture" id=8]
+[ext_resource path="res://Graphics/Pictures/BAMBO_PIC2.png" type="Texture2D" id=6]
+[ext_resource path="res://Graphics/Pictures/BAMBO_BLINK.png" type="Texture2D" id=7]
+[ext_resource path="res://Graphics/Battlers/035.png" type="Texture2D" id=8]
 [ext_resource path="res://Audio/SE/035Cry.wav" type="AudioStream" id=9]
 [ext_resource path="res://IntroScenes/GenderSelect.gd" type="Script" id=10]
-[ext_resource path="res://Graphics/Pictures/Gender/genderbg2.png" type="Texture" id=11]
-[ext_resource path="res://Graphics/Pictures/Gender/genderboy.png" type="Texture" id=12]
-[ext_resource path="res://Graphics/Characters/trainer000.PNG" type="Texture" id=13]
-[ext_resource path="res://Graphics/Characters/trainer009.png" type="Texture" id=14]
-[ext_resource path="res://Graphics/Characters/trainer001.png" type="Texture" id=15]
+[ext_resource path="res://Graphics/Pictures/Gender/genderbg2.png" type="Texture2D" id=11]
+[ext_resource path="res://Graphics/Pictures/Gender/genderboy.png" type="Texture2D" id=12]
+[ext_resource path="res://Graphics/Characters/trainer000.PNG" type="Texture2D" id=13]
+[ext_resource path="res://Graphics/Characters/trainer009.png" type="Texture2D" id=14]
+[ext_resource path="res://Graphics/Characters/trainer001.png" type="Texture2D" id=15]
 [ext_resource path="res://Audio/SE/BW2MenuSelect.WAV" type="AudioStream" id=16]
-[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture" id=17]
-[ext_resource path="res://Fonts/pkmnem.ttf" type="DynamicFontData" id=18]
-[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture" id=19]
+[ext_resource path="res://Graphics/Windowskins/skin1.png" type="Texture2D" id=17]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="FontFile" id=18]
+[ext_resource path="res://Graphics/Pictures/selarrow.png" type="Texture2D" id=19]
 [ext_resource path="res://Audio/SE/Choose.WAV" type="AudioStream" id=20]
-[ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture" id=21]
+[ext_resource path="res://Graphics/Windowskins/frlgtextskin.png" type="Texture2D" id=21]
 
 [sub_resource type="Animation" id=1]
 resource_name = "PlayerCreation"
@@ -32,8 +32,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PackedFloat32Array( 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "values": [ {
 "args": [ false ],
 "method": "dialogue"
@@ -82,8 +82,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ false ]
 }
@@ -94,8 +94,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ ExtResource( 2 ) ]
 }
@@ -106,8 +106,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ false ]
 }
@@ -118,8 +118,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 2.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 2.2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -130,8 +130,8 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 2.2, 3.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 2.2, 3.2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
 }
@@ -142,8 +142,8 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ false ]
 }
@@ -158,8 +158,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
@@ -170,20 +170,20 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath(".:rect_position")
+tracks/2/path = NodePath(".:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5, 3 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5, 3 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( -100, 0 ), Vector2( -100, 0 ), Vector2( 0, 0 ) ]
 }
@@ -194,8 +194,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 3 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 3 ),
+"transitions": PackedFloat32Array( 1 ),
 "values": [ {
 "args": [  ],
 "method": "slide_finished"
@@ -212,20 +212,20 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ ExtResource( 2 ), ExtResource( 6 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath(".:rect_position")
+tracks/1/path = NodePath(".:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( -100, 0 ) ]
 }
@@ -236,8 +236,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 2.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 2.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
 }
@@ -248,8 +248,8 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 2.5, 3 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 2.5, 3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -260,8 +260,8 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 3, 4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 3, 4 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "play_035_cry"
@@ -279,8 +279,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -291,8 +291,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -303,8 +303,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 1 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 1 ),
+"transitions": PackedFloat32Array( 1 ),
 "values": [ {
 "args": [  ],
 "method": "resume"
@@ -321,8 +321,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 5.7, 6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 0, 5.7, 6 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
 }
@@ -337,8 +337,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
 "update": 1,
 "values": [ true ]
 }
@@ -349,8 +349,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
@@ -361,8 +361,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 1, 1.4, 1.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PackedFloat32Array( 1, 1.4, 1.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
 "values": [ {
 "args": [  ],
 "method": "DoneFade"
@@ -379,14 +379,14 @@ tracks/2/keys = {
 length = 15.0
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:rect_position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 15 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 15 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 0, 0 ), Vector2( -768, 0 ) ]
 }
@@ -395,14 +395,14 @@ tracks/0/keys = {
 resource_name = "Shrink"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:rect_scale")
+tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ) ]
 }
@@ -413,8 +413,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 0.392157, 0.392157, 0.392157, 0.784314 ) ]
 }
@@ -423,14 +423,14 @@ tracks/1/keys = {
 resource_name = "Shrink"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:rect_scale")
+tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ) ]
 }
@@ -441,8 +441,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 0.392157, 0.392157, 0.392157, 0.784314 ) ]
 }
@@ -451,14 +451,14 @@ tracks/1/keys = {
 resource_name = "Shrink"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:rect_scale")
+tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ) ]
 }
@@ -469,19 +469,13 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 0.392157, 0.392157, 0.392157, 0.784314 ) ]
 }
 
-[sub_resource type="DynamicFont" id=11]
-size = 26
-font_data = ExtResource( 18 )
 
-[sub_resource type="DynamicFont" id=12]
-size = 26
-font_data = ExtResource( 18 )
 
 [node name="Node" type="Node"]
 script = ExtResource( 1 )
@@ -491,20 +485,20 @@ autoplay = "PlayerCreation"
 anims/PlayerCreation = SubResource( 1 )
 
 [node name="BackGround" type="TextureRect" parent="."]
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 texture = ExtResource( 3 )
 
 [node name="GenderColor" type="TextureRect" parent="."]
 visible = false
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="Hero" type="TextureRect" parent="GenderColor"]
-margin_left = 180.0
-margin_top = 100.0
-margin_right = 340.0
-margin_bottom = 260.0
+offset_left = 180.0
+offset_top = 100.0
+offset_right = 340.0
+offset_bottom = 260.0
 texture = ExtResource( 4 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -513,8 +507,8 @@ autoplay = true
 
 [node name="Bombo" type="TextureRect" parent="."]
 visible = false
-margin_right = 530.0
-margin_bottom = 384.0
+offset_right = 530.0
+offset_bottom = 384.0
 texture = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Bombo"]
@@ -525,8 +519,8 @@ anims/FadeBombo = SubResource( 4 )
 
 [node name="Blink" type="TextureRect" parent="Bombo"]
 visible = false
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 7 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Bombo/Blink"]
@@ -535,11 +529,11 @@ anims/Blinking = SubResource( 5 )
 
 [node name="P035" type="TextureRect" parent="Bombo"]
 visible = false
-margin_left = 260.0
-margin_top = 140.0
-margin_right = 340.0
-margin_bottom = 220.0
-rect_scale = Vector2( 2, 2 )
+offset_left = 260.0
+offset_top = 140.0
+offset_right = 340.0
+offset_bottom = 220.0
+scale = Vector2( 2, 2 )
 texture = ExtResource( 8 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Bombo/P035"]
@@ -553,49 +547,48 @@ script = ExtResource( 10 )
 anims/FadeIn = SubResource( 6 )
 
 [node name="BackGround" type="TextureRect" parent="GenderSelect"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 texture = ExtResource( 11 )
 
 [node name="GenderColor" type="TextureRect" parent="GenderSelect"]
-margin_right = 1280.0
-margin_bottom = 384.0
+offset_right = 1280.0
+offset_bottom = 384.0
 texture = ExtResource( 12 )
-stretch_mode = 2
-
+stretch_mode = 1
 [node name="AnimationPlayerSlide" type="AnimationPlayer" parent="GenderSelect/GenderColor"]
 anims/ColorSlide = SubResource( 7 )
 
 [node name="Boy" type="TextureRect" parent="GenderSelect"]
-margin_left = 40.0
-margin_top = 100.0
-margin_right = 200.0
-margin_bottom = 260.0
+offset_left = 40.0
+offset_top = 100.0
+offset_right = 200.0
+offset_bottom = 260.0
 grow_horizontal = 0
 grow_vertical = 0
-rect_pivot_offset = Vector2( 80, 80 )
+pivot_offset = Vector2( 80, 80 )
 texture = ExtResource( 13 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="GenderSelect/Boy"]
 anims/Shrink = SubResource( 8 )
 
 [node name="Neutral" type="TextureRect" parent="GenderSelect"]
-margin_left = 180.0
-margin_top = 100.0
-margin_right = 340.0
-margin_bottom = 260.0
-rect_pivot_offset = Vector2( 80, 80 )
+offset_left = 180.0
+offset_top = 100.0
+offset_right = 340.0
+offset_bottom = 260.0
+pivot_offset = Vector2( 80, 80 )
 texture = ExtResource( 14 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="GenderSelect/Neutral"]
 anims/Shrink = SubResource( 9 )
 
 [node name="Girl" type="TextureRect" parent="GenderSelect"]
-margin_left = 320.0
-margin_top = 100.0
-margin_right = 480.0
-margin_bottom = 260.0
-rect_pivot_offset = Vector2( 80, 80 )
+offset_left = 320.0
+offset_top = 100.0
+offset_right = 480.0
+offset_bottom = 260.0
+pivot_offset = Vector2( 80, 80 )
 texture = ExtResource( 15 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="GenderSelect/Girl"]
@@ -605,10 +598,10 @@ anims/Shrink = SubResource( 10 )
 stream = ExtResource( 16 )
 
 [node name="ConfirmationBox" type="NinePatchRect" parent="GenderSelect"]
-margin_left = 410.0
-margin_top = 178.0
-margin_right = 510.0
-margin_bottom = 278.0
+offset_left = 410.0
+offset_top = 178.0
+offset_right = 510.0
+offset_bottom = 278.0
 texture = ExtResource( 17 )
 region_rect = Rect2( 0, 0, 48, 48 )
 patch_margin_left = 6
@@ -617,29 +610,30 @@ patch_margin_right = 6
 patch_margin_bottom = 6
 
 [node name="Label" type="Label" parent="GenderSelect/ConfirmationBox"]
-margin_left = 30.0
-margin_top = 20.0
-margin_right = 70.0
-margin_bottom = 68.0
-custom_fonts/font = SubResource( 11 )
-custom_constants/line_spacing = 20
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 70.0
+offset_bottom = 68.0
+theme_override_fonts/font = ExtResource( 18 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/line_spacing = 20
 text = "UI_OPTIONS"
 
 [node name="Arrow" type="TextureRect" parent="GenderSelect/ConfirmationBox"]
-margin_left = 10.0
-margin_top = 15.0
-margin_right = 22.0
-margin_bottom = 43.0
+offset_left = 10.0
+offset_top = 15.0
+offset_right = 22.0
+offset_bottom = 43.0
 texture = ExtResource( 19 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GenderSelect/ConfirmationBox/Arrow"]
 stream = ExtResource( 20 )
 
 [node name="Dialoge" type="NinePatchRect" parent="GenderSelect"]
-margin_left = 10.0
-margin_top = 280.0
-margin_right = 502.0
-margin_bottom = 374.0
+offset_left = 10.0
+offset_top = 280.0
+offset_right = 502.0
+offset_bottom = 374.0
 texture = ExtResource( 21 )
 region_rect = Rect2( 8, 2, 66, 74 )
 patch_margin_left = 14
@@ -648,17 +642,18 @@ patch_margin_right = 16
 patch_margin_bottom = 16
 
 [node name="Text" type="Label" parent="GenderSelect/Dialoge"]
-margin_left = 17.0
-margin_top = 15.0
-margin_right = 462.0
-margin_bottom = 75.0
-custom_fonts/font = SubResource( 12 )
-custom_constants/line_spacing = 20
+offset_left = 17.0
+offset_top = 15.0
+offset_right = 462.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource( 18 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/line_spacing = 20
 
 [node name="Fade" type="ColorRect" parent="."]
 visible = false
-margin_right = 512.0
-margin_bottom = 384.0
+offset_right = 512.0
+offset_bottom = 384.0
 color = Color( 0, 0, 0, 0 )
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

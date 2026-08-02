@@ -1,0 +1,1846 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "Megahorn"
+msgstr "Mégacorne"
+
+msgid "Attack Order"
+msgstr "Appel Attak"
+
+msgid "Bug Buzz"
+msgstr "Bourdon"
+
+msgid "X-Scissor"
+msgstr "Plaie-Croix"
+
+msgid "Signal Beam"
+msgstr "Rayon Signal"
+
+msgid "U-turn"
+msgstr "Demi-Tour"
+
+msgid "Steamroller"
+msgstr "Bulldoboule"
+
+msgid "Bug Bite"
+msgstr "Piqûre"
+
+msgid "Silver Wind"
+msgstr "Vent Argenté"
+
+msgid "Struggle Bug"
+msgstr "Survinsecte"
+
+msgid "Twineedle"
+msgstr "Double-Dard"
+
+msgid "Fury Cutter"
+msgstr "Taillade"
+
+msgid "Leech Life"
+msgstr "Vampirisme"
+
+msgid "Pin Missile"
+msgstr "Dard-Nuée"
+
+msgid "Defend Order"
+msgstr "Appel Défense"
+
+msgid "Heal Order"
+msgstr "Appel Soins"
+
+msgid "Quiver Dance"
+msgstr "Papillodanse"
+
+msgid "Rage Powder"
+msgstr "Poudre Fureur"
+
+msgid "Spider Web"
+msgstr "Toile"
+
+msgid "String Shot"
+msgstr "Sécrétion"
+
+msgid "Tail Glow"
+msgstr "Lumiqueue"
+
+msgid "Foul Play"
+msgstr "Tricherie"
+
+msgid "Night Daze"
+msgstr "Explonuit"
+
+msgid "Crunch"
+msgstr "Mâchouille"
+
+msgid "Dark Pulse"
+msgstr "Vibrobscur"
+
+msgid "Sucker Punch"
+msgstr "Coup Bas"
+
+msgid "Night Slash"
+msgstr "Tranche-Nuit"
+
+msgid "Bite"
+msgstr "Morsure"
+
+msgid "Feint Attack"
+msgstr "Feinte"
+
+msgid "Snarl"
+msgstr "Aboiement"
+
+msgid "Payback"
+msgstr "Représailles"
+
+msgid "Pursuit"
+msgstr "Poursuite"
+
+msgid "Thief"
+msgstr "Larcin"
+
+msgid "Knock Off"
+msgstr "Sabotage"
+
+msgid "Beat Up"
+msgstr "Baston"
+
+msgid "Fling"
+msgstr "Dégommage"
+
+msgid "Punishment"
+msgstr "Punition"
+
+msgid "Dark Void"
+msgstr "Trou Noir"
+
+msgid "Fake Tears"
+msgstr "Croco Larme"
+
+msgid "Flatter"
+msgstr "Flatterie"
+
+msgid "Hone Claws"
+msgstr "Aiguisage"
+
+msgid "Memento"
+msgstr "Souvenir"
+
+msgid "Nasty Plot"
+msgstr "Machination"
+
+msgid "Quash"
+msgstr "À la Queue"
+
+msgid "Snatch"
+msgstr "Saisie"
+
+msgid "Switcheroo"
+msgstr "Passe-Passe"
+
+msgid "Taunt"
+msgstr "Provoc"
+
+msgid "Torment"
+msgstr "Tourmente"
+
+msgid "Roar of Time"
+msgstr "Hurle-Temps"
+
+msgid "Draco Meteor"
+msgstr "Draco Météore"
+
+msgid "Outrage"
+msgstr "Colère"
+
+msgid "Dragon Rush"
+msgstr "Dracocharge"
+
+msgid "Spacial Rend"
+msgstr "Spatio-Rift"
+
+msgid "Dragon Pulse"
+msgstr "Dracochoc"
+
+msgid "Dragon Claw"
+msgstr "Dracogriffe"
+
+msgid "Dragon Tail"
+msgstr "Draco-Queue"
+
+msgid "Dragon Breath"
+msgstr "Dracosouffle"
+
+msgid "Dual Chop"
+msgstr "Double Baffe"
+
+msgid "Twister"
+msgstr "Ouragan"
+
+msgid "Dragon Rage"
+msgstr "Draco-Rage"
+
+msgid "Dragon Dance"
+msgstr "Danse Draco"
+
+msgid "Bolt Strike"
+msgstr "Charge Foudre"
+
+msgid "Thunder"
+msgstr "Fatal-Foudre"
+
+msgid "Volt Tackle"
+msgstr "Électacle"
+
+msgid "Zap Cannon"
+msgstr "Élécanon"
+
+msgid "Fusion Bolt"
+msgstr "Éclair Croix"
+
+msgid "Thunderbolt"
+msgstr "Tonnerre"
+
+msgid "Wild Charge"
+msgstr "Éclair Fou"
+
+msgid "Discharge"
+msgstr "Coup d'Jus"
+
+msgid "Thunder Punch"
+msgstr "Poing-Éclair"
+
+msgid "Volt Switch"
+msgstr "Change Éclair"
+
+msgid "Spark"
+msgstr "Étincelle"
+
+msgid "Thunder Fang"
+msgstr "Crocs Éclair"
+
+msgid "Shock Wave"
+msgstr "Onde de Choc"
+
+msgid "Electroweb"
+msgstr "Toile Élek"
+
+msgid "Charge Beam"
+msgstr "Rayon Chargé"
+
+msgid "Thunder Shock"
+msgstr "Éclair"
+
+msgid "Electro Ball"
+msgstr "Boule Élek"
+
+msgid "Charge"
+msgstr "Chargeur"
+
+msgid "Magnet Rise"
+msgstr "Vol Magnétik"
+
+msgid "Thunder Wave"
+msgstr "Cage-Éclair"
+
+msgid "Focus Punch"
+msgstr "Mitra-Poing"
+
+msgid "High Jump Kick"
+msgstr "Pied Voltige"
+
+msgid "Focus Blast"
+msgstr "Exploforce"
+
+msgid "Superpower"
+msgstr "Surpuissance"
+
+msgid "Cross Chop"
+msgstr "Coup-Croix"
+
+msgid "Dynamic Punch"
+msgstr "Dynamopoing"
+
+msgid "Hammer Arm"
+msgstr "Marto-Poing"
+
+msgid "Jump Kick"
+msgstr "Pied Sauté"
+
+msgid "Aura Sphere"
+msgstr "Aurasphère"
+
+msgid "Sacred Sword"
+msgstr "Lame Sainte"
+
+msgid "Secret Sword"
+msgstr "Lame Ointe"
+
+msgid "Sky Uppercut"
+msgstr "Stratopercut"
+
+msgid "Submission"
+msgstr "Sacrifice"
+
+msgid "Brick Break"
+msgstr "Casse-Brique"
+
+msgid "Drain Punch"
+msgstr "Vampipoing"
+
+msgid "Vital Throw"
+msgstr "Corps Perdu"
+
+msgid "Circle Throw"
+msgstr "Projection"
+
+msgid "Force Palm"
+msgstr "Forte-Paume"
+
+msgid "Low Sweep"
+msgstr "Balayette"
+
+msgid "Revenge"
+msgstr "Vendetta"
+
+msgid "Rolling Kick"
+msgstr "Mawashi Geri"
+
+msgid "Wake-Up Slap"
+msgstr "Réveil Forcé"
+
+msgid "Karate Chop"
+msgstr "Poing-Karaté"
+
+msgid "Rock Smash"
+msgstr "Éclate-Roc"
+
+msgid "Storm Throw"
+msgstr "Yama Arashi"
+
+msgid "Vacuum Wave"
+msgstr "Onde Vide"
+
+msgid "Double Kick"
+msgstr "Double Pied"
+
+msgid "Arm Thrust"
+msgstr "Cogne"
+
+msgid "Triple Kick"
+msgstr "Triple Pied"
+
+msgid "Counter"
+msgstr "Riposte"
+
+msgid "Final Gambit"
+msgstr "Tout ou Rien"
+
+msgid "Low Kick"
+msgstr "Balayage"
+
+msgid "Reversal"
+msgstr "Contre"
+
+msgid "Seismic Toss"
+msgstr "Frappe Atlas"
+
+msgid "Bulk Up"
+msgstr "Gonflette"
+
+msgid "Detect"
+msgstr "Détection"
+
+msgid "Quick Guard"
+msgstr "Prévention"
+
+msgid "V-create"
+msgstr "Coup Victoire"
+
+msgid "Blast Burn"
+msgstr "Rafale Feu"
+
+msgid "Eruption"
+msgstr "Éruption"
+
+msgid "Overheat"
+msgstr "Surchauffe"
+
+msgid "Blue Flare"
+msgstr "Flamme Bleue"
+
+msgid "Fire Blast"
+msgstr "Déflagration"
+
+msgid "Flare Blitz"
+msgstr "Boutefeu"
+
+msgid "Magma Storm"
+msgstr "Vortex Magma"
+
+msgid "Fusion Flare"
+msgstr "Flamme Croix"
+
+msgid "Heat Wave"
+msgstr "Canicule"
+
+msgid "Inferno"
+msgstr "Feu d'Enfer"
+
+msgid "Sacred Fire"
+msgstr "Feu Sacré"
+
+msgid "Searing Shot"
+msgstr "Incendie"
+
+msgid "Flamethrower"
+msgstr "Lance-Flammes"
+
+msgid "Blaze Kick"
+msgstr "Pied Brûleur"
+
+msgid "Fiery Dance"
+msgstr "Danse du Feu"
+
+msgid "Lava Plume"
+msgstr "Ébullilave"
+
+msgid "Fire Punch"
+msgstr "Poing de Feu"
+
+msgid "Flame Burst"
+msgstr "Rebondifeu"
+
+msgid "Fire Fang"
+msgstr "Crocs Feu"
+
+msgid "Flame Wheel"
+msgstr "Roue de Feu"
+
+msgid "Fire Pledge"
+msgstr "Aire de Feu"
+
+msgid "Flame Charge"
+msgstr "Nitrocharge"
+
+msgid "Ember"
+msgstr "Flammèche"
+
+msgid "Fire Spin"
+msgstr "Danse Flamme"
+
+msgid "Incinerate"
+msgstr "Calcination"
+
+msgid "Heat Crash"
+msgstr "Tacle Feu"
+
+msgid "Sunny Day"
+msgstr "Zénith"
+
+msgid "Will-O-Wisp"
+msgstr "Feu Follet"
+
+msgid "Sky Attack"
+msgstr "Piqué"
+
+msgid "Brave Bird"
+msgstr "Rapace"
+
+msgid "Hurricane"
+msgstr "Vent Violent"
+
+msgid "Aeroblast"
+msgstr "Aéroblast"
+
+msgid "Fly"
+msgstr "Vol"
+
+msgid "Bounce"
+msgstr "Rebond"
+
+msgid "Drill Peck"
+msgstr "Bec Vrille"
+
+msgid "Air Slash"
+msgstr "Lame d'Air"
+
+msgid "Aerial Ace"
+msgstr "Aéropiqué"
+
+msgid "Chatter"
+msgstr "Babil"
+
+msgid "Pluck"
+msgstr "Picore"
+
+msgid "Sky Drop"
+msgstr "Chute Libre"
+
+msgid "Wing Attack"
+msgstr "Cru-Aile"
+
+msgid "Acrobatics"
+msgstr "Acrobatie"
+
+msgid "Air Cutter"
+msgstr "Tranch'Air"
+
+msgid "Gust"
+msgstr "Tornade"
+
+msgid "Peck"
+msgstr "Picpic"
+
+msgid "Defog"
+msgstr "Anti-Brume"
+
+msgid "Feather Dance"
+msgstr "Danse-Plume"
+
+msgid "Mirror Move"
+msgstr "Mimique"
+
+msgid "Roost"
+msgstr "Atterrissage"
+
+msgid "Tailwind"
+msgstr "Vent Arrière"
+
+msgid "Shadow Force"
+msgstr "Revenant"
+
+msgid "Shadow Ball"
+msgstr "Ball'Ombre"
+
+msgid "Shadow Claw"
+msgstr "Griffe Ombre"
+
+msgid "Ominous Wind"
+msgstr "Vent Mauvais"
+
+msgid "Shadow Punch"
+msgstr "Poing Ombre"
+
+msgid "Hex"
+msgstr "Châtiment"
+
+msgid "Shadow Sneak"
+msgstr "Ombre Portée"
+
+msgid "Astonish"
+msgstr "Étonnement"
+
+msgid "Lick"
+msgstr "Léchouille"
+
+msgid "Night Shade"
+msgstr "Ombre Nocturne"
+
+msgid "Confuse Ray"
+msgstr "Onde Folie"
+
+msgid "Curse"
+msgstr "Malédiction"
+
+msgid "Destiny Bond"
+msgstr "Prélèvem. Destin"
+
+msgid "Grudge"
+msgstr "Rancune"
+
+msgid "Nightmare"
+msgstr "Cauchemar"
+
+msgid "Spite"
+msgstr "Dépit"
+
+msgid "Frenzy Plant"
+msgstr "Végé-Attak"
+
+msgid "Leaf Storm"
+msgstr "Tempête Verte"
+
+msgid "Petal Dance"
+msgstr "Danse-Fleur"
+
+msgid "Power Whip"
+msgstr "Mégafouet"
+
+msgid "Seed Flare"
+msgstr "Fulmigraine"
+
+msgid "Solar Beam"
+msgstr "Lance-Soleil"
+
+msgid "Wood Hammer"
+msgstr "Martobois"
+
+msgid "Leaf Blade"
+msgstr "Lame-Feuille"
+
+msgid "Energy Ball"
+msgstr "Éco-Sphère"
+
+msgid "Seed Bomb"
+msgstr "Canon Graine"
+
+msgid "Giga Drain"
+msgstr "Giga-Sangsue"
+
+msgid "Horn Leech"
+msgstr "Encornebois"
+
+msgid "Leaf Tornado"
+msgstr "Phytomixeur"
+
+msgid "Magical Leaf"
+msgstr "Feuille Magik"
+
+msgid "Needle Arm"
+msgstr "Poing Dard"
+
+msgid "Razor Leaf"
+msgstr "Tranch'Herbe"
+
+msgid "Grass Pledge"
+msgstr "Aire d'Herbe"
+
+msgid "Mega Drain"
+msgstr "Méga-Sangsue"
+
+msgid "Vine Whip"
+msgstr "Fouet Lianes"
+
+msgid "Bullet Seed"
+msgstr "Balle Graine"
+
+msgid "Absorb"
+msgstr "Vol-Vie"
+
+msgid "Grass Knot"
+msgstr "Noeud Herbe"
+
+msgid "Aromatherapy"
+msgstr "Aromathérapie"
+
+msgid "Cotton Guard"
+msgstr "Cotogarde"
+
+msgid "Cotton Spore"
+msgstr "Spore Coton"
+
+msgid "Grass Whistle"
+msgstr "Siffl'Herbe"
+
+msgid "Ingrain"
+msgstr "Racines"
+
+msgid "Leech Seed"
+msgstr "Vampigraine"
+
+msgid "Sleep Powder"
+msgstr "Poudre Dodo"
+
+msgid "Stun Spore"
+msgstr "Para-Spore"
+
+msgid "Synthesis"
+msgstr "Synthèse"
+
+msgid "Worry Seed"
+msgstr "Soucigraine"
+
+msgid "Earthquake"
+msgstr "Séisme"
+
+msgid "Earth Power"
+msgstr "Telluriforce"
+
+msgid "Dig"
+msgstr "Tunnel"
+
+msgid "Drill Run"
+msgstr "Tunnelier"
+
+msgid "Bone Club"
+msgstr "Massd'Os"
+
+msgid "Mud Bomb"
+msgstr "Boue-Bombe"
+
+msgid "Bulldoze"
+msgstr "Piétisol"
+
+msgid "Mud Shot"
+msgstr "Tir de Boue"
+
+msgid "Bonemerang"
+msgstr "Osmerang"
+
+msgid "Sand Tomb"
+msgstr "Tourbi-Sable"
+
+msgid "Bone Rush"
+msgstr "Charge-Os"
+
+msgid "Mud-Slap"
+msgstr "Coud'Boue"
+
+msgid "Fissure"
+msgstr "Abîme"
+
+msgid "Magnitude"
+msgstr "Ampleur"
+
+msgid "Mud Sport"
+msgstr "Lance-Boue"
+
+msgid "Sand Attack"
+msgstr "Jet de Sable"
+
+msgid "Spikes"
+msgstr "Picots"
+
+msgid "Freeze Shock"
+msgstr "Éclair Gelé"
+
+msgid "Ice Burn"
+msgstr "Feu Glacé"
+
+msgid "Ice Beam"
+msgstr "Laser Glace"
+
+msgid "Icicle Crash"
+msgstr "Chute Glace"
+
+msgid "Ice Punch"
+msgstr "Poing-Glace"
+
+msgid "Aurora Beam"
+msgstr "Onde Boréale"
+
+msgid "Glaciate"
+msgstr "Ère Glaciaire"
+
+msgid "Ice Fang"
+msgstr "Crocs Givre"
+
+msgid "Icy Wind"
+msgstr "Vent Glace"
+
+msgid "Frost Breath"
+msgstr "Souffle Glacé"
+
+msgid "Ice Shard"
+msgstr "Éclats Glace"
+
+msgid "Powder Snow"
+msgstr "Poudreuse"
+
+msgid "Ice Ball"
+msgstr "Ball'Glace"
+
+msgid "Icicle Spear"
+msgstr "Stalagtite"
+
+msgid "Sheer Cold"
+msgstr "Glaciation"
+
+msgid "Hail"
+msgstr "Grêle"
+
+msgid "Haze"
+msgstr "Buée Noire"
+
+msgid "Mist"
+msgstr "Brume"
+
+msgid "Self-Destruct"
+msgstr "Destruction"
+
+msgid "Hyper Beam"
+msgstr "Ultralaser"
+
+msgid "Last Resort"
+msgstr "Dernier Recours"
+
+msgid "Double-Edge"
+msgstr "Damoclès"
+
+msgid "Head Charge"
+msgstr "Peignée"
+
+msgid "Mega Kick"
+msgstr "Ultimawashi"
+
+msgid "Thrash"
+msgstr "Mania"
+
+msgid "Egg Bomb"
+msgstr "Bomb'oeuf"
+
+msgid "Judgment"
+msgstr "Jugement"
+
+msgid "Skull Bash"
+msgstr "Coud'Krâne"
+
+msgid "Hyper Voice"
+msgstr "Mégaphone"
+
+msgid "Rock Climb"
+msgstr "Escalade"
+
+msgid "Take Down"
+msgstr "Bélier"
+
+msgid "Uproar"
+msgstr "Brouhaha"
+
+msgid "Body Slam"
+msgstr "Plaquage"
+
+msgid "Techno Blast"
+msgstr "TechnoBuster"
+
+msgid "Extreme Speed"
+msgstr "Vitesse Extrême"
+
+msgid "Hyper Fang"
+msgstr "Croc de Mort"
+
+msgid "Mega Punch"
+msgstr "Ultimapoing"
+
+msgid "Razor Wind"
+msgstr "Coupe-Vent"
+
+msgid "Slam"
+msgstr "Souplesse"
+
+msgid "Strength"
+msgstr "Force"
+
+msgid "Tri Attack"
+msgstr "Triplattaque"
+
+msgid "Crush Claw"
+msgstr "Éclate Griffe"
+
+msgid "Relic Song"
+msgstr "Chant Antique"
+
+msgid "Chip Away"
+msgstr "Attrition"
+
+msgid "Dizzy Punch"
+msgstr "Uppercut"
+
+msgid "Facade"
+msgstr "Façade"
+
+msgid "Headbutt"
+msgstr "Coup d'Boule"
+
+msgid "Retaliate"
+msgstr "Vengeance"
+
+msgid "Secret Power"
+msgstr "Force Cachée"
+
+msgid "Slash"
+msgstr "Tranche"
+
+msgid "Horn Attack"
+msgstr "Koud'Korne"
+
+msgid "Stomp"
+msgstr "Écrasement"
+
+msgid "Covet"
+msgstr "Implore"
+
+msgid "Round"
+msgstr "Chant Canon"
+
+msgid "Smelling Salts"
+msgstr "Stimulant"
+
+msgid "Swift"
+msgstr "Météores"
+
+msgid "Vice Grip"
+msgstr "Force Poigne"
+
+msgid "Cut"
+msgstr "Coupe"
+
+msgid "Struggle"
+msgstr "Lutte"
+
+msgid "Tackle"
+msgstr "Charge"
+
+msgid "Weather Ball"
+msgstr "Ball'Météo"
+
+msgid "Echoed Voice"
+msgstr "Écho"
+
+msgid "Fake Out"
+msgstr "Bluff"
+
+msgid "False Swipe"
+msgstr "Faux-Chage"
+
+msgid "Golden Fist"
+msgstr "Poing Midas"
+
+msgid "Pound"
+msgstr "Écras'Face"
+
+msgid "Quick Attack"
+msgstr "Vive-Attaque"
+
+msgid "Scratch"
+msgstr "Griffe"
+
+msgid "Snore"
+msgstr "Ronflement"
+
+msgid "Double Hit"
+msgstr "Coup Double"
+
+msgid "Feint"
+msgstr "Ruse"
+
+msgid "Tail Slap"
+msgstr "Plumo-Queue"
+
+msgid "Rage"
+msgstr "Frénésie"
+
+msgid "Rapid Spin"
+msgstr "Tour Rapide"
+
+msgid "Spike Cannon"
+msgstr "Picanon"
+
+msgid "Comet Punch"
+msgstr "Poing Comète"
+
+msgid "Fury Swipes"
+msgstr "Combo-Griffe"
+
+msgid "Barrage"
+msgstr "Pilonnage"
+
+msgid "Bind"
+msgstr "Étreinte"
+
+msgid "Double Slap"
+msgstr "Torgnoles"
+
+msgid "Fury Attack"
+msgstr "Furie"
+
+msgid "Wrap"
+msgstr "Ligotage"
+
+msgid "Constrict"
+msgstr "Constriction"
+
+msgid "Bide"
+msgstr "Patience"
+
+msgid "Crush Grip"
+msgstr "Presse"
+
+msgid "Endeavor"
+msgstr "Effort"
+
+msgid "Flail"
+msgstr "Fléau"
+
+msgid "Hidden Power"
+msgstr "Puissance Cachée"
+
+msgid "Horn Drill"
+msgstr "Empal'Korne"
+
+msgid "Natural Gift"
+msgstr "Don Naturel"
+
+msgid "Present"
+msgstr "Lame Pangéenne"
+
+msgid "Return"
+msgstr "Retour"
+
+msgid "Sonic Boom"
+msgstr "Sonicboom"
+
+msgid "Spit Up"
+msgstr "Relâche"
+
+msgid "Super Fang"
+msgstr "Croc Fatal"
+
+msgid "Trump Card"
+msgstr "Atout"
+
+msgid "Wring Out"
+msgstr "Essorage"
+
+msgid "Acupressure"
+msgstr "Acupression"
+
+msgid "After You"
+msgstr "Après Vous"
+
+msgid "Assist"
+msgstr "Assistance"
+
+msgid "Attract"
+msgstr "Attraction"
+
+msgid "Baton Pass"
+msgstr "Relais"
+
+msgid "Belly Drum"
+msgstr "Cognobidon"
+
+msgid "Bestow"
+msgstr "Passe-Cadeau"
+
+msgid "Block"
+msgstr "Barrage"
+
+msgid "Captivate"
+msgstr "Séduction"
+
+msgid "Charm"
+msgstr "Charme"
+
+msgid "Copycat"
+msgstr "Photocopie"
+
+msgid "Defense Curl"
+msgstr "Boul'Armure"
+
+msgid "Disable"
+msgstr "Entrave"
+
+msgid "Double Team"
+msgstr "Reflet"
+
+msgid "Endure"
+msgstr "Ténacité"
+
+msgid "Entrainment"
+msgstr "Ten-danse"
+
+msgid "Focus Energy"
+msgstr "Puissance"
+
+msgid "Follow Me"
+msgstr "Par Ici"
+
+msgid "Foresight"
+msgstr "Clairvoyance"
+
+msgid "Glare"
+msgstr "Regard Médusant"
+
+msgid "Growl"
+msgstr "Rugissement"
+
+msgid "Growth"
+msgstr "Croissance"
+
+msgid "Harden"
+msgstr "Armure"
+
+msgid "Heal Bell"
+msgstr "Glas de Soin"
+
+msgid "Helping Hand"
+msgstr "Coup d'Main"
+
+msgid "Howl"
+msgstr "Grondement"
+
+msgid "Leer"
+msgstr "Groz'Yeux"
+
+msgid "Lock-On"
+msgstr "Verrouillage"
+
+msgid "Lovely Kiss"
+msgstr "Grobisou"
+
+msgid "Lucky Chant"
+msgstr "Air Veinard"
+
+msgid "Me First"
+msgstr "Moi d'Abord"
+
+msgid "Mean Look"
+msgstr "Regard Noir"
+
+msgid "Metronome"
+msgstr "Métronome"
+
+msgid "Milk Drink"
+msgstr "Lait à Boire"
+
+msgid "Mimic"
+msgstr "Copie"
+
+msgid "Mind Reader"
+msgstr "Lire-Esprit"
+
+msgid "Minimize"
+msgstr "Lilliput"
+
+msgid "Moonlight"
+msgstr "Rayon Lune"
+
+msgid "Morning Sun"
+msgstr "Aurore"
+
+msgid "Nature Power"
+msgstr "Force-Nature"
+
+msgid "Odor Sleuth"
+msgstr "Flair"
+
+msgid "Pain Split"
+msgstr "Balance"
+
+msgid "Perish Song"
+msgstr "Requiem"
+
+msgid "Protect"
+msgstr "Abri"
+
+msgid "Psych Up"
+msgstr "Boost"
+
+msgid "Recover"
+msgstr "Soin"
+
+msgid "Recycle"
+msgstr "Recyclage"
+
+msgid "Reflect Type"
+msgstr "Copie Type"
+
+msgid "Refresh"
+msgstr "Régénération"
+
+msgid "Roar"
+msgstr "Hurlement"
+
+msgid "Safeguard"
+msgstr "Rune Protect"
+
+msgid "Scary Face"
+msgstr "Grimace"
+
+msgid "Screech"
+msgstr "Grincement"
+
+msgid "Sharpen"
+msgstr "Affûtage"
+
+msgid "Shell Smash"
+msgstr "Exuviation"
+
+msgid "Simple Beam"
+msgstr "Rayon Simple"
+
+msgid "Sing"
+msgstr "Berceuse"
+
+msgid "Sketch"
+msgstr "Gribouille"
+
+msgid "Slack Off"
+msgstr "Paresse"
+
+msgid "Sleep Talk"
+msgstr "Blabla Dodo"
+
+msgid "Smoke Screen"
+msgstr "Brouillard"
+
+msgid "Soft-Boiled"
+msgstr "E-Coque"
+
+msgid "Splash"
+msgstr "Trempette"
+
+msgid "Stockpile"
+msgstr "Stockage"
+
+msgid "Substitute"
+msgstr "Clonage"
+
+msgid "Supersonic"
+msgstr "Ultrason"
+
+msgid "Swagger"
+msgstr "Vantardise"
+
+msgid "Swallow"
+msgstr "Avale"
+
+msgid "Sweet Kiss"
+msgstr "Doux Baiser"
+
+msgid "Sweet Scent"
+msgstr "Doux Parfum"
+
+msgid "Swords Dance"
+msgstr "Danse-Lames"
+
+msgid "Tail Whip"
+msgstr "Mimi-Queue"
+
+msgid "Teeter Dance"
+msgstr "Danse-Folle"
+
+msgid "Tickle"
+msgstr "Châtouille"
+
+msgid "Transform"
+msgstr "Morphing"
+
+msgid "Whirlwind"
+msgstr "Cyclone"
+
+msgid "Wish"
+msgstr "Voeu"
+
+msgid "Work Up"
+msgstr "Rengorgement"
+
+msgid "Yawn"
+msgstr "Bâillement"
+
+msgid "Gunk Shot"
+msgstr "Détricanon"
+
+msgid "Sludge Wave"
+msgstr "Cradovague"
+
+msgid "Sludge Bomb"
+msgstr "Bomb-Beurk"
+
+msgid "Poison Jab"
+msgstr "Direct Toxik"
+
+msgid "Cross Poison"
+msgstr "Poison-Croix"
+
+msgid "Sludge"
+msgstr "Détritus"
+
+msgid "Venoshock"
+msgstr "Choc Venin"
+
+msgid "Clear Smog"
+msgstr "Bain de Smog"
+
+msgid "Poison Fang"
+msgstr "Crochet Venin"
+
+msgid "Poison Tail"
+msgstr "Queue-Poison"
+
+msgid "Acid"
+msgstr "Acide"
+
+msgid "Acid Spray"
+msgstr "Bombe Acide"
+
+msgid "Smog"
+msgstr "Purédpois"
+
+msgid "Poison Sting"
+msgstr "Dard-Venin"
+
+msgid "Acid Armor"
+msgstr "Acidarmure"
+
+msgid "Coil"
+msgstr "Enroulement"
+
+msgid "Gastro Acid"
+msgstr "Suc Digestif"
+
+msgid "Poison Gas"
+msgstr "Gaz Toxik"
+
+msgid "Poison Powder"
+msgstr "Poudre Toxik"
+
+msgid "Toxic"
+msgstr "Toxik"
+
+msgid "Toxic Spikes"
+msgstr "Pics Toxik"
+
+msgid "Dream Eater"
+msgstr "Dévorêve"
+
+msgid "Future Sight"
+msgstr "Prescience"
+
+msgid "Psystrike"
+msgstr "Frappe Psy"
+
+msgid "Psychic"
+msgstr "Psyko"
+
+msgid "Extrasensory"
+msgstr "Extrasenseur"
+
+msgid "Psyshock"
+msgstr "Choc Psy"
+
+msgid "Zen Headbutt"
+msgstr "Psykoud'Boul"
+
+msgid "Luster Purge"
+msgstr "Lumi-Éclat"
+
+msgid "Mist Ball"
+msgstr "Ball'Brume"
+
+msgid "Psycho Cut"
+msgstr "Coupe Psycho"
+
+msgid "Synchronoise"
+msgstr "Synchropeine"
+
+msgid "Psybeam"
+msgstr "Rafale Psy"
+
+msgid "Heart Stamp"
+msgstr "Crèvecoeur"
+
+msgid "Confusion"
+msgstr "Choc Mental"
+
+msgid "Mirror Coat"
+msgstr "Voile Miroir"
+
+msgid "Psywave"
+msgstr "Vague Psy"
+
+msgid "Stored Power"
+msgstr "Force Ajoutée"
+
+msgid "Agility"
+msgstr "Hâte"
+
+msgid "Ally Switch"
+msgstr "Interversion"
+
+msgid "Amnesia"
+msgstr "Amnésie"
+
+msgid "Barrier"
+msgstr "Bouclier"
+
+msgid "Calm Mind"
+msgstr "Plénitude"
+
+msgid "Cosmic Power"
+msgstr "Force Cosmik"
+
+msgid "Gravity"
+msgstr "Gravité"
+
+msgid "Guard Split"
+msgstr "Partage Garde"
+
+msgid "Guard Swap"
+msgstr "Permugarde"
+
+msgid "Heal Block"
+msgstr "Anti-Soin"
+
+msgid "Heal Pulse"
+msgstr "Vibra Soin"
+
+msgid "Healing Wish"
+msgstr "Voeu Soin"
+
+msgid "Heart Swap"
+msgstr "Permucoeur"
+
+msgid "Hypnosis"
+msgstr "Hypnose"
+
+msgid "Imprison"
+msgstr "Possessif"
+
+msgid "Kinesis"
+msgstr "Télékinésie"
+
+msgid "Light Screen"
+msgstr "Mur Lumière"
+
+msgid "Lunar Dance"
+msgstr "Danse-Lune"
+
+msgid "Magic Coat"
+msgstr "Reflet Magik"
+
+msgid "Magic Room"
+msgstr "Zone Magique"
+
+msgid "Meditate"
+msgstr "Yoga"
+
+msgid "Miracle Eye"
+msgstr "Oeil Miracle"
+
+msgid "Power Split"
+msgstr "Partage Force"
+
+msgid "Power Swap"
+msgstr "Permuforce"
+
+msgid "Power Trick"
+msgstr "Astuce Force"
+
+msgid "Psycho Shift"
+msgstr "Échange Psy"
+
+msgid "Reflect"
+msgstr "Protection"
+
+msgid "Rest"
+msgstr "Repos"
+
+msgid "Role Play"
+msgstr "Imitation"
+
+msgid "Skill Swap"
+msgstr "Échange"
+
+msgid "Telekinesis"
+msgstr "Lévikinésie"
+
+msgid "Teleport"
+msgstr "Téléport"
+
+msgid "Trick"
+msgstr "Tourmagik"
+
+msgid "Trick Room"
+msgstr "Distorsion"
+
+msgid "Wonder Room"
+msgstr "Zone Étrange"
+
+msgid "Head Smash"
+msgstr "Fracass'Tête"
+
+msgid "Rock Wrecker"
+msgstr "Roc-Boulet"
+
+msgid "Stone Edge"
+msgstr "Lame de Roc"
+
+msgid "Rock Slide"
+msgstr "Éboulement"
+
+msgid "Power Gem"
+msgstr "Rayon Gemme"
+
+msgid "Ancient Power"
+msgstr "Pouvoir Antique"
+
+msgid "Rock Throw"
+msgstr "Jet-Pierres"
+
+msgid "Rock Tomb"
+msgstr "Tomberoche"
+
+msgid "Smack Down"
+msgstr "Anti-Air"
+
+msgid "Rollout"
+msgstr "Roulade"
+
+msgid "Rock Blast"
+msgstr "Boule Roc"
+
+msgid "Rock Polish"
+msgstr "Poliroche"
+
+msgid "Sandstorm"
+msgstr "Tempête de Sable"
+
+msgid "Stealth Rock"
+msgstr "Piège de Roc"
+
+msgid "Wide Guard"
+msgstr "Garde Large"
+
+msgid "Doom Desire"
+msgstr "Carnareket"
+
+msgid "Iron Tail"
+msgstr "Queue de Fer"
+
+msgid "Meteor Mash"
+msgstr "Poing Météor"
+
+msgid "Flash Cannon"
+msgstr "Luminocanon"
+
+msgid "Iron Head"
+msgstr "Tête de Fer"
+
+msgid "Steel Wing"
+msgstr "Bulldoboule"
+
+msgid "Mirror Shot"
+msgstr "Miroi-Tir"
+
+msgid "Magnet Bomb"
+msgstr "Bombaimant"
+
+msgid "Gear Grind"
+msgstr "Lancécrou"
+
+msgid "Metal Claw"
+msgstr "Griffe Acier"
+
+msgid "Bullet Punch"
+msgstr "Pisto-Poing"
+
+msgid "Gyro Ball"
+msgstr "Gyroballe"
+
+msgid "Heavy Slam"
+msgstr "Tacle Lourd"
+
+msgid "Metal Burst"
+msgstr "Fulmifer"
+
+msgid "Autotomize"
+msgstr "Allègement"
+
+msgid "Iron Defense"
+msgstr "Mur de Fer"
+
+msgid "Metal Sound"
+msgstr "Strido-Son"
+
+msgid "Shift Gear"
+msgstr "Changement Vitesse"
+
+msgid "Hydro Cannon"
+msgstr "Hydroblast"
+
+msgid "Water Spout"
+msgstr "Giclédo"
+
+msgid "Hydro Pump"
+msgstr "Hydrocanon"
+
+msgid "Muddy Water"
+msgstr "Ocroupi"
+
+msgid "Aqua Tail"
+msgstr "Hydroqueue"
+
+msgid "Crabhammer"
+msgstr "Pince-Masse"
+
+msgid "Dive"
+msgstr "Plongée"
+
+msgid "Scald"
+msgstr "Ébullition"
+
+msgid "Waterfall"
+msgstr "Cascade"
+
+msgid "Razor Shell"
+msgstr "Coquilame"
+
+msgid "Brine"
+msgstr "Saumure"
+
+msgid "Bubble Beam"
+msgstr "Bulles d'O"
+
+msgid "Water Pulse"
+msgstr "Vibraqua"
+
+msgid "Water Pledge"
+msgstr "Aire d'Eau"
+
+msgid "Aqua Jet"
+msgstr "Aqua-Jet"
+
+msgid "Water Gun"
+msgstr "Pistolet à O"
+
+msgid "Clamp"
+msgstr "Claquoir"
+
+msgid "Whirlpool"
+msgstr "Siphon"
+
+msgid "Bubble"
+msgstr "Écume"
+
+msgid "Aqua Ring"
+msgstr "Anneau Hydro"
+
+msgid "Rain Dance"
+msgstr "Danse Pluie"
+
+msgid "Soak"
+msgstr "Détrempage"
+
+msgid "Water Sport"
+msgstr "Tourniquet"
+
+msgid "Withdraw"
+msgstr "Repli"
+
+msgid "Coral Break"
+msgstr "Brise-Corail"
+
+msgid "Atomic Punch"
+msgstr "Poing Quantique"
+
+msgid "Metal Whip"
+msgstr "Métalofouet"
+
+msgid "Shuffle"
+msgstr "Cadeau Empoisonné"
+
+msgid "Nuclear Waste"
+msgstr "Irradiation"
+
+msgid "Gamma Ray"
+msgstr "Rayon Gamma"
+
+msgid "Radioacid"
+msgstr "Radioacide"
+
+msgid "Sky Fall"
+msgstr "Tombe Ciel"
+
+msgid "Flame Impact"
+msgstr "Choc Brûlant"
+
+msgid "Draining Kiss"
+msgstr "Vampibaiser"
+
+msgid "Eerie Impulse"
+msgstr "Ondes Étranges"
+
+msgid "Electric Terrain"
+msgstr "Champ Électrifié"
+
+msgid "Electrify"
+msgstr "Électrisation"
+
+msgid "Fairy Lock"
+msgstr "Verrou Enchanté"
+
+msgid "Fairy Wind"
+msgstr "Vent Féérique"
+
+msgid "Fell Stinger"
+msgstr "Dard Mortel"
+
+msgid "Flower Shield"
+msgstr "Garde Florale"
+
+msgid "Forest's Curse"
+msgstr "Maléfice Sylvain"
+
+msgid "Freeze-Dry"
+msgstr "Lyophilisation"
+
+msgid "Geomancy"
+msgstr "Géo-Contrôle"
+
+msgid "Grassy Terrain"
+msgstr "Champ Herbu"
+
+msgid "Infestation"
+msgstr "Harcèlement"
+
+msgid "Ion Deluge"
+msgstr "Déluge Plasmique"
+
+msgid "King's Shield"
+msgstr "Bouclier Royal"
+
+msgid "Land's Wrath"
+msgstr "Force Chtonienne"
+
+msgid "Magnetic Flux"
+msgstr "Magné-Contrôle"
+
+msgid "Mat Block"
+msgstr "Tatamigaeshi"
+
+msgid "Misty Terrain"
+msgstr "Champ Brumeux"
+
+msgid "Moonblast"
+msgstr "Pouvoir Lunaire"
+
+msgid "Mystical Fire"
+msgstr "Feu Ensorcelé"
+
+msgid "Noble Roar"
+msgstr "Râle Mâle"
+
+msgid "Nuzzle"
+msgstr "Frotte-Frimousse"
+
+msgid "Oblivion Wing"
+msgstr "Mort-Ailes"
+
+msgid "Parabolic Charge"
+msgstr "Parabocharge"
+
+msgid "Parting Shot"
+msgstr "Dernier Mot"
+
+msgid "Petal Blizzard"
+msgstr "Tempête Florale"
+
+msgid "Phantom Force"
+msgstr "Hantise"
+
+msgid "Play Nice"
+msgstr "Camaraderie"
+
+msgid "Play Rough"
+msgstr "Câlinerie"
+
+msgid "Powder"
+msgstr "Nuée de Poudre"
+
+msgid "Power-Up Punch"
+msgstr "Poing Boost"
+
+msgid "Rototiller"
+msgstr "Fertilisation"
+
+msgid "Spiky Shield"
+msgstr "Pico-Défense"
+
+msgid "Sticky Web"
+msgstr "Toile Gluante"
+
+msgid "Topsy-Turvy"
+msgstr "Renversement"
+
+msgid "Trick-or-Treat"
+msgstr "Halloween"
+
+msgid "Venom Drench"
+msgstr "Piège de Venin"
+
+msgid "Water Shuriken"
+msgstr "Sheauriken"
+
+msgid "Aromatic Mist"
+msgstr "Brume Capiteuse"
+
+msgid "Baby-Doll Eyes"
+msgstr "Regard Touchant"
+
+msgid "Belch"
+msgstr "Éructation"
+
+msgid "Boomburst"
+msgstr "Bang Sonique"
+
+msgid "Confide"
+msgstr "Confidence"
+
+msgid "Crafty Shield"
+msgstr "Vigilance"
+
+msgid "Dazzling Gleam"
+msgstr "Éclat Magique"
+
+msgid "Disarming Voice"
+msgstr "Voix Enjôleuse"
+
+msgid "Laser Pulse"
+msgstr "Pulsar"
+
+msgid "Gemstone Glimmer"
+msgstr "Éclat-Gemme"
+
+msgid "Half-life"
+msgstr "Demi-Vie"
+
+msgid "Ocean's Wrath"
+msgstr "Océanorage"
+
+msgid "Fission Burst"
+msgstr "Fission"
+
+msgid "Caustic Breath"
+msgstr "Corrosouffle"
+
+msgid "Nuclear Slash"
+msgstr "Nucléogriffe"
+
+msgid "Thunderstorm"
+msgstr "Orage"
+
+msgid "Sudden Strike"
+msgstr "Frappe sournoise"
+
+msgid "Expunge"
+msgstr "Décontamination"
+
+msgid "Fallout"
+msgstr "Retombées"
+
+msgid "Proton Beam"
+msgstr "Protolaser"
+
+msgid "Infernal Blade"
+msgstr "Lame Infernale"
+
+msgid "Quantum Leap"
+msgstr "Bond Quantique"
+
+msgid "Metal Cruncher"
+msgstr "Dévo-Fer"
+
+msgid "Drain Life"
+msgstr "Vampicroc"
+
+msgid "Sticky Terrain"
+msgstr "Champ Collant"
+
+msgid "Nuclear Wind"
+msgstr "Nucléosouffle"

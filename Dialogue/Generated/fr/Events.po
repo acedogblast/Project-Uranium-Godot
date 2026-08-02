@@ -1,0 +1,649 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "EVENT_HEROHOME_1"
+msgstr "\\PN, descends, tu es en retard!"
+
+msgid "EVENT_MOKI_TOWN_THEO_1"
+msgstr "???: HEY! ATTENDS!!\\wtnp[20]"
+
+msgid "EVENT_MOKI_TOWN_THEO_2"
+msgstr "Tu crois aller où comme ça, hein ?\nTu veux arriver au labo avant moi pour choper le meilleur Pokémon ?\nEh ben ça n'arrivera pas !\nParce que le plus fort, c'est moi qui l'aurai en premier !\nEssaie de suivre, \\PN !!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_1"
+msgstr "Bamb'o : Tiens, mais c'est \\PN !\nEt euh, ton ami...\nTommy, c'est ça ?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_2"
+msgstr "Sérieusement, m'sieur, vous vous \nrappellerez jamais de mon nom?\nC'est Théo! Théo!!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_3"
+msgstr "Bon, bon... Théo.\nTu arrives à temps.\nAujourd'hui est une journée spéciale pour vous deux.\nC'est votre premier jour de travail en tant\nqu'assistants de recherche de terrain au\nLabo de Recherches Pokémon de Bamb'o."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_4"
+msgstr "Votre travail sera de voyager à travers Tandor afin d'observer et de capturer plusieurs et différentes sortes de Pokémon, afin de m'aider dans mes recherches sur les Éléments Pokémon."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_5"
+msgstr "J'ai ici trois Pokémon qui\nvous aideront dans votre aventure."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_6"
+msgstr "Par contre, avant de recevoir vos starters, vous\ndeux devez prendre le <b>Test d'Aptitude du Dresseur</b>."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_7"
+msgstr "Un Examen?!\nJe n'ai pas étudié pour un examen!\nJe croyais que tu nous donnerais un Pokémon,\nrare et puissant!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_8"
+msgstr "Du calme, ne panique pas...\nC'est pas le genre d'examen qui te demande d'apprendre des cours.\nC'est une manière de déterminer quelle\nsorte de Dresseur tu deviendras.\nDifférents Pokémon de départ signifie\ndifférents styles de combat.\nTon Pokémon de départ sera ton ami à vie,\nalors il est important pour toi de bien travailler ensemble!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_9"
+msgstr "Ouais, ouais, j'ai compris. Assez parlé!\nJe veux mon Pokémon!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_10"
+msgstr "Eh bien, gamin, tu n'es pas très patient, toi!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_11"
+msgstr "Bon, d'accord."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_12"
+msgstr "Si tu veux en savoir plus sur ce que\nle test aborde avant de commencer, tu peux parler à mon assistant."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_13"
+msgstr "Maintenant..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_14"
+msgstr "\\PN, es-tu prê{t|te} pour le<b>Test d'Aptitude du Dresseur</b>?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_1"
+msgstr "Oui!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2"
+msgstr "Attends une minute..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2_1"
+msgstr "C'est tout bon. Prends ton temps."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_2_2"
+msgstr "Ouais, mais pas trop longtemps, d'accord?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_1"
+msgstr "Le <b>Test d'Aptitude des Dresseurs Pokémon</b>\nclasse les Dresseurs en trois profils :\n\\c[3]<b>Défensif</b>\\c[0], \\c[2]<b>Offensif</b>\\c[0] et \\c[1]<b>Équilibré</b>\\c[0]."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_2"
+msgstr "Le professeur vous donnera ensuite un Pokémon de départ\nqui conviendra le mieux à votre style au combat."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_3"
+msgstr "Les Dresseurs \\c[4]Défensifs\\c[0] reçoivent\nLe Pokémon plante \\c[4]Pétalynx.\\c[0]\nIl est gentil, robuste, et facile à dresser."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_4"
+msgstr "Les Dresseurs \\c[2]<b>Offensifs</b>\\c[0] reçoivent le Pokémon Feu \\c[2]Raptorch\\c[0].\nIl est fort et rapide, mais difficile à canaliser."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_5"
+msgstr "Les Dresseurs \\c[1]<b>Équilibrés</b>\\c[0] reçoivent le Pokémon Eau \\c[1]Eletux\\c[0].\nSa nature calme et posée lui permet de s'adapter à toute situation."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_AIDE_6"
+msgstr "Choisis bien - Le Pokémon de départ est ton partenaire principal le long de ton voyage!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_15"
+msgstr "Excellent!\nAlors, sans aucun délai..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_16"
+msgstr "Quand tu rencontres un Pokémon inconnu dans la nature,\nquelle est ta première réaction ?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_3"
+msgstr "L'attaquer immédiatement!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_4"
+msgstr "Attendre de voir ce qu'il fait."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_5"
+msgstr "Lui lancer une Poké Ball!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_17"
+msgstr "Très bien, vous deux."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_18"
+msgstr "Allez, c'était trop facile!\nDonne-moi une question plus difficile!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_19"
+msgstr "OK... question suivante, alors."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_20"
+msgstr "Laquelle de ces CT préférerais-tu\napprendre à ton Pokémon ?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_6"
+msgstr "Ultralaser"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_7"
+msgstr "Abri"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_8"
+msgstr "Puissance Cachée"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_21"
+msgstr "Hé professeur...\nC'est quoi une CT d'abord?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_22"
+msgstr "Hmm... je te le dirai plus tard. Continuons avec\nla question suivante."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_23"
+msgstr "Lequel de ces Pokémon gagnerait\nun combat sans merci ?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_9"
+msgstr "Léviator"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_10"
+msgstr "Scorvol"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_11"
+msgstr "Pharamp"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_24"
+msgstr "Est-il possible de rater ce test?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_25"
+msgstr "Non, impossible.\nMaintenant, voici la question finale,\ndonc répondez honnêtement!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_26"
+msgstr "Qu'est-ce qui te motive à\ndevenir Dresseur Pokémon ?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_12"
+msgstr "Devenir le meilleur dresseur"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_13"
+msgstr "Explorer la région"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_14"
+msgstr "Me faire de nouveaux amis"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_27"
+msgstr "Il n'en est pas question!\nJe serai un Maître Pokémon!\nEt personne ne sera sur mon chemin!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_28"
+msgstr "Haha... J'admire ton esprit, gamin!\nBon, voilà pour le <b>Test d'Aptitude du Dresseur</b>."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_29"
+msgstr "Maintenant, il est temps d'analyser les résultats.\\..\\..\\wtnp[16]"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_30"
+msgstr "\\wt[8].\\wt[8].\\wt[8]."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_31"
+msgstr "OK, j'ai fini mon analyse!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_32"
+msgstr "\\PN..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Raptorch"
+msgstr "The saying \"the best defense is a good offense\" is probably your mantra.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Raptorch"
+msgstr "You have a burning spirit within you that never ceases!\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Raptorch"
+msgstr "For an Offensive trainer like you...\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Raptorch"
+msgstr "Raptorch is the best pick!\\wtnp[160]"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_37_Raptorch"
+msgstr "You seem to be a trainer that is capable of many different strategies.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Orchynx"
+msgstr "Tu sembles être un dresseur prudent."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Orchynx"
+msgstr "For a Defensive trainer like you...\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Orchynx"
+msgstr "Orchynx is the best pick!\\wtnp[160]"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Orchynx"
+msgstr "You seem to be a trainer who won't hesitate to go for what you want.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_33_Eletux"
+msgstr "Your philosophy is probably to just \"go with the flow\".\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_34_Eletux"
+msgstr "Your calm, rational approach will come to aid you in the future.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_35_Eletux"
+msgstr "For a Balanced trainer like you...\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_36_Eletux"
+msgstr "Eletux is the best pick!\\wtnp[160]"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_37_Eletux"
+msgstr "Failed to load data from server!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_15"
+msgstr "You prefer to adapt to overcome challenges in your path.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_15_1"
+msgstr "You prefer to overwhelm your opponents with sheer force and firepower.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OPTION_15_2"
+msgstr "There is a more recent update available."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_38"
+msgstr "Vas-y et prends-le, \\PN."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_38_THEO"
+msgstr "Allez, \\PN, on y va ou quoi?!\nY'a trop de suspense!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_39"
+msgstr "HÉ! J'EN AI MARRE D'ATTENDRE!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_RAPTORCH"
+msgstr "\\PN obtient Raptorch!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ORCHYNX"
+msgstr "\\PN obtient Orchynx!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_OBTAIN_ELETUX"
+msgstr "\\PN obtient Eletux!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_PLAYER_RUN_AWAY"
+msgstr "Hé, où vas-tu?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_40"
+msgstr "\\PN a déjà eu son Pokémon!\nQuand est-ce que j'aurais le mien?"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_41"
+msgstr "J'ai fini d'analyser tes résultats, Théo."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_42"
+msgstr "Hum\\wt[8].\\wt[8].\\wt[8]."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_43"
+msgstr "It is essential that we prevent the Nuclear Pokémon from breaking and entering the power plant. Otherwise, they might detonate the reactor, which would release massive amounts of radiation across this island and the cities beyond."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_44"
+msgstr "But I sense something else in you...\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_45"
+msgstr "Could it be the seed of greatness?\\.\nThe potential to transform yourself completely?\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_46"
+msgstr "Or maybe it's just that you're so young, I can't tell.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_47"
+msgstr "Regardless...\\. For a Trainer like you...\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_48"
+msgstr "\\PN...\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_49"
+msgstr "You seem to be a Trainer who likes to play it safe.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Orchynx"
+msgstr "You prefer to overwhelm your opponents with sheer force and firepower.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Eletux"
+msgstr "There is a more recent update available."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_50_Raptorch"
+msgstr "You prefer to adapt to overcome challenges in your path.\\^"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_51"
+msgstr "Oui!!\nMon premier Pokémon!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_52"
+msgstr "\\PN... t'as un Pokémon.\nEt maintenant j'en ai un aussi.\nTu sais ce que ça veut dire, non?\nOn doit s'battre!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_53"
+msgstr "Oh, pitié, pas dans le labo..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_Battle_WIN"
+msgstr "Quoi? Mais j'étais censé gagner!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_54"
+msgstr "M-mais....\\. Comment...\\.\nJe suis censé être le meilleur d-Dresseur de tous les temps..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_55"
+msgstr "C'est i-impossible...\nles bon Dresseurs ne perdent jamais..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_56"
+msgstr "Je... Je... *snif*\nOuiiiiiinnnn !!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_57"
+msgstr "Théo, ne pleure pas s'il te plaît..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_58"
+msgstr "Voici, je vais soigner ton équipe pour toi."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_59"
+msgstr "Je v-voulais devenir u-un Dresseur imbattable...\nPourquoi j'pouvais pas gagner?\nJe voulais vraiment gagner..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_60"
+msgstr "Bon...\\. Entre ton Pokémon et celui de \\PN,\nle sien a l'avantage des types."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_61"
+msgstr "L'Eau bat le Feu, le Feu bat la Plante, et la Plante bat l'Eau."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_62"
+msgstr "C'est le triangle des types élémentaires.\\.\nEn tout cas, un des triangles.\nApprendre à maîtriser la correspondance des types est important pour un Dresseur."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_63"
+msgstr "P-pas question ! Je veux recommencer !\nPourquoi c'est \\PN qui a le meilleur starter ?! Ouiiiiaaaaahhhh ! C'est pas juuuuste !!\nJe... je rentre à la maison !!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_64"
+msgstr "Soupir...\nIl l'a pris plus mal que ce que je craignais."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_65"
+msgstr "Mais, il ne faudrait pas le juger trop hâtivement.\nCe n'est qu'un enfant après tout.\nJe m'attends à ce qu'il découvre qu'entraîner des Pokémon n'est pas si facile que ça..."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_54_LOSS"
+msgstr "Ouais!! Ma première victoire!\nMes Pokémon et moi,\non va être l'équipe la plus cool et la meilleure de Tandor! \\PN, t'es rien comparé à moi.\nRien!!\nHahaha!\n'faut que je le montre à papa!"
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_55_LOSS"
+msgstr "\\PN...\nJe suis surpris que t'aies réussi à perdre ce combat."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_56_LOSS"
+msgstr "Tu dois avoir remarqué que ton Pokémon de départ\na l'avantage du type sur celui de Théo.\nL'eau vainc le feu, le feu vainc la plante et la plante l'eau. C'est le triangle des éléments.\\.\nEnfin, l'un d'eux, en tout cas."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_57_LOSS"
+msgstr "Normalement, dans une telle rencontre,\nle résultat est prévisible...\nOu peut-être l'as-tu laissé gagner exprès?\nSi tel est le cas, c'est gentil de ta part."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_58_LOSS"
+msgstr "Il fait le dur, mais j'ai l'impression\nqu'il ne le prendrait pas si bien s'il avait perdu son premier combat."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_59_LOSS"
+msgstr "Toi, tu as l'air d'encaisser, par contre.\nViens, laisse-moi soigner ton Pokémon vite-fait."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_HEAL"
+msgstr "Nice work, kid.\nThose were some impressive battling skills! Here, let me heal your Pokémon for you."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_66"
+msgstr "Je vais à la sortie de la ville donnant sur la Route 01. Amène Théo et je vais vous apprendre à tous les deux comment attraper un Pokémon."
+
+msgid "EVENT_MOKI_LAB_FIRST_POK_67"
+msgstr "A plus tard, \\PN."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_1"
+msgstr "Qu'as-tu dit à mon fils?!\nIl a couru à l'étage en pleurant, et a verrouillé la porte après lui. Il ne veut pas me dire ce qui ne va pas, ou redescendre."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_2"
+msgstr "Je te jure, que si tu as fait quelque chose pour le faire souffrir.\\..\\.."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_3"
+msgstr "\\wt[5].\\wt[5].\\wt[5].\nOh.\nJe vois, c'est donc ça."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_4"
+msgstr "Il a choisi le Pokémon le plus faible,\net tu l'as vaincu dans un combat...\nHm.\\. Je vois... tout s'explique."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_5"
+msgstr "Une dure leçon, c'est sûr...\\.\nMais perdre fait autant partie du Dresseur que la victoire.\nIl voulait de tout son coeur que ce premier jour soit parfait,\ndonc échouer dès le départ fut un choc."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_6"
+msgstr "Enfin, pleurer ne va rien arranger.\\.\nC'est une chose qu'il doit apprendre."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_7"
+msgstr "THÉO!\\wt[18] DESCENDS TOUT DE SUITE,\nJEUNE HOMME!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_8"
+msgstr "*sniff*"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_9"
+msgstr "Théo...\nTu ne peux pas pleurer à chaque combat perdu.\nCela fait partie de la vie d'un Dresseur."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_10"
+msgstr "M-mais c'est pas juste...\n\\PN a reçu le meilleur starter et moi...\nMaintenant je ne vais jamais gagner!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_11"
+msgstr "Alors tu devras attraper plus de Pokémon\npour équilibrer les faiblesses de ton équipe.\nEn plus, un Pokémon bien entraîné\npeut toujours vaincre, même avec un désavantage. \nCe serait bête de laisser tomber avant même de commencer."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_12"
+msgstr "*renifle*\nOu-oui, papa..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_13"
+msgstr "Maintenant, Théo...\nJe ne serai pas toujours là pour te\nremonter le moral quand tu es déprimé.\nDonc tente d'être fort par toi-même, ok?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_14"
+msgstr "\\PN...\nSois patient avec mon fils, s'il te plait.\nIl te respecte, tu sais.\n"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_15"
+msgstr "Oh, j'ai presque oublié. \\PN,\nThéo, j'ai quelque chose pour vous deux."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_16"
+msgstr "C-comme un cadeau...?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_17"
+msgstr "Oui, tout à fait.\n\\PN, ton père Prmo m'a envoyé ceci et m'a demandé de vous les donner quand vous commencerez vos aventures.\nJe suis sûr qu'ils vous seront utiles."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_18"
+msgstr "[\\PN et Théo reçoivent un PokéPod!]\\wtnp[28]"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_19"
+msgstr "Un PokéPod? C'est quoi?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_20"
+msgstr "C'est un appareil de haute technologie indispensable pour les Dresseurs Pokémon.\nIl joue de la musique et comprend une carte de la région. Plus important, il contient un téléphone qui vous permettra de rester en contact entre vous, et avec d'autres Dresseurs."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_21"
+msgstr "Cool!\nHeheh, j'ai pris le rouge...\nil est plus cool que le tien!\nJe vais aller rencontrer le Professeur\nà la sortie de la ville.\nJe vais être le premier à attraper un Pokémon!\nA plus, Papa! Dépêche-toi, \\PN!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_22"
+msgstr "...Hé bien. Quel changement soudain.\nIl rebondit toujours rapidement.\n"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_23"
+msgstr "\\PN, il ne faut pas faire attendre le Professeur, tu devrais y aller toi aussi.\nJe ne vous reverrai pas de sitôt, Theo et toi...\nVois-tu, je commence bientôt un nouveau travail. Je supervise la construction de la nouvelle Centrale Epsilon.\nPeut-être nous y croiserons-nous, un jour.\nAprès tout... c'est le dernier endroit où Lucille a été vue."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_24"
+msgstr "Bonne chance pour ton aventure, \\PN."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_25"
+msgstr "Hahaha! Wouhouuu!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_26"
+msgstr "Theo est d'excellente humeur.\nIl m'a montré son Pokémon de départ et m'a dit à quel point il était fier de t'avoir enfin battu.\nJ'espère que tu ne l'as pas mal pris... ?\nMon fils est très énergique.\nEt puis, il tient tellement à gagner."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_27"
+msgstr "Mais...\\. Je dois te demander...\nL'as-tu laissé gagner exprès?"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_28"
+msgstr "\\wt[5].\\wt[5].\\wt[5]."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_29"
+msgstr "Je suppose que je devrais te remercier.\nTu lui as vraiment permis\nde très bien commencer son aventure.\n Néanmoins, ça va être très dur pour lui\nquand il perdra pour la première fois.\nTout le monde ne sera pas aussi gentil avec lui..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_30"
+msgstr "Perdre fait partie de la quête du Dresseur autant que gagner. Il devra apprendre ça, un jour ou l'autre..."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_31"
+msgstr "Oh, \\PN est ici.\nTu veux un deuxième combat?\n Parce que tu ne l'auras pas!\nJ'ai gagné, juste et honnêtement! Haha!"
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_32"
+msgstr "Théo, ne sois pas malpoli.\nToi et \\PN allez passer beaucoup de temps ensemble dans votre aventure à venir, vous allez devoir vous entendre."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_33"
+msgstr "...Non? Vraiment?\nMais je pensais que ton starter avait un avantage de type."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_34"
+msgstr "Peut-être que Théo est un Dresseur talentueux de nature, alors...\\. ou peut-être a-t-il été chanceux."
+
+msgid "EVENT_MOKI_TOWN_THEO_HOME_35"
+msgstr "Le temps nous le dira."
+
+msgid "EVENT_MOKI_POKECENTER_HEAL_QUESTION"
+msgstr "Bienvenue au Centre Pokémon.\nVoulez-vous que je soigne vos Pokémon ?"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_1"
+msgstr "Now, watch closely."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_2"
+msgstr "Wild Pokémon, as you probably already\nknow, inhabit tall grass."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_3"
+msgstr "But that's not the only place - you can\nalso find them in caves, in water, and even in cities if you know where to look."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_4"
+msgstr "Still, tall grass is going to be your\nbest bet for finding new Pokémon."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_5"
+msgstr "Simply take a few steps in and..."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_6"
+msgstr "Look! It's a wild Chyinmunk!\nThey're very common around here.\nIt hasn't noticed me yet, so now's my chance..."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_7"
+msgstr "Go! \\v[3]!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Eletux"
+msgstr "Eletux, go!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Raptorch"
+msgstr "Raptorch, go!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_8_Orchynx"
+msgstr "Orchynx, go!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_9"
+msgstr "I think he's taken a shine to me, and\nI rather like him too... so I'm gonna keep him."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_10"
+msgstr "Now! The next step is to weaken the\nenemy Pokémon to make it easier to catch."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_11"
+msgstr "Orchynx! Use Scratch!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Eletux"
+msgstr "Chiiiin!\\wtnp[20]"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Raptorch"
+msgstr "Eletux! Use Tackle!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_12_Orchynx"
+msgstr "Raptorch! Use Scratch!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_13"
+msgstr "Now that it's weakened, now's my chance to catch it. Poké Ball, go!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_14"
+msgstr "...And that's how it's done.\nNow, Chyinmunk are fairly easy...\nbut you're sure to encounter Pokémon\nthat are a lot harder to capture.\nFor those, you might need to inflict them\nwith status effects, or use a special Poké Ball.\nAh, but I'm sure you'll get the hang of it before too long."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_15"
+msgstr "...Et voilà comment on fait.\nBon, les Chyinmunk sont plutôt faciles...\nmais tu croiseras des Pokémon bien plus durs à capturer.\nPour ceux-là, il faudra peut-être leur infliger des altérations de statut, ou utiliser une Poké Ball spéciale.\nAh, mais je suis sûr que tu prendras vite le coup de main."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_16"
+msgstr "[\\PN and Theo received a Pokédex!]\\wtnp[28]"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_17"
+msgstr "That PokéDex is an encyclopedia that will automatically update itself whenever you encounter or catch a new Pokémon."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_18"
+msgstr "It's very important for my research, so make sure to fill it out as much as possible!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_19"
+msgstr "Also, I want you to have these."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_20"
+msgstr "Poké Balls are necessary for\ncatching Pokémon, of course.\nWhat's that thing the kids always say?\n\"Gotta Catch 'Em All!\""
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_21"
+msgstr "Vous obtenez des Poké Balls!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_22"
+msgstr "\\PN range les Poké Balls dans la Poche Poké Balls."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_23"
+msgstr "If you run out, you can pick up\nsome more at any Poké Mart.\nMoki Town doesn't have one of those...\nbut there's one in Kevlar Town on the other side of Route 01.\nSo, with that said...\nyour lesson is now over."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_24"
+msgstr "Oh, but you two have PokéPods, don't you?\nHere, let me input my number."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_25"
+msgstr "You can give me a call anytime, and I'll take a look at how your PokéDex is coming along. If you do a good job collecting many different kinds of Pokémon, I might even have special rewards for you."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_26"
+msgstr "Le Professeur Bamb'o a été enregistré dans le PokéPod."
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_27"
+msgstr "With that said, I'm going back to my Lab.\nBest of luck on your journeys, both of you!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_28"
+msgstr "\\PN, I don't care that you got the stronger starter. I'm still gonna be the best Trainer ever! I'll catch tons of Pokémon and we'll win every battle!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_29"
+msgstr "You just wait and see!!"
+
+msgid "EVENT_MOKI_TOWN_CAPTURE_DEMO_30"
+msgstr "\\sign[sign1]Bamb'o Pokémon Research Lab"
+
+msgid "EVENT_NOWTOCH_CITY_1"
+msgstr "Oh! Toi! Tu es... \npeut-être... ici pour voir Maria?"
+
+msgid "EVENT_NOWTOCH_CITY_2"
+msgstr "Ouh lààà, tu dois être comme moi! \nJ'suis son plus grand fan! \nOh, mais elle n'est jamais dans son Arène..."
+
+msgid "EVENT_NOWTOCH_CITY_3"
+msgstr "Tu devrais la trouver chez elle. \nJe ne peux pas y aller moi-même parce que..\\..\\. j'ai mes raisons."
+
+msgid "EVENT_NOWTOCH_CITY_4"
+msgstr "Mais toi, tu peux! \nTiens, prends ça!"
+
+msgid "EVENT_NOWTOCH_CITY_5"
+msgstr "Garde-la, j'ai des copies. \nSa maison est au sud de la ville."
+
+msgid "EVENT_NOWTOCH_CITY_6"
+msgstr "Zzzzzz\\..\\..\\.. hein?\\NIl...\\. y a quelqu'un...?"
+
+msgid "EVENT_NOWTOCH_CITY_7"
+msgstr "Qui es-tu?\\.\nQu'est-ce que tu fais chez moi?\nTu ne peux pas t'introduire chez les gens comme ça!!"
+
+msgid "EVENT_NOWTOCH_CITY_8"
+msgstr "Plus particulièrement quand ils verrouillent leurs portes.\nComment es-tu entré?"
+
+msgid "EVENT_NOWTOCH_CITY_9"
+msgstr "The Dream Visualizer is showing...Dreams? Memories?"
+
+msgid "EVENT_NOWTOCH_CITY_10"
+msgstr "Tu as une copie de mes clefs de maison?\nDonne-moi ça!"
+
+msgid "EVENT_NOWTOCH_CITY_11"
+msgstr "[\\PN a donné les clefs à Maria.]"
+
+msgid "EVENT_NOWTOCH_CITY_12"
+msgstr "Où as-tu eu ça?!\n...Oh. Par ce type...\nArg, encore lui.\nAttends, t'es pas un autre fan, quand même?"
+
+msgid "EVENT_NOWTOCH_CITY_13"
+msgstr "Tu es... Un Dresseur Pokémon?\nTu es donc venu pour l'Arène, c'est ça?"
+
+msgid "EVENT_NOWTOCH_CITY_14"
+msgstr "Soupir.\\..\\.. J'imagine que je dois faire mon boulot pour une fois.\nMais avant ça, il faut que je parle à ce type qui t'as donné cette clef."
+
+msgid "EVENT_NOWTOCH_CITY_15"
+msgstr "Retrouve-moi devant mon Arène.\nÀ plus~"
+
+msgid "EVENT_NOWTOCH_CITY_16"
+msgstr "Écoute, je te te l'ai déjà dit.\n Je ne suis plus le Maître, tu comprends?\\.\nJe suis à la retraite! Et je suis Championne d'arène."
+
+msgid "EVENT_NOWTOCH_CITY_17"
+msgstr "Mais, Maria...\\. Vous étiez la plus forte \ndresseuse de tout Tandor..."
+
+msgid "EVENT_NOWTOCH_CITY_18"
+msgstr "Si talentueuse, jeune et belle...\\.\n Pourquoi anéantir toute cette célébrité?\n Vos fans vous aiment toujours!"
+
+msgid "EVENT_NOWTOCH_CITY_19"
+msgstr "La gloire ne m'intéresse plus! Je veux juste vivre ma vie normalement, tenir mon Arène et ne plus avoir affaire avec des énergumènes comme toi. Sérieusement, ce n'est pas normal de faire des doubles des clefs des gens! J'appelle les Rangers."
+
+msgid "EVENT_NOWTOCH_CITY_20"
+msgstr "Non!\\. S'il vous plaît!\\. Je-\\.Je vous laisserai tranquille.\\.\nJe le promets."
+
+msgid "EVENT_NOWTOCH_CITY_21"
+msgstr "Bien.\nMais tu n'es plus le bienvenu dans mon Arène.\nVa-t'en!\nNe me force pas à le répéter!"
+
+msgid "EVENT_NOWTOCH_CITY_22"
+msgstr "*soupir*"
+
+msgid "EVENT_NOWTOCH_CITY_23"
+msgstr "Je suis désolé que tu aies dû voir ça.\nJe ne suis pas une personne nerveuse, normalement, tu sais?"
+
+msgid "EVENT_NOWTOCH_CITY_24"
+msgstr "Mais, une fois que tu remportes le tournoi de Tandor, c'est inéluctable. Tout le monde connaît ton nom... Parfois, c'est assez pour me donner envie de m'en aller. Mais dans ce cas, qui gérera l'arène?"
+
+msgid "EVENT_NOWTOCH_CITY_25"
+msgstr "En parlant de ça...\\. Je sais que tu es\nlà pour le Badge Normal."
+
+msgid "EVENT_NOWTOCH_CITY_26"
+msgstr "Je pense que tu as assez attendu.\nRejoins-moi à l'intérieur et montre-moi ce que tu vaux!"

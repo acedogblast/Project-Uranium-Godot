@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "Buenas noches, \\PN!\\mThis is \\TN!"
+msgstr "좋은 밤이야, \\PN!\n나야, \\TN!"
+
+msgid "Did you hear about Nuclear Pokemon?\\mI hope I don't run into one of those, they sound scary.\\mBe careful out there, ok?"
+msgstr "방사능에 피폭된 포켓몬에 관한 소문 들었니?\\m무시무시하다던데\n마주칠 일이 없으면 좋겠네\\m너도 조심해야 해!"
+
+msgid "Do you remember my \\TP?\\m My \\TP is awesome. It's so cool.\\m I'd even say my \\TP is in the top percentage of \\TPs."
+msgstr "내 멋진 \\TP에 대해 기억하고 있냐?\\m내 \\TP은(는) 아주 멋지다고\n\\TP 제일의 \\TP(이)란다"
+
+msgid "Do you want to battle? I'm going to win this time!\\mI'll be waiting for you around \\TM.\\mLook for me, OK? My \\TP will be expecting you."
+msgstr "포켓몬 승부하지 않을래?\n이번엔 내가 이길 테니까!\\m\\TM에 있을 테니까\n근처를 지나갈 때 말해줘!\\m내 \\TP도 기다리고 있어"
+
+msgid "Good day, \\PN! Hi. This is \\TN."
+msgstr "\\PN 안녕!\n\\TN인데 잘 있니?"
+
+msgid "Good morning!\\m This is \\PN, right? It's me, \\TN."
+msgstr "안녕! \\PN 맞지?\n나야, \\TN"
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Did I wake you?"
+msgstr "\\PN 안녕\n\\TN인데 잠자고 있었어?"
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Rise and shine!"
+msgstr "\\PN 안녕\n\\TN인데 일어났어?"
+
+msgid "Guess what happened the other day. I missed catching \\TE again.\\mMaybe I'm not very good at this."
+msgstr "그리고 말이야 들어봐\\m또 \\TE을(를) 잡는데 실패했어\\m나는 형편없는 걸까..."
+
+msgid "Have you ever hatched a Pokemon Egg?\\mI raised my \\TP from an egg."
+msgstr "포켓몬알을 부화시킨 적 있니?\n내 \\TP은(는) 알에서부터 키웠단다"
+
+msgid "Have you seen the \\TEs around \\TM?\\mThey scare me so much! I always run away!"
+msgstr "\\TM 근처에서 \\TE을(를) 본 적 있니?\n난 너무 무서워서 늘 도망친단다!"
+
+msgid "Have you tried trading with your friends?\\mI got my \\TP in a trade, and it grows so fast!\\mTrades can be an awesome way to get strong Pokemon."
+msgstr "친구와 포켓몬을 교환해 본 적 있니?\\m내 \\TP도 교환으로 받았는데\n성장이 엄청 빨라!\\m강한 포켓몬을 가지고 싶다면\n교환하는 것도 멋진 방법이지"
+
+msgid "Hello, \\PN. This is \\TN. How are things?"
+msgstr "\\PN 안녕!\n\\TN인데 좀 어때?"
+
+msgid "Hello. This is \\TN."
+msgstr "여보세요 \\TN인데요"
+
+msgid "Hey, \\PN! Good evening!\\mThis is \\TN."
+msgstr "여어 \\PN!\n\\TN인데 안녕?"
+
+msgid "Hey, \\PN, wassup? It's \\TN."
+msgstr "여어, \\PN!\n\\TN인데 잘 지내냐?"
+
+msgid "Hey, are you ready for another throw-down?\\mYou, me, battle. Place, \\TM.\\mTime, whenever you want! Let's do it!"
+msgstr "이야, 다시 한번 승부를 겨루고 싶은데 어때?\\m둘이서 오붓하게\n\\TM에서 말이야\\m시간은 언제든지 좋아!\n마음껏 덤벼!"
+
+msgid "Hey, listen! I almost caught \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "그리고 좀 들어줘!\\m요전에 다 되었다 싶을 때\n\\TE이(가) 도망쳤어\\m그것 정말 아까운데 말이야"
+
+msgid "How are you doing? \\PN, howdy! This is \\TN. Isn't it nice out?"
+msgstr "\\PN 안녕!\n\\TN인데 좋은 날씨구나!"
+
+msgid "How are your Pokemon doing?\\mI always keep my \\TP in top shape by going to Pokemon Centers."
+msgstr "포켓몬 상태는 어때?\\m내 \\TP은(는) 늘 포켓몬센터에\n다니고 있으니까 상태는 아주 좋아!"
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!"
+msgstr "너의 포켓몬 건강하냐?\\m내 \\TP은(는)\n너무 건강해서 탈이 날 정도야"
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!\\mOh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "너의 포켓몬 건강하냐?\\m내 \\TP은(는)\n너무 건강해서 탈이 날 정도야\\m그래 그래 요전에 \\TE을(를)\n어떻게든 쓰러뜨렸어\\m아직도 키우는 게 부족한 걸까"
+
+msgid "I dressed my \\TP and it looks even cuter than before."
+msgstr "내 \\TP은(는) 화려하게\n치장을 했더니 아주 귀여워졌어"
+
+msgid "I painted a portrait of my beloved \\TP.\\mIt didn't like sitting still though."
+msgstr "내가 아끼는 \\TP의 초상화를 그렸어\n가만히 있길 싫어해서 고생했지만"
+
+msgid "I spent all day hunting for a shiny \\TE.\\mI didn't manage to find any, though."
+msgstr "하루 종일 색이 다른 \\TE을(를)\n찾아다녔는데 한 마리도 못 찾았어"
+
+msgid "I tried to use the Wonder Trade today.\\mAll I got was a Lv.3 Chyinmunk though.\\mWhy do people put up such lame Pokemon for trade?"
+msgstr "요전에 미라클 교환을 해봤는데\n고작 레벨 3짜리 저리람을 받았지 뭐야\\m왜 다들 그런 쓸 구석도 없는 포켓몬을\n교환에 내보내는 거지?"
+
+msgid "Let's have a battle! I want to see how much you've grown!\\mI'm still hanging around \\TM.\\mCome see if you can beat my \\TP!"
+msgstr "나랑 포켓몬 승부하자!\n네 실력이 얼마나 좋아졌는지 보고 싶어!\\m나는 평소대로 \\TM에 있으니 찾아와!\n내 \\TP을(를) 이길 자신 있다면"
+
+msgid "My \\TP and I love playing games.\\m Its favorite game is fetch."
+msgstr "\\TP와(과) 나는 노는 걸 좋아해\n물어오기 놀이를 가장 재밌어하지"
+
+msgid "My \\TP is fantastic.\\mI'd say it's even in the top percentage of \\TPs."
+msgstr "내 \\TP은(는) 아주 멋지다고\n\\TP 제일의 \\TP(이)란다"
+
+msgid "My \\TP's looking really awesome. I wish I could show you."
+msgstr "내 \\TP은(는)\n한층 더 멋있어졌다!\\m너한테도 보여주고 싶구나"
+
+msgid "My \\TP's looking really awesome.\\mI wish I could show you.\\mHey, listen! I almost caught a \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "내 \\TP은(는)\n한층 더 멋있어졌다!\\m너한테도 보여주고 싶구나\\m그리고 좀 들어줘!\\m요전에 다 되었다 싶을 때\n\\TE이(가) 도망쳤어\\m그것 정말 아까운데 말이야"
+
+msgid "Oh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "그래 그래 요전에 \\TE을(를)\n어떻게든 쓰러뜨렸어\\m아직도 키우는 게 부족한 걸까"
+
+msgid "Ready for a rematch? \\TP and I have been training hard!\\mI'll be waiting for you around \\TM where we met.\\mCome find me and let's battle!"
+msgstr "다시 한번 대결하고 싶은데 괜찮아?\n나와 \\TP 모두 열심히 단련했거든!\\m저번처럼 \\TM 근처에서 기다릴게\n만나서 배틀하자!"
+
+msgid "Remember the last time we battled? Let's rematch!\\mI promise it won't be a repeat of last time.\\mCome find me around \\TM!"
+msgstr "마지막으로 싸웠을 때 기억나니?\n다시 승부하자!\\m요전처럼 되지는 않을걸\n\\TM 근처에서 만나자!"
+
+msgid "Top of the morning, \\PN!\\m\\TN here, at your service."
+msgstr "좋은 아침, \\PN!\n뭐든 이 \\TN한테 말해줘"
+
+msgid "Want to battle? It's not going to be a repeat of the last time we met.\\mI'll be waiting for you around \\TM."
+msgstr "포켓몬 승부하지 않을래?\n요전처럼은 되지 않을 거야!\\m\\TM에 있을 테니까\n근처에 오면 이야기해라!"
+
+msgid "What did you eat for lunch today? I had a grilled \\TE.\\mI don't think I cooked it well enough.\\mOr did you not eat lunch at all?"
+msgstr "오늘 점심은 뭐였어?\n나는 \\TE 구이를 먹었단다\\m제대로 익지 않은 것 같았어\n혹시 아직 안 먹은 거야?"
+
+msgid "Yo, \\PN, my main homie! This is \\TN!"
+msgstr "오옷, 내 친구 \\PN!\n나야, \\TN!"
+
+msgid "You have to hear this! I battled \\TE the other day.\\mIt was easy! I had a type advantage."
+msgstr "저기 저기 좀 들어봐\\m요전에 \\TE(이)랑\n싸웠더니 간단하게 쓰러뜨렸어!\\m상성이 좋았던 걸까?"
+
+msgid "\\PN, good day! It's me, \\TN. Got a minute?"
+msgstr "\\PN 안녕!\n\\TN인데 시간 있어?"
+
+msgid "\\PN, good evening! Hi.\\mThis is \\TN."
+msgstr "\\PN 안녕!\n나야, \\TN"
+

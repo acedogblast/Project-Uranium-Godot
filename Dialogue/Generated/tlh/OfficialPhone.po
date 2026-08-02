@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: tlh\n"
+
+msgid "Buenas noches, \\PN!\\mThis is \\TN!"
+msgstr "8u3n45 n0ch3s, \\PN!\\m7h15 15 \\TN!"
+
+msgid "Did you hear about Nuclear Pokemon?\\mI hope I don't run into one of those, they sound scary.\\mBe careful out there, ok?"
+msgstr "D1d y0u hear a8out Nuc134r Pokem0n?\\mI hop3 I d0n't run 1n2 0n3 0f 7h0s3, t3hy 50und sc4ry.\\m83 c4reful 0ut 73hre, ok?"
+
+msgid "Do you remember my \\TP?\\m My \\TP is awesome. It's so cool.\\m I'd even say my \\TP is in the top percentage of \\TPs."
+msgstr "D0 y0u r3member my \\TP?\\m My \\TP 1s aw35ome. 17's s0 co01.\\m I'd 3v3n 5ay my \\TP 1s in 73h 2p p3rc3n7463 of \\TP5."
+
+msgid "Do you want to battle? I'm going to win this time!\\mI'll be waiting for you around \\TM.\\mLook for me, OK? My \\TP will be expecting you."
+msgstr "D0 y0u w4nt 2 8a7t13?  1'm 6o1n6 2 win 7h1s t1me!\\m1'1l 83 w417ing f0r y0u ar0und \\TM.\\m1uk f0r m3, 0K?  My \\TP w11l b3 expectin6 y0u."
+
+msgid "Good day, \\PN! Hi. This is \\TN."
+msgstr "6ud d4y, \\PN!  Hi.  Th15 15 \\TN."
+
+msgid "Good morning!\\m This is \\PN, right? It's me, \\TN."
+msgstr "6ud m0rn1ng!\\m Thi5 15 \\PN, r16h7? I7'5 me, \\TN."
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Did I wake you?"
+msgstr "6ud m0rn1ng, \\PN.\\m7h1s 15 \\TN.  D1d 1 w4ke y0u?"
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Rise and shine!"
+msgstr "6ud m0rn1ng, \\PN.\\m7h1s 15 \\TN. R153 & 5h1ne!"
+
+msgid "Guess what happened the other day. I missed catching \\TE again.\\mMaybe I'm not very good at this."
+msgstr "6u355 wh4t happened 73h 073hr d4y.  I m155ed c4tch1ng \\TE 4641n.\\mM4y83 1'm not v3ry gud 47 7h15."
+
+msgid "Have you ever hatched a Pokemon Egg?\\mI raised my \\TP from an egg."
+msgstr "H4v3 you ev3r ha7ch'd 4 P0k3m0n 36g?\\mI r415ed my \\TP from 4n 366."
+
+msgid "Have you seen the \\TEs around \\TM?\\mThey scare me so much! I always run away!"
+msgstr "H4v3 you se3n 73h \\TE5 4r0und \\TM?\\mThey 5car3 m3 s0 much! 1 a1w4y5 run 4w4y!"
+
+msgid "Have you tried trading with your friends?\\mI got my \\TP in a trade, and it grows so fast!\\mTrades can be an awesome way to get strong Pokemon."
+msgstr "H4v3 you tr1ed trad1n6 w17h y0ur friend5?\\m1 6o7 my \\TP in 4 7r4de, & 17 6r0ws 50 fas7!\\mTr4d35 c4n 8e an 4we50me w4y 2 get 57r0n6 P0kemon."
+
+msgid "Hello, \\PN. This is \\TN. How are things?"
+msgstr "H3110, \\PN.  This i5 \\TN.  H0w 4r3 7h1n6s?"
+
+msgid "Hello. This is \\TN."
+msgstr "H3110.  7hi5 i5 \\TN."
+
+msgid "Hey, \\PN! Good evening!\\mThis is \\TN."
+msgstr "H3y, \\PN! 6ud 3vening!\\m7h15 15 \\TN."
+
+msgid "Hey, \\PN, wassup? It's \\TN."
+msgstr "H3y, \\PN, w4ssup? I7'5 \\TN."
+
+msgid "Hey, are you ready for another throw-down?\\mYou, me, battle. Place, \\TM.\\mTime, whenever you want! Let's do it!"
+msgstr "H3y, 4r3 you r3ady f0r 4n073hr 7hrow-down?\\mY0u, me, 8at713. P1ace, \\TM.\\m7im3, wh3n3ver you w4n7! 137'5 d0 1t!"
+
+msgid "Hey, listen! I almost caught \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "H3y, 1i57en!  1 4lm057 c4u6ht \\TE 73h other day.\\m0h, 17 wa5 5uuu0 cl053, 20!"
+
+msgid "How are you doing? \\PN, howdy! This is \\TN. Isn't it nice out?"
+msgstr "H0w 4re you do1n6? \\PN, h0wdy!  7h15 is \\TN.  15n't 1t n1ce 0u7?"
+
+msgid "How are your Pokemon doing?\\mI always keep my \\TP in top shape by going to Pokemon Centers."
+msgstr "H0w 4re your P0k3m0n d01n6?\\m1 4lw4ys k3ep my \\TP 1n 2p sh4p3 8y g0in6 2 P0kemon C3nt3rs."
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!"
+msgstr "H0w 4re your P0k3m0n d01n6?\\mMy \\TP'5 rea1ly 3n3r63tic.  I7'5 4 handfu1!"
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!\\mOh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "H0w 4re your P0k3m0n d01n6?\\mMy \\TP'5 rea1ly 3n3r63tic.  I7'5 4 handfu1!\\mOh yeah, 1 man4g'd 2 8347 4 2ugh \\TE.\\mI n3ed 2 m4ke my p4r7y s7rong3r."
+
+msgid "I dressed my \\TP and it looks even cuter than before."
+msgstr "1 dr35s'd my \\TP and 17 1uk5 3v3n cuter th4n 8ef0re."
+
+msgid "I painted a portrait of my beloved \\TP.\\mIt didn't like sitting still though."
+msgstr "1 p41nt'd a portra17 0f my 8e1ov'd \\TP.\\m1t d1dn'7 lik3 si771n6 5t1l1 7hou6h."
+
+msgid "I spent all day hunting for a shiny \\TE.\\mI didn't manage to find any, though."
+msgstr "1 5p3nt 4ll day hun71n6 f0r a sh1ny \\TE.\\m1 d1dn't man463 2 f1nd 4ny, 7h0u6h."
+
+msgid "I tried to use the Wonder Trade today.\\mAll I got was a Lv.3 Chyinmunk though.\\mWhy do people put up such lame Pokemon for trade?"
+msgstr "1 7r1'd 2 u5e 73h W0nd3r 7r4d3 2d4y.\\mA1l 1 g0t was 4 Lv.3 Chy1nmunk 7h0u6h.\\mWhy do p3op13 pu7 up such 14m3 Pokemon for tr4d3?"
+
+msgid "Let's have a battle! I want to see how much you've gown!\\mI'm still hanging around \\TM.\\mCome see if you can beat my \\TP!"
+msgstr "137'5 h4ve 4 b4t7l3! 1 w4n7 2 s33 how much you've 60wn!\\m1'm 57i1l h4ng1n6 ar0und \\TM.\\mC0m3 533 1f y0u can 8e47 my \\TP!"
+
+msgid "My \\TP and I love playing games.\\m Its favorite game is fetch."
+msgstr "My \\TP & 1 love pl4y1n6 64m35.\\m 1t5 favori73 g4m3 is f3tch."
+
+msgid "My \\TP is fantastic.\\mI'd say it's even in the top percentage of \\TPs."
+msgstr "My \\TP 1s fan7as7ic.\\m1'd 54y 17'5 3v3n in 73h 2p perc3nta63 0f \\TPs."
+
+msgid "My \\TP's looking really awesome. I wish I could show you."
+msgstr "My \\TP'5 1uking re4l1y 4w350m3.  1 wish I c0u1d 5how you."
+
+msgid "My \\TP's looking really awesome.\\mI wish I could show you.\\mHey, listen! I almost caught a \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "My \\TP'5 1uking re4l1y 4w350m3.\\m1 w15h I c0u1d sh0w y0u.\\mH3y, 115t3n!  1 41most c4ugh7 a \\TE 73h 073hr day.\\m0h, 17 wa5 suuooo c1053, 20!"
+
+msgid "Oh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "0h y34h, I man4g'd 2 8347 4 2ugh \\TE.\\mI n3ed 2 mak3 my par7y 57r0n6er."
+
+msgid "Ready for a rematch? \\TP and I have been training hard!\\mI'll be waiting for you around \\TM where we met.\\mCome find me and let's battle!"
+msgstr "R34dy f0r a rema7ch? \\TP & 1 have 83en 7r41ning hard!\\m1'l1 83 w4i7in6 for you 4r0und \\TM wh3r3 w3 m37.\\mCom3 find me & l37's b47713!"
+
+msgid "Remember the last time we battled? Let's rematch!\\mI promise it won't be a repeat of last time.\\mCome find me around \\TM!"
+msgstr "R3m3m8er t3h l4s7 71m3 w3 84t7l3d? Le7'5 rema7ch!\\m1 prom153 17 won'7 b3 4 rep347 of l457 71m3.\\mC0m3 f1nd m3 around \\TM!"
+
+msgid "Top of the morning, \\PN!\\m\\TN here, at your service."
+msgstr "70p 0f 73h morning, \\PN!\\m\\TN h3r3, a7 y0ur s3rv1ce."
+
+msgid "Want to battle? It's not going to be a repeat of the last time we met.\\mI'll be waiting for you around \\TM."
+msgstr "W4n7 2 84tt1e?  1t'5 n07 601n6 2 8e a r3p3a7 0f th3 la57 71m3 we m37.\\m1'1l b3 w4it1ng f0r y0u 4round \\TM."
+
+msgid "What did you eat for lunch today? I had a grilled \\TE.\\mI don't think I cooked it well enough.\\mOr did you not eat lunch at all?"
+msgstr "Wh47 did you e4t f0r 1unch 2d4y? 1 had 4 6r1l1'd \\TE.\\m1 don'7 7h1nk 1 cuk'd it w311 en0u6h.\\m0r d1d you n07 e47 lunch 47 all?"
+
+msgid "Yo, \\PN, my main homie! This is \\TN!"
+msgstr "Y0, \\PN, my ma1n homi3! 7h15 15 \\TN!"
+
+msgid "You have to hear this! I battled \\TE the other day.\\mIt was easy! I had a type advantage."
+msgstr "Y0u h4v3 2 hear 7h15!  1 847t1ed \\TE t3h o73hr d4y.\\mI7 was 345y!  1 h4d a 7ype 4dv4nt46e."
+
+msgid "\\PN, good day! It's me, \\TN. Got a minute?"
+msgstr "\\PN, 6ud d4y!  It's m3, \\TN.  607 a m1nute?"
+
+msgid "\\PN, good evening! Hi.\\mThis is \\TN."
+msgstr "\\PN, 6ud ev3ning!  Hi.\\m7h15 15 \\TN."
+

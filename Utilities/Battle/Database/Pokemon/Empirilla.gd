@@ -19,8 +19,8 @@ var sp_defense = 80
 var speed = 95
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Infuriate"
+var hidden_ability = "Weak Armor"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -60,7 +60,7 @@ var moveset = [
 	MoveSet.new(1, "Leer"),
 	MoveSet.new(1, "Low Kick"),
 	MoveSet.new(1, "Rage"),
-	MoveSet.new(9, "Furry Swipes"),
+	MoveSet.new(9, "Fury Swipes"),
 	MoveSet.new(13, "Karate Chop"),
 	MoveSet.new(21, "Screech"),
 	MoveSet.new(25, "Assurance"),

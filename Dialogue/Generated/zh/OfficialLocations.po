@@ -1,0 +1,161 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "01- Lakeside Path"
+msgstr "０１－ 湖边小路"
+
+msgid "02- Owten Nook"
+msgstr "０２－ 小猫鹰角落"
+
+msgid "03- Seabreeze Way"
+msgstr "０３－ 海风路"
+
+msgid "04- Baa Grassland"
+msgstr "０４－ 咩咩草原"
+
+msgid "05- Tancoon Way"
+msgstr "０５－ 狸浣熊路"
+
+msgid "06- Pahar Hills"
+msgstr "０６－ 火雏鹦山"
+
+msgid "07- Tandor Sheets"
+msgstr "０７－ 天舵地区"
+
+msgid "08- Vinoville Lake"
+msgstr "０８－ 雾若湖"
+
+msgid "09- FireValley"
+msgstr "０９－ 火焰溪谷"
+
+msgid "10- Baykal Forest"
+msgstr "１０－ 贝加尔森林"
+
+msgid "11- Nature Preserve"
+msgstr "１１－ 自然保护区"
+
+msgid "12- Maskara Channel"
+msgstr "１２－ 马斯卡拉海峡"
+
+msgid "13- Maskara Island"
+msgstr "１３－ 马斯卡拉岛"
+
+msgid "14- Maskara Sea"
+msgstr "１４－ 马斯卡拉海"
+
+msgid "15- Shallow Channel"
+msgstr "１５－ 浅滩海峡"
+
+msgid "Amatree Town"
+msgstr "仙林镇"
+
+msgid "Anthell"
+msgstr "暗漆隧道"
+
+msgid "Bealbeach City"
+msgstr "波碧湾市"
+
+msgid "Berry Traders"
+msgstr "树果贸易所"
+
+msgid "Bike Shop"
+msgstr "自行车店"
+
+msgid "Burole Town"
+msgstr "北麓镇"
+
+msgid "Championship Site"
+msgstr "宝可梦联盟"
+
+msgid "Church"
+msgstr "教堂"
+
+msgid "Comet Cave"
+msgstr "彗星洞窟"
+
+msgid "Dpt. Store, Casino"
+msgstr "大商城，赌场"
+
+msgid "Kevlar Town"
+msgstr "芳纶镇"
+
+msgid "Lanthanite Tunnel"
+msgstr "镧斩隧道"
+
+msgid "Larkspur's Lab"
+msgstr "飞燕草研究所"
+
+msgid "Legen Town"
+msgstr "传奇镇"
+
+msgid "Moki Town"
+msgstr "茂木镇"
+
+msgid "Name Rater"
+msgstr "姓名评价师"
+
+msgid "Nowtoch City"
+msgstr "终南市"
+
+msgid "Nuclear Plant Epsilon"
+msgstr "核能厂「ε」 （Ｅｐｓｉｌｏｎ）"
+
+msgid "Nuclear Plant Omicron"
+msgstr "核能厂「ο」 （Ｏｍｉｃｒｏｎ）"
+
+msgid "Nuclear Plant Zeta"
+msgstr "核能厂「ζ」 （Ｚｅｔａ）"
+
+msgid "Passage Cave"
+msgstr "连接洞穴"
+
+msgid "Pokemon School"
+msgstr "宝可梦学校"
+
+msgid "Professor Bambo Lab"
+msgstr "斑竹研究所"
+
+msgid "Professor Cypress Lab"
+msgstr "萨柏丝研究所"
+
+msgid "Rochfale Town"
+msgstr "枫语镇"
+
+msgid "Rochfale Tunnel"
+msgstr "枫语隧道"
+
+msgid "Route 16"
+msgstr "１６号道路"
+
+msgid "Silverport Town"
+msgstr "纹银港"
+
+msgid "Snowbank Town"
+msgstr "雪岸镇"
+
+msgid "The Labyrinth"
+msgstr "迷失幽洞"
+
+msgid "The Tipsy Tancoon, etc"
+msgstr "醉酒的狸浣熊，等等"
+
+msgid "Tinkerer's Workshop"
+msgstr "匠人工作室"
+
+msgid "Training Dojo"
+msgstr "柔道馆"
+
+msgid "Tsukinami Village"
+msgstr "月波村"
+
+msgid "Venesi City"
+msgstr "蔚南沙市"
+
+msgid "Victory Road"
+msgstr "冠军之路"
+
+msgid "Vinoville Town"
+msgstr "雾若镇"
+

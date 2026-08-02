@@ -1,0 +1,1414 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: pt\n"
+
+msgid "Repel"
+msgstr "Repelente"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 100 steps after its use."
+msgstr "Um Item que previne que pokémon selvagens fracos aparecem em 100 passos após o uso."
+
+msgid "Super Repel"
+msgstr "Super Repelente"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 200 steps after its use."
+msgstr "Um Item que previne que pokémon selvagens fracos aparecem em 200 passos após o uso."
+
+msgid "Max Repel"
+msgstr "Repelente Máximo"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 250 steps after its use."
+msgstr "Um Item que previne que pokémon selvagens fracos aparecem em 250 passos após o uso."
+
+msgid "Black Flute"
+msgstr "Flauta Negra"
+
+msgid "A black flute made from blown glass. Its melody makes wild Pokémon less likely to appear."
+msgstr "Uma flauta negra feita de vidro. Sua melodia faz com que pokémons não aparecem tão frequentemente."
+
+msgid "White Flute"
+msgstr "Flauta Branca"
+
+msgid "A white flute made from blown glass. Its melody makes wild Pokémon more likely to appear."
+msgstr "Uma flauta branca feita de vidro. Sua melodia faz com que pokémons não aparecem tão frequentemente."
+
+msgid "Honey"
+msgstr "Mel"
+
+msgid "A sweet honey with an aroma that attracts wild Pokémon when used in grass, caves or on special trees."
+msgstr "Um doce mel com uma aroma que atrai pokémons selvagens quando usada em gramas, cavernas ou em árvores especiais."
+
+msgid "Escape Rope"
+msgstr "Corda de Fuga"
+
+msgid "A long, durable rope. Use it to escape instantly from a cave or a dungeon."
+msgstr "Uma longa e duravel corda. Use-a para escapar instantaneamente de locais fechados."
+
+msgid "Red Shard"
+msgstr "Caco Vermelho"
+
+msgid "A small red shard. It appears to be from some sort of implement made long ago."
+msgstr "Um pequeno caco vermelho. Parece que é parte de algo feito a muito tempo."
+
+msgid "Blue Shard"
+msgstr "Caco Azul"
+
+msgid "A small blue shard. It appears to be from some sort of implement made long ago."
+msgstr "Um pequeno caco azul. Parece que é parte de algo feito a muito tempo."
+
+msgid "Yellow Shard"
+msgstr "Caco Amarelo"
+
+msgid "A small yellow shard. It appears to be from some sort of implement made long ago."
+msgstr "Um pequeno caco amarelo. Parece que é parte de algo feito a muito tempo."
+
+msgid "Green Shard"
+msgstr "Caco Verde"
+
+msgid "A small green shard. It appears to be from some sort of implement made long ago."
+msgstr "Um pequeno caco verde. Parece que é parte de algo feito a muito tempo."
+
+msgid "Fire Stone"
+msgstr "Pedra de Fogo"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is colored orange."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. Sua cor é laranja."
+
+msgid "Water Stone"
+msgstr "Pedra D'Agua"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is a clear, light blue."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. Sua cor é azul claro."
+
+msgid "Thunderstone"
+msgstr "Pedra do Trovão"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a thunderbolt pattern."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. Tem um desenho de um raio."
+
+msgid "Leaf Stone"
+msgstr "Pedra de Grama"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a leaf pattern."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. Tem um desenho de uma folha."
+
+msgid "Moon Stone"
+msgstr "Pedra Lunar"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as black as the night sky."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. É negra como o céu da noite"
+
+msgid "Sun Stone"
+msgstr "Pedra Solar"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as red as the sun."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. É vermelha como o sol"
+
+msgid "Shiny Stone"
+msgstr "Pedra Brilhante"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It shines with a dazzling light."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. Brilha com uma luz incrível."
+
+msgid "Dusk Stone"
+msgstr "Pedra do Crepúsculo"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as dark as dark can be."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. É mais escura que o próprio escuro."
+
+msgid "Dawn Stone"
+msgstr "Pedra do Amanhecer"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It sparkles like eyes."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. Ela brilha como olhos."
+
+msgid "Oval Stone"
+msgstr "Pedra Oval"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is shaped like an egg."
+msgstr "Uma peculiar pedra que faz com que certos pokémon evoluam. Tem o formato de um ovo"
+
+msgid "Helix Fossil"
+msgstr "Fossil Helix"
+
+msgid "Dome Fossil"
+msgstr "Fossil Dome"
+
+msgid "Old Amber"
+msgstr "Velho Ambar"
+
+msgid "Root Fossil"
+msgstr "Fossil Raiz"
+
+msgid "Claw Fossil"
+msgstr "Fossil Garra"
+
+msgid "Armor Fossil"
+msgstr "Fossil Armadura"
+
+msgid "Skull Fossil"
+msgstr "Fossil Crânio"
+
+msgid "TinyMushroom"
+msgstr "Cogumelo Pequeno"
+
+msgid "Big Mushroom"
+msgstr "Cogumelo Grande"
+
+msgid "Pearl"
+msgstr "Pérola"
+
+msgid "Big Pearl"
+msgstr "Grande Pérola"
+
+msgid "Stardust"
+msgstr "Pó de estrela"
+
+msgid "Star Piece"
+msgstr "Pedaço de estrela"
+
+msgid "Nugget"
+msgstr "Pepita de Ouro"
+
+msgid "Heart Scale"
+msgstr "Escama Coração"
+
+msgid "Rare Bone"
+msgstr "Osso Raro"
+
+msgid "Shoal Salt"
+msgstr "Sal de Praia"
+
+msgid "Shoal Shell"
+msgstr "Concha de Praia"
+
+msgid "Odd Keystone"
+msgstr "Pedra Estranha"
+
+msgid "Growth Mulch"
+msgstr "Fertilizante de Crescimento"
+
+msgid "Damp Mulch"
+msgstr "Fertilizante Molhado"
+
+msgid "Stable Mulch"
+msgstr "Fertilizante Estável"
+
+msgid "Gooey Mulch"
+msgstr "Fertilizante Gosmento"
+
+msgid "Red Apricorn"
+msgstr "Apricorn Vermelha"
+
+msgid "Ylw Apricorn"
+msgstr "Apricorn Amarela"
+
+msgid "Blu Apricorn"
+msgstr "Apricorn Azul"
+
+msgid "Grn Apricorn"
+msgstr "Apricorn Verde"
+
+msgid "Pnk Apricorn"
+msgstr "Apricorn Rosa"
+
+msgid "Wht Apricorn"
+msgstr "Apricorn Branca"
+
+msgid "Blk Apricorn"
+msgstr "Apricorn Preta"
+
+msgid "BrightPowder"
+msgstr "Pó Brilhante"
+
+msgid "White Herb"
+msgstr "Erva Branca"
+
+msgid "Quick Claw"
+msgstr "Garra Rapida"
+
+msgid "Soothe Bell"
+msgstr "Sino Calmante"
+
+msgid "Mental Herb"
+msgstr "Erva Mental"
+
+msgid "King's Rock"
+msgstr "Pedra do Rei"
+
+msgid "SilverPowder"
+msgstr "PóPrateado"
+
+msgid "Amulet Coin"
+msgstr "Amuleto Moeda"
+
+msgid "Cleanse Tag"
+msgstr "Selo Purificante"
+
+msgid "Smoke Ball"
+msgstr "Bola de Fumaça"
+
+msgid "Focus Band"
+msgstr "BandanaDeFoco"
+
+msgid "Lucky Egg"
+msgstr "Ovo da Sorte"
+
+msgid "Scope Lens"
+msgstr "LenteDeEscopo"
+
+msgid "Wide Lens"
+msgstr "LentesGrandes"
+
+msgid "Zoom Lens"
+msgstr "LentesDeZoom"
+
+msgid "Metal Coat"
+msgstr "RevestimentoMetalico"
+
+msgid "Leftovers"
+msgstr "Restos"
+
+msgid "Dragon Scale"
+msgstr "EscamaDeDragão"
+
+msgid "Shell Bell"
+msgstr "SinoDeConcha"
+
+msgid "Muscle Band"
+msgstr "Bandana Muscular"
+
+msgid "Wise Glasses"
+msgstr "Oculus do Sábio"
+
+msgid "Expert Belt"
+msgstr "Faixa Expert"
+
+msgid "Life Orb"
+msgstr "Orbe da Vida"
+
+msgid "Power Herb"
+msgstr "Erva Do Poder"
+
+msgid "Toxic Orb"
+msgstr "Orbe Toxica"
+
+msgid "Flame Orb"
+msgstr "Orbe Flamejante"
+
+msgid "Focus Sash"
+msgstr "Faixa Foco"
+
+msgid "Metronome"
+msgstr "Metronomo"
+
+msgid "Iron Ball"
+msgstr "Bola De Ferro"
+
+msgid "Lagging Tail"
+msgstr "Calda Atrasada"
+
+msgid "Destiny Knot"
+msgstr "Novelo Do Destino"
+
+msgid "Black Sludge"
+msgstr "Lodo Negro"
+
+msgid "Grip Claw"
+msgstr "Garra Gancho"
+
+msgid "Sticky Barb"
+msgstr "Farpa Pegajosa"
+
+msgid "Shed Shell"
+msgstr "Casca Vazia"
+
+msgid "Big Root"
+msgstr "Grande Raiz"
+
+msgid "Choice Band"
+msgstr "Bandana Da Escolha"
+
+msgid "Choice Specs"
+msgstr "Oculus Da Escolha"
+
+msgid "Choice Scarf"
+msgstr "Cachecol da Escolha"
+
+msgid "Light Clay"
+msgstr "Argila Clara"
+
+msgid "Icy Rock"
+msgstr "Rocha Glacial"
+
+msgid "Smooth Rock"
+msgstr "Rocha Suave"
+
+msgid "Heat Rock"
+msgstr "Rocha Quente"
+
+msgid "Damp Rock"
+msgstr "Rocha Úmida"
+
+msgid "Macho Brace"
+msgstr "Cinta Macho"
+
+msgid "Power Bracer"
+msgstr "Bracadeira do Poder"
+
+msgid "Power Belt"
+msgstr "Cinturão Do Poder"
+
+msgid "Power Lens"
+msgstr "Lentes Do Poder"
+
+msgid "Power Band"
+msgstr "Bandana Do Poder"
+
+msgid "Power Anklet"
+msgstr "Tornozeleira do Poder"
+
+msgid "Power Weight"
+msgstr "Peso Do Poder"
+
+msgid "Sea Incense"
+msgstr "Incenso Do Mar"
+
+msgid "Lax Incense"
+msgstr "Incenso Relaxante"
+
+msgid "Odd Incense"
+msgstr "Incenso Estranho"
+
+msgid "Rock Incense"
+msgstr "Incenso Rocha"
+
+msgid "Full Incense"
+msgstr "Incenso Completo"
+
+msgid "Wave Incense"
+msgstr "Incenso Onda"
+
+msgid "Rose Incense"
+msgstr "Incenso De Rosas"
+
+msgid "Luck Incense"
+msgstr "Incenso Da Sorte"
+
+msgid "Pure Incense"
+msgstr "Incenso Puro"
+
+msgid "Soft Sand"
+msgstr "Areia Fofa"
+
+msgid "Hard Stone"
+msgstr "Pedra Dura"
+
+msgid "Miracle Seed"
+msgstr "Semente Milagrosa"
+
+msgid "BlackGlasses"
+msgstr "Oculos Escuros"
+
+msgid "Black Belt"
+msgstr "Faixa Preta"
+
+msgid "Magnet"
+msgstr "Imã"
+
+msgid "Mystic Water"
+msgstr "Aguá Mistica"
+
+msgid "Sharp Beak"
+msgstr "Bico Afiado"
+
+msgid "Poison Barb"
+msgstr "Farpa Venenosa"
+
+msgid "NeverMeltIce"
+msgstr "NncaDrrtGelo"
+
+msgid "Spell Tag"
+msgstr "Selo De Feitiço"
+
+msgid "TwistedSpoon"
+msgstr "Colher Entortada"
+
+msgid "Charcoal"
+msgstr "Carvão"
+
+msgid "Dragon Fang"
+msgstr "Dente De Dragão"
+
+msgid "Silk Scarf"
+msgstr "Cachecol Sedoso"
+
+msgid "Flame Plate"
+msgstr "Placa Flamejante"
+
+msgid "Splash Plate"
+msgstr "Placa Aquatica"
+
+msgid "Zap Plate"
+msgstr "Placa Eletrica"
+
+msgid "Meadow Plate"
+msgstr "Placa Planice"
+
+msgid "Icicle Plate"
+msgstr "Placa Gélida"
+
+msgid "Fist Plate"
+msgstr "Placa Soco"
+
+msgid "Toxic Plate"
+msgstr "Placa Toxica"
+
+msgid "Earth Plate"
+msgstr "Placa Terrestre"
+
+msgid "Sky Plate"
+msgstr "Placa do Céu"
+
+msgid "Mind Plate"
+msgstr "Placa Mental"
+
+msgid "Insect Plate"
+msgstr "Placa inseto"
+
+msgid "Stone Plate"
+msgstr "Placa Rochedo"
+
+msgid "Spooky Plate"
+msgstr "Placa Assustadora"
+
+msgid "Draco Plate"
+msgstr "Placa Draconiana"
+
+msgid "Dread Plate"
+msgstr "Placa Apavorante"
+
+msgid "Iron Plate"
+msgstr "Placa Metálica"
+
+msgid "Light Ball"
+msgstr "Bola Luminosa"
+
+msgid "Lucky Punch"
+msgstr "Soco Sortudo"
+
+msgid "Metal Powder"
+msgstr "Pó Metalico"
+
+msgid "Quick Powder"
+msgstr "Pó Rapido"
+
+msgid "Thick Club"
+msgstr "Bastão Espesso"
+
+msgid "Stick"
+msgstr "Graveto"
+
+msgid "Soul Dew"
+msgstr "Orvalho da Alma"
+
+msgid "DeepSeaTooth"
+msgstr "DenteMarProfundo"
+
+msgid "DeepSeaScale"
+msgstr "EscamaMarProfundp"
+
+msgid "Adamant Orb"
+msgstr "Orbe De Diamante"
+
+msgid "Lustrous Orb"
+msgstr "Orbe Lustrosa"
+
+msgid "Griseous Orb"
+msgstr "Orb Griseous"
+
+msgid "Dubious Disc"
+msgstr "Disco Duvidoso"
+
+msgid "Protector"
+msgstr "Protetor"
+
+msgid "Electirizer"
+msgstr "Electrizador"
+
+msgid "Magmarizer"
+msgstr "Magmarizador"
+
+msgid "Reaper Cloth"
+msgstr "MantoDoCeifador"
+
+msgid "Razor Claw"
+msgstr "Garra Cortante"
+
+msgid "Razor Fang"
+msgstr "Presa Cortante"
+
+msgid "Red Scarf"
+msgstr "Cachecol Vermelho"
+
+msgid "Blue Scarf"
+msgstr "Cachecol Azul"
+
+msgid "Pink Scarf"
+msgstr "Cachecol Rosa"
+
+msgid "Green Scarf"
+msgstr "Cachecol Verde"
+
+msgid "Yellow Scarf"
+msgstr "Cachecol Amarelo"
+
+msgid "Potion"
+msgstr "Poção"
+
+msgid "Super Potion"
+msgstr "Super Poção"
+
+msgid "Hyper Potion"
+msgstr "Hyper Poção"
+
+msgid "Max Potion"
+msgstr "Poção Maxima"
+
+msgid "Full Restore"
+msgstr "Rest. Completo"
+
+msgid "Sacred Ash"
+msgstr "Cinza Sagrada"
+
+msgid "Antidote"
+msgstr "Antidoto"
+
+msgid "Burn Heal"
+msgstr "Cura Queimadura"
+
+msgid "Ice Heal"
+msgstr "Cura Congelamento"
+
+msgid "Awakening"
+msgstr "Acordador"
+
+msgid "Parlyz Heal"
+msgstr "Cura Paralizial"
+
+msgid "Full Heal"
+msgstr "Cura Completa"
+
+msgid "Lava Cookie"
+msgstr "Cookie De Lava"
+
+msgid "Old Gateau"
+msgstr "Velho Doce"
+
+msgid "Revive"
+msgstr "Reviver"
+
+msgid "Max Revive"
+msgstr "Reviver Maximo"
+
+msgid "Berry Juice"
+msgstr "Suco de fruta"
+
+msgid "Fresh Water"
+msgstr "Água Fresca"
+
+msgid "Soda Pop"
+msgstr "Refrigerante Pop"
+
+msgid "Lemonade"
+msgstr "Limonada"
+
+msgid "Moomoo Milk"
+msgstr "Leite Moomoo"
+
+msgid "EnergyPowder"
+msgstr "PóEnergético"
+
+msgid "Energy Root"
+msgstr "Raíz Energética"
+
+msgid "Heal Powder"
+msgstr "Pó Curador"
+
+msgid "Revival Herb"
+msgstr "Erva Revigorante"
+
+msgid "Max Ether"
+msgstr "Ether Maximo"
+
+msgid "Max Elixir"
+msgstr "Elixir Maximo"
+
+msgid "Protein"
+msgstr "Proteina"
+
+msgid "Iron"
+msgstr "Ferro"
+
+msgid "Carbos"
+msgstr "Carboidratos"
+
+msgid "Calcium"
+msgstr "Calciuo"
+
+msgid "Zinc"
+msgstr "Zinco"
+
+msgid "PP Max"
+msgstr "PP Maximo"
+
+msgid "Master Ball"
+msgstr "Master Bola"
+
+msgid "Ultra Ball"
+msgstr "Ultra Bola"
+
+msgid "Great Ball"
+msgstr "Bola Grande"
+
+msgid "Poké Ball"
+msgstr "Poké Bola"
+
+msgid "Safari Ball"
+msgstr "Bola do Safari"
+
+msgid "Net Ball"
+msgstr "Bola Rede"
+
+msgid "Dive Ball"
+msgstr "Bola Mergulho"
+
+msgid "Nest Ball"
+msgstr "Bola Ninho"
+
+msgid "Repeat Ball"
+msgstr "Bola Repetitiva"
+
+msgid "Timer Ball"
+msgstr "Bola Temporizada"
+
+msgid "Luxury Ball"
+msgstr "Bola Luxuosa"
+
+msgid "Premier Ball"
+msgstr "Bola Premiada"
+
+msgid "Dusk Ball"
+msgstr "Bola Sombria"
+
+msgid "Heal Ball"
+msgstr "Bola Regenerante"
+
+msgid "Quick Ball"
+msgstr "Bola rapida"
+
+msgid "Cherish Ball"
+msgstr "Bola Apreciada"
+
+msgid "Fast Ball"
+msgstr "Bola Rapida"
+
+msgid "Level Ball"
+msgstr "Bola de Nivel"
+
+msgid "Lure Ball"
+msgstr "Bola Atrativa"
+
+msgid "Heavy Ball"
+msgstr "Bola Pesada"
+
+msgid "Love Ball"
+msgstr "Bola Amor"
+
+msgid "Friend Ball"
+msgstr "Bola Amigavell"
+
+msgid "Moon Ball"
+msgstr "Bola Lunar"
+
+msgid "Sport Ball"
+msgstr "Bola Esportiva"
+
+msgid "Park Ball"
+msgstr "Bola do Parque"
+
+msgid "The target is taunted into a rage that allows it to use only attack moves for three turns."
+msgstr "The foe is taunted into a rage that allows it to use only attack moves for two to four turns."
+
+msgid "Cheri Berry"
+msgstr "Fruta Cheri"
+
+msgid "Chesto Berry"
+msgstr "Fruta Chesto"
+
+msgid "Pecha Berry"
+msgstr "Fruta Pecha"
+
+msgid "Rawst Berry"
+msgstr "Fruta Rawst"
+
+msgid "Aspear Berry"
+msgstr "Fruta Aspear"
+
+msgid "Leppa Berry"
+msgstr "Fruta Leppa"
+
+msgid "Oran Berry"
+msgstr "Fruta Oran"
+
+msgid "Persim Berry"
+msgstr "Fruta Persim"
+
+msgid "Lum Berry"
+msgstr "Fruta Figy"
+
+msgid "Sitrus Berry"
+msgstr "Fruta Sitrus"
+
+msgid "Wiki Berry"
+msgstr "Fruta Wiki"
+
+msgid "Mago Berry"
+msgstr "Fruta Mago"
+
+msgid "Aguav Berry"
+msgstr "Fruta Aguav"
+
+msgid "Iapapa Berry"
+msgstr "Fruta Lapapa"
+
+msgid "Razz Berry"
+msgstr "Fruta Razz"
+
+msgid "Bluk Berry"
+msgstr "Fruta Bluck"
+
+msgid "Nanab Berry"
+msgstr "Fruta Nanab"
+
+msgid "Wepear Berry"
+msgstr "Fruta Wepear"
+
+msgid "Pinap Berry"
+msgstr "Fruta Pinap"
+
+msgid "Pomeg Berry"
+msgstr "Fruta Pomeg"
+
+msgid "Kelpsy Berry"
+msgstr "Fruta Kelpsy"
+
+msgid "Qualot Berry"
+msgstr "Fruta Qualot"
+
+msgid "Hondew Berry"
+msgstr "Fruta Hondew"
+
+msgid "Grepa Berry"
+msgstr "Frita Grepa"
+
+msgid "Tamato Berry"
+msgstr "Fruta Tamato"
+
+msgid "Cornn Berry"
+msgstr "Fruta Cornn"
+
+msgid "Magost Berry"
+msgstr "Fruta Magost"
+
+msgid "Rabuta Berry"
+msgstr "Fruta Rabuta"
+
+msgid "Nomel Berry"
+msgstr "Fruta Nomel"
+
+msgid "Spelon Berry"
+msgstr "Fruta Spelon"
+
+msgid "Pamtre Berry"
+msgstr "Fruta Pamtre"
+
+msgid "Watmel Berry"
+msgstr "Fruta Watmel"
+
+msgid "Durin Berry"
+msgstr "Fruta Durin"
+
+msgid "Belue Berry"
+msgstr "Fruta Belue"
+
+msgid "Occa Berry"
+msgstr "Fruta Occa"
+
+msgid "Passho Berry"
+msgstr "Fruta Passho"
+
+msgid "Wacan Berry"
+msgstr "Fruta Wacan"
+
+msgid "Rindo Berry"
+msgstr "Fruta Rindo"
+
+msgid "Yache Berry"
+msgstr "Fruta Yache"
+
+msgid "Chople Berry"
+msgstr "Fruta Chople"
+
+msgid "Kebia Berry"
+msgstr "Fruta Kebia"
+
+msgid "Shuca Berry"
+msgstr "Fruta Shuca"
+
+msgid "Coba Berry"
+msgstr "Fruta Coba"
+
+msgid "Payapa Berry"
+msgstr "Fruta Payapa"
+
+msgid "Tanga Berry"
+msgstr "Fruta Tanga"
+
+msgid "Charti Berry"
+msgstr "Fruta Charti"
+
+msgid "Kasib Berry"
+msgstr "Fruta Kasib"
+
+msgid "Haban Berry"
+msgstr "Fruta Haban"
+
+msgid "Colbur Berry"
+msgstr "Fruta Colbur"
+
+msgid "Babiri Berry"
+msgstr "Fruta Baribi"
+
+msgid "Chilan Berry"
+msgstr "Fruta Chilan"
+
+msgid "Liechi Berry"
+msgstr "Fruta Liechi"
+
+msgid "Ganlon Berry"
+msgstr "Fruta Ganlon"
+
+msgid "Salac Berry"
+msgstr "Fruta Salac"
+
+msgid "Petaya Berry"
+msgstr "Fruta Petaya"
+
+msgid "Apicot Berry"
+msgstr "Fruta Apicot"
+
+msgid "Lansat Berry"
+msgstr "Fruta Lansat"
+
+msgid "Starf Berry"
+msgstr "Fruta Starf"
+
+msgid "Enigma Berry"
+msgstr "Fruta Enigma"
+
+msgid "Micle Berry"
+msgstr "Fruta Micle"
+
+msgid "Custap Berry"
+msgstr "Fruta Custap"
+
+msgid "Jaboca Berry"
+msgstr "Fruta Jaboca"
+
+msgid "Rowap Berry"
+msgstr "Fruta Rowap"
+
+msgid "Orange Mail"
+msgstr "Carta Laranja"
+
+msgid "Harbor Mail"
+msgstr "Carta Porto"
+
+msgid "Glitter Mail"
+msgstr "Carta Gliterizada"
+
+msgid "Mech Mail"
+msgstr "Carta Mech"
+
+msgid "Wood Mail"
+msgstr "Carta Madeira"
+
+msgid "Wave Mail"
+msgstr "Carta Onda"
+
+msgid "Bead Mail"
+msgstr "Carta Conta"
+
+msgid "Shadow Mail"
+msgstr "Carta Sombrial"
+
+msgid "Tropic Mail"
+msgstr "Carta Tropical"
+
+msgid "Dream Mail"
+msgstr "Carta Sonho"
+
+msgid "Fab Mail"
+msgstr "Carta Fab"
+
+msgid "Retro Mail"
+msgstr "Carta Retro"
+
+msgid "X Attack"
+msgstr "X Ataque"
+
+msgid "X Defend"
+msgstr "X Defesa"
+
+msgid "X Sp. Def"
+msgstr "X Defesa Sp."
+
+msgid "X Speed"
+msgstr "X Velocidade"
+
+msgid "X Accuracy"
+msgstr "X Precisão"
+
+msgid "Dire Hit"
+msgstr "Golpe Certeiro"
+
+msgid "Guard Spec."
+msgstr "Guarda Spec."
+
+msgid "Poké Doll"
+msgstr "Poké Boneco"
+
+msgid "Fluffy Tail"
+msgstr "Calda Fofa"
+
+msgid "Blue Flute"
+msgstr "Flauta Azul"
+
+msgid "Yellow Flute"
+msgstr "Flauta Amarela"
+
+msgid "Red Flute"
+msgstr "Flauta Vermelha"
+
+msgid "Bicycle"
+msgstr "Bicicleta"
+
+msgid "Old Rod"
+msgstr "Vara Velha"
+
+msgid "Good Rod"
+msgstr "Vara de pesca"
+
+msgid "Super Rod"
+msgstr "Super Vara"
+
+msgid "Town Map"
+msgstr "Mapa"
+
+msgid "Coin Case"
+msgstr "Bolsa de moedas"
+
+msgid "A case for holding Coins obtained at the Game Corner. It holds up to 99,999 Coins."
+msgstr "A case for holding Coins obtained at the Game Corner. It holds up to 50,000 Coins."
+
+msgid "Soot Sack"
+msgstr "Saco de Poeira"
+
+msgid "Explorer Kit"
+msgstr "Kit de Explorador"
+
+msgid "Loot Sack"
+msgstr "Saco de Loot"
+
+msgid "Rule Book"
+msgstr "Livro das Regras"
+
+msgid "Point Card"
+msgstr "Cartão Ponto"
+
+msgid "Journal"
+msgstr "Jornal"
+
+msgid "Seal Case"
+msgstr "Caixa Selada"
+
+msgid "Fashion Case"
+msgstr "Caixa Fashion"
+
+msgid "Seal Bag"
+msgstr "Bolsa Selada"
+
+msgid "Works Key"
+msgstr "Chave de Trabalho"
+
+msgid "Old Charm"
+msgstr "Amuleto Antigo"
+
+msgid "Galactic Key"
+msgstr "Chave Galactica"
+
+msgid "Red Chain"
+msgstr "Corrente Vermelha"
+
+msgid "Sprayduck"
+msgstr "PsyduckSpray"
+
+msgid "Poffin Case"
+msgstr "Caixa de Doces"
+
+msgid "Suite Key"
+msgstr "Chave da Suite"
+
+msgid "Oak's Letter"
+msgstr "Carta do Carvalho"
+
+msgid "Lunar Wing"
+msgstr "Asa Lunar"
+
+msgid "Member Card"
+msgstr "Cartão Membro"
+
+msgid "Azure Flute"
+msgstr "Flauta Azure"
+
+msgid "BBFerry Ticket"
+msgstr "Ticket BBFerry"
+
+msgid "Contest Pass"
+msgstr "Passe Concurso"
+
+msgid "Magma Stone"
+msgstr "Pedra de Magma"
+
+msgid "Parcel"
+msgstr "Parcela"
+
+msgid "Coupon 1"
+msgstr "Cupon 1"
+
+msgid "Coupon 2"
+msgstr "Cupon 2"
+
+msgid "Coupon 3"
+msgstr "Cupon 3"
+
+msgid "Storage Key"
+msgstr "Chave do Armazem"
+
+msgid "SecretPotion"
+msgstr "PoçãoSecreta"
+
+msgid "Secret Key"
+msgstr "Chave Secreta"
+
+msgid "Apricorn Box"
+msgstr "Caixa de Apricorn"
+
+msgid "Unown Report"
+msgstr "Reportador Unown"
+
+msgid "Berry Pots"
+msgstr "Pote de Frutas"
+
+msgid "Blue Card"
+msgstr "Cartão Azul"
+
+msgid "SlowpokeTail"
+msgstr "CaldaDeSlowpoke"
+
+msgid "Clear Bell"
+msgstr "Sino Limpo"
+
+msgid "Card Key"
+msgstr "Cartão Chave"
+
+msgid "Basement Key"
+msgstr "Chave do Porão"
+
+msgid "Squirtbottle"
+msgstr "RecipienteSquirtle"
+
+msgid "Red Scale"
+msgstr "Escama Vermelha"
+
+msgid "Lost Item"
+msgstr "Item Perdido"
+
+msgid "Pass"
+msgstr "Passe"
+
+msgid "Machine Part"
+msgstr "Parte da Maquina"
+
+msgid "Silver Wing"
+msgstr "Asa de Prata"
+
+msgid "Rainbow Wing"
+msgstr "Asa Arco-íris"
+
+msgid "Mystery Egg"
+msgstr "Ovo Misterioso"
+
+msgid "Photo Album"
+msgstr "Album de Fotos"
+
+msgid "GB Sounds"
+msgstr "Sons GB"
+
+msgid "Tidal Bell"
+msgstr "Sino das Marés"
+
+msgid "RageCandyBar"
+msgstr "Barra De Doce"
+
+msgid "Jade Orb"
+msgstr "Orbe Jade"
+
+msgid "Lock Capsule"
+msgstr "Capsula Trancada"
+
+msgid "Red Orb"
+msgstr "Orbe Vermelha"
+
+msgid "Blue Orb"
+msgstr "Orbe Azul"
+
+msgid "Enigma Stone"
+msgstr "Pedra Enigma"
+
+msgid "Silph Scope"
+msgstr "Lente Silfo"
+
+msgid "LAB KEY"
+msgstr "CHAVE DO LABORATORIO"
+
+msgid "Sticker Case"
+msgstr "Caixa de Adesivos"
+
+msgid "Atom Ball"
+msgstr "Bola Atom"
+
+msgid "T.U.R Ticket"
+msgstr "Ticket T.U.R"
+
+msgid "Coconut Milk"
+msgstr "Leite de Coco"
+
+msgid "Jungle's Crown"
+msgstr "Coroa Da Selva"
+
+msgid "Royal Jelly"
+msgstr "Geleia Real"
+
+msgid "Bug Spray"
+msgstr "Inseticida"
+
+msgid "Hair Fossil"
+msgstr "Fossil Cabelo"
+
+msgid "Tusk Fossil"
+msgstr "Fossil Presa"
+
+msgid "Moss Shard"
+msgstr "Caco Com Musgo"
+
+msgid "Ice Shard"
+msgstr "Caco De Gelo"
+
+msgid "Pretty Ribbon"
+msgstr "Fita Bonita"
+
+msgid "Mega Bracelet"
+msgstr "Mega Bracelete"
+
+msgid "Bike Wheel"
+msgstr "Roda Da Bicicleta"
+
+msgid "Carrot Wine"
+msgstr "Vinho de Cenoura"
+
+msgid "Secret Note"
+msgstr "Nota Secreta"
+
+msgid "Unidentified Fallen Object"
+msgstr "Objeto Caido Não Identificado"
+
+msgid "Boxing Gloves"
+msgstr "Luvas de Boxe"
+
+msgid "Fire Gem"
+msgstr "Gema Fogo"
+
+msgid "Water Gem"
+msgstr "Gema Água"
+
+msgid "Electric Gem"
+msgstr "Gema Eletrico"
+
+msgid "Grass Gem"
+msgstr "Gema Grama"
+
+msgid "Ice Gem"
+msgstr "Gema Gelo"
+
+msgid "Fighting Gem"
+msgstr "Gema Lutador"
+
+msgid "Poison Gem"
+msgstr "Gema Venenosa"
+
+msgid "Ground Gem"
+msgstr "Gema Solo"
+
+msgid "Flying Gem"
+msgstr "Gema Voador"
+
+msgid "Psychic Gem"
+msgstr "Gema Psiquica"
+
+msgid "Bug Gem"
+msgstr "Gema Inseto"
+
+msgid "Rock Gem"
+msgstr "Gema Pedra"
+
+msgid "Ghost Gem"
+msgstr "Gema Fantasma"
+
+msgid "Dragon Gem"
+msgstr "Gema Dragão"
+
+msgid "Dark Gem"
+msgstr "Gema Noturno"
+
+msgid "Steel Gem"
+msgstr "Gema Metalico"
+
+msgid "Normal Gem"
+msgstr "Gema Normal"
+
+msgid "Yoshitaka's Letter"
+msgstr "Carta do Yoshitaka"
+
+msgid "Rocky Helmet"
+msgstr "Capacete Com Pedras"
+
+msgid "Eject Button"
+msgstr "Botão de Ejeção"
+
+msgid "Red Card"
+msgstr "Cartão Vermelho"
+
+msgid "Float Stone"
+msgstr "Pedra Flutuante"
+
+msgid "Binding Band"
+msgstr "Bandana Da Obrigação"
+
+msgid "Absorb Bulb"
+msgstr "Bulbo Absorvedor"
+
+msgid "Cell Battery"
+msgstr "Celula de Bateria"
+
+msgid "Ring Target"
+msgstr "Anel Alvo"
+
+msgid "Air Balloon"
+msgstr "Balão de Ar"
+
+msgid "Assault Vest"
+msgstr "Vestido de Assalto"
+
+msgid "Fairy Gem"
+msgstr "Gema Fada"
+
+msgid "Prison Bottle"
+msgstr "Garrafa Da Prisão"
+
+msgid "Luminous Moss"
+msgstr "Musgo Luminoso"
+
+msgid "Weakness Policy"
+msgstr "Política De Fraqueza"
+
+msgid "Pixie Plate"
+msgstr "Placa Pixie"
+
+msgid "Snowball"
+msgstr "Bola De Neve"
+
+msgid "Safety Goggles"
+msgstr "Oculus de Proteção"
+
+msgid "Kellyn's Letter"
+msgstr "Carta Da Kellyn"
+
+msgid "Burnt Notebook"
+msgstr "Caderno Queimado"
+
+msgid "Rusty Key"
+msgstr "Chave Enferrujada"
+
+msgid "Power Glove"
+msgstr "Luva Do Poder"
+
+msgid "Nuclear Ball"
+msgstr "Bola Nuclear"
+
+msgid "Sachet"
+msgstr "Sache"
+
+msgid "Power Cell"
+msgstr "Celula do Poder"
+
+msgid "Maria's Key"
+msgstr "Chave Da Maria"
+
+msgid "Oval Charm"
+msgstr "Amuleto Oval"
+
+msgid "Shiny Charm"
+msgstr "Amuleto Brilhante"
+
+msgid "Aromatic Herb"
+msgstr "Erva Aromatica"
+
+msgid "Air Mail"
+msgstr "Carta Aerea"
+
+msgid "Uranium Core"
+msgstr "Nucleo De Uranium"
+
+msgid "Gold Fossil"
+msgstr "Fossil Dourado"
+
+msgid "Surfboard"
+msgstr "Prancha de Surf"
+
+msgid "Scuba Gear"
+msgstr "Aparelho De Mergulho"
+
+msgid "Climbing Pick"
+msgstr "Picareta De Escalada"
+
+msgid "Rich Mulch"
+msgstr "Fertilizante Rico"
+
+msgid "Sprinklotad"
+msgstr "RegadorLotad"
+
+msgid "Quadcopter"
+msgstr "Quadcoptero"

@@ -27,18 +27,18 @@ func _ready():
 				
 				if not permissions.has("android.permission.READ_EXTERNAL_STORAGE") or not permissions.has("android.permission.WRITE_EXTERNAL_STORAGE"):
 					OS.request_permissions()
-					yield(get_tree().create_timer(1), "timeout")
+					await get_tree().create_timer(1).timeout
 				else:
 					has_permissions = true
 
-			android_external_save_folder = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS, true).plus_file("UraniumSaves")
+			android_external_save_folder = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS, true).path_join("UraniumSaves")
 			
 		
 		SAVE_FOLDER = "user://"
 
 	save_state = State.new()
 
-func has_state(var key):
+func has_state(key):
 	return save_state.has_key(key)
 
 func get_state(key):
@@ -58,9 +58,8 @@ func save_game(save_id):
 	save_file(save_id)
 
 func load_file(id):
-	var save_file_path = SAVE_FOLDER.plus_file(SAVE_NAME_TEMPLATE % id)
-	var file : File = File.new()
-	if not file.file_exists(save_file_path):
+	var save_file_path = SAVE_FOLDER.path_join(SAVE_NAME_TEMPLATE % id)
+	if not FileAccess.file_exists(save_file_path):
 		print("Save file %s doesn't exist. Creating new save file." % save_file_path)
 		var new_save = SAVE_STATE.new()
 		return new_save
@@ -69,31 +68,27 @@ func load_file(id):
 	return save_game
 
 func save_file(id):	
-	var directory : Directory = Directory.new()
+	var directory : DirAccess = DirAccess.open("res://")
 	if not directory.dir_exists(SAVE_FOLDER):
 		directory.make_dir_recursive(SAVE_FOLDER)
 	
-	var save_path = SAVE_FOLDER.plus_file(SAVE_NAME_TEMPLATE % id)
-	var error = ResourceSaver.save(save_path, save_state)
+	var save_path = SAVE_FOLDER.path_join(SAVE_NAME_TEMPLATE % id)
+	var error = ResourceSaver.save(save_state, save_path)
 
 	if OS.get_name() == "Android":
 		# Make another save in external location
-		save_path = android_external_save_folder.plus_file(SAVE_NAME_TEMPLATE % id)
-		error = ResourceSaver.save(save_path, save_state)
+		save_path = android_external_save_folder.path_join(SAVE_NAME_TEMPLATE % id)
+		error = ResourceSaver.save(save_state, save_path)
 
 	if error != OK:
 		print('There was an issue writing the save %s to %s' % [id, save_path])
 
 func get_number_of_saves():
-	var directory : Directory = Directory.new()
+	var directory : DirAccess = DirAccess.open(SAVE_FOLDER)
 
-	var error = directory.open(SAVE_FOLDER)
-
-	if error != 0:
+	if directory == null:
 		print("Error opening save folder")
 		error_messages += "Error opening save folder\n"
-		print("Error code: %d" % error)
-		error_messages += "Error code: %d\n" % error
 		return 0
 
 	var num = 0

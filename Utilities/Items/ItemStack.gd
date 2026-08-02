@@ -18,8 +18,8 @@ func get_name() -> String: # Returns the name of the Item
 func get_description() -> String: # Returns the description of the Item
 	return item.description
 
-func get_item_icon() -> Texture: # Returns the Texture of the Item's icon
-	var texture = Texture.new()
+func get_item_icon() -> Texture2D: # Returns the Texture2D of the Item's icon
+	var texture = Texture2D.new()
 	texture = load("res://Graphics/Icons/item" + str(item.id) + ".png")
 	return texture
 

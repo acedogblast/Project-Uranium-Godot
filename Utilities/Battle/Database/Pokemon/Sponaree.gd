@@ -19,7 +19,7 @@ var sp_defense = 90
 var speed = 70
 
 # The pokemon's public and hidden abilities
-var ability
+var ability = "Water Absorb"
 var hidden_ability
 
 # The pokemon's Effort Value Yeild

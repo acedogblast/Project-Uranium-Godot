@@ -19,8 +19,9 @@ var sp_defense = 50
 var speed = 30
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Swift Swim"
+var ability_2 = "Rain Dish"
+var hidden_ability = "Own Tempo"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -64,7 +65,7 @@ var moveset = [
 	MoveSet.new(21, "Bubble Beam"),
 	MoveSet.new(24, "Nature Power"),
 	MoveSet.new(27, "Rain Dance"),
-	MoveSet.new(30, "Giga Grain"),
+	MoveSet.new(30, "Giga Drain"),
 	MoveSet.new(33, "Zen Headbutt"),
 	MoveSet.new(36, "Energy Ball")
 ]

@@ -1,0 +1,1535 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: tlh\n"
+
+msgid "ABBIE"
+msgstr "4B813"
+
+msgid "ABBY"
+msgstr "4B8Y"
+
+msgid "ADRIAN"
+msgstr "4DR14N"
+
+msgid "ADRIANA"
+msgstr "4DR14N4"
+
+msgid "AIDEN"
+msgstr "4ID3N"
+
+msgid "AL"
+msgstr "4L"
+
+msgid "ALANA"
+msgstr "4L4N4"
+
+msgid "ALEXAS"
+msgstr "4L3X45"
+
+msgid "ALFREDO"
+msgstr "4LFR3D0"
+
+msgid "ALISON"
+msgstr "4L150N"
+
+msgid "ALIVIA"
+msgstr "4L1V14"
+
+msgid "ALIZE"
+msgstr "4L1Z3"
+
+msgid "ALONDRA"
+msgstr "4L0NDR4"
+
+msgid "ALONZO"
+msgstr "4L0NZ0"
+
+msgid "AMANDA"
+msgstr "4M4ND4"
+
+msgid "AMARA"
+msgstr "4M4R4"
+
+msgid "AMELIA"
+msgstr "4M3114"
+
+msgid "ANDRE"
+msgstr "4NDR3"
+
+msgid "ANN"
+msgstr "4NN"
+
+msgid "ANNE"
+msgstr "4NN3"
+
+msgid "ANSLEY"
+msgstr "4N513Y"
+
+msgid "ANTON"
+msgstr "4N70N"
+
+msgid "ANTONIO"
+msgstr "4N70N10"
+
+msgid "ANYA"
+msgstr "4NY4"
+
+msgid "ARMANDO"
+msgstr "4RM4ND0"
+
+msgid "ARNIE"
+msgstr "4RN13"
+
+msgid "ARNOLD"
+msgstr "4RN01D"
+
+msgid "ARTHUR"
+msgstr "4R7HUR"
+
+msgid "AVA"
+msgstr "4V4"
+
+msgid "AVERY"
+msgstr "4V3RY"
+
+msgid "AYDEN"
+msgstr "4YD3N"
+
+msgid "Abe & Gayle"
+msgstr "4b3 & 64y1e"
+
+msgid "Adam"
+msgstr "4d4m"
+
+msgid "Adelina"
+msgstr "4d311n4"
+
+msgid "Ahmed"
+msgstr "4hm3d"
+
+msgid "Alana"
+msgstr "4l4n4"
+
+msgid "Albert"
+msgstr "4l83r7"
+
+msgid "Alice"
+msgstr "4l1c3"
+
+msgid "Alphonse"
+msgstr "4lph0n53"
+
+msgid "Amalya"
+msgstr "4m41y4"
+
+msgid "Amber"
+msgstr "4m83r"
+
+msgid "Ame"
+msgstr "4m3"
+
+msgid "Amy"
+msgstr "4my"
+
+msgid "Angelica"
+msgstr "4n6311c4"
+
+msgid "Ant"
+msgstr "4n7"
+
+msgid "Aoi"
+msgstr "4o1"
+
+msgid "Ayumi"
+msgstr "4yum1"
+
+msgid "Ayumu"
+msgstr "4yumu"
+
+msgid "Azalea"
+msgstr "4z4134"
+
+msgid "BAILEY"
+msgstr "8A113Y"
+
+msgid "BALEY"
+msgstr "8A13Y"
+
+msgid "BRADEN"
+msgstr "8R4D3N"
+
+msgid "BRADLEY"
+msgstr "8R4D13Y"
+
+msgid "BRADY"
+msgstr "8R4DY"
+
+msgid "BRAYDEN"
+msgstr "8R4YD3N"
+
+msgid "BREANNA"
+msgstr "8R34NN4"
+
+msgid "BRENNAN"
+msgstr "8R3NN4N"
+
+msgid "BRET"
+msgstr "8R37"
+
+msgid "BRIANA"
+msgstr "8R14N4"
+
+msgid "BRODY"
+msgstr "8R0DY"
+
+msgid "BROOKS"
+msgstr "8R00K5"
+
+msgid "BRYCE"
+msgstr "8RYC3"
+
+msgid "BRYON"
+msgstr "8RY0N"
+
+msgid "BRYSON"
+msgstr "8RY50N"
+
+msgid "Barry"
+msgstr "8arry"
+
+msgid "Ben"
+msgstr "8en"
+
+msgid "Benjamin"
+msgstr "8enj4m1n"
+
+msgid "Bernard"
+msgstr "8ern4rd"
+
+msgid "Bernhold"
+msgstr "8ernh01d"
+
+msgid "Bill"
+msgstr "8i11"
+
+msgid "Billy & Jenny"
+msgstr "8i11y & J3nny"
+
+msgid "Bob"
+msgstr "8o8"
+
+msgid "Bocelli"
+msgstr "8oc3111"
+
+msgid "Brandon"
+msgstr "8r&0n"
+
+msgid "Brent"
+msgstr "8r3n7"
+
+msgid "Brooke"
+msgstr "8ruk3"
+
+msgid "CADEN"
+msgstr "CAD3N"
+
+msgid "CAITLIN"
+msgstr "CA1711N"
+
+msgid "CARLIE"
+msgstr "CAR113"
+
+msgid "CARLO"
+msgstr "CAR10"
+
+msgid "CARLY"
+msgstr "CAR1Y"
+
+msgid "CARRIE"
+msgstr "CARR13"
+
+msgid "CHARLES"
+msgstr "CH4R135"
+
+msgid "CHAZ"
+msgstr "CH4Z"
+
+msgid "CHELSEA"
+msgstr "CH31534"
+
+msgid "CHEN"
+msgstr "CH3N"
+
+msgid "CHLOE"
+msgstr "CH103"
+
+msgid "CIERRA"
+msgstr "CI3RR4"
+
+msgid "CLARE"
+msgstr "CL4R3"
+
+msgid "CLAYTON"
+msgstr "CL4Y70N"
+
+msgid "CLINTON"
+msgstr "CL1N70N"
+
+msgid "CONNER"
+msgstr "CONN3R"
+
+msgid "COOPER"
+msgstr "CO0P3R"
+
+msgid "CORDELL"
+msgstr "CORD311"
+
+msgid "COREY"
+msgstr "COR3Y"
+
+msgid "CORSON"
+msgstr "COR50N"
+
+msgid "CRAIG"
+msgstr "CR416"
+
+msgid "CYBIL"
+msgstr "CY811"
+
+msgid "Caesar"
+msgstr "Ca354r"
+
+msgid "Caiman"
+msgstr "Ca1m4n"
+
+msgid "Cali"
+msgstr "Ca11"
+
+msgid "Cameron"
+msgstr "Cam3r0n"
+
+msgid "Caren"
+msgstr "Car3n"
+
+msgid "Carla"
+msgstr "Car14"
+
+msgid "Carlton"
+msgstr "Car12n"
+
+msgid "Caroline"
+msgstr "Car011n3"
+
+msgid "Caruso"
+msgstr "Caru50"
+
+msgid "Catarina"
+msgstr "Ca74r1n4"
+
+msgid "Cathy"
+msgstr "Ca7hy"
+
+msgid "Cecilia"
+msgstr "Cec1114"
+
+msgid "Cedric"
+msgstr "<3|)|2|<"
+
+msgid "Chan"
+msgstr "Ch4n"
+
+msgid "Charles"
+msgstr "Ch4r135"
+
+msgid "Chelsea"
+msgstr "Ch31534"
+
+msgid "Chris"
+msgstr "Chr15"
+
+msgid "Cielo"
+msgstr "Ci310"
+
+msgid "Claire"
+msgstr "Cl41r3"
+
+msgid "Clapton"
+msgstr "Cl4p2n"
+
+msgid "Claude"
+msgstr "Cl4ud3"
+
+msgid "Claudio"
+msgstr "Cl4ud10"
+
+msgid "Cloe"
+msgstr "Cl03"
+
+msgid "Conca"
+msgstr "Conc4"
+
+msgid "Corben"
+msgstr "Cor83n"
+
+msgid "Coulton"
+msgstr "Cou12n"
+
+msgid "Cureau"
+msgstr "Cur34u"
+
+msgid "Curie"
+msgstr "Cur13"
+
+msgid "Cylan"
+msgstr "Cy14n"
+
+msgid "DAKOTA"
+msgstr "DAK074"
+
+msgid "DALIA"
+msgstr "DA114"
+
+msgid "DAMIAN"
+msgstr "DAM14N"
+
+msgid "DANELA"
+msgstr "DAN314"
+
+msgid "DARIO"
+msgstr "DAR10"
+
+msgid "DARYL"
+msgstr "DARY1"
+
+msgid "DAVE"
+msgstr "DAV3"
+
+msgid "DAVIN"
+msgstr "DAV1N"
+
+msgid "DELANEY"
+msgstr "DE14N3Y"
+
+msgid "DELILAH"
+msgstr "DE1114H"
+
+msgid "DERRICK"
+msgstr "DERR1CK"
+
+msgid "DESTIN"
+msgstr "DE571N"
+
+msgid "DOMINIC"
+msgstr "DOM1N1C"
+
+msgid "DORINE"
+msgstr "DOR1N3"
+
+msgid "DOROTHY"
+msgstr "DOR07HY"
+
+msgid "DUSTIN"
+msgstr "DU571N"
+
+msgid "Daichi"
+msgstr "Da1ch1"
+
+msgid "Damian"
+msgstr "Dam14n"
+
+msgid "Davern"
+msgstr "Dav3rn"
+
+msgid "Derek"
+msgstr "Der3k"
+
+msgid "Diana"
+msgstr "Di4n4"
+
+msgid "Doug"
+msgstr "Dou6"
+
+msgid "Dovak"
+msgstr "Dov4k"
+
+msgid "Draugr"
+msgstr "Dr4u6r"
+
+msgid "Drew"
+msgstr "Dr3w"
+
+msgid "EARL"
+msgstr "3AR1"
+
+msgid "EDUARDO"
+msgstr "3DU4RD0"
+
+msgid "EILEEN"
+msgstr "3I133N"
+
+msgid "ELAINE"
+msgstr "3L41N3"
+
+msgid "ELENA"
+msgstr "3L3N4"
+
+msgid "ELISE"
+msgstr "3L153"
+
+msgid "ELIZA"
+msgstr "3L1Z4"
+
+msgid "ELLEN"
+msgstr "3L13N"
+
+msgid "EMANUEL"
+msgstr "3M4NU31"
+
+msgid "EMILEE"
+msgstr "3M1133"
+
+msgid "EMILIA"
+msgstr "3M1114"
+
+msgid "EMILY"
+msgstr "3M11Y"
+
+msgid "EMMA"
+msgstr "3MM4"
+
+msgid "ERICK"
+msgstr "3R1CK"
+
+msgid "ERIK"
+msgstr "3R1K"
+
+msgid "ESTHER"
+msgstr "3S7H3R"
+
+msgid "EVAN"
+msgstr "3V4N"
+
+msgid "Eddard"
+msgstr "3dd4rd"
+
+msgid "Ellen"
+msgstr "3l13n"
+
+msgid "Elsa"
+msgstr "3l54"
+
+msgid "Elwyn"
+msgstr "3lwyn"
+
+msgid "Emile"
+msgstr "3m113"
+
+msgid "Esther"
+msgstr "3s73hr"
+
+msgid "Ethan & Alice"
+msgstr "3th4n & 41ice"
+
+msgid "Eustace"
+msgstr "3u574c3"
+
+msgid "Evan"
+msgstr "3v4n"
+
+msgid "Everst"
+msgstr "3v3r57"
+
+msgid "FERRIS"
+msgstr "FERR15"
+
+msgid "FIONA"
+msgstr "FI0N4"
+
+msgid "Faeh"
+msgstr "Fa3h"
+
+msgid "Felice"
+msgstr "Fe11c3"
+
+msgid "Flood"
+msgstr "Flud"
+
+msgid "Flower"
+msgstr "Fl0w3r"
+
+msgid "GABRIEL"
+msgstr "6A8R131"
+
+msgid "GAGE"
+msgstr "6A63"
+
+msgid "GARETT"
+msgstr "6AR377"
+
+msgid "GARRETT"
+msgstr "6ARR377"
+
+msgid "GAVIN"
+msgstr "6AV1N"
+
+msgid "GIDEON"
+msgstr "6ID30N"
+
+msgid "GILLIAN"
+msgstr "6I1114N"
+
+msgid "GLENN"
+msgstr "6L3NN"
+
+msgid "GLORIA"
+msgstr "6L0R14"
+
+msgid "GORDON"
+msgstr "6ORD0N"
+
+msgid "GRAHAM"
+msgstr "6R4H4M"
+
+msgid "GRAYSON"
+msgstr "6R4Y50N"
+
+msgid "GREGORY"
+msgstr "6R360RY"
+
+msgid "GRETEL"
+msgstr "6R3731"
+
+msgid "GRIFFEN"
+msgstr "6R1FF3N"
+
+msgid "GUNNAR"
+msgstr "6UNN4R"
+
+msgid "GUSTAVO"
+msgstr "6U574V0"
+
+msgid "Garlikid"
+msgstr "6ar11k1d"
+
+msgid "Genin & Chuunin"
+msgstr "6en1n & Chuun1n"
+
+msgid "George"
+msgstr "6e0r63"
+
+msgid "Gerard"
+msgstr "6er4rd"
+
+msgid "Gertha"
+msgstr "6er7h4"
+
+msgid "Gordon"
+msgstr "6ord0n"
+
+msgid "Gregorison"
+msgstr "6r360r150n"
+
+msgid "Griffin"
+msgstr "6r1ff1n"
+
+msgid "HAL"
+msgstr "HA1"
+
+msgid "HAROLD"
+msgstr "HAR01D"
+
+msgid "HAYLEE"
+msgstr "HAY133"
+
+msgid "HAYLIE"
+msgstr "HAY113"
+
+msgid "HITOMI"
+msgstr "HI70M1"
+
+msgid "HOLDEN"
+msgstr "HO1D3N"
+
+msgid "HUGO"
+msgstr "HU60"
+
+msgid "HUNTER"
+msgstr "HUN73R"
+
+msgid "Hanks"
+msgstr "Hank5"
+
+msgid "Harold"
+msgstr "Har01d"
+
+msgid "Havost"
+msgstr "Hav057"
+
+msgid "Hayato"
+msgstr "Hay42"
+
+msgid "Hilda"
+msgstr "Hi1d4"
+
+msgid "Hinata"
+msgstr "Hin474"
+
+msgid "Hitomi"
+msgstr "Hi2m1"
+
+msgid "Hokage"
+msgstr "Hok463"
+
+msgid "Homer"
+msgstr "Hom3r"
+
+msgid "Horace"
+msgstr "Hor4c3"
+
+msgid "Horde"
+msgstr "Hord3"
+
+msgid "Horton"
+msgstr "Hor2n"
+
+msgid "Hotaru"
+msgstr "Ho74ru"
+
+msgid "Houaiss"
+msgstr "Hou4155"
+
+msgid "INGRID"
+msgstr "1N6R1D"
+
+msgid "ISIAH"
+msgstr "1S14H"
+
+msgid "ISSAC"
+msgstr "1S54C"
+
+msgid "Iago"
+msgstr "1a60"
+
+msgid "Ifrit"
+msgstr "1fr17"
+
+msgid "Immanuel"
+msgstr "1mm4nu31"
+
+msgid "Indiana"
+msgstr "1nd14n4"
+
+msgid "Isaac"
+msgstr "1s44c"
+
+msgid "Izumi"
+msgstr "1zum1"
+
+msgid "JADEN"
+msgstr "JAD3N"
+
+msgid "JALEN"
+msgstr "JA13N"
+
+msgid "JAMAL"
+msgstr "JAM41"
+
+msgid "JAMISON"
+msgstr "JAM150N"
+
+msgid "JAREN"
+msgstr "JAR3N"
+
+msgid "JARRETT"
+msgstr "JARR377"
+
+msgid "JASON"
+msgstr "JA50N"
+
+msgid "JASPER"
+msgstr "JA5P3R"
+
+msgid "JAXON"
+msgstr "JAX0N"
+
+msgid "JAYLIN"
+msgstr "JAY11N"
+
+msgid "JAZLYN"
+msgstr "JAZ1YN"
+
+msgid "JAZMIN"
+msgstr "JAZM1N"
+
+msgid "JENSON"
+msgstr "JEN50N"
+
+msgid "JEREMY"
+msgstr "JER3MY"
+
+msgid "JESSE"
+msgstr "JE553"
+
+msgid "JILL"
+msgstr "JI11"
+
+msgid "JILLIAN"
+msgstr "JI1114N"
+
+msgid "JOANA"
+msgstr "JO4N4"
+
+msgid "JOEL"
+msgstr "JO31"
+
+msgid "JOHAN"
+msgstr "JOH4N"
+
+msgid "JORDAN"
+msgstr "JORD4N"
+
+msgid "JOSIE"
+msgstr "JO513"
+
+msgid "JOVAN"
+msgstr "JOV4N"
+
+msgid "JOYCE"
+msgstr "JOYC3"
+
+msgid "JULIA"
+msgstr "JU114"
+
+msgid "JULIAN"
+msgstr "JU114N"
+
+msgid "JULIANA"
+msgstr "JU114N4"
+
+msgid "Jade"
+msgstr "Jad3"
+
+msgid "James"
+msgstr "Jam35"
+
+msgid "Jang"
+msgstr "Jan6"
+
+msgid "Jason"
+msgstr "Ja50n"
+
+msgid "Jessica"
+msgstr "Je551c4"
+
+msgid "Jessy"
+msgstr "Je55y"
+
+msgid "Joe"
+msgstr "Jo3"
+
+msgid "Jonathan"
+msgstr "Jon47h4n"
+
+msgid "Joss"
+msgstr "Jo55"
+
+msgid "Judo"
+msgstr "Jud0"
+
+msgid "Julianna"
+msgstr "Ju114nn4"
+
+msgid "Julius"
+msgstr "Ju11u5"
+
+msgid "Juno"
+msgstr "Jun0"
+
+msgid "KADEN"
+msgstr "KAD3N"
+
+msgid "KAILA"
+msgstr "KA114"
+
+msgid "KAITLYN"
+msgstr "KA171YN"
+
+msgid "KAMERON"
+msgstr "KAM3R0N"
+
+msgid "KARLEE"
+msgstr "KAR133"
+
+msgid "KATHRYN"
+msgstr "KA7HRYN"
+
+msgid "KATHY"
+msgstr "KA7HY"
+
+msgid "KAYDEN"
+msgstr "KAYD3N"
+
+msgid "KEITH"
+msgstr "KE17H"
+
+msgid "KELLY"
+msgstr "KE11Y"
+
+msgid "KELSEY"
+msgstr "KE153Y"
+
+msgid "KENDRA"
+msgstr "KENDR4"
+
+msgid "KENNETH"
+msgstr "KENN37H"
+
+msgid "KEON"
+msgstr "KE0N"
+
+msgid "KRISTEN"
+msgstr "KR1573N"
+
+msgid "Kaito"
+msgstr "Ka12"
+
+msgid "Keichi"
+msgstr "Ke1ch1"
+
+msgid "Kellyn"
+msgstr "Ke11yn"
+
+msgid "Kenichi"
+msgstr "Ken1ch1"
+
+msgid "Kili"
+msgstr "Ki11"
+
+msgid "Kouki"
+msgstr "Kouk1"
+
+msgid "LAMAR"
+msgstr "1AM4R"
+
+msgid "LAUREN"
+msgstr "1AUR3N"
+
+msgid "LAWSON"
+msgstr "1AW50N"
+
+msgid "LAYTON"
+msgstr "1AY70N"
+
+msgid "LEON"
+msgstr "1E0N"
+
+msgid "LESLIE"
+msgstr "1E5113"
+
+msgid "LEWIS"
+msgstr "1EW15"
+
+msgid "LEXIE"
+msgstr "1EX13"
+
+msgid "LIAM"
+msgstr "1I4M"
+
+msgid "LILIANA"
+msgstr "1I114N4"
+
+msgid "LIZBETH"
+msgstr "1IZ837H"
+
+msgid "LOGAN"
+msgstr "1O64N"
+
+msgid "LUCA"
+msgstr "1UC4"
+
+msgid "LUKAS"
+msgstr "1UK45"
+
+msgid "LYNN"
+msgstr "1YNN"
+
+msgid "Lara"
+msgstr "1ar4"
+
+msgid "Laramie"
+msgstr "1ar4m13"
+
+msgid "Larkspur"
+msgstr "1ark5pur"
+
+msgid "Larrie"
+msgstr "1arr13"
+
+msgid "Logan"
+msgstr "1o64n"
+
+msgid "Lorraine"
+msgstr "1orr41n3"
+
+msgid "Lou"
+msgstr "1ou"
+
+msgid "Luigi"
+msgstr "1u161"
+
+msgid "Luka"
+msgstr "1uk4"
+
+msgid "Luke"
+msgstr "1uk3"
+
+msgid "Lynette"
+msgstr "1yn3773"
+
+msgid "MADDOX"
+msgstr "MADD0X"
+
+msgid "MALIK"
+msgstr "MA11K"
+
+msgid "MALORY"
+msgstr "MA10RY"
+
+msgid "MANUEL"
+msgstr "MANU31"
+
+msgid "MARCO"
+msgstr "MARC0"
+
+msgid "MARISA"
+msgstr "MAR154"
+
+msgid "MARLON"
+msgstr "MAR10N"
+
+msgid "MARVIN"
+msgstr "MARV1N"
+
+msgid "MASON"
+msgstr "MA50N"
+
+msgid "MATEO"
+msgstr "MA730"
+
+msgid "MAXWELL"
+msgstr "MAXW311"
+
+msgid "MEGAN"
+msgstr "ME64N"
+
+msgid "MEGHAN"
+msgstr "ME6H4N"
+
+msgid "MELODY"
+msgstr "ME10DY"
+
+msgid "MILLER"
+msgstr "MI113R"
+
+msgid "MIRANDA"
+msgstr "MIR4ND4"
+
+msgid "MIRIAM"
+msgstr "MIR14M"
+
+msgid "MITCH"
+msgstr "MI7CH"
+
+msgid "MOLLY"
+msgstr "MO11Y"
+
+msgid "Magrat"
+msgstr "Ma6r47"
+
+msgid "Mantis"
+msgstr "Man715"
+
+msgid "Marcque"
+msgstr "Marcqu3"
+
+msgid "Marcus"
+msgstr "Marcu5"
+
+msgid "Maria"
+msgstr "Mar14"
+
+msgid "Marino"
+msgstr "Mar1n0"
+
+msgid "Mario"
+msgstr "Mar10"
+
+msgid "Marko"
+msgstr "Mark0"
+
+msgid "Marta"
+msgstr "Mar74"
+
+msgid "Martin"
+msgstr "Mar71n"
+
+msgid "Matt"
+msgstr "Ma77"
+
+msgid "Mawuli"
+msgstr "Mawu11"
+
+msgid "Melanie"
+msgstr "Me14n13"
+
+msgid "Merlin"
+msgstr "Mer11n"
+
+msgid "Michael"
+msgstr "Mich431"
+
+msgid "Miki"
+msgstr "Mik1"
+
+msgid "Mohammed"
+msgstr "Moh4mm3d"
+
+msgid "Monica"
+msgstr "Mon1c4"
+
+msgid "Myla"
+msgstr "My14"
+
+msgid "NADIA"
+msgstr "NAD14"
+
+msgid "NASH"
+msgstr "NA5H"
+
+msgid "NELSON"
+msgstr "NE150N"
+
+msgid "NESTOR"
+msgstr "NE570R"
+
+msgid "NICO"
+msgstr "NIC0"
+
+msgid "NIKOLAS"
+msgstr "NIK0145"
+
+msgid "NORTON"
+msgstr "NOR70N"
+
+msgid "Nelson"
+msgstr "Ne150n"
+
+msgid "Nia"
+msgstr "Ni4"
+
+msgid "Nora"
+msgstr "Nor4"
+
+msgid "Norman"
+msgstr "Norm4n"
+
+msgid "Nuñes"
+msgstr "Nuñ35"
+
+msgid "Nu�es"
+msgstr "Nu�35"
+
+msgid "OLIVER"
+msgstr "0L1V3R"
+
+msgid "OMAR"
+msgstr "0M4R"
+
+msgid "OSCAR"
+msgstr "0SC4R"
+
+msgid "Ogilvy"
+msgstr "0g11vy"
+
+msgid "Olly"
+msgstr "0l1y"
+
+msgid "Owen"
+msgstr "0w3n"
+
+msgid "PAIGE"
+msgstr "PA163"
+
+msgid "PAMELA"
+msgstr "PAM314"
+
+msgid "PATRICK"
+msgstr "PA7R1CK"
+
+msgid "PAYTON"
+msgstr "PAY70N"
+
+msgid "PEDRO"
+msgstr "PEDR0"
+
+msgid "PEGGY"
+msgstr "PE66Y"
+
+msgid "PETER"
+msgstr "PE73R"
+
+msgid "PEYTON"
+msgstr "PEY70N"
+
+msgid "PIERCE"
+msgstr "PI3RC3"
+
+msgid "PIPER"
+msgstr "PIP3R"
+
+msgid "Paul"
+msgstr "Pau1"
+
+msgid "Pavarotti"
+msgstr "Pav4r0771"
+
+msgid "Phoenix"
+msgstr "Ph03n1x"
+
+msgid "QUINN"
+msgstr "QU1NN"
+
+msgid "QUINTON"
+msgstr "QU1N70N"
+
+msgid "Quito"
+msgstr "Qu12"
+
+msgid "RAFAEL"
+msgstr "RAF431"
+
+msgid "RAMIRO"
+msgstr "RAM1R0"
+
+msgid "RAMON"
+msgstr "RAM0N"
+
+msgid "RAUL"
+msgstr "RAU1"
+
+msgid "RAYMOND"
+msgstr "RAYM0ND"
+
+msgid "RAYNA"
+msgstr "RAYN4"
+
+msgid "REECE"
+msgstr "RE3C3"
+
+msgid "REENA"
+msgstr "RE3N4"
+
+msgid "REESE"
+msgstr "RE353"
+
+msgid "REGINA"
+msgstr "RE61N4"
+
+msgid "RICARDO"
+msgstr "RIC4RD0"
+
+msgid "ROBBY"
+msgstr "RO88Y"
+
+msgid "ROBERTO"
+msgstr "RO83R70"
+
+msgid "RODETTE"
+msgstr "ROD3773"
+
+msgid "ROLANDO"
+msgstr "RO14ND0"
+
+msgid "RUBEN"
+msgstr "RU83N"
+
+msgid "RUSS"
+msgstr "RU55"
+
+msgid "RUTH"
+msgstr "RU7H"
+
+msgid "RYLEE"
+msgstr "RY133"
+
+msgid "Ravin"
+msgstr "Rav1n"
+
+msgid "Raymond"
+msgstr "Raym0nd"
+
+msgid "Richard"
+msgstr "Rich4rd"
+
+msgid "Richey"
+msgstr "Rich3y"
+
+msgid "Roach"
+msgstr "Ro4ch"
+
+msgid "Roger"
+msgstr "Ro63r"
+
+msgid "Roland"
+msgstr "Ro1&"
+
+msgid "Ronin & Juunin"
+msgstr "Ron1n & Juunin"
+
+msgid "Rosalind"
+msgstr "Ro5411nd"
+
+msgid "Rowin"
+msgstr "Row1n"
+
+msgid "Rylai"
+msgstr "Ry141"
+
+msgid "SALMA"
+msgstr "5A1M4"
+
+msgid "SAMIR"
+msgstr "5AM1R"
+
+msgid "SAMMY"
+msgstr "5AMMY"
+
+msgid "SELPHY"
+msgstr "5E1PHY"
+
+msgid "SHANIA"
+msgstr "5H4N14"
+
+msgid "SHEA"
+msgstr "5H34"
+
+msgid "SHIZUKA"
+msgstr "5H1ZUK4"
+
+msgid "SKYLER"
+msgstr "5KY13R"
+
+msgid "SOFIA"
+msgstr "5OF14"
+
+msgid "STACY"
+msgstr "5T4CY"
+
+msgid "STANLY"
+msgstr "5T4N1Y"
+
+msgid "STELLA"
+msgstr "5T3114"
+
+msgid "STUART"
+msgstr "5TU4R7"
+
+msgid "Sack"
+msgstr "5ack"
+
+msgid "Saijin"
+msgstr "5a1j1n"
+
+msgid "Samuel"
+msgstr "5amu31"
+
+msgid "Sasha"
+msgstr "5a5h4"
+
+msgid "Sean"
+msgstr "5e4n"
+
+msgid "Shauna"
+msgstr "5h4un4"
+
+msgid "Sheldon"
+msgstr "5h31d0n"
+
+msgid "Silva"
+msgstr "5i1v4"
+
+msgid "Slash"
+msgstr "5l45h"
+
+msgid "Slim"
+msgstr "5l1m"
+
+msgid "Sol"
+msgstr "5o1"
+
+msgid "Sophy"
+msgstr "5ophy"
+
+msgid "Sora"
+msgstr "5or4"
+
+msgid "Sr. Goldkorn"
+msgstr "5r. 601dk0rn"
+
+msgid "Stark"
+msgstr "5t4rk"
+
+msgid "Stu"
+msgstr "5tu"
+
+msgid "TESS"
+msgstr "7E55"
+
+msgid "THEO"
+msgstr "7H30"
+
+msgid "TINA"
+msgstr "7IN4"
+
+msgid "TOBY"
+msgstr "7O8Y"
+
+msgid "TODD"
+msgstr "7ODD"
+
+msgid "TRENTON"
+msgstr "7R3N70N"
+
+msgid "TREVIN"
+msgstr "7R3V1N"
+
+msgid "TREVON"
+msgstr "7R3V0N"
+
+msgid "TRISTAN"
+msgstr "7R1574N"
+
+msgid "TRISTON"
+msgstr "7R1570N"
+
+msgid "TYLER"
+msgstr "7Y13R"
+
+msgid "TYLOR"
+msgstr "7Y10R"
+
+msgid "Tarou"
+msgstr "7ar0u"
+
+msgid "Tath"
+msgstr "7a7h"
+
+msgid "Tetsuo"
+msgstr "7e75u0"
+
+msgid "Theo"
+msgstr "7h30"
+
+msgid "Tiko"
+msgstr "7ik0"
+
+msgid "Tim & Trese"
+msgstr "7im & 7r35e"
+
+msgid "Timothy"
+msgstr "7im07hy"
+
+msgid "Toby"
+msgstr "7o8y"
+
+msgid "Tod"
+msgstr "7od"
+
+msgid "Toru"
+msgstr "7oru"
+
+msgid "Tracey"
+msgstr "7r4c3y"
+
+msgid "Trofgar"
+msgstr "7r0f64r"
+
+msgid "Tuskar"
+msgstr "7u5k4r"
+
+msgid "VALERIA"
+msgstr "VA13R14"
+
+msgid "VINCE"
+msgstr "VINC3"
+
+msgid "Vaeryn"
+msgstr "Va3ryn"
+
+msgid "Vanessa"
+msgstr "Van3554"
+
+msgid "Vanskor"
+msgstr "Van5k0r"
+
+msgid "Veritum"
+msgstr "Ver17um"
+
+msgid "WESLEY"
+msgstr "WE513Y"
+
+msgid "WESTON"
+msgstr "WE570N"
+
+msgid "WILSON"
+msgstr "WI150N"
+
+msgid "Wally"
+msgstr "Wa11y"
+
+msgid "William"
+msgstr "Wi1114m"
+
+msgid "Wilma"
+msgstr "Wi1m4"
+
+msgid "Wyle"
+msgstr "Wy13"
+
+msgid "Wylie"
+msgstr "Wy113"
+
+msgid "XANDER"
+msgstr "XAND3R"
+
+msgid "XAVIER"
+msgstr "XAV13R"
+
+msgid "Xana"
+msgstr "Xan4"
+
+msgid "YAZMIN"
+msgstr "YAZM1N"
+
+msgid "YOSHI"
+msgstr "YO5H1"
+
+msgid "ZACHERY"
+msgstr "ZACH3RY"
+
+msgid "ZACKARY"
+msgstr "ZACK4RY"
+
+msgid "ZOE"
+msgstr "ZO3"
+
+msgid "ZOEY"
+msgstr "ZO3Y"
+
+msgid "Zai"
+msgstr "Za1"
+
+msgid "megatest"
+msgstr "me647357"
+

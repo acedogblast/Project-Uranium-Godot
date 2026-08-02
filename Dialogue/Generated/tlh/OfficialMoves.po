@@ -1,0 +1,1687 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: tlh\n"
+
+msgid "Megahorn"
+msgstr "Megah0rn"
+
+msgid "Attack Order"
+msgstr "Attack 0rd3r"
+
+msgid "Bug Buzz"
+msgstr "Bug 8uzz"
+
+msgid "X-Scissor"
+msgstr "X-Sc15s0r"
+
+msgid "Signal Beam"
+msgstr "Sign41 834m"
+
+msgid "Steamroller"
+msgstr "Steamro113r"
+
+msgid "Bug Bite"
+msgstr "Bug 81t3"
+
+msgid "Silver Wind"
+msgstr "Silv3r W1nd"
+
+msgid "Struggle Bug"
+msgstr "Stru66l3 8u6"
+
+msgid "Twineedle"
+msgstr "Twin33d13"
+
+msgid "Fury Cutter"
+msgstr "Fury Cu773r"
+
+msgid "Leech Life"
+msgstr "Leech L1f3"
+
+msgid "Pin Missile"
+msgstr "Pin M1s5113"
+
+msgid "Defend Order"
+msgstr "Defend 0rd3r"
+
+msgid "Heal Order"
+msgstr "Heal 0rd3r"
+
+msgid "Quiver Dance"
+msgstr "Quiv3r D4nc3"
+
+msgid "Rage Powder"
+msgstr "Rage Powd3r"
+
+msgid "Spider Web"
+msgstr "Spid3r W38"
+
+msgid "String Shot"
+msgstr "Strin6 5h07"
+
+msgid "Tail Glow"
+msgstr "Tail 6l0w"
+
+msgid "Foul Play"
+msgstr "Foul Pl4y"
+
+msgid "Night Daze"
+msgstr "Nigh7 D4z3"
+
+msgid "Dark Pulse"
+msgstr "Dark Pu153"
+
+msgid "Sucker Punch"
+msgstr "Sux0r Punch"
+
+msgid "Night Slash"
+msgstr "Nigh7 S145h"
+
+msgid "Feint Attack"
+msgstr "Fein7 A774ck"
+
+msgid "Snarl"
+msgstr "Snar1"
+
+msgid "Assurance"
+msgstr "Assur4nc3"
+
+msgid "Payback"
+msgstr "Payb4ck"
+
+msgid "Pursuit"
+msgstr "Pursu1t"
+
+msgid "Fling"
+msgstr "Flin6"
+
+msgid "Punishment"
+msgstr "Puni5hm3n7"
+
+msgid "Dark Void"
+msgstr "Dark Vo1d"
+
+msgid "Embargo"
+msgstr "Embar6o"
+
+msgid "Fake Tears"
+msgstr "Fake 7e4r5"
+
+msgid "Flatter"
+msgstr "Flat73r"
+
+msgid "Hone Claws"
+msgstr "Hone Cl4w5"
+
+msgid "Memento"
+msgstr "Memen2"
+
+msgid "Nasty Plot"
+msgstr "Nasty P107"
+
+msgid "Switcheroo"
+msgstr "Switcheru"
+
+msgid "Taunt"
+msgstr "Taun7"
+
+msgid "Torment"
+msgstr "Torm3nt"
+
+msgid "Roar of Time"
+msgstr "Roar 0f 71m3"
+
+msgid "Draco Meteor"
+msgstr "Drac0 M3730r"
+
+msgid "Outrage"
+msgstr "Outr46e"
+
+msgid "Dragon Rush"
+msgstr "Drag0n Ru5h"
+
+msgid "Spacial Rend"
+msgstr "Spac14l R3nd"
+
+msgid "Dragon Pulse"
+msgstr "Drag0n Pu153"
+
+msgid "Dragon Claw"
+msgstr "Drag0n C14w"
+
+msgid "Dragon Tail"
+msgstr "Drag0n 7411"
+
+msgid "Dragon Breath"
+msgstr "Drag0n 8r347h"
+
+msgid "Dual Chop"
+msgstr "Dual Ch0p"
+
+msgid "Twister"
+msgstr "Twis73r"
+
+msgid "Dragon Rage"
+msgstr "Drag0n R463"
+
+msgid "Dragon Dance"
+msgstr "Drag0n D4nc3"
+
+msgid "Bolt Strike"
+msgstr "Bolt 5tr1k3"
+
+msgid "Thunder"
+msgstr "Thund3r"
+
+msgid "Volt Tackle"
+msgstr "Volt 7ack13"
+
+msgid "Zap Cannon"
+msgstr "Zap C4nn0n"
+
+msgid "Fusion Bolt"
+msgstr "Fusi0n 8017"
+
+msgid "Thunderbolt"
+msgstr "Thund3r8017"
+
+msgid "Wild Charge"
+msgstr "Wild Ch4r63"
+
+msgid "Discharge"
+msgstr "Disch4r63"
+
+msgid "Thunder Punch"
+msgstr "Thund3r Punch"
+
+msgid "Volt Switch"
+msgstr "Volt 5w17ch"
+
+msgid "Thunder Fang"
+msgstr "Thund3r F4n6"
+
+msgid "Shock Wave"
+msgstr "Shock W4v3"
+
+msgid "Electroweb"
+msgstr "Elec7row38"
+
+msgid "Charge Beam"
+msgstr "Char63 834m"
+
+msgid "Thunder Shock"
+msgstr "Thund3r 5h0ck"
+
+msgid "Electro Ball"
+msgstr "Elec7ro 8411"
+
+msgid "Charge"
+msgstr "Char63"
+
+msgid "Magnet Rise"
+msgstr "Magn37 R153"
+
+msgid "Thunder Wave"
+msgstr "Thund3r W4v3"
+
+msgid "Focus Punch"
+msgstr "Focu5 Punch"
+
+msgid "High Jump Kick"
+msgstr "High Jump K1ck"
+
+msgid "Close Combat"
+msgstr "Clos3 C0m847"
+
+msgid "Focus Blast"
+msgstr "Focu5 B1457"
+
+msgid "Superpower"
+msgstr "Superpow3r"
+
+msgid "Cross Chop"
+msgstr "Cros5 Ch0p"
+
+msgid "Dynamic Punch"
+msgstr "Dynam1c Punch"
+
+msgid "Hammer Arm"
+msgstr "Hamm3r 4rm"
+
+msgid "Aura Sphere"
+msgstr "Aura 5ph3r3"
+
+msgid "Sacred Sword"
+msgstr "Sacr'd 5w0rd"
+
+msgid "Secret Sword"
+msgstr "Secr37 5w0rd"
+
+msgid "Sky Uppercut"
+msgstr "Sky Upp3rcu7"
+
+msgid "Submission"
+msgstr "Subm15s10n"
+
+msgid "Brick Break"
+msgstr "Brick Br34k"
+
+msgid "Vital Throw"
+msgstr "Vita1 Thr0w"
+
+msgid "Circle Throw"
+msgstr "Circ13 7hr0w"
+
+msgid "Force Palm"
+msgstr "Forc3 P41m"
+
+msgid "Low Sweep"
+msgstr "Low 5we3p"
+
+msgid "Revenge"
+msgstr "Reven6e"
+
+msgid "Rolling Kick"
+msgstr "Roll1ng K1ck"
+
+msgid "Wake-Up Slap"
+msgstr "Wake-Up 514p"
+
+msgid "Karate Chop"
+msgstr "Kara73 Ch0p"
+
+msgid "Rock Smash"
+msgstr "Rock 5m45h"
+
+msgid "Storm Throw"
+msgstr "S2rm 7hr0w"
+
+msgid "Vacuum Wave"
+msgstr "Vacuum W4v3"
+
+msgid "Double Kick"
+msgstr "Doub13 K1ck"
+
+msgid "Arm Thrust"
+msgstr "Arm 7hru57"
+
+msgid "Triple Kick"
+msgstr "Trip13 K1ck"
+
+msgid "Counter"
+msgstr "Coun73r"
+
+msgid "Final Gambit"
+msgstr "Fina1 G4m817"
+
+msgid "Low Kick"
+msgstr "Low K1ck"
+
+msgid "Reversal"
+msgstr "Rever5a1"
+
+msgid "Seismic Toss"
+msgstr "Seism1c 7055"
+
+msgid "Detect"
+msgstr "Detec7"
+
+msgid "Quick Guard"
+msgstr "Quick Gu4rd"
+
+msgid "V-create"
+msgstr "V-cr34t3"
+
+msgid "Blast Burn"
+msgstr "Blas7 Burn"
+
+msgid "Eruption"
+msgstr "Erup71on"
+
+msgid "Overheat"
+msgstr "Overh3a7"
+
+msgid "Blue Flare"
+msgstr "Blue Fl4r3"
+
+msgid "Fire Blast"
+msgstr "Fire 8l457"
+
+msgid "Flare Blitz"
+msgstr "Flar3 B117z"
+
+msgid "Magma Storm"
+msgstr "Magm4 S2rm"
+
+msgid "Fusion Flare"
+msgstr "Fusi0n F14r3"
+
+msgid "Heat Wave"
+msgstr "Heat Wav3"
+
+msgid "Sacred Fire"
+msgstr "Sacr'd F1r3"
+
+msgid "Searing Shot"
+msgstr "Sear1ng 5h07"
+
+msgid "Flamethrower"
+msgstr "Flam37hr0w3r"
+
+msgid "Blaze Kick"
+msgstr "Blaz3 K1ck"
+
+msgid "Fiery Dance"
+msgstr "Fiery D4nc3"
+
+msgid "Lava Plume"
+msgstr "Lava Plum3"
+
+msgid "Flame Burst"
+msgstr "Flam3 Bur57"
+
+msgid "Fire Fang"
+msgstr "Fire Fan6"
+
+msgid "Flame Wheel"
+msgstr "Flam3 Wh331"
+
+msgid "Fire Pledge"
+msgstr "Fire Pl3d63"
+
+msgid "Flame Charge"
+msgstr "Flam3 Ch4r63"
+
+msgid "Fire Spin"
+msgstr "Fire 5p1n"
+
+msgid "Incinerate"
+msgstr "Incin3r473"
+
+msgid "Heat Crash"
+msgstr "Heat Cr45h"
+
+msgid "Sunny Day"
+msgstr "Sunny D4y"
+
+msgid "Will-O-Wisp"
+msgstr "Will-0-W15p"
+
+msgid "Sky Attack"
+msgstr "Sky 47t4ck"
+
+msgid "Brave Bird"
+msgstr "Brav3 B1rd"
+
+msgid "Hurricane"
+msgstr "Hurr1can3"
+
+msgid "Aeroblast"
+msgstr "Aero81a57"
+
+msgid "Bounce"
+msgstr "Bounc3"
+
+msgid "Drill Peck"
+msgstr "Dril1 P3ck"
+
+msgid "Air Slash"
+msgstr "Air 51a5h"
+
+msgid "Aerial Ace"
+msgstr "Aeri41 4c3"
+
+msgid "Chatter"
+msgstr "Chat73r"
+
+msgid "Wing Attack"
+msgstr "Wing 4t74ck"
+
+msgid "Acrobatics"
+msgstr "Acro84t1c5"
+
+msgid "Air Cutter"
+msgstr "Air Cut73r"
+
+msgid "Defog"
+msgstr "Defo6"
+
+msgid "Feather Dance"
+msgstr "Feath3r D4nc3"
+
+msgid "Mirror Move"
+msgstr "Mirr0r M0v3"
+
+msgid "Roost"
+msgstr "Roos7"
+
+msgid "Tailwind"
+msgstr "Tailw1nd"
+
+msgid "Shadow Force"
+msgstr "Shad0w F0rc3"
+
+msgid "Shadow Ball"
+msgstr "Shad0w 8411"
+
+msgid "Shadow Claw"
+msgstr "Shad0w C14w"
+
+msgid "Ominous Wind"
+msgstr "Omin0us W1nd"
+
+msgid "Shadow Punch"
+msgstr "Shad0w Punch"
+
+msgid "Shadow Sneak"
+msgstr "Shad0w 5n34k"
+
+msgid "Astonish"
+msgstr "As2n15h"
+
+msgid "Night Shade"
+msgstr "Nigh7 Sh4d3"
+
+msgid "Confuse Ray"
+msgstr "Confu5e R4y"
+
+msgid "Curse"
+msgstr "Curs3"
+
+msgid "Destiny Bond"
+msgstr "Dest1ny 80nd"
+
+msgid "Grudge"
+msgstr "Grud63"
+
+msgid "Nightmare"
+msgstr "Nigh7mar3"
+
+msgid "Spite"
+msgstr "Spit3"
+
+msgid "Frenzy Plant"
+msgstr "Frenzy P14n7"
+
+msgid "Leaf Storm"
+msgstr "Leaf 52rm"
+
+msgid "Petal Dance"
+msgstr "Peta1 D4nc3"
+
+msgid "Power Whip"
+msgstr "Power Wh1p"
+
+msgid "Seed Flare"
+msgstr "Seed Fl4r3"
+
+msgid "Solar Beam"
+msgstr "Solar B34m"
+
+msgid "Wood Hammer"
+msgstr "Wood Hamm3r"
+
+msgid "Leaf Blade"
+msgstr "Leaf 8l4d3"
+
+msgid "Energy Ball"
+msgstr "Ener6y 8411"
+
+msgid "Seed Bomb"
+msgstr "Seed 8om8"
+
+msgid "Giga Drain"
+msgstr "Giga Dr41n"
+
+msgid "Horn Leech"
+msgstr "Horn 1e3ch"
+
+msgid "Leaf Tornado"
+msgstr "Leaf 7orn4d0"
+
+msgid "Magical Leaf"
+msgstr "Magic4l 134f"
+
+msgid "Needle Arm"
+msgstr "Need13 4rm"
+
+msgid "Razor Leaf"
+msgstr "Razor L34f"
+
+msgid "Grass Pledge"
+msgstr "Gras5 P13d63"
+
+msgid "Mega Drain"
+msgstr "Mega Dr41n"
+
+msgid "Vine Whip"
+msgstr "Vine Wh1p"
+
+msgid "Bullet Seed"
+msgstr "Bull37 533d"
+
+msgid "Absorb"
+msgstr "Absor8"
+
+msgid "Grass Knot"
+msgstr "Gras5 Kn07"
+
+msgid "Aromatherapy"
+msgstr "Arom473hr4py"
+
+msgid "Cotton Guard"
+msgstr "Cot2n Gu4rd"
+
+msgid "Cotton Spore"
+msgstr "Cot2n Sp0r3"
+
+msgid "Grass Whistle"
+msgstr "Gras5 Wh15713"
+
+msgid "Ingrain"
+msgstr "Ingr41n"
+
+msgid "Leech Seed"
+msgstr "Leech S33d"
+
+msgid "Sleep Powder"
+msgstr "Sleep P0wd3r"
+
+msgid "Spore"
+msgstr "Spor3"
+
+msgid "Stun Spore"
+msgstr "Stun 5p0r3"
+
+msgid "Synthesis"
+msgstr "Synth3s15"
+
+msgid "Worry Seed"
+msgstr "Worry S33d"
+
+msgid "Earthquake"
+msgstr "Earthqu4k3"
+
+msgid "Earth Power"
+msgstr "Earth P0w3r"
+
+msgid "Drill Run"
+msgstr "Dril1 Run"
+
+msgid "Bone Club"
+msgstr "Bone Clu8"
+
+msgid "Mud Bomb"
+msgstr "Mud 80m8"
+
+msgid "Bulldoze"
+msgstr "Bulld0z3"
+
+msgid "Mud Shot"
+msgstr "Mud 5ho7"
+
+msgid "Bonemerang"
+msgstr "Bonem3r4n6"
+
+msgid "Sand Tomb"
+msgstr "Sand 7om8"
+
+msgid "Bone Rush"
+msgstr "Bone Ru5h"
+
+msgid "Mud-Slap"
+msgstr "Mud-51ap"
+
+msgid "Magnitude"
+msgstr "Magn17ud3"
+
+msgid "Mud Sport"
+msgstr "Mud 5por7"
+
+msgid "Sand Attack"
+msgstr "Sand 4t74ck"
+
+msgid "Spikes"
+msgstr "Spik35"
+
+msgid "Freeze Shock"
+msgstr "Freez3 5h0ck"
+
+msgid "Ice Burn"
+msgstr "Ice 8urn"
+
+msgid "Blizzard"
+msgstr "Blizz4rd"
+
+msgid "Ice Beam"
+msgstr "Ice 83am"
+
+msgid "Icicle Crash"
+msgstr "Icic13 Cr45h"
+
+msgid "Aurora Beam"
+msgstr "Auror4 834m"
+
+msgid "Glaciate"
+msgstr "Glac14t3"
+
+msgid "Ice Fang"
+msgstr "Ice F4n6"
+
+msgid "Avalanche"
+msgstr "Aval4nch3"
+
+msgid "Icy Wind"
+msgstr "Icy W1nd"
+
+msgid "Frost Breath"
+msgstr "Fros7 Br347h"
+
+msgid "Ice Shard"
+msgstr "Ice 5hard"
+
+msgid "Powder Snow"
+msgstr "Powd3r 5n0w"
+
+msgid "Ice Ball"
+msgstr "Ice 84l1"
+
+msgid "Icicle Spear"
+msgstr "Icic13 5p34r"
+
+msgid "Sheer Cold"
+msgstr "Sheer C01d"
+
+msgid "Explosion"
+msgstr "Expl05i0n"
+
+msgid "Self-Destruct"
+msgstr "Self-De57ruc7"
+
+msgid "Giga Impact"
+msgstr "Giga 1mp4c7"
+
+msgid "Hyper Beam"
+msgstr "Hyper B34m"
+
+msgid "Last Resort"
+msgstr "Last Re50r7"
+
+msgid "Double-Edge"
+msgstr "Doub13-3d63"
+
+msgid "Head Charge"
+msgstr "Head Ch4r63"
+
+msgid "Thrash"
+msgstr "Thra5h"
+
+msgid "Egg Bomb"
+msgstr "Egg 80m8"
+
+msgid "Judgment"
+msgstr "Judgm3n7"
+
+msgid "Skull Bash"
+msgstr "Skul1 B45h"
+
+msgid "Hyper Voice"
+msgstr "Hyper V01c3"
+
+msgid "Rock Climb"
+msgstr "Rock Cl1m8"
+
+msgid "Uproar"
+msgstr "Upro4r"
+
+msgid "Body Slam"
+msgstr "Body 5l4m"
+
+msgid "Techno Blast"
+msgstr "Techn0 81457"
+
+msgid "Extreme Speed"
+msgstr "Extr3me 5p33d"
+
+msgid "Hyper Fang"
+msgstr "Hyper F4n6"
+
+msgid "Razor Wind"
+msgstr "Razor W1nd"
+
+msgid "Strength"
+msgstr "Stren6th"
+
+msgid "Tri Attack"
+msgstr "Tri 47t4ck"
+
+msgid "Crush Claw"
+msgstr "Crush C14w"
+
+msgid "Relic Song"
+msgstr "Relic S0n6"
+
+msgid "Chip Away"
+msgstr "Chip 4w4y"
+
+msgid "Facade"
+msgstr "Facad3"
+
+msgid "Headbutt"
+msgstr "Head8ut7"
+
+msgid "Retaliate"
+msgstr "Reta11a73"
+
+msgid "Secret Power"
+msgstr "Secr37 P0w3r"
+
+msgid "Horn Attack"
+msgstr "Horn 4t74ck"
+
+msgid "Stomp"
+msgstr "S2mp"
+
+msgid "Covet"
+msgstr "Cove7"
+
+msgid "Smelling Salts"
+msgstr "Smel11n6 54175"
+
+msgid "Swift"
+msgstr "Swif7"
+
+msgid "Vice Grip"
+msgstr "Vice 6r1p"
+
+msgid "Struggle"
+msgstr "Stru66l3"
+
+msgid "Tackle"
+msgstr "Tack13"
+
+msgid "Weather Ball"
+msgstr "Weath3r 8411"
+
+msgid "Echoed Voice"
+msgstr "Echo'd V01c3"
+
+msgid "Fake Out"
+msgstr "Fake 0u7"
+
+msgid "False Swipe"
+msgstr "Fals3 Sw1p3"
+
+msgid "Golden Fist"
+msgstr "Gold3n F157"
+
+msgid "Quick Attack"
+msgstr "Quick A774ck"
+
+msgid "Scratch"
+msgstr "Scra7ch"
+
+msgid "Snore"
+msgstr "Snor3"
+
+msgid "Double Hit"
+msgstr "Doub13 H17"
+
+msgid "Feint"
+msgstr "Fein7"
+
+msgid "Tail Slap"
+msgstr "Tail 5l4p"
+
+msgid "Rapid Spin"
+msgstr "Rapid Sp1n"
+
+msgid "Spike Cannon"
+msgstr "Spik3 C4nn0n"
+
+msgid "Comet Punch"
+msgstr "Come7 Punch"
+
+msgid "Fury Swipes"
+msgstr "Fury 5w1p35"
+
+msgid "Barrage"
+msgstr "Barr46e"
+
+msgid "Double Slap"
+msgstr "Doub13 514p"
+
+msgid "Fury Attack"
+msgstr "Fury 4t74ck"
+
+msgid "Constrict"
+msgstr "Cons7ric7"
+
+msgid "Crush Grip"
+msgstr "Crush Gr1p"
+
+msgid "Endeavor"
+msgstr "Ende4vor"
+
+msgid "Flail"
+msgstr "Flai1"
+
+msgid "Frustration"
+msgstr "Frus7ra710n"
+
+msgid "Guillotine"
+msgstr "Guil10t1n3"
+
+msgid "Hidden Power"
+msgstr "Hidd3n P0w3r"
+
+msgid "Horn Drill"
+msgstr "Horn Dr111"
+
+msgid "Natural Gift"
+msgstr "Natur4l 61f7"
+
+msgid "Present"
+msgstr "Pres3nt"
+
+msgid "Sonic Boom"
+msgstr "Sonic Bum"
+
+msgid "Super Fang"
+msgstr "Super F4n6"
+
+msgid "Trump Card"
+msgstr "Trump C4rd"
+
+msgid "Wring Out"
+msgstr "Wrin6 Ou7"
+
+msgid "Acupressure"
+msgstr "Acupr3s5ur3"
+
+msgid "After You"
+msgstr "After Y0u"
+
+msgid "Assist"
+msgstr "Assi57"
+
+msgid "Attract"
+msgstr "Attr4ct"
+
+msgid "Baton Pass"
+msgstr "Ba2n Pa55"
+
+msgid "Bestow"
+msgstr "Bes2w"
+
+msgid "Camouflage"
+msgstr "Camoufl463"
+
+msgid "Captivate"
+msgstr "Capt1va73"
+
+msgid "Conversion"
+msgstr "Conv3rs10n"
+
+msgid "Conversion 2"
+msgstr "Conv3rs10n 2"
+
+msgid "Copycat"
+msgstr "Copyc4t"
+
+msgid "Defense Curl"
+msgstr "Defen5e Cur1"
+
+msgid "Disable"
+msgstr "Disa81e"
+
+msgid "Double Team"
+msgstr "Doub13 734m"
+
+msgid "Encore"
+msgstr "Encor3"
+
+msgid "Endure"
+msgstr "Endur3"
+
+msgid "Entrainment"
+msgstr "Entr41nm3n7"
+
+msgid "Focus Energy"
+msgstr "Focu5 En3r6y"
+
+msgid "Follow Me"
+msgstr "Foll0w M3"
+
+msgid "Foresight"
+msgstr "Fore51gh7"
+
+msgid "Glare"
+msgstr "Glar3"
+
+msgid "Growl"
+msgstr "Grow1"
+
+msgid "Growth"
+msgstr "Grow7h"
+
+msgid "Harden"
+msgstr "Hard3n"
+
+msgid "Heal Bell"
+msgstr "Heal 8e11"
+
+msgid "Helping Hand"
+msgstr "Help1ng H&"
+
+msgid "Lock-On"
+msgstr "Lock-0n"
+
+msgid "Lovely Kiss"
+msgstr "Love1y K155"
+
+msgid "Lucky Chant"
+msgstr "Lucky Ch4n7"
+
+msgid "Me First"
+msgstr "Me F1rs7"
+
+msgid "Mean Look"
+msgstr "Mean 1o0k"
+
+msgid "Metronome"
+msgstr "Metr0nom3"
+
+msgid "Milk Drink"
+msgstr "Milk Dr1nk"
+
+msgid "Mind Reader"
+msgstr "Mind Re4d3r"
+
+msgid "Minimize"
+msgstr "Minim1z3"
+
+msgid "Moonlight"
+msgstr "Moon11gh7"
+
+msgid "Morning Sun"
+msgstr "Morn1ng 5un"
+
+msgid "Nature Power"
+msgstr "Natur3 P0w3r"
+
+msgid "Odor Sleuth"
+msgstr "Odor 5l3u7h"
+
+msgid "Pain Split"
+msgstr "Pain 5p117"
+
+msgid "Perish Song"
+msgstr "Peri5h 50n6"
+
+msgid "Protect"
+msgstr "Prot3ct"
+
+msgid "Recover"
+msgstr "Recov3r"
+
+msgid "Recycle"
+msgstr "Recyc1e"
+
+msgid "Reflect Type"
+msgstr "Refl3ct 7yp3"
+
+msgid "Refresh"
+msgstr "Refr35h"
+
+msgid "Safeguard"
+msgstr "Safe6uard"
+
+msgid "Scary Face"
+msgstr "Scary F4c3"
+
+msgid "Screech"
+msgstr "Scre3ch"
+
+msgid "Sharpen"
+msgstr "Sharp3n"
+
+msgid "Shell Smash"
+msgstr "Shel1 Sm45h"
+
+msgid "Simple Beam"
+msgstr "Simp13 834m"
+
+msgid "Sleep Talk"
+msgstr "Sleep T41k"
+
+msgid "Smoke Screen"
+msgstr "Smok3 Scr33n"
+
+msgid "Soft-Boiled"
+msgstr "Soft-8o113d"
+
+msgid "Splash"
+msgstr "Spla5h"
+
+msgid "Stockpile"
+msgstr "S2ckp1l3"
+
+msgid "Substitute"
+msgstr "Subs71tu73"
+
+msgid "Supersonic"
+msgstr "Super5on1c"
+
+msgid "Swagger"
+msgstr "Swag63r"
+
+msgid "Swallow"
+msgstr "Swal10w"
+
+msgid "Sweet Kiss"
+msgstr "Swee7 K155"
+
+msgid "Sweet Scent"
+msgstr "Swee7 Sc3n7"
+
+msgid "Swords Dance"
+msgstr "Sword5 D4nc3"
+
+msgid "Tail Whip"
+msgstr "Tail Wh1p"
+
+msgid "Teeter Dance"
+msgstr "Teet3r D4nc3"
+
+msgid "Tickle"
+msgstr "Tick13"
+
+msgid "Transform"
+msgstr "Tran5form"
+
+msgid "Whirlwind"
+msgstr "Whir1wind"
+
+msgid "Gunk Shot"
+msgstr "Gunk 5h07"
+
+msgid "Sludge Wave"
+msgstr "Slud63 W4v3"
+
+msgid "Sludge Bomb"
+msgstr "Slud63 80m8"
+
+msgid "Poison Jab"
+msgstr "Pois0n J48"
+
+msgid "Cross Poison"
+msgstr "Cros5 P0150n"
+
+msgid "Sludge"
+msgstr "Slud63"
+
+msgid "Venoshock"
+msgstr "Veno5hock"
+
+msgid "Clear Smog"
+msgstr "Clear Sm06"
+
+msgid "Poison Fang"
+msgstr "Pois0n F4n6"
+
+msgid "Poison Tail"
+msgstr "Pois0n 7411"
+
+msgid "Acid Spray"
+msgstr "Acid 5pr4y"
+
+msgid "Poison Sting"
+msgstr "Pois0n 571n6"
+
+msgid "Acid Armor"
+msgstr "Acid 4rm0r"
+
+msgid "Gastro Acid"
+msgstr "Gastr0 4c1d"
+
+msgid "Poison Gas"
+msgstr "Pois0n 645"
+
+msgid "Poison Powder"
+msgstr "Pois0n P0wd3r"
+
+msgid "Toxic Spikes"
+msgstr "Toxic Sp1k35"
+
+msgid "Psycho Boost"
+msgstr "Psych0 8u57"
+
+msgid "Dream Eater"
+msgstr "Dream E473r"
+
+msgid "Future Sight"
+msgstr "Futur3 516h7"
+
+msgid "Psystrike"
+msgstr "Psys7rik3"
+
+msgid "Psychic"
+msgstr "Psych1c"
+
+msgid "Extrasensory"
+msgstr "Extr45en50ry"
+
+msgid "Psyshock"
+msgstr "Psysh0ck"
+
+msgid "Zen Headbutt"
+msgstr "Zen H3ad8u77"
+
+msgid "Luster Purge"
+msgstr "Lust3r Pur63"
+
+msgid "Mist Ball"
+msgstr "Mist 8a11"
+
+msgid "Psycho Cut"
+msgstr "Psych0 Cu7"
+
+msgid "Synchronoise"
+msgstr "Synchron0153"
+
+msgid "Psybeam"
+msgstr "Psyb34m"
+
+msgid "Heart Stamp"
+msgstr "Hear7 S74mp"
+
+msgid "Confusion"
+msgstr "Confu5i0n"
+
+msgid "Mirror Coat"
+msgstr "Mirr0r C047"
+
+msgid "Psywave"
+msgstr "Psyw4ve"
+
+msgid "Stored Power"
+msgstr "S2red P0w3r"
+
+msgid "Agility"
+msgstr "Agil17y"
+
+msgid "Ally Switch"
+msgstr "Ally 5w17ch"
+
+msgid "Amnesia"
+msgstr "Amne51a"
+
+msgid "Barrier"
+msgstr "Barr13r"
+
+msgid "Cosmic Power"
+msgstr "Cosm1c P0w3r"
+
+msgid "Gravity"
+msgstr "Grav17y"
+
+msgid "Guard Split"
+msgstr "Guard Sp117"
+
+msgid "Guard Swap"
+msgstr "Guard Sw4p"
+
+msgid "Heal Block"
+msgstr "Heal 8l0ck"
+
+msgid "Heal Pulse"
+msgstr "Heal Pu153"
+
+msgid "Healing Wish"
+msgstr "Heal1ng W15h"
+
+msgid "Heart Swap"
+msgstr "Hear7 Sw4p"
+
+msgid "Hypnosis"
+msgstr "Hypn05i5"
+
+msgid "Imprison"
+msgstr "Impr15on"
+
+msgid "Kinesis"
+msgstr "Kine51s"
+
+msgid "Light Screen"
+msgstr "Ligh7 Scr33n"
+
+msgid "Lunar Dance"
+msgstr "Lunar D4nc3"
+
+msgid "Magic Coat"
+msgstr "Magic C047"
+
+msgid "Magic Room"
+msgstr "Magic Rum"
+
+msgid "Meditate"
+msgstr "Medi74t3"
+
+msgid "Miracle Eye"
+msgstr "Mirac1e 3y3"
+
+msgid "Power Split"
+msgstr "Power Sp117"
+
+msgid "Power Swap"
+msgstr "Power Sw4p"
+
+msgid "Power Trick"
+msgstr "Power Tr1ck"
+
+msgid "Psycho Shift"
+msgstr "Psych0 5h1f7"
+
+msgid "Reflect"
+msgstr "Refl3ct"
+
+msgid "Role Play"
+msgstr "Role Pl4y"
+
+msgid "Skill Swap"
+msgstr "Skil1 Sw4p"
+
+msgid "Telekinesis"
+msgstr "Telek1n3515"
+
+msgid "Teleport"
+msgstr "Telep0r7"
+
+msgid "Trick Room"
+msgstr "Trick Rum"
+
+msgid "Wonder Room"
+msgstr "Wond3r Rum"
+
+msgid "Head Smash"
+msgstr "Head 5m45h"
+
+msgid "Rock Wrecker"
+msgstr "Rock Wr3x0r"
+
+msgid "Stone Edge"
+msgstr "S2ne 3d63"
+
+msgid "Rock Slide"
+msgstr "Rock 5l1d3"
+
+msgid "Power Gem"
+msgstr "Power G3m"
+
+msgid "Ancient Power"
+msgstr "Anci3nt P0w3r"
+
+msgid "Rock Throw"
+msgstr "Rock 7hr0w"
+
+msgid "Rock Tomb"
+msgstr "Rock 7om8"
+
+msgid "Smack Down"
+msgstr "Smack D0wn"
+
+msgid "Rollout"
+msgstr "Roll0ut"
+
+msgid "Rock Blast"
+msgstr "Rock 8l457"
+
+msgid "Rock Polish"
+msgstr "Rock Po115h"
+
+msgid "Sandstorm"
+msgstr "Sand52rm"
+
+msgid "Stealth Rock"
+msgstr "Stea17h R0ck"
+
+msgid "Wide Guard"
+msgstr "Wide 6u4rd"
+
+msgid "Doom Desire"
+msgstr "Doom De51r3"
+
+msgid "Iron Tail"
+msgstr "Iron 7a11"
+
+msgid "Meteor Mash"
+msgstr "Mete0r M45h"
+
+msgid "Flash Cannon"
+msgstr "Flash C4nn0n"
+
+msgid "Iron Head"
+msgstr "Iron He4d"
+
+msgid "Steel Wing"
+msgstr "Stee1 W1n6"
+
+msgid "Mirror Shot"
+msgstr "Mirr0r 5h07"
+
+msgid "Magnet Bomb"
+msgstr "Magn37 80m8"
+
+msgid "Gear Grind"
+msgstr "Gear 6r1nd"
+
+msgid "Metal Claw"
+msgstr "Meta1 C14w"
+
+msgid "Bullet Punch"
+msgstr "Bull37 Punch"
+
+msgid "Gyro Ball"
+msgstr "Gyro 8a11"
+
+msgid "Heavy Slam"
+msgstr "Heavy S14m"
+
+msgid "Metal Burst"
+msgstr "Meta1 Bur57"
+
+msgid "Autotomize"
+msgstr "Au22m1z3"
+
+msgid "Iron Defense"
+msgstr "Iron Def3n53"
+
+msgid "Metal Sound"
+msgstr "Meta1 S0und"
+
+msgid "Shift Gear"
+msgstr "Shif7 G34r"
+
+msgid "Hydro Cannon"
+msgstr "Hydr0 C4nn0n"
+
+msgid "Water Spout"
+msgstr "Water Sp0u7"
+
+msgid "Hydro Pump"
+msgstr "Hydr0 Pump"
+
+msgid "Muddy Water"
+msgstr "Muddy W473r"
+
+msgid "Aqua Tail"
+msgstr "Aqua 7a11"
+
+msgid "Crabhammer"
+msgstr "Crabh4mm3r"
+
+msgid "Waterfall"
+msgstr "Waterfa11"
+
+msgid "Razor Shell"
+msgstr "Razor Sh311"
+
+msgid "Brine"
+msgstr "Brin3"
+
+msgid "Bubble Beam"
+msgstr "Bubb13 834m"
+
+msgid "Octazooka"
+msgstr "Octazuk4"
+
+msgid "Water Pulse"
+msgstr "Water Pu153"
+
+msgid "Water Pledge"
+msgstr "Water P13d63"
+
+msgid "Aqua Jet"
+msgstr "Aqua Je7"
+
+msgid "Whirlpool"
+msgstr "Whir1po01"
+
+msgid "Bubble"
+msgstr "Bubb13"
+
+msgid "Aqua Ring"
+msgstr "Aqua Rin6"
+
+msgid "Rain Dance"
+msgstr "Rain Danc3"
+
+msgid "Water Sport"
+msgstr "Water Sp0r7"
+
+msgid "Coral Break"
+msgstr "Cora1 Br34k"
+
+msgid "Atomic Punch"
+msgstr "A2mic Punch"
+
+msgid "Metal Whip"
+msgstr "Meta1 Wh1p"
+
+msgid "Shuffle"
+msgstr "Shuff1e"
+
+msgid "Nuclear Waste"
+msgstr "Nucl34r W4573"
+
+msgid "Gamma Ray"
+msgstr "Gamm4 R4y"
+
+msgid "Radioacid"
+msgstr "Radi04c1d"
+
+msgid "Sky Fall"
+msgstr "Sky F4l1"
+
+msgid "Flame Impact"
+msgstr "Flam3 Imp4c7"
+
+msgid "Draining Kiss"
+msgstr "Drain1n6 K155"
+
+msgid "Eerie Impulse"
+msgstr "Eeri3 Impu153"
+
+msgid "Electric Terrain"
+msgstr "Elec7ric 73rr4in"
+
+msgid "Electrify"
+msgstr "Elec7rify"
+
+msgid "Fairy Lock"
+msgstr "Fairy L0ck"
+
+msgid "Fairy Wind"
+msgstr "Fairy W1nd"
+
+msgid "Fell Stinger"
+msgstr "Fell 5t1n63r"
+
+msgid "Flower Shield"
+msgstr "Flow3r 5h131d"
+
+msgid "Flying Press"
+msgstr "Flyin6 Pr355"
+
+msgid "Forest's Curse"
+msgstr "Fore57'5 Cur53"
+
+msgid "Freeze-Dry"
+msgstr "Freez3-Dry"
+
+msgid "Geomancy"
+msgstr "Geom4ncy"
+
+msgid "Grassy Terrain"
+msgstr "Gras5y 73rr41n"
+
+msgid "Infestation"
+msgstr "Infe57a710n"
+
+msgid "Ion Deluge"
+msgstr "Ion D3lu63"
+
+msgid "King's Shield"
+msgstr "King'5 5h131d"
+
+msgid "Land's Wrath"
+msgstr "Land'5 Wr47h"
+
+msgid "Magnetic Flux"
+msgstr "Magn37ic F1ux"
+
+msgid "Mat Block"
+msgstr "Mat 81ock"
+
+msgid "Misty Terrain"
+msgstr "Misty T3rr41n"
+
+msgid "Moonblast"
+msgstr "Moon81a57"
+
+msgid "Mystical Fire"
+msgstr "Myst1ca1 F1r3"
+
+msgid "Noble Roar"
+msgstr "Nobl3 R04r"
+
+msgid "Nuzzle"
+msgstr "Nuzz13"
+
+msgid "Oblivion Wing"
+msgstr "Obliv1on W1n6"
+
+msgid "Parabolic Charge"
+msgstr "Para80l1c Ch4rge"
+
+msgid "Parting Shot"
+msgstr "Part1ng 5h07"
+
+msgid "Petal Blizzard"
+msgstr "Peta1 B11zz4rd"
+
+msgid "Phantom Force"
+msgstr "Phan2m F0rc3"
+
+msgid "Play Nice"
+msgstr "Play Nic3"
+
+msgid "Play Rough"
+msgstr "Play Rou6h"
+
+msgid "Powder"
+msgstr "Powd3r"
+
+msgid "Rototiller"
+msgstr "Ro2t11l3r"
+
+msgid "Spiky Shield"
+msgstr "Spiky Sh131d"
+
+msgid "Sticky Web"
+msgstr "Sticky W38"
+
+msgid "Trick-or-Treat"
+msgstr "Trick-or-7r347"
+
+msgid "Venom Drench"
+msgstr "Venom Dr3nch"
+
+msgid "Water Shuriken"
+msgstr "Water Shur1k3n"
+
+msgid "Aromatic Mist"
+msgstr "Arom47ic M157"
+
+msgid "Baby-Doll Eyes"
+msgstr "Baby-Do11 3y35"
+
+msgid "Boomburst"
+msgstr "Boom8ur57"
+
+msgid "Confide"
+msgstr "Conf1de"
+
+msgid "Crafty Shield"
+msgstr "Craf7y 5h131d"
+
+msgid "Dazzling Gleam"
+msgstr "Dazz11n6 6134m"
+
+msgid "Disarming Voice"
+msgstr "Disarmin6 V01ce"
+
+msgid "Subduction"
+msgstr "Subduct10n"
+
+msgid "Instant Crush"
+msgstr "Inst4nt Cru5h"
+
+msgid "Get Lucky"
+msgstr "Get 1ucky"
+
+msgid "Laser Pulse"
+msgstr "Laser Pu153"
+
+msgid "Gemstone Glimmer"
+msgstr "Gems2ne 611mm3r"
+
+msgid "Half-life"
+msgstr "Half-1if3"
+
+msgid "Ocean's Wrath"
+msgstr "Ocean's Wr47h"
+
+msgid "Fission Burst"
+msgstr "Fiss10n 8ur57"
+
+msgid "Caustic Breath"
+msgstr "Caus71c 8r347h"
+
+msgid "Nuclear Slash"
+msgstr "Nucl34r 5145h"
+
+msgid "Thunderstorm"
+msgstr "Thund3r52rm"
+
+msgid "Sudden Strike"
+msgstr "Sudd3n 57r1k3"
+
+msgid "Expunge"
+msgstr "Expun6e"
+
+msgid "Fallout"
+msgstr "Fall0ut"
+
+msgid "Proton Beam"
+msgstr "Pro2n B34m"
+
+msgid "Infernal Blade"
+msgstr "Inferna1 814d3"
+
+msgid "Quantum Leap"
+msgstr "Quan7um 134p"
+
+msgid "Metal Cruncher"
+msgstr "Meta1 Crunch3r"
+
+msgid "Drain Life"
+msgstr "Drain L1f3"
+
+msgid "Sticky Terrain"
+msgstr "Sticky 73rr41n"
+
+msgid "Nuclear Wind"
+msgstr "Nucl34r W1nd"

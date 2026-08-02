@@ -1,0 +1,13 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "PASSAGE_CAVE_TRAINER_1_DEFEATED"
+msgstr "우오오오!"
+
+msgid "PASSAGE_CAVE_TRAINER_2_DEFEATED"
+msgstr "으윽...!"
+
+msgid "PASSAGE_CAVE_TRAINER_3_DEFEATED"
+msgstr "으아아아악!"

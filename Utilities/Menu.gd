@@ -1,4 +1,4 @@
-tool
+@tool
 extends Node2D
 
 var current
@@ -26,22 +26,29 @@ enum ORDER {
 }
 
 func _ready():
-	if(Engine.editor_hint):
+	if(Engine.is_editor_hint()):
 		# Special things when this is on editor mode
 		$AnimationPlayer.seek($AnimationPlayer.current_animation_length)
 	
-	$Bag.connect("close_bag", self, "close_bag")
-	$PokemonPartyMenu.connect("close_party", self, "close_party")
-	$Pokedex.connect("close", self, "close_dex")
-	$Card.connect("close", self, "close_card")
+	$Bag.connect("close_bag", Callable(self, "close_bag"))
+	$PokemonPartyMenu.connect("close_party", Callable(self, "close_party"))
+	$OptionsMenu.connect("closed", Callable(self, "_on_options_closed"))
+	$Pokedex.connect("close", Callable(self, "close_dex"))
+	$Card.connect("close", Callable(self, "close_card"))
 	
 	current = ORDER.PARTY
-	init_pos = $Option_Text.rect_position
-	$Bag.enabled = false
+	init_pos = $Option_Text.position
+	_build_exit_prompt()
+	$Bag.set("enabled", false)
 	
-	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
+	$Save_Menu/Info/Player_Name/Name.text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
 
 func _input(event):
+	if menu_stage == 3:
+		_exit_prompt_input(event)
+		if get_viewport() != null:
+			get_viewport().set_input_as_handled()
+		return
 	if event.is_action_pressed("x") && !locked:
 		match menu_stage:
 			0:
@@ -50,7 +57,12 @@ func _input(event):
 				menu_stage = 1
 				print("Toggling")
 				$AnimationPlayer.play("Open Menu")
-				$Place_Text.bbcode_text = "[center]" + Global.game.current_scene.place_name + "[/center]"
+				var pn = Global.game.current_scene.get("place_name")
+				if pn == null:
+					pn = Global.game.current_scene.get("map_name")
+				if pn == null:
+					pn = ""
+				$Place_Text.text = "[center]" + str(pn) + "[/center]"
 			1:
 				Global.game.player.call_deferred("change_input", false)
 				menu_stage = 0
@@ -68,13 +80,13 @@ func _input(event):
 			move_sprites("Right")
 		if event.is_action_pressed("z") and !saving and Global.can_run:
 			Global.sprint = !Global.sprint
-			if $Run/Sprite.frame == 0:
-				$Run/Sprite.frame = 1
+			if $Run/Sprite2D.frame == 0:
+				$Run/Sprite2D.frame = 1
 			else:
-				$Run/Sprite.frame = 0
+				$Run/Sprite2D.frame = 0
 		if event.is_action_pressed("ui_accept"):
 			select()
-			return null # This breaks out of the current method. Needed after select()
+			return # This breaks out of the current method. Needed after select()
 	
 	if menu_stage == 2:
 		match current:
@@ -101,24 +113,24 @@ func _input(event):
 func party_logic():
 	print("party logic")
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	hide_all()
 	$PokemonPartyMenu.setup()
 	$PokemonPartyMenu.show()
 	$Transition.fade_from_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	$Transition.visible = false
 
 
 func bag_setup():
 	$Transition.visible = true
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	hide_all()
 	$Bag.setup()
 	$Bag.show()
 	$Transition.fade_from_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	$Transition.visible = false
 
 
@@ -149,7 +161,7 @@ func select(): # Stage should be 1
 		$Yes_no.visible = true
 		DialogueSystem.start_dialog("UI_MENU_SAVE_PROMPT")
 	elif current == ORDER.BAG:
-		$Bag.enabled = true
+		$Bag.set("enabled", true)
 		bag_setup()
 	elif current == ORDER.PARTY:
 		# Check if we have any pokes
@@ -161,23 +173,28 @@ func select(): # Stage should be 1
 	elif current == ORDER.POKEDEX:
 		if Global.past_events.has("EVENT_MOKI_TOWN_DEMO"):
 			$Transition.fade_to_color()
-			yield($Transition, "finished")
+			await $Transition.finished
 			hide_all()
 			$Pokedex.start()
 			$Pokedex.show()
 			$Transition.fade_from_color()
-			yield($Transition, "finished")
+			await $Transition.finished
 			$Transition.visible = false
 		else:
 			menu_stage = 1
+	elif current == ORDER.OPTION:
+		locked = true
+		$OptionsMenu.open()
+	elif current == ORDER.EXIT:
+		_open_exit_prompt()
 	elif current == ORDER.CARD:
 		$Transition.fade_to_color()
-		yield($Transition, "finished")
+		await $Transition.finished
 		hide_all()
 		$Card.setup()
 		$Card.show()
 		$Transition.fade_from_color()
-		yield($Transition, "finished")
+		await $Transition.finished
 		$Transition.visible = false
 	else:
 		menu_stage = 1
@@ -196,58 +213,58 @@ func move_sprites(dir):
 		if current == 8:
 			current = 0
 
-	$Option_Text.bbcode_text = "[center]"
+	$Option_Text.text = "[center]"
 	
 	if current == ORDER.PARTY:
 		#$Option_Text.rect_position = init_pos
-		$Option_Text.bbcode_text += "POKÉMON"
+		$Option_Text.text += "POKÉMON"
 		
 		grey_frame()
 		$"Options/PARTY/Pokémon".frame = 1
 	elif current == ORDER.BAG:
 		#$Option_Text.rect_position.x = init_pos.x + 22
-		$Option_Text.bbcode_text += "BAG"
+		$Option_Text.text += "BAG"
 		
 		grey_frame()
 		$Options/BAG/Bag.frame = 1
 	elif current == ORDER.POKEPOD:
 		#$Option_Text.rect_position.x = init_pos.x - 2
-		$Option_Text.bbcode_text += "POKEPOD"
+		$Option_Text.text += "POKEPOD"
 		
 		grey_frame()
 		$"Options/POKEPOD/Poképod".frame = 1
 	elif current == ORDER.CARD:
 		#$Option_Text.rect_position.x = init_pos.x - 24
-		$Option_Text.bbcode_text += "TRAINERCARD"
+		$Option_Text.text += "TRAINERCARD"
 		
 		grey_frame()
 		$Options/CARD/Card.frame = 1
 	elif current == ORDER.SAVE:
 		#$Option_Text.rect_position.x = init_pos.x + 16
-		$Option_Text.bbcode_text += "SAVE"
+		$Option_Text.text += "SAVE"
 		
 		grey_frame()
 		$Options/SAVE/Save.frame = 1
 	elif current == ORDER.OPTION:
 		#$Option_Text.rect_position = init_pos
-		$Option_Text.bbcode_text += "OPTIONS"
+		$Option_Text.text += "OPTIONS"
 		
 		grey_frame()
 		$Options/OPTION/Options.frame = 1
 	elif current == ORDER.EXIT:
 		#$Option_Text.rect_position.x = init_pos.x + 16
-		$Option_Text.bbcode_text += "EXIT"
+		$Option_Text.text += "EXIT"
 		
 		grey_frame()
 		$Options/EXIT/Exit.frame = 1
 	elif current == ORDER.POKEDEX:
 		#$Option_Text.rect_position = init_pos
-		$Option_Text.bbcode_text += "POKEDEX"
+		$Option_Text.text += "POKEDEX"
 		
 		grey_frame()
 		$Options/POKEDEX/Pokedex.frame = 1
 	
-	$Option_Text.bbcode_text += "[/center]"
+	$Option_Text.text += "[/center]"
 	
 	slide(dir)
 
@@ -264,27 +281,22 @@ func slide(dir):
 				node.position.x = offscreen_left
 		
 		move_offset = -Vector2(38 * 2, 0)
-		
-	$Options/PARTY/Tween.interpolate_property($Options/PARTY, "position", $Options/PARTY.position, $Options/PARTY.position + move_offset, 0.01, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	$Options/BAG/Tween.interpolate_property($Options/BAG, "position", $Options/BAG.position, $Options/BAG.position + move_offset, 0.01, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	$Options/POKEPOD/Tween.interpolate_property($Options/POKEPOD, "position", $Options/POKEPOD.position, $Options/POKEPOD.position + move_offset, 0.01, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	$Options/CARD/Tween.interpolate_property($Options/CARD, "position", $Options/CARD.position, $Options/CARD.position + move_offset, 0.01, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	$Options/SAVE/Tween.interpolate_property($Options/SAVE, "position", $Options/SAVE.position, $Options/SAVE.position + move_offset, 0.01, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	$Options/OPTION/Tween.interpolate_property($Options/OPTION, "position", $Options/OPTION.position, $Options/OPTION.position + move_offset, 0.01, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	$Options/EXIT/Tween.interpolate_property($Options/EXIT, "position", $Options/EXIT.position, $Options/EXIT.position + move_offset, 0.01, Tween.TRANS_LINEAR, Tween.EASE_IN)
-	$Options/POKEDEX/Tween.interpolate_property($Options/POKEDEX, "position", $Options/POKEDEX.position, $Options/POKEDEX.position + move_offset, 0.01, Tween.TRANS_LINEAR, Tween.EASE_IN)
 	
-	$Options/PARTY/Tween.start()
-	$Options/BAG/Tween.start()
-	$Options/POKEPOD/Tween.start()
-	$Options/CARD/Tween.start()
-	$Options/SAVE/Tween.start()
-	$Options/OPTION/Tween.start()
-	$Options/EXIT/Tween.start()
-	$Options/POKEDEX/Tween.start()
+	# Godot 4: Create tweens programmatically
+	var menu_tween = create_tween()
+	menu_tween.set_parallel(true)  # Run all tweens simultaneously
+	
+	menu_tween.tween_property($Options/PARTY, "position", $Options/PARTY.position + move_offset, 0.01).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
+	menu_tween.tween_property($Options/BAG, "position", $Options/BAG.position + move_offset, 0.01).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
+	menu_tween.tween_property($Options/POKEPOD, "position", $Options/POKEPOD.position + move_offset, 0.01).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
+	menu_tween.tween_property($Options/CARD, "position", $Options/CARD.position + move_offset, 0.01).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
+	menu_tween.tween_property($Options/SAVE, "position", $Options/SAVE.position + move_offset, 0.01).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
+	menu_tween.tween_property($Options/OPTION, "position", $Options/OPTION.position + move_offset, 0.01).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
+	menu_tween.tween_property($Options/EXIT, "position", $Options/EXIT.position + move_offset, 0.01).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
+	menu_tween.tween_property($Options/POKEDEX, "position", $Options/POKEDEX.position + move_offset, 0.01).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
 	
 	$Sounds/Move.play()
-	yield($Options/POKEDEX/Tween, "tween_completed")
+	await menu_tween.finished
 	
 
 func grey_frame():
@@ -298,17 +310,17 @@ func grey_frame():
 	$Options/EXIT/Exit.frame = 0
 
 func setup_save_boxes():
-	$Save_Menu/Info/Node2D/Location.bbcode_text = "[center][color=#209808]" + Global.location + "[/color][/center]"
-	$Save_Menu/Info/Player_Name/Name.bbcode_text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
-	$Save_Menu/Info/Time/Count.bbcode_text = "[right][color=#0070f8]" + str(Global.time) + "[/color][/right]"
-	$Save_Menu/Info/Badges/Count.bbcode_text = "[right][color=#0070f8]" + str(Global.badges) + "[/color][/right]"
+	$Save_Menu/Info/Node2D/Location.text = "[center][color=#209808]" + Global.location + "[/color][/center]"
+	$Save_Menu/Info/Player_Name/Name.text = "[right][color=#0070f8]" + Global.TrainerName + "[/color][/right]"
+	$Save_Menu/Info/Time/Count.text = "[right][color=#0070f8]" + str(Global.time) + "[/color][/right]"
+	$Save_Menu/Info/Badges/Count.text = "[right][color=#0070f8]" + str(Global.badges) + "[/color][/right]"
 
 func close_bag():
 	print("Closing bag")
-	$Bag.enabled = false
+	$Bag.set("enabled", false)
 	$Transition.show()
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	hide_all()
 	$Bag.hide()
 	show_base()
@@ -320,12 +332,12 @@ func close_party():
 	$PokemonPartyMenu.stage = 0
 	$Transition.show()
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	hide_all()
 	$PokemonPartyMenu.hide()
 	show_base()
 
-	yield(get_tree().create_timer(0.3), "timeout")
+	await get_tree().create_timer(0.3).timeout
 
 	menu_stage = 1
 	$Transition.fade_from_color()
@@ -334,7 +346,7 @@ func close_dex():
 	$Pokedex.mode = 0
 	$Transition.show()
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	$Pokedex.hide()
 	show_base()
 	menu_stage = 1
@@ -344,8 +356,89 @@ func close_card():
 	$Card.mode = 0
 	$Transition.show()
 	$Transition.fade_to_color()
-	yield($Transition, "finished")
+	await $Transition.finished
 	$Card.hide()
 	show_base()
 	menu_stage = 1
 	$Transition.fade_from_color()
+
+func _on_options_closed():
+	locked = false
+	menu_stage = 1
+
+
+# --- Exit prompt (faithful to the original: Return To Game / Exit To Menu / Exit To Desktop) ---
+const EXIT_KEYS = ["Return To Game", "Exit To Menu", "Exit To Desktop"]
+var exit_prompt: Node2D
+var exit_labels := []
+var exit_cursor: Sprite2D
+var exit_idx := 0
+
+func _build_exit_prompt():
+	exit_prompt = Node2D.new()
+	exit_prompt.name = "ExitPrompt"
+	exit_prompt.z_index = 50
+	var bg := ColorRect.new()
+	bg.color = Color(0, 0, 0, 0.55)
+	bg.position = Vector2(236, 148)
+	bg.size = Vector2(276, 118)
+	exit_prompt.add_child(bg)
+	for i in range(3):
+		var lbl: RichTextLabel = $Option_Text.duplicate()
+		lbl.name = "exit%d" % i
+		lbl.position = Vector2(266, 172 + i * 32)
+		lbl.size = Vector2(212, 30)
+		lbl.visible = true
+		lbl.modulate = Color(1, 1, 1, 1)
+		exit_prompt.add_child(lbl)
+		exit_labels.append(lbl)
+	# Official choice cursor (selarrow.png 12x28, drawn 1:1 like SpriteWindow_text)
+	var cur := Sprite2D.new()
+	cur.name = "exit_cursor"
+	cur.texture = load("res://Graphics/Pictures/selarrow.png")
+	cur.centered = false
+	cur.scale = Vector2(0.5, 0.5)  # original draws UI in window px: 12x28 there = 6x14 in scene units
+	exit_cursor = cur
+	exit_prompt.add_child(exit_cursor)
+	exit_prompt.visible = false
+	add_child(exit_prompt)
+
+func _open_exit_prompt():
+	exit_idx = 0
+	for i in range(3):
+		exit_labels[i].text = tr(EXIT_KEYS[i])
+	_update_exit_cursor()
+	exit_prompt.visible = true
+	menu_stage = 3
+
+func _update_exit_cursor():
+	exit_cursor.position = Vector2(258, 171 + exit_idx * 32)
+
+func _close_exit_prompt():
+	exit_prompt.visible = false
+	menu_stage = 1
+
+func _exit_prompt_input(event) -> void:
+	if event.is_action_pressed("ui_down"):
+		exit_idx = (exit_idx + 1) % 3
+		_update_exit_cursor()
+	elif event.is_action_pressed("ui_up"):
+		exit_idx = (exit_idx + 2) % 3
+		_update_exit_cursor()
+	elif event.is_action_pressed("ui_cancel") or event.is_action_pressed("x"):
+		_close_exit_prompt()
+	elif event.is_action_pressed("ui_accept"):
+		match exit_idx:
+			0:
+				_close_exit_prompt()
+			1:
+				Global.save_settings()
+				Global.pokemon_group.clear()
+				Global.past_events.clear()
+				Global.pokedex_seen.clear()
+				Global.pokedex_caught.clear()
+				get_tree().paused = false
+				get_tree().change_scene_to_file("res://IntroScenes/Menu.tscn")
+			2:
+				Global.save_settings()
+				get_tree().quit()

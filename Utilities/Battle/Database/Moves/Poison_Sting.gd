@@ -37,4 +37,3 @@ var total_pp = 35
 var target_ability = MoveTarget.SINGLE_FOE
 
 var main_status_effect
- 

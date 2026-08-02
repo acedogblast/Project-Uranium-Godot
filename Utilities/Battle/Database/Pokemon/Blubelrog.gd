@@ -19,8 +19,9 @@ var sp_defense = 115
 var speed = 65
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Clear Body"
+var ability_2 = "Damp"
+var hidden_ability = "Water Absorb"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -54,7 +55,7 @@ var weight = 98.0
 
 # Moveset by leveling
 var moveset = [
-	MoveSet.new(1, "Icy Wing"),
+	MoveSet.new(1, "Icy Wind"),
 	MoveSet.new(1, "Bubble Beam"),
 	MoveSet.new(1, "Supersonic"),
 	MoveSet.new(1, "Poison Sting"),

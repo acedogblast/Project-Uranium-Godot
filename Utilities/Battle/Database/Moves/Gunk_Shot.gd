@@ -35,5 +35,5 @@ var total_pp = 5
 
 # The target ability of the move (Single, Double, All_Foes, Self)
 var target_ability = MoveTarget.SINGLE_FOE
-# attack, defense, sp_atack, sp_defense, speed, accuracy, evasion
-var main_status_effect 
+
+var main_status_effect

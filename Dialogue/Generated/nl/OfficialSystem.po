@@ -1,0 +1,6407 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: nl\n"
+
+msgid "$ENABLE_NEUTRAL_PRONOUN"
+msgstr "true"
+
+msgid "$ENABLE_PRONOUN_SELECTION"
+msgstr "true"
+
+msgid "(Default)"
+msgstr "(Standaard)"
+
+msgid "({1}) PP: {2}/{3}"
+msgstr "({1}) AP: {2}/{3}"
+
+msgid "--- power core ------ from over----. It ---- ------ a large ---- -- nuclear fuel to -------. ---- ---- activated- -- --- -- prod--- ---- limitless energy."
+msgstr "-- krachtkern is ----it het bu----land aa---kome-. Er --- veel ker-----dst-f n--ig z--n -- het onder--el op te st-rten. Eens ac--ef, --l h-t vrijwel oneindig veel energie k----- pr----er--."
+
+msgid "---- -- the Interface --- final---- today. Th- -erator - -- ---- - ----- full control -- --e Sp-cimen. ---- chief reseacher, Dr. ----- --s ---- granted clearance."
+msgstr "W--k a-n -- Ge--uiks---evi-g is va--aag afg-ron-. De ge--uike- --l vol--dig- co-----e ove- het ex------- he---n. O--e hoo----derzo----, Dr. -------, he--t --t groe-- li-ht gekregen."
+
+msgid "---- has been - breach -- confidential--. ----- --- ------ shall -- relocate --- undergr-- --. Project 092 --- have -- -- --rminated."
+msgstr "Er -s vert-------jke infor----- geschonden. ---- --------- zul-en ve---isd wo--en naar zwa-----aakte onderg----se s-rvers. Project-092 d--nt -------- ---ermine--d te w-rden."
+
+msgid "... ... ... ...Nope!\nThere's no response."
+msgstr "... ... ... ...Nee!\nEr is niks te horen."
+
+msgid "...Oh. It's you.\nListen, I might've been a jerk to you back in Vinoville Town.\nBut, well, what you did, it kind of saved my family and my town.\nWhen the Rangers are done cleaning the area, I'll have a home again.\nSo... I guess... What I'm trying to say is...\nI owe you. We all do.\nBut I'm not going easy on you because of it.\nI've been training non-stop since you beat me!\nMy team will crush anybody that stands in our way...\nEven the Hero of Tandor!!"
+msgstr "...O, jij bent het.\nLuister, volgens mij ben ik best een idioot tegen je geweest in Vinnelveld, maar wat jij hebt gedaan heeft mijn familie en mijn dorp gered. Zodra de Rangers klaar zijn met het opknapwerk heb ik weer een thuis. Dus wat ik probeer te zeggen is dat... uh... ik bij je in het krijt sta. Wij allemaal. Dat betekent echter niet dat ik je zomaar laat winnen! Ik heb een hoop getraind sinds je mij hebt verslagen! Mijn team zal iedereen die ons in de weg staat verbrijzelen, zelfs de {Held|Heldin|Held} van Tandor!"
+
+msgid "...Pfeh. I guess you win.\nThat's embarrassing... But whatever.\nIf there's anyone I'll allow to beat me, it should be you."
+msgstr "...Heh. Zo te zien heb je gewonnen.\nIk schaam me dood... maar goed.\nAls er iemand is die mij mag verslaan,\nben jij het wel."
+
+msgid "1, 2, and... ... ..."
+msgstr "1, 2, en... ... ..."
+
+msgid "<<"
+msgstr " <<"
+
+msgid "<ac>Search Mode</ac>"
+msgstr "<ac>Zoeken</ac>"
+
+msgid "<c3=0000D6,7394FF>{1} <c3=5A5252,A5A5AD>nature."
+msgstr "<c3=0000D6,7394FF>{1} <c3=5A5252,A5A5AD>karakter."
+
+msgid "<c3=404040,B0B0B0>Egg hatched."
+msgstr "<c3=404040,B0B0B0>Uit een Ei gekomen.\n"
+
+msgid "<c3=404040,B0B0B0>{1} {2}, {3}"
+msgstr "<c3=404040,B0B0B0>{1} {2}, {3}\n"
+
+msgid "<c3=5A5252,A5A5AD>Egg obtained."
+msgstr "<c3=5A5252,A5A5AD>Uit een Ei gekomen."
+
+msgid "<c3=5A5252,A5A5AD>Had a fateful encounter at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>Getroffen op Lv. {1}."
+
+msgid "<c3=5A5252,A5A5AD>Met at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>Ontmoet op Lv. {1}."
+
+msgid "<c3=5A5252,A5A5AD>Traded at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>Geruild op Lv. {1}."
+
+msgid "<c3=F83820,E09890>Faraway place"
+msgstr "<c3=F83820,E09890>Verweggistan\n"
+
+msgid "<c3=fff,282828>\"The Egg Watch\""
+msgstr "<c3=fff,282828><b>Eierstatus</b>\n"
+
+msgid "<c3=fff,282828>A mysterious Pokémon\nEgg received from\n<c3=0000D6,7394FF>{1}<c3=fff,282828>."
+msgstr "<c3=fff,282828>Een mysterieus Pokémon-Ei\ngekregen van <c3=0000D6,7394FF>{1}<c3=fff,282828>.\n"
+
+msgid "<c3=fff,282828>{1}/{2}/{3}"
+msgstr "<c3=fff,282828>{1}/{2}/{3}\n"
+
+msgid "<r>{1}<br>"
+msgstr "<ac><b>{1}</b></ac>"
+
+msgid ">>"
+msgstr " >>"
+
+msgid "????.? lbs."
+msgstr "????.? lbs"
+
+msgid "????? Pokémon"
+msgstr "?????-Pokémon"
+
+msgid "A Key Item in the Bag can be registered to this key for instant use."
+msgstr "Koppel een belangrijk voorwerp aan deze toets zodat het per direct gebruikt kan worden."
+
+msgid "A Map\nShows visited Places."
+msgstr "Een kaart\nBekijk de regio."
+
+msgid "A Nuclear Horde appeared!"
+msgstr "Nucleaire PkMn verschijnen!"
+
+msgid "A Phone\nUsed to call People."
+msgstr "Een telefoon\nBel anderen."
+
+msgid "A Pokémon could be in this tree. Maybe a Pokémon could shake it."
+msgstr "Er zou een Pokémon in deze boom kunnen zitten. Misschien kan een Pokémon de boom schudden."
+
+msgid "A Pokémon could be in this tree. Want to headbutt it?"
+msgstr "Er zou een Pokémon in deze boom kunnen zitten. Headbutt gebruiken?"
+
+msgid "A Radio\nUsed to listen to Music."
+msgstr "Een radio\nLuister naar muziek."
+
+msgid "A Toxic Fallout has set in!"
+msgstr "Er is sprake van radioactieve neerslag!"
+
+msgid "A bell chimed!"
+msgstr "Het belletje rinkelt!"
+
+msgid "A critical hit!"
+msgstr "Een voltreffer!"
+
+msgid "A glint appears in {1}'s eyes!"
+msgstr "{1}'s ogen glinsteren!"
+
+msgid "A heavy rain began to fall!"
+msgstr "Het is gaan stortregenen!"
+
+msgid "A little quick tempered."
+msgstr "Een beetje driftig."
+
+msgid "A mysterious air current is protecting Flying-type Pokémon!"
+msgstr "Een mysterieuze luchtstroom beschermt Vlieg-Pokémon!"
+
+msgid "A new award has been found! {1}: {2}"
+msgstr "Er is een nieuwe trofee gevonden! {1}: {2}"
+
+msgid "A nuclear fallout has hit!"
+msgstr "Er valt radioactieve neerslag!"
+
+msgid "A sandstorm brewed!"
+msgstr "De zandstorm duurt voort!"
+
+msgid "A sandstorm is raging."
+msgstr "Er heerst een zandstorm."
+
+msgid "A sandstorm kicked up!"
+msgstr "Er is een zandstorm opgestoken!"
+
+msgid "A shadow sky appeared!"
+msgstr "Er ontstaat een schaduwlucht!"
+
+msgid "A soothing aroma wafted through the area!"
+msgstr "Er hangt een kalmerend aroma in de lucht!"
+
+msgid "A sticky ooze covers the battlefield!"
+msgstr "Het veld is bedekt met vloeibaar slijm!"
+
+msgid "A sticky web has been laid out beneath the opposing team's feet!"
+msgstr "Er ligt een plakkerig web onder de voeten van het verdedigende team!"
+
+msgid "A sticky web has been laid out beneath your team's feet!"
+msgstr "Er ligt een plakkerig web onder de voeten van je team!"
+
+msgid "A thrilling display from trainers and Pokémon alike!"
+msgstr "Een geweldig spektakel van zowel Trainer als Pokémon!"
+
+msgid "A thunderstorm is raging."
+msgstr "Het onweert."
+
+msgid "A thunderstorm started!"
+msgstr "Het is gaan onweren!"
+
+msgid "A to Z"
+msgstr "A tot Z"
+
+msgid "A wall of water is crashing down with a mighty roar."
+msgstr "Er stort water naar beneden met een luid gerommel."
+
+msgid "A {1} was planted here."
+msgstr "Er is hier een {1} geplant."
+
+msgid "A: Add map to canvas"
+msgstr "A: Add map to canvas\n"
+
+msgid "ABLE"
+msgstr "IN STAAT"
+
+msgid "ACCURACY"
+msgstr "PRECISIE"
+
+msgid "Aargh! Almost had it!"
+msgstr "Aargh!  Ik had 'm bijna!"
+
+msgid "Ability"
+msgstr "Vaardighd."
+
+msgid "Acai Berries"
+msgstr "Acai-Bessen"
+
+msgid "Adamant"
+msgstr "Vastberaden"
+
+msgid "Add"
+msgstr "Optellen"
+
+msgid "Advanced to Game Lv. {1}!"
+msgstr "Gevorderd tot Level {1}!"
+
+msgid "Aguav Berries"
+msgstr "Aguav-Bessen"
+
+msgid "Aha! It is the \\PN!\nWe fight before. I lose in disgrace.\nMy Ninja clan forsake me. So I train.\nI train and train, in hopes to encounter \\PN again.\nIn this arena, we fight to regain honor!\nI will defeat you, and restore glory to my Ninja Clan!"
+msgstr "Aha! Het is \\PN!\nWe hebben eerder gevochten.\nIk heb in schande verloren.\nMijn ninja-clan heeft mij in de steek gelaten. Dus ik train en train, in de hoop \\PN weer te zien. Ik vecht in deze arena om mijn eer terug te verdienen! Ik zal u verslaan, en mijn ninja-clan terugbrengen naar het oude!"
+
+msgid "Alas, the final curtain falls...\nThe result is clear:\nYour victory was written in the stars!"
+msgstr "En zo valt het laatste doek...\nHet eindresultaat is duidelijk.\nDit is je lotsbestemming!"
+
+msgid "Alert to sounds."
+msgstr "Zeer alert."
+
+msgid "All Pokémon hearing the song will faint in three turns!"
+msgstr "Alle Pokémon die het lied horen zullen na drie beurten bezwijken!"
+
+msgid "All Pokémon in this box have been released."
+msgstr "Alle Pokémon in deze Box zijn vrijgelaten."
+
+msgid "All data will be lost. Confirm once more to proceed."
+msgstr "Alle data zal verloren gaan. Bevestig nogmaals om het bestand te verwijderen."
+
+msgid "All recording devices are in use. Recording is not possible now."
+msgstr "All recording devices are in use.  Recording is not possible now."
+
+msgid "All stat changes were eliminated!"
+msgstr "Alle statistiekveranderingen zijn verdreven!"
+
+msgid "All the world's a stage... and we play the leading role! Can you see past our splendid masquerade?"
+msgstr "De hele wereld is een schouwtoneel... en wij spelen de hoofdrol! Kan jij onze vermomming doorzien?"
+
+msgid "Also, look for a special NPC in Kevlar Town!"
+msgstr "Kijk ook voor een speciale NPC in Kevlar!"
+
+msgid "An Egg can't battle!"
+msgstr "Een Ei kan niet vechten!"
+
+msgid "An egg can't be an active Pokémon"
+msgstr "Een Ei kan geen actieve Pokémon zijn!"
+
+msgid "An electric current runs across the battlefield!"
+msgstr "Er heerst stroom op het veld!"
+
+msgid "And now, their battling skills will determine which of them get to move on to the Champion's Arena after this match."
+msgstr "Nu zullen hun vechtkunsten bepalen wie het verdient om naar de Kampioensronde\nte gaan!"
+
+msgid "And the winner is \\PN!"
+msgstr "En de winnaar is \\PN!"
+
+msgid "And..."
+msgstr "En..."
+
+msgid "And..."
+msgstr "En..."
+
+msgid "Announcer: You're out of Safari Balls! Game over!"
+msgstr "Announcer:  You're out of Safari Balls!  Game over!"
+
+msgid "Apicot Berries"
+msgstr "Apicot-Bessen"
+
+msgid "Apr."
+msgstr "04"
+
+msgid "Aqua Ring restored {1}'s HP!"
+msgstr "Aqua Ring herstelt wat van de HP van {1}!"
+
+msgid "Are you sure you want to delete this save file?"
+msgstr "Weet je zeker dat je dit opslagbestand wilt verwijderen?"
+
+msgid "Are you sure you want to play on this mode?"
+msgstr "Met deze gamemodus spelen?"
+
+msgid "Are you sure you want to play with these settings?"
+msgstr "Weet je zeker dat je met deze instellingen wilt spelen?"
+
+msgid "Are you sure you want to release all Pokémon in this box?"
+msgstr "Weet je zeker dat je alle Pokémon in deze Box wilt vrijlaten?"
+
+msgid "Are you sure?"
+msgstr "Zeker weten?"
+
+msgid "Area Unknown"
+msgstr "Gebied Onbekend"
+
+msgid "Aspear Berries"
+msgstr "Aspear-Bessen"
+
+msgid "Attack"
+msgstr "Sterkte"
+
+msgid "Aug."
+msgstr "08"
+
+msgid "August"
+msgstr "Augustus"
+
+msgid "Autosave failed. t(-.-t)"
+msgstr "Automatisch opslaan mislukt."
+
+msgid "Autumn"
+msgstr "Herfst"
+
+msgid "Award List"
+msgstr "Trofeeënlijst"
+
+msgid "Aww... It appeared to be caught!"
+msgstr "Aww... Het leek bijna gevangen!"
+
+msgid "BAG"
+msgstr "TAS"
+
+msgid "BANNED"
+msgstr "VERBANNEN"
+
+msgid "BATTLE MOVES"
+msgstr "GEVECHTSACTIES"
+
+msgid "Babiri Berries"
+msgstr "Babiri-Bessen"
+
+msgid "Backup Save"
+msgstr "Backup"
+
+msgid "Bacu Berries"
+msgstr "Bacu-Bessen"
+
+msgid "Bag"
+msgstr "Tas"
+
+msgid "Bait"
+msgstr "Aas"
+
+msgid "Ball"
+msgstr "Bal"
+
+msgid "Bashful"
+msgstr "Verlegen"
+
+msgid "Battle Items"
+msgstr "Gevechts"
+
+msgid "Battle Scene"
+msgstr "Gevechtsanimaties"
+
+msgid "Battle Style"
+msgstr "Gevechtsstijl"
+
+msgid "Battle... start!"
+msgstr "begint het gevecht.\\wt[8].\\wt[8].\\wt[8] nu!\\wtnp[20]"
+
+msgid "Beach"
+msgstr "Strand"
+
+msgid "Begin your game."
+msgstr "Beginnen met spelen."
+
+msgid "Behold! The power of Mega Evolution!"
+msgstr "Aanschouw de krachten van Mega-Evolutie!"
+
+msgid "Belue Berries"
+msgstr "Belue-Bessen"
+
+msgid "Berries"
+msgstr "Bessen"
+
+msgid "Berry"
+msgstr "Bes"
+
+msgid "Black"
+msgstr "Zwart"
+
+msgid "Black Tiles: {1}"
+msgstr "Zwarte Tegels: {1}"
+
+msgid "Blue"
+msgstr "Blauw"
+
+msgid "Bluk Berries"
+msgstr "Bluk-Bessen"
+
+msgid "Bold"
+msgstr "Dapper"
+
+msgid "Boost PP of which move?"
+msgstr "AP van welke actie verhogen?"
+
+msgid "Both of these trainers took home a win in the previous round."
+msgstr "Beide Trainers hebben de vorige ronde gewonnen."
+
+msgid "Box \"{1}\" on someone's PC was full."
+msgstr "Box \"{1}\" in de pc van Twitch is vol."
+
+msgid "Box \"{1}\" on someone's PC was full."
+msgstr "Box \"{1}\" in iemands pc is vol."
+
+msgid "Box \"{1}\" on {2}'s PC was full."
+msgstr "Box \"{1}\" in de pc van {2} is vol."
+
+msgid "Box \"{1}\" on {2}'s PC was full."
+msgstr "Box \"{1}\" in {2}'s pc is vol."
+
+msgid "Box name?"
+msgstr "Naam van deze Box?"
+
+msgid "Brave"
+msgstr "Moedig"
+
+msgid "Brown"
+msgstr "Bruin"
+
+msgid "Bug"
+msgstr "Insect"
+
+msgid "But I sense something else in you...\\^"
+msgstr "Toch merk ik iets in je...\\^"
+
+msgid "But it failed to spit up a thing!"
+msgstr "Maar het kon niks uitspugen!"
+
+msgid "But it failed to swallow a thing!"
+msgstr "Maar het kon niks inslikken!"
+
+msgid "But it failed!"
+msgstr "Maar het is mislukt!"
+
+msgid "But it had no effect!"
+msgstr "Maar het had geen effect!"
+
+msgid "But nothing happened!"
+msgstr "Maar er gebeurt niks!"
+
+msgid "But the effects of a Repel lingered from earlier."
+msgstr "Het effect van de vorige Afweer hangt nog in de lucht."
+
+msgid "But there was no PP left for the move!"
+msgstr "Maar is een geen AP over voor deze actie!"
+
+msgid "But there was no target..."
+msgstr "Maar er is geen doelwit..."
+
+msgid "But {1} already caught a Pokémon in this area!"
+msgstr "Maar {1} heeft in dit gebied al een Pokémon gevangen!"
+
+msgid "But {1} already fought a wild Pokémon in this area!"
+msgstr "Maar {1} heeft in dit gebied al een Pokémon bevochten!"
+
+msgid "But {1} can't learn more than four moves."
+msgstr "Maar {1} kent al vier acties."
+
+msgid "But {1} can't learn more than four moves."
+msgstr "Maar {1} kent al vier acties."
+
+msgid "But {1} can't sleep in an uproar!"
+msgstr "Maar {1} kan niet slapen door het lawaai!"
+
+msgid "But {1} couldn't sleep!"
+msgstr "Maar {1} kon niet slapen!"
+
+msgid "But, only one will be crowned Champion today."
+msgstr "Er kan er echter maar één Kampioen worden."
+
+msgid "But,\\. don't worry!\\nYour Pokémon are safe and sound."
+msgstr "Maak je echter geen zorgen!\\nAl je Pokémon zijn veilig en wel!"
+
+msgid "Buy"
+msgstr "Kopen"
+
+msgid "By the blessing of Aotius!"
+msgstr "Voor onze heilige Aotius!"
+
+msgid "Bye-bye, {1}!"
+msgstr "Doeidoei, {1}!"
+
+msgid "CANCEL"
+msgstr "ANNULEREN"
+
+msgid "CATEGORY"
+msgstr "CATEGORIE"
+
+msgid "CLOSE BAG"
+msgstr "TAS SLUITEN"
+
+msgid "COLOR"
+msgstr "KLEUR"
+
+msgid "CONFIRM"
+msgstr "BEVESTIGEN"
+
+msgid "Call"
+msgstr "Bellen"
+
+msgid "Calm"
+msgstr "Kalm"
+
+msgid "Can't catch any more..."
+msgstr "Kan niks meer vangen..."
+
+msgid "Can't deposit from box..."
+msgstr "Kon het niet in de Box opslaan..."
+
+msgid "Can't deposit the last Pokémon!"
+msgstr "Je kan je laatste Pokémon niet opslaan!"
+
+msgid "Can't escape!"
+msgstr "Je kon niet ontsnappen!"
+
+msgid "Can't find deposited Pokémon"
+msgstr "Kan de opgeslagen Pokémon niet vinden"
+
+msgid "Can't find the map 'Map{1:03d}' in the Data folder. The game will resume at the player's position."
+msgstr "Kan 'Map{1:03d}' niet in de Datafolder vinden. Het spel hervat op de positie van de speler."
+
+msgid "Can't re-store deleted item in bag"
+msgstr "Kan een verwijderd voorwerp niet herstellen."
+
+msgid "Can't save. No name was entered."
+msgstr "Can't save.  No name was entered."
+
+msgid "Can't save. The Pokémon list is empty."
+msgstr "Can't save.  The Pokémon list is empty."
+
+msgid "Can't store the Pokémon..."
+msgstr "Kan de Pokémon niet opslaan..."
+
+msgid "Can't store the egg"
+msgstr "Kan het Ei niet opslaan."
+
+msgid "Can't store the {1}."
+msgstr "Kan de {1} niet opslaan."
+
+msgid "Can't use that here."
+msgstr "Dat kan hier niet gebruikt worden."
+
+msgid "Can't use that while on a bicycle."
+msgstr "Je kan dat niet gebruiken tijdens het fietsen!"
+
+msgid "Can't withdraw from party..."
+msgstr "Kon het niet uit het team halen..."
+
+msgid "Cancel"
+msgstr "Annuleren"
+
+msgid "Cancel?"
+msgstr "Annuleren?"
+
+msgid "Capable of taking hits."
+msgstr "Kan best wat aan."
+
+msgid "Careful"
+msgstr "Voorzichtig"
+
+msgid "Cave"
+msgstr "Grot"
+
+msgid "Certainly. You want {1}.\nThat will be ${2}. OK?"
+msgstr "{1}? Maar natuurlijk.\nDat is dan ${2}. Is dat oké?"
+
+msgid "Certainly. You want {2} {1}(s)?"
+msgstr "{1}, en u wilt er {2} van?"
+
+msgid "Challenge Mode"
+msgstr "Challenge-modus"
+
+msgid "Changed to Blade Forme!"
+msgstr "Het verandert naar de Lemmet-vorm!"
+
+msgid "Changed to Shield Forme!"
+msgstr "Het verandert naar de Schild-vorm!"
+
+msgid "Charti Berries"
+msgstr "Charti-Bessen"
+
+msgid "Check for Updates"
+msgstr "Updatezoeker"
+
+msgid "Check for new awards"
+msgstr "Voor nieuwe trofeeën zoeken"
+
+msgid "Checks"
+msgstr "Ruitjes"
+
+msgid "Cheri Berries"
+msgstr "Cheri-Bessen"
+
+msgid "Chesto Berries"
+msgstr "Chesto-Bessen"
+
+msgid "Chilan Berries"
+msgstr "Chilan-Bessen"
+
+msgid "Choose Pokémon and confirm."
+msgstr "Kies een Pokémon en bevestig."
+
+msgid "Choose Pokémon or cancel."
+msgstr "Kies een Pokémon of annuleer."
+
+msgid "Choose a Pokémon."
+msgstr "Kies een Pokémon."
+
+msgid "Choose save file to be loaded"
+msgstr "Kies een opslagbestand om in te laden."
+
+msgid "Choose the gift you want to receive.\\wtnp[0]"
+msgstr "Kies de Mystery Gift die je wilt ontvangen.\\wtnp[0]"
+
+msgid "Choose your game mode:"
+msgstr "Kies je gamemodus:"
+
+msgid "Chople Berries"
+msgstr "Chople-Bessen"
+
+msgid "City"
+msgstr "Stad"
+
+msgid "Click to select a map"
+msgstr "Click to select a map\n"
+
+msgid "Click!\n...... ......"
+msgstr "Klik!\n...... ......"
+
+msgid "Close bag."
+msgstr "Tas sluiten."
+
+msgid "Close storage."
+msgstr "Voorwerpenopslag sluiten."
+
+msgid "Closes the PokéPod and returns to the game."
+msgstr "De PokéPod afsluiten\nen het spel hervatten."
+
+msgid "Coba Berries"
+msgstr "Coba-Bessen"
+
+msgid "Coins were scattered everywhere!"
+msgstr "Het verspreidde overal munten!"
+
+msgid "Coins:\n<ar>{1}</ar>"
+msgstr "Munten:\n<ar>{1}</ar>"
+
+msgid "Coins: {1}"
+msgstr "Munten: {1}"
+
+msgid "Colbur Berries"
+msgstr "Colbur-Bessen"
+
+msgid "Compete"
+msgstr "Competitie"
+
+msgid "Competitive sharply raised {1}'s Special Attack!"
+msgstr "De Speciale Sterkte van {1} is aanzienlijk gestegen door Competitive!"
+
+msgid "Congratulations on advancing to the final round!\nThe final battle will take place in the Champion's Arena. Its winner will be crowned Champion of Tandor!"
+msgstr "Gefeliciteerd met het winnen van de halve finales! De finale zal in de Kampioensarena plaatsvinden. De winnaar wordt gekroond tot Kampioen van Tandor!"
+
+msgid "Congratulations!"
+msgstr "Gefeliciteerd!"
+
+msgid "Congratulations!\nYour {1} evolved into {2}!"
+msgstr "Gefeliciteerd!\n{1} is tot een {2} geëvolueerd!"
+
+msgid "Congratulations, {1}!"
+msgstr "Gefeliciteerd, {1}!"
+
+msgid "Continue"
+msgstr "Voortzetten"
+
+msgid "Continue Box operations?"
+msgstr "Boxbewerking voortzetten?"
+
+msgid "Continue the game with those options permanently disabled?"
+msgstr "De niet gekozen opties permanent uitschakelen en doorgaan met het spel?"
+
+msgid "Controls"
+msgstr "Besturing"
+
+msgid "Cornn Berries"
+msgstr "Cornn-Bessen"
+
+msgid "Corrupted Save File"
+msgstr "Corrupt Opslagbestand"
+
+msgid "Could it be the seed of greatness?\\.\nThe potential to transform yourself completely?\\^"
+msgstr "Zou het kunnen?\\.\nJij, als een blad van een boom veranderen?\\^"
+
+msgid "Could not reach server to determine if your game is up-to-date. \\wtnp[40]"
+msgstr "Kon servers niet bereiken om te zien of het spel up-to-date is. \\wtnp[40]"
+
+msgid "Couldn't find an unclaimed Mystery Gift with ID {1}."
+msgstr "Kon geen Mystery Gift met het ID {1} vinden."
+
+msgid "Couldn't return unusable item to Bag somehow."
+msgstr "Het onbruikbare voorwerp kon op de een of andere manier niet terug in de Tas."
+
+msgid "Couldn't return unused item to Bag somehow."
+msgstr "Het ongebruikte voorwerp kon op de een of andere manier niet terug in de Tas."
+
+msgid "Crafty Shield protected your team!"
+msgstr "Crafty Shield heeft je team beschermd!"
+
+msgid "Crafty Shield protected {1}!"
+msgstr "Crafty Shield heeft {1} beschermd!"
+
+msgid "Crag"
+msgstr "Klip"
+
+msgid "Cupu Berries"
+msgstr "Cupu-Bessen"
+
+msgid "Current Version = {1} \\wtnp[30]"
+msgstr "Huidige Versie = {1} \\wtnp[30]"
+
+msgid "Custap Berries"
+msgstr "Custap-Bessen"
+
+msgid "Custom"
+msgstr "Aanpasbaar"
+
+msgid "Custom Game Settings"
+msgstr "Aangepaste Spelregels"
+
+msgid "Custom {1}"
+msgstr "Aangepast {1}"
+
+msgid "Custom/Nuzlocke Mode"
+msgstr "Aangepast/Nuzlocke"
+
+msgid "DEL: Delete map from canvas"
+msgstr "DEL: Delete map from canvas\n"
+
+msgid "DEPOSIT POKéMON"
+msgstr "POKÉMON OPSLAAN"
+
+msgid "DS BORDER"
+msgstr "DS RAND"
+
+msgid "Dark"
+msgstr "Duister"
+
+msgid "Dark Mega Dramsama"
+msgstr "Zwarte Mega-Dramsama"
+
+msgid "Day-Care Couple"
+msgstr "Dagverblijfechtpaar"
+
+msgid "Dec."
+msgstr "12"
+
+msgid "Decimal"
+msgstr "Decimaal"
+
+msgid "Default"
+msgstr "Standaard"
+
+msgid "Defense"
+msgstr "Verdediging"
+
+msgid "Defiant sharply raised {1}'s Attack!"
+msgstr "De Speciale Sterkte van {1} is aanzienlijk gestegen door Defiant!"
+
+msgid "Delete"
+msgstr "Verwijderen"
+
+msgid "Delete This Save File"
+msgstr "Voortgang Verwijderen"
+
+msgid "Delete a move to make\nroom for {1}?"
+msgstr "Een actie verwijderen\nom {1} te leren?"
+
+msgid "Delete a move to make room for {1}?"
+msgstr "Een actie verwijderen om {1} te leren?"
+
+msgid "Deposit Item"
+msgstr "Voorwerpen Opslaan"
+
+msgid "Deposit Pokémon"
+msgstr "Pokémon Opslaan"
+
+msgid "Deposit in which Box?"
+msgstr "In welke Box plaatsen?"
+
+msgid "Deposited {1} {2}(s)."
+msgstr "{1} {2} opgeslagen."
+
+msgid "Deselect"
+msgstr "Deselecteren"
+
+msgid "Desert"
+msgstr "Woestijn"
+
+msgid "Dex No."
+msgstr "Dex-nr."
+
+msgid "Disable Healing In Battle"
+msgstr "Geen Geneesvoorwerpen"
+
+msgid "Disable Pokémarts"
+msgstr "Gesloten Pokémarkt"
+
+msgid "Divide"
+msgstr "Delen"
+
+msgid "Do it! {1}!"
+msgstr "Doe je best, {1}!"
+
+msgid "Do not underestimate the might of Dragons!"
+msgstr "Jullie onderschatten de macht van de draak! Schouw toe!"
+
+msgid "Do what with an item?"
+msgstr "Wat met het voorwerp doen?"
+
+msgid "Do what with the mail?"
+msgstr "Wat met de Brief doen?"
+
+msgid "Do what with {1}?"
+msgstr "Wat met {1} doen?"
+
+msgid "Do you want to change {1}'s ability to {2}?"
+msgstr "De Vaardigheid van {1} naar {2} veranderen?"
+
+msgid "Do you want to delete the save file and start anew?"
+msgstr "Wil je het bestand verwijderen en opnieuw beginnnen?"
+
+msgid "Do you want to run the patcher now?"
+msgstr "Wil je 'patcher.exe' nu uitvoeren?"
+
+msgid "Do you want to try and run the patcher anyway?"
+msgstr "Toch proberen te updaten?"
+
+msgid "Do you want to use another Repel?"
+msgstr "Nog een Afweer gebruiken?"
+
+msgid "Docile"
+msgstr "Gehoorzaam"
+
+msgid "Done!"
+msgstr "Klaar is kees!"
+
+msgid "Done! All your converted sprites are saved in the Graphics/Battlers/Cut/ folder."
+msgstr "Klaar is kees! Alle sprites zijn opgeslagen in de Graphics/Battlers/Cut/ folder."
+
+msgid "Double-click: Edit map's metadata"
+msgstr "Double-click: Edit map's metadata\n"
+
+msgid "Down"
+msgstr "Beneden"
+
+msgid "Drag map to move it"
+msgstr "Drag map to move it\n"
+
+msgid "Dragon"
+msgstr "Draak"
+
+msgid "Dreams"
+msgstr "Dromen"
+
+msgid "Dupes Clause"
+msgstr "Kopiebepaling"
+
+msgid "Durin Berries"
+msgstr "Durin-Bessen"
+
+msgid "E: Edit map's encounters"
+msgstr "E: Edit map's encounters\n"
+
+msgid "EXIT"
+msgstr "SLUITEN"
+
+msgid "Each Pokemon's HP was halved!"
+msgstr "De HP van alle Pokémon is gehalveerd!"
+
+msgid "Earned coins"
+msgstr "Verdiend"
+
+msgid "Edit"
+msgstr "Bewerken"
+
+msgid "Egg"
+msgstr "Ei"
+
+msgid "Eggs can't hold items."
+msgstr "Eieren kunnen geen voorwerpen vasthouden."
+
+msgid "Eggs can't hold mail."
+msgstr "Eieren kunnen geen Brieven vasthouden."
+
+msgid "Electric"
+msgstr "Elektrisch"
+
+msgid "Electricity's power was weakened!"
+msgstr "Elektrische krachten worden afgezwakt!"
+
+msgid "Eletux is the best pick!\\wtnp[160]"
+msgstr "is Eletux de beste keuze!\\wtnp[160]"
+
+msgid "Enigma Berries"
+msgstr "Enigma-Bessen"
+
+msgid "Enter text using the keyboard. Press ENTER to confirm."
+msgstr "Voer tekst in met het toetsenbord. Druk op ENTER om te bevestigen."
+
+msgid "Enter text using the keyboard. Press ESC to cancel, or ENTER to confirm."
+msgstr "Voer tekst in met het toetsenbord. Druk op ESC om te annuleren, of op ENTER om te bevestigen."
+
+msgid "Enter {1}'s name."
+msgstr "Geef {1} een naam."
+
+msgid "Entry"
+msgstr "Toegang"
+
+msgid "Execute search."
+msgstr "Zoekopdracht uitvoeren."
+
+msgid "Execute sort."
+msgstr "Sortering toepassen."
+
+msgid "Exit"
+msgstr "Afsluiten"
+
+msgid "Exit To Desktop"
+msgstr "Afsluiten"
+
+msgid "Exit To Menu"
+msgstr "Terug Naar Hoofdmenu"
+
+msgid "Exit from the Box?"
+msgstr "Boxbewerking sluiten?"
+
+msgid "Exit from the map?"
+msgstr "Map sluiten?"
+
+msgid "Exp. Points"
+msgstr "Exp."
+
+msgid "Expected a section at the beginning of the file. This error may also occur if the file was not saved in UTF-8.\n{1}"
+msgstr "Expected a section at the beginning of the file.  This error may also occur if the file was not saved in UTF-8.\n{1}"
+
+msgid "FIFTH"
+msgstr "VIJDE"
+
+msgid "FIRST"
+msgstr "EERSTE"
+
+msgid "FORMS"
+msgstr "TYPES"
+
+msgid "FORMS SEEN"
+msgstr "TYPES GEZIEN"
+
+msgid "FOURTH"
+msgstr "VIERDE"
+
+msgid "FPS"
+msgstr "BPS"
+
+msgid "Failed to compile text: {1}"
+msgstr "Failed to compile text:  {1}"
+
+msgid "Failed to connect, the servers may be experiencing problems. Please try again later."
+msgstr "Verbinding mislukt, de servers hebben mogelijk problemen. Probeer het later opnieuw."
+
+msgid "Failed to create the trainer type. Choose a different name."
+msgstr "Failed to create the trainer type.  Choose a different name."
+
+msgid "Failed to delete stored items"
+msgstr "Kon voorwerpen niet verwijderen."
+
+msgid "Failed to load data from server!"
+msgstr "Serverdata laden mislukt!"
+
+msgid "Fainted Pokémon are considered dead and only one can be caught per route."
+msgstr "Pokémon gaan dood. Er kan maar één Pokémon per route gevangen worden."
+
+msgid "Fairy"
+msgstr "Fee"
+
+msgid "Faraway place"
+msgstr "Verweggistan"
+
+msgid "Fast"
+msgstr "Snel"
+
+msgid "Feb."
+msgstr "02"
+
+msgid "February"
+msgstr "Februari"
+
+msgid "Female"
+msgstr "Vrouwtje"
+
+msgid "Female Shiny"
+msgstr "Shiny Vrouwtje"
+
+msgid "Feminine"
+msgstr "Vrouw"
+
+msgid "Fertilize"
+msgstr "Bemesten"
+
+msgid "Fight"
+msgstr "Vechten"
+
+msgid "Fighting"
+msgstr "Vecht"
+
+msgid "Figy Berries"
+msgstr "Figy-Bessen"
+
+msgid "File {1}, line {2}\n{3}"
+msgstr "File {1}, line {2}\n{3}\n"
+
+msgid "File {1}, section {2}, key {3}\n{4}"
+msgstr "File {1}, section {2}, key {3}\n{4}\n"
+
+msgid "Fill all fields!"
+msgstr "Vul alle velden in!"
+
+msgid "Finally someone worth battling!"
+msgstr "Eindelijk iemand die mijn tijd waard is!"
+
+msgid "Fire"
+msgstr "Vuur"
+
+msgid "Fire's power was weakened!"
+msgstr "Vuurkrachten worden afgezwakt!"
+
+msgid "First move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "First move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "Flying"
+msgstr "Vlieg"
+
+msgid "Folks, we're back with Round 2!"
+msgstr "We zijn terug met de tweede ronde, mensen!"
+
+msgid "Font Style"
+msgstr "Lettertype"
+
+msgid "For a Balanced trainer like you...\\^"
+msgstr "Voor een Evenwichtige Trainer als jij...\\^"
+
+msgid "For a Defensive trainer like you...\\^"
+msgstr "Voor een Defensieve Trainer als jij...\\^"
+
+msgid "For an Offensive trainer like you...\\^"
+msgstr "Voor een Offensieve Trainer als jij...\\^"
+
+msgid "For some reason this Pokémon can't be caught!"
+msgstr "Deze Pokémon kan op de een of andere manier niet gevangen worden!"
+
+msgid "For {1}'s {2},\n{3} sends {4}."
+msgstr "Voor {1}'s {2},\n stuurt {3} {4}."
+
+msgid "For {1}'s {2},\n{3} sends {4}."
+msgstr "Voor {1}'s {2},\n stuurt {3} {4}."
+
+msgid "For {1}, the {2} was too bitter!"
+msgstr "O, {1} vond de {2} te bitter!"
+
+msgid "For {1}, the {2} was too dry!"
+msgstr "O, {1} vond de {2} te droog!"
+
+msgid "For {1}, the {2} was too sour!"
+msgstr "O, {1} vond de {2} te zuur!"
+
+msgid "For {1}, the {2} was too spicy!"
+msgstr "O, {1} vond de {2} te pittig!"
+
+msgid "For {1}, the {2} was too sweet!"
+msgstr "O, {1} vond de {2} te zoet!"
+
+msgid "Forest"
+msgstr "Woud"
+
+msgid "Form"
+msgstr "Vorm"
+
+msgid "Fourth move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Fourth move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "Friday"
+msgstr "Vrijdag"
+
+msgid "Fuse with which Pokémon?"
+msgstr "Met welke Pokémon fuseren?"
+
+msgid "Game Version: {1}\nServer Version: {2}"
+msgstr "Game-versie: {1}\nServerversie: {2}"
+
+msgid "Ganlon Berries"
+msgstr "Ganlon-Bessen"
+
+msgid "Genderless"
+msgstr "Geslachtloos"
+
+msgid "Genderless Shiny"
+msgstr "Shiny Geslachtloos"
+
+msgid "Gentle"
+msgstr "Zachtaardig"
+
+msgid "Ghost"
+msgstr "Spook"
+
+msgid "Give"
+msgstr "Geven"
+
+msgid "Give to which Pokémon?"
+msgstr "Aan welke Pokémon geven?"
+
+msgid "Give up trying to teach a new move to {1}?"
+msgstr "Stoppen met het aanleren van de nieuwe actie?"
+
+msgid "Go back to the previous menu."
+msgstr "Terug naar het vorige menu."
+
+msgid "Go for it, {1}!"
+msgstr "Ik kies jou, {1}!"
+
+msgid "Go! {1} and {2}!"
+msgstr "Ik kies jou, {1} en {2}!"
+
+msgid "Go! {1}!"
+msgstr "Ga ervoor, {1}!"
+
+msgid "Good endurance."
+msgstr "Houdt zich taai."
+
+msgid "Good perseverance."
+msgstr "Best standvastig."
+
+msgid "Goodness! That was quite a thorough rout.\nI may require some tea and\nbiscuits after this match.\nIf you like, you would be welcome to join me."
+msgstr "Jeetjemina!\nDat was een best evidente nederlaag. Ik verlang naar wat thee en koekjes nu deze strijd gepasseerd is. U bent welkom mij te vergezellen indien u daar zin in heeft."
+
+msgid "Goodness, you are really quite strong."
+msgstr "Gossie, sterk ben je zeker."
+
+msgid "Got away safely!"
+msgstr "Veilig weggevlucht!"
+
+msgid "Gotcha! {1} was caught!"
+msgstr "Hebbes! {1} is gevangen!"
+
+msgid "Graphics/Pictures/BATTLE/battleBagChoices"
+msgstr "Graphics/Translations/Dutch/battleBagChoices_nl"
+
+msgid "Graphics/Pictures/BATTLE/battleBagLast"
+msgstr "Graphics/Translations/Dutch/battleBagLast_nl"
+
+msgid "Graphics/Pictures/BATTLE/battleItemConfirm"
+msgstr "Graphics/Translations/Dutch/battleItemConfirm_nl"
+
+msgid "Graphics/Pictures/BATTLE/moveSelButtons"
+msgstr "Graphics/Translations/Dutch/moveSelButtons_nl"
+
+msgid "Graphics/Pictures/Pokedex/entryicons"
+msgstr "Graphics/Translations/Dutch/entryicons_nl"
+
+msgid "Graphics/Pictures/Summary/summary0text"
+msgstr "Graphics/Translations/Dutch/summary0text_nl"
+
+msgid "Graphics/Pictures/Summary/summary1text"
+msgstr "Graphics/Translations/Dutch/summary1text_nl"
+
+msgid "Graphics/Pictures/Summary/summary2text"
+msgstr "Graphics/Translations/Dutch/summary2text_nl"
+
+msgid "Graphics/Pictures/Summary/summary3text"
+msgstr "Graphics/Translations/Dutch/summary3text_nl"
+
+msgid "Graphics/Pictures/Summary/summary4text"
+msgstr "Graphics/Translations/Dutch/summary4text_nl"
+
+msgid "Graphics/Pictures/battleStatuses"
+msgstr "Graphics/Translations/Dutch/battleStatuses_nl"
+
+msgid "Graphics/Pictures/boxpartytab"
+msgstr "Graphics/Translations/Dutch/boxpartytab_nl"
+
+msgid "Graphics/Pictures/boxsides"
+msgstr "Graphics/Translations/Dutch/boxsides_nl"
+
+msgid "Graphics/Pictures/jukeboxbg"
+msgstr "Graphics/Translations/Dutch/jukeboxbg_nl"
+
+msgid "Graphics/Pictures/statuses"
+msgstr "Graphics/Translations/Dutch/statuses_nl"
+
+msgid "Graphics/Pictures/trcard.png"
+msgstr "Graphics/Translations/Dutch/trcard_nl"
+
+msgid "Graphics/Pictures/types"
+msgstr "Graphics/Translations/Dutch/types_nl"
+
+msgid "Graphics/Pictures/typesbw"
+msgstr "Graphics/Translations/Dutch/typesbw_nl"
+
+msgid "Graphics/Titles/Start"
+msgstr "Graphics/Translations/Dutch/Start_nl"
+
+msgid "Graphics/Titles/pic_4"
+msgstr "Graphics/Translations/Dutch/pic_4_nl"
+
+msgid "Grass"
+msgstr "Gras"
+
+msgid "Grass grew to cover the battlefield!"
+msgstr "Er is gras op het veld gegroeid!"
+
+msgid "Gravity intensified!"
+msgstr "De zwaartekracht is versterkt!"
+
+msgid "Gravity returned to normal!"
+msgstr "De zwaartekracht is weer als normaal!"
+
+msgid "Gray"
+msgstr "Grijs"
+
+msgid "Green"
+msgstr "Groen"
+
+msgid "Grepa Berries"
+msgstr "Grepa-Bessen"
+
+msgid "Ground"
+msgstr "Grond"
+
+msgid "Guara Berries"
+msgstr "Guara-Bessen"
+
+msgid "Gyahahaha! I expected nothing less from you! Go on to the next round, then. You deserve it!"
+msgstr "Gyahahaha!\nIk had niks anders van je verwacht!\nOp naar de volgende ronde met jou!\nJe verdient het!"
+
+msgid "HM moves can't be forgotten now."
+msgstr "VM-acties kunnen nu niet vergeten worden."
+
+msgid "HP greater than total HP"
+msgstr "HP meer dan het totale HP"
+
+msgid "HP less than 0"
+msgstr "HP minder dan 0"
+
+msgid "HT"
+msgstr "HOOGTE"
+
+msgid "Haban Berries"
+msgstr "Haban-Bessen"
+
+msgid "Hafli Berries"
+msgstr "Hafli-Bessen"
+
+msgid "Hail continues to fall."
+msgstr "Het blijft hagelen."
+
+msgid "Hail is falling."
+msgstr "Het hagelt."
+
+msgid "Hall of Fame"
+msgstr "Eregalerij"
+
+msgid "Hall of Fame No."
+msgstr "Eregalerij-nr."
+
+msgid "Happiness"
+msgstr "Vriendelijkheid"
+
+msgid "Hardy"
+msgstr "Hardnekkig"
+
+msgid "Hasty"
+msgstr "Driftig"
+
+msgid "Hates to lose."
+msgstr "Haat verliezen."
+
+msgid "HeL̳ o-f FAmr"
+msgstr "E̳rRrG̳aR̳I̳ji"
+
+msgid "Healing in-battle is disabled by your custom game settings!"
+msgstr "Geneesvoorwerpen kunnen door je aangepaste spelregels niet toegepast worden tijdens gevechten!"
+
+msgid "Heavy to Light"
+msgstr "Zwaar tot Licht"
+
+msgid "Helloooooo ladies, gentlemen,\npeople of Tandor!"
+msgstr "Halloooooo dames en heren,\nmensen van Tandor!"
+
+msgid "Here we are! Round 4, the semifinals!"
+msgstr "Hier zijn we dan!\nRonde vier, de halve finales!"
+
+msgid "Here you are!\nThank you!"
+msgstr "Kijk eens aan!\nDankuwel!"
+
+msgid "Here you go!"
+msgstr "Alsjeblieft!"
+
+msgid "Hi there, \\PN!\nI wanted to thank you for stopping the Power Plant attacks.\nYou really did a good thing for Bealbeach City, and for all of Tandor!\nEver since I heard about that, I've been itching for a rematch.\nThis time, my team and I are going all-out!\nI hope you'll go all-out, too!"
+msgstr "Hallo \\PN!\nIk wilde je nog bedanken voor het stoppen van de kernrampen. Je hebt iets heel goeds gedaan voor Bruisbank, en voor heel Tandor! Sinds ik dat heb gehoord sta ik te springen voor een nieuw gevecht. Dit keer halen mijn team en ik alles uit de kast!\nIk hoop jij ook!"
+
+msgid "Highly curious."
+msgstr "Heel nieuwsgierig."
+
+msgid "Highly persistent."
+msgstr "Heel volhardend."
+
+msgid "Hit {1} time!"
+msgstr "Het heeft {1} keer geraakt!"
+
+msgid "Hit {1} times!"
+msgstr "Het heeft {1} keer geraakt!"
+
+msgid "Hiyah! I have honed my skills as a Surfer and a Ninja! We command mastery over the waves!"
+msgstr "Haiyah! Ik heb mijn vaardigheden als surfer en ninja uitgebreid!\nWij heersen over de golven!"
+
+msgid "Hmm... impressive."
+msgstr "Hmm... indrukwekkend."
+
+msgid "Hmph."
+msgstr "Hmpf."
+
+msgid "Hold down while walking to run."
+msgstr "Laat het karakter rennen."
+
+msgid "Hondew Berries"
+msgstr "Hondew-Bessen"
+
+msgid "Honored \\PN,\nThere is a stirring in the wind.\nThe Gods murmur in the deep.\nA storm brews on the horizon.\nOur Village will soon be in danger.\nWithout your help, Tsukinami will fall."
+msgstr "Geëerde \\PN,\nDe wind ruist. De Goden murmelen zachtjes in hun slaap. Er is een storm op komst. Ons dorp zal binnenkort in gevaar zijn. Zonder uw hulp zal Tsukinami ten onder gaan."
+
+msgid "How many do you want to deposit?"
+msgstr "Hoeveel wil je er opslaan?"
+
+msgid "How many do you want to withdraw?"
+msgstr "Hoeveel wil je er ophalen?"
+
+msgid "Huh?\nThe {1}'s responding!"
+msgstr "Huh?\nDe {1} piept!"
+
+msgid "Huh?\n{1} stopped evolving!"
+msgstr "Huh?\n{1} is gestopt met evolueren!"
+
+msgid "I alone command the incredible power of Dragons! Fear our unstoppable might!"
+msgstr "Ik alleen beschik over de macht van de draak! Vrees onze onstuitbare kracht!"
+
+msgid "I am a fossil revivification expert."
+msgstr "Ik ben een fossielheroplevingsexpert."
+
+msgid "I can feel the anticipation in the air.\nThese trainers have spent their entire lives preparing for this moment!"
+msgstr "Ik voel de spanning al in de lucht.\nDeze Trainers hebben zich hier hun hele leven op voorbereid!"
+
+msgid "I can feel the tension crackling in the air."
+msgstr "Dit wordt spannend."
+
+msgid "I can pay ${1}.\nWould that be OK?"
+msgstr "Ik kan er ${1} voor geven.\nIs dat oké?"
+
+msgid "I can pay ${1}. Would that be OK?"
+msgstr "I can pay ${1}.  Would that be OK?"
+
+msgid "I can tell that they both are itching for another fight!"
+msgstr "Ik kan zien dat ze staan te springen voor een nieuw gevecht!"
+
+msgid "I can tell the crowd is loving this! It only gets more intense from here on out, folks!"
+msgstr "Het publiek gaat uit zijn dak! Het wordt alleen nog maar spannender, mensen!"
+
+msgid "I do say!\nHave we perchance met before?\nI am certain we have.\nYou do leave quite an impression, indeed.\nHowever, allow me to reintroduce myself:\nI am Sr. Goldkorn.\nI represent a refined style of battle.\nA tradition which is sadly going away, it seems... But, I shall prove that refinement still has a place in the arena.\nPlease allow us to have a clean, civil match."
+msgstr "Asjemenou!\nZeg, heb ik u niet eerder ontmoet?\nIk zou zeggen van wel.\nU heeft namelijk een briljante indruk achtergelaten.\nHet was een genot met u te duelleren.\nIk zal me wederom voorstellen:\nIk ben de heer Goldkorn.\nIk gebruik een uiterst verfijnde vechtstijl. Een traditie die maar al te gauw lijkt te verdwijnen. Ik zal bewijzen dat er nog altijd plaats voor is in de arena. Laten we een eerlijke, beschaafde strijd aangaan."
+
+msgid "I have created... life!"
+msgstr "Het was een succes. Het leeft!"
+
+msgid "I kept the best for last!"
+msgstr "Ik heb het beste voor laatst bewaard!"
+
+msgid "I know I look cute, but you shouldn't underestimate me! I won last year and I'll do it again!"
+msgstr "Ik weet dat ik schattig ben, maar als ik jou was zou ik me niet onderschatten! Ik heb vorig jaar gewonnen, en kan het zo weer doen!"
+
+msgid "I say!"
+msgstr "Wel heb ik ooit!"
+
+msgid "I see a great future ahead of you, but are you ready for this?"
+msgstr "Geen licht zonder schaduw! Zet je schrap voor de krachten van Mutios!"
+
+msgid "I see you command your Pokémon with great intelligence and respect. A lesser trainer could not have triumphed against us. I must bow to your superiority."
+msgstr "Ik zie dat je je Pokémon met intelligentie en respect commandeert. Een mindere Trainer had niet tegen ons kunnen zegevieren. Ik moet buigen voor je superioriteit."
+
+msgid "I specialize in the mysterious and mystical Fairy type. Soon, you'll be under our spell."
+msgstr "Ik specialiseer in de mysterieuze, magische Fee-soort. Kijk, en je zal versteld staan."
+
+msgid "I use only the most perfect mechanical Pokémon. Your puny team won't stand a chance."
+msgstr "Ik gebruik alleen de meest perfecte mechanische Pokémon. Jouw zwakke team maakt geen schijn van kans."
+
+msgid "I will bring your Pokémon back to life in just a moment."
+msgstr "Ik breng je Pokémon in een ogenblik tot leven."
+
+msgid "I'd like to know your name.\nPlease tell me."
+msgstr "Stel jezelf eens voor.\nIk zou je naam graag willen weten!"
+
+msgid "I'll throw in a Premier Ball, too."
+msgstr "U krijgt van ons ook een Premiumbal."
+
+msgid "I've done it!"
+msgstr "En... klaar is kees!"
+
+msgid "ID No."
+msgstr "ID-nr."
+
+msgid "ID No. {1}"
+msgstr "ID-nr. {1}"
+
+msgid "IDNo. {1}"
+msgstr "ID-nr: {1}"
+
+msgid "IDNo.<r>{1}<br>"
+msgstr "ID-nr.<r>{1}<br>"
+
+msgid "IDNo.{1}"
+msgstr "ID-nr. {1}"
+
+msgid "INELIGIBLE"
+msgstr "GEEN AANMERKING"
+
+msgid "Iapapa Berries"
+msgstr "Iapapa-Bessen"
+
+msgid "Ice"
+msgstr "Ijs"
+
+msgid "If both trainers are ready, then..."
+msgstr "Als beide Trainers klaar zijn, dan\\wt[8].\\wt[8].\\wt[8].\\wtnp[16]"
+
+msgid "If the mail is removed, the message will be lost. OK?"
+msgstr "Het bericht zal verloren gaan als de Brief teruggenomen wordt. Is dat oké?"
+
+msgid "If true, this map is part of the Safari Zone (both indoor and outdoor). Not to be used in the reception desk."
+msgstr "If true, this map is part of the Safari Zone (both indoor and outdoor).  Not to be used in the reception desk."
+
+msgid "If you bring me a Pokémon fossil, I can restore it to life."
+msgstr "Als je mij een Pokémon-fossiel brengt, kan ik het weer tot leven brengen."
+
+msgid "If you quit now, you will recieve {1} Coin(s). Will you quit?"
+msgstr "Als je nu stopt, ontvang je {1} munt(en). Stoppen?"
+
+msgid "If you see one, bring it to me."
+msgstr "Als je er een vindt, breng het dan naar mij."
+
+msgid "Impetuous and silly."
+msgstr "Levendig en gek."
+
+msgid "Impish"
+msgstr "Ondeugend"
+
+msgid "In Bag:<r>{1:d}"
+msgstr "In Tas:<r>{1:d}"
+
+msgid "In the spirit of fairness all online features will be disabled on this save."
+msgstr "Om het eerlijk te houden zullen alle netwerkfuncties voor dit opslagbestand uitgeschakeld worden."
+
+msgid "Invalid pocket: {1}"
+msgstr "Ongeldig vak: {1}"
+
+msgid "Is it OK to throw away {1} {2}(s)?"
+msgstr "Is het oké om {1} {2} weg te gooien?"
+
+msgid "Is there anything else I can help you with?"
+msgstr "Kan ik nog iets voor u betekenen?"
+
+msgid "It appears to move occasionally. It may be close to hatching."
+msgstr "Het beweegt eens in de zoveel tijd. Het zal vroeg of laat uitkomen."
+
+msgid "It broke all barriers!"
+msgstr "Het heeft alle barrières doorbroken!"
+
+msgid "It can't be used when you have someone with you."
+msgstr "Je kan dat niet gebruiken als er iemand bij je aangesloten is."
+
+msgid "It can't be used while in the Hazard Suit."
+msgstr "Je kan dat niet gebruiken met het Beschermingspak aan!"
+
+msgid "It contained {1}."
+msgstr "Het bevat {1}."
+
+msgid "It created a bizarre area in which Pokémon's held items lose their effects!"
+msgstr "Het creërt een vreemd gebied waar vastgehouden voorwerpen niet in werken!"
+
+msgid "It created a bizarre area in which the Defense and Sp. Def stats are swapped!"
+msgstr "Het creërt een vreemd gebied waar Verdediging en Sp.-Ver. in verwisselt zijn!"
+
+msgid "It doesn't affect\n{1}..."
+msgstr "Het heeft geen effect op\n{1}..."
+
+msgid "It doesn't affect {1}.."
+msgstr "Het heeft geen effect op {1}..."
+
+msgid "It doesn't affect {1}..."
+msgstr "Het heeft geen effect op {1}..."
+
+msgid "It had no effect."
+msgstr "Het had geen effect."
+
+msgid "It hurt itself from its confusion!"
+msgstr "Het verwondde zichzelf in verwarring!"
+
+msgid "It hurt itself in its confusion!"
+msgstr "Het heeft zichzelf verwond in verwarring!"
+
+msgid "It is not often that we come down from the peak of Mt. Lanthanite. But, this region deserves a reminder of the power of dragons! You, who have proved yourself in the Five Trials... Have you what it takes to defeat us at our full strength?\nWRRRROOOAAAAARRRR!\nHear our battle cry!"
+msgstr "Het gebeurt niet vaak dat wij van de Lanthanidenberg afdalen, maar deze regio verdient een herinnering aan de macht van de draak! Jij, die zichzelf bewezen heeft met de vijf beproevingen...\nHeb jij wat nodig is om ons op volle kracht te verslaan?\nWRAAAAAAAAAAAAA!\nHoor onze strijdkreet!"
+
+msgid "It is raining."
+msgstr "Het regent."
+
+msgid "It looks like this Egg will take a long time to hatch."
+msgstr "Dit Ei lijkt nog lang niet uit te komen."
+
+msgid "It poisoned {1}!"
+msgstr "Het heeft {1} vergiftigd!"
+
+msgid "It reduced the PP of {1}'s {2} by {3}!"
+msgstr "Het verlaagt de AP van de {2} van {1} met {3}!"
+
+msgid "It started to hail!"
+msgstr "Het is gaan hagelen!"
+
+msgid "It started to rain!"
+msgstr "Het is gaan regenen!"
+
+msgid "It stole {1}'s {2}!"
+msgstr "Het heeft de {2} van {1} gestolen!"
+
+msgid "It was alerted to {1}'s {2}!"
+msgstr "Het is bang voor de {2} van {1}!"
+
+msgid "It was stored in box \"{1}\"."
+msgstr "Het is in \"{1}\" opgeslagen."
+
+msgid "It was stored in box \"{1}.\""
+msgstr "Het is in \"{1}\" opgeslagen."
+
+msgid "It was too weak to make a substitute!"
+msgstr "Het was te zwak om een Substitute-kopie te maken!"
+
+msgid "It won't have any effect"
+msgstr "Het heeft geen effect."
+
+msgid "It won't have any effect."
+msgstr "Het heeft geen effect."
+
+msgid "It's a Slot Machine."
+msgstr "Het is een gokautomaat."
+
+msgid "It's a big boulder, but a Pokémon may be able to push it aside."
+msgstr "Het is een grote steen. Misschien kan een Pokémon het uit de kant schuiven."
+
+msgid "It's a dead coral, but a Pokémon may be able to smash it."
+msgstr "Dit dode koraal lijkt breekbaar. Misschien kan een Pokémon het kapot breken."
+
+msgid "It's a large waterfall. Would you like to climb it?"
+msgstr "Het is een grote waterval. Beklimmen?"
+
+msgid "It's a one-hit KO!"
+msgstr "Het is een fatale klap!"
+
+msgid "It's a rugged rock, but a Pokémon may be able to smash it."
+msgstr "Deze rots lijkt breekbaar. Misschien kan een Pokémon het kapot breken."
+
+msgid "It's empty."
+msgstr "Het is leeg."
+
+msgid "It's impossible to aim without being focused!"
+msgstr "Zonder focus is het onmogelijk te mikken!"
+
+msgid "It's no good! It's impossible to aim when there are two Pokémon zijn!"
+msgstr "Het heeft geen zin! Het is onmogelijk te mikken wanneer er twee Pokémon zijn!"
+
+msgid "It's not very effective..."
+msgstr "Het is niet erg effectief..."
+
+msgid "It's soft, earthy soil."
+msgstr "Het is zachte, vruchtbare grond."
+
+msgid "It's soft, loamy soil.\nPlant a berry?"
+msgstr "Het is zachte, vruchtbare grond.\nEen Bes planten?"
+
+msgid "It's super effective!"
+msgstr "Het is zeer effectief!"
+
+msgid "It's too dangerous to fly to this location!"
+msgstr "Het is te gevaarlijk om naartoe te vliegen!"
+
+msgid "Item"
+msgstr "Voorwerp"
+
+msgid "Item Storage"
+msgstr "Voorwerpenopslag"
+
+msgid "Items"
+msgstr "Voorwerpen"
+
+msgid "Items aren't allowed in Tandor Championship battles."
+msgstr "Voorwerpen mogen tijdens het Tandorkampioenschap niet gebruikt worden."
+
+msgid "Items aren't allowed in the Trial of Truth."
+msgstr "Voorwerpen mogen tijdens de Proef van de Waarheid niet gebruikt worden."
+
+msgid "Items can't be used here."
+msgstr "Voorwerpen kunnen hier niet gebruikt worden."
+
+msgid "Jaboca Berries"
+msgstr "Jaboca-Bessen"
+
+msgid "Jan."
+msgstr "01"
+
+msgid "January"
+msgstr "Januari"
+
+msgid "Jolly"
+msgstr "Vrolijk"
+
+msgid "Jukebox"
+msgstr "Radio"
+
+msgid "Jul."
+msgstr "07"
+
+msgid "July"
+msgstr "Juli"
+
+msgid "Jump"
+msgstr "Box Kiezen"
+
+msgid "Jump to which Box?"
+msgstr "Naar welke Box?"
+
+msgid "Jun."
+msgstr "06"
+
+msgid "June"
+msgstr "Juni"
+
+msgid "Kasib Berries"
+msgstr "Kasib-Bessen"
+
+msgid "Kebia Berries"
+msgstr "Kebia-Bessen"
+
+msgid "Kelpsy Berries"
+msgstr "Kelpsy-Bessen"
+
+msgid "Key Items"
+msgstr "Hoofd"
+
+msgid "Kimono Girl"
+msgstr "Kimono"
+
+msgid "LEARNED"
+msgstr "GELEERD"
+
+msgid "Landed a Pokémon!"
+msgstr "Pokémon binnengehaald!"
+
+msgid "Language"
+msgstr "Taal"
+
+msgid "Lansat Berries"
+msgstr "Lansat-Bessen"
+
+msgid "Latest Version = {1} \\wtnp[30]"
+msgstr "Laatste Versie = {1} \\wtnp[30]"
+
+msgid "Lax"
+msgstr "Laks"
+
+msgid "Lazy made {1} sleep!"
+msgstr "Lazy heeft {1} in slaap gebracht!"
+
+msgid "League Champion! Congratulations!"
+msgstr "Tandorkampioen! Gefeliciteerd!"
+
+msgid "League champion!\nCongratulations!\\^"
+msgstr "{Tandorkampioen|Tandorkampioene|Tandorkampioen}!\nGefeliciteerd!\\^"
+
+msgid "Left"
+msgstr "Links"
+
+msgid "Left: {1}"
+msgstr "Aantal: {1}"
+
+msgid "Leppa Berries"
+msgstr "Leppa-Bessen"
+
+msgid "Let me register you."
+msgstr "Laat me je even op mijn Poképod registreren."
+
+msgid "Let me tell you a story.\nThere once was a girl who dreamed of being a star in the Opera. ...Oh? You have heard this before? Alas... I was looking forward to my monologue.\nNow, I recall... you are \\PN.\nOn ye of great destiny... have your dreams become reality?\nOr are they still dreams?\nCan you tell the difference?\nCome, let us captivate the audience with our spectacular act!"
+msgstr "Laat me je een verhaal vertellen.\nEr was eens een klein meisje dat droomde van een rol in de opera. ...Hm? Dit heb je al eens gehoord? Dat is jammer... Ik keek best uit naar mijn monoloog.\nGoed, maakt niet uit... Ik kan me je nog herinneren, jij bent \\PN.\nZijn je dromen al de werkelijkheid, of zijn ze nog dromen? Kan je het verschil nog herkennen?\nOp naar de laatste akte!"
+
+msgid "Let's enjoy cycling!"
+msgstr "Laten we fietsen!"
+
+msgid "Let's go!"
+msgstr "Nou...\\.\nLaten we beginnen!"
+
+msgid "Let's make this battle one to remember!"
+msgstr "Laten we er een onvergetelijke\nstrijd van maken!"
+
+msgid "Let's see how you fare against this final dance move!"
+msgstr "Eens kijken of je mijn laatste pasjes kan bijhouden!"
+
+msgid "Liechi Berries"
+msgstr "Liechi-Bessen"
+
+msgid "Light"
+msgstr "Licht"
+
+msgid "Light Screen raised the opposing team's Special Defense!"
+msgstr "Light Screen heeft de Sp.-Ver. van het verdedigende team verhoogd!"
+
+msgid "Light Screen raised your team's Special Defense!"
+msgstr "Light Screen heeft de Sp.-Ver. van je team verhoogd!"
+
+msgid "Light is filtering down from above. A Pokémon may be able to surface here."
+msgstr "Er komt licht van boven het water. Misschien kan een Pokémon hier boven water komen."
+
+msgid "Light is filtering down from above. Would you like to surface?"
+msgstr "Er komt licht van boven het water. Boven water komen?"
+
+msgid "Light to Heavy"
+msgstr "Licht tot Zwaar"
+
+msgid "Likes to fight."
+msgstr "Houdt van vechten."
+
+msgid "Likes to relax."
+msgstr "Houdt van relaxen."
+
+msgid "Likes to run."
+msgstr "Houdt van rennen."
+
+msgid "Likes to thrash about."
+msgstr "Houdt van stoeien."
+
+msgid "List by body color.\nSpotted Pokémon only."
+msgstr "Zoeken op kleur.\nGeldt alleen voor Pokémon die al gezien zijn."
+
+msgid "List by the first letter in the name.\nSpotted Pokémon only."
+msgstr "Zoeken op de eerste letter van de naam.\nGeldt alleen voor Pokémon die al gezien zijn."
+
+msgid "List by type.\nOwned Pokémon only."
+msgstr "Zoeken op Pokémon-soort.\nGeldt alleen voor Pokémon die al gezien zijn."
+
+msgid "Log Off"
+msgstr "Uitloggen"
+
+msgid "Log O̳f"
+msgstr "U̳It̳lL̳og̳gEn̳"
+
+msgid "Lonely"
+msgstr "Eenzaam"
+
+msgid "Look like the innocent flower, but be the serpent under it."
+msgstr "Zie eruit als een onschuldige bloem, maar wees als het addertje in het gras."
+
+msgid "Loves to eat."
+msgstr "Houdt van eten."
+
+msgid "Lucky Chant shielded the opposing team from critical hits!"
+msgstr "Lucky Chant beschermt het verdedigende team tegen voltreffers!"
+
+msgid "Lucky Chant shielded your team from critical hits!"
+msgstr "Lucky Chant beschermt je team tegen voltreffers!"
+
+msgid "Lullaby"
+msgstr "Slaaplied"
+
+msgid "Lum Berries"
+msgstr "Lum-Bessen"
+
+msgid "MONEY:"
+msgstr "GELD:"
+
+msgid "MOVE ITEMS"
+msgstr "VOORWERPEN VERPLAATSEN"
+
+msgid "MOVE POKéMON"
+msgstr "POKÉMON VERPLAATSEN"
+
+msgid "Magic Room wore off, and held items' effects returned to normal!"
+msgstr "Magic Room is uitgewerkt. Alle vastgehouden voorwerpen werken weer als normaal!"
+
+msgid "Magnificent! A flawless performance!"
+msgstr "Magnifiek! Een prachtig optreden!"
+
+msgid "Mago Berries"
+msgstr "Mago-Bessen"
+
+msgid "Magost Berries"
+msgstr "Magost-Bessen"
+
+msgid "Mail"
+msgstr "Brieven"
+
+msgid "Mail must be removed before holding an item."
+msgstr "De Brief moet teruggenomen worden voordat de Pokémon een voorwerp kan vasthouden."
+
+msgid "Mail was taken from the Pokémon."
+msgstr "Brief is teruggenomen van de Pokémon."
+
+msgid "Mail was transferred from the Mailbox."
+msgstr "Brief is naar de Postbus verplaatst."
+
+msgid "Mailbox"
+msgstr "Postbus"
+
+msgid "Main Save"
+msgstr "Hoofdbestand"
+
+msgid "Main version is up-to-date however, there MAY be a new minor patch available.\\wtnp[30]"
+msgstr "Hoofdversie is up-to-date, maar er kan een patch beschikbaar zijn.\\wtnp[30]"
+
+msgid "Main version is up-to-date however, there is a new minor patch available.\\wtnp[30]"
+msgstr "Hoofdversie is up-to-date, maar er is een patch beschikbaar.\\wtnp[30]"
+
+msgid "Make MGift"
+msgstr "Maak MGift"
+
+msgid "Make Mystery Gift"
+msgstr "Mystery Gift Maken"
+
+msgid "Male"
+msgstr "Mannetje"
+
+msgid "Male Shiny"
+msgstr "Shiny Mannetje"
+
+msgid "Map"
+msgstr "Kaart"
+
+msgid "Map {1} was not found."
+msgstr "Map {1} kon niet gevonden worden."
+
+msgid "Mar."
+msgstr "03"
+
+msgid "March"
+msgstr "Mars"
+
+msgid "Mark"
+msgstr "Markeren"
+
+msgid "Mark your Pokemon."
+msgstr "Markeer de Pokemon."
+
+msgid "Masculine"
+msgstr "Man"
+
+msgid "Max. HP<r>+{1}\nAttack<r>+{2}\nDefense<r>+{3}\nSp. Atk<r>+{4}\nSp. Def<r>+{5}\nSpeed<r>+{6}"
+msgstr "Max. HP<r>+{1}\nSterkte<r>+{2}\nVerdediging<r>+{3}\nSp.-Str.<r>+{4}\nSp.-Ver.<r>+{5}\nSnelheid<r>+{6}"
+
+msgid "Max. HP<r>{1}\nAttack<r>{2}\nDefense<r>{3}\nSp. Atk<r>{4}\nSp. Def<r>{5}\nSpeed<r>{6}"
+msgstr "Max. HP<r>{1}\nSterkte<r>{2}\nVerdediging<r>{3}\nSp.-Str.<r>{4}\nSp.-Ver.<r>{5}\nSnelheid<r>{6}"
+
+msgid "May"
+msgstr "05"
+
+msgid "Medicine"
+msgstr "Medicijnen"
+
+msgid "Mega Ampharos"
+msgstr "Mega-Ampharos"
+
+msgid "Mega Arbok"
+msgstr "Mega-Arbok"
+
+msgid "Mega Archilles"
+msgstr "Mega-Archilles"
+
+msgid "Mega Baariette"
+msgstr "Mega-Baariette"
+
+msgid "Mega Daikatuna"
+msgstr "Mega-Daikatuna"
+
+msgid "Mega Dramsama"
+msgstr "Mega-Dramsama"
+
+msgid "Mega Drilgann"
+msgstr "Mega-Drilgann"
+
+msgid "Mega Electruxo"
+msgstr "Mega-Electruxo"
+
+msgid "Mega Gengar"
+msgstr "Mega-Gengar"
+
+msgid "Mega Gyarados"
+msgstr "Mega-Gyarados"
+
+msgid "Mega Inflagetah"
+msgstr "Mega-Inflagetah"
+
+msgid "Mega Kiricorn"
+msgstr "Mega-Kiricorn"
+
+msgid "Mega Metalynx"
+msgstr "Mega-Metalynx"
+
+msgid "Mega Oblivicorn"
+msgstr "Mega-Oblivicorn"
+
+msgid "Mega S51-A T"
+msgstr "Mega-S51-A T"
+
+msgid "Mega Sableye"
+msgstr "Mega-Sableye"
+
+msgid "Mega Syrentide"
+msgstr "Mega-Syrentide"
+
+msgid "Mega Whimsicott"
+msgstr "Mega-Whimsicott"
+
+msgid "Micle Berries"
+msgstr "Micle-Bessen"
+
+msgid "Mid"
+msgstr "Middel"
+
+msgid "Mischievous."
+msgstr "Ondeugend."
+
+msgid "Mist swirled about the battlefield!"
+msgstr "Er hangt een dikke mist op het veld!"
+
+msgid "Modest"
+msgstr "Bescheiden"
+
+msgid "Monday"
+msgstr "Maandag"
+
+msgid "Money:\n<ar>{1}</ar>"
+msgstr "Geld:\n<ar>{1}</ar>"
+
+msgid "Money:\n<r>${1}"
+msgstr "Geld:\n<r>${1}"
+
+msgid "Most of it is illegible, I can only make out a few words."
+msgstr "Ze zijn grotendeels onleesbaar. Ik kan maar een paar woorden lezen."
+
+msgid "Most of the pages are missing. I can't make out anything."
+msgstr "De meeste pagina's missen. Ik kan er niks van begrijpen."
+
+msgid "Move"
+msgstr "Verplaatsen"
+
+msgid "Move Pokémon"
+msgstr "Pokémon Verplaatsen"
+
+msgid "Move Pokémon stored in Boxes to your party."
+msgstr "Verplaats Pokémon naar je team."
+
+msgid "Move Pokémon stored in boxes to your party."
+msgstr "Verplaats Pokémon naar je team."
+
+msgid "Move items held by any Pokémon in a Box and your party."
+msgstr "Verplaats voorwerpen die door Pokémon in je Boxen en team worden vastgehouden."
+
+msgid "Move to Bag"
+msgstr "Naar Tas Verplaatsen"
+
+msgid "Move to where?"
+msgstr "Met wie verwisselen?"
+
+msgid "Moves"
+msgstr "Acties"
+
+msgid "Moves the main character. Also used to scroll through list entries."
+msgstr "Beweegt het karakter en navigeert door menu's."
+
+msgid "Multiply"
+msgstr "Vermenig."
+
+msgid "Music Volume"
+msgstr "Muziekvolume"
+
+msgid "My Pokémon have saved countless lives on the sea. We're ready for any challenge!"
+msgstr "Mijn Pokémon hebben talloze levens gered! We zijn klaar voor welke uitdaging dan ook!"
+
+msgid "My Pokémon's fiery dance moves will ignite the battlefield!"
+msgstr "Mijn Pokémon dansen als een vlam in de wind! Kan jij de vuurproef doorstaan?"
+
+msgid "NAME"
+msgstr "NAAM"
+
+msgid "NAME: {1}"
+msgstr "NAAM: {1}"
+
+msgid "NOT ABLE"
+msgstr "NIET IN STAAT"
+
+msgid "NOT ENTERED"
+msgstr "GEEN DEELNAME"
+
+msgid "Naive"
+msgstr "Naïef"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Name<r>{1}<br>"
+msgstr "Naam<r>{1}<br>"
+
+msgid "Nanab Berries"
+msgstr "Nanab-Bessen"
+
+msgid "National Pokédex"
+msgstr "Nationale PokéDex"
+
+msgid "Nature"
+msgstr "Karakter"
+
+msgid "Naughty"
+msgstr "Stout"
+
+msgid "Neutral"
+msgstr "Geen"
+
+msgid "New Game"
+msgstr "Nieuw Spel"
+
+msgid "Newer"
+msgstr "Nieuwer"
+
+msgid "Nickname"
+msgstr "Bijnaam"
+
+msgid "No"
+msgstr "Nee"
+
+msgid "No Entry"
+msgstr "Geen Toegang"
+
+msgid "No Pokemon was found."
+msgstr "Geen Pokemon gevonden."
+
+msgid "No ability"
+msgstr "Geen Vaardigheid"
+
+msgid "No item"
+msgstr "Geen voorwerp"
+
+msgid "No items may be used other than what the Pokémon already hold."
+msgstr "Er mogen geen items worden gebruikt die niet door Pokémon worden vastgehouden."
+
+msgid "No matching Pokémon were found."
+msgstr "Geen overeenkomende Pokémon gevonden."
+
+msgid "No more than {1} Pokémon may enter."
+msgstr "Er mogen niet meer dan {1} Pokémon meedoen."
+
+msgid "No new gifts are available."
+msgstr "Geen nieuwe Mystery Gifts beschikbaar."
+
+msgid "No options have been disabled."
+msgstr "Er zijn geen opties uitgeschakeld."
+
+msgid "No room to deposit a Pokémon"
+msgstr "Geen plek om een Pokémon op te slaan."
+
+msgid "No starting position was set in the map editor."
+msgstr "De startpositie is niet ingesteld in de map editor."
+
+msgid "No supported recording device was found. Recording is not possible."
+msgstr "No supported recording device was found.  Recording is not possible."
+
+msgid "No surfing here!"
+msgstr "Je kan hier niet surfen!"
+
+msgid "No targets somehow..."
+msgstr "Geen doelwitten..."
+
+msgid "No! There's no running from a Nuclear Horde!"
+msgstr "Nee! Je kan niet vluchten van een Horde Nucleaire Pokémon!"
+
+msgid "No! There's no running from a Trainer battle!"
+msgstr "Nee! Je kan niet vluchten van een Trainergevecht!"
+
+msgid "No. ???"
+msgstr "Nr. ???"
+
+msgid "No. {1:03d}"
+msgstr "Nr. {1:03d}"
+
+msgid "Nomel Berries"
+msgstr "Nomel-Bessen"
+
+msgid "None"
+msgstr "Geen"
+
+msgid "Nope. Nothing..."
+msgstr "Nee.  Niks..."
+
+msgid "Normal"
+msgstr "Normaal"
+
+msgid "Normal Save"
+msgstr "Normaal Bestand"
+
+msgid "Not enough HP..."
+msgstr "Niet genoeg HP..."
+
+msgid "Not even a nibble..."
+msgstr "Er zit geen beweging in..."
+
+msgid "Not... strong enough..."
+msgstr "Niet... sterk genoeg..."
+
+msgid "Note: You will NOT be able to change these later!"
+msgstr "Let op: dit kan je later NIET veranderen!"
+
+msgid "Nov."
+msgstr "11"
+
+msgid "Nuclear"
+msgstr "Nucleair"
+
+msgid "Number"
+msgstr "Nummer"
+
+msgid "OBTAINED<r>{1:d}"
+msgstr "GEVANGEN<r>{1:d}"
+
+msgid "OFF"
+msgstr "UIT"
+
+msgid "OK"
+msgstr "Oké"
+
+msgid "ON"
+msgstr "AAN"
+
+msgid "OPTIONS"
+msgstr "INSTELLINGEN"
+
+msgid "ORDER"
+msgstr "VOLGORDE"
+
+msgid "Occa Berries"
+msgstr "Occa-Bessen"
+
+msgid "Oct."
+msgstr "10"
+
+msgid "October"
+msgstr "Oktober"
+
+msgid "Of the 32 trainers that entered the arena today, only 8 remain!"
+msgstr "Er zijn nog maar acht van de tweeëndertig Trainers over!"
+
+msgid "Off"
+msgstr "Uit"
+
+msgid "Often dozes off."
+msgstr "Valt vaak in slaap."
+
+msgid "Often lost in thought."
+msgstr "Vaak in gedachten."
+
+msgid "Often scatters things."
+msgstr "Laat vaak dingen vallen."
+
+msgid "Oh no! The Pokémon broke free!"
+msgstr "O nee! De Pokémon brak los!"
+
+msgid "Oh!\nA Shadow Pokemon!"
+msgstr "O!\nEen Schaduw-Pokémon!"
+
+msgid "Oh! A bite!"
+msgstr "O! Je hebt beet!"
+
+msgid "Oh! \\PN, it is good to see you again.\nI'll never forget how you rescued me from the clutches of the Seikamater.\nIn my Gym, you dazzled us with your flawless coordinated moves.\nI can see you have gotten far stronger. But so have we!\nCan you keep up with our fast footwork?\nLet our beautiful dance moves set this arena aflame!"
+msgstr "O, \\PN! Wat goed je weer te zien.\nIk zal nooit vergeten hoe je mij uit het web van de Seikamater hebt gered. Je hebt me tijdens ons vorige gevecht zeker versteld doen staan met je vlekkeloze dansbewegingen. Ik merk ook dat je sindsdien veel sterker bent geworden, maar datzelfde geldt ook voor ons! Kan je onze vlugge pasjes nog bijhouden?\nLaten we het publiek verwonderen!"
+
+msgid "Oh, marvelous! And in such good condition too."
+msgstr "O, wat een prachtig exemplaar! Het is in hele goede staat."
+
+msgid "Oh, your {1}... It's Hidden Power is {2} type with a base power of {3}."
+msgstr "O, je {1}...\nHet heeft een Hidden Power van het {2}-soort, met een kracht van {3}."
+
+msgid "Oh... my... GOSH!!\nCan it be? Is it \\PN?\nI totally remember you!\nIt feels like forever ago that you challenged my gym.\nYou know, I totally went easy on you back then, right?~\nBut here in the arena, I won't hold back at all!\nI didn't win the Championship one time by slacking off, ya know?"
+msgstr "O... mijn... Grozard!!!\nIs het mogelijk? Is dat \\PN?\nWauw, ik herken je nog!\nHet voelt zo lang geleden dat je mijn Gym binnenstapte. Je snapt wel dat ik het toen rustig aan deed, toch?~\nHier in de arena zal dat namelijk niet het geval zijn! Ik hou me vandaag niet in! Ik heb het Kampioenschap vorig jaar natuurlijk niet gewonnen door te luieren!"
+
+msgid "Old School Poison"
+msgstr "Ouderwets Vergif"
+
+msgid "Omigosh! You're totally incredible!~"
+msgstr "Je bent helemaal geweldig!~"
+
+msgid "On"
+msgstr "Aan"
+
+msgid "Once again...\nI am shown defeat.\nHow can I cope with such disgrace?\nTo my home village, I return once again."
+msgstr "Ik heb opnieuw verloren...\nHoe kan ik ooit met zo'n schande omgaan?\nIk ga maar weer terug naar mijn dorp."
+
+msgid "One or more fonts used in this game do not exist on the system."
+msgstr "Eén of meer lettertypes die in dit spel gebruikt worden staan niet geïnstalleerd op dit systeem."
+
+msgid "Only four trainers remain in the arena. They are Tandor's best and brightest!"
+msgstr "Er zijn nog maar vier Trainers aanwezig. Ze zijn de pracht van Tandor!"
+
+msgid "Only one or two wild Pokémon are allowed"
+msgstr "Er zijn maar één of twee wilde Pokémon toegestaan."
+
+msgid "Only one wild Pokémon is allowed in single battles"
+msgstr "Er is maar één wilde Pokémon toegestaan in een enkelgevecht."
+
+msgid "Only two wild Pokémon are allowed in double battles"
+msgstr "Er zijn maar twee wilde Pokémon toegestaan in een dubbelgevecht."
+
+msgid "Ooh, I'm so excited!"
+msgstr "Ooeh, wat heb ik er zin in!"
+
+msgid "Opponent 1 has no unfainted Pokémon"
+msgstr "Tegenstander 1 heeft alleen bezweken Pokémon."
+
+msgid "Opponent 2 has no unfainted Pokémon"
+msgstr "Tegenstander 2 heeft alleen bezweken Pokémon."
+
+msgid "Opponent doesn't have two unfainted Pokémon"
+msgstr "Tegenstander heeft te veel bezweken Pokémon."
+
+msgid "Opponent trainer must be only one person in single battles"
+msgstr "Tegenstander moet maar één persoon in het enkelgevecht zijn."
+
+msgid "Opponents with zero or more than two people are not allowed"
+msgstr "Tegenstanders met nul of meer dan twee Trainers zijn niet toegestaan."
+
+msgid "Options"
+msgstr "Instellingen"
+
+msgid "Or maybe it's just that you're so young, I can't tell.\\^"
+msgstr "Of is het gewoon dat je zo jong bent? Geen idee.\\^"
+
+msgid "Oran Berries"
+msgstr "Oran-Bessen"
+
+msgid "Orchynx is the best pick!\\wtnp[160]"
+msgstr "is Orchynx de beste keuze!\\wtnp[160]"
+
+msgid "Organize the Pokémon in Boxes and in your party."
+msgstr "Organiseer de Pokémon in je Boxen en team."
+
+msgid "Other Save Files"
+msgstr "Opslagbestanden"
+
+msgid "Our sophisticated strategy will overcome trainers of a lower class."
+msgstr "Onze verfijnde vechtstijl zal de lagere klassen overweldigen."
+
+msgid "Owned Pokémon are listed from heaviest to lightest."
+msgstr "Pokémon zijn van zwaar naar licht gesorteerd."
+
+msgid "Owned Pokémon are listed from lightest to heaviest."
+msgstr "Pokémon zijn van licht naar zwaar gesorteerd."
+
+msgid "Owned Pokémon are listed from smallest to tallest."
+msgstr "Pokémon zijn van klein naar groot gesorteerd."
+
+msgid "Owned Pokémon are listed from tallest to smallest."
+msgstr "Pokémon zijn van groot naar klein gesorteerd."
+
+msgid "Ownership"
+msgstr "Eigenaar"
+
+msgid "PA: Ding-dong!"
+msgstr "PA:  Ding-dong!"
+
+msgid "PA: You have no Safari Balls left! Game over!"
+msgstr "Je hebt geen Safariballen meer! Game over!"
+
+msgid "PA: Your safari game is over!"
+msgstr "PA:  Your safari game is over!"
+
+msgid "POKeDEX:"
+msgstr "POKÉDEX:"
+
+msgid "POWER"
+msgstr "KRACHT"
+
+msgid "PP"
+msgstr "AP"
+
+msgid "PP was restored."
+msgstr "AP is hersteld."
+
+msgid "PP: {1}/{2}"
+msgstr "AP: {1}/{2}"
+
+msgid "PU-Intro1"
+msgstr "../Translations/Dutch/PU-Intro1_nl"
+
+msgid "Pamtre Berries"
+msgstr "Pamtre-Bessen"
+
+msgid "Party 1 has more than {1} Pokémon."
+msgstr "Team 1 heeft meer dan {1} Pokémon."
+
+msgid "Party 1 has no Pokémon."
+msgstr "Team 1 heeft geen Pokémon."
+
+msgid "Party 2 has more than {1} Pokémon."
+msgstr "Team 2 heeft meer dan {1} Pokémon."
+
+msgid "Party 2 has no Pokémon."
+msgstr "Team 2 heeft geen Pokémon."
+
+msgid "Passho Berries"
+msgstr "Passho-Bessen"
+
+msgid "Patience and endurance are your biggest assets.\\^"
+msgstr "Geduld is voor jou een schone zaak.\\^"
+
+msgid "Payapa Berries"
+msgstr "Payapa-Bessen"
+
+msgid "Pecha Berries"
+msgstr "Pecha-Bessen"
+
+msgid "Performance Mode"
+msgstr "Prestatiemodus"
+
+msgid "Permanently disable the options you unchecked."
+msgstr "Niet gekozen opties permanent uitschakelen."
+
+msgid "Persim Berries"
+msgstr "Persim-Bessen"
+
+msgid "Petaya Berries"
+msgstr "Petaya-Bessen"
+
+msgid "Phew! That was fun!"
+msgstr "Pfoe! Dat was leuk!"
+
+msgid "Phone"
+msgstr "Telefoon"
+
+msgid "Pick the wallpaper."
+msgstr "Kies een achtergrond."
+
+msgid "Pinap Berries"
+msgstr "Pinap-Bessen"
+
+msgid "Pink"
+msgstr "Roze"
+
+msgid "PkMn Trainer"
+msgstr "PkMn-Trainer"
+
+msgid "Place"
+msgstr "Plaatsen"
+
+msgid "Plant Berry"
+msgstr "Bes Planten"
+
+msgid "Play Voltorb Flip Lv. {1}?"
+msgstr "Voltorb-Flip op Level {1} spelen?"
+
+msgid "Play the game in {1}?"
+msgstr "Het spel in het {1} spelen?"
+
+msgid "Play the game in..."
+msgstr "Kies een taal."
+
+msgid "Play the game with a custom ruleset for increased difficulty.\nNot recommended for new players."
+msgstr "Deze gamemodus laat spelers met aangepaste spelregels spelen voor een moeilijkere ervaring.\nNiet aanbevolen voor nieuwe spelers."
+
+msgid "Player 1 has no unfainted Pokémon"
+msgstr "Speler 1 heeft alleen bezweken Pokémon."
+
+msgid "Player 2 has no unfainted Pokémon"
+msgstr "Speler 2 heeft alleen bezweken Pokémon."
+
+msgid "Player doesn't have two unfainted Pokémon"
+msgstr "Speler heeft te veel bezweken Pokémon."
+
+msgid "Player has no unfainted Pokémon"
+msgstr "Speler heeft alleen bezweken Pokémon."
+
+msgid "Player trainer must be only one person in single battles"
+msgstr "Speler moet maar één persoon in het enkelgevecht zijn."
+
+msgid "Player trainers with zero or more than two people are not allowed"
+msgstr "Spelers met nul of meer dan twee Trainers zijn niet toegestaan."
+
+msgid "Player<r><c3={1}>{2}</c3><br>"
+msgstr "Speler<r><c3={1}>{2}</c3><br>"
+
+msgid "Please choose the new settings for your Nuzlocke game."
+msgstr "Kies alsjeblieft de nieuwe instellingen voor je Nuzlocke-spel."
+
+msgid "Please come again!"
+msgstr "Tot de volgende keer!"
+
+msgid "Please enter a message (max. 256 characters)."
+msgstr "Voeg een bericht toe (max. 256 karakters)."
+
+msgid "Please enter a message (max. {1} characters)."
+msgstr "Voeg een bericht toe (max. {1} karakters)."
+
+msgid "Please enter the search criteria."
+msgstr "Voeg a.u.b. zoekcriteria toe."
+
+msgid "Please pick up your gift from the deliveryman in any Poké Mart."
+msgstr "Haal je Mystery Gift op in een Pokémarkt."
+
+msgid "Please remove the Mail."
+msgstr "Neem de Brief alstublieft terug."
+
+msgid "Please remove the mail."
+msgstr "Neem de Brief alstublieft terug."
+
+msgid "Please, run the patcher.exe on your game folder."
+msgstr "Open 'patcher.exe' in de installatiefolder om het spel te updaten."
+
+msgid "Pointed stones dug into {1}!"
+msgstr "De scherpe stenen hebben {1} gestoken!"
+
+msgid "Pointed stones float in the air around your foe's team!"
+msgstr "Er zweven scherpe stenen rond het verdedigende team!"
+
+msgid "Pointed stones float in the air around your team!"
+msgstr "Er zweven scherpe stenen rond je team!"
+
+msgid "Poison"
+msgstr "Vergif"
+
+msgid "Poison spikes were scattered all around the opposing team's feet!"
+msgstr "Er liggen giftige stekels rond het verdedigende team!"
+
+msgid "Poison spikes were scattered all around your team's feet!"
+msgstr "Er liggen giftige stekels rond je team!"
+
+msgid "Pokedex/dex_discover"
+msgstr "../Translations/Dutch/dex_discover_nl"
+
+msgid "Pokedex/searchdex"
+msgstr "../Translations/Dutch/searchdex_nl"
+
+msgid "Pokedex/selectdex"
+msgstr "../Translations/Dutch/selectdex_nl"
+
+msgid "Pokemon"
+msgstr "Pokémon"
+
+msgid "Pokemon Box data is corrupt and can not be automatically recovered."
+msgstr "Pokemon-Boxdata is corrupt en kan niet automatisch hersteld worden."
+
+msgid "Pokemon Box data was corrupt and has been automatically recovered."
+msgstr "Pokemon-Boxdata was corrupt en is automatisch hersteld."
+
+msgid "Poké Ball"
+msgstr "Pokébal"
+
+msgid "Poké Balls"
+msgstr "Pokéballen"
+
+msgid "Poké Center"
+msgstr "Pokécentra"
+
+msgid "Poké Marts are disabled by your custom game settings!"
+msgstr "Pokémarkten zijn uitgeschakeld vanwege je aangepaste spelregels!"
+
+msgid "Pokédex"
+msgstr "PokéDex"
+
+msgid "Pokédex registration completed."
+msgstr "PokéDex registratie voltooid."
+
+msgid "Pokédex:"
+msgstr "PokéDex:"
+
+msgid "Pokédex<r><c3={1}>{2}/{3}</c3>"
+msgstr "PokéDex<r><c3={1}>{2}/{3}</c3>"
+
+msgid "Pokédex<r>{1}/{2}<br>"
+msgstr "PokéDex<r>{1}/{2}<br>"
+
+msgid "Pokémon already has mail"
+msgstr "De Pokémon houdt al een Brief vast."
+
+msgid "Pokémon are listed according to their number."
+msgstr "Pokémon zijn gesorteerd op Dex-nr."
+
+msgid "Pokémon can be killed by poison outside of battle as in the first three gens."
+msgstr "Pokémon kunnen buiten het gevecht door vergiftiging bezwijken."
+
+msgid "Pokémon of a species you already caught don't count as an encounter if you run."
+msgstr "Een al gevangen Pokémon telt niet als eerste vondst als ervan gevlucht wordt."
+
+msgid "Pomeg Berries"
+msgstr "Pomeg-Bessen"
+
+msgid "Poof!"
+msgstr "Poef!"
+
+msgid "Press a new key."
+msgstr "Druk een nieuwe toets in."
+
+msgid "Press to use a registered Key Item."
+msgstr "Gebruikt een belangrijk voorwerp."
+
+msgid "Prevents Pokémarts from being used."
+msgstr "De Pokémarkt kan niet gebruikt worden."
+
+msgid "Prevents the player from using healing items in battle."
+msgstr "De speler kan tijdens gevechten geen geneesvoorwerpen gebruiken."
+
+msgid "Proceed anyway?"
+msgstr "Doorgaan?"
+
+msgid "Professor Bamb'o"
+msgstr "PROFESSOR Bamb'o"
+
+msgid "Prog--- is ---- --- -- --dename 092. --- ----- --- from radiation-----s biofiber. It ---- -- ---- to reconstru-- --- -- damage-"
+msgstr "We boeken v--l vo-----ga-g met Cod---am-092. H-t omh----l wo--t ge-aakt van stral--gsb----ndig biovezel. Het zal zi---elf re-----en --dien bescha---d."
+
+msgid "Pronouns"
+msgstr "Voornaamwoorden"
+
+msgid "Proud of its power."
+msgstr "Trots op zichzelf."
+
+msgid "Psychic"
+msgstr "Psychisch"
+
+msgid "Purple"
+msgstr "Paars"
+
+msgid "Qualot Berries"
+msgstr "Qualot-Bessen"
+
+msgid "Quick Guard protected your team!"
+msgstr "Quick Guard heeft je team beschermd!"
+
+msgid "Quick Guard protected {1}!"
+msgstr "Quick Guard heeft {1} beschermd!"
+
+msgid "Quick tempered."
+msgstr "Prikkelbaar."
+
+msgid "Quick to flee."
+msgstr "Wilt snel vluchten."
+
+msgid "Quiet"
+msgstr "Stil"
+
+msgid "Quirky"
+msgstr "Grappig"
+
+msgid "Quit"
+msgstr "Annuleren"
+
+msgid "Quit shopping."
+msgstr "Stoppen met winkelen."
+
+msgid "RENTAL"
+msgstr "VERHUURD"
+
+msgid "RESULTS<r>{1:d}"
+msgstr "{1:d}<r>GEVONDEN"
+
+msgid "Rabuta Berries"
+msgstr "Rabuta-Bessen"
+
+msgid "Rain continues to fall."
+msgstr "Het blijft regenen."
+
+msgid "Raises trainer's Pokémon levels while keeping the same EXP yields."
+msgstr "Verhoogt de Levels van Trainer-Pokémon maar behoudt de Exp.-opbrengst."
+
+msgid "Raptorch is the best pick!\\wtnp[160]"
+msgstr "is Raptorch de beste keuze!\\wtnp[160]"
+
+msgid "Rash"
+msgstr "Dol"
+
+msgid "Rawst Berries"
+msgstr "Rawst-Bessen"
+
+msgid "Razz Berries"
+msgstr "Razz-Bessen"
+
+msgid "Read"
+msgstr "Lezen"
+
+msgid "Receive"
+msgstr "Ontvangen"
+
+msgid "Received the {1} from {2}."
+msgstr "{1} is teruggenomen van {2}."
+
+msgid "Red"
+msgstr "Rood"
+
+msgid "Reflect raised the opposing team's Defense!"
+msgstr "Reflect heeft de Verdediging van het verdedigende team verhoogd!"
+
+msgid "Reflect raised your team's Defense!"
+msgstr "Reflect heeft de Verdediging van je team verhoogd!"
+
+msgid "Regardless...\\. For a Trainer like you...\\^"
+msgstr "Hoe dan ook...\\. voor een Trainer als jij...\\^"
+
+msgid "Register"
+msgstr "Registreren"
+
+msgid "Registered {1} in the Poképod."
+msgstr "{1} is op de Poképod geregistreerd."
+
+msgid "Registered<br>"
+msgstr "<ac><u>Contacten</u></ac>"
+
+msgid "Regular Mode"
+msgstr "Normaal"
+
+msgid "Relaxed"
+msgstr "Rustig"
+
+msgid "Release"
+msgstr "Vrijlaten"
+
+msgid "Release All"
+msgstr "Alles Vrijlaten"
+
+msgid "Release this Pokémon?"
+msgstr "Deze Pokémon vrijlaten?"
+
+msgid "Remap controls to any other keys."
+msgstr "Verander de besturing van het spel."
+
+msgid "Remember Save"
+msgstr "Onthouden"
+
+msgid "Removes some details to improve performance, specially in battle."
+msgstr "Verwijdert enkele details om prestaties te verhogen, vooral tijdens gevechten."
+
+msgid "Repel isn't working in this location!"
+msgstr "Afweer werkt niet op deze locatie!"
+
+msgid "Repel's effect wore off..."
+msgstr "De Afweer is uitgewerkt..."
+
+msgid "Report #01"
+msgstr "Verslag #01"
+
+msgid "Report #01:"
+msgstr "Verslag #01:"
+
+msgid "Report #02"
+msgstr "Verslag #02"
+
+msgid "Report #02:"
+msgstr "Verslag #02:"
+
+msgid "Report #03"
+msgstr "Verslag #03"
+
+msgid "Report #03:"
+msgstr "Verslag #03:"
+
+msgid "Report #04"
+msgstr "Verslag #04"
+
+msgid "Report #04:"
+msgstr "Verslag #04:"
+
+msgid "Report #05"
+msgstr "Verslag #05"
+
+msgid "Report #05:"
+msgstr "Verslag #05:"
+
+msgid "Restore which move?"
+msgstr "Welke actie herstellen?"
+
+msgid "Return To Game"
+msgstr "Verder Spelen"
+
+msgid "Return To Menu"
+msgstr "Terug Naar Hoofdmenu"
+
+msgid "Return to game mode selection menu?"
+msgstr "Terugkeren naar het\ngamemodus-selectie menu?"
+
+msgid "Return to previous menu."
+msgstr "Terug naar het hoofdmenu."
+
+msgid "Return to the previous menu."
+msgstr "Terug naar het vorige menu."
+
+msgid "Right"
+msgstr "Rechts"
+
+msgid "Rindo Berries"
+msgstr "Rindo-Bessen"
+
+msgid "River"
+msgstr "Rivier"
+
+msgid "Rock"
+msgstr "Steen"
+
+msgid "Rowap Berries"
+msgstr "Rowap-Bessen"
+
+msgid "Run"
+msgstr "Rennen"
+
+msgid "S: Go to another map"
+msgstr "S: Go to another map\n"
+
+msgid "SAVE"
+msgstr "OPSLAAN"
+
+msgid "SE Volume"
+msgstr "Effectvolume"
+
+msgid "SECOND"
+msgstr "TWEEDE"
+
+msgid "SEE YA!"
+msgstr "TOT LATER!"
+
+msgid "SEEN<r>{1:d}"
+msgstr "GEZIEN<r>{1:d}"
+
+msgid "SHINY SEEN"
+msgstr "SHINY GEZIEN"
+
+msgid "SIXTH"
+msgstr "ZESDE"
+
+msgid "SKIPPING BATTLE..."
+msgstr "GEVECHT OVERSLAAN..."
+
+msgid "START"
+msgstr "ZOEKEN"
+
+msgid "STOCK POKéMON:\n{1} Lv{2} MaxHP: {3}\nTHIS POKéMON:\n{4} Lv{5} MaxHP: {6}"
+msgstr "STOCK POKéMON:\n {1} Lv{2} MaxHP: {3}\nTHIS POKéMON:\n {4} Lv{5} MaxHP: {6}"
+
+msgid "STYLE"
+msgstr "STIJL"
+
+msgid "Safari Balls"
+msgstr "Safariballen"
+
+msgid "Safari Balls: {1}"
+msgstr "Safariballen: {1}"
+
+msgid "Salac Berries"
+msgstr "Salac-Bessen"
+
+msgid "Sassy"
+msgstr "Brutaal"
+
+msgid "Saturday"
+msgstr "Zaterdag"
+
+msgid "Savanna"
+msgstr "Savanne"
+
+msgid "Save changes?"
+msgstr "Veranderingen toepassen?"
+
+msgid "Save files from BETA 4.3 and earlier are no longer compatible with Uranium 1.0."
+msgstr "Opslagbestanden van BETA 4.3 en eerder worden niet langer ondersteund door Uranium 1.0."
+
+msgid "Scatters things often."
+msgstr "Laat dingen vaak vallen."
+
+msgid "Score: {1}\nHits: {2}/{3}"
+msgstr "Score: {1} \n{2}/{3}"
+
+msgid "Screen Size"
+msgstr "Schermgrootte"
+
+msgid "Seafloor"
+msgstr "Zeebodem"
+
+msgid "Search"
+msgstr "Zoeken"
+
+msgid "Search Mode"
+msgstr "Zoekfunctie"
+
+msgid "Search for Pokémon based on selected parameters."
+msgstr "Zoek voor Pokémon met de geselecteerde criteria."
+
+msgid "Search for new Awards (Online)"
+msgstr "Voor nieuwe trofeeën zoeken (Online)"
+
+msgid "Searching for a gift.\nPlease wait...\\wtnp[0]"
+msgstr "Op zoek naar een Mystery Gift.\nEen ogenblik geduld alstublieft...\\wtnp[0]"
+
+msgid "Second move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Second move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "See ya!"
+msgstr "Tot later!"
+
+msgid "Select"
+msgstr "Selecteren"
+
+msgid "Select Level (Max 20)"
+msgstr "Selecteer Level (Maximaal 20)"
+
+msgid "Select the Pokédex listing mode."
+msgstr "Selecteer zoekcriteria."
+
+msgid "Sell"
+msgstr "Verkopen"
+
+msgid "Send the removed mail to your PC?"
+msgstr "De teruggenomen Brief naar je pc sturen?"
+
+msgid "Sep."
+msgstr "09"
+
+msgid "Separator"
+msgstr "Scheidings."
+
+msgid "Serious"
+msgstr "Serieus"
+
+msgid "Set"
+msgstr "Vast"
+
+msgid "Set Controls"
+msgstr "Besturing"
+
+msgid "Set how often the game will autosave in minutes."
+msgstr "Kies hoe vaak het spel automatisch opslaat."
+
+msgid "Set the name for this point."
+msgstr "Kies een naam voor deze locatie."
+
+msgid "Shade"
+msgstr "Schaduw"
+
+msgid "Shadow Pokémon can't be taught any moves."
+msgstr "Schaduw-Pokémon kunnen geen acties aangeleerd krijgen."
+
+msgid "Shift"
+msgstr "Verwisselen"
+
+msgid "Shininess"
+msgstr "Shiny"
+
+msgid "Shiny Clause"
+msgstr "Shiny-Bepaling"
+
+msgid "Shoot! It was so close, too!"
+msgstr "Verdorie! Het was zó dichtbij!"
+
+msgid "Short to Tall"
+msgstr "Klein tot Groot"
+
+msgid "Should {1} stop learning {2}?"
+msgstr "Moet {1} stoppen met het leren van {2}?"
+
+msgid "Shuca Berries"
+msgstr "Shuca-Bessen"
+
+msgid "Simple"
+msgstr "Simpel"
+
+msgid "Simply stunning!"
+msgstr "Schitterend!"
+
+msgid "Sitrus Berries"
+msgstr "Sitrus-Bessen"
+
+msgid "Skip intro?"
+msgstr "Intro overslaan?"
+
+msgid "Sky"
+msgstr "Lucht"
+
+msgid "Slot Machine/bg"
+msgstr "../Translations/Dutch/bg_nl"
+
+msgid "Slow"
+msgstr "Sloom"
+
+msgid "Snow"
+msgstr "Sneeuw"
+
+msgid "Some of the fonts were successfully installed."
+msgstr "Een aantal van de lettertypes zijn succesvol geïnstalleerd."
+
+msgid "Someone's PC"
+msgstr "Iemands pc"
+
+msgid "Somewhat of a clown."
+msgstr "Beetje een grapjas."
+
+msgid "Somewhat stubborn."
+msgstr "Een beetje koppig."
+
+msgid "Somewhat vain."
+msgstr "Een beetje verwaand."
+
+msgid "Sorry, a new Badge is required."
+msgstr "Sorry, hier is een nieuwe Badge voor nodig."
+
+msgid "Sorry, but you're stuck with this one."
+msgstr "Sorry, maar dit kan niet aangepast worden."
+
+msgid "Sounds can be heard coming from inside! It will hatch soon!"
+msgstr "Je kan geluiden horen! Het komt bijna uit!"
+
+msgid "Sp. Atk."
+msgstr "Sp. Str."
+
+msgid "Sp. Attack"
+msgstr "Sp.-Str."
+
+msgid "Sp. Def"
+msgstr "Sp. Ver."
+
+msgid "Sp. Defense"
+msgstr "Sp.-Ver."
+
+msgid "Special Attack"
+msgstr "Speciale Sterkte"
+
+msgid "Special Defense"
+msgstr "Speciale Verdediging"
+
+msgid "Species"
+msgstr "Soort"
+
+msgid "Specifies the underwater layer of this map. Use only if this map has deep water."
+msgstr "Specifies the underwater layer of this map.  Use only if this map has deep water."
+
+msgid "Speed"
+msgstr "Snelheid"
+
+msgid "Spelon Berries"
+msgstr "Spelon-Bessen"
+
+msgid "Spikes were scattered all around the feet of the opposing team!"
+msgstr "Er liggen stekels rond het verdedigende team!"
+
+msgid "Spikes were scattered all around the feet of your team!"
+msgstr "Er liggen stekels rond je team!"
+
+msgid "Splendid!\nYou battle with great finesse and expertise.\nLet us tango together again sometime!"
+msgstr "Prachtig!\nJij vecht met veel expertise.\nLaten we de dans nog eens aangaan!"
+
+msgid "Spotted and owned Pokémon are listed alphabetically."
+msgstr "Pokémon zijn alfabetisch gesorteerd."
+
+msgid "Spring"
+msgstr "Lente"
+
+msgid "Starf Berries"
+msgstr "Starf-Bessen"
+
+msgid "Start Game"
+msgstr "Spel Starten"
+
+msgid "Steel"
+msgstr "Staal"
+
+msgid "Stop giving the Pokémon Mail?"
+msgstr "Stoppen met het geven van de Brief?"
+
+msgid "Store"
+msgstr "Opslaan"
+
+msgid "Store Pokémon in your party in Boxes."
+msgstr "Sla Pokémon op in je Boxen."
+
+msgid "Store items in the PC."
+msgstr "Voorwerpen in de pc bewaren."
+
+msgid "Strength is already being used."
+msgstr "Strength is al in gebruik."
+
+msgid "Strength made it possible to move boulders around."
+msgstr "Strength maakt het mogelijk om stenen te verschuiven!"
+
+msgid "Strong willed."
+msgstr "Erg vastberaden."
+
+msgid "Strongly defiant."
+msgstr "Heel opstandig."
+
+msgid "Sturdy body."
+msgstr "Stevige lichaamsbouw."
+
+msgid "Subtract"
+msgstr "Aftrekken"
+
+msgid "Summary"
+msgstr "Overzicht"
+
+msgid "Summer"
+msgstr "Zomer"
+
+msgid "Sunday"
+msgstr "Zondag"
+
+msgid "Switch"
+msgstr "Verwisselen"
+
+msgid "Switch In"
+msgstr "Verwisselen"
+
+msgid "Switch Pokédex listings."
+msgstr "Wissel zoekcriteria."
+
+msgid "Switched the Experience Share {1}."
+msgstr "De Exp.-Allen is {1}gezet."
+
+msgid "THIRD"
+msgstr "DERDE"
+
+msgid "TIME:"
+msgstr "TIJD:"
+
+msgid "TMs & HMs"
+msgstr "TM & VM"
+
+msgid "TYPE"
+msgstr "SOORT"
+
+msgid "TYPE 1"
+msgstr "SOORT 1"
+
+msgid "TYPE 2"
+msgstr "SOORT 2"
+
+msgid "Take"
+msgstr "Terugnemen"
+
+msgid "Take good care of {1}."
+msgstr "Zorg goed voor {1}."
+
+msgid "Take out items from the PC."
+msgstr "Voorwerpen uit de pc halen."
+
+msgid "Take this {1}?"
+msgstr "{1} terugnemen?"
+
+msgid "Tall to Short"
+msgstr "Groot tot Klein"
+
+msgid "Tamato Berries"
+msgstr "Tamato-Bessen"
+
+msgid "Tandor Pokédex"
+msgstr "Tandor-PokéDex"
+
+msgid "Tanga Berries"
+msgstr "Tanga-Bessen"
+
+msgid "Teach which Pokémon?"
+msgstr "Aan welke Pokémon leren?"
+
+msgid "Teach which move to {1}?"
+msgstr "Welke actie aan {1} leren?"
+
+msgid "Teach {1} to a Pokémon?"
+msgstr "{1} aan een Pokémon leren?"
+
+msgid "Teach {1} to {2}?"
+msgstr "{1} aan {2} leren?"
+
+msgid "Teach {1}?"
+msgstr "{1} aanleren?"
+
+msgid "Test Vibration"
+msgstr "Trilfunctie Testen"
+
+msgid "Test if controller vibration is working."
+msgstr "Test of de trilfunctie van de controller werkt."
+
+msgid "Text Speed"
+msgstr "Tekstsnelheid"
+
+msgid "Th- MRI ------ anomalous brainwave ------ns. --- specim-n ----- -- inca----e -- indep---ent thoug--. We --- ---ing -- - suppress---."
+msgstr "De MRI ----------- abnor--le hersengo----tronen. --t exemp---r zou n-et in st--t ----- zi-n om ze-----dig -- de---n. We we---- aan e-n tegenmid---."
+
+msgid "That won't fertilize the soil!"
+msgstr "Dat kan de grond niet bemesten!"
+
+msgid "That's not Mulch."
+msgstr "Dat is geen Compost."
+
+msgid "That's not a Berry."
+msgstr "Dat is geen Bes."
+
+msgid "That's not the right item."
+msgstr "Dat is niet het juiste voorwerp."
+
+msgid "That's too important to toss out!"
+msgstr "Dat is te belangrijk om weg te gooien!"
+
+msgid "That's your last Pokémon!"
+msgstr "Dat is je laatste Pokémon!"
+
+msgid "The Bag is full."
+msgstr "De Tas zit vol."
+
+msgid "The Bag is full. The Pokémon's item could not be removed."
+msgstr "De Tas zit vol.  Het vastgehouden voorwerp kon niet teruggenomen worden."
+
+msgid "The Box is full."
+msgstr "De Box zit vol."
+
+msgid "The Fire-type attack fizzled out in the heavy rain!"
+msgstr "De Vuur-actie wordt gedoofd door de regen!"
+
+msgid "The Hall Of Fame!"
+msgstr "De Eregalerij!"
+
+msgid "The Happy Hour started!"
+msgstr "Happy Hour verhoogt welvaart!"
+
+msgid "The Ion Deluge started!"
+msgstr "Ion Deluge verandert alle Normaal-acties in Elektrisch-acties!"
+
+msgid "The Mail was returned to the Bag with its message erased."
+msgstr "De Brief is verplaatst naar de Tas. Het bericht is verwijderd."
+
+msgid "The Pokémon Boxes are full and can't accept any more!"
+msgstr "Alle Pokémon-Boxen zijn vol! Er is geen opslag meer beschikbaar."
+
+msgid "The Pokémon got away..."
+msgstr "De Pokémon is ontsnapt..."
+
+msgid "The Power Glove made it possible to move boulders around!"
+msgstr "De Krachthandschoen maakt het mogelijk om stenen te verschuiven!"
+
+msgid "The Tailwind blew from behind the opposing team!"
+msgstr "Het verdedigende team heeft de wind mee!"
+
+msgid "The Tailwind blew from behind your team!"
+msgstr "Je team heeft de wind mee!"
+
+msgid "The Trainer blocked the Ball!\nDon't be a thief!"
+msgstr "De Trainer slaat de bal weg!\nWees geen dief!"
+
+msgid "The Trainer is close by.\nTalk to the Trainer in person!"
+msgstr "De Trainer is dichtbij.\nPraat oog in oog!"
+
+msgid "The Trainer is out of range."
+msgstr "De Trainer is buiten bereik."
+
+msgid "The Water-type attack evaporated in the harsh sunlight!"
+msgstr "De Water-actie verdampt in het felle zonlicht!"
+
+msgid "The Weakness Policy raised {1}'s Attack!"
+msgstr "De Sterkte van {1} is gestegen door de Verzekering!"
+
+msgid "The Weakness Policy raised {1}'s Special Attack!"
+msgstr "De Speciale Sterkte van {1} is gestegen door de Verzekering!"
+
+msgid "The air is clean again."
+msgstr "De lucht is weer schoon."
+
+msgid "The air is filled with toxicity."
+msgstr "Er valt radioactieve neerslag."
+
+msgid "The ally {1}"
+msgstr "De aangesloten {1}"
+
+msgid "The animation file {1} was not found. The animation will load anyway."
+msgstr "The animation file {1} was not found.  The animation will load anyway."
+
+msgid "The battery has run dry!\nFor it to recharge, you need to walk another {1} steps."
+msgstr "De batterij is leeg!\nLoop nog voor {1} stappen om het op te laden."
+
+msgid "The battle will continue until either side has no Pokémon left that can fight."
+msgstr "Het gevecht zal doorgaan tot één van de Trainers geen Pokémon meer heeft die in staat zijn te vechten."
+
+msgid "The battlers shared their pain!"
+msgstr "De vechters hebben hun pijn gedeeld!"
+
+msgid "The boxes are full! You can't catch any more Pokémon!"
+msgstr "De pc zit vol!  Je kan geen Pokémon meer vangen!"
+
+msgid "The bursting flame hit the opposing {2}!"
+msgstr "Het brandende vuur raakt de verdedigende {2}!"
+
+msgid "The bursting flame hit {2}!"
+msgstr "Het brandende vuur raakt {2}!"
+
+msgid "The current map has no region set. Please set the MapPosition metadata setting for this map."
+msgstr "The current map has no region set.  Please set the MapPosition metadata setting for this map."
+
+msgid "The darkness of caves is my home. My Pokémon team knows no fear!"
+msgstr "Het duister van de grotten is mijn thuis. Mijn Pokémon kennen geen angst!"
+
+msgid "The effects of Mud Sport have faded."
+msgstr "De effecten van Mud Sport zijn uitgewerkt."
+
+msgid "The effects of Water Sport have faded."
+msgstr "De effecten van Water Sport zijn uitgewerkt."
+
+msgid "The effects of the weather disappeared!"
+msgstr "De weersomstandigheden zijn verdwenen!"
+
+msgid "The effects of the {1} prevent status moves from being used!"
+msgstr "{1} voorkomt dat statusacties gebruikt kunnen worden!"
+
+msgid "The electricity disappeared from the battlefield."
+msgstr "De stroom verdwijnt van het veld."
+
+msgid "The foe {1}"
+msgstr "De verdedigende {1}"
+
+msgid "The fonts were successfully installed."
+msgstr "De lettertypes zijn succesvol geïnstalleerd"
+
+msgid "The future is a blank slate.\\. You, together with your Pokémon, are going to fill it. There will be challenges and thrills, and you're bound to make exciting discoveries."
+msgstr "De toekomst is niet zeker.\\. Je zult het samen met je Pokémon moeten invullen. Er zullen je genoeg uitdagingen te wacht staan, en je zal vast ook wel spannende dingen ontdekken."
+
+msgid "The game can be played, but the look of the game's text will not be optimal."
+msgstr "Het spel kan gespeeld worden, maar het uiterlijk van de tekst zal niet optimaal zijn."
+
+msgid "The game cannot continue."
+msgstr "Het spel kan niet verder."
+
+msgid "The game has detected that the battery is low. You should save soon to avoid losing your progress."
+msgstr "Het spel detecteert dat de accu van je apparaat bijna leeg is. We raden aan om je voortgang op te slaan zodat je het niet kwijtraakt."
+
+msgid "The gift has been received!"
+msgstr "De Mystery Gift is ontvangen!"
+
+msgid "The grass disappeared from the battlefield."
+msgstr "Het gras verdwijnt van het veld."
+
+msgid "The grassy patch remained quiet..."
+msgstr "Het stukje gras bleef rustig..."
+
+msgid "The hail stopped."
+msgstr "Het is gestopt met hagelen."
+
+msgid "The healing wish came true for {1}!"
+msgstr "De genezingswens van {1} is uitgekomen!"
+
+msgid "The item number is invalid."
+msgstr "Het voorwerpnummer is ongeldig."
+
+msgid "The level number ({1}) is invalid."
+msgstr "Het levelnummer ({1}) is ongeldig."
+
+msgid "The mail was sent to your PC."
+msgstr "De Brief is naar je pc verstuurd."
+
+msgid "The map data cannot be found."
+msgstr "Mapdata kon niet gevonden worden."
+
+msgid "The map is corrupt. The game cannot continue."
+msgstr "De Map is corrupt. Het spel kan niet verder."
+
+msgid "The map was not found. The game cannot continue."
+msgstr "Map {1} kon niet gevonden worden. Het spel kan niet verder."
+
+msgid "The message will be lost. Is that OK?"
+msgstr "Het bericht zal verloren gaan. Is dat oké?"
+
+msgid "The mirror move failed!"
+msgstr "Mirror Move heeft gefaald!"
+
+msgid "The mist disappeared from the battlefield."
+msgstr "De mist verdwijnt van het veld."
+
+msgid "The new level ({1}) is less than the Pokémon's\ncurrent level ({2}), which shouldn't happen.\n[Debug: {3}]"
+msgstr "Het nieuwe Level ({1}) is lager dan het Pokémon's\nhuidige Level ({2}), wat niet hoort te gebeuren.\n[Debug: {3}]"
+
+msgid "The opposing team became cloaked in a mystical veil!"
+msgstr "Het verdedigende team wordt beschermd tegen aandoeningen!"
+
+msgid "The opposing team became shrouded in mist!"
+msgstr "Het verdedigende team wordt in mist gehuld!"
+
+msgid "The opposing team is no longer protected by Safeguard!"
+msgstr "Het verdedigende team wordt niet langer beschermd door Safeguard!"
+
+msgid "The opposing team is no longer protected by mist!"
+msgstr "Het verdedigende team wordt niet langer beschermd door mist!"
+
+msgid "The opposing team is too nervous to eat Berries!"
+msgstr "Het verdedigende team is te nerveus om Bessen te eten!"
+
+msgid "The opposing team's Light Screen faded!"
+msgstr "Het Light Screen van het verdedigende team is uitgewerkt!"
+
+msgid "The opposing team's Light Screen wore off!"
+msgstr "Het Light Screen van het verdedigende team is uitgewerkt!"
+
+msgid "The opposing team's Lucky Chant wore off!"
+msgstr "De Lucky Chant van het verdedigende team werkt uit!"
+
+msgid "The opposing team's Mist faded!"
+msgstr "Het verdedigende team wordt niet langer beschermd door mist!"
+
+msgid "The opposing team's Reflect faded!"
+msgstr "Het Reflect van het verdedigende team is uitgewerkt!"
+
+msgid "The opposing team's Reflect wore off!"
+msgstr "Het Reflect van het verdedigende team is uitgewerkt!"
+
+msgid "The opposing team's Tailwind petered out!"
+msgstr "Het verdedigende team verliest de wind mee!"
+
+msgid "The opposing {1}"
+msgstr "De verdedigende {1}"
+
+msgid "The options you unchecked can't be turned back on."
+msgstr "De uitgeschakelde opties kunnen niet terug ingeschakeld worden."
+
+msgid "The phone is not working."
+msgstr "De telefoon werkt niet."
+
+msgid "The plant seemed to be delighted."
+msgstr "De plant lijkt gelukkig te zijn."
+
+msgid "The pointed stones disappeared from around the opposing team!"
+msgstr "De scherpe stenen rond het verdedigende team verdwenen!"
+
+msgid "The pointed stones disappeared from around your team!"
+msgstr "De scherpe stenen rond je team zijn verdwenen!"
+
+msgid "The poisoned spikes disappeared from around the opposing team's feet!"
+msgstr "De giftige stekels rond het verdedigende team verdwenen!"
+
+msgid "The poisoned spikes disappeared from around the your team's feet!"
+msgstr "De giftige stekels rond je team zijn verdwenen!"
+
+msgid "The poisoned spikes disappeared from around your team's feet!"
+msgstr "De giftige stekels rond je team zijn verdwenen!"
+
+msgid "The poisoned spikes disappeared from around {1}'s feet!"
+msgstr "De giftige stekels rond de voeten van {1} verdwijnen!"
+
+msgid "The power of {1}'s Fire-type moves rose!"
+msgstr "De Vuur-acties van {1} worden sterker!"
+
+msgid "The rain stopped."
+msgstr "Het is gestopt met regenen."
+
+msgid "The rainbow faded."
+msgstr "De regenboog vervaagt."
+
+msgid "The rules of battle will be as follows:"
+msgstr "De regels zijn als volgt:"
+
+msgid "The sandstorm rages."
+msgstr "De zandstorm raast."
+
+msgid "The sandstorm subsided."
+msgstr "De zandstorm zwakt af."
+
+msgid "The save file was deleted."
+msgstr "Het opslagbestand is verwijderd."
+
+msgid "The saying \"the best defense is a good offense\" is probably your mantra.\\^"
+msgstr "De uitdrukking \"de aanval is de beste verdediging\" is waarschijnlijk je motto.\\^"
+
+msgid "The sea is deep here. A Pokémon may be able to go underwater."
+msgstr "De zee hier is diep. Misschien kan een Pokémon onderwater zwemmen."
+
+msgid "The sea is deep here. Would you like to go underwater?"
+msgstr "De zee hier is diep.\nOnderwater gaan?"
+
+msgid "The sea of fire faded."
+msgstr "De zee van vuur vervaagt."
+
+msgid "The settings file is corrupt and could not be loaded.\nSettings have been reset to default."
+msgstr "Het instellingsbestand kon niet ingeladen worden.\nStandaardinstellingen zijn actief."
+
+msgid "The shadow sky continues."
+msgstr "De schaduwlucht zet voort."
+
+msgid "The shadow sky faded."
+msgstr "De schaduwlucht vervaagt."
+
+msgid "The soil returned to its soft and earthy state."
+msgstr "De grond is weer zacht en vruchtbaar."
+
+msgid "The soil returned to its soft and loamy state."
+msgstr "De grond is weer zacht en vruchtbaar."
+
+msgid "The species number (no. {1} of {2}) is invalid."
+msgstr "Het soortnummer (no. {1} of {2}) is ongeldig."
+
+msgid "The spikes disappeared from around the opposing team's feet!"
+msgstr "De stekels rond het verdedigende team zijn verdwenen!"
+
+msgid "The spikes disappeared from around your team's feet!"
+msgstr "De stekels rond je team zijn verdwenen!"
+
+msgid "The stickiness disappeared from the battlefield."
+msgstr "De plakkerigheid verdwijnt van het veld."
+
+msgid "The sticky web has disappeared from beneath the opposing team's feet!"
+msgstr "Het plakkerige web rond het verdedigende team is verdwenen!"
+
+msgid "The sticky web has disappeared from beneath your team's feet!"
+msgstr "Het plakkerige web rond je team is verdwenen!"
+
+msgid "The substitute took damage for {1}!"
+msgstr "Het Substitute-kopie nam de schade voor {1}!"
+
+msgid "The sunlight faded."
+msgstr "Het zonlicht verzwakt."
+
+msgid "The sunlight is strong."
+msgstr "Het zonlicht is sterk."
+
+msgid "The sunlight turned extremely harsh!"
+msgstr "Het zonlicht is enorm versterkt!"
+
+msgid "The sunlight turned harsh!"
+msgstr "Het zonlicht is versterkt!"
+
+msgid "The swamp faded."
+msgstr "Het moeras vervaagt."
+
+msgid "The thunderstorm rages."
+msgstr "Het blijft onweren."
+
+msgid "The thunderstorm subsided."
+msgstr "Het is gestopt met onweren."
+
+msgid "The toxic fallout faded."
+msgstr "De radioactieve neerslag is gestopt."
+
+msgid "The twisted dimensions returned to normal!"
+msgstr "De dimensies zijn weer als normaal!"
+
+msgid "The water is dyed a deep blue...\nWould you like to surf?"
+msgstr "Het water is diepblauw van kleur...\nSurfen?"
+
+msgid "The wild {1}"
+msgstr "De wilde {1}"
+
+msgid "The {1} can't be held."
+msgstr "{1} kan niet vastgehouden worden."
+
+msgid "The {1} card? Certainly.\nHow many would you like?"
+msgstr "The {1} card?  Certainly.\nHow many would you like?"
+
+msgid "The {1} card? How many would you like to sell?"
+msgstr "The {1} card?  How many would you like to sell?"
+
+msgid "The {1} card? Oh, no.\nI can't buy that."
+msgstr "The {1} card?  Oh, no.\nI can't buy that."
+
+msgid "The {1} has sprouted."
+msgstr "De {1} is ontkiemd."
+
+msgid "The {1} only allows the use of {2}!"
+msgstr "De {1} staat alleen het gebruik van {2} toe!"
+
+msgid "The {1} plant is growing bigger."
+msgstr "De {1}senplant groeit groter."
+
+msgid "The {1} strengthened {2}'s power!"
+msgstr "De {1} versterkt de krachten van {2}!"
+
+msgid "The {1} was planted in the soft, earthy soil."
+msgstr "De {1} is in de zachte, vruchtbare grond geplant."
+
+msgid "The {1} was scattered on the soil."
+msgstr "De {1} is over de grond verstrooid."
+
+msgid "The {1} was taken and replaced with the {2}."
+msgstr "{1} is vervangen met een {2}."
+
+msgid "The {1} weakened the damage to {2}!"
+msgstr "De {1} vermindert de schade aan {2}!"
+
+msgid "The {1}'s indicating something right underfoot!"
+msgstr "De {1} geeft aan dat er iets vlak onder de voet bevindt!"
+
+msgid "The {2} raised {1}'s Attack!"
+msgstr "De Sterkte van {1} is gestegen door {2}!"
+
+msgid "The {2} raised {1}'s Defense!"
+msgstr "De Verdediging van {1} is gestegen door {2}!"
+
+msgid "The {2} raised {1}'s Special Attack!"
+msgstr "De Speciale Sterkte van {1} is gestegen door {2}!"
+
+msgid "The {2} raised {1}'s Special Defense!"
+msgstr "De Speciale Verdediging van {1} is gestegen door {2}!"
+
+msgid "Their strength is no joke!"
+msgstr "Hun krachten zijn geen grapje!"
+
+msgid "There appears to be nothing here..."
+msgstr "Er lijkt hier niks te zijn..."
+
+msgid "There are no items."
+msgstr "Er zijn geen voorwerpen in opgeslagen."
+
+msgid "There are no new awards...."
+msgstr "Er zijn geen nieuwe trofeeën..."
+
+msgid "There are no phone numbers stored."
+msgstr "Er staan geen telefoonnummers in opgeslagen."
+
+msgid "There are {1} {2}!\nWant to pick them?"
+msgstr "Er zitten {1} {2} aan!\nPlukken?"
+
+msgid "There is 1 {1}!\nWant to pick it?"
+msgstr "Er zit 1 {1} aan!\nPlukken?"
+
+msgid "There is a gift for you there!"
+msgstr "Er is een cadeau voor je achtergelaten!"
+
+msgid "There is a more recent update available."
+msgstr "Er is een nieuwe update beschikbaar."
+
+msgid "There is a total of #{@files.length} PNG(s) available for conversion. Would you like to begin the process?"
+msgstr "Er zijn in totaal #{@files.length} PNG(s) beschikbaar om om te zetten. Wil je dit proces starten?"
+
+msgid "There is already a saved file. Is it OK to overwrite it?"
+msgstr "Er is al een opgeslagen bestand. Mag deze overschreven worden?"
+
+msgid "There is no Pokémon."
+msgstr "Je hebt geen Pokémon."
+
+msgid "There is no room left in the PC!"
+msgstr "De pc zit vol!"
+
+msgid "There was no sound in the recording. Please ensure that a microphone is attached to the computer and is ready."
+msgstr "There was no sound in the recording.  Please ensure that a microphone is attached to the computer and is ready."
+
+msgid "There! All happy!"
+msgstr "Kijk eens aan! Helemaal gelukkig!"
+
+msgid "There's an item buried around here!"
+msgstr "Er ligt hier ergens een voorwerp begraven!"
+
+msgid "There's no Mail here."
+msgstr "Je hebt geen post."
+
+msgid "There's no PP left for this move!"
+msgstr "Deze actie heeft geen AP meer over!"
+
+msgid "There's no Pokémon here..."
+msgstr "Er zijn hier geen Pokémon..."
+
+msgid "There's no more room for Pokémon!"
+msgstr "Er is geen ruimte voor Pokémon meer!"
+
+msgid "There's no more room in the Bag."
+msgstr "De Tas zit vol."
+
+msgid "There's no room to store items."
+msgstr "De Voorwerpenopslag zit vol."
+
+msgid "These are among the toughest of Tandor! The paragons of our region!"
+msgstr "Dit zijn de sterkste Trainers van Tandor! De sterren van de regio!"
+
+msgid "These pokemon can't fight in a sky battle!"
+msgstr "Deze Pokémon kunnen niet in een luchtgevecht vechten!"
+
+msgid "These trainers' skill in battle will determine that answer!"
+msgstr "De vaardigheden van deze Trainers zullen het bepalen!"
+
+msgid "They can be transferred over and will be deposited in your PC."
+msgstr "Ze worden overgezet en in je pc opgeslagen."
+
+msgid "Third move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Third move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "This Pokémon can't be chosen."
+msgstr "Deze Pokémon kan niet gekozen worden."
+
+msgid "This Pokémon is holding an item. It can't hold mail."
+msgstr "Deze Pokémon houdt al een voorwerp vast. Het kan geen Brief vasthouden."
+
+msgid "This box is already empty."
+msgstr "Deze Box is al leeg."
+
+msgid "This is in use already."
+msgstr "Dat is al in gebruik."
+
+msgid "This isn't a fossil!"
+msgstr "Dat is geen fossiel!"
+
+msgid "This isn't over yet!"
+msgstr "Dit is nog niet voorbij!"
+
+msgid "This item can't be used on that Pokémon."
+msgstr "Dit voorwerp kan niet op die Pokémon gebruikt worden."
+
+msgid "This means you've found all the Coins in this game, so the game is now over."
+msgstr "Dit betekent dat je alle munten in het spel hebt gevonden, dus het spel is nu voorbij."
+
+msgid "This old, dead coral looks like it can be broken. Would you like to use Coral Break?"
+msgstr "Dit dode koraal lijkt breekbaar. Kapot breken?"
+
+msgid "This pokemon can't fight in a sky battle!"
+msgstr "Deze Pokémon kan niet in een luchtgevecht vechten!"
+
+msgid "This rock appears breakable. Would you like to smash it?"
+msgstr "Deze rots lijkt breekbaar. Kapot breken?"
+
+msgid "This save file is corrupt or incompatible with this game."
+msgstr "Het opslagbestand is corrupt en/of wordt niet ondersteund door dit spel."
+
+msgid "This save file is corrupt, but an automatic backup has been found and will be loaded instead."
+msgstr "Het opslagbestand is corrupt, maar er is een backup gevonden. De backup wordt nu ingeladen."
+
+msgid "This save file is corrupt, but another working file in this slot has been found and will be loaded instead."
+msgstr "Het opslagbestand is corrupt, maar er is een ander bestand gevonden. Het vervangende bestand wordt nu ingeladen."
+
+msgid "This save file is corrupt, but other working files in this slot were found."
+msgstr "Het opslagbestand is corrupt, maar er zijn andere bestanden gevonden."
+
+msgid "This tree looks like it can be cut down!"
+msgstr "Dit boompje lijkt kapot gesneden te kunnen worden!"
+
+msgid "This tree looks like it can be cut down."
+msgstr "Dit boompje lijkt kapot gesneden te kunnen worden."
+
+msgid "This {1} plant is blooming cutely!"
+msgstr "De {1}senplant bloeit schattig!"
+
+msgid "This {1} plant is blooming prettily!"
+msgstr "De {1}senplant bloeit mooi!"
+
+msgid "This {1} plant is blooming very beautifully!"
+msgstr "De {1}senplant bloeit prachtig!"
+
+msgid "This {1} plant is in bloom!"
+msgstr "De {1}senplant is in bloei!"
+
+msgid "This {1} plant is in fabulous bloom!"
+msgstr "De {1}senplant is in uitstekende bloei!"
+
+msgid "Thoroughly cunning."
+msgstr "Vol sluwheid."
+
+msgid "Threw away {1} {2}(s)."
+msgstr "{1} {2} weggegooid."
+
+msgid "Throw away items stored in the PC."
+msgstr "Opgeslagen voorwerpen weggooien."
+
+msgid "Thursday"
+msgstr "Donderdag"
+
+msgid "Time:"
+msgstr "Tijd:"
+
+msgid "Time<r><c3={1:s}>{2:02d}:{3:02d}</c3><br>"
+msgstr "Tijd<r><c3={1:s}>{2:02d}:{3:02d}</c3><br>"
+
+msgid "Time<r>{1:02d}:{2:02d}<br>"
+msgstr "Tijd<r>{1:02d}:{2:02d}<br>"
+
+msgid "Timid"
+msgstr "Onzeker"
+
+msgid "To Next Lv."
+msgstr "Tot Volgend Lv."
+
+msgid "To install the other fonts, copy the files in this game's Fonts folder to the Fonts folder in Control Panel."
+msgstr "Gelieve de andere lettertypes te installeren door middel van het Configuratiescherm."
+
+msgid "Too bad...\nThe bag is full."
+msgstr "Dat is jammer...\nDe Tas zit vol."
+
+msgid "Too bad... The Bag is full..."
+msgstr "Dat is jammer... De Tas zit vol..."
+
+msgid "Took the {1}."
+msgstr "{1} teruggenomen."
+
+msgid "Toss"
+msgstr "Weggooien"
+
+msgid "Toss\nItem"
+msgstr "Voorwerp\nWeggooien"
+
+msgid "Toss Item"
+msgstr "Voorwerpen Weggooien"
+
+msgid "Toss out how many {1}(s)?"
+msgstr "Hoeveel wil je er weggooien?"
+
+msgid "Trainer has no unfainted Pokémon"
+msgstr "Trainer heeft alleen bezweken Pokémon."
+
+msgid "Transferring\\wt[8].\\wt[8].\\wt[8].\\wtnp[18]"
+msgstr "Pokémon overzetten \\wt[8].\\wt[8].\\wt[8].\\wtnp[18]"
+
+msgid "Treat this battle as a loss?"
+msgstr "Dit gevecht als verloren behandelen?"
+
+msgid "Treat this battle as a win?"
+msgstr "Dit gevecht als gewonnen behandelen?"
+
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+msgid "Turn Off"
+msgstr "Uitzetten"
+
+msgid "Turned over the {1} and received ${2}."
+msgstr "{1} verkocht voor ${2}."
+
+msgid "Tw̳Ich̳s PCc"
+msgstr "Tw̳Itch̳' pCc"
+
+msgid "Type"
+msgstr "Soort"
+
+msgid "UPPER"
+msgstr "HOOFD"
+
+msgid "Unknown"
+msgstr "Onbekend"
+
+msgid "Unknown happiness-changing method."
+msgstr "Onbekende vriendelijkheidsaanpassingsmethode."
+
+msgid "Up"
+msgstr "Omhoog"
+
+msgid "Up next:\\wt[20] Round {1}\\wt[25]\n\\PN versus {2}!"
+msgstr "Volgende ronde:\\wt[20] Ronde {1}\\wt[25]\n\\PN tegen {2}!"
+
+msgid "Updating game maps, you will be sent to the nearest Pokémon Center"
+msgstr "Gamemaps aan het updaten. Je zal naar het dichtbijzijnste Pokémon-Center gestuurd worden."
+
+msgid "Upon this consecrated ground, I shall invoke the blessings of the sea!"
+msgstr "Op dit geheiligde land, roep ik de zegenen van de zee aan!"
+
+msgid "Use"
+msgstr "Gebruiken"
+
+msgid "Use next Pokémon?"
+msgstr "Volgende Pokémon gebruiken?"
+
+msgid "Use on which Pokémon?"
+msgstr "Op welke Pokémon gebruiken?"
+
+msgid "Use the patcher.exe in your game folder to check for patches!\\wtnp[40]"
+msgstr "Open 'patcher.exe' in de installatiefolder om op patches te controleren!\\wtnp[40]"
+
+msgid "Used to confirm a choice, check things, and talk to people."
+msgstr "Bevestigt keuzes, bekijkt dingen en praat tegen mensen."
+
+msgid "Used to exit, cancel a choice or mode, and open the pause menu."
+msgstr "Annuleert keuzes, opent het pauzemenu en verlaat menu's."
+
+msgid "Using item..."
+msgstr "Voorwerp aan het gebruiken..."
+
+msgid "Using its {1}, the Attack of {2} rose!"
+msgstr "De Sterkte van {2} is gestegen door {1}!"
+
+msgid "Using its {1}, the Defense of {2} rose!"
+msgstr "De Verdediging van {2} is gestegen door {1}!"
+
+msgid "Using its {1}, the Special Attack of {2} rose!"
+msgstr "De Speciale Sterkte van {2} is gestegen door {1}!"
+
+msgid "Using its {1}, the Special Defense of {2} rose!"
+msgstr "De Speciale Verdediging van {2} is gestegen door {1}!"
+
+msgid "Using its {1}, the Speed of {2} rose!"
+msgstr "De Snelheid van {2} is gestegen door {1}!"
+
+msgid "Using {1}, the Attack of {2} rose sharply!"
+msgstr "De Sterkte van {2} is aanzienlijk gestegen door {1}!"
+
+msgid "Using {1}, the Defense of {2} rose sharply!"
+msgstr "De Verdediging van {2} is aanzienlijk gestegen door {1}!"
+
+msgid "Using {1}, the Special Attack of {2} rose sharply!"
+msgstr "De Speciale Sterkte van {2} is aanzienlijk gestegen door {1}!"
+
+msgid "Using {1}, the Special Defense of {2} rose sharply!"
+msgstr "De Speciale Verdediging van {2} is aanzienlijk gestegen door {1}!"
+
+msgid "Using {1}, the Speed of {2} rose sharply!"
+msgstr "De Snelheid van {2} is aanzienlijk gestegen door {1}!"
+
+msgid "Version is up-to-date, no update needed! \\wtnp[30]"
+msgstr "Versie is up-to-date, geen update nodig! \\wtnp[30]"
+
+msgid "Very finicky."
+msgstr "Vrij kieskeurig."
+
+msgid "Vibration"
+msgstr "Trilfunctie"
+
+msgid "Volcano"
+msgstr "Vulkaan"
+
+msgid "WITHDRAW POKéMON"
+msgstr "POKÉMON OPHALEN"
+
+msgid "WT"
+msgstr "GEWICHT"
+
+msgid "Wacan Berries"
+msgstr "Wacan-Bessen"
+
+msgid "Waiting for a rematch<r>{1}"
+msgstr "<ac><u>Wachtend</u></ac><ac><b>{1}</b></ac>"
+
+msgid "Wallpaper"
+msgstr "Achtergrond"
+
+msgid "Want to escape from here and return to {1}?"
+msgstr "Hier uit ontsnappen en terugkeren naar {1}?"
+
+msgid "Want to plant a Berry?"
+msgstr "Een Bes planten?"
+
+msgid "Want to return to the healing spot used last in {1}?"
+msgstr "Terugkeren naar de geneeslocatie van {1}?"
+
+msgid "Want to sprinkle some water with the {1}?"
+msgstr "Water sprenkelen met de {1}?"
+
+msgid "Warning: Randomizer Mode greatly affects the balance of the game."
+msgstr "Waarschuwing: De Randomizer-modus heeft grote invloed op de balans van het spel."
+
+msgid "Watmel Berries"
+msgstr "Watmel-Bessen"
+
+msgid "We have some of Tandor's best and brightest here to dazzle you with their spectacular battling skills!"
+msgstr "We hebben hier een aantal van Tandors besten en slimsten om jullie te verbazen met hun spectaculaire vechtkunsten!"
+
+msgid "We hope you enjoy playing Pokémon Uranium!"
+msgstr "We wensen je veel plezier met Pokémon Uranium!"
+
+msgid "We tried our hardest in this battle, and that's what counts."
+msgstr "We hebben allebei ons best gedaan, daar gaat het om."
+
+msgid "We're back with Round 3, the quarterfinals!"
+msgstr "We zijn terug met de derde ronde, de kwartfinales!"
+
+msgid "Wednesday"
+msgstr "Woensdag"
+
+msgid "Welcome to the Hall of Fame!"
+msgstr "Welkom bij de Eregalerij!"
+
+msgid "Welcome to the first round of the\nPokémon League Tournament!"
+msgstr "Welkom bij de eerste ronde van het\nTandorkampioenschap!"
+
+msgid "Welcome!\nHow may I serve you?"
+msgstr "Welkom!\nWat kan ik voor u betekenen?"
+
+msgid "Well fought, indeed! You deserved this victory."
+msgstr "Goed gevochten! Dit heb je verdiend."
+
+msgid "Well, it has been a while, hasn't it?\nWhen I battled you, you were just a naive child, fumbling around in the dark.\nNow, you face me in the arena with confidence!\nYour fighting spirit is like a bright, shining light!\nI can tell you are no longer afraid.\nGyahahaha!! That's what I like to see!\nShow me your fearlessness in battle!"
+msgstr "Nou, dat is een tijd geleden, of niet soms?\nToen ik je het laatst gevochten had, was je nog maar een naïef kind, verdwaald in het donker. Nu sta je tegenover mij vol vastberadenheid en zelfvertrouwen!\nJe passie is als een fel licht!\nIk kan zien dat je niet langer bang bent.\nGyahahaha! Daar had ik nou op gehoopt!\nLaat je moed maar eens zien!"
+
+msgid "Well, let's not delay... on with the match!"
+msgstr "Laten we niet langer wachten... op naar het gevecht!"
+
+msgid "Well, you certainly know what you want out of life.\\^"
+msgstr "Nou, je weet wat je wilt, dat is zeker.\\^"
+
+msgid "Wepear Berries"
+msgstr "Wepear-Bessen"
+
+msgid "What a match!"
+msgstr "Wat een gevecht!"
+
+msgid "What could be in store for us this round?"
+msgstr "Wat staat er deze ronde\nvoor ons in petto?"
+
+msgid "What do you want to do with {1}'s Mail?"
+msgstr "Wat wil je met de Brief van {1} doen?"
+
+msgid "What do you want to do?"
+msgstr "Wat wil je doen?"
+
+msgid "What will\n{1} do?"
+msgstr "Wat zal\n{1} doen?"
+
+msgid "What will\n{1} throw?"
+msgstr "Wat zal\n{1} gooien?"
+
+msgid "What will hatch from this? It doesn't seem close to hatching."
+msgstr "Wat zal hier uitkomen?\nDe tijd zal het leren."
+
+msgid "What will {1} do?"
+msgstr "Wat zal {1} doen?"
+
+msgid "What?\n{1} is evolving!"
+msgstr "Wat?\n{1} is aan het evolueren!"
+
+msgid "When the flame touched the powder on the Pokémon, it exploded!"
+msgstr "Toen de vlam het poeder op de Pokémon raakte, explodeerde het!"
+
+msgid "Which PC should be accessed?"
+msgstr "Welke pc mag geopend worden?"
+
+msgid "Which move should be forgotten?"
+msgstr "Welke actie moet vergeten worden?"
+
+msgid "Which one will you take?"
+msgstr "Wie neem je mee?"
+
+msgid "Which report should I read?"
+msgstr "Welk verslag lezen?"
+
+msgid "White"
+msgstr "Wit"
+
+msgid "White Tiles: {1}"
+msgstr "Witte Tegels: {1}"
+
+msgid "Who are you?\\^"
+msgstr "Wie ben jij?\\^"
+
+msgid "Who will it be?"
+msgstr "Wie zal het worden?"
+
+msgid "Wide Guard protected your team!"
+msgstr "Wide Guard heeft je team beschermd!"
+
+msgid "Wide Guard protected {1}!"
+msgstr "Wide Guard heeft {1} beschermd!"
+
+msgid "Wiki Berries"
+msgstr "Wiki-Bessen"
+
+msgid "Wild Pokémon will be lured."
+msgstr "Wilde Pokémon zullen gelokt worden."
+
+msgid "Wild Pokémon will be repelled."
+msgstr "Wilde Pokémon zullen afgeschrikt worden."
+
+msgid "Wild battles with more than two Pokémon are not allowed."
+msgstr "Wilde gevechten met meer dan twee Pokémon zijn niet toegestaan."
+
+msgid "Wild {1} and\n{2} appeared!"
+msgstr "Wilde {1} en\n{2} verschijnen!"
+
+msgid "Wild {1} appeared!"
+msgstr "Wilde {1} verschijnt!"
+
+msgid "Will you switch your Pokémon?"
+msgstr "Wil je je Pokémon verwisselen?"
+
+msgid "Withdraw"
+msgstr "Ophalen"
+
+msgid "Withdraw\nItem"
+msgstr "Voorwerp\nOphalen"
+
+msgid "Withdraw Item"
+msgstr "Voorwerpen Ophalen"
+
+msgid "Withdraw Pokémon"
+msgstr "Pokémon Ophalen"
+
+msgid "Withdrew {1} {2}(s)."
+msgstr "{1} {2} opgehaald."
+
+msgid "Wonder Room wore off, and the Defense and Sp. Def stats returned to normal!"
+msgstr "Wonder Room is uitgewerkt. De Verdediging- en Sp.-Ver.-statistieken zijn weer als normaal!"
+
+msgid "Woooow! Like, that was a totally sweet battle!~ I guess this just isn't my year to win. But now, you'd better win in my stead, okay?~"
+msgstr "Waaauuuw! Dat was zo'n mooi gevecht!~ Zo te zien is dit mijn jaar niet, wat betekent dat jij voor me moet winnen, goed?~"
+
+msgid "Would you like to cut it?"
+msgstr "Kapot snijden?"
+
+msgid "Would you like to forfeit the match and quit now?"
+msgstr "Stoppen en het gevecht opgeven?"
+
+msgid "Would you like to give a nickname to {1}?"
+msgstr "Wil je {1} een bijnaam geven?"
+
+msgid "Would you like to move it?"
+msgstr "Verschuiven?"
+
+msgid "Would you like to nickname the newly hatched {1}?"
+msgstr "Wil je de pasgeboren {1} een bijnaam geven?"
+
+msgid "Would you like to restart the game and apply the changes?"
+msgstr "Het spel opnieuw opstarten en de wijzigingen toepassen?"
+
+msgid "Would you like to save the game?"
+msgstr "Voortgang opslaan?"
+
+msgid "Would you like to switch the two items?"
+msgstr "De twee voorwerpen verwisselen?"
+
+msgid "Wow! That battle was quite a workout, huh?\nI think it's safe to say that you're the stronger among us.\nI'll be cheering you on from here on out!"
+msgstr "Wauw! Dat gevecht was best een work-out, of niet? Je mag gerust zeggen dat jij de sterkste van ons bent hoor!\nGa zo door, ik zal je toejuichen!"
+
+msgid "Wow, you look like a really strong trainer...\nUm. I'm Angelica, and I train Fairy types.\nWe're cute, but don't let it fool you:\nwe're really strong too.\nAfter all, Fairies can stand up to the power of dragons. So we aren't afraid of any tough-looking trainers, either. If you aren't acquainted with the power of fairies, then, you'll know soon enough!"
+msgstr "Woow, jij ziet eruit als een sterke Trainer...\nUm... Ik ben Angelica, en ik train Pokémon van het Fee-soort. We zijn schattig, maar laat je niet foppen: we zijn ook heel sterk. Feeën hebben tenslotte de kracht draken te verslaan, dus zijn wij niet bang voor stoere Trainers zoals jij. Als je nog niet bekend bent met de kracht van feeën, zal je er snel genoeg achterkomen!"
+
+msgid "Yache Berries"
+msgstr "Yache-Bessen"
+
+msgid "Yellow"
+msgstr "Geel"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "You can catch shiny Pokemon even if they aren't your first encounter."
+msgstr "Elke Shiny kan gevangen worden ongeacht wanneer het gevonden is."
+
+msgid "You can choose from three different game screen sizes."
+msgstr "Kies uit drie verschillende schermformaten."
+
+msgid "You can choose from three different text-scrolling speeds."
+msgstr "Kies uit drie verschillende tekstsnelheden."
+
+msgid "You can choose if the game should remember the last save you loaded."
+msgstr "Kies of het spel het laatst gebruikte opslagbestand onthoudt of niet."
+
+msgid "You can choose the style of the game's font."
+msgstr "Verander het lettertype."
+
+msgid "You can choose to switch Pokémon when an opponent's Pokémon faints."
+msgstr "Kies of je de keuze krijgt je Pokémon te verwisselen zodra er een bezwijkt."
+
+msgid "You can choose whether controller vibration is enabled."
+msgstr "Schakel de trilfunctie van de controller in of uit."
+
+msgid "You can choose whether to view move animations."
+msgstr "Schakel gevechtsanimaties in of uit."
+
+msgid "You can receive even more Coins in the next game!"
+msgstr "Je kan in het volgende spel nog meer munten verdienen!"
+
+msgid "You can select your preferred pronouns."
+msgstr "Kies de voornaamwoorden van de speler."
+
+msgid "You can set the game's SFX volume."
+msgstr "Verander het volume van de geluidseffecten."
+
+msgid "You can set the game's frames per second."
+msgstr "Verander het aantal beelden per seconde."
+
+msgid "You can set the game's language."
+msgstr "Verander de taal."
+
+msgid "You can set the game's music volume."
+msgstr "Verander het volume van de muziek."
+
+msgid "You can use the patcher.exe in your game folder to update! \\wtnp[40]"
+msgstr "Open 'patcher.exe' in de installatiefolder om de update te installeren!\\wtnp[40]"
+
+msgid "You can't dismount your Bike here."
+msgstr "Je kan hier niet afstappen."
+
+msgid "You can't play unless you have a Coin Case."
+msgstr "Je kan niet spelen zonder Muntenkist."
+
+msgid "You can't release an Egg."
+msgstr "Je kan een Ei niet vrijlaten."
+
+msgid "You can't release eggs."
+msgstr "Je kan Eieren niet vrijlaten."
+
+msgid "You can't switch {1}'s Pokémon with one of yours!"
+msgstr "Je kan {1}'s Pokémon niet met die van jou wisselen!"
+
+msgid "You don't have any Coins to play!"
+msgstr "Je hebt geen munten om te spelen!"
+
+msgid "You don't have any eligible pokemon for a sky battle"
+msgstr "Je hebt geen Pokémon die geschikt zijn voor een luchtgevecht."
+
+msgid "You don't have any other save files"
+msgstr "Je hebt geen andere opslagbestanden."
+
+msgid "You don't have enough berries."
+msgstr "Je hebt niet genoeg Bessen."
+
+msgid "You don't have enough money."
+msgstr "Je hebt niet genoeg geld..."
+
+msgid "You don't have your bag."
+msgstr "Je hebt je Tas niet."
+
+msgid "You got ${1}"
+msgstr "Je hebt ${1} ontvangen!"
+
+msgid "You have a burning spirit within you that never ceases!\\^"
+msgstr "Je passie is als een vlam die niet te blussen is!\\^"
+
+msgid "You have a great future ahead, but what about now?"
+msgstr "De toekomst lacht je toe, maar had je dit verwacht?"
+
+msgid "You have completed {1}!"
+msgstr "Je hebt {1} voltooid!"
+
+msgid "You have no more room in the Bag."
+msgstr "De Tas zit vol."
+
+msgid "You have no room left in the Bag."
+msgstr "De Tas zit vol."
+
+msgid "You have no usable items in this pocket."
+msgstr "Je hebt geen bruikbare voorwerpen in dit vak."
+
+msgid "You have received a mystery award! Search to find what has been unlocked!"
+msgstr "Je hebt een nieuwe trofee ontvangen! Kijk om te zien wat er verdiend is!"
+
+msgid "You haven't found any Coins! Are you sure you want to quit?"
+msgstr "Je hebt nog geen munten gevonden! Weet je zeker dat je wilt stoppen?"
+
+msgid "You know that the best things in life come to those who wait.\\^"
+msgstr "Je hebt een zeer sterk uithoudingsvermogen.\\^"
+
+msgid "You must choose a move!"
+msgstr "Je moet een actie selecteren!"
+
+msgid "You must choose at least one rule to play a custom game."
+msgstr "Je moet minstens één spelregel kiezen voor een aangepast spel."
+
+msgid "You must complete the game at least once to unlock Randomizer."
+msgstr "Je moet het spel minstens één keer hebben uitgespeeld om de Randomizer-modus te kunnen kiezen."
+
+msgid "You must enable Nuzlocke to select this."
+msgstr "Nuzlocke-modus moet hiervoor ingeschakeld zijn."
+
+msgid "You need an internet connection to use the GTS, WT and VT"
+msgstr "Je hebt een internetverbinding nodig om het WRS, WR en VT te gebruiken."
+
+msgid "You picked the {1} {2}.\\wtnp[30]"
+msgstr "Je hebt {1} {2} geplukt.\\wtnp[30]"
+
+msgid "You picked the {1}.\\wtnp[30]"
+msgstr "Je hebt de {1} geplukt.\\wtnp[30]"
+
+msgid "You prefer to adapt to overcome challenges in your path.\\^"
+msgstr "Je past je gemakkelijk aan om je problemen te overwinnen.\\^"
+
+msgid "You prefer to overwhelm your opponents with sheer force and firepower.\\^"
+msgstr "Je schakelt je tegenstanders liever zo snel mogelijk uit.\\^"
+
+msgid "You seem to be a Trainer who likes to play it safe.\\^"
+msgstr "Je bent een Trainer die de kat graag uit de boom kijkt.\\^"
+
+msgid "You seem to be a trainer that is capable of many different strategies.\\^"
+msgstr "Je bent een Trainer die veel verschillende strategieën toe kan passen.\\^"
+
+msgid "You seem to be a trainer who won't hesitate to go for what you want.\\^"
+msgstr "Je bent een Trainer die er altijd voor lijkt te gaan.\\^"
+
+msgid "You used your last {1}."
+msgstr "Je hebt je laatste {1} verbruikt."
+
+msgid "You're already surfing."
+msgstr "Je surft al."
+
+msgid "You're holding a Pokémon!"
+msgstr "Je houdt een Pokémon vast!"
+
+msgid "You're impulsive, impatient, and care mostly about your own desires.\\^"
+msgstr "Je bent impulsief, ongeduldig, en vooral met jezelf bezig.\\^"
+
+msgid "You've found all of the hidden x2 and x3 cards."
+msgstr "Je hebt alle verborgen x2 en x3 kaarten gevonden."
+
+msgid "You've got 99,999 Coins."
+msgstr "Je hebt 99.999 munten."
+
+msgid "You've run out of Coins.\nGame over!"
+msgstr "Je hebt geen munten meer over.\nGame over!"
+
+msgid "Your Coin Case has been filled."
+msgstr "Je Muntenkist is gevuld."
+
+msgid "Your Coin Case is full!"
+msgstr "Je Muntenkist is vol!"
+
+msgid "Your PC's Mailbox is full."
+msgstr "De Postbus zit vol."
+
+msgid "Your Pokémon will be waiting for you in the Pokémon Storage System."
+msgstr "Je Pokémon staan klaar in het Pokémon-Opslagsysteem."
+
+msgid "Your calm, rational approach will come to aid you in the future.\\^"
+msgstr "Die kalme, rationele houding zal je in de toekomst zeker van pas komen.\\^"
+
+msgid "Your coins"
+msgstr "Munten"
+
+msgid "Your foe's weak!\nGet 'em, {1}!"
+msgstr "Je tegenstander is zwak!\nPak 'm, {1}!"
+
+msgid "Your game is out-of-date!\nUpdate required. \\wtnp[30]"
+msgstr "Het spel is out-of-date! \nUpdate vereist. \\wtnp[30]"
+
+msgid "Your journey --- your story --- is about to unfold."
+msgstr "Jouw avontuur -- jouw verhaal -- staat op het punt te beginnen."
+
+msgid "Your name is {1}?"
+msgstr "Hmm, dus je naam is {1}?"
+
+msgid "Your name?"
+msgstr "Hoe heet je?"
+
+msgid "Your old Nuzlocke savefile needs to be converted to the new system."
+msgstr "Je oude Nuzlocke-opslagbestand moet omgezet worden in verband met het nieuwe systeem."
+
+msgid "Your party Pokémon and any in the Daycare will be deposited, too."
+msgstr "Dit geldt ook voor Pokémon in het Dagverblijf en Pokémon in je team."
+
+msgid "Your party is full!"
+msgstr "Je team zit vol!"
+
+msgid "Your party is full! You can't unfuse {1}."
+msgstr "Je team is vol! Je kan {1} niet defuseren."
+
+msgid "Your party's full!"
+msgstr "Je team zit vol!"
+
+msgid "Your philosophy is probably to just \"go with the flow\".\\^"
+msgstr "Je intelligentie staat als een paal boven water.\\^"
+
+msgid "Your starter as well as all wild and trainer Pokémon will be randomized."
+msgstr "Alle Pokémon worden willekeurig uitgekozen."
+
+msgid "Your team became cloaked in a mystical veil!"
+msgstr "Je team wordt beschermd tegen aandoeningen!"
+
+msgid "Your team became shrouded in mist!"
+msgstr "Je team wordt in mist gehuld!"
+
+msgid "Your team is no longer protected by Safeguard!"
+msgstr "Je team wordt niet langer beschermd door Safeguard!"
+
+msgid "Your team is no longer protected by mist!"
+msgstr "Je team wordt niet langer beschermd door mist!"
+
+msgid "Your team is too nervous to eat Berries!"
+msgstr "Je team is te nerveus om Bessen te eten!"
+
+msgid "Your team's Light Screen faded!"
+msgstr "Het Reflect van je team werkt uit!"
+
+msgid "Your team's Light Screen wore off!"
+msgstr "Het Light Screen van je team is uitgewerkt!"
+
+msgid "Your team's Lucky Chant wore off!"
+msgstr "De Lucky Chant van je team werkt uit!"
+
+msgid "Your team's Mist faded!"
+msgstr "Je team wordt niet langer beschermd door mist!"
+
+msgid "Your team's Reflect faded!"
+msgstr "Het Reflect van je team is uitgewerkt!"
+
+msgid "Your team's Reflect wore off!"
+msgstr "Het Reflect van je team is uitgewerkt!"
+
+msgid "Your team's Tailwind petered out!"
+msgstr "Je team verliest de wind mee!"
+
+msgid "\\GHere you go!"
+msgstr "\\GAlsjeblieft!"
+
+msgid "\\GYou don't have enough money."
+msgstr "\\GJe hebt niet genoeg geld..."
+
+msgid "\\GYou have no room left in the Bag."
+msgstr "\\GDe Tas zit vol."
+
+msgid "\\PN, are you ready?"
+msgstr "Oké \\PN, klaar voor?"
+
+msgid "\\c[7]ENGAGEMENT FAILED.\\wt[16]\nA POWER CELL IS NEEDED."
+msgstr "\\c[7]ACTIVATIE MISLUKT.\\wt[16]\nACCU VEREIST."
+
+msgid "\\c[7]ENGAGEMENT SUCCESSFUL."
+msgstr "\\c[7]ACTIVATIE VOLTOOID."
+
+msgid "\\c[7]OBSTACLE DETECTED.\\wt[20]\nENGAGING STRENGTH PROTOCOL\\wt[8].\\wt[8].\\wt[8].\\wt[8]"
+msgstr "\\c[7]OBSTAKEL GEDETECTEERD.\\wt[20]\nSTRENGTH-PROTOCOL ACTIVEREN\\wt[8] .\\wt[8].\\wt[8].\\wt[8]"
+
+msgid "\\me[Jingle - HMTM]Obtained \\c[1]{1}\\c[0]!\nIt contained \\c[1]{2}\\c[0].\\wtnp[55]"
+msgstr "\\me[Jingle - HMTM]\\PN heeft \\c[1]{1}\\c[0] bemachtigd!\nHet bevat \\c[1]{2}\\c[0].\\wtnp[55]"
+
+msgid "\\me[Jingle - HMTM]{1} found \\c[1]{2}\\c[0]!\nIt contained \\c[1]{3}\\c[0].\\wtnp[55]"
+msgstr "\\me[Jingle - HMTM]{1} heeft \\c[1]{2}\\c[0] gevonden!\nHet bevat \\c[1]{3}\\c[0].\\wtnp[55]"
+
+msgid "\\me[Jingle - Regular Item]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]\\PN heeft \\c[1]{1}\\c[0] bemachtigd!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]Obtained \\c[1]{1}s\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]\\PN heeft \\c[1]{1}\\c[0] bemachtigd!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]Obtained some \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]\\PN heeft een aantal \\c[1]{1}\\c[0] bemachtigd!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found one \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1} heeft een \\c[1]{2}\\c[0] gevonden!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found some \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1} heeft een aantal \\c[1]{2}\\c[0] gevonden!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1} heeft {2} \\c[1]{3}\\c[0] gevonden!\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1} heeft {2} \\c[1]{3}\\c[0] gevonden!\\wtnp[30]"
+
+msgid "\\me[Jinlge - KeyItem]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jinlge - KeyItem]\\PN heeft \\c[1]{1}\\c[0] bemachtigd!\\wtnp[30]"
+
+msgid "\\me[Jinlge - KeyItem]Randomizer Mode has been unlocked!\\wt[30]\nIt will be available when starting a new Custom Game."
+msgstr "\\me[Jinlge - KeyItem]Je hebt de Randomizer-modus verdiend!\\wt[30]\nHet is nu beschikbaar als keuze bij aangepaste spelregels."
+
+msgid "\\me[Jinlge - KeyItem]\\sign[sign1]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jinlge - KeyItem]\\sign[sign1]\\PN heeft \\c[1]{1}\\c[0] bemachtigd!\\wtnp[30]"
+
+msgid "\\me[Voltorb Flip Game Over]Oh no! You get 0 Coins!\\wtnp[50]"
+msgstr "\\me[Voltorb Flip Game Over]O nee! Je krijgt 0 munten!\\wtnp[50]"
+
+msgid "\\me[Voltorb Flip Win]Board clear!\\wtnp[40]"
+msgstr "\\me[Voltorb Flip Win]Bord opgelost!\\wtnp[40]"
+
+msgid "\\se[Voltorb Flip Level Dropped]Dropped to Game Lv. {1}!"
+msgstr "\\se[Voltorb Flip Level Dropped]Gedaald tot Level {1}!"
+
+msgid "\\se[]1,\\wt[4] 2,\\wt[4] and...\\wt[8] ...\\wt[8] ...\\wt[8] Poof!\\se[balldrop]"
+msgstr "\\se[]1,\\wt[4] 2,\\wt[4] en...\\wt[8] ...\\wt[8] ...\\wt[8] Poef!\\se[balldrop]"
+
+msgid "\\se[]Save failed.\\wtnp[30]"
+msgstr "\\se[]Opslaan mislukt.\\wtnp[30]"
+
+msgid "\\se[]{1} hatched from the Egg!\\wt[80]"
+msgstr "\\se[]{1} is uit het Ei gekomen!\\wt[80]"
+
+msgid "\\se[]{1} learned {2}!\\se[itemlevel]"
+msgstr "\\se[]{1} heeft {2} geleerd!\\se[itemlevel]"
+
+msgid "\\se[]{1} saved the game.\\se[save]\\wtnp[30]"
+msgstr "\\se[]{1} heeft {zijn|haar|diens} voortgang opgeslagen.\\se[save]\\wtnp[30]"
+
+msgid "\\se[accesspc]Accessed the Hall of Fame."
+msgstr "\\se[accesspc]Eregalerij is geopend."
+
+msgid "\\se[accesspc]Accessed {1}'s PC."
+msgstr "\\se[accesspc]{1}'s pc is geopend."
+
+msgid "\\se[accesspc]Booted up a TM."
+msgstr "\\se[accesspc]De TM is opgestart."
+
+msgid "\\se[accesspc]Booted up an HM."
+msgstr "\\se[accesspc]De VM is opgestart."
+
+msgid "\\se[accesspc]The Pokémon Storage System was opened."
+msgstr "\\se[accesspc]Het Pokémon-Opslagsysteem is geopend."
+
+msgid "\\se[computeropen]{1} booted up the PC."
+msgstr "\\se[computeropen]{1} start de pc op."
+
+msgid "\\se[itemlevel]{1} received \\c[1]{2}\\c[0]!\\nIt contained \\c[1]{3}\\c[0].\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} heeft een \\c[1]{2}\\c[0] ontvangen!\\nHet bevatte \\c[1]{3}\\c[0].\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received a \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} heeft een \\c[1]{2}\\c[0] ontvangen!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received an \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} heeft een \\c[1]{2}\\c[0] ontvangen!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received some \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} heeft een aantal \\c[1]{2}\\c[0] ontvangen!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} heeft {2} \\c[1]{3}\\c[0] ontvangen!\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1} heeft {2} \\c[1]{3}\\c[0] ontvangen!\\wtnp[30]"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]After the unfortunate defeat, {1} scurried home."
+msgstr "\\w[]\\wm\\c[8]\\l[3]Als gevolg van het vernederend verlies haast {1} zich naar huis."
+
+msgid "\\w[]\\wm\\c[8]\\l[3]After the unfortunate defeat, {1} scurried to a Pokémon Center."
+msgstr "\\w[]\\wm\\c[8]\\l[3]Als gevolg van het vernederend verlies haast {1} zich naar een Pokémon-Center."
+
+msgid "\\w[]\\wm\\c[8]\\l[3]{1} scurried home, protecting the exhausted and fainted Pokémon from further harm."
+msgstr "\\w[]\\wm\\c[8]\\l[3]{1} beschermt de vermoeide, bezweken Pokémon tegen verdere schade en haast zich naar huis."
+
+msgid "\\w[]\\wm\\c[8]\\l[3]{1} scurried to a Pokémon Center, protecting the exhausted and fainted Pokémon from further harm."
+msgstr "\\w[]\\wm\\c[8]\\l[3]{1} beschermt de vermoeide, bezweken Pokémon tegen verdere schade en haast zich naar een Pokémon-Center."
+
+msgid "accuracy"
+msgstr "precisie"
+
+msgid "an egg"
+msgstr "een Ei"
+
+msgid "boardbg"
+msgstr "../../Translations/Dutch/boardbg_nl"
+
+msgid "egg"
+msgstr "Ei"
+
+msgid "evasiveness"
+msgstr "ontwijking"
+
+msgid "lower"
+msgstr "klein"
+
+msgid "memo"
+msgstr "../../Translations/Dutch/memo_nl"
+
+msgid "off"
+msgstr "uit"
+
+msgid "on"
+msgstr "aan"
+
+msgid "other"
+msgstr "overig"
+
+msgid "phonebg"
+msgstr "../Translations/Dutch/phonebg_nl"
+
+msgid "the ally {1}"
+msgstr "de aangesloten {1}"
+
+msgid "the egg"
+msgstr "het Ei"
+
+msgid "the foe {1}"
+msgstr "de verdedigende {1}"
+
+msgid "the opposing {1}"
+msgstr "de verdedigende {1}"
+
+msgid "the wild {1}"
+msgstr "de wilde {1}"
+
+msgid "their egg"
+msgstr "{zijn|haar|het} Ei"
+
+msgid "wh̳hC PC sHoulD bE̳ acCe̳sEd?̳̳̳"
+msgstr "̳WEll̳Ke̳ p̳cC m̳O̳̳̳E̳t gE̳oPE̳n̳d wO̳r̳dEN̳n?"
+
+msgid "{1:4.1f} lbs."
+msgstr "{1:4.1f} lbs"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}"
+msgstr "{1:s}\nID: {2:05d}   OT: {3:s}"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}"
+msgstr "{1:s}\nID: {2:05d}   OT: {3:s}"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[0]"
+msgstr "{1:s}\nID: {2:05d}   OT: {3:s}\\wtnp[0]"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[100]"
+msgstr "{1:s}\nID: {2:05d}   OT: {3:s}\\wtnp[100]"
+
+msgid "{1:s} (F, Lv{2:d})"
+msgstr "{1:s} (V, Lv{2:d})"
+
+msgid "{1:s} Pokémon"
+msgstr "{1:s}-Pokémon"
+
+msgid "{1:s}: Search Mode"
+msgstr "Tandor-PokéDex: Zoekfunctie"
+
+msgid "{1:s}<r>POWER/{2:s}\nPP/{3:d}<r>ACCURACY/{4:s}"
+msgstr "{1:s}<r>KRACHT/{2:s}\nAP/{3:d}<r>PRECISIE/{4:s}"
+
+msgid "{1:s}PP: ---<br>TYPE/{2:s}"
+msgstr "{1:s}AP: ---<br>SOORT/{2:s}"
+
+msgid "{1:s}PP: {2: 2d}/{3: 2d}<br>TYPE/{4:s}"
+msgstr "{1:s}AP: {2: 2d}/{3: 2d}<br>SOORT/{4:s}"
+
+msgid "{1}\nwould like to battle!"
+msgstr "{1}\nwil vechten!"
+
+msgid "{1} (PP: ---)"
+msgstr "{1} (AP: ---)"
+
+msgid "{1} (PP: {2}/{3})"
+msgstr "{1} (AP: {2}/{3})"
+
+msgid "{1} Female"
+msgstr "{1} Vrouwtje"
+
+msgid "{1} Female Shiny"
+msgstr "{1} Shiny Vrouwtje"
+
+msgid "{1} Lv{2} {3}"
+msgstr "{1}  Lv{2}  {3}"
+
+msgid "{1} Lv{2} {3}/{4}"
+msgstr "{1}  Lv{2}  {3}/{4}"
+
+msgid "{1} Male"
+msgstr "{1} Mannetje"
+
+msgid "{1} Male Shiny"
+msgstr "{1} Shiny Mannetje"
+
+msgid "{1} Pokémon will be released, 1 of them is shiny. Are you absolutely certain?"
+msgstr "{1} Pokémon zullen vrijgelaten worden. 1 van hen is Shiny. Weet je het helemaal zeker?"
+
+msgid "{1} Pokémon will be released, {2} of them are shiny. Are you absolutely certain?"
+msgstr "{1} Pokémon zullen vrijgelaten worden. {2} van hen zijn Shiny. Weet je het helemaal zeker?"
+
+msgid "{1} Pokémon will be released. Are you absolutely certain?"
+msgstr "{1} Pokémon zullen vrijgelaten worden. Weet je het helemaal zeker?"
+
+msgid "{1} absorbed nutrients with its roots!"
+msgstr "{1} heeft voedingsstoffen uit de bodem opgenomen!"
+
+msgid "{1} acquired {2}!"
+msgstr "{1} heeft {2} verkregen!"
+
+msgid "{1} adores you!\nThe base Attack fell!"
+msgstr "{1} houdt van je!\nDe basis Sterkte is gedaald!"
+
+msgid "{1} adores you!\nThe base Defense fell!"
+msgstr "{1} houdt van je!\nDe basis Verdediging is gedaald!"
+
+msgid "{1} adores you!\nThe base HP fell!"
+msgstr "{1} houdt van je!\nDe basis HP is gedaald!"
+
+msgid "{1} adores you!\nThe base Special Attack fell!"
+msgstr "{1} houdt van je!\nDe basis Speciale Sterkte is gedaald!"
+
+msgid "{1} adores you!\nThe base Special Defense fell!"
+msgstr "{1} houdt van je!\nDe basis Speciale Verdediging is gedaald!"
+
+msgid "{1} adores you!\nThe base Speed fell!"
+msgstr "{1} houdt van je!\nDe basis Snelheid is gedaald!"
+
+msgid "{1} already has a burn."
+msgstr "{1} is al verbrand!"
+
+msgid "{1} already has a substitute!"
+msgstr "{1} heeft al een Substitute-kopie!"
+
+msgid "{1} already knows\n{2}."
+msgstr "{1} kent {2} al."
+
+msgid "{1} anchored itself with its roots!"
+msgstr "{1} heeft zichzelf vastgeplant!"
+
+msgid "{1} anchored itself with {2}!"
+msgstr "{1} heeft zichzelf verankerd met {2}!"
+
+msgid "{1} anchored itself!"
+msgstr "{1} heeft zichzelf verankerd!"
+
+msgid "{1} and {2} are attacking!"
+msgstr "{1} en {2} vallen aan!"
+
+msgid "{1} and {2} want to battle!"
+msgstr "{1} en {2} willen vechten!"
+
+msgid "{1} appears incapable of using its power!"
+msgstr "{1} lijkt niet aan te kunnen vallen!"
+
+msgid "{1} avoided damage with Wonder Guard!"
+msgstr "{1} heeft de schade ontlopen door Wonder Guard!"
+
+msgid "{1} avoided the attack!"
+msgstr "{1} heeft de actie ontweken!"
+
+msgid "{1} avoids attacks by its ally Pokémon!"
+msgstr "{1} ontwijkt aanvallen van de aangesloten Pokémon!"
+
+msgid "{1} became cloaked in a freezing light!"
+msgstr "{1} heeft een bevriezend licht gecreëerd!"
+
+msgid "{1} became cloaked in freezing air!"
+msgstr "{1} heeft een bevriezende lucht gecreëerd!"
+
+msgid "{1} became cloaked in mystical moonlight!"
+msgstr "{1} heeft magisch maanlicht gecreëerd!"
+
+msgid "{1} became confused due to fatigue!"
+msgstr "{1} is verward geraakt door vermoeidheid!"
+
+msgid "{1} became confused!"
+msgstr "{1} is verward geraakt!"
+
+msgid "{1} became healthy!"
+msgstr "{1} is genezen!"
+
+msgid "{1} became healthy."
+msgstr "{1} is genezen."
+
+msgid "{1} became nimble!"
+msgstr "{1} wordt lenig!"
+
+msgid "{1} became the center of attention!"
+msgstr "{1} krijgt alle aandacht!"
+
+msgid "{1} became trapped by Sand Tomb!"
+msgstr "{1} zit vast in een zandhoos!"
+
+msgid "{1} became trapped by swirling magma!"
+msgstr "{1} zit vast in een magmastorm!"
+
+msgid "{1} began charging power!"
+msgstr "{1} begint zich op te laden!"
+
+msgid "{1} began growling deeply!"
+msgstr "{1} begint hard te grommen!"
+
+msgid "{1} began having a nightmare!"
+msgstr "{1} krijgt een nachtmerrie!"
+
+msgid "{1} bids farewell to {2}."
+msgstr "{1} neemt afscheid van {2}."
+
+msgid "{1} blacked out!"
+msgstr "{1} valt flauw!"
+
+msgid "{1} bounced the {2} back!"
+msgstr "{1} heeft {2} weerkaatst!"
+
+msgid "{1} braced itself!"
+msgstr "{1} heeft zichzelf schrap gezet!"
+
+msgid "{1} breaks the mold!"
+msgstr "{1} breekt de regels!"
+
+msgid "{1} burrowed its way under the ground!"
+msgstr "{1} heeft zich diep onder de grond begraven!"
+
+msgid "{1} called {2}!"
+msgstr "{1} riep {2}!"
+
+msgid "{1} calmed down."
+msgstr "{1} kalmeert."
+
+msgid "{1} came to its senses from the Trainer's call!"
+msgstr "{1} is door de Trainer wakker geschud!"
+
+msgid "{1} can use items again!"
+msgstr "{1} kan weer voorwerpen gebruiken!"
+
+msgid "{1} can't be fused with itself!"
+msgstr "{1} kan niet met zichzelf gefuseerd worden!"
+
+msgid "{1} can't be fused with {2}."
+msgstr "{1} kan niet met {2} gefuseerd worden."
+
+msgid "{1} can't be learned."
+msgstr "{1} kan niet geleerd worden."
+
+msgid "{1} can't be switched out!"
+msgstr "{1} kan niet teruggetrokken worden!"
+
+msgid "{1} can't be taught to an Egg."
+msgstr "{1} kan niet aan een Ei geleerd worden."
+
+msgid "{1} can't be taught to this Pokémon."
+msgstr "{1} kan niet aan deze Pokémon geleerd worden."
+
+msgid "{1} can't be used in a sky battle!"
+msgstr "{1} kan niet worden gebruikt in een luchtgevecht!"
+
+msgid "{1} can't escape now!"
+msgstr "{1} kan niet ontsnappen!"
+
+msgid "{1} can't fight in a sky battle!"
+msgstr "{1} kan niet vechten in een luchtgevecht!"
+
+msgid "{1} can't get it going!"
+msgstr "{1} schiet er niet mee op!"
+
+msgid "{1} can't move!"
+msgstr "{1} kan niet bewegen!"
+
+msgid "{1} can't stockpile any more!"
+msgstr "{1} kan niet meer opstapelen!"
+
+msgid "{1} can't use items anymore!"
+msgstr "{1} kan geen voorwerpen meer gebruiken!"
+
+msgid "{1} can't use the same move twice in a row due to the torment!"
+msgstr "{1} kan dezelfde actie niet twee keer achter elkaar gebruiken door Torment!"
+
+msgid "{1} can't use the sealed {2}!"
+msgstr "{1} kan de weggestopte {2} niet gebruiken!"
+
+msgid "{1} can't use {2} after the taunt!"
+msgstr "{1} kan {2} niet gebruiken door Taunt!"
+
+msgid "{1} can't use {2} because of Heal Block!"
+msgstr "{1} kan {2} niet gebruiken door Heal Block!"
+
+msgid "{1} cannot use {2}!"
+msgstr "{1} kan {2} niet gebruiken!"
+
+msgid "{1} caused an uproar!"
+msgstr "{1} maakt lawaai!"
+
+msgid "{1} changed Forme!"
+msgstr "{1} is van Vorm veranderd!"
+
+msgid "{1} chose Doom Desire as its destiny!"
+msgstr "{1} koos Doom Desire als lotsbestemming!"
+
+msgid "{1} clamped {2}!"
+msgstr "{1} wordt vastgeklemd door {2}!"
+
+msgid "{1} consumed its {2}!"
+msgstr "{1} heeft de {2} verbruikt!"
+
+msgid "{1} copied {2}'s stat changes!"
+msgstr "{1} heeft de statistiekveranderingen van {2} gekopieerd!"
+
+msgid "{1} copied {2}'s {3}!"
+msgstr "{1} heeft de {3} van {2} gekopieerd!"
+
+msgid "{1} cured its infatuation status using its {2}!"
+msgstr "{1} heeft de verzotheid genezen met {2}!"
+
+msgid "{1} cut its own HP and laid a curse on {2}!"
+msgstr "{1} heeft wat HP verloren om {2} te vervloeken!"
+
+msgid "{1} cut its own HP and maximized its Attack!"
+msgstr "{1} heeft HP verloren en Sterkte gemaximaliseerd!"
+
+msgid "{1} defeated\n{2}!"
+msgstr "{1} heeft\n{2} verslagen!"
+
+msgid "{1} defeated {2} and {3}!"
+msgstr "{1} heeft {2} en {3} verslagen!"
+
+msgid "{1} did a headbutt!"
+msgstr "{1} doet Headbutt!"
+
+msgid "{1} did not learn {2}."
+msgstr "{1} heeft {2} niet geleerd."
+
+msgid "{1} doesn't become confused!"
+msgstr "{1} raakt niet verward!"
+
+msgid "{1} endured the hit!"
+msgstr "{1} heeft de aanval verdragen!"
+
+msgid "{1} evaded the attack!"
+msgstr "{1} heeft de actie ontweken!"
+
+msgid "{1} fainted!"
+msgstr "{1} is bezweken!"
+
+msgid "{1} fainted...\\"
+msgstr "{1} is bezweken...\\"
+
+msgid "{1} fell asleep!"
+msgstr "{1} is in slaap gevallen!"
+
+msgid "{1} fell for the taunt!"
+msgstr "{1} heeft op het geplaag gereageerd!"
+
+msgid "{1} fell in love!"
+msgstr "{1} is verzot geworden!"
+
+msgid "{1} fell straight down!"
+msgstr "{1} is recht naar beneden gevallen!"
+
+msgid "{1} fled from battle!"
+msgstr "{1} is van het gevecht gevlucht!"
+
+msgid "{1} fled using Run Away!"
+msgstr "{1} is gevlucht door middel van Run Away!"
+
+msgid "{1} fled using its {2}!"
+msgstr "{1} is gevlucht met behulp van {2}!"
+
+msgid "{1} fled!"
+msgstr "{1} is gevlucht!"
+
+msgid "{1} flew up high!"
+msgstr "{1} is de lucht in gevlogen!"
+
+msgid "{1} flew {2} up into the air!"
+msgstr "{1} is met {2} de lucht in gevlogen!"
+
+msgid "{1} flinched and couldn't move!"
+msgstr "{1} deinsde terug en kon niet bewegen!"
+
+msgid "{1} flung its {2}!"
+msgstr "{1} heeft de {2} gegooid!"
+
+msgid "{1} foresaw an attack!"
+msgstr "{1} ziet een actie aankomen!"
+
+msgid "{1} forfeited the match!"
+msgstr "{1} heeft het gevecht opgegeven!"
+
+msgid "{1} forgot how to\nuse {2}."
+msgstr "{1} is {2} vergeten."
+
+msgid "{1} forgot {2}."
+msgstr "{1} is {2} vergeten."
+
+msgid "{1} forgot {2}..."
+msgstr "{1} is {2} vergeten..."
+
+msgid "{1} found \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1} heeft \\c[1]{2}\\c[0] gevonden!\\wtnp[20]"
+
+msgid "{1} found one \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1} heeft een \\c[1]{2}\\c[0] gevonden!\\wtnp[20]"
+
+msgid "{1} found one {2}!"
+msgstr "{1} heeft een {2} gevonden!"
+
+msgid "{1} found some \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1} heeft een aantal \\c[1]{2}\\c[0] gevonden!\\wtnp[20]"
+
+msgid "{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[20]"
+msgstr "{1} heeft {2} \\c[1]{3}\\c[0] gevonden!\\wtnp[20]"
+
+msgid "{1} found {2} \\c[1]{3}s\\c[0]!\\wtnp[20]"
+msgstr "{1} heeft {2} \\c[1]{3}\\c[0] gevonden!\\wtnp[20]"
+
+msgid "{1} frisked the foe and found one {2}!"
+msgstr "{1} heeft de tegenstander gefouilleerd en heeft een {2} gevonden!"
+
+msgid "{1} frisked the other foe and found one {2}!"
+msgstr "{1} heeft de andere tegenstander gefouilleerd en heeft een {2} gevonden!"
+
+msgid "{1} frisked {2} and found its {3}!"
+msgstr "{1} heeft {2} gefouilleerd en heeft een {3} gevonden!"
+
+msgid "{1} gained a boosted {2} Exp. Points!"
+msgstr "{1} heeft {2} versterkte Exp. verdiend!"
+
+msgid "{1} gained {2} Exp. Points!"
+msgstr "{1} heeft {2} Exp. verdiend!"
+
+msgid "{1} gave ${2} to the winner..."
+msgstr "{1} heeft ${2} aan de winnaar gegeven..."
+
+msgid "{1} gave {2} its {3}!"
+msgstr "{1} heeft {2} de {3} gegeven!"
+
+msgid "{1} got ${2}\nfor winning!"
+msgstr "{1} krijgt ${2}\nvoor het winnen!"
+
+msgid "{1} got free of {2}'s {3}!"
+msgstr "{1} is losgebroken van de {3} van {2}!"
+
+msgid "{1} got over its infatuation."
+msgstr "{1} is niet langer verzot."
+
+msgid "{1} grew to Lv. {2}!"
+msgstr "{1} is tot Lv. {2} gestegen!"
+
+msgid "{1} had its HP restored."
+msgstr "{1}'s HP is hersteld."
+
+msgid "{1} had its energy drained!"
+msgstr "{1} is leeggezogen!"
+
+msgid "{1} harvested one {2}!"
+msgstr "{1} heeft een {2} geplukt!"
+
+msgid "{1} has Air Lock!"
+msgstr "{1} heeft Air Lock!"
+
+msgid "{1} has Mega Evolved into {2}!"
+msgstr "{1} is tot een {2} Mega-Geëvolueerd!"
+
+msgid "{1} has already been selected."
+msgstr "{1} is al geselecteerd."
+
+msgid "{1} has been afflicted with infestation by {2}!"
+msgstr "{1} heeft last van een plaag door {2}!"
+
+msgid "{1} has been cured of its corruption!"
+msgstr "{1} is genezen van ongehoorzaamheid!"
+
+msgid "{1} has been laid down."
+msgstr "{1} is neergelegd."
+
+msgid "{1} has no energy left to battle!"
+msgstr "{1} is uitgeput!"
+
+msgid "{1} has no more Pokémon that can fight!"
+msgstr "{1} heeft geen Pokémon die nog in staat zijn te vechten!"
+
+msgid "{1} has no moves left!"
+msgstr "{1} heeft geen acties meer over!"
+
+msgid "{1} has no usable Pokémon!"
+msgstr "{1} heeft geen bruikbare Pokémon!"
+
+msgid "{1} held up its Red Card against {2}!"
+msgstr "{1} heeft de Rode Kaart aan {2} getoond!"
+
+msgid "{1} helped {2} move next!"
+msgstr "{1} heeft {2} helpen bewegen!"
+
+msgid "{1} hid underwater!"
+msgstr "{1} heeft zich onderwater verstopt!"
+
+msgid "{1} hung on using its Focus Band!"
+msgstr "{1} heeft de aanval verdragen met de Focusband!"
+
+msgid "{1} hung on using its Focus Sash!"
+msgstr "{1} heeft de aanval verdragen met het Focuslint!"
+
+msgid "{1} hung on with Sturdy!"
+msgstr "{1} heeft de aanval verdragen met Sturdy!"
+
+msgid "{1} ignored orders while asleep!"
+msgstr "{1} negeert de opdracht terwijl het slaapt!"
+
+msgid "{1} ignored orders!"
+msgstr "{1} negeert de opdracht!"
+
+msgid "{1} intends to flip up a mat and block incoming attacks!"
+msgstr "{1} is van plan een mat neer te zetten!"
+
+msgid "{1} is about to send in {2}."
+msgstr "{1} is van plan {2} in te zetten."
+
+msgid "{1} is absorbing power!"
+msgstr "{1} absorbeert energie uit de grond!"
+
+msgid "{1} is affected by the radiation!"
+msgstr "{1} heeft last van de straling!"
+
+msgid "{1} is afflicted by the curse!"
+msgstr "{1} wordt getroffen door de vloek!"
+
+msgid "{1} is already asleep!"
+msgstr "{1} is al in slaap!"
+
+msgid "{1} is already confused!"
+msgstr "{1} is al verward!"
+
+msgid "{1} is already holding one {2}."
+msgstr "{1} houdt al een {2} vast."
+
+msgid "{1} is already in battle!"
+msgstr "{1} is al in het gevecht!"
+
+msgid "{1} is already paralyzed!"
+msgstr "{1} is al verlamd!"
+
+msgid "{1} is already poisoned."
+msgstr "{1} is al vergiftigd!"
+
+msgid "{1} is angry!"
+msgstr "{1} is boos!"
+
+msgid "{1} is attacking!"
+msgstr "{1} valt aan!"
+
+msgid "{1} is badly poisoned!"
+msgstr "{1} is ernstig vergiftigd!"
+
+msgid "{1} is buffeted by the hail!"
+msgstr "{1} heeft last van de hagel!"
+
+msgid "{1} is buffeted by the sandstorm!"
+msgstr "{1} heeft last van de zandstorm!"
+
+msgid "{1} is confused!"
+msgstr "{1} is verward!"
+
+msgid "{1} is covered in powder!"
+msgstr "{1} is bedekt in poeder!"
+
+msgid "{1} is damaged by the recoil!"
+msgstr "{1} heeft last van de weerslag!"
+
+msgid "{1} is disabled no more!"
+msgstr "{1} is niet langer uitgeschakeld!"
+
+msgid "{1} is eager for more!"
+msgstr "{1} wacht op meer!"
+
+msgid "{1} is eating!"
+msgstr "{1} is aan het eten!"
+
+msgid "{1} is exerting its Pressure!"
+msgstr "{1} spant zich in met Pressure!"
+
+msgid "{1} is fast asleep."
+msgstr "{1} slaapt voort."
+
+msgid "{1} is frozen solid!"
+msgstr "{1} is bevroren!"
+
+msgid "{1} is getting pumped!"
+msgstr "{1} concentreert zich!"
+
+msgid "{1} is glowing!"
+msgstr "{1} gloeit!"
+
+msgid "{1} is having a bad dream!"
+msgstr "{1} heeft een slechte droom!"
+
+msgid "{1} is healed by poison!"
+msgstr "{1} herstelt door het gif!"
+
+msgid "{1} is hit by lightning!"
+msgstr "{1} wordt door bliksem geraakt!"
+
+msgid "{1} is hurt by its burn!"
+msgstr "{1} heeft last van de verbranding!"
+
+msgid "{1} is hurt by its {2}!"
+msgstr "{1} heeft last van {2}!"
+
+msgid "{1} is hurt by poison!"
+msgstr "{1} heeft last van de vergiftiging!"
+
+msgid "{1} is hurt by {2}!"
+msgstr "{1} heeft last van {2}!"
+
+msgid "{1} is immobilized by love!"
+msgstr "{1} staat stokstijf van verzotheid!"
+
+msgid "{1} is in love with {2}!"
+msgstr "{1} is verzot op {2}!"
+
+msgid "{1} is loafing around!"
+msgstr "{1} loopt te lanterfanten!"
+
+msgid "{1} is locked in a nightmare!"
+msgstr "{1} zit vast in een nachtmerrie!"
+
+msgid "{1} is making an uproar!"
+msgstr "{1} maakt lawaai!"
+
+msgid "{1} is not affected by {2} thanks to its Safety Goggles!"
+msgstr "{1} merkt niks van {2} door de Veiligheidsbril!"
+
+msgid "{1} is not compatible with {2}."
+msgstr "{1} kan {2} niet leren."
+
+msgid "{1} is now being held."
+msgstr "{1} wordt nu vastgehouden."
+
+msgid "{1} is paralyzed! It can't move!"
+msgstr "{1} is verlamd! Het kan niet bewegen!"
+
+msgid "{1} is paralyzed! It may be unable to move!"
+msgstr "{1} is verlamd! Het kan mogelijk niet bewegen!"
+
+msgid "{1} is poisoned!"
+msgstr "{1} is vergiftigd!"
+
+msgid "{1} is protected by Aroma Veil!"
+msgstr "{1} wordt beschermd door Aroma Veil!"
+
+msgid "{1} is protected by Mist!"
+msgstr "{1} wordt beschermd door mist!"
+
+msgid "{1} is protected by Safeguard!"
+msgstr "{1} wordt beschermd door Safeguard!"
+
+msgid "{1} is protected by the Sticky Terrain!"
+msgstr "{1} wordt beschermd door Sticky Terrain!"
+
+msgid "{1} is protected by the mist!"
+msgstr "{1} wordt beschermd door de mist!"
+
+msgid "{1} is radiating a blazing aura!"
+msgstr "{1} straalt een vlammende aura uit!"
+
+msgid "{1} is radiating a bursting aura!"
+msgstr "{1} straalt een vonkende aura uit!"
+
+msgid "{1} is radiating a dark aura!"
+msgstr "{1} straalt een duistere aura uit!"
+
+msgid "{1} is radiating a fairy aura!"
+msgstr "{1} straalt een feeërieke aura uit!"
+
+msgid "{1} is ready to help {2}!"
+msgstr "{1} staat klaar om {2} te helpen!"
+
+msgid "{1} is selected."
+msgstr "{1} is geselecteerd."
+
+msgid "{1} is storing energy!"
+msgstr "{1} slaat energie op!"
+
+msgid "{1} is struggling!"
+msgstr "{1} is ten einde raad!"
+
+msgid "{1} is switched out with the Eject Button!"
+msgstr "{1} heeft zich teruggetrokken met de Schietstoel!"
+
+msgid "{1} is tightening its focus!"
+msgstr "{1} focust zich!"
+
+msgid "{1} is tormented!"
+msgstr "{1} wordt gepest!"
+
+msgid "{1} is trying to\nlearn {2}."
+msgstr "{1} probeert\n{2} te leren."
+
+msgid "{1} is trying to learn {2}."
+msgstr "{1} probeert {2} te leren."
+
+msgid "{1} is trying to take its foe down with it!"
+msgstr "{1} probeert de aanvaller met zich mee te nemen!"
+
+msgid "{1} is unaffected!"
+msgstr "{1} merkt er niks van!"
+
+msgid "{1} is waiting for {2}'s move..."
+msgstr "{1} wacht op de actie van {2}..."
+
+msgid "{1} is watching carefully!"
+msgstr "{1} kijkt voorzichtig!"
+
+msgid "{1} isn't holding anything."
+msgstr "{1} houdt niks vast."
+
+msgid "{1} kept going and crashed!"
+msgstr "{1} sprong te ver!"
+
+msgid "{1} knocked off {2}'s {3}!"
+msgstr "{1} heeft de {3} van {2} weggeslagen!"
+
+msgid "{1} learned a new song!"
+msgstr "{1} heeft een nieuw liedje geleerd!"
+
+msgid "{1} learned {2}!"
+msgstr "{1} heeft {2} geleerd!"
+
+msgid "{1} learned {2}!\\se[itemlevel]"
+msgstr "{1} heeft {2} geleerd!\\se[itemlevel]"
+
+msgid "{1} levitated with electromagnetism!"
+msgstr "{1} zweeft door middel van elektromagnetisme!"
+
+msgid "{1} lost against\n{2}!"
+msgstr "{1} heeft van\n{2} verloren!"
+
+msgid "{1} lost against {2} and {3}!"
+msgstr "{1} heeft van {2} en {3} verloren!"
+
+msgid "{1} lost its focus and couldn't move!"
+msgstr "{1} heeft de focus verloren en kon niet meer bewegen!"
+
+msgid "{1} lost some of its HP!"
+msgstr "{1} heeft een beetje HP verloren!"
+
+msgid "{1} lowered its head!"
+msgstr "{1} maakt zich klaar om te rammen!"
+
+msgid "{1} made {2} drowsy!"
+msgstr "{1} heeft {2} slaperig gemaakt!"
+
+msgid "{1} makes Fairy-type moves miss with Disenchant!"
+msgstr "{1} laat Fee-acties missen met Disenchant!"
+
+msgid "{1} makes Ground moves miss with Levitate!"
+msgstr "{1} laat Grond-acties missen met Levitate!"
+
+msgid "{1} makes Nuclear-type moves miss with Radiation Proof!"
+msgstr "{1} laat Nucleair-acties missen met Radiation Proof!"
+
+msgid "{1} maxed its Attack!"
+msgstr "{1}'s Sterkte is gemaximaliseerd!"
+
+msgid "{1} must recharge!"
+msgstr "{1} moet uitrusten!"
+
+msgid "{1} obtained {2}!\\me[PU-PokemonObtained]"
+msgstr "{1} heeft {2} bemachtigd!\\me[PU-PokemonObtained]"
+
+msgid "{1} obtained {2}!\\se[itemlevel]"
+msgstr "{1} heeft {2} bemachtigd!\\se[itemlevel]"
+
+msgid "{1} obtained {2}."
+msgstr "{1} heeft {2} ontvangen."
+
+msgid "{1} panicked and dropped\n${2}..."
+msgstr "{1} raakt in paniek en laat\n${2} vallen..."
+
+msgid "{1} picked up ${2}!"
+msgstr "{1} heeft ${2} opgepakt!"
+
+msgid "{1} picked up {2} from the pokemon!"
+msgstr "{1} heeft de {2} van de Pokémon opgepakt!"
+
+msgid "{1} pickpocketed {2}'s {3}!"
+msgstr "{1} heeft de {2} van {3} gezakkenrold!"
+
+msgid "{1} planted a {2} in the soft loamy soil."
+msgstr "{1} heeft de {2} in de zachte, vruchtbare grond geplant."
+
+msgid "{1} planted its roots!"
+msgstr "{1} plant wortels!"
+
+msgid "{1} pretended not to notice!"
+msgstr "{1} doet alsof het het niet hoort!"
+
+msgid "{1} protected itself!"
+msgstr "{1} heeft zichzelf beschermd!"
+
+msgid "{1} put away the {2} in the <icon=bagPocket{3}>\\c[1]Berries\\c[0] Pocket."
+msgstr "{1} heeft de {2} in het <icon=bagPocket{3}>\\c[1]Bessen\\c[0]vak opgeborgen."
+
+msgid "{1} put in a substitute!"
+msgstr "{1} heeft een Substitute-kopie gemaakt!"
+
+msgid "{1} put the \\c[1]{2}\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket."
+msgstr "{1} heeft \\c[1]{2}\\c[0]\nin het <icon=bagPocket{3}>\\c[1]{4}\\c[0]vak opgeborgen."
+
+msgid "{1} put the \\c[1]{2}s\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket."
+msgstr "{1} heeft \\c[1]{2}\\c[0]\nin het <icon=bagPocket{3}>\\c[1]{4}\\c[0]vak opgeborgen."
+
+msgid "{1} received a Pokémon from {2}."
+msgstr "{1} heeft een Pokémon van {2} ontvangen."
+
+msgid "{1} received a Pokémon."
+msgstr "{1} heeft een Pokémon ontvangen."
+
+msgid "{1} received an encore!"
+msgstr "{1} heeft een applaus gekregen!"
+
+msgid "{1} received {2} Coin(s)!"
+msgstr "{1} heeft {2} munt(en) ontvangen!"
+
+msgid "{1} received {2} Coins!"
+msgstr "{1} heeft {2} munten ontvangen!"
+
+msgid "{1} received {2} from {3}!"
+msgstr "{1} heeft {2} van {3} ontvangen!"
+
+msgid "{1} received {2}!\\se[itemlevel]"
+msgstr "{1} heeft {2} ontvangen!\\se[itemlevel]"
+
+msgid "{1} regained the move\n{2}!"
+msgstr "{1} regained the move \n{2}!"
+
+msgid "{1} restored a little HP using its Shell Bell!"
+msgstr "{1} heeft een beetje HP hersteld met het Schelpbelletje!"
+
+msgid "{1} restored a little HP using its {2}!"
+msgstr "{1} heeft een beetje HP hersteld met {2}!"
+
+msgid "{1} reversed all other Pokémon's auras!"
+msgstr "{1} draait alle aura's terug!"
+
+msgid "{1} sealed the opponent's move(s)!"
+msgstr "{1} heeft de actie(s) van de tegenstander weggestopt!"
+
+msgid "{1} sent\nout {2} and {3}!"
+msgstr "{1}\nkiest {2} en {3}!"
+
+msgid "{1} sent\nout {2}!"
+msgstr "{1}\nkiest {2}!"
+
+msgid "{1} sent\nout {2}! Go! {3}!"
+msgstr "{1} kiest {2}!\nGa ervoor, {3}!"
+
+msgid "{1} sent\nout {2}! {3} sent\nout {4}!"
+msgstr "{1} kiest {2}!\n{3} kiest {4}!"
+
+msgid "{1} shared its guard with the target!"
+msgstr "{1} heeft de bescherming met het doelwit gedeeld!"
+
+msgid "{1} shared its power with the target!"
+msgstr "{1} heeft de krachten met het doelwit gedeeld!"
+
+msgid "{1} shrouded itself with Magic Coat!"
+msgstr "{1} heeft zichzelf bedekt met Magic Coat!"
+
+msgid "{1} shuddered with anticipation!"
+msgstr "{1} beefde van de angst!"
+
+msgid "{1} sketched {2}!"
+msgstr "{1} heeft {2} geschetst!"
+
+msgid "{1} slept and became healthy!"
+msgstr "{1} is in slaap gevallen en beter geworden!"
+
+msgid "{1} snapped out of confusion!"
+msgstr "{1} is niet langer verward!"
+
+msgid "{1} snapped out of confusion."
+msgstr "{1} is niet langer verward."
+
+msgid "{1} snapped out of its confusion."
+msgstr "{1} is niet langer verward."
+
+msgid "{1} snatched {2}'s move!"
+msgstr "{1} heeft de actie van {2} gejat!"
+
+msgid "{1} sprang up!"
+msgstr "{1} is omhoog gesprongen!"
+
+msgid "{1} stayed awake using its partner's {2}!"
+msgstr "{1} blijft wakker door de {2} van de aangesloten Pokémon!"
+
+msgid "{1} stayed awake using its {2}!"
+msgstr "{1} blijft wakker door {2}!"
+
+msgid "{1} stockpiled {2}!"
+msgstr "{1} heeft {2} keer opgestapeld!"
+
+msgid "{1} stole and ate its target's {2}!"
+msgstr "{1} heeft de {2} van het doelwit gegeten!"
+
+msgid "{1} stole {2}'s {3} with Magician!"
+msgstr "{1} heeft Magician gebruikt om de {3} van {2} te stelen!"
+
+msgid "{1} stole {2}'s {3}!"
+msgstr "{1} heeft de {3} van {2} gestolen!"
+
+msgid "{1} sucked up the liquid ooze!"
+msgstr "{1} heeft het vloeibare slijm opgezogen!"
+
+msgid "{1} surrounded itself with a veil of petals!"
+msgstr "{1} heeft zichzelf omringd met Flower Veil!"
+
+msgid "{1} surrounded itself with a veil of sweetness!"
+msgstr "{1} heeft zichzelf omringd met Sweet Veil!"
+
+msgid "{1} surrounded itself with a veil of water!"
+msgstr "{1} heeft zichzelf bedekt met een dun laagje water!"
+
+msgid "{1} surrounds itself with a protective mist!"
+msgstr "{1} heeft zichzelf omringd een beschermende mist!"
+
+msgid "{1} surrounds itself with electrified terrain!"
+msgstr "{1} heeft zichzelf omringd met elektrisch terrein!"
+
+msgid "{1} survived the poisoning.\nThe poison faded away!"
+msgstr "{1} heeft de vergiftiging overleefd.\nHet gif ebde weg!"
+
+msgid "{1} swapped its {2} ability with its target's {3} ability!"
+msgstr "{1} heeft de {2} met de {3} van het doelwit gewisseld!"
+
+msgid "{1} switched all changes to its Attack and Sp. Atk with the target!"
+msgstr "{1} heeft alle veranderingen aan Sterkte en Sp.-Str. met die van het doelwit gewisseld!"
+
+msgid "{1} switched all changes to its Defense and Sp. Def with the target!"
+msgstr "{1} heeft alle veranderingen aan Verdediging en Sp.-Ver. met die van het doelwit gewisseld!"
+
+msgid "{1} switched items with its opponent!"
+msgstr "{1} heeft het voorwerp met die van de tegenstander gewisseld!"
+
+msgid "{1} switched its Attack and Defense!"
+msgstr "{1} heeft Sterkte met Verdediging gekopieerd!"
+
+msgid "{1} switched places with its ally!"
+msgstr "{1} is van plek gewisseld!"
+
+msgid "{1} switched stat changes with the target!"
+msgstr "{1} heeft alle statistiekveranderingen met die van het doelwit gewisseld!"
+
+msgid "{1} thawed out!"
+msgstr "{1} is ontdooid!"
+
+msgid "{1} threw a rock at the {2}!"
+msgstr "{1} gooit een steen naar de {2}!"
+
+msgid "{1} threw a {2}."
+msgstr "{1} gooit een {2}."
+
+msgid "{1} threw some bait at the {2}!"
+msgstr "{1} gooit was aas naar de {2}!"
+
+msgid "{1} took a nap!"
+msgstr "{1} doet een dutje!"
+
+msgid "{1} took aim at {2}!"
+msgstr "{1} mikt het op {2}!"
+
+msgid "{1} took in sunlight!"
+msgstr "{1} heeft het zonlicht in zich opgenomen!"
+
+msgid "{1} took its attacker down with it!"
+msgstr "{1} heeft de aanvaller met zich meegenomen!"
+
+msgid "{1} took the attack!"
+msgstr "{1} neemt de actie in zich op!"
+
+msgid "{1} took the {2} attack!"
+msgstr "{1} ving de {2}-actie op!"
+
+msgid "{1} traced {2}'s {3}!"
+msgstr "{1} heeft de {3} van {2} nagebootst!"
+
+msgid "{1} transformed into the {2} type!"
+msgstr "{1} is getransformeerd in een {2}-soort!"
+
+msgid "{1} transformed into {2}!"
+msgstr "{1} is in {2} getransformeerd!"
+
+msgid "{1} transformed!"
+msgstr "{1} is getransformeerd!"
+
+msgid "{1} turned away!"
+msgstr "{1} draait zich weg!"
+
+msgid "{1} turned friendly.\nThe base Attack can't fall!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Sterkte kan niet meer dalen!"
+
+msgid "{1} turned friendly.\nThe base Attack fell!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Sterkte is gedaald!"
+
+msgid "{1} turned friendly.\nThe base Defense can't fall!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Verdediging kan niet meer dalen!"
+
+msgid "{1} turned friendly.\nThe base Defense fell!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Verdediging is gedaald!"
+
+msgid "{1} turned friendly.\nThe base HP can't fall!"
+msgstr "{1} is vriendelijker geworden.\nDe basis HP kan niet meer dalen!"
+
+msgid "{1} turned friendly.\nThe base HP fell!"
+msgstr "{1} is vriendelijker geworden.\nDe basis HP is gedaald!"
+
+msgid "{1} turned friendly.\nThe base Special Attack can't fall!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Speciale Sterkte kan niet meer dalen!"
+
+msgid "{1} turned friendly.\nThe base Special Attack fell!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Speciale Sterkte is gedaald!"
+
+msgid "{1} turned friendly.\nThe base Special Defense can't fall!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Speciale Verdediging kan niet meer dalen!"
+
+msgid "{1} turned friendly.\nThe base Special Defense fell!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Speciale Verdediging is gedaald!"
+
+msgid "{1} turned friendly.\nThe base Speed can't fall!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Snelheid kan niet meer dalen!"
+
+msgid "{1} turned friendly.\nThe base Speed fell!"
+msgstr "{1} is vriendelijker geworden.\nDe basis Snelheid is gedaald!"
+
+msgid "{1} turned into {2}!"
+msgstr "{1} is in {2} veranderd!"
+
+msgid "{1} twisted the dimensions!"
+msgstr "{1} heeft de dimensies verdraaid!"
+
+msgid "{1} unleashed energy!"
+msgstr "{1} laat de opgeslagen energie vrij!"
+
+msgid "{1} used\n{2}!"
+msgstr "{1} doet\n{2}!"
+
+msgid "{1} used Coral Break!"
+msgstr "{1} doet Coral Break!"
+
+msgid "{1} used Cut!"
+msgstr "{1} doet Cut!"
+
+msgid "{1} used Dive."
+msgstr "{1} doet Dive."
+
+msgid "{1} used Fly!"
+msgstr "{1} doet Fly!"
+
+msgid "{1} used Rock Smash!"
+msgstr "{1} doet Rock Smash!"
+
+msgid "{1} used Strength!"
+msgstr "{1} doet Strength!"
+
+msgid "{1} used Surf!"
+msgstr "{1} doet Surf!"
+
+msgid "{1} used Waterfall."
+msgstr "{1} doet Waterfall."
+
+msgid "{1} used its {2} to get pumped!"
+msgstr "{1} heeft {2} gebruikt om zich te concentreren!"
+
+msgid "{1} used the\n{2}!"
+msgstr "{1} gebruikt de\n{2}!"
+
+msgid "{1} used the\n{2}."
+msgstr "{1} gebruikt \n{2}."
+
+msgid "{1} used the Boxing Gloves!"
+msgstr "{1} heeft de Bokshandschoen gebruikt!"
+
+msgid "{1} used the Climbing Pick"
+msgstr "{1} heeft de Klimbijl gebruikt."
+
+msgid "{1} used the Climbing Pick!"
+msgstr "{1} heeft de Klimbijl gebruikt!"
+
+msgid "{1} used the Escape Rope."
+msgstr "{1} heeft het Ontsnappingstouw gebruikt!"
+
+msgid "{1} used the Power Glove!"
+msgstr "{1} heeft de Krachthandschoen gebruikt!"
+
+msgid "{1} used the Scuba Gear"
+msgstr "{1} heeft de Duikuitrusting gebruikt."
+
+msgid "{1} used the Scuba Gear."
+msgstr "{1} heeft de Duikuitrusting gebruikt."
+
+msgid "{1} used the Surfboard!"
+msgstr "{1} heeft de Surfplank gebruikt!"
+
+msgid "{1} used the {2}!"
+msgstr "{1} heeft {2} gebruikt!"
+
+msgid "{1} used the {2}."
+msgstr "{1} heeft {2} gebruikt."
+
+msgid "{1} used {2}!"
+msgstr "{1} doet {2}!"
+
+msgid "{1} vanished instantly!"
+msgstr "{1} is verdwenen!"
+
+msgid "{1} waits for a target to make a move!"
+msgstr "{1} wacht tot het doelwit beweegt!"
+
+msgid "{1} wants its target to bear a grudge!"
+msgstr "{1} wilt een wrok bij het doelwit creëren!"
+
+msgid "{1} was Mummified by {2}!"
+msgstr "{1} is gemummificeerd door {2}!"
+
+msgid "{1} was badly poisoned by its {2}!"
+msgstr "{1} is ernstig vergiftigd door {2}!"
+
+msgid "{1} was badly poisoned!"
+msgstr "{1} is ernstig vergiftigd!"
+
+msgid "{1} was blocked by the kicked-up mat!"
+msgstr "{1} werd geblokkeerd door de mat!"
+
+msgid "{1} was burned by its {2}!"
+msgstr "{1} is verbrand door {2}!"
+
+msgid "{1} was burned!"
+msgstr "{1} is verbrand!"
+
+msgid "{1} was caught in a sticky web!"
+msgstr "{1} is gevangen in een plakkerig web!"
+
+msgid "{1} was caught in the aftermath!"
+msgstr "{1} raakt verstrikt in de nasleep!"
+
+msgid "{1} was cured of its burn."
+msgstr "{1} is van de verbranding hersteld."
+
+msgid "{1} was cured of its paralysis."
+msgstr "{1} is van de verlamming hersteld."
+
+msgid "{1} was cured of its poisoning."
+msgstr "{1} is van de vergiftiging hersteld."
+
+msgid "{1} was cured of paralysis."
+msgstr "{1} is van de verlamming hersteld."
+
+msgid "{1} was defrosted by {2}!"
+msgstr "{1} werd ontdooid door {2}!"
+
+msgid "{1} was defrosted."
+msgstr "{1} werd ontdooid."
+
+msgid "{1} was downgraded to Level {2}!"
+msgstr "{1} is naar Level {2} gedaald!"
+
+msgid "{1} was dragged out!"
+msgstr "{1} werd uit het team gesleurd!"
+
+msgid "{1} was elevated to Level {2}!"
+msgstr "{1} is tot Level {2} gestegen!"
+
+msgid "{1} was freed from Leech Seed!"
+msgstr "{1} is bevrijd van Leech Seed!"
+
+msgid "{1} was freed from the telekinesis!"
+msgstr "{1} wordt bevrijd van telekinese!"
+
+msgid "{1} was freed from {2}!"
+msgstr "{1} wordt bevrijd van {2}!"
+
+msgid "{1} was frisked, revealing its {2}!"
+msgstr "{1} werd gefouilleerd, waardoor de {2} gevonden is!"
+
+msgid "{1} was frozen solid!"
+msgstr "{1} raakt bevroren!"
+
+msgid "{1} was given the {2} to hold."
+msgstr "{1} houdt nu een {2} vast."
+
+msgid "{1} was hurled into the air!"
+msgstr "{1} werd de lucht in geworpen!"
+
+msgid "{1} was hurt by its {2}!"
+msgstr "{1} is gewond geraakt door {2}!"
+
+msgid "{1} was hurt by spikes!"
+msgstr "{1} is gewond geraakt door de stekels!"
+
+msgid "{1} was hurt by the shadow sky!"
+msgstr "{1} heeft last van de schaduwlucht!"
+
+msgid "{1} was hurt by the sunlight!"
+msgstr "{1} heeft last van het zonlicht!"
+
+msgid "{1} was hurt by the {2}!"
+msgstr "{1} is gewond geraakt door {2}!"
+
+msgid "{1} was hurt!"
+msgstr "{1} is gewond geraakt!"
+
+msgid "{1} was identified!"
+msgstr "{1} is geïdentificeerd!"
+
+msgid "{1} was paralyzed!"
+msgstr "{1} is verlamd!"
+
+msgid "{1} was paralyzed! It may be unable to move!"
+msgstr "{1} raakt verlamd! Het kan mogelijk niet bewegen!"
+
+msgid "{1} was poisoned!"
+msgstr "{1} is vergiftigd!"
+
+msgid "{1} was prevented from healing due to Heal Block!"
+msgstr "{1} kon niet genezen worden door Heal Block!"
+
+msgid "{1} was prevented from healing!"
+msgstr "{1} kon niet genezen worden!"
+
+msgid "{1} was protected by {2}!"
+msgstr "{1} werd beschermd door {2}!"
+
+msgid "{1} was quashed!"
+msgstr "{1} werd verhinderd!"
+
+msgid "{1} was released."
+msgstr "{1} is vrijgelaten."
+
+msgid "{1} was seeded!"
+msgstr "{1} is volgezaaid!"
+
+msgid "{1} was squeezed by {2}!"
+msgstr "{1} wordt gekneld door {2}!"
+
+msgid "{1} was subjected to torment!"
+msgstr "{1} wordt gepest!"
+
+msgid "{1} was thawed out."
+msgstr "{1} is ontdooid."
+
+msgid "{1} was transferred to box \"{2}\"."
+msgstr "{1} is naar Box \"{2}\" verplaatst."
+
+msgid "{1} was transferred to box \"{2}.\""
+msgstr "{1} is naar Box \"{2}\" verplaatst."
+
+msgid "{1} was transferred to someone's PC."
+msgstr "{1} is naar iemands pc verplaatst."
+
+msgid "{1} was transferred to someone's PC."
+msgstr "{1} is naar iemands pc verplaatst."
+
+msgid "{1} was transferred to {2}'s PC."
+msgstr "{1} is naar de pc van {2} verplaatst."
+
+msgid "{1} was transferred to {2}'s PC."
+msgstr "{1} is naar {2}'s pc verplaatst."
+
+msgid "{1} was trapped in the vortex!"
+msgstr "{1} zit vast in de kolk!"
+
+msgid "{1} was unaffected!"
+msgstr "{1} merkt er niks van!"
+
+msgid "{1} was woken from its sleep."
+msgstr "{1} is wakker gemaakt."
+
+msgid "{1} was wrapped by {2}!"
+msgstr "{1} wordt gewurgd door {2}!"
+
+msgid "{1} wasn't affected!"
+msgstr "Het had geen effect op {1}!"
+
+msgid "{1} watered the plant.\\wtnp[40]"
+msgstr "{1} heeft de plant water gegeven.\\wtnp[40]"
+
+msgid "{1} went back to {2}!"
+msgstr "{1} is teruggegaan naar {2}!"
+
+msgid "{1} went to sleep!"
+msgstr "{1} valt in slaap!"
+
+msgid "{1} whipped up a whirlwind!"
+msgstr "{1} heeft een wervelstorm opgestoken!"
+
+msgid "{1} withdrew {2}!"
+msgstr "{1} trekt {2} terug!"
+
+msgid "{1} woke up in the uproar!"
+msgstr "{1} is wakker geworden door het lawaai!"
+
+msgid "{1} woke up!"
+msgstr "{1} is wakker geworden!"
+
+msgid "{1} woke up."
+msgstr "{1} is ontwaakt."
+
+msgid "{1} won't flinch because of its {2}!"
+msgstr "{1} deinst niet terug door de {2}!"
+
+msgid "{1}'s AREA"
+msgstr "Leefgebied"
+
+msgid "{1}'s Air Balloon popped!"
+msgstr "{1}'s Ballon is geknapt!"
+
+msgid "{1}'s Attack fell!"
+msgstr "{1}'s Sterkte is gedaald!"
+
+msgid "{1}'s Attack harshly fell!"
+msgstr "{1}'s Sterkte is aanzienlijk gedaald!"
+
+msgid "{1}'s Attack increased."
+msgstr "De Sterkte van {1} is gestegen."
+
+msgid "{1}'s Attack rose drastically!"
+msgstr "{1}'s Sterkte is enorm gestegen!"
+
+msgid "{1}'s Attack rose sharply!"
+msgstr "{1}'s Sterkte is aanzienlijk gestegen!"
+
+msgid "{1}'s Attack rose!"
+msgstr "{1}'s Sterkte is gestegen!"
+
+msgid "{1}'s Attack sharply rose!"
+msgstr "{1}'s Sterkte is aanzienlijk gestegen!"
+
+msgid "{1}'s Attack was not lowered!"
+msgstr "{1}'s Sterkte is niet verlaagd!"
+
+msgid "{1}'s Attack went way up!"
+msgstr "{1}'s Sterkte is aanzienlijk gestegen!"
+
+msgid "{1}'s Attack won't go any higher!"
+msgstr "{1}'s Sterkte kan niet hoger!"
+
+msgid "{1}'s Attack won't go any lower!"
+msgstr "{1}'s Sterkte kan niet lager!"
+
+msgid "{1}'s Attack won't go lower!"
+msgstr "{1}'s Sterkte kan niet lager!"
+
+msgid "{1}'s Chernobyl started a Toxic Fallout!"
+msgstr "{1} heeft radioactieve neerslag veroorzaakt met Chernobyl!"
+
+msgid "{1}'s Cloud Nine made the effects of weather disappear."
+msgstr "{1} heeft de weersomstandigheden laten verdwijnen met Cloud Nine."
+
+msgid "{1}'s Contrary raised its Attack!"
+msgstr "{1}'s Sterkte is gestegen door Contrary!"
+
+msgid "{1}'s Contrary raised its Speed!"
+msgstr "{1}'s Snelheid is gestegen door Contrary!"
+
+msgid "{1}'s Defense fell!"
+msgstr "{1}'s Verdediging is gedaald!"
+
+msgid "{1}'s Defense harshly fell!"
+msgstr "{1}'s Verdediging is aanzienlijk gedaald!"
+
+msgid "{1}'s Defense increased."
+msgstr "De Verdediging van {1} is gestegen."
+
+msgid "{1}'s Defense rose drastically!"
+msgstr "{1}'s Verdediging is enorm gestegen!"
+
+msgid "{1}'s Defense rose sharply!"
+msgstr "{1}'s Verdediging is aanzienlijk gestegen!"
+
+msgid "{1}'s Defense rose!"
+msgstr "{1}'s Verdediging is gestegen!"
+
+msgid "{1}'s Defense was lowered!"
+msgstr "{1}'s Verdediging is gedaald!"
+
+msgid "{1}'s Defense was not lowered!"
+msgstr "{1}'s Verdediging is niet verlaagd!"
+
+msgid "{1}'s Defense went way up!"
+msgstr "{1}'s Verdediging is aanzienlijk gestegen!"
+
+msgid "{1}'s Defense won't go any higher!"
+msgstr "{1}'s Verdediging kan niet hoger!"
+
+msgid "{1}'s Defense won't go any lower!"
+msgstr "{1}'s Verdediging kan niet lager!"
+
+msgid "{1}'s Desolate Land made the sun turn harsh!"
+msgstr "{1} heeft het zonlicht enorm versterkt met Desolate Land!"
+
+msgid "{1}'s Drizzle made it rain!"
+msgstr "{1} heeft het laten regenen met Drizzle!"
+
+msgid "{1}'s Drought intensified the sun's rays!"
+msgstr "{1} heeft het zonlicht versterkt met Drought!"
+
+msgid "{1}'s Dry Skin was healed by the rain!"
+msgstr "{1} heeft een beetje HP hersteld met Dry Skin!"
+
+msgid "{1}'s Dry Skin was hurt by the sunlight!"
+msgstr "{1} heeft last van het zonlicht met Dry Skin!"
+
+msgid "{1}'s Forewarn alerted it to {2}!"
+msgstr "{1} werd gewaarschuwd voor {2}!"
+
+msgid "{1}'s Geiger Sense raised its Attack!"
+msgstr "{1}'s Sterkte is gestegen door Geiger Sense!"
+
+msgid "{1}'s Geiger Sense raised its Special Attack!"
+msgstr "{1}'s Speciale Sterkte is gestegen door Geiger Sense!"
+
+msgid "{1}'s HP increased."
+msgstr "De HP van {1} is gestegen."
+
+msgid "{1}'s HP is full!"
+msgstr "{1}'s HP is vol!"
+
+msgid "{1}'s HP was restored by {2} points."
+msgstr "De HP van {1} is met {2} punten hersteld."
+
+msgid "{1}'s HP was restored!"
+msgstr "{1}'s HP is hersteld!"
+
+msgid "{1}'s HP was restored."
+msgstr "{1}'s HP is hersteld."
+
+msgid "{1}'s Heal Block wore off!"
+msgstr "{1}'s Heal Block is uitgewerkt!"
+
+msgid "{1}'s Ice Body restored its HP a little!"
+msgstr "{1} heeft een beetje HP hersteld met Ice Body!"
+
+msgid "{1}'s Kee Berry was activated!"
+msgstr "{1} heeft de Kee-Bes opgegeten!"
+
+msgid "{1}'s Lightning Rod took the move!"
+msgstr "Lightning Rod neemt de actie in zich op!"
+
+msgid "{1}'s Maranga Berry was activated!"
+msgstr "{1} heeft de Maranga-Bes opgegeten!"
+
+msgid "{1}'s Moody lowered its {2}!"
+msgstr "Moody verlaagt de {2} van {1}!"
+
+msgid "{1}'s Moody sharply raised its {2}!"
+msgstr "{1}'s {2} is aanzienlijk gestegen door Moody!"
+
+msgid "{1}'s Moxie raised its Attack!"
+msgstr "{1}'s Sterkte is gestegen door Moxie!"
+
+msgid "{1}'s Oblivious prevents taunting!"
+msgstr "{1}'s Oblivious voorkomt geplaag!"
+
+msgid "{1}'s PC"
+msgstr "{1}'s pc"
+
+msgid "{1}'s PP increased."
+msgstr "De AP van {1} is gestegen."
+
+msgid "{1}'s Perish count fell to {2}!"
+msgstr "{1}'s aftelklok daalt naar {2}!"
+
+msgid "{1}'s Primal Reversion!\nIt reverted to its Primal Form!"
+msgstr "{1}'s Primal Reversion!\nHet verandert terug in de Primal-vorm!"
+
+msgid "{1}'s Primordial Sea caused a heavy rain to fall."
+msgstr "{1} heeft het laten stortregenen met Primordial Sea."
+
+msgid "{1}'s Rain Dish restored its HP a little!"
+msgstr "{1} heeft een beetje HP hersteld met Rain Dish!"
+
+msgid "{1}'s Sand Stream whipped up a sandstorm!"
+msgstr "{1} heeft een zandstorm opgestoken met Sand Stream!"
+
+msgid "{1}'s Snow Warning made it hail!"
+msgstr "{1} heeft het laten hagelen met Snow Warning!"
+
+msgid "{1}'s Special Attack fell!"
+msgstr "{1}'s Speciale Sterkte is gedaald!"
+
+msgid "{1}'s Special Attack harshly fell!"
+msgstr "{1}'s Speciale Sterkte is aanzienlijk gedaald!"
+
+msgid "{1}'s Special Attack increased."
+msgstr "De Speciale Sterkte van {1} is gestegen."
+
+msgid "{1}'s Special Attack rose drastically!"
+msgstr "{1}'s Speciale Sterkte is enorm gestegen!"
+
+msgid "{1}'s Special Attack rose sharply!"
+msgstr "{1}'s Speciale Sterkte is aanzienlijk gestegen!"
+
+msgid "{1}'s Special Attack rose!"
+msgstr "{1}'s Speciale Sterkte is gestegen!"
+
+msgid "{1}'s Special Attack sharply rose!"
+msgstr "{1}'s Speciale Sterkte is aanzienlijk gestegen!"
+
+msgid "{1}'s Special Attack went way up!"
+msgstr "{1}'s Speciale Sterkte is aanzienlijk gestegen!"
+
+msgid "{1}'s Special Attack won't go any higher!"
+msgstr "{1}'s Speciale Sterkte kan niet hoger!"
+
+msgid "{1}'s Special Attack won't go any lower!"
+msgstr "{1}'s Speciale Sterkte kan niet lager!"
+
+msgid "{1}'s Special Defense fell!"
+msgstr "{1}'s Speciale Verdediging is gedaald!"
+
+msgid "{1}'s Special Defense harshly fell!"
+msgstr "{1}'s Speciale Verdediging is aanzienlijk gedaald!"
+
+msgid "{1}'s Special Defense increased."
+msgstr "De Speciale Verdediging van {1} is gestegen."
+
+msgid "{1}'s Special Defense rose drastically!"
+msgstr "{1}'s Speciale Verdediging is enorm gestegen!"
+
+msgid "{1}'s Special Defense rose sharply!"
+msgstr "{1}'s Speciale Verdediging is aanzienlijk gestegen!"
+
+msgid "{1}'s Special Defense rose!"
+msgstr "{1}'s Speciale Verdediging is gestegen!"
+
+msgid "{1}'s Special Defense went way up!"
+msgstr "{1}'s Speciale Verdediging is aanzienlijk gestegen!"
+
+msgid "{1}'s Special Defense won't go any higher!"
+msgstr "{1}'s Speciale Verdediging kan niet hoger!"
+
+msgid "{1}'s Special Defense won't go any lower!"
+msgstr "{1}'s Speciale Verdediging kan niet lager!"
+
+msgid "{1}'s Speed Boost raised its Speed!"
+msgstr "De Snelheid van {1} is gestegen door Speed Boost!"
+
+msgid "{1}'s Speed fell!"
+msgstr "{1}'s Snelheid is gedaald!"
+
+msgid "{1}'s Speed harshly fell!"
+msgstr "{1}'s Snelheid is aanzienlijk gedaald!"
+
+msgid "{1}'s Speed increased."
+msgstr "De Snelheid van {1} is gestegen."
+
+msgid "{1}'s Speed rose drastically!"
+msgstr "{1}'s Snelheid is enorm gestegen!"
+
+msgid "{1}'s Speed rose sharply!"
+msgstr "{1}'s Snelheid is aanzienlijk gestegen!"
+
+msgid "{1}'s Speed rose!"
+msgstr "{1}'s Snelheid is gestegen!"
+
+msgid "{1}'s Speed went way up!"
+msgstr "{1}'s Snelheid is aanzienlijk gestegen!"
+
+msgid "{1}'s Speed won't go any higher!"
+msgstr "{1}'s Snelheid kan niet hoger!"
+
+msgid "{1}'s Speed won't go any lower!"
+msgstr "{1}'s Snelheid kan niet lager!"
+
+msgid "{1}'s Storm Drain took the move!"
+msgstr "Storm Drain neemt de actie in zich op!"
+
+msgid "{1}'s Stormbringer whipped up a thunderstorm!"
+msgstr "{1} heeft het laten onweren met Stormbringer!"
+
+msgid "{1}'s Strength made it possible to move boulders around!"
+msgstr "Strength maakt het mogelijk om stenen te verschuiven!"
+
+msgid "{1}'s Taunt wore off!"
+msgstr "{1}'s geplaag is gestopt!"
+
+msgid "{1}'s ability became Mummy!"
+msgstr "{1}'s Vaardigheid is veranderd in Mummy!"
+
+msgid "{1}'s ability was changed to {2}!"
+msgstr "De Vaardigheid van {1} is naar {2} veranderd!"
+
+msgid "{1}'s ability was suppressed!"
+msgstr "{1}'s Vaardigheid werd onderdrukt!"
+
+msgid "{1}'s accuracy fell!"
+msgstr "{1}'s precisie is gedaald!"
+
+msgid "{1}'s accuracy harshly fell!"
+msgstr "{1}'s precisie is aanzienlijk gedaald!"
+
+msgid "{1}'s accuracy rose drastically!"
+msgstr "{1}'s precisie is enorm gestegen!"
+
+msgid "{1}'s accuracy rose sharply!"
+msgstr "{1}'s precisie is aanzienlijk gestegen!"
+
+msgid "{1}'s accuracy rose!"
+msgstr "{1}'s precisie is gestegen!"
+
+msgid "{1}'s accuracy was not lowered!"
+msgstr "{1}'s precisie is niet verlaagd!"
+
+msgid "{1}'s accuracy went way up!"
+msgstr "{1}'s precisie is aanzienlijk gestegen!"
+
+msgid "{1}'s accuracy won't go any higher!"
+msgstr "{1}'s precisie kan niet hoger!"
+
+msgid "{1}'s accuracy won't go any lower!"
+msgstr "{1}'s precisie kan niet lager!"
+
+msgid "{1}'s attack missed!"
+msgstr "{1} mist!"
+
+msgid "{1}'s burn was healed."
+msgstr "{1} is van de verbranding hersteld."
+
+msgid "{1}'s data was added to the Pokédex."
+msgstr "{1} staat nu geregistreerd\nin je PokéDex."
+
+msgid "{1}'s electromagnetism wore off!"
+msgstr "{1}'s elektromagnetisme werkt uit!"
+
+msgid "{1}'s encore ended!"
+msgstr "{1}'s applaus is voorbij!"
+
+msgid "{1}'s evasiveness fell!"
+msgstr "{1}'s ontwijking is gedaald!"
+
+msgid "{1}'s evasiveness harshly fell!"
+msgstr "{1}'s ontwijking is aanzienlijk gedaald!"
+
+msgid "{1}'s evasiveness rose drastically!"
+msgstr "{1}'s ontwijking is enorm gestegen!"
+
+msgid "{1}'s evasiveness rose sharply!"
+msgstr "{1}'s ontwijking is aanzienlijk gestegen!"
+
+msgid "{1}'s evasiveness rose!"
+msgstr "{1}'s ontwijking is gestegen!"
+
+msgid "{1}'s evasiveness went way up!"
+msgstr "{1}'s ontwijking is aanzienlijk gestegen!"
+
+msgid "{1}'s evasiveness won't go any higher!"
+msgstr "{1}'s ontwijking kan niet hoger!"
+
+msgid "{1}'s evasiveness won't go any lower!"
+msgstr "{1}'s ontwijking kan niet lager!"
+
+msgid "{1}'s health was sapped by Leech Seed!"
+msgstr "{1}'s HP wordt afgetapt door Leech Seed!"
+
+msgid "{1}'s level remained unchanged."
+msgstr "Het Level van {1} blijft hetzelfde."
+
+msgid "{1}'s messages not defined.\nCouldn't call common event {2}."
+msgstr "{1}'s gesprek is niet bepaald.\nKon event {2} niet bellen."
+
+msgid "{1}'s move is no longer disabled!"
+msgstr "{1}'s actie is niet langer uitgeschakeld!"
+
+msgid "{1}'s moves have been electrified!"
+msgstr "De acties van {1} zijn geëlektrificeerd!"
+
+msgid "{1}'s nest"
+msgstr "Leefgebied"
+
+msgid "{1}'s nickname?"
+msgstr "Bijnaam van {1}?"
+
+msgid "{1}'s poisoning was cured."
+msgstr "{1}'s vergiftiging is genezen."
+
+msgid "{1}'s rage is building!"
+msgstr "{1}'s woede stapelt op!"
+
+msgid "{1}'s stat changes were all reversed!"
+msgstr "{1}'s statistiekveranderingen zijn verdreven!"
+
+msgid "{1}'s stat changes were removed!"
+msgstr "{1}'s statistiekveranderingen zijn verdreven!"
+
+msgid "{1}'s stats were not lowered!"
+msgstr "{1}'s statistieken zijn niet verlaagd!"
+
+msgid "{1}'s stats were not lowered."
+msgstr "{1}'s statistieken zijn niet verlaagd."
+
+msgid "{1}'s stats won't go any higher!"
+msgstr "{1}'s statistieken kunnen niet hoger!"
+
+msgid "{1}'s stats won't go any lower!"
+msgstr "{1}'s statistieken kunnen niet lager!"
+
+msgid "{1}'s stockpiled effect wore off!"
+msgstr "{1}'s Stockpile is uitgewerkt!"
+
+msgid "{1}'s substitute faded!"
+msgstr "{1}'s Substitute-kopie werkt uit!"
+
+msgid "{1}'s taunt wore off!"
+msgstr "{1}'s geplaag is voorbij!"
+
+msgid "{1}'s team was disqualified!"
+msgstr "Het team van {1} is gediskwalificeerd!"
+
+msgid "{1}'s torment wore off!"
+msgstr "{1}'s gepest is voorbij!"
+
+msgid "{1}'s type changed to match {2}'s!"
+msgstr "{1} is in het Soort van {2} veranderd!"
+
+msgid "{1}'s was healed through Rebuild!"
+msgstr "{1} heeft een beetje HP hersteld met Rebuild!"
+
+msgid "{1}'s wish came true!"
+msgstr "{1}'s wens is uitgekomen!"
+
+msgid "{1}'s {2} badly poisoned {3}!"
+msgstr "{1}'s {2} heeft {3} ernstig vergiftigd!"
+
+msgid "{1}'s {2} blocks {3}!"
+msgstr "{1}'s {2} blokkeert {3}!"
+
+msgid "{1}'s {2} boosted its Attack!"
+msgstr "{1}'s Sterkte is gestegen door {2}!"
+
+msgid "{1}'s {2} boosted its Special Attack!"
+msgstr "{1}'s Speciale Sterkte is gestegen door {2}!"
+
+msgid "{1}'s {2} burned {3}!"
+msgstr "{1}'s {2} heeft {3} verbrand!"
+
+msgid "{1}'s {2} changed it into the {3} type!"
+msgstr "{1}'s {2} verandert het in een {3}-soort!"
+
+msgid "{1}'s {2} cured its burn problem!"
+msgstr "{1}'s {2} heeft de verbranding genezen!"
+
+msgid "{1}'s {2} cured its confusion problem!"
+msgstr "{1}'s {2} heeft het uit de verwarring geholpen!"
+
+msgid "{1}'s {2} cured its frozen problem!"
+msgstr "{1}'s {2} heeft de bevriezing genezen!"
+
+msgid "{1}'s {2} cured its ice problem!"
+msgstr "{1}'s {2} heeft de bevriezing genezen!"
+
+msgid "{1}'s {2} cured its love problem!"
+msgstr "{1}'s {2} heeft het uit de verzotheid geholpen!"
+
+msgid "{1}'s {2} cured its paralysis problem!"
+msgstr "{1}'s {2} heeft de verlamming genezen!"
+
+msgid "{1}'s {2} cured its partner's burn problem!"
+msgstr "{1}'s {2} geneest de verbranding van de aangesloten Pokémon!"
+
+msgid "{1}'s {2} cured its partner's ice problem!"
+msgstr "{1}'s {2} ontdooit de aangesloten Pokémon!"
+
+msgid "{1}'s {2} cured its partner's paralysis problem!"
+msgstr "{1}'s {2} geneest de verlamming van de aangesloten Pokémon!"
+
+msgid "{1}'s {2} cured its partner's poison problem!"
+msgstr "{1}'s {2} geneest de vergiftiging van de aangesloten Pokémon!"
+
+msgid "{1}'s {2} cured its partner's sleep problem!"
+msgstr "{1}'s {2} wekt de aangesloten Pokémon!"
+
+msgid "{1}'s {2} cured its poison problem!"
+msgstr "{1}'s {2} heeft de vergiftiging genezen!"
+
+msgid "{1}'s {2} cured its sleep problem!"
+msgstr "{1}'s {2} heeft het wakker gemaakt!"
+
+msgid "{1}'s {2} cured {3}'s love problem!"
+msgstr "{1}'s {2} heeft {3} uit de verzotheid geholpen!"
+
+msgid "{1}'s {2} cuts {3}'s Attack!"
+msgstr "{1}'s {2} verlaagt de Sterkte van {3}!"
+
+msgid "{1}'s {2} cuts {3}'s Speed!"
+msgstr "{1}'s {2} verlaagt de Snelheid van {3}!"
+
+msgid "{1}'s {2} disabled {3}!"
+msgstr "{1}'s {2} heeft {3} uitgeschakeld!"
+
+msgid "{1}'s {2} fell!"
+msgstr "De {2} van {1} daalt!"
+
+msgid "{1}'s {2} had no effect on {3}!"
+msgstr "{1}'s {2} had geen effect op {3}!"
+
+msgid "{1}'s {2} hurt {3}!"
+msgstr "{1}'s {2} heeft {3} verwond!"
+
+msgid "{1}'s {2} infatuated {3}!"
+msgstr "{1}'s {2} heeft {3} verzot gemaakt!"
+
+msgid "{1}'s {2} is disabled!"
+msgstr "{1}'s {2} is uitgeschakeld!"
+
+msgid "{1}'s {2} is reacting to {3}'s Mega Ring!"
+msgstr "Het {2} reageert op de Mega-Armband van {3}!"
+
+msgid "{1}'s {2} lost all its PP due to the grudge!"
+msgstr "{1}'s {2} verliest alle AP door de wrok!"
+
+msgid "{1}'s {2} lowered its Defense!"
+msgstr "{1}'s Verdediging is gedaald door {2}!"
+
+msgid "{1}'s {2} lowered {3}'s Speed!"
+msgstr "{1}'s Snelheid is gedaald door {2}!"
+
+msgid "{1}'s {2} made it the {3} type!"
+msgstr "{1}'s {2} heeft het een {3}-soort gemaakt!"
+
+msgid "{1}'s {2} made {3} ineffective!"
+msgstr "{1}'s {2} heeft {3} onbruikbaar gemaakt!"
+
+msgid "{1}'s {2} made {3} sleep!"
+msgstr "{1}'s {2} heeft {3} in slaap gebracht!"
+
+msgid "{1}'s {2} made {3} useless!"
+msgstr "{1}'s {2} heeft {3} onbruikbaar gemaakt!"
+
+msgid "{1}'s {2} maxed its Attack!"
+msgstr "{1}'s {2} heeft zijn Sterkte gemaximaliseerd!"
+
+msgid "{1}'s {2} paralyzed {3}! It may be unable to move!"
+msgstr "{1}'s {2} heeft {3} verlamd! Het kan mogelijk niet bewegen!"
+
+msgid "{1}'s {2} poisoned {3}!"
+msgstr "{1}'s {2} heeft {3} vergiftigd!"
+
+msgid "{1}'s {2} prevented {3}'s {4} from working!"
+msgstr "{1}'s {2} voorkwam dat de {4} van {3} werkte!"
+
+msgid "{1}'s {2} prevents Attack loss!"
+msgstr "{1}'s {2} voorkomt Sterktedalingen!"
+
+msgid "{1}'s {2} prevents Defense loss!"
+msgstr "{1}'s {2} voorkomt Verdedigingsdalingen!"
+
+msgid "{1}'s {2} prevents accuracy loss!"
+msgstr "{1}'s {2} voorkomt precisiedalingen!"
+
+msgid "{1}'s {2} prevents burns!"
+msgstr "{1}'s {2} voorkomt verbranding!"
+
+msgid "{1}'s {2} prevents confusion!"
+msgstr "{1}'s {2} voorkomt verwarring!"
+
+msgid "{1}'s {2} prevents paralysis!"
+msgstr "{1}'s {2} voorkomt verlamming!"
+
+msgid "{1}'s {2} prevents poisoning!"
+msgstr "{1}'s {2} voorkomt vergiftiging!"
+
+msgid "{1}'s {2} prevents romance!"
+msgstr "{1}'s {2} voorkomt verzotheid!"
+
+msgid "{1}'s {2} prevents stat decrease!"
+msgstr "{1}'s {2} voorkomt statistiekdalingen!"
+
+msgid "{1}'s {2} prevents stat loss!"
+msgstr "{1}'s {2} voorkomt statistiekdalingen!"
+
+msgid "{1}'s {2} prevents switching!"
+msgstr "De {2} van {1} voorkomt verwisseling!"
+
+msgid "{1}'s {2} prevents {3} from using {4}!"
+msgstr "{1}'s {2} voorkomt dat {3} {4} kan gebruiken!"
+
+msgid "{1}'s {2} prevents {3}'s {4} from working!"
+msgstr "{1}'s {2} voorkomt dat de {4} van {3} werkt!"
+
+msgid "{1}'s {2} raised its Attack!"
+msgstr "{1}'s Sterkte is gestegen door {2}!"
+
+msgid "{1}'s {2} raised its Fire power!"
+msgstr "{1}'s {2} heeft Vuur-acties sterker gemaakt!"
+
+msgid "{1}'s {2} raised its Special Attack!"
+msgstr "{1}'s Speciale Sterkte is gestegen door {2}!"
+
+msgid "{1}'s {2} raised its Speed!"
+msgstr "{1}'s Snelheid is gestegen door {2}!"
+
+msgid "{1}'s {2} raised its speed!"
+msgstr "{1}'s Snelheid is gestegen door {2}!"
+
+msgid "{1}'s {2} raised the power of its Fire-type moves!"
+msgstr "{1}'s {2} heeft Vuur-acties sterker gemaakt!"
+
+msgid "{1}'s {2} restored health!"
+msgstr "{1}'s {2} heeft HP hersteld!"
+
+msgid "{1}'s {2} restored its HP a little!"
+msgstr "{1}'s {2} heeft een beetje HP hersteld!"
+
+msgid "{1}'s {2} restored its HP!"
+msgstr "{1}'s {2} heeft HP hersteld!"
+
+msgid "{1}'s {2} restored its status!"
+msgstr "{1}'s status is door {2} hersteld!"
+
+msgid "{1}'s {2} restored {3}'s PP!"
+msgstr "{1}'s {2} heeft de AP van {3} hersteld!"
+
+msgid "{1}'s {2} restored {3}'s status!"
+msgstr "{1}'s {2} heeft de status van {3} hersteld!"
+
+msgid "{1}'s {2} rose sharply!"
+msgstr "{1}'s {2} is aanzienlijk gestegen!"
+
+msgid "{1}'s {2} was bounced back by Magic Coat!"
+msgstr "{1}'s {2} werd weerkaatst door Magic Coat!"
+
+msgid "{1}'s {2} was broken!"
+msgstr "{1}'s {2} is gebroken!"
+
+msgid "{1}'s {2} was burned up!"
+msgstr "{1}'s {2} is weggebrand!"
+
+msgid "{1}'s {2} was disabled!"
+msgstr "{1}'s {2} is uitgeschakeld!"
+
+msgid "{1}'s {2} was transferred to {3}!"
+msgstr "{1}'s {2} is naar {3} verplaatst!"
+
+msgid "{1}'s {2} wore off!"
+msgstr "{1}'s {2} is uitgewerkt!"
+
+msgid "{1}, and you want {2}.\nThat will be ${3}. OK?"
+msgstr "{1}, en u wilt er {2} van.\nDat is dan ${3}. Is dat oké?"
+
+msgid "{1}, switch out! Come back!"
+msgstr "Goed gedaan {1}!\nKom terug!"
+
+msgid "{1}: {2}, Award: ???, {3}"
+msgstr "{1}: {2}, Trofee: ???, {3}"
+
+msgid "{1}: {2}, Award: {3}, {4}"
+msgstr "{1}: {2}, Trofee: {3}, {4}"
+
+msgid "{1}?\nHow many would you like to sell?"
+msgstr "{1}?\nHoeveel wilt u er verkopen?"
+
+msgid "{1}? Certainly.\nHow many would you like?"
+msgstr "{1}? Maar natuurlijk.\nHoeveel had u er gewild?"
+
+msgid "{1}? Oh, no.\nI can't buy that."
+msgstr "{1}? O nee.\nDat kan ik niet kopen."
+
+msgid "{1}h {2}m"
+msgstr "{1}u {2}min"
+
+msgid "{2} type was added to {1}!"
+msgstr "{1} heeft het {2}-soort bemachtigd!"
+

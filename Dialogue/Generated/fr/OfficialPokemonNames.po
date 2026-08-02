@@ -1,0 +1,475 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "Orchynx"
+msgstr "Pétalynx"
+
+msgid "Metalynx"
+msgstr "Métalynx"
+
+msgid "Raptorch"
+msgstr "Raptorche"
+
+msgid "Archilles"
+msgstr "Caldéraptor"
+
+msgid "Eletux"
+msgstr "Électrott"
+
+msgid "Electruxo"
+msgstr "Cavalux"
+
+msgid "Chyinmunk"
+msgstr "Tamulot"
+
+msgid "Kinetmunk"
+msgstr "Taminétique"
+
+msgid "Birbie"
+msgstr "Ptiris"
+
+msgid "Aveden"
+msgstr "Splendiris"
+
+msgid "Splendifowl"
+msgstr "Paradiris"
+
+msgid "Cubbug"
+msgstr "Chenourson"
+
+msgid "Cubblfly"
+msgstr "Câlinymphe"
+
+msgid "Nimflora"
+msgstr "Nymphlora"
+
+msgid "Barewl"
+msgstr "Embryfer"
+
+msgid "dearewl"
+msgstr "Métalifaon"
+
+msgid "Gararewl"
+msgstr "Cervacier"
+
+msgid "Grozard"
+msgstr "Glaizard"
+
+msgid "Terlard"
+msgstr "Tellurhydre"
+
+msgid "Tonemy"
+msgstr "Tonemi"
+
+msgid "Tofurang"
+msgstr "Togrocrok"
+
+msgid "Dunsparce"
+msgstr "Insolourdo"
+
+msgid "Dunseraph"
+msgstr "Inséraphin"
+
+msgid "Fortog"
+msgstr "Venouille"
+
+msgid "Folerog"
+msgstr "Croason"
+
+msgid "Blubelrog"
+msgstr "Bullyanure"
+
+msgid "Magikarp"
+msgstr "Magicarpe"
+
+msgid "Gyarados"
+msgstr "Léviator"
+
+msgid "Feleng"
+msgstr "Félignon"
+
+msgid "Felunge"
+msgstr "Félancé"
+
+msgid "Feliger"
+msgstr "Féligre"
+
+msgid "Mankey"
+msgstr "Férosinge"
+
+msgid "Primeape"
+msgstr "Colossinge"
+
+msgid "Empirilla"
+msgstr "Royosinge"
+
+msgid "Owten"
+msgstr "Chouetton"
+
+msgid "Eshouten"
+msgstr "Insaisichat"
+
+msgid "Lotad"
+msgstr "Nénupiot"
+
+msgid "Smore"
+msgstr "Fourmigni"
+
+msgid "Firoke"
+msgstr "Flamagarde"
+
+msgid "Brailip"
+msgstr "Cervelon"
+
+msgid "Brainoar"
+msgstr "Cérébron"
+
+msgid "Ekans"
+msgstr "Abo"
+
+msgid "Tancoon"
+msgstr "Tanoctur"
+
+msgid "Tanscure"
+msgstr "Tanurex"
+
+msgid "Sponee"
+msgstr "Sponimouss"
+
+msgid "Sponaree"
+msgstr "Sponarius"
+
+msgid "Pahar"
+msgstr "Phénincelle"
+
+msgid "Palij"
+msgstr "Phénardent"
+
+msgid "Panjay"
+msgstr "Phénoyant"
+
+msgid "Jerbolta"
+msgstr "Gerblitz"
+
+msgid "Cometeor"
+msgstr "Cométéor"
+
+msgid "Mareep"
+msgstr "Wattouat"
+
+msgid "Flaaffy"
+msgstr "Lainergie"
+
+msgid "Ampharos"
+msgstr "Pharamp"
+
+msgid "Baashaun"
+msgstr "Moutoir"
+
+msgid "Baaschaf"
+msgstr "Moutombre"
+
+msgid "Baariette"
+msgstr "Cauchebouk"
+
+msgid "Tricwe"
+msgstr "Ouvriclair"
+
+msgid "Harylect"
+msgstr "Elecricière"
+
+msgid "Costraw"
+msgstr "Sangsure"
+
+msgid "Trawpint"
+msgstr "Asparasit"
+
+msgid "Lunapup"
+msgstr "Canilune"
+
+msgid "Herolune"
+msgstr "Hérolune"
+
+msgid "Buizel"
+msgstr "Mustébouée"
+
+msgid "Floatzel"
+msgstr "Mustéflott"
+
+msgid "Modrille"
+msgstr "Tauperceur"
+
+msgid "Drilgann"
+msgstr "Taupurren"
+
+msgid "Gligar"
+msgstr "Scorplane"
+
+msgid "Gliscor"
+msgstr "Scorvol"
+
+msgid "Sableye"
+msgstr "Ténéfix"
+
+msgid "Cocaran"
+msgstr "Cocrabe"
+
+msgid "Cararalm"
+msgstr "Cocapode"
+
+msgid "Corsola"
+msgstr "Corayon"
+
+msgid "Corsoreef"
+msgstr "Corécif"
+
+msgid "Tubjaw"
+msgstr "Noctanguille"
+
+msgid "Tubareel"
+msgstr "Sombrequin"
+
+msgid "Cassnail"
+msgstr "Escarseau"
+
+msgid "Sableau"
+msgstr "Sablargot"
+
+msgid "Escartress"
+msgstr "Bastiropode"
+
+msgid "Cottonee"
+msgstr "Doudouvet"
+
+msgid "Whimsicott"
+msgstr "Farfaduvet"
+
+msgid "Misdreavus"
+msgstr "Feuforêve"
+
+msgid "Mismagius"
+msgstr "Magirêve"
+
+msgid "Barand"
+msgstr "Reptagrif"
+
+msgid "Glaslug"
+msgstr "Glimaçon"
+
+msgid "Glavinug"
+msgstr "Limiceberg"
+
+msgid "Paraboom"
+msgstr "Paraboum"
+
+msgid "Flager"
+msgstr "Tigrasier"
+
+msgid "Inflagetah"
+msgstr "Enflaguépar"
+
+msgid "Chimical"
+msgstr "Chiminion"
+
+msgid "Tikiki"
+msgstr "Titiki"
+
+msgid "Unymph"
+msgstr "Nymfolan"
+
+msgid "Harptera"
+msgstr "Libelarpie"
+
+msgid "Chicoatl"
+msgstr "Galicoatl"
+
+msgid "Coatlith"
+msgstr "Coatliquot"
+
+msgid "Snopach"
+msgstr "Dermagel"
+
+msgid "Slothohm"
+msgstr "Ohmaï"
+
+msgid "Theriamp"
+msgstr "Ampaï"
+
+msgid "Titanice"
+msgstr "Titagivre"
+
+msgid "Frynai"
+msgstr "Frinai"
+
+msgid "Saidine"
+msgstr "Saïdine"
+
+msgid "Daikatuna"
+msgstr "Daikathona"
+
+msgid "Syrentide"
+msgstr "Sirénaïade"
+
+msgid "Spritzee"
+msgstr "Fluvetin"
+
+msgid "Aromatisse"
+msgstr "Cocotine"
+
+msgid "Miasmedic"
+msgstr "Miasmédic"
+
+msgid "Jackdeary"
+msgstr "Lapojack"
+
+msgid "Winotinger"
+msgstr "Vinperdinger"
+
+msgid "Eevee"
+msgstr "Évoli"
+
+msgid "Vaporeon"
+msgstr "Aquali"
+
+msgid "Jolteon"
+msgstr "Voltali"
+
+msgid "Flareon"
+msgstr "Pyroli"
+
+msgid "Espeon"
+msgstr "Mentali"
+
+msgid "Umbreon"
+msgstr "Noctali"
+
+msgid "Leafeon"
+msgstr "Phyllali"
+
+msgid "Glaceon"
+msgstr "Givrali"
+
+msgid "Sylveon"
+msgstr "Nymphali"
+
+msgid "Nucleon"
+msgstr "Urali"
+
+msgid "Ratsy"
+msgstr "Ratiste"
+
+msgid "Masking"
+msgstr "Maskesté"
+
+msgid "Chupacho"
+msgstr "Chupacabro"
+
+msgid "Luchabra"
+msgstr "Luttacabra"
+
+msgid "Linkite"
+msgstr "Fantochaîne"
+
+msgid "Chainite"
+msgstr "Déchainole"
+
+msgid "Pufluff"
+msgstr "Pelugel"
+
+msgid "Colarva"
+msgstr "Glarvon"
+
+msgid "Frosulo"
+msgstr "Coconfroid"
+
+msgid "Frosthra"
+msgstr "Mothrazote"
+
+msgid "Fafurr"
+msgstr "Fourrugon"
+
+msgid "Fafninter"
+msgstr "Fafniver"
+
+msgid "Shrimputy"
+msgstr "Crevanon"
+
+msgid "Krilvolver"
+msgstr "Krivolver"
+
+msgid "Lavent"
+msgstr "Lavurène"
+
+msgid "Swabone"
+msgstr "Trublios"
+
+msgid "Skelerogue"
+msgstr "Flibustibia"
+
+msgid "Navighast"
+msgstr "Crânitaine"
+
+msgid "Jungore"
+msgstr "Jangor"
+
+msgid "Majungold"
+msgstr "Mahajagor"
+
+msgid "Hagoop"
+msgstr "Élébave"
+
+msgid "Haagross"
+msgstr "Myxetric"
+
+msgid "Xenomite"
+msgstr "Xénomite"
+
+msgid "Xenogen"
+msgstr "Xénogène"
+
+msgid "Xenoqueen"
+msgstr "Xénoreine"
+
+msgid "Geigeroach"
+msgstr "Cafaranium"
+
+msgid "Minicorn"
+msgstr "Minicorne"
+
+msgid "Kiricorn"
+msgstr "Kiricorne"
+
+msgid "Oblivicorn"
+msgstr "Katacorne"
+
+msgid "Sheebit"
+msgstr "Solevro"
+
+msgid "Terrabit"
+msgstr "Terrapin"
+
+msgid "Laissure"
+msgstr "Sismolièvre"
+
+msgid "Volchik"
+msgstr "Voltillon"
+
+msgid "Devimp"
+msgstr "Farfadem"
+
+msgid "Fallengel"
+msgstr "Déchéange"
+
+msgid "Belliadon"
+msgstr "Béliaddon"
+
+msgid "Garlikid"
+msgstr "Marmail"
+
+msgid "Zephy"
+msgstr "Zéphy"
+
+msgid "Gastly"
+msgstr "Ectoplasma"

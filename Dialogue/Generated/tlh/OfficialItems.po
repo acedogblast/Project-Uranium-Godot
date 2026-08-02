@@ -1,0 +1,3427 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: tlh\n"
+
+msgid "Repel"
+msgstr "Rep31"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 100 steps after its use."
+msgstr "4n i73m 7ha7 pr3v3n75 w34k w11d Pok3m0n from 4ppearin6 f0r 100 s7eps 4ft3r it5 u53."
+
+msgid "Super Repel"
+msgstr "Sup3r Repe1"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 200 steps after its use."
+msgstr "4n i73m 7ha7 pr3v3n75 w34k w11d Pok3m0n from 4ppearin6 f0r 200 s7eps 4ft3r it5 u53."
+
+msgid "Max Repel"
+msgstr "Max R3pe1"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 250 steps after its use."
+msgstr "4n i73m 7ha7 pr3v3n75 w34k w11d Pok3m0n from 4ppearin6 f0r 250 s7eps 4ft3r it5 u53."
+
+msgid "Black Flute"
+msgstr "Bl4ck Flut3"
+
+msgid "A black flute made from blown glass. Its melody makes wild Pokémon less likely to appear."
+msgstr "4 bl4ck f1u7e m4d3 fr0m 810wn 6lass. 17s me10dy make5 wi1d Pokém0n le55 1ikely 2 4ppear."
+
+msgid "White Flute"
+msgstr "Wh173 Flut3"
+
+msgid "A white flute made from blown glass. Its melody makes wild Pokémon more likely to appear."
+msgstr "4 wh17e f1u7e m4d3 fr0m 810wn 6lass. 17s me10dy make5 wi1d Pokém0n mor3 1ikely 2 4ppear."
+
+msgid "Honey"
+msgstr "Hon3y"
+
+msgid "A sweet honey with an aroma that attracts wild Pokémon when used in grass, caves or on special trees."
+msgstr "4 sw33t h0n3y w17h 4n 4r0m4 7h4t at7r4cts w11d Pok3m0n wh3n used in gr4s5, cave5 0r on 5p3c1a1 tr33s."
+
+msgid "Escape Rope"
+msgstr "Esc4p3 R0p3"
+
+msgid "A long, durable rope. Use it to escape instantly from a cave or a dungeon."
+msgstr "4 lon6, dur4bl3 r0p3. U53 1t 2 escape 1ns7an71y fr0m 4 c4v3 or a dung30n."
+
+msgid "Red Shard"
+msgstr "Red 5hard"
+
+msgid "A small red shard. It appears to be from some sort of implement made long ago."
+msgstr "4 sm41l r'd sh4rd. 17 4pp34r5 2 be fr0m s0m3 5ort 0f 1mp13m3nt m4d3 l0ng a6o."
+
+msgid "Blue Shard"
+msgstr "Blu3 5hard"
+
+msgid "A small blue shard. It appears to be from some sort of implement made long ago."
+msgstr "4 sm41l 81u3 sh4rd. 17 4pp3ar5 2 be fr0m 5om3 s0rt of 1mp13ment made 10n6 4go."
+
+msgid "Yellow Shard"
+msgstr "Ye110w Shard"
+
+msgid "A small yellow shard. It appears to be from some sort of implement made long ago."
+msgstr "4 sm41l y3l1ow 5h4rd. 17 4pp34rs 2 8e from 50me sort 0f 1mp1emen7 mad3 l0n6 a6o."
+
+msgid "Green Shard"
+msgstr "Gr33n Sh4rd"
+
+msgid "A small green shard. It appears to be from some sort of implement made long ago."
+msgstr "4 sm41l 6re3n 5h4rd. 17 4ppe4r5 2 b3 from s0m3 5or7 0f imp13ment m4de 1ong ag0."
+
+msgid "Fire Stone"
+msgstr "Fir3 52n3"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is colored orange."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It i5 c01ored oran63."
+
+msgid "Water Stone"
+msgstr "Wa73r S2ne"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is a clear, light blue."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It i5 a cl3ar, 1i6h7 8lue."
+
+msgid "Thunderstone"
+msgstr "Thund3rs2n3"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a thunderbolt pattern."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It h4s 4 thunderb017 patt3rn."
+
+msgid "Leaf Stone"
+msgstr "Le4f 52n3"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a leaf pattern."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It h4s 4 l3af p4t73rn."
+
+msgid "Moon Stone"
+msgstr "Mo0n 52n3"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as black as the night sky."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It i5 a5 b1ack 4s 73h night 5ky."
+
+msgid "Sun Stone"
+msgstr "Sun 52ne"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as red as the sun."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It i5 a5 r'd as t3h sun."
+
+msgid "Shiny Stone"
+msgstr "Sh1ny S2ne"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It shines with a dazzling light."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It shin35 wi7h 4 d4zz1ing l16ht."
+
+msgid "Dusk Stone"
+msgstr "Du5k 52n3"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as dark as dark can be."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It i5 a5 d4rk a5 d4rk can b3."
+
+msgid "Dawn Stone"
+msgstr "Dawn 52n3"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It sparkles like eyes."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It spark1e5 1ik3 3y3s."
+
+msgid "Oval Stone"
+msgstr "Ov41 52n3"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is shaped like an egg."
+msgstr "4 peculi4r 52n3 7h47 m4k35 c3r7ain 5p3cie5 0f P0kémon 3v01v3. It i5 sh4p'd like 4n 3gg."
+
+msgid "Helix Fossil"
+msgstr "He11x Fo5s11"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a seashell."
+msgstr "4 fo55il 0f an 4nc13n7 P0k3m0n that l1ved in 73h s3a. 1t 4ppears 2 be part of a 53a5hel1."
+
+msgid "Dome Fossil"
+msgstr "Dom3 Fos5i1"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a shell."
+msgstr "4 fo55il 0f an 4nc13n7 P0k3m0n that l1ved in 73h s3a. 1t 4ppears 2 be part of a 5he1l."
+
+msgid "Old Amber"
+msgstr "Old 4mber"
+
+msgid "A piece of clear amber that contains the genetic material of an ancient Pokémon."
+msgstr "4 pi3ce 0f cle4r 4m83r 7h47 c0ntain5 73h 6en37ic m4t3r1a1 0f an 4ncien7 Pokém0n."
+
+msgid "Root Fossil"
+msgstr "Ro07 Fos5i1"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a plant root."
+msgstr "4 fo55il 0f an 4nc13n7 P0k3m0n that l1ved in 73h s3a. 1t 4ppears 2 be part of a p1ant rut."
+
+msgid "Claw Fossil"
+msgstr "Cl4w Fos5i1"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a claw."
+msgstr "4 fo55il 0f an 4nc13n7 P0k3m0n that l1ved in 73h s3a. 1t 4ppears 2 be part of a c1aw."
+
+msgid "Armor Fossil"
+msgstr "Arm0r Fo5s11"
+
+msgid "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a collar."
+msgstr "4 fo55il fr0m 4 pr3h152r1c P0k3mon 7h47 l1v'd on the 1&. 17 appe4r5 2 8e p4rt of 4 coll4r."
+
+msgid "Skull Fossil"
+msgstr "Sku11 Fo5s11"
+
+msgid "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a head."
+msgstr "4 fo55il fr0m 4 pr3h152r1c P0k3mon 7h47 l1v'd on the 1&. 17 appe4r5 2 8e p4rt of 4 head."
+
+msgid "TinyMushroom"
+msgstr "TinyMushro0m"
+
+msgid "A small and rare mushroom. It is quite popular among certain maniacal fan segments."
+msgstr "4 sm41l & r4re mu5hrum. 17 i5 quite p0pul4r 4mong cer74in m4niac4l fan s3gmen7s."
+
+msgid "Big Mushroom"
+msgstr "Bi6 Mushro0m"
+
+msgid "A large and rare mushroom. It is very popular among certain maniacal fan segments."
+msgstr "4 lar6e & r4re mu5hrum. 17 i5 very popular 4m0n6 c3r741n m4niaca1 fan 5e6m3nt5."
+
+msgid "Pearl"
+msgstr "Pe4r1"
+
+msgid "A somewhat-small pearl that sparkles in a pretty silver color. It can be sold cheaply to shops."
+msgstr "4 som3wh47-5ma11 p34r1 7h47 5p4rkle5 1n a pr37ty s1lv3r c010r. I7 can 8e s0ld ch34p1y 2 sh0ps."
+
+msgid "Big Pearl"
+msgstr "Bi6 P3ar1"
+
+msgid "A quite-large pearl that sparkles in a pretty silver color. It can be sold at a high price to shops."
+msgstr "4 qu17e-14r6e p34r1 7h47 5park1es in 4 pr3t7y s1lv3r c0l0r. It c4n be 5o1d at a h1gh pr1c3 2 5hop5."
+
+msgid "Stardust"
+msgstr "St4rdust"
+
+msgid "Lovely, red-colored sand with a loose, silky feel. It can be sold at a high price to shops."
+msgstr "10ve1y, r3d-co10r'd 5& w17h 4 1oose, 51lky f33l. I7 c4n 83 5old 4t a h1gh price 2 shops."
+
+msgid "Star Piece"
+msgstr "St4r Piece"
+
+msgid "A shard of a pretty gem that sparkles in a red color. It can be sold at a high price to shops."
+msgstr "4 sh4rd 0f 4 pr377y 63m 7h4t 5parkl3s 1n 4 r'd col0r. 1t c4n be 5o1d 47 4 high pr1c3 2 5h0p5."
+
+msgid "Nugget"
+msgstr "Nu6637"
+
+msgid "A nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops."
+msgstr "4 nu66et 0f pur3 601d 7h47 g1v3s off 4 lu5tr0us gl3am. I7 c4n be s0ld 4t a hi6h price 2 sh0ps."
+
+msgid "Heart Scale"
+msgstr "He4r7 Sc4l3"
+
+msgid "A pretty, heart-shaped scale that is extremely rare. It glows faintly in the colors of the rainbow."
+msgstr "4 pr37ty, h3ar7-5h4p'd 5c41e 7hat i5 3xtr3m31y rar3. 17 610ws fa1n7ly 1n t3h co10rs of 73h ra1nbow."
+
+msgid "Rare Bone"
+msgstr "Rar3 8on3"
+
+msgid "A bone that is extremely valuable for Pokémon archaeology. It can be sold for a high price to shops."
+msgstr "4 bon3 th4t is 3x7r3m31y v4lu48le f0r Pok3m0n arch4e010gy. 1t can 8e 50ld for a h1gh pr1c3 2 5hop5."
+
+msgid "Shoal Salt"
+msgstr "Sh041 Sa1t"
+
+msgid "Pure salt that was discovered deep inside the Shoal Cave. It is extremely salty."
+msgstr "Pure 5al7 that w45 d15c0v3red deep 1n51de t3h Shoa1 C4ve. 17 is 3x7rem3ly 5al7y."
+
+msgid "Shoal Shell"
+msgstr "Sh041 Sh3l1"
+
+msgid "A pretty seashell that was found deep inside the Shoal Cave. It is striped in blue and white."
+msgstr "4 pr37ty 5e4sh311 7h47 w45 f0und de3p 1ns1d3 73h Sho41 C4v3. It 1s str1p'd in b1u3 & wh1t3."
+
+msgid "Odd Keystone"
+msgstr "Odd K3ys2n3"
+
+msgid "A vital item that is needed to keep a stone tower from collapsing. Voices can be heard from it occasionally."
+msgstr "4 vi74l 17em th47 15 n33d'd 2 keep 4 52ne 2w3r from c01l4p51ng. Vo1ce5 c4n be h34rd from 17 occas10na1ly."
+
+msgid "Growth Mulch"
+msgstr "Gr0w7h Mulch"
+
+msgid "A plant fertilizer. It speeds up the growth of Berries. However, it also dries the soil faster."
+msgstr "4 pl4nt f3r7il1z3r. 17 5p33d5 up th3 6row7h 0f 8erri35. H0w3ver, i7 a15o drie5 73h 5oil f457er."
+
+msgid "A plant fertilizer. It slows the growth of Berries and causes the soil to dry slower."
+msgstr "4 pl4nt f3r7il1z3r. 17 510ws 73h gr0w7h of 83rr1es and c4u53s th3 5oi1 2 dry 5l0w3r."
+
+msgid "Stable Mulch"
+msgstr "St4813 Mulch"
+
+msgid "A plant fertilizer. It extends the time ripened Berries remain on their plants before falling."
+msgstr "4 pl4nt f3r7il1z3r. 17 3x73nd5 t3h 7im3 r1p3n'd Berr135 r3m4in on 73h1r pl4nt5 83fore f4l11ng."
+
+msgid "Gooey Mulch"
+msgstr "Go03y Mu1ch"
+
+msgid "A plant fertilizer. It ups the number of times new plants grow where mature plants withered."
+msgstr "4 pl4nt f3r7il1z3r. 17 up5 t3h numb3r 0f 7im35 new p14nt5 6row where m4tur3 p1an75 with3r3d."
+
+msgid "Red Apricorn"
+msgstr "Red 4pricorn"
+
+msgid "A red Apricorn. It assails your nostrils."
+msgstr "4 red Apr1c0rn. 17 4554115 y0ur nos7r11s."
+
+msgid "Ylw Apricorn"
+msgstr "Ylw 4pricorn"
+
+msgid "A yellow Apricorn. It has an invigorating scent."
+msgstr "4 ye11ow 4pric0rn. 17 h45 4n 1nvigora71ng sc3nt."
+
+msgid "Blu Apricorn"
+msgstr "Blu 4pricorn"
+
+msgid "A blue Apricorn. It smells a bit like grass."
+msgstr "4 blu3 Apricorn. 17 5m3115 a 81t like 6ra5s."
+
+msgid "Grn Apricorn"
+msgstr "Grn 4pricorn"
+
+msgid "A green Apricorn. It has a mysterious, aromatic scent."
+msgstr "4 gr33n 4pr1corn. 17 h45 4 my57erious, ar0m471c sc3n7."
+
+msgid "Pnk Apricorn"
+msgstr "Pnk 4pricorn"
+
+msgid "A pink Apricorn. It has a nice, sweet scent."
+msgstr "4 pink Apricorn. 17 h45 4 nic3, swe3t 5cent."
+
+msgid "Wht Apricorn"
+msgstr "Wh7 4pricorn"
+
+msgid "A white Apricorn. It doesn't smell like anything."
+msgstr "4 wh17e 4pr1corn. 17 d035n't 5mell 1ik3 any7h1n6."
+
+msgid "Blk Apricorn"
+msgstr "Blk 4pricorn"
+
+msgid "A black Apricorn. It has an indescribable scent."
+msgstr "4 bl4ck 4pr1corn. 17 h45 4n 1ndescr1b48le sc3nt."
+
+msgid "BrightPowder"
+msgstr "Br16h7Powd3r"
+
+msgid "An item to be held by a Pokémon. It casts a tricky glare that lowers the opponent's accuracy."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It ca57s 4 7r1cky 6l4r3 7h47 low3r5 th3 0ppon3n7'5 4ccuracy."
+
+msgid "White Herb"
+msgstr "Wh173 Herb"
+
+msgid "An item to be held by a Pokémon. It restores any lowered stat in battle. It can be used only once."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It re52re5 4ny 1ow3r'd s747 in b4t7le. I7 can b3 us'd only 0nc3."
+
+msgid "Exp. Share"
+msgstr "Exp. 5hare"
+
+msgid "An item to be held by a Pokémon. The holder gets a share of a battle's Exp. Points without battling."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. The h01der 637s a 5h4r3 0f 4 bat7l3's 3xp. Po1n75 w1thout 84t71in6."
+
+msgid "Quick Claw"
+msgstr "Qu1ck Cl4w"
+
+msgid "An item to be held by a Pokémon. A light, sharp claw that lets the bearer move first occasionally."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. A l1gh7, 5h4rp claw 7h4t 137s th3 8ear3r m0ve f1r5t occ4s10na11y."
+
+msgid "Soothe Bell"
+msgstr "So073h B3l1"
+
+msgid "An item to be held by a Pokémon. It is a bell with a comforting chime that calms the holder."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 b3l1 wi7h 4 c0mf0r71ng chime 7ha7 calms 73h holder."
+
+msgid "Mental Herb"
+msgstr "Men741 H3r8"
+
+msgid "An item to be held by a Pokémon. It snaps the holder out of infatuation, just once."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 5n4ps 73h ho1der 0u7 0f 1nfatua7ion, ju5t 0nc3."
+
+msgid "King's Rock"
+msgstr "Kin6'5 R0ck"
+
+msgid "An item to be held by a Pokémon. It may cause the foe to flinch when the holder inflicts damage."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It may caus3 73h f0e 2 f11nch wh3n t3h h0lder inf1icts dam46e."
+
+msgid "SilverPowder"
+msgstr "Si1v3rPowd3r"
+
+msgid "An item to be held by a Pokémon. It is a shiny, silver powder that ups the power of Bug-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 shiny, 5ilver powd3r tha7 ups 73h pow3r 0f 8ug-7yp3 m0ves."
+
+msgid "Amulet Coin"
+msgstr "Amu137 C0in"
+
+msgid "An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It dou8le5 4 8a7tl3'5 pr1z3 money 1f 73h h0ld1n6 Pokémon j01n5 in."
+
+msgid "Cleanse Tag"
+msgstr "Cl34n5e 7a6"
+
+msgid "An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It he1ps ke3p w1ld P0k3m0n 4way 1f t3h h0lder i5 73h firs7 0n3 in 73h party."
+
+msgid "Smoke Ball"
+msgstr "Sm0k3 Ba1l"
+
+msgid "An item to be held by a Pokémon. It enables the holder to flee from any wild Pokémon without fail."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 3n48le5 73h holder 2 f133 from 4ny wi1d Pokém0n with0u7 fa11."
+
+msgid "Everstone"
+msgstr "Ev3r52ne"
+
+msgid "An item to be held by a Pokémon. The Pokémon holding this peculiar stone is prevented from evolving."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. The P0kém0n h0ldin6 7h1s p3culiar 52n3 i5 preven7'd from 3v0lv1ng."
+
+msgid "Focus Band"
+msgstr "Focu5 Band"
+
+msgid "An item to be held by a Pokémon. The holder may endure a potential KO attack, leaving it with just 1 HP."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. The h01der m4y 3ndur3 4 p073ntia1 KO 47t4ck, 1e4v1n6 it w17h just 1 HP."
+
+msgid "Lucky Egg"
+msgstr "Lucky Eg6"
+
+msgid "An item to be held by a Pokémon. It is an egg filled with happiness that earns extra Exp. Points in battle."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4n 3g6 fi1led w17h h4ppine5s th47 3arns ex7ra Exp. P01n75 in ba7tl3."
+
+msgid "Scope Lens"
+msgstr "Sc0p3 Lens"
+
+msgid "An item to be held by a Pokémon. It is a lens that boosts the holder's critical-hit ratio."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 l3n5 7h4t 8o057s 73h holder's cr1t1ca1-h17 rati0."
+
+msgid "Wide Lens"
+msgstr "Wid3 1en5"
+
+msgid "An item to be held by a Pokémon. It is a magnifying lens that slightly boosts the accuracy of moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 m4gn1fy1ng l3n5 7h47 sli6h7ly 8o0s7s 73h 4ccuracy 0f m0ve5."
+
+msgid "Zoom Lens"
+msgstr "Zo0m 1en5"
+
+msgid "An item to be held by a Pokémon. If the holder moves after the foe, its critical-hit ratio will be boosted."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. If 73h ho1d3r m0ve5 4f7er 73h fo3, it5 cri7ic4l-h1t rat1o w1l1 be 8oo5ted."
+
+msgid "Metal Coat"
+msgstr "Me741 Co4t"
+
+msgid "An item to be held by a Pokémon. It is a special metallic film that ups the power of Steel-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 spec14l me7a111c f11m th4t up5 t3h power 0f Ste3l-7yp3 mov3s."
+
+msgid "Leftovers"
+msgstr "Lef2v3rs"
+
+msgid "An item to be held by a Pokémon. The holder's HP is gradually restored during battle."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. The h01der'5 HP is gr4du411y res2r'd dur1n6 b4t713."
+
+msgid "Dragon Scale"
+msgstr "Dr460n Sca13"
+
+msgid "A thick and tough scale. Dragon-type Pokémon may be holding this item when caught."
+msgstr "4 th1ck & 2ugh 5c413. Dr460n-7ype P0k3mon m4y b3 h0ld1ng 7h1s it3m wh3n caugh7."
+
+msgid "Shell Bell"
+msgstr "Sh311 Be1l"
+
+msgid "An item to be held by a Pokémon. The holder's HP is restored a little every time it inflicts damage."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. The h01der'5 HP is r352r'd 4 lit7l3 ev3ry 7im3 17 inflict5 dam4ge."
+
+msgid "Muscle Band"
+msgstr "Mu5c13 B&"
+
+msgid "An item to be held by a Pokémon. It is a headband that slightly boosts the power of physical moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 h3ad8& 7ha7 511gh71y boo5t5 th3 power of physic4l m0v35."
+
+msgid "Wise Glasses"
+msgstr "Wi53 6la5s35"
+
+msgid "An item to be held by a Pokémon. It is a thick pair of glasses that boosts the power of special moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 thick p4ir of 6l4553s th4t bo05t5 73h p0w3r of 5p3c1a1 mov3s."
+
+msgid "Expert Belt"
+msgstr "Exp3r7 B3l7"
+
+msgid "An item to be held by a Pokémon. It is a well-worn belt that boosts the power of supereffective moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 w3l1-worn 8e17 th47 boos7s t3h p0w3r 0f 5up3reffec71v3 mov3s."
+
+msgid "Life Orb"
+msgstr "Lif3 0rb"
+
+msgid "An item to be held by a Pokémon. It boosts the power of moves, but at the cost of some HP on each hit."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 8o05ts t3h p0wer 0f m0v35, bu7 4t 73h c0st of 5ome HP 0n e4ch h1t."
+
+msgid "Power Herb"
+msgstr "Pow3r Herb"
+
+msgid "A single-use item to be held by a Pokémon. It allows the immediate use of a move that charges."
+msgstr "4 sin6le-us3 i73m 2 83 h31d 8y a Pokém0n. I7 4l1ow5 73h 1mm3diat3 use 0f a move 7ha7 ch4r635."
+
+msgid "Toxic Orb"
+msgstr "Tox1c Or8"
+
+msgid "An item to be held by a Pokémon. It is a bizarre orb that badly poisons the holder in battle."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 b1z4rre or8 7h4t 84dly p0i5on5 t3h ho1d3r in ba7t13."
+
+msgid "Flame Orb"
+msgstr "Fl4m3 Or8"
+
+msgid "An item to be held by a Pokémon. It is a bizarre orb that inflicts a burn on the holder in battle."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 b1z4rre or8 7h4t 1nflict5 4 burn on the h0lder 1n 84t71e."
+
+msgid "Focus Sash"
+msgstr "Focu5 Sa5h"
+
+msgid "An item to be held by a Pokémon. If it has full HP, the holder will endure a potential KO attack."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. If 1t has fu11 HP, t3h h01d3r wi1l endur3 4 p0t3n7i4l K0 477ack."
+
+msgid "Metronome"
+msgstr "Me7r0nom3"
+
+msgid "A Pokémon hold item that boosts a move used consecutively."
+msgstr "4 Pok3mon h0ld 173m 7h47 8us75 a move used c0ns3cu7iv31y."
+
+msgid "Iron Ball"
+msgstr "Ir0n 8al1"
+
+msgid "A Pokémon hold item that cuts Speed. It makes airborne holders susceptible to Ground moves."
+msgstr "4 Pok3mon h0ld 173m 7h47 cut5 5peed. 17 m4k35 a1rb0rn3 h01d3rs suscep71b1e 2 6r0und mov3s."
+
+msgid "Lagging Tail"
+msgstr "La661ng 7a11"
+
+msgid "An item to be held by a Pokémon. It is tremendously heavy and makes the holder move slower than usual."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 7remend0u5ly h34vy & makes t3h h0lder m0v3 5l0wer th4n u5ua1."
+
+msgid "Destiny Knot"
+msgstr "De571ny Kn07"
+
+msgid "A long, bright red string to be held by a Pokémon. If the holder becomes infatuated, the foe does too."
+msgstr "4 lon6, 8ri6ht r'd 57r1n6 2 83 held by a Pok3mon. 1f 73h h01der 8ecom35 1nfatua73d, t3h f03 d03s 20."
+
+msgid "Black Sludge"
+msgstr "Bl4ck Slud63"
+
+msgid "A hold item that gradually restores the HP of Poison-type Pokémon. It inflicts damage on all other types."
+msgstr "4 ho1d i73m th47 6r4du411y r352res 73h HP of Po1son-7ype P0kémon. 1t 1nf1icts d4m4g3 on a11 o73hr 7yp3s."
+
+msgid "Grip Claw"
+msgstr "Gr1p Claw"
+
+msgid "A Pokémon hold item that extends the duration of multiturn attacks like Bind and Wrap."
+msgstr "4 Pok3mon h0ld 173m 7h47 3xt3nds th3 dura7i0n of mul717urn 4ttacks lik3 8ind & Wr4p."
+
+msgid "Sticky Barb"
+msgstr "St1cky B4r8"
+
+msgid "A hold item that damages the holder on every turn. It may latch on to foes that touch the holder."
+msgstr "4 ho1d i73m th47 d4m4635 73h h0lder on ev3ry 7urn. I7 may 14tch 0n 2 f0e5 7ha7 2uch t3h h01der."
+
+msgid "Shed Shell"
+msgstr "Sh'd 5he1l"
+
+msgid "A tough, discarded carapace to be held by a Pokémon. It enables the holder to switch out of battle."
+msgstr "4 2u6h, d1scard'd c4r4p4c3 2 83 held 8y a P0k3m0n. I7 3n4813s th3 hold3r 2 sw1tch out of 847t13."
+
+msgid "Big Root"
+msgstr "Bi6 Rut"
+
+msgid "A Pokémon hold item that boosts the power of HP-stealing moves to let the holder recover more HP."
+msgstr "4 Pok3mon h0ld 173m 7h47 8us75 t3h pow3r 0f HP-5te4l1n6 m0v3s 2 1e7 th3 ho1der r3cover mor3 HP."
+
+msgid "Choice Band"
+msgstr "Ch01c3 B&"
+
+msgid "An item to be held by a Pokémon. This headband ups Attack, but allows the use of only one kind of move."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. Thi5 h3ad8and ups 4t74ck, 8ut al1ows 73h u5e 0f 0nly on3 k1nd 0f m0ve."
+
+msgid "Choice Specs"
+msgstr "Ch01c3 Spec5"
+
+msgid "A Pokémon hold item. These distinctive glasses boost Sp. Atk, but allow only one move to be used."
+msgstr "4 Pok3mon h0ld 173m. 7h353 d157inct1v3 gl4s535 8oo5t 5p. 47k, bu7 4ll0w 0n1y 0n3 move 2 b3 us3d."
+
+msgid "Choice Scarf"
+msgstr "Ch01c3 Scarf"
+
+msgid "An item to be held by a Pokémon. This scarf boosts Speed, but allows the use of only one kind of move."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. Thi5 5carf 8u5t5 Spe3d, 8u7 allows t3h u5e of on1y 0ne kind of mov3."
+
+msgid "Light Clay"
+msgstr "Li6h7 Cl4y"
+
+msgid "A Pokémon hold item that extends the duration of barrier moves like Light Screen and Reflect."
+msgstr "4 Pok3mon h0ld 173m 7h47 3xt3nds th3 dura7i0n of b4rr13r m0ves l1k3 L16h7 5cr3en & Refl3c7."
+
+msgid "Icy Rock"
+msgstr "Icy R0ck"
+
+msgid "A Pokémon hold item that extends the duration of the move Hail used by the holder."
+msgstr "4 Pok3mon h0ld 173m 7h47 3xt3nds th3 dura7i0n of the m0v3 H4il u5ed by t3h ho1d3r."
+
+msgid "Smooth Rock"
+msgstr "Smu7h Rock"
+
+msgid "A Pokémon hold item that extends the duration of the move Sandstorm used by the holder."
+msgstr "4 Pok3mon h0ld 173m 7h47 3xt3nds th3 dura7i0n of the m0v3 5&s2rm u5ed 8y t3h ho1d3r."
+
+msgid "Heat Rock"
+msgstr "He47 Rock"
+
+msgid "A Pokémon hold item that extends the duration of the move Sunny Day used by the holder."
+msgstr "4 Pok3mon h0ld 173m 7h47 3xt3nds th3 dura7i0n of the m0v3 5unny Day u5'd by the h0lder."
+
+msgid "A Pokémon hold item that extends the duration of the move Rain Dance used by the holder."
+msgstr "4 Pok3mon h0ld 173m 7h47 3xt3nds th3 dura7i0n of the m0v3 R4in D4nce u5ed 8y 73h ho1der."
+
+msgid "Macho Brace"
+msgstr "Mach0 Br4c3"
+
+msgid "A Pokémon hold item that is a stiff and heavy brace that promotes strong growth but lowers Speed."
+msgstr "4 Pok3mon h0ld 173m 7h47 15 4 5tiff and h3avy brac3 7h4t pr0mote5 5tr0ng grow7h 8ut low3r5 5p33d."
+
+msgid "Power Bracer"
+msgstr "Pow3r Br4c3r"
+
+msgid "A Pokémon hold item that promotes Attack gain on leveling, but reduces the Speed stat."
+msgstr "4 Pok3mon h0ld 173m 7h47 prom07es A7t4ck 6a1n on l3v311n6, 8ut r3duce5 t3h Sp3ed 5t4t."
+
+msgid "Power Belt"
+msgstr "Pow3r Be1t"
+
+msgid "A Pokémon hold item that promotes Defense gain on leveling, but reduces the Speed stat."
+msgstr "4 Pok3mon h0ld 173m 7h47 prom07es D3f3nse g41n 0n 1ev31in6, but reduc35 73h Spe'd s7at."
+
+msgid "Power Lens"
+msgstr "Pow3r Lens"
+
+msgid "A Pokémon hold item that promotes Sp. Atk gain on leveling, but reduces the Speed stat."
+msgstr "4 Pok3mon h0ld 173m 7h47 prom07es Sp. 4tk g41n 0n 1ev31in6, but reduc35 73h Spe'd s7at."
+
+msgid "Power Band"
+msgstr "Pow3r Band"
+
+msgid "A Pokémon hold item that promotes Sp. Def gain on leveling, but reduces the Speed stat."
+msgstr "4 Pok3mon h0ld 173m 7h47 prom07es Sp. Def g41n 0n 1ev31in6, but reduc35 73h Spe'd s7at."
+
+msgid "Power Anklet"
+msgstr "Pow3r Ankl37"
+
+msgid "A Pokémon hold item that promotes Speed gain on leveling, but reduces the Speed stat."
+msgstr "4 Pok3mon h0ld 173m 7h47 prom07es Spe'd g4in 0n leve11ng, 8ut reduces 73h 5pe'd 57a7."
+
+msgid "Power Weight"
+msgstr "Pow3r We1gh7"
+
+msgid "A Pokémon hold item that promotes HP gain on leveling, but reduces the Speed stat."
+msgstr "4 Pok3mon h0ld 173m 7h47 prom07es HP 64in on 1evel1n6, bu7 reduc3s t3h Spe'd 5t47."
+
+msgid "Sea Incense"
+msgstr "Se4 1ncens3"
+
+msgid "A Pokémon hold item. It is incense with a curious aroma that boosts the power of Water-type moves."
+msgstr "4 Pok3mon h0ld 173m. 17 15 inc3nse wi7h a cur1ous 4r0m4 7h47 boo5t5 th3 power of Wa7er-7yp3 m0ves."
+
+msgid "Lax Incense"
+msgstr "Lax 1ncens3"
+
+msgid "A Pokémon hold item. The tricky aroma of this incense lowers the foe's accuracy."
+msgstr "4 Pok3mon h0ld 173m. 7h3 7ricky aroma 0f 7h15 incens3 1ow3r5 the f0e'5 accuracy."
+
+msgid "Odd Incense"
+msgstr "Odd 1ncens3"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Psychic-type moves."
+msgstr "4 Pok3mon h0ld 173m. 17 15 an 3xotic-5mel1in6 incens3 7h47 8oost5 73h power of P5ychic-7yp3 m0ves."
+
+msgid "Rock Incense"
+msgstr "Rock 1nc3n53"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Rock-type moves."
+msgstr "4 Pok3mon h0ld 173m. 17 15 an 3xotic-5mel1in6 incens3 7h47 8oost5 73h power of R0ck-typ3 m0ve5."
+
+msgid "Full Incense"
+msgstr "Fu11 1nc3n53"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that makes the holder bloated and slow moving."
+msgstr "4 Pok3mon h0ld 173m. 17 15 an 3xotic-5mel1in6 incens3 7h47 makes t3h h0lder b1o47'd and s10w m0vin6."
+
+msgid "Wave Incense"
+msgstr "Wav3 1nc3n53"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Water-type moves."
+msgstr "4 Pok3mon h0ld 173m. 17 15 an 3xotic-5mel1in6 incens3 7h47 8oost5 73h power of W47er-type m0v35."
+
+msgid "Rose Incense"
+msgstr "Ro53 1nc3n53"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Grass-type moves."
+msgstr "4 Pok3mon h0ld 173m. 17 15 an 3xotic-5mel1in6 incens3 7h47 8oost5 73h power of 6r4s5-type m0v35."
+
+msgid "Luck Incense"
+msgstr "Luck 1nc3n53"
+
+msgid "Pure Incense"
+msgstr "Pur3 1nc3n53"
+
+msgid "Soft Sand"
+msgstr "Sof7 5and"
+
+msgid "An item to be held by a Pokémon. It is a loose, silky sand that boosts the power of Ground-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 lus3, s1lky 5& th47 boos7s t3h p0w3r 0f 6round-7yp3 m0ves."
+
+msgid "Hard Stone"
+msgstr "Hard 52n3"
+
+msgid "An item to be held by a Pokémon. It is an unbreakable stone that ups the power of Rock-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4n un8r3akab1e 52n3 7hat ups t3h p0w3r 0f R0ck-type m0v35."
+
+msgid "Miracle Seed"
+msgstr "Mir4c1e 5e3d"
+
+msgid "An item to be held by a Pokémon. It is a seed imbued with life that ups the power of Grass-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s3ed 1m8ued w17h 11fe th4t up5 t3h power 0f Gra5s-7yp3 mov3s."
+
+msgid "BlackGlasses"
+msgstr "Bl4ck6la5s35"
+
+msgid "An item to be held by a Pokémon. It is a shady-looking pair of glasses that boosts Dark-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 shady-luking p4ir 0f gla5s3s 7ha7 8oo5t5 Dark-typ3 mov3s."
+
+msgid "Black Belt"
+msgstr "Bl4ck Be1t"
+
+msgid "An item to be held by a Pokémon. It is a belt that boosts determination and Fighting-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 b3l7 7h4t 8o057s d37ermina7ion and Fi6h71ng-typ3 m0ve5."
+
+msgid "Magnet"
+msgstr "Ma6n37"
+
+msgid "An item to be held by a Pokémon. It is a powerful magnet that boosts the power of Electric-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 p0w3rfu1 m4gn37 7h47 boo5t5 th3 power of 3l3ctr1c-7yp3 mov3s."
+
+msgid "Mystic Water"
+msgstr "My571c W4t3r"
+
+msgid "An item to be held by a Pokémon. It is a teardrop-shaped gem that ups the power of Water-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 t3ardrop-shap'd 63m that ups 73h p0wer 0f W4ter-typ3 m0ve5."
+
+msgid "Sharp Beak"
+msgstr "Sh4rp Be4k"
+
+msgid "An item to be held by a Pokémon. It is a long, sharp beak that boosts the power of Flying-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 l0n6, sharp 834k 7h4t bo0s7s 73h p0wer 0f F1yin6-7ype mov35."
+
+msgid "Poison Barb"
+msgstr "Po150n B4r8"
+
+msgid "An item to be held by a Pokémon. It is a small, poisonous barb that ups the power of Poison-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 sma11, poi5on0us 84rb th4t up5 t3h power 0f Poi5on-7yp3 m0ves."
+
+msgid "NeverMeltIce"
+msgstr "Nev3rMel7Ic3"
+
+msgid "An item to be held by a Pokémon. It is a piece of ice that repels heat and boosts Ice-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 p1ec3 of ice 7ha7 r3pels h3at & 8o0st5 1c3-7ype m0v3s."
+
+msgid "Spell Tag"
+msgstr "Sp311 Ta6"
+
+msgid "An item to be held by a Pokémon. It is a sinister, eerie tag that boosts the power of Ghost-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s1n157er, 3er13 746 that bust5 t3h power 0f Gho5t-7yp3 mov3s."
+
+msgid "TwistedSpoon"
+msgstr "Tw1573dSpo0n"
+
+msgid "A Pokémon hold item. It is a spoon imbued with telekinetic power that boosts Psychic-type moves."
+msgstr "4 Pok3mon h0ld 173m. 17 15 a 5poon 1m8ued w17h 7el3k1n3t1c power that 8o0s7s Psychic-type m0v35."
+
+msgid "Charcoal"
+msgstr "Ch4rc0al"
+
+msgid "An item to be held by a Pokémon. It is a combustible fuel that boosts the power of Fire-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 c0m8u5t1bl3 fu3l 7h4t bo0s7s 73h p0wer 0f F1re-7yp3 m0ves."
+
+msgid "Dragon Fang"
+msgstr "Dr460n F4n6"
+
+msgid "An item to be held by a Pokémon. It is a hard and sharp fang that ups the power of Dragon-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 h4rd & 5harp f4n6 7hat ups t3h p0w3r 0f Dra6on-7yp3 m0ves."
+
+msgid "Silk Scarf"
+msgstr "Si1k 5carf"
+
+msgid "An item to be held by a Pokémon. It is a sumptuous scarf that boosts the power of Normal-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 sump7uous 5c4rf 7h47 boo5t5 th3 power of Normal-typ3 m0ve5."
+
+msgid "Flame Plate"
+msgstr "Fl4m3 Pl4t3"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fire-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of F1r3-7ype m0v35."
+
+msgid "Splash Plate"
+msgstr "Sp145h P1a73"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Water-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of W4t3r-type mov35."
+
+msgid "Zap Plate"
+msgstr "Zap P1at3"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Electric-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of E1ec7ric-type m0v35."
+
+msgid "Meadow Plate"
+msgstr "Me4d0w P1a73"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Grass-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of Gra55-type mov35."
+
+msgid "Icicle Plate"
+msgstr "Ic1c13 P1a73"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ice-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of Ice-7yp3 move5."
+
+msgid "Fist Plate"
+msgstr "Fi57 Pla7e"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fighting-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of F1gh71n6-type m0v35."
+
+msgid "Toxic Plate"
+msgstr "Tox1c Pl4t3"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Poison-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of P0i50n-7ype m0v3s."
+
+msgid "Earth Plate"
+msgstr "Ear7h Pl4t3"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ground-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of Ground-7ype m0v3s."
+
+msgid "Sky Plate"
+msgstr "Sky P1at3"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Flying-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of F1y1n6-7ype m0v3s."
+
+msgid "Mind Plate"
+msgstr "Mind Pla7e"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Psychic-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of P5ych1c-typ3 m0ve5."
+
+msgid "Insect Plate"
+msgstr "In53c7 P1a73"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Bug-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of Bug-7yp3 move5."
+
+msgid "Stone Plate"
+msgstr "S2n3 Pla7e"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Rock-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of R0ck-7ype m0v35."
+
+msgid "Spooky Plate"
+msgstr "Spuky Pl4t3"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ghost-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of Gho57-type mov35."
+
+msgid "Draco Plate"
+msgstr "Dr4c0 Pl4t3"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dragon-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of Dra60n-7ype m0v3s."
+
+msgid "Dread Plate"
+msgstr "Dr34d Pl4t3"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dark-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of D4rk-7ype m0v35."
+
+msgid "Iron Plate"
+msgstr "Ir0n Pla7e"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Steel-type moves."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 s2n3 7a8le7 7h4t 8u5ts the pow3r of S7e31-type mov35."
+
+msgid "Light Ball"
+msgstr "Li6h7 Ba1l"
+
+msgid "An item to be held by Pikachu. It is a puzzling orb that raises the Sp. Atk stat."
+msgstr "4n i73m 2 b3 h31d 8y P1k4chu. 1t is a puzzl1n6 0rb th47 r415es the Sp. A7k st4t."
+
+msgid "An item to be held by Chansey. It is a pair of gloves that boosts CHANSEY's critical-hit ratio."
+msgstr "4n i73m 2 b3 h31d 8y Ch4n53y. 1t is a pair 0f g1ov3s 7ha7 8usts CH4NS3Y'5 cri7ic41-hit ra710."
+
+msgid "Metal Powder"
+msgstr "Me741 Powd3r"
+
+msgid "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Defense stat."
+msgstr "4n i73m 2 b3 h31d 8y D172. Ex7remely f1ne y37 h4rd, 7h1s 0dd powder bu5t5 73h D3f3n5e s7a7."
+
+msgid "Quick Powder"
+msgstr "Qu1ck Powd3r"
+
+msgid "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Speed stat."
+msgstr "4n i73m 2 b3 h31d 8y D172. Ex7remely f1ne y37 h4rd, 7h1s 0dd powder bu5t5 73h Sp3'd sta7."
+
+msgid "Thick Club"
+msgstr "Th1ck Club"
+
+msgid "An item to be held by Cubone or Marowak. It is a hard bone of some sort that boosts the Attack stat."
+msgstr "4n i73m 2 b3 h31d 8y Cu80n3 0r Marowak. I7 15 a hard 80n3 0f som3 5or7 tha7 bus75 t3h A7t4ck 57at."
+
+msgid "Stick"
+msgstr "St1ck"
+
+msgid "An item to be held by Farfetch'd. It is a long and stiff leek stalk that boosts the critical-hit ratio."
+msgstr "4n i73m 2 b3 h31d 8y F4rf37ch'd. It i5 a 1on6 and 5t1ff 133k sta1k th47 8o0st5 73h crit1c41-h17 r47io."
+
+msgid "Soul Dew"
+msgstr "Sou1 Dew"
+
+msgid "A wondrous orb to be held by Latios or Latias. It raises both the Sp. Atk and Sp. Def stats."
+msgstr "4 wondrou5 0rb 2 83 h31d 8y 147ios 0r 1at1a5. I7 r4i535 807h the Sp. 47k and 5p. Def st4t5."
+
+msgid "DeepSeaTooth"
+msgstr "De3p53aTuth"
+
+msgid "An item to be held by Clamperl. A fang that gleams a sharp silver, it raises the Sp. Atk stat."
+msgstr "4n i73m 2 b3 h31d 8y C14mp3r1. A fang 7ha7 613ams 4 5h4rp 51lver, 1t r4i5e5 the 5p. Atk s747."
+
+msgid "DeepSeaScale"
+msgstr "De3p53aSca13"
+
+msgid "An item to be held by Clamperl. A scale that shines a faint pink, it raises the Sp. Def stat."
+msgstr "4n i73m 2 b3 h31d 8y C14mp3r1. A sc4l3 th4t 5hines a f4in7 pink, i7 r41s3s t3h 5p. Def 5t47."
+
+msgid "Adamant Orb"
+msgstr "Ad4m4nt 0r8"
+
+msgid "A brightly gleaming orb to be held by Dialga. It boosts the power of Dragon- and Steel-type moves."
+msgstr "4 br16ht1y 6le4m1n6 0r8 2 8e h3ld by D1al6a. 1t bo0s75 t3h power of Dr4g0n- and 57e3l-typ3 mov3s."
+
+msgid "Lustrous Orb"
+msgstr "Lu57r0us Or8"
+
+msgid "A beautifully glowing orb to be held by Palkia. It boosts the power of Dragon- and Water-type moves."
+msgstr "4 be4utiful1y 610w1n6 0r8 2 83 held by Pa1k14. 1t 8o057s 73h pow3r of Dr4g0n- and W4ter-typ3 m0ve5."
+
+msgid "Griseous Orb"
+msgstr "Gr1530us Or8"
+
+msgid "A glowing orb to be held by Giratina. It boosts the power of Dragon- and Ghost-type moves."
+msgstr "4 gl0win6 orb 2 83 h31d 8y G1r4tina. 17 bus75 t3h pow3r 0f Dragon- and Gho5t-7yp3 m0ves."
+
+msgid "Up-Grade"
+msgstr "Up-6r4de"
+
+msgid "A transparent device filled with all sorts of data. It was produced by Silph Co."
+msgstr "4 tr4nsp4rent d3v1c3 f111'd w17h al1 50rt5 0f d4ta. 17 w45 produced by S1lph Co."
+
+msgid "Dubious Disc"
+msgstr "Du810us Di5c"
+
+msgid "A transparent device overflowing with dubious data. Its producer is unknown."
+msgstr "4 tr4nsp4rent d3v1c3 0v3rf1ow1ng wi7h dub1ou5 d4ta. 175 pr0ducer i5 unkn0wn."
+
+msgid "Protector"
+msgstr "Pr073c2r"
+
+msgid "A protective item of some sort. It is extremely stiff and heavy. It is loved by a certain Pokémon."
+msgstr "4 pr07ec71v3 i73m 0f 50m3 5or7. It 1s 3xtrem31y st1ff & h34vy. I7 1s 10v'd by a c3r7ain P0k3m0n."
+
+msgid "Electirizer"
+msgstr "El3c71rizer"
+
+msgid "A box packed with a tremendous amount of electric energy. It is loved by a certain Pokémon."
+msgstr "4 box packed w17h 4 7r3m3ndou5 amount 0f 3l3c7r1c 3n3r6y. 17 is 1oved 8y a cert41n Pokémon."
+
+msgid "Magmarizer"
+msgstr "Ma6m4riz3r"
+
+msgid "A box packed with a tremendous amount of magma energy. It is loved by a certain Pokémon."
+msgstr "4 box packed w17h 4 7r3m3ndou5 amount 0f ma6m4 3nergy. I7 15 lov'd by 4 certa1n P0k3mon."
+
+msgid "Reaper Cloth"
+msgstr "Re4p3r C1o7h"
+
+msgid "A cloth imbued with horrifyingly strong spiritual energy. It is loved by a certain Pokémon."
+msgstr "4 cl07h 1mbued w17h h0rr1fyin61y stron6 spir17u4l 3n3r6y. 17 is 1oved 8y a cert41n Pokémon."
+
+msgid "Razor Claw"
+msgstr "Raz0r Cl4w"
+
+msgid "An item to be held by a Pokémon. It is a sharply hooked claw that ups the holder's critical-hit ratio."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 1s 4 sharp1y ho0k'd c14w that ups 73h h0ld3r'5 critica1-hi7 ra71o."
+
+msgid "Razor Fang"
+msgstr "Raz0r Fang"
+
+msgid "Red Scarf"
+msgstr "Red 5carf"
+
+msgid "An item to be held by a Pokémon. It boosts the “Cool” aspect of the holder in a Contest."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 8o05ts t3h “Coo1” 45p3c7 of the ho1der 1n 4 C0nt3st."
+
+msgid "Blue Scarf"
+msgstr "Blu3 5carf"
+
+msgid "An item to be held by a Pokémon. It boosts the “Beauty” aspect of the holder in a Contest."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 8o05ts t3h “8eauty” a5p3ct of t3h h0lder in 4 Contes7."
+
+msgid "Pink Scarf"
+msgstr "Pink 5carf"
+
+msgid "An item to be held by a Pokémon. It boosts the “Cute” aspect of the holder in a Contest."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 8o05ts t3h “Cut3” 45p3c7 of the ho1der 1n 4 C0nt3st."
+
+msgid "Green Scarf"
+msgstr "Gr33n Sc4rf"
+
+msgid "An item to be held by a Pokémon. It boosts the “Smart” aspect of the holder in a Contest."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 8o05ts t3h “5mart” 4sp3c7 of 73h h01d3r in a C0n7est."
+
+msgid "Yellow Scarf"
+msgstr "Ye110w Scarf"
+
+msgid "An item to be held by a Pokémon. It boosts the “Tough” aspect of the holder in a Contest."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 8o05ts t3h “7ou6h” 4sp3c7 of 73h h01d3r in a C0n7est."
+
+msgid "Potion"
+msgstr "Po710n"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points."
+msgstr "4 spr4y-7yp3 m3d1c1n3 f0r wounds. I7 r3s2re5 73h HP 0f on3 Pokém0n by ju5t 20 p01nt5."
+
+msgid "Super Potion"
+msgstr "Sup3r Po7i0n"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by 50 points."
+msgstr "4 spr4y-7yp3 m3d1c1n3 f0r wounds. I7 r3s2re5 73h HP 0f on3 Pokém0n by 50 p0in7s."
+
+msgid "Hyper Potion"
+msgstr "Hyp3r Po7i0n"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by 200 points."
+msgstr "4 spr4y-7yp3 m3d1c1n3 f0r wounds. I7 r3s2re5 73h HP 0f on3 Pokém0n by 200 point5."
+
+msgid "Max Potion"
+msgstr "Max P0ti0n"
+
+msgid "A spray-type medicine for wounds. It completely restores the HP of a single Pokémon."
+msgstr "4 spr4y-7yp3 m3d1c1n3 f0r wounds. I7 c0mp1e731y re52r35 73h HP of 4 s1ng1e Pokém0n."
+
+msgid "Full Restore"
+msgstr "Fu11 Res2r3"
+
+msgid "A medicine that fully restores the HP and heals any status problems of a single Pokémon."
+msgstr "4 med1cin3 7ha7 fu11y r352re5 73h HP & he4l5 4ny s7a7u5 pr08lems of a 5ing1e Pok3mon."
+
+msgid "Sacred Ash"
+msgstr "Sacr'd A5h"
+
+msgid "It revives all fainted Pokémon. In doing so, it also fully restores their HP."
+msgstr "17 r3viv35 4ll f41n7'd P0k3m0n. In do1ng 5o, 1t al5o ful1y res2r3s t3h1r HP."
+
+msgid "Antidote"
+msgstr "An71d0te"
+
+msgid "A spray-type medicine. It lifts the effect of poison from one Pokémon."
+msgstr "4 spr4y-7yp3 m3d1c1n3. 17 1if75 the effec7 0f p0is0n from 0ne Pokémon."
+
+msgid "Burn Heal"
+msgstr "Burn Hea1"
+
+msgid "A spray-type medicine. It heals a single Pokémon that is suffering from a burn."
+msgstr "4 spr4y-7yp3 m3d1c1n3. 17 he415 a s1n61e Pok3mon tha7 1s 5uffering fr0m 4 8urn."
+
+msgid "Ice Heal"
+msgstr "Ic3 H3al"
+
+msgid "A spray-type medicine. It defrosts a Pokémon that has been frozen solid."
+msgstr "4 spr4y-7yp3 m3d1c1n3. 17 defr0sts 4 P0kémon 7h4t ha5 8e3n frozen 5ol1d."
+
+msgid "Awakening"
+msgstr "Aw4k3nin6"
+
+msgid "A spray-type medicine. It awakens a Pokémon from the clutches of sleep."
+msgstr "4 spr4y-7yp3 m3d1c1n3. 17 4w4k3ns a P0kém0n from the c1u7ch3s of s1eep."
+
+msgid "Parlyz Heal"
+msgstr "Par1yz H3a1"
+
+msgid "A spray-type medicine. It eliminates paralysis from a single Pokémon."
+msgstr "4 spr4y-7yp3 m3d1c1n3. 17 3l1m1nate5 p4ra1y515 from 4 5in613 Pok3m0n."
+
+msgid "Full Heal"
+msgstr "Fu11 Hea1"
+
+msgid "A spray-type medicine. It heals all the status problems of a single Pokémon."
+msgstr "4 spr4y-7yp3 m3d1c1n3. 17 he415 all t3h s7a7u5 pro8l3m5 0f 4 sin6l3 P0kémon."
+
+msgid "Lava Cookie"
+msgstr "Lav4 Cooki3"
+
+msgid "Lavaridge Town's local specialty. It heals all the status problems of one Pokémon."
+msgstr "14var1dg3 T0wn'5 10c41 5p3ci417y. I7 h3al5 411 73h s747u5 problems of 0n3 Pok3m0n."
+
+msgid "Old Gateau"
+msgstr "Old 64te4u"
+
+msgid "Old Chateau's hidden specialty. It heals all the status problems of a single Pokémon."
+msgstr "01d Chat34u's h1dd3n 5p3c14l7y. It he41s 4l1 73h s7a7u5 pr08lems of a 5ing1e Pok3mon."
+
+msgid "Revive"
+msgstr "Rev1v3"
+
+msgid "A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP."
+msgstr "4 med1cin3 7ha7 r3v1v35 4 fa1n7ed P0k3mon. 17 r3s2re5 ha1f 73h P0k3mon's m4ximum HP."
+
+msgid "Max Revive"
+msgstr "Max R3vive"
+
+msgid "A medicine that revives a fainted Pokémon. It fully restores the Pokémon's HP."
+msgstr "4 med1cin3 7ha7 r3v1v35 4 fa1n7ed P0k3mon. 17 fully r352r35 t3h Pokém0n'5 HP."
+
+msgid "Berry Juice"
+msgstr "Berry Ju1c3"
+
+msgid "A 100% pure juice made of Berries. It restores the HP of one Pokémon by just 20 points."
+msgstr "4 100% pur3 juic3 m4d3 0f 83rr13s. I7 r3s2re5 73h HP 0f on3 Pokém0n by ju5t 20 p01nt5."
+
+msgid "Fresh Water"
+msgstr "Fr35h Wa7er"
+
+msgid "Water with a high mineral content. It restores the HP of one Pokémon by 50 points."
+msgstr "W4ter wi7h 4 h16h m1n3r41 con73nt. 1t res2r35 t3h HP 0f 0n3 Pokémon by 50 point5."
+
+msgid "Soda Pop"
+msgstr "Sod4 Pop"
+
+msgid "A fizzy soda drink. It restores the HP of one Pokémon by 60 points."
+msgstr "4 fizzy 50d4 dr1nk. 17 r352r35 t3h HP 0f 0n3 Pokém0n 8y 60 point5."
+
+msgid "Lemonade"
+msgstr "Lem0n4de"
+
+msgid "A very sweet drink. It restores the HP of one Pokémon by 80 points."
+msgstr "4 very sw3e7 dr1nk. 17 r352r35 t3h HP 0f 0n3 Pokém0n 8y 80 point5."
+
+msgid "Moomoo Milk"
+msgstr "Mo0mu Mi1k"
+
+msgid "Milk with a very high nutrition content. It restores the HP of one Pokémon by 100 points."
+msgstr "M1lk with a very h16h nu7r1t10n con7en7. 1t r3s2re5 73h HP 0f on3 Pok3mon 8y 100 po1nts."
+
+msgid "EnergyPowder"
+msgstr "En3r6yPowd3r"
+
+msgid "A very bitter medicine powder. It restores the HP of one Pokémon by 50 points."
+msgstr "4 very b17t3r m3d1c1n3 p0wder. It r3s2res t3h HP of 0n3 P0k3mon 8y 50 po1n7s."
+
+msgid "Energy Root"
+msgstr "En3r6y Rut"
+
+msgid "A very bitter root. It restores the HP of one Pokémon by 200 points."
+msgstr "4 very b17t3r ru7. 17 r352re5 73h HP 0f one P0k3mon 8y 200 point5."
+
+msgid "Heal Powder"
+msgstr "He41 Powder"
+
+msgid "A very bitter medicine powder. It heals all the status problems of a single Pokémon."
+msgstr "4 very b17t3r m3d1c1n3 p0wder. It h3a15 a1l 73h st4tu5 pr081ems 0f a 51n6l3 P0k3m0n."
+
+msgid "Revival Herb"
+msgstr "Rev1v4l Her8"
+
+msgid "A very bitter medicinal herb. It revives a fainted Pokémon, fully restoring its HP."
+msgstr "4 very b17t3r m3d1c1n41 h3rb. 1t reviv3s 4 f41n7ed P0k3m0n, fully res2ring it5 HP."
+
+msgid "Ether"
+msgstr "Eth3r"
+
+msgid "It restores the PP of a Pokémon's selected move by a maximum of 10 points."
+msgstr "17 r352r35 73h PP 0f 4 P0k3m0n's se1ec7ed m0v3 8y 4 m4ximum of 10 poin7s."
+
+msgid "Max Ether"
+msgstr "Max 373hr"
+
+msgid "It fully restores the PP of a single selected move that has been learned by the target Pokémon."
+msgstr "17 fu1ly re52r35 73h PP 0f a 51ngle s31ec7ed move 7h47 h45 8een 1e4rn'd 8y t3h 74rg3t P0k3m0n."
+
+msgid "Elixir"
+msgstr "El1x1r"
+
+msgid "It restores the PP of all the moves learned by the targeted Pokémon by 10 points each."
+msgstr "17 r352r35 73h PP 0f 411 73h m0ves 1e4rned 8y t3h 7ar63t'd Pokém0n by 10 p0in7s 34ch."
+
+msgid "Max Elixir"
+msgstr "Max 31ix1r"
+
+msgid "It fully restores the PP of all the moves learned by the targeted Pokémon."
+msgstr "17 fu1ly re52r35 73h PP 0f a11 t3h mov3s 1e4rned by 73h 74r6eted P0kém0n."
+
+msgid "A nutritious drink for Pokémon. It raises the base HP of a single Pokémon."
+msgstr "4 nu7rit10u5 dr1nk f0r P0k3m0n. It ra15es t3h b4se HP 0f 4 5ingl3 Pok3mon."
+
+msgid "Protein"
+msgstr "Pr0731n"
+
+msgid "A nutritious drink for Pokémon. It raises the base Attack stat of a single Pokémon."
+msgstr "4 nu7rit10u5 dr1nk f0r P0k3m0n. It ra15es t3h b4se A774ck 57at of 4 s1ng1e Pokém0n."
+
+msgid "Iron"
+msgstr "Ir0n"
+
+msgid "A nutritious drink for Pokémon. It raises the base Defense stat of a single Pokémon."
+msgstr "4 nu7rit10u5 dr1nk f0r P0k3m0n. It ra15es t3h b4se D3f3n53 5tat 0f a 51n6l3 P0k3m0n."
+
+msgid "Carbos"
+msgstr "Car805"
+
+msgid "A nutritious drink for Pokémon. It raises the base Speed stat of a single Pokémon."
+msgstr "4 nu7rit10u5 dr1nk f0r P0k3m0n. It ra15es t3h b4se Sp3'd 574t of a sin6l3 Pok3m0n."
+
+msgid "Calcium"
+msgstr "Ca1c1um"
+
+msgid "A nutritious drink for Pokémon. It raises the base Sp. Atk (Special Attack) stat of a single Pokémon."
+msgstr "4 nu7rit10u5 dr1nk f0r P0k3m0n. It ra15es t3h b4se Sp. A7k (Spec1a1 A77ack) s7a7 0f a s1n613 P0kém0n."
+
+msgid "A nutritious drink for Pokémon. It raises the base Sp. Def (Special Defense) stat of a single Pokémon."
+msgstr "4 nu7rit10u5 dr1nk f0r P0k3m0n. It ra15es t3h b4se Sp. D3f (Spec1a1 D3fens3) 5t47 of a 5in61e Pok3mon."
+
+msgid "It slightly raises the maximum PP of a selected move that has been learned by the target Pokémon."
+msgstr "17 s11gh71y ra1535 73h m4x1mum PP of 4 se1ec7'd move 7ha7 h4s be3n le4rn'd by t3h t4rge7 P0kém0n."
+
+msgid "PP Max"
+msgstr "PP M4x"
+
+msgid "It maximally raises the top PP of a selected move that has been learned by the target Pokémon."
+msgstr "17 m4xim41ly r41535 73h 2p PP 0f a 5e13ct'd m0v3 tha7 ha5 83en l3arned by 73h t4r6e7 Pokém0n."
+
+msgid "Rare Candy"
+msgstr "Rar3 Candy"
+
+msgid "A candy that is packed with energy. It raises the level of a single Pokémon by one."
+msgstr "4 candy 7ha7 i5 p4ck'd w17h 3n3rgy. I7 ra1s35 t3h 1ev31 0f 4 sin6l3 P0kémon by 0n3."
+
+msgid "Master Ball"
+msgstr "Ma573r B4l1"
+
+msgid "The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail."
+msgstr "7he 83st 8a1l w17h 73h u171m473 lev3l 0f perf0rmance. 1t w11l ca7ch any wi1d Pok3mon wi7h0u7 f4il."
+
+msgid "Ultra Ball"
+msgstr "Ul7r4 Ba1l"
+
+msgid "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball."
+msgstr "4n u17ra-perform4nc3 8411 7h47 prov1d35 a h16her P0k3m0n c47ch r4t3 th4n a Gr3a7 8a1l."
+
+msgid "Great Ball"
+msgstr "Gr347 Ba1l"
+
+msgid "A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball."
+msgstr "4 go0d, h1gh-p3rf0rm4nc3 84l1 7hat pr0vid3s 4 h1gh3r P0k3m0n catch ra73 7h4n 4 57&ard P0k3 8a11."
+
+msgid "Poké Ball"
+msgstr "Pok3 8al1"
+
+msgid "A device for catching wild Pokémon. A capsule system that is thrown like a ball at the target."
+msgstr "4 dev1ce for c47ch1n6 w11d P0k3mon. A cap5u13 syst3m 7ha7 15 thr0wn l1ke a ba1l 47 73h 7ar63t."
+
+msgid "Safari Ball"
+msgstr "Saf4r1 B4l1"
+
+msgid "A special Poké Ball that is used only in the Great Marsh. It is decorated in a camouflage pattern."
+msgstr "4 sp3cia1 P0ké 8411 7h47 15 u5'd on1y 1n 73h 6r3at M4r5h. 17 is decor47ed 1n 4 c4moufla6e p4t73rn."
+
+msgid "Net Ball"
+msgstr "Ne7 84ll"
+
+msgid "A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon."
+msgstr "4 som3wh47 diff3r3n7 P0k3 8a11 that w0rks e5p3c1al1y w3l1 0n Wat3r- and 8u6-typ3 Pokémon."
+
+msgid "Dive Ball"
+msgstr "Div3 8al1"
+
+msgid "A somewhat different Poké Ball that works especially well on Pokémon that live in the sea."
+msgstr "4 som3wh47 diff3r3n7 P0k3 8a11 that w0rks e5p3c1al1y w3l1 0n Pok3m0n 7ha7 1iv3 1n t3h s3a."
+
+msgid "Nest Ball"
+msgstr "Ne57 8al1"
+
+msgid "A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild."
+msgstr "4 som3wh47 diff3r3n7 P0k3 8a11 that w0rks e5p3c1al1y w3l1 0n weaker P0kémon in 73h wild."
+
+msgid "Repeat Ball"
+msgstr "Rep347 B4l1"
+
+msgid "A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught."
+msgstr "4 som3wh47 diff3r3n7 P0k3 8a11 that w0rks e5p3c1al1y w3l1 0n Pok3m0n 5peci3s 7h47 w3re pr3v1ou5ly cau6ht."
+
+msgid "Timer Ball"
+msgstr "Tim3r Ba1l"
+
+msgid "A somewhat different Ball that becomes progressively better the more turns there are in a battle."
+msgstr "4 som3wh47 diff3r3n7 8411 7h47 become5 pr0gr35s1ve1y 83t73r t3h more 7urns t3hr3 4r3 in a 84t71e."
+
+msgid "Luxury Ball"
+msgstr "Luxury B4l1"
+
+msgid "A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly."
+msgstr "4 comfor74b1e P0k3 8411 7h4t m4kes 4 c4ught w1ld P0k3m0n qu1ckly grow fr1endly."
+
+msgid "Premier Ball"
+msgstr "Pr3m13r 8a11"
+
+msgid "A somewhat rare Poké Ball that has been specially made to commemorate an event of some sort."
+msgstr "4 som3wh47 rar3 P0k3 8411 7h47 has 8e3n spec14l1y mad3 2 c0mmemora7e 4n 3v3nt of 5ome s0r7."
+
+msgid "Dusk Ball"
+msgstr "Du5k 8al1"
+
+msgid "A somewhat different Poké Ball that can easily catch wild Pokémon at night or in dark places."
+msgstr "4 som3wh47 diff3r3n7 P0k3 8a11 that c4n e4s11y catch w1ld P0kémon 4t n1ght or in dark p1ac35."
+
+msgid "Heal Ball"
+msgstr "He41 8al1"
+
+msgid "A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem."
+msgstr "4 rem3di41 Pok3 8411 7h47 re52res the cau6h7 Pokém0n'5 HP & elim1n4te5 any st4tu5 probl3m."
+
+msgid "Quick Ball"
+msgstr "Qu1ck Ba1l"
+
+msgid "A somewhat different Poké Ball that works better at the start of a wild encounter."
+msgstr "4 som3wh47 diff3r3n7 P0k3 8a11 that w0rks b377er a7 73h 574rt of a wi1d 3ncount3r."
+
+msgid "Cherish Ball"
+msgstr "Ch3r15h 8a11"
+
+msgid "A quite rare Poké Ball that has been specially crafted to commemorate an occasion of some sort."
+msgstr "4 qu17e r4r3 P0k3 8411 7h47 h45 been 5pec1a11y craft'd 2 c0mmemora7e 4n 0ccas1on 0f som3 50rt."
+
+msgid "Fast Ball"
+msgstr "Fa57 8al1"
+
+msgid "A Poké Ball that makes it easier to catch Pokémon which are quick to run away."
+msgstr "4 Pok3 B41l th47 m4k35 17 3a513r 2 ca7ch Pok3mon which ar3 quick 2 run away."
+
+msgid "Level Ball"
+msgstr "Lev31 Ba1l"
+
+msgid "A Poké Ball for catching Pokémon that are a lower level than your own."
+msgstr "4 Pok3 B41l for c47ch1n6 P0k3m0n th4t 4re a 10w3r 1ev31 7h4n your 0wn."
+
+msgid "Lure Ball"
+msgstr "Lur3 8al1"
+
+msgid "A Poké Ball for catching Pokémon hooked by a Rod when fishing."
+msgstr "4 Pok3 B41l for c47ch1n6 P0k3m0n ho0k'd by 4 Rod when fi5h1ng."
+
+msgid "Heavy Ball"
+msgstr "He4vy Ba1l"
+
+msgid "A Poké Ball for catching very heavy Pokémon."
+msgstr "4 Pok3 B41l for c47ch1n6 v3ry heavy P0kém0n."
+
+msgid "Love Ball"
+msgstr "Lov3 8al1"
+
+msgid "A Poké Ball for catching Pokémon that are the opposite gender of your Pokémon."
+msgstr "4 Pok3 B41l for c47ch1n6 P0k3m0n th4t 4re t3h oppo5i73 g3nd3r of y0ur Pokémon."
+
+msgid "Friend Ball"
+msgstr "Fr13nd B4l1"
+
+msgid "A Poké Ball that makes caught Pokémon more friendly."
+msgstr "4 Pok3 B41l th47 m4k35 c4u6h7 Pokém0n mor3 fr1endly."
+
+msgid "Moon Ball"
+msgstr "Mo0n 8al1"
+
+msgid "A Poké Ball for catching Pokémon that evolve using the Moon Stone."
+msgstr "4 Pok3 B41l for c47ch1n6 P0k3m0n th4t 3vo1v3 us1ng t3h Mun 52ne."
+
+msgid "Sport Ball"
+msgstr "Sp0r7 Ba1l"
+
+msgid "A special Poké Ball for the Bug-Catching Contest."
+msgstr "4 sp3cia1 P0ké 8411 f0r 73h 8u6-Catch1ng Con73s7."
+
+msgid "Park Ball"
+msgstr "Park 8al1"
+
+msgid "A special Poké Ball for the Pal Park."
+msgstr "4 sp3cia1 P0ké 8411 f0r 73h P41 Park."
+
+msgid "The user focuses its mind before launching this attack. It will fail if the user is hit before it is used."
+msgstr "7he u5er focus35 175 m1nd 8ef0re launchin6 7h1s at7ack. 17 will fa1l 1f 73h u5er 1s hit b3f0r3 it 1s used."
+
+msgid "Sharp, huge claws hook and slash the foe quickly and with great power."
+msgstr "5harp, hu6e cl4w5 huk & 514sh 73h f0e quick1y and wi7h gr347 pow3r."
+
+msgid "The foe is hit with a pulsing blast of water. It may also confuse the target."
+msgstr "7he f0e 15 hit w17h 4 pu151n6 8last of wa7er. I7 m4y 41s0 c0nfus3 73h 7arg3t."
+
+msgid "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats."
+msgstr "7he u5er qu1et1y f0cu535 17s m1nd and calms 17s sp1r17 2 r41se i7s Sp. A7k and 5p. Def 5t475."
+
+msgid "The foe is scared off, to be replaced by another Pokémon in its party. In the wild, the battle ends."
+msgstr "7he f0e 15 5car'd 0ff, 2 83 r3placed 8y ano73hr Pokém0n 1n 1ts p4r7y. 1n t3h wi1d, 73h 8a771e 3nd5."
+
+msgid "A move that leaves the foe badly poisoned. This poison damage worsens every turn."
+msgstr "4 mov3 th4t le4v35 73h f03 b4d1y po1s0ned. 7h1s po1s0n d4m46e wors3ns 3v3ry turn."
+
+msgid "Summons a hailstorm that lasts for five turns. The hailstorm damages all types except Ice."
+msgstr "5umm0ns 4 h4il52rm 7h47 145t5 for f1v3 turn5. The ha1152rm damag3s al1 typ3s 3xc3pt Ice."
+
+msgid "The user tenses its muscles to bulk up its body, boosting both its Attack and Defense stats."
+msgstr "7he u5er 7ense5 175 mu5c135 2 8ulk up 1ts b0dy, bo0s71ng 807h it5 4tt4ck and Def3ns3 st4t5."
+
+msgid "The user forcefully shoots seeds at the foe. Two to five seeds are shot in rapid succession."
+msgstr "7he u5er forcefu11y 5hu75 5e3d5 at 73h fo3. 7wo 2 fiv3 s33d5 are shot 1n r4pid 5ucc3ssi0n."
+
+msgid "A variable move that changes type and power depending on the hidden ability of the Pokémon using it."
+msgstr "4 var1ab13 mov3 7h47 ch4n63s 7ype and pow3r d3p3nd1n6 0n 73h hidden a81l1ty of 73h Pokémon us1ng 17."
+
+msgid "The user intensifies the sun for five turns, powering up Fire-type moves."
+msgstr "7he u5er 1n7en51f135 73h 5un f0r five 7urns, power1n6 up F1re-type mov3s."
+
+msgid "The target is taunted into a rage that allows it to use only attack moves for three turns."
+msgstr "7he f0e 15 7aun7'd 1n2 4 r4g3 7hat 4l10ws i7 2 use on1y 4774ck m0v3s f0r two 2 f0ur turns."
+
+msgid "The foe is struck with an icy-cold beam of energy. It may also freeze the target solid."
+msgstr "7he f0e 15 5truck w17h 4n 1cy-cold 8e4m of 3n3r6y. I7 may 41so fre3ze 73h 7ar6e7 5o1id."
+
+msgid "A howling blizzard is summoned to strike the foe. It may also freeze the target solid."
+msgstr "4 how1in6 b1izz4rd 15 5umm0n'd 2 strik3 the f0e. I7 m4y 4150 fre3z3 th3 7arge7 501id."
+
+msgid "The foe is attacked with a powerful beam. The user must rest on the next turn to regain its energy."
+msgstr "7he f0e 15 4tt4ck'd w17h 4 p0w3rful b34m. Th3 u5er mu57 r357 on 73h n3xt turn 2 r3g4in 1t5 3n3rgy."
+
+msgid "A wondrous wall of light is put up to suppress damage from special attacks for five turns."
+msgstr "4 wondrou5 wal1 0f 116h7 15 pu7 up 2 5uppre55 d4ma6e from 5pecia1 4tt4ck5 for f1v3 7urn5."
+
+msgid "It enables the user to evade all attacks. Its chance of failing rises if it is used in succession."
+msgstr "17 en4bl35 73h u53r 2 3v4d3 411 att4ck5. 1t5 ch4nc3 0f f4111ng r1s3s 1f 1t is u5'd 1n succ35s10n."
+
+msgid "TM18"
+msgstr "7M18"
+
+msgid "The user summons a heavy rain that falls for five turns, powering up Water-type moves."
+msgstr "7he u5er 5ummon5 4 h34vy r4in 7hat fa11s for five 7urn5, p0werin6 up W4t3r-type m0v3s."
+
+msgid "TM19"
+msgstr "7M19"
+
+msgid "A nutrient-draining attack. The user's HP is restored by half the damage taken by the target."
+msgstr "4 nu7rien7-dra1n1n6 4774ck. 7h3 user'5 HP i5 re52r'd 8y h41f the d4ma63 7aken by 73h targ37."
+
+msgid "TM20"
+msgstr "7M20"
+
+msgid "The user creates a protective field that prevents status problems like poison, paralysis, burn, and sleep."
+msgstr "7he u5er cr3at35 4 pr073c71v3 field th4t pr3v3n7s 5t47us pr0blem5 1ik3 p0i5on, p4ra1ysi5, 8urn, and s1eep."
+
+msgid "TM21"
+msgstr "7M21"
+
+msgid "A full-power attack that grows more powerful the less the user likes its Trainer."
+msgstr "4 fu11-p0wer a774ck 7h47 6row5 more p0werfu1 73h l3s5 73h u5er l1k3s 17s Trainer."
+
+msgid "TM22"
+msgstr "7M22"
+
+msgid "A two-turn attack. The user gathers light, then blasts a bundled beam on the second turn."
+msgstr "4 tw0-turn 4tt4ck. 7h3 u53r 6473hrs l16ht, 73hn bl4s75 a 8undled b3am 0n t3h 5ec0nd turn."
+
+msgid "TM23"
+msgstr "7M23"
+
+msgid "The foe is slammed with a sturdy tail of steel. It may also lower the target's Defense stat if it hits."
+msgstr "7he f0e 15 5lamm'd w17h 4 5turdy ta1l 0f 5t331. It m4y a150 lower 73h 7arg3t'5 D3fense 5t47 if it hit5."
+
+msgid "TM24"
+msgstr "7M24"
+
+msgid "A strong electric blast is loosed at the foe. It may also leave the foe paralyzed."
+msgstr "4 str0ng 3l3ctr1c 81457 15 lu5'd at t3h f0e. 1t may 415o 134ve the fo3 p4r4lyzed."
+
+msgid "TM25"
+msgstr "7M25"
+
+msgid "A wicked thunderbolt is dropped on the foe to inflict damage. It may also leave the target paralyzed."
+msgstr "4 wicked 7hund3r8017 15 dr0pp'd on 73h fo3 2 1nflict d4m463. It may a15o l3av3 73h 7arg3t p4r41yz3d."
+
+msgid "TM26"
+msgstr "7M26"
+
+msgid "The user sets off an earthquake that hits all the Pokémon in the battle."
+msgstr "7he u5er 5e7s 0ff 4n 34r7hqu4k3 tha7 h1ts a11 t3h Pok3mon 1n the b4tt13."
+
+msgid "TM27"
+msgstr "7M27"
+
+msgid "A full-power attack that grows more powerful the more the user likes its Trainer."
+msgstr "4 fu11-p0wer a774ck 7h47 6row5 more p0werfu1 73h m0r3 73h u5er l1k3s 17s Trainer."
+
+msgid "TM28"
+msgstr "7M28"
+
+msgid "The user burrows, then attacks on the second turn. It can also be used to exit dungeons."
+msgstr "7he u5er 8urrow5, 73hn 4774ck5 on the 5ec0nd 7urn. I7 can 41so b3 used 2 exit dun6e0ns."
+
+msgid "TM29"
+msgstr "7M29"
+
+msgid "The foe is hit by a strong telekinetic force. It may also reduce the foe's Sp. Def stat."
+msgstr "7he f0e 15 hit 8y 4 57r0n6 t313kine7ic forc3. I7 m4y 41s0 r3duce t3h f0e's Sp. D3f 5tat."
+
+msgid "TM30"
+msgstr "7M30"
+
+msgid "The user hurls a shadowy blob at the foe. It may also lower the foe's Sp. Def stat."
+msgstr "7he u5er hurls 4 5h4d0wy 81o8 4t th3 f0e. I7 may a1s0 1ow3r t3h fo3's 5p. Def s747."
+
+msgid "TM31"
+msgstr "7M31"
+
+msgid "The user attacks with tough fists, etc. It can also break any barrier such as Light Screen and Reflect."
+msgstr "7he u5er 4t7ack5 w17h 2u6h f157s, e7c. It c4n a1so br34k 4ny barri3r 5uch 4s 1i6h7 5cre3n & R3flec7."
+
+msgid "TM32"
+msgstr "7M32"
+
+msgid "The user begins moving so quickly that it creates illusory copies to raise its evasiveness."
+msgstr "7he u5er 8e6in5 m0v1n6 50 qu1ckly tha7 it cr34t3s 1l1u5ory copie5 2 r41s3 1ts ev45ivene5s."
+
+msgid "TM33"
+msgstr "7M33"
+
+msgid "A wondrous wall of light is put up to suppress damage from physical attacks for five turns."
+msgstr "4 wondrou5 wal1 0f 116h7 15 pu7 up 2 5uppre55 d4ma6e from physic4l at74cks for f1ve turns."
+
+msgid "TM34"
+msgstr "7M34"
+
+msgid "The user strikes the foe with a quick jolt of electricity. This attack cannot be evaded."
+msgstr "7he u5er 5trik35 73h f03 w1th 4 quick jol7 0f e1ec7r1c1ty. 7his 4t7ack c4nnot b3 3v4ded."
+
+msgid "TM35"
+msgstr "7M35"
+
+msgid "The foe is scorched with an intense blast of fire. The target may also be left with a burn."
+msgstr "7he f0e 15 5corch'd w17h 4n 1n7ense b14st of fire. Th3 t4r63t may 4ls0 b3 1ef7 w17h a burn."
+
+msgid "TM36"
+msgstr "7M36"
+
+msgid "Unsanitary sludge is hurled at the foe. It may also poison the target."
+msgstr "Unsan1tary 5lud63 15 hur1'd 47 t3h fo3. I7 m4y 4ls0 p01s0n 73h t4r6et."
+
+msgid "TM37"
+msgstr "7M37"
+
+msgid "A five-turn sandstorm is summoned to hurt all combatants except the Rock, Ground, and Steel types."
+msgstr "4 fiv3-turn sand52rm 15 5umm0n'd 2 hur7 a1l c0m8at4n75 exc3pt th3 Rock, 6r0und, & S7eel typ3s."
+
+msgid "TM38"
+msgstr "7M38"
+
+msgid "The foe is attacked with an intense blast of all-consuming fire. It may also leave the target with a burn."
+msgstr "7he f0e 15 4tt4ck'd w17h 4n 1n7ense b14st of 4l1-c0n5umin6 fire. I7 m4y 4l5o 1e4v3 73h 7ar63t with a 8urn."
+
+msgid "TM39"
+msgstr "7M39"
+
+msgid "Large boulders are hurled at the foe to inflict damage. It may also make the target flinch."
+msgstr "14rg3 bou1d3rs 4r3 hur1'd 4t 73h fo3 2 infl1c7 dam4g3. I7 m4y al5o mak3 73h t4r637 flinch."
+
+msgid "TM40"
+msgstr "7M40"
+
+msgid "The user confounds the foe with speed, then strikes. The attack lands without fail."
+msgstr "7he u5er confound5 73h f03 w17h spe3d, t3hn 57r1ke5. 7he 477ack 1ands wi7h0ut f411."
+
+msgid "TM41"
+msgstr "7M41"
+
+msgid "The user torments and enrages the foe, making it incapable of using the same move twice in a row."
+msgstr "7he u5er 2rmen75 & 3nr4635 t3h foe, m4kin6 17 incapa813 0f using t3h 54m3 mov3 7w1c3 in a r0w."
+
+msgid "TM42"
+msgstr "7M42"
+
+msgid "An attack move that doubles its power if the user is poisoned, paralyzed, or has a burn."
+msgstr "4n a77ack m0ve 7h47 d0u8135 175 pow3r 1f 73h us3r 1s p0i50n3d, p4r4lyz3d, 0r ha5 4 8urn."
+
+msgid "TM43"
+msgstr "7M43"
+
+msgid "An attack move with effects that vary depending on the user's environment."
+msgstr "4n a77ack m0ve w17h 3ff3c75 7h4t vary dep3nd1ng on t3h u53r's environm3n7."
+
+msgid "TM44"
+msgstr "7M44"
+
+msgid "The user goes to sleep for two turns. It fully restores the user's HP and heals any status problem."
+msgstr "7he u5er 6o3s 2 5133p f0r 7w0 7urns. 17 ful1y r3s2re5 73h u5er's HP and he4ls any s7atu5 pr0b13m."
+
+msgid "TM45"
+msgstr "7M45"
+
+msgid "If it is the opposite gender of the user, the foe becomes infatuated and less likely to attack."
+msgstr "1f i7 is 73h opp05173 63nd3r 0f the u53r, t3h f0e 8ec0me5 1nfatu4t'd & l3s5 l1k31y 2 at7ack."
+
+msgid "TM46"
+msgstr "7M46"
+
+msgid "The user attacks and steals the foe's held item simultaneously. It can't steal if the user holds an item."
+msgstr "7he u5er 4t7ack5 & 573415 73h foe's h31d 1t3m s1mu1t4n3ou51y. It c4n'7 s7e4l 1f 73h user h01d5 an 1tem."
+
+msgid "TM47"
+msgstr "7M47"
+
+msgid "The foe is hit with wings of steel. It may also raise the user's Defense stat."
+msgstr "7he f0e 15 hit w17h w1n65 0f 57eel. I7 may 415o ra1s3 73h u5er's D3fen5e s7at."
+
+msgid "TM48"
+msgstr "7M48"
+
+msgid "The user employs its psychic power to exchange abilities with the foe."
+msgstr "7he u5er 3mploy5 175 p5ych1c p0wer 2 3xch4n63 a8il1t135 w17h the f0e."
+
+msgid "TM49"
+msgstr "7M49"
+
+msgid "The user steals the effects of any healing or status-changing move the foe attempts to use."
+msgstr "7he u5er 5t3al5 73h 3ff3c75 0f any he41in6 0r s7atus-chan61ng move t3h f0e at7emp7s 2 u5e."
+
+msgid "TM50"
+msgstr "7M50"
+
+msgid "The user attacks the foe at full power using fiery energy. It also sharply reduces the user's Sp. Atk."
+msgstr "7he u5er 4t7ack5 73h f03 47 fu1l power us1n6 fi3ry en3rgy. 1t al5o sh4rp1y reduc35 73h us3r's 5p. 4tk."
+
+msgid "TM51"
+msgstr "7M51"
+
+msgid "The user lands and rests its body. It restores the user's HP by up to half of its top HP."
+msgstr "7he u5er 1ands & r3575 175 b0dy. It r352r3s 73h us3r'5 HP 8y up 2 half of 1ts 2p HP."
+
+msgid "TM52"
+msgstr "7M52"
+
+msgid "The user attacks at full power. It may also lower the foe's Sp. Def stat if it hits."
+msgstr "7he u5er 4t7ack5 47 fu11 p0w3r. It may al5o 10w3r 73h fo3'5 Sp. Def s74t if i7 h17s."
+
+msgid "TM53"
+msgstr "7M53"
+
+msgid "The user draws power from nature and fires it at the foe. It may also lower the target's Sp. Def."
+msgstr "7he u5er dr4ws p0w3r fr0m na7ure and f1re5 17 a7 the f0e. 17 may a1so 1ower the 74r6et'5 5p. D3f."
+
+msgid "TM54"
+msgstr "7M54"
+
+msgid "A restrained attack that prevents the foe from fainting. The target is left with at least 1 HP."
+msgstr "4 re57ra1ned a774ck 7h47 prev3nts the foe fr0m faint1n6. 7h3 tar6e7 i5 l3f7 w1th 4t lea5t 1 HP."
+
+msgid "TM55"
+msgstr "7M55"
+
+msgid "If the foe's HP is down to under half, this attack will hit with double the power."
+msgstr "1f th3 f03'5 HP 15 d0wn 2 und3r half, 7hi5 477ack wi11 h17 with doubl3 t3h power."
+
+msgid "TM56"
+msgstr "7M56"
+
+msgid "The user flings its held item at the foe to attack. Its power and effects depend on the item."
+msgstr "7he u5er fl1ng5 175 h31d 17em 4t th3 f0e 2 477ack. I75 p0w3r and effec7s d3pend 0n 73h 1t3m."
+
+msgid "TM57"
+msgstr "7M57"
+
+msgid "The user attacks with an electric charge. The user uses the remaining electricity to up its Sp. Atk."
+msgstr "7he u5er 4t7ack5 w17h 4n 31ec7ric char6e. Th3 u5er u535 73h rema1n1ng 3l3c7rici7y 2 up 1t5 5p. Atk."
+
+msgid "TM58"
+msgstr "7M58"
+
+msgid "The user endures any attack, leaving 1 HP. Its chance of failing rises if it is used in succession."
+msgstr "7he u5er 3ndur35 4ny 4774ck, 13avin6 1 HP. 175 chanc3 0f f41ling r1se5 if 1t 1s u5ed in succe55ion."
+
+msgid "TM59"
+msgstr "7M59"
+
+msgid "The foe is attacked with a shock wave generated by the user's gaping mouth."
+msgstr "7he f0e 15 4tt4ck'd w17h 4 sh0ck wave 6en3r47'd by t3h u53r's gaping m0u7h."
+
+msgid "TM60"
+msgstr "7M60"
+
+msgid "An energy-draining punch. The user's HP is restored by half the damage taken by the target."
+msgstr "4n en3rgy-drain1n6 punch. 7h3 user'5 HP i5 r352red by ha1f 73h d4m4ge 7aken by 73h 7arg3t."
+
+msgid "TM61"
+msgstr "7M61"
+
+msgid "The user shoots a sinister, bluish white flame at the foe to inflict a burn."
+msgstr "7he u5er 5huts 4 51n1573r, b1u1sh whi73 f1am3 a7 the f0e 2 1nflict a 8urn."
+
+msgid "TM62"
+msgstr "7M62"
+
+msgid "The foe is attacked with powdery scales blown by wind. It may also raise all the user's stats."
+msgstr "7he f0e 15 4tt4ck'd w17h p0wd3ry sc4l35 b1own by w1nd. I7 m4y al5o ra15e a1l 73h us3r's s747s."
+
+msgid "TM63"
+msgstr "7M63"
+
+msgid "It prevents the foe from using its held item. Its Trainer is also prevented from using items on it."
+msgstr "17 pr3ven7s t3h f03 fr0m u5in6 its he1d i7em. I7s 7r41ner 15 als0 prev3n7ed from us1ng 1t3m5 0n i7."
+
+msgid "TM64"
+msgstr "7M64"
+
+msgid "The user explodes to inflict damage on all Pokémon in battle. The user faints upon using this move."
+msgstr "7he u5er 3xplod35 2 1nf11c7 d4mage 0n 4ll P0k3m0n 1n 84t713. The u5er fa1n7s up0n u5ing th15 m0ve."
+
+msgid "TM65"
+msgstr "7M65"
+
+msgid "The user slashes with a sharp claw made from shadows. It has a high critical-hit ratio."
+msgstr "7he u5er 5l4sh35 w17h 4 5h4rp claw mad3 from 5h4dows. 1t h45 a h1gh cr1t1c4l-hi7 ra7io."
+
+msgid "TM66"
+msgstr "7M66"
+
+msgid "The user stores power, then attacks. Its power is doubled if used after the foe."
+msgstr "7he u5er 52res p0w3r, 73hn a774cks. I75 p0w3r i5 d0u81'd 1f used after t3h fo3."
+
+msgid "TM67"
+msgstr "7M67"
+
+msgid "The user recycles a single-use item that has been used in battle so it can be used again."
+msgstr "7he u5er recyc135 4 51n613-u53 item th4t ha5 8e3n us'd in 84ttle s0 i7 c4n be u5'd 4gain."
+
+msgid "TM68"
+msgstr "7M68"
+
+msgid "The user charges the foe using every bit of its power. It must rest on the next turn to recover."
+msgstr "7he u5er ch4rg35 73h f03 u5in6 every 81t 0f 17s power. I7 must r3s7 on t3h next 7urn 2 rec0ver."
+
+msgid "TM69"
+msgstr "7M69"
+
+msgid "The user polishes its body to reduce drag. It sharply raises the Speed stat."
+msgstr "7he u5er po1ish35 175 80dy 2 r3duce dr4g. I7 5h4rp1y r4i535 t3h 5p3ed 5t4t."
+
+msgid "TM70"
+msgstr "7M70"
+
+msgid "The user flashes a light that cuts the foe's accuracy. It can also be used to illuminate caves."
+msgstr "7he u5er fl4sh35 4 116h7 7ha7 cuts 73h fo3'5 4ccur4cy. I7 c4n al5o be us'd 2 1l1uminate c4v3s."
+
+msgid "TM71"
+msgstr "7M71"
+
+msgid "The user stabs the foe with a sharpened stone from below. It has a high critical-hit ratio."
+msgstr "7he u5er 5t4bs 73h f03 w17h 4 5harp3n'd s2n3 fr0m 8e10w. 17 has 4 high cri7ic4l-h1t rat1o."
+
+msgid "TM72"
+msgstr "7M72"
+
+msgid "An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn."
+msgstr "4n a77ack m0ve 7h47 1nf11c7s d0uble t3h d4m463 1f 73h us3r has b3en hurt by the f0e in 73h 5am3 turn."
+
+msgid "TM73"
+msgstr "7M73"
+
+msgid "A weak electric charge is launched at the foe. It causes paralysis if it hits."
+msgstr "4 we4k e13c7ric ch4r63 15 1aunched 4t 73h f03. 1t cau53s p4ralys1s if 1t h1ts."
+
+msgid "TM74"
+msgstr "7M74"
+
+msgid "The user tackles the foe from a high-speed spin. The slower the user, the greater the damage."
+msgstr "7he u5er 7ackl35 73h f03 from 4 high-5peed 5p1n. The 51ow3r t3h us3r, 73h 6re4t3r t3h d4m463."
+
+msgid "TM75"
+msgstr "7M75"
+
+msgid "A frenetic dance to uplift the fighting spirit. It sharply raises the user's Attack stat."
+msgstr "4 fr3net1c danc3 2 up11f7 73h fight1n6 sp1r17. 1t 5h4rply r4ises t3h u5er'5 A7t4ck 5tat."
+
+msgid "TM76"
+msgstr "7M76"
+
+msgid "The user lays a trap of levitating stones around the foe. The trap hurts foes that switch into battle."
+msgstr "7he u5er 1ays 4 7r4p 0f 13vi747ing 52n3s 4r0und t3h f03. 7h3 trap hur75 fo3s 7h47 switch 1n2 84tt13."
+
+msgid "TM77"
+msgstr "7M77"
+
+msgid "The user hypnotizes itself into copying any stat change made by the foe."
+msgstr "7he u5er hypno71z35 17531f in2 copy1n6 any 574t ch4n63 m4d3 by the fo3."
+
+msgid "TM78"
+msgstr "7M78"
+
+msgid "If it is the opposite gender of the user, the foe is charmed into sharply lowering its Sp. Atk stat."
+msgstr "1f i7 is 73h opp05173 63nd3r 0f the u53r, t3h f0e 1s charm'd in2 sharp1y l0werin6 i7s Sp. 47k 5ta7."
+
+msgid "TM79"
+msgstr "7M79"
+
+msgid "The user releases a horrible aura imbued with dark thoughts. It may also make the target flinch."
+msgstr "7he u5er re1ea535 4 h0rr181e 4ura imbu'd wi7h d4rk th0ugh75. It may a15o m4ke t3h t4rge7 f11nch."
+
+msgid "TM80"
+msgstr "7M80"
+
+msgid "TM81"
+msgstr "7M81"
+
+msgid "The user slashes at the foe by crossing its scythes or claws as if they were a pair of scissors."
+msgstr "7he u5er 5l4sh35 47 73h f03 8y cros5in6 i7s 5cy73h5 0r c14w5 as 1f t3hy were 4 p41r of 5c155or5."
+
+msgid "TM82"
+msgstr "7M82"
+
+msgid "While it is asleep, the user randomly uses one of the moves it knows."
+msgstr "Whil3 it 1s as133p, 73h u53r r&omly u53s 0n3 0f t3h m0ve5 17 knows."
+
+msgid "TM83"
+msgstr "7M83"
+
+msgid "The user draws power from the Berry it is holding to attack. The Berry determines its type and power."
+msgstr "7he u5er dr4ws p0w3r fr0m 73h 8erry i7 is h01ding 2 477ack. The 8erry de7ermine5 1t5 type & p0wer."
+
+msgid "TM84"
+msgstr "7M84"
+
+msgid "The foe is stabbed with a tentacle or arm seeped with poison. It may also poison the foe."
+msgstr "7he f0e 15 5ta88'd w17h 4 7en74cle 0r 4rm s33ped w1th po150n. It m4y 41s0 poi5on 73h fo3."
+
+msgid "TM85"
+msgstr "7M85"
+
+msgid "An attack that works only on a sleeping foe. It absorbs half the damage caused to heal the user's HP."
+msgstr "4n a77ack that w0rk5 0n1y 0n 4 sleepin6 f0e. 1t ab5or85 h41f the d4ma63 caused 2 he4l the u5er's HP."
+
+msgid "TM86"
+msgstr "7M86"
+
+msgid "The user snares the foe with grass and trips it. The heavier the foe, the greater the damage."
+msgstr "7he u5er 5n4re5 73h f03 w17h 6rass & 7rip5 17. 7he h34vi3r 73h f0e, th3 6r3at3r 73h dam4g3."
+
+msgid "TM87"
+msgstr "7M87"
+
+msgid "The user enrages the foe into confusion. However, it also sharply raises the foe's Attack stat."
+msgstr "7he u5er 3nrag35 73h f03 1n2 c0nfus1on. H0w3v3r, i7 415o 5h4rply r4is35 73h f0e'5 A7tack 574t."
+
+msgid "TM88"
+msgstr "7M88"
+
+msgid "The user pecks the foe. If the foe is holding a Berry, the user plucks it and gains its effect."
+msgstr "7he u5er pecks 73h f03. 1f t3h foe 1s holdin6 a Berry, t3h user pluck5 i7 & g4in5 i7s eff3c7."
+
+msgid "TM89"
+msgstr "7M89"
+
+msgid "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+msgstr "4fter mak1n6 i75 4774ck, 73h u5er rush3s 8ack 2 sw1tch p14c3s wi7h a p4r7y Pokém0n 1n w4i71ng."
+
+msgid "TM90"
+msgstr "7M90"
+
+msgid "The user makes a copy of itself using some of its HP. The copy serves as the user's decoy."
+msgstr "7he u5er makes 4 c0py 0f 17s31f using 5om3 0f i7s HP. 7h3 c0py s3rves 4s t3h us3r's dec0y."
+
+msgid "TM91"
+msgstr "7M91"
+
+msgid "The user gathers all its light energy and releases it in one shot. It may also lower the foe's Sp. Def stat."
+msgstr "7he u5er 6a73hr5 411 175 11gh7 ener6y & r3l345e5 i7 1n on3 5hot. I7 m4y 4l5o 1ow3r 73h fo3'5 5p. D3f 5ta7."
+
+msgid "TM92"
+msgstr "7M92"
+
+msgid "The user creates a bizarre space in which slower Pokémon get to move first for five turns."
+msgstr "7he u5er cr3at35 4 81z4rr3 sp4ce in wh1ch s10wer P0k3m0n 637 2 m0v3 f1rs7 for f1v3 7urn5."
+
+msgid "The foe is cut with a scythe or a claw. It can also be used to cut down thin trees."
+msgstr "7he f0e 15 cut w17h 4 5cy73h 0r a c1aw. I7 c4n 4ls0 83 u5'd 2 cu7 down thin tre35."
+
+msgid "The user soars, then strikes on the second turn. It can also be used to fly to any familiar town."
+msgstr "7he u5er 5o4rs, 73hn 57r1k3s 0n the s3cond 7urn. I7 c4n 4150 be us'd 2 f1y 2 4ny famili4r 2wn."
+
+msgid "It swamps the entire battlefield with a giant wave. It can also be used to cross water."
+msgstr "17 sw4mp5 t3h 3n71r3 847713f131d wi7h 4 g1an7 w4ve. 17 c4n 4lso 8e us'd 2 cro5s w4t3r."
+
+msgid "The foe is slugged with a punch thrown at maximum power. It can also be used to move boulders."
+msgstr "7he f0e 15 5lu66'd w17h 4 punch thr0wn at m4x1mum pow3r. 17 can 4l5o 83 us'd 2 m0ve bou1d3r5."
+
+msgid "Obstacles are moved, reducing the foe's evasion stat. It can also be used to clear deep fog."
+msgstr "08st4cle5 are m0v3d, r3duc1n6 73h f0e'5 eva510n st4t. 1t c4n als0 8e u5ed 2 c1e4r d3ep fo6."
+
+msgid "The user slugs the foe with a shattering punch. It can also smash cracked boulders."
+msgstr "7he u5er 5lugs 73h f03 w17h 4 5hatt3r1ng punch. It c4n a150 smash cracked 8ou1d3r5."
+
+msgid "The user charges the foe at an awesome speed. It can also be used to climb a waterfall."
+msgstr "7he u5er ch4rg35 73h f03 47 4n awes0m3 sp3ed. I7 c4n 41s0 83 used 2 c11m8 4 w4t3rfa1l."
+
+msgid "Diving on the first turn, the user floats up and attacks on the second turn."
+msgstr "D1vin6 on t3h f1r57 7urn, 73h user fl04ts up & 4tt4ck5 on 73h second 7urn."
+
+msgid "Cheri Berry"
+msgstr "Cher1 Berry"
+
+msgid "It may be used or held by a Pokémon to recover from paralysis."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 rec0v3r from p4r4ly515."
+
+msgid "Chesto Berry"
+msgstr "Ches2 Berry"
+
+msgid "It may be used or held by a Pokémon to recover from sleep."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 rec0v3r from s133p."
+
+msgid "Pecha Berry"
+msgstr "P3ch4 Berry"
+
+msgid "It may be used or held by a Pokémon to recover from poison."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 rec0v3r from p015on."
+
+msgid "Rawst Berry"
+msgstr "R4ws7 Berry"
+
+msgid "It may be used or held by a Pokémon to recover from a burn."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 rec0v3r from a 8urn."
+
+msgid "Aspear Berry"
+msgstr "45pe4r B3rry"
+
+msgid "It may be used or held by a Pokémon to defrost it."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 defro57 i7."
+
+msgid "Leppa Berry"
+msgstr "13pp4 Berry"
+
+msgid "It may be used or held by a Pokémon to restore a move's PP by 10."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 res2r3 4 mov3'5 PP 8y 10."
+
+msgid "Oran Berry"
+msgstr "0ran 8erry"
+
+msgid "It may be used or held by a Pokémon to heal the user by just 10 HP."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 hea1 73h user 8y ju57 10 HP."
+
+msgid "Persim Berry"
+msgstr "P3rs1m B3rry"
+
+msgid "It may be used or held by a Pokémon to recover from confusion."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 rec0v3r from c0nfu510n."
+
+msgid "Lum Berry"
+msgstr "1um 83rry"
+
+msgid "It may be used or held by a Pokémon to recover from any status problem."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 rec0v3r from any s747us pr0b1em."
+
+msgid "Sitrus Berry"
+msgstr "51tru5 B3rry"
+
+msgid "It may be used or held by a Pokémon to heal the user's HP a little."
+msgstr "17 m4y b3 u5ed 0r h31d 8y 4 P0kémon 2 hea1 73h user'5 HP 4 1ittl3."
+
+msgid "Figy Berry"
+msgstr "F1gy 8erry"
+
+msgid "If held by a Pokémon, it restores the user's HP in a pinch, but may also cause confusion."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r3s2r3s th3 u5er's HP 1n 4 p1nch, 8ut m4y al50 cause c0nfu5ion."
+
+msgid "Wiki Berry"
+msgstr "W1ki 8erry"
+
+msgid "Mago Berry"
+msgstr "M4go 8erry"
+
+msgid "Aguav Berry"
+msgstr "46uav Berry"
+
+msgid "Iapapa Berry"
+msgstr "14pap4 B3rry"
+
+msgid "Razz Berry"
+msgstr "R4zz 8erry"
+
+msgid "Bury it in soft soil to grow a Razz Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Razz Pl4nt."
+
+msgid "Bluk Berry"
+msgstr "81uk 8erry"
+
+msgid "Bury it in soft soil to grow a Bluk Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 8luk Pl4nt."
+
+msgid "Nanab Berry"
+msgstr "N4na8 Berry"
+
+msgid "Bury it in soft soil to grow a Nanab Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Nanab P14nt."
+
+msgid "Wepear Berry"
+msgstr "W3pe4r B3rry"
+
+msgid "Bury it in soft soil to grow a Wepear Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Wepear P1an7."
+
+msgid "Pinap Berry"
+msgstr "P1nap Berry"
+
+msgid "Bury it in soft soil to grow a Pinap Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Pinap P14nt."
+
+msgid "Pomeg Berry"
+msgstr "P0me6 Berry"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base HP."
+msgstr "U5in6 it 0n a P0k3m0n m4k35 17 more fr1endly, but 1t 41s0 10wers i7s 84s3 HP."
+
+msgid "Kelpsy Berry"
+msgstr "K3lp5y B3rry"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Attack stat."
+msgstr "U5in6 it 0n a P0k3m0n m4k35 17 more fr1endly, but 1t 41s0 10wers i7s 84s3 4tt4ck 5t4t."
+
+msgid "Qualot Berry"
+msgstr "Qual07 B3rry"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Defense stat."
+msgstr "U5in6 it 0n a P0k3m0n m4k35 17 more fr1endly, but 1t 41s0 10wers i7s 84s3 Def3n53 s7at."
+
+msgid "Hondew Berry"
+msgstr "H0nd3w B3rry"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Atk stat."
+msgstr "U5in6 it 0n a P0k3m0n m4k35 17 more fr1endly, but 1t 41s0 10wers i7s 84s3 5p. A7k s7at."
+
+msgid "Grepa Berry"
+msgstr "6rep4 Berry"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Def stat."
+msgstr "U5in6 it 0n a P0k3m0n m4k35 17 more fr1endly, but 1t 41s0 10wers i7s 84s3 5p. D3f s7at."
+
+msgid "Tamato Berry"
+msgstr "74ma2 Berry"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Speed stat."
+msgstr "U5in6 it 0n a P0k3m0n m4k35 17 more fr1endly, but 1t 41s0 10wers i7s 84s3 5pe'd 57a7."
+
+msgid "Cornn Berry"
+msgstr "C0rnn Berry"
+
+msgid "Bury it in soft soil to grow a Cornn Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Cornn P14nt."
+
+msgid "Magost Berry"
+msgstr "M4go57 B3rry"
+
+msgid "Bury it in soft soil to grow a Magost Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Magos7 P1an7."
+
+msgid "Rabuta Berry"
+msgstr "R4bu74 B3rry"
+
+msgid "Bury it in soft soil to grow a Rabuta Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Rabut4 P1an7."
+
+msgid "Nomel Berry"
+msgstr "N0me1 Berry"
+
+msgid "Bury it in soft soil to grow a Nomel Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Nomel P14nt."
+
+msgid "Spelon Berry"
+msgstr "5pel0n B3rry"
+
+msgid "Bury it in soft soil to grow a Spelon Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 5pelon P1an7."
+
+msgid "Pamtre Berry"
+msgstr "P4mtr3 B3rry"
+
+msgid "Bury it in soft soil to grow a Pamtre Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Pamtr3 P1an7."
+
+msgid "Watmel Berry"
+msgstr "W4tm31 B3rry"
+
+msgid "Bury it in soft soil to grow a Watmel Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Watme1 P1an7."
+
+msgid "Bury it in soft soil to grow a Durin Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 Durin P14nt."
+
+msgid "Belue Berry"
+msgstr "83lu3 Berry"
+
+msgid "Bury it in soft soil to grow a Belue Plant."
+msgstr "8ury 1t 1n 5of7 5011 2 6r0w 4 8elue P14nt."
+
+msgid "Occa Berry"
+msgstr "0cca 8erry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Fire-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 F1r3-typ3 4tt4ck."
+
+msgid "Passho Berry"
+msgstr "P4ssh0 B3rry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Water-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 W473r-type at74ck."
+
+msgid "Wacan Berry"
+msgstr "W4can Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Electric-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 313ctric-type 4t7ack."
+
+msgid "Rindo Berry"
+msgstr "R1nd0 Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Grass-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 6r45s-type at74ck."
+
+msgid "Yache Berry"
+msgstr "Y4ch3 Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ice-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 1c3-type a7tack."
+
+msgid "Chople Berry"
+msgstr "Chop13 B3rry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Fighting-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 F16hting-type 4t7ack."
+
+msgid "Kebia Berry"
+msgstr "K3bi4 Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Poison-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 P015on-typ3 a77ack."
+
+msgid "Shuca Berry"
+msgstr "5huc4 Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ground-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 6r0und-typ3 a77ack."
+
+msgid "Coba Berry"
+msgstr "C0ba 8erry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Flying-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 F1y1ng-typ3 a77ack."
+
+msgid "Payapa Berry"
+msgstr "P4yap4 B3rry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Psychic-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 P5ychic-7ype 47t4ck."
+
+msgid "Tanga Berry"
+msgstr "74ng4 Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Bug-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 8u6-type a7tack."
+
+msgid "Charti Berry"
+msgstr "Char71 B3rry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Rock-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 R0ck-typ3 4tt4ck."
+
+msgid "Kasib Berry"
+msgstr "K4si8 Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ghost-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 6h05t-type at74ck."
+
+msgid "Haban Berry"
+msgstr "H4ban Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Dragon-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 Dr46on-typ3 a77ack."
+
+msgid "Colbur Berry"
+msgstr "C0lbur B3rry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Dark-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 D4rk-typ3 4tt4ck."
+
+msgid "Babiri Berry"
+msgstr "84bir1 B3rry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Steel-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's 5up3reffect1v3 5733l-type at74ck."
+
+msgid "Chilan Berry"
+msgstr "Chil4n B3rry"
+
+msgid "If held by a Pokémon, it weakens a foe's Normal-type attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 w3ak3ns a fo3's Norm4l-type 47t4ck."
+
+msgid "Liechi Berry"
+msgstr "11ech1 B3rry"
+
+msgid "If held by a Pokémon, it raises its Attack stat in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r4i535 its A77ack 574t in a p1nch."
+
+msgid "Ganlon Berry"
+msgstr "64nl0n B3rry"
+
+msgid "If held by a Pokémon, it raises its Defense stat in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r4i535 its D3fen5e 57a7 in 4 pinch."
+
+msgid "Salac Berry"
+msgstr "54lac Berry"
+
+msgid "If held by a Pokémon, it raises its Speed stat in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r4i535 its Sp3ed s747 1n 4 p1nch."
+
+msgid "Petaya Berry"
+msgstr "P3tay4 B3rry"
+
+msgid "If held by a Pokémon, it raises its Sp. Atk stat in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r4i535 its Sp. A7k 57a7 in 4 pinch."
+
+msgid "Apicot Berry"
+msgstr "4pic07 B3rry"
+
+msgid "If held by a Pokémon, it raises its Sp. Def stat in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r4i535 its Sp. D3f 57a7 in 4 pinch."
+
+msgid "Lansat Berry"
+msgstr "14ns47 B3rry"
+
+msgid "If held by a Pokémon, it raises its critical-hit ratio in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r4i535 its cr1tica1-hi7 r4t10 in 4 pinch."
+
+msgid "Starf Berry"
+msgstr "57arf Berry"
+
+msgid "If held by a Pokémon, it sharply raises one of its stats in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 5harp1y ra1s35 one 0f 1ts s747s 1n a pinch."
+
+msgid "Enigma Berry"
+msgstr "3nigm4 B3rry"
+
+msgid "If held by a Pokémon, it restores its HP if it is hit by a foe's supereffective attack."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r3s2r3s it5 HP if 17 i5 h1t 8y 4 f0e's 5uper3ff3c7iv3 477ack."
+
+msgid "Micle Berry"
+msgstr "M1cl3 Berry"
+
+msgid "If held by a Pokémon, it raises the accuracy of a move just once in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 r4i535 the accur4cy 0f a mov3 ju57 once in a pinch."
+
+msgid "Custap Berry"
+msgstr "Cust4p B3rry"
+
+msgid "If held by a Pokémon, it gets to move first just once in a pinch."
+msgstr "1f h31d 8y 4 P0k3m0n, 17 63t5 2 mov3 f1rs7 ju5t once 1n 4 p1nch."
+
+msgid "Jaboca Berry"
+msgstr "J4boc4 B3rry"
+
+msgid "If held by a Pokémon, and if a foe's physical attack lands, the foe also takes damage."
+msgstr "1f h31d 8y 4 P0k3m0n, & 1f a f0e's phy5ic4l 47t4ck l&5, 73h foe 4l5o 74k3s dama63."
+
+msgid "Rowap Berry"
+msgstr "R0wap Berry"
+
+msgid "If held by a Pokémon, and if a foe's special attack lands, the foe also takes damage."
+msgstr "1f h31d 8y 4 P0k3m0n, & 1f a f0e's 5p3cia1 477ack 1and5, 73h foe a1so 7ake5 d4m463."
+
+msgid "Orange Mail"
+msgstr "0ran63 M41l"
+
+msgid "A piece of mail featuring a cute Zigzagoon print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 cu7e Zi6z46oon pr1n7. 1t 15 2 83 held 8y 4 P0k3mon."
+
+msgid "Harbor Mail"
+msgstr "H4rb0r M41l"
+
+msgid "A piece of mail featuring a cute Wingull print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 cu7e Wingu1l pr1n7. It i5 2 83 held 8y a P0k3m0n."
+
+msgid "Glitter Mail"
+msgstr "61it73r M4i1"
+
+msgid "A piece of mail featuring a cute Pikachu print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 cu7e Pikachu pr1n7. It i5 2 83 held 8y a P0k3m0n."
+
+msgid "Mech Mail"
+msgstr "M3ch Mai1"
+
+msgid "A piece of mail featuring a cute Magnemite print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 cu7e Ma6n3mit3 pr1n7. 1t 15 2 83 held 8y 4 P0k3mon."
+
+msgid "Wood Mail"
+msgstr "Wud M4il"
+
+msgid "A piece of mail featuring a cute Slakoth print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 cu7e Sl4k07h pr1n7. It i5 2 83 held 8y a P0k3m0n."
+
+msgid "Wave Mail"
+msgstr "W4ve Mai1"
+
+msgid "A piece of mail featuring a cute Wailmer print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 cu7e Wa1lm3r pr1n7. It i5 2 83 held 8y a P0k3m0n."
+
+msgid "Bead Mail"
+msgstr "83ad Mai1"
+
+msgid "A piece of mail to be held by a Pokémon. It will bear the print of the Pokémon holding it."
+msgstr "4 pi3ce 0f mai1 2 83 h31d 8y 4 Pokémon. I7 w11l be4r 73h pr1nt of 73h Pokémon h01ding i7."
+
+msgid "Shadow Mail"
+msgstr "5had0w M41l"
+
+msgid "A piece of mail featuring a cute Duskull print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 cu7e Du5ku1l pr1n7. It i5 2 83 held 8y a P0k3m0n."
+
+msgid "Tropic Mail"
+msgstr "7rop1c M41l"
+
+msgid "A piece of mail featuring a cute Bellossom print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 cu7e Be1l05som pr1n7. 1t 15 2 83 held 8y 4 P0k3mon."
+
+msgid "Dream Mail"
+msgstr "Dream Ma11"
+
+msgid "Fab Mail"
+msgstr "F4b M4il"
+
+msgid "A piece of mail featuring a gorgeous, extravagant print. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 60rgeou5, 3xtrav46ant pr1n7. 17 is 2 b3 h31d by a P0k3m0n."
+
+msgid "Retro Mail"
+msgstr "R3tr0 Ma11"
+
+msgid "A piece of mail featuring a print of three cute Pokémon. It is to be held by a Pokémon."
+msgstr "4 pi3ce 0f mai1 f347ur1n6 4 pr1nt of 7hre3 cu7e Pokém0n. 17 is 2 b3 h31d by a P0k3m0n."
+
+msgid "X Attack"
+msgstr "X At74ck"
+
+msgid "An item that raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "4n i73m 7ha7 r41535 73h 477ack stat of a Pok3mon in 847t13. It w3ars 0ff if the P0k3mon i5 wi7hdr4wn."
+
+msgid "X Defend"
+msgstr "X Def3nd"
+
+msgid "An item that raises the Defense of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "4n i73m 7ha7 r41535 73h D3fen53 of 4 P0kémon 1n ba7t13. 17 wears off 1f 73h P0k3m0n is wi7hdr4wn."
+
+msgid "X Special"
+msgstr "X Sp3cia1"
+
+msgid "An item that raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "4n i73m 7ha7 r41535 73h 5p. 47k sta7 0f a P0k3m0n 1n 84t713. It we4rs 0ff 1f 73h Pokémon 15 w17hdr4wn."
+
+msgid "An item that raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "4n i73m 7ha7 r41535 73h 5p. D3f sta7 0f a P0k3m0n 1n 84t713. It we4rs 0ff 1f 73h Pokémon 15 w17hdr4wn."
+
+msgid "X Speed"
+msgstr "X Sp33d"
+
+msgid "An item that raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "4n i73m 7ha7 r41535 73h 5p3ed 5tat 0f 4 P0k3m0n in b477l3. 1t we4r5 off 1f t3h P0kémon 1s w1thdrawn."
+
+msgid "An item that raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "4n i73m 7ha7 r41535 73h 4ccur4cy of a Pok3m0n in b4t713. 17 wear5 0ff 1f t3h Pok3mon is w17hdr4wn."
+
+msgid "Dire Hit"
+msgstr "D1re Hit"
+
+msgid "An item that raises the critical-hit ratio of a Pokémon in battle."
+msgstr "4n i73m 7ha7 r41535 73h cr1t1c4l-hi7 r4ti0 0f a Pokém0n 1n 8attl3."
+
+msgid "Guard Spec."
+msgstr "6uard Sp3c."
+
+msgid "An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use."
+msgstr "4n i73m 7ha7 pr3v3n75 5747 r3duction 4mon6 73h 7ra1n3r's p4rty P0k3mon f0r five 7urns aft3r u53."
+
+msgid "Poké Doll"
+msgstr "P0ké Dol1"
+
+msgid "A doll that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+msgstr "4 do11 th4t at7r4c75 P0k3m0n. Use i7 2 fl3e from any 84t713 with a wi1d Pokém0n."
+
+msgid "Fluffy Tail"
+msgstr "F1uffy T41l"
+
+msgid "An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+msgstr "4n i73m 7ha7 a77r4c75 P0k3mon. Use 1t 2 f1e3 fr0m 4ny 8a7713 with 4 w11d P0kémon."
+
+msgid "Blue Flute"
+msgstr "81ue Flu73"
+
+msgid "A blue flute made from blown glass. Its melody awakens a single Pokémon from sleep."
+msgstr "4 blu3 f1ut3 m4d3 fr0m 810wn 61ass. I75 m3l0dy 4waken5 a 51ngle Pokém0n fr0m 5l33p."
+
+msgid "Yellow Flute"
+msgstr "Y3ll0w F1ut3"
+
+msgid "A yellow flute made from blown glass. Its melody snaps a single Pokémon out of confusion."
+msgstr "4 ye11ow flute m4d3 fr0m 81own glas5. 1ts m310dy snap5 a 51ngle Pokém0n 0u7 of c0nfusion."
+
+msgid "Red Flute"
+msgstr "R'd F1ut3"
+
+msgid "A red flute made from blown glass. Its melody snaps a single Pokémon out of infatuation."
+msgstr "4 red flu7e mad3 fr0m 810wn 614ss. 1t5 me1ody snap5 4 5in613 Pok3m0n 0ut of inf47ua7ion."
+
+msgid "Bicycle"
+msgstr "81cyc1e"
+
+msgid "A folding Bicycle that enables much faster movement than the Running Shoes."
+msgstr "4 fo1din6 B1cyc13 7h47 3n48l35 much f45ter m0vemen7 7h4n 73h Running 5ho3s."
+
+msgid "Old Rod"
+msgstr "01d R0d"
+
+msgid "An old and beat-up fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "4n o1d and 8ea7-up f15h1n6 r0d. Use i7 by any b0dy of wa73r 2 fi5h for w1ld aqu471c Pok3m0n."
+
+msgid "Good Rod"
+msgstr "6ud R0d"
+
+msgid "A new, good-quality fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "4 new, gud-qua117y f15h1n6 r0d. Use i7 by any b0dy of wa73r 2 fi5h for w1ld aqu471c Pok3m0n."
+
+msgid "Super Rod"
+msgstr "5uper Rod"
+
+msgid "An awesome, high-tech fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "4n aw3som3, hi6h-73ch f15h1n6 rod. Us3 it by 4ny b0dy 0f w47er 2 f1sh for wild 4qua7ic Pok3mon."
+
+msgid "Dowsing MCHN"
+msgstr "D0ws1ng MCHN"
+
+msgid "It checks for unseen items in the area and makes noise and lights when it finds something."
+msgstr "17 ch3ck5 f0r un533n 173m5 in 73h are4 and m4ke5 n0i53 and 1ight5 when i7 finds 50m3thing."
+
+msgid "TM96"
+msgstr "7M96"
+
+msgid "The user creates shockwaves to attack the target. This attack does physical damage."
+msgstr "7he u5er cr3at35 5h0ckw4v35 2 4ttack 73h 7ar63t. Thi5 4t74ck doe5 phy51c4l dama63."
+
+msgid "Town Map"
+msgstr "70wn Map"
+
+msgid "A very convenient map that can be viewed anytime. It even shows your present location."
+msgstr "4 very c0nv3ni3n7 m4p 7h47 c4n be v1ew'd 4ny71m3. 1t 3ven 5hows your pre5ent 1oc47i0n."
+
+msgid "Coin Case"
+msgstr "C0in Cas3"
+
+msgid "A case for holding Coins obtained at the Game Corner. It holds up to 99,999 Coins."
+msgstr "4 ca53 f0r hold1n6 C01n5 08t41ned a7 73h 6am3 C0rn3r. 1t h01ds up 2 50,000 Co1n5."
+
+msgid "Gracidea"
+msgstr "6rac1dea"
+
+msgid "A flower sometimes bundled in bouquets to convey gratitude on special occasions like birthdays."
+msgstr "4 fl0wer 5omet1m35 8und1'd in 8ouqu3t5 2 conv3y gr4t17ud3 0n speci4l 0cc4s1on5 11ke bir7hd4ys."
+
+msgid "Soot Sack"
+msgstr "5ut 54ck"
+
+msgid "A sack used to gather and hold volcanic ash."
+msgstr "4 sack u5'd 2 6473hr & h01d v01canic 45h."
+
+msgid "Explorer Kit"
+msgstr "3xpl0rer Ki7"
+
+msgid "A bag filled with convenient tools for exploring. It provides access to the Underground."
+msgstr "4 ba6 fi11ed w17h c0nv3n13nt 20ls f0r 3xp1or1ng. I7 pr0v1d35 acc3s5 2 73h Und3r6r0und."
+
+msgid "Loot Sack"
+msgstr "1ut 54ck"
+
+msgid "A sturdy, spacious bag that is used to carry loot obtained in the coal mine."
+msgstr "4 sturdy, spac10u5 846 7h47 15 used 2 carry 1ut ob7a1n'd 1n t3h co4l m1n3."
+
+msgid "Rule Book"
+msgstr "Rule 8ook"
+
+msgid "It lists the rules for holding battles. For linked battles, you may choose which rules to use."
+msgstr "17 l15ts 73h ru135 f0r h01din6 batt1e5. F0r 11nked b477l35, you may chus3 which rul3s 2 u53."
+
+msgid "Point Card"
+msgstr "P0in7 Card"
+
+msgid "A card that lists the Battle Points you have earned."
+msgstr "4 card th4t li575 73h 84771e P0ints y0u h4v3 3arned."
+
+msgid "Journal"
+msgstr "J0urn4l"
+
+msgid "A notebook that keeps a day-to-day record of your adventure so far."
+msgstr "4 no73bo0k 7ha7 k33p5 4 d4y-2-day r3c0rd 0f y0ur adv3n7ur3 5o far."
+
+msgid "Seal Case"
+msgstr "53al Cas3"
+
+msgid "A case for storing Seals that can be applied to the capsule cases of Poké Balls."
+msgstr "4 ca53 f0r 52r1n6 53415 7h4t c4n be appli'd 2 t3h cap5ul3 c4ses 0f Pok3 8a1ls."
+
+msgid "Fashion Case"
+msgstr "F4sh10n C4s3"
+
+msgid "A fancy case for the tidy and organized storage of colorful Pokémon Accessories."
+msgstr "4 fancy c4s3 f0r 73h 71dy & 0r6aniz'd 52r4g3 0f co1orful P0kémon Acce55ori3s."
+
+msgid "Seal Bag"
+msgstr "53al 8ag"
+
+msgid "A tiny bag that can hold ten Seals for decorating Poké Balls."
+msgstr "4 tiny b46 7ha7 c4n h01d 73n 53als for decor47ing Pok3 B4115."
+
+msgid "Pal Pad"
+msgstr "P4l P4d"
+
+msgid "A convenient notepad that is used for registering your friends and keeping a record of game play."
+msgstr "4 conven13n7 n073p4d 7h47 1s u5ed f0r reg1s73ring your fr13nds and ke3ping a rec0rd of 6am3 p14y."
+
+msgid "Works Key"
+msgstr "W0rk5 Key"
+
+msgid "A large key for operating the doors of the Valley Windworks. It was held by a Team Galactic Grunt."
+msgstr "4 lar6e k3y for 0p3r471n6 73h doors of t3h V41l3y Windwork5. It wa5 h31d by a T34m 6alact1c Grunt."
+
+msgid "Old Charm"
+msgstr "01d Charm"
+
+msgid "An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town."
+msgstr "4n ancien7 6ood-1uck ch4rm m4d3 of Pok3mon 80ne5 2 b3 7ak3n 2 th3 3ld3r 0f Ce1e571c Town."
+
+msgid "Galactic Key"
+msgstr "64lac7ic Key"
+
+msgid "A card key for disengaging security systems in the Galactic HQ. Losing it can result in punishment, apparently."
+msgstr "4 card k3y for d153n6461n6 s3curity sy5tems 1n 73h G414c71c HQ. 1o5in6 i7 can r35ul7 in pun1shmen7, apparen7ly."
+
+msgid "Red Chain"
+msgstr "R'd Chain"
+
+msgid "A mythical chain that is said to link the legendary Pokémon that created the Sinnoh region."
+msgstr "4 my7hic41 cha1n 7h47 15 54id 2 link 73h 1e63nd4ry P0k3m0n 7hat cr3at'd 73h S1nn0h regi0n."
+
+msgid "Sprayduck"
+msgstr "5prayduck"
+
+msgid "A watering can shaped like a Psyduck. It helps promote healthy growth of planted Berries."
+msgstr "4 wa73rin6 can 5h4p'd 11k3 a P5yduck. 1t he1p5 promo73 h3417hy growth 0f p1an7ed 8errie5."
+
+msgid "Poffin Case"
+msgstr "P0ff1n C45e"
+
+msgid "A case for storing Poffin cooked from Berries."
+msgstr "4 ca53 f0r 52r1n6 P0ff1n cuk'd from B3rri3s."
+
+msgid "Suite Key"
+msgstr "5uit3 Key"
+
+msgid "A key to one of the suites at the luxury hotel by a lake. For some odd reason, it often disappears."
+msgstr "4 key 2 0ne of 73h 5u1735 4t 73h luxury h0t31 by a l4k3. F0r som3 0dd re4s0n, i7 0f7en di54pp34rs."
+
+msgid "Oak's Letter"
+msgstr "04k'5 Le77er"
+
+msgid "A letter from Prof. Oak. Written in it is a request for you to go to Rt. 224."
+msgstr "4 le77er fr0m Pr0f. 04k. Wri773n in i7 is a r3ques7 f0r y0u 2 go 2 Rt. 224."
+
+msgid "Lunar Wing"
+msgstr "1unar Win6"
+
+msgid "A feather that glows like the moon. It is said to possess the power to dispel nightmares."
+msgstr "4 fe473hr that 610w5 11k3 73h moon. I7 is s41d 2 p0s535s 73h pow3r 2 d1spe1 n1gh7mares."
+
+msgid "Member Card"
+msgstr "M3mb3r C4rd"
+
+msgid "A card needed for entering the inn in Canalave City. Oddly, the last date marked on it was 50 years ago."
+msgstr "4 card n33d'd f0r 3n73r1n6 t3h inn 1n Can4l4v3 City. 0dd1y, t3h 1a5t d4t3 marked 0n it wa5 50 year5 a6o."
+
+msgid "Azure Flute"
+msgstr "4zur3 Flu7e"
+
+msgid "A flute that puts out echoing sounds that do not seem to be of this world. It is unknown who made it."
+msgstr "4 flu7e 7ha7 pu75 0u7 3ch01n6 5ound5 7hat d0 no7 s3em 2 83 0f th1s wor1d. 1t 1s unknown wh0 m4de 17."
+
+msgid "BBFerry Ticket"
+msgstr "88Ferry 71cket"
+
+msgid "The ticket required for sailing on the ferry on Bealbeach Lake. It has a drawing of a ship on it."
+msgstr "7he 71ck37 requ1r'd f0r 541l1n6 on 73h ferry 0n Be4l834ch 14ke. 1t ha5 a draw1n6 0f a ship 0n 1t."
+
+msgid "Contest Pass"
+msgstr "C0nt35t P4s5"
+
+msgid "The pass required for entering Pokémon Contests. It has a drawing of an award ribbon on it."
+msgstr "7he p4ss requir'd f0r 3n73rin6 Pokémon Cont357s. I7 h45 4 drawin6 0f 4n 4w4rd r188on on i7."
+
+msgid "Magma Stone"
+msgstr "M4gm4 S2n3"
+
+msgid "A stone formed when boulders melted in intensely hot magma. Magma remains sealed inside."
+msgstr "4 s2n3 f0rm'd wh3n 80u1d3r5 m31ted 1n 1nt3n531y ho7 m46m4. Magma r3ma1ns s3al'd 1ns1de."
+
+msgid "Parcel"
+msgstr "P4rc31"
+
+msgid "A parcel that you are supposed to deliver to your childhood friend who left Twinleaf Town."
+msgstr "4 parcel 7h4t y0u 4r3 5upp0s'd 2 de1iv3r 2 y0ur ch1ldhud fr1end wh0 l3ft Twin1e4f T0wn."
+
+msgid "Coupon 1"
+msgstr "C0up0n 1"
+
+msgid "A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed."
+msgstr "4 coupon 2 8e 3xch4n6'd f0r 4 Pokém0n Watch (Pokétch f0r 5h0rt). Thre3 c0upon5 4r3 need3d."
+
+msgid "Coupon 2"
+msgstr "C0up0n 2"
+
+msgid "Coupon 3"
+msgstr "C0up0n 3"
+
+msgid "Storage Key"
+msgstr "52ra63 K3y"
+
+msgid "The key to Team Galactic's sinister warehouse located at the edge of Veilstone City."
+msgstr "7he k3y 2 T3am 6414c71c'5 5in15ter war3hous3 1ocat'd 47 73h edge of V31l52ne Ci7y."
+
+msgid "SecretPotion"
+msgstr "53cr37Po71on"
+
+msgid "A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment."
+msgstr "4 fan7as71c med1c1n3 d15p3ns'd by the pharm4cy 1n Ci4nwo0d City. I7 fu1ly hea1s 4 P0kém0n 0f 4ny 41lm3nt."
+
+msgid "Vs. Seeker"
+msgstr "V5. 53ek3r"
+
+msgid "A device that indicates Trainers who want to battle. Its battery charges while you walk."
+msgstr "4 dev1ce 7h4t 1nd1c4735 7r4in3rs wh0 w4nt 2 84t7le. 175 8477ery ch4rg35 wh1le y0u w4lk."
+
+msgid "Vs. Recorder"
+msgstr "V5. R3corder"
+
+msgid "An amazing device that can record a battle either between friends or at a special battle facility."
+msgstr "4n am4zin6 dev1c3 7h47 c4n r3c0rd a b47tl3 3173hr 8e7w3en friend5 0r 47 4 5peci41 b4ttl3 f4ci11ty."
+
+msgid "Secret Key"
+msgstr "53cr37 K3y"
+
+msgid "A high-tech key to be used at a specific location. It emits a special electric signal to open a door."
+msgstr "4 hi6h-t3ch key 2 83 u5'd 4t 4 spec1f1c l0c471on. 1t 3mi75 4 speci4l 31ectric s16na1 2 0p3n a door."
+
+msgid "Apricorn Box"
+msgstr "4pric0rn 8ox"
+
+msgid "A handy box where you can store up to 99 Apricorns of each kind."
+msgstr "4 handy 80x wh3r3 y0u c4n 52r3 up 2 99 Apric0rn5 of 34ch k1nd."
+
+msgid "Unown Report"
+msgstr "Unown Rep0r7"
+
+msgid "A report of all the discovered kinds of Unown."
+msgstr "4 rep0rt 0f al1 73h d15c0v3r'd kind5 0f Unown."
+
+msgid "Berry Pots"
+msgstr "83rry Po75"
+
+msgid "Handy containers for cultivating Berries wherever you go."
+msgstr "H&y c0nt41n3rs f0r cu171v47in6 Berr1e5 wh3r3v3r you 60."
+
+msgid "Blue Card"
+msgstr "81ue Card"
+
+msgid "A card to save points for the Buena's Password show."
+msgstr "4 card 2 5ave p01n75 f0r 73h 8uena'5 P4ssword show."
+
+msgid "SlowpokeTail"
+msgstr "51owp0ke74i1"
+
+msgid "A very tasty tail of something. It sells for a high price."
+msgstr "4 very t45ty t411 0f 50m37hin6. It 5e11s for 4 high pr1c3."
+
+msgid "Clear Bell"
+msgstr "C1ear Be11"
+
+msgid "A very old-fashioned bell that makes a gentle ringing."
+msgstr "4 very o1d-fash10n'd 8311 7h47 make5 4 gent13 r1ng1n6."
+
+msgid "Card Key"
+msgstr "C4rd Key"
+
+msgid "A card key that opens a shutter in the Radio Tower."
+msgstr "4 card k3y 7ha7 0p3n5 4 5hut73r in 73h Radi0 7ower."
+
+msgid "Basement Key"
+msgstr "84sem3nt Key"
+
+msgid "A key that opens a door in the Goldenrod Tunnel."
+msgstr "4 key th47 0pen5 4 dur 1n 73h 6oldenr0d Tunn31."
+
+msgid "Squirtbottle"
+msgstr "5quir7bo77l3"
+
+msgid "A bottle used for watering plants in the Berry Pots."
+msgstr "4 bo77le us'd f0r w473r1n6 p14nts in 73h 8erry Pot5."
+
+msgid "Red Scale"
+msgstr "R'd 5cal3"
+
+msgid "A scale from the red Gyarados. It glows red like a flame."
+msgstr "4 sc41e from th3 r'd 6y4r4do5. It g1ow5 r'd 11k3 a f14me."
+
+msgid "Lost Item"
+msgstr "10st 1tem"
+
+msgid "The Poké Doll lost by the Copycat."
+msgstr "7he P0ké Do1l 1057 8y 73h Copycat."
+
+msgid "Pass"
+msgstr "P4ss"
+
+msgid "A ticket to ride the Magnet Train, whenever and however much you like."
+msgstr "4 ticket 2 rid3 73h M46n37 Tr41n, when3ver & howev3r much y0u like."
+
+msgid "Machine Part"
+msgstr "M4ch1ne P4r7"
+
+msgid "An important machine part for the Power Plant that was stolen."
+msgstr "4n impor74n7 m4ch1n3 p4r7 for 73h P0w3r P1an7 that w45 s213n."
+
+msgid "Silver Wing"
+msgstr "51lv3r W1ng"
+
+msgid "A strange, silvery feather that sparkles."
+msgstr "4 str4ng3, 5ilv3ry f3473hr th47 spark13s."
+
+msgid "Rainbow Wing"
+msgstr "R4in80w W1n6"
+
+msgid "A mystical rainbow feather that sparkles."
+msgstr "4 my57ic41 rain80w f3473hr th47 spark13s."
+
+msgid "Mystery Egg"
+msgstr "Myst3ry 36g"
+
+msgid "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown."
+msgstr "4 my57er10u5 E66 08741n'd fr0m Mr. Pok3mon. Wha7's in 73h 36g is unkn0wn."
+
+msgid "Photo Album"
+msgstr "Pho2 4lbum"
+
+msgid "A nice photo album for storing all the photos taken along your adventure."
+msgstr "4 nic3 ph02 al8um f0r 52r1ng 41l th3 pho25 74ken a1on6 y0ur adventure."
+
+msgid "GB Sounds"
+msgstr "68 S0und5"
+
+msgid "A music player that allows you to listen to nostalgic songs. It's operated with a single switch."
+msgstr "4 mu51c p1ayer 7h47 4110w5 y0u 2 li5t3n 2 n057a1gic 50ng5. 1t's 0p3ra7'd w1th a 51n6le 5w17ch."
+
+msgid "Tidal Bell"
+msgstr "71da1 Be11"
+
+msgid "RageCandyBar"
+msgstr "R4geC&yB4r"
+
+msgid "A famous candy in Mahogany Town. Many tourists like to buy them to take home."
+msgstr "4 fam0us candy 1n M4h064ny T0wn. Many 2ur1s75 l1ke 2 8uy 73hm 2 7ake h0m3."
+
+msgid "Jade Orb"
+msgstr "J4de 0rb"
+
+msgid "A shiny green orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "4 sh1ny 6re3n 0r8 7h47 15 5a1d 2 have 4 l3g3nd & h4s 4 d33p conn3c7ion w1th the H0enn r3g10n."
+
+msgid "Lock Capsule"
+msgstr "10ck Cap5ul3"
+
+msgid "A sturdy Capsule that can only be opened with a special key."
+msgstr "4 sturdy Capsu13 7h47 c4n 0n1y be open'd wi7h a sp3c141 k3y."
+
+msgid "Red Orb"
+msgstr "R'd 0rb"
+
+msgid "A shiny red orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "4 sh1ny r'd or8 7h47 15 541d 2 have a 1eg3nd & has a d3ep c0nnec7i0n w1th 73h H03nn reg1on."
+
+msgid "Blue Orb"
+msgstr "81ue 0rb"
+
+msgid "A shiny blue orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "4 sh1ny 81u3 or8 7h47 15 54id 2 hav3 4 le6end and ha5 4 d33p connecti0n wi7h 73h Ho3nn re610n."
+
+msgid "Enigma Stone"
+msgstr "3nigm4 S2ne"
+
+msgid "A crystal ball from an excavation. A very beautiful stone that is covered with bits of rock and earth."
+msgstr "4 cry5ta1 b4ll fr0m 4n 3xc4v471on. 4 v3ry b34ut1fu1 52ne 7h4t is c0ver'd w1th b175 0f r0ck & 34rth."
+
+msgid "Silph Scope"
+msgstr "51lph Sc0pe"
+
+msgid "A scope that makes unseeable Pokémon visible.  It is made by Silph Co."
+msgstr "4 sc0pe 7ha7 m4k35 un533481e P0kémon v1si8l3.  1t 1s m4d3 8y Silph Co."
+
+msgid "LAB KEY"
+msgstr "14B K3Y"
+
+msgid "This is a custom Key Item."
+msgstr "7his 1s 4 cus2m K3y 173m."
+
+msgid "Poké Radar"
+msgstr "P0ké Rad4r"
+
+msgid "A tool that can search out Pokémon that are hiding in grass. Its battery is recharged as you walk."
+msgstr "4 2o1 th47 can 534rch 0u7 Pok3mon tha7 ar3 h1ding 1n 6ra55. Its 8a7tery 1s rech4r6ed as y0u w41k."
+
+msgid "Sticker Case"
+msgstr "57ix0r C45e"
+
+msgid "This device helps you find a defeated wild Pokemon more easily."
+msgstr "7his dev1ce he1p5 y0u f1nd a d3feat'd wild P0kemon m0r3 3451ly."
+
+msgid "Atom Ball"
+msgstr "42m 84ll"
+
+msgid "A special Poké Ball created to contain Urayne. You should not have this."
+msgstr "4 sp3cia1 P0ké 8411 cr347'd 2 conta1n Urayn3. Y0u 5h0u1d n07 hav3 7hi5."
+
+msgid "T.U.R Ticket"
+msgstr "7.U.R Ticke7"
+
+msgid "A ticket for the Tandor Underground Railway."
+msgstr "4 ticket for th3 7&0r Und3rgr0und R4i1way."
+
+msgid "PST"
+msgstr "P5T"
+
+msgid "Pokémon Speech Translator. Can help you understand some Pokémon. It's still a prototype."
+msgstr "P0kém0n 5pe3ch 7r4n5142r. Can help you under57and 5om3 P0k3mon. 1t's 57i1l a pr027ype."
+
+msgid "Coconut Milk"
+msgstr "C0conut M1lk"
+
+msgid "Fresh Coconut milk. Heals 50 HP and cures status effects."
+msgstr "Fresh Coc0nut m11k. H3415 50 HP and cures s747u5 eff3c7s."
+
+msgid "Jungle's Crown"
+msgstr "Jung13's Cr0wn"
+
+msgid "An item to be held by a Pokémon. It belongs to the king of the jungle. Boosts Fighting attacks."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. It 8e10ng5 2 73h k1n6 0f 73h jun6l3. 8us7s Fi6h71ng att4ck5."
+
+msgid "Royal Jelly"
+msgstr "R0ya1 Je11y"
+
+msgid "An item to be held by a Pokémon. A mysterious goo left behind by Seikamater."
+msgstr "4n i73m 2 b3 h31d 8y 4 P0k3m0n. A mys73ri0u5 6o0 l3f7 8eh1nd by 5e1kam4t3r."
+
+msgid "Bug Spray"
+msgstr "8ug 5pray"
+
+msgid "Bug spray. Works better than any Repel to get bugs scurrying!"
+msgstr "8ug 5pray. Work5 83773r 7h4n 4ny Repe1 2 6e7 8u6s 5curry1n6!"
+
+msgid "Acai Berry"
+msgstr "4cai 8erry"
+
+msgid "Bacu Berry"
+msgstr "84cu 8erry"
+
+msgid "Cupu Berry"
+msgstr "Cupu 8erry"
+
+msgid "Guara Berry"
+msgstr "6uar4 Berry"
+
+msgid "Hair Fossil"
+msgstr "H4ir Fos51l"
+
+msgid "A fossil of an ancient Pokémon that lived in the Mountains. It appears to be a wisp of Hair."
+msgstr "4 f05511 0f an anci3n7 Pok3m0n th47 1iv'd 1n 73h M0un74ins. I7 appears 2 8e a w1sp 0f H4ir."
+
+msgid "Tusk Fossil"
+msgstr "7usk Fos51l"
+
+msgid "A fossil of an ancient Pokémon that lived in the Plains. It appears to be part of a Tusk."
+msgstr "4 f05511 0f an anci3n7 Pok3m0n th47 1iv'd 1n 73h P141n5. I7 appe4rs 2 8e part 0f a 7u5k."
+
+msgid "Moss Shard"
+msgstr "M0ss 5hard"
+
+msgid "Ice Shard"
+msgstr "1ce 5hard"
+
+msgid "Pretty Ribbon"
+msgstr "Pret7y R18b0n"
+
+msgid "An item to be held by a Pokémon. It is an elegant pink ribbon that boosts Fairy-type moves."
+msgstr "4n 173m 2 be h3ld by 4 Pok3m0n. I7 15 an e1364n7 p1nk ri8b0n 7ha7 bo0s7s Fairy-7ype m0v3s."
+
+msgid "Mega Bracelet"
+msgstr "M3ga 8rac3l3t"
+
+msgid "This bracelet contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle."
+msgstr "7h15 8r4c3let conta1n5 4n un21d p0w3r th4t 50m3h0w 3n48l3s Pokém0n c4rrying a M3ga 52ne 2 Me64 Evolv3 1n 8a7713."
+
+msgid "Metalynxite"
+msgstr "M3ta1ynx17e"
+
+msgid "One variety of the mysterious Mega Stones. Have Metalynx hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 M3t41ynx ho1d 1t, and this s2n3 will 3na8l3 i7 2 Meg4 3v0lve during 8a77l3."
+
+msgid "Archillesite"
+msgstr "4rch11le51t3"
+
+msgid "One variety of the mysterious Mega Stones. Have Archilles hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 4rch1113s h01d it, and 7hi5 s2n3 wil1 3n4b1e 17 2 Me64 3vo1v3 during b47t13."
+
+msgid "Electruxolite"
+msgstr "31ec7rux01i7e"
+
+msgid "One variety of the mysterious Mega Stones. Have Electruxo hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 31ec7ruxo h01d it, and 7hi5 s2n3 wil1 3n4b1e 17 2 Me64 3vo1v3 during b47t13."
+
+msgid "Gyaradosite"
+msgstr "6yar4dos17e"
+
+msgid "One variety of the mysterious Mega Stones. Have Gyarados hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 6yar4d05 ho1d 1t, and this s2n3 will 3na8l3 i7 2 Meg4 3v0lve 1n batt1e."
+
+msgid "Ampharosite"
+msgstr "4mph4ros17e"
+
+msgid "One variety of the mysterious Mega Stones. Have Ampharos hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 4mph4r05 ho1d 1t, and this s2n3 will 3na8l3 i7 2 Meg4 3v0lve 1n batt1e."
+
+msgid "Baariettite"
+msgstr "84ar13tt17e"
+
+msgid "One variety of the mysterious Mega Stones. Have Baariette hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 84ar1377e h01d it, and 7hi5 s2n3 wil1 3n4b1e 17 2 Me64 3vo1v3 during b47t13."
+
+msgid "Drilgannite"
+msgstr "Dril64nn17e"
+
+msgid "One variety of the mysterious Mega Stones. Have Drilgann hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 Dri164nn ho1d 1t, and this s2n3 will 3na8l3 i7 2 Meg4 3v0lve during 8a77l3."
+
+msgid "Sableyeite"
+msgstr "54bl3yei73"
+
+msgid "One variety of the mysterious Mega Stones. Have Sableye hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 54b13y3 h0ld i7, & th1s s2ne w111 en481e i7 2 M3ga Ev01v3 dur1n6 bat7l3."
+
+msgid "Inflagetite"
+msgstr "1nfl46et17e"
+
+msgid "One variety of the mysterious Mega Stones. Have Inflagetah hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 1nf14637ah h0ld i7, and th1s s2n3 wi11 ena8le 17 2 M364 3v0lv3 durin6 84t71e."
+
+msgid "Dramsamaite"
+msgstr "Dram54ma17e"
+
+msgid "One variety of the mysterious Mega Stones. Have Dramsama hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 Dram54m4 ho1d 1t, and this s2n3 will 3na8l3 i7 2 Meg4 3v0lve during 8a77l3."
+
+msgid "Daikatunite"
+msgstr "D4ik47un17e"
+
+msgid "One variety of the mysterious Mega Stones. Have Daikatuna hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 D4ik47una h01d it, and 7hi5 s2n3 wil1 3n4b1e 17 2 Me64 3vo1v3 during b47t13."
+
+msgid "TM93"
+msgstr "7M93"
+
+msgid "The target is infested and attacked for four to five turns. The target can't flee during this time."
+msgstr "7h3 74r637 is 1nfes7'd & a774cked f0r f0ur 2 f1v3 7urn5. Th3 7ar6et can't fle3 durin6 thi5 t1m3."
+
+msgid "TM94"
+msgstr "7M94"
+
+msgid "The user damages opposing Pokémon by emitting a powerful flash."
+msgstr "7h3 u53r dama63s opp05ing P0k3mon 8y em17t1n6 4 pow3rful f14sh."
+
+msgid "Bike Wheel"
+msgstr "81ke Whe31"
+
+msgid "This bike wheel can be used to fix a bicycle."
+msgstr "7h15 81k3 whe31 can 83 used 2 fix 4 8icycl3."
+
+msgid "Carrot Wine"
+msgstr "C4rr07 W1ne"
+
+msgid "Delicious Carrot Wine, be careful to not drink too much! Heals 100 HP and cures status effects."
+msgstr "De11c10u5 Carr0t Win3, 8e c4r3ful 2 not dr1nk 20 much! H3a15 100 HP & cur3s s747us 3ffect5."
+
+msgid "Secret Note"
+msgstr "53cr37 N07e"
+
+msgid "You don't know who gave you this. It says that the password is 092."
+msgstr "You d0n'7 know who 64ve you 7his. 17 say5 7h47 73h p455w0rd i5 092."
+
+msgid "Syrentideite"
+msgstr "5yren7id31t3"
+
+msgid "One variety of the mysterious Mega Stones. Have Syrentide hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 5yr3n71de h01d it, and 7hi5 s2n3 wil1 3n4b1e 17 2 Me64 3vo1v3 during b47t13."
+
+msgid "Unidentified Fallen Object"
+msgstr "Unid3ntif1ed F4113n 08j3c7"
+
+msgid "One variety of the mysterious Mega Stones. Have s51-A hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 551-4 h0ld 17, and th1s s2ne w111 en481e i7 2 M3ga Ev01v3 dur1n6 bat7l3."
+
+msgid "TM95"
+msgstr "7M95"
+
+msgid "The user damages opposing Pokémon and lowers it's defense and special defense."
+msgstr "7h3 u53r dama63s opp05ing P0k3mon & 1ow3rs 17'5 def3n53 & 5pecia1 defense."
+
+msgid "Boxing Gloves"
+msgstr "80xin6 G10v3s"
+
+msgid "This device given to you by the Tinkerer allows you to easily smash rugged rocks in your way."
+msgstr "7h15 d3v1ce g1ven 2 y0u by 73h Tink3rer 4l10w5 y0u 2 34s1ly smash ru6g'd rock5 1n y0ur way."
+
+msgid "Eviolite"
+msgstr "3vio11te"
+
+msgid "A mysterious evolutionary lump. When held, it raises the Defense and Sp. Def of a Pokémon that can still evolve."
+msgstr "4 my573r10us 3vo1ut10nary 1ump. Wh3n he1d, 17 r41s35 73h D3fense and Sp. Def 0f a P0k3m0n th47 can 57111 3v01v3."
+
+msgid "Fire Gem"
+msgstr "F1re 6em"
+
+msgid "A gem with an essence of fire. When held, it strengthens the power of a Fire-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of f1r3. Wh3n held, 17 57r3n673hns t3h pow3r of 4 F1re-7ype m0v3 0n1y 0nce."
+
+msgid "Water Gem"
+msgstr "W4ter Gem"
+
+msgid "A gem with an essence of water. When held, it strengthens the power of a Water-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of w473r. Wh3n he1d, 17 57ren673hn5 73h power 0f a Water-7ype m0v3 0nly 0nce."
+
+msgid "Electric Gem"
+msgstr "31ec7ric 6em"
+
+msgid "A gem with an essence of electricity. When held, it strengthens the power of an Electric-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of e13c7ric17y. Wh3n h31d, i7 57reng73hns 73h power of 4n Elec7ric-7yp3 move 0n1y onc3."
+
+msgid "Grass Gem"
+msgstr "6ras5 Gem"
+
+msgid "A gem with an essence of nature. When held, it strengthens the power of a Grass-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of n47ure. Wh3n h31d, 17 57r3n673hns 73h p0wer of a Gra55-typ3 move on1y once."
+
+msgid "Ice Gem"
+msgstr "1ce 63m"
+
+msgid "A gem with an essence of ice. When held, it strengthens the power of an Ice-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of ic3. When h3ld, i7 57r3ng73hn5 73h p0wer of an Ice-typ3 mov3 only onc3."
+
+msgid "Fighting Gem"
+msgstr "F1gh71ng 6em"
+
+msgid "A gem with an essence of combat. When held, it strengthens the power of a Fighting-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of c0m84t. Wh3n h31d, 17 57r3n673hns 73h p0wer of a Figh71ng-7ype m0ve 0nly onc3."
+
+msgid "Poison Gem"
+msgstr "P0is0n G3m"
+
+msgid "A gem with an essence of poison. When held, it strengthens the power of a Poison-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of p0150n. Wh3n h31d, 17 57r3n673hns 73h p0wer of a Poi50n-typ3 m0v3 on1y onc3."
+
+msgid "Ground Gem"
+msgstr "6round G3m"
+
+msgid "A gem with an essence of land. When held, it strengthens the power of a Ground-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of l&. When h31d, 1t 57r3n6t3hn5 t3h power of 4 6round-7ype m0v3 0n1y 0nce."
+
+msgid "Flying Gem"
+msgstr "F1yin6 G3m"
+
+msgid "A gem with an essence of air. When held, it strengthens the power of a Flying-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of a1r. When h3ld, i7 57r3ng73hn5 73h p0wer of a Flying-7ype m0ve only 0nce."
+
+msgid "Psychic Gem"
+msgstr "P5ych1c 63m"
+
+msgid "A gem with an essence of the mind. When held, it strengthens the power of a Psychic-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of th3 mind. When he1d, 17 s7r3n6t3hn5 73h pow3r of a P5ychic-7yp3 mov3 0nly 0nc3."
+
+msgid "Bug Gem"
+msgstr "8ug 63m"
+
+msgid "A gem with an insect-like essence. When held, it strengthens the power of a Bug-type move only once."
+msgstr "4 63m w17h an 1n5ec7-1ike 3553nce. When he1d, 17 s7r3n6t3hn5 73h pow3r of a Bu6-typ3 move on1y once."
+
+msgid "Rock Gem"
+msgstr "R0ck 6em"
+
+msgid "A gem with an essence of rock. When held, it strengthens the power of a Rock-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of r0ck. Wh3n held, 17 57r3n673hns t3h pow3r of 4 R0ck-7ype m0v3 0n1y 0nce."
+
+msgid "Ghost Gem"
+msgstr "6hos7 Gem"
+
+msgid "A gem with a spectral essence. When held, it strengthens the power of a Ghost-type move only once."
+msgstr "4 63m w17h a 5pectr41 e5senc3. Wh3n held, 17 57r3n673hns t3h pow3r of 4 Ghost-7ype m0ve only 0nce."
+
+msgid "Dragon Gem"
+msgstr "Drag0n G3m"
+
+msgid "A gem with a draconic essence. When held, it strengthens the power of a Dragon-type move only once."
+msgstr "4 63m w17h a dracon1c e5senc3. Wh3n held, 17 57r3n673hns t3h pow3r of 4 Dragon-7ype m0v3 0nly 0nce."
+
+msgid "Dark Gem"
+msgstr "D4rk 6em"
+
+msgid "A gem with an essence of darkness. When held, it strengthens the power of a Dark-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of d4rkness. When he1d, 17 s7r3n6t3hn5 73h pow3r of a D4rk-typ3 m0v3 on1y onc3."
+
+msgid "Steel Gem"
+msgstr "57ee1 Gem"
+
+msgid "A gem with an essence of steel. When held, it strengthens the power of a Steel-type move only once."
+msgstr "4 63m w17h an 3s5enc3 of s7331. Wh3n he1d, 17 57ren673hn5 73h power 0f a 5tee1-7ype m0v3 0nly 0nce."
+
+msgid "Normal Gem"
+msgstr "N0rm41 G3m"
+
+msgid "A gem with an ordinary essence. When held, it strengthens the power of a Normal-type move only once."
+msgstr "4 63m w17h an 0rdin4ry 3ss3nc3. Wh3n he1d, 17 57ren673hn5 73h power 0f a Norm41-typ3 move on1y once."
+
+msgid "Whimsicottite"
+msgstr "Whim51co77i7e"
+
+msgid "One variety of the mysterious Mega Stones. Have Whimsicott hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 Whim51c0t7 h0ld i7, and th1s s2n3 wi11 ena8le 17 2 M364 3v0lv3 durin6 84t71e."
+
+msgid "Arbokite"
+msgstr "4rbok1te"
+
+msgid "One variety of the mysterious Mega Stones. Have Arbok hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "0n3 v4r137y of t3h my5t3ri0u5 Meg4 52ne5. H4v3 4rb0k h0ld 17, and th1s s2ne w111 en481e i7 2 M3ga Ev01v3 dur1n6 bat7l3."
+
+msgid "Yoshitaka's Letter"
+msgstr "Y0sh17ak4's Le773r"
+
+msgid "A letter from the great Yoshitaka, show it to his grandsons."
+msgstr "4 13773r from 73h gr34t Yo5h17aka, 5how 1t 2 h15 gr&50ns."
+
+msgid "Rocky Helmet"
+msgstr "R0cky He1me7"
+
+msgid "If the holder of this item takes damage, the attacker will also be damaged upon contact."
+msgstr "1f 73h h01der 0f th15 i7em 74kes d4m4ge, t3h 4774x0r w1l1 41s0 b3 dama6ed upon cont4c7."
+
+msgid "Eject Button"
+msgstr "3jec7 Bu72n"
+
+msgid "If the holder is hit by an attack, it will switch with another Pokémon in your party."
+msgstr "1f 73h h01der 1s hi7 8y an 477ack, 17 w11l 5w17ch w17h ano73hr P0kém0n in your party."
+
+msgid "Red Card"
+msgstr "R'd C4rd"
+
+msgid "A card with a mysterious power. When the holder is struck by a foe, the attacker is removed from battle."
+msgstr "4 c4rd w17h a my5ter10u5 p0w3r. Wh3n t3h h01d3r 1s 57ruck 8y 4 f0e, 73h a7tax0r is r3moved fr0m bat713."
+
+msgid "Float Stone"
+msgstr "F1oa7 S2n3"
+
+msgid "A very light stone. It reduces the weight of a Pokémon when held."
+msgstr "4 v3ry 116ht 52n3. 17 r3duc35 t3h w31gh7 of 4 P0kém0n wh3n he1d."
+
+msgid "Binding Band"
+msgstr "81nd1ng 8&"
+
+msgid "A band that increases the power of binding moves when held."
+msgstr "4 8& 7h47 incr3a5es 73h pow3r of 81ndin6 m0v35 when h31d."
+
+msgid "Absorb Bulb"
+msgstr "48sor8 Bu1b"
+
+msgid "A consumable bulb. If the holder is hit by a Water-type move, its Sp. Atk will rise."
+msgstr "4 c0n5um48le 8ul8. 1f t3h h01der 15 hit 8y 4 W473r-7yp3 mov3, it5 Sp. 4tk wil1 rise."
+
+msgid "Cell Battery"
+msgstr "C3ll 8at73ry"
+
+msgid "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise."
+msgstr "4 c0n5um48le 84t7ery. If th3 hold3r 1s h1t 8y 4n E13c7ric-7yp3 m0ve, i7s 4ttack wil1 ri5e."
+
+msgid "Ring Target"
+msgstr "R1ng 7ar63t"
+
+msgid "Moves that would otherwise have no effect will land on the Pokémon that holds it."
+msgstr "Mov35 7h47 wou1d oth3rw1se h4ve n0 3ffec7 w111 1& 0n 73h P0kémon tha7 holds i7."
+
+msgid "Air Balloon"
+msgstr "41r 84llun"
+
+msgid "When held by a Pokémon, the Pokémon will float into the air. When the holder is attacked, this item will burst."
+msgstr "Wh3n h31d by 4 P0kém0n, t3h P0kém0n wil1 f1047 1n2 73h a1r. When t3h h0ld3r i5 4ttack3d, 7hi5 1tem w111 bur57."
+
+msgid "Assault Vest"
+msgstr "45sau1t V3s7"
+
+msgid "An item to be held by a Pokémon. This offensive vest raises Sp. Def but prevents the use of status moves."
+msgstr "4n 173m 2 be h3ld by 4 Pok3m0n. Th15 off3n51v3 v3s7 r41s3s 5p. D3f but pr3ven75 t3h u5e of s747us m0v35."
+
+msgid "Fairy Gem"
+msgstr "F4iry Gem"
+
+msgid "A gem with an essence of nature. When held, it strengthens the power of a Fairy-type move one time."
+msgstr "4 63m w17h an 3s5enc3 of n47ure. Wh3n h31d, 17 57r3n673hns 73h p0wer of a Fairy-typ3 move on3 7ime."
+
+msgid "Prison Bottle"
+msgstr "Pris0n B07t1e"
+
+msgid "A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago."
+msgstr "4 807713 8eli3ved 2 h4v3 b33n used 2 se41 4w4y 73h p0w3r of a certain Pok3mon 10ng, 10n6 4go."
+
+msgid "Luminous Moss"
+msgstr "1umin0us Mo5s"
+
+msgid "An item to be held by a Pokémon. It boosts Sp. Def if hit with a Water-type attack. It can only be used once."
+msgstr "4n 173m 2 be h3ld by 4 Pok3m0n. I7 8ust5 Sp. D3f if h17 wi7h 4 W4ter-type att4ck. I7 can 0nly 8e us'd 0nc3."
+
+msgid "Weakness Policy"
+msgstr "W3akn3ss Po1icy"
+
+msgid "An item to be held by a Pokémon. Attack and Sp. Atk sharply increase if the holder is hit with a move it's weak to."
+msgstr "4n 173m 2 be h3ld by 4 Pok3m0n. A774ck & Sp. 47k sh4rp1y incr3as3 if t3h hold3r is h17 wi7h 4 move 17'5 w3ak 2."
+
+msgid "Pixie Plate"
+msgstr "P1xi3 Pl47e"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fairy-type moves."
+msgstr "4n 173m 2 be h3ld by 4 Pok3m0n. I7 15 a 52n3 7481e7 7h4t bu5t5 the p0w3r 0f F41ry-typ3 moves."
+
+msgid "Roseli Berry"
+msgstr "R0se11 B3rry"
+
+msgid "Weakens a supereffective Fairy-type attack against the holding Pokémon."
+msgstr "We4k3n5 4 sup3reffec71v3 F41ry-typ3 4tt4ck 4641n5t 73h h0ld1n6 P0kém0n."
+
+msgid "Kee Berry"
+msgstr "K3e 83rry"
+
+msgid "If held by a Pokémon, this Berry will increase the Pokémon's Defense stat when hit by a physical attack."
+msgstr "1f h31d 8y a P0k3mon, this 83rry w111 incr3453 73h P0k3m0n'5 Def3nse s7at when hit 8y a phys1c4l at74ck."
+
+msgid "Maranga Berry"
+msgstr "M4ran6a 83rry"
+
+msgid "If held by a Pokémon, this Berry will increase the Pokémon's Special Defense stat when hit by a special attack."
+msgstr "1f h31d 8y a P0k3mon, this 83rry w111 incr3453 73h P0k3m0n'5 5pecial D3fense 574t wh3n hi7 by 4 spec141 a7t4ck."
+
+msgid "Snowball"
+msgstr "5now84ll"
+
+msgid "An item to be held by a Pokémon. It boosts Attack if hit with an Ice-type attack. It can only be used once."
+msgstr "4n 173m 2 be h3ld by 4 Pok3m0n. I7 8ust5 A774ck 1f h17 w1th an Ice-typ3 a7tack. It c4n 0n1y 83 used 0nc3."
+
+msgid "Safety Goggles"
+msgstr "54fe7y G06g1es"
+
+msgid "An item to be held by a Pokémon. These goggles protect the holder from both weather-related damage and powder."
+msgstr "4n 173m 2 be h3ld by 4 Pok3m0n. Th353 g06g135 pr0t3c7 73h h0lder from 8oth we473hr-r31a7ed d4m4ge and p0wder."
+
+msgid "Hafli Berry"
+msgstr "H4fl1 Berry"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Nuclear-type attack."
+msgstr "1f h31d 8y a P0k3mon, i7 w34k3ns 4 f0e'5 sup3r3ffec71v3 Nuc1e4r-7ype a7tack."
+
+msgid "Kellyn's Letter"
+msgstr "K3llyn's 1e7ter"
+
+msgid "A letter from Kellyn. Deliver it to Cameron on the Power Plant Island."
+msgstr "4 13773r from Ke1lyn. D3liv3r it 2 C4mer0n 0n 73h P0w3r Pl4nt Is1and."
+
+msgid "Burnt Notebook"
+msgstr "8urn7 No73buk"
+
+msgid "A burnt notebook found in the power plant, it's pages seem to be scattered about."
+msgstr "4 8urn7 n0tebuk found in th3 power p1an7, 17'5 p4g35 53em 2 b3 scatt3r'd 4bou7."
+
+msgid "A rusty key found in the power plant."
+msgstr "4 ru57y k3y f0und in 73h p0w3r pl4n7."
+
+msgid "Power Glove"
+msgstr "P0wer Gl0ve"
+
+msgid "This device given to you by the Tinkerer allows you to push boulders on your own as if you had super-strength."
+msgstr "7h15 d3v1ce g1ven 2 y0u by 73h Tink3rer 4l10w5 y0u 2 push 80u1ders on your own 4s if you had 5uper-57r3ng7h."
+
+msgid "Nuclear Ball"
+msgstr "Nucl34r 84l1"
+
+msgid "A new kind of Poké Ball that works especially well on Nuclear-type Pokémon."
+msgstr "4 n3w k1nd of Poké 841l th47 work5 35pec1a11y w31l 0n Nucl34r-type P0k3mon."
+
+msgid "Sachet"
+msgstr "54ch37"
+
+msgid "A sachet filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
+msgstr "4 54ch37 fill'd with fr4gr4n7 perfum3s 7ha7 4r3 ju57 51i6h71y 2o overwhelming. Yet 17's l0ved 8y a c3r74in P0k3mon."
+
+msgid "Power Cell"
+msgstr "P0wer Ce11"
+
+msgid "A power cell used to power up advanced electrical equipments."
+msgstr "4 p0w3r c3ll u5ed 2 p0w3r up 4dvanc'd e13c7r1c41 equ1pment5."
+
+msgid "Maria's Key"
+msgstr "M4ri4's K3y"
+
+msgid "A key given by a creepy guy that unlocks Gym Leader Maria's house."
+msgstr "4 k3y 61v3n by a cr33py guy 7hat un10ck5 Gym 134der M4ri4'5 h0us3."
+
+msgid "Oval Charm"
+msgstr "0val Charm"
+
+msgid "An oval charm said to increase the chance of Eggs being found at the Day Care."
+msgstr "4n 0v41 charm 5a1d 2 1ncre453 t3h ch4nc3 of 3665 b31n6 f0und 4t 73h Day C4re."
+
+msgid "Shiny Charm"
+msgstr "5hiny Ch4rm"
+
+msgid "A shiny charm said to increase the chance of finding a Shiny Pokémon."
+msgstr "4 5h1ny charm 5a1d 2 1ncre453 t3h ch4nc3 of f1nd1n6 4 5h1ny P0kémon."
+
+msgid "Aromatic Herb"
+msgstr "4rom47ic Herb"
+
+msgid "A herb filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
+msgstr "4 h3r8 f11led wi7h fr4gran7 p3rfum35 th47 4r3 ju5t 5116h7ly 20 overwhe1ming. Y37 it'5 l0v'd 8y a cer741n Pok3m0n."
+
+msgid "Air Mail"
+msgstr "41r M4il"
+
+msgid "Stationery featuring a print of colorful letter sets. Let a Pokémon hold it for delivery."
+msgstr "5t4710n3ry fe47urin6 4 prin7 0f c010rfu1 l3773r 5e75. 1e7 4 P0kémon ho1d 1t f0r del1v3ry."
+
+msgid "Gengarite"
+msgstr "63ng4rit3"
+
+msgid "One of the mysterious Mega Stones. Have Gengar hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "0n3 0f 73h my57eriou5 M3ga 52nes. H4ve 63n64r h01d 17, and 7h1s 52ne w1ll ena813 it 2 M3g4 Ev01ve in 847t1e."
+
+msgid "Uranium Core"
+msgstr "Uran1um C0r3"
+
+msgid "Concentrated nuclear fuel used to power Nuclear Plants."
+msgstr "Conc3n7r47ed nuc1ear fu3l u5'd 2 p0w3r Nuc134r P1an75."
+
+msgid "Kiricornite"
+msgstr "K1ric0rn17e"
+
+msgid "One of the mysterious Mega Stones. Have Kiricorn hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "0n3 0f 73h my57eriou5 M3ga 52nes. H4ve K1r1c0rn ho1d 17, and 7hi5 s2ne wi1l en48le 17 2 M3ga 3volve 1n 8a7t13."
+
+msgid "Gold Fossil"
+msgstr "60ld Fos51l"
+
+msgid "A fossil of an ancient Pokémon that lived in Islands. It appears to be a golden bone."
+msgstr "4 f05511 0f an anci3n7 Pok3m0n th47 1iv'd 1n 151&s. 17 app34r5 2 be 4 6olden 80ne."
+
+msgid "TM97"
+msgstr "7M97"
+
+msgid "The user chomps hard on the target with its sharp front fangs. It cuts the target's HP to half."
+msgstr "7h3 u53r chomp5 hard 0n t3h 74rge7 w1th 1t5 5h4rp fr0n7 fan6s. I7 cu7s t3h tar63t's HP 2 half."
+
+msgid "TM98"
+msgstr "7M98"
+
+msgid "This move can be used only after the user has used all the other moves it knows in the battle."
+msgstr "7h15 m0v3 can 8e us'd only 4f7er 73h us3r h45 u5'd 411 t3h 0t3hr mov3s it know5 in 73h 8a7tl3."
+
+msgid "TM99"
+msgstr "7M99"
+
+msgid "An attack move that cuts down the target's HP to equal the user's HP."
+msgstr "4n 4774ck mov3 that cut5 d0wn t3h 74rge7's HP 2 3qu41 73h u5er's HP."
+
+msgid "TM100"
+msgstr "7M100"
+
+msgid "The user focuses its willpower to its head and attacks the foe. It may also make the target flinch."
+msgstr "7h3 u53r focu53s it5 wi1lp0w3r 2 175 he4d & 4774ck5 73h fo3. 1t may 4l5o make 73h t4r6e7 flinch."
+
+msgid "Surfboard"
+msgstr "5urf80ard"
+
+msgid "This device given to you by the Tinkerer makes it possible to surf on water without the help of a Pokémon. Cowabunga!"
+msgstr "7h15 d3v1ce g1ven 2 y0u by 73h Tink3rer mak35 17 p05518l3 2 surf on wa7er with0ut th3 h3lp of 4 Pok3m0n. Cow48unga!"
+
+msgid "Scuba Gear"
+msgstr "5cub4 Ge4r"
+
+msgid "This device given to you by the Tinkerer allows you to dive underwater on your own. Who ever used Dive anyways?"
+msgstr "7h15 d3v1ce g1ven 2 y0u by 73h Tink3rer 4l10w5 y0u 2 d1v3 und3rw4ter on y0ur 0wn. Wh0 ever u5'd Div3 4nyw4y5?"
+
+msgid "Climbing Pick"
+msgstr "C1im81ng Pick"
+
+msgid "This device given to you by the Tinkerer allows you to climb up waterfalls while using your surfboard. Extreme sports are fun!"
+msgstr "7h15 d3v1ce g1ven 2 y0u by 73h Tink3rer 4l10w5 y0u 2 c1imb up wa7erf4l1s whil3 usin6 your surf8oard. 3x7r3m3 5ports ar3 fun!"
+
+msgid "Rich Mulch"
+msgstr "R1ch Mulch"
+
+msgid "A plant fertilizer. It increases Berry harvest without the need for particularly diligent care."
+msgstr "4 p14n7 f3rti11z3r. 17 1ncr345es 83rry h4rv357 w1th0u7 t3h ne'd for particular1y di116ent car3."
+
+msgid "Sprinklotad"
+msgstr "5prinklo74d"
+
+msgid "A watering can shaped like a Lotad. It helps promote healthy growth of planted Berries."
+msgstr "4 w473r1n6 can shap'd l1ke 4 1otad. 1t h3lp5 pr0mo73 h3a1thy 6rowth 0f pl4nted 8err135."
+
+msgid "Quadcopter"
+msgstr "Quadc0pt3r"
+
+msgid "Final device created by the Tinkerer. Use this remote-controlled drone to Fly anywhere without the help of a Pokémon!"
+msgstr "Fin41 d3v1ce cre4ted 8y t3h 71nker3r. U53 7h15 r3m073-contr0l1ed drone 2 Fly 4nywher3 w1thou7 73h h31p 0f a P0kémon!"

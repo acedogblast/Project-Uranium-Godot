@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "TEST_COLOR_OUTPUT"
+msgstr "\\c[1]L\\c[2]o\\c[3]o\\c[4]k \\c[5]a\\c[6]t \\c[7]m\\c[8]e\\c[1], \\c[2]I\\c[3]'\\c[4]m \\c[5]s\\c[6]o \\c[7]c\\c[8]o\\c[1]l\\c[2]o\\c[3]r\\c[4]f\\c[5]u\\c[6]l\\c[7]\\c[8]! and now I'm back to white!"
+
+msgid "TEST_COLOR_BLEEDING"
+msgstr "\\c[2]The above string is red, and the one down too! The ones below need to share the same color, with only one single color code! This should also work mid line, \\c[1]without any kind of problems whatsoever!"
+
+msgid "TEST_SLOW_OUTPUT"
+msgstr "This is a message with suspense\\|.\\|.\\|. \n\\|And now we're done."
+
+msgid "TEST_VARIABLE_WAIT"
+msgstr "\\wt[1]a\\wt[2]b\\wt[3]c\\wt[4]d\\wt[5]e\\wt[6]f\\wt[7]g\\wt[8]h\\wt[9]i\\wt[10]j\\wt[11]k\\wt[12]l\\wt[13]m\\wt[14]n\\wt[15]o\\wt[16]p\\wt[17]q\\wt[18]r\\wt[19]s\\wt[20]t"
+
+msgid "TEST_TEXT_SPEED"
+msgstr "\\ts[3]This message is at regular speed.\n\\ts[10]This one is very slow.\n\\ts[1]This one's very fast!!!\n\\ts[]This one appears instantly!"
+
+msgid "TEST_TEXT_STYLE"
+msgstr "I'm making a <b><b><b><b><b><b>bold statement here</b>."
+
+msgid "TEST_WAIT_AUTO_SKIP"
+msgstr "This message will close in\n3\\..\\..\\..\\. 2\\..\\..\\..\\. 1\\..\\..\\.. \\wtnp[5]"
+
+msgid "TEST_NEWLINE"
+msgstr "\n\n\n\n\n\n\n\nPause right \\|here..."
+
+msgid "CUTSCENE_PLAYERCREATION_D1"
+msgstr "Hein?\\. Qui est là?\nOh, bonjour!\nBienvenue dans le monde des Pokémon!"
+
+msgid "CUTSCENE_PLAYERCREATION_D2"
+msgstr "Je m'appelle Bamb'o."
+
+msgid "CUTSCENE_PLAYERCREATION_D3"
+msgstr "...Euh,\\. mais si tu trouves ça difficile à prononcer,\\. tu peux juste m'appeler le Professeur Pokémon."
+
+msgid "CUTSCENE_PLAYERCREATION_D4"
+msgstr "C'est toi qui candidate pour le job, pas vrai?"
+
+msgid "CUTSCENE_PLAYERCREATION_D5"
+msgstr "Génial!\\wtnp[20]"
+
+msgid "CUTSCENE_PLAYERCREATION_D6"
+msgstr "Tu parcourras la région pour\ncollecter des spécimens pour mes recherches. En chemin, tu rencontreras\ntoutes sortes de gens. Certains seront coopératifs,\nd'autres non, mais essaie\nd'être aimable avec tout le monde. On ne veut pas d'une mauvaise réputation, pas vrai ? Les gens te demanderont de résoudre des mystères ou de leur donner un coup de main. Et ce ne sera pas facile --- le danger est partout. Créatures sauvages ou personnes mal intentionnées, il faudra rester sur tes gardes.\nMais garde la tête froide, et je suis sûr que tu t'en sortiras très bien."
+
+msgid "CUTSCENE_PLAYERCREATION_D7"
+msgstr "Nous, les humains, partageons ce monde avec des créatures appelées Pokémon. Bien plus que de simples animaux, les Pokémon possèdent des pouvoirs étonnants et une intelligence remarquable.\nHumains et Pokémon coexistent de mille façons. Certains Pokémon sont des compagnons,\\.\nd'autres nous aident au travail,\\. et d'autres encore\ncombattent aux côtés de Dresseurs comme toi."
+
+msgid "CUTSCENE_PLAYERCREATION_D8"
+msgstr "Mais il reste tant de choses que nous\nignorons sur les Pokémon. C'est là mon travail !\\. J'étudie les Pokémon.\nJe suis même expert en éléments Pokémon. Chaque Pokémon a un type élémentaire,\net chaque type a ses forces et ses faiblesses. Mais...\\. pourquoi existent-ils ?\\.\nY a-t-il des types encore inconnus ? Ah,\\. je t'en dirai plus lors de ton premier jour. Passe au laboratoire demain pour recevoir ton premier Pokémon. Maintenant, si tu veux bien remplir ce formulaire..."
+
+msgid "CUTSCENE_PLAYERCREATION_FINISH"
+msgstr "\\PN, es-tu prêt ? Ton voyage --- ton histoire --- est sur le point de commencer. L'avenir est une page blanche.\\. C'est toi, avec tes Pokémon, qui vas l'écrire. Il y aura des épreuves et des frissons, et tu feras sans nul doute des découvertes passionnantes. En route !"
+
+msgid "CUTSCENE_PLAYERCREATION_CHOOSE_CHARACTER"
+msgstr "Well, you certainly know what you want out of life.\\^"
+
+msgid "CUTSCENE_PLAYERCREATION_CONFIRM_CHARACTER"
+msgstr "Processing moves {1}..."
+
+msgid "CUTSCENE_PLAYERCREATION_CHOOSE_NAME"
+msgstr "\\PN, are you ready?"
+
+msgid "CUTSCENE_INTRO_D1"
+msgstr "Il y a 10 ans.\\wt[8].\\wt[8].\\wt[8]\nLa famille de \\PN vivait à Vagune,\nla plus grande ville de Tandor."
+
+msgid "CUTSCENE_INTRO_D2"
+msgstr "Son père, Primo, était un Ranger Pokémon talentueux et brave."
+
+msgid "CUTSCENE_INTRO_D3"
+msgstr "Sa mère, Lucille, était une brillante scientifique et une experte en énergie nucléaire."
+
+msgid "CUTSCENE_INTRO_D4"
+msgstr "Malgré leurs emplois demandants,\nils trouvaient toujours le temps de s'occuper de \\PN."
+
+msgid "CUTSCENE_INTRO_D5"
+msgstr "La région de Tandor était en paix,\net la société où travaillait Lucille planchait sur une forme\nd'énergie propre qui changerait le monde."
+
+msgid "CUTSCENE_INTRO_D6"
+msgstr "L'avenir semblait radieux.\\wt[20]\nJusqu'au jour où\\wt[8].\\wt[8].\\wt[8].\\wtnp[20]"
+
+msgid "CUTSCENE_INTRO_D7"
+msgstr "C'était un jour ordinaire à la Centrale Nucléaire où travaillait Lucille."
+
+msgid "CUTSCENE_INTRO_D8"
+msgstr "Durant une inspection de routine,\nils amenèrent un spécialiste pour\nanalyser le système électrique."
+
+msgid "CUTSCENE_INTRO_D9"
+msgstr "Cameron, vous avez fini vos diagnostics?"
+
+msgid "CUTSCENE_INTRO_D10"
+msgstr "Oui.\nTout a l'air en ordre.\nLe générateur que vous avez conçu marche à la perfection, Lucille."
+
+msgid "CUTSCENE_INTRO_D11"
+msgstr "Excellent."
+
+msgid "CUTSCENE_INTRO_D12"
+msgstr "Si tout le monde a fini de travailler,\nprenons une pause déjeuner."
+
+msgid "CUTSCENE_INTRO_D13"
+msgstr "Euh, boss...\nVous devriez voir ça."
+
+msgid "CUTSCENE_INTRO_D14"
+msgstr "Étrange...\\wt[16] Les relevés de température\nsont bien plus élevés que la normale.\nSoit le thermomètre est à réinitialiser, soit... Le réacteur laisse échapper une chaleur considérable..."
+
+msgid "CUTSCENE_INTRO_D15"
+msgstr "Ça ne peut être les thermomètres.\nJe viens de les vérifier.\nDonc\\wt[8].\\wt[8].\\wt[8].\\wtnp[18]"
+
+msgid "CUTSCENE_INTRO_D16"
+msgstr "Il doit y avoir une brèche dans le réacteur!\nA cette température, on est à quelques minutes d'une\nfusion du réacteur!"
+
+msgid "CUTSCENE_INTRO_D17"
+msgstr "Évacuez tous la zone! MAINTENANT!"
+
+msgid "CUTSCENE_INTRO_D18"
+msgstr "Lucille!\\wt[20]\nVous devez aussi partir!"
+
+msgid "CUTSCENE_INTRO_D19"
+msgstr "\\wt[8].\\wt[8].\\wt[8].\\wtnp[16]"
+
+msgid "CUTSCENE_INTRO_D20"
+msgstr "LUCILLE !!\\wtnp[28]"
+
+msgid "CUTSCENE_INTRO_D21"
+msgstr "Grâce à l'aide de Cameron, tous les scientifiques ont pu s'échapper indemnes...\\wt[18]\nsauf Lucille."
+
+msgid "CUTSCENE_INTRO_D22"
+msgstr "On ne l'a jamais revue après ce jour..."
+
+msgid "CUTSCENE_INTRO_D23"
+msgstr "Les radiations s'échappant du\nréacteur défectueux ont rendu les environs inhabitables pendant des années,\nempêchant toute tentative de sauvetage."
+
+msgid "CUTSCENE_INTRO_D24"
+msgstr "La perte de sa femme a profondément\nmarqué Kellyn. Sa personnalité a changé.\nIl est devenu froid, entièrement dévoué à son travail.\nAvec le temps, il fut promu Chef des Rangers Pokémon de Tandor. Mais trop occupé pour s'occuper de son enfant, il envoya le jeune \\PN vivre chez sa vieille tante à Bourg Moki."
+
+msgid "CUTSCENE_INTRO_D25"
+msgstr "10 années passèrent\\wt[8].\\wt[8].\\wt[8].\\wtnp[16]"
+
+msgid "CUTSCENE_INTRO_D26"
+msgstr "La santé de Tantine déclina.\nÉlever un enfant devenait trop lourd pour elle. Par chance, Ernest Bamb'o, le Professeur Pokémon du coin, cherchait un assistant de recherche. Deux enfants de Bourg Moki se présentèrent :\\. \\PN,\\.\net son ami d'enfance,\\. Theo. Il était courant pour les jeunes d'un certain âge\nde recevoir un Pokémon et de parcourir la région comme Dresseur. Et c'est ainsi que le voyage de \\PN commença..."

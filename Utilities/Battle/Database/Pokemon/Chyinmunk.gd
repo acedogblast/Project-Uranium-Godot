@@ -19,8 +19,9 @@ var sp_defense = 50
 var speed = 55
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Run Away"
+var ability_2 = "Pickup"
+var hidden_ability = "Quick Feet"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0

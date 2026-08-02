@@ -1,0 +1,10 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "BATTLE_PLAYER_DEFEATED_FOE"
+msgstr "{1} a vaincu\n{2}!"
+
+msgid "BATTLE_SWITCH_1"
+msgstr "{1}! Reviens!"

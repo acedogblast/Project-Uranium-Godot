@@ -19,8 +19,8 @@ var sp_defense = 105
 var speed = 85
 
 # The pokemon's public and hidden abilities
-var ability
-var hidden_ability
+var ability = "Static"
+var hidden_ability = "Torrent"
 
 # The pokemon's Effort Value Yeild
 var ev_yield_hp = 0
@@ -61,7 +61,7 @@ var moveset = [
 	MoveSet.new(4, "Tail Whip"),
 	MoveSet.new(7, "Water Gun"),
 	MoveSet.new(10, "Withdraw"),
-	MoveSet.new(17, "Aqua jet"),
+	MoveSet.new(17, "Aqua Jet"),
 	MoveSet.new(19, "Stomp"),
 	MoveSet.new(23, "Spark"),
 	MoveSet.new(25, "Magnet Rise"),

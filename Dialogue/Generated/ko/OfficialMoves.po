@@ -1,0 +1,1915 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgid "Megahorn"
+msgstr "메가혼"
+
+msgid "Attack Order"
+msgstr "공격지령"
+
+msgid "Bug Buzz"
+msgstr "벌레의야단법석"
+
+msgid "X-Scissor"
+msgstr "시저크로스"
+
+msgid "Signal Beam"
+msgstr "시그널빔"
+
+msgid "U-turn"
+msgstr "유턴"
+
+msgid "Steamroller"
+msgstr "하드롤러"
+
+msgid "Bug Bite"
+msgstr "벌레먹기"
+
+msgid "Silver Wind"
+msgstr "은빛바람"
+
+msgid "Struggle Bug"
+msgstr "벌레의저항"
+
+msgid "Twineedle"
+msgstr "더블니들"
+
+msgid "Fury Cutter"
+msgstr "연속자르기"
+
+msgid "Leech Life"
+msgstr "흡혈"
+
+msgid "Pin Missile"
+msgstr "바늘미사일"
+
+msgid "Defend Order"
+msgstr "방어지령"
+
+msgid "Heal Order"
+msgstr "회복지령"
+
+msgid "Quiver Dance"
+msgstr "나비춤"
+
+msgid "Rage Powder"
+msgstr "분노가루"
+
+msgid "Spider Web"
+msgstr "거미집"
+
+msgid "String Shot"
+msgstr "실뿜기"
+
+msgid "Tail Glow"
+msgstr "반딧불"
+
+msgid "Foul Play"
+msgstr "속임수"
+
+msgid "Night Daze"
+msgstr "나이트버스트"
+
+msgid "Crunch"
+msgstr "깨물어부수기"
+
+msgid "Dark Pulse"
+msgstr "악의파동"
+
+msgid "Sucker Punch"
+msgstr "기습"
+
+msgid "Night Slash"
+msgstr "깜짝베기"
+
+msgid "Bite"
+msgstr "물기"
+
+msgid "Feint Attack"
+msgstr "속여때리기"
+
+msgid "Snarl"
+msgstr "바크아웃"
+
+msgid "Assurance"
+msgstr "승부굳히기"
+
+msgid "Payback"
+msgstr "보복"
+
+msgid "Pursuit"
+msgstr "따라가때리기"
+
+msgid "Thief"
+msgstr "도둑질"
+
+msgid "Knock Off"
+msgstr "탁쳐서떨구기"
+
+msgid "Beat Up"
+msgstr "집단구타"
+
+msgid "Fling"
+msgstr "내던지기"
+
+msgid "Punishment"
+msgstr "혼내기"
+
+msgid "Dark Void"
+msgstr "다크홀"
+
+msgid "Embargo"
+msgstr "금제"
+
+msgid "Fake Tears"
+msgstr "거짓울음"
+
+msgid "Flatter"
+msgstr "부추기기"
+
+msgid "Hone Claws"
+msgstr "손톱갈기"
+
+msgid "Memento"
+msgstr "추억의선물"
+
+msgid "Nasty Plot"
+msgstr "나쁜음모"
+
+msgid "Quash"
+msgstr "순서미루기"
+
+msgid "Snatch"
+msgstr "가로채기"
+
+msgid "Switcheroo"
+msgstr "바꿔치기"
+
+msgid "Taunt"
+msgstr "도발"
+
+msgid "Torment"
+msgstr "트집"
+
+msgid "Roar of Time"
+msgstr "시간의포효"
+
+msgid "Draco Meteor"
+msgstr "용성군"
+
+msgid "Outrage"
+msgstr "역린"
+
+msgid "Dragon Rush"
+msgstr "드래곤다이브"
+
+msgid "Spacial Rend"
+msgstr "공간절단"
+
+msgid "Dragon Pulse"
+msgstr "용의파동"
+
+msgid "Dragon Claw"
+msgstr "드래곤클로"
+
+msgid "Dragon Tail"
+msgstr "드래곤테일"
+
+msgid "Dragon Breath"
+msgstr "용의숨결"
+
+msgid "Dual Chop"
+msgstr "더블촙"
+
+msgid "Twister"
+msgstr "회오리"
+
+msgid "Dragon Rage"
+msgstr "용의분노"
+
+msgid "Dragon Dance"
+msgstr "용의춤"
+
+msgid "Bolt Strike"
+msgstr "뇌격"
+
+msgid "Thunder"
+msgstr "번개"
+
+msgid "Volt Tackle"
+msgstr "볼트태클"
+
+msgid "Zap Cannon"
+msgstr "전자포"
+
+msgid "Fusion Bolt"
+msgstr "크로스썬더"
+
+msgid "Thunderbolt"
+msgstr "10만볼트"
+
+msgid "Wild Charge"
+msgstr "와일드볼트"
+
+msgid "Discharge"
+msgstr "방전"
+
+msgid "Thunder Punch"
+msgstr "번개펀치"
+
+msgid "Volt Switch"
+msgstr "볼트체인지"
+
+msgid "Spark"
+msgstr "스파크"
+
+msgid "Thunder Fang"
+msgstr "번개엄니"
+
+msgid "Shock Wave"
+msgstr "전격파"
+
+msgid "Electroweb"
+msgstr "일렉트릭네트"
+
+msgid "Charge Beam"
+msgstr "차지빔"
+
+msgid "Thunder Shock"
+msgstr "전기쇼크"
+
+msgid "Electro Ball"
+msgstr "일렉트릭볼"
+
+msgid "Charge"
+msgstr "충전"
+
+msgid "Magnet Rise"
+msgstr "전자부유"
+
+msgid "Thunder Wave"
+msgstr "전기자석파"
+
+msgid "Focus Punch"
+msgstr "힘껏펀치"
+
+msgid "High Jump Kick"
+msgstr "무릎차기"
+
+msgid "Close Combat"
+msgstr "인파이트"
+
+msgid "Focus Blast"
+msgstr "기합구슬"
+
+msgid "Superpower"
+msgstr "엄청난힘"
+
+msgid "Cross Chop"
+msgstr "크로스촙"
+
+msgid "Dynamic Punch"
+msgstr "폭발펀치"
+
+msgid "Hammer Arm"
+msgstr "암해머"
+
+msgid "Jump Kick"
+msgstr "점프킥"
+
+msgid "Aura Sphere"
+msgstr "파동탄"
+
+msgid "Sacred Sword"
+msgstr "성스러운칼"
+
+msgid "Secret Sword"
+msgstr "신비의칼"
+
+msgid "Sky Uppercut"
+msgstr "스카이어퍼"
+
+msgid "Submission"
+msgstr "지옥의바퀴"
+
+msgid "Brick Break"
+msgstr "깨트리기"
+
+msgid "Drain Punch"
+msgstr "드레인펀치"
+
+msgid "Vital Throw"
+msgstr "받아던지기"
+
+msgid "Circle Throw"
+msgstr "배대뒤치기"
+
+msgid "Force Palm"
+msgstr "발경"
+
+msgid "Low Sweep"
+msgstr "로킥"
+
+msgid "Revenge"
+msgstr "리벤지"
+
+msgid "Rolling Kick"
+msgstr "돌려차기"
+
+msgid "Wake-Up Slap"
+msgstr "잠깨움뺨치기"
+
+msgid "Karate Chop"
+msgstr "태권당수"
+
+msgid "Mach Punch"
+msgstr "마하펀치"
+
+msgid "Rock Smash"
+msgstr "바위깨기"
+
+msgid "Storm Throw"
+msgstr "업어후리기"
+
+msgid "Vacuum Wave"
+msgstr "진공파"
+
+msgid "Double Kick"
+msgstr "두번차기"
+
+msgid "Arm Thrust"
+msgstr "손바닥치기"
+
+msgid "Triple Kick"
+msgstr "트리플킥"
+
+msgid "Counter"
+msgstr "카운터"
+
+msgid "Final Gambit"
+msgstr "목숨걸기"
+
+msgid "Low Kick"
+msgstr "안다리걸기"
+
+msgid "Reversal"
+msgstr "기사회생"
+
+msgid "Seismic Toss"
+msgstr "지구던지기"
+
+msgid "Bulk Up"
+msgstr "벌크업"
+
+msgid "Detect"
+msgstr "판별"
+
+msgid "Quick Guard"
+msgstr "패스트가드"
+
+msgid "V-create"
+msgstr "V제너레이트"
+
+msgid "Blast Burn"
+msgstr "블라스트번"
+
+msgid "Eruption"
+msgstr "분화"
+
+msgid "Overheat"
+msgstr "오버히트"
+
+msgid "Blue Flare"
+msgstr "푸른불꽃"
+
+msgid "Fire Blast"
+msgstr "불대문자"
+
+msgid "Flare Blitz"
+msgstr "플레어드라이브"
+
+msgid "Magma Storm"
+msgstr "마그마스톰"
+
+msgid "Fusion Flare"
+msgstr "크로스플레임"
+
+msgid "Heat Wave"
+msgstr "열풍"
+
+msgid "Inferno"
+msgstr "연옥"
+
+msgid "Sacred Fire"
+msgstr "성스러운불꽃"
+
+msgid "Searing Shot"
+msgstr "화염탄"
+
+msgid "Flamethrower"
+msgstr "화염방사"
+
+msgid "Blaze Kick"
+msgstr "블레이즈킥"
+
+msgid "Fiery Dance"
+msgstr "불꽃춤"
+
+msgid "Lava Plume"
+msgstr "분연"
+
+msgid "Fire Punch"
+msgstr "불꽃펀치"
+
+msgid "Flame Burst"
+msgstr "불꽃튀기기"
+
+msgid "Fire Fang"
+msgstr "불꽃엄니"
+
+msgid "Flame Wheel"
+msgstr "화염바퀴"
+
+msgid "Fire Pledge"
+msgstr "불꽃의맹세"
+
+msgid "Flame Charge"
+msgstr "니트로차지"
+
+msgid "Ember"
+msgstr "불꽃세례"
+
+msgid "Fire Spin"
+msgstr "회오리불꽃"
+
+msgid "Incinerate"
+msgstr "불태우기"
+
+msgid "Heat Crash"
+msgstr "히트스탬프"
+
+msgid "Sunny Day"
+msgstr "쾌청"
+
+msgid "Will-O-Wisp"
+msgstr "도깨비불"
+
+msgid "Sky Attack"
+msgstr "불새"
+
+msgid "Brave Bird"
+msgstr "브레이브버드"
+
+msgid "Hurricane"
+msgstr "폭풍"
+
+msgid "Aeroblast"
+msgstr "에어로블라스트"
+
+msgid "Fly"
+msgstr "공중날기"
+
+msgid "Bounce"
+msgstr "뛰어오르기"
+
+msgid "Drill Peck"
+msgstr "회전부리"
+
+msgid "Air Slash"
+msgstr "에어슬래시"
+
+msgid "Aerial Ace"
+msgstr "제비반환"
+
+msgid "Chatter"
+msgstr "수다"
+
+msgid "Pluck"
+msgstr "쪼아대기"
+
+msgid "Sky Drop"
+msgstr "프리폴"
+
+msgid "Wing Attack"
+msgstr "날개치기"
+
+msgid "Acrobatics"
+msgstr "애크러뱃"
+
+msgid "Air Cutter"
+msgstr "에어커터"
+
+msgid "Gust"
+msgstr "바람일으키기"
+
+msgid "Peck"
+msgstr "쪼기"
+
+msgid "Defog"
+msgstr "안개제거"
+
+msgid "Feather Dance"
+msgstr "깃털댄스"
+
+msgid "Mirror Move"
+msgstr "따라하기"
+
+msgid "Roost"
+msgstr "날개쉬기"
+
+msgid "Tailwind"
+msgstr "순풍"
+
+msgid "Shadow Force"
+msgstr "섀도다이브"
+
+msgid "Shadow Ball"
+msgstr "섀도볼"
+
+msgid "Shadow Claw"
+msgstr "섀도클로"
+
+msgid "Ominous Wind"
+msgstr "괴상한바람"
+
+msgid "Shadow Punch"
+msgstr "섀도펀치"
+
+msgid "Hex"
+msgstr "병상첨병"
+
+msgid "Shadow Sneak"
+msgstr "야습"
+
+msgid "Astonish"
+msgstr "놀래키기"
+
+msgid "Lick"
+msgstr "핥기"
+
+msgid "Night Shade"
+msgstr "나이트헤드"
+
+msgid "Confuse Ray"
+msgstr "이상한빛"
+
+msgid "Curse"
+msgstr "저주"
+
+msgid "Destiny Bond"
+msgstr "길동무"
+
+msgid "Grudge"
+msgstr "원념"
+
+msgid "Nightmare"
+msgstr "악몽"
+
+msgid "Spite"
+msgstr "원한"
+
+msgid "Frenzy Plant"
+msgstr "하드플랜트"
+
+msgid "Leaf Storm"
+msgstr "리프스톰"
+
+msgid "Petal Dance"
+msgstr "꽃잎댄스"
+
+msgid "Power Whip"
+msgstr "파워휩"
+
+msgid "Seed Flare"
+msgstr "시드플레어"
+
+msgid "Solar Beam"
+msgstr "솔라빔"
+
+msgid "Wood Hammer"
+msgstr "우드해머"
+
+msgid "Leaf Blade"
+msgstr "리프블레이드"
+
+msgid "Energy Ball"
+msgstr "에너지볼"
+
+msgid "Seed Bomb"
+msgstr "씨폭탄"
+
+msgid "Giga Drain"
+msgstr "기가드레인"
+
+msgid "Horn Leech"
+msgstr "우드혼"
+
+msgid "Leaf Tornado"
+msgstr "그래스믹서"
+
+msgid "Magical Leaf"
+msgstr "매지컬리프"
+
+msgid "Needle Arm"
+msgstr "바늘팔"
+
+msgid "Razor Leaf"
+msgstr "잎날가르기"
+
+msgid "Grass Pledge"
+msgstr "풀의맹세"
+
+msgid "Mega Drain"
+msgstr "메가드레인"
+
+msgid "Vine Whip"
+msgstr "덩굴채찍"
+
+msgid "Bullet Seed"
+msgstr "씨기관총"
+
+msgid "Absorb"
+msgstr "흡수"
+
+msgid "Grass Knot"
+msgstr "풀묶기"
+
+msgid "Aromatherapy"
+msgstr "아로마테라피"
+
+msgid "Cotton Guard"
+msgstr "코튼가드"
+
+msgid "Cotton Spore"
+msgstr "목화포자"
+
+msgid "Grass Whistle"
+msgstr "풀피리"
+
+msgid "Ingrain"
+msgstr "뿌리박기"
+
+msgid "Leech Seed"
+msgstr "씨뿌리기"
+
+msgid "Sleep Powder"
+msgstr "수면가루"
+
+msgid "Spore"
+msgstr "버섯포자"
+
+msgid "Stun Spore"
+msgstr "저리가루"
+
+msgid "Synthesis"
+msgstr "광합성"
+
+msgid "Worry Seed"
+msgstr "고민씨"
+
+msgid "Earthquake"
+msgstr "지진"
+
+msgid "Earth Power"
+msgstr "대지의힘"
+
+msgid "Dig"
+msgstr "구멍파기"
+
+msgid "Drill Run"
+msgstr "드릴라이너"
+
+msgid "Bone Club"
+msgstr "뼈다귀치기"
+
+msgid "Mud Bomb"
+msgstr "진흙폭탄"
+
+msgid "Bulldoze"
+msgstr "땅고르기"
+
+msgid "Mud Shot"
+msgstr "머드샷"
+
+msgid "Bonemerang"
+msgstr "뼈다귀부메랑"
+
+msgid "Sand Tomb"
+msgstr "모래지옥"
+
+msgid "Bone Rush"
+msgstr "본러시"
+
+msgid "Mud-Slap"
+msgstr "진흙뿌리기"
+
+msgid "Fissure"
+msgstr "땅가르기"
+
+msgid "Magnitude"
+msgstr "매그니튜드"
+
+msgid "Mud Sport"
+msgstr "흙놀이"
+
+msgid "Sand Attack"
+msgstr "모래뿌리기"
+
+msgid "Spikes"
+msgstr "압정뿌리기"
+
+msgid "Freeze Shock"
+msgstr "프리즈볼트"
+
+msgid "Ice Burn"
+msgstr "콜드플레어"
+
+msgid "Blizzard"
+msgstr "눈보라"
+
+msgid "Ice Beam"
+msgstr "냉동빔"
+
+msgid "Icicle Crash"
+msgstr "고드름떨구기"
+
+msgid "Ice Punch"
+msgstr "냉동펀치"
+
+msgid "Aurora Beam"
+msgstr "오로라빔"
+
+msgid "Glaciate"
+msgstr "얼어붙은세계"
+
+msgid "Ice Fang"
+msgstr "얼음엄니"
+
+msgid "Avalanche"
+msgstr "눈사태"
+
+msgid "Icy Wind"
+msgstr "얼어붙은바람"
+
+msgid "Frost Breath"
+msgstr "얼음숨결"
+
+msgid "Ice Shard"
+msgstr "얼음뭉치"
+
+msgid "Powder Snow"
+msgstr "눈싸라기"
+
+msgid "Ice Ball"
+msgstr "아이스볼"
+
+msgid "Icicle Spear"
+msgstr "고드름침"
+
+msgid "Sheer Cold"
+msgstr "절대영도"
+
+msgid "Hail"
+msgstr "싸라기눈"
+
+msgid "Haze"
+msgstr "흑안개"
+
+msgid "Mist"
+msgstr "흰안개"
+
+msgid "Explosion"
+msgstr "대폭발"
+
+msgid "Self-Destruct"
+msgstr "자폭"
+
+msgid "Giga Impact"
+msgstr "기가임팩트"
+
+msgid "Hyper Beam"
+msgstr "파괴광선"
+
+msgid "Last Resort"
+msgstr "비장의무기"
+
+msgid "Double-Edge"
+msgstr "이판사판태클"
+
+msgid "Head Charge"
+msgstr "아프로브레이크"
+
+msgid "Mega Kick"
+msgstr "메가톤킥"
+
+msgid "Thrash"
+msgstr "난동부리기"
+
+msgid "Egg Bomb"
+msgstr "알폭탄"
+
+msgid "Judgment"
+msgstr "심판의뭉치"
+
+msgid "Skull Bash"
+msgstr "로켓박치기"
+
+msgid "Hyper Voice"
+msgstr "하이퍼보이스"
+
+msgid "Rock Climb"
+msgstr "록클라임"
+
+msgid "Take Down"
+msgstr "돌진"
+
+msgid "Uproar"
+msgstr "소란피기"
+
+msgid "Body Slam"
+msgstr "누르기"
+
+msgid "Techno Blast"
+msgstr "테크노버스터"
+
+msgid "Extreme Speed"
+msgstr "신속"
+
+msgid "Hyper Fang"
+msgstr "필살앞니"
+
+msgid "Mega Punch"
+msgstr "메가톤펀치"
+
+msgid "Razor Wind"
+msgstr "칼바람"
+
+msgid "Slam"
+msgstr "힘껏치기"
+
+msgid "Strength"
+msgstr "괴력"
+
+msgid "Tri Attack"
+msgstr "트라이어택"
+
+msgid "Crush Claw"
+msgstr "브레이크클로"
+
+msgid "Relic Song"
+msgstr "옛노래"
+
+msgid "Chip Away"
+msgstr "야금야금"
+
+msgid "Dizzy Punch"
+msgstr "잼잼펀치"
+
+msgid "Facade"
+msgstr "객기"
+
+msgid "Headbutt"
+msgstr "박치기"
+
+msgid "Retaliate"
+msgstr "원수갚기"
+
+msgid "Secret Power"
+msgstr "비밀의힘"
+
+msgid "Slash"
+msgstr "베어가르기"
+
+msgid "Horn Attack"
+msgstr "뿔찌르기"
+
+msgid "Stomp"
+msgstr "짓밟기"
+
+msgid "Covet"
+msgstr "탐내기"
+
+msgid "Round"
+msgstr "돌림노래"
+
+msgid "Smelling Salts"
+msgstr "정신차리기"
+
+msgid "Swift"
+msgstr "스피드스타"
+
+msgid "Vice Grip"
+msgstr "찝기"
+
+msgid "Cut"
+msgstr "풀베기"
+
+msgid "Struggle"
+msgstr "발버둥"
+
+msgid "Tackle"
+msgstr "몸통박치기"
+
+msgid "Weather Ball"
+msgstr "웨더볼"
+
+msgid "Echoed Voice"
+msgstr "에코보이스"
+
+msgid "Fake Out"
+msgstr "속이기"
+
+msgid "False Swipe"
+msgstr "칼등치기"
+
+msgid "Golden Fist"
+msgstr "골든피스트"
+
+msgid "Pound"
+msgstr "막치기"
+
+msgid "Quick Attack"
+msgstr "전광석화"
+
+msgid "Scratch"
+msgstr "할퀴기"
+
+msgid "Snore"
+msgstr "코골기"
+
+msgid "Double Hit"
+msgstr "더블어택"
+
+msgid "Feint"
+msgstr "페인트"
+
+msgid "Tail Slap"
+msgstr "스위프뺨치기"
+
+msgid "Rage"
+msgstr "분노"
+
+msgid "Rapid Spin"
+msgstr "고속스핀"
+
+msgid "Spike Cannon"
+msgstr "가시대포"
+
+msgid "Comet Punch"
+msgstr "연속펀치"
+
+msgid "Fury Swipes"
+msgstr "마구할퀴기"
+
+msgid "Barrage"
+msgstr "구슬던지기"
+
+msgid "Bind"
+msgstr "조이기"
+
+msgid "Double Slap"
+msgstr "연속뺨치기"
+
+msgid "Fury Attack"
+msgstr "마구찌르기"
+
+msgid "Wrap"
+msgstr "김밥말이"
+
+msgid "Constrict"
+msgstr "휘감기"
+
+msgid "Bide"
+msgstr "참기"
+
+msgid "Crush Grip"
+msgstr "묵사발"
+
+msgid "Endeavor"
+msgstr "죽기살기"
+
+msgid "Flail"
+msgstr "바둥바둥"
+
+msgid "Frustration"
+msgstr "화풀이"
+
+msgid "Guillotine"
+msgstr "가위자르기"
+
+msgid "Hidden Power"
+msgstr "잠재파워"
+
+msgid "Horn Drill"
+msgstr "뿔드릴"
+
+msgid "Natural Gift"
+msgstr "자연의은혜"
+
+msgid "Present"
+msgstr "프레젠트"
+
+msgid "Return"
+msgstr "은혜갚기"
+
+msgid "Sonic Boom"
+msgstr "소닉붐"
+
+msgid "Spit Up"
+msgstr "토해내기"
+
+msgid "Super Fang"
+msgstr "분노의앞니"
+
+msgid "Trump Card"
+msgstr "마지막수단"
+
+msgid "Wring Out"
+msgstr "쥐어짜기"
+
+msgid "Acupressure"
+msgstr "경혈찌르기"
+
+msgid "After You"
+msgstr "당신먼저"
+
+msgid "Assist"
+msgstr "조수"
+
+msgid "Attract"
+msgstr "헤롱헤롱"
+
+msgid "Baton Pass"
+msgstr "배턴터치"
+
+msgid "Belly Drum"
+msgstr "배북"
+
+msgid "Bestow"
+msgstr "기프트패스"
+
+msgid "Block"
+msgstr "블록"
+
+msgid "Camouflage"
+msgstr "보호색"
+
+msgid "Captivate"
+msgstr "유혹"
+
+msgid "Charm"
+msgstr "애교부리기"
+
+msgid "Conversion"
+msgstr "텍스처"
+
+msgid "Conversion 2"
+msgstr "텍스처2"
+
+msgid "Copycat"
+msgstr "흉내쟁이"
+
+msgid "Defense Curl"
+msgstr "웅크리기"
+
+msgid "Disable"
+msgstr "사슬묶기"
+
+msgid "Double Team"
+msgstr "그림자분신"
+
+msgid "Encore"
+msgstr "앙코르"
+
+msgid "Endure"
+msgstr "버티기"
+
+msgid "Entrainment"
+msgstr "동료만들기"
+
+msgid "Flash"
+msgstr "플래시"
+
+msgid "Focus Energy"
+msgstr "기충전"
+
+msgid "Follow Me"
+msgstr "날따름"
+
+msgid "Foresight"
+msgstr "꿰뚫어보기"
+
+msgid "Glare"
+msgstr "뱀눈초리"
+
+msgid "Growl"
+msgstr "울음소리"
+
+msgid "Growth"
+msgstr "성장"
+
+msgid "Harden"
+msgstr "단단해지기"
+
+msgid "Heal Bell"
+msgstr "치료방울"
+
+msgid "Helping Hand"
+msgstr "도우미"
+
+msgid "Howl"
+msgstr "멀리짖기"
+
+msgid "Leer"
+msgstr "째려보기"
+
+msgid "Lock-On"
+msgstr "록온"
+
+msgid "Lovely Kiss"
+msgstr "악마의키스"
+
+msgid "Lucky Chant"
+msgstr "주술"
+
+msgid "Me First"
+msgstr "선취"
+
+msgid "Mean Look"
+msgstr "검은눈빛"
+
+msgid "Metronome"
+msgstr "손가락흔들기"
+
+msgid "Milk Drink"
+msgstr "우유마시기"
+
+msgid "Mimic"
+msgstr "흉내내기"
+
+msgid "Mind Reader"
+msgstr "마음의눈"
+
+msgid "Minimize"
+msgstr "작아지기"
+
+msgid "Moonlight"
+msgstr "달빛"
+
+msgid "Morning Sun"
+msgstr "아침햇살"
+
+msgid "Nature Power"
+msgstr "자연의힘"
+
+msgid "Odor Sleuth"
+msgstr "냄새구별"
+
+msgid "Pain Split"
+msgstr "아픔나누기"
+
+msgid "Perish Song"
+msgstr "멸망의노래"
+
+msgid "Protect"
+msgstr "방어"
+
+msgid "Psych Up"
+msgstr "자기암시"
+
+msgid "Recover"
+msgstr "HP회복"
+
+msgid "Recycle"
+msgstr "리사이클"
+
+msgid "Reflect Type"
+msgstr "미러타입"
+
+msgid "Refresh"
+msgstr "리프레시"
+
+msgid "Roar"
+msgstr "울부짖기"
+
+msgid "Safeguard"
+msgstr "신비의부적"
+
+msgid "Scary Face"
+msgstr "겁나는얼굴"
+
+msgid "Screech"
+msgstr "싫은소리"
+
+msgid "Sharpen"
+msgstr "각지기"
+
+msgid "Shell Smash"
+msgstr "껍질깨기"
+
+msgid "Simple Beam"
+msgstr "심플빔"
+
+msgid "Sing"
+msgstr "노래하기"
+
+msgid "Sketch"
+msgstr "스케치"
+
+msgid "Slack Off"
+msgstr "게으름피우기"
+
+msgid "Sleep Talk"
+msgstr "잠꼬대"
+
+msgid "Smoke Screen"
+msgstr "연막"
+
+msgid "Soft-Boiled"
+msgstr "알낳기"
+
+msgid "Splash"
+msgstr "튀어오르기"
+
+msgid "Stockpile"
+msgstr "비축하기"
+
+msgid "Substitute"
+msgstr "대타출동"
+
+msgid "Supersonic"
+msgstr "초음파"
+
+msgid "Swagger"
+msgstr "뽐내기"
+
+msgid "Swallow"
+msgstr "꿀꺽"
+
+msgid "Sweet Kiss"
+msgstr "천사의키스"
+
+msgid "Sweet Scent"
+msgstr "달콤한향기"
+
+msgid "Swords Dance"
+msgstr "칼춤"
+
+msgid "Tail Whip"
+msgstr "꼬리흔들기"
+
+msgid "Teeter Dance"
+msgstr "흔들흔들댄스"
+
+msgid "Tickle"
+msgstr "간지르기"
+
+msgid "Transform"
+msgstr "변신"
+
+msgid "Whirlwind"
+msgstr "날려버리기"
+
+msgid "Wish"
+msgstr "희망사항"
+
+msgid "Work Up"
+msgstr "분발"
+
+msgid "Yawn"
+msgstr "하품"
+
+msgid "Gunk Shot"
+msgstr "더스트슈트"
+
+msgid "Sludge Wave"
+msgstr "오물웨이브"
+
+msgid "Sludge Bomb"
+msgstr "오물폭탄"
+
+msgid "Poison Jab"
+msgstr "독찌르기"
+
+msgid "Cross Poison"
+msgstr "크로스포이즌"
+
+msgid "Sludge"
+msgstr "오물공격"
+
+msgid "Venoshock"
+msgstr "베놈쇼크"
+
+msgid "Clear Smog"
+msgstr "클리어스모그"
+
+msgid "Poison Fang"
+msgstr "맹독엄니"
+
+msgid "Poison Tail"
+msgstr "포이즌테일"
+
+msgid "Acid"
+msgstr "용해액"
+
+msgid "Acid Spray"
+msgstr "애시드봄"
+
+msgid "Smog"
+msgstr "스모그"
+
+msgid "Poison Sting"
+msgstr "독침"
+
+msgid "Acid Armor"
+msgstr "녹기"
+
+msgid "Coil"
+msgstr "똬리틀기"
+
+msgid "Gastro Acid"
+msgstr "위액"
+
+msgid "Poison Gas"
+msgstr "독가스"
+
+msgid "Poison Powder"
+msgstr "독가루"
+
+msgid "Toxic"
+msgstr "맹독"
+
+msgid "Toxic Spikes"
+msgstr "독압정"
+
+msgid "Psycho Boost"
+msgstr "사이코부스트"
+
+msgid "Dream Eater"
+msgstr "꿈먹기"
+
+msgid "Future Sight"
+msgstr "미래예지"
+
+msgid "Psystrike"
+msgstr "사이코브레이크"
+
+msgid "Psychic"
+msgstr "사이코키네시스"
+
+msgid "Extrasensory"
+msgstr "신통력"
+
+msgid "Psyshock"
+msgstr "사이코쇼크"
+
+msgid "Zen Headbutt"
+msgstr "사념의박치기"
+
+msgid "Luster Purge"
+msgstr "러스터퍼지"
+
+msgid "Mist Ball"
+msgstr "미스트볼"
+
+msgid "Psycho Cut"
+msgstr "사이코커터"
+
+msgid "Synchronoise"
+msgstr "싱크로노이즈"
+
+msgid "Psybeam"
+msgstr "환상빔"
+
+msgid "Heart Stamp"
+msgstr "하트스탬프"
+
+msgid "Confusion"
+msgstr "염동력"
+
+msgid "Mirror Coat"
+msgstr "미러코트"
+
+msgid "Psywave"
+msgstr "사이코웨이브"
+
+msgid "Stored Power"
+msgstr "어시스트파워"
+
+msgid "Agility"
+msgstr "고속이동"
+
+msgid "Ally Switch"
+msgstr "사이드체인지"
+
+msgid "Amnesia"
+msgstr "망각술"
+
+msgid "Barrier"
+msgstr "배리어"
+
+msgid "Calm Mind"
+msgstr "명상"
+
+msgid "Cosmic Power"
+msgstr "코스믹파워"
+
+msgid "Gravity"
+msgstr "중력"
+
+msgid "Guard Split"
+msgstr "가드셰어"
+
+msgid "Guard Swap"
+msgstr "가드스왑"
+
+msgid "Heal Block"
+msgstr "회복봉인"
+
+msgid "Heal Pulse"
+msgstr "치유파동"
+
+msgid "Healing Wish"
+msgstr "치유소원"
+
+msgid "Heart Swap"
+msgstr "하트스왑"
+
+msgid "Hypnosis"
+msgstr "최면술"
+
+msgid "Imprison"
+msgstr "봉인"
+
+msgid "Kinesis"
+msgstr "숟가락휘기"
+
+msgid "Light Screen"
+msgstr "빛의장막"
+
+msgid "Lunar Dance"
+msgstr "초승달춤"
+
+msgid "Magic Coat"
+msgstr "매직코트"
+
+msgid "Magic Room"
+msgstr "매직룸"
+
+msgid "Meditate"
+msgstr "요가포즈"
+
+msgid "Miracle Eye"
+msgstr "미라클아이"
+
+msgid "Power Split"
+msgstr "파워셰어"
+
+msgid "Power Swap"
+msgstr "파워스왑"
+
+msgid "Power Trick"
+msgstr "파워트릭"
+
+msgid "Psycho Shift"
+msgstr "사이코시프트"
+
+msgid "Reflect"
+msgstr "리플렉터"
+
+msgid "Rest"
+msgstr "잠자기"
+
+msgid "Role Play"
+msgstr "역할"
+
+msgid "Skill Swap"
+msgstr "스킬스왑"
+
+msgid "Telekinesis"
+msgstr "텔레키네시스"
+
+msgid "Teleport"
+msgstr "순간이동"
+
+msgid "Trick"
+msgstr "트릭"
+
+msgid "Trick Room"
+msgstr "트릭룸"
+
+msgid "Wonder Room"
+msgstr "원더룸"
+
+msgid "Head Smash"
+msgstr "양날박치기"
+
+msgid "Rock Wrecker"
+msgstr "암석포"
+
+msgid "Stone Edge"
+msgstr "스톤에지"
+
+msgid "Rock Slide"
+msgstr "스톤샤워"
+
+msgid "Power Gem"
+msgstr "파워젬"
+
+msgid "Ancient Power"
+msgstr "원시의힘"
+
+msgid "Rock Throw"
+msgstr "돌떨구기"
+
+msgid "Rock Tomb"
+msgstr "암석봉인"
+
+msgid "Smack Down"
+msgstr "떨어뜨리기"
+
+msgid "Rollout"
+msgstr "구르기"
+
+msgid "Rock Blast"
+msgstr "록블라스트"
+
+msgid "Rock Polish"
+msgstr "록커트"
+
+msgid "Sandstorm"
+msgstr "모래바람"
+
+msgid "Stealth Rock"
+msgstr "스텔스록"
+
+msgid "Wide Guard"
+msgstr "와이드가드"
+
+msgid "Doom Desire"
+msgstr "파멸의소원"
+
+msgid "Iron Tail"
+msgstr "아이언테일"
+
+msgid "Meteor Mash"
+msgstr "코멧펀치"
+
+msgid "Flash Cannon"
+msgstr "러스터캐논"
+
+msgid "Iron Head"
+msgstr "아이언헤드"
+
+msgid "Steel Wing"
+msgstr "강철날개"
+
+msgid "Mirror Shot"
+msgstr "미러샷"
+
+msgid "Magnet Bomb"
+msgstr "마그넷봄"
+
+msgid "Gear Grind"
+msgstr "기어소서"
+
+msgid "Metal Claw"
+msgstr "메탈클로"
+
+msgid "Bullet Punch"
+msgstr "불릿펀치"
+
+msgid "Gyro Ball"
+msgstr "자이로볼"
+
+msgid "Heavy Slam"
+msgstr "헤비봄버"
+
+msgid "Metal Burst"
+msgstr "메탈버스트"
+
+msgid "Autotomize"
+msgstr "바디퍼지"
+
+msgid "Iron Defense"
+msgstr "철벽"
+
+msgid "Metal Sound"
+msgstr "금속음"
+
+msgid "Shift Gear"
+msgstr "기어체인지"
+
+msgid "Hydro Cannon"
+msgstr "하이드로캐논"
+
+msgid "Water Spout"
+msgstr "해수스파우팅"
+
+msgid "Hydro Pump"
+msgstr "하이드로펌프"
+
+msgid "Muddy Water"
+msgstr "탁류"
+
+msgid "Surf"
+msgstr "파도타기"
+
+msgid "Aqua Tail"
+msgstr "아쿠아테일"
+
+msgid "Crabhammer"
+msgstr "집게해머"
+
+msgid "Dive"
+msgstr "다이빙"
+
+msgid "Scald"
+msgstr "열탕"
+
+msgid "Waterfall"
+msgstr "폭포오르기"
+
+msgid "Razor Shell"
+msgstr "셸블레이드"
+
+msgid "Brine"
+msgstr "소금물"
+
+msgid "Bubble Beam"
+msgstr "거품광선"
+
+msgid "Octazooka"
+msgstr "대포무노포"
+
+msgid "Water Pulse"
+msgstr "물의파동"
+
+msgid "Water Pledge"
+msgstr "물의맹세"
+
+msgid "Aqua Jet"
+msgstr "아쿠아제트"
+
+msgid "Water Gun"
+msgstr "물대포"
+
+msgid "Clamp"
+msgstr "껍질끼우기"
+
+msgid "Whirlpool"
+msgstr "바다회오리"
+
+msgid "Bubble"
+msgstr "거품"
+
+msgid "Aqua Ring"
+msgstr "아쿠아링"
+
+msgid "Rain Dance"
+msgstr "비바라기"
+
+msgid "Soak"
+msgstr "물붓기"
+
+msgid "Water Sport"
+msgstr "물놀이"
+
+msgid "Withdraw"
+msgstr "껍질에숨기"
+
+msgid "Coral Break"
+msgstr "산호크래시"
+
+msgid "Atomic Punch"
+msgstr "아토믹펀치"
+
+msgid "Metal Whip"
+msgstr "강철채찍"
+
+msgid "Shuffle"
+msgstr "셔플"
+
+msgid "Nuclear Waste"
+msgstr "핵폐기물"
+
+msgid "Gamma Ray"
+msgstr "감마광선"
+
+msgid "Radioacid"
+msgstr "방사능산"
+
+msgid "Sky Fall"
+msgstr "천공위압"
+
+msgid "Flame Impact"
+msgstr "히트임팩트"
+
+msgid "Draining Kiss"
+msgstr "드레인키스"
+
+msgid "Eerie Impulse"
+msgstr "괴전파"
+
+msgid "Electric Terrain"
+msgstr "일렉트릭필드"
+
+msgid "Electrify"
+msgstr "송전"
+
+msgid "Fairy Lock"
+msgstr "페어리록"
+
+msgid "Fairy Wind"
+msgstr "요정의바람"
+
+msgid "Fell Stinger"
+msgstr "마지막일침"
+
+msgid "Flower Shield"
+msgstr "플라워가드"
+
+msgid "Flying Press"
+msgstr "플라잉프레스"
+
+msgid "Forest's Curse"
+msgstr "숲의저주"
+
+msgid "Freeze-Dry"
+msgstr "프리즈드라이"
+
+msgid "Geomancy"
+msgstr "지오컨트롤"
+
+msgid "Grassy Terrain"
+msgstr "그래스필드"
+
+msgid "Infestation"
+msgstr "엉겨붙기"
+
+msgid "Ion Deluge"
+msgstr "플라스마샤워"
+
+msgid "King's Shield"
+msgstr "킹실드"
+
+msgid "Land's Wrath"
+msgstr "그라운드포스"
+
+msgid "Magnetic Flux"
+msgstr "자기장조작"
+
+msgid "Mat Block"
+msgstr "마룻바닥세워막기"
+
+msgid "Misty Terrain"
+msgstr "미스트필드"
+
+msgid "Moonblast"
+msgstr "문포스"
+
+msgid "Mystical Fire"
+msgstr "매지컬플레임"
+
+msgid "Noble Roar"
+msgstr "부르짖기"
+
+msgid "Nuzzle"
+msgstr "볼부비부비"
+
+msgid "Oblivion Wing"
+msgstr "데스윙"
+
+msgid "Parabolic Charge"
+msgstr "파라볼라차지"
+
+msgid "Parting Shot"
+msgstr "막말내뱉기"
+
+msgid "Petal Blizzard"
+msgstr "꽃보라"
+
+msgid "Phantom Force"
+msgstr "고스트다이브"
+
+msgid "Play Nice"
+msgstr "친해지기"
+
+msgid "Play Rough"
+msgstr "치근거리기"
+
+msgid "Powder"
+msgstr "분진"
+
+msgid "Power-Up Punch"
+msgstr "그로우펀치"
+
+msgid "Rototiller"
+msgstr "일구기"
+
+msgid "Spiky Shield"
+msgstr "니들가드"
+
+msgid "Sticky Web"
+msgstr "끈적끈적네트"
+
+msgid "Topsy-Turvy"
+msgstr "뒤집어엎기"
+
+msgid "Trick-or-Treat"
+msgstr "핼러윈"
+
+msgid "Venom Drench"
+msgstr "베놈트랩"
+
+msgid "Water Shuriken"
+msgstr "물수리검"
+
+msgid "Aromatic Mist"
+msgstr "아로마미스트"
+
+msgid "Baby-Doll Eyes"
+msgstr "초롱초롱눈동자"
+
+msgid "Belch"
+msgstr "트림"
+
+msgid "Boomburst"
+msgstr "폭음파"
+
+msgid "Confide"
+msgstr "비밀이야기"
+
+msgid "Crafty Shield"
+msgstr "트릭가드"
+
+msgid "Dazzling Gleam"
+msgstr "매지컬샤인"
+
+msgid "Disarming Voice"
+msgstr "차밍보이스"
+
+msgid "Subduction"
+msgstr "대지격변"
+
+msgid "Instant Crush"
+msgstr "인스턴트크러시"
+
+msgid "Get Lucky"
+msgstr "겟럭키"
+
+msgid "Laser Pulse"
+msgstr "삼색의파동"
+
+msgid "Gemstone Glimmer"
+msgstr "보옥의잔광"
+
+msgid "Half-life"
+msgstr "하프라이프"
+
+msgid "Ocean's Wrath"
+msgstr "대해의분노"
+
+msgid "Fission Burst"
+msgstr "핵폭발"
+
+msgid "Caustic Breath"
+msgstr "부식숨결"
+
+msgid "Nuclear Slash"
+msgstr "핵자베기"
+
+msgid "Thunderstorm"
+msgstr "번개폭풍"
+
+msgid "Sudden Strike"
+msgstr "습격"
+
+msgid "Expunge"
+msgstr "제염"
+
+msgid "Fallout"
+msgstr "낙진방사"
+
+msgid "Proton Beam"
+msgstr "양성자빔"
+
+msgid "Infernal Blade"
+msgstr "연옥참"
+
+msgid "Quantum Leap"
+msgstr "양자도약"
+
+msgid "Metal Cruncher"
+msgstr "메탈크런처"
+
+msgid "Drain Life"
+msgstr "드레인팽"
+
+msgid "Sticky Terrain"
+msgstr "끈적끈적필드"
+
+msgid "Nuclear Wind"
+msgstr "낙진풍"

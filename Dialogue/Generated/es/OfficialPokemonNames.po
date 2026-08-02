@@ -1,0 +1,19 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es\n"
+
+msgid "dearewl"
+msgstr "Dearewl"
+
+msgid "Panjay"
+msgstr "Pajay"
+
+msgid "Terrabit"
+msgstr "Terrabbit"
+
+msgid "Belliadon"
+msgstr "Beliaddon"
+
+msgid "Gastly"
+msgstr "Gengar"

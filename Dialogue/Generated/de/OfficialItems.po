@@ -1,0 +1,3256 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+
+msgid "Repel"
+msgstr "Schutz"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 100 steps after its use."
+msgstr "Hält 100 Schritte lang schwache, wilde Pokémon ab."
+
+msgid "Super Repel"
+msgstr "Superschutz"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 200 steps after its use."
+msgstr "Hält 200 Schritte lang schwache, wilde Pokémon ab."
+
+msgid "Max Repel"
+msgstr "Top-Schutz"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 250 steps after its use."
+msgstr "Hält 250 Schritte lang schwache, wilde Pokémon ab."
+
+msgid "Black Flute"
+msgstr "Schwarze Flöte"
+
+msgid "A black flute made from blown glass. Its melody makes wild Pokémon less likely to appear."
+msgstr "Eine schwarze, gläserne Flöte, die wilde Pokémon vom Angriff abhalten kann."
+
+msgid "White Flute"
+msgstr "Weiße Flöte"
+
+msgid "A white flute made from blown glass. Its melody makes wild Pokémon more likely to appear."
+msgstr "Eine durchsichtige, gläserne Flöte, die wilde Pokémon anziehen kann."
+
+msgid "Honey"
+msgstr "Honig"
+
+msgid "A sweet honey with an aroma that attracts wild Pokémon when used in grass, caves or on special trees."
+msgstr "Der Duft dieses Honigs lockt wilde Pokémon an. Verwende ihn in hohem Gras oder an besonderen Bäumen."
+
+msgid "Escape Rope"
+msgstr "Fluchtseil"
+
+msgid "A long, durable rope. Use it to escape instantly from a cave or a dungeon."
+msgstr "Ein langes, festes Seil, das die sofortige Flucht aus Höhlen oder Ähnlichem ermöglicht."
+
+msgid "Red Shard"
+msgstr "Purpurstück"
+
+msgid "A small red shard. It appears to be from some sort of implement made long ago."
+msgstr "Eine rote Scherbe eines antiken Werkzeugs, das vor langer Zeit angefertigt wurde."
+
+msgid "Blue Shard"
+msgstr "Indigostück"
+
+msgid "A small blue shard. It appears to be from some sort of implement made long ago."
+msgstr "Eine blaue Scherbe eines antiken Werkzeugs, das vor langer Zeit angefertigt wurde."
+
+msgid "Yellow Shard"
+msgstr "Gelbstück"
+
+msgid "A small yellow shard. It appears to be from some sort of implement made long ago."
+msgstr "Eine gelbe Scherbe eines antiken Werkzeugs, das vor langer Zeit angefertigt wurde."
+
+msgid "Green Shard"
+msgstr "Grünstück"
+
+msgid "A small green shard. It appears to be from some sort of implement made long ago."
+msgstr "Eine grüne Scherbe eines antiken Werkzeugs, das vor langer Zeit angefertigt wurde."
+
+msgid "Fire Stone"
+msgstr "Feuerstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is colored orange."
+msgstr "Dieser spezielle Stein löst bei bestimmten Pokémon die Entwicklung aus. Er ist orange."
+
+msgid "Water Stone"
+msgstr "Wasserstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is a clear, light blue."
+msgstr "Dieser spezielle Stein löst bei bestimmten Pokémon die Entwicklung aus. Er ist hellblau."
+
+msgid "Thunderstone"
+msgstr "Donnerstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a thunderbolt pattern."
+msgstr "Dieser spezielle Stein löst bei bestimmten Pokémon die Entwicklung aus. Er hat ein Blitzmuster."
+
+msgid "Leaf Stone"
+msgstr "Blattstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a leaf pattern."
+msgstr "Dieser spezielle Stein löst bei bestimmten Pokémon die Entwicklung aus. Er hat ein Blattmuster."
+
+msgid "Moon Stone"
+msgstr "Mondstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as black as the night sky."
+msgstr "Dieser spezielle Stein löst bei bestimmten Pokémon die Entwicklung aus. Er ist schwarz wie die Nacht."
+
+msgid "Sun Stone"
+msgstr "Sonnenstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as red as the sun."
+msgstr "Dieser spezielle Stein löst bei bestimmten Pokémon die Entwicklung aus. Er ist rot wie die Sonne."
+
+msgid "Shiny Stone"
+msgstr "Leuchtstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It shines with a dazzling light."
+msgstr "Dieser besondere, hell leuchtende Stein hilft manchen Pokémon bei ihrer Evolution."
+
+msgid "Dusk Stone"
+msgstr "Finsterstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as dark as dark can be."
+msgstr "Dieser besondere, düstere Stein hilft manchen Pokémon bei ihrer Evolution."
+
+msgid "Dawn Stone"
+msgstr "Funkelstein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It sparkles like eyes."
+msgstr "Dieser besondere, glitzernde Stein hilft manchen Pokémon bei ihrer Evolution."
+
+msgid "Oval Stone"
+msgstr "Ovaler Stein"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is shaped like an egg."
+msgstr "Dieser besondere, eiförmige Stein hilft manchen Pokémon bei ihrer Evolution."
+
+msgid "Helix Fossil"
+msgstr "Helixfossil"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a seashell."
+msgstr "Das Fossil eines antiken Pokémon, das in der Tiefsee lebte. Es sieht wie ein Muschelstück aus."
+
+msgid "Dome Fossil"
+msgstr "Domfossil"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a shell."
+msgstr "Das Fossil eines antiken Pokémon, das in der Tiefsee lebte. Es sieht wie das Stück einer Muschel aus."
+
+msgid "Old Amber"
+msgstr "Altbernstein"
+
+msgid "A piece of clear amber that contains the genetic material of an ancient Pokémon."
+msgstr "Ein Stück Bernstein, in dem die Gene eines antiken Pokémon enthalten sind. Es ist durchsichtig!"
+
+msgid "Root Fossil"
+msgstr "Wurzelfossil"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a plant root."
+msgstr "Das Fossil eines uralten Pokémon, das in der Tiefsee lebte. Es sieht wie eine Pflanzenwurzel aus."
+
+msgid "Claw Fossil"
+msgstr "Klauenfossil"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a claw."
+msgstr "Das Fossil eines uralten Pokémon, das in der Tiefsee lebte. Es sieht wie eine Klaue aus."
+
+msgid "Armor Fossil"
+msgstr "Panzerfossil"
+
+msgid "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a collar."
+msgstr "Das Fossil eines antiken Pokémon, das an Land lebte. Es sieht wie ein Schlüsselbein aus."
+
+msgid "Skull Fossil"
+msgstr "Kopffossil"
+
+msgid "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a head."
+msgstr "Das Fossil eines antiken Pokémon, das an Land lebte. Es sieht wie ein Schädel aus."
+
+msgid "TinyMushroom"
+msgstr "Minipilz"
+
+msgid "A small and rare mushroom. It is quite popular among certain maniacal fan segments."
+msgstr "Ein kleiner und seltener Pilz. Seine Fans sind ganz aus dem Häuschen, wenn sie einen finden."
+
+msgid "Big Mushroom"
+msgstr "Riesenpilz"
+
+msgid "A large and rare mushroom. It is very popular among certain maniacal fan segments."
+msgstr "Ein großer und seltener Pilz. Liebhaber dieses Pilzes freuen sich ein Loch in den Bauch, wenn sie einen finden."
+
+msgid "Pearl"
+msgstr "Perle"
+
+msgid "A somewhat-small pearl that sparkles in a pretty silver color. It can be sold cheaply to shops."
+msgstr "Eine relativ kleine Perle, die in schönem Silber funkelt. Sie ist von geringem Wert."
+
+msgid "Big Pearl"
+msgstr "Riesenperle"
+
+msgid "A quite-large pearl that sparkles in a pretty silver color. It can be sold at a high price to shops."
+msgstr "Eine relativ große Perle, die in schönem Silber funkelt. Sie ist von hohem Wert."
+
+msgid "Stardust"
+msgstr "Sternenstaub"
+
+msgid "Lovely, red-colored sand with a loose, silky feel. It can be sold at a high price to shops."
+msgstr "Schöner, roter Sand, der sich seidenweich anfühlt. Er ist von hohem Wert."
+
+msgid "Star Piece"
+msgstr "Sternenstück"
+
+msgid "A shard of a pretty gem that sparkles in a red color. It can be sold at a high price to shops."
+msgstr "Teil eines hübschen Edelsteins, der in rötlicher Farbe schimmert. Erzielt einen hohen Preis, wenn man ihn verkauft."
+
+msgid "A nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops."
+msgstr "Ein Nugget aus purem Gold, das einen schimmernden Glanz besitzt. Es ist von großem Wert."
+
+msgid "Heart Scale"
+msgstr "Herzschuppe"
+
+msgid "A pretty, heart-shaped scale that is extremely rare. It glows faintly in the colors of the rainbow."
+msgstr "Eine hübsche, herzförmige, sehr seltene Schuppe. Sie erstrahlt in den Farben des Regenbogens."
+
+msgid "Rare Bone"
+msgstr "Steinknochen"
+
+msgid "A bone that is extremely valuable for Pokémon archaeology. It can be sold for a high price to shops."
+msgstr "Dieser Knochen erfreut jeden Pokémon-Archäologen. Er ist von hohem Wert."
+
+msgid "Shoal Salt"
+msgstr "Küstensalz"
+
+msgid "Pure salt that was discovered deep inside the Shoal Cave. It is extremely salty."
+msgstr "Salz, das sich tief in der Küstenhöhle befand. Es ist extrem salzig!"
+
+msgid "Shoal Shell"
+msgstr "Küstenschale"
+
+msgid "A pretty seashell that was found deep inside the Shoal Cave. It is striped in blue and white."
+msgstr "Eine schöne Muschelschale, die sich in der Küstenhöhle befand. Sie ist blauweiß gestreift."
+
+msgid "Odd Keystone"
+msgstr "Spiritkern"
+
+msgid "A vital item that is needed to keep a stone tower from collapsing. Voices can be heard from it occasionally."
+msgstr "Ein wichtiges Item, mit dem ein Steinturm repariert werden kann."
+
+msgid "Growth Mulch"
+msgstr "Wachsmulch"
+
+msgid "A plant fertilizer. It speeds up the growth of Berries. However, it also dries the soil faster."
+msgstr "Ein Dünger für weichen Boden. Die Beeren wachsen schneller, aber die Erde trocknet aus."
+
+msgid "Damp Mulch"
+msgstr "Feuchtmulch"
+
+msgid "A plant fertilizer. It slows the growth of Berries and causes the soil to dry slower."
+msgstr "Ein Dünger für weichen Boden. Die Beeren wachsen langsamer, aber die Erde bleibt feuchter."
+
+msgid "Stable Mulch"
+msgstr "Stabilmulch"
+
+msgid "A plant fertilizer. It extends the time ripened Berries remain on their plants before falling."
+msgstr "Ein Dünger für weichen Boden. Die Beeren halten länger, bevor sie zu Boden fallen."
+
+msgid "Gooey Mulch"
+msgstr "Neumulch"
+
+msgid "A plant fertilizer. It ups the number of times new plants grow where mature plants withered."
+msgstr "Ein Dünger für weichen Boden. Erhöht die Rate neuer Pflanzen, nachdem alte verwelkt sind."
+
+msgid "Red Apricorn"
+msgstr "Aprikoko Rot"
+
+msgid "A red Apricorn. It assails your nostrils."
+msgstr "Eine rote Aprikoko. Besitzt einen stechenden Geruch."
+
+msgid "Ylw Apricorn"
+msgstr "Aprikoko Glb"
+
+msgid "A yellow Apricorn. It has an invigorating scent."
+msgstr "Eine gelbe Aprikoko. Sie riecht ein wenig unreif."
+
+msgid "Blu Apricorn"
+msgstr "Aprikoko Blu"
+
+msgid "A blue Apricorn. It smells a bit like grass."
+msgstr "Eine blaue Aprikoko. Ein frischer Geruch geht von ihr aus."
+
+msgid "Grn Apricorn"
+msgstr "Aprikoko Grn"
+
+msgid "A green Apricorn. It has a mysterious, aromatic scent."
+msgstr "Eine grüne Aprikoko. Sie verströmt einen seltsam aromatischen Duft."
+
+msgid "Pnk Apricorn"
+msgstr "Aprikoko Pnk"
+
+msgid "A pink Apricorn. It has a nice, sweet scent."
+msgstr "Eine pinkfarbene Aprikoko. Sie duftet süß und appetitanregend."
+
+msgid "Wht Apricorn"
+msgstr "Aprikoko Wss"
+
+msgid "A white Apricorn. It doesn't smell like anything."
+msgstr "Eine weiße Aprikoko. Riecht nach überhaupt nichts."
+
+msgid "Blk Apricorn"
+msgstr "Aprikoko Swz"
+
+msgid "A black Apricorn. It has an indescribable scent."
+msgstr "Eine schwarze Aprikoko. Sie riecht irgendwie unbeschreiblich."
+
+msgid "BrightPowder"
+msgstr "Blendpuder"
+
+msgid "An item to be held by a Pokémon. It casts a tricky glare that lowers the opponent's accuracy."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es senkt die Genauigkeit des Gegners."
+
+msgid "White Herb"
+msgstr "Schlohkraut"
+
+msgid "An item to be held by a Pokémon. It restores any lowered stat in battle. It can be used only once."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es hebt jede negative Statuswertveränderung auf."
+
+msgid "Exp. Share"
+msgstr "EP-Teiler"
+
+msgid "An item to be held by a Pokémon. The holder gets a share of a battle's Exp. Points without battling."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es teilt die Erfahrungs-Punkte aus einem Kampf auf."
+
+msgid "Quick Claw"
+msgstr "Flinkklaue"
+
+msgid "An item to be held by a Pokémon. A light, sharp claw that lets the bearer move first occasionally."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es hebt die Erstschlagquote."
+
+msgid "Soothe Bell"
+msgstr "Sanftglocke"
+
+msgid "An item to be held by a Pokémon. It is a bell with a comforting chime that calms the holder."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es besänftigt und fördert Sympathie."
+
+msgid "Mental Herb"
+msgstr "Mentalkraut"
+
+msgid "An item to be held by a Pokémon. It snaps the holder out of infatuation, just once."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es erlöst Pokémon von Anziehung."
+
+msgid "King's Rock"
+msgstr "King-Stein"
+
+msgid "An item to be held by a Pokémon. It may cause the foe to flinch when the holder inflicts damage."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es kann den Gegner zurückweichen lassen."
+
+msgid "SilverPowder"
+msgstr "Silberstaub"
+
+msgid "An item to be held by a Pokémon. It is a shiny, silver powder that ups the power of Bug-type moves."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es verbessert Attacken vom Typ Käfer."
+
+msgid "Amulet Coin"
+msgstr "Münzamulett"
+
+msgid "An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in."
+msgstr "Ein Item, das ein Pokémon trägt und das doppeltes Preisgeld bringt, wenn der Träger am Kampf teilnimmt."
+
+msgid "Cleanse Tag"
+msgstr "Schutzband"
+
+msgid "An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party."
+msgstr "Ein Item zum Tragen. Reduziert Begegnungen mit wilden Pokémon, wenn der Träger an erster Stelle steht."
+
+msgid "Smoke Ball"
+msgstr "Rauchball"
+
+msgid "An item to be held by a Pokémon. It enables the holder to flee from any wild Pokémon without fail."
+msgstr "Ein Pokémon kann dieses Item tragen. Es erhöht die Chance, aus einem Kampf mit einem wilden Pokémon zu fliehen."
+
+msgid "Everstone"
+msgstr "Ewigstein"
+
+msgid "An item to be held by a Pokémon. The Pokémon holding this peculiar stone is prevented from evolving."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es bewirkt einen Entwicklungsstopp."
+
+msgid "Focus Band"
+msgstr "Fokus-Band"
+
+msgid "An item to be held by a Pokémon. The holder may endure a potential KO attack, leaving it with just 1 HP."
+msgstr "Ein Item, das die Kampfunfähigkeit verhindern kann, da dem Träger 1 KP bleibt."
+
+msgid "Lucky Egg"
+msgstr "Glücks-Ei"
+
+msgid "An item to be held by a Pokémon. It is an egg filled with happiness that earns extra Exp. Points in battle."
+msgstr "Ein getragenes Item, das mit Glück gefüllt ist und für zusätzliche E.-Punkte im Kampf sorgt."
+
+msgid "Scope Lens"
+msgstr "Scope-Linse"
+
+msgid "An item to be held by a Pokémon. It is a lens that boosts the holder's critical-hit ratio."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es erhöht die Volltrefferquote."
+
+msgid "Wide Lens"
+msgstr "Großlinse"
+
+msgid "An item to be held by a Pokémon. It is a magnifying lens that slightly boosts the accuracy of moves."
+msgstr "Ein Item zum Tragen. Dieses Vergrößerungsglas erhöht die Genauigkeit etwas."
+
+msgid "Zoom Lens"
+msgstr "Zoomlinse"
+
+msgid "An item to be held by a Pokémon. If the holder moves after the foe, its critical-hit ratio will be boosted."
+msgstr "Ein Item zum Tragen. Agiert das Ziel zuerst, erhöht sich die Genauigkeit des Trägers."
+
+msgid "Metal Coat"
+msgstr "Metallmantel"
+
+msgid "An item to be held by a Pokémon. It is a special metallic film that ups the power of Steel-type moves."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es verstärkt Attacken vom Typ Stahl."
+
+msgid "Leftovers"
+msgstr "Überreste"
+
+msgid "An item to be held by a Pokémon. The holder's HP is gradually restored during battle."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Es füllt im Kampf stetig KP auf."
+
+msgid "Dragon Scale"
+msgstr "Drachenhaut"
+
+msgid "A thick and tough scale. Dragon-type Pokémon may be holding this item when caught."
+msgstr "Eine dicke und starke Haut. Drachen-Pokémon tragen dieses Item gerne bei sich."
+
+msgid "Shell Bell"
+msgstr "Seegesang"
+
+msgid "An item to be held by a Pokémon. The holder's HP is restored a little every time it inflicts damage."
+msgstr "Ein Item zum Tragen. Es stellt einige KP des Trägers immer dann wieder her, wenn dieser dem Ziel Schaden zufügt."
+
+msgid "Muscle Band"
+msgstr "Muskelband"
+
+msgid "An item to be held by a Pokémon. It is a headband that slightly boosts the power of physical moves."
+msgstr "Ein Item zum Tragen. Dieses Stirnband verstärkt physische Attacken etwas."
+
+msgid "Wise Glasses"
+msgstr "Schlauglas"
+
+msgid "An item to be held by a Pokémon. It is a thick pair of glasses that boosts the power of special moves."
+msgstr "Ein Item zum Tragen. Diese dicke Brille verstärkt auf Spezial-Angriff basierende Attacken."
+
+msgid "Expert Belt"
+msgstr "Expertengurt"
+
+msgid "An item to be held by a Pokémon. It is a well-worn belt that boosts the power of supereffective moves."
+msgstr "Ein Item zum Tragen. Dieser alte Gürtel verstärkt sehr effektive Attacken."
+
+msgid "Life Orb"
+msgstr "Leben-Orb"
+
+msgid "An item to be held by a Pokémon. It boosts the power of moves, but at the cost of some HP on each hit."
+msgstr "Ein Item zum Tragen. Verstärkt Attacken, aber jede Attacke kostet den Träger KP."
+
+msgid "Power Herb"
+msgstr "Energiekraut"
+
+msgid "A single-use item to be held by a Pokémon. It allows the immediate use of a move that charges."
+msgstr "Ein Item zum einmaligen Tragen. Der Träger kann dadurch eine Attacke sofort einsetzen, die sonst aufgeladen werden muss."
+
+msgid "Toxic Orb"
+msgstr "Toxik-Orb"
+
+msgid "An item to be held by a Pokémon. It is a bizarre orb that badly poisons the holder in battle."
+msgstr "Ein Item zum Tragen. Dieser bizarre Orb vergiftet seinen Träger im Kampf schwer."
+
+msgid "Flame Orb"
+msgstr "Heiß-Orb"
+
+msgid "An item to be held by a Pokémon. It is a bizarre orb that inflicts a burn on the holder in battle."
+msgstr "Ein Item zum Tragen. Dieser bizarre Orb fügt seinem Träger Verbrennungen zu."
+
+msgid "Focus Sash"
+msgstr "Fokusgurt"
+
+msgid "An item to be held by a Pokémon. If it has full HP, the holder will endure a potential KO attack."
+msgstr "Ein Item zum Tragen. Bei vollen KP bleibt der Träger nach einer K.O.-Attacke einmalig mit 1 KP im Kampf."
+
+msgid "Metronome"
+msgstr "Metronom"
+
+msgid "A Pokémon hold item that boosts a move used consecutively."
+msgstr "Ein Item zum Tragen. Verstärkt eine Attacke, je öfter sie in Folge ausgeführt wird."
+
+msgid "Iron Ball"
+msgstr "Eisenkugel"
+
+msgid "A Pokémon hold item that cuts Speed. It makes airborne holders susceptible to Ground moves."
+msgstr "Ein Item zum Tragen, das Flug-Pokémon anfällig für Attacken vom Typ Boden macht. Senkt den Initiative-Wert."
+
+msgid "Lagging Tail"
+msgstr "Schwerschweif"
+
+msgid "An item to be held by a Pokémon. It is tremendously heavy and makes the holder move slower than usual."
+msgstr "Ein Item zum Tragen. Es ist immens schwer und senkt die Geschwindigkeit des Trägers."
+
+msgid "Destiny Knot"
+msgstr "Fatumknoten"
+
+msgid "A long, bright red string to be held by a Pokémon. If the holder becomes infatuated, the foe does too."
+msgstr "Ein Item zum Tragen. Wird der Träger betört, gilt dies auch für den Angreifer."
+
+msgid "Black Sludge"
+msgstr "Giftschleim"
+
+msgid "A hold item that gradually restores the HP of Poison-type Pokémon. It inflicts damage on all other types."
+msgstr "Ein Item zum Tragen, das einem Gift-Pokémon KP zurückgibt, anderen Pokémon aber Schaden zufügt."
+
+msgid "Grip Claw"
+msgstr "Griffklaue"
+
+msgid "A Pokémon hold item that extends the duration of multiturn attacks like Bind and Wrap."
+msgstr "Ein Item zum Tragen. Verlängert die Dauer von Klammergriff, Wickel etc."
+
+msgid "Sticky Barb"
+msgstr "Klettdorn"
+
+msgid "A hold item that damages the holder on every turn. It may latch on to foes that touch the holder."
+msgstr "Dieses Item (Tragen) schadet dem Träger in jeder Runde und eventuell dem Gegner, wenn der den Träger berührt."
+
+msgid "Shed Shell"
+msgstr "Wechselhülle"
+
+msgid "A tough, discarded carapace to be held by a Pokémon. It enables the holder to switch out of battle."
+msgstr "Ein Item zum Tragen. Dieser harte Panzer ermöglicht den Austausch des Trägers gegen ein wartendes Pokémon."
+
+msgid "Big Root"
+msgstr "Großwurzel"
+
+msgid "A Pokémon hold item that boosts the power of HP-stealing moves to let the holder recover more HP."
+msgstr "Ein Item zum Tragen. Verstärkt KP-stehlende Attacken."
+
+msgid "Choice Band"
+msgstr "Wahlband"
+
+msgid "An item to be held by a Pokémon. This headband ups Attack, but allows the use of only one kind of move."
+msgstr "Ein Item, das ein Pokémon tragen kann. Es stärkt den Angriffs-Wert. Aber nur eine Attacke ist einsetzbar."
+
+msgid "Choice Specs"
+msgstr "Wahlglas"
+
+msgid "A Pokémon hold item. These distinctive glasses boost Sp. Atk, but allow only one move to be used."
+msgstr "Ein Item zum Tragen. Die Brille erhöht den Spezial-Angriff, erlaubt aber nur eine Attackenart."
+
+msgid "Choice Scarf"
+msgstr "Wahlschal"
+
+msgid "An item to be held by a Pokémon. This scarf boosts Speed, but allows the use of only one kind of move."
+msgstr "Ein Item zum Tragen. Der Schal erhöht den Initiative-Wert, erlaubt aber nur eine Attackenart."
+
+msgid "Light Clay"
+msgstr "Lichtlehm"
+
+msgid "A Pokémon hold item that extends the duration of barrier moves like Light Screen and Reflect."
+msgstr "Ein Item zum Tragen. Verlängert die Dauer von Lichtschild, Reflektor etc."
+
+msgid "Icy Rock"
+msgstr "Eisbrocken"
+
+msgid "A Pokémon hold item that extends the duration of the move Hail used by the holder."
+msgstr "Ein Item zum Tragen. Verlängert die Dauer von Hagelsturm."
+
+msgid "Smooth Rock"
+msgstr "Glattbrocken"
+
+msgid "A Pokémon hold item that extends the duration of the move Sandstorm used by the holder."
+msgstr "Ein Item zum Tragen. Verlängert die Dauer von Sandsturm."
+
+msgid "Heat Rock"
+msgstr "Heißbrocken"
+
+msgid "A Pokémon hold item that extends the duration of the move Sunny Day used by the holder."
+msgstr "Ein Item zum Tragen. Verlängert die Dauer von Sonnentag."
+
+msgid "Damp Rock"
+msgstr "Nassbrocken"
+
+msgid "A Pokémon hold item that extends the duration of the move Rain Dance used by the holder."
+msgstr "Ein Item zum Tragen. Verlängert die Dauer von Regentanz."
+
+msgid "Macho Brace"
+msgstr "Machoband"
+
+msgid "A Pokémon hold item that is a stiff and heavy brace that promotes strong growth but lowers Speed."
+msgstr "Ein Item, das einem Pokémon zum Tragen gegeben werden kann. Fördert Wachstum, senkt Initiative."
+
+msgid "Power Bracer"
+msgstr "Machtreif"
+
+msgid "A Pokémon hold item that promotes Attack gain on leveling, but reduces the Speed stat."
+msgstr "Ein Item zum Tragen. Erhöht beim Levelaufstieg den Angriffs-Wert, senkt aber die Initiative."
+
+msgid "Power Belt"
+msgstr "Machtgurt"
+
+msgid "A Pokémon hold item that promotes Defense gain on leveling, but reduces the Speed stat."
+msgstr "Ein Item zum Tragen. Erhöht beim Levelaufstieg den Verteidigungs-Wert, senkt aber die Initiative."
+
+msgid "Power Lens"
+msgstr "Machtlinse"
+
+msgid "A Pokémon hold item that promotes Sp. Atk gain on leveling, but reduces the Speed stat."
+msgstr "Ein Item zum Tragen. Erhöht beim Levelaufstieg den Spezial-Angriff, senkt aber die Initiative."
+
+msgid "Power Band"
+msgstr "Machtband"
+
+msgid "A Pokémon hold item that promotes Sp. Def gain on leveling, but reduces the Speed stat."
+msgstr "Ein Item zum Tragen. Erhöht beim Levelaufstieg die Spezial-Verteidigung, senkt aber die Initiative."
+
+msgid "Power Anklet"
+msgstr "Machtkette"
+
+msgid "A Pokémon hold item that promotes Speed gain on leveling, but reduces the Speed stat."
+msgstr "Ein Item zum Tragen. Erhöht beim Levelaufstieg den Initiative-Wert, senkt aber die Initiative allgemein."
+
+msgid "Power Weight"
+msgstr "Machtgewicht"
+
+msgid "A Pokémon hold item that promotes HP gain on leveling, but reduces the Speed stat."
+msgstr "Ein Item zum Tragen. Erhöht beim Levelaufstieg die maximalen KP, senkt aber die Initiative."
+
+msgid "Sea Incense"
+msgstr "Seerauch"
+
+msgid "A Pokémon hold item. It is incense with a curious aroma that boosts the power of Water-type moves."
+msgstr "Ein Item zum Tragen. Sein ausgefallenes Aroma verstärkt Attacken vom Typ Wasser."
+
+msgid "Lax Incense"
+msgstr "Laxrauch"
+
+msgid "A Pokémon hold item. The tricky aroma of this incense lowers the foe's accuracy."
+msgstr "Ein Item zum Tragen. Das komplizierte Aroma senkt die Genauigkeit des Gegners."
+
+msgid "Odd Incense"
+msgstr "Schrägrauch"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Psychic-type moves."
+msgstr "Ein Item zum Tragen. Dieses exotische Duftkraut verstärkt Attacken vom Typ Psycho."
+
+msgid "Rock Incense"
+msgstr "Steinrauch"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Rock-type moves."
+msgstr "Ein Item zum Tragen. Dieses exotische Duftkraut verstärkt Attacken vom Typ Gestein."
+
+msgid "Full Incense"
+msgstr "Lahmrauch"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that makes the holder bloated and slow moving."
+msgstr "Ein Item zum Tragen. Dieses exotische Duftkraut macht den Träger benommen und langsam."
+
+msgid "Wave Incense"
+msgstr "Wellenrauch"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Water-type moves."
+msgstr "Ein Item zum Tragen. Dieses exotische Duftkraut verstärkt Attacken vom Typ Wasser."
+
+msgid "Rose Incense"
+msgstr "Rosenrauch"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Grass-type moves."
+msgstr "Ein Item zum Tragen. Dieses exotische Duftkraut verstärkt Attacken vom Typ Pflanze."
+
+msgid "Luck Incense"
+msgstr "Glücksrauch"
+
+msgid "Pure Incense"
+msgstr "Scheuchrauch"
+
+msgid "Soft Sand"
+msgstr "Pudersand"
+
+msgid "An item to be held by a Pokémon. It is a loose, silky sand that boosts the power of Ground-type moves."
+msgstr "Ein Item zum Tragen. Samtiger Sand, der Attacken vom Typ Boden verstärkt."
+
+msgid "Hard Stone"
+msgstr "Granitstein"
+
+msgid "An item to be held by a Pokémon. It is an unbreakable stone that ups the power of Rock-type moves."
+msgstr "Ein Item zum Tragen. Ein unzerbrechlicher Stein, der Attacken vom Typ Gestein verstärkt."
+
+msgid "Miracle Seed"
+msgstr "Wundersaat"
+
+msgid "An item to be held by a Pokémon. It is a seed imbued with life that ups the power of Grass-type moves."
+msgstr "Ein Item zum Tragen. Ein Samen voller Lebenskraft der Attacken vom Typ Pflanze verstärkt."
+
+msgid "BlackGlasses"
+msgstr "Schattenglass"
+
+msgid "An item to be held by a Pokémon. It is a shady-looking pair of glasses that boosts Dark-type moves."
+msgstr "Ein Item zum Tragen. Eine dunkle Brille, die Attacken vom Typ Unlicht verstärkt."
+
+msgid "Black Belt"
+msgstr "Schwarzgurt"
+
+msgid "An item to be held by a Pokémon. It is a belt that boosts determination and Fighting-type moves."
+msgstr "Ein Item zum Tragen. Der Gürtel verstärkt die Entschlossenheit und Attacken vom Typ Kampf."
+
+msgid "An item to be held by a Pokémon. It is a powerful magnet that boosts the power of Electric-type moves."
+msgstr "Ein Item zum Tragen, dessen magnetische Kraft Attacken vom Typ Elektro verstärkt."
+
+msgid "Mystic Water"
+msgstr "Zauberwasser"
+
+msgid "An item to be held by a Pokémon. It is a teardrop-shaped gem that ups the power of Water-type moves."
+msgstr "Ein Item zum Tragen. Ein tränenförmiger Edelstein, der Attacken vom Typ Wasser verstärkt."
+
+msgid "Sharp Beak"
+msgstr "Hackattack"
+
+msgid "An item to be held by a Pokémon. It is a long, sharp beak that boosts the power of Flying-type moves."
+msgstr "Ein Item zum Tragen. Ein langer, scharfer Schnabel verstärkt Attacken vom Typ Flug."
+
+msgid "Poison Barb"
+msgstr "Giftstich"
+
+msgid "An item to be held by a Pokémon. It is a small, poisonous barb that ups the power of Poison-type moves."
+msgstr "Ein Item zum Tragen. Ein schmaler und giftiger Widerhaken, der Attacken vom Typ Gift verstärkt."
+
+msgid "NeverMeltIce"
+msgstr "Ewiges Eis"
+
+msgid "An item to be held by a Pokémon. It is a piece of ice that repels heat and boosts Ice-type moves."
+msgstr "Ein Item zum Tragen. Ein Stück Eis, das Hitze fernhält und Attacken vom Typ Eis verstärkt."
+
+msgid "Spell Tag"
+msgstr "Bannsticker"
+
+msgid "An item to be held by a Pokémon. It is a sinister, eerie tag that boosts the power of Ghost-type moves."
+msgstr "Ein Item zum Tragen. Ein fieser, unheimlicher Sticker, der Attacken vom Typ Geist verstärkt."
+
+msgid "TwistedSpoon"
+msgstr "Krummlöffel"
+
+msgid "A Pokémon hold item. It is a spoon imbued with telekinetic power that boosts Psychic-type moves."
+msgstr "Ein Item zum Tragen. Ein Löffel voll mit telekinetischer Energie, der Attacken vom Typ Psycho verstärkt."
+
+msgid "Charcoal"
+msgstr "Holzkohle"
+
+msgid "An item to be held by a Pokémon. It is a combustible fuel that boosts the power of Fire-type moves."
+msgstr "Ein Item zum Tragen. Ein Heizmittel, das Attacken vom Typ Feuer verstärkt."
+
+msgid "Dragon Fang"
+msgstr "Drachenzahn"
+
+msgid "An item to be held by a Pokémon. It is a hard and sharp fang that ups the power of Dragon-type moves."
+msgstr "Ein Item zum Tragen. Ein harter und scharfer Reißzahn, der Attacken vom Typ Drache verstärkt."
+
+msgid "Silk Scarf"
+msgstr "Seidenschal"
+
+msgid "An item to be held by a Pokémon. It is a sumptuous scarf that boosts the power of Normal-type moves."
+msgstr "Ein Item zum Tragen. Ein kostbarer Schal, der Attacken vom Typ Normal verstärkt."
+
+msgid "Flame Plate"
+msgstr "Feuertafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fire-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Feuer."
+
+msgid "Splash Plate"
+msgstr "Wassertafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Water-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Wasser."
+
+msgid "Zap Plate"
+msgstr "Blitztafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Electric-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Elektro."
+
+msgid "Meadow Plate"
+msgstr "Wiesentafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Grass-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Pflanze."
+
+msgid "Icicle Plate"
+msgstr "Frosttafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ice-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Eis."
+
+msgid "Fist Plate"
+msgstr "Fausttafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fighting-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Kampf."
+
+msgid "Toxic Plate"
+msgstr "Gifttafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Poison-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Gift."
+
+msgid "Earth Plate"
+msgstr "Erdtafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ground-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Boden."
+
+msgid "Sky Plate"
+msgstr "Wolkentafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Flying-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Flug."
+
+msgid "Mind Plate"
+msgstr "Hirntafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Psychic-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Psycho."
+
+msgid "Insect Plate"
+msgstr "Käfertafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Bug-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Käfer."
+
+msgid "Stone Plate"
+msgstr "Steintafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Rock-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Gestein."
+
+msgid "Spooky Plate"
+msgstr "Spuktafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ghost-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Geist."
+
+msgid "Draco Plate"
+msgstr "Dracotafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dragon-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Drache"
+
+msgid "Dread Plate"
+msgstr "Furchttafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dark-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Unlicht."
+
+msgid "Iron Plate"
+msgstr "Eisentafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Steel-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Stahl."
+
+msgid "Light Ball"
+msgstr "Kugelblitz"
+
+msgid "An item to be held by Pikachu. It is a puzzling orb that raises the Sp. Atk stat."
+msgstr "Ein Item, das von Pikachu getragen werden kann. Es erhöht den Angriffs-Wert und Spezial-Angriff."
+
+msgid "An item to be held by Chansey. It is a pair of gloves that boosts CHANSEY's critical-hit ratio."
+msgstr "Ein Item, das von Chaneira getragen werden kann. Diese Handschuhe erhöhen die Volltrefferquote von Chaneira."
+
+msgid "Metal Powder"
+msgstr "Metallstaub"
+
+msgid "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Defense stat."
+msgstr "Ein Item, das von Ditto getragen werden kann. Es erhöht seinen Verteidigungs-Wert."
+
+msgid "Quick Powder"
+msgstr "Flottstaub"
+
+msgid "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Speed stat."
+msgstr "Ein Item, das Ditto zum Tragen gegeben werden kann. Fein und doch hart, erhöht es den Initiative-Wert."
+
+msgid "Thick Club"
+msgstr "Kampfknochen"
+
+msgid "An item to be held by Cubone or Marowak. It is a hard bone of some sort that boosts the Attack stat."
+msgstr "Ein harter Knochen, der den Angriffs-Wert von Tragosso oder Knogga erhöht, wenn sie ihn tragen."
+
+msgid "Stick"
+msgstr "Lauchstange"
+
+msgid "An item to be held by Farfetch'd. It is a long and stiff leek stalk that boosts the critical-hit ratio."
+msgstr "Ein Item, das von Porenta getragen werden kann. Diese lange Lauchstange erhöht die Volltrefferquote."
+
+msgid "Soul Dew"
+msgstr "Seelentau"
+
+msgid "A wondrous orb to be held by Latios or Latias. It raises both the Sp. Atk and Sp. Def stats."
+msgstr "Ein Item, das von Latios oder Latias getragen werden kann. Es hebt Spezial-Angriff und Spezial-Verteidigung."
+
+msgid "DeepSeaTooth"
+msgstr "Abysszahn"
+
+msgid "An item to be held by Clamperl. A fang that gleams a sharp silver, it raises the Sp. Atk stat."
+msgstr "Ein Item, das von Perlu getragen werden kann. Es schimmert silbern und hebt den Spezial-Angriff."
+
+msgid "DeepSeaScale"
+msgstr "Abyssplatte"
+
+msgid "An item to be held by Clamperl. A scale that shines a faint pink, it raises the Sp. Def stat."
+msgstr "Ein Item, das von Perlu getragen werden kann. Es schimmert pink und hebt die Spezial-Verteidigung."
+
+msgid "Adamant Orb"
+msgstr "Adamant-Orb"
+
+msgid "A brightly gleaming orb to be held by Dialga. It boosts the power of Dragon- and Steel-type moves."
+msgstr "Ein hell leuchtender Orb. Verstärkt Attacken vom Typ Drachen und Stahl, wenn Dialga ihn trägt."
+
+msgid "Lustrous Orb"
+msgstr "Weiß-Orb"
+
+msgid "A beautifully glowing orb to be held by Palkia. It boosts the power of Dragon- and Water-type moves."
+msgstr "Ein hell leuchtender Orb. Verstärkt Attacken vom Typ Drachen und Wasser, wenn Palkia ihn trägt."
+
+msgid "Griseous Orb"
+msgstr "Platinum-Orb"
+
+msgid "A glowing orb to be held by Giratina. It boosts the power of Dragon- and Ghost-type moves."
+msgstr "Ein glühender Orb. Verstärkt Attacken vom Typ Drachen und Geist, wenn Giratina ihn trägt."
+
+msgid "A transparent device filled with all sorts of data. It was produced by Silph Co."
+msgstr "Ein durchsichtiges Gerät. Es enthält jede Menge Daten der Silph Co."
+
+msgid "Dubious Disc"
+msgstr "Dubiosdisc"
+
+msgid "A transparent device overflowing with dubious data. Its producer is unknown."
+msgstr "Eine Scheibe voller seltsamer Daten. Ihr Ursprung ist unbekannt."
+
+msgid "Protector"
+msgstr "Schützer"
+
+msgid "A protective item of some sort. It is extremely stiff and heavy. It is loved by a certain Pokémon."
+msgstr "Eine Art Schutzvorrichtung. Steif und schwer. Das Lieblingsstück eines bestimmten Pokémon."
+
+msgid "Electirizer"
+msgstr "Stromisierer"
+
+msgid "A box packed with a tremendous amount of electric energy. It is loved by a certain Pokémon."
+msgstr "Eine Schachtel voller elektrischer Energie. Das Lieblingsstück eines bestimmten Pokémon."
+
+msgid "Magmarizer"
+msgstr "Magmaisierer"
+
+msgid "A box packed with a tremendous amount of magma energy. It is loved by a certain Pokémon."
+msgstr "Eine Schachtel voller Magmaenergie. Das Lieblingsstück eines bestimmten Pokémon."
+
+msgid "Reaper Cloth"
+msgstr "Düsterumhang"
+
+msgid "A cloth imbued with horrifyingly strong spiritual energy. It is loved by a certain Pokémon."
+msgstr "Ein Stoffumhang voller geistiger Energie. Das Lieblingsstück eines bestimmten Pokémon."
+
+msgid "Razor Claw"
+msgstr "Scharfklaue"
+
+msgid "An item to be held by a Pokémon. It is a sharply hooked claw that ups the holder's critical-hit ratio."
+msgstr "Ein Item zum tragen. Die scharfe Klaue erhöht die Volltrefferquote des Trägers."
+
+msgid "Razor Fang"
+msgstr "Scharfzahn"
+
+msgid "Red Scarf"
+msgstr "Roter Schal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Cool” aspect of the holder in a Contest."
+msgstr "Ein Item zum Tragen. Trainer erhöhen damit in Wettbewerben die \"Coolness\" ihres Pokémon."
+
+msgid "Blue Scarf"
+msgstr "Blauer Schal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Beauty” aspect of the holder in a Contest."
+msgstr "Ein Item zum Tragen. Trainer erhöhen damit in Wettbewerben die \"Schönheit\" ihres Pokémon."
+
+msgid "Pink Scarf"
+msgstr "Rosa Schal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Cute” aspect of the holder in a Contest."
+msgstr "Ein Item zum Tragen. Trainer erhöhen damit in Wettbewerben die \"Anmut\" ihres Pokémon."
+
+msgid "Green Scarf"
+msgstr "Grüner Schal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Smart” aspect of the holder in a Contest."
+msgstr "Ein Item zum Tragen. Trainer erhöhen damit in Wettbewerben die \"Klugheit\" ihres Pokémon."
+
+msgid "Yellow Scarf"
+msgstr "Gelber Schal"
+
+msgid "An item to be held by a Pokémon. It boosts the “Tough” aspect of the holder in a Contest."
+msgstr "Ein Item zum Tragen. Trainer erhöhen damit in Wettbewerben die \"Stärke\" ihres Pokémon."
+
+msgid "Potion"
+msgstr "Trank"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points."
+msgstr "Hilft bei Wunden. Füllt die KP eines Pokémon um 20 Punkte auf."
+
+msgid "Super Potion"
+msgstr "Supertrank"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by 50 points."
+msgstr "Hilft bei Wunden. Füllt die KP eines Pokémon um 50 Punkte auf."
+
+msgid "Hyper Potion"
+msgstr "Hypertrank"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by 200 points."
+msgstr "Hilft bei Wunden. Füllt die KP eines Pokémon um 200 Punkte auf."
+
+msgid "Max Potion"
+msgstr "Top-Trank"
+
+msgid "A spray-type medicine for wounds. It completely restores the HP of a single Pokémon."
+msgstr "Hilft bei Wunden. Füllt die KP eines Pokémon wieder vollständig auf."
+
+msgid "Full Restore"
+msgstr "Top-Genesung"
+
+msgid "A medicine that fully restores the HP and heals any status problems of a single Pokémon."
+msgstr "Dieses Item stellt alle KP eines Pokémon wieder her und behebt alle Statusprobleme."
+
+msgid "Sacred Ash"
+msgstr "Zauberasche"
+
+msgid "It revives all fainted Pokémon. In doing so, it also fully restores their HP."
+msgstr "Belebt und erfrischt alle besiegten Pokémon und füllt deren KP vollständig wieder auf."
+
+msgid "Antidote"
+msgstr "Gegengift"
+
+msgid "A spray-type medicine. It lifts the effect of poison from one Pokémon."
+msgstr "Ein Spray, das Vergiftungen eines Pokémon heilt."
+
+msgid "Burn Heal"
+msgstr "Feuerheiler"
+
+msgid "A spray-type medicine. It heals a single Pokémon that is suffering from a burn."
+msgstr "Ein Spray, das Verbrennungen eines Pokémon heilt."
+
+msgid "Ice Heal"
+msgstr "Eisheiler"
+
+msgid "A spray-type medicine. It defrosts a Pokémon that has been frozen solid."
+msgstr "Ein Spray, das ein eingefrorenes Pokémon auftaut."
+
+msgid "Awakening"
+msgstr "Aufwecker"
+
+msgid "A spray-type medicine. It awakens a Pokémon from the clutches of sleep."
+msgstr "Ein Spray, das ein schlafendes Pokémon aufweckt."
+
+msgid "Parlyz Heal"
+msgstr "Para-Heiler"
+
+msgid "A spray-type medicine. It eliminates paralysis from a single Pokémon."
+msgstr "Ein Spray, das ein Pokémon von Paralyse heilt."
+
+msgid "Full Heal"
+msgstr "Hyperheiler"
+
+msgid "A spray-type medicine. It heals all the status problems of a single Pokémon."
+msgstr "Ein Spray, das alle Statusprobleme eines Pokémon behebt."
+
+msgid "Lava Cookie"
+msgstr "Lavakeks"
+
+msgid "Lavaridge Town's local specialty. It heals all the status problems of one Pokémon."
+msgstr "Eine Spezialität aus Bad Lavastadt, die alle Statusprobleme eines Pokémon heilt."
+
+msgid "Old Gateau"
+msgstr "Spezialität"
+
+msgid "Old Chateau's hidden specialty. It heals all the status problems of a single Pokémon."
+msgstr "Eine gut versteckte Spezialität aus Ewigenau. Sie behebt alle Statusprobleme eines Pokémon."
+
+msgid "Revive"
+msgstr "Beleber"
+
+msgid "A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP."
+msgstr "Eine Medizin, die ein kampfunfähiges Pokémon wiederbelebt. Die Hälfte der maximalen KP wird wiederhergestellt."
+
+msgid "Max Revive"
+msgstr "Top-Beleber"
+
+msgid "A medicine that revives a fainted Pokémon. It fully restores the Pokémon's HP."
+msgstr "Eine Medizin, die ein kampfunfähiges Pokémon wiederbelebt. Die KP werden vollständig wiederhergestellt."
+
+msgid "Berry Juice"
+msgstr "Beerensaft"
+
+msgid "A 100% pure juice made of Berries. It restores the HP of one Pokémon by just 20 points."
+msgstr "Hundertprozentiger Fruchtsaft, aus Beeren gekeltert. Füllt die KP eines Pokémon um 20 Punkte auf."
+
+msgid "Fresh Water"
+msgstr "Tafelwasser"
+
+msgid "Water with a high mineral content. It restores the HP of one Pokémon by 50 points."
+msgstr "Ein stilles Wasser mit hohem Mineralienanteil, das die KP eines Pokémon um 50 Punkte auffüllt."
+
+msgid "Soda Pop"
+msgstr "Sprudel"
+
+msgid "A fizzy soda drink. It restores the HP of one Pokémon by 60 points."
+msgstr "Ein sprudelndes Mineralwasser, das die KP eines Pokémon um 60 Punkte auffüllt."
+
+msgid "Lemonade"
+msgstr "Limonade"
+
+msgid "A very sweet drink. It restores the HP of one Pokémon by 80 points."
+msgstr "Ein sehr süßes Getränk, das die KP eines Pokémon um 80 Punkte auffüllt."
+
+msgid "Moomoo Milk"
+msgstr "Kuhmuh-Milch"
+
+msgid "Milk with a very high nutrition content. It restores the HP of one Pokémon by 100 points."
+msgstr "Eine äußerst nährstoffreiche Milch, die die KP eines Pokémon um 100 Punkte auffüllt."
+
+msgid "EnergyPowder"
+msgstr "Energiestaub"
+
+msgid "A very bitter medicine powder. It restores the HP of one Pokémon by 50 points."
+msgstr "Ein bitteres medizinisches Pulver, das die KP eines Pokémon um 50 Punkte auffüllt."
+
+msgid "Energy Root"
+msgstr "Kraftwurzel"
+
+msgid "A very bitter root. It restores the HP of one Pokémon by 200 points."
+msgstr "Eine bittere Wurzel. Sie füllt die KP eines Pokémon um 200 Punkte auf."
+
+msgid "Heal Powder"
+msgstr "Heilpuder"
+
+msgid "A very bitter medicine powder. It heals all the status problems of a single Pokémon."
+msgstr "Ein bitteres medizinisches Pulver, das alle Statusprobleme eines Pokémon aufhebt."
+
+msgid "Revival Herb"
+msgstr "Vitalkraut"
+
+msgid "A very bitter medicinal herb. It revives a fainted Pokémon, fully restoring its HP."
+msgstr "Ein bitteres medizinisches Kraut, das kampfunfähige Pokémon belebt und die KP vollständig auffüllt."
+
+msgid "Ether"
+msgstr "Äther"
+
+msgid "It restores the PP of a Pokémon's selected move by a maximum of 10 points."
+msgstr "Füllt die AP einer ausgewählten Attacke eines Pokémon um 10 Punkte auf."
+
+msgid "Max Ether"
+msgstr "Top-Äther"
+
+msgid "It fully restores the PP of a single selected move that has been learned by the target Pokémon."
+msgstr "Füllt die AP einer ausgewählten Attacke eines Pokémon vollständig auf."
+
+msgid "Elixir"
+msgstr "Elixier"
+
+msgid "It restores the PP of all the moves learned by the targeted Pokémon by 10 points each."
+msgstr "Füllt die AP aller Attacken eines Pokémon um 10 Punkte auf."
+
+msgid "Max Elixir"
+msgstr "Top-Elixier"
+
+msgid "It fully restores the PP of all the moves learned by the targeted Pokémon."
+msgstr "Füllt alle AP aller Attacken eines Pokémon vollständig auf."
+
+msgid "HP Up"
+msgstr "KP-Plus"
+
+msgid "A nutritious drink for Pokémon. It raises the base HP of a single Pokémon."
+msgstr "Ein gehaltvolles Getränk, das den KP-Basiswert eines Pokémon dauerhaft erhöht."
+
+msgid "A nutritious drink for Pokémon. It raises the base Attack stat of a single Pokémon."
+msgstr "Ein gehaltvolles Getränk, das den Angriffs-Basiswert eines Pokémon dauerhaft erhöht."
+
+msgid "Iron"
+msgstr "Eisen"
+
+msgid "A nutritious drink for Pokémon. It raises the base Defense stat of a single Pokémon."
+msgstr "Ein gehaltvolles Getränk, das den Verteidigungs-Basiswert eines Pokémon dauerhaft erhöht."
+
+msgid "Carbos"
+msgstr "Carbon"
+
+msgid "A nutritious drink for Pokémon. It raises the base Speed stat of a single Pokémon."
+msgstr "Ein gehaltvolles Getränk, das den Initiative-Basiswert eines Pokémon dauerhaft erhöht."
+
+msgid "Calcium"
+msgstr "Kalzium"
+
+msgid "A nutritious drink for Pokémon. It raises the base Sp. Atk (Special Attack) stat of a single Pokémon."
+msgstr "Ein gehaltvolles Getränk, das den Spezial-Angriffs-Basiswert eines Pokémon dauerhaft erhöht."
+
+msgid "Zinc"
+msgstr "Zink"
+
+msgid "A nutritious drink for Pokémon. It raises the base Sp. Def (Special Defense) stat of a single Pokémon."
+msgstr "Ein gehaltvolles Getränk, das den Spezial-Verteidigungs-Basiswert eines Pokémon dauerhaft erhöht."
+
+msgid "PP Up"
+msgstr "AP-Plus"
+
+msgid "It slightly raises the maximum PP of a selected move that has been learned by the target Pokémon."
+msgstr "Erhöht die maximale Anzahl der AP einer Attacke eines Pokémon."
+
+msgid "PP Max"
+msgstr "AP-Top"
+
+msgid "It maximally raises the top PP of a selected move that has been learned by the target Pokémon."
+msgstr "Maximiert die Anzahl der AP einer Attacke eines Pokémon."
+
+msgid "Rare Candy"
+msgstr "Sonderbonbon"
+
+msgid "A candy that is packed with energy. It raises the level of a single Pokémon by one."
+msgstr "Ein energiereiches Bonbon, das den Level eines Pokémon dauerhaft um eins erhöht."
+
+msgid "Master Ball"
+msgstr "Meisterball"
+
+msgid "The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail."
+msgstr "Der beste Ball! Damit fängst du garantiert jedes wilde Pokémon."
+
+msgid "Ultra Ball"
+msgstr "Hyperball"
+
+msgid "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball."
+msgstr "Ein Ball mit hoher Erfolgsquote. Dem Superball in allen Punkten überlegen."
+
+msgid "Great Ball"
+msgstr "Superball"
+
+msgid "A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball."
+msgstr "Ein Ball mit guter Erfolgsquote. Dem Pokéball in allen Punkten überlegen."
+
+msgid "Poké Ball"
+msgstr "Pokéball"
+
+msgid "A device for catching wild Pokémon. A capsule system that is thrown like a ball at the target."
+msgstr "Damit fängst du wilde Pokémon. Du wirfst ihn wie einen normalen Ball. Das Design ähnelt dem einer Kapsel."
+
+msgid "Safari Ball"
+msgstr "Safariball"
+
+msgid "A special Poké Ball that is used only in the Great Marsh. It is decorated in a camouflage pattern."
+msgstr "Ein Ball, der nur in der Safarizone eingesetzt wird. Er besticht durch sein Tarnfarbenmuster."
+
+msgid "Net Ball"
+msgstr "Netzball"
+
+msgid "A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon."
+msgstr "Ein Ball, der sich besonders gut eignet, um Wasser- und Käfer-Pokémon zu fangen."
+
+msgid "Dive Ball"
+msgstr "Tauchball"
+
+msgid "A somewhat different Poké Ball that works especially well on Pokémon that live in the sea."
+msgstr "Ein Ball, mit dem sich Pokémon, die auf dem Meeresgrund leben, besser fangen lassen."
+
+msgid "Nest Ball"
+msgstr "Nestball"
+
+msgid "A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild."
+msgstr "Ein Ball, dessen Erfolgsquote besonders bei schwächeren Pokémon sehr hoch ist."
+
+msgid "Repeat Ball"
+msgstr "Wiederball"
+
+msgid "A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught."
+msgstr "Ein Ball, der besonders dann sehr gut ist, wenn man ein Pokémon fängt, dessen Art bereits gefangen wurde."
+
+msgid "Timer Ball"
+msgstr "Timerball"
+
+msgid "A somewhat different Ball that becomes progressively better the more turns there are in a battle."
+msgstr "Ein Ball, der mit zunehmender Kampfdauer effektiver wird."
+
+msgid "Luxury Ball"
+msgstr "Luxusball"
+
+msgid "A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly."
+msgstr "Ein behaglicher Ball, der Pokémon veranlasst, nach dem Fang schneller freundlicher zu werden."
+
+msgid "Premier Ball"
+msgstr "Premierball"
+
+msgid "A somewhat rare Poké Ball that has been specially made to commemorate an event of some sort."
+msgstr "Ein eher seltener Ball, der als Reminiszenz an irgendein Ereignis hergestellt wurde."
+
+msgid "Dusk Ball"
+msgstr "Finsterball"
+
+msgid "A somewhat different Poké Ball that can easily catch wild Pokémon at night or in dark places."
+msgstr "Ein mysteriöser Ball, geeignet für Einsätze in der Nacht oder an dunklen Orten."
+
+msgid "Heal Ball"
+msgstr "Heilball"
+
+msgid "A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem."
+msgstr "Ein wohltuender Ball. Er füllt alle KP des gefangenen Pokémon auf und hebt alle Statusprobleme auf."
+
+msgid "Quick Ball"
+msgstr "Flottball"
+
+msgid "A somewhat different Poké Ball that works better at the start of a wild encounter."
+msgstr "Ein ungewöhnlicher Ball, der zu Beginn eines Kampfes am wirkungsvollsten ist."
+
+msgid "Cherish Ball"
+msgstr "Jubelball"
+
+msgid "A quite rare Poké Ball that has been specially crafted to commemorate an occasion of some sort."
+msgstr "Ein seltener Ball, der als Reminiszenz an irgendein Ereignis hergestellt wurde."
+
+msgid "Fast Ball"
+msgstr "Turboball"
+
+msgid "A Poké Ball that makes it easier to catch Pokémon which are quick to run away."
+msgstr "Ein Ball, der sich besonders gut eignet, um flinke Pokémon zu fangen."
+
+msgid "Level Ball"
+msgstr "Levelball"
+
+msgid "A Poké Ball for catching Pokémon that are a lower level than your own."
+msgstr "Ein Ball, mit dem sich Pokémon umso leichter fangen lassen, je niedriger ihr Level im Vergleich zu deinem Team ist."
+
+msgid "Lure Ball"
+msgstr "Köderball"
+
+msgid "A Poké Ball for catching Pokémon hooked by a Rod when fishing."
+msgstr "Ein Ball, der sich besonders gut eignet, um Pokémon zu fangen, die an deiner Angel hängen."
+
+msgid "Heavy Ball"
+msgstr "Schwerball"
+
+msgid "A Poké Ball for catching very heavy Pokémon."
+msgstr "Ein Ball, der sich besonders gut eignet, um Pokémon mit hohem Körpergewicht zu fangen."
+
+msgid "Love Ball"
+msgstr "Sympaball"
+
+msgid "A Poké Ball for catching Pokémon that are the opposite gender of your Pokémon."
+msgstr "Ein Ball, der sich besonders gut eignet, um Pokémon zu fangen, die ein anderes Geschlecht haben als dein Pokémon."
+
+msgid "Friend Ball"
+msgstr "Freundesball"
+
+msgid "A Poké Ball that makes caught Pokémon more friendly."
+msgstr "Ein besonderer Ball, der die Sympathie von gefangen Pokémon schneller ansteigen lässt."
+
+msgid "Moon Ball"
+msgstr "Mondball"
+
+msgid "A Poké Ball for catching Pokémon that evolve using the Moon Stone."
+msgstr "Ein Ball, der sich besonders gut eignet, um Pokémon zu fangen, die sich durch einen Mondstein weiterentwickeln."
+
+msgid "Sport Ball"
+msgstr "Turnierball"
+
+msgid "A special Poké Ball for the Bug-Catching Contest."
+msgstr "EIn Ball, der nur beim Käfertunier eingesetzt wird."
+
+msgid "Park Ball"
+msgstr "Parkball"
+
+msgid "A special Poké Ball for the Pal Park."
+msgstr "Ein Ball, der nur im Park der Freude eingesetzt wird."
+
+msgid "The user focuses its mind before launching this attack. It will fail if the user is hit before it is used."
+msgstr "Anwender konzentriert sich, bevor er angreift. Wird er vorher getroffen, ist die Attacke erfolglos."
+
+msgid "Sharp, huge claws hook and slash the foe quickly and with great power."
+msgstr "Der Gegner wird mit langen, scharfen Krallen brutal attackiert."
+
+msgid "The foe is hit with a pulsing blast of water. It may also confuse the target."
+msgstr "Der Gegner wird von einer kräftigen Wasserwelle getroffen. Diese kann ihn eventuell verwirren."
+
+msgid "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats."
+msgstr "Der Anwender konzentriert und beruhigt sich. So werden Spezial-Angriff und Spezial-Verteidigung verstärkt."
+
+msgid "The foe is scared off, to be replaced by another Pokémon in its party. In the wild, the battle ends."
+msgstr "Der Brüller schlägt das Ziel in die Flucht. Ein Kampf gegen ein wildes Pokémon wird beendet."
+
+msgid "A move that leaves the foe badly poisoned. This poison damage worsens every turn."
+msgstr "Das Ziel wird schwer vergiftet. Der Schaden durch das Gift wird in jeder Runde stärker."
+
+msgid "Summons a hailstorm that lasts for five turns. The hailstorm damages all types except Ice."
+msgstr "Der verursachte Hagelsturm hält 5 Runden an und schadet allen Pokémon, außer denen des Typs Eis."
+
+msgid "The user tenses its muscles to bulk up its body, boosting both its Attack and Defense stats."
+msgstr "Der Anwender spannt seine Muskeln an und steigert damit den Angriffs- und den Verteidigungs-Wert."
+
+msgid "The user forcefully shoots seeds at the foe. Two to five seeds are shot in rapid succession."
+msgstr "Der Anwender bewirft den Gegner in schneller Folge 2- bis 5-mal mit Samen."
+
+msgid "A variable move that changes type and power depending on the hidden ability of the Pokémon using it."
+msgstr "Die Stärke und der Typ dieser Attacke hängen vom jeweiligen Pokémon ab."
+
+msgid "The user intensifies the sun for five turns, powering up Fire-type moves."
+msgstr "Die Sonne brennt unbarmherzig 5 Runden lang. Dadurch werden Attacken vom Typ Feuer verstärkt."
+
+msgid "The target is taunted into a rage that allows it to use only attack moves for three turns."
+msgstr "Der Gegner wird so gereizt, dass er über 2 - 4 Runden nur Angriffsattacken einsetzt."
+
+msgid "The foe is struck with an icy-cold beam of energy. It may also freeze the target solid."
+msgstr "Der Gegner wird von einem eiskalten Energiestrahl getroffen. Dieser friert ihn eventuell ein."
+
+msgid "A howling blizzard is summoned to strike the foe. It may also freeze the target solid."
+msgstr "Eine gnadenlose Eis- und Schnee-Attacke, die alle Gegner trifft und sie eventuell einfrieren kann."
+
+msgid "The foe is attacked with a powerful beam. The user must rest on the next turn to regain its energy."
+msgstr "Eine äußerst starke Attacke, die viel Schaden anrichtet. Anwender muss sich in der nächsten Runde ausruhen."
+
+msgid "A wondrous wall of light is put up to suppress damage from special attacks for five turns."
+msgstr "Eine Wand aus Licht wird für 5 Runden errichtet. Sie senkt den durch Spezial-Angriffe herbeigeführten Schaden."
+
+msgid "It enables the user to evade all attacks. Its chance of failing rises if it is used in succession."
+msgstr "Garantierter Schutz in der Runde, in der die Attacke eingesetzt wird. Könnte bei häufigem Einsatz versagen."
+
+msgid "The user summons a heavy rain that falls for five turns, powering up Water-type moves."
+msgstr "Schwerer Niederschlag setzt für 5 Runden ein. Attacken vom Typ Wasser werden verstärkt."
+
+msgid "A nutrient-draining attack. The user's HP is restored by half the damage taken by the target."
+msgstr "Das Ziel wird angegriffen und die Hälfte des zugefügten Schadens dem Angreifer als KP gutgeschrieben."
+
+msgid "The user creates a protective field that prevents status problems like poison, paralysis, burn, and sleep."
+msgstr "Ein Schild schützt das Team 5 Runden lang vor Statusproblemen jeglicher Art."
+
+msgid "A full-power attack that grows more powerful the less the user likes its Trainer."
+msgstr "Je unbeliebter der Trainer bei seinem Pokémon ist, desto größer ist die Wirkung."
+
+msgid "A two-turn attack. The user gathers light, then blasts a bundled beam on the second turn."
+msgstr "Eine Attacke über 2 Runden. Zunächst wird Sonnenlicht absorbiert, anschließend erfolgt der Angriff."
+
+msgid "The foe is slammed with a sturdy tail of steel. It may also lower the target's Defense stat if it hits."
+msgstr "Der Gegner wird mit der harten Rute attackiert. Gleichzeitig kann sein Verteidigungs-Wert sinken."
+
+msgid "A strong electric blast is loosed at the foe. It may also leave the foe paralyzed."
+msgstr "Das Ziel wird von einem verheerenden Stromschlag getroffen. Kann eventuell Paralyse bewirken."
+
+msgid "A wicked thunderbolt is dropped on the foe to inflict damage. It may also leave the target paralyzed."
+msgstr "Das Ziel wird von einem mächtigen Donnerschlag, der Paralyse bewirken kann, heimgesucht."
+
+msgid "The user sets off an earthquake that hits all the Pokémon in the battle."
+msgstr "Ein mächtiges Beben, das die anderen Pokémon in der Nähe des Anwenders trifft."
+
+msgid "A full-power attack that grows more powerful the more the user likes its Trainer."
+msgstr "Je beliebter der Trainer bei seinem Pokémon ist, desto größer ist die Wirkung."
+
+msgid "The user burrows, then attacks on the second turn. It can also be used to exit dungeons."
+msgstr "In Runde 1 gräbt sich der Anwender ein und in Runde 2 greift er an. Macht Flucht aus Höhlen möglich."
+
+msgid "The foe is hit by a strong telekinetic force. It may also reduce the foe's Sp. Def stat."
+msgstr "Ein mächtiger Strahl telekinetischer Energie trifft das Ziel. Die Spezial-Verteidigung des Zieles sinkt eventuell."
+
+msgid "The user hurls a shadowy blob at the foe. It may also lower the foe's Sp. Def stat."
+msgstr "Das Ziel wird mit einem dunklen Klumpen attackiert, der eventuell die Spezial-Verteidigung senkt."
+
+msgid "The user attacks with tough fists, etc. It can also break any barrier such as Light Screen and Reflect."
+msgstr "Das Ziel wird mit der Handkante angegriffen. Barrieren wie Lichtschild oder Reflektor werden zerstört."
+
+msgid "The user begins moving so quickly that it creates illusory copies to raise its evasiveness."
+msgstr "Der Angreifer ist so schnell, dass virtuelle Abbilder generiert werden, die den Fluchtwert erhöhen."
+
+msgid "A wondrous wall of light is put up to suppress damage from physical attacks for five turns."
+msgstr "Eine Wand aus Licht wird für 5 Runden errichtet, die den Schaden physischer Attacken reduziert."
+
+msgid "The user strikes the foe with a quick jolt of electricity. This attack cannot be evaded."
+msgstr "Angriff mit schnellem Elektro-Schlag. Ausweichen nicht möglich."
+
+msgid "The foe is scorched with an intense blast of fire. The target may also be left with a burn."
+msgstr "Das Ziel wird in ein Flammenmeer gehüllt. Verursacht eventuell Verbrennungen."
+
+msgid "Unsanitary sludge is hurled at the foe. It may also poison the target."
+msgstr "Das Ziel wird mit Giftschlamm beworfen. Kann eventuell Vergiftungen hervorrufen."
+
+msgid "A five-turn sandstorm is summoned to hurt all combatants except the Rock, Ground, and Steel types."
+msgstr "Ein Sandsturm trifft für 5 Runden alle Pokémon, außer die vom Typ Boden, Gestein und Stahl."
+
+msgid "The foe is attacked with an intense blast of all-consuming fire. It may also leave the target with a burn."
+msgstr "Dem Ziel wird ordentlich eingeheizt. Kann eventuell Verbrennungen hervorrufen."
+
+msgid "Large boulders are hurled at the foe to inflict damage. It may also make the target flinch."
+msgstr "Das Ziel wird mit Felsen beworfen. Kann Initiative-Wert senken."
+
+msgid "The user confounds the foe with speed, then strikes. The attack lands without fail."
+msgstr "Der Anwender irritiert das Ziel durch Schnelligkeit, bevor er angreift. Diese Attacke trifft ihr Ziel immer."
+
+msgid "The user torments and enrages the foe, making it incapable of using the same move twice in a row."
+msgstr "Der Anwender bringt das Ziel in Rage. Dieses ist nicht mehr in der Lage, eine Attacke zweimal hintereinander anzuwenden."
+
+msgid "An attack move that doubles its power if the user is poisoned, paralyzed, or has a burn."
+msgstr "Ist der Anwender vergiftet, paralysiert oder leidet er unter Verbrennungen, verdoppelt sich die Kraft der Attacke."
+
+msgid "An attack move with effects that vary depending on the user's environment."
+msgstr "Angriff, der abhängig vom Ort noch einen Zusatzeffekt hat."
+
+msgid "The user goes to sleep for two turns. It fully restores the user's HP and heals any status problem."
+msgstr "Der Angreifer schläft 2 Runden. Dabei werden die KP aufgefüllt und die Statusprobleme behoben."
+
+msgid "If it is the opposite gender of the user, the foe becomes infatuated and less likely to attack."
+msgstr "Gehört das Ziel dem anderen Geschlecht an, verliebt es sich und greift eventuell nicht an."
+
+msgid "The user attacks and steals the foe's held item simultaneously. It can't steal if the user holds an item."
+msgstr "Der Anwender greift an und stiehlt dem Ziel gleichzeitig ein Item, sofern er selbst gerade kein Item trägt."
+
+msgid "The foe is hit with wings of steel. It may also raise the user's Defense stat."
+msgstr "Trifft das Ziel mit Stahlflügeln. Verteidigungs-Wert des Anwenders steigt eventuell."
+
+msgid "The user employs its psychic power to exchange abilities with the foe."
+msgstr "Anwender tauscht Fähigkeit mit dem Ziel."
+
+msgid "The user steals the effects of any healing or status-changing move the foe attempts to use."
+msgstr "Raubt den Effekt heilender oder Werte verändernder Attacken des Zieles."
+
+msgid "The user attacks the foe at full power using fiery energy. It also sharply reduces the user's Sp. Atk."
+msgstr "Angriff mit maximaler Kraft und feuriger Energie, der gleichzeitig den Spezial-Angriff des Angreifers stark senkt."
+
+msgid "The user lands and rests its body. It restores the user's HP by up to half of its top HP."
+msgstr "Anwender landet und ruht sich aus. KP des Anwenders werden um 50 % der maximalen KP aufgefüllt."
+
+msgid "The user attacks at full power. It may also lower the foe's Sp. Def stat if it hits."
+msgstr "Ein Angriff mit aller Macht. Die Spezial-Verteidigung des Zieles sinkt eventuell."
+
+msgid "The user draws power from nature and fires it at the foe. It may also lower the target's Sp. Def."
+msgstr "Anwender zieht Kraft aus der Natur und feuert sie auf das Ziel. Senkt eventuell Spezial-Verteidigung des Zieles."
+
+msgid "A restrained attack that prevents the foe from fainting. The target is left with at least 1 HP."
+msgstr "Eine zurückhaltende Attacke, die eine Kampfunfähigkeit des Zieles verhindert, dem mindestens 1 KP bleibt."
+
+msgid "If the foe's HP is down to under half, this attack will hit with double the power."
+msgstr "Hat das Ziel die Hälfte oder weniger seiner maximalen KP, trifft diese Attacke mit doppelter Kraft."
+
+msgid "The user flings its held item at the foe to attack. Its power and effects depend on the item."
+msgstr "Der Anwender wirft sein Item auf das Ziel. Die Kraft und die Wirkung hängen vom jeweiligen Item ab."
+
+msgid "The user attacks with an electric charge. The user uses the remaining electricity to up its Sp. Atk."
+msgstr "Greift mit einer elektrischen Entladung an. Der Spezial-Angriff des Anwenders steigt eventuell."
+
+msgid "The user endures any attack, leaving 1 HP. Its chance of failing rises if it is used in succession."
+msgstr "Der Anwender übersteht auch starke Attacken mit mindestens 1 KP. Kann bei häufigem Einsatz versagen."
+
+msgid "The foe is attacked with a shock wave generated by the user's gaping mouth."
+msgstr "Das Ziel wird mit einer Schockwelle angegriffen, die aus dem offenen Maul des Anwenders kommt."
+
+msgid "An energy-draining punch. The user's HP is restored by half the damage taken by the target."
+msgstr "Entzieht dem Ziel Energie. Die Hälfte des Schadens wird den KP des Anwenders zugerechnet."
+
+msgid "The user shoots a sinister, bluish white flame at the foe to inflict a burn."
+msgstr "Feuert eine fiese, blauweiße Flamme auf das Ziel ab, um Verbrennungen zu verursachen."
+
+msgid "The foe is attacked with powdery scales blown by wind. It may also raise all the user's stats."
+msgstr "Angriff mit Silberstaub. Eventuell werden alle Statuswerte des Anwenders erhöht."
+
+msgid "It prevents the foe from using its held item. Its Trainer is also prevented from using items on it."
+msgstr "Das Ziel kann weder getragene Items nutzen, noch kann sein Trainer Items auf es anwenden."
+
+msgid "The user explodes to inflict damage on all Pokémon in battle. The user faints upon using this move."
+msgstr "Anwender explodiert, richtet bei allen Pokémon in seiner Umgebung großen Schaden an und wird selbst kampfunfähig."
+
+msgid "The user slashes with a sharp claw made from shadows. It has a high critical-hit ratio."
+msgstr "Eine Klaue aus Schatten greift das Ziel an. Die Volltrefferquote ist dabei sehr hoch."
+
+msgid "The user stores power, then attacks. Its power is doubled if used after the foe."
+msgstr "Der Anwender lädt die Attacke auf. Handelt das Ziel vor dem Anwender, verdoppelt sich die Stärke der Attacke."
+
+msgid "The user recycles a single-use item that has been used in battle so it can be used again."
+msgstr "Recycling eines getragenen Items, das zuvor im Kampf verwendet wurde."
+
+msgid "The user charges the foe using every bit of its power. It must rest on the next turn to recover."
+msgstr "Ein harter Angriff mit aller Energie. Danach muss der Anwender sich ausruhen und neue Energie sammeln."
+
+msgid "The user polishes its body to reduce drag. It sharply raises the Speed stat."
+msgstr "Der Anwender poliert seinen Körper. Erhöht den Initiative-Wert deutlich."
+
+msgid "The user flashes a light that cuts the foe's accuracy. It can also be used to illuminate caves."
+msgstr "Erzeugt helles Licht, das die Genauigkeit des Zieles senkt. Erhellt dunkle Orte."
+
+msgid "The user stabs the foe with a sharpened stone from below. It has a high critical-hit ratio."
+msgstr "Angriff mit spitzen Steinen. Besitzt eine hohe Volltrefferquote."
+
+msgid "An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn."
+msgstr "Wurde der Anwender in dieser Runde vom Ziel getroffen, macht diese Attacke doppelten Schaden."
+
+msgid "A weak electric charge is launched at the foe. It causes paralysis if it hits."
+msgstr "Das Ziel wird mit einem schwachen elektrischen Schlag angegriffen. Wird es getroffen, wird es paralysiert."
+
+msgid "The user tackles the foe from a high-speed spin. The slower the user, the greater the damage."
+msgstr "Eine verzerrte Drehattacke. Je langsamer der Anwender, desto mehr Schaden fügt er zu."
+
+msgid "A frenetic dance to uplift the fighting spirit. It sharply raises the user's Attack stat."
+msgstr "Ein wilder Tanz, der den Kampfgeist erhöhen soll. Der Angriffs-Wert des Anwenders steigt deutlich."
+
+msgid "The user lays a trap of levitating stones around the foe. The trap hurts foes that switch into battle."
+msgstr "Falle mit schwebenden Steinen. In den Kampf eingewechselte Ziele nehmen Schaden."
+
+msgid "The user hypnotizes itself into copying any stat change made by the foe."
+msgstr "Der Anwender hypnotisiert sich selbst, um die Statusveränderungen des Zieles zu kopieren."
+
+msgid "If it is the opposite gender of the user, the foe is charmed into sharply lowering its Sp. Atk stat."
+msgstr "Charme-Attacke, die den Spezial-Angriff des Zieles stark senkt, falls es dem anderen Geschlecht angehört."
+
+msgid "The user releases a horrible aura imbued with dark thoughts. It may also make the target flinch."
+msgstr "Anwender greift mit fürchterlicher Aura schlechter Gedanken an. Ziel schreckt eventuell zurück."
+
+msgid "The user slashes at the foe by crossing its scythes or claws as if they were a pair of scissors."
+msgstr "Der Anwender greift mit gekreuzten Scheren oder Klauen an, als wären diese eine normale Schere."
+
+msgid "While it is asleep, the user randomly uses one of the moves it knows."
+msgstr "Anwender setzt per Zufall eine ihm bekannte Attacke im Schlaf ein."
+
+msgid "The user draws power from the Berry it is holding to attack. The Berry determines its type and power."
+msgstr "Anwender zieht aus seiner derzeitigen Beere Kraft. Sie bestimmt Typ und Stärke der Attacke."
+
+msgid "The foe is stabbed with a tentacle or arm seeped with poison. It may also poison the foe."
+msgstr "Der Anwender greift mit giftigen Gliedmaßen wie Tentakeln oder Armen an. Das Ziel wird dabei eventuell vergiftet."
+
+msgid "An attack that works only on a sleeping foe. It absorbs half the damage caused to heal the user's HP."
+msgstr "Wirkt nur auf schlafende Gegner. Anwender erhält 50 % des Schadens als KP."
+
+msgid "The user snares the foe with grass and trips it. The heavier the foe, the greater the damage."
+msgstr "Gegner wird durch Gras ins Straucheln gebracht. Je schwerer der Gegner, desto mehr Schaden."
+
+msgid "The user enrages the foe into confusion. However, it also sharply raises the foe's Attack stat."
+msgstr "Reizt den Gegner und verursacht Verwirrung. Erhöht jedoch den gegnerischen Angriffswert."
+
+msgid "The user pecks the foe. If the foe is holding a Berry, the user plucks it and gains its effect."
+msgstr "Anwender pickt das Ziel, nimmt die Beere, falls das Ziel eine hält, und erhält ihren Effekt."
+
+msgid "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+msgstr "Direkt nach der Attacke tauscht der Angreifer mit einem wartenden Pokémon den Platz."
+
+msgid "The user makes a copy of itself using some of its HP. The copy serves as the user's decoy."
+msgstr "Der Angreifer erschafft aus ein paar eigenen KP einen Klon, der als Ablenkung dient."
+
+msgid "The user gathers all its light energy and releases it in one shot. It may also lower the foe's Sp. Def stat."
+msgstr "Anwender sammelt Lichtenergie und feuert sie auf einmal ab. Senkt eventuell Spezial-Verteidigung des Zieles."
+
+msgid "The user creates a bizarre space in which slower Pokémon get to move first for five turns."
+msgstr "Anwender erzeugt einen bizarren Raum, in dem langsame Pokémon fünf Runden lang zuerst agieren."
+
+msgid "HM01"
+msgstr "VM01"
+
+msgid "The foe is cut with a scythe or a claw. It can also be used to cut down thin trees."
+msgstr "Der Gegner wird mit scharfen Klingen attackiert. Außerhalb des Kampfes werden damit kleine Bäume gefällt."
+
+msgid "HM02"
+msgstr "VM02"
+
+msgid "The user soars, then strikes on the second turn. It can also be used to fly to any familiar town."
+msgstr "In Runde 1 fliegt der Angreifer empor und attackiert in Runde 2. Man kann damit zu jedem bekannten Ort fliegen."
+
+msgid "HM03"
+msgstr "VM03"
+
+msgid "It swamps the entire battlefield with a giant wave. It can also be used to cross water."
+msgstr "Eine riesige Flutwelle ergießt sich über alle, außer den Anwender. Damit kann man auch auf dem Wasser surfen."
+
+msgid "HM04"
+msgstr "VM04"
+
+msgid "The foe is slugged with a punch thrown at maximum power. It can also be used to move boulders."
+msgstr "Den Gegner trifft ein energiegeladener Kraftschlag. Außerdem lassen sich mit der Attacke schwere Felsen bewegen."
+
+msgid "HM05"
+msgstr "VM05"
+
+msgid "Obstacles are moved, reducing the foe's evasion stat. It can also be used to clear deep fog."
+msgstr "Fluchtwert des Gegners wird durch Hindernisse gesenkt. Löst zudem Nebel auf."
+
+msgid "HM06"
+msgstr "VM06"
+
+msgid "The user slugs the foe with a shattering punch. It can also smash cracked boulders."
+msgstr "Zertrümmernder Angriff auf den Gegner. Kann auch Steine zertrümmern."
+
+msgid "HM07"
+msgstr "VM07"
+
+msgid "The user charges the foe at an awesome speed. It can also be used to climb a waterfall."
+msgstr "Eine mächtige Attacke, die den Gegner mit rasender Geschwindigkeit angreift. Sie macht Wasserfälle bezwingbar."
+
+msgid "HM08"
+msgstr "VM08"
+
+msgid "Diving on the first turn, the user floats up and attacks on the second turn."
+msgstr "Taucht in Runde 1 ab und greift in Runde 2 aus der Tiefe an. Ermöglicht Tauchgänge zum Meeresgrund."
+
+msgid "Cheri Berry"
+msgstr "Amrenabeere"
+
+msgid "It may be used or held by a Pokémon to recover from paralysis."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, heilt diese es von Paralyse."
+
+msgid "Chesto Berry"
+msgstr "Maronbeere"
+
+msgid "It may be used or held by a Pokémon to recover from sleep."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, erwacht es dadurch aus dem Schlaf."
+
+msgid "Pecha Berry"
+msgstr "Pirsifbeere"
+
+msgid "It may be used or held by a Pokémon to recover from poison."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, heilt diese es von Vergiftung."
+
+msgid "Rawst Berry"
+msgstr "Fragiabeere"
+
+msgid "It may be used or held by a Pokémon to recover from a burn."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, heilt diese es von Verbrennung."
+
+msgid "Aspear Berry"
+msgstr "Wilbirbeere"
+
+msgid "It may be used or held by a Pokémon to defrost it."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, heilt diese es von Frost."
+
+msgid "Leppa Berry"
+msgstr "Jonagobeere"
+
+msgid "It may be used or held by a Pokémon to restore a move's PP by 10."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, füllt sie die AP einer Attacke um 10 Punkte auf."
+
+msgid "Oran Berry"
+msgstr "Sinelbeere"
+
+msgid "It may be used or held by a Pokémon to heal the user by just 10 HP."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, füllt sie seine KP um 10 Punkte auf."
+
+msgid "Persim Berry"
+msgstr "Persimbeere"
+
+msgid "It may be used or held by a Pokémon to recover from confusion."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, heilt diese es von Verwirrung."
+
+msgid "Lum Berry"
+msgstr "Prunusbeere"
+
+msgid "It may be used or held by a Pokémon to recover from any status problem."
+msgstr "Gibst du diese Beere einem Pokémon zum Tragen, hebt sie alle seine Statusprobleme auf."
+
+msgid "Sitrus Berry"
+msgstr "Tsitrubeere"
+
+msgid "It may be used or held by a Pokémon to heal the user's HP a little."
+msgstr "Gibst du die Beere einem Pokémon zum Tragen, füllt diese seine KP ein wenig auf."
+
+msgid "Figy Berry"
+msgstr "Giefebeere"
+
+msgid "If held by a Pokémon, it restores the user's HP in a pinch, but may also cause confusion."
+msgstr "Als getragenes Item füllt die Beere im Notfall die KP eines Pokémon auf, doch ihr Aroma verwirrt jene, die es nicht mögen."
+
+msgid "Wiki Berry"
+msgstr "Wikibeere"
+
+msgid "Mago Berry"
+msgstr "Magobeere"
+
+msgid "Aguav Berry"
+msgstr "Gauvebeere"
+
+msgid "Iapapa Berry"
+msgstr "Yapabeere"
+
+msgid "Razz Berry"
+msgstr "Himmihbeere"
+
+msgid "Bury it in soft soil to grow a Razz Plant."
+msgstr "Eine Beerensorte, die in der Einall-Region ganz besonders selten ist."
+
+msgid "Bluk Berry"
+msgstr "Morbbeere"
+
+msgid "Bury it in soft soil to grow a Bluk Plant."
+msgstr "Eine Beerensorte, die in der Einall-Region ganz besonders selten ist."
+
+msgid "Nanab Berry"
+msgstr "Nanabbeere"
+
+msgid "Bury it in soft soil to grow a Nanab Plant."
+msgstr "Eine Beerensorte, die in der Einall-Region ganz besonders selten ist."
+
+msgid "Wepear Berry"
+msgstr "Nirbebeere"
+
+msgid "Bury it in soft soil to grow a Wepear Plant."
+msgstr "Eine Beerensorte, die in der Einall-Region ganz besonders selten ist."
+
+msgid "Pinap Berry"
+msgstr "Sananabeere"
+
+msgid "Bury it in soft soil to grow a Pinap Plant."
+msgstr "Eine Beerensorte, die in der Einall-Region ganz besonders selten ist."
+
+msgid "Pomeg Berry"
+msgstr "Granabeere"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base HP."
+msgstr "Isst ein Pokémon diese Beere, stärkt dies eure Freundschaft, verringert aber seinen KP-Basiswert."
+
+msgid "Kelpsy Berry"
+msgstr "Setangbeere"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Attack stat."
+msgstr "Isst ein Pokémon diese Beere, stärkt dies eure Freundschaft, verringert aber seinen Angriffs-Basiswert."
+
+msgid "Qualot Berry"
+msgstr "Qualotbeere"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Defense stat."
+msgstr "Isst ein Pokémon diese Beere, stärkt dies eure Freundschaft, verringert aber seinen Verteidigungs-Basiswert."
+
+msgid "Hondew Berry"
+msgstr "Honmelbeere"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Atk stat."
+msgstr "Isst ein Pokémon diese Beere, stärkt dies eure Freundschaft, verringert aber seinen Spezial-Angriffs-Basiswert."
+
+msgid "Grepa Berry"
+msgstr "Labrusbeere"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Def stat."
+msgstr "Isst ein Pokémon diese Beere, stärkt dies eure Freundschaft, verringert aber seinen Spezial-Verteidigungs-Basiswert."
+
+msgid "Tamato Berry"
+msgstr "Tamotbeere"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Speed stat."
+msgstr "Isst ein Pokémon diese Beere, stärkt dies eure Freundschaft, verringert aber seinen Initiative-Basiswert."
+
+msgid "Cornn Berry"
+msgstr "Saimbeere"
+
+msgid "Bury it in soft soil to grow a Cornn Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Saimbeeren wachsen."
+
+msgid "Magost Berry"
+msgstr "Magostbeere"
+
+msgid "Bury it in soft soil to grow a Magost Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Magostbeeren wachsen."
+
+msgid "Rabuta Berry"
+msgstr "Rabutabeere"
+
+msgid "Bury it in soft soil to grow a Rabuta Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Rabutabeeren wachsen."
+
+msgid "Nomel Berry"
+msgstr "Tronzibeere"
+
+msgid "Bury it in soft soil to grow a Nomel Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Tronzibeeren wachsen."
+
+msgid "Spelon Berry"
+msgstr "Kiwanbeere"
+
+msgid "Bury it in soft soil to grow a Spelon Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Kiwanbeeren wachsen."
+
+msgid "Pamtre Berry"
+msgstr "Pallmbeere"
+
+msgid "Bury it in soft soil to grow a Pamtre Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Pallmbeeren wachsen."
+
+msgid "Watmel Berry"
+msgstr "Wasmelbeere"
+
+msgid "Bury it in soft soil to grow a Watmel Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Wasmelbeeren wachsen."
+
+msgid "Durin Berry"
+msgstr "Durinbeere"
+
+msgid "Bury it in soft soil to grow a Durin Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Durinbeeren wachsen."
+
+msgid "Belue Berry"
+msgstr "Myrtilbeere"
+
+msgid "Bury it in soft soil to grow a Belue Plant."
+msgstr "Pflanze sie in Erde ein, damit neue Myrtilbeeren wachsen."
+
+msgid "Occa Berry"
+msgstr "Koakobeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Fire-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Feuer."
+
+msgid "Passho Berry"
+msgstr "Foepasbeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Water-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Wasser."
+
+msgid "Wacan Berry"
+msgstr "Kerzalbeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Electric-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Elektro."
+
+msgid "Rindo Berry"
+msgstr "Grindobeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Grass-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Pflanze."
+
+msgid "Yache Berry"
+msgstr "Kiroyabeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ice-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Eis."
+
+msgid "Chople Berry"
+msgstr "Rospelbeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Fighting-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Kampf."
+
+msgid "Kebia Berry"
+msgstr "Grarzbeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Poison-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Gift."
+
+msgid "Shuca Berry"
+msgstr "Schukebeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ground-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Boden."
+
+msgid "Coba Berry"
+msgstr "Kobabeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Flying-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Flug."
+
+msgid "Payapa Berry"
+msgstr "Pyapabeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Psychic-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Psycho."
+
+msgid "Tanga Berry"
+msgstr "Tanigabeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Bug-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Käfer."
+
+msgid "Charti Berry"
+msgstr "Chiaribeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Rock-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Gestein."
+
+msgid "Kasib Berry"
+msgstr "Zitarzbeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ghost-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Geist."
+
+msgid "Haban Berry"
+msgstr "Terirobeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Dragon-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Drache."
+
+msgid "Colbur Berry"
+msgstr "Burleobeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Dark-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Unlicht."
+
+msgid "Babiri Berry"
+msgstr "Babiribeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Steel-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Stahl."
+
+msgid "Chilan Berry"
+msgstr "Latchibeere"
+
+msgid "If held by a Pokémon, it weakens a foe's Normal-type attack."
+msgstr "Als getragenes Item schwächt diese Beere gegnerische Attacken vom Typ Normal."
+
+msgid "Liechi Berry"
+msgstr "Lydzibeere"
+
+msgid "If held by a Pokémon, it raises its Attack stat in a pinch."
+msgstr "Als getragenes Item erhöht diese Beere den Angriffs-Wert eines Pokémon, sobald es in einer Notlage steckt."
+
+msgid "Ganlon Berry"
+msgstr "Linganbeere"
+
+msgid "If held by a Pokémon, it raises its Defense stat in a pinch."
+msgstr "Als getragenes Item erhöht diese Beere den Verteidigungs-Wert eines Pokémon, sobald es in einer Notlage steckt."
+
+msgid "Salac Berry"
+msgstr "Salkabeere"
+
+msgid "If held by a Pokémon, it raises its Speed stat in a pinch."
+msgstr "Als getragenes Item erhöht diese Beere den Initiative-Wert eines Pokémon, sobald es in einer Notlage steckt."
+
+msgid "Petaya Berry"
+msgstr "Tahaybeere"
+
+msgid "If held by a Pokémon, it raises its Sp. Atk stat in a pinch."
+msgstr "Als getragenes Item erhöht diese Beere den Spezial-Angriffs-Wert eines Pokémon, sobald es in einer Notlage steckt."
+
+msgid "Apicot Berry"
+msgstr "Apikobeere"
+
+msgid "If held by a Pokémon, it raises its Sp. Def stat in a pinch."
+msgstr "Als getragenes Item erhöht diese Beere den Spezial-Verteidigungs-Wert eines Pokémon, sobald es in einer Notlage steckt."
+
+msgid "Lansat Berry"
+msgstr "Lansatbeere"
+
+msgid "If held by a Pokémon, it raises its critical-hit ratio in a pinch."
+msgstr "Als getragenes Item erhöht diese Beere die Volltrefferquote eines Pokémon, sobald es in einer Notlage steckt."
+
+msgid "Starf Berry"
+msgstr "Krambobeere"
+
+msgid "If held by a Pokémon, it sharply raises one of its stats in a pinch."
+msgstr "Als getragenes Item erhöht diese Beere einen Statuswert des Pokémon stark, sobald es in einer Notlage steckt."
+
+msgid "Enigma Berry"
+msgstr "Enigmabeere"
+
+msgid "If held by a Pokémon, it restores its HP if it is hit by a foe's supereffective attack."
+msgstr "Als getragenes Item füllt diese Beere die KP eines Pokémon auf, wenn es von sehr effektiven Attacken getroffen wird."
+
+msgid "Micle Berry"
+msgstr "Wunfrubeere"
+
+msgid "If held by a Pokémon, it raises the accuracy of a move just once in a pinch."
+msgstr "Als getragenes Item erhöht diese Beere die Genauigkeit eines Pokémon, sobald es in einer Notlage steckt."
+
+msgid "Custap Berry"
+msgstr "Eipfelbeere"
+
+msgid "If held by a Pokémon, it gets to move first just once in a pinch."
+msgstr "Als getragenes Item ermöglicht diese Beere dem Träger in einer Notlage den Erstschlag."
+
+msgid "Jaboca Berry"
+msgstr "Jabocabeere"
+
+msgid "If held by a Pokémon, and if a foe's physical attack lands, the foe also takes damage."
+msgstr "Als getragenes Item bewirkt diese Beere Schaden bei jenen, die den Träger mit einer physischen Attacke treffen."
+
+msgid "Rowap Berry"
+msgstr "Roselbeere"
+
+msgid "If held by a Pokémon, and if a foe's special attack lands, the foe also takes damage."
+msgstr "Als getragenes Item bewirkt diese Beere Schaden bei jenen, die den Träger mit einer Spezial-Attacke treffen."
+
+msgid "Orange Mail"
+msgstr "Zigzagbrief"
+
+msgid "A piece of mail featuring a cute Zigzagoon print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen süßen Zigzachs-Abdruck. Gib es einem Pokémon mit."
+
+msgid "Harbor Mail"
+msgstr "Hafenbrief"
+
+msgid "A piece of mail featuring a cute Wingull print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen süßen Wingull-Abdruck. Gib es einem Pokémon mit."
+
+msgid "Glitter Mail"
+msgstr "Glitzerbrief"
+
+msgid "A piece of mail featuring a cute Pikachu print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen süßen Pikachu-Abdruck. Gib es einem Pokémon mit."
+
+msgid "Mech Mail"
+msgstr "Eilbiref"
+
+msgid "A piece of mail featuring a cute Magnemite print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen süßen Magnetilo-Abdruck. Gib es einem Pokémon mit."
+
+msgid "Wood Mail"
+msgstr "Waldbrief"
+
+msgid "A piece of mail featuring a cute Slakoth print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen süßen Bummelz-Abdruck. Gib es einem Pokémon mit."
+
+msgid "Wave Mail"
+msgstr "Wellenbrief"
+
+msgid "A piece of mail featuring a cute Wailmer print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen süßen Wailmer-Abdruck. Gib es einem Pokémon mit."
+
+msgid "Bead Mail"
+msgstr "Perlenbrief"
+
+msgid "A piece of mail to be held by a Pokémon. It will bear the print of the Pokémon holding it."
+msgstr "Gib das Briefpapier einem Pokémon mit. Es wird den Abdruck des Pokémon haben, das es trägt."
+
+msgid "Shadow Mail"
+msgstr "Dunkelbrief"
+
+msgid "A piece of mail featuring a cute Duskull print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen süßen Zwirrlicht-Abdruck. Gib es einem Pokémon mit."
+
+msgid "Tropic Mail"
+msgstr "Tropenbrief"
+
+msgid "A piece of mail featuring a cute Bellossom print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen süßen Blubella-Abdruck. Gib es einem Pokémon mit."
+
+msgid "Dream Mail"
+msgstr "Traumbrief"
+
+msgid "Fab Mail"
+msgstr "Edelbrief"
+
+msgid "A piece of mail featuring a gorgeous, extravagant print. It is to be held by a Pokémon."
+msgstr "Das Briefpapier hat einen wunderschönen und extravaganten Hintergrund. Gib es einem Pokémon mit."
+
+msgid "Retro Mail"
+msgstr "Retrobrief"
+
+msgid "A piece of mail featuring a print of three cute Pokémon. It is to be held by a Pokémon."
+msgstr "Das Briefpapier mit einem süßen Bild von drei Pokémon besteht. Gib es einem Pokémon mit."
+
+msgid "X Attack"
+msgstr "X-Angriff"
+
+msgid "An item that raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Hebt den Angriffs-Wert eines Pokémon im Kampf. Die Wirkung wird mit dem Austausch des Pokémon beendet."
+
+msgid "X Defend"
+msgstr "X-Abwehr"
+
+msgid "An item that raises the Defense of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Hebt den Verteidigungs-Wert eines Pokémon im Kampf. Die Wirkung wird mit dem Austausch des Pokémon beendet."
+
+msgid "X Special"
+msgstr "X-Spezial"
+
+msgid "An item that raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Hebt den Spezial-Angriff eines Pokémon im Kampf. Die Wirkung wird mit dem Austausch des Pokémon beendet."
+
+msgid "X Sp. Def"
+msgstr "X-SpezialVer"
+
+msgid "An item that raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Hebt die Spezial-Verteidigung eines Pokémon im Kampf. Die Wirkung wird mit dem Austausch des Pokémon beendet."
+
+msgid "X Speed"
+msgstr "X-Tempo"
+
+msgid "An item that raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Hebt den Initiative-Wert eines Pokémon im Kampf. Die Wirkung wird mit dem Austausch des Pokémon beendet."
+
+msgid "X Accuracy"
+msgstr "X-Treffer"
+
+msgid "An item that raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "Hebt die Genauigkeit eines Pokémon im Kampf. Die Wirkung wird mit dem Austausch des Pokémon beendet."
+
+msgid "Dire Hit"
+msgstr "Angriffplus"
+
+msgid "An item that raises the critical-hit ratio of a Pokémon in battle."
+msgstr "Hebt die Volltrefferquote eines Pokémon im Kampf. Die Wirkung wird mit dem Tausch des Pokémon beendet."
+
+msgid "Guard Spec."
+msgstr "Megablock"
+
+msgid "An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use."
+msgstr "Eine mögliche Statusveränderung der Pokémon im Team wird für 5 Runden verhindert."
+
+msgid "Poké Doll"
+msgstr "Poképuppe"
+
+msgid "A doll that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+msgstr "Eine hübsche Puppe. Sie ermöglicht die Flucht im Kampf gegen wilde Pokémon."
+
+msgid "Fluffy Tail"
+msgstr "Eneco-Rute"
+
+msgid "An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+msgstr "Ein hübsches Item. Es ermöglicht die Flucht im Kampf gegen wilde Pokémon."
+
+msgid "Blue Flute"
+msgstr "Blaue Flöte"
+
+msgid "A blue flute made from blown glass. Its melody awakens a single Pokémon from sleep."
+msgstr "Eine blaue, gläserne Flöte, die ein schlafendes Pokémon weckt."
+
+msgid "Yellow Flute"
+msgstr "Gelbe Flöte"
+
+msgid "A yellow flute made from blown glass. Its melody snaps a single Pokémon out of confusion."
+msgstr "Eine gelbe, gläserne Flöte, die ein Pokémon von Verwirrung heilt."
+
+msgid "Red Flute"
+msgstr "Rote Flöte"
+
+msgid "A red flute made from blown glass. Its melody snaps a single Pokémon out of infatuation."
+msgstr "Eine rote, gläserne Flöte, die ein Pokémon von Anziehung heilt."
+
+msgid "Bicycle"
+msgstr "Fahrrad"
+
+msgid "A folding Bicycle that enables much faster movement than the Running Shoes."
+msgstr "Ein Klapprad, mit dem man schneller als mit Turbotretern ist."
+
+msgid "Old Rod"
+msgstr "Angel"
+
+msgid "An old and beat-up fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "Eine alte, abgenutzte Angel. Damit kannst du in jedem Gewässer nach Pokémon angeln."
+
+msgid "Good Rod"
+msgstr "Profiangel"
+
+msgid "A new, good-quality fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "Eine recht gute Angel. Damit kannst du in jedem Gewässer nach Pokémon angeln."
+
+msgid "Super Rod"
+msgstr "Superangel"
+
+msgid "An awesome, high-tech fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "Eine wundervoll gefertigte Angel. Die beste Angel, um nach Pokémon zu fischen."
+
+msgid "Dowsing MCHN"
+msgstr "Itemradar"
+
+msgid "It checks for unseen items in the area and makes noise and lights when it finds something."
+msgstr "Scannt die Umgebung nach unsichtbaren Items. Es blinkt und piept, sobald es etwas findet."
+
+msgid "The user creates shockwaves to attack the target. This attack does physical damage."
+msgstr "Der Anwender erschafft Wellen im Wasser um sein Ziel anzugreifen. Diese Attacke richtet physischen Schaden an."
+
+msgid "Town Map"
+msgstr "Karte"
+
+msgid "A very convenient map that can be viewed anytime. It even shows your present location."
+msgstr "Eine praktische Karte, die jederzeit aufgerufen werden kann. Dein aktueller Standort wird auch angezeigt."
+
+msgid "Coin Case"
+msgstr "Münzkorb"
+
+msgid "A case for holding Coins obtained at the Game Corner. It holds up to 99,999 Coins."
+msgstr "Im Korb finden bis zu 50 000 Münzen der Spielhalle Platz."
+
+msgid "A flower sometimes bundled in bouquets to convey gratitude on special occasions like birthdays."
+msgstr "Mit dieser Blume, manchmal auch als Teil eines Bouquets, kann man an speziellen Tagen seine Dankbarkeit ausdrücken."
+
+msgid "Soot Sack"
+msgstr "Aschetasche"
+
+msgid "A sack used to gather and hold volcanic ash."
+msgstr "Beutel zum Sammeln und Aufbewahren von Vulkanasche."
+
+msgid "Explorer Kit"
+msgstr "Forschersack"
+
+msgid "A bag filled with convenient tools for exploring. It provides access to the Underground."
+msgstr "Ein Beutel voller nützlicher Entdeckungsutensilien. Öffnet den Untergrund."
+
+msgid "Loot Sack"
+msgstr "Beutesack"
+
+msgid "A sturdy, spacious bag that is used to carry loot obtained in the coal mine."
+msgstr "Ein fester Sack. Wird verwendet, um Beute aus der Kohlemine zu transportieren."
+
+msgid "Rule Book"
+msgstr "Regelbuch"
+
+msgid "It lists the rules for holding battles. For linked battles, you may choose which rules to use."
+msgstr "Enthält die Kampfregeln. Bei Link-Kämpfen kannst du daraus die gewünschten Regeln wählen."
+
+msgid "Point Card"
+msgstr "Punktekarte"
+
+msgid "A card that lists the Battle Points you have earned."
+msgstr "Auf dieser Karte werden deine bisher erhaltenen Gewinnpunkte festgehalten."
+
+msgid "Journal"
+msgstr "Tagebuch"
+
+msgid "A notebook that keeps a day-to-day record of your adventure so far."
+msgstr "In diesem Tagebuch steht, was du in den letzten Tagen erlebt hast."
+
+msgid "Seal Case"
+msgstr "Stickerkoffer"
+
+msgid "A case for storing Seals that can be applied to the capsule cases of Poké Balls."
+msgstr "In diesem Koffer kannst du die Sticker für die Ballkapseln der Pokébälle aufbewahren."
+
+msgid "Fashion Case"
+msgstr "Modekoffer"
+
+msgid "A fancy case for the tidy and organized storage of colorful Pokémon Accessories."
+msgstr "Ein schicker Koffer für alle Accessoires für deine Pokémon. Da knittert nichts."
+
+msgid "Seal Bag"
+msgstr "Stickertasche"
+
+msgid "A tiny bag that can hold ten Seals for decorating Poké Balls."
+msgstr "Ein kleines Tütchen. Es bietet Platz für bis zu zehn Sticker für die Pokébälle."
+
+msgid "Pal Pad"
+msgstr "Adressbuch"
+
+msgid "A convenient notepad that is used for registering your friends and keeping a record of game play."
+msgstr "In diesem praktischen Buch kannst du die Freundescodes deiner Freunde aufbewahren."
+
+msgid "Works Key"
+msgstr "K-Schlüssel"
+
+msgid "A large key for operating the doors of the Valley Windworks. It was held by a Team Galactic Grunt."
+msgstr "Ein großer Schlüssel, der zum Windkraftwerk gehört. Einer der Rüpel vom Team Galaktik hatte ihn im Besitz."
+
+msgid "Old Charm"
+msgstr "Talisman"
+
+msgid "An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town."
+msgstr "Ein antiker Glücksbringer. Soll der Ältesten in Elyses überbracht werden."
+
+msgid "Galactic Key"
+msgstr "G-Schlüssel"
+
+msgid "A card key for disengaging security systems in the Galactic HQ. Losing it can result in punishment, apparently."
+msgstr "Diese Schlüsselkarte deaktiviert die Sicherheitssysteme im Hauptquartier von Team Galaktik."
+
+msgid "Red Chain"
+msgstr "Rote Kette"
+
+msgid "A mythical chain that is said to link the legendary Pokémon that created the Sinnoh region."
+msgstr "Diese mythische Kette ist angeblich die Verbindung zu einem Legendären Pokémon."
+
+msgid "Sprayduck"
+msgstr "Entonkanne"
+
+msgid "A watering can shaped like a Psyduck. It helps promote healthy growth of planted Berries."
+msgstr "Eine Gießkanne in Form von Enton. Gieße gepflanzte Beeren, damit sie besser wachsen."
+
+msgid "Poffin Case"
+msgstr "Knurspbox"
+
+msgid "A case for storing Poffin cooked from Berries."
+msgstr "Eine Box für leckere Knurspe."
+
+msgid "Suite Key"
+msgstr "B-Schlüssel"
+
+msgid "A key to one of the suites at the luxury hotel by a lake. For some odd reason, it often disappears."
+msgstr "Schlüssel zu einer Hotelsuite. Verschwindet seltsamerweise immer wieder mal."
+
+msgid "Oak's Letter"
+msgstr "Eichs Brief"
+
+msgid "A letter from Prof. Oak. Written in it is a request for you to go to Rt. 224."
+msgstr "Ein Brief von Prof. Eich. Er bittet dich, zur Route 224 zu gehen."
+
+msgid "Lunar Wing"
+msgstr "Lunarfeder"
+
+msgid "A feather that glows like the moon. It is said to possess the power to dispel nightmares."
+msgstr "Diese Feder leuchtet wie der Mond. Kann angeblich Alpträume vertreiben."
+
+msgid "Member Card"
+msgstr "Mitgl.Karte"
+
+msgid "A card needed for entering the inn in Canalave City. Oddly, the last date marked on it was 50 years ago."
+msgstr "Eine Eintrittskarte für den Gasthof in Fleetburg. Sie ist über 50 Jahre alt..."
+
+msgid "Azure Flute"
+msgstr "Azurflöte"
+
+msgid "A flute that puts out echoing sounds that do not seem to be of this world. It is unknown who made it."
+msgstr "Eine Flöte, deren Töne nicht von dieser Welt zu sein scheinen. Ihr Erschaffer ist nicht bekannt."
+
+msgid "BBFerry Ticket"
+msgstr "Fährenticket"
+
+msgid "The ticket required for sailing on the ferry on Bealbeach Lake. It has a drawing of a ship on it."
+msgstr "Ein Ticket, um mit der Fähre am Sonnenstrandsee fahren zu können. Die Zeichnung eines Schiffes ist aufgedruckt."
+
+msgid "Contest Pass"
+msgstr "Wettbewerbskarte"
+
+msgid "The pass required for entering Pokémon Contests. It has a drawing of an award ribbon on it."
+msgstr "Ausweis zur Teilnahme an Pokémon-Wettbewerben. Die Zeichnung eines Bandes ist aufgedruckt."
+
+msgid "Magma Stone"
+msgstr "Magmastein"
+
+msgid "A stone formed when boulders melted in intensely hot magma. Magma remains sealed inside."
+msgstr "Ein Stein aus gehärtetem Magma. Sein innerer Kern ist noch flüssig und heiß."
+
+msgid "Parcel"
+msgstr "Paket"
+
+msgid "A parcel that you are supposed to deliver to your childhood friend who left Twinleaf Town."
+msgstr "Ein Paket, das dir anvertraut wurde. Du sollst es deinem besten Freund geben, der Zweiblattdorf verließ."
+
+msgid "Coupon 1"
+msgstr "Kupon 1"
+
+msgid "A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed."
+msgstr "Einer der drei Kupons, die du für den Pokétch benötigst."
+
+msgid "Coupon 2"
+msgstr "Kupon 2"
+
+msgid "Coupon 3"
+msgstr "Kupon 3"
+
+msgid "Storage Key"
+msgstr "Lagerschlüssel"
+
+msgid "The key to Team Galactic's sinister warehouse located at the edge of Veilstone City."
+msgstr "Der Schlüssel zur Lagerhalle des Teams Galaktik am Rande von Schleiede."
+
+msgid "SecretPotion"
+msgstr "Geheimtrank"
+
+msgid "A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment."
+msgstr "Eine fantastische Medizin aus Anemonia City. Heilt und kuriert ein Pokémon vollständig."
+
+msgid "Vs. Seeker"
+msgstr "Kampffahnder"
+
+msgid "A device that indicates Trainers who want to battle. Its battery charges while you walk."
+msgstr "Ein Gerät, das rückkampfwillige Trainer ausfindig macht. Die Batterie lädt sich beim Reisen auf."
+
+msgid "Vs. Recorder"
+msgstr "Kampfkamera"
+
+msgid "An amazing device that can record a battle either between friends or at a special battle facility."
+msgstr "Ein tolles Gerät, mit dem man Kämpfe zw. Freunden oder Kämpfe in einer speziellen Kampfeinrichtung aufzeichnen kann."
+
+msgid "Secret Key"
+msgstr "?-Öffner"
+
+msgid "A high-tech key to be used at a specific location. It emits a special electric signal to open a door."
+msgstr "Ein besonderer Schlüssel, der an einem speziellen Ort verwendet werden muss. Öffnet Türen durch ein elektr. Signal."
+
+msgid "Apricorn Box"
+msgstr "Aprikokobox"
+
+msgid "A handy box where you can store up to 99 Apricorns of each kind."
+msgstr "Eine praktische Tragebox, in der du bis zu 99 Aprikokos jeder Sorte transportieren kannst."
+
+msgid "Unown Report"
+msgstr "Icognitoheft"
+
+msgid "A report of all the discovered kinds of Unown."
+msgstr "Ein Heft, in dem automatisch Daten zu bereits gefangenen Icognito aufgezeichnet werden."
+
+msgid "Berry Pots"
+msgstr "Pflanzset"
+
+msgid "Handy containers for cultivating Berries wherever you go."
+msgstr "Ein tragbares Utensil, das die Aufzucht von Pflanzen aus Beeren ermöglicht, wo immer du auch gerade bist."
+
+msgid "Blue Card"
+msgstr "Blaue Karte"
+
+msgid "A card to save points for the Buena's Password show."
+msgstr "Eine Karte, auf der die Punkte für \"Passwort mit Buena\" festgehalten werden."
+
+msgid "SlowpokeTail"
+msgstr "Flegmon-Rute"
+
+msgid "A very tasty tail of something. It sells for a high price."
+msgstr "Die Rute eines unbestimmten Wesens. Extrem schmackhaft. Lässt sich teuer verkaufen."
+
+msgid "Clear Bell"
+msgstr "Klarglocke"
+
+msgid "A very old-fashioned bell that makes a gentle ringing."
+msgstr "Eine altehrwürdige Glocke, deren Läuten alle besänftigt, die es hören."
+
+msgid "Card Key"
+msgstr "Türöffner"
+
+msgid "A card key that opens a shutter in the Radio Tower."
+msgstr "Eine Schlüsselkarte, die eine Tür im Radioturm öffnet."
+
+msgid "Basement Key"
+msgstr "Kelleröffner"
+
+msgid "A key that opens a door in the Goldenrod Tunnel."
+msgstr "Ein Schlüssel, der eine Tür in der Dukatia-Passage von Dukatia City öffnet."
+
+msgid "Squirtbottle"
+msgstr "Schiggykanne"
+
+msgid "A bottle used for watering plants in the Berry Pots."
+msgstr "Eine Gießkanne, durch deren Wasser Beeren im Pflanzset umso rascher wachsen."
+
+msgid "Red Scale"
+msgstr "Rote Haut"
+
+msgid "A scale from the red Gyarados. It glows red like a flame."
+msgstr "Eine Schuppe des roten Garados, das im See des Zorns erschienen ist. Sie glänzt rot wie Feuer."
+
+msgid "Lost Item"
+msgstr "Fundsache"
+
+msgid "The Poké Doll lost by the Copycat."
+msgstr "Eine Puppe, welche der Nachahmer verloren hat."
+
+msgid "Pass"
+msgstr "Fahrschein"
+
+msgid "A ticket to ride the Magnet Train, whenever and however much you like."
+msgstr "Eine Fahrkarte, die einem die Reise mit dem Magnetzug ermöglicht. Gilt für beliebig viele Fahrten."
+
+msgid "Machine Part"
+msgstr "Spule"
+
+msgid "An important machine part for the Power Plant that was stolen."
+msgstr "Ein unentbehrliches Maschinenteil, das aus dem Kraftwerk entwendet wurde."
+
+msgid "Silver Wing"
+msgstr "Silberflügel"
+
+msgid "A strange, silvery feather that sparkles."
+msgstr "Eine silberne Feder, die von einem seltsamen Leuchten erfüllt ist."
+
+msgid "Rainbow Wing"
+msgstr "Buntschwinge"
+
+msgid "A mystical rainbow feather that sparkles."
+msgstr "Eine mystische Feder, die von einem regenbogenfarbenen Leuchten erfüllt ist."
+
+msgid "Mystery Egg"
+msgstr "Rätsel-Ei"
+
+msgid "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown."
+msgstr "Ein seltsam gemustertes Ei, das du von Mr. Pokémon erhalten hast. Sein Inhalt liegt im Dunklen."
+
+msgid "Photo Album"
+msgstr "Fotoalbum"
+
+msgid "A nice photo album for storing all the photos taken along your adventure."
+msgstr "Ein Album, in dem du Erinnerungsfotos aufbewahren kannst, die du auf deinen Reisen geschossen hast."
+
+msgid "GB Sounds"
+msgstr "GB-Player"
+
+msgid "A music player that allows you to listen to nostalgic songs. It's operated with a single switch."
+msgstr "Ein Abspielgerät, das Musik aus einer längst vergangenen Zeit spielt. Lässt sich durch simplen Knopfdruck bedienen."
+
+msgid "Tidal Bell"
+msgstr "Gischtglocke"
+
+msgid "RageCandyBar"
+msgstr "Wutkeks"
+
+msgid "A famous candy in Mahogany Town. Many tourists like to buy them to take home."
+msgstr "Eine Spezialität aus Mahagonia City. Sie wird gern als Souvenir gekauft."
+
+msgid "Jade Orb"
+msgstr "Grüne Kugel"
+
+msgid "A shiny green orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "Eine grün schimmernde Kugel, von der in den Legenden der Hoenn-Region berichtet wird."
+
+msgid "Lock Capsule"
+msgstr "Tresorkapsel"
+
+msgid "A sturdy Capsule that can only be opened with a special key."
+msgstr "Eine äußerst robuste Kapsel, die sich nur mit einem ganz speziellen Schlüssel öffnen lässt."
+
+msgid "Red Orb"
+msgstr "Rote Kugel"
+
+msgid "A shiny red orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "Eine rot schimmernde Kugel, von der in den Legenden der Hoenn-Region berichtet wird."
+
+msgid "Blue Orb"
+msgstr "Blaue Kugel"
+
+msgid "A shiny blue orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "Eine blau schimmernde Kugel, von der in den Legenden der Hoenn-Region berichtet wird."
+
+msgid "Enigma Stone"
+msgstr "Mytokristall"
+
+msgid "A crystal ball from an excavation. A very beautiful stone that is covered with bits of rock and earth."
+msgstr "Eine kristallene Kugel, die aus der Erde geborgen wurde. Schmutz und Gestein konnten ihrer Schönheit nichts anhaben."
+
+msgid "A scope that makes unseeable Pokémon visible.  It is made by Silph Co."
+msgstr "Eine Linse, mit der unsichtbare PKMN sichtbar werden. Sie wurde von der SILPH CO. hergestellt."
+
+msgid "LAB KEY"
+msgstr "Laborschlüssel"
+
+msgid "This is a custom Key Item."
+msgstr "Dies ist ein Schlüssel, der speziell angefertigt wurde."
+
+msgid "Poké Radar"
+msgstr "Pokéradar"
+
+msgid "A tool that can search out Pokémon that are hiding in grass. Its battery is recharged as you walk."
+msgstr "Findet Pokémon, die sich im Gras verstecken. Die Batterie lädt sich beim Reisen auf."
+
+msgid "Sticker Case"
+msgstr "Aufkleberbuch"
+
+msgid "This device helps you find a defeated wild Pokemon more easily."
+msgstr "Dieses Gerät hilft dir leichter ein bereits besiegtes und wildes Pokémon zu finden."
+
+msgid "Atom Ball"
+msgstr "Atomball"
+
+msgid "A special Poké Ball created to contain Urayne. You should not have this."
+msgstr "Ein für Urayne speziell angefertigter Pokéball. Dieser sollte nicht in deinem Besitz sein."
+
+msgid "T.U.R Ticket"
+msgstr "T.U.B Ticket"
+
+msgid "A ticket for the Tandor Underground Railway."
+msgstr "Ein Ticket für die Tandor U-Bahn."
+
+msgid "PST"
+msgstr "Übersetzer"
+
+msgid "Pokémon Speech Translator. Can help you understand some Pokémon. It's still a prototype."
+msgstr "Pokémon-Sprachübersetzer. Kann dir dabei helfen einige Pokémon zu verstehen. Er ist noch ein Prototyp."
+
+msgid "Coconut Milk"
+msgstr "Kokosmilch"
+
+msgid "Fresh Coconut milk. Heals 50 HP and cures status effects."
+msgstr "Frische Kokosmilch. Es stellt 50 KP eines Pokémon wieder her und behebt alle Statusprobleme."
+
+msgid "Jungle's Crown"
+msgstr "Dschungelkrone"
+
+msgid "An item to be held by a Pokémon. It belongs to the king of the jungle. Boosts Fighting attacks."
+msgstr "Ein Item zum Tragen. Es gehört dem König des Dschungels und verstärkt Attacken vom Typ Kampf."
+
+msgid "Royal Jelly"
+msgstr "Gelée Royale"
+
+msgid "An item to be held by a Pokémon. A mysterious goo left behind by Seikamater."
+msgstr "Ein Item zum Tragen. Geheimnisvolles Gelee, das von Seikamater hinterlassen wird."
+
+msgid "Bug Spray"
+msgstr "Insektenspray"
+
+msgid "Bug spray. Works better than any Repel to get bugs scurrying!"
+msgstr "Insektenspray, der besser wirkt als jeder Schutz um Insekten zu vertreiben."
+
+msgid "Acai Berry"
+msgstr "Acaibeere"
+
+msgid "Bacu Berry"
+msgstr "Bacubeere"
+
+msgid "Cupu Berry"
+msgstr "Cupubeere"
+
+msgid "Guara Berry"
+msgstr "Guarabeere"
+
+msgid "Hair Fossil"
+msgstr "Haarfossil"
+
+msgid "A fossil of an ancient Pokémon that lived in the Mountains. It appears to be a wisp of Hair."
+msgstr "Das Fossil eines uralten Pokémon, das in den Bergen lebte. Es sieht wie ein Haarbüschel aus."
+
+msgid "Tusk Fossil"
+msgstr "Hauerfossil"
+
+msgid "A fossil of an ancient Pokémon that lived in the Plains. It appears to be part of a Tusk."
+msgstr "Das Fossil eines uralten Pokémon, das in den Ebenen lebte. Es sieht wie ein Teil eines Hauers aus."
+
+msgid "Moss Shard"
+msgstr "Moosscherbe"
+
+msgid "Ice Shard"
+msgstr "Eisscherbe"
+
+msgid "Pretty Ribbon"
+msgstr "Hübsche Schleife"
+
+msgid "An item to be held by a Pokémon. It is an elegant pink ribbon that boosts Fairy-type moves."
+msgstr "Ein Item zum Tragen. Ein elegantes pinkes Band, das Attacken vom Typ Fee verstärkt."
+
+msgid "Mega Bracelet"
+msgstr "Mega-Armreif"
+
+msgid "This bracelet contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle."
+msgstr "Ein Armreif mit geheimnisvollen Kräften. Er ermöglicht Pokémon, die einen Mega-Stein tragen, eine Mega-Entwicklung durchzuführen."
+
+msgid "Metalynxite"
+msgstr "Metaluksit"
+
+msgid "One variety of the mysterious Mega Stones. Have Metalynx hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem METALUKS getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Archillesite"
+msgstr "Brandillonit"
+
+msgid "One variety of the mysterious Mega Stones. Have Archilles hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem BRANDILLO getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Electruxolite"
+msgstr "Ampuxonit"
+
+msgid "One variety of the mysterious Mega Stones. Have Electruxo hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem AMPUXO getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Gyaradosite"
+msgstr "Garadosnit"
+
+msgid "One variety of the mysterious Mega Stones. Have Gyarados hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem GARADOS getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Ampharosite"
+msgstr "Ampharosnit"
+
+msgid "One variety of the mysterious Mega Stones. Have Ampharos hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem AMPHAROS getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Baariettite"
+msgstr "Bäphometit"
+
+msgid "One variety of the mysterious Mega Stones. Have Baariette hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem BÄPHOMET getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Drilgannite"
+msgstr "Borgannit"
+
+msgid "One variety of the mysterious Mega Stones. Have Drilgann hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem BORGANN getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Sableyeite"
+msgstr "Zobirisnit"
+
+msgid "One variety of the mysterious Mega Stones. Have Sableye hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem ZOBIRIS getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Inflagetite"
+msgstr "Gepernit"
+
+msgid "One variety of the mysterious Mega Stones. Have Inflagetah hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem GEPERNO getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Dramsamaite"
+msgstr "Dramsamanit"
+
+msgid "One variety of the mysterious Mega Stones. Have Dramsama hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem DRAMSAMA getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Daikatunite"
+msgstr "Daikatunit"
+
+msgid "One variety of the mysterious Mega Stones. Have Daikatuna hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem DAIKATUNA getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "The target is infested and attacked for four to five turns. The target can't flee during this time."
+msgstr "Der Anwender fällt 4 bis 5 Runden lang wie eine Plage über das Ziel her und greift es an. In diesem Zeitraum kann es nicht fliehen."
+
+msgid "The user damages opposing Pokémon by emitting a powerful flash."
+msgstr "Angriff mit einem starken Lichtstrahl, der dem Gegner Schaden zufügt."
+
+msgid "Bike Wheel"
+msgstr "Fahrradreifen"
+
+msgid "This bike wheel can be used to fix a bicycle."
+msgstr "Dieser Fahrradreifen kann für die Reparatur eines Fahrrad benutzt werden."
+
+msgid "Carrot Wine"
+msgstr "Karottenwein"
+
+msgid "Delicious Carrot Wine, be careful to not drink too much! Heals 100 HP and cures status effects."
+msgstr "Schmackhafter Karottenwein von dem man nicht zu viel trinken sollte. Es stellt 100 KP her und behebt alle Statusprobleme."
+
+msgid "Secret Note"
+msgstr "Geheimnotiz"
+
+msgid "You don't know who gave you this. It says that the password is 092."
+msgstr "Du weißt nicht, wer dir diese Notiz gegeben hat. Auf der Notiz steht, dass das Passwort 092 ist."
+
+msgid "Syrentideite"
+msgstr "Sajadeit"
+
+msgid "One variety of the mysterious Mega Stones. Have Syrentide hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem SYRENTIDE getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Unidentified Fallen Object"
+msgstr "Unbekanntes Fallobjekt"
+
+msgid "One variety of the mysterious Mega Stones. Have s51-A hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem S51-A getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "The user damages opposing Pokémon and lowers it's defense and special defense."
+msgstr "Der Anwender richtet beim gegnerischen Pokémon Schaden an und senkt dessen Verteidigung und Spezial-Verteidigung."
+
+msgid "Boxing Gloves"
+msgstr "Boxhandschuhe"
+
+msgid "This device given to you by the Tinkerer allows you to easily smash rugged rocks in your way."
+msgstr "Dieses Gerät vom Bastler erlaubt es dir, rissige Felsen in deinem Weg zu zerschmettern."
+
+msgid "Eviolite"
+msgstr "Evolith"
+
+msgid "A mysterious evolutionary lump. When held, it raises the Defense and Sp. Def of a Pokémon that can still evolve."
+msgstr "Ein mysteriöser Klumpen, der die Verteidigung und Spezial-Verteidigung von Pokémon erhöht, die sich noch entwickeln können."
+
+msgid "Fire Gem"
+msgstr "Feuerjuwel"
+
+msgid "A gem with an essence of fire. When held, it strengthens the power of a Fire-type move only once."
+msgstr "Ein Juwel vom Typ Feuer. Es erhöht einmalig die Stärke einer Attacke vom Typ Feuer."
+
+msgid "Water Gem"
+msgstr "Wasserjuwel"
+
+msgid "A gem with an essence of water. When held, it strengthens the power of a Water-type move only once."
+msgstr "Ein Juwel vom Typ Wasser. Es erhöht einmalig die Stärke einer Attacke vom Typ Wasser."
+
+msgid "Electric Gem"
+msgstr "Elektrojuwel"
+
+msgid "A gem with an essence of electricity. When held, it strengthens the power of an Electric-type move only once."
+msgstr "Ein Juwel vom Typ Elektro. Es erhöht einmalig die Stärke einer Attacke vom Typ Elektro."
+
+msgid "Grass Gem"
+msgstr "Pflanzenjuwel"
+
+msgid "A gem with an essence of nature. When held, it strengthens the power of a Grass-type move only once."
+msgstr "Ein Juwel vom Typ Pflanze. Es erhöht einmalig die Stärke einer Attacke vom Typ Pflanze."
+
+msgid "Ice Gem"
+msgstr "Eisjuwel"
+
+msgid "A gem with an essence of ice. When held, it strengthens the power of an Ice-type move only once."
+msgstr "Ein Juwel vom Typ Eis. Es erhöht einmalig die Stärke einer Attacke vom Typ Eis."
+
+msgid "Fighting Gem"
+msgstr "Kampfjuwel"
+
+msgid "A gem with an essence of combat. When held, it strengthens the power of a Fighting-type move only once."
+msgstr "Ein Juwel vom Typ Kampf. Es erhöht einmalig die Stärke einer Attacke vom Typ Kampf."
+
+msgid "Poison Gem"
+msgstr "Giftjuwel"
+
+msgid "A gem with an essence of poison. When held, it strengthens the power of a Poison-type move only once."
+msgstr "Ein Juwel vom Typ Gift. Es erhöht einmalig die Stärke einer Attacke vom Typ Gift."
+
+msgid "Ground Gem"
+msgstr "Bodenjuwel"
+
+msgid "A gem with an essence of land. When held, it strengthens the power of a Ground-type move only once."
+msgstr "Ein Juwel vom Typ Boden. Es erhöht einmalig die Stärke einer Attacke vom Typ Boden."
+
+msgid "Flying Gem"
+msgstr "Flugjuwel"
+
+msgid "A gem with an essence of air. When held, it strengthens the power of a Flying-type move only once."
+msgstr "Ein Juwel vom Typ Flug. Es erhöht einmalig die Stärke einer Attacke vom Typ Flug."
+
+msgid "Psychic Gem"
+msgstr "Psychojuwel"
+
+msgid "A gem with an essence of the mind. When held, it strengthens the power of a Psychic-type move only once."
+msgstr "Ein Juwel vom Typ Psycho. Es erhöht einmalig die Stärke einer Attacke vom Typ Psycho."
+
+msgid "Bug Gem"
+msgstr "Käferjuwel"
+
+msgid "A gem with an insect-like essence. When held, it strengthens the power of a Bug-type move only once."
+msgstr "Ein Juwel vom Typ Käfer. Es erhöht einmalig die Stärke einer Attacke vom Typ Käfer."
+
+msgid "Rock Gem"
+msgstr "Gesteinjuwel"
+
+msgid "A gem with an essence of rock. When held, it strengthens the power of a Rock-type move only once."
+msgstr "Ein Juwel vom Typ Gestein. Es erhöht einmalig die Stärke einer Attacke vom Typ Gestein."
+
+msgid "Ghost Gem"
+msgstr "Geistjuwel"
+
+msgid "A gem with a spectral essence. When held, it strengthens the power of a Ghost-type move only once."
+msgstr "Ein Juwel vom Typ Geist. Es erhöht einmalig die Stärke einer Attacke vom Typ Geist."
+
+msgid "Dragon Gem"
+msgstr "Drachenjuwel"
+
+msgid "A gem with a draconic essence. When held, it strengthens the power of a Dragon-type move only once."
+msgstr "Ein Juwel vom Typ Drache. Es erhöht einmalig die Stärke einer Attacke vom Typ Drache."
+
+msgid "Dark Gem"
+msgstr "Unlichtjuwel"
+
+msgid "A gem with an essence of darkness. When held, it strengthens the power of a Dark-type move only once."
+msgstr "Ein Juwel vom Typ Unlicht. Es erhöht einmalig die Stärke einer Attacke vom Typ Unlicht."
+
+msgid "Steel Gem"
+msgstr "Stahljuwel"
+
+msgid "A gem with an essence of steel. When held, it strengthens the power of a Steel-type move only once."
+msgstr "Ein Juwel vom Typ Stahl. Es erhöht einmalig die Stärke einer Attacke vom Typ Stahl."
+
+msgid "Normal Gem"
+msgstr "Normaljuwel"
+
+msgid "A gem with an ordinary essence. When held, it strengthens the power of a Normal-type move only once."
+msgstr "Ein Juwel vom Typ Normal. Es erhöht einmalig die Stärke einer Attacke vom Typ Normal."
+
+msgid "Whimsicottite"
+msgstr "Elfunit"
+
+msgid "One variety of the mysterious Mega Stones. Have Whimsicott hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem ELFUN getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Arbokite"
+msgstr "Arbokit"
+
+msgid "One variety of the mysterious Mega Stones. Have Arbok hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem ARBOK getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Yoshitaka's Letter"
+msgstr "Yoshitakas Brief"
+
+msgid "A letter from the great Yoshitaka, show it to his grandsons."
+msgstr "Ein Brief von dem großen Yoshitaka. Zeig ihn seinen Enkeln."
+
+msgid "Rocky Helmet"
+msgstr "Beulenhelm"
+
+msgid "If the holder of this item takes damage, the attacker will also be damaged upon contact."
+msgstr "Wird der Träger von einer physischen Attacke getroffen, erleidet der Angreifer ebenfalls Schaden."
+
+msgid "Eject Button"
+msgstr "Fluchtknopf"
+
+msgid "If the holder is hit by an attack, it will switch with another Pokémon in your party."
+msgstr "Wird der Träger getroffen, flieht er aus dem Kampf und wird mit einem Team-Pokémon ausgetauscht."
+
+msgid "Red Card"
+msgstr "Rote Karte"
+
+msgid "A card with a mysterious power. When the holder is struck by a foe, the attacker is removed from battle."
+msgstr "Eine Karte mit mysteriösen Kräften. Wird der Träger getroffen, wird der Angreifer des Platzes verwiesen."
+
+msgid "Float Stone"
+msgstr "Leichtstein"
+
+msgid "A very light stone. It reduces the weight of a Pokémon when held."
+msgstr "Ein federleichter Stein, der das Gewicht des Trägers verringert."
+
+msgid "Binding Band"
+msgstr "Klammerband"
+
+msgid "A band that increases the power of binding moves when held."
+msgstr "Ein Band, das die Stärke aller Klammerattacken des Trägers erhöht."
+
+msgid "Absorb Bulb"
+msgstr "Knolle"
+
+msgid "A consumable bulb. If the holder is hit by a Water-type move, its Sp. Atk will rise."
+msgstr "Eine einmalig einsetzbare Knolle. Erhöht den Spezial-Angriff des Trägers, wenn ihn eine Wasser-Attacke trifft."
+
+msgid "Cell Battery"
+msgstr "Akku"
+
+msgid "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise."
+msgstr "Ein einmalig aufladbarer Akku. Erhöht den Angriff des Trägers, wenn ihn eine Elektro-Attacke trifft."
+
+msgid "Ring Target"
+msgstr "Zielscheibe"
+
+msgid "Moves that would otherwise have no effect will land on the Pokémon that holds it."
+msgstr "Attacken, die aufgrund der Wechselwirkungen zwischen den Typen keine Wirkung haben, treffen den Träger."
+
+msgid "Air Balloon"
+msgstr "Luftballon"
+
+msgid "When held by a Pokémon, the Pokémon will float into the air. When the holder is attacked, this item will burst."
+msgstr "Gibt man ihn einem Pokémon zum Tragen, fängt es an zu schweben. Wird es getroffen, platzt der Luftballon."
+
+msgid "Assault Vest"
+msgstr "Offensivweste"
+
+msgid "An item to be held by a Pokémon. This offensive vest raises Sp. Def but prevents the use of status moves."
+msgstr "Trägt ein Pokémon diese Weste, erhöht sich seine Spezial-Verteidigung, aber es kann keine Status-Attacken mehr einsetzen."
+
+msgid "Fairy Gem"
+msgstr "Feenjuwel"
+
+msgid "A gem with an essence of nature. When held, it strengthens the power of a Fairy-type move one time."
+msgstr "Ein Juwel vom Typ Fee. Es erhöht einmalig die Stärke einer Attacke vom Typ Fee."
+
+msgid "Prison Bottle"
+msgstr "Banngefäß"
+
+msgid "A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago."
+msgstr "Ein Gefäß, mit dem vor langer, langer Zeit die Macht eines gewissen Pokémon versiegelt wurde."
+
+msgid "Luminous Moss"
+msgstr "Leuchtmoos"
+
+msgid "An item to be held by a Pokémon. It boosts Sp. Def if hit with a Water-type attack. It can only be used once."
+msgstr "Wird der Träger von einer Wasser-Attacke getroffen, steigt seine Spezial-Verteidigung und das Item verschwindet."
+
+msgid "Weakness Policy"
+msgstr "Schwächenschutz"
+
+msgid "An item to be held by a Pokémon. Attack and Sp. Atk sharply increase if the holder is hit with a move it's weak to."
+msgstr "Erhöht den Angriff und den Spezial-Angriff des Trägers stark, wenn er von einer sehr effektiven Attacke getroffen wird."
+
+msgid "Pixie Plate"
+msgstr "Feentafel"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fairy-type moves."
+msgstr "Ein Item zum Tragen. Diese Steintafel verstärkt Attacken vom Typ Fee."
+
+msgid "Roseli Berry"
+msgstr "Hibisbeere"
+
+msgid "Weakens a supereffective Fairy-type attack against the holding Pokémon."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Fee."
+
+msgid "Kee Berry"
+msgstr "Akibeere"
+
+msgid "If held by a Pokémon, this Berry will increase the Pokémon's Defense stat when hit by a physical attack."
+msgstr "Als getragenes Item erhöht diese Beere die Verteidigung des Trägers, wenn dieser von physischen Attacken getroffen wird."
+
+msgid "Maranga Berry"
+msgstr "Tarabeere"
+
+msgid "If held by a Pokémon, this Berry will increase the Pokémon's Special Defense stat when hit by a special attack."
+msgstr "Als getragenes Item erhöht diese Beere die Spezial-Verteidigung des Trägers, wenn dieser von Spezial-Attacken getroffen wird."
+
+msgid "Snowball"
+msgstr "Schneeball"
+
+msgid "An item to be held by a Pokémon. It boosts Attack if hit with an Ice-type attack. It can only be used once."
+msgstr "Wird der Träger von einer Eis-Attacke getroffen, steigt sein Angriff und das Item verschwindet."
+
+msgid "Safety Goggles"
+msgstr "Schutzbrille"
+
+msgid "An item to be held by a Pokémon. These goggles protect the holder from both weather-related damage and powder."
+msgstr "Diese Brille schützt ihren Träger nicht nur vor wetterbedingtem Schaden, sondern auch vor vielen Attacken, bei denen Puder eingesetzt wird."
+
+msgid "Hafli Berry"
+msgstr "Haflibeere"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Nuclear-type attack."
+msgstr "Als getragenes Item schwächt diese Beere sehr effektive gegnerische Attacken vom Typ Nuklear."
+
+msgid "Kellyn's Letter"
+msgstr "Kellyns Brief"
+
+msgid "A letter from Kellyn. Deliver it to Cameron on the Power Plant Island."
+msgstr "Ein Brief von Kellyn. Bring ihn zu Cameron auf der Kraftwerkinsel."
+
+msgid "Burnt Notebook"
+msgstr "Verbranntes Notizbuch"
+
+msgid "A burnt notebook found in the power plant, it's pages seem to be scattered about."
+msgstr "Ein verbranntes Notizbuch aus dem Kraftwerk. Seine Seiten scheinen in der Umgebung verstreut zu sein."
+
+msgid "Rusty Key"
+msgstr "Rostiger Schlüssel"
+
+msgid "A rusty key found in the power plant."
+msgstr "Ein rostiger Schlüssel aus dem Kraftwerk."
+
+msgid "Power Glove"
+msgstr "Krafthandschuh"
+
+msgid "This device given to you by the Tinkerer allows you to push boulders on your own as if you had super-strength."
+msgstr "Dieses Gerät vom Bastler erlaubt es dir, wie mit Stärke Felsen zu schieben."
+
+msgid "Nuclear Ball"
+msgstr "Nuklearball"
+
+msgid "A new kind of Poké Ball that works especially well on Nuclear-type Pokémon."
+msgstr "Ein Ball, mit dem sich Pokémon vom Typ Nuklear besser fangen lassen."
+
+msgid "Sachet"
+msgstr "Duftbeutel"
+
+msgid "A sachet filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
+msgstr "Ein mit Parfüm gefüllter Beutel, der einen penetranten Duft verströmt und bei einer bestimmten Pokémon-Art sehr beliebt ist."
+
+msgid "Power Cell"
+msgstr "Energiezelle"
+
+msgid "A power cell used to power up advanced electrical equipments."
+msgstr "Eine Energiezelle, die für's Einschalten von fortgeschrittenen und elektrischen Ausrüstungen benutzt wird."
+
+msgid "Maria's Key"
+msgstr "Marias Schlüssel"
+
+msgid "A key given by a creepy guy that unlocks Gym Leader Maria's house."
+msgstr "Ein Schlüssel, der Arenaleiter Marias Haus öffnet."
+
+msgid "Oval Charm"
+msgstr "Ovalpin"
+
+msgid "An oval charm said to increase the chance of Eggs being found at the Day Care."
+msgstr "Ein mysteriöser, ovaler Glücksbringer, der die Wahrscheinlichkeit erhöht, in der Pension Eier zu finden."
+
+msgid "Shiny Charm"
+msgstr "Schillerpin"
+
+msgid "A shiny charm said to increase the chance of finding a Shiny Pokémon."
+msgstr "Ein mysteriöser, schillernder Glücksbringer, der die Wahrscheinlichkeit erhöht, Schillernde Pokémon zu finden."
+
+msgid "Aromatic Herb"
+msgstr "Aromakraut"
+
+msgid "A herb filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
+msgstr "Ein Kraut, das Parfüm beinhaltet, einen penetranten Duft verströmt und bei einer bestimmten Pokémon-Art sehr beliebt ist."
+
+msgid "Air Mail"
+msgstr "Luftbrief"
+
+msgid "Stationery featuring a print of colorful letter sets. Let a Pokémon hold it for delivery."
+msgstr "Das Briefpapier hat bunte Streifen als Hintergrund. Gib es einem Pokémon mit."
+
+msgid "Gengarite"
+msgstr "Gengarnit"
+
+msgid "One of the mysterious Mega Stones. Have Gengar hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem Gengar getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Uranium Core"
+msgstr "Uran-Kern"
+
+msgid "Concentrated nuclear fuel used to power Nuclear Plants."
+msgstr "Konzentrierter Kernbrennstoff, der benutzt wird, um Kraftwerke mit Energie zu versorgen."
+
+msgid "Kiricornite"
+msgstr "Kirihornit"
+
+msgid "One of the mysterious Mega Stones. Have Kiricorn hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Einer der mysteriösen Mega-Steine. Wird er von einem Kirihorn getragen, kann es im Kampf eine Mega-Entwicklung durchführen."
+
+msgid "Gold Fossil"
+msgstr "Goldfossil"
+
+msgid "A fossil of an ancient Pokémon that lived in Islands. It appears to be a golden bone."
+msgstr "Das Fossil eines uralten Pokémon, das auf Inseln lebte. Es sieht wie ein goldener Knochen aus."
+
+msgid "The user chomps hard on the target with its sharp front fangs. It cuts the target's HP to half."
+msgstr "Greift mit scharfen Reißzähnen an. KP des Zieles werden halbiert."
+
+msgid "This move can be used only after the user has used all the other moves it knows in the battle."
+msgstr "Diese Attacke kann nur eingesetzt werden, nachdem alle verfügbaren Attacken ausgeführt worden sind."
+
+msgid "An attack move that cuts down the target's HP to equal the user's HP."
+msgstr "Trifft nur, wenn KP des Anwenders geringer als KP des Zieles sind. Senkt dessen KP auf die Höhe der KP des Anwenders."
+
+msgid "The user focuses its willpower to its head and attacks the foe. It may also make the target flinch."
+msgstr "Anwender konzentriert seinen Willen und rammt das Ziel. Dieses schreckt eventuell zurück."
+
+msgid "Surfboard"
+msgstr "Surfbrett"
+
+msgid "This device given to you by the Tinkerer makes it possible to surf on water without the help of a Pokémon. Cowabunga!"
+msgstr "Dieses Gerät vom Bastler macht es möglich, ohne die Hilfe eines Pokémons übers Wasser zu surfen. Yippie!"
+
+msgid "Scuba Gear"
+msgstr "Tauchausrüstung"
+
+msgid "This device given to you by the Tinkerer allows you to dive underwater on your own. Who ever used Dive anyways?"
+msgstr "Dieses Gerät vom Bastler erlaubt es dir zu tauchen. Wer braucht schon Taucher?"
+
+msgid "Climbing Pick"
+msgstr "Kletterpickel"
+
+msgid "This device given to you by the Tinkerer allows you to climb up waterfalls while using your surfboard. Extreme sports are fun!"
+msgstr "Dieses Gerät vom Bastler lässt dich von deinem Surfbrett aus Wasserfälle erklettern. Extremsport macht Spaß!"
+
+msgid "Rich Mulch"
+msgstr "Sprießmulch"
+
+msgid "A plant fertilizer. It increases Berry harvest without the need for particularly diligent care."
+msgstr "Mulch zur Nutzung auf Beerenfeldern. Ohne viel Zutun erhöht er die Ausbeute bei der Beerenernte."
+
+msgid "Sprinklotad"
+msgstr "Loturzelkanne"
+
+msgid "A watering can shaped like a Lotad. It helps promote healthy growth of planted Berries."
+msgstr "Eine Gießkanne in Form von Loturzel. Gieße gepflanzte Beeren, damit sie besser wachsen."
+
+msgid "Quadcopter"
+msgstr "Quadrocopter"
+
+msgid "Final device created by the Tinkerer. Use this remote-controlled drone to Fly anywhere without the help of a Pokémon!"
+msgstr "Das letzte Gerät des Bastlers. Benutze diese ferngesteuerte Drohne, um ohne die Hilfe eines Pokémon überall hin zu Fliegen!"
+
+msgid "Ferry Pass"
+msgstr "Fährenpass"
+
+msgid "A Frequent Sailor card for the Venesi Ferry to Bealbeach and Silverport."
+msgstr "Eine Vielsegler-Karte für die Venesi-Fähre nach Sonnenstrand und Silberhafen."
+
+msgid "Dark Dramsamaite"
+msgstr "Dunkler Dramsamanit"
+
+msgid "A disturbing variety of the mysterious Mega Stones. Have Dramsama hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "Eine beunruhigende Variante der mysteriösen Mega-Steine. Lass Dramsama ihn halten, und dieser Stein ermöglicht während des Kampfes die Mega-Entwicklung."
+
+msgid "Map Scrap 1"
+msgstr "Kartenschrott 1"
+
+msgid "A torn piece of an ancient sea map. This item refers to a quest that is not yet implemented."
+msgstr "Ein zerrissenes Stück einer alten Seekarte. Dieser Gegenstand bezieht sich auf eine Quest, die noch nicht implementiert ist."
+
+msgid "Map Scrap 2"
+msgstr "Kartenschrott 2"
+
+msgid "Map Scrap 3"
+msgstr "Kartenschrott 3"
+
+msgid "Map Scrap 4"
+msgstr "Kartenschrott 4"
+
+msgid "Map Scrap 5"
+msgstr "Kartenschrott 5"
+
+msgid "Map Scrap 6"
+msgstr "Kartenschrott 6"
+
+msgid "Exp. All"
+msgstr "Exp. Alle"
+
+msgid "Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles."
+msgstr "Ein zerrissenes Stück einer alten Seekarte. Dieser Gegenstand bezieht sich auf eine Quest, die noch nicht implementiert ist."
+
+msgid "Oblivicornite"
+msgstr "Fatalihornit"
+
+msgid "One of the mysterious Mega Stones. Have Oblivicorn hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "Ein zerrissenes Stück einer alten Seekarte. Dieser Gegenstand bezieht sich auf eine Quest, die noch nicht implementiert ist."

@@ -22,26 +22,28 @@ var player_defeated = false # True when player lost a battle and transioning to 
 
 signal event_dialogue_end
 signal tranistion_complete
-signal loaded
+signal game_loaded
 signal end_of_event
 
-onready var transition = $CanvasLayer/Transition
+@onready var transition = $CanvasLayer/Transition
 
 # only global for debug purpose
 var tile_position := Vector2.ZERO
 
 func _ready():
+	Global.call_deferred("apply_audio")
 	Global.game = self
 	menu = $CanvasLayer/Menu
 	$CanvasLayer/Fade.modulate = Color(1.0,1.0,1.0,0.0)
 	$BG.show()
 
 	#Makes player an instance of Player, makes it a child, and adds it to the group save
-	player = load("res://Utilities/Player.tscn").instance()
+	player = load("res://Utilities/Player.tscn").instantiate()
 	add_child(player)
 
 	if OS.is_debug_build():
-		overlay = preload("res://Utilities/debug_overlay.tscn").instance()
+		overlay = preload("res://Utilities/debug_overlay.tscn").instantiate()
+		overlay.visible = false  # hidden by default; F3 toggles it
 		overlay.add_stat("onGrass", Global, "onGrass", false)
 		overlay.add_stat("onStairsUp", Global, "onStairsUp", false)
 		overlay.add_stat("wasOnStairs", Global, "wasOnStairs", false)
@@ -65,7 +67,7 @@ func setup():
 		print("loading Game.gd")
 		# Wait until all data is loaded
 		if loaded == false:
-			yield(self, "loaded")
+			await self.game_loaded
 		print("Finished loading Game.gd")
 		loaded = true
 	#If the above is false change the scene to start_scene
@@ -75,13 +77,13 @@ func setup():
 		# init inventory
 		Global.inventory = load("res://Utilities/Items/Inventory.gd").new()
 
-		change_scene(start_scene)
+		change_scene_to_file(start_scene)
 		player.position = Vector2(192,144)
 		player.direction = player.DIRECTION.UP
 		player.set_idle_frame(player.direction)
 
 	player.z_index = 10 # DO NOT CHANGE! see AutoZSorter for details
-	var result = DialogueSystem.connect("dialogue_end", self, "dialog_end", [], CONNECT_DEFERRED)
+	var result = DialogueSystem.connect("dialogue_end", Callable(self, "dialog_end"), CONNECT_DEFERRED)
 	player.set_idle_frame(player.direction)
 	player.canMove = true
 	player.load_texture()
@@ -94,8 +96,8 @@ func setup():
 	$CanvasLayer/Menu.visible = true
 	$CanvasLayer/ZoneMessage.visible = true
 
-	player.connect("wild_battle", self, "wild_battle")
-	$Clock.connect("timeout", self, "clock_timeout")
+	player.connect("wild_battle", Callable(self, "wild_battle"))
+	$Clock.connect("timeout", Callable(self, "clock_timeout"))
 	$Clock.start()
 
 	dialogue_system = get_parent().get_node("DialogueSystem")
@@ -105,7 +107,7 @@ func _process(_delta):
 	# Sort and assign Z index
 	var nodes = get_tree().get_nodes_in_group("auto_z_layering")
 
-	nodes.sort_custom(AutoZSorter, "sort_ascending")
+	nodes.sort_custom(Callable(AutoZSorter, "sort_ascending"))
 	var index = 10
 	for node in nodes:
 		node.z_index = index
@@ -119,10 +121,10 @@ func _process(_delta):
 		overlay.toggle()
 
 func change_menu_text():
-	if $CanvasLayer/Menu/Place_Text.bbcode_text != current_scene.place_name:
-		$CanvasLayer/Menu/Place_Text.bbcode_text = "[center]" + current_scene.place_name + "[/center]"
+	if $CanvasLayer/Menu/Place_Text.text != current_scene.place_name:
+		$CanvasLayer/Menu/Place_Text.text = "[center]" + current_scene.place_name + "[/center]"
 
-func change_scene(scene):
+func change_scene_to_file(scene):
 	if scene != null:
 		# Clear and delete scenes
 		for node in scenes:
@@ -130,7 +132,7 @@ func change_scene(scene):
 		scenes.clear()
 
 	if scene is String:
-		var new_scene = load(scene).instance()
+		var new_scene = load(scene).instantiate()
 		
 		# change grass sprite to var set in scene | temporary for now
 		if "grassSprite" in new_scene && new_scene.grassSprite != null:
@@ -140,7 +142,7 @@ func change_scene(scene):
 		current_scene = new_scene
 		add_child(current_scene)
 	elif scene is Resource:
-		var new_scene = scene.instance()
+		var new_scene = scene.instantiate()
 		
 		# change grass sprite to var set in scene | temporary for now
 		
@@ -153,15 +155,20 @@ func change_scene(scene):
 	elif scene == null: # Should only be for transitioning from one scene to another seamlessly
 		# Find out that the new scene is
 		print("seamless transision")
-		current_scene = get_current_scene_where_player_is()
+		var _found = get_current_scene_where_player_is()
+		if _found != null:
+			current_scene = _found
+		# else: keep the previous current_scene (never null it - downstream code dereferences it)
 	else:
-		print("GAME WARNING: change_scene arg is not what it should be.")
+		print("GAME WARNING: change_scene_to_file arg is not what it should be.")
 		pass
 	
 
 	# Load and start background music if available.
 	if "background_music" in current_scene && current_scene.background_music != null:
 		var music = load(current_scene.background_music)
+		if music != null and "loop" in music:
+			music.loop = true
 		$Background_music.stream = music
 		$Background_music.play()
 	# If scene is outdoors, play zone animation
@@ -173,7 +180,7 @@ func change_scene(scene):
 		Global.location = current_scene.place_name
 	else:
 		Global.location = "TBD"
-		print("GAME WARNGING: " + str(current_scene.filename) + " does not have place_name specified.")
+		print("GAME WARNGING: " + str(current_scene.scene_file_path) + " does not have place_name specified.")
 
 	# Apply dark mask over scene
 	if "dark" in current_scene && current_scene.dark == true:
@@ -198,7 +205,7 @@ func change_scene(scene):
 		var final_pos = [] # Array of Vector2s of grass global locations
 
 		for cells in grass_cells:
-			var pos = cells
+			var pos = Vector2(cells)
 			pos = pos * 32
 			pos = pos + current_scene.position
 			pos = pos + Vector2(16,16)
@@ -225,24 +232,25 @@ func change_scene(scene):
 			# Check if scene is already in the scenes array
 			var is_already_loaded = true
 			var scene_filename = scene_array[0]
-			for scene in scenes:
-				if scene.filename == scene_filename:
+			for existing_scene in scenes:
+				if existing_scene.scene_file_path == scene_filename:
 					break
 				else:
 					is_already_loaded = false
 			
 			if is_already_loaded == false:
 				# Add the scene
-				var new_scene = load(scene_filename).instance()
+				var new_scene = load(scene_filename).instantiate()
 				scenes.append(new_scene)
 				new_scene.position = current_scene.position + scene_array[1]
 				add_child(new_scene)
 
 func get_tile_id(location: Vector2) -> int:
-	var tilemap = current_scene.get_node("TerrainTags")
+	var tilemap = current_scene.get_node_or_null("TerrainTags")
 	if tilemap:
-		tile_position = tilemap.world_to_map(location / 2)
-		var tile : int = tilemap.get_cellv(tile_position)
+		tile_position = tilemap.local_to_map(location / 2)
+		# Godot 4: get_cell_source_id(layer, coords) instead of get_cellv
+		var tile : int = tilemap.get_cell_source_id(0, tile_position)
 		#var autotile_tile = tilemap.get_cell_autotile_coord(position.x,position.y)
 		return tile
 	return -1
@@ -254,7 +262,7 @@ func room_transition(dest, dir):
 	lock_player()
 	
 	$CanvasLayer/Transition/AnimationPlayer.play("fade_in")
-	yield(get_tree().create_timer(0.28), "timeout")
+	await get_tree().create_timer(0.28).timeout
 	
 	var target_stair_node
 	for node in get_tree().get_nodes_in_group("Stairs"):
@@ -272,14 +280,14 @@ func room_transition(dest, dir):
 	#Set's the player's position to trainerx and trainery, waits .3 seconds, and then plays the fade_out animation
 	player.position = dest
 	#player.movePrevious()
-	yield(get_tree().create_timer(0.3), "timeout")
+	await get_tree().create_timer(0.3).timeout
 	$CanvasLayer/Transition/AnimationPlayer.play("fade_out")
 	
 	#Calls the move method from PlayerNew.gd, and passes the true variable, disables input, and waits .3 seconds
 	player.move(true)
 	#player.movePrevious()
 	player.inputDisabled = true
-	yield(get_tree().create_timer(0.3), "timeout")
+	await get_tree().create_timer(0.3).timeout
 	
 
 	target_stair_node.get_node("CollisionShape2D").disabled = false
@@ -290,11 +298,11 @@ func room_transition(dest, dir):
 
 #If the player is not transitioning, then set isTransitioning to true, and wait until the transition fade_to_color animation has finished
 func door_transition(path_scene, new_position, direction = null):
-	yield(transition.fade_to_color(), "completed")
+	await transition.fade_to_color()
 
 	if path_scene != null:
-		change_scene(load(path_scene))
-	yield(get_tree().create_timer(0.3), "timeout")
+		change_scene_to_file(load(path_scene))
+	await get_tree().create_timer(0.3).timeout
 	player.position = new_position
 	player.visible = true
 	transition.fade_from_color()
@@ -322,11 +330,11 @@ func interaction(check_pos : Vector2, direction): # Starts the dialogue instead 
 		print("ERROR: current scene does not have interaction method.")
 		return
 	
-	var interaction_title = current_scene.interaction(check_pos, direction)
+	var interaction_title = await current_scene.interaction(check_pos, direction)
 	if interaction_title != null && typeof(interaction_title) == TYPE_STRING:
 		lock_player()
 		play_dialogue(interaction_title)
-		yield(self, "event_dialogue_end")
+		await self.event_dialogue_end
 		release_player()
 	#If the above is false then print collider
 	else:
@@ -334,7 +342,7 @@ func interaction(check_pos : Vector2, direction): # Starts the dialogue instead 
 	
 #Wait .1 second, set isInteracting to false, and emit the signal event_dialogue_end
 func dialog_end():
-	yield(get_tree().create_timer(0.1), "timeout")
+	await get_tree().create_timer(0.1).timeout
 	DialogueSystem.set_show_arrow(false)
 	isInteracting = false
 	emit_signal("event_dialogue_end")
@@ -353,24 +361,24 @@ func save_state():
 	var save_position = player.position - current_scene.position
 
 	var state = {
-		"current_scene": current_scene.filename,
+		"current_scene": current_scene.scene_file_path,
 		"player_position": save_position, 
 		"player_direction": player.direction,
 		"last_heal_point": last_heal_point
 	}
-	SaveSystem.set_state(filename, state)
+	SaveSystem.set_state(scene_file_path, state)
 
 func load_state(): # Automatically called when loading a save file
-	if SaveSystem.has_state(filename):
-		var state = SaveSystem.get_state(filename)
-		change_scene(load(state["current_scene"]))
+	if SaveSystem.has_state(scene_file_path):
+		var state = SaveSystem.get_state(scene_file_path)
+		change_scene_to_file(load(Global.migrate_scene_path(state["current_scene"])))
 		player.direction = state["player_direction"]
 		player.position = state["player_position"]
 
 		if state.has("last_heal_point"):
 			last_heal_point = state["last_heal_point"]
 		loaded = true
-		emit_signal("loaded")
+		emit_signal("game_loaded")
 
 func play_dialogue(title): # Plays a dialogue without freezing player
 	DialogueSystem.set_show_arrow(false)
@@ -393,7 +401,7 @@ func release_player(): # Releases player to prevent user input. Useful for event
 func get_current_scene_where_player_is(): # Should only be called when player is outside
 	for scene in scenes:
 		# Get the bounds of the scene
-		var tilemap = scene.get_node("Tile Layer 1")
+		var tilemap = scene.get_node_or_null("Tile Layer 1")
 		if tilemap == null:
 			print("GAME ERROR: tilemap is null")
 			return
@@ -417,7 +425,7 @@ func wild_battle():
 
 	Global.game.get_node("Background_music").stop()
 
-	battle = load("res://Utilities/Battle/Battle.tscn").instance()
+	battle = load("res://Utilities/Battle/Battle.tscn").instantiate()
 	add_child(battle)
 
 	var bid = BattleInstanceData.new()
@@ -436,30 +444,30 @@ func wild_battle():
 	var poke = generate_wild_poke()
 	bid.opponent.pokemon_group.append(poke)
 	Global.game.battle.Start_Battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 	player_defeated = !battle.player_won
 	
 	if player_defeated:
-		player_defeated()
+		on_player_defeated()
 		return
 	Global.game.get_node("Background_music").play()
-	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
+	await battle.get_node("CanvasLayer/ColorRect/AnimationPlayer").animation_finished
 	battle.queue_free()
 	release_player()
 func trainer_battle(bid : BattleInstanceData, auto_lock_and_release = true):
 	lock_player()
 	Global.game.get_node("Background_music").stop()
-	battle = load("res://Utilities/Battle/Battle.tscn").instance()
+	battle = load("res://Utilities/Battle/Battle.tscn").instantiate()
 	add_child(battle)
 	Global.game.battle.Start_Battle(bid)
-	yield(Global.game.battle, "battle_complete")
+	await Global.game.battle.battle_complete
 
 	player_defeated = !battle.player_won
 	if player_defeated:
-		player_defeated()
+		on_player_defeated()
 		return
 	Global.game.get_node("Background_music").play()
-	yield(battle.get_node("CanvasLayer/ColorRect/AnimationPlayer"), "animation_finished")
+	await battle.get_node("CanvasLayer/ColorRect/AnimationPlayer").animation_finished
 	battle.queue_free()
 	if auto_lock_and_release:
 		release_player()
@@ -486,14 +494,54 @@ func generate_wild_poke() -> Pokemon:
 	var level = Global.rng.randi_range(table[index][2], table[index][3])
 	poke.set_basic_pokemon_by_level(poke_id,level)
 	return poke
-func player_defeated():
+var shop = null
+func open_shop(stock: Array):
+	if shop == null:
+		shop = load("res://Utilities/Shop.tscn").instantiate()
+		add_child(shop)
+	lock_player()
+	shop.open(stock)
+	await shop.shop_closed
+	release_player()
+
+func on_player_defeated():
+	# Original blackout (PokeBattle_Battle loss + pbStartOver):
+	# money loss = max party level x multiplier[badges], capped; heal all; message; teleport.
+	var multiplier = [8, 16, 24, 36, 48, 64, 80, 100, 120]
+	var max_level = 1
+	for poke in Global.pokemon_group:
+		if poke != null and poke.level > max_level:
+			max_level = poke.level
+	var moneylost = max_level * multiplier[mini(Global.badges, multiplier.size() - 1)]
+	moneylost = mini(moneylost, Global.money)
+	Global.money -= moneylost
+
+	# pbHealAll: full party heal (HP, status, PP)
+	for poke in Global.pokemon_group:
+		if poke == null:
+			continue
+		poke.current_hp = poke.hp
+		poke.major_ailment = null
+		for mv in [poke.move_1, poke.move_2, poke.move_3, poke.move_4]:
+			if mv != null:
+				mv.remaining_pp = mv.total_pp
+
+	if battle != null and is_instance_valid(battle):
+		battle.queue_free()
+	get_node("Background_music").play()
 
 	# Spawn at last pokecenter/healpoint
 	if last_heal_point == null:
 		# Spawn home:
 		last_heal_point = "res://Maps/MokiTown/HeroHome.tscn"
-	change_scene(last_heal_point)
+	change_scene_to_file(last_heal_point)
 	release_player()
+
+	var msg = ""
+	if moneylost > 0:
+		msg = "You panicked and dropped $" + str(moneylost) + "...\n"
+	msg += "You scurried to safety, protecting your exhausted and fainted Pokémon from further harm."
+	play_dialogue(msg)
 
 func clock_timeout():
 	Global.time += 1
@@ -501,10 +549,11 @@ func clock_timeout():
 
 func get_cliffs():
 	var nodes = []
-	if current_scene.get_node("NPC_Layer") == null:
+	var npc_layer = current_scene.get_node_or_null("NPC_Layer")
+	if npc_layer == null:
 		return nodes
 
-	for node in current_scene.get_node("NPC_Layer").get_children():
+	for node in npc_layer.get_children():
 		if node.is_in_group("Cliff"):
 			nodes.append(node)
 	return nodes
@@ -517,19 +566,24 @@ func recive_item(item_name_or_ID):
 		item = Global.inventory.get_item_by_id(item_name_or_ID)
 	
 	Global.game.get_node("Background_music").stream_paused = true
-	var sound = load("res://Audio/ME/Jingle - Regular Item.ogg")
+	var sound = load("res://Audio/ME/Jingle_-_Regular_Item.ogg")
 	sound.loop = false
 	Global.game.get_node("Effect_music").stream = sound
 	Global.game.get_node("Effect_music").play()
 
 	if item.pocket == Global.inventory.TMS:
-		Global.game.play_dialogue(Global.TrainerName + " obtained \n" + item.name + "!\nIt contained " + str(Global.inventory.database.tm_hm_database.get(item.name)) + ".")
+		Global.game.play_dialogue(tr("{1} obtained {2}.").replace("{1}", Global.TrainerName).replace("{2}", tr(item.name)) + "\n" + tr("It contained {1}.\u0001").replace("{1}", tr(str(Global.inventory.database.tm_hm_database.get(item.name)))))
 	else:
-		Global.game.play_dialogue(Global.TrainerName + " obtained \n" + item.name + "!")
-	yield(Global.game, "event_dialogue_end")
+		Global.game.play_dialogue(tr("{1} obtained {2}.").replace("{1}", Global.TrainerName).replace("{2}", tr(item.name)))
+	await Global.game.event_dialogue_end
 
-	Global.game.play_dialogue(Global.TrainerName + " put the " + item.name + "\nin the " + Global.inventory.get_pocket_name(item) + ".")
-	yield(Global.game, "event_dialogue_end")
+	var _pocket = Global.inventory.get_pocket_name(item).replace(" Pocket", "").replace("Poche ", "")
+	var _put = tr("{1} put the \\c[1]{2}\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket.")
+	_put = _put.replace("{1}", Global.TrainerName).replace("{2}", tr(item.name)).replace("{4}", _pocket).replace("{3}", "")
+	var _re = RegEx.new()
+	_re.compile("\\\\c\\[\\d+\\]|<icon=[^>]*>")
+	Global.game.play_dialogue(_re.sub(_put, "", true))
+	await Global.game.event_dialogue_end
 	Global.game.get_node("Background_music").stream_paused = false
 
 	# Add item to bag
@@ -540,6 +594,6 @@ func recive_item(item_name_or_ID):
 func get_doors():
 	var nodes = []
 	for door in get_tree().get_nodes_in_group("Doors"):
-		if current_scene.is_a_parent_of(door):
+		if current_scene.is_ancestor_of(door):
 			nodes.append(door)
 	return nodes

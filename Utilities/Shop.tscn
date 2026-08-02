@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://Utilities/Shop.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/pkmnem.ttf" type="FontFile" id=2]
+
+[node name="Shop" type="CanvasLayer"]
+layer = 11
+visible = false
+process_mode = 3
+script = ExtResource( 1 )
+
+[node name="Box" type="ColorRect" parent="."]
+color = Color( 0.12, 0.12, 0.14, 0.92 )
+offset_left = 60.0
+offset_top = 40.0
+offset_right = 452.0
+offset_bottom = 320.0
+
+[node name="List" type="Label" parent="Box"]
+offset_left = 20.0
+offset_top = 16.0
+offset_right = 380.0
+offset_bottom = 220.0
+theme_override_fonts/font = ExtResource( 2 )
+theme_override_font_sizes/font_size = 26
+text = ""
+
+[node name="Money" type="Label" parent="Box"]
+offset_left = 260.0
+offset_top = 236.0
+offset_right = 380.0
+offset_bottom = 266.0
+theme_override_fonts/font = ExtResource( 2 )
+theme_override_font_sizes/font_size = 26
+text = "$0"
+
+[node name="Info" type="Label" parent="Box"]
+offset_left = 20.0
+offset_top = 236.0
+offset_right = 260.0
+offset_bottom = 276.0
+theme_override_fonts/font = ExtResource( 2 )
+theme_override_font_sizes/font_size = 22
+text = ""

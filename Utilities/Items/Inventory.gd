@@ -20,7 +20,9 @@ var key_items = []
 
 var database = null
 
-func add_item(item: Item):# Adds a single item to the inventory
+func add_item(item):# Adds a single item to the inventory (null-safe)
+	if item == null:
+		return
 	if item == null:
 		print("Inventory Error: item is null")
 	else:
@@ -165,49 +167,49 @@ func remove_item(item: Item):
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					items.remove(index)
+					items.remove_at(index)
 				MEDICINE:
 					var index = 0
 					for item_stacks in medicine:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					medicine.remove(index)
+					medicine.remove_at(index)
 				BALLS:
 					var index = 0
 					for item_stacks in balls:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					balls.remove(index)
+					balls.remove_at(index)
 				TMS:
 					var index = 0
 					for item_stacks in TMs:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					TMs.remove(index)
+					TMs.remove_at(index)
 				BERRIES:
 					var index = 0
 					for item_stacks in berries:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					berries.remove(index)
+					berries.remove_at(index)
 				BATTLE_ITEMS:
 					var index = 0
 					for item_stacks in battle_items:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					battle_items.remove(index)
+					battle_items.remove_at(index)
 				KEY_ITEMS:
 					var index = 0
 					for item_stacks in key_items:
 						if item_stacks.get_item_id() == item.id:
 							break
 						index += 1
-					key_items.remove(index)
+					key_items.remove_at(index)
 		else:
 			item_stack.quantity -= 1
 
@@ -297,4 +299,14 @@ func has_item_id(id: int):
 			for item_stacks in key_items:
 				if item_stacks.get_item_id() == temp.id:
 					return true
+	return false
+
+func remove_item_by_id(_id: int, amount: int = 1) -> bool:
+	for pocket in [items, medicine, balls, TMs, berries, battle_items, key_items]:
+		for i in range(pocket.size()):
+			if pocket[i].get_item_id() == _id:
+				pocket[i].quantity -= amount
+				if pocket[i].quantity <= 0:
+					pocket.remove_at(i)
+				return true
 	return false

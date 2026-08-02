@@ -1,0 +1,7532 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "$ {1:d}"
+msgstr "¥ {1:d}"
+
+msgid "$TAG_LANGUAGE"
+msgstr "zh-chs"
+
+msgid "$TAG_USE_CJK_FONT"
+msgstr "true"
+
+msgid "${1}"
+msgstr "¥{1}"
+
+msgid "(Default)"
+msgstr "（默认）"
+
+msgid "({1}) PP: {2}/{3}"
+msgstr " ({1}) PP: {2}/{3}"
+
+msgid "*10 battles needed for Global Rank"
+msgstr "*需要１０场战斗获得全球排名"
+
+msgid "*Part of the Online Gym!"
+msgstr "*网上道馆之一！"
+
+msgid "--- power core ------ from over----. It ---- ------ a large ---- -- nuclear fuel to -------. ---- ---- activated- -- --- -- prod--- ---- limitless energy."
+msgstr "动力核心－－－外进－－。\n它－－大量－核能－－－－－。\n－－－启动，－－－产－－－不断－能源。"
+
+msgid "---- -- the Interface --- final---- today. Th- -erator - -- ---- - ----- full control -- --e Sp-cimen. ---- chief reseacher, Dr. ----- --s ---- granted clearance."
+msgstr "－－终端终－－成－。\n－用终－－－－全操纵－验品。\n我们的总指挥，－－－博士，－－－－清扫工作。"
+
+msgid "---- has been - breach -- confidential--. ----- --- ------ shall -- relocate --- undergr-- --. Project 092 --- have -- -- --rminated."
+msgstr "－－－漏－机密。\n－此，－－－－－－－将－藏－地下－－－－。\n实验品０９２－－－清除。"
+
+msgid "... ... ... ...Nope!\nThere's no response."
+msgstr "…………不！\n没有任何响应。"
+
+msgid "...Oh. It's you.\nListen, I might've been a jerk to you back in Vinoville Town.\nBut, well, what you did, it kind of saved my family and my town.\nWhen the Rangers are done cleaning the area, I'll have a home again.\nSo... I guess... What I'm trying to say is...\nI owe you. We all do.\nBut I'm not going easy on you because of it.\nI've been training non-stop since you beat me!\nMy team will crush anybody that stands in our way...\nEven the Hero of Tandor!!"
+msgstr "…喔。是你。\n听着，\n你可能因为雾若镇的事情把我当成了蠢货。\n但是，嗯，你所做的事情，\n稍许程度上拯救了我的家庭和我的镇子。\n当保育家们完成了那里的清理工作后，\n我将重新拥有一个家。\n所以…我想…我想说的是…\n我欠你的人情，\n我们所有人都欠你一个人情。\n但我不会因此对你放水。\n自从你击败我之后，\n我一直不停地进行着训练！\n我的队伍将会碾过站在\n我们前进路上的任何障碍…\n即使是天舵的英雄！！"
+
+msgid "...Pfeh. I guess you win.\nThat's embarrassing... But whatever.\nIf there's anyone I'll allow to beat me, it should be you."
+msgstr "…啧。我想是你赢了。\n真是难堪…不过不管怎样。\n如果有任何人我允许其击倒我，\n那个人就是你。"
+
+msgid "1, 2, and... ... ..."
+msgstr "1, 2, ... ..."
+
+msgid "<<"
+msgstr " <<"
+
+msgid "<ac>Search Mode</ac>"
+msgstr "<ac>搜索模式</ac>"
+
+msgid "<c3=0000D6,7394FF>{1} <c3=5A5252,A5A5AD>nature."
+msgstr "<c3=0000D6,7394FF>{1}<c3=5A5252,A5A5AD>性格。"
+
+msgid "<c3=404040,B0B0B0>Egg hatched."
+msgstr "<c3=404040,B0B0B0>孵化的蛋。\n"
+
+msgid "<c3=404040,B0B0B0>{1} {2}, {3}"
+msgstr "<c3=404040,B0B0B0>{1} {2}, {3}\n"
+
+msgid "<c3=5A5252,A5A5AD>Egg obtained."
+msgstr "<c3=5A5252,A5A5AD>得到了神奇的宝可梦蛋。"
+
+msgid "<c3=5A5252,A5A5AD>Had a fateful encounter at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>于Lv.{1}时命运般地相遇了。"
+
+msgid "<c3=5A5252,A5A5AD>Met at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>于Lv.{1}时邂逅。"
+
+msgid "<c3=5A5252,A5A5AD>Traded at Lv. {1}."
+msgstr "<c3=5A5252,A5A5AD>于Lv.{1}时交换。"
+
+msgid "<c3=F83820,E09890>Faraway place"
+msgstr "<c3=F83820,E09890>神秘的地方\n"
+
+msgid "<c3=fff,282828>\"The Egg Watch\""
+msgstr "<c3=fff,282828>『蛋的状况』"
+
+msgid "<c3=fff,282828>A mysterious Pokémon\nEgg received from\n<c3=0000D6,7394FF>{1}<c3=fff,282828>."
+msgstr "<c3=fff,282828>在<c3=0000D6,7394FF>{1}<c3=fff,282828>\n得到了神奇的宝可梦蛋。"
+
+msgid "<r>{1}<br>"
+msgstr " <r>{1}<br>"
+
+msgid ">>"
+msgstr " >>"
+
+msgid "????.? kg"
+msgstr "????.?千克"
+
+msgid "????.? m"
+msgstr "????.?米"
+
+msgid "????? Pokémon"
+msgstr "？？？？？宝可梦"
+
+msgid "A Key Item in the Bag can be registered to this key for instant use."
+msgstr "背包中的关键物品可以登记到此键，按下此键立即使用。"
+
+msgid "A Map\nShows visited Places."
+msgstr "地图\n展示整个地区。"
+
+msgid "A Nuclear Horde appeared!"
+msgstr "核难游民出现了！"
+
+msgid "A Phone\nUsed to call People."
+msgstr "电话\n用于呼叫他人。"
+
+msgid "A Pokémon could be in this tree. Maybe a Pokémon could shake it."
+msgstr "似乎有宝可梦藏在树里。\n也许借助宝可梦的力量可以把它摇下来。"
+
+msgid "A Pokémon could be in this tree. Want to headbutt it?"
+msgstr "似乎有宝可梦藏在树里。要使用头锤吗？"
+
+msgid "A Radio\nUsed to listen to Music."
+msgstr "收音机\n用于播放音乐。"
+
+msgid "A Ribbon awarded for overcoming all difficult challenges."
+msgstr "授予克服所有困难挑战的奖章。"
+
+msgid "A Ribbon awarded for winning 100 matches in a row."
+msgstr "授予连续胜利１００场比赛的奖章。"
+
+msgid "A Ribbon to celebrate a birthday."
+msgstr "庆祝生日的奖章。"
+
+msgid "A Toxic Fallout has set in!"
+msgstr "有毒辐射散布开了！"
+
+msgid "A bell chimed!"
+msgstr "神秘的铃声响起了！"
+
+msgid "A critical hit!"
+msgstr "击中要害！"
+
+msgid "A glint appears in {1}'s eyes!"
+msgstr "{1}的眼睛闪烁着光芒！"
+
+msgid "A heavy rain began to fall!"
+msgstr "开始下起了暴雨！"
+
+msgid "A little quick tempered."
+msgstr "有点容易生气。"
+
+msgid "A mysterious air current is protecting Flying-type Pokémon!"
+msgstr "一股神秘的气流正在保护着飞行属性的宝可梦！"
+
+msgid "A new award has been found! {1}: {2}"
+msgstr "找到了一个新的奖品！{1}：{2}"
+
+msgid "A nuclear fallout has hit!"
+msgstr "核爆来袭！"
+
+msgid "A sandstorm brewed!"
+msgstr "扬起沙暴了！"
+
+msgid "A sandstorm is raging."
+msgstr "沙暴正在肆虐。"
+
+msgid "A sandstorm kicked up!"
+msgstr "沙暴扬起了！"
+
+msgid "A shadow sky appeared!"
+msgstr "暗影气象浮现了！"
+
+msgid "A soothing aroma wafted through the area!"
+msgstr "芳香之气充满了场地！"
+
+msgid "A sticky web has been laid out beneath the opposing team's feet!"
+msgstr "对方队伍的脚下围满了黏黏网！"
+
+msgid "A sticky web has been laid out beneath your team's feet!"
+msgstr "己方队伍的脚下围满了黏黏网！"
+
+msgid "A thrilling display from trainers and Pokémon alike!"
+msgstr "训练家与训练家、\n宝可梦与宝可梦之间擦出的\n激情火花真是让人无法自拔！"
+
+msgid "A thunderstorm is raging."
+msgstr "雷暴正在肆虐。"
+
+msgid "A thunderstorm started!"
+msgstr "雷暴开始了！"
+
+msgid "A to Z"
+msgstr "字母大小"
+
+msgid "A wall of water is crashing down with a mighty roar."
+msgstr "水从上方冲落下来形成了水墙，伴随着剧烈的轰鸣声。"
+
+msgid "A {1} was planted here."
+msgstr "{1}种在了这里。"
+
+msgid "A: Add map to canvas"
+msgstr "A: Add map to canvas\n"
+
+msgid "ABLE"
+msgstr "可以"
+
+msgid "ACCURACY"
+msgstr "命中"
+
+msgid "ADD NEW FRIEND"
+msgstr "添加新好友"
+
+msgid "Aargh! Almost had it!"
+msgstr "啊！就差一点了！"
+
+msgid "Ability"
+msgstr "特性"
+
+msgid "Ability {1} is being forced."
+msgstr "原本的特性强制为{1}。"
+
+msgid "Ability {1} is natural."
+msgstr "原本的特性为{1}。"
+
+msgid "Acai Berries"
+msgstr "阿萨伊果"
+
+msgid "Accept this Pokémon?"
+msgstr "要接受这些宝可梦？"
+
+msgid "Adamant"
+msgstr "固执"
+
+msgid "Advanced to Game Lv. {1}!"
+msgstr "游戏等级提升到{1}！"
+
+msgid "Aguav Berries"
+msgstr "乐芭果"
+
+msgid "Aha! It is the \\PN!\nWe fight before. I lose in disgrace.\nMy Ninja clan forsake me. So I train.\nI train and train, in hopes to encounter \\PN again.\nIn this arena, we fight to regain honor!\nI will defeat you, and restore glory to my Ninja Clan!"
+msgstr "啊哈！是\\PN呀！\n我们之前对战过。我羞耻地战败了。\n我的忍者部落抛弃了我。所以进行了训练。\n我一遍又一遍地进行训练、训练，\n想要再次遇到\\PN。\n在这个竞技场，\n我们为曾经的荣誉而战！\n我将会打败你，\n恢复我在忍者部落的辉煌！"
+
+msgid "Alas, the final curtain falls...\nThe result is clear:\nYour victory was written in the stars!"
+msgstr "哎，最后一道幕布落下了…\n结果十分清晰：\n你的胜利已被刻印在星星上！"
+
+msgid "Alert Ribbon"
+msgstr "警告奖章"
+
+msgid "Alert to sounds."
+msgstr "对声音敏感。"
+
+msgid "All Pokémon hearing the song will faint in three turns!"
+msgstr "所有听到歌声的宝可梦都将会在三回合后陷入濒死！"
+
+msgid "All Pokémon in this box have been released."
+msgstr "已放生这个盒子里的所有宝可梦。"
+
+msgid "All boxes are full."
+msgstr "所有的盒子都已经满了。"
+
+msgid "All data will be lost. Confirm once more to proceed."
+msgstr "所有的数据都将会遗失。再次确认以执行。"
+
+msgid "All recording devices are in use. Recording is not possible now."
+msgstr "All recording devices are in use.  Recording is not possible now."
+
+msgid "All stat changes were eliminated!"
+msgstr "所有的能力变化都消失了！"
+
+msgid "All the world's a stage... and we play the leading role! Can you see past our splendid masquerade?"
+msgstr "世界是一个大舞台…而主角是我们！\n你能否看透我们过去华丽的伪装？"
+
+msgid "Also, look for a special NPC in Kevlar Town!"
+msgstr "还有，记得去芳纶镇找一位特殊的ＮＰＣ！"
+
+msgid "An Egg can't battle!"
+msgstr "宝可梦蛋无法战斗！"
+
+msgid "An egg can't be an active Pokémon"
+msgstr "无法将蛋换上场"
+
+msgid "An electric current runs across the battlefield!"
+msgstr "电流布满了场地！"
+
+msgid "And now, their battling skills will determine which of them get to move on to the Champion's Arena after this match."
+msgstr "而现在，\n他们的战斗技巧将会决定\n谁能在比赛之后去往冠军竞技场。"
+
+msgid "And the winner is \\PN!"
+msgstr "获得胜利的是\\PN！"
+
+msgid "And..."
+msgstr "于是…"
+
+msgid "And..."
+msgstr "并且…"
+
+msgid "Announcer: You're out of Safari Balls! Game over!"
+msgstr "扬声器：狩猎球用光了！游戏结束！"
+
+msgid "Apicot Berries"
+msgstr "杏仔果"
+
+msgid "Apr."
+msgstr "四月"
+
+msgid "April"
+msgstr "四月"
+
+msgid "Aqua Ring restored {1}'s HP!"
+msgstr "水流环恢复了{1}的ＨＰ！"
+
+msgid "Are these three Pokémon OK?"
+msgstr "这三只宝可梦可以吗？"
+
+msgid "Are you sure you want to change it?"
+msgstr "确定要改变它吗？"
+
+msgid "Are you sure you want to copy this Pokémon?"
+msgstr "你确定要复制这只宝可梦吗？"
+
+msgid "Are you sure you want to create a new Virtual Trainer?"
+msgstr "确定要创建新的虚拟训练家吗？"
+
+msgid "Are you sure you want to delete this Pokémon?"
+msgstr "你确定要删除这只宝可梦吗？"
+
+msgid "Are you sure you want to delete this gift?"
+msgstr "你确定要删除这份礼物吗？"
+
+msgid "Are you sure you want to delete this save file?"
+msgstr "确认要删除这份存档文件吗？"
+
+msgid "Are you sure you want to give up?"
+msgstr "确认要放弃吗？"
+
+msgid "Are you sure you want to play on this mode?"
+msgstr "确认要在此模式下进行游戏吗"
+
+msgid "Are you sure you want to play with these settings?"
+msgstr "确定要使用这些规则设置进行游戏吗？"
+
+msgid "Are you sure you want to release all Pokémon in this box?"
+msgstr "确定要放生这个盒子里的所有宝可梦吗？"
+
+msgid "Are you sure you want to remove this friend?"
+msgstr "确定要移除这个朋友吗？"
+
+msgid "Are you sure you want to withdraw your pokemon?"
+msgstr "确定要取回你的宝可梦？"
+
+msgid "Are you sure?"
+msgstr "你确定吗？"
+
+msgid "Area Unknown"
+msgstr "未知区域"
+
+msgid "Artist Ribbon"
+msgstr "肖像奖章"
+
+msgid "Aspear Berries"
+msgstr "利木果"
+
+msgid "Attack"
+msgstr "攻击"
+
+msgid "Aug."
+msgstr "七月"
+
+msgid "August"
+msgstr "八月"
+
+msgid "Autosave"
+msgstr "自动存档"
+
+msgid "Autosave failed. t(-.-t)"
+msgstr "自动存档失败。@ ｔ（－。－ｔ）<@>"
+
+msgid "Award List"
+msgstr "奖品列表"
+
+msgid "Aww... It appeared to be caught!"
+msgstr "喔…明明看起来要抓到了！"
+
+msgid "BAG"
+msgstr "背包"
+
+msgid "BANNED"
+msgstr "被禁止"
+
+msgid "BATTLE MOVES"
+msgstr "战斗招式"
+
+msgid "BATTLES:"
+msgstr "对战数："
+
+msgid "Babiri Berries"
+msgstr "霹霹果"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Bacu Berries"
+msgstr "巴库果"
+
+msgid "Badges:"
+msgstr "徽章："
+
+msgid "Badges<r><c3={1}>{2}</c3><br>"
+msgstr "徽章<r><c3={1}>{2}</c3><br>"
+
+msgid "Bag"
+msgstr "背包"
+
+msgid "Bait"
+msgstr "饵料"
+
+msgid "Ball"
+msgstr "球"
+
+msgid "Balls: {1}"
+msgstr "球：{1}"
+
+msgid "Bashful"
+msgstr "害羞"
+
+msgid "Battle Champion Ribbon"
+msgstr "对战冠军奖章"
+
+msgid "Battle Competition Champion Ribbon."
+msgstr "战斗比赛冠军奖章。"
+
+msgid "Battle Items"
+msgstr "对战道具"
+
+msgid "Battle Scene"
+msgstr "对战动画"
+
+msgid "Battle Style"
+msgstr "对战方式"
+
+msgid "Battle!"
+msgstr "对战！"
+
+msgid "Battle... start!"
+msgstr "对战…开始！"
+
+msgid "Beach"
+msgstr "海滩"
+
+msgid "Begin your game."
+msgstr "开始游戏。"
+
+msgid "Behold! The power of Mega Evolution!"
+msgstr "见证吧！超级进化的力量！"
+
+msgid "Belue Berries"
+msgstr "靛莓果"
+
+msgid "Berries"
+msgstr "树果"
+
+msgid "Bill"
+msgstr "正辉"
+
+msgid "Birthday Ribbon"
+msgstr "生日奖章"
+
+msgid "Black"
+msgstr "黑"
+
+msgid "Black Tiles: {1}"
+msgstr "黑砖：{1}"
+
+msgid "Blue"
+msgstr "蓝"
+
+msgid "Bluk Berries"
+msgstr "墨莓果"
+
+msgid "Body"
+msgstr "体"
+
+msgid "Bold"
+msgstr "大胆"
+
+msgid "Boost PP of which move?"
+msgstr "提升哪一个招式的ＰＰ？"
+
+msgid "Both of these trainers took home a win in the previous round."
+msgstr "在场的这些训练家都是\n前一场比赛中的胜出者。"
+
+msgid "Box \"{1}\" on someone's PC was full."
+msgstr "某人的电脑上的盒子『{1}』已经满了。"
+
+msgid "Box \"{1}\" on someone's PC was full."
+msgstr "某人的电脑里的盒子『{1}』已经满了。"
+
+msgid "Box \"{1}\" on {2}'s PC was full."
+msgstr "{2}的电脑上的盒子『{1}』已经满了。"
+
+msgid "Box \"{1}\" on {2}'s PC was full."
+msgstr "{2}的电脑里的盒子『{1}』已经满了。"
+
+msgid "Box name?"
+msgstr "盒子的名字是？"
+
+msgid "Box {1:d}"
+msgstr "盒子 {1:d}"
+
+msgid "Brave"
+msgstr "勇敢"
+
+msgid "Brown"
+msgstr "棕"
+
+msgid "Bug"
+msgstr "虫"
+
+msgid "But I sense something else in you...\\^"
+msgstr "但你似乎并不单纯如此…\\^"
+
+msgid "But it failed to spit up a thing!"
+msgstr "但是没能喷出什么！"
+
+msgid "But it failed to swallow a thing!"
+msgstr "但是什么也没能吞下！"
+
+msgid "But it failed!"
+msgstr "但是没能成功！"
+
+msgid "But it had no effect!"
+msgstr "但是没有效果！"
+
+msgid "But nothing happened!"
+msgstr "但是什么也没有发生！"
+
+msgid "But the effects of a Repel lingered from earlier."
+msgstr "早先喷雾的效果还有余留。"
+
+msgid "But there was no PP left for the move!"
+msgstr "但是这个招式没有ＰＰ了！"
+
+msgid "But there was no target..."
+msgstr "但是没有目标…"
+
+msgid "But {1} already caught a Pokémon in this area!"
+msgstr "但是{1}在此处已经收服过宝可梦了！"
+
+msgid "But {1} already fought a wild Pokémon in this area!"
+msgstr "但是{1}在此处已经和野生的宝可梦战斗过了！"
+
+msgid "But {1} can't learn more than four moves."
+msgstr "但是{1}最多只能掌握四个招式。"
+
+msgid "But {1} can't learn more than four moves."
+msgstr "但是{1}最多只能掌握四个招式。"
+
+msgid "But {1} can't sleep in an uproar!"
+msgstr "但是{1}不能在吵闹中入睡！"
+
+msgid "But {1} couldn't sleep!"
+msgstr "但是{1}无法入睡！"
+
+msgid "But, only one will be crowned Champion today."
+msgstr "但是，仅有一个人能加冕为王。"
+
+msgid "But,\\. don't worry!\\nYour Pokémon are safe and sound."
+msgstr "不过，\\.不要担心！＼\n你的宝可梦安然无恙。"
+
+msgid "Buy"
+msgstr "买入"
+
+msgid "By ID"
+msgstr "通过ＩＤ"
+
+msgid "By Pokemon"
+msgstr "通过宝可梦"
+
+msgid "By Wanted"
+msgstr "通过条件"
+
+msgid "By the blessing of Aotius!"
+msgstr "奥提乌斯保佑！"
+
+msgid "Bye-bye, {1}!"
+msgstr "再见，{1}！"
+
+msgid "CANCEL"
+msgstr "取消"
+
+msgid "CATEGORY"
+msgstr "分类"
+
+msgid "CLOSE BAG"
+msgstr "关闭背包"
+
+msgid "CONFIRM"
+msgstr "确认"
+
+msgid "Call"
+msgstr "呼叫"
+
+msgid "Calm"
+msgstr "温和"
+
+msgid "Can't catch any more..."
+msgstr "无法收服更多的宝可梦了…"
+
+msgid "Can't deposit from box..."
+msgstr "无法从盒子内存入…"
+
+msgid "Can't deposit the last Pokémon!"
+msgstr "无法存入队伍中的最后一只宝可梦！"
+
+msgid "Can't escape!"
+msgstr "不能逃跑！"
+
+msgid "Can't find deposited Pokémon"
+msgstr "无法找到存入的宝可梦"
+
+msgid "Can't find the map 'Map{1:03d}' in the Data folder. The game will resume at the player's position."
+msgstr "在Ｄａｔａ文件夹内无法找到地图「Ｍａｐ{1:03d}」。游戏将会在玩家所在的位置继续。"
+
+msgid "Can't place a Shadow Pokemon there."
+msgstr "这里无法放置黑暗宝可梦。"
+
+msgid "Can't place an egg there."
+msgstr "无法将蛋放入这里。"
+
+msgid "Can't re-store deleted item in bag"
+msgstr "无法复位背包中已被删除的道具"
+
+msgid "Can't save. No name was entered."
+msgstr "Can't save.  No name was entered."
+
+msgid "Can't save. The Pokémon list is empty."
+msgstr "Can't save.  The Pokémon list is empty."
+
+msgid "Can't store the Pokémon..."
+msgstr "无法存入这只宝可梦…"
+
+msgid "Can't store the egg"
+msgstr "无法存入蛋"
+
+msgid "Can't store the {1}."
+msgstr "无法存入{1}。"
+
+msgid "Can't use that here."
+msgstr "无法在这里使用。"
+
+msgid "Can't use that while on a bicycle."
+msgstr "在自行车上无法使用它。"
+
+msgid "Can't withdraw from party..."
+msgstr "无法从队伍中取出…"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cancel?"
+msgstr "取消？"
+
+msgid "Capable of taking hits."
+msgstr "抗打能力强。"
+
+msgid "Careful"
+msgstr "慎重"
+
+msgid "Careless Ribbon"
+msgstr "疏忽奖章"
+
+msgid "Caught: None\nBalls: {1}"
+msgstr "抓到：无\n球：{1}"
+
+msgid "Caught: {1}\nLevel: {2}\nBalls: {3}"
+msgstr "抓到：{1}\n级别：{2}\n球：{3}"
+
+msgid "Cave"
+msgstr "洞窟"
+
+msgid "Certainly. You want {1}.\nThat will be ${2}. OK?"
+msgstr "好的。\n{1}一共¥{2}。可以吗？"
+
+msgid "Certainly. You want {2} {1}(s)?"
+msgstr "好的。您想买{2}个{1}？"
+
+msgid "Challenge Mode"
+msgstr "挑战模式"
+
+msgid "Champion Ribbon"
+msgstr "冠军奖章"
+
+msgid "Change Game Ruleset"
+msgstr "改变游戏规则集"
+
+msgid "Change which EV?"
+msgstr "改变哪一项基础点数？"
+
+msgid "Changed to Blade Forme!"
+msgstr "切换成刀剑形态了！"
+
+msgid "Changed to Shield Forme!"
+msgstr "切换成盾牌形态了！"
+
+msgid "Charti Berries"
+msgstr "草蚕果"
+
+msgid "Check Virtual Trainer"
+msgstr "检查虚拟训练家"
+
+msgid "Check for Updates"
+msgstr "检查更新"
+
+msgid "Check for new awards"
+msgstr "检查新的奖品"
+
+msgid "Check opponent's cards."
+msgstr "检查对方的牌。"
+
+msgid "Checks"
+msgstr "格子"
+
+msgid "Cheri Berries"
+msgstr "樱子果"
+
+msgid "Chesto Berries"
+msgstr "零余果"
+
+msgid "Chilan Berries"
+msgstr "灯浆果"
+
+msgid "Choose Pokémon and confirm."
+msgstr "选择并确认宝可梦。"
+
+msgid "Choose Pokémon or cancel."
+msgstr "选择或取消选择宝可梦。"
+
+msgid "Choose Trainer Type"
+msgstr "选择训练家类型"
+
+msgid "Choose a Letter."
+msgstr "选择一个字母。"
+
+msgid "Choose a Pokémon."
+msgstr "选择一只宝可梦。"
+
+msgid "Choose a card, or check opponent with Z."
+msgstr "选择一张牌，或者使用Ｚ检查对方。"
+
+msgid "Choose a card."
+msgstr "选择一张牌。"
+
+msgid "Choose a command."
+msgstr "选择一个命令。"
+
+msgid "Choose move to forget."
+msgstr "选择要遗忘的招式。"
+
+msgid "Choose the first Pokémon."
+msgstr "选择第一只宝可梦。"
+
+msgid "Choose the gift you want to receive.\\wtnp[0]"
+msgstr "选择你想要获得的礼物。\\wtnp[0]"
+
+msgid "Choose the second Pokémon."
+msgstr "选择第二只宝可梦。"
+
+msgid "Choose the third Pokémon."
+msgstr "选择第三只宝可梦。"
+
+msgid "Choose your game mode:"
+msgstr "请选择游戏模式："
+
+msgid "Choose {1} cards to use for this duel."
+msgstr "选择{1}张牌在这场决斗中使用。"
+
+msgid "Choosing the starting player..."
+msgstr "选择开始的玩家…"
+
+msgid "Chople Berries"
+msgstr "莲蒲果"
+
+msgid "City"
+msgstr "城市"
+
+msgid "Classic Ribbon"
+msgstr "经典奖章"
+
+msgid "Clear Pokérus"
+msgstr "清除宝可病毒"
+
+msgid "Click to select a map"
+msgstr "Click to select a map\n"
+
+msgid "Click!\n...... ......"
+msgstr "咔哒！\n…………"
+
+msgid "Close bag."
+msgstr "关闭背包。"
+
+msgid "Close storage."
+msgstr "关闭存储。"
+
+msgid "Closes the PokéPod and returns to the game."
+msgstr "关闭PokéPod，回到游戏。"
+
+msgid "Coba Berries"
+msgstr "棱瓜果"
+
+msgid "Coins were scattered everywhere!"
+msgstr "地上洒满了硬币！"
+
+msgid "Coins:\n<ar>{1}</ar>"
+msgstr "硬币：\n<ar>{1}</ar>"
+
+msgid "Coins: {1}"
+msgstr "硬币：{1}"
+
+msgid "Colbur Berries"
+msgstr "刺耳果"
+
+msgid "Compete"
+msgstr "竞赛"
+
+msgid "Competitive sharply raised {1}'s Special Attack!"
+msgstr "好胜特性大幅提高了{1}的特攻！"
+
+msgid "Compile Text?"
+msgstr "编译文本？"
+
+msgid "Congratulations on advancing to the final round!\nThe final battle will take place in the Champion's Arena. Its winner will be crowned Champion of Tandor!"
+msgstr "恭喜晋级最终轮！\n最后的战斗将会在冠军竞技场展开。\n获胜者将会成为天舵地区的冠军！"
+
+msgid "Congratulations!"
+msgstr "恭喜！"
+
+msgid "Congratulations!\nYour {1} evolved into {2}!"
+msgstr "恭喜！\n{1}进化成了{2}！"
+
+msgid "Congratulations, {1}!"
+msgstr "恭喜，{1}！"
+
+msgid "Continue"
+msgstr "继续游戏"
+
+msgid "Continue Box operations?"
+msgstr "还要继续操作吗？"
+
+msgid "Continue the game with those options permanently disabled?"
+msgstr "永久禁用那些规则并继续游戏？"
+
+msgid "Controls"
+msgstr "操作"
+
+msgid "Cool Ribbon"
+msgstr "帅气缎带"
+
+msgid "Cool Ribbon Super"
+msgstr "超级帅气缎带"
+
+msgid "Cornn Berries"
+msgstr "玉黍果"
+
+msgid "Could it be the seed of greatness?\\.\nThe potential to transform yourself completely?\\^"
+msgstr "在你的心中，也许埋藏着一颗象征着伟大的种子，\\.\n一种可以使你蜕变的潜力？\\^"
+
+msgid "Could not load VT data!"
+msgstr "无法读取虚拟训练家数据！"
+
+msgid "Could not reach server to determine if your game is up-to-date. \\wtnp[40]"
+msgstr "无法连接到服务器，\n无法确认你的游戏是否已更新。\\wtnp[40]"
+
+msgid "Couldn't find an unclaimed Mystery Gift with ID {1}."
+msgstr "无法找到ＩＤ为{1}的未声明的神秘礼物。"
+
+msgid "Couldn't return unusable item to Bag somehow."
+msgstr "因为某些原因无法收回无法使用的道具。"
+
+msgid "Couldn't return unused item to Bag somehow."
+msgstr "因为某些原因无法收回未使用的道具。"
+
+msgid "Country Ribbon"
+msgstr "地区奖章"
+
+msgid "Crafty Shield protected your team!"
+msgstr "己方队伍受到了戏法防守的保护！"
+
+msgid "Crafty Shield protected {1}!"
+msgstr "戏法防守保护了{1}！"
+
+msgid "Crag"
+msgstr "峭壁"
+
+msgid "Create new Virtual Trainer"
+msgstr "创建新的虚拟训练家"
+
+msgid "Creating a new Virtual Trainer will delete your older one and will reset your ranking and battle stats."
+msgstr "创建新的虚拟训练家将会删除旧者，并将重置你的排名和对战数据。"
+
+msgid "Cupu Berries"
+msgstr "库普果"
+
+msgid "Current Version = {1} \\wtnp[30]"
+msgstr "当前版本 ＝ {1} \\wtnp[30]"
+
+msgid "Custap Berries"
+msgstr "释陀果"
+
+msgid "Custom"
+msgstr "自定义"
+
+msgid "Custom Game Settings"
+msgstr "自定义游戏设置"
+
+msgid "Custom/Nuzlocke Mode"
+msgstr "自定义／纳兹洛克（Nuzlocke）模式"
+
+msgid "DEFEND"
+msgstr "防守"
+
+msgid "DEL: Delete map from canvas"
+msgstr "DEL: Delete map from canvas\n"
+
+msgid "DEPOSIT POKéMON"
+msgstr "存入宝可梦"
+
+msgid "DESELECT"
+msgstr "取消选择"
+
+msgid "DOUBLE Cup"
+msgstr "双打杯赛"
+
+msgid "DS BORDER"
+msgstr "ＤＳ边框"
+
+msgid "Dark"
+msgstr "恶"
+
+msgid "Day-Care Couple"
+msgstr "培养屋夫妇"
+
+msgid "Dec."
+msgstr "十一月"
+
+msgid "December"
+msgstr "十二月"
+
+msgid "Default"
+msgstr "默认"
+
+msgid "Defense"
+msgstr "防御"
+
+msgid "Defiant sharply raised {1}'s Attack!"
+msgstr "不服输特性大幅提高了{1}的攻击！"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete This Save File"
+msgstr "删除当前存档文件"
+
+msgid "Delete a move to make\nroom for {1}?"
+msgstr "要为了学习{1}而\n遗忘一个招式吗？"
+
+msgid "Delete a move to make room for {1}?"
+msgstr "为了学习{1}，要忘记其他的招式吗？"
+
+msgid "Dependent events removed."
+msgstr "已移除依赖事件"
+
+msgid "Deposit"
+msgstr "箱子"
+
+msgid "Deposit Item"
+msgstr "存入道具"
+
+msgid "Deposit Pokémon"
+msgstr "存放宝可梦"
+
+msgid "Deposit in which Box?"
+msgstr "存入哪个盒子？"
+
+msgid "Deposited {1} {2}(s)."
+msgstr "存放了{1}个{2}。"
+
+msgid "Deselect"
+msgstr "取消选择"
+
+msgid "Desert"
+msgstr "沙漠"
+
+msgid "Dex No."
+msgstr "图鉴 No."
+
+msgid "Disable Healing In Battle"
+msgstr "禁止战斗时回复"
+
+msgid "Disable Pokémarts"
+msgstr "禁止商店"
+
+msgid "Do it! {1}!"
+msgstr "上吧！{1}！"
+
+msgid "Do not underestimate the might of Dragons!"
+msgstr "不要低估龙的威力！"
+
+msgid "Do what with an item?"
+msgstr "要拿道具做什么？"
+
+msgid "Do what with the mail?"
+msgstr "要拿邮件如何？"
+
+msgid "Do what with {1}?"
+msgstr "要对{1}做什么？"
+
+msgid "Do you want to change its song now?"
+msgstr "想要现在改变它的声音吗？"
+
+msgid "Do you want to change {1}'s ability to {2}?"
+msgstr "要改变{1}的特性为{2}吗？"
+
+msgid "Do you want to delete the save file and start anew?"
+msgstr "要删除这份存档文件并开始新游戏吗？"
+
+msgid "Do you want to open the battle simulator now? This will quit the game."
+msgstr "要现在启动战斗模拟器吗？游戏将会退出。"
+
+msgid "Do you want to run the patcher now?"
+msgstr "要运行更新器吗？"
+
+msgid "Do you want to try and run the patcher anyway?"
+msgstr "无论如何都想要尝试运行更新器吗？"
+
+msgid "Do you want to use another Repel?"
+msgstr "要继续使用喷雾吗？"
+
+msgid "Do you want to withdraw your pokemon from the GTS?"
+msgstr "想要从ＧＴＳ中取回你的宝可梦吗？"
+
+msgid "Docile"
+msgstr "坦率"
+
+msgid "Done!"
+msgstr "传送完成！"
+
+msgid "Double-click: Edit map's metadata"
+msgstr "Double-click: Edit map's metadata\n"
+
+msgid "Downcast Ribbon"
+msgstr "低落奖章"
+
+msgid "Drag map to move it"
+msgstr "Drag map to move it\n"
+
+msgid "Dragon"
+msgstr "龙"
+
+msgid "Dupes Clause"
+msgstr "含糊条款"
+
+msgid "Duplicate"
+msgstr "复制"
+
+msgid "Durin Berries"
+msgstr "金枕果"
+
+msgid "E: Edit map's encounters"
+msgstr "E: Edit map's encounters\n"
+
+msgid "EDIT"
+msgstr "编辑"
+
+msgid "EXCHANGE"
+msgstr "交换"
+
+msgid "EXIT"
+msgstr "退出"
+
+msgid "Each Pokemon's HP was halved!"
+msgstr "各个宝可梦的ＨＰ被平分了！"
+
+msgid "Earned coins"
+msgstr "获得的硬币"
+
+msgid "Earth Ribbon"
+msgstr "地球奖章"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Effort Ribbon"
+msgstr "努力奖章"
+
+msgid "Egg"
+msgstr "蛋"
+
+msgid "Egg with eggsteps: {1}."
+msgstr "蛋，剩余孵蛋步数：{1}。"
+
+msgid "Eggs can't hold items."
+msgstr "蛋无法持有道具。"
+
+msgid "Eggs can't hold mail."
+msgstr "蛋无法持有邮件。"
+
+msgid "Either"
+msgstr "都可以"
+
+msgid "Electric"
+msgstr "电"
+
+msgid "Electricity's power was weakened!"
+msgstr "电属性招式的威力减弱了！"
+
+msgid "Eletux is the best pick!\\wtnp[160]"
+msgstr "蓝电马是最好的选择！\\wtnp[160]"
+
+msgid "Encounter type out of range"
+msgstr "遇敌类型超出范围"
+
+msgid "Enigma Berries"
+msgstr "谜芝果"
+
+msgid "Enter text using the keyboard. Press ENTER to confirm."
+msgstr "通过键盘输入文字。按回车键确认。"
+
+msgid "Enter text using the keyboard. Press ESC to cancel, or ENTER to confirm."
+msgstr "通过键盘输入文字。按ＥＳＣ键取消，按回车键确认。"
+
+msgid "Enter the speech for when you are challenged"
+msgstr "输入被挑战时的开场白"
+
+msgid "Enter the speech for when you lost"
+msgstr "输入失败时的收场白"
+
+msgid "Enter the speech for when you win"
+msgstr "输入胜利时的收场白"
+
+msgid "Enter {1}'s name."
+msgstr "输入{1}的名字。"
+
+msgid "Entry"
+msgstr "入场"
+
+msgid "Erase name"
+msgstr "擦除昵称"
+
+msgid "Event Ribbon"
+msgstr "事件奖章"
+
+msgid "Everything was dug up!"
+msgstr "挖出了所有东西！"
+
+msgid "Execute search."
+msgstr "执行搜索。"
+
+msgid "Execute sort."
+msgstr "执行排序。"
+
+msgid "Exit"
+msgstr "退出"
+
+msgid "Exit To Desktop"
+msgstr "退出到桌面"
+
+msgid "Exit To Menu"
+msgstr "退出到主菜单"
+
+msgid "Exit from the Box?"
+msgstr "离开这个盒子？"
+
+msgid "Exp. Points"
+msgstr "现在的经验值"
+
+msgid "Expected a section at the beginning of the file. This error may also occur if the file was not saved in UTF-8.\n{1}"
+msgstr "Expected a section at the beginning of the file.  This error may also occur if the file was not saved in UTF-8.\n{1}"
+
+msgid "Export selected to file"
+msgstr "将被选中者导出到文件"
+
+msgid "FANCY Cup"
+msgstr "精巧杯赛"
+
+msgid "FIERCE ATTACK"
+msgstr "猛烈攻击"
+
+msgid "FIFTH"
+msgstr "第五位"
+
+msgid "FIRST"
+msgstr "第一位"
+
+msgid "FLOW"
+msgstr "流动"
+
+msgid "FORMS"
+msgstr "形态"
+
+msgid "FORMS SEEN"
+msgstr "见过的形态"
+
+msgid "FOURTH"
+msgstr "第四位"
+
+msgid "Failed to compile text: {1}"
+msgstr "Failed to compile text:  {1}"
+
+msgid "Failed to connect, the servers may be experiencing problems. Please try again later."
+msgstr "连接失败，服务器也许出了一些问题。请稍后重试。"
+
+msgid "Failed to create the trainer type. Choose a different name."
+msgstr "Failed to create the trainer type.  Choose a different name."
+
+msgid "Failed to delete stored items"
+msgstr "删除存储的道具失败"
+
+msgid "Failed to get Pokemon data, trade aborted."
+msgstr "获取宝可梦数据失败，交换中断。"
+
+msgid "Failed to load data from server!"
+msgstr "无法从服务器读取数据！"
+
+msgid "Fainted"
+msgstr "濒死"
+
+msgid "Fainted Pokémon are considered dead and only one can be caught per route."
+msgstr "濒死的宝可梦视作死亡，每条道路只能收服一只宝可梦。"
+
+msgid "False"
+msgstr "假"
+
+msgid "Faraway place"
+msgstr "遥远的地方"
+
+msgid "Fast"
+msgstr "快"
+
+msgid "Feb."
+msgstr "二月"
+
+msgid "February"
+msgstr "二月"
+
+msgid "Female"
+msgstr "♀"
+
+msgid "Female Shiny"
+msgstr "♀异色"
+
+msgid "Fertilize"
+msgstr "施肥"
+
+msgid "Fight"
+msgstr "战斗"
+
+msgid "Fighting"
+msgstr "格斗"
+
+msgid "Figy Berries"
+msgstr "勿花果"
+
+msgid "File {1}, line {2}\n{3}"
+msgstr "File {1}, line {2}\n{3}\n"
+
+msgid "File {1}, section {2}, key {3}\n{4}"
+msgstr "File {1}, section {2}, key {3}\n{4}\n"
+
+msgid "Fill all fields!"
+msgstr "还有按键未被设置！"
+
+msgid "Finally someone worth battling!"
+msgstr "终于有值得我与之对战的人了！"
+
+msgid "Fire"
+msgstr "火"
+
+msgid "Fire's power was weakened!"
+msgstr "火属性招式的威力减弱了！"
+
+msgid "First move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "First move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "Flying"
+msgstr "飞行"
+
+msgid "Folks, we're back with Round 2!"
+msgstr "诸位，第二轮比赛就要开始了！"
+
+msgid "Font Style"
+msgstr "字体样式"
+
+msgid "Footprint Ribbon"
+msgstr "脚印奖章"
+
+msgid "For a Balanced trainer like you...\\^"
+msgstr "对于像你这样平衡的训练家…\\^"
+
+msgid "For a Defensive trainer like you...\\^"
+msgstr "对于像你这样注重防御的训练家…\\^"
+
+msgid "For an Offensive trainer like you...\\^"
+msgstr "对于像你这样注重进攻的训练家…\\^"
+
+msgid "For some reason this Pokémon can't be caught!"
+msgstr "由于某些原因，无法收服这只宝可梦！"
+
+msgid "For {1}'s {2},\n{3} sends {4}."
+msgstr "作为与{1}的{2}的交换，\n{3}送出了{4}。"
+
+msgid "For {1}'s {2},\n{3} sends {4}."
+msgstr "作为与{1}的{2}的交换，\n{3}送出了{4}。"
+
+msgid "For {1}, the {2} was too bitter!"
+msgstr "对{1}来说，{2}太苦了！"
+
+msgid "For {1}, the {2} was too dry!"
+msgstr "对{1}来说，{2}太涩了！"
+
+msgid "For {1}, the {2} was too sour!"
+msgstr "对{1}来说，{2}太酸了！"
+
+msgid "For {1}, the {2} was too spicy!"
+msgstr "对{1}来说，{2}太辣了！"
+
+msgid "For {1}, the {2} was too sweet!"
+msgstr "对{1}来说，{2}太甜了！"
+
+msgid "Foreign Pokémon\n{1}\n{2}\n{3} ({4})"
+msgstr "他人的宝可梦\n{1}\n（{2}）\n{3} （{4}）"
+
+msgid "Forest"
+msgstr "森林"
+
+msgid "Forget move"
+msgstr "遗忘招式"
+
+msgid "Form"
+msgstr "形态"
+
+msgid "Fourth move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Fourth move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "Frame"
+msgstr "文本框"
+
+msgid "Friday"
+msgstr "星期五"
+
+msgid "Fuse with which Pokémon?"
+msgstr "与哪只宝可梦融合？"
+
+msgid "GLOBAL RANKING:"
+msgstr "全球排名："
+
+msgid "GTS"
+msgstr "ＧＴＳ"
+
+msgid "Game Version: {1}\nServer Version: {2}"
+msgstr "游戏版本：{1}\n服务器版本：{2}"
+
+msgid "Ganlon Berries"
+msgstr "龙睛果"
+
+msgid "Gender"
+msgstr "性别"
+
+msgid "Gender override removed."
+msgstr "性别覆写已被移除。"
+
+msgid "Gender {1} is being forced."
+msgstr "原本的性别强制为{1}。"
+
+msgid "Gender {1} is natural."
+msgstr "原本的性别为{1}。"
+
+msgid "Genderless"
+msgstr "无性别"
+
+msgid "Genderless Shiny"
+msgstr "无性别异色"
+
+msgid "Gentle"
+msgstr "温顺"
+
+msgid "Ghost"
+msgstr "幽灵"
+
+msgid "Give"
+msgstr "携带"
+
+msgid "Give random strain"
+msgstr "给予随机的ｓｔｒａｉｎ值"
+
+msgid "Give to which Pokémon?"
+msgstr "要给那一只宝可梦？"
+
+msgid "Give up trying to teach a new move to {1}?"
+msgstr "要放弃教{1}新招式？"
+
+msgid "Go back to the previous menu."
+msgstr "返回到上一级菜单。"
+
+msgid "Go for it, {1}!"
+msgstr "上吧，{1}！"
+
+msgid "Go! {1} and {2}!"
+msgstr "上吧！{1}和{2}！"
+
+msgid "Go! {1}!"
+msgstr "上吧！{1}！"
+
+msgid "Good endurance."
+msgstr "能吃苦耐劳。"
+
+msgid "Good perseverance."
+msgstr "善于忍耐。"
+
+msgid "Goodness! That was quite a thorough rout.\nI may require some tea and\nbiscuits after this match.\nIf you like, you would be welcome to join me."
+msgstr "天哪！真是完败。\n比赛结束之后我想要些茶和饼干。\n如果你不介意，我愿与你分享。"
+
+msgid "Goodness, you are really quite strong."
+msgstr "诶，你真的好强。"
+
+msgid "Gorgeous Ribbon"
+msgstr "光辉奖章"
+
+msgid "Gorgeous Royal Ribbon"
+msgstr "光辉皇家奖章"
+
+msgid "Got all opponent's cards."
+msgstr "获得了对方的所有的牌。"
+
+msgid "Got away safely!"
+msgstr "成功地逃跑了！"
+
+msgid "Got opponent's {1} card."
+msgstr "获得了对方的{1}张牌。"
+
+msgid "Gotcha! {1} was caught!"
+msgstr "成功了！{1}被收服了！"
+
+msgid "Graphics/Pictures/BATTLE/battleBagChoices"
+msgstr "Graphics/Translations/Simplified Chinese/battleBagChoices_chs"
+
+msgid "Graphics/Pictures/BATTLE/battleBagLast"
+msgstr "Graphics/Translations/Simplified Chinese/battleBagLast_chs"
+
+msgid "Graphics/Pictures/BATTLE/battleItemConfirm"
+msgstr "Graphics/Translations/Simplified Chinese/battleItemConfirm_chs"
+
+msgid "Graphics/Pictures/BATTLE/moveSelButtons"
+msgstr "Graphics/Translations/Simplified Chinese/moveSelButtons_chs"
+
+msgid "Graphics/Pictures/Pokedex/entryicons"
+msgstr "Graphics/Translations/Simplified Chinese/entryicons_chs"
+
+msgid "Graphics/Pictures/Summary/summary1text"
+msgstr "Graphics/Translations/Simplified Chinese/summary1text_chs"
+
+msgid "Graphics/Pictures/Summary/summary2text"
+msgstr "Graphics/Translations/Simplified Chinese/summary2text_chs"
+
+msgid "Graphics/Pictures/Summary/summary3text"
+msgstr "Graphics/Translations/Simplified Chinese/summary3text_chs"
+
+msgid "Graphics/Pictures/Summary/summary4text"
+msgstr "Graphics/Translations/Simplified Chinese/summary4text_chs"
+
+msgid "Graphics/Pictures/battleStatuses"
+msgstr "Graphics/Translations/Simplified Chinese/battleStatuses_chs"
+
+msgid "Graphics/Pictures/boxpartytab"
+msgstr "Graphics/Translations/Simplified Chinese/boxpartytab_chs"
+
+msgid "Graphics/Pictures/boxsides"
+msgstr "Graphics/Translations/Simplified Chinese/boxsides_chs"
+
+msgid "Graphics/Pictures/jukeboxbg"
+msgstr "Graphics/Translations/Simplified Chinese/jukeboxbg_chs"
+
+msgid "Graphics/Pictures/statuses"
+msgstr "Graphics/Translations/Simplified Chinese/statuses_chs"
+
+msgid "Graphics/Pictures/trcard.png"
+msgstr "Graphics/Translations/Simplified Chinese/trcard_chs.png"
+
+msgid "Graphics/Pictures/typesbw"
+msgstr "Graphics/Translations/Simplified Chinese/typesbw_chs"
+
+msgid "Graphics/Titles/Start"
+msgstr "Graphics/Translations/Simplified Chinese/Start_chs"
+
+msgid "Graphics/Titles/custom_pokelogo"
+msgstr "Graphics/Translations/Simplified Chinese/custom_pokelogo_chs"
+
+msgid "Graphics/Titles/custom_pokelogo_shine"
+msgstr "Graphics/Translations/Simplified Chinese/custom_pokelogo_shine_chs"
+
+msgid "Graphics/Titles/pic_4"
+msgstr "Graphics/Translations/Simplified Chinese/pic_4_chs"
+
+msgid "Graphics/Titles/pic_4under"
+msgstr "Graphics/Translations/Simplified Chinese/pic_4under_chs"
+
+msgid "Grass"
+msgstr "草"
+
+msgid "Grass grew to cover the battlefield!"
+msgstr "青草长满了场地！"
+
+msgid "Gravity intensified!"
+msgstr "重力增加了！"
+
+msgid "Gravity returned to normal!"
+msgstr "重力回归正常了！"
+
+msgid "Gray"
+msgstr "灰"
+
+msgid "Green"
+msgstr "绿"
+
+msgid "Grepa Berries"
+msgstr "萄葡果"
+
+msgid "Ground"
+msgstr "地面"
+
+msgid "Guara Berries"
+msgstr "瓜拉果"
+
+msgid "Gyahahaha! I expected nothing less from you! Go on to the next round, then. You deserve it!"
+msgstr "噶哈哈哈！\n真不愧是我看中的人！\n前进吧。这是你应得的！"
+
+msgid "HM moves can't be forgotten now."
+msgstr "现在无法遗忘秘传招式。"
+
+msgid "HP"
+msgstr "ＨＰ"
+
+msgid "HP greater than total HP"
+msgstr "ＨＰ大于最大ＨＰ"
+
+msgid "HP less than 0"
+msgstr "ＨＰ少于０"
+
+msgid "HP/Status"
+msgstr "ＨＰ／状态"
+
+msgid "HT"
+msgstr "高度"
+
+msgid "Haban Berries"
+msgstr "莓榴果"
+
+msgid "Hafli Berries"
+msgstr "哈夫利果"
+
+msgid "Hail continues to fall."
+msgstr "天上持续降下冰雹。"
+
+msgid "Hail is falling."
+msgstr "天上降下了冰雹。"
+
+msgid "Hall of Fame"
+msgstr "名人堂"
+
+msgid "Hall of Fame No."
+msgstr "名人堂 Ｎｏ。"
+
+msgid "Happiness"
+msgstr "亲密度"
+
+msgid "Hardy"
+msgstr "勤奋"
+
+msgid "Has strain {1}, infectious for {2} more days."
+msgstr "ｓｔｒａｉｎ值为{1}，传染期剩余超过{2}天。"
+
+msgid "Has strain {1}, not infectious."
+msgstr "ｓｔｒａｉｎ值为{1}，没有传染性。"
+
+msgid "Hasty"
+msgstr "急躁"
+
+msgid "Hates to lose."
+msgstr "不服输。"
+
+msgid "Heal"
+msgstr "治愈"
+
+msgid "Healing in-battle is disabled by your custom game settings!"
+msgstr "由于你在自定义游戏中的设置，你不能在战斗中回复！"
+
+msgid "Heart"
+msgstr "心金"
+
+msgid "Heart gauge is {1}."
+msgstr "心灵值为{1}。"
+
+msgid "Heavy to Light"
+msgstr "由重到轻"
+
+msgid "Helloooooo ladies, gentlemen,\npeople of Tandor!"
+msgstr "女士们先生们，\n天舵地区的各位，大家好！"
+
+msgid "Here we are! Round 4, the semifinals!"
+msgstr "这里！第四轮比赛，半决赛！"
+
+msgid "Here you are!\nThank you!"
+msgstr "给您！\n感谢惠顾！"
+
+msgid "Hi there, \\PN!\nI wanted to thank you for stopping the Power Plant attacks.\nYou really did a good thing for Bealbeach City, and for all of Tandor!\nEver since I heard about that, I've been itching for a rematch.\nThis time, my team and I are going all-out!\nI hope you'll go all-out, too!"
+msgstr "你好呀，\\PN！\n我想对你阻止了核能厂的攻击表达感谢。\n你对波碧湾市以及\n整个天舵地区做出了很大的贡献！\n自从我听说了这些之后，\n我一直想找机会与你重新对战。\n这一回，我和我的队伍将会使出全力！\n我希望你也能使出你的全力！"
+
+msgid "Hidden Power:\n{1}, power {2}."
+msgstr "觉醒力量：\n{1}，威力 {2}。"
+
+msgid "Highly curious."
+msgstr "好奇心强。"
+
+msgid "Highly persistent."
+msgstr "顽强不屈。"
+
+msgid "Hit {1} time!"
+msgstr "命中{1}次！"
+
+msgid "Hit {1} times!"
+msgstr "命中{1}次！"
+
+msgid "Hiyah! I have honed my skills as a Surfer and a Ninja! We command mastery over the waves!"
+msgstr "嗨呀！\n我作为冲浪者和忍者磨炼自己的技巧！\n我们在浪涛之上随心所欲！"
+
+msgid "Hmm... impressive."
+msgstr "嗯…了不起。"
+
+msgid "Hmph."
+msgstr "哼。"
+
+msgid "Hoenn Beauty Contest Hyper Rank winner!"
+msgstr "丰缘华丽大赛美丽组特级比赛冠军！"
+
+msgid "Hoenn Beauty Contest Master Rank winner!"
+msgstr "丰缘华丽大赛美丽组大师级比赛冠军！"
+
+msgid "Hoenn Beauty Contest Normal Rank winner!"
+msgstr "丰缘华丽大赛美丽组普通级比赛冠军！"
+
+msgid "Hoenn Beauty Contest Super Rank winner!"
+msgstr "丰缘华丽大赛美丽组超级比赛冠军。！"
+
+msgid "Hoenn Cool Contest Hyper Rank winner!"
+msgstr "丰缘华丽大赛帅气组特级比赛冠军！"
+
+msgid "Hoenn Cool Contest Master Rank winner!"
+msgstr "丰缘华丽大赛帅气组大师级比赛冠军！"
+
+msgid "Hoenn Cool Contest Normal Rank winner!"
+msgstr "丰缘华丽大赛帅气组普通级比赛冠军！"
+
+msgid "Hoenn Cool Contest Super Rank winner!"
+msgstr "丰缘华丽大赛帅气组超级比赛冠军！"
+
+msgid "Hoenn Cute Contest Hyper Rank winner!"
+msgstr "丰缘华丽大赛可爱组特级比赛冠军！"
+
+msgid "Hoenn Cute Contest Master Rank winner!"
+msgstr "丰缘华丽大赛可爱组大师级比赛冠军。！"
+
+msgid "Hoenn Cute Contest Normal Rank winner!"
+msgstr "丰缘华丽大赛可爱组普通级比赛冠军。"
+
+msgid "Hoenn Cute Contest Super Rank winner!"
+msgstr "丰缘华丽大赛可爱组超级比赛冠军！"
+
+msgid "Hoenn Smart Contest Hyper Rank winner!"
+msgstr "丰缘华丽大赛聪明组特级比赛冠军！"
+
+msgid "Hoenn Smart Contest Master Rank winner!"
+msgstr "丰缘华丽大赛聪明组大师级比赛冠军！"
+
+msgid "Hoenn Smart Contest Normal Rank winner!"
+msgstr "丰缘华丽大赛聪明组普通级比赛冠军！"
+
+msgid "Hoenn Smart Contest Super Rank winner!"
+msgstr "丰缘华丽大赛聪明组超级比赛冠军！"
+
+msgid "Hoenn Tough Contest Hyper Rank winner!"
+msgstr "丰缘华丽大赛强壮组特级比赛冠军"
+
+msgid "Hoenn Tough Contest Master Rank winner!"
+msgstr "丰缘华丽大赛强壮组大师级比赛冠军！"
+
+msgid "Hoenn Tough Contest Normal Rank winner!"
+msgstr "丰缘华丽大赛强壮组普通级比赛冠军！"
+
+msgid "Hoenn Tough Contest Super Rank winner!"
+msgstr "丰缘华丽大赛强壮组超级比赛冠军！"
+
+msgid "Hold down while walking to run."
+msgstr "长按可以切换跑步状态。"
+
+msgid "Hondew Berries"
+msgstr "哈密果"
+
+msgid "Honored \\PN,\nThere is a stirring in the wind.\nThe Gods murmur in the deep.\nA storm brews on the horizon.\nOur Village will soon be in danger.\nWithout your help, Tsukinami will fall."
+msgstr "凛冽的寒风呼啸\n担忧的神明叮咛\n当暴风雨出现在地平线上时\n危机  将再一次降临\n而只有你\n才能化解月波村的劫难。"
+
+msgid "How many do you want to deposit?"
+msgstr "想要存放多少？"
+
+msgid "How many do you want to withdraw?"
+msgstr "想要取出多少？"
+
+msgid "How many minutes between autosaves? (1-60)"
+msgstr "每次自动保存间隔多少分钟？（１－６０）"
+
+msgid "Huh?"
+msgstr "嗯？"
+
+msgid "Huh?\nThe {1}'s responding!"
+msgstr "嗯？\n{1}有响应了！"
+
+msgid "Huh?\n{1} stopped evolving!"
+msgstr "嗯？\n{1}停止了进化！"
+
+msgid "I alone command the incredible power of Dragons! Fear our unstoppable might!"
+msgstr "我独自指挥着龙的难以置信的力量！\n对我们无法阻挡的力量恐惧吧！"
+
+msgid "I am a fossil revivification expert."
+msgstr "我是一名复活化石的专家。"
+
+msgid "I can feel the anticipation in the air.\nThese trainers have spent their entire lives preparing for this moment!"
+msgstr "我能感受到空气中洋溢着期待。\n这些训练家用他们一生的时间为这一刻作准备！"
+
+msgid "I can feel the tension crackling in the air."
+msgstr "我能感受到空气之中充满了紧张感。"
+
+msgid "I can pay ${1}.\nWould that be OK?"
+msgstr "我会付给您¥{1}。\n这样可以吗？"
+
+msgid "I can pay ${1}. Would that be OK?"
+msgstr "我会付给您¥{1}。这样可以吗？"
+
+msgid "I can tell that they both are itching for another fight!"
+msgstr "我能看出他们都迫不及待地\n想要开始下一场比赛了！"
+
+msgid "I can tell the crowd is loving this! It only gets more intense from here on out, folks!"
+msgstr "我能看出大家的喜爱之情！\n从现在开始的战斗只会愈发激烈，\n诸位！"
+
+msgid "I do say!\nHave we perchance met before?\nI am certain we have.\nYou do leave quite an impression, indeed.\nHowever, allow me to reintroduce myself:\nI am Sr. Goldkorn.\nI represent a refined style of battle.\nA tradition which is sadly going away, it seems... But, I shall prove that refinement still has a place in the arena.\nPlease allow us to have a clean, civil match."
+msgstr "我说！\n我们是否曾经见过一面？\n我记得很清楚。\n你给我留下了很深的印象。\n那么，请允许我重新介绍一下自己：\n我是金科爵士。\n我将优雅贯彻在我的对战当中。\n很不幸，\n这种传统的对战风格正在逐渐被人遗忘…\n但我会证明它还在这竞技场中占有一席之地。\n请允许我们进行一场文明的、有礼仪的对战吧。"
+
+msgid "I have created... life!"
+msgstr "我创造了…生命！"
+
+msgid "I kept the best for last!"
+msgstr "我把重头戏留在了最后！"
+
+msgid "I know I look cute, but you shouldn't underestimate me! I won last year and I'll do it again!"
+msgstr "我知道我看起来很可爱，\n但是请你不要低估我！\n去年我夺得了冠军，今年我也会！"
+
+msgid "I say!"
+msgstr "我就说！"
+
+msgid "I see a great future ahead of you, but are you ready for this?"
+msgstr "我看到了你一片光明的前程，\n但你准备好迎接这个了吗？"
+
+msgid "I see you command your Pokémon with great intelligence and respect. A lesser trainer could not have triumphed against us. I must bow to your superiority."
+msgstr "我看得出你用智慧和尊重指挥着你的宝可梦。\n弱小的训练家是不可能打败你的。\n我必须向你低头。"
+
+msgid "I specialize in the mysterious and mystical Fairy type. Soon, you'll be under our spell."
+msgstr "我钻研深奥而神秘的妖精属性。\n很快，你就会臣服于我们的法术之下。"
+
+msgid "I use only the most perfect mechanical Pokémon. Your puny team won't stand a chance."
+msgstr "我只会用最完美的机械宝可梦。\n你弱小的队伍不会有任何战胜我的希望。"
+
+msgid "I will bring your Pokémon back to life in just a moment."
+msgstr "只需要一段时间，我就能复活这只宝可梦。"
+
+msgid "I'd like to know your name.\nPlease tell me."
+msgstr "请告诉我你的名字。"
+
+msgid "I'll throw in a Premier Ball, too."
+msgstr "作为赠品，您还会获得一个纪念球。"
+
+msgid "I've done it!"
+msgstr "我完成了！"
+
+msgid "IDNo. {1}"
+msgstr "ID No. {1}"
+
+msgid "IDNo.<r>{1}<br>"
+msgstr "ID No.<r>{1}<br>"
+
+msgid "IDNo.{1}"
+msgstr "ID No.{1}"
+
+msgid "INELIGIBLE"
+msgstr "没有资格"
+
+msgid "INFO"
+msgstr "信息"
+
+msgid "Iapapa Berries"
+msgstr "芭亚果"
+
+msgid "Ice"
+msgstr "冰"
+
+msgid "If both trainers are ready, then..."
+msgstr "如果两边的训练家都准备好了，那么…"
+
+msgid "If the mail is removed, the message will be lost. OK?"
+msgstr "如果收回邮件，邮件上的消息将会消失。可以吗？"
+
+msgid "If true, this map is part of the Safari Zone (both indoor and outdoor). Not to be used in the reception desk."
+msgstr "If true, this map is part of the Safari Zone (both indoor and outdoor).  Not to be used in the reception desk."
+
+msgid "If you bring me a Pokémon fossil, I can restore it to life."
+msgstr "如果你把宝可梦的化石带给我，我可以让它获得重生。"
+
+msgid "If you quit now, you will recieve {1} Coin(s). Will you quit?"
+msgstr "如果你现在退出，你将会获得{1}枚硬币。\n要退出吗？"
+
+msgid "If you see one, bring it to me."
+msgstr "如果你看到了一块化石，把它带给我吧。"
+
+msgid "Impetuous and silly."
+msgstr "冒冒失失。"
+
+msgid "Impish"
+msgstr "淘气"
+
+msgid "Import Pokémon Data"
+msgstr "导入宝可梦数据"
+
+msgid "In Bag:<r>{1:d}"
+msgstr "背包里：<r>{1:d}个"
+
+msgid "In the spirit of fairness all online features will be disabled on this save."
+msgstr "为公平起见，本存档中所有的联网功能都将会被禁用。"
+
+msgid "Invalid pocket: {1}"
+msgstr "无效的口袋：{1}"
+
+msgid "Is it OK to throw away {1} {2}(s)?"
+msgstr "确认要扔掉{1}个{2}吗？"
+
+msgid "Is there anything else I can help you with?"
+msgstr "还有其他能够帮到您的事情吗？"
+
+msgid "It appears to move occasionally. It may be close to hatching."
+msgstr "它偶尔会动了。看起来很快就能孵化了。"
+
+msgid "It broke all barriers!"
+msgstr "它打破了一切障碍！"
+
+msgid "It can't be used when you have someone with you."
+msgstr "当有人与你同行的时候，你无法使用它。"
+
+msgid "It can't be used while in the Hazard Suit."
+msgstr "穿着防辐射服时无法使用。"
+
+msgid "It contained {1}."
+msgstr "里面包含着{1}。"
+
+msgid "It created a bizarre area in which Pokémon's held items lose their effects!"
+msgstr "所有宝可梦持有的道具都失效了的不可思议的空间被创造出来了！"
+
+msgid "It created a bizarre area in which the Defense and Sp. Def stats are swapped!"
+msgstr "互换了防御与特防不可思议的空间被创造出来了！"
+
+msgid "It doesn't affect\n{1}..."
+msgstr "对{1}没有效果…"
+
+msgid "It doesn't affect {1}.."
+msgstr "对{1}没有效果…"
+
+msgid "It doesn't affect {1}..."
+msgstr "对{1}没有效果…"
+
+msgid "It had no effect."
+msgstr "没有任何效果。"
+
+msgid "It hurt itself from its confusion!"
+msgstr "因为混乱伤到了自己！"
+
+msgid "It hurt itself in its confusion!"
+msgstr "因为混乱伤到了自己！"
+
+msgid "It is not often that we come down from the peak of Mt. Lanthanite. But, this region deserves a reminder of the power of dragons! You, who have proved yourself in the Five Trials... Have you what it takes to defeat us at our full strength?\nWRRRROOOAAAAARRRR!\nHear our battle cry!"
+msgstr "我们不常从镧斩山的顶峰上下来。\n但是，这片地区值得展现龙的威力！\n你已经在五项试炼中证明了你自己…\n你有实力打败使出全力的我们吗？\n嗷喔喔喔喔喔！\n听下我们的战吼把！"
+
+msgid "It is raining."
+msgstr "正在下着雨。"
+
+msgid "It looks like this Egg will take a long time to hatch."
+msgstr "看起来蛋还需要很长的时间才能够孵化出来。"
+
+msgid "It poisoned {1}!"
+msgstr "{1}中毒了！"
+
+msgid "It reduced the PP of {1}'s {2} by {3}!"
+msgstr "{1}的{2}的ＰＰ被削减了{3}点！"
+
+msgid "It started to hail!"
+msgstr "开始下起了冰雹！"
+
+msgid "It started to rain!"
+msgstr "开始下雨了！"
+
+msgid "It stole {1}'s {2}!"
+msgstr "它偷走了{1}的{2}！"
+
+msgid "It was alerted to {1}'s {2}!"
+msgstr "预知到了{1}的{2}！"
+
+msgid "It was stored in box \"{1}\"."
+msgstr "它被存到了盒子『{1}』里。"
+
+msgid "It was stored in box \"{1}.\""
+msgstr "它被存放于盒子『{1}』中"
+
+msgid "It was too weak to make a substitute!"
+msgstr "由于十分虚弱，不能制造替身！"
+
+msgid "It will forget the song it knows."
+msgstr "它将会遗忘之前所学的声音。"
+
+msgid "It won't have any effect"
+msgstr "没有任何效果"
+
+msgid "It won't have any effect."
+msgstr "不会有任何效果。"
+
+msgid "It's a Slot Machine."
+msgstr "一个自动贩卖机。"
+
+msgid "It's a big boulder, but a Pokémon may be able to push it aside."
+msgstr "一块大岩石，\n也许借助宝可梦的力量可以推动它。"
+
+msgid "It's a dead coral, but a Pokémon may be able to smash it."
+msgstr "一块已经死去的珊瑚，\n也许借助宝可梦的力量可以击碎它。"
+
+msgid "It's a large waterfall. Would you like to climb it?"
+msgstr "瀑布奔流而下。要攀上瀑布吗？"
+
+msgid "It's a one-hit KO!"
+msgstr "一击必杀！"
+
+msgid "It's a rugged rock, but a Pokémon may be able to smash it."
+msgstr "一块坚硬的岩石，\n也许借助宝可梦的力量可以击碎它。"
+
+msgid "It's empty."
+msgstr "空空如也。"
+
+msgid "It's impossible to aim without being focused!"
+msgstr "不集中注意力是无法瞄准的！"
+
+msgid "It's no good! It's impossible to aim when there are two Pokémon!"
+msgstr "不行！对面有两只宝可梦的时候无法对准目标！"
+
+msgid "It's not very effective..."
+msgstr "效果不理想…"
+
+msgid "It's soft, earthy soil."
+msgstr "这里的土壤松软肥沃。"
+
+msgid "It's soft, loamy soil.\nPlant a berry?"
+msgstr "松软的壤土。\n要种下一颗树果吗？"
+
+msgid "It's super effective!"
+msgstr "效果绝佳！"
+
+msgid "It's too dangerous to fly to this location!"
+msgstr "不能飞往那个位置，那里太危险了！"
+
+msgid "Item"
+msgstr "持有物"
+
+msgid "Item Storage"
+msgstr "道具存储"
+
+msgid "Items"
+msgstr "道具"
+
+msgid "Items aren't allowed in Tandor Championship battles."
+msgstr "在天舵宝可梦联盟赛事中禁止使用道具。"
+
+msgid "Items aren't allowed in the Trial of Truth."
+msgstr "在真谛之试炼中禁止使用道具。"
+
+msgid "Items can't be used here."
+msgstr "在这里无法使用道具。"
+
+msgid "Its hyper mode attack hurt {1}!"
+msgstr "它的亢奋模式伤害到了{1}！"
+
+msgid "Jan."
+msgstr "一月"
+
+msgid "January"
+msgstr "一月"
+
+msgid "Jolly"
+msgstr "爽朗"
+
+msgid "Judgment"
+msgstr "裁定"
+
+msgid "Jukebox"
+msgstr "随身听"
+
+msgid "Jul."
+msgstr "六月"
+
+msgid "July"
+msgstr "七月"
+
+msgid "Jump"
+msgstr "跳转"
+
+msgid "Jump to which Box?"
+msgstr "跳转到哪个盒子？"
+
+msgid "Jun."
+msgstr "五月"
+
+msgid "June"
+msgstr "六月"
+
+msgid "Kasib Berries"
+msgstr "佛柑果"
+
+msgid "Kebia Berries"
+msgstr "通通果"
+
+msgid "Kelpsy Berries"
+msgstr "藻根果"
+
+msgid "Kept all cards of your color."
+msgstr "保留了所有你颜色的牌。"
+
+msgid "Key Items"
+msgstr "关键道具"
+
+msgid "Kimono Girl"
+msgstr "艺伎"
+
+msgid "LEARNED"
+msgstr "已习得"
+
+msgid "LIGHT Cup"
+msgstr "轻体重杯赛"
+
+msgid "LITTLE Cup"
+msgstr "低等级杯赛"
+
+msgid "Landed a Pokémon!"
+msgstr "钓上一只宝可梦！"
+
+msgid "Language"
+msgstr "语言 (Language)"
+
+msgid "Lansat Berries"
+msgstr "兰萨果"
+
+msgid "Latest Version = {1} \\wtnp[30]"
+msgstr "最新版本 ＝ {1} \\wtnp[30]"
+
+msgid "Lax"
+msgstr "乐天"
+
+msgid "Lazy made {1} sleep!"
+msgstr "慵懒特性使{1}进入了睡眠！"
+
+msgid "League Champion! Congratulations!"
+msgstr "联盟冠军！恭喜！"
+
+msgid "League champion!\nCongratulations!\\^"
+msgstr "联盟冠军！\n恭喜！\\^"
+
+msgid "Left: {1}"
+msgstr "剩余：{1}"
+
+msgid "Legend Ribbon"
+msgstr "传说奖章"
+
+msgid "Leppa Berries"
+msgstr "苹野果"
+
+msgid "Let me register you."
+msgstr "让我登记上你。"
+
+msgid "Let me tell you a story.\nThere once was a girl who dreamed of being a star in the Opera. ...Oh? You have heard this before? Alas... I was looking forward to my monologue.\nNow, I recall... you are \\PN.\nOn ye of great destiny... have your dreams become reality?\nOr are they still dreams?\nCan you tell the difference?\nCome, let us captivate the audience with our spectacular act!"
+msgstr "我来给你讲个故事吧。\n曾经有一个女孩想成为剧院中的明星。\n…喔？你之前听过这个故事？\n哎…我还期待着我的独白呢。\n刚刚，我想起来了…你是\\PN。\n在伟大的命运中的你…\n你的梦想成真了吗？\n亦或你还只是在梦想着它们呢？\n你能说出它们的区别吗？\n来吧，让我们用我们壮丽的表演迷倒观众吧！"
+
+msgid "Let's enjoy cycling!"
+msgstr "享受骑行的乐趣吧！"
+
+msgid "Let's go!"
+msgstr "让我们开始吧！"
+
+msgid "Let's make this battle one to remember!"
+msgstr "让我们把这场战斗变得印象深刻吧！"
+
+msgid "Let's see how you fare against this final dance move!"
+msgstr "让我们看看你会如何应对这最后的舞步！"
+
+msgid "Level"
+msgstr "等级"
+
+msgid "Level Range"
+msgstr "等级范围"
+
+msgid "Level {1}"
+msgstr "等级{1}"
+
+msgid "Liechi Berries"
+msgstr "枝荔果"
+
+msgid "Light Screen raised the opposing team's Special Defense!"
+msgstr "光墙提高了对方队伍的特防！"
+
+msgid "Light Screen raised your team's Special Defense!"
+msgstr "光墙提高了己方队伍的特防！"
+
+msgid "Light is filtering down from above. A Pokémon may be able to surface here."
+msgstr "有光从上方滤了下来。\n也许借助宝可梦的力量可以浮上水面。"
+
+msgid "Light is filtering down from above. Would you like to surface?"
+msgstr "有光从上方滤了下来。使用冲浪吗？"
+
+msgid "Light to Heavy"
+msgstr "由轻到重"
+
+msgid "Likes to fight."
+msgstr "喜欢打架。"
+
+msgid "Likes to relax."
+msgstr "喜欢悠然自在。"
+
+msgid "Likes to run."
+msgstr "喜欢比谁跑得快。"
+
+msgid "Likes to thrash about."
+msgstr "喜欢胡闹。"
+
+msgid "List by body color.\nSpotted Pokémon only."
+msgstr "依照身体颜色列出。\n仅限发现过的宝可梦。"
+
+msgid "List by the first letter in the name.\nSpotted Pokémon only."
+msgstr "依照名字的首字母列出。\n仅限发现过的宝可梦。"
+
+msgid "List by type.\nOwned Pokémon only."
+msgstr "依照类型列出。\n仅限收服过的宝可梦。"
+
+msgid "Log Off"
+msgstr "登出"
+
+msgid "Lonely"
+msgstr "怕寂寞"
+
+msgid "Look like the innocent flower, but be the serpent under it."
+msgstr "像一朵纯洁的花朵，\n可是在花瓣底下却有一条毒蛇潜伏。"
+
+msgid "Loves to eat."
+msgstr "非常喜欢吃东西。"
+
+msgid "Lower heart gauge"
+msgstr "降低心灵值"
+
+msgid "Lucky Chant shielded the opposing team from critical hits!"
+msgstr "幸运咒语守住了对对方队伍要害的攻击！"
+
+msgid "Lucky Chant shielded your team from critical hits!"
+msgstr "幸运咒语守住了对己方队伍要害的攻击！"
+
+msgid "Lullaby"
+msgstr "摇篮曲"
+
+msgid "Lum Berries"
+msgstr "木子果"
+
+msgid "MONEY:"
+msgstr "金钱："
+
+msgid "MOVE"
+msgstr "招式"
+
+msgid "MOVE ITEMS"
+msgstr "移动道具"
+
+msgid "MOVE POKéMON"
+msgstr "移动宝可梦"
+
+msgid "Machine"
+msgstr "机器"
+
+msgid "Magic Room wore off, and held items' effects returned to normal!"
+msgstr "魔术空间消失了，持有道具的效果回归正常了！"
+
+msgid "Magnificent! A flawless performance!"
+msgstr "蔚为壮观！\n一场完美的表演！"
+
+msgid "Magnitude {1}!"
+msgstr "震级{1}！"
+
+msgid "Mago Berries"
+msgstr "芒芒果"
+
+msgid "Magost Berries"
+msgstr "岳竹果"
+
+msgid "Mail"
+msgstr "邮件"
+
+msgid "Mail must be removed before holding an item."
+msgstr "邮件必须在持有道具前才能收回。"
+
+msgid "Mail was taken from the Pokémon."
+msgstr "邮件从宝可梦身上收回来了。"
+
+msgid "Mail was transferred from the Mailbox."
+msgstr "邮件被迁移到了邮箱。"
+
+msgid "Mailbox"
+msgstr "邮箱"
+
+msgid "Main version is up-to-date however, there MAY be a new minor patch available.\\wtnp[30]"
+msgstr "主要版本已经是最新的了，\n但是也许存在新的次要补丁。\\wtnp[30]"
+
+msgid "Main version is up-to-date however, there is a new minor patch available.\\wtnp[30]"
+msgstr "主要版本已经是最新的了，\n但是存在新的次要补丁。\\wtnp[30]"
+
+msgid "Make MGift"
+msgstr "制作神秘礼物"
+
+msgid "Make Mystery Gift"
+msgstr "制作神秘礼物"
+
+msgid "Make Pokémon"
+msgstr "成为宝可梦"
+
+msgid "Make Shadow"
+msgstr "成为黑暗宝可梦"
+
+msgid "Make egg"
+msgstr "成为蛋"
+
+msgid "Make female"
+msgstr "成为♀"
+
+msgid "Make male"
+msgstr "成为♂"
+
+msgid "Make normal"
+msgstr "成为普通"
+
+msgid "Make not infectious"
+msgstr "使之失去传染性"
+
+msgid "Make player's"
+msgstr "成为玩家的宝可梦"
+
+msgid "Make shiny"
+msgstr "成为异色"
+
+msgid "Male"
+msgstr "♂"
+
+msgid "Male Shiny"
+msgstr "♂异色"
+
+msgid "Map"
+msgstr "地图"
+
+msgid "Map View"
+msgstr "地图视图"
+
+msgid "Map {1} was not found."
+msgstr "没有找到地图{1} 。"
+
+msgid "Mar."
+msgstr "三月"
+
+msgid "March"
+msgstr "三月"
+
+msgid "Mark"
+msgstr "标记"
+
+msgid "Mark your Pokemon."
+msgstr "标记你的宝可梦。"
+
+msgid "Max"
+msgstr "最大"
+
+msgid "Max. HP<r>+{1}\nAttack<r>+{2}\nDefense<r>+{3}\nSp. Atk<r>+{4}\nSp. Def<r>+{5}\nSpeed<r>+{6}"
+msgstr "最大ＨＰ<r>＋{1}\n攻击<r>＋{2}\n防御<r>＋{3}\n特攻<r>＋{4}\n特防<r>＋{5}\n速度<r>＋{6}"
+
+msgid "Max. HP<r>{1}\nAttack<r>{2}\nDefense<r>{3}\nSp. Atk<r>{4}\nSp. Def<r>{5}\nSpeed<r>{6}"
+msgstr "最大ＨＰ<r>{1}\n攻击<r>{2}\n防御<r>{3}\n特攻<r>{4}\n特防<r>{5}\n速度<r>{6}"
+
+msgid "Maximum level must be 0 through 9."
+msgstr "最大等级必须在０到９之间"
+
+msgid "Maximum level shouldn't be less than the minimum level."
+msgstr "最大等级不能少于最小等级。"
+
+msgid "May"
+msgstr "五月"
+
+msgid "Medicine"
+msgstr "药品"
+
+msgid "Mega Ampharos"
+msgstr "超级电龙"
+
+msgid "Mega Arbok"
+msgstr "超级阿柏怪"
+
+msgid "Mega Archilles"
+msgstr "超级巨焰龙"
+
+msgid "Mega Baariette"
+msgstr "超级战魔咩"
+
+msgid "Mega Daikatuna"
+msgstr "超级忍刀金枪"
+
+msgid "Mega Dramsama"
+msgstr "超级舞王鸟"
+
+msgid "Mega Drilgann"
+msgstr "超级超钻鼹鼠"
+
+msgid "Mega Electruxo"
+msgstr "超级游雷马"
+
+msgid "Mega Gengar"
+msgstr "超级耿鬼"
+
+msgid "Mega Gyarados"
+msgstr "超级暴鲤龙"
+
+msgid "Mega Inflagetah"
+msgstr "超级业火豹"
+
+msgid "Mega Kiricorn"
+msgstr "超级独角麟"
+
+msgid "Mega Metalynx"
+msgstr "超级绿甲猫"
+
+msgid "Mega S51-A T"
+msgstr "超级Ｓ５１－Ａ Ｔ"
+
+msgid "Mega Sableye"
+msgstr "超级勾魂眼"
+
+msgid "Mega Syrentide"
+msgstr "超级潮汐海妖"
+
+msgid "Mega Whimsicott"
+msgstr "超级风妖精"
+
+msgid "Mega {1}"
+msgstr "超级{1}"
+
+msgid "Micle Berries"
+msgstr "奇秘果"
+
+msgid "Mid"
+msgstr "普通"
+
+msgid "Mild"
+msgstr "慢吞吞"
+
+msgid "Mind"
+msgstr "心"
+
+msgid "Minimum level must be 0 through 9."
+msgstr "最小等级必须在０到９之间。"
+
+msgid "Mischievous."
+msgstr "喜欢恶作剧。"
+
+msgid "Mist swirled about the battlefield!"
+msgstr "迷雾遍布了场地！"
+
+msgid "Modest"
+msgstr "内敛"
+
+msgid "Monday"
+msgstr "星期一"
+
+msgid "Money:\n<ar>{1}</ar>"
+msgstr "金钱：\n<ar>{1}</ar>"
+
+msgid "Money:\n<r>${1}"
+msgstr "金钱：\n<r>¥{1}"
+
+msgid "Money:\n{1}"
+msgstr "金钱：\n{1}"
+
+msgid "Most of it is illegible, I can only make out a few words."
+msgstr "大部分都已经无法辨识了，\n只能看出少零零散散的词语。"
+
+msgid "Most of the pages are missing. I can't make out anything."
+msgstr "大部分书页都缺失了。\n什么也看不出来。"
+
+msgid "Move"
+msgstr "移动"
+
+msgid "Move Pokémon"
+msgstr "整理宝可梦"
+
+msgid "Move Pokémon stored in Boxes to your party."
+msgstr "将盒子里的宝可梦移动到队伍中。"
+
+msgid "Move Pokémon stored in boxes to your party."
+msgstr "将存储在盒子内的宝可梦移动到队伍中。"
+
+msgid "Move items held by any Pokémon in a Box and your party."
+msgstr "移动盒子中或队伍里宝可梦持有的道具。"
+
+msgid "Move to Bag"
+msgstr "移动到背包里"
+
+msgid "Move to where?"
+msgstr "要移动到哪个位置？"
+
+msgid "Moves"
+msgstr "招式"
+
+msgid "Moves the main character. Also used to scroll through list entries."
+msgstr "用于移动主角，或移动选项框。"
+
+msgid "Music Volume"
+msgstr "音乐音量"
+
+msgid "My Pokémon have saved countless lives on the sea. We're ready for any challenge!"
+msgstr "我的宝可梦们在海上拯救了无数的生命。\n我们已经准备好了迎接任何挑战！"
+
+msgid "My Pokémon's fiery dance moves will ignite the battlefield!"
+msgstr "我宝可梦们炙热的舞步\n将会点燃整个对战场地！"
+
+msgid "Mystery Gift"
+msgstr "神秘礼物"
+
+msgid "NAME: {1}"
+msgstr "姓名：{1}"
+
+msgid "NOT ABLE"
+msgstr "不可以"
+
+msgid "NOT ENTERED"
+msgstr "无法进入"
+
+msgid "NOW RECORDING\nPress ESC to stop recording."
+msgstr "正在录制\n按ＥＳＣ键停止录制。"
+
+msgid "Naive"
+msgstr "天真"
+
+msgid "Name"
+msgstr "名字"
+
+msgid "Name<r>{1}<br>"
+msgstr "名字<r>{1}<br>"
+
+msgid "Nanab Berries"
+msgstr "蕉香果"
+
+msgid "National Champion Ribbon"
+msgstr "国家冠军奖章"
+
+msgid "National Pokédex"
+msgstr "全国图鉴"
+
+msgid "National Ribbon"
+msgstr "国家奖章"
+
+msgid "Nature"
+msgstr "性格"
+
+msgid "Nature {1} is being forced."
+msgstr "原本的性格强制为{1}。"
+
+msgid "Nature {1} is natural."
+msgstr "原本的性格为{1}。"
+
+msgid "Naughty"
+msgstr "顽皮"
+
+msgid "Never share this ID!"
+msgstr "不要告诉别人此ID！"
+
+msgid "New Game"
+msgstr "新游戏"
+
+msgid "Newer"
+msgstr "较新"
+
+msgid "Nickname"
+msgstr "昵称"
+
+msgid "No"
+msgstr "否"
+
+msgid "No Data in PokeData.txt"
+msgstr "PokeData.txt中没有数据。"
+
+msgid "No Entry"
+msgstr "无法入场"
+
+msgid "No Pokemon was found."
+msgstr "没有找到宝可梦。"
+
+msgid "No Trainer with this online ID exists!"
+msgstr "没有此ｏｎｌｉｎｅ ＩＤ的训练家存在！"
+
+msgid "No Virtual Trainer around your level."
+msgstr "你的等级附近没有虚拟训练家。"
+
+msgid "No ability"
+msgstr "无特性"
+
+msgid "No identical hold items."
+msgstr "不能持有相同的道具。"
+
+msgid "No identical nicknames."
+msgstr "不能拥有相同的昵称。"
+
+msgid "No item"
+msgstr "无持有物"
+
+msgid "No items may be used other than what the Pokémon already hold."
+msgstr "不能使用宝可梦所持之外的道具。"
+
+msgid "No matching Pokémon were found."
+msgstr "没有找到匹配的宝可梦。"
+
+msgid "No more than {1} Pokémon may enter."
+msgstr "不多于{1}只宝可梦可以入场。"
+
+msgid "No new gifts are available."
+msgstr "暂时没有新的礼物了。"
+
+msgid "No options have been disabled."
+msgstr "没有规则被禁用。"
+
+msgid "No room to deposit a Pokémon"
+msgstr "没有存入宝可梦的空间了"
+
+msgid "No starting position was set in the map editor."
+msgstr "地图编辑器上没有设置起始位置。"
+
+msgid "No supported recording device was found. Recording is not possible."
+msgstr "没有找到支持的录制设备。无法录制。"
+
+msgid "No surfing here!"
+msgstr "这里无法冲浪！"
+
+msgid "No targets somehow..."
+msgstr "没有目标…"
+
+msgid "No! There's no running from a Nuclear Horde!"
+msgstr "不行！与核难游民的对战不能逃跑！"
+
+msgid "No! There's no running from a Trainer battle!"
+msgstr "不行！与训练家的对战不能逃跑！"
+
+msgid "Nomel Berries"
+msgstr "檬柠果"
+
+msgid "None"
+msgstr "无"
+
+msgid "Nope. Nothing..."
+msgstr "什么也没有发生…"
+
+msgid "Normal"
+msgstr "一般"
+
+msgid "Normal Save"
+msgstr "普通存档"
+
+msgid "Not a Shadow Pokémon."
+msgstr "不是一只黑暗宝可梦。"
+
+msgid "Not an egg"
+msgstr "不是一只蛋"
+
+msgid "Not enough HP..."
+msgstr "没有足够的ＨＰ…"
+
+msgid "Not even a nibble..."
+msgstr "钓鱼竿动都没动…"
+
+msgid "Not... strong enough..."
+msgstr "还不…够强…"
+
+msgid "Note: Please do not tab out of the game window during battles or trades.\\wtnp[100]"
+msgstr "注意：请不要在对战或交换的时候切出游戏窗口。\\wtnp[100]"
+
+msgid "Note: You will NOT be able to change these later!"
+msgstr "注意：你之后不能再改变这些设置！"
+
+msgid "Nov."
+msgstr "十月"
+
+msgid "November"
+msgstr "十一月"
+
+msgid "Number"
+msgstr "数字"
+
+msgid "Nuzlocke"
+msgstr "纳兹洛克（Nuzlocke）"
+
+msgid "OBTAINED<r>{1:d}"
+msgstr "收服了<r>{1:d}种"
+
+msgid "OFF"
+msgstr "关闭"
+
+msgid "OK"
+msgstr "好了"
+
+msgid "ON"
+msgstr "开启"
+
+msgid "OPTIONS"
+msgstr "设置"
+
+msgid "OT"
+msgstr "初训家"
+
+msgid "OT/{1}"
+msgstr "初训家／{1}"
+
+msgid "OTHERS"
+msgstr "其他"
+
+msgid "Oak"
+msgstr "大木博士"
+
+msgid "Occa Berries"
+msgstr "巧可果"
+
+msgid "Oct."
+msgstr "九月"
+
+msgid "October"
+msgstr "十月"
+
+msgid "Of the 32 trainers that entered the arena today, only 8 remain!"
+msgstr "今天有３２位训练家来到了竞技场，\n现在只剩下了８名！"
+
+msgid "Off"
+msgstr "关闭"
+
+msgid "Often dozes off."
+msgstr "经常睡午觉。"
+
+msgid "Often lost in thought."
+msgstr "经常思考。"
+
+msgid "Often scatters things."
+msgstr "经常打瞌睡。"
+
+msgid "Oh no! The Pokémon broke free!"
+msgstr "不好！宝可梦挣脱出来了！"
+
+msgid "Oh!\nA Shadow Pokemon!"
+msgstr "喔！\n一只黑暗宝可梦！"
+
+msgid "Oh! A bite!"
+msgstr "喔！有什么东西咬钩了！"
+
+msgid "Oh! \\PN, it is good to see you again.\nI'll never forget how you rescued me from the clutches of the Seikamater.\nIn my Gym, you dazzled us with your flawless coordinated moves.\nI can see you have gotten far stronger. But so have we!\nCan you keep up with our fast footwork?\nLet our beautiful dance moves set this arena aflame!"
+msgstr "喔！\\PN，能再次见到你真是太好了。\n我永远不会忘记你是如何把我\n从瑟卡梅德的紧缠中救出来的。\n在我的道馆里，\n你完美无瑕的动作令我们叹服。\n我能看出现在的你比那时还要强大不少。\n但我们也是！\n你还能跟上我们矫健的步法吗？\n让我们用优美的舞步让\n整个竞技场激昂起来吧！"
+
+msgid "Oh, marvelous! And in such good condition too."
+msgstr "太惊人了！不仅如此，它还保存得非常完整。"
+
+msgid "Oh, your {1}... It's Hidden Power is {2} type with a base power of {3}."
+msgstr "喔，你的{1}…\n它能释放出{2}属性、{3}威力的觉醒力量。"
+
+msgid "Oh... my... GOSH!!\nCan it be? Is it \\PN?\nI totally remember you!\nIt feels like forever ago that you challenged my gym.\nYou know, I totally went easy on you back then, right?~\nBut here in the arena, I won't hold back at all!\nI didn't win the Championship one time by slacking off, ya know?"
+msgstr "我的天哪！！\n这是真的吗？你是\\PN吧？\n我完全想起来你了！\n感觉你来拜访我的道馆\n已经是很久以前的事情了。\n你知道，那时候我完全手下留情了，对不对？~\n但是在这个竞技场里，\n是不会隐藏我的实力的！\n如果我松懈的话，\n我就不会拿到过联盟冠军了，\n对吧？"
+
+msgid "Old School Poison"
+msgstr "旧世代中毒机制"
+
+msgid "Omigosh! You're totally incredible!~"
+msgstr "天哪！\n你真的非常令人难以置信呢！~"
+
+msgid "On"
+msgstr "开启"
+
+msgid "Once again...\nI am shown defeat.\nHow can I cope with such disgrace?\nTo my home village, I return once again."
+msgstr "又一次…\n我败北了。\n我怎么能再次容忍这种羞辱呢？\n家乡，我要再次回到那里了。"
+
+msgid "One or more fonts used in this game do not exist on the system."
+msgstr "游戏中使用的一个或多个字体\n无法在系统中找到。\n(One or more fonts used in this game do not exist on the system.)"
+
+msgid "One {1} was found, but you have no room for it."
+msgstr "发现了一个{1}，但是背包已经没有空间了。"
+
+msgid "One {1} was obtained.\\se[itemlevel]\\wtnp[30]"
+msgstr "获得了一个{1}。\\se[itemlevel]\\wtnp[30]"
+
+msgid "Only a Shadow Pokémon can go there."
+msgstr "只有黑暗宝可梦能够到这里。"
+
+msgid "Only four trainers remain in the arena. They are Tandor's best and brightest!"
+msgstr "竞技场内只剩下４名训练家了。\n他们代表着天舵最优秀、最辉煌的训练家！"
+
+msgid "Only one or two wild Pokémon are allowed"
+msgstr "只允许一或两只野生的宝可梦"
+
+msgid "Only one wild Pokémon is allowed in single battles"
+msgstr "单打对战中只允许出现一只野生的宝可梦"
+
+msgid "Only two wild Pokémon are allowed in double battles"
+msgstr "双打对战中只允许出现两只野生的宝可梦"
+
+msgid "Ooh, I'm so excited!"
+msgstr "喔喔，真是令人激动！"
+
+msgid "Opponent 1 has no unfainted Pokémon"
+msgstr "对手１没有可以战斗的宝可梦"
+
+msgid "Opponent 2 has no unfainted Pokémon"
+msgstr "对手２没有可以战斗的宝可梦"
+
+msgid "Opponent has an illegal card, \"{1}\"."
+msgstr "对方有一张违规的牌，『{1}』。"
+
+msgid "Opponent won all your cards."
+msgstr "对方赢得了你所有的牌。"
+
+msgid "Opponent won your {1} card."
+msgstr "对方赢得了你的{1}张牌。"
+
+msgid "Options"
+msgstr "设置"
+
+msgid "Or maybe it's just that you're so young, I can't tell.\\^"
+msgstr "或许只是现在的你太年轻了，我实在无法判断。\\^"
+
+msgid "Oran Berries"
+msgstr "橙橙果"
+
+msgid "Orchynx is the best pick!\\wtnp[160]"
+msgstr "罗兰猫是最好的选择！\\wtnp[160]"
+
+msgid "Organize the Pokémon in Boxes and in your party."
+msgstr "管理盒子中与队伍里的宝可梦。"
+
+msgid "Original"
+msgstr "原始"
+
+msgid "Other Save Files"
+msgstr "其他存档文件"
+
+msgid "Our sophisticated strategy will overcome trainers of a lower class."
+msgstr "我们优雅深奥的策略，\n下层的训练家是无法理解的。"
+
+msgid "Owned Pokémon are listed from heaviest to lightest."
+msgstr "将收服的宝可梦由重到轻进行排序。"
+
+msgid "Owned Pokémon are listed from lightest to heaviest."
+msgstr "将收服的宝可梦由轻到重。"
+
+msgid "Owned Pokémon are listed from smallest to tallest."
+msgstr "将收服的宝可梦由低到高。"
+
+msgid "Owned Pokémon are listed from tallest to smallest."
+msgstr "将收服的宝可梦由高到低。"
+
+msgid "Ownership"
+msgstr "主人"
+
+msgid "PA: Ding-dong!"
+msgstr "扬声器：叮－咚！"
+
+msgid "PA: You have no Safari Balls left! Game over!"
+msgstr "扬声器：饵料用光了！游戏结束！"
+
+msgid "PA: Your safari game is over!"
+msgstr "扬声器：狩猎游戏结束了！"
+
+msgid "PKMN FOR SWAP"
+msgstr "交换的宝可梦"
+
+msgid "PLACE"
+msgstr "放下"
+
+msgid "PLAYING BACK..."
+msgstr "正在重放…"
+
+msgid "POKeDEX:"
+msgstr "图鉴："
+
+msgid "POKÉDEX"
+msgstr "宝可梦图鉴"
+
+msgid "POKÉMON"
+msgstr "宝可梦"
+
+msgid "POKÉPOD"
+msgstr "PokéPod"
+
+msgid "POKéMON SWAP"
+msgstr "宝可梦交换"
+
+msgid "POWER"
+msgstr "威力"
+
+msgid "PP was restored."
+msgstr "ＰＰ被恢复了。"
+
+msgid "PRECISE ATTACK"
+msgstr "精准攻击"
+
+msgid "PU-Intro1"
+msgstr "../Translations/Simplified Chinese/PU-Intro1_chs"
+
+msgid "Pamtre Berries"
+msgstr "椰木果"
+
+msgid "Party 1 has more than {1} Pokémon."
+msgstr "队伍１已有多于{1}只宝可梦。"
+
+msgid "Party 1 has no Pokémon."
+msgstr "队伍１没有宝可梦。"
+
+msgid "Party 2 has more than {1} Pokémon."
+msgstr "队伍２已有多于{1}只宝可梦。"
+
+msgid "Party 2 has no Pokémon."
+msgstr "队伍２没有宝可梦。"
+
+msgid "Passho Berries"
+msgstr "千香果"
+
+msgid "Patience and endurance are your biggest assets.\\^"
+msgstr "耐心与毅力是你的最好的品质。\\^"
+
+msgid "Payapa Berries"
+msgstr "福禄果"
+
+msgid "Pecha Berries"
+msgstr "桃桃果"
+
+msgid "Performance Mode"
+msgstr "性能模式"
+
+msgid "Permanently disable the options you unchecked."
+msgstr "永久禁用所选规则。"
+
+msgid "Persim Berries"
+msgstr "柿仔果"
+
+msgid "Personal ID is {1}."
+msgstr "ｐＩＤ（性格值）为{1}。"
+
+msgid "Perspective"
+msgstr "透视"
+
+msgid "Petaya Berries"
+msgstr "龙火果"
+
+msgid "Phew! That was fun!"
+msgstr "唷！真是有趣！"
+
+msgid "Phone"
+msgstr "电话"
+
+msgid "Pick the wallpaper."
+msgstr "挑选一种壁纸。"
+
+msgid "Pika"
+msgstr "皮卡"
+
+msgid "Pinap Berries"
+msgstr "凰梨果"
+
+msgid "Pink"
+msgstr "粉"
+
+msgid "PkMn Trainer"
+msgstr "宝可梦训练家"
+
+msgid "Place"
+msgstr "放下"
+
+msgid "Place the card."
+msgstr "放置这张牌。"
+
+msgid "Plant Berry"
+msgstr "种植蔬果"
+
+msgid "Play Credits"
+msgstr "播放Ｃｒｅｄｉｔｓ"
+
+msgid "Play Voltorb Flip Lv. {1}?"
+msgstr "要玩等级为{1}的电球翻转？"
+
+msgid "Play the game with a custom ruleset for increased difficulty.\nNot recommended for new players."
+msgstr "通过添加额外的规则限制为游戏增加难度。\n不推荐萌新尝试。"
+
+msgid "Player's Pokémon\n{1}\n{2}\n{3} ({4})"
+msgstr "玩家的宝可梦\n{1}\n（{2}）\n{3} （{4}）"
+
+msgid "Player<r><c3={1}>{2}</c3><br>"
+msgstr "玩家<r><c3={1}>{2}</c3><br>"
+
+msgid "Please choose the new settings for your Nuzlocke game."
+msgstr "请为你的纳兹洛克（Nuzlocke）游戏选择新的规则设置。"
+
+msgid "Please come again!"
+msgstr "欢迎下次再来！"
+
+msgid "Please enter a message (max. 256 characters)."
+msgstr "请输入一条信息 （最多２５６字节）。"
+
+msgid "Please enter a message (max. {1} characters)."
+msgstr "请输入一条信息 （最多{1}字节）。"
+
+msgid "Please enter the search criteria."
+msgstr "请输入搜索标准。"
+
+msgid "Please pick up your gift from the deliveryman in any Poké Mart."
+msgstr "你可以到任意友好商店，从送货员那里领取礼物。"
+
+msgid "Please remove the Mail."
+msgstr "请移除邮件。"
+
+msgid "Please remove the mail."
+msgstr "请移除邮件。"
+
+msgid "Please, run the patcher.exe on your game folder."
+msgstr "请运行游戏目录中的ｐａｔｃｈｅｒ。ｅｘｅ。"
+
+msgid "Pointed stones dug into {1}!"
+msgstr "隐形岩扎进了{1}的身体！"
+
+msgid "Pointed stones float in the air around your foe's team!"
+msgstr "对方队伍的周围漂浮着隐形岩！"
+
+msgid "Pointed stones float in the air around your team!"
+msgstr "己方队伍的周围漂浮着隐形岩！"
+
+msgid "Poison"
+msgstr "毒"
+
+msgid "Poison spikes were scattered all around the opposing team's feet!"
+msgstr "对方队伍的脚下布满了毒菱！"
+
+msgid "Poison spikes were scattered all around your team's feet!"
+msgstr "己方队伍的脚下布满了毒菱！"
+
+msgid "PokeData.txt not found."
+msgstr "未找到PokeData.txt。"
+
+msgid "Pokedex/dex_discover"
+msgstr "../../Translations/Simplified Chinese/dex_discover_chs"
+
+msgid "Pokedex/searchdex"
+msgstr "../Translations/Simplified Chinese/searchdex_chs"
+
+msgid "Pokedex/selectdex"
+msgstr "../Translations/Simplified Chinese/selectdex_chs"
+
+msgid "Pokemon"
+msgstr "宝可梦"
+
+msgid "Pokemon Box data is corrupt and can not be automatically recovered."
+msgstr "宝可梦箱子的数据损坏了，无法自动修复。"
+
+msgid "Pokemon Box data was corrupt and has been automatically recovered."
+msgstr "宝可梦箱子的数据之前损坏了，已经自动修复。"
+
+msgid "Pokemon Wanted Data"
+msgstr "想要宝可梦的数据"
+
+msgid "Pokemon You Want"
+msgstr "想要的宝可梦"
+
+msgid "Pokemon data imported."
+msgstr "已导入宝可梦数据"
+
+msgid "Pokemon withdrawn, please be aware that your pokemon may have had been taken by now."
+msgstr "已取回宝可梦，请明白你的宝可梦可能之前已经被取走了。"
+
+msgid "Poké Ball"
+msgstr "精灵球"
+
+msgid "Poké Balls"
+msgstr "精灵球"
+
+msgid "Poké Center"
+msgstr "宝可梦中心"
+
+msgid "Poké Marts are disabled by your custom game settings!"
+msgstr "由于你在自定义游戏中的设置，你不能使用友好商店！"
+
+msgid "Pokédex"
+msgstr "图鉴"
+
+msgid "Pokédex registration completed."
+msgstr "图鉴登记完成。"
+
+msgid "Pokédex:"
+msgstr "图鉴："
+
+msgid "Pokédex<r><c3={1}>{2}/{3}</c3>"
+msgstr "图鉴<r><c3={1}>{2}／{3}</c3>"
+
+msgid "Pokédex<r>{1}/{2}<br>"
+msgstr "图鉴<r>{1}／{2}<br>"
+
+msgid "Pokémon"
+msgstr "宝可梦"
+
+msgid "Pokémon League Champion Ribbon."
+msgstr "宝可梦联盟冠军奖章。"
+
+msgid "Pokémon World Championships National Champion Ribbon."
+msgstr "宝可梦世界锦标赛全国冠军奖章。"
+
+msgid "Pokémon World Championships Regional Champion Ribbon."
+msgstr "宝可梦世界锦标赛地区冠军奖章。"
+
+msgid "Pokémon World Championships World Champion Ribbon."
+msgstr "宝可梦世界锦标赛世界冠军奖章。"
+
+msgid "Pokémon already has mail"
+msgstr "这只宝可梦已经持有邮件了"
+
+msgid "Pokémon are listed according to their number."
+msgstr "宝可梦依据它们的数字大小进行排序。"
+
+msgid "Pokémon can be killed by poison outside of battle as in the first three gens."
+msgstr "宝可梦能因中毒陷入濒死状态，就像前三个世代那样。"
+
+msgid "Pokémon can't be the same."
+msgstr "不能使用相同的宝可梦。"
+
+msgid "Pokémon of a species you already caught don't count as an encounter if you run."
+msgstr "在某个地点遇到的第一种宝可梦如果已经收服过，逃跑后将不视作遇到。"
+
+msgid "Pokérus"
+msgstr "宝可病毒"
+
+msgid "Pomeg Berries"
+msgstr "榴石果"
+
+msgid "Poof!"
+msgstr "空！"
+
+msgid "Position {1},{2} is empty..."
+msgstr "位置{1}，{2}是空的…"
+
+msgid "Position {1},{2} is not empty..."
+msgstr "位置{1}，{2}不是空的…"
+
+msgid "Premier Ribbon"
+msgstr "首席奖章"
+
+msgid "Press a new key."
+msgstr "请按下新的按键。"
+
+msgid "Press to use a registered Key Item."
+msgstr "用于登记关键道具。"
+
+msgid "Prevents Pokémarts from being used."
+msgstr "禁止使用商店。"
+
+msgid "Prevents the player from using healing items in battle."
+msgstr "禁止在战斗中使用回复类道具。"
+
+msgid "Proceed anyway?"
+msgstr "无论如何都要继续？"
+
+msgid "Professor Bamb'o"
+msgstr "斑竹博士"
+
+msgid "Prog--- is ---- --- -- --dename 092. --- ----- --- from radiation-----s biofiber. It ---- -- ---- to reconstru-- --- -- damage-"
+msgstr "实－－０９２号－－－－。\n－－－由－辐射纤－－－－。\n－－有－伤－－自我复－。"
+
+msgid "Proud of its power."
+msgstr "以力气大为傲。"
+
+msgid "Psychic"
+msgstr "超能力"
+
+msgid "Purify Chamber"
+msgstr "净化室"
+
+msgid "Purple"
+msgstr "紫"
+
+msgid "Qualot Berries"
+msgstr "比巴果"
+
+msgid "Quick Guard protected your team!"
+msgstr "快速防守保护了己方队伍！"
+
+msgid "Quick Guard protected {1}!"
+msgstr "快速防守保护了{1}！"
+
+msgid "Quick tempered."
+msgstr "血气方刚。"
+
+msgid "Quick to flee."
+msgstr "逃得快。"
+
+msgid "Quiet"
+msgstr "冷静"
+
+msgid "Quirky"
+msgstr "浮躁"
+
+msgid "Quit"
+msgstr "离开"
+
+msgid "Quit shopping."
+msgstr "从购物中离开。"
+
+msgid "Quit swapping?"
+msgstr "退出交换？"
+
+msgid "RECHOOSE"
+msgstr "重新选择"
+
+msgid "REFEREE: Judging category 1, Mind!\nThe Pokemon showing the most guts!\\wtnp[40]"
+msgstr "裁判：判定标准１，心！\n哪只宝可梦更有胆量！\\wtnp[40]"
+
+msgid "REFEREE: Judging category 2, Skill!\nThe Pokemon using moves the best!\\wtnp[40]"
+msgstr "裁判：判定标准２，技！\n哪只宝可梦更能熟练地运用招式！\\wtnp[40]"
+
+msgid "REFEREE: Judging category 3, Body!\nThe Pokemon with the most vitality!\\wtnp[40]"
+msgstr "裁判：判定标准３，体！\n哪只宝可梦更有元气！\\wtnp[40]"
+
+msgid "REFEREE: Judgment: {1} to {2}!\nThe winner is {3}!\\wtnp[40]"
+msgstr "裁判：判定结果：{1} ｔｏ {2}！\n获胜者是{3}！\\wtnp[40]"
+
+msgid "REFEREE: Judgment: {1} to {2}!\nThe winner is {3}'s {4}!\\wtnp[40]"
+msgstr "裁判：判定结果：{1} ｔｏ {2}！\n获胜者是{3}的{4}！\\wtnp[40]"
+
+msgid "REFEREE: Judgment: {1} to {2}!\nWe have a draw!\\wtnp[40]"
+msgstr "裁判：判定结果：{1} ｔｏ {2}！\n平局了！\\wtnp[40]"
+
+msgid "REFEREE: That's it! We will now go to judging to determine the winner!\\wtnp[20]"
+msgstr "裁判：就是这样！我们现在将会判定哪一方是获胜者！\\wtnp[20]"
+
+msgid "REFEREE: {1} VS {2}!\nCommence battling!\\wtnp[20]"
+msgstr "裁判：{1} ＶＳ {2}！\n开始战斗！\\wtnp[20]"
+
+msgid "RENT"
+msgstr "租用"
+
+msgid "RENTAL"
+msgstr "租借"
+
+msgid "RENTAL POKéMON"
+msgstr "租用宝可梦"
+
+msgid "REPLACE"
+msgstr "替换"
+
+msgid "ROTATE"
+msgstr "旋转"
+
+msgid "Rabuta Berries"
+msgstr "茸丹果"
+
+msgid "Radio"
+msgstr "收音机"
+
+msgid "Rain continues to fall."
+msgstr "雨还在下。"
+
+msgid "Raises trainer's Pokémon levels while keeping the same EXP yields."
+msgstr "提升训练家宝可梦的等级，但获得的经验不变。"
+
+msgid "Random foreign ID"
+msgstr "随机他人ＩＤ"
+
+msgid "Randomise all"
+msgstr "随机所有"
+
+msgid "Randomise pID"
+msgstr "随机ｐＩＤ"
+
+msgid "Randomizer"
+msgstr "随机化"
+
+msgid "Ranked Battle"
+msgstr "排名战"
+
+msgid "Raptorch is the best pick!\\wtnp[160]"
+msgstr "火炬龙是最好的选择！\\wtnp[160]"
+
+msgid "Rash"
+msgstr "马虎"
+
+msgid "Rawst Berries"
+msgstr "莓莓果"
+
+msgid "Razz Berries"
+msgstr "蔓莓果"
+
+msgid "Read"
+msgstr "读"
+
+msgid "Receive"
+msgstr "收取"
+
+msgid "Received the {1} from {2}."
+msgstr "从{2}上收回了{1}。"
+
+msgid "Record Ribbon"
+msgstr "记录奖章"
+
+msgid "Recording failed: {1}"
+msgstr "录制失败：{1}"
+
+msgid "Recording in {1:d} second(s)...\nPress ESC to cancel."
+msgstr "录制将在{1:d}秒后开始…\n按ＥＳＣ键取消。"
+
+msgid "Red"
+msgstr "红"
+
+msgid "Reflect raised the opposing team's Defense!"
+msgstr "反射壁提高了对方队伍的防御！"
+
+msgid "Reflect raised your team's Defense!"
+msgstr "反射壁提高了己方队伍的防御！"
+
+msgid "Regardless...\\. For a Trainer like you...\\^"
+msgstr "无论如何…\\.对于像你这样的训练家…\\^"
+
+msgid "Regional Champion Ribbon"
+msgstr "地区冠军奖章"
+
+msgid "Register"
+msgstr "登记"
+
+msgid "Registered {1} in the Poképod."
+msgstr "将{1}登记在了PokéPod上。"
+
+msgid "Registered<br>"
+msgstr "登记了<br>"
+
+msgid "Regular Mode"
+msgstr "常规模式"
+
+msgid "Relax Ribbon"
+msgstr "放松奖章"
+
+msgid "Relaxed"
+msgstr "悠闲"
+
+msgid "Release"
+msgstr "放生"
+
+msgid "Release All"
+msgstr "放生全部"
+
+msgid "Release this Pokémon?"
+msgstr "放生这只宝可梦？"
+
+msgid "Remap controls to any other keys."
+msgstr "重新映射任意按键到相应的操作上。"
+
+msgid "Remember Save"
+msgstr "记住存档"
+
+msgid "Remove Dependent Events"
+msgstr "移除依赖事件"
+
+msgid "Remove override"
+msgstr "移除强制覆写的性别"
+
+msgid "Removes some details to improve performance, specially in battle."
+msgstr "移除部分细节以改善游戏体验，能显著减少对战时的卡顿。"
+
+msgid "Rename"
+msgstr "设置昵称"
+
+msgid "Repel isn't working in this location!"
+msgstr "离洞绳在这里无法使用！"
+
+msgid "Repel's effect wore off..."
+msgstr "喷雾的效果消失了…"
+
+msgid "Report #01"
+msgstr "报告 #０１"
+
+msgid "Report #01:"
+msgstr "报告 #０１："
+
+msgid "Report #02"
+msgstr "报告 #０２"
+
+msgid "Report #02:"
+msgstr "报告 #０２："
+
+msgid "Report #03"
+msgstr "报告 #０３"
+
+msgid "Report #03:"
+msgstr "报告 #０３："
+
+msgid "Report #04"
+msgstr "报告 #０４"
+
+msgid "Report #04:"
+msgstr "报告 #０４："
+
+msgid "Report #05"
+msgstr "报告 #０５"
+
+msgid "Report #05:"
+msgstr "报告 #０５："
+
+msgid "Reset movelist"
+msgstr "重置招式列表"
+
+msgid "Restore which move?"
+msgstr "恢复哪一个招式？"
+
+msgid "Retro"
+msgstr "复古"
+
+msgid "Return To Game"
+msgstr "回到游戏"
+
+msgid "Return To Menu"
+msgstr "返回菜单"
+
+msgid "Return to game mode selection menu?"
+msgstr "返回游戏模式菜单？"
+
+msgid "Return to previous menu."
+msgstr "回到上一级菜单。"
+
+msgid "Return to the previous menu."
+msgstr "返回上一层菜单。"
+
+msgid "Ribbons"
+msgstr "奖章"
+
+msgid "Rindo Berries"
+msgstr "罗子果"
+
+msgid "River"
+msgstr "河流"
+
+msgid "Rock"
+msgstr "岩石"
+
+msgid "Rocket"
+msgstr "火箭队"
+
+msgid "Rowap Berries"
+msgstr "雾莲果"
+
+msgid "Royal Ribbon"
+msgstr "皇家奖章"
+
+msgid "Run"
+msgstr "逃跑"
+
+msgid "S: Go to another map"
+msgstr "S: Go to another map\n"
+
+msgid "SAVE"
+msgstr "保存"
+
+msgid "SE Volume"
+msgstr "效果音音量"
+
+msgid "SECOND"
+msgstr "第二位"
+
+msgid "SEE YA!"
+msgstr "再见！"
+
+msgid "SEEN<r>{1:d}"
+msgstr "发现了<r>{1:d}种"
+
+msgid "SHINY SEEN"
+msgstr "见过的异色"
+
+msgid "SIXTH"
+msgstr "第六位"
+
+msgid "SKIPPING BATTLE..."
+msgstr "跳过战斗…"
+
+msgid "SPECIAL ATTACK"
+msgstr "特殊攻击"
+
+msgid "STANDARD Cup"
+msgstr "标准杯赛"
+
+msgid "START"
+msgstr "开始"
+
+msgid "STOCK POKéMON:\n{1} Lv{2} MaxHP: {3}\nTHIS POKéMON:\n{4} Lv{5} MaxHP: {6}"
+msgstr "STOCK POKéMON:\n {1} Lv{2} MaxHP: {3}\nTHIS POKéMON:\n {4} Lv{5} MaxHP: {6}"
+
+msgid "STYLE"
+msgstr "样式"
+
+msgid "SUMMARY"
+msgstr "查看能力"
+
+msgid "SWAP"
+msgstr "交换"
+
+msgid "SWITCH"
+msgstr "调换"
+
+msgid "Safari Balls"
+msgstr "狩猎球"
+
+msgid "Safari Balls: {1}"
+msgstr "沙狐球：{1}"
+
+msgid "Salac Berries"
+msgstr "沙鳞果"
+
+msgid "Sassy"
+msgstr "自大"
+
+msgid "Saturday"
+msgstr "星期六"
+
+msgid "Savanna"
+msgstr "草原"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save changes?"
+msgstr "保存修改？"
+
+msgid "Save files from BETA 4.3 and earlier are no longer compatible with Uranium 1.0."
+msgstr "ＢＥＴＡ ４。３以及更早先的存档文件不再与绿铀１。０兼容。"
+
+msgid "Scatters things often."
+msgstr "经常乱扔东西。"
+
+msgid "Score: {1}\nHits: {2}/{3}"
+msgstr "分数：{1} \n击中：{2}／{3}"
+
+msgid "Screen Size"
+msgstr "屏幕尺寸"
+
+msgid "Seafloor"
+msgstr "海底"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Search ID"
+msgstr "搜索ＩＤ"
+
+msgid "Search Mode"
+msgstr "搜索模式"
+
+msgid "Search Name"
+msgstr "搜索名字"
+
+msgid "Search for Pokémon based on selected parameters."
+msgstr "基于已选的参数搜索宝可梦。"
+
+msgid "Search for new Awards (Online)"
+msgstr "搜索新的奖品 （联网）"
+
+msgid "Search with these Conditions!"
+msgstr "按此条件搜索！"
+
+msgid "Searching for a gift.\nPlease wait...\\wtnp[0]"
+msgstr "正在寻找礼物。\n请稍候…\\wtnp[0]"
+
+msgid "Second move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Second move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "See ya!"
+msgstr "再见！"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Select Pokémon to accept."
+msgstr "选择要接受的宝可梦。"
+
+msgid "Select Pokémon to swap."
+msgstr "选择要交换的宝可梦。"
+
+msgid "Select Search Method"
+msgstr "选择搜索模式"
+
+msgid "Select a Species"
+msgstr "选择一个种类"
+
+msgid "Select the Pokédex listing mode."
+msgstr "选择图鉴的列出模式。"
+
+msgid "Select the online ID."
+msgstr "选择ｏｎｌｉｎｅ ＩＤ。"
+
+msgid "Sell"
+msgstr "卖出"
+
+msgid "Send the removed mail to your PC?"
+msgstr "要把移除的邮件送到你的电脑里？"
+
+msgid "Sep."
+msgstr "八月"
+
+msgid "September"
+msgstr "九月"
+
+msgid "Serious"
+msgstr "认真"
+
+msgid "Set"
+msgstr "连战"
+
+msgid "Set Controls"
+msgstr "设置按键操作"
+
+msgid "Set EVs"
+msgstr "设置ＥＶ（基础点数）"
+
+msgid "Set HP"
+msgstr "设置ＨＰ"
+
+msgid "Set IVs"
+msgstr "设置ＩＶ（个体值）"
+
+msgid "Set OT's gender"
+msgstr "设置初训家的性别"
+
+msgid "Set OT's gender."
+msgstr "设置初训家的性别。"
+
+msgid "Set OT's name"
+msgstr "设置初训家的名字"
+
+msgid "Set eggsteps to 1"
+msgstr "设置剩余孵蛋步数为１"
+
+msgid "Set foreign ID"
+msgstr "设置他人ＩＤ"
+
+msgid "Set how often the game will autosave in minutes."
+msgstr "设置自动存档间隔，以分钟为单位。"
+
+msgid "Set the EV for {1} (max. 255)."
+msgstr "设置{1}的基础点数 （最大２５５）。"
+
+msgid "Set the IV for {1} (max. 31)."
+msgstr "设置{1}的个体值 （最大３１）。"
+
+msgid "Set the Pokémon's HP (max. {1})."
+msgstr "设置这只宝可梦的ＨＰ （最大{1}）。"
+
+msgid "Set the Pokémon's form."
+msgstr "设置这只宝可梦的形态。"
+
+msgid "Set the Pokémon's happiness (max. 255)."
+msgstr "设置这只宝可梦的亲密度 （最大２５５）。"
+
+msgid "Set the Pokémon's level (max. {1})."
+msgstr "设置这只宝可梦的等级 （最大{1}）。"
+
+msgid "Set the Pokémon's sleep count."
+msgstr "设置这只宝可梦的睡眠计数。"
+
+msgid "Set the new ID (max. 65535)."
+msgstr "设置新的ＩＤ （最大６５５３５）。"
+
+msgid "Shadow Pokémon"
+msgstr "黑暗宝可梦"
+
+msgid "Shadow Pokémon can't be taught any moves."
+msgstr "不能教黑暗宝可梦任何招式。"
+
+msgid "Shift"
+msgstr "替换"
+
+msgid "Shininess"
+msgstr "异色"
+
+msgid "Shininess ({1}) is being forced."
+msgstr "原本的颜色强制为（{1}）。"
+
+msgid "Shininess ({1}) is natural."
+msgstr "原本为（{1}）。"
+
+msgid "Shiny Clause"
+msgstr "异色条款"
+
+msgid "Shock Ribbon"
+msgstr "震惊奖章"
+
+msgid "Shoot! It was so close, too!"
+msgstr "哎！已经很接近成功了！"
+
+msgid "Short to Tall"
+msgstr "由低到高"
+
+msgid "Should {1} stop learning {2}?"
+msgstr "要{1}停止学习{2}吗？"
+
+msgid "Shuca Berries"
+msgstr "腰木果"
+
+msgid "Simple"
+msgstr "简约"
+
+msgid "Simply stunning!"
+msgstr "真是叹为观止！"
+
+msgid "Sinnoh Champ Ribbon"
+msgstr "神奥冠军奖章"
+
+msgid "Sitrus Berries"
+msgstr "文柚果"
+
+msgid "Skill"
+msgstr "技"
+
+msgid "Skip Intro?"
+msgstr "跳过Ｉｎｔｒｏ？"
+
+msgid "Sky"
+msgstr "天空"
+
+msgid "Slot Machine/bg"
+msgstr "../Translations/Simplified Chinese/bg_chs"
+
+msgid "Slow"
+msgstr "慢"
+
+msgid "Smile Ribbon"
+msgstr "微笑奖章"
+
+msgid "Snooze Ribbon"
+msgstr "小憩奖章"
+
+msgid "Snow"
+msgstr "雪地"
+
+msgid "Some of the fonts were successfully installed."
+msgstr "部分字体已被成功安装。\n(Some of the fonts were successfully installed.)"
+
+msgid "Someone's PC"
+msgstr "某人的电脑"
+
+msgid "Something pinged in the wall!\n{1} confirmed!"
+msgstr "什么东西贴在了墙上！\n确认了{1}个！"
+
+msgid "Somewhat of a clown."
+msgstr "有点容易得意忘形。"
+
+msgid "Somewhat stubborn."
+msgstr "有一点点固执。"
+
+msgid "Somewhat vain."
+msgstr "有一点点爱慕虚荣。"
+
+msgid "Sorry, a new Badge is required."
+msgstr "这个招式需要拥有新的徽章才可以使用。"
+
+msgid "Sorry, but the trainer file could not be created.\nThis may be because you have a banned pokemon or an egg in your party.\n Banned Pokemon Are: {1}."
+msgstr "抱歉，但是无法创建训练师文件。\n这可能是由于你队伍中有被禁用的宝可梦或宝可梦蛋。\n被禁用的宝可梦：{1}。"
+
+msgid "Sorry, but you're stuck with this one."
+msgstr "抱歉，但是现在还不能启用此规则。"
+
+msgid "Soul"
+msgstr "魂银"
+
+msgid "Sounds can be heard coming from inside! It will hatch soon!"
+msgstr "能听到从里面传来的声音！好像快要孵出来了！"
+
+msgid "Souvenir Ribbon"
+msgstr "纪念奖章"
+
+msgid "Sp. Atk."
+msgstr "特攻"
+
+msgid "Sp. Attack"
+msgstr "特攻"
+
+msgid "Sp. Def"
+msgstr "特防"
+
+msgid "Sp. Defense"
+msgstr "特防"
+
+msgid "Special Attack"
+msgstr "特攻"
+
+msgid "Special Defense"
+msgstr "特防"
+
+msgid "Special Ribbon"
+msgstr "特别奖章"
+
+msgid "Species"
+msgstr "物种"
+
+msgid "Specifies the underwater layer of this map. Use only if this map has deep water."
+msgstr "Specifies the underwater layer of this map.  Use only if this map has deep water."
+
+msgid "Speech Frame"
+msgstr "对话框"
+
+msgid "Speech frame {1}."
+msgstr "对话框{1}。"
+
+msgid "Speed"
+msgstr "速度"
+
+msgid "Spelon Berries"
+msgstr "刺角果"
+
+msgid "Spikes were scattered all around the feet of the opposing team!"
+msgstr "对方队伍的脚下布满了尖菱！"
+
+msgid "Spikes were scattered all around the feet of your team!"
+msgstr "己方队伍的脚下布满了尖菱！"
+
+msgid "Splendid!\nYou battle with great finesse and expertise.\nLet us tango together again sometime!"
+msgstr "华丽极了！\n你的对战运用了熟练的策略与技巧。\n来日我们再一起跳探戈吧！"
+
+msgid "Spotted and owned Pokémon are listed alphabetically."
+msgstr "将见到过与收服过的宝可梦按照字母表进行排序。"
+
+msgid "Starf Berries"
+msgstr "星桃果"
+
+msgid "Start Game"
+msgstr "开始游戏"
+
+msgid "Status: Burn"
+msgstr "状态：灼伤"
+
+msgid "Status: Frozen"
+msgstr "状态：冰冻"
+
+msgid "Status: Paralysis"
+msgstr "状态：麻痹"
+
+msgid "Status: Poison"
+msgstr "状态：中毒"
+
+msgid "Status: Sleep"
+msgstr "状态：睡眠"
+
+msgid "Steel"
+msgstr "钢"
+
+msgid "Steps: {1}/{2}\nBalls: {3}"
+msgstr "步数：{1}／{2}\n球：{3}"
+
+msgid "Stop giving the Pokémon Mail?"
+msgstr "要取消发送邮件？"
+
+msgid "Store"
+msgstr "存入"
+
+msgid "Store Pokémon in your party in Boxes."
+msgstr "将队伍中的宝可梦存储到盒子里。"
+
+msgid "Store items in the PC."
+msgstr "将道具存放到电脑内。"
+
+msgid "Strength is already being used."
+msgstr "已经在使用怪力了。"
+
+msgid "Strength made it possible to move boulders around."
+msgstr "怪力使得大岩石可以移动了。"
+
+msgid "Strong willed."
+msgstr "性格强势。"
+
+msgid "Strongly defiant."
+msgstr "争强好胜。"
+
+msgid "Sturdy body."
+msgstr "身体强壮。"
+
+msgid "Summary"
+msgstr "查看能力"
+
+msgid "Sunday"
+msgstr "星期日"
+
+msgid "Super Contest Beauty Category Great Rank winner!"
+msgstr "超级华丽大赛美丽组超级比赛冠军！"
+
+msgid "Super Contest Beauty Category Master Rank winner!"
+msgstr "超级华丽大赛美丽组大师级比赛冠军！"
+
+msgid "Super Contest Beauty Category Normal Rank winner!"
+msgstr "超级华丽大赛美丽组普通级比赛冠军！"
+
+msgid "Super Contest Beauty Category Ultra Rank winner!"
+msgstr "超级华丽大赛美丽组特级比赛冠军！"
+
+msgid "Super Contest Cool Category Great Rank winner!"
+msgstr "超级华丽大赛帅气组超级比赛冠军！"
+
+msgid "Super Contest Cool Category Master Rank winner!"
+msgstr "超级华丽大赛帅气组大师级比赛冠军！！"
+
+msgid "Super Contest Cool Category Normal Rank winner!"
+msgstr "超级华丽大赛帅气组普通级比赛冠军！"
+
+msgid "Super Contest Cool Category Ultra Rank winner!"
+msgstr "超级华丽大赛帅气组特级比赛冠军！"
+
+msgid "Super Contest Cute Category Great Rank winner!"
+msgstr "超级华丽大赛可爱组超级比赛冠军！"
+
+msgid "Super Contest Cute Category Master Rank winner!"
+msgstr "超级华丽大赛可爱组大师级比赛冠军！"
+
+msgid "Super Contest Cute Category Normal Rank winner!"
+msgstr "超级华丽大赛可爱组普通级比赛冠军！"
+
+msgid "Super Contest Cute Category Ultra Rank winner!"
+msgstr "超级华丽大赛可爱组特级比赛冠军！"
+
+msgid "Super Contest Smart Category Great Rank winner!"
+msgstr "超级华丽大赛聪明组超级比赛冠军！"
+
+msgid "Super Contest Smart Category Master Rank winner!"
+msgstr "超级华丽大赛聪明组大师级比赛冠军！"
+
+msgid "Super Contest Smart Category Normal Rank winner!"
+msgstr "超级华丽大赛聪明组普通级比赛冠军！"
+
+msgid "Super Contest Smart Category Ultra Rank winner!"
+msgstr "超级华丽大赛聪明组特级比赛冠军！"
+
+msgid "Super Contest Tough Category Great Rank winner!"
+msgstr "超级华丽大赛强壮组超级比赛冠军！"
+
+msgid "Super Contest Tough Category Master Rank winner!"
+msgstr "超级华丽大赛强壮组大师级比赛冠军！"
+
+msgid "Super Contest Tough Category Normal Rank winner!"
+msgstr "超级华丽大赛强壮组普通级比赛冠军！"
+
+msgid "Super Contest Tough Category Ultra Rank winner!"
+msgstr "超级华丽大赛强壮组特级比赛冠军！"
+
+msgid "Switch"
+msgstr "调换"
+
+msgid "Switch In"
+msgstr "调换"
+
+msgid "Switch Pokédex listings."
+msgstr "切换图鉴列表。"
+
+msgid "Switched the Experience Share {1}."
+msgstr "将学习装置的状态切换至{1}了。"
+
+msgid "TEMPO"
+msgstr "进度"
+
+msgid "THIRD"
+msgstr "第三位"
+
+msgid "TIME:"
+msgstr "时间："
+
+msgid "TMs & HMs"
+msgstr "TM & HM"
+
+msgid "TYPE"
+msgstr "属性"
+
+msgid "Take"
+msgstr "收回"
+
+msgid "Take good care of {1}."
+msgstr "好好照顾{1}。"
+
+msgid "Take out items from the PC."
+msgstr "从电脑中取出道具。"
+
+msgid "Take this {1}?"
+msgstr "取走{1}？"
+
+msgid "Tall to Short"
+msgstr "由高到低"
+
+msgid "Tamato Berries"
+msgstr "茄番果"
+
+msgid "Tandor Pokédex"
+msgstr "天舵图鉴"
+
+msgid "Tanga Berries"
+msgstr "扁樱果"
+
+msgid "Teach move"
+msgstr "博士招式"
+
+msgid "Teach which Pokémon?"
+msgstr "教给哪只宝可梦？"
+
+msgid "Teach which move to {1}?"
+msgstr "要教{1}哪个招式？"
+
+msgid "Teach {1} to a Pokémon?"
+msgstr "要把{1}教给一个宝可梦？"
+
+msgid "Teach {1} to {2}?"
+msgstr "要把{1}教给{2}？"
+
+msgid "Teach {1}?"
+msgstr "要教{1}？"
+
+msgid "Team level: {1}"
+msgstr "队伍等级：{1}"
+
+msgid "Text Speed"
+msgstr "语速"
+
+msgid "Th- MRI ------ anomalous brainwave ------ns. --- specim-n ----- -- inca----e -- indep---ent thoug--. We --- ---ing -- - suppress---."
+msgstr "－－－脑电波－常。\n－验品－－－－丧失意－－才对。\n我们－－－多－－静剂。"
+
+msgid "That Pokémon can't be placed there."
+msgstr "这只宝可梦无法被放置于此处。"
+
+msgid "That won't fertilize the soil!"
+msgstr "它不能用来施肥！"
+
+msgid "That's not Mulch."
+msgstr "这不是护根。"
+
+msgid "That's not a Berry."
+msgstr "这不是树果。"
+
+msgid "That's not the right item."
+msgstr "道具不正确。"
+
+msgid "That's too important to toss out!"
+msgstr "这件道具十分重要，不能被扔掉！"
+
+msgid "That's your last Pokémon!"
+msgstr "这是你持有的最后一只宝可梦！"
+
+msgid "The Bag is full."
+msgstr "背包已经满了。"
+
+msgid "The Bag is full. The Pokémon's item could not be removed."
+msgstr "背包已经满了。无法从宝可梦身上收回道具。"
+
+msgid "The Box is full."
+msgstr "这个盒子已经满了。"
+
+msgid "The Fire-type attack fizzled out in the heavy rain!"
+msgstr "火属性招式在倾盆大雨中熄灭了！"
+
+msgid "The Hall Of Fame!"
+msgstr "名人堂！"
+
+msgid "The Happy Hour started!"
+msgstr "欢乐时光开始了！"
+
+msgid "The Ion Deluge started!"
+msgstr "等离子浴开始了！"
+
+msgid "The Mail was returned to the Bag with its message erased."
+msgstr "擦除了邮件里的消息，并将邮件移动到了背包里。"
+
+msgid "The Pokémon Boxes are full and can't accept any more!"
+msgstr "宝可梦盒子已经满了，无法再容下更多宝可梦了！"
+
+msgid "The Pokémon got away..."
+msgstr "宝可梦跑掉了…"
+
+msgid "The Pokémon was deleted."
+msgstr "这只宝可梦被删除了。"
+
+msgid "The Pokémon was duplicated."
+msgstr "这只宝可梦被复制了。"
+
+msgid "The Power Glove made it possible to move boulders around!"
+msgstr "拳击手套使得移动大岩石成为了可能！"
+
+msgid "The Tailwind blew from behind the opposing team!"
+msgstr "对方队伍身后刮起了顺风！"
+
+msgid "The Tailwind blew from behind your team!"
+msgstr "己方队伍身后刮起了顺风！"
+
+msgid "The Trainer blocked the Ball!\nDon't be a thief!"
+msgstr "球被训练家击飞了！\n拿别人东西的是小偷！"
+
+msgid "The Trainer is close by.\nTalk to the Trainer in person!"
+msgstr "训练家就在附近。\n直接和他说话吧！"
+
+msgid "The Trainer is out of range."
+msgstr "训练家不在范围内。"
+
+msgid "The Water-type attack evaporated in the harsh sunlight!"
+msgstr "水属性招式在猛烈的阳光下蒸发了！"
+
+msgid "The Weakness Policy raised {1}'s Attack!"
+msgstr "弱点保险提高了{1}的攻击！"
+
+msgid "The Weakness Policy raised {1}'s Special Attack!"
+msgstr "弱点保险提高了{1}的特攻！"
+
+msgid "The air is clean again."
+msgstr "空气恢复清新。"
+
+msgid "The air is filled with toxicity."
+msgstr "空气中充满着剧毒。"
+
+msgid "The ally {1}"
+msgstr "同伴的{1}"
+
+msgid "The animation file {1} was not found. The animation will load anyway."
+msgstr "The animation file {1} was not found.  The animation will load anyway."
+
+msgid "The battery has run dry!\nFor it to recharge, you need to walk another {1} steps."
+msgstr "电量已经用光了！\n要为它充电，你还需要走{1}步。"
+
+msgid "The battle will continue until either side has no Pokémon left that can fight."
+msgstr "战斗将会持续，\n直到一方没有可以战斗的宝可梦。"
+
+msgid "The battlers shared their pain!"
+msgstr "均分了彼此的体力！"
+
+msgid "The boxes are full! You can't catch any more Pokémon!"
+msgstr "盒子已经满了！你无法再收服更多的宝可梦了！"
+
+msgid "The bursting flame hit the opposing {2}!"
+msgstr "灼烧的烈焰伤害了对方的{2}！"
+
+msgid "The bursting flame hit {2}!"
+msgstr "灼烧的烈焰伤害了{2}！"
+
+msgid "The combined levels exceed {1:d}."
+msgstr "合计等级超过{1:d}。"
+
+msgid "The darkness of caves is my home. My Pokémon team knows no fear!"
+msgstr "黑暗的洞穴是我的家。\n我的宝可梦们无所畏惧！"
+
+msgid "The duplicated Pokémon was moved to box \"{1}.\""
+msgstr "复制的宝可梦被移动到了盒子『{1}.』"
+
+msgid "The duplicated Pokémon was moved to your party."
+msgstr "复制的宝可梦被移动到了你的队伍中。"
+
+msgid "The effects of Mud Sport have faded."
+msgstr "玩泥巴的效果消失了。"
+
+msgid "The effects of Water Sport have faded."
+msgstr "玩水的效果消失了。"
+
+msgid "The effects of the weather disappeared!"
+msgstr "天气的影响消失了！"
+
+msgid "The effects of the {1} prevent status moves from being used!"
+msgstr "{1}的效果阻止了状态变化招式的使用！"
+
+msgid "The electricity disappeared from the battlefield."
+msgstr "电流从场地上消失了。"
+
+msgid "The foe {1}"
+msgstr "对方的{1}"
+
+msgid "The fonts were successfully installed."
+msgstr "字体已被成功安装。\n(The fonts were successfully installed.)"
+
+msgid "The future is a blank slate.\\. You, together with your Pokémon, are going to fill it. There will be challenges and thrills, and you're bound to make exciting discoveries."
+msgstr "你与你的宝可梦将会一同书写崭新的未来。\n你的旅途将充满着惊喜与挑战，\n而你注定不平凡。"
+
+msgid "The game can be played, but the look of the game's text will not be optimal."
+msgstr "游戏可能无法正常显示文字。\n(The game can be played, but the look of the game's text will not be optimal..)"
+
+msgid "The game cannot continue."
+msgstr "游戏无法继续。"
+
+msgid "The game has detected that the battery is low. You should save soon to avoid losing your progress."
+msgstr "游戏检测到电池电量低。请及时保存以避免丢失游戏进度。"
+
+msgid "The game is a draw."
+msgstr "游戏平局了。"
+
+msgid "The gift has been received!"
+msgstr "你收到了礼物！"
+
+msgid "The grass disappeared from the battlefield."
+msgstr "青草从场地上消失了。"
+
+msgid "The grassy patch remained quiet..."
+msgstr "草地间依旧没有动静…"
+
+msgid "The hail stopped."
+msgstr "冰雹停下来了。"
+
+msgid "The healing wish came true for {1}!"
+msgstr "{1}的治愈之愿成真了！"
+
+msgid "The item number is invalid."
+msgstr "道具数量无效。"
+
+msgid "The mail was sent to your PC."
+msgstr "邮件已经被送到了你的电脑中。"
+
+msgid "The map is corrupt. The game cannot continue."
+msgstr "地图损坏。无法继续游戏。"
+
+msgid "The map was not found. The game cannot continue."
+msgstr "没有找到地图。游戏无法继续。"
+
+msgid "The message will be lost. Is that OK?"
+msgstr "消息将会丢失。可以吗？"
+
+msgid "The mirror move failed!"
+msgstr "镜像的招式失败了！"
+
+msgid "The mist disappeared from the battlefield."
+msgstr "白雾从场地上消失了。"
+
+msgid "The new level ({1}) is less than the Pokémon's\ncurrent level ({2}), which shouldn't happen.\n[Debug: {3}]"
+msgstr "当前等级（{2}）级高于下一等级（{1}），\n这不应该发生…\n［Ｄｅｂｕｇ：{3}］"
+
+msgid "The opponent pierces through your defenses!"
+msgstr "对方穿透了你的防御！"
+
+msgid "The opposing team became cloaked in a mystical veil!"
+msgstr "神秘的幕气吞噬了对方队伍！"
+
+msgid "The opposing team became shrouded in mist!"
+msgstr "对方队伍被白雾所笼罩！"
+
+msgid "The opposing team is no longer protected by Safeguard!"
+msgstr "对方队伍不再受到神秘守护的保护了！"
+
+msgid "The opposing team is no longer protected by mist!"
+msgstr "对方队伍不再受到雾气的保护了！"
+
+msgid "The opposing team is too nervous to eat Berries!"
+msgstr "对方的宝可梦过于紧张，无法食用树果！"
+
+msgid "The opposing team's Light Screen faded!"
+msgstr "对方队伍的光墙消失了！"
+
+msgid "The opposing team's Light Screen wore off!"
+msgstr "对方队伍的光墙消失了！"
+
+msgid "The opposing team's Lucky Chant wore off!"
+msgstr "对方队伍的幸运咒语失效了！"
+
+msgid "The opposing team's Mist faded!"
+msgstr "对方队伍的白雾消失了！"
+
+msgid "The opposing team's Reflect faded!"
+msgstr "对手队伍的反射壁消失了！"
+
+msgid "The opposing team's Reflect wore off!"
+msgstr "对方队伍的反射壁消失了！"
+
+msgid "The opposing team's Tailwind petered out!"
+msgstr "对方队伍的顺风消失了！"
+
+msgid "The opposing {1}"
+msgstr "对方的{1}"
+
+msgid "The options you unchecked can't be turned back on."
+msgstr "未勾选的规则无法再被开启。"
+
+msgid "The phone is not working."
+msgstr "电话不在运作。"
+
+msgid "The plant seemed to be delighted."
+msgstr "植株看起来十分高兴。"
+
+msgid "The player is not on a map, so the region could not be determined."
+msgstr "玩家不在地图上，所以无法检测到所在地区。"
+
+msgid "The pointed stones disappeared from around the opposing team!"
+msgstr "对方队伍脚下的隐形岩消失了！"
+
+msgid "The pointed stones disappeared from around your team!"
+msgstr "己方队伍脚下的隐形岩消失了！"
+
+msgid "The poisoned spikes disappeared from around the opposing team's feet!"
+msgstr "对方队伍脚下的毒菱消失了！"
+
+msgid "The poisoned spikes disappeared from around the your team's feet!"
+msgstr "己方队伍脚下的毒菱消失了！"
+
+msgid "The poisoned spikes disappeared from around your team's feet!"
+msgstr "己方队伍脚下的毒菱消失了！"
+
+msgid "The poisoned spikes disappeared from around {1}'s feet!"
+msgstr "{1}脚下的毒菱消失了！"
+
+msgid "The power of {1}'s Fire-type moves rose!"
+msgstr "{1}的火属性招式的威力提高了！"
+
+msgid "The rain stopped."
+msgstr "雨停了。"
+
+msgid "The rainbow faded."
+msgstr "彩虹消失了。"
+
+msgid "The recorded data could not be found or saved."
+msgstr "录制的数据无法被找到或被保存。"
+
+msgid "The recorded data was in an invalid format."
+msgstr "录制数据格式无效。"
+
+msgid "The recorded data's format is not supported."
+msgstr "录制数据格式不支持。"
+
+msgid "The rules of battle will be as follows:"
+msgstr "战斗将遵从以下规则："
+
+msgid "The sandstorm rages."
+msgstr "沙暴肆虐。"
+
+msgid "The sandstorm subsided."
+msgstr "沙暴减弱了。"
+
+msgid "The save file was deleted."
+msgstr "存档文件被删除了。"
+
+msgid "The saying \"the best defense is a good offense\" is probably your mantra.\\^"
+msgstr "『有效的进攻就是最好的防御』\n很可能就是你信奉的格言。\\^"
+
+msgid "The sea is deep here. A Pokémon may be able to go underwater."
+msgstr "海水很深。\n也许借助宝可梦的力量可以潜入水下。"
+
+msgid "The sea is deep here. Would you like to go underwater?"
+msgstr "海水很深。要潜到海底吗？"
+
+msgid "The sea of fire faded."
+msgstr "火海褪去了。"
+
+msgid "The shadow sky continues."
+msgstr "暗影气象还在继续。"
+
+msgid "The shadow sky faded."
+msgstr "暗影气象褪去了。"
+
+msgid "The soil returned to its soft and earthy state."
+msgstr "土壤回到了松软朴实的状态。"
+
+msgid "The soil returned to its soft and loamy state."
+msgstr "土壤回到了松软而肥沃的状态。"
+
+msgid "The spikes disappeared from around the opposing team's feet!"
+msgstr "对方队伍脚下的尖菱消失了！"
+
+msgid "The spikes disappeared from around your team's feet!"
+msgstr "己方队伍脚下的尖菱消失了！"
+
+msgid "The sticky web has disappeared from beneath the opposing team's feet!"
+msgstr "对方队伍脚下的黏黏网消失了！"
+
+msgid "The sticky web has disappeared from beneath your team's feet!"
+msgstr "己方队伍脚下的黏黏网消失了！"
+
+msgid "The substitute took damage for {1}!"
+msgstr "替身为{1}承受了伤害！"
+
+msgid "The sunlight faded."
+msgstr "阳光渐渐微弱了。"
+
+msgid "The sunlight is strong."
+msgstr "阳光十分强烈。"
+
+msgid "The sunlight turned extremely harsh!"
+msgstr "阳光变得十分强烈！"
+
+msgid "The sunlight turned harsh!"
+msgstr "阳光更强烈了！"
+
+msgid "The swamp faded."
+msgstr "沼泽消失了。"
+
+msgid "The thunderstorm rages."
+msgstr "雷暴正在肆虐。"
+
+msgid "The thunderstorm subsided."
+msgstr "雷暴减弱了。"
+
+msgid "The twisted dimensions returned to normal!"
+msgstr "扭曲的维度回归正常了！"
+
+msgid "The wall collapsed!"
+msgstr "墙坍塌了！"
+
+msgid "The water is dyed a deep blue...\nWould you like to surf?"
+msgstr "水波荡漾…\n要使用冲浪吗？"
+
+msgid "The wild {1}"
+msgstr "野生的{1}"
+
+msgid "The {1} can't be held."
+msgstr "{1}不能被持有。"
+
+msgid "The {1} card? Certainly.\nHow many would you like?"
+msgstr "卡牌{1}？好的。\n您想买多少个？"
+
+msgid "The {1} card? How many would you like to sell?"
+msgstr "卡牌{1}？您想要卖多少张？"
+
+msgid "The {1} card? Oh, no.\nI can't buy that."
+msgstr "卡牌{1}？抱歉。\n我不能买下它。"
+
+msgid "The {1} has sprouted."
+msgstr "{1}发芽了。"
+
+msgid "The {1} only allows the use of {2}!"
+msgstr "{1}只允许用于{2}！"
+
+msgid "The {1} plant is growing bigger."
+msgstr "{1}植株正在生长。"
+
+msgid "The {1} strengthened {2}'s power!"
+msgstr "{1}强化了{2}的威力！"
+
+msgid "The {1} was planted in the soft, earthy soil."
+msgstr "{1}被种在了松软肥沃的土壤上。"
+
+msgid "The {1} was scattered on the soil."
+msgstr "{1}被撒在了土壤上。"
+
+msgid "The {1} was taken and replaced with the {2}."
+msgstr "{1}被收回下来，并换上了{2}。"
+
+msgid "The {1} weakened the damage to {2}!"
+msgstr "{1}削减了{2}受到的伤害！"
+
+msgid "The {1}'s indicating something right underfoot!"
+msgstr "{1}指着脚下的某样东西！"
+
+msgid "The {2} raised {1}'s Attack!"
+msgstr "{2}提高了{1}的攻击！"
+
+msgid "The {2} raised {1}'s Defense!"
+msgstr "{2}提高了{1}的防御！"
+
+msgid "The {2} raised {1}'s Special Attack!"
+msgstr "{2}提高了{1}的特攻！"
+
+msgid "The {2} raised {1}'s Special Defense!"
+msgstr "{2}提高了{1}的特防！"
+
+msgid "Their strength is no joke!"
+msgstr "他们的强大并不是闹着玩的！"
+
+msgid "Theo...\\^"
+msgstr "锡迩…\\^"
+
+msgid "There appears to be nothing here..."
+msgstr "这里看起来什么也没有…"
+
+msgid "There are no cards that you can buy."
+msgstr "这里没有你能购买的牌。"
+
+msgid "There are no items."
+msgstr "里面没有道具。"
+
+msgid "There are no new awards...."
+msgstr "这里没有新的奖品…"
+
+msgid "There are no phone numbers stored."
+msgstr "没有存储任何电话号码。"
+
+msgid "There are {1} {2}!\nWant to pick them?"
+msgstr "这里种有{1}个{2}！\n想要采摘它们吗？"
+
+msgid "There is 1 {1}!\nWant to pick it?"
+msgstr "这里种有１个{1}！\n想要采摘它吗？"
+
+msgid "There is a Pokemon that is ready to open its heart!"
+msgstr "这是一只准备好敞开心扉的宝可梦！"
+
+msgid "There is a gift for you there!"
+msgstr "哪里有有礼物等着你！"
+
+msgid "There is a more recent update available."
+msgstr "有可用更新。"
+
+msgid "There is already a saved file. Is it OK to overwrite it?"
+msgstr "已经有一份存档了，确定要覆写它吗？"
+
+msgid "There is another Pokemon that is ready to open its heart!"
+msgstr "这是另一只准备好敞开心扉的宝可梦！"
+
+msgid "There is no Pokémon."
+msgstr "这里没有宝可梦。"
+
+msgid "There is no room left in the PC!"
+msgstr "电脑里已经没有空间了！"
+
+msgid "There was no sound in the recording. Please ensure that a microphone is attached to the computer and is ready."
+msgstr "录制中没有声音。请确认麦克风是否已就绪。"
+
+msgid "There! All happy!"
+msgstr "真不错！"
+
+msgid "There's a Pokemon that may open the door to its heart!"
+msgstr "这里有一只可以敞开心扉的宝可梦！"
+
+msgid "There's an item buried around here!"
+msgstr "这附近没有埋着道具！"
+
+msgid "There's no Mail here."
+msgstr "里面没有邮件。"
+
+msgid "There's no PP left for this move!"
+msgstr "这个招式已经没有ＰＰ了！"
+
+msgid "There's no Pokémon here..."
+msgstr "这里没有宝可梦…"
+
+msgid "There's no more room for Pokémon!"
+msgstr "没有更多留给宝可梦的空间了！"
+
+msgid "There's no more room in the Bag."
+msgstr "背包里没有空间了。"
+
+msgid "There's no room to store items."
+msgstr "没有空间存放物品了。"
+
+msgid "These are among the toughest of Tandor! The paragons of our region!"
+msgstr "他们都是天舵最强训练家中的一员！\n我们地区的典范！"
+
+msgid "These pokemon can't fight in a sky battle!"
+msgstr "这些宝可梦不能进行天空对战！"
+
+msgid "These trainers' skill in battle will determine that answer!"
+msgstr "训练家之间精彩的对决将会揭晓答案！"
+
+msgid "They can be transferred over and will be deposited in your PC."
+msgstr "它们可以被传送过来并存放在你的电脑里。"
+
+msgid "Third move. Leave all moves blank (use Z key) to give it a wild move set."
+msgstr "Third move.  Leave all moves blank (use Z key) to give it a wild move set."
+
+msgid "This Pokémon can't be chosen."
+msgstr "无法选择这只宝可梦。"
+
+msgid "This Pokémon is holding an item. It can't hold mail."
+msgstr "This Pokémon is holding an item.  It can't hold mail."
+
+msgid "This box is already empty."
+msgstr "这个盒子已经空了。"
+
+msgid "This is in use already."
+msgstr "已经在使用了。"
+
+msgid "This isn't a fossil!"
+msgstr "它不是一块化石！"
+
+msgid "This isn't over yet!"
+msgstr "还没有结束呢！"
+
+msgid "This item can't be used on that Pokemon."
+msgstr "这只宝可梦不能使用这件道具。"
+
+msgid "This item can't be used on that Pokémon."
+msgstr "这只宝可梦不能使用这件道具。"
+
+msgid "This means you've found all the Coins in this game, so the game is now over."
+msgstr "这意味着你已经找到了游戏中的所有硬币，因此游戏现在结束。"
+
+msgid "This old, dead coral looks like it can be broken. Would you like to use Coral Break?"
+msgstr "这块珊瑚历经岁月的洗礼，现在已经死去了。\n要使用珊瑚破碎吗？"
+
+msgid "This option isn't available yet!"
+msgstr "此选项暂时不可用！"
+
+msgid "This pokemon can't fight in a sky battle!"
+msgstr "这只宝可梦不能进行天空对战！"
+
+msgid "This rock appears breakable. Would you like to smash it?"
+msgstr "这块岩石看起来可以击碎。要使用碎岩吗？"
+
+msgid "This save file is corrupt or incompatible with this game."
+msgstr "存档文件损坏，或者与游戏不兼容。"
+
+msgid "This save file is corrupt, but an automatic backup has been found and will be loaded instead."
+msgstr "存档文件损坏，存在自动备份，将会读取备份存档。"
+
+msgid "This team is not allowed."
+msgstr "这支队伍不被允许。"
+
+msgid "This tree looks like it can be cut down!"
+msgstr "这棵树似乎可以被砍掉！"
+
+msgid "This tree looks like it can be cut down."
+msgstr "这棵树看起来可以被砍掉。"
+
+msgid "This {1} is ready to open its heart. However, there must be at least one regular Pokémon in the set to perform a purification ceremony."
+msgstr "{1}已经准备好敞开心扉了。然而，需要设置至少一只普通的宝可梦才可以进行净化仪式。"
+
+msgid "This {1} plant is blooming cutely!"
+msgstr "{1}植株可爱地绽放着！"
+
+msgid "This {1} plant is blooming prettily!"
+msgstr "{1}植株迷人地绽放着！"
+
+msgid "This {1} plant is blooming very beautifully!"
+msgstr "{1}植株十分美丽地绽放着！"
+
+msgid "This {1} plant is in bloom!"
+msgstr "{1}植株正在绽放！"
+
+msgid "This {1} plant is in fabulous bloom!"
+msgstr "{1}植株正在绚烂地绽放！"
+
+msgid "Thoroughly cunning."
+msgstr "做事万无一失。"
+
+msgid "Threw away {1} {2}(s)."
+msgstr "扔掉了{1}个{2}。"
+
+msgid "Throw away items stored in the PC."
+msgstr "把存放在电脑中的道具扔掉。"
+
+msgid "Thursday"
+msgstr "星期四"
+
+msgid "Time:"
+msgstr "时间："
+
+msgid "Time<r><c3={1:s}>{2:02d}:{3:02d}</c3><br>"
+msgstr "时间<r><c3={1:s}>{2:02d}：{3:02d}</c3><br>"
+
+msgid "Time<r>{1:02d}:{2:02d}<br>"
+msgstr "时间<r>{1:02d}：{2:02d}<br>"
+
+msgid "Timid"
+msgstr "胆小"
+
+msgid "To Next Lv."
+msgstr "距离下一等级"
+
+msgid "To install the necessary fonts, copy the files in this game's Fonts folder to the Fonts folder in Control Panel."
+msgstr "若要安装必要字体，请将Fonts\n目录下的文件复制到控制面板中的\n字体(Fonts)文件夹内。\n(To install the necessary fonts, copy the files in this game's Fonts folder to the Fonts folder in Control Panel.)"
+
+msgid "To install the other fonts, copy the files in this game's Fonts folder to the Fonts folder in Control Panel."
+msgstr "若要安装其他字体，请将Fonts\n目录下的文件复制到控制面板中的\n字体(Fonts)文件夹内。\n(To install the other fonts, copy the files in this game's Fonts folder to the Fonts folder in Control Panel.)"
+
+msgid "Toggle on/offline"
+msgstr "切换在线／离线状态"
+
+msgid "Too bad...\nThe bag is full."
+msgstr "残念…\n背包满了。"
+
+msgid "Too bad... The Bag is full..."
+msgstr "糟糕…背包已经满了…"
+
+msgid "Took the {1}."
+msgstr "取走了{1}。"
+
+msgid "Toss"
+msgstr "扔掉"
+
+msgid "Toss\nItem"
+msgstr "扔掉\n道具"
+
+msgid "Toss Item"
+msgstr "丢弃道具"
+
+msgid "Toss out how many {1}(s)?"
+msgstr "想要扔掉多少{1}？"
+
+msgid "Transferring\\wt[8].\\wt[8].\\wt[8].\\wtnp[18]"
+msgstr "传送中\\wt[8].\\wt[8].\\wt[8].\\wtnp[18]"
+
+msgid "Treat this battle as a loss?"
+msgstr "将这场战斗当成失败？"
+
+msgid "Treat this battle as a win?"
+msgstr "将这场战斗当作胜利？"
+
+msgid "Trio"
+msgstr "御三家"
+
+msgid "Tuesday"
+msgstr "星期二"
+
+msgid "Turn Off"
+msgstr "关闭"
+
+msgid "Turned over the {1} and received ${2}."
+msgstr "交出了{1}并获得了¥{2}。"
+
+msgid "Turned over the {1} card and received ${2}."
+msgstr "交出了卡牌{1}并获得了¥{2}。"
+
+msgid "Twitch"
+msgstr "图奇"
+
+msgid "Type"
+msgstr "属性"
+
+msgid "Type %d"
+msgstr "类型%ｄ"
+
+msgid "UPPER"
+msgstr "大写"
+
+msgid "Unknown"
+msgstr "未知"
+
+msgid "Up next:\\wt[20] Round {1}\\wt[25]\n\\PN versus {2}!"
+msgstr "接下来的一场比赛：\\wt[20]第{1}轮\\wt[25]\n\\PN ＶＳ {2}！"
+
+msgid "Updating game maps, you will be sent to the nearest Pokémon Center"
+msgstr "更新游戏地图，你将会被送往最近的宝可梦中心"
+
+msgid "Upon this consecrated ground, I shall invoke the blessings of the sea!"
+msgstr "在这神圣之地，我将为大海的祝福献上祈祷！"
+
+msgid "Use"
+msgstr "使用"
+
+msgid "Use next Pokémon?"
+msgstr "要使用下一只宝可梦吗？"
+
+msgid "Use on which Pokémon?"
+msgstr "对哪只宝可梦使用？"
+
+msgid "Use the patcher.exe in your game folder to check for patches!\\wtnp[40]"
+msgstr "请使用游戏目录下的\nPatcher.exe来检查更新补丁！\\wtnp[40]"
+
+msgid "Used to confirm a choice, check things, and talk to people."
+msgstr "用于确认，检查物品，与他人对话。"
+
+msgid "Used to exit, cancel a choice or mode, and open the pause menu."
+msgstr "用于退出，选择取消，或是打开菜单。"
+
+msgid "Using item..."
+msgstr "使用道具…"
+
+msgid "Using its {1}, the Attack of {2} rose!"
+msgstr "使用了自己的{1}，{2}的攻击提高了"
+
+msgid "Using its {1}, the Defense of {2} rose!"
+msgstr "使用了自己的{1}，{2}的防御提高了"
+
+msgid "Using its {1}, the Special Attack of {2} rose!"
+msgstr "使用了自己的{1}，{2}的特攻提高了"
+
+msgid "Using its {1}, the Special Defense of {2} rose!"
+msgstr "使用了自己的{1}，{2}的特防提高了"
+
+msgid "Using its {1}, the Speed of {2} rose!"
+msgstr "使用了自己的{1}，{2}的速度提高了"
+
+msgid "Using {1}, the Attack of {2} rose sharply!"
+msgstr "使用了{1}，{2}的攻击大幅提高了！"
+
+msgid "Using {1}, the Defense of {2} rose sharply!"
+msgstr "使用了{1}，{2}的防御大幅提高了！"
+
+msgid "Using {1}, the Special Attack of {2} rose sharply!"
+msgstr "使用了{1}，{2}的特攻大幅提高了！"
+
+msgid "Using {1}, the Special Defense of {2} rose sharply!"
+msgstr "使用了{1}，{2}的特防大幅提高了！"
+
+msgid "Using {1}, the Speed of {2} rose sharply!"
+msgstr "使用了{1}，{2}的速度大幅提高了！"
+
+msgid "VT data imported."
+msgstr "已导入虚拟训练家数据"
+
+msgid "VTrainer"
+msgstr "虚拟训练家"
+
+msgid "Version is up-to-date, no update needed! \\wtnp[30]"
+msgstr "已经是最新的版本了，\n不需要更新！\\wtnp[30]"
+
+msgid "Very finicky."
+msgstr "一丝不苟。"
+
+msgid "Virtual Trainer created successfully!"
+msgstr "成功创建虚拟训练家！"
+
+msgid "Virtual Trainer not created."
+msgstr "没有创建虚拟训练家。"
+
+msgid "Volcano"
+msgstr "火山"
+
+msgid "WIN RATE:"
+msgstr "胜率："
+
+msgid "WITHDRAW"
+msgstr "取出"
+
+msgid "WITHDRAW POKéMON"
+msgstr "取出宝可梦"
+
+msgid "WT"
+msgstr "重量"
+
+msgid "Wacan Berries"
+msgstr "烛木果"
+
+msgid "Waiting for a rematch<r>{1}"
+msgstr "等待重赛<r>{1}"
+
+msgid "Wallpaper"
+msgstr "壁纸"
+
+msgid "Want to escape from here and return to {1}?"
+msgstr "想要脱离这里，回到{1}吗？"
+
+msgid "Want to plant a Berry?"
+msgstr "想要种植树果吗？"
+
+msgid "Want to return to the healing spot used last in {1}?"
+msgstr "想要回到上次在{1}去过的回复点吗？"
+
+msgid "Want to sprinkle some water with the {1}?"
+msgstr "你想要为{1}浇一些水吗？"
+
+msgid "Warning: Randomizer Mode greatly affects the balance of the game."
+msgstr "警告：随机化模式将严重影响游戏的平衡性。"
+
+msgid "Water"
+msgstr "水"
+
+msgid "Watmel Berries"
+msgstr "瓜西果"
+
+msgid "We have some of Tandor's best and brightest here to dazzle you with their spectacular battling skills!"
+msgstr "天舵地区的新星与高手齐聚一堂，\n他们将会用华丽壮美的战斗\n带给大家无上的视觉盛宴！"
+
+msgid "We hope you enjoy playing Pokémon Uranium!"
+msgstr "我们希望你能够在绿铀中玩得愉快！"
+
+msgid "We tried our hardest in this battle, and that's what counts."
+msgstr "我们已经尽了全力，这就足够了。"
+
+msgid "We're back with Round 3, the quarterfinals!"
+msgstr "第三轮比赛就要开始了，四分之一决赛！"
+
+msgid "Wednesday"
+msgstr "星期三"
+
+msgid "Welcome to the Hall of Fame!"
+msgstr "欢迎来到名人堂！"
+
+msgid "Welcome to the first round of the\nPokémon League Tournament!"
+msgstr "欢迎来到宝可梦联盟联赛的\n第一轮比赛！"
+
+msgid "Welcome!\nHow may I serve you?"
+msgstr "欢迎！\n我要如何为您服务？"
+
+msgid "Well fought, indeed! You deserved this victory."
+msgstr "真是一场好战斗！\n你赢得实至名归。"
+
+msgid "Well, it has been a while, hasn't it?\nWhen I battled you, you were just a naive child, fumbling around in the dark.\nNow, you face me in the arena with confidence!\nYour fighting spirit is like a bright, shining light!\nI can tell you are no longer afraid.\nGyahahaha!! That's what I like to see!\nShow me your fearlessness in battle!"
+msgstr "嗯，已经过去了一段时间了，\n不是吗？\n那时与我对战的你，\n还是个在黑暗中摸索着的单纯的孩子。\n现在，\n你信心满满地在这竞技场中面对着我\n你的斗志就像一道明亮耀眼的光芒！\n我看得出你的内心不再畏惧。\n噶哈哈哈！！这才是我想要看到的！！\n把你的无畏在战斗中展现给我把！"
+
+msgid "Well, let's not delay... on with the match!"
+msgstr "好，废话不多说…开始比赛吧！"
+
+msgid "Well, you certainly know what you want out of life.\\^"
+msgstr "呃，你肯定知道你渴望着什么样的人生。\\^"
+
+msgid "Wepear Berries"
+msgstr "西梨果"
+
+msgid "What a match!"
+msgstr "真是一场激动人心的比赛！"
+
+msgid "What could be in store for us this round?"
+msgstr "这一轮比赛将会有谁留下来呢？"
+
+msgid "What do you want to do with {1}'s Mail?"
+msgstr "要对{1}的邮件做什么？"
+
+msgid "What do you want to do?"
+msgstr "你想要做些什么？"
+
+msgid "What shall I do with this {1}?"
+msgstr "要对{1}做什么？"
+
+msgid "What will\n{1} do?"
+msgstr "{1}\n要做什么？"
+
+msgid "What will\n{1} throw?"
+msgstr "\n{1}会投掷什么？"
+
+msgid "What will hatch from this? It doesn't seem close to hatching."
+msgstr "它将会孵化出来什么呢？看起来孵化还需要一定的时间。"
+
+msgid "What will {1} do?"
+msgstr "要让{1}做什么？"
+
+msgid "What?\n{1} is evolving!"
+msgstr "什么？\n{1}开始进化了！"
+
+msgid "When the flame touched the powder on the Pokémon, it exploded!"
+msgstr "当火焰接触到了宝可梦身上的粉尘时，爆炸发生了！"
+
+msgid "Which PC should be accessed?"
+msgstr "要访问谁的电脑？"
+
+msgid "Which gender do you want"
+msgstr "想要哪个性别"
+
+msgid "Which move should be forgotten?"
+msgstr "要忘记哪一个招式？"
+
+msgid "Which one will you take?"
+msgstr "你要取走哪一只？"
+
+msgid "Which report should I read?"
+msgstr "要读哪一份报告？"
+
+msgid "White"
+msgstr "白"
+
+msgid "White Tiles: {1}"
+msgstr "白砖：{1}"
+
+msgid "Who are you?\\^"
+msgstr "你是谁？\\^"
+
+msgid "Who will it be?"
+msgstr "那会是谁呢？"
+
+msgid "Wide Guard protected your team!"
+msgstr "广域防守保护了己方队伍！"
+
+msgid "Wide Guard protected {1}!"
+msgstr "广域防守保护了{1}！"
+
+msgid "Wiki Berries"
+msgstr "异奇果"
+
+msgid "Wild Pokémon will be lured."
+msgstr "野生的宝可梦将会更容易遇到了。"
+
+msgid "Wild Pokémon will be repelled."
+msgstr "野生的宝可梦将会更难以遇到了。"
+
+msgid "Wild battles with more than two Pokémon are not allowed."
+msgstr "不允许与超过两只的宝可梦对战。"
+
+msgid "Wild {1} and\n{2} appeared!"
+msgstr "野生的{1}和\n{2}出现了！"
+
+msgid "Wild {1} appeared!"
+msgstr "野生的{1}出现了！"
+
+msgid "Will you switch your Pokémon?"
+msgstr "要替换宝可梦吗？"
+
+msgid "Wishing Ribbon"
+msgstr "希望奖章"
+
+msgid "Withdraw"
+msgstr "取出"
+
+msgid "Withdraw\nItem"
+msgstr "取出\n道具"
+
+msgid "Withdraw Item"
+msgstr "取出道具"
+
+msgid "Withdraw Pokémon"
+msgstr "取出宝可梦"
+
+msgid "Withdrew {1} {2}(s)."
+msgstr "取出了{1}个{2}。"
+
+msgid "Wonder Room wore off, and the Defense and Sp. Def stats returned to normal!"
+msgstr "不可思议的空间消失了，所有的防御与特防回归正常了！"
+
+msgid "Wonder Trade"
+msgstr "奇迹交换"
+
+msgid "Wonder Trade!"
+msgstr "奇迹交换！"
+
+msgid "Woooow! Like, that was a totally sweet battle!~ I guess this just isn't my year to win. But now, you'd better win in my stead, okay?~"
+msgstr "哇喔！真是一场甜蜜的对战！~\n看来今年我是无法夺冠了。\n不过，\n你要代替我取得胜利，好不好？~"
+
+msgid "World Champion Ribbon"
+msgstr "世界冠军奖章"
+
+msgid "World Ribbon"
+msgstr "世界奖章"
+
+msgid "Would you like to cut it?"
+msgstr "你想要砍掉这棵树吗？"
+
+msgid "Would you like to end the Contest now?"
+msgstr "你想要现在结束比赛吗？"
+
+msgid "Would you like to forfeit the match and quit now?"
+msgstr "要现在弃权并离开比赛吗？"
+
+msgid "Would you like to give a nickname to {1}?"
+msgstr "要给{1}起昵称吗？"
+
+msgid "Would you like to leave the Safari Game right now?"
+msgstr "你想现在就离开狩猎地带吗？"
+
+msgid "Would you like to move it?"
+msgstr "要移动它吗？"
+
+msgid "Would you like to nickname the newly hatched {1}?"
+msgstr "想要为刚刚孵出来的{1}取一个昵称吗？"
+
+msgid "Would you like to restart the game and apply the changes?"
+msgstr "想要重新启动游戏以应用改变吗？\n(Would you like to restart the game and apply the changes?)"
+
+msgid "Would you like to save the game?"
+msgstr "要保存游戏吗？"
+
+msgid "Would you like to switch the two items?"
+msgstr "你想要交换这两件道具吗？"
+
+msgid "Wow! That battle was quite a workout, huh?\nI think it's safe to say that you're the stronger among us.\nI'll be cheering you on from here on out!"
+msgstr "哇！这场对战真是激烈呀，哼？\n我觉得我可以很肯定地说\n在我们两人之中你要更强些。\n我会在场外为你加油的！"
+
+msgid "Wow, you look like a really strong trainer...\nUm. I'm Angelica, and I train Fairy types.\nWe're cute, but don't let it fool you:\nwe're really strong too.\nAfter all, Fairies can stand up to the power of dragons. So we aren't afraid of any tough-looking trainers, either. If you aren't acquainted with the power of fairies, then, you'll know soon enough!"
+msgstr "喔，你看上去真的很强呢…\n嗯。我是安杰莉卡，擅长使用妖精属性的宝可梦。\n我们虽然可爱，但是不要小瞧我们：\n我们同样也很强呢。\n毕竟，连龙都奈何不了我们。\n所以我们才不怕那些\n模样凶狠的训练家呢。\n要是你小瞧妖精属性的话，\n就等着吃苦头吧！"
+
+msgid "Yache Berries"
+msgstr "番荔果"
+
+msgid "Yellow"
+msgstr "黄"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "You are banned from using online features! If you think that this is a mistake, please ask for more info on the Discord server or on Reddit."
+msgstr "你不能使用网络功能！如果你认为不应该如此，请前往Ｄｉｓｃｏｒｄ或Ｒｅｄｄｉｔ进行询问。"
+
+msgid "You can catch shiny Pokemon even if they aren't your first encounter."
+msgstr "如果遇到了异色宝可梦，即使不是此地点遇到的第一只宝可梦，也可以收服。"
+
+msgid "You can choose from three different game screen sizes."
+msgstr "选择三种不同的屏幕大小，\n或用全屏进行游戏。"
+
+msgid "You can choose from three different text-scrolling speeds."
+msgstr "选择三种不同的文字滚动速度。"
+
+msgid "You can choose if the game should remember the last save you loaded."
+msgstr "选择是否让游戏记住上次读取的存档。"
+
+msgid "You can choose the style of the game's font."
+msgstr "选择游戏字体的样式，\n中文语言下此项无效。"
+
+msgid "You can choose to switch Pokémon when an opponent's Pokémon faints."
+msgstr "选择在对方的宝可梦倒下时，\n是否可以换宝可梦。"
+
+msgid "You can choose whether to view move animations."
+msgstr "选择是否观看招式动画。"
+
+msgid "You can receive even more Coins in the next game!"
+msgstr "你在下一场游戏中能够得到更多硬币！"
+
+msgid "You can set the game's SFX volume."
+msgstr "设置游戏的效果音音量。"
+
+msgid "You can set the game's frames per second."
+msgstr "设置游戏的最大帧数。"
+
+msgid "You can set the game's language."
+msgstr "设置游戏语言。"
+
+msgid "You can set the game's music volume."
+msgstr "设置游戏的音乐音量。"
+
+msgid "You can use the patcher.exe in your game folder to update! \\wtnp[40]"
+msgstr "你可以通过游戏目录里的\nPatcher.exe来进行更新！\\wtnp[40]"
+
+msgid "You can't dismount your Bike here."
+msgstr "你不能在这里下车。"
+
+msgid "You can't play unless you have a Coin Case."
+msgstr "你没有代币盒，因此无法玩这个游戏。"
+
+msgid "You can't release an Egg."
+msgstr "你不能放生一只蛋。"
+
+msgid "You can't release eggs."
+msgstr "蛋不能被放生。"
+
+msgid "You can't switch {1}'s Pokémon with one of yours!"
+msgstr "不能把{1}的宝可梦换成自己的宝可梦！"
+
+msgid "You cannot search by your own online ID!"
+msgstr "你不能搜索自己的ｎｌｉｎｅ ＩＤ！"
+
+msgid "You cannot trade this Pokemon!"
+msgstr "你不能交易这只宝可梦！"
+
+msgid "You cross blades with the opponent!"
+msgstr "你与对方相交手！"
+
+msgid "You don't have any Coins to play!"
+msgstr "你没有任何硬币来玩它！"
+
+msgid "You don't have any eligible pokemon for a sky battle"
+msgstr "你没有有资格参加天空对战的宝可梦"
+
+msgid "You don't have any other save files"
+msgstr "不存在其他的存档文件。"
+
+msgid "You don't have enough berries."
+msgstr "您的树果还不够多。"
+
+msgid "You don't have enough cards."
+msgstr "你没有足够的牌。"
+
+msgid "You don't have enough money."
+msgstr "您没有足够的金钱了。"
+
+msgid "You evade the opponent's attack!"
+msgstr "你避开了对方的攻击！"
+
+msgid "You fail to block the opponent's attack!"
+msgstr "你没能阻挡住对方的攻击！"
+
+msgid "You got ${1}"
+msgstr "你获得了¥{1}"
+
+msgid "You have a burning spirit within you that never ceases!\\^"
+msgstr "在你的心中燃烧着不灭的热血精神！\\^"
+
+msgid "You have a great future ahead, but what about now?"
+msgstr "你的前程一片光明，不过现在会如何呢？"
+
+msgid "You have completed {1}!"
+msgstr "你完成了{1}！"
+
+msgid "You have no Pokemon that can be purified."
+msgstr "你没有能够净化的宝可梦。"
+
+msgid "You have no cards."
+msgstr "你没有任何牌。"
+
+msgid "You have no more room in the Bag."
+msgstr "背包已经满了。"
+
+msgid "You have no room for more cards."
+msgstr "已经没有空间放更多的牌了。"
+
+msgid "You have no usable items in this pocket."
+msgstr "这个口袋里没有可以使用的道具。"
+
+msgid "You have received a mystery award! Search to find what has been unlocked!"
+msgstr "你获得了一个神秘的奖品！去搜索看看解锁了什么吧！"
+
+msgid "You haven't found any Coins! Are you sure you want to quit?"
+msgstr "你还没有找到任何硬币！真的要退出吗？"
+
+msgid "You hit each other!"
+msgstr "你伤害到了双方！"
+
+msgid "You know that the best things in life come to those who wait.\\^"
+msgstr "你认为『苍天不负有心人』，\n所以总是能够等待到最佳的时机。\\^"
+
+msgid "You must choose a move!"
+msgstr "必须选择一个招式！"
+
+msgid "You must choose at least one rule to play a custom game."
+msgstr "要进行自定义游戏，请至少选择一项规则。"
+
+msgid "You must enable Nuzlocke to select this."
+msgstr "必须启用纳兹洛克（Nuzlocke）才能开启此规则。"
+
+msgid "You need an internet connection to use the GTS, WT and VT"
+msgstr "需要网络连接才能使用ＧＴＳ、奇迹交换及虚拟训练家"
+
+msgid "You picked the {1} {2}.\\wtnp[30]"
+msgstr "你收获了{1}个{2}。\\wtnp[30]"
+
+msgid "You picked the {1}.\\wtnp[30]"
+msgstr "你收获了一个{1}。\\wtnp[30]"
+
+msgid "You pierce through the opponent's defenses!"
+msgstr "你穿透了对方的防御！"
+
+msgid "You prefer to adapt to overcome challenges in your path.\\^"
+msgstr "你倾向于通过改变自身来克服一路上的艰难险阻。\\^"
+
+msgid "You prefer to overwhelm your opponents with sheer force and firepower.\\^"
+msgstr "你更喜欢用纯粹的力量与\n大火力的攻击压倒对手。\\^"
+
+msgid "You seem to be a Trainer who likes to play it safe.\\^"
+msgstr "你看起来是一名沉着稳重的训练家，\n习惯谨慎行事。\\^"
+
+msgid "You seem to be a trainer that is capable of many different strategies.\\^"
+msgstr "你看起来是一名能够掌握各种策略的训练家。\\^"
+
+msgid "You seem to be a trainer who won't hesitate to go for what you want.\\^"
+msgstr "你看起来是一名斗志昂扬的训练家，做事果断，\n会毫不犹豫地追寻自己想要的东西。\\^"
+
+msgid "You study each other's movements..."
+msgstr "你研究了双方的行动…"
+
+msgid "You used your last {1}."
+msgstr "你用掉了你最后的{1}。"
+
+msgid "You're already surfing."
+msgstr "你已经在使用冲浪了。"
+
+msgid "You're holding a Pokémon!"
+msgstr "你还没有放下宝可梦！"
+
+msgid "You're impulsive, impatient, and care mostly about your own desires.\\^"
+msgstr "你不仅非常浮躁，缺乏耐心，\n并且几乎只想满足自己的欲望。\\^"
+
+msgid "You've found all of the hidden x2 and x3 cards."
+msgstr "你已经找到了所有隐藏的ｘ２与ｘ３卡片。"
+
+msgid "You've got 99,999 Coins."
+msgstr "你已经有９９，９９９枚硬币了。"
+
+msgid "You've run out of Coins.\nGame over!"
+msgstr "你已经用尽硬币了。\n游戏结束！"
+
+msgid "Your Coin Case has been filled."
+msgstr "你的代币盒已经满了。"
+
+msgid "Your Coin Case is full!"
+msgstr "你的代币盒已经满了！"
+
+msgid "Your PC's Mailbox is full."
+msgstr "你的电脑邮箱已经满了。"
+
+msgid "Your Pokémon were healed."
+msgstr "你的宝可梦得到了恢复。"
+
+msgid "Your Pokémon will be waiting for you in the Pokémon Storage System."
+msgstr "你的宝可梦将会在宝可梦寄放系统中等着你。"
+
+msgid "Your attack was evaded!"
+msgstr "你的攻击被避开了！"
+
+msgid "Your attack was not blocked!"
+msgstr "你的攻击没能被阻挡住！"
+
+msgid "Your battle link ID:"
+msgstr "你的战斗链接ID："
+
+msgid "Your calm, rational approach will come to aid you in the future.\\^"
+msgstr "你冷静，理性的思维方式能在以后帮助到你。\\^"
+
+msgid "Your coins"
+msgstr "你的硬币"
+
+msgid "Your foe's weak!\nGet 'em, {1}!"
+msgstr "对手已经很弱了！\n轮到你出场了，{1}！"
+
+msgid "Your game is out-of-date!\nUpdate required. \\wtnp[30]"
+msgstr "游戏版本过时！\n需要更新。\\wtnp[30]"
+
+msgid "Your journey --- your story --- is about to unfold."
+msgstr "你的旅程 －－－ 你的故事 －－－ 就要开始了。"
+
+msgid "Your name is {1}?"
+msgstr "你是叫{1}吗？"
+
+msgid "Your name?"
+msgstr "你的名字是？"
+
+msgid "Your old Nuzlocke savefile needs to be converted to the new system."
+msgstr "旧的纳兹洛克（Nuzlocke）存档需要转换。"
+
+msgid "Your party Pokémon and any in the Daycare will be deposited, too."
+msgstr "你队伍中的宝可梦与培养屋里的宝可梦同样会被传送。"
+
+msgid "Your party is full!"
+msgstr "你的队伍已经满了！"
+
+msgid "Your party is full! You can't unfuse {1}."
+msgstr "你的队伍已经满了！你不能分离{1}。"
+
+msgid "Your party's full!"
+msgstr "你的队伍已经满了！"
+
+msgid "Your philosophy is probably to just \"go with the flow\".\\^"
+msgstr "你的处世之道也许只是『顺其自然』。\\^"
+
+msgid "Your special attacks collide!"
+msgstr "你的特殊攻击相抵了！"
+
+msgid "Your starter as well as all wild and trainer Pokémon will be randomized."
+msgstr "将初始宝可梦、野生宝可梦与训练师的宝可梦随机化。"
+
+msgid "Your team became cloaked in a mystical veil!"
+msgstr "神秘的幕气吞噬了己方队伍！"
+
+msgid "Your team became shrouded in mist!"
+msgstr "己方队伍被白雾所笼罩！"
+
+msgid "Your team is no longer protected by Safeguard!"
+msgstr "己方队伍不再受到神秘守护的保护了！"
+
+msgid "Your team is no longer protected by mist!"
+msgstr "己方队伍不再受到雾气的保护了！"
+
+msgid "Your team is too nervous to eat Berries!"
+msgstr "你的宝可梦过于紧张，无法食用树果！"
+
+msgid "Your team's Light Screen faded!"
+msgstr "己方队伍的光墙消失了！"
+
+msgid "Your team's Light Screen wore off!"
+msgstr "己方队伍的光墙消失了！"
+
+msgid "Your team's Lucky Chant wore off!"
+msgstr "己方队伍的幸运咒语失效了！"
+
+msgid "Your team's Mist faded!"
+msgstr "己方队伍的白雾消失了！"
+
+msgid "Your team's Reflect faded!"
+msgstr "己方队伍的反射壁消失了！"
+
+msgid "Your team's Reflect wore off!"
+msgstr "己方队伍的反射壁消失了！"
+
+msgid "Your team's Tailwind petered out!"
+msgstr "己方队伍的顺风消失了！"
+
+msgid "Your {1} in the Purify Chamber is ready for purification!"
+msgstr "你的{1}已经在净化室准备好净化了！"
+
+msgid "[Custom]"
+msgstr "［自定义］"
+
+msgid "\\PN, are you ready?"
+msgstr "\\PN，你准备好了吗？"
+
+msgid "\\c[7]ENGAGEMENT FAILED.\\wt[16]\nA POWER CELL IS NEEDED."
+msgstr "\\c[7]怪力模式启动失败。\\wt[16]\n需要电池。"
+
+msgid "\\c[7]ENGAGEMENT SUCCESSFUL."
+msgstr "\\c[7]怪力模式开启成功。"
+
+msgid "\\c[7]OBSTACLE DETECTED.\\wt[20]\nENGAGING STRENGTH PROTOCOL\\wt[8].\\wt[8].\\wt[8].\\wt[8]"
+msgstr "\\c[7]检测到障碍。\\wt[20]\n怪力模式启动\\wt[8].\\wt[8].\\wt[8].\\wt[8]"
+
+msgid "\\me[Jingle - HMTM]Obtained \\c[1]{1}\\c[0]!\nIt contained \\c[1]{2}\\c[0].\\wtnp[55]"
+msgstr "\\me[Jingle - HMTM]获得了\\c[1]{1}\\c[0]！\n里面包含着\\c[1]{2}\\c[0]。\\wtnp[55]"
+
+msgid "\\me[Jingle - HMTM]{1} found \\c[1]{2}\\c[0]!\nIt contained \\c[1]{3}\\c[0].\\wtnp[55]"
+msgstr "\\me[Jingle - HMTM]{1}发现了\\c[1]{2}\\c[0]！\n里面包含着\\c[1]{3}\\c[0]。\\wtnp[55]"
+
+msgid "\\me[Jingle - Regular Item]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]获得了\\c[1]{1}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]Obtained \\c[1]{1}s\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]获得了一些\\c[1]{1}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]Obtained some \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]获得了一些\\c[1]{1}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found one \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}发现了一件\\c[1]{2}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found some \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}发现了一些\\c[1]{2}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}发现了{2}个\\c[1]{3}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Jingle - Regular Item]{1} found {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jingle - Regular Item]{1}发现了{2}个\\c[1]{3}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Jinlge - KeyItem]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jinlge - KeyItem]获得了\\c[1]{1}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Jinlge - KeyItem]Randomizer Mode has been unlocked!\\wt[30]\nIt will be available when starting a new Custom Game."
+msgstr "\\me[Jinlge - KeyItem]随机化模式已解锁！\\wt[30]\n此模式可以在开始新自定义游戏时开启。"
+
+msgid "\\me[Jinlge - KeyItem]\\sign[sign1]Obtained \\c[1]{1}\\c[0]!\\wtnp[30]"
+msgstr "\\me[Jinlge - KeyItem]\\sign[sign1]获得了\\c[1]{1}\\c[0]！\\wtnp[30]"
+
+msgid "\\me[Voltorb Flip Game Over]Oh no! You get 0 Coins!\\wtnp[50]"
+msgstr "\\me[Voltorb Flip Game Over]不好！你没有获得任何硬币！\\wtnp[50]"
+
+msgid "\\me[Voltorb Flip Win]Board clear!\\wtnp[40]"
+msgstr "\\me[Voltorb Flip Win]完成清版！\\wtnp[40]"
+
+msgid "\\se[Voltorb Flip Level Dropped]Dropped to Game Lv. {1}!"
+msgstr "\\se[Voltorb Flip Level Dropped]游戏等级降低到{1}！"
+
+msgid "\\se[]1,\\wt[4] 2,\\wt[4] and...\\wt[8] ...\\wt[8] ...\\wt[8] Poof!\\se[balldrop]"
+msgstr "\\se[]１，\\wt[4] ２，\\wt[4] 然后…\\wt[8] …\\wt[8] …\\wt[8] 空！\\se[balldrop]"
+
+msgid "\\se[]Congratulations! Your {1} evolved into {2}!\\wt[80]"
+msgstr "\\se[]恭喜！{1}进化成了{2}！\\wt[80]"
+
+msgid "\\se[]Save failed.\\wtnp[30]"
+msgstr "\\se[]保存游戏失败。\\wtnp[30]"
+
+msgid "\\se[]What?\n{1} is evolving!\\^"
+msgstr "\\se[]什么？\n{1}开始进化了！\\^"
+
+msgid "\\se[]{1} hatched from the Egg!\\wt[80]"
+msgstr "\\se[]从蛋中孵出来了{1}！\\wt[80]"
+
+msgid "\\se[]{1} learned {2}!\\se[itemlevel]"
+msgstr "\\se[]{1}习得了{2}！\\se[itemlevel]"
+
+msgid "\\se[]{1} saved the game.\\se[save]\\wtnp[30]"
+msgstr "\\se[]{1}保存了游戏。\\se[save]\\wtnp[30]"
+
+msgid "\\se[accesspc]Accessed the Hall of Fame."
+msgstr "\\se[accesspc]连接上了名人堂。"
+
+msgid "\\se[accesspc]Accessed the Purify Chamber."
+msgstr "\\se[accesspc]连接上了净化室。"
+
+msgid "\\se[accesspc]Accessed {1}'s PC."
+msgstr "\\se[accesspc]连接上了{1}的电脑。"
+
+msgid "\\se[accesspc]Booted up a TM."
+msgstr "\\se[accesspc]启动了招式学习器。"
+
+msgid "\\se[accesspc]Booted up an HM."
+msgstr "\\se[accesspc]启动了秘传学习器。"
+
+msgid "\\se[accesspc]The Pokémon Storage System was opened."
+msgstr "\\se[accesspc]开启了宝可梦存储系统。"
+
+msgid "\\se[computeropen]{1} booted up the PC."
+msgstr "\\se[computeropen]{1}启动了电脑。"
+
+msgid "\\se[itemlevel]{1} received \\c[1]{2}\\c[0]!\\nIt contained \\c[1]{3}\\c[0].\\wtnp[30]"
+msgstr "\\se[itemlevel]{1}获得了\\c[1]{2}\\c[0]！＼\n里面包含着\\c[1]{3}\\c[0]。\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received a \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1}获得了一个\\c[1]{2}\\c[0]！\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received an \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1}获得了一个\\c[1]{2}\\c[0]！\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received some \\c[1]{2}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1}获得了一些\\c[1]{2}\\c[0]！\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received {2} \\c[1]{3}\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1}获得了{2}\\c[1]{3}\\c[0]！\\wtnp[30]"
+
+msgid "\\se[itemlevel]{1} received {2} \\c[1]{3}s\\c[0]!\\wtnp[30]"
+msgstr "\\se[itemlevel]{1}获得了一些{2}\\c[1]{3}\\c[0]！\\wtnp[30]"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]After the unfortunate defeat, {1} scurried home."
+msgstr "\\wm\\c[8]\\l[3]不幸地被打败之后，{1}焦急地赶往家中。"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]After the unfortunate defeat, {1} scurried to a Pokémon Center."
+msgstr "\\wm\\c[8]\\l[3]不幸地被打败之后，\n{1}焦急地赶往宝可梦中心。"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]{1} scurried home, protecting the exhausted and fainted Pokémon from further harm."
+msgstr "\\wm\\c[8]\\l[3]为了防止精疲力尽的宝可梦\n受到更多伤害，\n{1}焦急地赶往家中。"
+
+msgid "\\w[]\\wm\\c[8]\\l[3]{1} scurried to a Pokémon Center, protecting the exhausted and fainted Pokémon from further harm."
+msgstr "\\wm\\c[8]\\l[3]为了防止精疲力尽的宝可梦\n受到更多伤害，\n{1}焦急地赶往宝可梦中心。"
+
+msgid "accuracy"
+msgstr "命中"
+
+msgid "an egg"
+msgstr "一只蛋"
+
+msgid "boardbg"
+msgstr "../../Translations/Simplified Chinese/boardbg_chs"
+
+msgid "egg"
+msgstr "蛋"
+
+msgid "evasiveness"
+msgstr "回避"
+
+msgid "female"
+msgstr "♀"
+
+msgid "lower"
+msgstr "小写"
+
+msgid "male"
+msgstr "♂"
+
+msgid "memo"
+msgstr "../../Translations/Simplified Chinese/memo_chs"
+
+msgid "normal"
+msgstr "普通"
+
+msgid "other"
+msgstr "其他"
+
+msgid "phonebg"
+msgstr "../Translations/Simplified Chinese/phonebg_chs"
+
+msgid "shiny"
+msgstr "异色"
+
+msgid "text one"
+msgstr "文本壹"
+
+msgid "text two"
+msgstr "文本贰"
+
+msgid "the ally {1}"
+msgstr "同伴的{1}"
+
+msgid "the egg"
+msgstr "蛋"
+
+msgid "the foe {1}"
+msgstr "对方的{1}"
+
+msgid "the opposing {1}"
+msgstr "对方的{1}"
+
+msgid "the wild {1}"
+msgstr "野生的{1}"
+
+msgid "their egg"
+msgstr "对方的蛋"
+
+msgid "x{1:d}<r>$ {2:d}"
+msgstr "x{1:d}<r>¥ {2:d}"
+
+msgid "{1:.1f} kg"
+msgstr "{1:.1f}千克"
+
+msgid "{1:.1f} m"
+msgstr "{1:.1f}米"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}"
+msgstr "{1:s}\nＩＤ：{2:05d} 初训家：{3:s}"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}"
+msgstr "{1:s}\nＩＤ：{2:05d} 初训家：{3:s}"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[0]"
+msgstr "{1:s}\nＩＤ：{2:05d} 初训家：{3:s}\\wtnp[0]"
+
+msgid "{1:s}\nID: {2:05d} OT: {3:s}\\wtnp[100]"
+msgstr "{1:s}\nＩＤ：{2:05d} 初训家：{3:s}\\wtnp[100]"
+
+msgid "{1:s} Pokémon"
+msgstr "{1:s}宝可梦"
+
+msgid "{1:s}: Search Mode"
+msgstr "{1:s}：搜索模式"
+
+msgid "{1:s}<r>POWER/{2:s}\nPP/{3:d}<r>ACCURACY/{4:s}"
+msgstr "{1:s}<r>ＰＯＷＥＲ／{2:s}\nＰＰ／{3:d}<r>命中／{4:s}"
+
+msgid "{1:s}PP: ---<br>TYPE/{2:s}"
+msgstr "{1:s}ＰＰ：－－－<br>类型／{2:s}"
+
+msgid "{1:s}PP: {2: 2d}/{3: 2d}<br>TYPE/{4:s}"
+msgstr "{1:s}ＰＰ：{2: 2d}／{3: 2d}<br>类型／{4:s}"
+
+msgid "{1}\nwould like to battle!"
+msgstr "{1}\n发起了挑战！"
+
+msgid "{1} ${2}"
+msgstr "{1} ¥{2}"
+
+msgid "{1} - {2} POKéMON"
+msgstr "{1} － {2}宝可梦"
+
+msgid "{1} Female"
+msgstr "{1}　♀"
+
+msgid "{1} Female Shiny"
+msgstr "{1}♀异色"
+
+msgid "{1} Male"
+msgstr "{1}　♂"
+
+msgid "{1} Male Shiny"
+msgstr "{1}♂异色"
+
+msgid "{1} Pokémon are needed."
+msgstr "需要{1}只宝可梦。"
+
+msgid "{1} Pokémon will be released, 1 of them is shiny. Are you absolutely certain?"
+msgstr "{1}只宝可梦将会被放生，其中有1只是异色宝可梦。真的确定要这么做吗？"
+
+msgid "{1} Pokémon will be released, {2} of them are shiny. Are you absolutely certain?"
+msgstr "{1}只宝可梦将会被放生，其中有{2}只是异色宝可梦。真的确定要这么做吗？"
+
+msgid "{1} Pokémon will be released. Are you absolutely certain?"
+msgstr "{1}只宝可梦将会被放生。真的确定要这么做吗？"
+
+msgid "{1} Shiny"
+msgstr "{1}异色"
+
+msgid "{1} To {2}"
+msgstr "{1}级到{2}级"
+
+msgid "{1} absorbed nutrients with its roots!"
+msgstr "{1}从根中吸收了营养！"
+
+msgid "{1} acquired {2}!"
+msgstr "{1}获得了{2}！"
+
+msgid "{1} adores you!\nThe base Attack fell!"
+msgstr "{1}更喜欢你了\n攻击的基础点数降低了！"
+
+msgid "{1} adores you!\nThe base Defense fell!"
+msgstr "{1}更喜欢你了！\n防御的基础点数降低了！"
+
+msgid "{1} adores you!\nThe base HP fell!"
+msgstr "{1}更喜欢你了！\nＨＰ的基础点数降低了！"
+
+msgid "{1} adores you!\nThe base Special Attack fell!"
+msgstr "{1}更喜欢你了！\n特攻的基础点数降低了！"
+
+msgid "{1} adores you!\nThe base Special Defense fell!"
+msgstr "{1}更喜欢你了！\n特防的基础点数降低了！"
+
+msgid "{1} adores you!\nThe base Speed fell!"
+msgstr "{1}更喜欢你了！\n速度的基础点数降低了！"
+
+msgid "{1} adores you!\nThe door to its heart opened a little."
+msgstr "{1}更喜欢你了！\n它心扉的大门稍微敞开了一些。"
+
+msgid "{1} already has a burn."
+msgstr "{1}已经灼烧了。"
+
+msgid "{1} already has a substitute!"
+msgstr "{1}已经有替身了！"
+
+msgid "{1} already knows\n{2}."
+msgstr "{1}已经学会\n{2}了。"
+
+msgid "{1} anchored itself with its roots!"
+msgstr "{1}用扎的根定住了自己！"
+
+msgid "{1} anchored itself with {2}!"
+msgstr "{1}用{2}定住了自己！"
+
+msgid "{1} anchored itself!"
+msgstr "{1}定住了自己！"
+
+msgid "{1} and {2} are attacking!"
+msgstr "{1}与{2}袭来了！"
+
+msgid "{1} and {2} want to battle!"
+msgstr "{1}和{2}\n发起了挑战！"
+
+msgid "{1} appears incapable of using its power!"
+msgstr "{1}似乎无法使用自己的能力！"
+
+msgid "{1} avoided damage with Wonder Guard!"
+msgstr "{1}的神奇守护特性避免了伤害！"
+
+msgid "{1} avoided the attack!"
+msgstr "{1}避免了攻击！"
+
+msgid "{1} avoids attacks by its ally Pokémon!"
+msgstr "{1}躲开了同伴的攻击！"
+
+msgid "{1} became cloaked in a freezing light!"
+msgstr "{1}被寒光所笼罩！"
+
+msgid "{1} became cloaked in freezing air!"
+msgstr "{1}被寒气所笼罩！"
+
+msgid "{1} became cloaked in mystical moonlight!"
+msgstr "{1}被神秘的月光所照耀！"
+
+msgid "{1} became confused due to fatigue!"
+msgstr "{1}因为疲劳过度而混乱了！"
+
+msgid "{1} became confused!"
+msgstr "{1}混乱了！"
+
+msgid "{1} became healthy!"
+msgstr "{1}恢复健康了！"
+
+msgid "{1} became healthy."
+msgstr "{1}恢复健康了。"
+
+msgid "{1} became nimble!"
+msgstr "{1}变得敏捷了！"
+
+msgid "{1} became the center of attention!"
+msgstr "{1}成为了焦点！"
+
+msgid "{1} became trapped by Sand Tomb!"
+msgstr "{1}被困在了流沙地狱里！"
+
+msgid "{1} became trapped by swirling magma!"
+msgstr "{1}被困在了盘旋的岩浆中！"
+
+msgid "{1} began charging power!"
+msgstr "{1}开始积攒力量！"
+
+msgid "{1} began growling deeply!"
+msgstr "{1}开始低声地嚎叫！"
+
+msgid "{1} began having a nightmare!"
+msgstr "{1}开始做噩梦了！"
+
+msgid "{1} bids farewell to {2}."
+msgstr "{1}向{2}告别。"
+
+msgid "{1} blacked out!"
+msgstr "{1}眼前一黑！"
+
+msgid "{1} bounced the {2} back!"
+msgstr "{1}把{2}反弹了回去！"
+
+msgid "{1} braced itself!"
+msgstr "{1}挺住了！"
+
+msgid "{1} breaks the mold!"
+msgstr "{1}打破了常规！"
+
+msgid "{1} burrowed its way under the ground!"
+msgstr "{1}挖进了地下！"
+
+msgid "{1} called {2}!"
+msgstr "{1}呼唤了{2}！"
+
+msgid "{1} calmed down."
+msgstr "{1}冷静下来了。"
+
+msgid "{1} came to its senses from the Trainer's call!"
+msgstr "{1}应训练家的呼唤而来了！"
+
+msgid "{1} came to its senses from the {2}!"
+msgstr "{1}由于{2}恢复了理智！"
+
+msgid "{1} can now be purified!"
+msgstr "{1}现在可以被净化了！"
+
+msgid "{1} can use items again!"
+msgstr "{1}重新可以使用道具了！"
+
+msgid "{1} can't be fused with itself!"
+msgstr "{1}不能与自身融合！"
+
+msgid "{1} can't be fused with {2}."
+msgstr "{1}不能与{2}融合。"
+
+msgid "{1} can't be learned."
+msgstr "无法习得{1}。"
+
+msgid "{1} can't be switched out!"
+msgstr "{1}无法脱离战斗！"
+
+msgid "{1} can't be taught to an Egg."
+msgstr "{1}不能教给宝可梦蛋。"
+
+msgid "{1} can't be taught to this Pokémon."
+msgstr "{1}不能教给这只宝可梦。"
+
+msgid "{1} can't be used in a sky battle!"
+msgstr "{1}在空中战斗中无法被使用！"
+
+msgid "{1} can't escape now!"
+msgstr "{1}现在无法逃跑！"
+
+msgid "{1} can't fight in a sky battle!"
+msgstr "{1}无法在空中战斗！"
+
+msgid "{1} can't get it going!"
+msgstr "{1}无法正常运作！"
+
+msgid "{1} can't move somehow..."
+msgstr "{1}无法移动了…"
+
+msgid "{1} can't move!"
+msgstr "{1}无法行动！"
+
+msgid "{1} can't stockpile any more!"
+msgstr "{1}无法再蓄力了！"
+
+msgid "{1} can't use items anymore!"
+msgstr "{1}不能再使用道具了！"
+
+msgid "{1} can't use the same move twice in a row due to the torment!"
+msgstr "{1}由于无理取闹，无法连续使用同一个招式！"
+
+msgid "{1} can't use the sealed {2}!"
+msgstr "{1}不能使用被封印的{2}！"
+
+msgid "{1} can't use {2} after the taunt!"
+msgstr "{1}被挑衅了，无法使用{2}！"
+
+msgid "{1} can't use {2} because of Heal Block!"
+msgstr "{1}由于回复封锁，无法使用{2}！"
+
+msgid "{1} cannot be an egg. Make egg anyway?"
+msgstr "{1}无法成为一只蛋。依旧要将其变成蛋吗？"
+
+msgid "{1} cannot use {2}!"
+msgstr "{1}无法使用{2}！"
+
+msgid "{1} cards have been chosen."
+msgstr "选中了{1}张牌。"
+
+msgid "{1} caused an uproar!"
+msgstr "{1}正在吵闹！"
+
+msgid "{1} changed Forme!"
+msgstr "{1}改变了形态！"
+
+msgid "{1} chose Doom Desire as its destiny!"
+msgstr "{1}许下了破灭之愿！"
+
+msgid "{1} clamped {2}!"
+msgstr "{1}夹住了{2}！"
+
+msgid "{1} consumed its {2}!"
+msgstr "{1}消耗了它的{2}！"
+
+msgid "{1} copied {2}'s stat changes!"
+msgstr "{1}复制了{2}的能力变化！"
+
+msgid "{1} copied {2}'s {3}!"
+msgstr "{1}复制了{2}的{3}！"
+
+msgid "{1} cured its infatuation status using its {2}!"
+msgstr "{1}使用{2}治愈了自己的着迷！"
+
+msgid "{1} cut its own HP and laid a curse on {2}!"
+msgstr "{1}削减了自己的ＨＰ并诅咒了{2}！"
+
+msgid "{1} cut its own HP and maximized its Attack!"
+msgstr "{1}削减了自己的ＨＰ，并释放了全部力量！"
+
+msgid "{1} defeated\n{2}!"
+msgstr "{1}战胜了\n{2}！"
+
+msgid "{1} defeated the opponent\n{2} in a referee's decision!"
+msgstr "依照裁判的判定，\n{1}战胜了{2}！"
+
+msgid "{1} defeated {2} and {3}!"
+msgstr "{1}战胜了{2}和{3}！"
+
+msgid "{1} did a headbutt!"
+msgstr "{1}使用了头锤！"
+
+msgid "{1} did not learn {2}."
+msgstr "{1}没有学习{2}就结束了！"
+
+msgid "{1} doesn't become confused!"
+msgstr "{1}没有混乱！"
+
+msgid "{1} doesn't have Pokérus."
+msgstr "{1}没有感染过宝可病毒。"
+
+msgid "{1} endured the hit!"
+msgstr "{1}挺住了攻击！"
+
+msgid "{1} evaded the attack!"
+msgstr "{1}避开了攻击！"
+
+msgid "{1} fainted!"
+msgstr "{1}倒下了！"
+
+msgid "{1} fainted...\\"
+msgstr "{1}倒下了…＼"
+
+msgid "{1} fell asleep!"
+msgstr "{1}睡着了！"
+
+msgid "{1} fell for the taunt!"
+msgstr "{1}受到了挑衅！"
+
+msgid "{1} fell in love!"
+msgstr "{1}坠入了爱河！"
+
+msgid "{1} fell straight down!"
+msgstr "{1}径直摔到了地上！"
+
+msgid "{1} fled from battle!"
+msgstr "{1}从对战中逃跑了！"
+
+msgid "{1} fled using Run Away!"
+msgstr "{1}利用逃跑特性逃跑了！"
+
+msgid "{1} fled using its {2}!"
+msgstr "{1}利用自己的{2}逃跑了！"
+
+msgid "{1} fled!"
+msgstr "{1}逃走了！"
+
+msgid "{1} flew up high!"
+msgstr "{1}飞到了天上！"
+
+msgid "{1} flew {2} up into the air!"
+msgstr "{1}带着{2}飞到了天上！"
+
+msgid "{1} flinched and couldn't move!"
+msgstr "{1}畏缩了！"
+
+msgid "{1} flung its {2}!"
+msgstr "{1}投掷了自己的{2}！"
+
+msgid "{1} foresaw an attack!"
+msgstr "{1}预知了攻击！"
+
+msgid "{1} forfeited the match!"
+msgstr "{1}放弃了比赛！"
+
+msgid "{1} forgot how to\nuse {2}."
+msgstr "{1}忘记了如何使用\n{2}。"
+
+msgid "{1} forgot {2}."
+msgstr "{1}把{2}的\n使用方法忘得干干净净了！"
+
+msgid "{1} forgot {2}..."
+msgstr "{1}忘记了{2}…"
+
+msgid "{1} found \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1}发现了\\c[1]{2}\\c[0]！\\wtnp[20]"
+
+msgid "{1} found one \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1}发现了一件\\c[1]{2}\\c[0]！\\wtnp[20]"
+
+msgid "{1} found one {2}!"
+msgstr "{1}找到了一个{2}！"
+
+msgid "{1} found some \\c[1]{2}\\c[0]!\\wtnp[20]"
+msgstr "{1}发现了一些\\c[1]{2}\\c[0]！\\wtnp[20]"
+
+msgid "{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[20]"
+msgstr "{1}发现了{2}\\c[1]{3}\\c[0]！\\wtnp[20]"
+
+msgid "{1} found {2} \\c[1]{3}s\\c[0]!\\wtnp[20]"
+msgstr "{1}发现了一些{2}\\c[1]{3}\\c[0]！\\wtnp[20]"
+
+msgid "{1} frisked the foe and found one {2}!"
+msgstr "{1}察觉到了对手持有的{2}！"
+
+msgid "{1} frisked the other foe and found one {2}!"
+msgstr "{1}察觉到了另一个对手持有的{2}！"
+
+msgid "{1} frisked {2} and found its {3}!"
+msgstr "{1}察觉到了{2}持有的{3}！"
+
+msgid "{1} gained a boosted {2} Exp. Points!"
+msgstr "{1}获得较多的{2}点经验！"
+
+msgid "{1} gained {2} Exp. Points!"
+msgstr "{1}获得了{2}点经验！"
+
+msgid "{1} gave ${2} to the winner..."
+msgstr "{1}支付了¥{2}作为奖金…"
+
+msgid "{1} gave {2} its {3}!"
+msgstr "{1}把{3}交给了{2}！"
+
+msgid "{1} got ${2}\nfor winning!"
+msgstr "{1}获得了¥{2}作为奖金！"
+
+msgid "{1} got free of {2}'s {3}!"
+msgstr "{1}摆脱了{2}的{3}！"
+
+msgid "{1} got over its infatuation."
+msgstr "{1}克服了自己的着迷。"
+
+msgid "{1} grew to Lv. {2}!"
+msgstr "{1}升到了Lv.{2}！"
+
+msgid "{1} had its HP restored."
+msgstr "{1}的ＨＰ回复了。"
+
+msgid "{1} had its energy drained!"
+msgstr "{1}的能量被榨取了！"
+
+msgid "{1} harvested one {2}!"
+msgstr "{1}收获了一个{2}！"
+
+msgid "{1} has Air Lock!"
+msgstr "{1}拥有气闸特性！"
+
+msgid "{1} has Mega Evolved into {2}!"
+msgstr "{1}\n超级进化成了{2}！"
+
+msgid "{1} has already been selected."
+msgstr "{1}已经被选择了。"
+
+msgid "{1} has been afflicted with infestation by {2}!"
+msgstr "{1}遭受着{2}的死缠烂打！"
+
+msgid "{1} has been cured of its corruption!"
+msgstr "{1}获得了治愈！"
+
+msgid "{1} has been laid down."
+msgstr "{1}被遗弃了。"
+
+msgid "{1} has no energy left to battle!"
+msgstr "{1}已经失去战斗能力了！"
+
+msgid "{1} has no more Pokémon that can fight!"
+msgstr "{1}没有可以战斗的宝可梦了！"
+
+msgid "{1} has no moves left!"
+msgstr "{1}没有剩余的招式了！"
+
+msgid "{1} has no nickname."
+msgstr "{1}没有昵称。"
+
+msgid "{1} has no usable Pokémon!"
+msgstr "{1}没有可以使用的宝可梦！"
+
+msgid "{1} has the nickname {2}."
+msgstr "{1}拥有昵称{2}。"
+
+msgid "{1} held up its Red Card against {2}!"
+msgstr "{1}向{2}举起了红牌！"
+
+msgid "{1} helped {2} move next!"
+msgstr "{1}帮{2}紧接着行动！"
+
+msgid "{1} hid underwater!"
+msgstr "{1}潜入了水中！"
+
+msgid "{1} hung on using its Focus Band!"
+msgstr "{1}用气势披带挺住了攻击！"
+
+msgid "{1} hung on using its Focus Sash!"
+msgstr "{1}用气势头带挺住了攻击！"
+
+msgid "{1} hung on with Sturdy!"
+msgstr "{1}因结实挺住了攻击！"
+
+msgid "{1} ignored orders while asleep!"
+msgstr "{1}无视命令并睡着了！"
+
+msgid "{1} ignored orders!"
+msgstr "{1}无视了命令！"
+
+msgid "{1} intends to flip up a mat and block incoming attacks!"
+msgstr "{1}试图掀起榻榻米来阻挡攻击！"
+
+msgid "{1} is about to send in {2}."
+msgstr "{1}正准备派出{2}。"
+
+msgid "{1} is absorbing power!"
+msgstr "{1}正在吸取力量！"
+
+msgid "{1} is affected by the radiation!"
+msgstr "{1}受到了辐射的伤害！"
+
+msgid "{1} is afflicted by the curse!"
+msgstr "{1}由于诅咒而感到痛苦！"
+
+msgid "{1} is already a Shadow Pokémon."
+msgstr "{1}已经是黑暗宝可梦了。"
+
+msgid "{1} is already asleep!"
+msgstr "{1}已经入睡了！"
+
+msgid "{1} is already confused!"
+msgstr "{1}已经混乱了！"
+
+msgid "{1} is already holding one {2}."
+msgstr "{1}已经持有{2}了。"
+
+msgid "{1} is already in battle!"
+msgstr "{1}已经在场上了！"
+
+msgid "{1} is already paralyzed!"
+msgstr "{1}已经被麻痹了！"
+
+msgid "{1} is already poisoned."
+msgstr "{1}已经中毒了。"
+
+msgid "{1} is angry!"
+msgstr "{1}生气了！"
+
+msgid "{1} is attacking!"
+msgstr "{1}袭来了！"
+
+msgid "{1} is badly poisoned!"
+msgstr "{1}中剧毒了！"
+
+msgid "{1} is buffeted by the hail!"
+msgstr "{1}受到了冰雹的击打！"
+
+msgid "{1} is buffeted by the sandstorm!"
+msgstr "{1}受到了沙暴的伤害！"
+
+msgid "{1} is confused!"
+msgstr "{1}混乱了！"
+
+msgid "{1} is covered in powder!"
+msgstr "{1}被粉尘包裹住了！"
+
+msgid "{1} is damaged by the recoil!"
+msgstr "{1}因反作用力受到了伤害！"
+
+msgid "{1} is disabled no more!"
+msgstr "{1}不再无法行动了！"
+
+msgid "{1} is eager for more!"
+msgstr "{1}还想要更多！"
+
+msgid "{1} is eating!"
+msgstr "{1}正在吃东西！"
+
+msgid "{1} is exerting its Pressure!"
+msgstr "{1}产生了压迫感！"
+
+msgid "{1} is fast asleep."
+msgstr "{1}睡得很熟。"
+
+msgid "{1} is frozen solid!"
+msgstr "{1}被冰冻了！"
+
+msgid "{1} is genderless."
+msgstr "{1}没有性别。"
+
+msgid "{1} is getting into position!"
+msgstr "{1}进入状态了！"
+
+msgid "{1} is getting pumped!"
+msgstr "{1}的斗志高涨起来了！"
+
+msgid "{1} is glowing!"
+msgstr "{1}正在发光！"
+
+msgid "{1} is having a bad dream!"
+msgstr "{1}正在做噩梦！"
+
+msgid "{1} is healed by poison!"
+msgstr "{1}从中毒中恢复了！"
+
+msgid "{1} is hit by lightning!"
+msgstr "{1}被闪电击中了！"
+
+msgid "{1} is hurt by its burn!"
+msgstr "{1}由于烧伤而受到伤害！"
+
+msgid "{1} is hurt by its {2}!"
+msgstr "{1}受到了自己的{2}的伤害！"
+
+msgid "{1} is hurt by poison!"
+msgstr "{1}由于中毒而受到伤害！"
+
+msgid "{1} is hurt by {2}!"
+msgstr "{1}由于{2}受到伤害！"
+
+msgid "{1} is immobilized by love!"
+msgstr "{1}因为喜欢而无法行动！"
+
+msgid "{1} is in love with {2}!"
+msgstr "{1}喜欢上了{2}！"
+
+msgid "{1} is loafing around!"
+msgstr "{1}无所事事！"
+
+msgid "{1} is locked in a nightmare!"
+msgstr "{1}被困在了噩梦当中！"
+
+msgid "{1} is making a move..."
+msgstr "{1}正在行动…"
+
+msgid "{1} is making an uproar!"
+msgstr "{1}正在大吼大叫！"
+
+msgid "{1} is not a Shadow Pokémon."
+msgstr "{1}不是一只异色宝可梦。"
+
+msgid "{1} is not affected by {2} thanks to its Safety Goggles!"
+msgstr "{1}由于自己的防尘护目镜，不受{2}影响！"
+
+msgid "{1} is not allowed."
+msgstr "{1}不被允许。"
+
+msgid "{1} is not compatible with {2}."
+msgstr "{1}与{2}不相容。"
+
+msgid "{1} is now a Shadow Pokémon."
+msgstr "{1}不是黑暗宝可梦。"
+
+msgid "{1} is now being held."
+msgstr "{1}现在被携带了。"
+
+msgid "{1} is now female."
+msgstr "{1}现在成为了♀。"
+
+msgid "{1} is now male."
+msgstr "{1}现在成为♂了。"
+
+msgid "{1} is paralyzed! It can't move!"
+msgstr "{1}被麻痹了！无法使出招式！"
+
+msgid "{1} is paralyzed! It may be unable to move!"
+msgstr "{1}被麻痹了！招式可能无法使出！"
+
+msgid "{1} is poisoned!"
+msgstr "{1}中毒了！"
+
+msgid "{1} is protected by Aroma Veil!"
+msgstr "{1}受到了芳香幕的保护！"
+
+msgid "{1} is protected by Mist!"
+msgstr "{1}受到了白雾的保护！"
+
+msgid "{1} is protected by Safeguard!"
+msgstr "{1}受到了神秘守护的保护！"
+
+msgid "{1} is protected by the mist!"
+msgstr "{1}受到了迷雾的保护！"
+
+msgid "{1} is radiating a blazing aura!"
+msgstr "{1}散发出了一个炙热的光环！"
+
+msgid "{1} is radiating a bursting aura!"
+msgstr "{1}散发出了一个破灭的光环！"
+
+msgid "{1} is radiating a dark aura!"
+msgstr "{1}散发出了暗黑气场！"
+
+msgid "{1} is radiating a fairy aura!"
+msgstr "{1}散发出了妖精气场！"
+
+msgid "{1} is ready to help {2}!"
+msgstr "{1}准备好帮助{2}了！"
+
+msgid "{1} is selected."
+msgstr "{1}被选中了。"
+
+msgid "{1} is storing energy!"
+msgstr "{1}正在储存能量！"
+
+msgid "{1} is struggling!"
+msgstr "{1}正在挣扎！"
+
+msgid "{1} is switched out with the Eject Button!"
+msgstr "{1}按下了逃脱按键！"
+
+msgid "{1} is tightening its focus!"
+msgstr "{1}正在集中注意力！"
+
+msgid "{1} is tormented!"
+msgstr "{1}正被无理取闹！"
+
+msgid "{1} is trying to\nlearn {2}."
+msgstr "{1}想要习得\n{2}。"
+
+msgid "{1} is trying to learn {2}."
+msgstr "{1}想要学习{2}。"
+
+msgid "{1} is trying to take its foe down with it!"
+msgstr "{1}要与对方同归于尽！"
+
+msgid "{1} is unaffected!"
+msgstr "{1}没有受到影响！"
+
+msgid "{1} is waiting for {2}'s move..."
+msgstr "{1}正在等待{2}的行动…"
+
+msgid "{1} is watching carefully!"
+msgstr "{1}正谨慎地观察着！"
+
+msgid "{1} isn't holding anything."
+msgstr "{1}没有持有任何东西。"
+
+msgid "{1} kept going and crashed!"
+msgstr "{1}继续向前并猛撞了上去！"
+
+msgid "{1} knocked off {2}'s {3}!"
+msgstr "{1}打落了{2}的{3}！"
+
+msgid "{1} learned a new song!"
+msgstr "{1}学会了新的声音！"
+
+msgid "{1} learned {2}!"
+msgstr "{1}学会了{2}！"
+
+msgid "{1} learned {2}!\\se[itemlevel]"
+msgstr "{1}学会了{2}！\\se[itemlevel]"
+
+msgid "{1} levitated with electromagnetism!"
+msgstr "{1}凭借电磁场悬浮了！"
+
+msgid "{1} lost against\n{2}!"
+msgstr "{1}被\n{2}击败了！"
+
+msgid "{1} lost against {2} and {3}!"
+msgstr "{1}被{2}和{3}击败了！"
+
+msgid "{1} lost against {2}."
+msgstr "{1}被{2}战胜了。"
+
+msgid "{1} lost its focus and couldn't move!"
+msgstr "{1}由于失去注意力而无法行动！"
+
+msgid "{1} lost some of its HP!"
+msgstr "{1}失去了一些ＨＰ！"
+
+msgid "{1} lost to the opponent\n{2} in a referee's decision!"
+msgstr "依照裁判的判定，\n{1}被{2}击败了！"
+
+msgid "{1} lowered its head!"
+msgstr "{1}把头缩了进去！"
+
+msgid "{1} made {2} drowsy!"
+msgstr "{1}让{2}昏昏欲睡！"
+
+msgid "{1} makes Fairy-type moves miss with Disenchant!"
+msgstr "{1}的祛魅特性使妖精属性的招式无效了！"
+
+msgid "{1} makes Ground moves miss with Levitate!"
+msgstr "{1}的漂浮特性使地面属性的招式无效了！"
+
+msgid "{1} makes Nuclear-type moves miss with Radiation Proof!"
+msgstr "{1}的辐射防护使核属性的招式无效了！"
+
+msgid "{1} maxed its Attack!"
+msgstr "{1}释放了全部力量！"
+
+msgid "{1} must recharge!"
+msgstr "{1}必须休息！"
+
+msgid "{1} obtained {2}!\\me[PU-PokemonObtained]"
+msgstr "{1}获得了{2}！\\me[PU-PokemonObtained]"
+
+msgid "{1} obtained {2}!\\se[itemlevel]"
+msgstr "{1}获得了{2}！\\se[itemlevel]"
+
+msgid "{1} obtained {2}."
+msgstr "{1}获得了{2}。"
+
+msgid "{1} opened the door to its heart!"
+msgstr "{1}打开了它心扉的大门！"
+
+msgid "{1} panicked and dropped\n${2}..."
+msgstr "{1}惊慌失措地丢掉了\n¥{2}…"
+
+msgid "{1} picked up ${2}!"
+msgstr "{1}捡起了¥{2}！"
+
+msgid "{1} picked up {2} from the pokemon!"
+msgstr "{1}从宝可梦身上得到了{2}！"
+
+msgid "{1} pickpocketed {2}'s {3}!"
+msgstr "{1}顺手牵羊了{2}的{3}！"
+
+msgid "{1} planted a {2} in the soft loamy soil."
+msgstr "{1}把{2}种在了松软的壤土里。"
+
+msgid "{1} planted its roots!"
+msgstr "{1}扎下了根！"
+
+msgid "{1} pretended not to notice!"
+msgstr "{1}假装没有注意到！"
+
+msgid "{1} protected itself!"
+msgstr "{1}保护了自己！"
+
+msgid "{1} put away the {2} in the <icon=bagPocket{3}>\\c[1]Berries\\c[0] Pocket."
+msgstr "{1}把{2}放到了<icon=bagPocket{3}>\\c[1]树果\\c[0]口袋中。"
+
+msgid "{1} put in a substitute!"
+msgstr "{1}换上了替身！"
+
+msgid "{1} put the \\c[1]{2}\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket."
+msgstr "{1}把\\c[1]{2}\\c[0]\n放到了<icon=bagPocket{3}>\\c[1]{4}\\c[0]口袋中。"
+
+msgid "{1} put the \\c[1]{2}s\\c[0]\nin the <icon=bagPocket{3}>\\c[1]{4}\\c[0] Pocket."
+msgstr "{1}把这些\\c[1]{2}\\c[0]\n放到了<icon=bagPocket{3}>\\c[1]{4}\\c[0]口袋中。"
+
+msgid "{1} received a Pokémon from {2}."
+msgstr "{1}从{2}获得了一只宝可梦。"
+
+msgid "{1} received a Pokémon."
+msgstr "{1}获得了一只宝可梦。"
+
+msgid "{1} received an encore!"
+msgstr "{1}受到了再来一的鼓励！"
+
+msgid "{1} received {2} Coin(s)!"
+msgstr "{1}获得了{2}枚硬币！"
+
+msgid "{1} received {2} Coins!"
+msgstr "{1}获得了{2}枚硬币！"
+
+msgid "{1} received {2} from {3}!"
+msgstr "{1}从{2}获得了{3}！"
+
+msgid "{1} received {2}!\\se[itemlevel]"
+msgstr "{1}获得了{2}！\\se[itemlevel]"
+
+msgid "{1} regained the move\n{2}!"
+msgstr "{1}重新获得了招式\n{2}！"
+
+msgid "{1} regained {2} Exp. Points!"
+msgstr "{1}重新获得了{2}点经验！"
+
+msgid "{1} restored a little HP using its Shell Bell!"
+msgstr "{1}使用贝壳之铃回复了少许ＨＰ！"
+
+msgid "{1} restored a little HP using its {2}!"
+msgstr "{1}使用{2}回复了少许ＨＰ！"
+
+msgid "{1} reversed all other Pokémon's auras!"
+msgstr "{1}反转了所有其他宝可梦的气场！"
+
+msgid "{1} ribbons."
+msgstr "{1}个奖章。"
+
+msgid "{1} sealed the opponent's move(s)!"
+msgstr "{1}封住对方的招式！"
+
+msgid "{1} sent\nout {2} and {3}!"
+msgstr "{1}派出了\n{2}和{3}！"
+
+msgid "{1} sent\nout {2}!"
+msgstr "{1}派出了\n{2}！"
+
+msgid "{1} sent\nout {2}! Go! {3}!"
+msgstr "{1}派出了{2}！\n上吧！{3}！"
+
+msgid "{1} sent\nout {2}! {3} sent\nout {4}!"
+msgstr "{1}派出了\n{2}！{3}派出了\n{4}！"
+
+msgid "{1} shared its guard with the target!"
+msgstr "{1}与对方平分了防御与特防！"
+
+msgid "{1} shared its power with the target!"
+msgstr "{1}与对方平分了攻击与特攻！"
+
+msgid "{1} shrouded itself with Magic Coat!"
+msgstr "{1}用魔法反射包裹住了自己！"
+
+msgid "{1} shuddered with anticipation!"
+msgstr "{1}因为预知到危险而害怕得胆怯！"
+
+msgid "{1} sketched {2}!"
+msgstr "{1}描摹了{2}！"
+
+msgid "{1} slept and became healthy!"
+msgstr "{1}通过睡眠回复了自身！"
+
+msgid "{1} snapped out of confusion!"
+msgstr "{1}从混乱中清醒了过来！"
+
+msgid "{1} snapped out of confusion."
+msgstr "{1}从混乱中清醒了。"
+
+msgid "{1} snapped out of its confusion."
+msgstr "{1}从混乱中恢复了过来。"
+
+msgid "{1} snatched {2}'s move!"
+msgstr "{1}抢夺{2}招式的效果"
+
+msgid "{1} sprang up!"
+msgstr "{1}跳了起来！"
+
+msgid "{1} stayed awake using its partner's {2}!"
+msgstr "{1}借助同伴的{2}保持清醒！"
+
+msgid "{1} stayed awake using its {2}!"
+msgstr "{1}通过自己的{2}保持清醒！"
+
+msgid "{1} stockpiled {2}!"
+msgstr "{1}蓄力了{2}次！"
+
+msgid "{1} stole and ate its target's {2}!"
+msgstr "{1}偷走并吃掉了对方的{2}！"
+
+msgid "{1} stole {2}'s {3} with Magician!"
+msgstr "{1}通过魔术师特性偷走了{2}的{3}！"
+
+msgid "{1} stole {2}'s {3}!"
+msgstr "{1}偷走了{2}的{3}！"
+
+msgid "{1} sucked up the liquid ooze!"
+msgstr "{1}吸取了渗出的液体！"
+
+msgid "{1} surrounded itself with a veil of petals!"
+msgstr "{1}被花幕包围了！"
+
+msgid "{1} surrounded itself with a veil of sweetness!"
+msgstr "{1}将自己包围在了甜幕包围中！"
+
+msgid "{1} surrounded itself with a veil of water!"
+msgstr "{1}用水流环包裹住了自己！"
+
+msgid "{1} surrounds itself with a protective mist!"
+msgstr "{1}将自己包围在了薄雾场地中！"
+
+msgid "{1} surrounds itself with electrified terrain!"
+msgstr "{1}将自己包围在了电气场地中！"
+
+msgid "{1} survived the poisoning.\nThe poison faded away!"
+msgstr "{1}在中毒中坚持下来了。\n体内的毒素消失了！"
+
+msgid "{1} swapped its {2} ability with its target's {3} ability!"
+msgstr "{1}将自己的{2}特性与对方的{3}特性互换了！"
+
+msgid "{1} switched all changes to its Attack and Sp. Atk with the target!"
+msgstr "{1}与对方互换了攻击与特攻的能力变化！"
+
+msgid "{1} switched all changes to its Defense and Sp. Def with the target!"
+msgstr "{1}与对方互换了防御与特防的能力变化！"
+
+msgid "{1} switched items with its opponent!"
+msgstr "{1}和对方互换了道具！"
+
+msgid "{1} switched its Attack and Defense!"
+msgstr "{1}互换了自己的攻击和防御！"
+
+msgid "{1} switched places with its ally!"
+msgstr "{1}和同伴互换了位置！"
+
+msgid "{1} switched stat changes with the target!"
+msgstr "{1}与对方互换了所有的能力变化！"
+
+msgid "{1} thawed out!"
+msgstr "{1}解冻了！"
+
+msgid "{1} threw a rock at the {2}!"
+msgstr "{1}向{2}扔了一块石头！"
+
+msgid "{1} threw a {2}."
+msgstr "{1}丢出了{2}。"
+
+msgid "{1} threw some bait at the {2}!"
+msgstr "{1}向{2}扔了一些饵料！"
+
+msgid "{1} tied the opponent\n{2} in a referee's decision!"
+msgstr "依照裁判的判定，\n{1}与{2}平手！"
+
+msgid "{1} took a nap!"
+msgstr "{1}在打盹儿！"
+
+msgid "{1} took aim at {2}!"
+msgstr "{1}瞄准了{2}！"
+
+msgid "{1} took in sunlight!"
+msgstr "{1}吸收了阳光！"
+
+msgid "{1} took its attacker down with it!"
+msgstr "{1}与攻击者同归于尽了！"
+
+msgid "{1} took the attack!"
+msgstr "{1}吸收了攻击！"
+
+msgid "{1} took the {2} attack!"
+msgstr "{1}受到了{2}的攻击！"
+
+msgid "{1} traced {2}'s {3}!"
+msgstr "{1}复制{2}的{3}！"
+
+msgid "{1} transformed into the {2} type!"
+msgstr "{1}转换成了{2}属性！"
+
+msgid "{1} transformed into {2}!"
+msgstr "{1}的形态转变为{2}！"
+
+msgid "{1} transformed!"
+msgstr "{1}改变了形态！"
+
+msgid "{1} turned away!"
+msgstr "{1}转过了头！"
+
+msgid "{1} turned friendly."
+msgstr "{1}变得更加友好了。"
+
+msgid "{1} turned friendly.\nThe base Attack can't fall!"
+msgstr "{1}变得更加友好了。\n攻击的基础点数已经无法再降低了！"
+
+msgid "{1} turned friendly.\nThe base Attack fell!"
+msgstr "{1}变得更加友好了。\n攻击的基础点数降低了！"
+
+msgid "{1} turned friendly.\nThe base Defense can't fall!"
+msgstr "{1}变得更加友好了。\n防御的基础点数已经无法再降低了！"
+
+msgid "{1} turned friendly.\nThe base Defense fell!"
+msgstr "{1}变得更加友好了。\n防御的基础点数降低了！"
+
+msgid "{1} turned friendly.\nThe base HP can't fall!"
+msgstr "{1}变得更加友好了。\nＨＰ的基础点数已经无法再降低了！"
+
+msgid "{1} turned friendly.\nThe base HP fell!"
+msgstr "{1}变得更加友好了ｙ。\nＨＰ的基础点数降低了！"
+
+msgid "{1} turned friendly.\nThe base Special Attack can't fall!"
+msgstr "{1}变得更加友好了。\n特攻的基础点数已经无法再降低了！"
+
+msgid "{1} turned friendly.\nThe base Special Attack fell!"
+msgstr "{1}变得更加友好了。\n特攻的基础点数降低了！"
+
+msgid "{1} turned friendly.\nThe base Special Defense can't fall!"
+msgstr "{1}变得更加友好了。\n特防的基础点数已经无法再降低了！"
+
+msgid "{1} turned friendly.\nThe base Special Defense fell!"
+msgstr "{1}变得更加友好了。\n特防的基础点数降低了！"
+
+msgid "{1} turned friendly.\nThe base Speed can't fall!"
+msgstr "{1}变得更加友好了。\n速度的基础点数已经无法再降低了！"
+
+msgid "{1} turned friendly.\nThe base Speed fell!"
+msgstr "{1}变得更加友好了。\n速度的基础点数降低了！"
+
+msgid "{1} turned friendly.\nThe door to its heart opened a little."
+msgstr "{1}变得更加友好了。\n它心扉的大门稍微敞开了一些。"
+
+msgid "{1} turned into {2}!"
+msgstr "{1}的特性变成了{2}！"
+
+msgid "{1} twisted the dimensions!"
+msgstr "{1}扭曲了维度！"
+
+msgid "{1} unleashed energy!"
+msgstr "{1}释放了所有能量！"
+
+msgid "{1} used\n{2}!"
+msgstr "{1}使用了\n{2}！"
+
+msgid "{1} used Coral Break!"
+msgstr "{1}使用了珊瑚破碎！"
+
+msgid "{1} used Cut!"
+msgstr "{1}使用了居合斩！"
+
+msgid "{1} used Dive."
+msgstr "{1}使用了潜水。"
+
+msgid "{1} used Fly!"
+msgstr "{1}使用了飞翔！"
+
+msgid "{1} used Rock Smash!"
+msgstr "{1}使用了碎岩！"
+
+msgid "{1} used Strength!"
+msgstr "{1}使用了怪力！"
+
+msgid "{1} used Surf!"
+msgstr "{1}使用了冲浪！"
+
+msgid "{1} used Waterfall."
+msgstr "{1}使用了攀瀑。"
+
+msgid "{1} used its {2} to get pumped!"
+msgstr "{1}吃掉了{2}以获取了能量！"
+
+msgid "{1} used the\n{2}!"
+msgstr "{1}使用了\n{2}！"
+
+msgid "{1} used the\n{2}."
+msgstr "{1}使用了\n{2}。"
+
+msgid "{1} used the Boxing Gloves!"
+msgstr "{1}使用了拳击手套！"
+
+msgid "{1} used the Climbing Pick"
+msgstr "{1}使用了攀爬工具"
+
+msgid "{1} used the Climbing Pick!"
+msgstr "{1}使用了攀爬工具！"
+
+msgid "{1} used the Escape Rope."
+msgstr "{1}使用了离洞绳。"
+
+msgid "{1} used the Power Glove!"
+msgstr "{1}使用了拳击手套！"
+
+msgid "{1} used the Scuba Gear"
+msgstr "{1}使用了呼吸装置。"
+
+msgid "{1} used the Scuba Gear."
+msgstr "{1}使用了呼吸装置。"
+
+msgid "{1} used the Surfboard!"
+msgstr "{1}使用了冲浪板！"
+
+msgid "{1} used the {2}!"
+msgstr "{1}使用了{2}！"
+
+msgid "{1} used the {2}."
+msgstr "{1}使用了{2}。"
+
+msgid "{1} used {2}!"
+msgstr "{1}使用了{2}！"
+
+msgid "{1} used."
+msgstr "使用{1}收服。"
+
+msgid "{1} vanished instantly!"
+msgstr "{1}瞬间消失了！"
+
+msgid "{1} waits for a target to make a move!"
+msgstr "{1}正在等待对手出招！"
+
+msgid "{1} wants its target to bear a grudge!"
+msgstr "{1}想要对方承受怨恨！"
+
+msgid "{1} was Mummified by {2}!"
+msgstr "{1}被{2}木乃伊化了！"
+
+msgid "{1} was badly poisoned by its {2}!"
+msgstr "{1}由于自己的{2}中了剧毒！"
+
+msgid "{1} was badly poisoned!"
+msgstr "{1}中了剧毒！"
+
+msgid "{1} was blocked by the kicked-up mat!"
+msgstr "{1}被掀榻榻米阻挡住了！"
+
+msgid "{1} was burned by its {2}!"
+msgstr "{1}由于自己的{2}灼伤了！"
+
+msgid "{1} was burned!"
+msgstr "{1}烧伤了！"
+
+msgid "{1} was caught in a sticky web!"
+msgstr "{1}被黏黏网粘住了！"
+
+msgid "{1} was caught in the aftermath!"
+msgstr "{1}受到了引爆的牵连！"
+
+msgid "{1} was cured of its burn."
+msgstr "{1}的灼伤被治好了。"
+
+msgid "{1} was cured of its paralysis."
+msgstr "{1}的麻痹被治好了。"
+
+msgid "{1} was cured of its poisoning."
+msgstr "{1}的中毒治愈了。"
+
+msgid "{1} was cured of paralysis."
+msgstr "{1}的麻痹被治愈了！"
+
+msgid "{1} was defrosted by {2}!"
+msgstr "{1}被{2}解冻了！"
+
+msgid "{1} was defrosted."
+msgstr "{1}解冻了！"
+
+msgid "{1} was downgraded to Level {2}!"
+msgstr "{1}下降到了等级{2}！"
+
+msgid "{1} was dragged out!"
+msgstr "{1}被拖上了场！"
+
+msgid "{1} was elevated to Level {2}!"
+msgstr "{1}上升到了等级{2}！"
+
+msgid "{1} was freed from Leech Seed!"
+msgstr "{1}摆脱了寄生种子！"
+
+msgid "{1} was freed from the telekinesis!"
+msgstr "{1}摆脱了意念移物！"
+
+msgid "{1} was freed from {2}!"
+msgstr "{1}从{2}中解脱了！"
+
+msgid "{1} was frisked, revealing its {2}!"
+msgstr "{1}被察觉到了{2}！"
+
+msgid "{1} was frozen solid!"
+msgstr "{1}被冰冻了！"
+
+msgid "{1} was fully healed."
+msgstr "{1}痊愈了。"
+
+msgid "{1} was given the {2} to hold."
+msgstr "让{1}携带了{2}。"
+
+msgid "{1} was hurled into the air!"
+msgstr "{1}被悬浮在了空中！"
+
+msgid "{1} was hurt by its {2}!"
+msgstr "{1}受到了{2}的伤害！"
+
+msgid "{1} was hurt by spikes!"
+msgstr "{1}受到了尖菱的伤害！"
+
+msgid "{1} was hurt by the shadow sky!"
+msgstr "{1}受到了暗影气象的伤害！"
+
+msgid "{1} was hurt by the sunlight!"
+msgstr "{1}受到了阳光的伤害！"
+
+msgid "{1} was hurt by the {2}!"
+msgstr "{1}受到了{2}的伤害！"
+
+msgid "{1} was hurt!"
+msgstr "{1}受到了伤害！"
+
+msgid "{1} was identified!"
+msgstr "{1}的真身被识破了！"
+
+msgid "{1} was paralyzed!"
+msgstr "{1}被麻痹了！"
+
+msgid "{1} was paralyzed! It may be unable to move!"
+msgstr "{1}被麻痹了！招式可能无法使出！"
+
+msgid "{1} was poisoned!"
+msgstr "{1}中毒了！"
+
+msgid "{1} was prevented from healing due to Heal Block!"
+msgstr "{1}因回复封锁无法进行回复！"
+
+msgid "{1} was prevented from healing!"
+msgstr "{1}无法进行回复！"
+
+msgid "{1} was protected by {2}!"
+msgstr "{1}受到了{2}的保护！"
+
+msgid "{1} was quashed!"
+msgstr "{1}被延后了！"
+
+msgid "{1} was released."
+msgstr "放生了{1}。"
+
+msgid "{1} was seeded!"
+msgstr "{1}被种子寄生了！"
+
+msgid "{1} was squeezed by {2}!"
+msgstr "{1}被{2}紧压住！"
+
+msgid "{1} was subjected to torment!"
+msgstr "{1}遭到了无理取闹！"
+
+msgid "{1} was thawed out."
+msgstr "{1}解冻了。"
+
+msgid "{1} was transferred to box \"{2}\"."
+msgstr "{1}被传送到了盒子『{2}』里。"
+
+msgid "{1} was transferred to box \"{2}.\""
+msgstr "{1}被传送到了盒子 『{2}.』里"
+
+msgid "{1} was transferred to someone's PC."
+msgstr "{1}被传送到了某人的电脑里。"
+
+msgid "{1} was transferred to someone's PC."
+msgstr "{1}被传送到了某人的电脑里。"
+
+msgid "{1} was transferred to {2}'s PC."
+msgstr "{1}被传送到了{2}的电脑里。"
+
+msgid "{1} was transferred to {2}'s PC."
+msgstr "{1}被传送到了{2}的电脑里。"
+
+msgid "{1} was trapped in the vortex!"
+msgstr "{1}被困在了旋风里！"
+
+msgid "{1} was unaffected!"
+msgstr "{1}没有受到影响！"
+
+msgid "{1} was woken from its sleep."
+msgstr "{1}从睡眠中醒过来了！"
+
+msgid "{1} was wrapped by {2}!"
+msgstr "{1}被{2}紧束着！"
+
+msgid "{1} wasn't affected!"
+msgstr "{1}没有受到影响！"
+
+msgid "{1} watered the plant.\\wtnp[40]"
+msgstr "{1}浇灌了植株。\\wtnp[40]"
+
+msgid "{1} went back to {2}!"
+msgstr "{1}回到了{2}后场！"
+
+msgid "{1} went to sleep!"
+msgstr "{1}睡着了！"
+
+msgid "{1} whipped up a whirlwind!"
+msgstr "{1}刮起了一阵旋风！"
+
+msgid "{1} will go first."
+msgstr "先手将会是{1}。"
+
+msgid "{1} withdrew {2}!"
+msgstr "{1}换下了{2}！"
+
+msgid "{1} woke up in the uproar!"
+msgstr "{1}被吵醒了！"
+
+msgid "{1} woke up!"
+msgstr "{1}醒来了！"
+
+msgid "{1} woke up."
+msgstr "{1}醒来了。"
+
+msgid "{1} won against {2}."
+msgstr "{1}战胜了{2}。"
+
+msgid "{1} won't flinch because of its {2}!"
+msgstr "{1}由于自己的\n{2}而没有畏缩！"
+
+msgid "{1} {2}"
+msgstr "{1}{2}"
+
+msgid "{1}'s"
+msgstr "{1}的"
+
+msgid "{1}'s AREA"
+msgstr "{1}生活区域"
+
+msgid "{1}'s Air Balloon popped!"
+msgstr "{1}的气球破裂了！"
+
+msgid "{1}'s Attack fell!"
+msgstr "{1}的攻击降低了！"
+
+msgid "{1}'s Attack harshly fell!"
+msgstr "{1}的攻击大幅降低了！"
+
+msgid "{1}'s Attack increased."
+msgstr "{1}的攻击增长了。"
+
+msgid "{1}'s Attack rose drastically!"
+msgstr "{1}的攻击巨幅提高了！"
+
+msgid "{1}'s Attack rose sharply!"
+msgstr "{1}的攻击大幅提高了！"
+
+msgid "{1}'s Attack rose!"
+msgstr "{1}的攻击提高了！"
+
+msgid "{1}'s Attack sharply rose!"
+msgstr "{1}的攻击大幅提高了！"
+
+msgid "{1}'s Attack was not lowered!"
+msgstr "{1}的攻击没有降低！"
+
+msgid "{1}'s Attack went way up!"
+msgstr "{1}的攻击提高了！"
+
+msgid "{1}'s Attack won't go any higher!"
+msgstr "{1}的攻击已经无法再提高了！"
+
+msgid "{1}'s Attack won't go any lower!"
+msgstr "{1}的攻击已经无法再降低了！"
+
+msgid "{1}'s Attack won't go lower!"
+msgstr "{1}的攻击经无法再降低了！"
+
+msgid "{1}'s Chernobyl started a Toxic Fallout!"
+msgstr "{1}的切尔诺贝利特性使周围散布开了有毒辐射！"
+
+msgid "{1}'s Cloud Nine made the effects of weather disappear."
+msgstr "{1}的无关天气特性使天气的影响消失了。"
+
+msgid "{1}'s Contrary raised its Attack!"
+msgstr "{1}的唱反调特性提高了自己的攻击！"
+
+msgid "{1}'s Contrary raised its Speed!"
+msgstr "{1}的唱反调特性提高了自己的速度！"
+
+msgid "{1}'s Defense fell!"
+msgstr "{1}的防御降低了！"
+
+msgid "{1}'s Defense harshly fell!"
+msgstr "{1}的防御大幅降低了！"
+
+msgid "{1}'s Defense increased."
+msgstr "{1}的防御增长了。"
+
+msgid "{1}'s Defense rose drastically!"
+msgstr "{1}的防御巨幅提高了！"
+
+msgid "{1}'s Defense rose sharply!"
+msgstr "{1}的防御大幅提高了！"
+
+msgid "{1}'s Defense rose!"
+msgstr "{1}的防御提高了！"
+
+msgid "{1}'s Defense was lowered!"
+msgstr "{1}的防御降低了！"
+
+msgid "{1}'s Defense was not lowered!"
+msgstr "{1}的防御没有降低！"
+
+msgid "{1}'s Defense went way up!"
+msgstr "{1}的防御提高了！"
+
+msgid "{1}'s Defense won't go any higher!"
+msgstr "{1}的防御已经无法再提高了！"
+
+msgid "{1}'s Defense won't go any lower!"
+msgstr "{1}的防御已经无法再降低了！"
+
+msgid "{1}'s Desolate Land made the sun turn harsh!"
+msgstr "{1}的终结之地特性引发了强日照！"
+
+msgid "{1}'s Drizzle made it rain!"
+msgstr "{1}的降雨特性使周围下起了雨！"
+
+msgid "{1}'s Drought intensified the sun's rays!"
+msgstr "{1}的日照特性使阳光变得更强烈了！"
+
+msgid "{1}'s Dry Skin was healed by the rain!"
+msgstr "{1}的干燥皮肤受到了雨水治愈了！"
+
+msgid "{1}'s Dry Skin was hurt by the sunlight!"
+msgstr "{1}的干燥皮肤受到了阳光的伤害！"
+
+msgid "{1}'s Forewarn alerted it to {2}!"
+msgstr "{1}预知到了{2}！"
+
+msgid "{1}'s Geiger Sense raised its Attack!"
+msgstr "{1}的盖革感应提高了自身的攻击！"
+
+msgid "{1}'s Geiger Sense raised its Special Attack!"
+msgstr "{1}的盖革感应提高了自身的特攻！"
+
+msgid "{1}'s HP increased."
+msgstr "{1}的ＨＰ增长了。"
+
+msgid "{1}'s HP is full!"
+msgstr "{1}的ＨＰ是满的！"
+
+msgid "{1}'s HP was restored by {2} points."
+msgstr "{1}的ＨＰ恢复了{2}点。"
+
+msgid "{1}'s HP was restored!"
+msgstr "{1}的ＨＰ回复了！"
+
+msgid "{1}'s HP was restored."
+msgstr "{1}的ＨＰ恢复了。"
+
+msgid "{1}'s HP was set to 0."
+msgstr "{1}的ＨＰ被设置为０。"
+
+msgid "{1}'s HP was set to {2}."
+msgstr "{1}的ＨＰ被设置为{2}了。"
+
+msgid "{1}'s Heal Block wore off!"
+msgstr "{1}的回复封锁消失了！"
+
+msgid "{1}'s Ice Body restored its HP a little!"
+msgstr "{1}的冰冻之躯使其回复了少许ＨＰ！"
+
+msgid "{1}'s Kee Berry was activated!"
+msgstr "{1}的亚开果被触发了！"
+
+msgid "{1}'s Lightning Rod took the move!"
+msgstr "{1}的避雷针特性吸收了攻击！"
+
+msgid "{1}'s Maranga Berry was activated!"
+msgstr "{1}香罗果被触发了！"
+
+msgid "{1}'s Moody lowered its {2}!"
+msgstr "{1}由于心情不定特性降低了{2}！"
+
+msgid "{1}'s Moody sharply raised its {2}!"
+msgstr "{1}由于心情不定特性提高了{2}！"
+
+msgid "{1}'s Moxie raised its Attack!"
+msgstr "{1}的自信过度特性上升了自己的攻击！"
+
+msgid "{1}'s OT's name?"
+msgstr "{1}的初训家的名字是？"
+
+msgid "{1}'s Oblivious prevents taunting!"
+msgstr "{1}的迟钝特性阻止了无理取闹！"
+
+msgid "{1}'s PC"
+msgstr "{1}的电脑"
+
+msgid "{1}'s PP increased."
+msgstr "{1}的ＰＰ增长了。"
+
+msgid "{1}'s Perish count fell to {2}!"
+msgstr "{1}的灭亡计数降到{2}！"
+
+msgid "{1}'s Primal Reversion!\nIt reverted to its Primal Form!"
+msgstr "{1}的回归原始！\n回归到了原始形态！"
+
+msgid "{1}'s Primordial Sea caused a heavy rain to fall."
+msgstr "{1}的始源之海特性引发了一场暴雨。"
+
+msgid "{1}'s Rain Dish restored its HP a little!"
+msgstr "{1}的雨盘使自己回复了少许ＨＰ！"
+
+msgid "{1}'s Sand Stream whipped up a sandstorm!"
+msgstr "{1}的扬沙特性使周围扬起了沙暴！"
+
+msgid "{1}'s Snow Warning made it hail!"
+msgstr "{1}的降雪特性使周围下起了冰雹！"
+
+msgid "{1}'s Special Attack fell!"
+msgstr "{1}的特攻降低了！"
+
+msgid "{1}'s Special Attack harshly fell!"
+msgstr "{1}的特攻大幅降低了！"
+
+msgid "{1}'s Special Attack increased."
+msgstr "{1}的特攻增长了。"
+
+msgid "{1}'s Special Attack rose drastically!"
+msgstr "{1}的特攻巨幅提高了！"
+
+msgid "{1}'s Special Attack rose sharply!"
+msgstr "{1}的特攻大幅提高了！"
+
+msgid "{1}'s Special Attack rose!"
+msgstr "{1}的特攻提高了！"
+
+msgid "{1}'s Special Attack sharply rose!"
+msgstr "{1}的特攻大幅提高了！"
+
+msgid "{1}'s Special Attack went way up!"
+msgstr "{1}的特攻提高了！"
+
+msgid "{1}'s Special Attack won't go any higher!"
+msgstr "{1}的特攻已经无法再提高了！"
+
+msgid "{1}'s Special Attack won't go any lower!"
+msgstr "{1}的特攻已经无法再降低了！"
+
+msgid "{1}'s Special Defense fell!"
+msgstr "{1}的特防降低了！"
+
+msgid "{1}'s Special Defense harshly fell!"
+msgstr "{1}的特防大幅降低了！"
+
+msgid "{1}'s Special Defense increased."
+msgstr "{1}的特防增长了。"
+
+msgid "{1}'s Special Defense rose drastically!"
+msgstr "{1}的特防巨幅提高了！"
+
+msgid "{1}'s Special Defense rose sharply!"
+msgstr "{1}的特防大幅提高了！"
+
+msgid "{1}'s Special Defense rose!"
+msgstr "{1}的特防提高了！"
+
+msgid "{1}'s Special Defense went way up!"
+msgstr "{1}的特防提高了！"
+
+msgid "{1}'s Special Defense won't go any higher!"
+msgstr "{1}的特防已经无法再提高了！"
+
+msgid "{1}'s Special Defense won't go any lower!"
+msgstr "{1}的特防已经无法再降低了！"
+
+msgid "{1}'s Speed Boost raised its Speed!"
+msgstr "{1}的加速特性提高了自己的速度！"
+
+msgid "{1}'s Speed fell!"
+msgstr "{1}的速度降低了！"
+
+msgid "{1}'s Speed harshly fell!"
+msgstr "{1}的速度大幅降低了！"
+
+msgid "{1}'s Speed increased."
+msgstr "{1}的速度增长了。"
+
+msgid "{1}'s Speed rose drastically!"
+msgstr "{1}的速度巨幅提高了！"
+
+msgid "{1}'s Speed rose sharply!"
+msgstr "{1}的速度大幅提高了！"
+
+msgid "{1}'s Speed rose!"
+msgstr "{1}的速度提高了！"
+
+msgid "{1}'s Speed went way up!"
+msgstr "{1}的速度提高了！"
+
+msgid "{1}'s Speed won't go any higher!"
+msgstr "{1}的速度已经无法再提高了！"
+
+msgid "{1}'s Speed won't go any lower!"
+msgstr "{1}的速度已经无法再降低了！"
+
+msgid "{1}'s Storm Drain took the move!"
+msgstr "{1}的引水特性吸收了攻击！"
+
+msgid "{1}'s Stormbringer whipped up a thunderstorm!"
+msgstr "{1}的兴风者特性使周围产生了雷暴！"
+
+msgid "{1}'s Strength made it possible to move boulders around!"
+msgstr "{1}的怪力使得移动大岩石成为了可能！"
+
+msgid "{1}'s Taunt wore off!"
+msgstr "{1}的挑衅效果消失了！"
+
+msgid "{1}'s ability became Mummy!"
+msgstr "{1}的特性变成了木乃伊！"
+
+msgid "{1}'s ability was changed to {2}!"
+msgstr "{1}的特性变为了{2}！"
+
+msgid "{1}'s ability was suppressed!"
+msgstr "{1}的特性被封住了！"
+
+msgid "{1}'s accuracy fell!"
+msgstr "{1}的命中降低了！"
+
+msgid "{1}'s accuracy harshly fell!"
+msgstr "{1}的命中大幅降低了！"
+
+msgid "{1}'s accuracy rose drastically!"
+msgstr "{1}的命中巨幅提高了！"
+
+msgid "{1}'s accuracy rose sharply!"
+msgstr "{1}的命中大幅提高了！"
+
+msgid "{1}'s accuracy rose!"
+msgstr "{1}的命中提高了！"
+
+msgid "{1}'s accuracy was not lowered!"
+msgstr "{1}的命中没有降低！"
+
+msgid "{1}'s accuracy went way up!"
+msgstr "{1}的命中提高了！"
+
+msgid "{1}'s accuracy won't go any higher!"
+msgstr "{1}的命中已经无法再提高了！"
+
+msgid "{1}'s accuracy won't go any lower!"
+msgstr "{1}的命中已经无法再降低了！"
+
+msgid "{1}'s attack missed!"
+msgstr "{1}的攻击没有命中！"
+
+msgid "{1}'s burn was healed."
+msgstr "{1}的灼烧被治愈了。"
+
+msgid "{1}'s data was added to the Pokédex."
+msgstr "{1}的资料被添加到宝可梦图鉴里了。"
+
+msgid "{1}'s electromagnetism wore off!"
+msgstr "{1}的悬浮电磁场消失了！"
+
+msgid "{1}'s emotions rose to a fever pitch!\nIt entered Hyper Mode!"
+msgstr "{1}的情绪狂热了起来！\n它进入了亢奋模式！"
+
+msgid "{1}'s encore ended!"
+msgstr "{1}再来一次结束了！"
+
+msgid "{1}'s evasiveness fell!"
+msgstr "{1}的回避率降低了！"
+
+msgid "{1}'s evasiveness harshly fell!"
+msgstr "{1}的回避率大幅降低了！"
+
+msgid "{1}'s evasiveness rose drastically!"
+msgstr "{1}的回避率巨幅提高了！"
+
+msgid "{1}'s evasiveness rose sharply!"
+msgstr "{1}的回避率大幅提高了！"
+
+msgid "{1}'s evasiveness rose!"
+msgstr "{1}的回避率提高了！"
+
+msgid "{1}'s evasiveness went way up!"
+msgstr "{1}的闪避提高了！"
+
+msgid "{1}'s evasiveness won't go any higher!"
+msgstr "{1}的回避率已经无法再提高了！"
+
+msgid "{1}'s evasiveness won't go any lower!"
+msgstr "{1}的回避率已经无法再降低了！"
+
+msgid "{1}'s form was set to {2}."
+msgstr "{1}的形态被设置为{2}了。"
+
+msgid "{1}'s gender couldn't be changed."
+msgstr "{1}的性别无法改变。"
+
+msgid "{1}'s happiness was set to {2}."
+msgstr "{1}亲密度被设置为{2}了。"
+
+msgid "{1}'s health was sapped by Leech Seed!"
+msgstr "{1}的健康被寄生种子吸收走了！"
+
+msgid "{1}'s heart gauge was lowered from {2} to {3} (now stage {4})."
+msgstr "{1}的心灵值从{2}降到了{3} （现在的阶段为{4}）。"
+
+msgid "{1}'s level remained unchanged."
+msgstr "{1}没有改变等级。"
+
+msgid "{1}'s level was set to {2}."
+msgstr "{1}的等级被设置为{2}了。"
+
+msgid "{1}'s move is no longer disabled!"
+msgstr "{1}的招式不再无法使用了！"
+
+msgid "{1}'s moves have been electrified!"
+msgstr "{1}的招式被输电了！"
+
+msgid "{1}'s moves were reset."
+msgstr "重置了{1}所学的招式。"
+
+msgid "{1}'s nest"
+msgstr "{1}的巢穴"
+
+msgid "{1}'s nickname?"
+msgstr "{1}的昵称是？"
+
+msgid "{1}'s poisoning was cured."
+msgstr "{1}的中毒被治愈了。"
+
+msgid "{1}'s rage is building!"
+msgstr "{1}的愤怒累积起来了！"
+
+msgid "{1}'s species was changed to {2}."
+msgstr "{1}的物种被设置为{2}了。"
+
+msgid "{1}'s stat changes were all reversed!"
+msgstr "{1}的能力变化反转了！"
+
+msgid "{1}'s stat changes were removed!"
+msgstr "{1}的能力变化消失了！"
+
+msgid "{1}'s stats were not lowered!"
+msgstr "{1}的能力没有降低！"
+
+msgid "{1}'s stats were not lowered."
+msgstr "{1}的能力没有被降低！"
+
+msgid "{1}'s stats won't go any higher!"
+msgstr "{1}的能力已经无法再提高了！"
+
+msgid "{1}'s stats won't go any lower!"
+msgstr "{1}的能力已经无法再降低了！"
+
+msgid "{1}'s status could not be changed."
+msgstr "{1}的状态无法改变。"
+
+msgid "{1}'s status was changed."
+msgstr "{1}的状态改变了。"
+
+msgid "{1}'s stockpiled effect wore off!"
+msgstr "{1}的蓄力效果消失了！"
+
+msgid "{1}'s substitute faded!"
+msgstr "{1}的替身消失了！"
+
+msgid "{1}'s taunt wore off!"
+msgstr "{1}的挑衅消失了！"
+
+msgid "{1}'s team was disqualified!"
+msgstr "{1}的队伍失去了资格！"
+
+msgid "{1}'s torment wore off!"
+msgstr "{1}的无理取闹消失了！"
+
+msgid "{1}'s type changed to match {2}'s!"
+msgstr "{1}的属性变成了{2}的！"
+
+msgid "{1}'s was healed through Rebuild!"
+msgstr "{1}通过自我重建治愈了自己！"
+
+msgid "{1}'s wish came true!"
+msgstr "{1}的祈愿成为了现实！"
+
+msgid "{1}'s {2} badly poisoned {3}!"
+msgstr "{1}的{2}使{3}中了剧毒！"
+
+msgid "{1}'s {2} blocks {3}!"
+msgstr "{1}的{2}挡住了{3}！"
+
+msgid "{1}'s {2} boosted its Attack!"
+msgstr "{1}的{2}提高了自己的攻击！"
+
+msgid "{1}'s {2} boosted its Special Attack!"
+msgstr "{1}的{2}提高了自己的特攻！"
+
+msgid "{1}'s {2} burned {3}!"
+msgstr "{1}的{2}使{3}烧伤了！"
+
+msgid "{1}'s {2} changed it into the {3} type!"
+msgstr "{1}的{2}使其自身变成了{3}属性！"
+
+msgid "{1}'s {2} cured its burn problem!"
+msgstr "{1}的{2}治愈了自己的灼烧！"
+
+msgid "{1}'s {2} cured its confusion problem!"
+msgstr "{1}的{2}治愈了自己的混乱！"
+
+msgid "{1}'s {2} cured its frozen problem!"
+msgstr "{1}的{2}治愈了自己的冰冻！"
+
+msgid "{1}'s {2} cured its ice problem!"
+msgstr "{1}的{2}治愈了自己的冰冻！"
+
+msgid "{1}'s {2} cured its love problem!"
+msgstr "{1}的{2}治愈了自己的着迷！"
+
+msgid "{1}'s {2} cured its paralysis problem!"
+msgstr "{1}的{2}治愈了自己的麻痹！"
+
+msgid "{1}'s {2} cured its partner's burn problem!"
+msgstr "{1}的{2}治愈了同伴的灼伤！"
+
+msgid "{1}'s {2} cured its partner's ice problem!"
+msgstr "{1}的{2}治愈了同伴的冰冻！"
+
+msgid "{1}'s {2} cured its partner's paralysis problem!"
+msgstr "{1}的{2}治愈了同伴的麻痹！"
+
+msgid "{1}'s {2} cured its partner's poison problem!"
+msgstr "{1}的{2}治愈了同伴的中毒！"
+
+msgid "{1}'s {2} cured its partner's sleep problem!"
+msgstr "{1}的{2}治愈了同伴的睡眠！"
+
+msgid "{1}'s {2} cured its poison problem!"
+msgstr "{1}的{2}治愈了自己的中毒！"
+
+msgid "{1}'s {2} cured its sleep problem!"
+msgstr "{1}的{2}治愈了自己的睡眠！"
+
+msgid "{1}'s {2} cured {3}'s love problem!"
+msgstr "{1}的{2}解除了{3}的着迷！"
+
+msgid "{1}'s {2} cuts {3}'s Attack!"
+msgstr "{1}的{2}降低了{3}的攻击！"
+
+msgid "{1}'s {2} cuts {3}'s Speed!"
+msgstr "{1}的{2}降低了{3}的速度！"
+
+msgid "{1}'s {2} disabled {3}!"
+msgstr "{1}的{2}使{3}无法使用了！"
+
+msgid "{1}'s {2} fell!"
+msgstr "{1}的{2}降低了！"
+
+msgid "{1}'s {2} had no effect on {3}!"
+msgstr "{1}的{2}对{3}没有效果！"
+
+msgid "{1}'s {2} hurt {3}!"
+msgstr "{1}的{2}使{3}受到了伤害！"
+
+msgid "{1}'s {2} infatuated {3}!"
+msgstr "{1}的{2}使{3}着迷了！"
+
+msgid "{1}'s {2} is disabled!"
+msgstr "{1}的{2}无法使用了！"
+
+msgid "{1}'s {2} is reacting to {3}'s Mega Ring!"
+msgstr "{1}的{2}与\n{3}的超级手镯产生了反应！"
+
+msgid "{1}'s {2} lost all its PP due to the grudge!"
+msgstr "{1}的{2}由于怨恨\n失去了所有的ＰＰ！"
+
+msgid "{1}'s {2} lowered its Defense!"
+msgstr "{1}的{2}降低了自己的防御！"
+
+msgid "{1}'s {2} lowered {3}'s Speed!"
+msgstr "{1}的{2}降低了{3}的速度！"
+
+msgid "{1}'s {2} made it the {3} type!"
+msgstr "{1}的{2}使自己变成了{3}属性！"
+
+msgid "{1}'s {2} made {3} ineffective!"
+msgstr "{1}的{2}使{3}无效了！"
+
+msgid "{1}'s {2} made {3} sleep!"
+msgstr "{1}的{2}使{3}睡着了！"
+
+msgid "{1}'s {2} made {3} useless!"
+msgstr "{1}的{2}使得{3}无效了！"
+
+msgid "{1}'s {2} maxed its Attack!"
+msgstr "{1}的{2}使自己释放了全部力量！"
+
+msgid "{1}'s {2} paralyzed {3}! It may be unable to move!"
+msgstr "{1}的{2}使{3}麻痹了！招式可能无法使出！"
+
+msgid "{1}'s {2} poisoned {3}!"
+msgstr "{1}的{2}使{3}中毒了！"
+
+msgid "{1}'s {2} prevented {3}'s {4} from working!"
+msgstr "{1}的{2}阻止了{3}的{4}！"
+
+msgid "{1}'s {2} prevents Attack loss!"
+msgstr "{1}的{2}阻止了攻击降低！"
+
+msgid "{1}'s {2} prevents Defense loss!"
+msgstr "{1}的{2}阻止了防御降低！"
+
+msgid "{1}'s {2} prevents accuracy loss!"
+msgstr "{1}的{2}阻止了命中降低！"
+
+msgid "{1}'s {2} prevents burns!"
+msgstr "{1}的{2}防止了灼烧！"
+
+msgid "{1}'s {2} prevents confusion!"
+msgstr "{1}的{2}防止了混乱！"
+
+msgid "{1}'s {2} prevents paralysis!"
+msgstr "{1}的{2}防止了麻痹！"
+
+msgid "{1}'s {2} prevents poisoning!"
+msgstr "{1}的{2}防止了中毒！"
+
+msgid "{1}'s {2} prevents romance!"
+msgstr "{1}的{2}防止了着迷！"
+
+msgid "{1}'s {2} prevents stat decrease!"
+msgstr "{1}的{2}阻止了能力的降低！"
+
+msgid "{1}'s {2} prevents stat loss!"
+msgstr "{1}的{2}阻止了能力降低！"
+
+msgid "{1}'s {2} prevents switching!"
+msgstr "{1}的{2}阻止了替换！"
+
+msgid "{1}'s {2} prevents {3} from using {4}!"
+msgstr "{1}的{2}阻止了{3}使用{4}！"
+
+msgid "{1}'s {2} prevents {3}'s {4} from working!"
+msgstr "{1}的{2}阻止了{3}的{4}！"
+
+msgid "{1}'s {2} raised its Attack!"
+msgstr "{1}的{2}提高了自己的攻击！"
+
+msgid "{1}'s {2} raised its Fire power!"
+msgstr "{1}的{2}使自己火属性招式的威力提高了！"
+
+msgid "{1}'s {2} raised its Special Attack!"
+msgstr "{1}的{2}提高了自己的特殊攻击！"
+
+msgid "{1}'s {2} raised its Speed!"
+msgstr "{1}的{2}提高了自己的速度！"
+
+msgid "{1}'s {2} raised its speed!"
+msgstr "{1}的{2}提高了自己的速度！"
+
+msgid "{1}'s {2} raised the power of its Fire-type moves!"
+msgstr "{1}的{2}提高了自身火属性招式的威力！"
+
+msgid "{1}'s {2} restored health!"
+msgstr "{1}的{2}恢复了\n{1}的ＨＰ！"
+
+msgid "{1}'s {2} restored its HP a little!"
+msgstr "{1}使用{2}回复了少许ＨＰ！"
+
+msgid "{1}'s {2} restored its HP!"
+msgstr "{1}的{2}回复了自身的ＨＰ！"
+
+msgid "{1}'s {2} restored its status!"
+msgstr "{1}的{2}回复了自己的状态！"
+
+msgid "{1}'s {2} restored {3}'s PP!"
+msgstr "{1}的{2}恢复了\n{3}的ＰＰ！"
+
+msgid "{1}'s {2} restored {3}'s status!"
+msgstr "{1}的{2}回复了{3}的状态！"
+
+msgid "{1}'s {2} rose sharply!"
+msgstr "{1}的{2}大幅提高了！"
+
+msgid "{1}'s {2} was bounced back by Magic Coat!"
+msgstr "{1}的{2}被魔法反射反弹了回去！"
+
+msgid "{1}'s {2} was broken!"
+msgstr "{1}的{2}被破除了！"
+
+msgid "{1}'s {2} was burned up!"
+msgstr "{1}的{2}被烧掉了！"
+
+msgid "{1}'s {2} was disabled!"
+msgstr "{1}的{2}无法使用了！"
+
+msgid "{1}'s {2} was transferred to {3}!"
+msgstr "{1}的{2}转移到了{3}的身上！"
+
+msgid "{1}'s {2} wore off!"
+msgstr "{1}的{2}消失了！"
+
+msgid "{1}, and you want {2}.\nThat will be ${3}. OK?"
+msgstr "{2}个{1}一共¥{3}。可以吗？"
+
+msgid "{1}, switch out! Come back!"
+msgstr "{1}，这样就可以了！回来吧！"
+
+msgid "{1}: {2}, Award: ???, {3}"
+msgstr "{1}：{2}，奖品：？？？，{3}"
+
+msgid "{1}: {2}, Award: {3}, {4}"
+msgstr "{1}：{2}，奖品：{3}，{4}"
+
+msgid "{1}?\nHow many would you like to sell?"
+msgstr "{1}？\n您想要卖多少个？"
+
+msgid "{1}? Certainly.\nHow many would you like?"
+msgstr "{1}？好的。\n您要买几个？"
+
+msgid "{1}? Oh, no.\nI can't buy that."
+msgstr "{1}？抱歉。\n我不能买下它。"
+
+msgid "{2} type was added to {1}!"
+msgstr "{1}添加了{2}属性！"
+

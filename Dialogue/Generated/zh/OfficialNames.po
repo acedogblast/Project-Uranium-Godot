@@ -1,0 +1,1631 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "ABBIE"
+msgstr "阿比"
+
+msgid "ABBY"
+msgstr "艾比"
+
+msgid "ADRIAN"
+msgstr "阿德里安"
+
+msgid "ADRIANA"
+msgstr "阿德里安那"
+
+msgid "AIDEN"
+msgstr "艾登"
+
+msgid "AL"
+msgstr "艾尔"
+
+msgid "ALANA"
+msgstr "阿兰娜"
+
+msgid "ALEXAS"
+msgstr "亚历克斯"
+
+msgid "ALFREDO"
+msgstr "阿尔弗雷多"
+
+msgid "ALISON"
+msgstr "艾莉森"
+
+msgid "ALIVIA"
+msgstr "阿莉维亚"
+
+msgid "ALIZE"
+msgstr "艾丽兹"
+
+msgid "ALONDRA"
+msgstr "龙爪"
+
+msgid "ALONZO"
+msgstr "阿龙"
+
+msgid "AMANDA"
+msgstr "阿曼达"
+
+msgid "AMARA"
+msgstr "阿玛拉"
+
+msgid "AMELIA"
+msgstr "阿米莉亚"
+
+msgid "ANDRE"
+msgstr "安德烈"
+
+msgid "ANN"
+msgstr "安"
+
+msgid "ANNE"
+msgstr "安妮"
+
+msgid "ANSLEY"
+msgstr "安斯利"
+
+msgid "ANTON"
+msgstr "安东"
+
+msgid "ANTONIO"
+msgstr "安东尼奥"
+
+msgid "ANYA"
+msgstr "安雅"
+
+msgid "ARMANDO"
+msgstr "阿曼多"
+
+msgid "ARNIE"
+msgstr "阿尼"
+
+msgid "ARNOLD"
+msgstr "阿诺德"
+
+msgid "ARTHUR"
+msgstr "亚瑟"
+
+msgid "AVA"
+msgstr "爱娃"
+
+msgid "AVERY"
+msgstr "艾佛里"
+
+msgid "AYDEN"
+msgstr "艾尔顿"
+
+msgid "Abe & Gayle"
+msgstr "安倍 & 盖尔"
+
+msgid "Adam"
+msgstr "亚当"
+
+msgid "Adelina"
+msgstr "安吉丽娜"
+
+msgid "Ahmed"
+msgstr "艾哈迈德"
+
+msgid "Alana"
+msgstr "阿兰娜"
+
+msgid "Albert"
+msgstr "阿尔伯特"
+
+msgid "Alice"
+msgstr "爱丽丝"
+
+msgid "Alphonse"
+msgstr "阿方斯"
+
+msgid "Amalya"
+msgstr "阿玛莉亚"
+
+msgid "Amber"
+msgstr "琥珀"
+
+msgid "Ame"
+msgstr "艾密"
+
+msgid "Amy"
+msgstr "艾米"
+
+msgid "Angelica"
+msgstr "安杰莉卡"
+
+msgid "Ant"
+msgstr "安特"
+
+msgid "Aoi"
+msgstr "青"
+
+msgid "Ayumi"
+msgstr "歩美"
+
+msgid "Ayumu"
+msgstr "鸣海"
+
+msgid "Azalea"
+msgstr "杜鹃"
+
+msgid "BAILEY"
+msgstr "贝利"
+
+msgid "BALEY"
+msgstr "巴雷"
+
+msgid "BRADEN"
+msgstr "布莱登"
+
+msgid "BRADLEY"
+msgstr "巴拉德力"
+
+msgid "BRADY"
+msgstr "布雷迪"
+
+msgid "BRAYDEN"
+msgstr "布雷登"
+
+msgid "BREANNA"
+msgstr "布莱尼"
+
+msgid "BRENNAN"
+msgstr "布伦南"
+
+msgid "BRET"
+msgstr "布雷特"
+
+msgid "BRIANA"
+msgstr "布莱雅娜"
+
+msgid "BRODY"
+msgstr "布洛迪"
+
+msgid "BROOKS"
+msgstr "布鲁克斯"
+
+msgid "BRYCE"
+msgstr "布莱斯"
+
+msgid "BRYON"
+msgstr "布泳"
+
+msgid "BRYSON"
+msgstr "布莱森"
+
+msgid "Barry"
+msgstr "巴利"
+
+msgid "Ben"
+msgstr "本"
+
+msgid "Benjamin"
+msgstr "本杰明"
+
+msgid "Bernard"
+msgstr "伯纳德"
+
+msgid "Bernhold"
+msgstr "伯尔尼度"
+
+msgid "Bill"
+msgstr "比尔"
+
+msgid "Billy & Jenny"
+msgstr "比尔 & 珍妮"
+
+msgid "Bob"
+msgstr "鲍勃"
+
+msgid "Bocelli"
+msgstr "波加力"
+
+msgid "Brandon"
+msgstr "布兰登"
+
+msgid "Brent"
+msgstr "布伦特"
+
+msgid "Brooke"
+msgstr "布鲁克"
+
+msgid "CADEN"
+msgstr "卡盾"
+
+msgid "CAITLIN"
+msgstr "凯特琳"
+
+msgid "CARLIE"
+msgstr "能"
+
+msgid "CARLO"
+msgstr "卡尔"
+
+msgid "CARLY"
+msgstr "卡里"
+
+msgid "CARRIE"
+msgstr "卡丽"
+
+msgid "CHARLES"
+msgstr "查尔斯"
+
+msgid "CHAZ"
+msgstr "柴资"
+
+msgid "CHELSEA"
+msgstr "切尔西"
+
+msgid "CHEN"
+msgstr "成"
+
+msgid "CHLOE"
+msgstr "克洛伊"
+
+msgid "CIERRA"
+msgstr "西拉"
+
+msgid "CLARE"
+msgstr "克莱尔"
+
+msgid "CLAYTON"
+msgstr "克莱顿"
+
+msgid "CLINTON"
+msgstr "克林顿"
+
+msgid "CONNER"
+msgstr "康纳"
+
+msgid "COOPER"
+msgstr "库珀"
+
+msgid "CORDELL"
+msgstr "科德"
+
+msgid "COREY"
+msgstr "克里"
+
+msgid "CORSON"
+msgstr "柯森"
+
+msgid "CRAIG"
+msgstr "克雷格"
+
+msgid "CYBIL"
+msgstr "希伯尔"
+
+msgid "Caesar"
+msgstr "凯撒"
+
+msgid "Caiman"
+msgstr "才曼"
+
+msgid "Cali"
+msgstr "卡莲"
+
+msgid "Cameron"
+msgstr "卡梅伦"
+
+msgid "Caren"
+msgstr "卡伦"
+
+msgid "Carla"
+msgstr "卡拉"
+
+msgid "Carlton"
+msgstr "卡尔顿"
+
+msgid "Caroline"
+msgstr "卡罗琳"
+
+msgid "Caruso"
+msgstr "卡鲁索"
+
+msgid "Catarina"
+msgstr "卡塔琳娜"
+
+msgid "Cathy"
+msgstr "凯西"
+
+msgid "Cecilia"
+msgstr "塞西莉亚"
+
+msgid "Cedric"
+msgstr "塞德里克"
+
+msgid "Chan"
+msgstr "陈"
+
+msgid "Charles"
+msgstr "查尔斯"
+
+msgid "Chelsea"
+msgstr "切尔西"
+
+msgid "Chris"
+msgstr "克里斯"
+
+msgid "Chuck"
+msgstr "卡盘"
+
+msgid "Cielo"
+msgstr "天空"
+
+msgid "Claire"
+msgstr "克莱尔"
+
+msgid "Clapton"
+msgstr "克莱斯顿"
+
+msgid "Claude"
+msgstr "克劳德"
+
+msgid "Claudio"
+msgstr "克劳迪奥"
+
+msgid "Cloe"
+msgstr "克洛"
+
+msgid "Conca"
+msgstr "昆嘉"
+
+msgid "Corben"
+msgstr "柯兵"
+
+msgid "Coulton"
+msgstr "库尔顿"
+
+msgid "Cureau"
+msgstr "库瑞"
+
+msgid "Curie"
+msgstr "居里"
+
+msgid "Cylan"
+msgstr "赛兰"
+
+msgid "DAKOTA"
+msgstr "达科他"
+
+msgid "DALIA"
+msgstr "戴利亚"
+
+msgid "DAMIAN"
+msgstr "达米安"
+
+msgid "DANELA"
+msgstr "达纳拉"
+
+msgid "DARIO"
+msgstr "达里奥"
+
+msgid "DARYL"
+msgstr "达里尔"
+
+msgid "DAVE"
+msgstr "戴夫"
+
+msgid "DAVIN"
+msgstr "达文"
+
+msgid "DAWN"
+msgstr "道恩"
+
+msgid "DELANEY"
+msgstr "德莱尼"
+
+msgid "DELILAH"
+msgstr "德丽拉"
+
+msgid "DERRICK"
+msgstr "德里克"
+
+msgid "DESTIN"
+msgstr "德斯廷"
+
+msgid "DIRK"
+msgstr "迪克"
+
+msgid "DOMINIC"
+msgstr "多米尼克"
+
+msgid "DORINE"
+msgstr "多李娜"
+
+msgid "DOROTHY"
+msgstr "多萝西"
+
+msgid "DUSTIN"
+msgstr "达斯丁"
+
+msgid "Daichi"
+msgstr "大地"
+
+msgid "Damian"
+msgstr "达米安"
+
+msgid "Davern"
+msgstr "达维恩"
+
+msgid "Derek"
+msgstr "德里克"
+
+msgid "Diana"
+msgstr "戴安娜"
+
+msgid "Dick"
+msgstr "迪克"
+
+msgid "Din"
+msgstr "丁"
+
+msgid "Doug"
+msgstr "道格"
+
+msgid "Dovak"
+msgstr "多瓦可"
+
+msgid "Draugr"
+msgstr "道拉戈"
+
+msgid "Drew"
+msgstr "德鲁"
+
+msgid "Dunn"
+msgstr "邓恩"
+
+msgid "EARL"
+msgstr "伯爵"
+
+msgid "EDUARDO"
+msgstr "爱德华多"
+
+msgid "EILEEN"
+msgstr "卡莉"
+
+msgid "ELAINE"
+msgstr "依恋"
+
+msgid "ELENA"
+msgstr "艾琳娜"
+
+msgid "ELISE"
+msgstr "阿里萨"
+
+msgid "ELIZA"
+msgstr "伊丽莎"
+
+msgid "ELLEN"
+msgstr "艾伦"
+
+msgid "EMANUEL"
+msgstr "伊曼纽尔"
+
+msgid "EMILEE"
+msgstr "艾米丽"
+
+msgid "EMILIA"
+msgstr "艾米利亚"
+
+msgid "EMILY"
+msgstr "艾米莉"
+
+msgid "EMMA"
+msgstr "艾玛"
+
+msgid "ERICK"
+msgstr "埃里克"
+
+msgid "ERIK"
+msgstr "埃里克"
+
+msgid "ESTHER"
+msgstr "埃斯特"
+
+msgid "EVAN"
+msgstr "埃文"
+
+msgid "Eddard"
+msgstr "艾德"
+
+msgid "Ellen"
+msgstr "艾伦"
+
+msgid "Elsa"
+msgstr "艾尔莎"
+
+msgid "Elwyn"
+msgstr "艾尔文"
+
+msgid "Emile"
+msgstr "埃米尔"
+
+msgid "Esther"
+msgstr "埃斯特"
+
+msgid "Ethan & Alice"
+msgstr "伊森 & 爱丽丝"
+
+msgid "Eustace"
+msgstr "尤斯塔斯"
+
+msgid "Evan"
+msgstr "埃文"
+
+msgid "Everst"
+msgstr "恒斯特"
+
+msgid "FERRIS"
+msgstr "菲利斯"
+
+msgid "FINN"
+msgstr "芬"
+
+msgid "FIONA"
+msgstr "菲奥娜"
+
+msgid "Faeh"
+msgstr "菲斯"
+
+msgid "Felice"
+msgstr "快乐"
+
+msgid "Flood"
+msgstr "弗勒德"
+
+msgid "Flower"
+msgstr "弗劳尔"
+
+msgid "Fly"
+msgstr "弗莱"
+
+msgid "GABRIEL"
+msgstr "加布里埃尔"
+
+msgid "GAGE"
+msgstr "盖吉"
+
+msgid "GARETT"
+msgstr "噶雷特"
+
+msgid "GARRETT"
+msgstr "加洛特"
+
+msgid "GAVIN"
+msgstr "加文"
+
+msgid "GIDEON"
+msgstr "基甸"
+
+msgid "GILLIAN"
+msgstr "吉莉安"
+
+msgid "GLENN"
+msgstr "格伦"
+
+msgid "GLORIA"
+msgstr "格劳瑞"
+
+msgid "GORDON"
+msgstr "戈登"
+
+msgid "GRAHAM"
+msgstr "格雷厄姆"
+
+msgid "GRAYSON"
+msgstr "格列森"
+
+msgid "GREGORY"
+msgstr "格雷戈瑞"
+
+msgid "GRETEL"
+msgstr "格丽特"
+
+msgid "GRIFFEN"
+msgstr "格里芬"
+
+msgid "GUNNAR"
+msgstr "贡纳"
+
+msgid "GUSTAVO"
+msgstr "古斯塔沃"
+
+msgid "Garlikid"
+msgstr "蒜头小子"
+
+msgid "Genin & Chuunin"
+msgstr "下忍 & 中忍"
+
+msgid "George"
+msgstr "乔治"
+
+msgid "Gerard"
+msgstr "热拉尔"
+
+msgid "Gertha"
+msgstr "格斯亚"
+
+msgid "Gordon"
+msgstr "戈登"
+
+msgid "Gregorison"
+msgstr "格莱里森"
+
+msgid "Griffin"
+msgstr "格里芬"
+
+msgid "HAL"
+msgstr "哈尔"
+
+msgid "HANK"
+msgstr "汉克"
+
+msgid "HAROLD"
+msgstr "哈罗德"
+
+msgid "HAYLEE"
+msgstr "海丽"
+
+msgid "HAYLIE"
+msgstr "海莉"
+
+msgid "HITOMI"
+msgstr "瞳"
+
+msgid "HOLDEN"
+msgstr "霍尔顿"
+
+msgid "HUGO"
+msgstr "雨果"
+
+msgid "HUNTER"
+msgstr "猎人"
+
+msgid "Hanks"
+msgstr "汉克斯"
+
+msgid "Harold"
+msgstr "哈罗德"
+
+msgid "Havost"
+msgstr "哈沃斯"
+
+msgid "Hayato"
+msgstr "隼"
+
+msgid "Hilda"
+msgstr "希尔达"
+
+msgid "Hinata"
+msgstr "日向"
+
+msgid "Hitomi"
+msgstr "瞳"
+
+msgid "Hokage"
+msgstr "火影"
+
+msgid "Homer"
+msgstr "荷马"
+
+msgid "Horace"
+msgstr "贺拉斯"
+
+msgid "Horde"
+msgstr "​"
+
+msgid "Horton"
+msgstr "霍顿"
+
+msgid "Hotaru"
+msgstr "莹"
+
+msgid "Houaiss"
+msgstr "霍艾斯"
+
+msgid "INGRID"
+msgstr "英格丽"
+
+msgid "ISIAH"
+msgstr "以赛亚"
+
+msgid "ISSAC"
+msgstr "伊萨克"
+
+msgid "Iago"
+msgstr "拉戈"
+
+msgid "Ifrit"
+msgstr "爱斐特"
+
+msgid "Immanuel"
+msgstr "以马尔利"
+
+msgid "Indiana"
+msgstr "印第安纳"
+
+msgid "Isaac"
+msgstr "艾萨克"
+
+msgid "Izumi"
+msgstr "泉"
+
+msgid "JADEN"
+msgstr "结灯"
+
+msgid "JALEN"
+msgstr "加仑"
+
+msgid "JAMAL"
+msgstr "贾马尔"
+
+msgid "JAMISON"
+msgstr "贾米森"
+
+msgid "JAREN"
+msgstr "亚伦"
+
+msgid "JARRETT"
+msgstr "迦勒特"
+
+msgid "JASON"
+msgstr "杰森"
+
+msgid "JASPER"
+msgstr "碧玉"
+
+msgid "JAXON"
+msgstr "夹克森"
+
+msgid "JAYLIN"
+msgstr "杰林"
+
+msgid "JAZLYN"
+msgstr "贾兹兰"
+
+msgid "JAZMIN"
+msgstr "加斯明"
+
+msgid "JENSON"
+msgstr "简森"
+
+msgid "JEREMY"
+msgstr "杰瑞米"
+
+msgid "JESSE"
+msgstr "杰西"
+
+msgid "JILL"
+msgstr "吉尔"
+
+msgid "JILLIAN"
+msgstr "吉利"
+
+msgid "JOANA"
+msgstr "琼娜"
+
+msgid "JOEL"
+msgstr "桥尔"
+
+msgid "JOHAN"
+msgstr "约翰"
+
+msgid "JOHN"
+msgstr "约翰"
+
+msgid "JORDAN"
+msgstr "乔丹"
+
+msgid "JORDYN"
+msgstr "乔戴恩"
+
+msgid "JOSIE"
+msgstr "桥西"
+
+msgid "JOVAN"
+msgstr "卓凡"
+
+msgid "JOYCE"
+msgstr "乔伊斯"
+
+msgid "JULIA"
+msgstr "朱莉娅"
+
+msgid "JULIAN"
+msgstr "朱利安"
+
+msgid "JULIANA"
+msgstr "朱丽安娜"
+
+msgid "Jack"
+msgstr "杰克"
+
+msgid "Jade"
+msgstr "杰德"
+
+msgid "James"
+msgstr "詹姆斯"
+
+msgid "Jang"
+msgstr "江"
+
+msgid "Jason"
+msgstr "杰森"
+
+msgid "Jenny"
+msgstr "珍妮"
+
+msgid "Jessica"
+msgstr "杰西卡"
+
+msgid "Jessy"
+msgstr "杰西"
+
+msgid "Jin"
+msgstr "简"
+
+msgid "Joe"
+msgstr "桥"
+
+msgid "Johnny"
+msgstr "约翰尼"
+
+msgid "Jonathan"
+msgstr "乔纳森"
+
+msgid "Joss"
+msgstr "乔斯"
+
+msgid "Judo"
+msgstr "柔道"
+
+msgid "Julianna"
+msgstr "朱丽安娜"
+
+msgid "Julius"
+msgstr "朱丽叶斯"
+
+msgid "Juno"
+msgstr "朱诺"
+
+msgid "KADEN"
+msgstr "卡登"
+
+msgid "KAILA"
+msgstr "凯拉"
+
+msgid "KAITLYN"
+msgstr "凯特琳"
+
+msgid "KAMERON"
+msgstr "卡梅隆"
+
+msgid "KARLEE"
+msgstr "卡莉"
+
+msgid "KATHRYN"
+msgstr "凯瑟琳"
+
+msgid "KATHY"
+msgstr "凯斯"
+
+msgid "KAY"
+msgstr "凯"
+
+msgid "KAYDEN"
+msgstr "凯登"
+
+msgid "KEITH"
+msgstr "吉斯"
+
+msgid "KELLY"
+msgstr "凯利"
+
+msgid "KELSEY"
+msgstr "凯尔色"
+
+msgid "KENDRA"
+msgstr "肯德拉"
+
+msgid "KENNETH"
+msgstr "肯尼斯"
+
+msgid "KEON"
+msgstr "科恩"
+
+msgid "KIPP"
+msgstr "凯普"
+
+msgid "KRISTEN"
+msgstr "克莉丝汀"
+
+msgid "Kaito"
+msgstr "纸鸢"
+
+msgid "Keichi"
+msgstr "凯奇"
+
+msgid "Kellyn"
+msgstr "铠零"
+
+msgid "Kenichi"
+msgstr "研一"
+
+msgid "Kili"
+msgstr "克里"
+
+msgid "Kim"
+msgstr "金"
+
+msgid "Kouki"
+msgstr "幸希"
+
+msgid "LAMAR"
+msgstr "拉马尔"
+
+msgid "LAUREN"
+msgstr "劳伦"
+
+msgid "LAWSON"
+msgstr "罗森"
+
+msgid "LAYTON"
+msgstr "林顿"
+
+msgid "LEON"
+msgstr "里昂"
+
+msgid "LESLIE"
+msgstr "莱斯尔"
+
+msgid "LEWIS"
+msgstr "李维斯"
+
+msgid "LEXIE"
+msgstr "蕾西"
+
+msgid "LIAM"
+msgstr "里亚姆"
+
+msgid "LILIANA"
+msgstr "丽安娜"
+
+msgid "LIZBETH"
+msgstr "利兹"
+
+msgid "LOGAN"
+msgstr "罗根"
+
+msgid "LUCA"
+msgstr "卢卡"
+
+msgid "LUKAS"
+msgstr "卢卡斯"
+
+msgid "LYNN"
+msgstr "林恩"
+
+msgid "Lara"
+msgstr "劳拉"
+
+msgid "Laramie"
+msgstr "拉勒米"
+
+msgid "Larkspur"
+msgstr "飞燕草"
+
+msgid "Larrie"
+msgstr "莱瑞"
+
+msgid "Logan"
+msgstr "罗根"
+
+msgid "Lorraine"
+msgstr "洛林"
+
+msgid "Lou"
+msgstr "卢"
+
+msgid "Luigi"
+msgstr "路易"
+
+msgid "Luka"
+msgstr "卢卡"
+
+msgid "Luke"
+msgstr "卢克"
+
+msgid "Lynette"
+msgstr "利奈特"
+
+msgid "MADDOX"
+msgstr "马多克斯"
+
+msgid "MALIK"
+msgstr "马利克"
+
+msgid "MALORY"
+msgstr "马洛里"
+
+msgid "MANUEL"
+msgstr "曼努埃尔"
+
+msgid "MARCO"
+msgstr "马克"
+
+msgid "MARCY"
+msgstr "马西"
+
+msgid "MARISA"
+msgstr "玛丽莎"
+
+msgid "MARLON"
+msgstr "马龙"
+
+msgid "MARV"
+msgstr "马文"
+
+msgid "MARVIN"
+msgstr "马尔文"
+
+msgid "MASON"
+msgstr "石匠"
+
+msgid "MATEO"
+msgstr "马特奥"
+
+msgid "MAXWELL"
+msgstr "麦克斯韦"
+
+msgid "MEGAN"
+msgstr "梅甘"
+
+msgid "MEGHAN"
+msgstr "莫格翰"
+
+msgid "MELODY"
+msgstr "旋律"
+
+msgid "MILLER"
+msgstr "米勒"
+
+msgid "MIRANDA"
+msgstr "米兰达"
+
+msgid "MIRIAM"
+msgstr "米里亚姆"
+
+msgid "MITCH"
+msgstr "米奇"
+
+msgid "MOLLY"
+msgstr "茉莉"
+
+msgid "Magrat"
+msgstr "玛格丽特"
+
+msgid "Manny"
+msgstr "曼尼"
+
+msgid "Mantis"
+msgstr "马提斯"
+
+msgid "Marc"
+msgstr "马克"
+
+msgid "Marcque"
+msgstr "马克其"
+
+msgid "Marcus"
+msgstr "马库斯"
+
+msgid "Maria"
+msgstr "玛丽雅"
+
+msgid "Marino"
+msgstr "马里诺"
+
+msgid "Mario"
+msgstr "马里奥"
+
+msgid "Mark"
+msgstr "马克"
+
+msgid "Marko"
+msgstr "马尔科"
+
+msgid "Marta"
+msgstr "马尔塔"
+
+msgid "Martin"
+msgstr "马丁"
+
+msgid "Matt"
+msgstr "马特"
+
+msgid "Mawuli"
+msgstr "马乌里"
+
+msgid "Melanie"
+msgstr "梅兰妮"
+
+msgid "Mercury"
+msgstr "墨丘里"
+
+msgid "Merlin"
+msgstr "梅林"
+
+msgid "Michael"
+msgstr "迈克尔"
+
+msgid "Miki"
+msgstr "三木"
+
+msgid "Mohammed"
+msgstr "穆罕默德"
+
+msgid "Monica"
+msgstr "莫妮卡"
+
+msgid "Myla"
+msgstr "米拉"
+
+msgid "NADIA"
+msgstr "纳兰荻"
+
+msgid "NASH"
+msgstr "纳什"
+
+msgid "NELSON"
+msgstr "纳尔逊"
+
+msgid "NESTOR"
+msgstr "内斯特"
+
+msgid "NICO"
+msgstr "尼克"
+
+msgid "NIKOLAS"
+msgstr "尼古拉斯"
+
+msgid "NORTON"
+msgstr "诺顿"
+
+msgid "Nelson"
+msgstr "纳尔逊"
+
+msgid "Nia"
+msgstr "尼亚"
+
+msgid "Nora"
+msgstr "诺拉"
+
+msgid "Norman"
+msgstr "诺曼"
+
+msgid "Nuñes"
+msgstr "努呢斯"
+
+msgid "Nu�es"
+msgstr "努尔斯"
+
+msgid "OLIVER"
+msgstr "欧利佛"
+
+msgid "OMAR"
+msgstr "奥马尔"
+
+msgid "OSCAR"
+msgstr "奥斯卡"
+
+msgid "Ogilvy"
+msgstr "奥美"
+
+msgid "Olly"
+msgstr "奥利"
+
+msgid "Owen"
+msgstr "欧文"
+
+msgid "PAIGE"
+msgstr "佩姬"
+
+msgid "PAMELA"
+msgstr "帕梅拉"
+
+msgid "PATRICK"
+msgstr "帕特里克"
+
+msgid "PAYTON"
+msgstr "佩顿"
+
+msgid "PEDRO"
+msgstr "佩德罗"
+
+msgid "PEGGY"
+msgstr "配吉"
+
+msgid "PETER"
+msgstr "彼得"
+
+msgid "PEYTON"
+msgstr "佩顿"
+
+msgid "PIERCE"
+msgstr "皮尔斯"
+
+msgid "PIPER"
+msgstr "派珀"
+
+msgid "Paul"
+msgstr "保罗"
+
+msgid "Pavarotti"
+msgstr "帕瓦罗蒂"
+
+msgid "Penny"
+msgstr "潘妮"
+
+msgid "Perch"
+msgstr "普洱斯"
+
+msgid "Perry"
+msgstr "佩里"
+
+msgid "Phoenix"
+msgstr "菲尼克斯"
+
+msgid "Pick"
+msgstr "匹克"
+
+msgid "Pop"
+msgstr "波普"
+
+msgid "QUINN"
+msgstr "奎因"
+
+msgid "QUINTON"
+msgstr "昆顿"
+
+msgid "Quito"
+msgstr "基多"
+
+msgid "RAFAEL"
+msgstr "拉斐尔"
+
+msgid "RAMIRO"
+msgstr "啦米罗"
+
+msgid "RAMON"
+msgstr "拉蒙"
+
+msgid "RAUL"
+msgstr "劳尔"
+
+msgid "RAYMOND"
+msgstr "雷德蒙"
+
+msgid "RAYNA"
+msgstr "雷纳"
+
+msgid "REECE"
+msgstr "里斯"
+
+msgid "REENA"
+msgstr "丽娜"
+
+msgid "REESE"
+msgstr "瑞希"
+
+msgid "REGINA"
+msgstr "黎加拿"
+
+msgid "RICARDO"
+msgstr "里卡多"
+
+msgid "RICH"
+msgstr "里奇"
+
+msgid "ROBBY"
+msgstr "罗比"
+
+msgid "ROBERTO"
+msgstr "罗伯托"
+
+msgid "RODETTE"
+msgstr "洛狄忒"
+
+msgid "ROLANDO"
+msgstr "罗兰度"
+
+msgid "RUBEN"
+msgstr "鲁本"
+
+msgid "RUSS"
+msgstr "罗斯"
+
+msgid "RUTH"
+msgstr "如斯"
+
+msgid "RYLEE"
+msgstr "丽丽"
+
+msgid "Ravin"
+msgstr "瑞文"
+
+msgid "Raymond"
+msgstr "雷蒙德"
+
+msgid "Rich"
+msgstr "里奇"
+
+msgid "Richard"
+msgstr "理查德"
+
+msgid "Richey"
+msgstr "里奇"
+
+msgid "Roach"
+msgstr "罗奇"
+
+msgid "Roger"
+msgstr "罗杰"
+
+msgid "Roland"
+msgstr "罗兰"
+
+msgid "Ronin & Juunin"
+msgstr "浪人 & 上忍"
+
+msgid "Rosalind"
+msgstr "若纱凛"
+
+msgid "Rowin"
+msgstr "洛维"
+
+msgid "Rylai"
+msgstr "莱利"
+
+msgid "SALMA"
+msgstr "萨尔玛"
+
+msgid "SAMIR"
+msgstr "萨米尔"
+
+msgid "SAMMY"
+msgstr "塞米"
+
+msgid "SELPHY"
+msgstr "炫飞"
+
+msgid "SHANIA"
+msgstr "莎妮娅"
+
+msgid "SHEA"
+msgstr "谢伊"
+
+msgid "SHIZUKA"
+msgstr "静香"
+
+msgid "SKYLER"
+msgstr "斯凯乐"
+
+msgid "SOFIA"
+msgstr "索菲亚"
+
+msgid "STACY"
+msgstr "斯泰西"
+
+msgid "STANLY"
+msgstr "斯坦利"
+
+msgid "STELLA"
+msgstr "斯特拉"
+
+msgid "STUART"
+msgstr "斯图尔特"
+
+msgid "Sack"
+msgstr "萨克"
+
+msgid "Saijin"
+msgstr "赛金"
+
+msgid "Samuel"
+msgstr "撒母耳"
+
+msgid "Sasha"
+msgstr "莎莎"
+
+msgid "Sean"
+msgstr "肖恩"
+
+msgid "Shauna"
+msgstr "肖娜"
+
+msgid "Sheldon"
+msgstr "谢尔顿"
+
+msgid "Silva"
+msgstr "席尔瓦"
+
+msgid "Slash"
+msgstr "斯莱斯"
+
+msgid "Slim"
+msgstr "斯利姆"
+
+msgid "Sol"
+msgstr "索尔"
+
+msgid "Sophy"
+msgstr "索菲"
+
+msgid "Sora"
+msgstr "索拉"
+
+msgid "Sr. Goldkorn"
+msgstr "金科爵士"
+
+msgid "Stark"
+msgstr "史塔克"
+
+msgid "Stu"
+msgstr "斯图"
+
+msgid "TESS"
+msgstr "苔丝"
+
+msgid "THEO"
+msgstr "锡迩"
+
+msgid "TINA"
+msgstr "缇娜"
+
+msgid "TOBY"
+msgstr "托比"
+
+msgid "TODD"
+msgstr "托德"
+
+msgid "TRENTON"
+msgstr "特伦敦"
+
+msgid "TREVIN"
+msgstr "特立文"
+
+msgid "TREVON"
+msgstr "特雷沃"
+
+msgid "TRISTAN"
+msgstr "特里斯坦"
+
+msgid "TRISTON"
+msgstr "特里斯敦"
+
+msgid "TYLER"
+msgstr "泰勒"
+
+msgid "TYLOR"
+msgstr "泰勒"
+
+msgid "Tarou"
+msgstr "太郎"
+
+msgid "Tath"
+msgstr "塔斯"
+
+msgid "Tetsuo"
+msgstr "哲夫"
+
+msgid "Theo"
+msgstr "锡迩"
+
+msgid "Tiko"
+msgstr "帝柯"
+
+msgid "Tim & Trese"
+msgstr "提姆 & 特瑞沙"
+
+msgid "Timothy"
+msgstr "蒂莫西"
+
+msgid "Toby"
+msgstr "托比"
+
+msgid "Tod"
+msgstr "托德"
+
+msgid "Toru"
+msgstr "彻"
+
+msgid "Tracey"
+msgstr "特蕾西"
+
+msgid "Trofgar"
+msgstr "托福伽"
+
+msgid "Tuskar"
+msgstr "图斯卡"
+
+msgid "VALERIA"
+msgstr "瓦列瑞亚"
+
+msgid "VINCE"
+msgstr "温斯"
+
+msgid "Vaeryn"
+msgstr "维睿恩"
+
+msgid "Vanessa"
+msgstr "瓦妮莎"
+
+msgid "Vanskor"
+msgstr "文思科"
+
+msgid "Veritum"
+msgstr "唯利特"
+
+msgid "WESLEY"
+msgstr "威利斯"
+
+msgid "WESTON"
+msgstr "韦斯顿"
+
+msgid "WILSON"
+msgstr "威尔逊"
+
+msgid "Wally"
+msgstr "沃利"
+
+msgid "William"
+msgstr "威廉"
+
+msgid "Wilma"
+msgstr "威尔玛"
+
+msgid "Wyle"
+msgstr "威尔"
+
+msgid "Wylie"
+msgstr "怀利"
+
+msgid "XANDER"
+msgstr "桑德"
+
+msgid "XAVIER"
+msgstr "沙维尔"
+
+msgid "Xana"
+msgstr "夏娜"
+
+msgid "YAZMIN"
+msgstr "亚斯明"
+
+msgid "YOSHI"
+msgstr "吉"
+
+msgid "ZACH"
+msgstr "扎克"
+
+msgid "ZACHERY"
+msgstr "扎车礼"
+
+msgid "ZACKARY"
+msgstr "扎卡瑞"
+
+msgid "ZOE"
+msgstr "左伊"
+
+msgid "ZOEY"
+msgstr "佐伊"
+
+msgid "Zai"
+msgstr "载"
+
+msgid "megatest"
+msgstr "ｍｅｇａ测试"
+

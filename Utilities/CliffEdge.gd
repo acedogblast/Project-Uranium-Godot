@@ -1,11 +1,11 @@
-tool
+@tool
 extends Node2D
 
-export(int) var size = 1
-export(String, "Up", "Down", "Left", "Right") var jump_direction = "Down"
+@export var size: int = 1
+@export var jump_direction = "Down" # (String, "Up", "Down", "Left", "Right")
 
 func _process(_delta):
-	if Engine.editor_hint:
+	if Engine.is_editor_hint():
 		match jump_direction:
 			"Up", "Down":
 				$Area2D/CollisionShape2D.shape.extents = Vector2(size * 16, 16)

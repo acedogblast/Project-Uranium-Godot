@@ -12,6 +12,9 @@ var config = MANAGE
 var stage = 0 # 0 = disabled, 1 = menu, 2 = second menu, ...
 var size
 
+var tween1 : Tween
+var tween2 : Tween
+
 var multi_line
 var switch_line = -1
 var switching = false
@@ -40,7 +43,7 @@ func setup(battle_mode = false, lock_cancel = false):
 	update_slots()
 	$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_1")
 	$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_1")
-	$Prompt/NinePatchRect.rect_size = Vector2(396, 64)
+	$Prompt/NinePatchRect.size = Vector2(396, 64)
 	cancel_locked = lock_cancel
 	if battle_mode:
 		mode = 1
@@ -105,7 +108,7 @@ func _input(event):
 						mode = 1
 						$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_1")
 						$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_1")
-						$Prompt/NinePatchRect.rect_size = Vector2(396, 64)
+						$Prompt/NinePatchRect.size = Vector2(396, 64)
 						return
 
 					if switching:
@@ -116,11 +119,15 @@ func _input(event):
 							# Swap out animation
 							var slot1 = get_slot_by_selection(swap_select)
 							var slot2 = get_slot_by_selection(selection)
-							$Tween1.interpolate_property(slot1, "position", slot1.position, get_slot_offset_when_swap(swap_select) + slot1.position, 0.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-							$Tween2.interpolate_property(slot2, "position", slot2.position, get_slot_offset_when_swap(selection) + slot2.position, 0.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-							$Tween1.start()
-							$Tween2.start()
-							yield($Tween2, "tween_all_completed")
+							if tween1:
+								tween1.kill()
+							if tween2:
+								tween2.kill()
+							tween1 = create_tween()
+							tween2 = create_tween()
+							tween1.tween_property(slot1, "position", get_slot_offset_when_swap(swap_select) + slot1.position, 0.5).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+							tween2.tween_property(slot2, "position", get_slot_offset_when_swap(selection) + slot2.position, 0.5).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+							await tween2.finished
 
 							# logical swap
 							var temp = Global.pokemon_group[get_index_by_selection(swap_select)]
@@ -129,11 +136,15 @@ func _input(event):
 							update_slots()
 
 							# Swap in animation
-							$Tween1.interpolate_property(slot1, "position", slot1.position, get_slot_original_pos_by_selection(swap_select), 0.5 ,Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-							$Tween2.interpolate_property(slot2, "position", slot2.position, get_slot_original_pos_by_selection(selection), 0.5, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-							$Tween1.start()
-							$Tween2.start()
-							yield($Tween2, "tween_all_completed")
+							if tween1:
+								tween1.kill()
+							if tween2:
+								tween2.kill()
+							tween1 = create_tween()
+							tween2 = create_tween()
+							tween1.tween_property(slot1, "position", get_slot_original_pos_by_selection(swap_select), 0.5).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+							tween2.tween_property(slot2, "position", get_slot_original_pos_by_selection(selection), 0.5).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+							await tween2.finished
 
 							switching = false
 							swap_select = null
@@ -159,8 +170,8 @@ func _input(event):
 								emit_signal("close_party")
 								return
 							stage = 2
-							$Prompt/NinePatchRect.rect_size = Vector2(360, 64)
-							multi_line = load("res://Utilities/UI/MultilinePrompt.tscn").instance()
+							$Prompt/NinePatchRect.size = Vector2(360, 64)
+							multi_line = load("res://Utilities/UI/MultilinePrompt.tscn").instantiate()
 							add_child(multi_line)
 							var text_lines
 
@@ -194,7 +205,7 @@ func _input(event):
 									name = Global.pokemon_group[5].name
 							$Prompt/Prompt.text = tr("UI_PARTY_PROMPT_2") + name
 							$Prompt/Prompt/Shadow.text = tr("UI_PARTY_PROMPT_2") + name
-							multi_line.connect("selected", self, "get_multiline_result")
+							multi_line.connect("selected", Callable(self, "get_multiline_result"))
 			pass
 	if event.is_action_pressed("x"):
 		match stage:
@@ -242,12 +253,12 @@ func update_slots():
 		var gender_label = slot_content.get_node("Gender")
 		if poke.gender == poke.MALE:
 			change_label_text(gender_label , "♂")
-			gender_label.add_color_override("font_color" , Color("0070f8"))
-			gender_label.get_node("Shadow").add_color_override("font_color" , Color("78b8e8"))
+			gender_label.add_theme_color_override("font_color" , Color("0070f8"))
+			gender_label.get_node("Shadow").add_theme_color_override("font_color" , Color("78b8e8"))
 		if poke.gender == poke.FEMALE:
 			change_label_text(gender_label , "♀")
-			gender_label.add_color_override("font_color" , Color("e82010"))
-			gender_label.get_node("Shadow").add_color_override("font_color" , Color("f8a8b8"))
+			gender_label.add_theme_color_override("font_color" , Color("e82010"))
+			gender_label.get_node("Shadow").add_theme_color_override("font_color" , Color("f8a8b8"))
 
 		var icon_texture = slot_content.get_node("Poke")
 		icon_texture.texture = poke.get_icon_texture()
@@ -287,7 +298,7 @@ func change_label_text(label : Label, text : String):
 	label.text = text
 	label.get_node("Shadow").text = text
 func set_hp_bar_by_percent(color_rect : ColorRect, percent : float):
-	color_rect.rect_size = Vector2(96 * percent , 4)
+	color_rect.size = Vector2(96 * percent , 4)
 	var color_of_hp
 	if percent > 0.5:
 		color_of_hp = Color( 0, 1, 0, 1) # Green
@@ -456,7 +467,7 @@ func get_multiline_result():
 				multi_line.queue_free()
 				var battle_node = self.get_parent().get_parent().get_parent()
 				if battle_node.check_if_battler_is_already_out(Global.pokemon_group[selection]):
-					$Prompt/NinePatchRect.rect_size = Vector2(512, 64)
+					$Prompt/NinePatchRect.size = Vector2(512, 64)
 					$Prompt/Prompt.text = Global.pokemon_group[selection].name + tr("UI_PARTY_ALREADY_IN_BATTLE")
 					$Prompt/Prompt/Shadow.text = Global.pokemon_group[selection].name + tr("UI_PARTY_ALREADY_IN_BATTLE")
 					mode = -2 # Special mode
@@ -495,7 +506,7 @@ func switch_poke_order():
 	swap_select = selection
 	change_slot_texture(null, swap_select)
 	pass
-func get_index_by_selection(var sel):
+func get_index_by_selection(sel):
 	match sel:
 		S1:
 			return 0
@@ -509,7 +520,7 @@ func get_index_by_selection(var sel):
 			return 4
 		S6:
 			return 5
-func get_slot_by_selection(var sel):
+func get_slot_by_selection(sel):
 	match sel:
 		S1:
 			return $Slot1
@@ -523,13 +534,13 @@ func get_slot_by_selection(var sel):
 			return $Slot5
 		S6:
 			return $Slot6
-func get_slot_offset_when_swap(var sel):
+func get_slot_offset_when_swap(sel):
 	match sel:
 		S1,S3,S5:
 			return Vector2(-300, 0)
 		S2,S4,S6:
 			return Vector2(300, 0)
-func get_slot_original_pos_by_selection(var sel):
+func get_slot_original_pos_by_selection(sel):
 	match sel:
 		S1:
 			return original_s1

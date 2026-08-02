@@ -1,0 +1,1912 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "Megahorn"
+msgstr "超级角击"
+
+msgid "Attack Order"
+msgstr "攻击指令"
+
+msgid "Bug Buzz"
+msgstr "虫鸣"
+
+msgid "X-Scissor"
+msgstr "十字剪"
+
+msgid "Signal Beam"
+msgstr "信号光束"
+
+msgid "U-turn"
+msgstr "急速折返"
+
+msgid "Steamroller"
+msgstr "疯狂滚压"
+
+msgid "Bug Bite"
+msgstr "虫咬"
+
+msgid "Silver Wind"
+msgstr "银色旋风"
+
+msgid "Struggle Bug"
+msgstr "虫之抵抗"
+
+msgid "Twineedle"
+msgstr "双针"
+
+msgid "Fury Cutter"
+msgstr "连斩"
+
+msgid "Leech Life"
+msgstr "吸血"
+
+msgid "Pin Missile"
+msgstr "飞弹针"
+
+msgid "Defend Order"
+msgstr "防御指令"
+
+msgid "Heal Order"
+msgstr "回复指令"
+
+msgid "Quiver Dance"
+msgstr "蝶舞"
+
+msgid "Rage Powder"
+msgstr "愤怒粉"
+
+msgid "Spider Web"
+msgstr "蛛网"
+
+msgid "String Shot"
+msgstr "吐丝"
+
+msgid "Tail Glow"
+msgstr "萤火"
+
+msgid "Foul Play"
+msgstr "欺诈"
+
+msgid "Night Daze"
+msgstr "暗黑爆破"
+
+msgid "Crunch"
+msgstr "咬碎"
+
+msgid "Dark Pulse"
+msgstr "恶之波动"
+
+msgid "Sucker Punch"
+msgstr "突袭"
+
+msgid "Night Slash"
+msgstr "暗袭要害"
+
+msgid "Bite"
+msgstr "咬住"
+
+msgid "Feint Attack"
+msgstr "出奇一击"
+
+msgid "Snarl"
+msgstr "大声咆哮"
+
+msgid "Assurance"
+msgstr "恶意追击"
+
+msgid "Payback"
+msgstr "以牙还牙"
+
+msgid "Pursuit"
+msgstr "追打"
+
+msgid "Thief"
+msgstr "小偷"
+
+msgid "Knock Off"
+msgstr "拍落"
+
+msgid "Beat Up"
+msgstr "围攻"
+
+msgid "Fling"
+msgstr "投掷"
+
+msgid "Punishment"
+msgstr "惩罚"
+
+msgid "Dark Void"
+msgstr "暗黑洞"
+
+msgid "Embargo"
+msgstr "查封"
+
+msgid "Fake Tears"
+msgstr "假哭"
+
+msgid "Flatter"
+msgstr "吹捧"
+
+msgid "Hone Claws"
+msgstr "磨爪"
+
+msgid "Memento"
+msgstr "临别礼物"
+
+msgid "Nasty Plot"
+msgstr "诡计"
+
+msgid "Quash"
+msgstr "延后"
+
+msgid "Snatch"
+msgstr "抢夺"
+
+msgid "Switcheroo"
+msgstr "掉包"
+
+msgid "Taunt"
+msgstr "挑衅"
+
+msgid "Torment"
+msgstr "无理取闹"
+
+msgid "Roar of Time"
+msgstr "时光咆哮"
+
+msgid "Draco Meteor"
+msgstr "流星群"
+
+msgid "Outrage"
+msgstr "逆鳞"
+
+msgid "Dragon Rush"
+msgstr "龙之俯冲"
+
+msgid "Spacial Rend"
+msgstr "亚空裂斩"
+
+msgid "Dragon Pulse"
+msgstr "龙之波动"
+
+msgid "Dragon Claw"
+msgstr "龙爪"
+
+msgid "Dragon Tail"
+msgstr "龙尾"
+
+msgid "Dragon Breath"
+msgstr "龙息"
+
+msgid "Dual Chop"
+msgstr "二连劈"
+
+msgid "Twister"
+msgstr "龙卷风"
+
+msgid "Dragon Rage"
+msgstr "龙之怒"
+
+msgid "Dragon Dance"
+msgstr "龙之舞"
+
+msgid "Bolt Strike"
+msgstr "雷击"
+
+msgid "Thunder"
+msgstr "打雷"
+
+msgid "Volt Tackle"
+msgstr "伏特攻击"
+
+msgid "Zap Cannon"
+msgstr "电磁炮"
+
+msgid "Fusion Bolt"
+msgstr "交错闪电"
+
+msgid "Thunderbolt"
+msgstr "十万伏特"
+
+msgid "Wild Charge"
+msgstr "疯狂伏特"
+
+msgid "Discharge"
+msgstr "放电"
+
+msgid "Thunder Punch"
+msgstr "雷电拳"
+
+msgid "Volt Switch"
+msgstr "伏特替换"
+
+msgid "Spark"
+msgstr "电光"
+
+msgid "Thunder Fang"
+msgstr "雷电牙"
+
+msgid "Shock Wave"
+msgstr "电击波"
+
+msgid "Electroweb"
+msgstr "电网"
+
+msgid "Charge Beam"
+msgstr "充电光束"
+
+msgid "Thunder Shock"
+msgstr "电击"
+
+msgid "Electro Ball"
+msgstr "电球"
+
+msgid "Charge"
+msgstr "充电"
+
+msgid "Magnet Rise"
+msgstr "电磁飘浮"
+
+msgid "Thunder Wave"
+msgstr "电磁波"
+
+msgid "Focus Punch"
+msgstr "真气拳"
+
+msgid "High Jump Kick"
+msgstr "飞膝踢"
+
+msgid "Close Combat"
+msgstr "近身战"
+
+msgid "Focus Blast"
+msgstr "真气弹"
+
+msgid "Superpower"
+msgstr "蛮力"
+
+msgid "Cross Chop"
+msgstr "十字劈"
+
+msgid "Dynamic Punch"
+msgstr "爆裂拳"
+
+msgid "Hammer Arm"
+msgstr "臂锤"
+
+msgid "Jump Kick"
+msgstr "飞踢"
+
+msgid "Aura Sphere"
+msgstr "波导弹"
+
+msgid "Sacred Sword"
+msgstr "圣剑"
+
+msgid "Secret Sword"
+msgstr "神秘之剑"
+
+msgid "Sky Uppercut"
+msgstr "冲天拳"
+
+msgid "Submission"
+msgstr "地狱翻滚"
+
+msgid "Brick Break"
+msgstr "劈瓦"
+
+msgid "Drain Punch"
+msgstr "吸取拳"
+
+msgid "Vital Throw"
+msgstr "借力摔"
+
+msgid "Circle Throw"
+msgstr "巴投"
+
+msgid "Force Palm"
+msgstr "发劲"
+
+msgid "Low Sweep"
+msgstr "下盘踢"
+
+msgid "Revenge"
+msgstr "报复"
+
+msgid "Rolling Kick"
+msgstr "回旋踢"
+
+msgid "Wake-Up Slap"
+msgstr "唤醒巴掌"
+
+msgid "Karate Chop"
+msgstr "空手劈"
+
+msgid "Mach Punch"
+msgstr "音速拳"
+
+msgid "Rock Smash"
+msgstr "碎岩"
+
+msgid "Storm Throw"
+msgstr "山岚摔"
+
+msgid "Vacuum Wave"
+msgstr "真空波"
+
+msgid "Double Kick"
+msgstr "二连踢"
+
+msgid "Arm Thrust"
+msgstr "猛推"
+
+msgid "Triple Kick"
+msgstr "三连踢"
+
+msgid "Counter"
+msgstr "双倍奉还"
+
+msgid "Final Gambit"
+msgstr "搏命"
+
+msgid "Low Kick"
+msgstr "踢倒"
+
+msgid "Reversal"
+msgstr "起死回生"
+
+msgid "Seismic Toss"
+msgstr "地球上投"
+
+msgid "Bulk Up"
+msgstr "健美"
+
+msgid "Detect"
+msgstr "看穿"
+
+msgid "Quick Guard"
+msgstr "快速防守"
+
+msgid "V-create"
+msgstr "Ｖ熱焰"
+
+msgid "Blast Burn"
+msgstr "爆炸烈焰"
+
+msgid "Eruption"
+msgstr "喷火"
+
+msgid "Overheat"
+msgstr "过热"
+
+msgid "Blue Flare"
+msgstr "青焰"
+
+msgid "Fire Blast"
+msgstr "大字爆炎"
+
+msgid "Flare Blitz"
+msgstr "闪焰冲锋"
+
+msgid "Magma Storm"
+msgstr "熔岩风暴"
+
+msgid "Fusion Flare"
+msgstr "交错火焰"
+
+msgid "Heat Wave"
+msgstr "热风"
+
+msgid "Inferno"
+msgstr "炼狱"
+
+msgid "Sacred Fire"
+msgstr "神圣之火"
+
+msgid "Searing Shot"
+msgstr "火焰弹"
+
+msgid "Flamethrower"
+msgstr "喷射火焰"
+
+msgid "Blaze Kick"
+msgstr "火焰踢"
+
+msgid "Fiery Dance"
+msgstr "火之舞"
+
+msgid "Lava Plume"
+msgstr "喷烟"
+
+msgid "Fire Punch"
+msgstr "火焰拳"
+
+msgid "Flame Burst"
+msgstr "烈焰溅射"
+
+msgid "Fire Fang"
+msgstr "火焰牙"
+
+msgid "Flame Wheel"
+msgstr "火焰轮"
+
+msgid "Fire Pledge"
+msgstr "火之誓约"
+
+msgid "Flame Charge"
+msgstr "蓄能焰袭"
+
+msgid "Ember"
+msgstr "火花"
+
+msgid "Fire Spin"
+msgstr "火焰旋涡"
+
+msgid "Incinerate"
+msgstr "烧尽"
+
+msgid "Heat Crash"
+msgstr "高温重压"
+
+msgid "Sunny Day"
+msgstr "大晴天"
+
+msgid "Will-O-Wisp"
+msgstr "鬼火"
+
+msgid "Sky Attack"
+msgstr "神鸟猛击"
+
+msgid "Brave Bird"
+msgstr "勇鸟猛攻"
+
+msgid "Hurricane"
+msgstr "暴风"
+
+msgid "Aeroblast"
+msgstr "气旋攻击"
+
+msgid "Fly"
+msgstr "飞翔"
+
+msgid "Bounce"
+msgstr "弹跳"
+
+msgid "Drill Peck"
+msgstr "啄钻"
+
+msgid "Air Slash"
+msgstr "空气斩"
+
+msgid "Aerial Ace"
+msgstr "燕返"
+
+msgid "Chatter"
+msgstr "喋喋不休"
+
+msgid "Pluck"
+msgstr "啄食"
+
+msgid "Sky Drop"
+msgstr "自由落体"
+
+msgid "Wing Attack"
+msgstr "翅膀攻击"
+
+msgid "Acrobatics"
+msgstr "杂技"
+
+msgid "Air Cutter"
+msgstr "空气利刃"
+
+msgid "Gust"
+msgstr "起风"
+
+msgid "Peck"
+msgstr "啄"
+
+msgid "Defog"
+msgstr "清除浓雾"
+
+msgid "Feather Dance"
+msgstr "羽毛舞"
+
+msgid "Mirror Move"
+msgstr "鹦鹉学舌"
+
+msgid "Roost"
+msgstr "羽栖"
+
+msgid "Tailwind"
+msgstr "顺风"
+
+msgid "Shadow Force"
+msgstr "暗影潜袭"
+
+msgid "Shadow Ball"
+msgstr "暗影球"
+
+msgid "Shadow Claw"
+msgstr "暗影爪"
+
+msgid "Ominous Wind"
+msgstr "奇异之风"
+
+msgid "Shadow Punch"
+msgstr "暗影拳"
+
+msgid "Hex"
+msgstr "祸不单行"
+
+msgid "Shadow Sneak"
+msgstr "影子偷袭"
+
+msgid "Astonish"
+msgstr "惊吓"
+
+msgid "Lick"
+msgstr "舌舔"
+
+msgid "Night Shade"
+msgstr "黑夜魔影"
+
+msgid "Confuse Ray"
+msgstr "奇异之光"
+
+msgid "Curse"
+msgstr "诅咒"
+
+msgid "Destiny Bond"
+msgstr "同命"
+
+msgid "Grudge"
+msgstr "怨恨"
+
+msgid "Nightmare"
+msgstr "恶梦"
+
+msgid "Spite"
+msgstr "怨恨"
+
+msgid "Frenzy Plant"
+msgstr "疯狂植物"
+
+msgid "Leaf Storm"
+msgstr "飞叶风暴"
+
+msgid "Petal Dance"
+msgstr "花瓣舞"
+
+msgid "Power Whip"
+msgstr "强力鞭打"
+
+msgid "Seed Flare"
+msgstr "种子闪光"
+
+msgid "Solar Beam"
+msgstr "日光束"
+
+msgid "Wood Hammer"
+msgstr "木槌"
+
+msgid "Leaf Blade"
+msgstr "叶刃"
+
+msgid "Energy Ball"
+msgstr "能量球"
+
+msgid "Seed Bomb"
+msgstr "种子炸弹"
+
+msgid "Giga Drain"
+msgstr "终极吸取"
+
+msgid "Horn Leech"
+msgstr "木角"
+
+msgid "Leaf Tornado"
+msgstr "青草搅拌器"
+
+msgid "Magical Leaf"
+msgstr "魔法叶"
+
+msgid "Needle Arm"
+msgstr "尖刺臂"
+
+msgid "Razor Leaf"
+msgstr "飞叶快刀"
+
+msgid "Grass Pledge"
+msgstr "草之誓约"
+
+msgid "Mega Drain"
+msgstr "超级吸取"
+
+msgid "Vine Whip"
+msgstr "藤鞭"
+
+msgid "Bullet Seed"
+msgstr "种子机关枪"
+
+msgid "Absorb"
+msgstr "吸取"
+
+msgid "Grass Knot"
+msgstr "打草结"
+
+msgid "Aromatherapy"
+msgstr "芳香治疗"
+
+msgid "Cotton Guard"
+msgstr "棉花防守"
+
+msgid "Cotton Spore"
+msgstr "棉孢子"
+
+msgid "Grass Whistle"
+msgstr "草笛"
+
+msgid "Ingrain"
+msgstr "扎根"
+
+msgid "Leech Seed"
+msgstr "寄生种子"
+
+msgid "Sleep Powder"
+msgstr "催眠粉"
+
+msgid "Spore"
+msgstr "蘑菇孢子"
+
+msgid "Stun Spore"
+msgstr "麻痹粉"
+
+msgid "Synthesis"
+msgstr "光合作用"
+
+msgid "Worry Seed"
+msgstr "烦恼种子"
+
+msgid "Earthquake"
+msgstr "地震"
+
+msgid "Earth Power"
+msgstr "大地之力"
+
+msgid "Dig"
+msgstr "挖洞"
+
+msgid "Drill Run"
+msgstr "直冲钻"
+
+msgid "Bone Club"
+msgstr "骨棒"
+
+msgid "Mud Bomb"
+msgstr "泥巴炸弹"
+
+msgid "Bulldoze"
+msgstr "重踏"
+
+msgid "Mud Shot"
+msgstr "泥巴射击"
+
+msgid "Bonemerang"
+msgstr "骨头回力镖"
+
+msgid "Sand Tomb"
+msgstr "流沙地狱"
+
+msgid "Bone Rush"
+msgstr "骨棒乱打"
+
+msgid "Mud-Slap"
+msgstr "掷泥"
+
+msgid "Fissure"
+msgstr "地裂"
+
+msgid "Magnitude"
+msgstr "震级"
+
+msgid "Mud Sport"
+msgstr "玩泥巴"
+
+msgid "Sand Attack"
+msgstr "泼沙"
+
+msgid "Spikes"
+msgstr "撒菱"
+
+msgid "Freeze Shock"
+msgstr "冰冻伏特"
+
+msgid "Ice Burn"
+msgstr "极寒冷焰"
+
+msgid "Blizzard"
+msgstr "暴风雪"
+
+msgid "Ice Beam"
+msgstr "冰冻光束"
+
+msgid "Icicle Crash"
+msgstr "冰柱坠击"
+
+msgid "Ice Punch"
+msgstr "冰冻拳"
+
+msgid "Aurora Beam"
+msgstr "极光束"
+
+msgid "Glaciate"
+msgstr "冰封世界"
+
+msgid "Ice Fang"
+msgstr "冰冻牙"
+
+msgid "Avalanche"
+msgstr "雪崩"
+
+msgid "Icy Wind"
+msgstr "冰冻之风"
+
+msgid "Frost Breath"
+msgstr "冰息"
+
+msgid "Ice Shard"
+msgstr "冰砾"
+
+msgid "Powder Snow"
+msgstr "细雪"
+
+msgid "Ice Ball"
+msgstr "冰球"
+
+msgid "Icicle Spear"
+msgstr "冰锥"
+
+msgid "Sheer Cold"
+msgstr "绝对零度"
+
+msgid "Hail"
+msgstr "冰雹"
+
+msgid "Haze"
+msgstr "黑雾"
+
+msgid "Mist"
+msgstr "白雾"
+
+msgid "Explosion"
+msgstr "大爆炸"
+
+msgid "Self-Destruct"
+msgstr "自爆"
+
+msgid "Giga Impact"
+msgstr "终极冲击"
+
+msgid "Hyper Beam"
+msgstr "破坏光线"
+
+msgid "Last Resort"
+msgstr "珍藏"
+
+msgid "Double-Edge"
+msgstr "舍身冲撞"
+
+msgid "Head Charge"
+msgstr "爆炸头突击"
+
+msgid "Mega Kick"
+msgstr "百万吨重踢"
+
+msgid "Thrash"
+msgstr "大闹一番"
+
+msgid "Egg Bomb"
+msgstr "炸蛋"
+
+msgid "Judgment"
+msgstr "制裁光砾"
+
+msgid "Skull Bash"
+msgstr "火箭头锤"
+
+msgid "Hyper Voice"
+msgstr "巨声"
+
+msgid "Rock Climb"
+msgstr "攀岩"
+
+msgid "Take Down"
+msgstr "猛撞"
+
+msgid "Uproar"
+msgstr "吵闹"
+
+msgid "Body Slam"
+msgstr "泰山压顶"
+
+msgid "Techno Blast"
+msgstr "高科技光炮"
+
+msgid "Extreme Speed"
+msgstr "神速"
+
+msgid "Hyper Fang"
+msgstr "必杀门牙"
+
+msgid "Mega Punch"
+msgstr "百万吨重拳"
+
+msgid "Razor Wind"
+msgstr "旋风刀"
+
+msgid "Slam"
+msgstr "摔打"
+
+msgid "Strength"
+msgstr "怪力"
+
+msgid "Tri Attack"
+msgstr "三重攻击"
+
+msgid "Crush Claw"
+msgstr "撕裂爪"
+
+msgid "Relic Song"
+msgstr "古老之歌"
+
+msgid "Chip Away"
+msgstr "逐步击破"
+
+msgid "Dizzy Punch"
+msgstr "迷昏拳"
+
+msgid "Facade"
+msgstr "硬撑"
+
+msgid "Headbutt"
+msgstr "头锤"
+
+msgid "Retaliate"
+msgstr "报仇"
+
+msgid "Secret Power"
+msgstr "秘密之力"
+
+msgid "Slash"
+msgstr "劈开"
+
+msgid "Horn Attack"
+msgstr "角撞"
+
+msgid "Stomp"
+msgstr "踩踏"
+
+msgid "Covet"
+msgstr "渴望"
+
+msgid "Round"
+msgstr "轮唱"
+
+msgid "Smelling Salts"
+msgstr "清醒"
+
+msgid "Swift"
+msgstr "高速星星"
+
+msgid "Vice Grip"
+msgstr "夹住"
+
+msgid "Cut"
+msgstr "居合斩"
+
+msgid "Struggle"
+msgstr "挣扎"
+
+msgid "Tackle"
+msgstr "撞击"
+
+msgid "Weather Ball"
+msgstr "气象球"
+
+msgid "Echoed Voice"
+msgstr "回声"
+
+msgid "Fake Out"
+msgstr "击掌奇袭"
+
+msgid "False Swipe"
+msgstr "点到为止"
+
+msgid "Golden Fist"
+msgstr "黄金拳"
+
+msgid "Pound"
+msgstr "拍击"
+
+msgid "Quick Attack"
+msgstr "电光一闪"
+
+msgid "Scratch"
+msgstr "抓"
+
+msgid "Snore"
+msgstr "打鼾"
+
+msgid "Double Hit"
+msgstr "二连击"
+
+msgid "Feint"
+msgstr "佯攻"
+
+msgid "Tail Slap"
+msgstr "扫尾拍打"
+
+msgid "Rage"
+msgstr "愤怒"
+
+msgid "Rapid Spin"
+msgstr "高速旋转"
+
+msgid "Spike Cannon"
+msgstr "尖刺加农炮"
+
+msgid "Comet Punch"
+msgstr "连续拳"
+
+msgid "Fury Swipes"
+msgstr "乱抓"
+
+msgid "Barrage"
+msgstr "投球"
+
+msgid "Bind"
+msgstr "绑紧"
+
+msgid "Double Slap"
+msgstr "连环巴掌"
+
+msgid "Fury Attack"
+msgstr "乱击"
+
+msgid "Wrap"
+msgstr "紧束"
+
+msgid "Constrict"
+msgstr "缠绕"
+
+msgid "Bide"
+msgstr "忍耐"
+
+msgid "Crush Grip"
+msgstr "捏碎"
+
+msgid "Endeavor"
+msgstr "蛮干"
+
+msgid "Flail"
+msgstr "抓狂"
+
+msgid "Frustration"
+msgstr "迁怒"
+
+msgid "Guillotine"
+msgstr "断头钳"
+
+msgid "Hidden Power"
+msgstr "觉醒力量"
+
+msgid "Horn Drill"
+msgstr "角钻"
+
+msgid "Natural Gift"
+msgstr "自然之恩"
+
+msgid "Present"
+msgstr "礼物"
+
+msgid "Return"
+msgstr "报恩"
+
+msgid "Sonic Boom"
+msgstr "音爆"
+
+msgid "Spit Up"
+msgstr "喷出"
+
+msgid "Super Fang"
+msgstr "愤怒门牙"
+
+msgid "Trump Card"
+msgstr "王牌"
+
+msgid "Wring Out"
+msgstr "绞紧"
+
+msgid "Acupressure"
+msgstr "点穴"
+
+msgid "After You"
+msgstr "您先请"
+
+msgid "Assist"
+msgstr "借助"
+
+msgid "Attract"
+msgstr "迷人"
+
+msgid "Baton Pass"
+msgstr "接棒"
+
+msgid "Belly Drum"
+msgstr "腹鼓"
+
+msgid "Bestow"
+msgstr "传递礼物"
+
+msgid "Block"
+msgstr "挡路"
+
+msgid "Camouflage"
+msgstr "保护色"
+
+msgid "Captivate"
+msgstr "诱惑"
+
+msgid "Charm"
+msgstr "撒娇"
+
+msgid "Conversion"
+msgstr "纹理"
+
+msgid "Conversion 2"
+msgstr "纹理２"
+
+msgid "Copycat"
+msgstr "仿效"
+
+msgid "Defense Curl"
+msgstr "变圆"
+
+msgid "Disable"
+msgstr "定身法"
+
+msgid "Double Team"
+msgstr "影子分身"
+
+msgid "Encore"
+msgstr "再来一次"
+
+msgid "Endure"
+msgstr "挺住"
+
+msgid "Entrainment"
+msgstr "找伙伴"
+
+msgid "Flash"
+msgstr "闪光"
+
+msgid "Focus Energy"
+msgstr "聚气"
+
+msgid "Follow Me"
+msgstr "看我嘛"
+
+msgid "Foresight"
+msgstr "识破"
+
+msgid "Glare"
+msgstr "大蛇瞪眼"
+
+msgid "Growl"
+msgstr "叫声"
+
+msgid "Growth"
+msgstr "生长"
+
+msgid "Harden"
+msgstr "变硬"
+
+msgid "Heal Bell"
+msgstr "治愈铃声"
+
+msgid "Helping Hand"
+msgstr "帮助"
+
+msgid "Howl"
+msgstr "长嚎"
+
+msgid "Leer"
+msgstr "瞪眼"
+
+msgid "Lock-On"
+msgstr "锁定"
+
+msgid "Lovely Kiss"
+msgstr "恶魔之吻"
+
+msgid "Lucky Chant"
+msgstr "幸运咒语"
+
+msgid "Me First"
+msgstr "抢先一步"
+
+msgid "Mean Look"
+msgstr "黑色目光"
+
+msgid "Metronome"
+msgstr "挥指"
+
+msgid "Milk Drink"
+msgstr "喝牛奶"
+
+msgid "Mimic"
+msgstr "模仿"
+
+msgid "Mind Reader"
+msgstr "心之眼"
+
+msgid "Minimize"
+msgstr "变小"
+
+msgid "Moonlight"
+msgstr "月光"
+
+msgid "Morning Sun"
+msgstr "晨光"
+
+msgid "Nature Power"
+msgstr "自然之力"
+
+msgid "Odor Sleuth"
+msgstr "气味侦测"
+
+msgid "Pain Split"
+msgstr "分担痛楚"
+
+msgid "Perish Song"
+msgstr "灭亡之歌"
+
+msgid "Protect"
+msgstr "守住"
+
+msgid "Psych Up"
+msgstr "自我暗示"
+
+msgid "Recover"
+msgstr "自我再生"
+
+msgid "Recycle"
+msgstr "回收利用"
+
+msgid "Reflect Type"
+msgstr "镜面属性"
+
+msgid "Refresh"
+msgstr "焕然一新"
+
+msgid "Roar"
+msgstr "吼叫"
+
+msgid "Safeguard"
+msgstr "神秘守护"
+
+msgid "Scary Face"
+msgstr "鬼面"
+
+msgid "Screech"
+msgstr "刺耳声"
+
+msgid "Sharpen"
+msgstr "棱角化"
+
+msgid "Shell Smash"
+msgstr "破壳"
+
+msgid "Simple Beam"
+msgstr "单纯光束"
+
+msgid "Sing"
+msgstr "唱歌"
+
+msgid "Sketch"
+msgstr "写生"
+
+msgid "Slack Off"
+msgstr "偷懒"
+
+msgid "Sleep Talk"
+msgstr "梦话"
+
+msgid "Smoke Screen"
+msgstr "烟幕"
+
+msgid "Soft-Boiled"
+msgstr "生蛋"
+
+msgid "Splash"
+msgstr "跃起"
+
+msgid "Stockpile"
+msgstr "蓄力"
+
+msgid "Substitute"
+msgstr "替身"
+
+msgid "Supersonic"
+msgstr "超音波"
+
+msgid "Swagger"
+msgstr "虚张声势"
+
+msgid "Swallow"
+msgstr "吞下"
+
+msgid "Sweet Kiss"
+msgstr "天使之吻"
+
+msgid "Sweet Scent"
+msgstr "甜甜香气"
+
+msgid "Swords Dance"
+msgstr "剑舞"
+
+msgid "Tail Whip"
+msgstr "摇尾巴"
+
+msgid "Teeter Dance"
+msgstr "摇晃舞"
+
+msgid "Tickle"
+msgstr "挠痒"
+
+msgid "Transform"
+msgstr "变身"
+
+msgid "Whirlwind"
+msgstr "吹飞"
+
+msgid "Wish"
+msgstr "祈愿"
+
+msgid "Work Up"
+msgstr "自我激励"
+
+msgid "Yawn"
+msgstr "哈欠"
+
+msgid "Gunk Shot"
+msgstr "垃圾射击"
+
+msgid "Sludge Wave"
+msgstr "污泥波"
+
+msgid "Sludge Bomb"
+msgstr "污泥炸弹"
+
+msgid "Poison Jab"
+msgstr "毒击"
+
+msgid "Cross Poison"
+msgstr "十字毒刃"
+
+msgid "Sludge"
+msgstr "污泥攻击"
+
+msgid "Venoshock"
+msgstr "毒液冲击"
+
+msgid "Clear Smog"
+msgstr "清除之烟"
+
+msgid "Poison Fang"
+msgstr "剧毒牙"
+
+msgid "Poison Tail"
+msgstr "毒尾"
+
+msgid "Acid"
+msgstr "溶解液"
+
+msgid "Acid Spray"
+msgstr "酸液爆弹"
+
+msgid "Smog"
+msgstr "浊雾"
+
+msgid "Poison Sting"
+msgstr "毒针"
+
+msgid "Acid Armor"
+msgstr "溶化"
+
+msgid "Coil"
+msgstr "盤蜷"
+
+msgid "Gastro Acid"
+msgstr "胃液"
+
+msgid "Poison Gas"
+msgstr "毒瓦斯"
+
+msgid "Poison Powder"
+msgstr "毒粉"
+
+msgid "Toxic"
+msgstr "剧毒"
+
+msgid "Toxic Spikes"
+msgstr "毒菱"
+
+msgid "Psycho Boost"
+msgstr "精神突进"
+
+msgid "Dream Eater"
+msgstr "食梦"
+
+msgid "Future Sight"
+msgstr "预知未来"
+
+msgid "Psystrike"
+msgstr "精神击破"
+
+msgid "Psychic"
+msgstr "精神强念"
+
+msgid "Extrasensory"
+msgstr "神通力"
+
+msgid "Psyshock"
+msgstr "精神冲击"
+
+msgid "Zen Headbutt"
+msgstr "意念头锤"
+
+msgid "Luster Purge"
+msgstr "洁净光芒"
+
+msgid "Mist Ball"
+msgstr "薄雾球"
+
+msgid "Psycho Cut"
+msgstr "精神利刃"
+
+msgid "Synchronoise"
+msgstr "同步干擾"
+
+msgid "Psybeam"
+msgstr "幻象光线"
+
+msgid "Heart Stamp"
+msgstr "爱心印章"
+
+msgid "Confusion"
+msgstr "念力"
+
+msgid "Mirror Coat"
+msgstr "镜面反射"
+
+msgid "Psywave"
+msgstr "精神波"
+
+msgid "Stored Power"
+msgstr "辅助力量"
+
+msgid "Agility"
+msgstr "高速移动"
+
+msgid "Ally Switch"
+msgstr "交换场地"
+
+msgid "Amnesia"
+msgstr "瞬间失忆"
+
+msgid "Barrier"
+msgstr "屏障"
+
+msgid "Calm Mind"
+msgstr "冥想"
+
+msgid "Cosmic Power"
+msgstr "宇宙力量"
+
+msgid "Gravity"
+msgstr "重力"
+
+msgid "Guard Split"
+msgstr "防守平分"
+
+msgid "Guard Swap"
+msgstr "防守互换"
+
+msgid "Heal Block"
+msgstr "回复封锁"
+
+msgid "Heal Pulse"
+msgstr "治愈波动"
+
+msgid "Healing Wish"
+msgstr "治愈之愿"
+
+msgid "Heart Swap"
+msgstr "心灵互换"
+
+msgid "Hypnosis"
+msgstr "催眠术"
+
+msgid "Imprison"
+msgstr "封印"
+
+msgid "Kinesis"
+msgstr "折弯汤匙"
+
+msgid "Light Screen"
+msgstr "光墙"
+
+msgid "Lunar Dance"
+msgstr "新月舞"
+
+msgid "Magic Coat"
+msgstr "魔法反射"
+
+msgid "Magic Room"
+msgstr "魔法空间"
+
+msgid "Meditate"
+msgstr "瑜伽姿势"
+
+msgid "Miracle Eye"
+msgstr "奇迹之眼"
+
+msgid "Power Split"
+msgstr "力量平分"
+
+msgid "Power Swap"
+msgstr "力量互换"
+
+msgid "Power Trick"
+msgstr "力量戏法"
+
+msgid "Psycho Shift"
+msgstr "精神转移"
+
+msgid "Reflect"
+msgstr "反射壁"
+
+msgid "Rest"
+msgstr "睡觉"
+
+msgid "Role Play"
+msgstr "扮演"
+
+msgid "Skill Swap"
+msgstr "特性互换"
+
+msgid "Telekinesis"
+msgstr "意念移物"
+
+msgid "Teleport"
+msgstr "瞬间移动"
+
+msgid "Trick"
+msgstr "戏法"
+
+msgid "Trick Room"
+msgstr "戏法空间"
+
+msgid "Wonder Room"
+msgstr "奇妙空间"
+
+msgid "Head Smash"
+msgstr "双刃头锤"
+
+msgid "Rock Wrecker"
+msgstr "岩石炮"
+
+msgid "Stone Edge"
+msgstr "尖石攻击"
+
+msgid "Rock Slide"
+msgstr "岩崩"
+
+msgid "Power Gem"
+msgstr "力量宝石"
+
+msgid "Ancient Power"
+msgstr "原始之力"
+
+msgid "Rock Throw"
+msgstr "落石"
+
+msgid "Rock Tomb"
+msgstr "岩石封锁"
+
+msgid "Smack Down"
+msgstr "击落"
+
+msgid "Rollout"
+msgstr "滚动"
+
+msgid "Rock Blast"
+msgstr "岩石爆击"
+
+msgid "Rock Polish"
+msgstr "岩石打磨"
+
+msgid "Sandstorm"
+msgstr "沙暴"
+
+msgid "Stealth Rock"
+msgstr "隐形岩"
+
+msgid "Wide Guard"
+msgstr "广域防守"
+
+msgid "Doom Desire"
+msgstr "破灭之愿"
+
+msgid "Iron Tail"
+msgstr "铁尾"
+
+msgid "Meteor Mash"
+msgstr "彗星拳"
+
+msgid "Flash Cannon"
+msgstr "加农光炮"
+
+msgid "Iron Head"
+msgstr "铁头"
+
+msgid "Steel Wing"
+msgstr "钢翼"
+
+msgid "Mirror Shot"
+msgstr "镜光射击"
+
+msgid "Magnet Bomb"
+msgstr "磁铁炸弹"
+
+msgid "Gear Grind"
+msgstr "齿轮飞盘"
+
+msgid "Metal Claw"
+msgstr "金属爪"
+
+msgid "Bullet Punch"
+msgstr "子弹拳"
+
+msgid "Gyro Ball"
+msgstr "陀螺球"
+
+msgid "Heavy Slam"
+msgstr "重磅冲撞"
+
+msgid "Metal Burst"
+msgstr "金属爆炸"
+
+msgid "Autotomize"
+msgstr "身体轻量化"
+
+msgid "Iron Defense"
+msgstr "铁壁"
+
+msgid "Metal Sound"
+msgstr "金属音"
+
+msgid "Shift Gear"
+msgstr "换挡"
+
+msgid "Hydro Cannon"
+msgstr "加农水炮"
+
+msgid "Water Spout"
+msgstr "喷水"
+
+msgid "Hydro Pump"
+msgstr "水炮"
+
+msgid "Muddy Water"
+msgstr "浊流"
+
+msgid "Surf"
+msgstr "冲浪"
+
+msgid "Aqua Tail"
+msgstr "水流尾"
+
+msgid "Crabhammer"
+msgstr "蟹钳锤"
+
+msgid "Dive"
+msgstr "潜水"
+
+msgid "Scald"
+msgstr "热水"
+
+msgid "Waterfall"
+msgstr "攀瀑"
+
+msgid "Razor Shell"
+msgstr "贝壳刃"
+
+msgid "Brine"
+msgstr "盐水"
+
+msgid "Bubble Beam"
+msgstr "泡沫光线"
+
+msgid "Octazooka"
+msgstr "章鱼桶炮"
+
+msgid "Water Pulse"
+msgstr "水之波动"
+
+msgid "Water Pledge"
+msgstr "水之誓约"
+
+msgid "Aqua Jet"
+msgstr "水流喷射"
+
+msgid "Water Gun"
+msgstr "水枪"
+
+msgid "Clamp"
+msgstr "贝壳夹击"
+
+msgid "Whirlpool"
+msgstr "潮旋"
+
+msgid "Bubble"
+msgstr "泡沫"
+
+msgid "Aqua Ring"
+msgstr "水流环"
+
+msgid "Rain Dance"
+msgstr "求雨"
+
+msgid "Soak"
+msgstr "浸水"
+
+msgid "Water Sport"
+msgstr "玩水"
+
+msgid "Withdraw"
+msgstr "缩入壳中"
+
+msgid "Coral Break"
+msgstr "珊瑚破碎"
+
+msgid "Atomic Punch"
+msgstr "原子猛击"
+
+msgid "Metal Whip"
+msgstr "金属鞭"
+
+msgid "Nuclear Waste"
+msgstr "核废料"
+
+msgid "Gamma Ray"
+msgstr "γ射线"
+
+msgid "Radioacid"
+msgstr "辐酸"
+
+msgid "Sky Fall"
+msgstr "天坠"
+
+msgid "Flame Impact"
+msgstr "烈焰冲撞"
+
+msgid "Draining Kiss"
+msgstr "吸取之吻"
+
+msgid "Eerie Impulse"
+msgstr "怪异电波"
+
+msgid "Electric Terrain"
+msgstr "电气场地"
+
+msgid "Electrify"
+msgstr "输电"
+
+msgid "Fairy Lock"
+msgstr "妖精之锁"
+
+msgid "Fairy Wind"
+msgstr "妖精之风"
+
+msgid "Fell Stinger"
+msgstr "致命针刺"
+
+msgid "Flower Shield"
+msgstr "鲜花防守"
+
+msgid "Flying Press"
+msgstr "飞身重压"
+
+msgid "Forest's Curse"
+msgstr "森林诅咒"
+
+msgid "Freeze-Dry"
+msgstr "冷冻干燥"
+
+msgid "Geomancy"
+msgstr "大地掌控"
+
+msgid "Grassy Terrain"
+msgstr "青草场地"
+
+msgid "Infestation"
+msgstr "死缠烂打"
+
+msgid "Ion Deluge"
+msgstr "等离子浴"
+
+msgid "King's Shield"
+msgstr "王者盾牌"
+
+msgid "Land's Wrath"
+msgstr "大地神力"
+
+msgid "Magnetic Flux"
+msgstr "磁场操控"
+
+msgid "Mat Block"
+msgstr "掀榻榻米"
+
+msgid "Misty Terrain"
+msgstr "薄雾场地"
+
+msgid "Moonblast"
+msgstr "月亮之力"
+
+msgid "Mystical Fire"
+msgstr "魔法火焰"
+
+msgid "Noble Roar"
+msgstr "战吼"
+
+msgid "Nuzzle"
+msgstr "蹭蹭脸颊"
+
+msgid "Oblivion Wing"
+msgstr "死亡之翼"
+
+msgid "Parabolic Charge"
+msgstr "抛物面充电"
+
+msgid "Parting Shot"
+msgstr "抛下狠话"
+
+msgid "Petal Blizzard"
+msgstr "落英缤纷"
+
+msgid "Phantom Force"
+msgstr "潜灵奇袭"
+
+msgid "Play Nice"
+msgstr "和睦相处"
+
+msgid "Play Rough"
+msgstr "嬉闹"
+
+msgid "Powder"
+msgstr "粉尘"
+
+msgid "Power-Up Punch"
+msgstr "增强拳"
+
+msgid "Rototiller"
+msgstr "耕地"
+
+msgid "Spiky Shield"
+msgstr "尖刺防守"
+
+msgid "Sticky Web"
+msgstr "黏黏网"
+
+msgid "Topsy-Turvy"
+msgstr "颠倒"
+
+msgid "Trick-or-Treat"
+msgstr "万圣夜"
+
+msgid "Venom Drench"
+msgstr "毒液陷阱"
+
+msgid "Water Shuriken"
+msgstr "飞水手里剑"
+
+msgid "Aromatic Mist"
+msgstr "芳香薄雾"
+
+msgid "Baby-Doll Eyes"
+msgstr "圆瞳"
+
+msgid "Belch"
+msgstr "打嗝"
+
+msgid "Boomburst"
+msgstr "爆音波"
+
+msgid "Confide"
+msgstr "密语"
+
+msgid "Crafty Shield"
+msgstr "戏法防守"
+
+msgid "Dazzling Gleam"
+msgstr "魔法闪耀"
+
+msgid "Disarming Voice"
+msgstr "魅惑之声"
+
+msgid "Subduction"
+msgstr "潜没"
+
+msgid "Instant Crush"
+msgstr "瞬间粉碎"
+
+msgid "Get Lucky"
+msgstr "行运"
+
+msgid "Laser Pulse"
+msgstr "脉冲炮"
+
+msgid "Gemstone Glimmer"
+msgstr "宝石微茫"
+
+msgid "Half-life"
+msgstr "半衰期"
+
+msgid "Ocean's Wrath"
+msgstr "海洋之怒"
+
+msgid "Fission Burst"
+msgstr "大裂变"
+
+msgid "Caustic Breath"
+msgstr "酸腐之气"
+
+msgid "Nuclear Slash"
+msgstr "原子斩"
+
+msgid "Thunderstorm"
+msgstr "雷暴"
+
+msgid "Sudden Strike"
+msgstr "闪击"
+
+msgid "Expunge"
+msgstr "擦除"
+
+msgid "Fallout"
+msgstr "辐射尘"
+
+msgid "Proton Beam"
+msgstr "质子束"
+
+msgid "Infernal Blade"
+msgstr "炼刃"
+
+msgid "Quantum Leap"
+msgstr "量子跃迁"
+
+msgid "Metal Cruncher"
+msgstr "金属咬嚼"
+
+msgid "Drain Life"
+msgstr "吸取生命"
+
+msgid "Sticky Terrain"
+msgstr "粘着场地"
+
+msgid "Nuclear Wind"
+msgstr "核子之风"

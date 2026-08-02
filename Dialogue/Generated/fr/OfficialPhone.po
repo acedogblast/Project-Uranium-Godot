@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "Buenas noches, \\PN!\\mThis is \\TN!"
+msgstr "Bonne nuit, \\PN!\\mC'est \\TN!"
+
+msgid "Did you hear about Nuclear Pokemon?\\mI hope I don't run into one of those, they sound scary.\\mBe careful out there, ok?"
+msgstr "T'as entendu à propos des Pokémon Nucléaires?\\mJ'espère ne pas m'approcher de l'un d'entre eux, ils ont l'air effrayants.\\mSois prudent, OK?"
+
+msgid "Do you remember my \\TP?\\m My \\TP is awesome. It's so cool.\\m I'd even say my \\TP is in the top percentage of \\TPs."
+msgstr "Tu te souviens de mon \\TP?\\m Mon \\TP est génial. C'est si cool.\\m Je dirais même que mon\\TP est dans le top pourcentage des \\TPs."
+
+msgid "Do you want to battle? I'm going to win this time!\\mI'll be waiting for you around \\TM.\\mLook for me, OK? My \\TP will be expecting you."
+msgstr "Tu veux te battre? Cette fois-ci, je vais gagner!\\mJe t'attendrai aux alentours de \\TM.\\mViens me chercher, OK? Mon \\TP t'attendra."
+
+msgid "Good day, \\PN! Hi. This is \\TN."
+msgstr "Bonjour, \\PN! Salut. C'est \\TN."
+
+msgid "Good morning!\\m This is \\PN, right? It's me, \\TN."
+msgstr "Bonjour!\\m C'est bien \\PN? C'est moi, \\TN."
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Did I wake you?"
+msgstr "Bonjour, \\PN.\\mC'est \\TN. T'ai-je réveillé?"
+
+msgid "Good morning, \\PN.\\mThis is \\TN. Rise and shine!"
+msgstr "Bonjour, \\PN.\\mC'est \\TN. le soleil s'est levé!"
+
+msgid "Guess what happened the other day. I missed catching \\TE again.\\mMaybe I'm not very good at this."
+msgstr "Devine ce qui s'est passé l'autre jour. Je n'ai pas encore réussi à attraper \\TE.\\mPeut-être que je ne suis pas très bon pour ça."
+
+msgid "Have you ever hatched a Pokemon Egg?\\mI raised my \\TP from an egg."
+msgstr "As-tu déjà fait éclore un oeuf Pokémon?\\mJ'ai élevé mon \\TP à partir d'un oeuf."
+
+msgid "Have you seen the \\TEs around \\TM?\\mThey scare me so much! I always run away!"
+msgstr "As-tu vu les \\TEs autour de \\TM?\\mIls me font très peur! Je m'enfuis toujours en courant!"
+
+msgid "Have you tried trading with your friends?\\mI got my \\TP in a trade, and it grows so fast!\\mTrades can be an awesome way to get strong Pokemon."
+msgstr "As-tu essayé de faire des échanges avec tes amis?\\mJ'ai eu mon \\TP dans un échange, et il grandit si vite!\\mLes échanges peuvent être une façon géniale pour avoir un Pokémon fort."
+
+msgid "Hello, \\PN. This is \\TN. How are things?"
+msgstr "Salut, \\PN. C'est \\TN. Comment va la vie?"
+
+msgid "Hello. This is \\TN."
+msgstr "Salut. C'est \\TN."
+
+msgid "Hey, \\PN! Good evening!\\mThis is \\TN."
+msgstr "Hé, \\PN! Bonsoir!\\mC'est \\TN."
+
+msgid "Hey, \\PN, wassup? It's \\TN."
+msgstr "Hé, \\PN, quoi de neuf? C'est \\TN."
+
+msgid "Hey, are you ready for another throw-down?\\mYou, me, battle. Place, \\TM.\\mTime, whenever you want! Let's do it!"
+msgstr "Hey, t'es prê{t|te} pour une autre combat?\\mToi, moi, combat. N'importe quand, \\TM.\\mn'importe où, quand tu veux! C'est parti!"
+
+msgid "Hey, listen! I almost caught \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "Hé, écoute! J'ai presque attrapé \\TE l'autre jour.\\mOh, c'était à deux doigts, en plus!"
+
+msgid "How are you doing? \\PN, howdy! This is \\TN. Isn't it nice out?"
+msgstr "Comment vas-tu? \\PN, cha va! C'est \\TN. Fait beau dehors hein?"
+
+msgid "How are your Pokemon doing?\\mI always keep my \\TP in top shape by going to Pokemon Centers."
+msgstr "Comment vont tes Pokémon?\\mJe garde toujours mon \\TP en forme en allant aux Centres Pokémon."
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!"
+msgstr "Comment vont tes Pokémon?\\mMon \\TP est vraiment énergique. Il est incontrôlable!"
+
+msgid "How are your Pokemon doing?\\mMy \\TP's really energetic. It's a handful!\\mOh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "Comment vont tes Pokémon?\\mMon \\TP est vraiment énergique. Il est incontrôlable !\\mOh oui, j'ai réussi à battre un gros \\TE .\\mJ'ai besoin de rendre mon équipe plus forte."
+
+msgid "I dressed my \\TP and it looks even cuter than before."
+msgstr "J'ai habillé mon \\TP et il a l'air encore plus mignon qu'avant."
+
+msgid "I painted a portrait of my beloved \\TP.\\mIt didn't like sitting still though."
+msgstr "J'ai peint un portrait de mon bien-aimé \\TP.\\mIl n'a pas aimé rester assis et immobile, par contre."
+
+msgid "I spent all day hunting for a shiny \\TE.\\mI didn't manage to find any, though."
+msgstr "J'ai passé la journée à chasser un \\TE chromatique.\\mJe n'ai pas réussi à en trouver un par contre."
+
+msgid "I tried to use the Wonder Trade today.\\mAll I got was a Lv.3 Chyinmunk though.\\mWhy do people put up such lame Pokemon for trade?"
+msgstr "J'ai essayé d'utiliser l'Échange Miracle aujourd'hui.\\mTout ce que j'ai eu c'est un Tamulot Niv 3.\\mPourquoi les gens mettent des Pokémon nuls à échanger?"
+
+msgid "Let's have a battle! I want to see how much you've grown!\\mI'm still hanging around \\TM.\\mCome see if you can beat my \\TP!"
+msgstr "Affrontons-nous! Je veux voir ton niveau!\\mJe traîne toujours au même endroit \\TM.\\mViens voir si tu peux battre mon \\TP!"
+
+msgid "My \\TP and I love playing games.\\m Its favorite game is fetch."
+msgstr "Mon \\TP et moi adorons jouer à des jeux.\\m Son jeu préféré, c'est \"rapporte la balle\"."
+
+msgid "My \\TP is fantastic.\\mI'd say it's even in the top percentage of \\TPs."
+msgstr "Mon \\TP est fantastique.\\mJe dirais qu'il est même dans le top pourcentage des \\TPs."
+
+msgid "My \\TP's looking really awesome. I wish I could show you."
+msgstr "Mon \\TP est vraiment génial. Je souhaite pouvoir te le montrer."
+
+msgid "My \\TP's looking really awesome.\\mI wish I could show you.\\mHey, listen! I almost caught a \\TE the other day.\\mOh, it was sooooooo close, too!"
+msgstr "Mon \\TP est vraiment génial.\\mJ'aimerais pouvoir te le montrer.\\mHey, écoute! J'ai presque attrapé un\\TE l'autre jour.\\mOh, j'étais à 2 doigts, en plus!"
+
+msgid "Oh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger."
+msgstr "Oh oui, j'ai réussi à battre un gros \\TE.\\mJ'ai besoin de rendre mon équipe plus forte."
+
+msgid "Ready for a rematch? \\TP and I have been training hard!\\mI'll be waiting for you around \\TM where we met.\\mCome find me and let's battle!"
+msgstr "Prê{t|t} pour un nouveau combat? \\TP et moi nous sommes entrainés dur!\\mJe t'attendrai aux alentours de \\TM où nous nous sommes rencontrés.\\mTrouve-moi et battons-nous!"
+
+msgid "Remember the last time we battled? Let's rematch!\\mI promise it won't be a repeat of last time.\\mCome find me around \\TM!"
+msgstr "Tu te souviens de la dernière fois qu'on s'est battus? Allez battons-nous encore! \\mJe te promets que ce ne sera pas comme la dernière fois. \\mViens me voir vers \\TM!"
+
+msgid "Top of the morning, \\PN!\\m\\TN here, at your service."
+msgstr "Bien le bonjour, \\PN!\\mIci \\TN à ton service."
+
+msgid "Want to battle? It's not going to be a repeat of the last time we met.\\mI'll be waiting for you around \\TM."
+msgstr "Tu veux te battre? Ce ne sera pas comme la dernière fois qu'on s'est vu.\\mJe t'attendrai aux alentours de \\TM."
+
+msgid "What did you eat for lunch today? I had a grilled \\TE.\\mI don't think I cooked it well enough.\\mOr did you not eat lunch at all?"
+msgstr "Qu'as-tu mangé pour dîner aujourd'hui? J'ai eu du \\TE grillé.\\mJe ne crois pas l'avoir assez bien cuisiné.\\mOu tu n'as pas dîné du tout?"
+
+msgid "Yo, \\PN, my main homie! This is \\TN!"
+msgstr "Yo, \\PN, mon meilleur pote! C'est \\TN!"
+
+msgid "You have to hear this! I battled \\TE the other day.\\mIt was easy! I had a type advantage."
+msgstr "Tu dois entendre ça! J'ai battu \\TE l'autre jour.\\mC'était facile! J'avais l'avantage du type."
+
+msgid "\\PN, good day! It's me, \\TN. Got a minute?"
+msgstr "\\PN, bonjour! C'est moi, \\TN. T'as une minute?"
+
+msgid "\\PN, good evening! Hi.\\mThis is \\TN."
+msgstr "\\PN, bonsoir! Salut.\\mC'est \\TN."
+

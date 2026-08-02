@@ -28,6 +28,8 @@ var secondary_effect_chance
 # The secondary effect of the move
 var secondary_effect
 
+var stat_effect_chance = null
+
 # The flags of the move
 var flags
 
@@ -41,6 +43,8 @@ var remaining_pp
 var target_ability
 
 # The main status effect of the move.
+var mechanic = null # Optional dict: {"kind": "multi_hit"|"hits"|"drain"|"recoil"|"heal"|"fixed"|"never_miss", ...}
+
 var main_status_effect # = StatStageEffect.new(0, 0, 0, 0, 0, 0, 0) attack, defense, sp_attack, sp_defense, speed, accuracy, evasion
 
 # The description of the move.

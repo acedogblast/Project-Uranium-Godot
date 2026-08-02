@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: pt\n"
+
+msgid "Angelica"
+msgstr "Angélica"
+
+msgid "Caesar"
+msgstr "César"
+
+msgid "Cedric"
+msgstr "Cedrico"
+
+msgid "Claudio"
+msgstr "Cláudio"
+
+msgid "ELENA"
+msgstr "HELENA"
+
+msgid "Jessica"
+msgstr "Jéssica"
+
+msgid "Julianna"
+msgstr "Juliana"
+
+msgid "Luke"
+msgstr "Luk"
+
+msgid "Monica"
+msgstr "Mônica"
+
+msgid "Nuñes"
+msgstr "Nunes"
+
+msgid "Rosalind"
+msgstr "Rosalina"
+

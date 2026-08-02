@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es\n"
+
+msgid "PkMn TRAINER"
+msgstr "Entrenador"
+
+msgid "LASS"
+msgstr "Chica"
+
+msgid "YOUNGSTER"
+msgstr "Joven"
+
+msgid "HIKER"
+msgstr "Montañero"
+
+msgid "BEAUTY"
+msgstr "Bella"
+
+msgid "FISHERMAN"
+msgstr "Pescador"
+
+msgid "LADY"
+msgstr "Dama"
+
+msgid "TRIATHLETE"
+msgstr "Atleta"
+
+msgid "TWINS"
+msgstr "Gemelas"
+
+msgid "SWIMMER♀"
+msgstr "Nadadora"
+
+msgid "BUG CATCHER"
+msgstr "Cazabichos"
+
+msgid "SCHOOL KID"
+msgstr "Escolar"
+
+msgid "RICH BOY"
+msgstr "Niño rico"
+
+msgid "SR. AND JR."
+msgstr "Estudiantes"
+
+msgid "BLACK BELT"
+msgstr "Karateka"
+
+msgid "TEAM AQUA"
+msgstr "Aqua"
+
+msgid "TUBER"
+msgstr "Playera"
+
+msgid "HEX MANIAC"
+msgstr "Bruja"
+
+msgid "PkMn BREEDER"
+msgstr "Criapokémon"
+
+msgid "WORKER"
+msgstr "Operario"
+
+msgid "TEAM MAGMA"
+msgstr "Magma"
+
+msgid "INTERVIEWERS"
+msgstr "Periodistas"
+
+msgid "YOUNG COUPLE"
+msgstr "Pareja Joven"
+
+msgid "GUITARIST"
+msgstr "Guitarrista"
+
+msgid "GENTLEMAN"
+msgstr "Caballero"
+
+msgid "CHAMPION"
+msgstr "Campeón"
+
+msgid "MAGMA LEADER"
+msgstr "Líder Magma"
+
+msgid "BATTLE GIRL"
+msgstr "Luchadora"
+
+msgid "SWIMMER♂"
+msgstr "Nadador"
+
+msgid "POKéFAN"
+msgstr "Pokéfan"
+
+msgid "EXPERT"
+msgstr "Pokéxperto"
+
+msgid "DRAGON TAMER"
+msgstr "Domadragones"
+
+msgid "BIRD KEEPER"
+msgstr "Ornitólogo"
+
+msgid "NINJA BOY"
+msgstr "Chico Ninja"
+
+msgid "PARASOL LADY"
+msgstr "Dama parasol"
+
+msgid "BUG MANIAC"
+msgstr "Bichomaníaco"
+
+msgid "SAILOR"
+msgstr "Marinero"
+
+msgid "COLLECTOR"
+msgstr "Pokécolector"
+
+msgid "PkMn RANGER"
+msgstr "Ranger"
+
+msgid "AROMA LADY"
+msgstr "Srta. Aroma"
+
+msgid "RUIN MANIAC"
+msgstr "Ruinamaníaco"
+
+msgid "COOLTRAINER"
+msgstr "Entrenador Guay"
+
+msgid "POKéMANIAC"
+msgstr "Pokemaníaco"
+
+msgid "KINDLER"
+msgstr "Prendefuegos"
+
+msgid "CAMPER"
+msgstr "Campista"
+
+msgid "PICNICKER"
+msgstr "Dominguera"
+
+msgid "PSYCHIC"
+msgstr "Psíquico"
+
+msgid "SIS AND BRO"
+msgstr "Hermanos"
+
+msgid "OLD COUPLE"
+msgstr "Pareja Mayor"
+
+msgid "AQUA LEADER"
+msgstr "Líder Aqua"
+
+msgid "LEADER"
+msgstr "Líder"
+
+msgid "LEADERS"
+msgstr "Líderes"
+
+msgid "ELITE FOUR"
+msgstr "Alto Mando"
+
+msgid "ACE TRAINER"
+msgstr "Entrenadora Guay"
+
+msgid "SCHOOLKIDDO"
+msgstr "Escolar"
+
+msgid "RIVAL"
+msgstr "Rival"
+
+msgid "HERO"
+msgstr "Héroe"
+
+msgid "SUPER SCIENTIST"
+msgstr "Científico"
+
+msgid "COOL COUPLE"
+msgstr "Pareja Guay"
+
+msgid "FARMER"
+msgstr "Granjera"
+
+msgid "PYROMANIAC"
+msgstr "Pirómano"
+
+msgid "BIKER"
+msgstr "Ciclista"
+
+msgid "NINJA SURFERS"
+msgstr "Ninjas Surfistas"
+
+msgid "NINJA BOSS"
+msgstr "Jefe Ninja"
+
+msgid "ACTOR"
+msgstr "Actor"
+
+msgid "ACTRESS"
+msgstr "Actriz"
+
+msgid "LEADER?"
+msgstr "Líder(?)"
+
+msgid "PROFESSOR"
+msgstr "Profesor Loco"
+
+msgid "ACOLYTE"
+msgstr "Acólito"
+
+msgid "DIVER"
+msgstr "Buceador"
+
+msgid "TSUKI NINJA"
+msgstr "Ninja Tsuki"
+
+msgid "NAMI NINJA"
+msgstr "Ninja Nami"
+
+msgid "NINJA MASTER"
+msgstr "Maestro Ninja"
+
+msgid "NUCLEAR HORDE"
+msgstr "Horda"
+
+msgid "APOCALYPSE"
+msgstr "Apocalipsis"
+
+msgid "ELITE TRAINER"
+msgstr "Entrenador Guay"
+
+msgid "PIRATE"
+msgstr "Pirata"
+
+msgid "DREAM"
+msgstr "Sueño"
+
+msgid "KING"
+msgstr "Rey"
+
+msgid "BIOFIBER CONSTRUCT"
+msgstr "Prototipo"

@@ -1,0 +1,3205 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh\n"
+
+msgid "Repel"
+msgstr "除虫喷雾"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 100 steps after its use."
+msgstr "使用后，在１００步之内，弱小的野生宝可梦将完全不会出现。"
+
+msgid "Super Repel"
+msgstr "白银喷雾"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 200 steps after its use."
+msgstr "使用后，在２００步之内，弱小的野生宝可梦将完全不会出现。"
+
+msgid "Max Repel"
+msgstr "黄金喷雾"
+
+msgid "An item that prevents weak wild Pokémon from appearing for 250 steps after its use."
+msgstr "使用后，在２５０步之内，弱小的野生宝可梦将完全不会出现。"
+
+msgid "Black Flute"
+msgstr "黑色玻璃哨"
+
+msgid "A black flute made from blown glass. Its melody makes wild Pokémon less likely to appear."
+msgstr "以黑色玻璃制成的哨子。在使用的地方更容易遇到强大的宝可梦。"
+
+msgid "White Flute"
+msgstr "白色玻璃哨"
+
+msgid "A white flute made from blown glass. Its melody makes wild Pokémon more likely to appear."
+msgstr "以白色玻璃制成的哨子。在使用的地方更容易遇到弱小的宝可梦。"
+
+msgid "Honey"
+msgstr "甜甜蜜"
+
+msgid "A sweet honey with an aroma that attracts wild Pokémon when used in grass, caves or on special trees."
+msgstr "在草丛或洞窟等地方使用后，被甜甜香气吸引的野生宝可梦就会出现。"
+
+msgid "Escape Rope"
+msgstr "离洞绳"
+
+msgid "A long, durable rope. Use it to escape instantly from a cave or a dungeon."
+msgstr "结实的长绳。可以从洞窟或迷宫中脱身。"
+
+msgid "Red Shard"
+msgstr "红色碎片"
+
+msgid "A small red shard. It appears to be from some sort of implement made long ago."
+msgstr "红色的小碎片。好像是以前制作的某道具的一部分。"
+
+msgid "Blue Shard"
+msgstr "蓝色碎片"
+
+msgid "A small blue shard. It appears to be from some sort of implement made long ago."
+msgstr "蓝色的小碎片。好像是以前制作的某道具的一部分。"
+
+msgid "Yellow Shard"
+msgstr "黄色碎片"
+
+msgid "A small yellow shard. It appears to be from some sort of implement made long ago."
+msgstr "黄色的小碎片。好像是以前制作的某道具的一部分。"
+
+msgid "Green Shard"
+msgstr "绿色碎片"
+
+msgid "A small green shard. It appears to be from some sort of implement made long ago."
+msgstr "绿色的小碎片。好像是以前制作的某道具的一部分。"
+
+msgid "Fire Stone"
+msgstr "火之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is colored orange."
+msgstr "能让某些特定宝可梦进化的神奇石头。看上去是橙黄色的。"
+
+msgid "Water Stone"
+msgstr "水之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is a clear, light blue."
+msgstr "能让某些特定宝可梦进化的神奇石头。看上去是澄蓝色的。"
+
+msgid "Thunderstone"
+msgstr "雷之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a thunderbolt pattern."
+msgstr "能让某些特定宝可梦进化的神奇石头。有着闪电般的花纹。"
+
+msgid "Leaf Stone"
+msgstr "叶之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It has a leaf pattern."
+msgstr "能让某些特定宝可梦进化的神奇石头。有着叶子般的花纹。"
+
+msgid "Moon Stone"
+msgstr "月之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as black as the night sky."
+msgstr "能让某些特定宝可梦进化的神奇石头。像夜空一样乌黑。"
+
+msgid "Sun Stone"
+msgstr "日之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as red as the sun."
+msgstr "能让某些特定宝可梦进化的神奇石头。像太阳一样赤红。"
+
+msgid "Shiny Stone"
+msgstr "光之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It shines with a dazzling light."
+msgstr "能让某些特定宝可梦进化的神奇石头。像光芒一样耀眼。"
+
+msgid "Dusk Stone"
+msgstr "暗之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is as dark as dark can be."
+msgstr "能让某些特定宝可梦进化的神奇石头。像黑夜一般漆黑。"
+
+msgid "Dawn Stone"
+msgstr "觉醒之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It sparkles like eyes."
+msgstr "能让某些特定宝可梦进化的神奇石头。像眼眸一般光彩动人。"
+
+msgid "Oval Stone"
+msgstr "浑圆之石"
+
+msgid "A peculiar stone that makes certain species of Pokémon evolve. It is shaped like an egg."
+msgstr "能让某些特定宝可梦进化的神奇石头。像珠子一般圆润。"
+
+msgid "Helix Fossil"
+msgstr "贝壳化石"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a seashell."
+msgstr "很久以前栖息在海里的古代宝可梦的化石。好像是贝壳的一部分。"
+
+msgid "Dome Fossil"
+msgstr "甲壳化石"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a shell."
+msgstr "很久以前栖息在海里的古代宝可梦的化石。好像是甲壳的一部分。"
+
+msgid "Old Amber"
+msgstr "秘密琥珀"
+
+msgid "A piece of clear amber that contains the genetic material of an ancient Pokémon."
+msgstr "封存着古代宝可梦遗传基因的琥珀，透着点红色。"
+
+msgid "Root Fossil"
+msgstr "根状化石"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a plant root."
+msgstr "很久以前栖息在海里的古代宝可梦的化石。好像是根的一部分。"
+
+msgid "Claw Fossil"
+msgstr "爪子化石"
+
+msgid "A fossil of an ancient Pokémon that lived in the sea. It appears to be part of a claw."
+msgstr "很久以前栖息在海里的古代宝可梦的化石。好像是爪子的一部分。"
+
+msgid "Armor Fossil"
+msgstr "盾甲化石"
+
+msgid "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a collar."
+msgstr "很久以前生活在地上的古代宝可梦的化石。好像是领饰的一部分。"
+
+msgid "Skull Fossil"
+msgstr "头盖化石"
+
+msgid "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a head."
+msgstr "很久以前生活在地上的古代宝可梦的化石。好像是头部的一部分。"
+
+msgid "TinyMushroom"
+msgstr "小蘑菇"
+
+msgid "A small and rare mushroom. It is quite popular among certain maniacal fan segments."
+msgstr "珍稀的小蘑菇。在一些爱好者中有着相当高的人气。"
+
+msgid "Big Mushroom"
+msgstr "大蘑菇"
+
+msgid "A large and rare mushroom. It is very popular among certain maniacal fan segments."
+msgstr "珍稀的大蘑菇。在一些爱好者中有着非常高的人气。"
+
+msgid "Pearl"
+msgstr "珍珠"
+
+msgid "A somewhat-small pearl that sparkles in a pretty silver color. It can be sold cheaply to shops."
+msgstr "散发着美丽银辉且有点小的珍珠。可以在商店低价出售。"
+
+msgid "Big Pearl"
+msgstr "大珍珠"
+
+msgid "A quite-large pearl that sparkles in a pretty silver color. It can be sold at a high price to shops."
+msgstr "散发着美丽银辉且相当大颗的珍珠。可以在商店高价出售。"
+
+msgid "Stardust"
+msgstr "星星沙子"
+
+msgid "Lovely, red-colored sand with a loose, silky feel. It can be sold at a high price to shops."
+msgstr "手感细腻且十分美丽的红色沙子。可以在商店低价出售。"
+
+msgid "Star Piece"
+msgstr "星星碎片"
+
+msgid "A shard of a pretty gem that sparkles in a red color. It can be sold at a high price to shops."
+msgstr "闪着红光且十分美丽的宝石碎片。可以在商店高价出售。"
+
+msgid "Nugget"
+msgstr "金珠"
+
+msgid "A nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops."
+msgstr "闪着金光，以纯金制成的珠子。可以在商店高价出售。"
+
+msgid "Heart Scale"
+msgstr "心之鳞片"
+
+msgid "A pretty, heart-shaped scale that is extremely rare. It glows faintly in the colors of the rainbow."
+msgstr "有着美丽心形外形且非常珍稀的鳞片。有些人收到会很高兴。"
+
+msgid "Rare Bone"
+msgstr "贵重骨头"
+
+msgid "A bone that is extremely valuable for Pokémon archaeology. It can be sold for a high price to shops."
+msgstr "在宝可梦考古学上非常贵重的骨头。可以在商店高价出售。"
+
+msgid "Shoal Salt"
+msgstr "浅滩海盐"
+
+msgid "Pure salt that was discovered deep inside the Shoal Cave. It is extremely salty."
+msgstr "在浅滩洞穴这地方找到的海盐。"
+
+msgid "Shoal Shell"
+msgstr "浅滩贝壳"
+
+msgid "A pretty seashell that was found deep inside the Shoal Cave. It is striped in blue and white."
+msgstr "在浅滩洞穴这地方找到的贝壳。"
+
+msgid "Odd Keystone"
+msgstr "楔石"
+
+msgid "A vital item that is needed to keep a stone tower from collapsing. Voices can be heard from it occasionally."
+msgstr "没有它，石之塔就会崩塌的重要石头。有时能从石头里听到声音。"
+
+msgid "Growth Mulch"
+msgstr "速速肥"
+
+msgid "A plant fertilizer. It speeds up the growth of Berries. However, it also dries the soil faster."
+msgstr "用在柔软土地上的植物肥料。可以催熟树果但同时也会使土地变得干燥。"
+
+msgid "Damp Mulch"
+msgstr "湿湿肥"
+
+msgid "A plant fertilizer. It slows the growth of Berries and causes the soil to dry slower."
+msgstr "在柔软土地上的植物肥料。可以使土地保持湿润，但同时也会减缓树果的生长。"
+
+msgid "Stable Mulch"
+msgstr "久久肥"
+
+msgid "A plant fertilizer. It extends the time ripened Berries remain on their plants before falling."
+msgstr "用在柔软土地上的植物肥料。增加结果到从树上掉落的时间。"
+
+msgid "Gooey Mulch"
+msgstr "粘粘肥"
+
+msgid "A plant fertilizer. It ups the number of times new plants grow where mature plants withered."
+msgstr "用在柔软土地上的植物肥料。增加收获过的果树再结果的数量。"
+
+msgid "Red Apricorn"
+msgstr "红球果"
+
+msgid "A red Apricorn. It assails your nostrils."
+msgstr "红色的球果。有种刺鼻的气味。"
+
+msgid "Ylw Apricorn"
+msgstr "黄球果"
+
+msgid "A yellow Apricorn. It has an invigorating scent."
+msgstr "黄色的球果。有种清爽的香味。"
+
+msgid "Blu Apricorn"
+msgstr "蓝球果"
+
+msgid "A blue Apricorn. It smells a bit like grass."
+msgstr "蓝色的球果。略有一股青草的香味。"
+
+msgid "Grn Apricorn"
+msgstr "绿球果"
+
+msgid "A green Apricorn. It has a mysterious, aromatic scent."
+msgstr "绿色的球果。有种焦香的香味，非常神奇。"
+
+msgid "Pnk Apricorn"
+msgstr "粉球果"
+
+msgid "A pink Apricorn. It has a nice, sweet scent."
+msgstr "粉红色的球果。有种甜甜的，好闻的香味。"
+
+msgid "Wht Apricorn"
+msgstr "白球果"
+
+msgid "A white Apricorn. It doesn't smell like anything."
+msgstr "白色的球果。没有任何气味。"
+
+msgid "Blk Apricorn"
+msgstr "黑球果"
+
+msgid "A black Apricorn. It has an indescribable scent."
+msgstr "黑色的球果。有种无法形容的气味。"
+
+msgid "BrightPowder"
+msgstr "光粉"
+
+msgid "An item to be held by a Pokémon. It casts a tricky glare that lowers the opponent's accuracy."
+msgstr "闪闪发光的粉末。携带后，光芒会迷惑对手，从而使其招式变得不容易命中。"
+
+msgid "White Herb"
+msgstr "白色香草"
+
+msgid "An item to be held by a Pokémon. It restores any lowered stat in battle. It can be used only once."
+msgstr "当携带它的宝可梦能力降低时，仅能回到之前的状态１次。"
+
+msgid "Exp. Share"
+msgstr "学习装置"
+
+msgid "An item to be held by a Pokémon. The holder gets a share of a battle's Exp. Points without battling."
+msgstr "携带的宝可梦就算没有参与对战也能分享到经验值的便利装置。"
+
+msgid "Quick Claw"
+msgstr "先制之爪"
+
+msgid "An item to be held by a Pokémon. A light, sharp claw that lets the bearer move first occasionally."
+msgstr "又轻又尖锐的爪子。携带后，有时能比对手先一步行动。"
+
+msgid "Soothe Bell"
+msgstr "安抚之铃"
+
+msgid "An item to be held by a Pokémon. It is a bell with a comforting chime that calms the holder."
+msgstr "音色悦耳的铃铛。携带它的宝可梦会受到安抚，变得容易和训练家亲密。"
+
+msgid "Mental Herb"
+msgstr "心灵香草"
+
+msgid "An item to be held by a Pokémon. It snaps the holder out of infatuation, just once."
+msgstr "当携带它的宝可梦无法自由使出招式时，仅会回复１次。"
+
+msgid "King's Rock"
+msgstr "王者之证"
+
+msgid "An item to be held by a Pokémon. It may cause the foe to flinch when the holder inflicts damage."
+msgstr "携带后进行攻击，在造成伤害时，有时会让对手畏缩。"
+
+msgid "SilverPowder"
+msgstr "银粉"
+
+msgid "An item to be held by a Pokémon. It is a shiny, silver powder that ups the power of Bug-type moves."
+msgstr "散发着银色光辉的粉末。携带后，虫属性的招式威力就会提高。"
+
+msgid "Amulet Coin"
+msgstr "护符金币"
+
+msgid "An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in."
+msgstr "只要携带它的宝可梦在战斗时出场一次，就能获得２倍金钱。"
+
+msgid "Cleanse Tag"
+msgstr "洁净之符"
+
+msgid "An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party."
+msgstr "让排在最前面的宝可梦携带后，野生宝可梦就会不容易出现。"
+
+msgid "Smoke Ball"
+msgstr "烟雾球"
+
+msgid "An item to be held by a Pokémon. It enables the holder to flee from any wild Pokémon without fail."
+msgstr "携带它的宝可梦在和野生宝可梦的战斗中绝对可以逃走。"
+
+msgid "Everstone"
+msgstr "不变之石"
+
+msgid "An item to be held by a Pokémon. The Pokémon holding this peculiar stone is prevented from evolving."
+msgstr "携带后，宝可梦在此期间不会进化的神奇石头。"
+
+msgid "Focus Band"
+msgstr "气势头带"
+
+msgid "An item to be held by a Pokémon. The holder may endure a potential KO attack, leaving it with just 1 HP."
+msgstr "携带后，即便受到可能会导致濒死的招式，有时也能仅以１ＨＰ撑过去。"
+
+msgid "Lucky Egg"
+msgstr "幸运蛋"
+
+msgid "An item to be held by a Pokémon. It is an egg filled with happiness that earns extra Exp. Points in battle."
+msgstr "满载着幸福的蛋。携带它的宝可梦获得的经验值会少量增加。"
+
+msgid "Scope Lens"
+msgstr "焦点镜"
+
+msgid "An item to be held by a Pokémon. It is a lens that boosts the holder's critical-hit ratio."
+msgstr "能看见弱点的镜片。携带它的宝可梦的招式会变得容易击中要害。"
+
+msgid "Wide Lens"
+msgstr "广角镜"
+
+msgid "An item to be held by a Pokémon. It is a magnifying lens that slightly boosts the accuracy of moves."
+msgstr "能放大观看物体的镜片。携带后，招式的命中率就会少量提高。"
+
+msgid "Zoom Lens"
+msgstr "对焦镜"
+
+msgid "An item to be held by a Pokémon. If the holder moves after the foe, its critical-hit ratio will be boosted."
+msgstr "当携带它的宝可梦比对手行动迟缓时，招式会变得容易命中。"
+
+msgid "Metal Coat"
+msgstr "金属膜"
+
+msgid "An item to be held by a Pokémon. It is a special metallic film that ups the power of Steel-type moves."
+msgstr "特殊的金属膜。携带后，钢属性的招式威力就会提高。"
+
+msgid "Leftovers"
+msgstr "吃剩的东西"
+
+msgid "An item to be held by a Pokémon. The holder's HP is gradually restored during battle."
+msgstr "携带后，宝可梦的ＨＰ会在战斗期间缓缓回复。"
+
+msgid "Dragon Scale"
+msgstr "龙之鳞片"
+
+msgid "A thick and tough scale. Dragon-type Pokémon may be holding this item when caught."
+msgstr "又硬又坚固的鳞片。龙属性宝可梦有时会携带它。"
+
+msgid "Shell Bell"
+msgstr "贝壳之铃"
+
+msgid "An item to be held by a Pokémon. The holder's HP is restored a little every time it inflicts damage."
+msgstr "当携带它的宝可梦攻击对手并造成伤害时，能回复少量ＨＰ。"
+
+msgid "Muscle Band"
+msgstr "力量头带"
+
+msgid "An item to be held by a Pokémon. It is a headband that slightly boosts the power of physical moves."
+msgstr "力如泉涌的头带。携带后，物理招式的威力就会少量提高。"
+
+msgid "Wise Glasses"
+msgstr "博识眼镜"
+
+msgid "An item to be held by a Pokémon. It is a thick pair of glasses that boosts the power of special moves."
+msgstr "装着很厚镜片的眼镜。携带后，特殊招式的威力就会少量提高。"
+
+msgid "Expert Belt"
+msgstr "达人带"
+
+msgid "An item to be held by a Pokémon. It is a well-worn belt that boosts the power of supereffective moves."
+msgstr "用惯了的黑色带子。携带后，效果绝佳时的招式威力就会少量提高。"
+
+msgid "Life Orb"
+msgstr "生命宝珠"
+
+msgid "An item to be held by a Pokémon. It boosts the power of moves, but at the cost of some HP on each hit."
+msgstr "携带后，虽然每次攻击时ＨＰ少量减少，但招式的威力会提高。"
+
+msgid "Power Herb"
+msgstr "强力香草"
+
+msgid "A single-use item to be held by a Pokémon. It allows the immediate use of a move that charges."
+msgstr "携带它的宝可梦仅有１次机会可以在第１回合使出需要蓄力的招式。"
+
+msgid "Toxic Orb"
+msgstr "剧毒宝珠"
+
+msgid "An item to be held by a Pokémon. It is a bizarre orb that badly poisons the holder in battle."
+msgstr "触碰后会放出毒的神奇宝珠。携带后，在战斗时会变成剧毒状态。"
+
+msgid "Flame Orb"
+msgstr "火焰宝珠"
+
+msgid "An item to be held by a Pokémon. It is a bizarre orb that inflicts a burn on the holder in battle."
+msgstr "触碰后会放出热量的神奇宝珠。携带后，在战斗时会变成灼伤状态。"
+
+msgid "Focus Sash"
+msgstr "气势披带"
+
+msgid "An item to be held by a Pokémon. If it has full HP, the holder will endure a potential KO attack."
+msgstr "携带后，在ＨＰ全满时，即便受到可能会导致濒死的招式，也能仅以１ＨＰ撑过去１次。"
+
+msgid "Metronome"
+msgstr "节拍器"
+
+msgid "A Pokémon hold item that boosts a move used consecutively."
+msgstr "携带后，连续使出相同招式时，威力就会提高。不再使出相同招式时，威力就会复原。"
+
+msgid "Iron Ball"
+msgstr "黑色铁球"
+
+msgid "A Pokémon hold item that cuts Speed. It makes airborne holders susceptible to Ground moves."
+msgstr "携带后，速度会降低。飞行属性以及飘浮宝可梦会被地面招式击中。"
+
+msgid "Lagging Tail"
+msgstr "后攻之尾"
+
+msgid "An item to be held by a Pokémon. It is tremendously heavy and makes the holder move slower than usual."
+msgstr "非常沉重的某种尾巴。携带后，行动会比平时更加迟缓。"
+
+msgid "Destiny Knot"
+msgstr "红线"
+
+msgid "A long, bright red string to be held by a Pokémon. If the holder becomes infatuated, the foe does too."
+msgstr "长长的鲜红色细线。携带后，在自己着迷时能让对手也着迷。"
+
+msgid "Black Sludge"
+msgstr "黑色污泥"
+
+msgid "A hold item that gradually restores the HP of Poison-type Pokémon. It inflicts damage on all other types."
+msgstr "携带后，毒属性的宝可梦会缓缓回复ＨＰ。其他属性的话，ＨＰ则会减少。"
+
+msgid "Grip Claw"
+msgstr "紧缠钩爪"
+
+msgid "A Pokémon hold item that extends the duration of multiturn attacks like Bind and Wrap."
+msgstr "携带后，绑紧以及紧束等会持续造成伤害的招式的回合数会增加。"
+
+msgid "Sticky Barb"
+msgstr "附着针"
+
+msgid "A hold item that damages the holder on every turn. It may latch on to foes that touch the holder."
+msgstr "携带后，每回合都会受到伤害。有时也会附着到碰到自己的对手身上。"
+
+msgid "Shed Shell"
+msgstr "美丽空壳"
+
+msgid "A tough, discarded carapace to be held by a Pokémon. It enables the holder to switch out of battle."
+msgstr "结实坚硬的空壳。携带它的宝可梦必定可以和后备的宝可梦进行替换。"
+
+msgid "Big Root"
+msgstr "大根茎"
+
+msgid "A Pokémon hold item that boosts the power of HP-stealing moves to let the holder recover more HP."
+msgstr "携带后，吸取ＨＰ的招式可以比平时更多地回复自己的ＨＰ。"
+
+msgid "Choice Band"
+msgstr "讲究头带"
+
+msgid "An item to be held by a Pokémon. This headband ups Attack, but allows the use of only one kind of move."
+msgstr "有点讲究的头带。虽然携带后攻击会提高，但只能使出相同的招式。"
+
+msgid "Choice Specs"
+msgstr "讲究眼镜"
+
+msgid "A Pokémon hold item. These distinctive glasses boost Sp. Atk, but allow only one move to be used."
+msgstr "有点讲究的眼镜。虽然携带后特攻会提高，但只能使出相同的招式。"
+
+msgid "Choice Scarf"
+msgstr "讲究围巾"
+
+msgid "An item to be held by a Pokémon. This scarf boosts Speed, but allows the use of only one kind of move."
+msgstr "有点讲究的围巾。虽然携带后速度会提高，但只能使出相同的招式。"
+
+msgid "Light Clay"
+msgstr "光之黏土"
+
+msgid "A Pokémon hold item that extends the duration of barrier moves like Light Screen and Reflect."
+msgstr "当携带它的宝可梦使出光墙或反射壁时，效果会比平时持续得更长。"
+
+msgid "Icy Rock"
+msgstr "冰冷岩石"
+
+msgid "A Pokémon hold item that extends the duration of the move Hail used by the holder."
+msgstr "携带它的宝可梦使出冰雹的话，冰雹的时间就会比平时更长。"
+
+msgid "Smooth Rock"
+msgstr "沙沙岩石"
+
+msgid "A Pokémon hold item that extends the duration of the move Sandstorm used by the holder."
+msgstr "携带它的宝可梦使出沙暴的话，沙暴的时间就会比平时更长。"
+
+msgid "Heat Rock"
+msgstr "炽热岩石"
+
+msgid "A Pokémon hold item that extends the duration of the move Sunny Day used by the holder."
+msgstr "携带它的宝可梦使出大晴天的话，晴天的时间就会比平时更长。"
+
+msgid "Damp Rock"
+msgstr "潮湿岩石"
+
+msgid "A Pokémon hold item that extends the duration of the move Rain Dance used by the holder."
+msgstr "携带它的宝可梦使出求雨的话，下雨的时间就会比平时更长。"
+
+msgid "Macho Brace"
+msgstr "强制锻炼器"
+
+msgid "A Pokémon hold item that is a stiff and heavy brace that promotes strong growth but lowers Speed."
+msgstr "又硬又重的锻炼器。虽然携带后速度会降低，但会比平时更容易茁壮成长。"
+
+msgid "Power Bracer"
+msgstr "力量护腕"
+
+msgid "A Pokémon hold item that promotes Attack gain on leveling, but reduces the Speed stat."
+msgstr "虽然携带后速度会降低，但宝可梦的攻击会比平时成长得更高。"
+
+msgid "Power Belt"
+msgstr "力量腰带"
+
+msgid "A Pokémon hold item that promotes Defense gain on leveling, but reduces the Speed stat."
+msgstr "虽然携带后速度会降低，但宝可梦的防御会比平时成长得更高。"
+
+msgid "Power Lens"
+msgstr "力量镜"
+
+msgid "A Pokémon hold item that promotes Sp. Atk gain on leveling, but reduces the Speed stat."
+msgstr "虽然携带后速度会降低，但宝可梦的特攻会比平时成长得更高。"
+
+msgid "Power Band"
+msgstr "力量束带"
+
+msgid "A Pokémon hold item that promotes Sp. Def gain on leveling, but reduces the Speed stat."
+msgstr "虽然携带后速度会降低，但宝可梦的特防会比平时成长得更高。"
+
+msgid "Power Anklet"
+msgstr "力量护踝"
+
+msgid "A Pokémon hold item that promotes Speed gain on leveling, but reduces the Speed stat."
+msgstr "虽然携带后速度会降低，但宝可梦的速度会比平时成长得更高。"
+
+msgid "Power Weight"
+msgstr "力量负重"
+
+msgid "A Pokémon hold item that promotes HP gain on leveling, but reduces the Speed stat."
+msgstr "虽然携带后速度会降低，但宝可梦的ＨＰ会比平时成长得更高。"
+
+msgid "Sea Incense"
+msgstr "海潮薰香"
+
+msgid "A Pokémon hold item. It is incense with a curious aroma that boosts the power of Water-type moves."
+msgstr "有着神奇香气的薰香。携带后，水属性的招式威力就会提高。"
+
+msgid "Lax Incense"
+msgstr "悠闲薰香"
+
+msgid "A Pokémon hold item. The tricky aroma of this incense lowers the foe's accuracy."
+msgstr "携带后，薰香的神奇香气会迷惑对手，其招式会变得不容易命中。"
+
+msgid "Odd Incense"
+msgstr "奇异薰香"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Psychic-type moves."
+msgstr "有着神奇香气的薰香。携带后，超能力属性的招式威力就会提高。"
+
+msgid "Rock Incense"
+msgstr "岩石薰香"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Rock-type moves."
+msgstr "有着神奇香气的薰香。携带后，岩石属性的招式威力就会提高。"
+
+msgid "Full Incense"
+msgstr "饱腹薰香"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that makes the holder bloated and slow moving."
+msgstr "有着神奇香气的薰香。携带后，宝可梦的行动会比平时更加迟缓。"
+
+msgid "Wave Incense"
+msgstr "涟漪薰香"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Water-type moves."
+msgstr "有着神奇香气的薰香。携带后，水属性的招式威力就会提高。"
+
+msgid "Rose Incense"
+msgstr "花朵薰香"
+
+msgid "A Pokémon hold item. It is an exotic-smelling incense that boosts the power of Grass-type moves."
+msgstr "有着神奇香气的薰香。携带后，草属性的招式威力就会提高。"
+
+msgid "Luck Incense"
+msgstr "幸运薰香"
+
+msgid "Pure Incense"
+msgstr "洁净薰香"
+
+msgid "Soft Sand"
+msgstr "柔软沙子"
+
+msgid "An item to be held by a Pokémon. It is a loose, silky sand that boosts the power of Ground-type moves."
+msgstr "手感细腻的沙子。携带后，地面属性的招式威力就会提高。"
+
+msgid "Hard Stone"
+msgstr "硬石头"
+
+msgid "An item to be held by a Pokémon. It is an unbreakable stone that ups the power of Rock-type moves."
+msgstr "绝对不会裂开的石头。携带后，岩石属性的招式威力就会提高。"
+
+msgid "Miracle Seed"
+msgstr "奇迹种子"
+
+msgid "An item to be held by a Pokémon. It is a seed imbued with life that ups the power of Grass-type moves."
+msgstr "孕育生命的种子。携带后，草属性的招式威力就会提高。"
+
+msgid "BlackGlasses"
+msgstr "黑色眼镜"
+
+msgid "An item to be held by a Pokémon. It is a shady-looking pair of glasses that boosts Dark-type moves."
+msgstr "看上去很奇怪的眼镜。携带后，恶属性的招式威力就会提高。"
+
+msgid "Black Belt"
+msgstr "黑带"
+
+msgid "An item to be held by a Pokémon. It is a belt that boosts determination and Fighting-type moves."
+msgstr "能振作精神的带子。携带后，格斗属性的招式威力就会提高。"
+
+msgid "Magnet"
+msgstr "磁铁"
+
+msgid "An item to be held by a Pokémon. It is a powerful magnet that boosts the power of Electric-type moves."
+msgstr "强力的磁铁。携带后，电属性的招式威力就会提高。"
+
+msgid "Mystic Water"
+msgstr "神秘水滴"
+
+msgid "An item to be held by a Pokémon. It is a teardrop-shaped gem that ups the power of Water-type moves."
+msgstr "水滴形状的宝石。携带后，水属性的招式威力就会提高。"
+
+msgid "Sharp Beak"
+msgstr "锐利鸟嘴"
+
+msgid "An item to be held by a Pokémon. It is a long, sharp beak that boosts the power of Flying-type moves."
+msgstr "又长又尖的鸟嘴。携带后，飞行属性的招式威力就会提高。"
+
+msgid "Poison Barb"
+msgstr "毒针"
+
+msgid "An item to be held by a Pokémon. It is a small, poisonous barb that ups the power of Poison-type moves."
+msgstr "有毒的小针。携带后，毒属性的招式威力就会提高。"
+
+msgid "NeverMeltIce"
+msgstr "不融冰"
+
+msgid "An item to be held by a Pokémon. It is a piece of ice that repels heat and boosts Ice-type moves."
+msgstr "能隔绝热量的冰。携带后，冰属性的招式威力就会提高。"
+
+msgid "Spell Tag"
+msgstr "诅咒之符"
+
+msgid "An item to be held by a Pokémon. It is a sinister, eerie tag that boosts the power of Ghost-type moves."
+msgstr "古怪可怕的咒符。携带后，幽灵属性的招式威力就会提高。"
+
+msgid "TwistedSpoon"
+msgstr "弯曲的汤匙"
+
+msgid "A Pokémon hold item. It is a spoon imbued with telekinetic power that boosts Psychic-type moves."
+msgstr "注入了念力的汤匙。携带后，超能力属性的招式威力就会提高。"
+
+msgid "Charcoal"
+msgstr "木炭"
+
+msgid "An item to be held by a Pokémon. It is a combustible fuel that boosts the power of Fire-type moves."
+msgstr "焚烧用的燃料。携带后，火属性的招式威力就会提高。"
+
+msgid "Dragon Fang"
+msgstr "龙之牙"
+
+msgid "An item to be held by a Pokémon. It is a hard and sharp fang that ups the power of Dragon-type moves."
+msgstr "坚硬锐利的牙齿。携带后，龙属性的招式威力就会提高。"
+
+msgid "Silk Scarf"
+msgstr "丝绸围巾"
+
+msgid "An item to be held by a Pokémon. It is a sumptuous scarf that boosts the power of Normal-type moves."
+msgstr "手感不错的围巾。携带后，一般属性的招式威力就会提高。"
+
+msgid "Flame Plate"
+msgstr "火球石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fire-type moves."
+msgstr "火属性的石板。携带后，火属性的招式威力就会增强。"
+
+msgid "Splash Plate"
+msgstr "水滴石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Water-type moves."
+msgstr "水属性的石板。携带后，水属性的招式威力就会增强。"
+
+msgid "Zap Plate"
+msgstr "雷电石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Electric-type moves."
+msgstr "电属性的石板。携带后，电属性的招式威力就会增强。"
+
+msgid "Meadow Plate"
+msgstr "碧绿石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Grass-type moves."
+msgstr "草属性的石板。携带后，草属性的招式威力就会增强。"
+
+msgid "Icicle Plate"
+msgstr "冰柱石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ice-type moves."
+msgstr "冰属性的石板。携带后，冰属性的招式威力就会增强。"
+
+msgid "Fist Plate"
+msgstr "拳头石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fighting-type moves."
+msgstr "格斗属性的石板。携带后，格斗属性的招式威力就会增强。"
+
+msgid "Toxic Plate"
+msgstr "剧毒石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Poison-type moves."
+msgstr "毒属性的石板。携带后，毒属性的招式威力就会增强。"
+
+msgid "Earth Plate"
+msgstr "大地石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ground-type moves."
+msgstr "地面属性的石板。携带后，地面属性的招式威力就会增强。"
+
+msgid "Sky Plate"
+msgstr "蓝天石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Flying-type moves."
+msgstr "飞行属性的石板。携带后，飞行属性的招式威力就会增强。"
+
+msgid "Mind Plate"
+msgstr "神奇石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Psychic-type moves."
+msgstr "超能力属性的石板。携带后，超能力属性的招式威力就会增强。"
+
+msgid "Insect Plate"
+msgstr "玉虫石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Bug-type moves."
+msgstr "虫属性的石板。携带后，虫属性的招式威力就会增强。"
+
+msgid "Stone Plate"
+msgstr "岩石石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Rock-type moves."
+msgstr "岩石属性的石板。携带后，岩石属性的招式威力就会增强。"
+
+msgid "Spooky Plate"
+msgstr "妖怪石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Ghost-type moves."
+msgstr "幽灵属性的石板。携带后，幽灵属性的招式威力就会增强。"
+
+msgid "Draco Plate"
+msgstr "龙之石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dragon-type moves."
+msgstr "龙属性的石板。携带后，龙属性的招式威力就会增强。"
+
+msgid "Dread Plate"
+msgstr "恶颜石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Dark-type moves."
+msgstr "恶属性的石板。携带后，恶属性的招式威力就会增强。"
+
+msgid "Iron Plate"
+msgstr "钢铁石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Steel-type moves."
+msgstr "钢属性的石板。携带后，钢属性的招式威力就会增强。"
+
+msgid "Light Ball"
+msgstr "电气球"
+
+msgid "An item to be held by Pikachu. It is a puzzling orb that raises the Sp. Atk stat."
+msgstr "让皮卡丘携带后，攻击和特攻的威力就会提高的神奇之球。"
+
+msgid "Lucky Punch"
+msgstr "吉利拳"
+
+msgid "An item to be held by Chansey. It is a pair of gloves that boosts CHANSEY's critical-hit ratio."
+msgstr "能带来幸运的拳套。让吉利蛋携带后，招式会变得容易击中要害。"
+
+msgid "Metal Powder"
+msgstr "金属粉"
+
+msgid "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Defense stat."
+msgstr "让百变怪携带后，防御就会提高的神奇粉末。非常细腻坚硬。"
+
+msgid "Quick Powder"
+msgstr "速度粉"
+
+msgid "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Speed stat."
+msgstr "让百变怪携带后，速度就会提高的神奇粉末。非常细腻坚硬。"
+
+msgid "Thick Club"
+msgstr "粗骨头"
+
+msgid "An item to be held by Cubone or Marowak. It is a hard bone of some sort that boosts the Attack stat."
+msgstr "某种坚硬的骨头。让卡拉卡拉或嘎啦嘎啦携带后，攻击就会提高。"
+
+msgid "Stick"
+msgstr "大葱"
+
+msgid "An item to be held by Farfetch'd. It is a long and stiff leek stalk that boosts the critical-hit ratio."
+msgstr "非常长且坚硬的茎。让大葱鸭携带后，招式会变得容易击中要害。"
+
+msgid "Soul Dew"
+msgstr "心之水滴"
+
+msgid "A wondrous orb to be held by Latios or Latias. It raises both the Sp. Atk and Sp. Def stats."
+msgstr "让拉帝欧斯或拉帝亚斯携带后，超能力和龙属性的招式威力就会提高的神奇珠子。"
+
+msgid "DeepSeaTooth"
+msgstr "深海之牙"
+
+msgid "An item to be held by Clamperl. A fang that gleams a sharp silver, it raises the Sp. Atk stat."
+msgstr "让珍珠贝携带后，特攻就会提高的牙齿。散发着闪亮的银光。"
+
+msgid "DeepSeaScale"
+msgstr "深海鳞片"
+
+msgid "An item to be held by Clamperl. A scale that shines a faint pink, it raises the Sp. Def stat."
+msgstr "让珍珠贝携带后，特防就会提高的鳞片。散发着淡淡的粉红色光芒。"
+
+msgid "Adamant Orb"
+msgstr "金刚宝珠"
+
+msgid "A brightly gleaming orb to be held by Dialga. It boosts the power of Dragon- and Steel-type moves."
+msgstr "让帝牙卢卡携带的话，龙和钢属性的招式威力就会提高。散发着光辉的宝珠。"
+
+msgid "Lustrous Orb"
+msgstr "白玉宝珠"
+
+msgid "A beautifully glowing orb to be held by Palkia. It boosts the power of Dragon- and Water-type moves."
+msgstr "让帕路奇亚携带的话，龙和水属性的招式威力就会提高。散发着美丽光辉的宝珠。"
+
+msgid "Griseous Orb"
+msgstr "白金宝珠"
+
+msgid "A glowing orb to be held by Giratina. It boosts the power of Dragon- and Ghost-type moves."
+msgstr "让骑拉帝纳携带的话，龙和幽灵属性的招式威力就会提高。散发着光辉的宝珠。"
+
+msgid "Up-Grade"
+msgstr "升级数据"
+
+msgid "A transparent device filled with all sorts of data. It was produced by Silph Co."
+msgstr "内部储存了各种信息的透明机器。西尔佛公司制造。"
+
+msgid "Dubious Disc"
+msgstr "可疑补丁"
+
+msgid "A transparent device overflowing with dubious data. Its producer is unknown."
+msgstr "内部储存了奇怪信息的透明机器。制造者不明。"
+
+msgid "Protector"
+msgstr "护具"
+
+msgid "A protective item of some sort. It is extremely stiff and heavy. It is loved by a certain Pokémon."
+msgstr "某种护具。非常坚硬而且沉重。某种宝可梦很喜欢它。"
+
+msgid "Electirizer"
+msgstr "电力增幅器"
+
+msgid "A box packed with a tremendous amount of electric energy. It is loved by a certain Pokémon."
+msgstr "积蓄着庞大电气能量的箱子。某种宝可梦很喜欢它。"
+
+msgid "Magmarizer"
+msgstr "熔岩增幅器"
+
+msgid "A box packed with a tremendous amount of magma energy. It is loved by a certain Pokémon."
+msgstr "积蓄着庞大熔岩能量的箱子。某种宝可梦很喜欢它。"
+
+msgid "Reaper Cloth"
+msgstr "灵界之布"
+
+msgid "A cloth imbued with horrifyingly strong spiritual energy. It is loved by a certain Pokémon."
+msgstr "蕴含着惊人强大灵力的布。某种宝可梦很喜欢它。"
+
+msgid "Razor Claw"
+msgstr "锐利之爪"
+
+msgid "An item to be held by a Pokémon. It is a sharply hooked claw that ups the holder's critical-hit ratio."
+msgstr "尖锐的爪子。携带后，招式会变得容易击中要害。"
+
+msgid "Razor Fang"
+msgstr "锐利之牙"
+
+msgid "Red Scarf"
+msgstr "红色头巾"
+
+msgid "An item to be held by a Pokémon. It boosts the “Cool” aspect of the holder in a Contest."
+msgstr "携带它去参加华丽大赛的宝可梦会比平时看上去更加帅气。"
+
+msgid "Blue Scarf"
+msgstr "蓝色头巾"
+
+msgid "An item to be held by a Pokémon. It boosts the “Beauty” aspect of the holder in a Contest."
+msgstr "携带它去参加华丽大赛的宝可梦会比平时看上去更加美丽。"
+
+msgid "Pink Scarf"
+msgstr "粉红头巾"
+
+msgid "An item to be held by a Pokémon. It boosts the “Cute” aspect of the holder in a Contest."
+msgstr "携带它去参加华丽大赛的宝可梦会比平时看上去更加可爱。"
+
+msgid "Green Scarf"
+msgstr "绿色头巾"
+
+msgid "An item to be held by a Pokémon. It boosts the “Smart” aspect of the holder in a Contest."
+msgstr "携带它去参加华丽大赛的宝可梦会比平时看上去更加聪明。"
+
+msgid "Yellow Scarf"
+msgstr "黄色头巾"
+
+msgid "An item to be held by a Pokémon. It boosts the “Tough” aspect of the holder in a Contest."
+msgstr "携带它去参加华丽大赛的宝可梦会比平时看上去更加强壮。"
+
+msgid "Potion"
+msgstr "伤药"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by just 20 points."
+msgstr "喷雾式伤药。能让１只宝可梦回复２０ＨＰ。"
+
+msgid "Super Potion"
+msgstr "好伤药"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by 50 points."
+msgstr "喷雾式伤药。能让１只宝可梦回复５０ＨＰ。"
+
+msgid "Hyper Potion"
+msgstr "厉害伤药"
+
+msgid "A spray-type medicine for wounds. It restores the HP of one Pokémon by 200 points."
+msgstr "喷雾式伤药。能让１只宝可梦回复２００ＨＰ。"
+
+msgid "Max Potion"
+msgstr "全满药"
+
+msgid "A spray-type medicine for wounds. It completely restores the HP of a single Pokémon."
+msgstr "喷雾式伤药。能让１只宝可梦回复所有ＨＰ。"
+
+msgid "Full Restore"
+msgstr "全复药"
+
+msgid "A medicine that fully restores the HP and heals any status problems of a single Pokémon."
+msgstr "能回复１只宝可梦的所有ＨＰ并治愈所有异常状态。"
+
+msgid "Sacred Ash"
+msgstr "圣灰"
+
+msgid "It revives all fainted Pokémon. In doing so, it also fully restores their HP."
+msgstr "能让陷入濒死的全部宝可梦回复所有ＨＰ。"
+
+msgid "Antidote"
+msgstr "解毒药"
+
+msgid "A spray-type medicine. It lifts the effect of poison from one Pokémon."
+msgstr "喷雾式药水。能治愈１只宝可梦的中毒状态。"
+
+msgid "Burn Heal"
+msgstr "灼伤药"
+
+msgid "A spray-type medicine. It heals a single Pokémon that is suffering from a burn."
+msgstr "喷雾式药水。能治愈１只宝可梦的灼伤状态。"
+
+msgid "Ice Heal"
+msgstr "解冻药"
+
+msgid "A spray-type medicine. It defrosts a Pokémon that has been frozen solid."
+msgstr "喷雾式药水。能治愈１只宝可梦的冰冻状态。"
+
+msgid "Awakening"
+msgstr "解眠药"
+
+msgid "A spray-type medicine. It awakens a Pokémon from the clutches of sleep."
+msgstr "喷雾式药水。能治愈１只宝可梦的睡眠状态。"
+
+msgid "Parlyz Heal"
+msgstr "解麻药"
+
+msgid "A spray-type medicine. It eliminates paralysis from a single Pokémon."
+msgstr "喷雾式药水。能治愈１只宝可梦的麻痹状态。"
+
+msgid "Full Heal"
+msgstr "万灵药"
+
+msgid "A spray-type medicine. It heals all the status problems of a single Pokémon."
+msgstr "喷雾式药水。能治愈１只宝可梦的所有异常状态。"
+
+msgid "Lava Cookie"
+msgstr "釜炎仙贝"
+
+msgid "Lavaridge Town's local specialty. It heals all the status problems of one Pokémon."
+msgstr "釜炎特产的仙贝。能治愈１只宝可梦的所有异常状态。"
+
+msgid "Old Gateau"
+msgstr "森之羊羹"
+
+msgid "Old Chateau's hidden specialty. It heals all the status problems of a single Pokémon."
+msgstr "百代不为人知的特产。能治愈１只宝可梦的所有异常状态。"
+
+msgid "Revive"
+msgstr "活力碎片"
+
+msgid "A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP."
+msgstr "能让１只陷入濒死的宝可梦重获生机，并回复一半ＨＰ。"
+
+msgid "Max Revive"
+msgstr "活力块"
+
+msgid "A medicine that revives a fainted Pokémon. It fully restores the Pokémon's HP."
+msgstr "能让１只陷入濒死的宝可梦重获生机，并回复所有ＨＰ。"
+
+msgid "Berry Juice"
+msgstr "树果汁"
+
+msgid "A 100% pure juice made of Berries. It restores the HP of one Pokémon by just 20 points."
+msgstr "１００％树果果汁。能让１只宝可梦回复２０ＨＰ。"
+
+msgid "Fresh Water"
+msgstr "美味之水"
+
+msgid "Water with a high mineral content. It restores the HP of one Pokémon by 50 points."
+msgstr "富含矿物质的水。能让１只宝可梦回复５０ＨＰ。"
+
+msgid "Soda Pop"
+msgstr "劲爽汽水"
+
+msgid "A fizzy soda drink. It restores the HP of one Pokémon by 60 points."
+msgstr "翻腾着气泡的汽水。能让１只宝可梦回复６０ＨＰ。"
+
+msgid "Lemonade"
+msgstr "果汁牛奶"
+
+msgid "A very sweet drink. It restores the HP of one Pokémon by 80 points."
+msgstr "非常香甜的牛奶。能让１只宝可梦回复８０ＨＰ。"
+
+msgid "Moomoo Milk"
+msgstr "哞哞鲜奶"
+
+msgid "Milk with a very high nutrition content. It restores the HP of one Pokémon by 100 points."
+msgstr "营养百分百的牛奶。能让１只宝可梦回复１００ＨＰ。"
+
+msgid "EnergyPowder"
+msgstr "元气粉"
+
+msgid "A very bitter medicine powder. It restores the HP of one Pokémon by 50 points."
+msgstr "非常苦的药粉。能让１只宝可梦回复５０ＨＰ。"
+
+msgid "Energy Root"
+msgstr "元气根"
+
+msgid "A very bitter root. It restores the HP of one Pokémon by 200 points."
+msgstr "非常苦的根。能让１只宝可梦回复２００ＨＰ。"
+
+msgid "Heal Powder"
+msgstr "万能粉"
+
+msgid "A very bitter medicine powder. It heals all the status problems of a single Pokémon."
+msgstr "非常苦的药粉。能治愈１只宝可梦的所有异常状态。"
+
+msgid "Revival Herb"
+msgstr "复活草"
+
+msgid "A very bitter medicinal herb. It revives a fainted Pokémon, fully restoring its HP."
+msgstr "非常苦的药草。能让１只濒死的宝可梦回复所有ＨＰ。"
+
+msgid "Ether"
+msgstr "ＰＰ单项小补剂"
+
+msgid "It restores the PP of a Pokémon's selected move by a maximum of 10 points."
+msgstr "能让宝可梦学会的其中１个招式回复１０ＰＰ。"
+
+msgid "Max Ether"
+msgstr "ＰＰ单项全补剂"
+
+msgid "It fully restores the PP of a single selected move that has been learned by the target Pokémon."
+msgstr "能让宝可梦学会的其中１个招式回复所有ＰＰ。"
+
+msgid "Elixir"
+msgstr "ＰＰ多项小补剂"
+
+msgid "It restores the PP of all the moves learned by the targeted Pokémon by 10 points each."
+msgstr "能让宝可梦学会的４个招式各回复１０ＰＰ。"
+
+msgid "Max Elixir"
+msgstr "ＰＰ多项全补剂"
+
+msgid "It fully restores the PP of all the moves learned by the targeted Pokémon."
+msgstr "能让宝可梦学会的４个招式回复所有ＰＰ。"
+
+msgid "HP Up"
+msgstr "ＨＰ增强剂"
+
+msgid "A nutritious drink for Pokémon. It raises the base HP of a single Pokémon."
+msgstr "宝可梦的营养饮料。能提高１只宝可梦的ＨＰ的基础点数。"
+
+msgid "Protein"
+msgstr "攻击增强剂"
+
+msgid "A nutritious drink for Pokémon. It raises the base Attack stat of a single Pokémon."
+msgstr "宝可梦的营养饮料。能提高１只宝可梦的攻击的基础点数。"
+
+msgid "Iron"
+msgstr "防御增强剂"
+
+msgid "A nutritious drink for Pokémon. It raises the base Defense stat of a single Pokémon."
+msgstr "宝可梦的营养饮料。能提高１只宝可梦的防御的基础点数。"
+
+msgid "Carbos"
+msgstr "速度增强剂"
+
+msgid "A nutritious drink for Pokémon. It raises the base Speed stat of a single Pokémon."
+msgstr "宝可梦的营养饮料。能提高１只宝可梦的速度的基础点数。"
+
+msgid "Calcium"
+msgstr "特攻增强剂"
+
+msgid "A nutritious drink for Pokémon. It raises the base Sp. Atk (Special Attack) stat of a single Pokémon."
+msgstr "宝可梦的营养饮料。能提高１只宝可梦的特攻的基础点数。"
+
+msgid "Zinc"
+msgstr "特防增强剂"
+
+msgid "A nutritious drink for Pokémon. It raises the base Sp. Def (Special Defense) stat of a single Pokémon."
+msgstr "宝可梦的营养饮料。能提高１只宝可梦的特防的基础点数。"
+
+msgid "PP Up"
+msgstr "ＰＰ提升剂"
+
+msgid "It slightly raises the maximum PP of a selected move that has been learned by the target Pokémon."
+msgstr "能让宝可梦学会的其中１个招式的ＰＰ最大值少量提高。"
+
+msgid "PP Max"
+msgstr "ＰＰ极限提升剂"
+
+msgid "It maximally raises the top PP of a selected move that has been learned by the target Pokémon."
+msgstr "能将宝可梦学会的其中１个招式的ＰＰ最大值提至最高。"
+
+msgid "Rare Candy"
+msgstr "神奇糖果"
+
+msgid "A candy that is packed with energy. It raises the level of a single Pokémon by one."
+msgstr "充满能量的糖果。将它交给宝可梦后，１只宝可梦的等级仅会提高１。"
+
+msgid "Master Ball"
+msgstr "大师球"
+
+msgid "The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail."
+msgstr "必定能捉到野生宝可梦的，性能最好的球。"
+
+msgid "Ultra Ball"
+msgstr "高级球"
+
+msgid "An ultra-performance Ball that provides a higher Pokémon catch rate than a Great Ball."
+msgstr "比起超级球来更容易捉到宝可梦的，性能非常不错的球。"
+
+msgid "Great Ball"
+msgstr "超级球"
+
+msgid "A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball."
+msgstr "比起精灵球来更容易捉到宝可梦的，性能还算不错的球。"
+
+msgid "Poké Ball"
+msgstr "精灵球"
+
+msgid "A device for catching wild Pokémon. A capsule system that is thrown like a ball at the target."
+msgstr "一种可以捕获野生宝可梦的装置，像投球一样丢向目标。设计成胶囊的形状。"
+
+msgid "Safari Ball"
+msgstr "狩猎球"
+
+msgid "A special Poké Ball that is used only in the Great Marsh. It is decorated in a camouflage pattern."
+msgstr "仅能在大湿地中使用的特殊的球。上面有迷彩花纹。"
+
+msgid "Net Ball"
+msgstr "捕网球"
+
+msgid "A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon."
+msgstr "有点与众不同的球。能很容易地捕捉水属性和虫属性的宝可梦。"
+
+msgid "Dive Ball"
+msgstr "潜水球"
+
+msgid "A somewhat different Poké Ball that works especially well on Pokémon that live in the sea."
+msgstr "有点与众不同的球。能很容易地捕捉生活在水世界里的宝可梦。"
+
+msgid "Nest Ball"
+msgstr "巢穴球"
+
+msgid "A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild."
+msgstr "有点与众不同的球。捕捉的野生宝可梦越弱，就会越容易捕捉。"
+
+msgid "Repeat Ball"
+msgstr "重复球"
+
+msgid "A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught."
+msgstr "有点与众不同的球。能很容易地捕捉以前曾捉到过的宝可梦。"
+
+msgid "Timer Ball"
+msgstr "计时球"
+
+msgid "A somewhat different Ball that becomes progressively better the more turns there are in a battle."
+msgstr "有点与众不同的球。回合数花费得越多，宝可梦就会越容易捕捉。"
+
+msgid "Luxury Ball"
+msgstr "豪华球"
+
+msgid "A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly."
+msgstr "住着十分惬意的球。捉到的野生宝可梦会变得容易和训练家亲密。"
+
+msgid "Premier Ball"
+msgstr "纪念球"
+
+msgid "A somewhat rare Poké Ball that has been specially made to commemorate an event of some sort."
+msgstr "有点珍贵的球。特制出来的某种纪念品。"
+
+msgid "Dusk Ball"
+msgstr "黑暗球"
+
+msgid "A somewhat different Poké Ball that can easily catch wild Pokémon at night or in dark places."
+msgstr "有点与众不同的球。能很容易地在夜晚或洞窟等阴暗的地方捕捉宝可梦。"
+
+msgid "Heal Ball"
+msgstr "治愈球"
+
+msgid "A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem."
+msgstr "有点温柔的球。能回复捉到的宝可梦的ＨＰ并治愈异常状态。"
+
+msgid "Quick Ball"
+msgstr "先机球"
+
+msgid "A somewhat different Poké Ball that works better at the start of a wild encounter."
+msgstr "有点与众不同的球。如果战斗开始后立刻使用，就能很容易地捉到宝可梦。"
+
+msgid "Cherish Ball"
+msgstr "贵重球"
+
+msgid "A quite rare Poké Ball that has been specially crafted to commemorate an occasion of some sort."
+msgstr "相当珍贵的球。特制出来的某种纪念品。"
+
+msgid "Fast Ball"
+msgstr "速度球"
+
+msgid "A Poké Ball that makes it easier to catch Pokémon which are quick to run away."
+msgstr "有点与众不同的球。能很容易地捕捉逃跑速度很快的宝可梦。"
+
+msgid "Level Ball"
+msgstr "等级球"
+
+msgid "A Poké Ball for catching Pokémon that are a lower level than your own."
+msgstr "有点与众不同的球。要捕捉的宝可梦比自己宝可梦的等级越低，就会越容易捕捉。"
+
+msgid "Lure Ball"
+msgstr "诱饵球"
+
+msgid "A Poké Ball for catching Pokémon hooked by a Rod when fishing."
+msgstr "有点与众不同的球。能很容易地捕捉用钓竿钓上来的宝可梦。"
+
+msgid "Heavy Ball"
+msgstr "沉重球"
+
+msgid "A Poké Ball for catching very heavy Pokémon."
+msgstr "有点与众不同的球。能很容易地捕捉身体沉重的宝可梦。"
+
+msgid "Love Ball"
+msgstr "甜蜜球"
+
+msgid "A Poké Ball for catching Pokémon that are the opposite gender of your Pokémon."
+msgstr "有点与众不同的球。能很容易地捕捉和自己宝可梦性别不同的宝可梦。"
+
+msgid "Friend Ball"
+msgstr "友友球"
+
+msgid "A Poké Ball that makes caught Pokémon more friendly."
+msgstr "有点与众不同的球。捉到的野生宝可梦会立刻变得和训练家亲密起来。"
+
+msgid "Moon Ball"
+msgstr "月亮球"
+
+msgid "A Poké Ball for catching Pokémon that evolve using the Moon Stone."
+msgstr "有点与众不同的球。能很容易地捕捉使用月之石进化的宝可梦。"
+
+msgid "Sport Ball"
+msgstr "竞赛球"
+
+msgid "A special Poké Ball for the Bug-Catching Contest."
+msgstr "在捕虫大赛上使用的特殊的球。"
+
+msgid "Park Ball"
+msgstr "公园球"
+
+msgid "A special Poké Ball for the Pal Park."
+msgstr "在伙伴公园里使用的特殊的球。"
+
+msgid "The user focuses its mind before launching this attack. It will fail if the user is hit before it is used."
+msgstr "集中精神出招。在招式使出前若受到攻击则会失败。"
+
+msgid "Sharp, huge claws hook and slash the foe quickly and with great power."
+msgstr "用尖锐的巨爪将对手牢牢抓住，并迅速有力地劈向对手。"
+
+msgid "The foe is hit with a pulsing blast of water. It may also confuse the target."
+msgstr "用水的震动攻击对手。有时会使对手混乱。"
+
+msgid "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats."
+msgstr "静心凝神，从而提高自己的特攻和特防。"
+
+msgid "The foe is scared off, to be replaced by another Pokémon in its party. In the wild, the battle ends."
+msgstr "放走对手，强制拉后备宝可梦上场。如果对手为野生宝可梦，战斗将直接结束。"
+
+msgid "A move that leaves the foe badly poisoned. This poison damage worsens every turn."
+msgstr "让对手陷入剧毒状态。随着回合的推进，中毒伤害会增加。"
+
+msgid "Summons a hailstorm that lasts for five turns. The hailstorm damages all types except Ice."
+msgstr "在５回合内一直降冰雹，冰雹会给予冰属性以外的宝可梦伤害。"
+
+msgid "The user tenses its muscles to bulk up its body, boosting both its Attack and Defense stats."
+msgstr "使出全身力气绷紧肌肉，从而提高自己的攻击和防御。"
+
+msgid "The user forcefully shoots seeds at the foe. Two to five seeds are shot in rapid succession."
+msgstr "向对手猛烈地发射种子进行攻击。连续攻击２～５次。"
+
+msgid "A variable move that changes type and power depending on the hidden ability of the Pokémon using it."
+msgstr "一种多变的招式，招式的属性和威力会随着使用此招式的宝可梦而改变。"
+
+msgid "The user intensifies the sun for five turns, powering up Fire-type moves."
+msgstr "在５回合内阳光变得强烈，从而提高火属性的招式威力。水属性的招式威力则降低。"
+
+msgid "The target is taunted into a rage that allows it to use only attack moves for three turns."
+msgstr "使对手愤怒。在３回合内让对手只能使出给予伤害的招式。"
+
+msgid "The foe is struck with an icy-cold beam of energy. It may also freeze the target solid."
+msgstr "向对手发射冰冻光束进行攻击。有时会让对手陷入冰冻状态。"
+
+msgid "A howling blizzard is summoned to strike the foe. It may also freeze the target solid."
+msgstr "将猛烈的暴风雪刮向对手进行攻击。有时会让对手陷入冰冻状态。"
+
+msgid "The foe is attacked with a powerful beam. The user must rest on the next turn to regain its energy."
+msgstr "向对手发射强烈的光线进行攻击。下一回合自己将无法动弹。"
+
+msgid "A wondrous wall of light is put up to suppress damage from special attacks for five turns."
+msgstr "在５回合内使用神奇的墙，减弱从对手那受到的特殊攻击的伤害。"
+
+msgid "It enables the user to evade all attacks. Its chance of failing rises if it is used in succession."
+msgstr "完全抵挡对手的攻击。连续使出则容易失败。"
+
+msgid "The user summons a heavy rain that falls for five turns, powering up Water-type moves."
+msgstr "在５回合内一直降雨，从而提高水属性的招式威力。火属性的招式威力则降低。"
+
+msgid "A nutrient-draining attack. The user's HP is restored by half the damage taken by the target."
+msgstr "吸取对手的养分进行攻击。可以回复给予对手伤害的一半ＨＰ。"
+
+msgid "The user creates a protective field that prevents status problems like poison, paralysis, burn, and sleep."
+msgstr "被神奇的力量守护，从而不会陷入类似中毒、麻痹、灼伤或睡眠等异常状态。"
+
+msgid "A full-power attack that grows more powerful the less the user likes its Trainer."
+msgstr "为了发泄不满而全力攻击对手。亲密度越低，威力越大。"
+
+msgid "A two-turn attack. The user gathers light, then blasts a bundled beam on the second turn."
+msgstr "第１回合收集满满的日光，第２回合发射光束进行攻击。"
+
+msgid "The foe is slammed with a sturdy tail of steel. It may also lower the target's Defense stat if it hits."
+msgstr "使用坚硬的铁尾巴摔打对手进行攻击。如果命中，有时会降低对手的防御。"
+
+msgid "A strong electric blast is loosed at the foe. It may also leave the foe paralyzed."
+msgstr "向对手发出强力电击进行攻击。有时会让对手陷入麻痹状态。"
+
+msgid "A wicked thunderbolt is dropped on the foe to inflict damage. It may also leave the target paralyzed."
+msgstr "向对手劈下暴雷进行攻击。有时会让对手陷入麻痹状态。"
+
+msgid "The user sets off an earthquake that hits all the Pokémon in the battle."
+msgstr "利用地震的冲击，攻击所有处于战斗中的宝可梦。"
+
+msgid "A full-power attack that grows more powerful the more the user likes its Trainer."
+msgstr "为了训练家而全力攻击对手。亲密度越高，威力越大。"
+
+msgid "The user burrows, then attacks on the second turn. It can also be used to exit dungeons."
+msgstr "第１回合钻入，第２回合攻击对手。还可以用于脱离洞穴。"
+
+msgid "The foe is hit by a strong telekinetic force. It may also reduce the foe's Sp. Def stat."
+msgstr "向对手发送强大的念力进行攻击。有时会降低对手的特防。"
+
+msgid "The user hurls a shadowy blob at the foe. It may also lower the foe's Sp. Def stat."
+msgstr "投掷一团黑影进行攻击。有时会降低对手的特防。"
+
+msgid "The user attacks with tough fists, etc. It can also break any barrier such as Light Screen and Reflect."
+msgstr "用坚韧的拳头等劈向对手。还可以破坏光墙和反射壁等。"
+
+msgid "The user begins moving so quickly that it creates illusory copies to raise its evasiveness."
+msgstr "开始加快移动速度制造分身，扰乱对手，从而提高闪避率。"
+
+msgid "A wondrous wall of light is put up to suppress damage from physical attacks for five turns."
+msgstr "在５回合内使用神奇的墙，减弱从对手那受到的特殊攻击的伤害。"
+
+msgid "The user strikes the foe with a quick jolt of electricity. This attack cannot be evaded."
+msgstr "向对手快速发出电击。攻击必定会命中。"
+
+msgid "The foe is scorched with an intense blast of fire. The target may also be left with a burn."
+msgstr "向对手发射烈焰进行攻击。有时会让对手陷入灼伤状态。"
+
+msgid "Unsanitary sludge is hurled at the foe. It may also poison the target."
+msgstr "用污泥投掷对手进行攻击。有时会让对手陷入中毒状态。"
+
+msgid "A five-turn sandstorm is summoned to hurt all combatants except the Rock, Ground, and Steel types."
+msgstr "在５回合内扬起沙暴，除岩石、地面和钢属性以外的宝可梦，都会受到伤害。岩石属性的特防还会提高。"
+
+msgid "The foe is attacked with an intense blast of all-consuming fire. It may also leave the target with a burn."
+msgstr "用大字形状的火焰烧尽对手。有时会让对手陷入灼伤状态。"
+
+msgid "Large boulders are hurled at the foe to inflict damage. It may also make the target flinch."
+msgstr "将大岩石猛烈地撞向对手进行攻击。有时会使对手畏缩。"
+
+msgid "The user confounds the foe with speed, then strikes. The attack lands without fail."
+msgstr "以敏捷的动作戏弄对手后进行击打。攻击必定会命中。"
+
+msgid "The user torments and enrages the foe, making it incapable of using the same move twice in a row."
+msgstr "向对手无理取闹，令其不能连续２次使出相同招式。"
+
+msgid "An attack move that doubles its power if the user is poisoned, paralyzed, or has a burn."
+msgstr "当自己处于中毒、麻痹、灼伤状态时，向对手使出此招式的话，威力会变成２倍。"
+
+msgid "An attack move with effects that vary depending on the user's environment."
+msgstr "根据使用场所不同，该招式的追加效果也会有所变化。"
+
+msgid "The user goes to sleep for two turns. It fully restores the user's HP and heals any status problem."
+msgstr "连续睡上２回合。回复自己的全部ＨＰ以及治愈所有异常状态。"
+
+msgid "If it is the opposite gender of the user, the foe becomes infatuated and less likely to attack."
+msgstr "♂诱惑♀或♀诱惑♂，让对手着迷。对手将很难使出招式。"
+
+msgid "The user attacks and steals the foe's held item simultaneously. It can't steal if the user holds an item."
+msgstr "攻击的同时盗取道具。当自己携带道具时，不会去盗取。"
+
+msgid "The foe is hit with wings of steel. It may also raise the user's Defense stat."
+msgstr "用坚硬的翅膀敲打对手进行攻击。有时会提高自己的防御。"
+
+msgid "The user employs its psychic power to exchange abilities with the foe."
+msgstr "利用超能力互换自己和对手的特性。"
+
+msgid "The user steals the effects of any healing or status-changing move the foe attempts to use."
+msgstr "将对手打算使用的回复招式或能力变化招式夺为己用。"
+
+msgid "The user attacks the foe at full power using fiery energy. It also sharply reduces the user's Sp. Atk."
+msgstr "用如火的精力使出全部力量攻击对手。使用之后会因为反作用力，自己的特攻大幅降低。"
+
+msgid "The user lands and rests its body. It restores the user's HP by up to half of its top HP."
+msgstr "降到地面，使身体休息。回复自己最大ＨＰ的一半。"
+
+msgid "The user attacks at full power. It may also lower the foe's Sp. Def stat if it hits."
+msgstr "使出全部全部力量攻击对手。如果命中，有时会降低对手的特防。"
+
+msgid "The user draws power from nature and fires it at the foe. It may also lower the target's Sp. Def."
+msgstr "发射从自然收集的生命力量。有时会降低对手的特防。"
+
+msgid "A restrained attack that prevents the foe from fainting. The target is left with at least 1 HP."
+msgstr "对手的ＨＰ至少会留下１ＨＰ，如此般手下留情地攻击。"
+
+msgid "If the foe's HP is down to under half, this attack will hit with double the power."
+msgstr "当对手的ＨＰ负伤到一半以下时，招式威力会变成２倍。"
+
+msgid "The user flings its held item at the foe to attack. Its power and effects depend on the item."
+msgstr "快速投掷携带的道具进行攻击。根据道具不同，威力和效果会改变。"
+
+msgid "The user attacks with an electric charge. The user uses the remaining electricity to up its Sp. Atk."
+msgstr "用电荷攻击对手。由于蓄满电流，有时会提高自己的特攻。"
+
+msgid "The user endures any attack, leaving 1 HP. Its chance of failing rises if it is used in succession."
+msgstr "即使受到攻击，也至少会留下１ＨＰ。连续使出则容易失败。"
+
+msgid "The foe is attacked with a shock wave generated by the user's gaping mouth."
+msgstr "从大大的口中掀起冲击波攻击对手。"
+
+msgid "An energy-draining punch. The user's HP is restored by half the damage taken by the target."
+msgstr "用拳头吸取对手的力量。可以回复给予对手伤害的一半ＨＰ。"
+
+msgid "The user shoots a sinister, bluish white flame at the foe to inflict a burn."
+msgstr "放出怪异的火焰，从而让对手陷入灼伤状态。"
+
+msgid "The foe is attacked with powdery scales blown by wind. It may also raise all the user's stats."
+msgstr "在风中掺入鳞粉攻击对手。有时会提高自己的全部能力。"
+
+msgid "It prevents the foe from using its held item. Its Trainer is also prevented from using items on it."
+msgstr "让对手在５回合内不能使用宝可梦携带的道具。训练家也不能给那只宝可梦使用道具。"
+
+msgid "The user explodes to inflict damage on all Pokémon in battle. The user faints upon using this move."
+msgstr "引发大爆炸，攻击所有处于战斗中的宝可梦。使用后自己会陷入濒死。"
+
+msgid "The user slashes with a sharp claw made from shadows. It has a high critical-hit ratio."
+msgstr "以影子做成的锐爪，劈开对手。有高几率击中要害。"
+
+msgid "The user stores power, then attacks. Its power is doubled if used after the foe."
+msgstr "蓄力，然后进行攻击。如果在对手之后攻击，招式的威力会变成２倍。"
+
+msgid "The user recycles a single-use item that has been used in battle so it can be used again."
+msgstr "使战斗中已经消耗掉的一次性道具再生，并可以再次使用。"
+
+msgid "The user charges the foe using every bit of its power. It must rest on the next turn to recover."
+msgstr "使出自己浑身力量突击对手。下一回合自己将无法动弹。"
+
+msgid "The user polishes its body to reduce drag. It sharply raises the Speed stat."
+msgstr "打磨自己的身体，减少空气阻力。可以大幅提高自己的速度。"
+
+msgid "The user flashes a light that cuts the foe's accuracy. It can also be used to illuminate caves."
+msgstr "使出耀眼光芒，从而降低对手的命中率。还可以用于照亮山洞。"
+
+msgid "The user stabs the foe with a sharpened stone from below. It has a high critical-hit ratio."
+msgstr "用尖尖的岩石刺入对手进行攻击。有高几率击中要害。"
+
+msgid "An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn."
+msgstr "如果受到对手的招式攻击，就能给予对手２倍的伤害。"
+
+msgid "A weak electric charge is launched at the foe. It causes paralysis if it hits."
+msgstr "向对手发出微弱的电击，从而让对手陷入麻痹状态。"
+
+msgid "The user tackles the foe from a high-speed spin. The slower the user, the greater the damage."
+msgstr "让身体高速旋转并撞击对手。速度比对手越慢，威力越大。"
+
+msgid "A frenetic dance to uplift the fighting spirit. It sharply raises the user's Attack stat."
+msgstr "激烈地跳起战舞提高气势。大幅提高自己的攻击。"
+
+msgid "The user lays a trap of levitating stones around the foe. The trap hurts foes that switch into battle."
+msgstr "将无数岩石悬浮在对手的周围，从而对替换出场的对手的宝可梦给予伤害。"
+
+msgid "The user hypnotizes itself into copying any stat change made by the foe."
+msgstr "向自己施以自我暗示，将能力变化的状态变得和对手一样。"
+
+msgid "If it is the opposite gender of the user, the foe is charmed into sharply lowering its Sp. Atk stat."
+msgstr "♂诱惑♀或♀诱惑♂，从而大幅降低对手的特攻。"
+
+msgid "The user releases a horrible aura imbued with dark thoughts. It may also make the target flinch."
+msgstr "从体内发出充满恶意的恐怖气场。有时会使对手畏缩。"
+
+msgid "The user slashes at the foe by crossing its scythes or claws as if they were a pair of scissors."
+msgstr "将镰刀或爪子像剪刀般地交叉，顺势劈开对手。"
+
+msgid "While it is asleep, the user randomly uses one of the moves it knows."
+msgstr "从自己已学会的招式中任意使出１个。只能在自己睡觉时使用。"
+
+msgid "The user draws power from the Berry it is holding to attack. The Berry determines its type and power."
+msgstr "从树果上获得力量进行攻击。根据携带的树果，招式属性和威力会改变。"
+
+msgid "The foe is stabbed with a tentacle or arm seeped with poison. It may also poison the foe."
+msgstr "用带毒的触手或手臂刺入对手。有时会让对手陷入中毒状态。"
+
+msgid "An attack that works only on a sleeping foe. It absorbs half the damage caused to heal the user's HP."
+msgstr "只对睡眠的一只对手有效。回复对手所受到伤害的一半ＨＰ。"
+
+msgid "The user snares the foe with grass and trips it. The heavier the foe, the greater the damage."
+msgstr "用草缠住并绊倒对手。对手越重，威力越大。"
+
+msgid "The user enrages the foe into confusion. However, it also sharply raises the foe's Attack stat."
+msgstr "激怒对手，使其混乱。因为愤怒，对手的攻击会大幅提高。"
+
+msgid "The user pecks the foe. If the foe is holding a Berry, the user plucks it and gains its effect."
+msgstr "用喙进行攻击。当对手携带树果时，可以食用并获得其效果。"
+
+msgid "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+msgstr "在攻击之后急速返回，和后备宝可梦进行替换。"
+
+msgid "The user makes a copy of itself using some of its HP. The copy serves as the user's decoy."
+msgstr "削减少许自己的ＨＰ，制造分身。分身将成为自己的替身。"
+
+msgid "The user gathers all its light energy and releases it in one shot. It may also lower the foe's Sp. Def stat."
+msgstr "将身体的光芒聚集在一点释放出去。有时会降低对手的特防。"
+
+msgid "The user creates a bizarre space in which slower Pokémon get to move first for five turns."
+msgstr "制造出不可思议的空间。在５回合之内，所有宝可梦的道具都会失效。"
+
+msgid "The foe is cut with a scythe or a claw. It can also be used to cut down thin trees."
+msgstr "用镰刀或爪子等切斩对手进行攻击。还可以用于砍倒小树。"
+
+msgid "The user soars, then strikes on the second turn. It can also be used to fly to any familiar town."
+msgstr "第１回合飞上天空，第２回合攻击对手。还可以用于飞往任何曾去过的城镇。"
+
+msgid "It swamps the entire battlefield with a giant wave. It can also be used to cross water."
+msgstr "利用大浪攻击全场。还可以用于跨越水面。"
+
+msgid "The foe is slugged with a punch thrown at maximum power. It can also be used to move boulders."
+msgstr "使出浑身力气殴打对手进行攻击。还可以用于移动大岩石。"
+
+msgid "Obstacles are moved, reducing the foe's evasion stat. It can also be used to clear deep fog."
+msgstr "移除障碍，降低对手的闪避率。还可以用于清除深雾。"
+
+msgid "The user slugs the foe with a shattering punch. It can also smash cracked boulders."
+msgstr "用强劲的拳头重击对手。还可以用于粉碎石头。"
+
+msgid "The user charges the foe at an awesome speed. It can also be used to climb a waterfall."
+msgstr "以惊人的速度扑向对手。还可以用于攀爬瀑布。"
+
+msgid "Diving on the first turn, the user floats up and attacks on the second turn."
+msgstr "第１回合潜入，第２回合浮上来进行攻击。"
+
+msgid "Cheri Berry"
+msgstr "樱子果"
+
+msgid "It may be used or held by a Pokémon to recover from paralysis."
+msgstr "让宝可梦携带后，可以治愈麻痹。"
+
+msgid "Chesto Berry"
+msgstr "零余果"
+
+msgid "It may be used or held by a Pokémon to recover from sleep."
+msgstr "让宝可梦携带后，可以治愈睡眠。"
+
+msgid "Pecha Berry"
+msgstr "桃桃果"
+
+msgid "It may be used or held by a Pokémon to recover from poison."
+msgstr "让宝可梦携带后，可以治愈中毒。"
+
+msgid "Rawst Berry"
+msgstr "莓莓果"
+
+msgid "It may be used or held by a Pokémon to recover from a burn."
+msgstr "让宝可梦携带后，可以治愈灼伤。"
+
+msgid "Aspear Berry"
+msgstr "利木果"
+
+msgid "It may be used or held by a Pokémon to defrost it."
+msgstr "让宝可梦携带后，可以治愈冰冻。"
+
+msgid "Leppa Berry"
+msgstr "苹野果"
+
+msgid "It may be used or held by a Pokémon to restore a move's PP by 10."
+msgstr "让宝可梦携带后，可以回复１０ＰＰ。"
+
+msgid "Oran Berry"
+msgstr "橙橙果"
+
+msgid "It may be used or held by a Pokémon to heal the user by just 10 HP."
+msgstr "让宝可梦携带后，可以回复１０ＨＰ。"
+
+msgid "Persim Berry"
+msgstr "柿仔果"
+
+msgid "It may be used or held by a Pokémon to recover from confusion."
+msgstr "让宝可梦携带后，可以治愈混乱。"
+
+msgid "Lum Berry"
+msgstr "木子果"
+
+msgid "It may be used or held by a Pokémon to recover from any status problem."
+msgstr "让宝可梦携带后，可以治愈所有异常状态。"
+
+msgid "Sitrus Berry"
+msgstr "文柚果"
+
+msgid "It may be used or held by a Pokémon to heal the user's HP a little."
+msgstr "让宝可梦携带后，可以回复少量ＨＰ。"
+
+msgid "Figy Berry"
+msgstr "勿花果"
+
+msgid "If held by a Pokémon, it restores the user's HP in a pinch, but may also cause confusion."
+msgstr "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。"
+
+msgid "Wiki Berry"
+msgstr "异奇果"
+
+msgid "Mago Berry"
+msgstr "芒芒果"
+
+msgid "Aguav Berry"
+msgstr "乐芭果"
+
+msgid "Iapapa Berry"
+msgstr "芭亚果"
+
+msgid "Razz Berry"
+msgstr "蔓莓果"
+
+msgid "Bury it in soft soil to grow a Razz Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨帅气。红色的果实尝起来是辣的。"
+
+msgid "Bluk Berry"
+msgstr "墨莓果"
+
+msgid "Bury it in soft soil to grow a Bluk Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。蓝色的果实尝起来是涩的。"
+
+msgid "Nanab Berry"
+msgstr "蕉香果"
+
+msgid "Bury it in soft soil to grow a Nanab Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨可爱。粉红色的果实尝起来是甜的。"
+
+msgid "Wepear Berry"
+msgstr "西梨果"
+
+msgid "Bury it in soft soil to grow a Wepear Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。绿色的果实尝起来是苦的。"
+
+msgid "Pinap Berry"
+msgstr "凰梨果"
+
+msgid "Bury it in soft soil to grow a Pinap Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨强壮。黄色的果实尝起来是酸的。"
+
+msgid "Pomeg Berry"
+msgstr "榴石果"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base HP."
+msgstr "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但ＨＰ的基础点数会降低。"
+
+msgid "Kelpsy Berry"
+msgstr "藻根果"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Attack stat."
+msgstr "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但攻击的基础点数会降低。"
+
+msgid "Qualot Berry"
+msgstr "比巴果"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Defense stat."
+msgstr "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但防御的基础点数会降低。"
+
+msgid "Hondew Berry"
+msgstr "哈密果"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Atk stat."
+msgstr "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但特攻的基础点数会降低。"
+
+msgid "Grepa Berry"
+msgstr "萄葡果"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Def stat."
+msgstr "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但特防的基础点数会降低。"
+
+msgid "Tamato Berry"
+msgstr "茄番果"
+
+msgid "Using it on a Pokémon makes it more friendly, but it also lowers its base Speed stat."
+msgstr "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但速度的基础点数会降低。"
+
+msgid "Cornn Berry"
+msgstr "玉黍果"
+
+msgid "Bury it in soft soil to grow a Cornn Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。在其他地区很少见的树果。"
+
+msgid "Magost Berry"
+msgstr "岳竹果"
+
+msgid "Bury it in soft soil to grow a Magost Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨可爱。在其他地区很少见的树果。"
+
+msgid "Rabuta Berry"
+msgstr "茸丹果"
+
+msgid "Bury it in soft soil to grow a Rabuta Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。在其他地区很少见的树果。"
+
+msgid "Nomel Berry"
+msgstr "檬柠果"
+
+msgid "Bury it in soft soil to grow a Nomel Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨强壮。在其他地区很少见的树果。"
+
+msgid "Spelon Berry"
+msgstr "刺角果"
+
+msgid "Bury it in soft soil to grow a Spelon Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨可爱。在其他地区很少见的树果。"
+
+msgid "Pamtre Berry"
+msgstr "椰木果"
+
+msgid "Bury it in soft soil to grow a Pamtre Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。在其他地区很少见的树果。"
+
+msgid "Watmel Berry"
+msgstr "瓜西果"
+
+msgid "Bury it in soft soil to grow a Watmel Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。在其他地区很少见的树果。"
+
+msgid "Durin Berry"
+msgstr "金枕果"
+
+msgid "Bury it in soft soil to grow a Durin Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。在其他地区很少见的树果。"
+
+msgid "Belue Berry"
+msgstr "靛莓果"
+
+msgid "Bury it in soft soil to grow a Belue Plant."
+msgstr "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。在其他地区很少见的树果。"
+
+msgid "Occa Berry"
+msgstr "巧可果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Fire-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的火属性招式攻击时，能令其威力减弱。"
+
+msgid "Passho Berry"
+msgstr "千香果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Water-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的水属性招式攻击时，能令其威力减弱。"
+
+msgid "Wacan Berry"
+msgstr "烛木果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Electric-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的电属性招式攻击时，能令其威力减弱。"
+
+msgid "Rindo Berry"
+msgstr "罗子果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Grass-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的草属性招式攻击时，能令其威力减弱。"
+
+msgid "Yache Berry"
+msgstr "番荔果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ice-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的冰属性招式攻击时，能令其威力减弱。"
+
+msgid "Chople Berry"
+msgstr "莲蒲果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Fighting-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的格斗属性招式攻击时，能令其威力减弱。"
+
+msgid "Kebia Berry"
+msgstr "通通果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Poison-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的毒属性招式攻击时，能令其威力减弱。"
+
+msgid "Shuca Berry"
+msgstr "腰木果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ground-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的地面属性招式攻击时，能令其威力减弱。"
+
+msgid "Coba Berry"
+msgstr "棱瓜果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Flying-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的飞行属性招式攻击时，能令其威力减弱。"
+
+msgid "Payapa Berry"
+msgstr "福禄果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Psychic-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的超能力属性招式攻击时，能令其威力减弱。"
+
+msgid "Tanga Berry"
+msgstr "扁樱果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Bug-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的虫属性招式攻击时，能令其威力减弱。"
+
+msgid "Charti Berry"
+msgstr "草蚕果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Rock-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的岩石属性招式攻击时，能令其威力减弱。"
+
+msgid "Kasib Berry"
+msgstr "佛柑果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Ghost-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的幽灵属性招式攻击时，能令其威力减弱。"
+
+msgid "Haban Berry"
+msgstr "莓榴果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Dragon-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的龙属性招式攻击时，能令其威力减弱。"
+
+msgid "Colbur Berry"
+msgstr "刺耳果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Dark-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的恶属性招式攻击时，能令其威力减弱。"
+
+msgid "Babiri Berry"
+msgstr "霹霹果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Steel-type attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的钢属性招式攻击时，能令其威力减弱。"
+
+msgid "Chilan Berry"
+msgstr "灯浆果"
+
+msgid "If held by a Pokémon, it weakens a foe's Normal-type attack."
+msgstr "让宝可梦携带后，在受到一般属性招式攻击时，能令其威力减弱。"
+
+msgid "Liechi Berry"
+msgstr "枝荔果"
+
+msgid "If held by a Pokémon, it raises its Attack stat in a pinch."
+msgstr "让宝可梦携带后，危机时，自己的攻击就会提高。"
+
+msgid "Ganlon Berry"
+msgstr "龙睛果"
+
+msgid "If held by a Pokémon, it raises its Defense stat in a pinch."
+msgstr "让宝可梦携带后，危机时，自己的防御就会提高。"
+
+msgid "Salac Berry"
+msgstr "沙鳞果"
+
+msgid "If held by a Pokémon, it raises its Speed stat in a pinch."
+msgstr "让宝可梦携带后，危机时，自己的速度就会提高。"
+
+msgid "Petaya Berry"
+msgstr "龙火果"
+
+msgid "If held by a Pokémon, it raises its Sp. Atk stat in a pinch."
+msgstr "让宝可梦携带后，危机时，自己的特攻就会提高。"
+
+msgid "Apicot Berry"
+msgstr "杏仔果"
+
+msgid "If held by a Pokémon, it raises its Sp. Def stat in a pinch."
+msgstr "让宝可梦携带后，危机时，自己的特防就会提高。"
+
+msgid "Lansat Berry"
+msgstr "兰萨果"
+
+msgid "If held by a Pokémon, it raises its critical-hit ratio in a pinch."
+msgstr "让宝可梦携带后，危机时，攻击会变得容易击中要害。"
+
+msgid "Starf Berry"
+msgstr "星桃果"
+
+msgid "If held by a Pokémon, it sharply raises one of its stats in a pinch."
+msgstr "让宝可梦携带后，危机时，某一项能力就会大幅提高。"
+
+msgid "Enigma Berry"
+msgstr "谜芝果"
+
+msgid "If held by a Pokémon, it restores its HP if it is hit by a foe's supereffective attack."
+msgstr "让宝可梦携带后，在受到效果绝佳的招式攻击时，可以回复ＨＰ。"
+
+msgid "Micle Berry"
+msgstr "奇秘果"
+
+msgid "If held by a Pokémon, it raises the accuracy of a move just once in a pinch."
+msgstr "让宝可梦携带后，危机时，招式的命中率仅会提高１次。"
+
+msgid "Custap Berry"
+msgstr "释陀果"
+
+msgid "If held by a Pokémon, it gets to move first just once in a pinch."
+msgstr "让宝可梦携带后，危机时，行动仅会变快１次。"
+
+msgid "Jaboca Berry"
+msgstr "嘉珍果"
+
+msgid "If held by a Pokémon, and if a foe's physical attack lands, the foe also takes damage."
+msgstr "让宝可梦携带后，在受到物理招式攻击时，能给予对手伤害。"
+
+msgid "Rowap Berry"
+msgstr "雾莲果"
+
+msgid "If held by a Pokémon, and if a foe's special attack lands, the foe also takes damage."
+msgstr "让宝可梦携带后，在受到特殊招式攻击时，能给予对手伤害。"
+
+msgid "Orange Mail"
+msgstr "橙色邮件"
+
+msgid "A piece of mail featuring a cute Zigzagoon print. It is to be held by a Pokémon."
+msgstr "印有蛇纹熊的信纸，可以让宝可梦携带。"
+
+msgid "Harbor Mail"
+msgstr "港口邮件"
+
+msgid "A piece of mail featuring a cute Wingull print. It is to be held by a Pokémon."
+msgstr "印有长翅鸥的信纸，可以让宝可梦携带。"
+
+msgid "Glitter Mail"
+msgstr "闪亮邮件"
+
+msgid "A piece of mail featuring a cute Pikachu print. It is to be held by a Pokémon."
+msgstr "印有皮卡丘的信纸，可以让宝可梦携带。"
+
+msgid "Mech Mail"
+msgstr "机械邮件"
+
+msgid "A piece of mail featuring a cute Magnemite print. It is to be held by a Pokémon."
+msgstr "印有小磁怪的信纸，可以让宝可梦携带。"
+
+msgid "Wood Mail"
+msgstr "木纹邮件"
+
+msgid "A piece of mail featuring a cute Slakoth print. It is to be held by a Pokémon."
+msgstr "印有懒人獭的信纸，可以让宝可梦携带。"
+
+msgid "Wave Mail"
+msgstr "波涛邮件"
+
+msgid "A piece of mail featuring a cute Wailmer print. It is to be held by a Pokémon."
+msgstr "印有吼吼鲸的信纸，可以让宝可梦携带。"
+
+msgid "Bead Mail"
+msgstr "珠宝邮件"
+
+msgid "A piece of mail to be held by a Pokémon. It will bear the print of the Pokémon holding it."
+msgstr "一张能显示持有者的图像的信纸，可以让宝可梦携带。"
+
+msgid "Shadow Mail"
+msgstr "影子邮件"
+
+msgid "A piece of mail featuring a cute Duskull print. It is to be held by a Pokémon."
+msgstr "印有夜巡灵的信纸，可以让宝可梦携带。"
+
+msgid "Tropic Mail"
+msgstr "热带邮件"
+
+msgid "A piece of mail featuring a cute Bellossom print. It is to be held by a Pokémon."
+msgstr "印有美丽花的信纸，可以让宝可梦携带。"
+
+msgid "Dream Mail"
+msgstr "梦境邮件"
+
+msgid "Fab Mail"
+msgstr "奇迹邮件"
+
+msgid "A piece of mail featuring a gorgeous, extravagant print. It is to be held by a Pokémon."
+msgstr "一张华丽的信纸，可以让宝可梦携带。"
+
+msgid "Retro Mail"
+msgstr "复古邮件"
+
+msgid "A piece of mail featuring a print of three cute Pokémon. It is to be held by a Pokémon."
+msgstr "印有三种宝可梦的信纸，可以让宝可梦携带。"
+
+msgid "X Attack"
+msgstr "力量强化"
+
+msgid "An item that raises the Attack stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "大幅提高战斗中宝可梦攻击的道具。离场后，效果便会消失。"
+
+msgid "X Defend"
+msgstr "防御强化"
+
+msgid "An item that raises the Defense of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "大幅提高战斗中宝可梦防御的道具。离场后，效果便会消失。"
+
+msgid "X Special"
+msgstr "特攻强化"
+
+msgid "An item that raises the Sp. Atk stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "大幅提高战斗中宝可梦特攻的道具。离场后，效果便会消失。"
+
+msgid "X Sp. Def"
+msgstr "特防强化"
+
+msgid "An item that raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "大幅提高战斗中宝可梦特防的道具。离场后，效果便会消失。"
+
+msgid "X Speed"
+msgstr "速度强化"
+
+msgid "An item that raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "大幅提高战斗中宝可梦速度的道具。离场后，效果便会消失。"
+
+msgid "X Accuracy"
+msgstr "命中强化"
+
+msgid "An item that raises the accuracy of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+msgstr "大幅提高战斗中宝可梦命中的道具。离场后，效果便会消失。"
+
+msgid "Dire Hit"
+msgstr "要害攻击"
+
+msgid "An item that raises the critical-hit ratio of a Pokémon in battle."
+msgstr "击中要害的几率会大幅提高。只能使用１次。离场后，效果便会消失。"
+
+msgid "Guard Spec."
+msgstr "能力防守"
+
+msgid "An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use."
+msgstr "在战斗中，５回合内不让我方能力降低的道具。"
+
+msgid "Poké Doll"
+msgstr "皮皮玩偶"
+
+msgid "A doll that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+msgstr "能吸引宝可梦注意的道具。在和野生宝可梦的战斗中绝对可以逃走。"
+
+msgid "Fluffy Tail"
+msgstr "向尾喵的尾巴"
+
+msgid "An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+msgstr "能吸引宝可梦注意的道具。在和野生宝可梦的战斗中绝对可以逃走。"
+
+msgid "Blue Flute"
+msgstr "蓝色玻璃哨"
+
+msgid "A blue flute made from blown glass. Its melody awakens a single Pokémon from sleep."
+msgstr "以蓝色玻璃制成的哨子。可以治愈睡眠状态。"
+
+msgid "Yellow Flute"
+msgstr "黄色玻璃哨"
+
+msgid "A yellow flute made from blown glass. Its melody snaps a single Pokémon out of confusion."
+msgstr "以黄色玻璃制成的哨子。可以治愈混乱状态。"
+
+msgid "Red Flute"
+msgstr "红色玻璃哨"
+
+msgid "A red flute made from blown glass. Its melody snaps a single Pokémon out of infatuation."
+msgstr "以红色玻璃制成的哨子。可以治愈着迷状态。"
+
+msgid "Bicycle"
+msgstr "自行车"
+
+msgid "A folding Bicycle that enables much faster movement than the Running Shoes."
+msgstr "能比跑步鞋跑得还快的折叠式自行车。"
+
+msgid "Old Rod"
+msgstr "破旧钓竿"
+
+msgid "An old and beat-up fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "既老旧又破烂的钓竿，在有水的地方可以钓到野生的宝可梦"
+
+msgid "Good Rod"
+msgstr "好钓竿"
+
+msgid "A new, good-quality fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "新的优质的钓竿，在水上任何地方使用钓起野生的水生宝可梦"
+
+msgid "Super Rod"
+msgstr "厉害钓竿"
+
+msgid "An awesome, high-tech fishing rod. Use it by any body of water to fish for wild aquatic Pokémon."
+msgstr "最棒的高科技钓竿，在水上任何地方使用钓起野生的水生宝可梦"
+
+msgid "Dowsing MCHN"
+msgstr "探宝器"
+
+msgid "It checks for unseen items in the area and makes noise and lights when it finds something."
+msgstr "检测到看不见的道具后会发出声音和光线提示的最新型机器。"
+
+msgid "The user creates shockwaves to attack the target. This attack does physical damage."
+msgstr "发起海啸攻击对手，造成物理伤害。"
+
+msgid "Town Map"
+msgstr "城镇地图"
+
+msgid "A very convenient map that can be viewed anytime. It even shows your present location."
+msgstr "可以随时查看的便携式地图，能够显示当前所处的位置。"
+
+msgid "Coin Case"
+msgstr "代币盒"
+
+msgid "A case for holding Coins obtained at the Game Corner. It holds up to 99,999 Coins."
+msgstr "最多能够存放５０，０００枚在游戏中心得到代币的盒子。"
+
+msgid "Gracidea"
+msgstr "葛拉西蒂亚花"
+
+msgid "A flower sometimes bundled in bouquets to convey gratitude on special occasions like birthdays."
+msgstr "在生日或纪念日等日子里，为了表达感激之情，有时会将其扎成花束送出。"
+
+msgid "Soot Sack"
+msgstr "集灰袋"
+
+msgid "A sack used to gather and hold volcanic ash."
+msgstr "用来收集堆积火山灰的袋子。"
+
+msgid "Explorer Kit"
+msgstr "探险套装"
+
+msgid "A bag filled with convenient tools for exploring. It provides access to the Underground."
+msgstr "装着有助于探险且方便使用的道具的袋子。有了它就可以进入地下通道。"
+
+msgid "Loot Sack"
+msgstr "宝物袋"
+
+msgid "A sturdy, spacious bag that is used to carry loot obtained in the coal mine."
+msgstr "结实的大袋子。可以将在煤矿里获得的宝物放进去。"
+
+msgid "Rule Book"
+msgstr "规则书"
+
+msgid "It lists the rules for holding battles. For linked battles, you may choose which rules to use."
+msgstr "写着对战规则。在进行连接对战时，可以选择规则。"
+
+msgid "Point Card"
+msgstr "点数卡"
+
+msgid "A card that lists the Battle Points you have earned."
+msgstr "可以查看赢得的对战点数的卡片。"
+
+msgid "Journal"
+msgstr "冒险笔记"
+
+msgid "A notebook that keeps a day-to-day record of your adventure so far."
+msgstr "记录着到现在为止的冒险经历的笔记。"
+
+msgid "Seal Case"
+msgstr "贴纸盒"
+
+msgid "A case for storing Seals that can be applied to the capsule cases of Poké Balls."
+msgstr "放有贴在球壳上的贴纸的容器。"
+
+msgid "Fashion Case"
+msgstr "饰品盒"
+
+msgid "A fancy case for the tidy and organized storage of colorful Pokémon Accessories."
+msgstr "漂亮精美的盒子。可以存放宝可梦出演音乐剧时用来装扮自己的多种小物件。"
+
+msgid "Seal Bag"
+msgstr "贴纸袋"
+
+msgid "A tiny bag that can hold ten Seals for decorating Poké Balls."
+msgstr "可以放入１０张贴纸的小袋子。"
+
+msgid "Pal Pad"
+msgstr "朋友手册"
+
+msgid "A convenient notepad that is used for registering your friends and keeping a record of game play."
+msgstr "使用方便的手册。可以添加朋友或记录游戏的内容。"
+
+msgid "Works Key"
+msgstr "发电厂钥匙"
+
+msgid "A large key for operating the doors of the Valley Windworks. It was held by a Team Galactic Grunt."
+msgstr "用来打开或关闭山谷发电厂大门的大钥匙。不知为何，它落入了银河队的手中。"
+
+msgid "Old Charm"
+msgstr "古代护符"
+
+msgid "An ancient good-luck charm made of Pokémon bones to be taken to the elder of Celestic Town."
+msgstr "要交给神和镇上长老的远古护符。由宝可梦的骨头制成。"
+
+msgid "Galactic Key"
+msgstr "银河队钥匙"
+
+msgid "A card key for disengaging security systems in the Galactic HQ. Losing it can result in punishment, apparently."
+msgstr "用于解除银河队本部安全防范系统的钥匙卡。弄丢了的话，好像会受到惩罚。"
+
+msgid "Red Chain"
+msgstr "红色锁链"
+
+msgid "A mythical chain that is said to link the legendary Pokémon that created the Sinnoh region."
+msgstr "神话道具。据说连接着孕育出神奥地区的传说的宝可梦。"
+
+msgid "Sprayduck"
+msgstr "可达鸭喷壶"
+
+msgid "A watering can shaped like a Psyduck. It helps promote healthy growth of planted Berries."
+msgstr "浇水的道具。能让埋在松软土壤里的树果快快长大。"
+
+msgid "Poffin Case"
+msgstr "宝芬盒"
+
+msgid "A case for storing Poffin cooked from Berries."
+msgstr "用来保存烹饪好的宝芬的容器。"
+
+msgid "Suite Key"
+msgstr "房间钥匙"
+
+msgid "A key to one of the suites at the luxury hotel by a lake. For some odd reason, it often disappears."
+msgstr "湖畔高级宾馆的房间钥匙。不知为何，它经常会丢失。"
+
+msgid "Oak's Letter"
+msgstr "大木的信"
+
+msgid "A letter from Prof. Oak. Written in it is a request for you to go to Rt. 224."
+msgstr "大木博士的来信。上面写着请来２２４号道路。"
+
+msgid "Lunar Wing"
+msgstr "新月之羽"
+
+msgid "A feather that glows like the moon. It is said to possess the power to dispel nightmares."
+msgstr "散发着月辉般光芒的羽毛。据说隐藏着可以驱散恶梦的力量。"
+
+msgid "Member Card"
+msgstr "会员卡"
+
+msgid "A card needed for entering the inn in Canalave City. Oddly, the last date marked on it was 50 years ago."
+msgstr "可以进入水脉市旅馆的卡片。不知为何，上面刻有５０年前左右的日期。"
+
+msgid "Azure Flute"
+msgstr "天界之笛"
+
+msgid "A flute that puts out echoing sounds that do not seem to be of this world. It is unknown who made it."
+msgstr "能发出响彻云霄的天籁之音的笛子。不知道是谁在什么时候制造的它。"
+
+msgid "BBFerry Ticket"
+msgstr "波碧湾渡船船票"
+
+msgid "The ticket required for sailing on the ferry on Bealbeach Lake. It has a drawing of a ship on it."
+msgstr "用于乘坐在波碧湾航行的渡船的船票。在它的上面印有渡船的图案。"
+
+msgid "Contest Pass"
+msgstr "华丽大赛参加证"
+
+msgid "The pass required for entering Pokémon Contests. It has a drawing of an award ribbon on it."
+msgstr "进入华丽大赛不可或缺的通行证。在它的前面有着一个缎带奖杯的标志。"
+
+msgid "Magma Stone"
+msgstr "火山镇石"
+
+msgid "A stone formed when boulders melted in intensely hot magma. Magma remains sealed inside."
+msgstr "被灼热熔岩熔化的岩石凝固后形成的产物。里面还留有熔岩。"
+
+msgid "Parcel"
+msgstr "包裹"
+
+msgid "A parcel that you are supposed to deliver to your childhood friend who left Twinleaf Town."
+msgstr "这是别人托付给你的包裹。需要将它交给从双叶镇启程踏上旅途的青梅竹马。"
+
+msgid "Coupon 1"
+msgstr "兑换券１"
+
+msgid "A coupon to be exchanged for a Pokémon Watch (Pokétch for short). Three coupons are needed."
+msgstr "获取宝可梦手表，简称宝可表时所需的兑换券。需要３张。"
+
+msgid "Coupon 2"
+msgstr "兑换券２"
+
+msgid "Coupon 3"
+msgstr "兑换券３"
+
+msgid "Storage Key"
+msgstr "仓库钥匙"
+
+msgid "The key to Team Galactic's sinister warehouse located at the edge of Veilstone City."
+msgstr "入位于帷幕市的银河仓库所需要的钥匙。"
+
+msgid "SecretPotion"
+msgstr "秘传之药"
+
+msgid "A fantastic medicine dispensed by the pharmacy in Cianwood City. It fully heals a Pokémon of any ailment."
+msgstr "湛蓝市的中药房赠出的一种不可思议的药，可以治愈所有宝可梦的疾病"
+
+msgid "Vs. Seeker"
+msgstr "对战搜寻器"
+
+msgid "A device that indicates Trainers who want to battle. Its battery charges while you walk."
+msgstr "提示想要对战的训练家的装置，在走路同时自动充电"
+
+msgid "Vs. Recorder"
+msgstr "对战记录器"
+
+msgid "An amazing device that can record a battle either between friends or at a special battle facility."
+msgstr "很酷的机器。可以记录和朋友或在特殊设施里的对战过程。"
+
+msgid "Secret Key"
+msgstr "秘密钥匙"
+
+msgid "A high-tech key to be used at a specific location. It emits a special electric signal to open a door."
+msgstr "在特定的地点使用可以发出特殊的电流讯号开门的高科技钥匙。"
+
+msgid "Apricorn Box"
+msgstr "球果盒"
+
+msgid "A handy box where you can store up to 99 Apricorns of each kind."
+msgstr "使用方便，可以保存９９个球果的容器。"
+
+msgid "Unown Report"
+msgstr "未知图腾笔记"
+
+msgid "A report of all the discovered kinds of Unown."
+msgstr "记录着已找到的未知图腾样子的笔记本。"
+
+msgid "Berry Pots"
+msgstr "树果种植盆"
+
+msgid "Handy containers for cultivating Berries wherever you go."
+msgstr "可以随时轻松培育树果的便携式栽培容器。"
+
+msgid "Blue Card"
+msgstr "蓝卡"
+
+msgid "A card to save points for the Buena's Password show."
+msgstr "可以将《葵妍的密语》这节目的点数积攒起来的卡片。"
+
+msgid "SlowpokeTail"
+msgstr "美味尾巴"
+
+msgid "A very tasty tail of something. It sells for a high price."
+msgstr "非常美味的某种尾巴。可以在商店高价出售。"
+
+msgid "Clear Bell"
+msgstr "透明铃铛"
+
+msgid "A very old-fashioned bell that makes a gentle ringing."
+msgstr "能发出使心灵得到休息的音色，非常古老的铃铛。"
+
+msgid "Card Key"
+msgstr "钥匙卡"
+
+msgid "A card key that opens a shutter in the Radio Tower."
+msgstr "用来打开电台卷帘门的卡片式钥匙。"
+
+msgid "Basement Key"
+msgstr "地下钥匙"
+
+msgid "A key that opens a door in the Goldenrod Tunnel."
+msgstr "用来打开满金地道大门的钥匙。"
+
+msgid "Squirtbottle"
+msgstr "杰尼龟喷壶"
+
+msgid "A bottle used for watering plants in the Berry Pots."
+msgstr "杰尼龟外观的喷水器，用来给草木浇水的道具。"
+
+msgid "Red Scale"
+msgstr "红色鳞片"
+
+msgid "A scale from the red Gyarados. It glows red like a flame."
+msgstr "来自愤怒之湖出现的红色暴鲤龙的鳞片，如同火焰般鲜红。"
+
+msgid "Lost Item"
+msgstr "遗失物"
+
+msgid "The Poké Doll lost by the Copycat."
+msgstr "模仿少女遗失的皮皮玩偶。"
+
+msgid "Pass"
+msgstr "定期月票"
+
+msgid "A ticket to ride the Magnet Train, whenever and however much you like."
+msgstr "可以搭乘列车。"
+
+msgid "Machine Part"
+msgstr "机械零件"
+
+msgid "An important machine part for the Power Plant that was stolen."
+msgstr "从发电厂偷出的发电机的重要部件。"
+
+msgid "Silver Wing"
+msgstr "银色之羽"
+
+msgid "A strange, silvery feather that sparkles."
+msgstr "闪烁银色光芒的神奇之羽。"
+
+msgid "Rainbow Wing"
+msgstr "虹色之羽"
+
+msgid "A mystical rainbow feather that sparkles."
+msgstr "闪烁七彩光芒的神奇之羽。"
+
+msgid "Mystery Egg"
+msgstr "神奇蛋"
+
+msgid "A mysterious Egg obtained from Mr. Pokémon. What's in the Egg is unknown."
+msgstr "宝可梦爷爷托付的有着神奇图案的蛋，不知道是什么蛋。"
+
+msgid "Photo Album"
+msgstr "相册"
+
+msgid "A nice photo album for storing all the photos taken along your adventure."
+msgstr "用来摆放在冒险中拍摄的纪念相片的相册。"
+
+msgid "GB Sounds"
+msgstr "ＧＢ播放器"
+
+msgid "A music player that allows you to listen to nostalgic songs. It's operated with a single switch."
+msgstr "可以听到怀旧歌曲的音乐播放器。可用一个开关切换歌曲。"
+
+msgid "Tidal Bell"
+msgstr "海声铃铛"
+
+msgid "RageCandyBar"
+msgstr "愤怒馒头"
+
+msgid "A famous candy in Mahogany Town. Many tourists like to buy them to take home."
+msgstr "卡吉镇特产的馒头。能治愈１只宝可梦的所有异常状态。"
+
+msgid "Jade Orb"
+msgstr "草绿色宝珠"
+
+msgid "A shiny green orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "散发着绿色光辉的宝珠。据说和丰缘地区的传说渊源颇深。"
+
+msgid "Lock Capsule"
+msgstr "上锁的容器"
+
+msgid "A sturdy Capsule that can only be opened with a special key."
+msgstr "需用特殊钥匙打开的坚固的容器。"
+
+msgid "Red Orb"
+msgstr "朱红色宝珠"
+
+msgid "A shiny red orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "散发着红色光辉的宝珠。据说和丰缘地区的传说渊源颇深。"
+
+msgid "Blue Orb"
+msgstr "靛蓝色宝珠"
+
+msgid "A shiny blue orb that is said to have a legend and has a deep connection with the Hoenn region."
+msgstr "散发着蓝色光辉的宝珠。据说和丰缘地区的传说渊源颇深。"
+
+msgid "Enigma Stone"
+msgstr "谜之水晶"
+
+msgid "A crystal ball from an excavation. A very beautiful stone that is covered with bits of rock and earth."
+msgstr "从地下挖出的水晶球。虽然表面覆盖着岩石和尘土，但非常漂亮。"
+
+msgid "Silph Scope"
+msgstr "西尔佛检视镜"
+
+msgid "A scope that makes unseeable Pokémon visible.  It is made by Silph Co."
+msgstr "可以看见人眼无法看见的东西的透视镜，西尔佛公司制造。"
+
+msgid "LAB KEY"
+msgstr "研究所钥匙"
+
+msgid "This is a custom Key Item."
+msgstr "ＵＮＯＷＮ到此一游>_<。"
+
+msgid "Poké Radar"
+msgstr "宝可追踪"
+
+msgid "A tool that can search out Pokémon that are hiding in grass. Its battery is recharged as you walk."
+msgstr "能够将藏在草丛里的宝可梦找出来的道具。走路就能给电池充电。"
+
+msgid "Sticker Case"
+msgstr "贴纸盒"
+
+msgid "Atom Ball"
+msgstr "原子球"
+
+msgid "A special Poké Ball created to contain Urayne. You should not have this."
+msgstr "为铀瑞利恩专门创建的特殊的精灵球。你不应该拿到它。"
+
+msgid "T.U.R Ticket"
+msgstr "天舵地铁票"
+
+msgid "A ticket for the Tandor Underground Railway."
+msgstr "用于乘坐天舵地铁的地铁票。"
+
+msgid "PST"
+msgstr "宝可语言翻译器"
+
+msgid "Pokémon Speech Translator. Can help you understand some Pokémon. It's still a prototype."
+msgstr "能够帮助理解一些宝可梦的语言。仍然处于原型阶段。"
+
+msgid "Coconut Milk"
+msgstr "椰汁"
+
+msgid "Fresh Coconut milk. Heals 50 HP and cures status effects."
+msgstr "新鲜的椰汁。能回复５０ＨＰ并治愈所有异常状态。"
+
+msgid "Jungle's Crown"
+msgstr "丛林之冠"
+
+msgid "An item to be held by a Pokémon. It belongs to the king of the jungle. Boosts Fighting attacks."
+msgstr "属于丛林之王的王冠。携带后，格斗属性的招式威力就会提高。"
+
+msgid "Royal Jelly"
+msgstr "蜂王浆"
+
+msgid "An item to be held by a Pokémon. A mysterious goo left behind by Seikamater."
+msgstr "瑟卡梅德身后留下的神秘的黏着物。"
+
+msgid "Bug Spray"
+msgstr "杀虫喷雾"
+
+msgid "Bug spray. Works better than any Repel to get bugs scurrying!"
+msgstr "能比任何其他喷雾更加有效地对付虫子的杀虫喷雾。"
+
+msgid "Acai Berry"
+msgstr "阿萨伊果"
+
+msgid "Bacu Berry"
+msgstr "巴库果"
+
+msgid "Cupu Berry"
+msgstr "库普果"
+
+msgid "Guara Berry"
+msgstr "瓜拉果"
+
+msgid "Hair Fossil"
+msgstr "头发化石"
+
+msgid "A fossil of an ancient Pokémon that lived in the Mountains. It appears to be a wisp of Hair."
+msgstr "很久以前栖息在山里的古代宝可梦的化石。好像是一绺头发。"
+
+msgid "Tusk Fossil"
+msgstr "长牙化石"
+
+msgid "A fossil of an ancient Pokémon that lived in the Plains. It appears to be part of a Tusk."
+msgstr "很久以前栖息在平原的古代宝可梦的化石。好像是长牙的一部分。"
+
+msgid "Moss Shard"
+msgstr "苔石碎片"
+
+msgid "Ice Shard"
+msgstr "冰碎片"
+
+msgid "Pretty Ribbon"
+msgstr "漂亮的缎带"
+
+msgid "An item to be held by a Pokémon. It is an elegant pink ribbon that boosts Fairy-type moves."
+msgstr "优雅的粉红色缎带。携带后，妖精属性的招式威力就会提高。"
+
+msgid "Mega Bracelet"
+msgstr "超级手镯"
+
+msgid "This bracelet contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle."
+msgstr "隐含着可以让携带超级石的宝可梦在对战中超级进化的未知力量的手镯"
+
+msgid "Metalynxite"
+msgstr "绿甲猫进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Metalynx hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让绿甲猫携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Archillesite"
+msgstr "巨焰龙进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Archilles hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让巨焰龙携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Electruxolite"
+msgstr "游雷马进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Electruxo hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让游雷马携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Gyaradosite"
+msgstr "暴鲤龙进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Gyarados hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "让暴鲤龙携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Ampharosite"
+msgstr "电龙进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Ampharos hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "让电龙携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Baariettite"
+msgstr "战魔咩进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Baariette hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让战魔咩携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Drilgannite"
+msgstr "超钻鼹鼠进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Drilgann hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让超钻鼹鼠携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Sableyeite"
+msgstr "勾魂眼进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Sableye hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让勾魂眼携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Inflagetite"
+msgstr "业火豹进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Inflagetah hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让业火豹携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Dramsamaite"
+msgstr "舞王鸟进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Dramsama hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让舞王鸟携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Daikatunite"
+msgstr "忍刀金枪进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Daikatuna hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让忍刀金枪携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "The target is infested and attacked for four to five turns. The target can't flee during this time."
+msgstr "在４～５回合内死缠烂打地进行攻击。在此期间对手将无法逃走。"
+
+msgid "The user damages opposing Pokémon by emitting a powerful flash."
+msgstr "向对手发射强光，并给予伤害。"
+
+msgid "Bike Wheel"
+msgstr "自行车车轮"
+
+msgid "This bike wheel can be used to fix a bicycle."
+msgstr "可以用来修复自行车的车轮。"
+
+msgid "Carrot Wine"
+msgstr "胡萝卜酒"
+
+msgid "Delicious Carrot Wine, be careful to not drink too much! Heals 100 HP and cures status effects."
+msgstr "十分美味可口，注意不要喝太多了！能回复１００ＨＰ并治愈所有异常状态。"
+
+msgid "Secret Note"
+msgstr "秘密的纸条"
+
+msgid "You don't know who gave you this. It says that the password is 092."
+msgstr "不知道是哪个人给的。上面写着密码是０９２。"
+
+msgid "Syrentideite"
+msgstr "潮汐海妖进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Syrentide hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让潮汐海妖携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Unidentified Fallen Object"
+msgstr "未识别掉落物体"
+
+msgid "One variety of the mysterious Mega Stones. Have s51-A hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让Ｓ５１－Ａ携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "The user damages opposing Pokémon and lowers it's defense and special defense."
+msgstr "给予对手伤害，并同时降低对手的防御与物攻。"
+
+msgid "Boxing Gloves"
+msgstr "拳击手套"
+
+msgid "This device given to you by the Tinkerer allows you to easily smash rugged rocks in your way."
+msgstr "匠人制造的设备，能让自己轻松击碎路上坚硬的岩石。"
+
+msgid "Eviolite"
+msgstr "进化奇石"
+
+msgid "A mysterious evolutionary lump. When held, it raises the Defense and Sp. Def of a Pokémon that can still evolve."
+msgstr "进化的神奇石块。携带后，还能进化的宝可梦的防御和特防就会提高。"
+
+msgid "Fire Gem"
+msgstr "火之宝石"
+
+msgid "A gem with an essence of fire. When held, it strengthens the power of a Fire-type move only once."
+msgstr "火属性的宝石。携带后，火属性的招式威力仅会增强１次。"
+
+msgid "Water Gem"
+msgstr "水之宝石"
+
+msgid "A gem with an essence of water. When held, it strengthens the power of a Water-type move only once."
+msgstr "水属性的宝石。携带后，水属性的招式威力仅会增强１次。"
+
+msgid "Electric Gem"
+msgstr "电之宝石"
+
+msgid "A gem with an essence of electricity. When held, it strengthens the power of an Electric-type move only once."
+msgstr "电属性的宝石。携带后，电属性的招式威力仅会增强１次。"
+
+msgid "Grass Gem"
+msgstr "草之宝石"
+
+msgid "A gem with an essence of nature. When held, it strengthens the power of a Grass-type move only once."
+msgstr "草属性的宝石。携带后，草属性的招式威力仅会增强１次。"
+
+msgid "Ice Gem"
+msgstr "冰之宝石"
+
+msgid "A gem with an essence of ice. When held, it strengthens the power of an Ice-type move only once."
+msgstr "冰属性的宝石。携带后，冰属性的招式威力仅会增强１次。"
+
+msgid "Fighting Gem"
+msgstr "格斗宝石"
+
+msgid "A gem with an essence of combat. When held, it strengthens the power of a Fighting-type move only once."
+msgstr "格斗属性的宝石。携带后，格斗属性的招式威力仅会增强１次。"
+
+msgid "Poison Gem"
+msgstr "毒之宝石"
+
+msgid "A gem with an essence of poison. When held, it strengthens the power of a Poison-type move only once."
+msgstr "毒属性的宝石。携带后，毒属性的招式威力仅会增强１次。"
+
+msgid "Ground Gem"
+msgstr "地面宝石"
+
+msgid "A gem with an essence of land. When held, it strengthens the power of a Ground-type move only once."
+msgstr "地面属性的宝石。携带后，地面属性的招式威力仅会增强１次。"
+
+msgid "Flying Gem"
+msgstr "飞行宝石"
+
+msgid "A gem with an essence of air. When held, it strengthens the power of a Flying-type move only once."
+msgstr "飞行属性的宝石。携带后，飞行属性的招式威力仅会增强１次。"
+
+msgid "Psychic Gem"
+msgstr "超能力宝石"
+
+msgid "A gem with an essence of the mind. When held, it strengthens the power of a Psychic-type move only once."
+msgstr "超能力属性的宝石。携带后，超能力属性的招式威力仅会增强１次。"
+
+msgid "Bug Gem"
+msgstr "虫之宝石"
+
+msgid "A gem with an insect-like essence. When held, it strengthens the power of a Bug-type move only once."
+msgstr "虫属性的宝石。携带后，虫属性的招式威力仅会增强１次。"
+
+msgid "Rock Gem"
+msgstr "岩石宝石"
+
+msgid "A gem with an essence of rock. When held, it strengthens the power of a Rock-type move only once."
+msgstr "岩石属性的宝石。携带后，岩石属性的招式威力仅会增强１次。"
+
+msgid "Ghost Gem"
+msgstr "幽灵宝石"
+
+msgid "A gem with a spectral essence. When held, it strengthens the power of a Ghost-type move only once."
+msgstr "幽灵属性的宝石。携带后，幽灵属性的招式威力仅会增强１次。"
+
+msgid "Dragon Gem"
+msgstr "龙之宝石"
+
+msgid "A gem with a draconic essence. When held, it strengthens the power of a Dragon-type move only once."
+msgstr "龙属性的宝石。携带后，龙属性的招式威力仅会增强１次。"
+
+msgid "Dark Gem"
+msgstr "恶之宝石"
+
+msgid "A gem with an essence of darkness. When held, it strengthens the power of a Dark-type move only once."
+msgstr "恶属性的宝石。携带后，恶属性的招式威力仅会增强１次。"
+
+msgid "Steel Gem"
+msgstr "钢之宝石"
+
+msgid "A gem with an essence of steel. When held, it strengthens the power of a Steel-type move only once."
+msgstr "钢属性的宝石。携带后，钢属性的招式威力仅会增强１次。"
+
+msgid "Normal Gem"
+msgstr "一般宝石"
+
+msgid "A gem with an ordinary essence. When held, it strengthens the power of a Normal-type move only once."
+msgstr "一般属性的宝石。携带后，一般属性的招式威力仅会增强１次。"
+
+msgid "Whimsicottite"
+msgstr "风妖精进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Whimsicott hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让风妖精携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Arbokite"
+msgstr "阿柏怪进化石"
+
+msgid "One variety of the mysterious Mega Stones. Have Arbok hold it, and this stone will enable it to Mega Evolve during battle."
+msgstr "让阿柏怪携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Yoshitaka's Letter"
+msgstr "宜隆的信"
+
+msgid "A letter from the great Yoshitaka, show it to his grandsons."
+msgstr "宜隆的信，把它展示给他的孙子们。"
+
+msgid "Rocky Helmet"
+msgstr "凸凸头盔"
+
+msgid "If the holder of this item takes damage, the attacker will also be damaged upon contact."
+msgstr "让宝可梦携带后，在受到打击招式攻击时，能给予对手伤害。"
+
+msgid "Eject Button"
+msgstr "逃脱按键"
+
+msgid "If the holder is hit by an attack, it will switch with another Pokémon in your party."
+msgstr "携带它的宝可梦如果受到招式攻击，就能逃脱战斗，并和同行的其他宝可梦进行替换。"
+
+msgid "Red Card"
+msgstr "红牌"
+
+msgid "A card with a mysterious power. When the holder is struck by a foe, the attacker is removed from battle."
+msgstr "有着神奇力量的卡片。携带后，能让使用了招式的对手退场。"
+
+msgid "Float Stone"
+msgstr "轻石"
+
+msgid "A very light stone. It reduces the weight of a Pokémon when held."
+msgstr "非常轻的石头。携带后，宝可梦的体重会变轻。"
+
+msgid "Binding Band"
+msgstr "紧绑束带"
+
+msgid "A band that increases the power of binding moves when held."
+msgstr "能增强绑紧招式的束带。携带后，绑紧招式的威力会变强。"
+
+msgid "Absorb Bulb"
+msgstr "球根"
+
+msgid "A consumable bulb. If the holder is hit by a Water-type move, its Sp. Atk will rise."
+msgstr "一次性使用的球根。携带它的宝可梦如果受到水属性招式的攻击，特攻就会提高。"
+
+msgid "Cell Battery"
+msgstr "充电电池"
+
+msgid "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise."
+msgstr "一次性使用的充电电池。携带它的宝可梦如果受到电属性招式的攻击，攻击就会提高。"
+
+msgid "Ring Target"
+msgstr "标靶"
+
+msgid "Moves that would otherwise have no effect will land on the Pokémon that holds it."
+msgstr "原本因宝可梦的属性相克关系而无效的招式现在会变得能够击中自己。"
+
+msgid "Air Balloon"
+msgstr "气球"
+
+msgid "When held by a Pokémon, the Pokémon will float into the air. When the holder is attacked, this item will burst."
+msgstr "让宝可梦携带后，宝可梦会浮在空中。受到攻击就会破裂。"
+
+msgid "Assault Vest"
+msgstr "突击背心"
+
+msgid "An item to be held by a Pokémon. This offensive vest raises Sp. Def but prevents the use of status moves."
+msgstr "会变得富有攻击性的背心。虽然携带后特防会提高，但会无法使出变化招式。"
+
+msgid "Fairy Gem"
+msgstr "妖精宝石"
+
+msgid "A gem with an essence of nature. When held, it strengthens the power of a Fairy-type move one time."
+msgstr "妖精属性的宝石。携带后，妖精属性的招式威力会仅增强１次。"
+
+msgid "Prison Bottle"
+msgstr "惩戒之壶"
+
+msgid "A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago."
+msgstr "远古时期被用来封印宝可梦的壶。"
+
+msgid "Luminous Moss"
+msgstr "光苔"
+
+msgid "An item to be held by a Pokémon. It boosts Sp. Def if hit with a Water-type attack. It can only be used once."
+msgstr "一次性使用的光苔。携带它的宝可梦如果受到水属性招式攻击，特防就会提高。"
+
+msgid "Weakness Policy"
+msgstr "弱点保险"
+
+msgid "An item to be held by a Pokémon. Attack and Sp. Atk sharply increase if the holder is hit with a move it's weak to."
+msgstr "被针对弱点时，攻击和特攻就会大幅提高。"
+
+msgid "Pixie Plate"
+msgstr "妖精石板"
+
+msgid "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fairy-type moves."
+msgstr "妖精属性的石板。携带后，妖精属性的招式威力就会增强。"
+
+msgid "Roseli Berry"
+msgstr "洛玫果"
+
+msgid "Weakens a supereffective Fairy-type attack against the holding Pokémon."
+msgstr "如果宝可梦携带了它，可以在对战中降低妖精属性招式效果絕佳的效果。"
+
+msgid "Kee Berry"
+msgstr "亚开果"
+
+msgid "If held by a Pokémon, this Berry will increase the Pokémon's Defense stat when hit by a physical attack."
+msgstr "如果宝可梦携带了它，可以在对战中受到物理招式攻击时，防御提升１级。"
+
+msgid "Maranga Berry"
+msgstr "香罗果"
+
+msgid "If held by a Pokémon, this Berry will increase the Pokémon's Special Defense stat when hit by a special attack."
+msgstr "如果宝可梦携带了它，可以在对战中受到特殊招式攻击时，特防提升１级。"
+
+msgid "Snowball"
+msgstr "雪球"
+
+msgid "An item to be held by a Pokémon. It boosts Attack if hit with an Ice-type attack. It can only be used once."
+msgstr "一次性使用的雪球。携带它的宝可梦如果受到冰属性招式攻击，攻击就会提高。"
+
+msgid "Safety Goggles"
+msgstr "防尘护目镜"
+
+msgid "An item to be held by a Pokémon. These goggles protect the holder from both weather-related damage and powder."
+msgstr "不单是天气造成的伤害，就连粉末类招式的效果也能防御的护目镜。"
+
+msgid "Hafli Berry"
+msgstr "哈夫利果"
+
+msgid "If held by a Pokémon, it weakens a foe's supereffective Nuclear-type attack."
+msgstr "如果宝可梦携带了它，受到效果绝佳的核属性招式攻击时，能令其威力减弱。"
+
+msgid "Kellyn's Letter"
+msgstr "铠零的信"
+
+msgid "A letter from Kellyn. Deliver it to Cameron on the Power Plant Island."
+msgstr "铠零的来信。要把它交给核能厂岛上的卡梅伦。"
+
+msgid "Burnt Notebook"
+msgstr "烧焦的笔记本"
+
+msgid "A burnt notebook found in the power plant, it's pages seem to be scattered about."
+msgstr "在核能厂内发现的烧焦的笔记本，里面的书页似乎分散到了四处。"
+
+msgid "Rusty Key"
+msgstr "生锈的钥匙"
+
+msgid "A rusty key found in the power plant."
+msgstr "在核能厂里发现的生锈的钥匙。"
+
+msgid "Power Glove"
+msgstr "力量手套"
+
+msgid "This device given to you by the Tinkerer allows you to push boulders on your own as if you had super-strength."
+msgstr "匠人制造的设备，能让自己轻松推动大岩石，就像拥有怪力一般。"
+
+msgid "Nuclear Ball"
+msgstr "核子球"
+
+msgid "A new kind of Poké Ball that works especially well on Nuclear-type Pokémon."
+msgstr "新品种的球，能很容易地捕捉核属性的宝可梦。"
+
+msgid "Sachet"
+msgstr "香袋"
+
+msgid "A sachet filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
+msgstr "装着散发微浓香气的香料的袋子。某种宝可梦很喜欢它。"
+
+msgid "Power Cell"
+msgstr "电池"
+
+msgid "A power cell used to power up advanced electrical equipments."
+msgstr "为高级电力装置供电的电池。"
+
+msgid "Maria's Key"
+msgstr "玛丽雅家的钥匙"
+
+msgid "A key given by a creepy guy that unlocks Gym Leader Maria's house."
+msgstr "一个奇怪的人给的钥匙，能够打开道馆馆主玛丽雅家的大门。"
+
+msgid "Oval Charm"
+msgstr "圆形护符"
+
+msgid "An oval charm said to increase the chance of Eggs being found at the Day Care."
+msgstr "拥有它之后，在寄放屋里会更容易找到蛋的神奇浑圆护符。"
+
+msgid "Shiny Charm"
+msgstr "闪耀护符"
+
+msgid "A shiny charm said to increase the chance of finding a Shiny Pokémon."
+msgstr "拥有它之后，据说会更容易遇见发光宝可梦的神奇闪光护符。"
+
+msgid "Aromatic Herb"
+msgstr "芳香药草"
+
+msgid "A herb filled with fragrant perfumes that are just slightly too overwhelming. Yet it's loved by a certain Pokémon."
+msgstr "盈溢着香味的药草。某种宝可梦很喜欢它。"
+
+msgid "Air Mail"
+msgstr "天空邮件"
+
+msgid "Stationery featuring a print of colorful letter sets. Let a Pokémon hold it for delivery."
+msgstr "印有丰富多彩条纹的的特殊信纸。使用该道具时，需要让宝可梦携带着来用。"
+
+msgid "Gengarite"
+msgstr "耿鬼进化石"
+
+msgid "One of the mysterious Mega Stones. Have Gengar hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "让耿鬼携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Uranium Core"
+msgstr "铀核"
+
+msgid "Concentrated nuclear fuel used to power Nuclear Plants."
+msgstr "浓缩着核燃料，用来使核能厂运转。"
+
+msgid "Kiricornite"
+msgstr "独角麟进化石"
+
+msgid "One of the mysterious Mega Stones. Have Kiricorn hold it, and this stone will enable it to Mega Evolve in battle."
+msgstr "让独角麟携带后，在战斗时就能进行超级进化的一种神奇超级石。"
+
+msgid "Gold Fossil"
+msgstr "金骨化石"
+
+msgid "A fossil of an ancient Pokémon that lived in Islands. It appears to be a golden bone."
+msgstr "很久以前栖息在岛屿的古代宝可梦的化石。好像是金质的骨头。"
+
+msgid "The user chomps hard on the target with its sharp front fangs. It cuts the target's HP to half."
+msgstr "用锋利的门牙猛烈地咬住对手进行攻击。对手的ＨＰ减半。"
+
+msgid "This move can be used only after the user has used all the other moves it knows in the battle."
+msgstr "当战斗中已学会的招式全部使用过后，才能开始使出珍藏的招式。"
+
+msgid "An attack move that cuts down the target's HP to equal the user's HP."
+msgstr "给予伤害，使对手的ＨＰ变得和自己的ＨＰ一样。"
+
+msgid "The user focuses its willpower to its head and attacks the foe. It may also make the target flinch."
+msgstr "将思念的力量集中在前额进行攻击。有时会使对手畏缩。"
+
+msgid "Surfboard"
+msgstr "冲浪板"
+
+msgid "This device given to you by the Tinkerer makes it possible to surf on water without the help of a Pokémon. Cowabunga!"
+msgstr "匠人制造的设备，能让自己不借助宝可梦的力量在海上冲浪。卡瓦邦嘎！"
+
+msgid "Scuba Gear"
+msgstr "呼吸装置"
+
+msgid "This device given to you by the Tinkerer allows you to dive underwater on your own. Who ever used Dive anyways?"
+msgstr "匠人制造的设备，能让自己潜入水底。谁还会去用潜水？"
+
+msgid "Climbing Pick"
+msgstr "攀爬工具"
+
+msgid "This device given to you by the Tinkerer allows you to climb up waterfalls while using your surfboard. Extreme sports are fun!"
+msgstr "匠人制造的设备，能让自己在冲浪板上攀爬瀑布。极限运动真刺激！"
+
+msgid "Rich Mulch"
+msgstr "硕果肥"
+
+msgid "A plant fertilizer. It increases Berry harvest without the need for particularly diligent care."
+msgstr "在树果园里使用的化肥。不需要勤劳的照顾树果，就能大丰收。"
+
+msgid "Sprinklotad"
+msgstr "莲叶童子喷壶"
+
+msgid "A watering can shaped like a Lotad. It helps promote healthy growth of planted Berries."
+msgstr "浇花的道具，使种在土中的树果长得更茂盛。"
+
+msgid "Quadcopter"
+msgstr "四轴飞行器"
+
+msgid "Final device created by the Tinkerer. Use this remote-controlled drone to Fly anywhere without the help of a Pokémon!"
+msgstr "匠人创造的最后的设备。能够不借助宝可梦便飞往任何地方的遥控飞行器。"

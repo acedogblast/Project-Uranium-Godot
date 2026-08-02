@@ -125,3 +125,7 @@ func update():
 
 	
 	pass
+
+
+func _ready():
+	Global.localize_textures(self)

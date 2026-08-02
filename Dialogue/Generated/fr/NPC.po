@@ -1,0 +1,277 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "NPC_TRAINER_D1"
+msgstr "Ceci est un test pour les PNJ.\n"
+
+msgid "NPC_TRAINER_D2"
+msgstr "Et tu sais quoi?\\wt[16].\\wt[16].\\wt[16].\\wt[10]\n"
+
+msgid "NPC_TRAINER_D3"
+msgstr "C'est aussi un test d'événement!\n"
+
+msgid "NPC_AUNT1_D1"
+msgstr "\\PN, mon chéri!\nC'est le grand jour aujourd'hui, n'est-ce pas?"
+
+msgid "NPC_AUNT1_D2"
+msgstr "Je me sens mélancolique, voyant mon petit bébé tout grand et s'en allant de la maison.\nOh, si mes vieux os pouvaient faire plus pour nous soutenir tous les deux!"
+
+msgid "NPC_AUNT1_D3"
+msgstr "Mais nous savons tous les deux que tu es prê{t|te}. Toi et ce garçon, Théo...\\.\ntoujours dans tes pattes, celui-là.\nTu as toujours été si doué,\nmais lui?\\.\nIl est plus jeune, après tout."
+
+msgid "NPC_AUNT1_D4"
+msgstr "Je suis certaine que son père Cameron ne le laisserait pas partir sans être sûr.\nD'ailleurs, pour célébrer ton grand jour,\nj'ai un cadeau pour toi."
+
+msgid "NPC_AUNT1_D5"
+msgstr "Vas-y et ouvre-le!"
+
+msgid "NPC_AUNT1_D6"
+msgstr "\\PN a obtenu les Chaussures de Course!\\wtnp[24]"
+
+msgid "NPC_AUNT1_D7"
+msgstr "(Il est écrit: «Pour courir, appuyez sur Z. Tu peux activer la course automatique dans le Menu.»)"
+
+msgid "NPC_AUNT1_D8"
+msgstr "*sniff*"
+
+msgid "NPC_AUNT1_D9"
+msgstr "O-oh, ne t'en occupe pas, ...\\.\nJe suis simplement une vieille dame émotive.\nSi seulement ton père était ici en ce moment...\nEt bien, je suis certaine qu'il aurait été aussi fier de toi.\\.\nEt je suis sûre que tu le rencontreras au cours ton aventure."
+
+msgid "NPC_AUNT1_D10"
+msgstr "À présent, je ne peux te garder plus longtemps.\nDis bonjour au gentil professeur pour moi, veux-tu?"
+
+msgid "NPC_AUNT1_D11"
+msgstr "Et si tu peux, reviens me voir\naprès avoir reçu ton premier Pokémon,\nj'adorerais le voir."
+
+msgid "NPC_AUNT1_D12"
+msgstr "Bonne chance, mon chéri!"
+
+msgid "NPC_AUNT1_D13"
+msgstr "Si tu peux, reviens me voir après avoir reçu ton premier Pokémon, j'adorerais le voir.\n Bonne chance, mon ange!"
+
+msgid "NPC_AUNT1_D14_RAPTORCH"
+msgstr "Oh, mon bébé, tu es revenu dire au revoir! Que c'est agréable. C'est ton Pokémon? Comment s'appelle-t-il? Raptorche? C'est trop mignon! Reviens quand tu auras besoin de repos, ou si tu veux simplement me faire plaisir."
+
+msgid "NPC_AUNT1_D14_ORCHYNX"
+msgstr "Oh, mon bébé, tu es revenu dire au revoir! Que c'est agréable. C'est ton Pokémon? Comment s'appelle-t-il? Pétalynx? C'est trop mignon! Reviens quand tu auras besoin de repos, ou si tu veux simplement me faire plaisir."
+
+msgid "NPC_AUNT1_D14_ELETUX"
+msgstr "Oh, mon bébé, tu es revenu dire au revoir! Que c'est agréable. C'est ton Pokémon? Comment s'appelle-t-il? Électrott? C'est trop mignon! Reviens quand tu auras besoin de repos, ou si tu veux simplement me faire plaisir."
+
+msgid "NPC_BAMBO_MOKI_TOWN_CATCH_DEMO_PREP_1"
+msgstr "Hey there, \\PN!\nNow that you and Theo are here,\nit's time to begin your first lesson as a\nPokémon Trainer and a field research aid."
+
+msgid "NPC_AUNT_HEAL_1"
+msgstr "Bonjour, mon ange! Tu fais une pause dans tes aventures fatigantes?"
+
+msgid "NPC_AUNT_HEAL_2"
+msgstr "Nice work, kid.\nThose were some impressive battling skills! Here, let me heal your Pokémon for you."
+
+msgid "NPC_AUNT_HEAL_3"
+msgstr "C'est calme sans ta présence, tu sais..."
+
+msgid "NPC_AUNT_HEAL_RANDOM_1"
+msgstr "Je me suis amusée avec ton Wii tennis. Ça fait du bien de bouger."
+
+msgid "NPC_AUNT_HEAL_RANDOM_2"
+msgstr "J'ai rejoint une classe de natation aérobique. J'ai un cours chaque mardi."
+
+msgid "NPC_AUNT_HEAL_RANDOM_3"
+msgstr "J'ai demandé à des voisins d'installer internet."
+
+msgid "NPC_AUNT_HEAL_RANDOM_4"
+msgstr "Les enfants d'à côté semblent interéssés par ta Wii. Je les laisse jouer."
+
+msgid "NPC_AUNT_HEAL_RANDOM_5"
+msgstr "Je me suis lancée dans le développement de jeux indés. Mon projet le plus récent s'appelle «Pokémon Agate.»"
+
+msgid "NPC_AUNT_HEAL_RANDOM_6"
+msgstr "Je n'ai pas vu le gentil Théo récemment. Je me demande où il est parti."
+
+msgid "NPC_AUNT_HEAL_RANDOM_7"
+msgstr "Le savais-tu, j'ai essayé de parler à Cam récemment et il s'est même pas intéressé! Quel impoli!"
+
+msgid "NPC_AUNT_HEAL_RANDOM_8"
+msgstr "As-tu des nouvelles de mon neveu-- ton père-- récemment? Être Ranger semble ardu."
+
+msgid "NPC_AUNT_HEAL_RANDOM_9"
+msgstr "Je pensais à chercher un Pokémon de compagnie."
+
+msgid "NPC_AUNT_HEAL_RANDOM_10"
+msgstr "As-tu déjà parlé à ton voisin Cam? Il est électricien, tu sais. Il a l'air de gravir les échelons."
+
+msgid "NPC_AUNT_HEAL_RANDOM_11"
+msgstr "Tu sais, quand j'étais une petite fille, j'étais pas mal jolie. *soupir*"
+
+msgid "NPC_AUNT_HEAL_RANDOM_12"
+msgstr "Je regardais la télévision et ils ont mentionné ta mère! Quelque chose concernant une nouvelle centrale, je ne sais plus."
+
+msgid "NPC_AUNT_HEAL_RANDOM_13"
+msgstr "As-tu déjà battu un Champion d'Arène?"
+
+msgid "NPC_AUNT_HEAL_RANDOM_14"
+msgstr "Tu pars pour une autre aventure, eh, \\PN? Pourquoi ne pas rester ici et te reposer un peu?"
+
+msgid "NPC_ROUTE1_TRAINER_1"
+msgstr "T'es un nouveau Dresseur, hein? Je viens de commencer aussi!"
+
+msgid "NPC_ROUTE1_TRAINER_1_DEFEAT"
+msgstr "Tout le monde peut devenir Dresseur, mais certaines personnes sont plus aptes pour ça que d'autres, tu ne crois pas?"
+
+msgid "NPC_ROUTE1_TRAINER_2"
+msgstr "Hé \\PN! Je viens d'avoir un nouveau Pokémon et je veux voir ce qu'il vaut!"
+
+msgid "NPC_ROUTE1_TRAINER_2_DEFEAT"
+msgstr "Ah, il n'est pas aussi fort que je l'espérais..."
+
+msgid "NPC_ROUTE1_CHYINMUNK"
+msgstr "I wonder what kind of Pokémon lives in this pond? Probably just Magikarp..."
+
+msgid "NPC_ROUTE1_TRAINER_3"
+msgstr "Hé! Toi! Ouais, toi, là-bas! On va s'battre maintenant, OK?"
+
+msgid "NPC_ROUTE1_TRAINER_3_DEFEAT"
+msgstr "Ouaaahh! C'était ouf!"
+
+msgid "NPC_ROUTE1_TRAINER_4"
+msgstr "Ne t'en vas pas!"
+
+msgid "NPC_ROUTE1_TRAINER_4_DEFEAT"
+msgstr "Oh, saperlipopette! J'ai perdu!"
+
+msgid "NPC_POKECENTER_NURSE_1"
+msgstr "Bonjour! Bienvenue au Centre Pokémon,"
+
+msgid "NPC_POKECENTER_NURSE_2"
+msgstr "où nous soignons les Pokémon."
+
+msgid "NPC_POKECENTER_NURSE_3"
+msgstr "Voulez-vous que nous nous occupions de votre équipe?"
+
+msgid "NPC_POKECENTER_NURSE_4"
+msgstr "Très bien! Confiez-moi vos Pokémon un instant."
+
+msgid "NPC_POKECENTER_NURSE_5"
+msgstr "Merci d'avoir attendu."
+
+msgid "NPC_POKECENTER_NURSE_6"
+msgstr "Votre équipe a retrouvé la santé!"
+
+msgid "NPC_POKECENTER_NURSE_7"
+msgstr "À bientôt!"
+
+msgid "NPC_ROUTE2_TRAINER_1"
+msgstr "J'ai entendu dire que les Chouetton se reproduisent par ici. \nJ'essaie d'en attraper un!"
+
+msgid "NPC_ROUTE2_TRAINER_1_DEFEAT"
+msgstr "Tu peux me dire ton secret pour \ndresser des Pokémon comme ça? Steuplaîîîîît?"
+
+msgid "NPC_ROUTE2_TRAINER_2"
+msgstr "Hé, gamin! Es-tu assez fort pour traverser cette caverne?"
+
+msgid "NPC_ROUTE2_TRAINER_2_DEFEAT"
+msgstr "Ouais, t'as l'air assez fort."
+
+msgid "NPC_ROUTE2_BAREWL"
+msgstr "Embri! Fer!"
+
+msgid "PASSAGE_CAVE_TRAINER_1"
+msgstr "Cette grotte est hardcore! Seuls les plus badass peuvent la traverser!"
+
+msgid "PASSAGE_CAVE_TRAINER_2"
+msgstr "J'ai juré de ne jamais quitter cette caverne tant que je n'ai pas gagné 100 victoires d'affilée!"
+
+msgid "PASSAGE_CAVE_TRAINER_3"
+msgstr "Dans un sens, je trouve ça marrant d'en mettre plein la tronche, sans distinction, à des Dresseurs innocents!"
+
+msgid "PASSAGE_CAVE_TRAINER_1_DEFEAT"
+msgstr "...Ouais, t'es badass, toi."
+
+msgid "PASSAGE_CAVE_TRAINER_2_DEFEAT"
+msgstr "Après réflexion, c'était pêut-être un défi idiot..."
+
+msgid "PASSAGE_CAVE_TRAINER_3_DEFEAT"
+msgstr "...J'imagine que tous les tyrans reçoivent un jour leur châtiment..."
+
+msgid "NOWTOCH_CITY_CREEPY_GUY"
+msgstr "Tu peux utiliser cette clef pour aller dans la maison de Maria. Elle habite au sud de la ville."
+
+msgid "GYM1_TRAINER_1"
+msgstr "Ha! Tu crois que t'as de quoi battre Maria?\nLaisse-moi en juger!"
+
+msgid "GYM1_TRAINER_1_DEFEAT"
+msgstr "Hmm. Celui-là a du potentiel."
+
+msgid "GYM1_TRAINER_2"
+msgstr "Maria est peut-être la première Championne d'Arène,\nmais elle a été Maître!\nT'es encore à des années-lumière de la battre!"
+
+msgid "GYM1_TRAINER_2_DEFEAT"
+msgstr "Les années-lumière sont une unité de distance, non de temps..."
+
+msgid "GYM1_MARIA_1"
+msgstr "Re-bonjour~\nDonc, je ne crois pas qu'on se soit réellement présentés."
+
+msgid "GYM1_MARIA_2"
+msgstr "Comment t'appelles-tu?"
+
+msgid "GYM1_MARIA_3"
+msgstr "The Dream Visualizer is showing...Dreams? Memories?"
+
+msgid "GYM1_MARIA_4"
+msgstr "\\PN?\\. J'aime bien~\nBienvenue à l'Arène Pokémon de Néotech!~"
+
+msgid "GYM1_MARIA_5"
+msgstr "Je suis Maria, spécialiste du type Normal...\nMais tu le savais déjà!\nÉvidemment, la plupart des gens connaissent\n\"Maria, Maître de Tandor\"...\nCes jours sont passés.\nDorénavant, je guide de jeunes Dresseurs comme toi,\nsur le chemin de la grandeur."
+
+msgid "GYM1_MARIA_6"
+msgstr "Ce sera une bataille longue et difficile pour devenir Maître... Peux-tu y arriver?"
+
+msgid "GYM1_MARIA_7"
+msgstr "Ton premier test sur tes compétences...\nCommence dès à présent!"
+
+msgid "GYM1_MARIA_8"
+msgstr "{1}'s"
+
+msgid "GYM1_MARIA_9"
+msgstr "C'est ça!~\nC'est ça, l'esprit que je veux voir!\nTu as bien mérité ce Badge Normal!"
+
+msgid "GYM1_MARIA_10"
+msgstr "Félicitations!~"
+
+msgid "GYM1_MARIA_11"
+msgstr "Dis, cet esprit que tu as démontré au combat...\\.\nÇa me rappelle quand je débutais.\nEssaie de maintenir cette détermination\net je suis sûre que tu iras loin!~"
+
+msgid "GYM1_MARIA_12"
+msgstr "Tiens, prends cette CT, aussi!~"
+
+msgid "GYM1_MARIA_13"
+msgstr "Avec les voyages, les liens avec\ntes Pokémon se renforceront.\nPlus grande est l'amitié, plus Retour est puissant au combat!"
+
+msgid "GYM1_MARIA_14"
+msgstr "Les CTs peuvent s'utiliser à l'infini, donc apprends-le au plus de Pokémon possible! Ils peuvent presque tous apprendre celle-là.~"
+
+msgid "GYM1_MARIA_15"
+msgstr "J'ai aimé combattre contre toi, \\PN. Bonne chance pour ton voyage!~"
+
+msgid "GYM1_MARIA_16"
+msgstr "...Tu me demandes si j'aime les chats?\nBen, gnnéééé! Ils sont trop mignons!~\nJe pourrais probablement transformer cette Arène en une Arène de type chat, si je le voulais... hmmm..."
+
+msgid "GYM1_GYM_GUY_1"
+msgstr "Yo, Dresseur!\nC'est ta première Arène?\nTu dois être au max!"
+
+msgid "GYM1_GYM_GUY_2"
+msgstr "On m'appelle le mec des Arènes, présent pour donner des astuces aux Dresseurs qui cherchent à défier la Ligue de Tandor!"
+
+msgid "GYM1_GYM_GUY_3"
+msgstr "Maria est une experte du type Normal.\nLes types Normal n'ont pas d'avantage particulier, mais ils ont peu de faiblesses."
+
+msgid "GYM1_GYM_GUY_4"
+msgstr "Les types Combat sont forts ici, comme Férosinge,\ntout comme les types Acier comme Pétalynx et Embryfer parce qu'ils sont résistants à leurs attaques."
+
+msgid "GYM1_GYM_GUY_5"
+msgstr "Sinon, la pleine puissance de\nton Pokémon le plus fort\ndevrait faire l'affaire.\nBonne chance! Je serai de ton côté!\n...Oh et, prends ça, avec mes salutations!"
+
+msgid "GYM1_GYM_GUY_6"
+msgstr "Sinon, la pleine puissance de\nton Pokémon le plus fort\ndevrait faire l'affaire.\nBonne chance! Je serai de ton côté!"

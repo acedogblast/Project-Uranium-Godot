@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: nl\n"
+
+msgid "Amalya"
+msgstr "Amalia"
+
+msgid "Ant"
+msgstr "Mier"
+
+msgid "Barry"
+msgstr "Bas"
+
+msgid "Brandon"
+msgstr "Bram"
+
+msgid "Caiman"
+msgstr "Christian"
+
+msgid "Cameron"
+msgstr "Kees"
+
+msgid "Carlton"
+msgstr "Carl"
+
+msgid "Caroline"
+msgstr "Eva"
+
+msgid "Catarina"
+msgstr "Chantal"
+
+msgid "Cathy"
+msgstr "Cindy"
+
+msgid "Cedric"
+msgstr "Casper"
+
+msgid "Chris"
+msgstr "Cas"
+
+msgid "Chuck"
+msgstr "Cor"
+
+msgid "Clapton"
+msgstr "Cornelis"
+
+msgid "Claude"
+msgstr "Klaas"
+
+msgid "Cloe"
+msgstr "Chloë"
+
+msgid "Coulton"
+msgstr "Kristof"
+
+msgid "Curie"
+msgstr "CURIE"
+
+msgid "Cylan"
+msgstr "Milan"
+
+msgid "Damian"
+msgstr "Daan"
+
+msgid "Derek"
+msgstr "Dirk"
+
+msgid "Dick"
+msgstr "Hendrik"
+
+msgid "Dovak"
+msgstr "Dries"
+
+msgid "Drew"
+msgstr "Dennis"
+
+msgid "Faeh"
+msgstr "Fae"
+
+msgid "Flood"
+msgstr "Flynn"
+
+msgid "Flower"
+msgstr "Roos"
+
+msgid "Fly"
+msgstr "Vlieg"
+
+msgid "Gertha"
+msgstr "Gertrude"
+
+msgid "Gregorison"
+msgstr "Guus"
+
+msgid "Griffin"
+msgstr "Gerrit"
+
+msgid "Hanks"
+msgstr "Henk"
+
+msgid "Harold"
+msgstr "Hubert"
+
+msgid "Homer"
+msgstr "Herman"
+
+msgid "Horton"
+msgstr "Harry"
+
+msgid "Jack"
+msgstr "Willem-Filip"
+
+msgid "Jang"
+msgstr "Johan"
+
+msgid "Jason"
+msgstr "Jeroen"
+
+msgid "Jessy"
+msgstr "Jessie"
+
+msgid "Joe"
+msgstr "Jesse"
+
+msgid "Johnny"
+msgstr "Jelle"
+
+msgid "Jonathan"
+msgstr "Jonas"
+
+msgid "Joss"
+msgstr "Jolien"
+
+msgid "Julianna"
+msgstr "Juliana"
+
+msgid "Larrie"
+msgstr "Lars"
+
+msgid "Lou"
+msgstr "Louis"
+
+msgid "Luka"
+msgstr "Lukas"
+
+msgid "Luke"
+msgstr "Luuk"
+
+msgid "Lynette"
+msgstr "Lianne"
+
+msgid "Manny"
+msgstr "Maarten"
+
+msgid "Mantis"
+msgstr "Sprinkhaan"
+
+msgid "Marc"
+msgstr "Mark"
+
+msgid "Marino"
+msgstr "Martin"
+
+msgid "Matt"
+msgstr "Matthias"
+
+msgid "Merlin"
+msgstr "Merlijn"
+
+msgid "Myla"
+msgstr "Mila"
+
+msgid "Norman"
+msgstr "Noah"
+
+msgid "Nu�es"
+msgstr "Nuñes"
+
+msgid "OF DREAMS"
+msgstr "DER DROMEN"
+
+msgid "Ogilvy"
+msgstr "Otto"
+
+msgid "Olly"
+msgstr "Ollie"
+
+msgid "Perch"
+msgstr "Pepijn"
+
+msgid "Pick"
+msgstr "Pim"
+
+msgid "Quito"
+msgstr "Mug"
+
+msgid "Raymond"
+msgstr "Rembrandt"
+
+msgid "Rich"
+msgstr "Richard"
+
+msgid "Richey"
+msgstr "Ricky"
+
+msgid "Roach"
+msgstr "Kakkerlak"
+
+msgid "Roger"
+msgstr "Ronald"
+
+msgid "Rosalind"
+msgstr "Rosalinde"
+
+msgid "Rowin"
+msgstr "Rowen"
+
+msgid "Sack"
+msgstr "Sep"
+
+msgid "Sean"
+msgstr "Sjoerd"
+
+msgid "Silva"
+msgstr "Grijze Gerda"
+
+msgid "Slim"
+msgstr "Silvester"
+
+msgid "Sophy"
+msgstr "Sophie"
+
+msgid "Sr. Goldkorn"
+msgstr "Goldkorn"
+
+msgid "Stu"
+msgstr "Stef"
+
+msgid "Tath"
+msgstr "Tanja"
+
+msgid "Tim & Trese"
+msgstr "Tim & Tris"
+
+msgid "Tod"
+msgstr "Teun"
+
+msgid "Tracey"
+msgstr "Tessa"
+
+msgid "Wyle"
+msgstr "Wesley"
+
+msgid "Wylie"
+msgstr "Willem"
+

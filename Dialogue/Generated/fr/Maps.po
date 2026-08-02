@@ -1,0 +1,10 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "HERO_HOME_BLOCK"
+msgstr "Il vaudrait mieux que je dise au revoir à Tatie d'abord."
+
+msgid "MOKI_TOWN_BLOCK"
+msgstr "Hey there, \\PN! I want to show you\nand Theo how to catch a Pokémon.\nCan you go get him?\nHe should be in his house."
